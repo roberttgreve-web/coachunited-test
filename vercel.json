@@ -1,0 +1,44 @@
+{
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/home.html"
+    },
+    {
+      "source": "/home",
+      "destination": "/home.html"
+    },
+    {
+      "source": "/uebungen",
+      "destination": "/uebungen.html"
+    },
+    {
+      "source": "/detail",
+      "destination": "/detail.html"
+    },
+    {
+      "source": "/einheiten",
+      "destination": "/einheiten.html"
+    },
+    {
+      "source": "/wissen",
+      "destination": "/wissen.html"
+    },
+    {
+      "source": "/whatsapp-info",
+      "destination": "/whatsapp-info.html"
+    },
+    {
+      "source": "/spenden",
+      "destination": "/spenden.html"
+    },
+    {
+      "source": "/ueber-uns",
+      "destination": "/ueber-uns.html"
+    },
+    {
+      "source": "/impressum",
+      "destination": "/impressum.html"
+    }
+  ]
+}

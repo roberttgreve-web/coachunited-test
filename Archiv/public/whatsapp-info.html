@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trainingseinheiten - COACH UNITED</title>
+  <title>WhatsApp-Kanal - COACH UNITED</title>
   <style>
     * {
       margin: 0;
@@ -73,32 +73,46 @@
     .content {
       flex: 1;
       overflow-y: auto;
-      padding: 20px;
-      padding-bottom: 80px;
+      padding: 40px 24px;
+      padding-bottom: 100px;
+      text-align: center;
     }
     
-    .exercise-card {
-      background: white;
-      border: 1px solid #e0e0e0;
-      border-radius: 12px;
-      padding: 18px 16px;
-      margin-bottom: 12px;
-      cursor: pointer;
-      transition: all 0.2s;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    .emoji {
+      font-size: 64px;
+      margin-bottom: 24px;
     }
     
-    .exercise-card:hover {
-      box-shadow: 0 4px 12px rgba(0,61,130,0.15);
-      border-color: #003D82;
-      transform: translateY(-2px);
-    }
-    
-    .exercise-title {
-      font-size: 17px;
-      font-weight: 500;
+    h1 {
+      font-size: 24px;
+      font-weight: 600;
       color: #1a1a1a;
-      line-height: 1.5;
+      margin-bottom: 20px;
+      line-height: 1.3;
+    }
+    
+    .description {
+      font-size: 17px;
+      line-height: 1.6;
+      color: #2a2a2a;
+      margin-bottom: 32px;
+    }
+    
+    .whatsapp-button {
+      display: inline-block;
+      padding: 16px 32px;
+      background: #25D366;
+      color: white;
+      text-decoration: none;
+      border-radius: 12px;
+      font-size: 16px;
+      font-weight: 500;
+      transition: all 0.2s;
+    }
+    
+    .whatsapp-button:hover {
+      background: #20BA5A;
+      transform: scale(1.02);
     }
     
     .bottom-nav {
@@ -143,116 +157,41 @@
       font-size: 11px;
       font-weight: 500;
     }
-    
-    /* Burger Menu Overlay */
-    .burger-overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: rgba(0,0,0,0.5);
-      opacity: 0;
-      visibility: hidden;
-      transition: all 0.3s;
-      z-index: 998;
-    }
-    
-    .burger-overlay.active {
-      opacity: 1;
-      visibility: visible;
-    }
-    
-    /* Burger Menu Drawer */
-    .burger-drawer {
-      position: absolute;
-      top: 0;
-      right: -280px;
-      width: 280px;
-      height: 100%;
-      background: white;
-      box-shadow: -2px 0 10px rgba(0,0,0,0.1);
-      transition: right 0.3s;
-      z-index: 999;
-      padding-top: 60px;
-    }
-    
-    .burger-drawer.active {
-      right: 0;
-    }
-    
-    .menu-item {
-      display: block;
-      padding: 18px 24px;
-      color: #1a1a1a;
-      text-decoration: none;
-      font-size: 16px;
-      font-weight: 500;
-      border-bottom: 1px solid #e0e0e0;
-      transition: background 0.2s;
-    }
-    
-    .menu-item:hover {
-      background: #f5f5f5;
-    }
   </style>
 </head>
 <body>
   <div class="container">
     <div class="header">
-      <a href="/home" class="back-button">←</a>
+      <a href="home.html" class="back-button">←</a>
       <div class="header-title">COACH UNITED</div>
-      <button class="burger-menu" onclick="toggleMenu()">☰</button>
+      <button class="burger-menu" onclick="alert('Burger-Menü kommt gleich!')">☰</button>
     </div>
 
     <div class="content">
-      <div class="exercise-card">
-        <div class="exercise-title">Schnelles Toreschießen</div>
-      </div>
-      
-      <div class="exercise-card">
-        <div class="exercise-title">Passspiel und Raumaufteilung</div>
-      </div>
-      
-      <div class="exercise-card">
-        <div class="exercise-title">Spielaufbau von hinten</div>
-      </div>
-      
-      <div class="exercise-card">
-        <div class="exercise-title">Koordination und Ballkontrolle</div>
-      </div>
-      
-      <div class="exercise-card">
-        <div class="exercise-title">Zweikampf und Durchsetzungsvermögen</div>
-      </div>
-      
-      <div class="exercise-card">
-        <div class="exercise-title">Dribbling in engen Räumen</div>
-      </div>
-      
-      <div class="exercise-card">
-        <div class="exercise-title">Flügelspiel und Flanken</div>
-      </div>
-      
-      <div class="exercise-card">
-        <div class="exercise-title">Pressing und Rückeroberung kompakt</div>
-      </div>
+      <div class="emoji">💬</div>
+      <h1>WhatsApp-Kanal abonnieren</h1>
+      <p class="description">
+        Wenn du den WhatsApp-Kanal abonnierst, schicken wir dir eine Nachricht, sobald eine neue Übung online ist. So verpasst du nichts.
+      </p>
+      <a href="https://www.whatsapp.com/channel/0029VbAqTP68kyyEFg3oyX2t" target="_blank" class="whatsapp-button">
+        Zum WhatsApp-Kanal
+      </a>
     </div>
 
         <div class="bottom-nav">
-      <a href="/home" class="nav-item">
+      <a href="home.html" class="nav-item">
         <span class="nav-icon">🏠</span>
         <span class="nav-label">Home</span>
       </a>
-      <a href="/uebungen" class="nav-item">
+      <a href="uebungen.html" class="nav-item">
         <span class="nav-icon">⚽</span>
         <span class="nav-label">Übungen</span>
       </a>
-      <a href="/wissen" class="nav-item">
+      <a href="wissen.html" class="nav-item">
         <span class="nav-icon">📚</span>
         <span class="nav-label">Wissen</span>
       </a>
-      <a href="/whatsapp-info" class="nav-item">
+      <a href="whatsapp-info.html" class="nav-item">
         <span class="nav-icon">💬</span>
         <span class="nav-label">WhatsApp</span>
       </a>
@@ -261,10 +200,10 @@
     <!-- Burger Menu -->
     <div id="burger-overlay" class="burger-overlay" onclick="toggleMenu()"></div>
     <div id="burger-drawer" class="burger-drawer">
-      <a href="/einheiten" class="menu-item">📋 Einheiten</a>
-      <a href="/ueber-uns" class="menu-item">👥 Über uns</a>
-      <a href="/spenden" class="menu-item">😇 Spenden</a>
-      <a href="/impressum" class="menu-item">ℹ️ Impressum</a>
+      <a href="einheiten.html" class="menu-item">📋 Einheiten</a>
+      <a href="ueber-uns.html" class="menu-item">👥 Über uns</a>
+      <a href="spenden.html" class="menu-item">😇 Spenden</a>
+      <a href="impressum.html" class="menu-item">ℹ️ Impressum</a>
     </div>
   </div>
   
@@ -278,14 +217,5 @@
   </script>
 </body>
 </html>
-  
-  <script>
-    function toggleMenu() {
-      const overlay = document.getElementById('burger-overlay');
-      const drawer = document.getElementById('burger-drawer');
-      overlay.classList.toggle('active');
-      drawer.classList.toggle('active');
-    }
-  </script>
 </body>
 </html>
