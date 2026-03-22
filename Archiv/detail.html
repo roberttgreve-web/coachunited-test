@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Im Doppelfeld Tore sammeln - COACH UNITED</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: #f5f5f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    
+    .container {
+      width: 375px;
+      background: white;
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    /* Header */
+    .header {
+      background: #003D82;
+      padding: 12px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    
+    .back-button {
+      position: absolute;
+      left: 16px;
+      background: none;
+      border: none;
+      color: white;
+      font-size: 20px;
+      cursor: pointer;
+      padding: 4px;
+      text-decoration: none;
+    }
+    
+    .header-title {
+      color: white;
+      font-weight: 500;
+      font-size: 16px;
+      letter-spacing: 1px;
+    }
+    
+    /* Graphics Container */
+    .graphics-container {
+      width: 100%;
+      background: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: visible;
+      margin-bottom: 0;
+      padding: 20px 0;
+    }
+    
+    .graphics-container img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+    
+    /* Content */
+    .content {
+      flex: 1;
+      overflow-y: auto;
+      padding: 24px;
+      padding-bottom: 80px;
+    }
+    
+    h1 {
+      font-size: 32px;
+      font-weight: 600;
+      color: #1a1a1a;
+      margin: 0 0 14px;
+      line-height: 1.2;
+    }
+    
+    .tags {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+    
+    .tag {
+      padding: 4px 8px;
+      border-radius: 10px;
+      font-size: 13px;
+      font-weight: 500;
+    }
+    
+    .tag-jugend {
+      background: #B8D4E8;
+      color: #003D82;
+    }
+    
+    .tag-skill {
+      background: #C8E6C9;
+      color: #2E7D32;
+    }
+    
+    .tag-phase {
+      background: #FFE0B2;
+      color: #E65100;
+    }
+    
+    .tag-divider {
+      color: #999;
+      font-size: 14px;
+      margin: 0 2px;
+    }
+    
+    .description {
+      font-size: 17px;
+      line-height: 1.8;
+      color: #2a2a2a;
+      margin: 0 0 24px;
+    }
+    
+    /* Accordions */
+    details {
+      border: 0.5px solid #e0e0e0;
+      border-radius: 12px;
+      margin-bottom: 16px;
+      overflow: hidden;
+    }
+    
+    summary {
+      padding: 18px;
+      font-weight: 500;
+      font-size: 17px;
+      cursor: pointer;
+      user-select: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #1a1a1a;
+      list-style: none;
+    }
+    
+    summary::-webkit-details-marker {
+      display: none;
+    }
+    
+    summary .title {
+      flex: 1;
+    }
+    
+    summary .arrow {
+      font-size: 20px;
+      color: #999;
+      transition: transform 0.2s;
+    }
+    
+    details[open] summary .arrow {
+      transform: rotate(90deg);
+    }
+    
+    .accordion-content {
+      padding: 0 18px 18px;
+      border-top: 0.5px solid #e0e0e0;
+      padding-top: 16px;
+    }
+    
+    .accordion-content p {
+      font-size: 16px;
+      line-height: 1.8;
+      margin: 0;
+      color: #2a2a2a;
+    }
+    
+    .accordion-content ul {
+      margin: 0;
+      padding-left: 20px;
+      font-size: 16px;
+      line-height: 1.8;
+      color: #2a2a2a;
+    }
+    
+    .accordion-content li {
+      margin-bottom: 10px;
+    }
+    
+    .accordion-content li:last-child {
+      margin-bottom: 0;
+    }
+    
+    /* Related Exercises Box */
+    .related-box {
+      background: #CCE0F4;
+      border-radius: 12px;
+      padding: 18px;
+      margin-bottom: 24px;
+    }
+    
+    .related-box-title {
+      font-weight: 500;
+      font-size: 14px;
+      margin: 0 0 12px;
+      color: #003D82;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    
+    .related-link {
+      display: block;
+      padding: 12px;
+      background: white;
+      border: 2px solid #003D82;
+      border-radius: 8px;
+      text-decoration: none;
+      color: #003D82;
+      font-size: 15px;
+      font-weight: 500;
+      transition: all 0.2s;
+    }
+    
+    .related-link:hover {
+      background: #003D82;
+      color: white;
+    }
+    
+    /* Feedback Section */
+    .feedback-box {
+      background: #F5F8FA;
+      border-radius: 12px;
+      padding: 20px;
+      border: 0.5px solid #e0e0e0;
+      margin-bottom: 20px;
+    }
+    
+    .feedback-title {
+      font-size: 16px;
+      font-weight: 500;
+      margin: 0 0 14px;
+      color: #1a1a1a;
+    }
+    
+    textarea {
+      width: 100%;
+      min-height: 100px;
+      padding: 14px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-size: 16px;
+      font-family: inherit;
+      resize: vertical;
+      margin-bottom: 12px;
+      box-sizing: border-box;
+    }
+    
+    textarea::placeholder {
+      color: #999;
+    }
+    
+    .btn-primary {
+      width: 100%;
+      padding: 14px;
+      background: #003D82;
+      color: white;
+      text-align: center;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 500;
+      cursor: pointer;
+    }
+    
+    .btn-secondary {
+      width: 100%;
+      padding: 14px;
+      background: white;
+      color: #003D82;
+      text-align: center;
+      border: 1px solid #003D82;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 500;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+    
+    /* Bottom Navigation */
+    .bottom-nav {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: white;
+      border-top: 1px solid #e0e0e0;
+      display: flex;
+      justify-content: space-around;
+      padding: 8px 0;
+      box-shadow: 0 -2px 10px rgba(0,0,0,0.05);
+    }
+    
+    .nav-item {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+      border: none;
+      background: none;
+      cursor: pointer;
+      padding: 8px;
+      text-decoration: none;
+    }
+    
+    .nav-item.active {
+      color: #003D82;
+    }
+    
+    .nav-item:not(.active) {
+      color: #999;
+    }
+    
+    .nav-icon {
+      font-size: 20px;
+    }
+    
+    .nav-label {
+      font-size: 11px;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <a href="uebungen.html" class="back-button">←</a>
+      <div class="header-title">COACH UNITED</div>
+    </div>
+
+    <!-- Grafik Container -->
+    <div class="graphics-container">
+      <img src="uebung-grafik.png" alt="Übungsaufbau: Im Doppelfeld Tore sammeln">
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+      <h1>Im Doppelfeld Tore sammeln</h1>
+      
+      <div class="tags">
+        <span class="tag tag-jugend">E</span>
+        <span class="tag tag-jugend">D</span>
+        <span class="tag-divider">|</span>
+        <span class="tag tag-skill">Torschuss</span>
+        <span class="tag tag-skill">Spielübersicht</span>
+        <span class="tag-divider">|</span>
+        <span class="tag tag-phase">Spiel</span>
+      </div>
+      
+      <p class="description">
+        Jeweils zwei Teams treten auf zwei Feldern parallel gegeneinander an. Nach Torerfolg wird der Ball als Trophäe hinter dem eigenen Tor verwahrt.
+      </p>
+
+      <details open>
+        <summary>
+          <span class="title">🔧 Aufbau</span>
+          <span class="arrow">›</span>
+        </summary>
+        <div class="accordion-content">
+          <p>Zwei Felder zu je 40m×20m aufstellen. Etwa 10m Abstand zwischen den Feldern. Je zwei Minitore pro Feld. Vier Teams (zu je vier Spielern) mit Leibchen einteilen. Trainer steht mit 10 Bällen in der Mitte der Felder.</p>
+        </div>
+      </details>
+
+      <details open>
+        <summary>
+          <span class="title">▶️ Durchführung</span>
+          <span class="arrow">›</span>
+        </summary>
+        <div class="accordion-content">
+          <p style="margin-bottom: 14px;">
+            Auf beiden Feldern wird parallel ein 4 gegen 4 gespielt, so dass alle vier Teams gleichzeitig spielen. Bei Torerfolg wird der Ball von der erfolgreichen Mannschaft aus dem Tor geholt und hinter dem eigenen Tor abgelegt. Der Trainer spielt einen neuen Ball ein.
+          </p>
+          <p>
+            Wer hat die meisten Bälle hinter dem Tor, sobald die 10 Bälle durchgespielt sind?
+          </p>
+        </div>
+      </details>
+
+      <details>
+        <summary>
+          <span class="title">🎯 Coaching-Fokus</span>
+          <span class="arrow">›</span>
+        </summary>
+        <div class="accordion-content">
+          <ul>
+            <li>Schnell ins Dribbling nach Ballgewinn</li>
+            <li>Torchancen sicher verwerten</li>
+            <li>Alle vier Teams gleichzeitig im Blick behalten</li>
+          </ul>
+        </div>
+      </details>
+
+      <details>
+        <summary>
+          <span class="title">👶 Übung leichter machen</span>
+          <span class="arrow">›</span>
+        </summary>
+        <div class="accordion-content">
+          <p>Kleinere Felder verwenden (30m×15m). Nur 3 gegen 3 spielen lassen.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>
+          <span class="title">💪 Übung schwieriger machen</span>
+          <span class="arrow">›</span>
+        </summary>
+        <div class="accordion-content">
+          <p>Vor einem Torerfolg muss jeder einzelne Spieler eines Teams den Ball mindestens ein Mal berührt haben.</p>
+        </div>
+      </details>
+
+      <div class="related-box">
+        <p class="related-box-title">Zugehörige Trainingseinheit</p>
+        <a href="https://coachunited.de/924-2/" target="_blank" class="related-link">Schnelles Toreschießen für die E-Jugend</a>
+      </div>
+
+      <div class="feedback-box">
+        <p class="feedback-title">Lasst uns die Übung gemeinsam besser machen:</p>
+        <textarea id="feedbackText" placeholder="Dein Feedback an uns"></textarea>
+        <button class="btn-primary" onclick="submitFeedback()">Feedback absenden</button>
+      </div>
+
+      <div class="feedback-box">
+        <button class="btn-secondary" onclick="shareExercise()">
+          <span style="font-size: 18px;">↗</span>
+          <span>Übung weiterempfehlen</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <div class="bottom-nav">
+      <a href="home.html" class="nav-item">
+        <span class="nav-icon">🏠</span>
+        <span class="nav-label">Home</span>
+      </a>
+      <a href="uebungen.html" class="nav-item active">
+        <span class="nav-icon">⚽</span>
+        <span class="nav-label">Übungen</span>
+      </a>
+      <a href="https://www.whatsapp.com/channel/0029VbAqTP68kyyEFg3oyX2t" target="_blank" class="nav-item">
+        <span class="nav-icon">💬</span>
+        <span class="nav-label">WhatsApp</span>
+      </a>
+      <a href="spenden.html" class="nav-item">
+        <span class="nav-icon">😇</span>
+        <span class="nav-label">Spenden</span>
+      </a>
+    </div>
+  </div>
+
+  <script>
+    function submitFeedback() {
+      const feedbackElement = document.getElementById('feedbackText');
+      const feedback = feedbackElement.value || '';
+      
+      if (feedback.trim()) {
+        alert('Vielen Dank für dein Feedback!\n\n' + feedback);
+        feedbackElement.value = '';
+      } else {
+        alert('Bitte gib dein Feedback ein.');
+      }
+    }
+
+    function shareExercise() {
+      const title = "Im Doppelfeld Tore sammeln";
+      const url = "https://test.coachunited.de/uebung/doppelfeld-tore-sammeln";
+      const text = `Ich habe folgende Übung auf COACH UNITED gefunden:\n\n${title}`;
+      
+      if (navigator.share) {
+        navigator.share({
+          title: title,
+          text: text,
+          url: url
+        }).catch(err => {
+          if (err.name !== 'AbortError') {
+            console.log('Share failed:', err);
+          }
+        });
+      } else {
+        const shareText = `${text}\n${url}`;
+        navigator.clipboard.writeText(shareText).then(() => {
+          alert('Link wurde kopiert! Du kannst ihn jetzt in WhatsApp, Signal etc. einfügen.');
+        });
+      }
+    }
+  </script>
+</body>
+</html>

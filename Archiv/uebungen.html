@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COACH UNITED - Übungen</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: #f5f5f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    
+    .container {
+      width: 375px;
+      height: 667px;
+      background: white;
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    /* Header */
+    .header {
+      background: #003D82;
+      padding: 12px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    
+    .back-button {
+      position: absolute;
+      left: 16px;
+      background: none;
+      border: none;
+      color: white;
+      font-size: 20px;
+      cursor: pointer;
+      padding: 4px;
+      text-decoration: none;
+    }
+    
+    .header-title {
+      color: white;
+      font-weight: 500;
+      font-size: 16px;
+      letter-spacing: 1px;
+    }
+    
+    /* Filters */
+    .filters {
+      padding: 12px 16px;
+      background: white;
+      border-bottom: 1px solid #e0e0e0;
+      display: flex;
+      gap: 8px;
+    }
+    
+    .filter-dropdown {
+      flex: 1;
+      position: relative;
+    }
+    
+    .filter-button {
+      width: 100%;
+      padding: 8px 12px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background: white;
+      font-size: 14px;
+      font-weight: 500;
+      color: #333;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .filter-arrow {
+      font-size: 12px;
+    }
+    
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      margin-top: 4px;
+      padding: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      z-index: 10;
+    }
+    
+    .dropdown-menu.active {
+      display: block;
+    }
+    
+    .dropdown-item {
+      display: flex;
+      align-items: center;
+      padding: 6px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    
+    .dropdown-item input {
+      margin-right: 8px;
+      width: 16px;
+      height: 16px;
+    }
+    
+    /* Content */
+    .content {
+      flex: 1;
+      overflow-y: auto;
+      padding-bottom: 60px;
+    }
+    
+    .exercises {
+      padding: 16px;
+    }
+    
+    .exercise-card {
+      background: white;
+      border-radius: 12px;
+      padding: 16px;
+      margin-bottom: 12px;
+      border: 1px solid #e0e0e0;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      text-decoration: none;
+      display: block;
+      color: inherit;
+    }
+    
+    .exercise-card.clickable {
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    
+    .exercise-card.clickable:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    
+    .exercise-title {
+      font-size: 17px;
+      font-weight: 600;
+      margin: 0 0 8px;
+      color: #1a1a1a;
+      line-height: 1.3;
+    }
+    
+    .exercise-tags {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      flex-wrap: wrap;
+      margin-bottom: 8px;
+    }
+    
+    .tag {
+      padding: 3px 8px;
+      border-radius: 8px;
+      font-size: 12px;
+      font-weight: 500;
+    }
+    
+    .tag-jugend {
+      background: #B8D4E8;
+      color: #003D82;
+    }
+    
+    .tag-skill {
+      background: #C8E6C9;
+      color: #2E7D32;
+    }
+    
+    .tag-phase {
+      background: #FFE0B2;
+      color: #E65100;
+    }
+    
+    .exercise-description {
+      font-size: 14px;
+      color: #666;
+      margin: 0;
+      line-height: 1.5;
+    }
+    
+    /* Bottom Navigation */
+    .bottom-nav {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: white;
+      border-top: 1px solid #e0e0e0;
+      display: flex;
+      justify-content: space-around;
+      padding: 8px 0;
+      box-shadow: 0 -2px 10px rgba(0,0,0,0.05);
+    }
+    
+    .nav-item {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+      border: none;
+      background: none;
+      cursor: pointer;
+      padding: 8px;
+      text-decoration: none;
+    }
+    
+    .nav-item.active {
+      color: #003D82;
+    }
+    
+    .nav-item:not(.active) {
+      color: #999;
+    }
+    
+    .nav-icon {
+      font-size: 20px;
+    }
+    
+    .nav-label {
+      font-size: 11px;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header mit Zurück-Button -->
+    <div class="header">
+      <a href="home.html" class="back-button">←</a>
+      <div class="header-title">COACH UNITED</div>
+    </div>
+    
+    <!-- Filter -->
+    <div class="filters">
+      <div class="filter-dropdown">
+        <button class="filter-button" onclick="toggleDropdown('jugend')">
+          <span>Jugend</span>
+          <span class="filter-arrow">▼</span>
+        </button>
+        <div id="jugend-dropdown" class="dropdown-menu">
+          <label class="dropdown-item"><input type="checkbox"> E</label>
+          <label class="dropdown-item"><input type="checkbox"> D</label>
+          <label class="dropdown-item"><input type="checkbox"> C</label>
+          <label class="dropdown-item"><input type="checkbox"> B</label>
+          <label class="dropdown-item"><input type="checkbox"> A</label>
+        </div>
+      </div>
+      
+      <div class="filter-dropdown">
+        <button class="filter-button" onclick="toggleDropdown('skill')">
+          <span>Skill</span>
+          <span class="filter-arrow">▼</span>
+        </button>
+        <div id="skill-dropdown" class="dropdown-menu">
+          <label class="dropdown-item"><input type="checkbox"> Torschuss</label>
+          <label class="dropdown-item"><input type="checkbox"> Passen</label>
+          <label class="dropdown-item"><input type="checkbox"> Dribbling</label>
+          <label class="dropdown-item"><input type="checkbox"> Taktik</label>
+          <label class="dropdown-item"><input type="checkbox"> Verteidigung</label>
+        </div>
+      </div>
+      
+      <div class="filter-dropdown">
+        <button class="filter-button" onclick="toggleDropdown('phase')">
+          <span>Phase</span>
+          <span class="filter-arrow">▼</span>
+        </button>
+        <div id="phase-dropdown" class="dropdown-menu">
+          <label class="dropdown-item"><input type="checkbox"> Aufwärmen</label>
+          <label class="dropdown-item"><input type="checkbox"> Übung</label>
+          <label class="dropdown-item"><input type="checkbox"> Spiel</label>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Content -->
+    <div class="content">
+      <div class="exercises">
+        
+        <!-- Exercise 1 - CLICKABLE -->
+        <a href="detail.html" class="exercise-card clickable">
+          <h3 class="exercise-title">Im Doppelfeld Tore sammeln</h3>
+          <div class="exercise-tags">
+            <span class="tag tag-jugend">E</span>
+            <span class="tag tag-jugend">D</span>
+            <span class="tag tag-skill">Torschuss</span>
+            <span class="tag tag-phase">Spiel</span>
+          </div>
+          <p class="exercise-description">Zwei Teams sammeln Tore auf parallelen Feldern</p>
+        </a>
+        
+        <!-- Exercise 2 -->
+        <div class="exercise-card">
+          <h3 class="exercise-title">Saubere Diagonal-Pässe</h3>
+          <div class="exercise-tags">
+            <span class="tag tag-jugend">D</span>
+            <span class="tag tag-jugend">C</span>
+            <span class="tag tag-skill">Passen</span>
+            <span class="tag tag-phase">Übung</span>
+          </div>
+          <p class="exercise-description">Präzise diagonale Pässe unter Druck trainieren</p>
+        </div>
+        
+        <!-- Exercise 3 -->
+        <div class="exercise-card">
+          <h3 class="exercise-title">Mit Kegeltreffern Torschüsse gewinnen</h3>
+          <div class="exercise-tags">
+            <span class="tag tag-jugend">E</span>
+            <span class="tag tag-skill">Torschuss</span>
+            <span class="tag tag-phase">Spiel</span>
+          </div>
+          <p class="exercise-description">Trefferpunkte sammeln durch Kegel und Torschüsse</p>
+        </div>
+        
+        <!-- Exercise 4 -->
+        <div class="exercise-card">
+          <h3 class="exercise-title">Kegeln, spielen und zurück</h3>
+          <div class="exercise-tags">
+            <span class="tag tag-jugend">D</span>
+            <span class="tag tag-skill">Schnelligkeit</span>
+            <span class="tag tag-phase">Übung</span>
+          </div>
+          <p class="exercise-description">Kegel treffen, Ball holen, zurück ins Spiel</p>
+        </div>
+        
+        <!-- Exercise 5 -->
+        <div class="exercise-card">
+          <h3 class="exercise-title">Überzahl-Joker</h3>
+          <div class="exercise-tags">
+            <span class="tag tag-jugend">C</span>
+            <span class="tag tag-jugend">B</span>
+            <span class="tag tag-skill">Taktik</span>
+            <span class="tag tag-phase">Spiel</span>
+          </div>
+          <p class="exercise-description">Überzahlsituationen clever ausspielen</p>
+        </div>
+        
+        <!-- Exercise 6 -->
+        <div class="exercise-card">
+          <h3 class="exercise-title">Flexibler Dribbelstern</h3>
+          <div class="exercise-tags">
+            <span class="tag tag-jugend">E</span>
+            <span class="tag tag-jugend">D</span>
+            <span class="tag tag-skill">Dribbling</span>
+            <span class="tag tag-phase">Übung</span>
+          </div>
+          <p class="exercise-description">Sternförmige Dribbel-Parcours mit Variationen</p>
+        </div>
+        
+        <!-- Exercise 7 -->
+        <div class="exercise-card">
+          <h3 class="exercise-title">Beschütz dein Tor!</h3>
+          <div class="exercise-tags">
+            <span class="tag tag-jugend">E</span>
+            <span class="tag tag-skill">Verteidigung</span>
+            <span class="tag tag-phase">Spiel</span>
+          </div>
+          <p class="exercise-description">Defensive Grundprinzipien im Kleinfeld</p>
+        </div>
+        
+        <!-- Exercise 8 -->
+        <div class="exercise-card">
+          <h3 class="exercise-title">Spiel auf ein Tor</h3>
+          <div class="exercise-tags">
+            <span class="tag tag-jugend">D</span>
+            <span class="tag tag-jugend">C</span>
+            <span class="tag tag-skill">Angriff</span>
+            <span class="tag tag-phase">Spiel</span>
+          </div>
+          <p class="exercise-description">Angriffsspiel mit einem Tor trainieren</p>
+        </div>
+        
+      </div>
+    </div>
+    
+    <!-- Bottom Navigation -->
+    <div class="bottom-nav">
+      <a href="home.html" class="nav-item">
+        <span class="nav-icon">🏠</span>
+        <span class="nav-label">Home</span>
+      </a>
+      <a href="uebungen.html" class="nav-item active">
+        <span class="nav-icon">⚽</span>
+        <span class="nav-label">Übungen</span>
+      </a>
+      <a href="https://www.whatsapp.com/channel/0029VbAqTP68kyyEFg3oyX2t" target="_blank" class="nav-item">
+        <span class="nav-icon">💬</span>
+        <span class="nav-label">WhatsApp</span>
+      </a>
+      <a href="spenden.html" class="nav-item">
+        <span class="nav-icon">😇</span>
+        <span class="nav-label">Spenden</span>
+      </a>
+    </div>
+  </div>
+  
+  <script>
+    function toggleDropdown(id) {
+      // Close all dropdowns first
+      ['jugend', 'skill', 'phase'].forEach(dropId => {
+        const dropdown = document.getElementById(dropId + '-dropdown');
+        if (dropId !== id && dropdown) {
+          dropdown.classList.remove('active');
+        }
+      });
+      
+      // Toggle clicked dropdown
+      const dropdown = document.getElementById(id + '-dropdown');
+      if (dropdown) {
+        dropdown.classList.toggle('active');
+      }
+    }
+    
+    // Close dropdowns when clicking outside
+    document.addEventListener('click', function(event) {
+      if (!event.target.closest('.filter-dropdown')) {
+        document.querySelectorAll('.dropdown-menu').forEach(menu => {
+          menu.classList.remove('active');
+        });
+      }
+    });
+  </script>
+</body>
+</html>

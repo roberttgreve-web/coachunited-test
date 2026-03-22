@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COACH UNITED - Spenden</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: #f5f5f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    
+    .container {
+      width: 375px;
+      height: 667px;
+      background: white;
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    /* Header */
+    .header {
+      background: #003D82;
+      padding: 12px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    
+    .back-button {
+      position: absolute;
+      left: 16px;
+      background: none;
+      border: none;
+      color: white;
+      font-size: 20px;
+      cursor: pointer;
+      padding: 4px;
+      text-decoration: none;
+    }
+    
+    .header-title {
+      color: white;
+      font-weight: 500;
+      font-size: 16px;
+      letter-spacing: 1px;
+    }
+    
+    /* Content */
+    .content {
+      flex: 1;
+      overflow-y: auto;
+      padding: 32px 24px 80px;
+    }
+    
+    h1 {
+      font-size: 28px;
+      font-weight: 600;
+      color: #1a1a1a;
+      margin-bottom: 24px;
+      text-align: center;
+    }
+    
+    .emoji {
+      font-size: 48px;
+      text-align: center;
+      margin-bottom: 24px;
+    }
+    
+    .text {
+      font-size: 17px;
+      line-height: 1.8;
+      color: #2a2a2a;
+      margin-bottom: 32px;
+    }
+    
+    .paypal-box {
+      background: #CCE0F4;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    .paypal-label {
+      font-size: 15px;
+      color: #666;
+      margin-bottom: 12px;
+    }
+    
+    .paypal-email {
+      font-size: 20px;
+      font-weight: 600;
+      color: #003D82;
+      text-decoration: none;
+      display: inline-block;
+      padding: 12px 24px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    
+    .paypal-email:hover {
+      background: #f5f5f5;
+    }
+    
+    /* Bottom Navigation */
+    .bottom-nav {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: white;
+      border-top: 1px solid #e0e0e0;
+      display: flex;
+      justify-content: space-around;
+      padding: 8px 0;
+      box-shadow: 0 -2px 10px rgba(0,0,0,0.05);
+    }
+    
+    .nav-item {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+      border: none;
+      background: none;
+      cursor: pointer;
+      padding: 8px;
+      text-decoration: none;
+    }
+    
+    .nav-item.active {
+      color: #003D82;
+    }
+    
+    .nav-item:not(.active) {
+      color: #999;
+    }
+    
+    .nav-icon {
+      font-size: 20px;
+    }
+    
+    .nav-label {
+      font-size: 11px;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header mit Zurück-Button -->
+    <div class="header">
+      <a href="home.html" class="back-button">←</a>
+      <div class="header-title">COACH UNITED</div>
+    </div>
+    
+    <!-- Content -->
+    <div class="content">
+      <div class="emoji">😇</div>
+      <h1>Unterstütze Coach United</h1>
+      
+      <p class="text">
+        Coach United wird rein ehrenamtlich von Trainerinnen und Trainern betrieben. Wir möchten hier die größte kostenfreie Übungsplattform für den Kinder- und Jugendfußball aufbauen und für euch bereitstellen.
+      </p>
+      
+      <p class="text">
+        Ihr könnt uns mit einer kleinen Spende helfen:
+      </p>
+      
+      <div class="paypal-box">
+        <div class="paypal-label">Per PayPal an:</div>
+        <a href="#" class="paypal-email" onclick="event.preventDefault(); alert('PayPal-Link würde hier öffnen');">
+          spende@coachunited.de
+        </a>
+      </div>
+    </div>
+    
+    <!-- Bottom Navigation -->
+        <div class="bottom-nav">
+      <a href="home.html" class="nav-item">
+        <span class="nav-icon">🏠</span>
+        <span class="nav-label">Home</span>
+      </a>
+      <a href="uebungen.html" class="nav-item">
+        <span class="nav-icon">⚽</span>
+        <span class="nav-label">Übungen</span>
+      </a>
+      <a href="wissen.html" class="nav-item">
+        <span class="nav-icon">📚</span>
+        <span class="nav-label">Wissen</span>
+      </a>
+      <a href="whatsapp-info.html" class="nav-item">
+        <span class="nav-icon">💬</span>
+        <span class="nav-label">WhatsApp</span>
+      </a>
+    </div>
+
+    <!-- Burger Menu -->
+    <div id="burger-overlay" class="burger-overlay" onclick="toggleMenu()"></div>
+    <div id="burger-drawer" class="burger-drawer">
+      <a href="einheiten.html" class="menu-item">📋 Einheiten</a>
+      <a href="ueber-uns.html" class="menu-item">👥 Über uns</a>
+      <a href="spenden.html" class="menu-item">😇 Spenden</a>
+      <a href="impressum.html" class="menu-item">ℹ️ Impressum</a>
+    </div>
+  </div>
+  
+  <script>
+    function toggleMenu() {
+      const overlay = document.getElementById('burger-overlay');
+      const drawer = document.getElementById('burger-drawer');
+      overlay.classList.toggle('active');
+      drawer.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
+</body>
+</html>

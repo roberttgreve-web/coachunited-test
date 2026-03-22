@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COACH UNITED - Home</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: #f5f5f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    
+    .container {
+      width: 375px;
+      height: 667px;
+      background: white;
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+      position: relative;
+    }
+    
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 80px 32px 100px;
+      text-align: center;
+    }
+    
+    h1 {
+      font-size: 32px;
+      font-weight: 700;
+      color: #003D82;
+      letter-spacing: 2px;
+      margin: 0 0 12px;
+    }
+    
+    .subtitle {
+      font-size: 15px;
+      color: #666;
+      margin: 0 0 6px;
+    }
+    
+    .tagline {
+      font-size: 14px;
+      color: #999;
+      margin: 0 0 80px;
+    }
+    
+    select {
+      width: 100%;
+      padding: 24px 20px;
+      border: 2px solid #003D82;
+      border-radius: 16px;
+      font-size: 20px;
+      font-weight: 500;
+      text-align: center;
+      text-align-last: center;
+      color: #999;
+      background: white;
+      margin-bottom: 24px;
+      cursor: pointer;
+      appearance: none;
+      background-image: url('data:image/svg+xml;charset=UTF-8,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2716%27 height=%2712%27 viewBox=%270 0 16 12%27%3e%3cpath fill=%27%23003D82%27 d=%27M1.88 0L8 6.12 14.12 0 16 1.88l-8 8-8-8z%27/%3e%3c/svg%3e');
+      background-repeat: no-repeat;
+      background-position: right 20px center;
+      box-shadow: 0 4px 12px rgba(0,61,130,0.15);
+    }
+    
+    select:focus {
+      outline: none;
+      border-color: #003D82;
+      box-shadow: 0 4px 16px rgba(0, 61, 130, 0.25);
+    }
+    
+    select:valid {
+      color: #333;
+    }
+    
+    option {
+      text-align: center;
+    }
+    
+    .cta-button {
+      width: 100%;
+      padding: 20px;
+      background: #003D82;
+      color: white;
+      border: none;
+      border-radius: 16px;
+      font-size: 20px;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: 0 4px 16px rgba(0, 61, 130, 0.3);
+      transition: all 0.2s;
+    }
+    
+    .cta-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0, 61, 130, 0.4);
+    }
+    
+    .cta-button:active {
+      transform: translateY(0);
+    }
+    
+    /* Bottom Navigation */
+    .bottom-nav {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: white;
+      border-top: 1px solid #e0e0e0;
+      display: flex;
+      justify-content: space-around;
+      padding: 8px 0;
+      box-shadow: 0 -2px 10px rgba(0,0,0,0.05);
+    }
+    
+    .nav-item {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+      border: none;
+      background: none;
+      cursor: pointer;
+      padding: 8px;
+      text-decoration: none;
+    }
+    
+    .nav-item.active {
+      color: #003D82;
+    }
+    
+    .nav-item:not(.active) {
+      color: #999;
+    }
+    
+    .nav-icon {
+      font-size: 20px;
+    }
+    
+    .nav-label {
+      font-size: 11px;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="content">
+      <h1>COACH UNITED</h1>
+      <p class="subtitle">Trainingsübungen für den Kinderfußball</p>
+      <p class="tagline">Erprobt. Kostenlos. Direkt einsetzen.</p>
+      
+      <select id="jugend">
+        <option value="" selected disabled>Wähle deine Jugend</option>
+        <option value="E">E-Jugend (U10/U11)</option>
+        <option value="D">D-Jugend (U12/U13)</option>
+        <option value="C">C-Jugend (U14/U15)</option>
+        <option value="B">B-Jugend (U16/U17)</option>
+        <option value="A">A-Jugend (U18/U19)</option>
+      </select>
+      
+      <button class="cta-button" onclick="goToExercises()">Los geht's</button>
+    </div>
+    
+    <!-- Bottom Navigation -->
+    <div class="bottom-nav">
+      <a href="home.html" class="nav-item active">
+        <span class="nav-icon">🏠</span>
+        <span class="nav-label">Home</span>
+      </a>
+      <a href="uebungen.html" class="nav-item">
+        <span class="nav-icon">⚽</span>
+        <span class="nav-label">Übungen</span>
+      </a>
+      <a href="https://www.whatsapp.com/channel/0029VbAqTP68kyyEFg3oyX2t" target="_blank" class="nav-item">
+        <span class="nav-icon">💬</span>
+        <span class="nav-label">WhatsApp</span>
+      </a>
+      <a href="spenden.html" class="nav-item">
+        <span class="nav-icon">😇</span>
+        <span class="nav-label">Spenden</span>
+      </a>
+    </div>
+  </div>
+  
+  <script>
+    function goToExercises() {
+      const jugend = document.getElementById('jugend').value;
+      if (!jugend) {
+        alert('Bitte wähle zuerst eine Jugend aus.');
+        return;
+      }
+      // Für jetzt: Alle führen zur gleichen Übungsliste (Filter später)
+      window.location.href = 'uebungen.html';
+    }
+  </script>
+</body>
+</html>
