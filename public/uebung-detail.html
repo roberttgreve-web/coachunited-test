@@ -164,6 +164,13 @@
   </div>
 
   <script>
+    function toBulletList(text) {
+      if (!text) return '';
+      const items = text.split(/[;•]/).map(s => s.trim()).filter(s => s.length > 0);
+      if (items.length <= 1) return items[0] || '';
+      return '<ul style="padding-left:18px;margin:0;">' + items.map(i => `<li style="margin-bottom:6px;">${i}</li>`).join('') + '</ul>';
+    }
+
     const slug = window.location.pathname.replace(/^\/uebung\//, '').replace(/\/$/, '');
 
     fetch('https://raw.githubusercontent.com/roberttgreve-web/coachunited-test/main/public/exercises.json')
@@ -221,9 +228,9 @@
         document.getElementById('beschreibung').textContent = ex.kurzbeschreibung || '';
         document.getElementById('aufbau').textContent = ex.aufbau || '';
         document.getElementById('durchfuehrung').textContent = ex.durchfuehrung || '';
-        document.getElementById('coaching-fokus').textContent = (ex.coaching_fokus || '').replace(/•\s*/g, '• ');
-        document.getElementById('leichter-machen').textContent = ex.leichter_machen || '';
-        document.getElementById('schwerer-machen').textContent = ex.schwerer_machen || '';
+        document.getElementById('coaching-fokus').innerHTML = toBulletList(ex.coaching_fokus);
+        document.getElementById('leichter-machen').innerHTML = toBulletList(ex.leichter_machen);
+        document.getElementById('schwerer-machen').innerHTML = toBulletList(ex.schwerer_machen);
 
         // Related link
         if (ex.quell_url) {
