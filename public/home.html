@@ -43,20 +43,10 @@
 
     /* Logo */
     .logo {
-      width: 88px;
-      height: 88px;
+      width: 130px;
+      height: 130px;
       object-fit: contain;
       margin-bottom: 20px;
-    }
-
-    /* Wordmark */
-    .wordmark {
-      font-size: 22px;
-      font-weight: 700;
-      color: #003D82;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      margin-bottom: 8px;
     }
 
     /* Subtitle */
@@ -64,17 +54,9 @@
       font-size: 14px;
       font-weight: 400;
       color: #5a6476;
-      margin-bottom: 4px;
+      margin-bottom: 28px;
       text-align: center;
       line-height: 1.5;
-    }
-
-    .tagline {
-      font-size: 12px;
-      font-weight: 300;
-      color: #9aa3b0;
-      letter-spacing: 0.5px;
-      margin-bottom: 44px;
     }
 
     /* Divider */
@@ -227,13 +209,11 @@
 
       <img src="/logo.png" alt="Coach United Logo" class="logo">
 
-      <p class="wordmark">Coach United</p>
       <p class="subtitle">Trainingsübungen für den Kinderfußball</p>
-      <p class="tagline">Erprobt · Kostenlos · Direkt einsetzen</p>
 
       <div class="divider"></div>
 
-      <p class="selection-label">Für welche Jugend trainierst du?</p>
+      <p class="selection-label">Welche Jugend trainierst du?</p>
 
       <div class="jugend-grid">
         <button class="jugend-pill" data-value="G-Jugend" onclick="selectJugend(this)">
@@ -254,7 +234,7 @@
         </button>
       </div>
 
-      <button class="cta-button" id="cta" onclick="goToExercises()">Übungen anzeigen</button>
+      <button class="cta-button" id="cta" onclick="goToExercises()">Los geht's</button>
 
     </div>
 
@@ -274,17 +254,18 @@
         </svg>
         <span class="nav-label">Übungen</span>
       </a>
+      <a href="/wissen" class="nav-item">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+          <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+        </svg>
+        <span class="nav-label">Wissen</span>
+      </a>
       <a href="https://www.whatsapp.com/channel/0029VbAqTP68kyyEFg3oyX2t" target="_blank" class="nav-item">
         <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
         </svg>
         <span class="nav-label">WhatsApp</span>
-      </a>
-      <a href="/spenden" class="nav-item">
-        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
-        </svg>
-        <span class="nav-label">Spenden</span>
       </a>
     </div>
   </div>
