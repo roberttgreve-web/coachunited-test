@@ -86,12 +86,6 @@
       transform: translateY(-1px);
     }
 
-    .card-accent {
-      width: 5px;
-      background: #1B6BF4;
-      flex-shrink: 0;
-    }
-
     .card-body {
       flex: 1;
       padding: 14px;
@@ -106,22 +100,33 @@
       margin-bottom: 6px;
     }
 
-    .card-meta {
-      display: flex;
-      gap: 6px;
-      flex-wrap: wrap;
+    .card-subtitle {
+      font-size: 11px;
+      color: #9aa3b0;
+      line-height: 1.4;
+      margin-top: 3px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
-    .phase-tag {
-      font-size: 10px;
-      font-weight: 600;
-      padding: 2px 7px;
-      border-radius: 20px;
-      white-space: nowrap;
+    .card-thumb {
+      width: 72px;
+      height: 72px;
+      flex-shrink: 0;
+      object-fit: cover;
+      align-self: center;
+      margin: 8px 0 8px 10px;
+      border-radius: 8px;
     }
-    .phase-aufwaermen  { background: #e8f4fd; color: #1a6fa8; }
-    .phase-hauptteil   { background: #e8f0ff; color: #1B6BF4; }
-    .phase-spielformat { background: #e8faf0; color: #1a8a4a; }
+    .card-thumb-placeholder {
+      width: 72px;
+      height: 72px;
+      flex-shrink: 0;
+      background: #edf0f5;
+      border-radius: 8px;
+      margin: 8px 0 8px 10px;
+    }
 
     .card-arrow {
       display: flex;
@@ -226,12 +231,6 @@
   <script>
     const JSON_URL = 'https://raw.githubusercontent.com/roberttgreve-web/coachunited-test/main/public/einheiten.json';
 
-    const phaseClass = {
-      'Aufwärmen':   'phase-aufwaermen',
-      'Hauptteil':   'phase-hauptteil',
-      'Spielformat': 'phase-spielformat',
-    };
-
     fetch(JSON_URL)
       .then(r => r.json())
       .then(einheiten => {
@@ -242,17 +241,17 @@
         }
 
         list.innerHTML = einheiten.map(e => {
-          const phases = [...new Set(e.uebungen.map(u => u.phase).filter(Boolean))];
-          const phaseTags = phases.map(p =>
-            `<span class="phase-tag ${phaseClass[p] || 'phase-hauptteil'}">${p}</span>`
-          ).join('');
+          const subtitle = e.uebungen.map(u => u.titel).join(' · ');
+          const thumb = e.foto_url
+            ? `<img class="card-thumb" src="${e.foto_url}" alt="${e.titel}" loading="lazy">`
+            : `<div class="card-thumb-placeholder"></div>`;
 
           return `
             <a href="/einheit/${e.url_slug}" class="einheit-card">
-              <div class="card-accent"></div>
+              ${thumb}
               <div class="card-body">
                 <p class="card-title">${e.titel}</p>
-                <div class="card-meta">${phaseTags}</div>
+                <p class="card-subtitle">${subtitle}</p>
               </div>
               <div class="card-arrow">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
