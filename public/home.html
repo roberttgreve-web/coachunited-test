@@ -232,7 +232,7 @@
     function goToExercises() {
       const jugend = document.getElementById('jugend').value;
       if (!jugend) return;
-      window.location.href = '/uebungen';
+      window.location.href = '/uebungen?jugend=' + encodeURIComponent(jugend);
     }
   </script>
 </body>

@@ -3,407 +3,622 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>COACH UNITED - Übungen</title>
+  <title>Übungen – COACH UNITED</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Barlow:wght@700;800&display=swap" rel="stylesheet">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
     body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-      background: #f5f5f5;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #f0f2f5;
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: flex-start;
       min-height: 100vh;
     }
-    
+
     .container {
       width: 375px;
-      height: 667px;
-      background: white;
-      border-radius: 24px;
+      min-height: 100vh;
+      background: #ffffff;
+      border-radius: 28px;
       overflow: hidden;
-      box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+      box-shadow: 0 24px 64px rgba(0,0,0,0.12);
       position: relative;
       display: flex;
       flex-direction: column;
     }
-    
-    /* Header */
+
+    /* ── Header ── */
     .header {
-      background: #003D82;
-      padding: 12px 16px;
+      background: white;
+      padding: 14px 16px;
       display: flex;
       align-items: center;
-      justify-content: center;
-      position: relative;
+      justify-content: space-between;
+      border-bottom: 1px solid #f0f2f5;
+      position: sticky;
+      top: 0;
+      z-index: 20;
     }
-    
-    .back-button {
-      position: absolute;
-      left: 16px;
+
+    .logo-link { display: flex; align-items: center; text-decoration: none; }
+    .logo-link img { width: 40px; height: 40px; object-fit: contain; }
+
+    .burger-btn {
       background: none;
       border: none;
-      color: white;
-      font-size: 20px;
       cursor: pointer;
       padding: 4px;
-      text-decoration: none;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
     }
-    
-    .header-title {
-      color: white;
-      font-weight: 500;
-      font-size: 16px;
-      letter-spacing: 1px;
+    .burger-btn span {
+      display: block;
+      width: 22px;
+      height: 2px;
+      background: #333;
+      border-radius: 2px;
+      transition: all 0.2s;
     }
-    
-    /* Filters */
+
+    /* ── Filter ── */
     .filters {
       padding: 12px 16px;
       background: white;
-      border-bottom: 1px solid #e0e0e0;
+      border-bottom: 1px solid #f0f2f5;
       display: flex;
       gap: 8px;
+      position: sticky;
+      top: 69px;
+      z-index: 15;
     }
-    
-    .filter-dropdown {
-      flex: 1;
-      position: relative;
-    }
-    
-    .filter-button {
+
+    .filter-wrap { flex: 1; position: relative; }
+
+    .filter-btn {
       width: 100%;
-      padding: 8px 12px;
-      border: 1px solid #ddd;
-      border-radius: 8px;
+      padding: 8px 10px;
+      border: 1.5px solid #e4e8ef;
+      border-radius: 10px;
       background: white;
-      font-size: 14px;
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
       font-weight: 500;
-      color: #333;
+      color: #555;
       cursor: pointer;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      gap: 4px;
+      transition: border-color 0.15s;
     }
-    
+    .filter-btn.has-selection {
+      border-color: #1B6BF4;
+      color: #1B6BF4;
+      background: #f0f5ff;
+    }
+    .filter-btn .badge {
+      background: #1B6BF4;
+      color: white;
+      border-radius: 10px;
+      font-size: 10px;
+      font-weight: 700;
+      padding: 1px 6px;
+      display: none;
+    }
+    .filter-btn.has-selection .badge { display: inline; }
+
     .filter-arrow {
-      font-size: 12px;
+      font-size: 10px;
+      color: #999;
+      transition: transform 0.15s;
     }
-    
-    .dropdown-menu {
+    .filter-wrap.open .filter-arrow { transform: rotate(180deg); }
+
+    .filter-dropdown {
       display: none;
       position: absolute;
-      top: 100%;
+      top: calc(100% + 6px);
       left: 0;
-      right: 0;
+      min-width: 160px;
       background: white;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      margin-top: 4px;
+      border: 1.5px solid #e4e8ef;
+      border-radius: 12px;
       padding: 8px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      z-index: 10;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+      z-index: 30;
     }
-    
-    .dropdown-menu.active {
-      display: block;
-    }
-    
-    .dropdown-item {
+    .filter-wrap.open .filter-dropdown { display: block; }
+
+    .filter-option {
       display: flex;
       align-items: center;
-      padding: 6px;
+      gap: 8px;
+      padding: 8px 10px;
+      border-radius: 8px;
       cursor: pointer;
-      font-size: 14px;
+      font-size: 13px;
+      color: #333;
+      user-select: none;
+      transition: background 0.12s;
     }
-    
-    .dropdown-item input {
-      margin-right: 8px;
+    .filter-option:hover { background: #f5f8ff; }
+    .filter-option input[type=checkbox] { display: none; }
+    .checkmark {
       width: 16px;
       height: 16px;
+      border: 1.5px solid #c0c7d3;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      transition: all 0.12s;
     }
-    
-    /* Content */
+    .filter-option.selected .checkmark {
+      background: #1B6BF4;
+      border-color: #1B6BF4;
+    }
+    .filter-option.selected .checkmark::after {
+      content: '';
+      width: 8px;
+      height: 5px;
+      border-left: 2px solid white;
+      border-bottom: 2px solid white;
+      transform: rotate(-45deg) translateY(-1px);
+      display: block;
+    }
+
+    /* ── Content ── */
     .content {
       flex: 1;
       overflow-y: auto;
-      padding-bottom: 60px;
+      padding: 16px 16px 80px;
     }
-    
-    .exercises {
-      padding: 16px;
-    }
-    
-    .exercise-card {
-      background: white;
-      border-radius: 12px;
-      padding: 16px;
+
+    .results-count {
+      font-size: 11px;
+      font-weight: 500;
+      color: #9aa3b0;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
       margin-bottom: 12px;
-      border: 1px solid #e0e0e0;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-      text-decoration: none;
+    }
+
+    /* ── Exercise Card ── */
+    .exercise-card {
       display: block;
+      text-decoration: none;
       color: inherit;
+      background: white;
+      border-radius: 14px;
+      border: 1px solid #edf0f5;
+      margin-bottom: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      transition: box-shadow 0.18s, transform 0.18s;
     }
-    
-    .exercise-card.clickable {
-      cursor: pointer;
-      transition: all 0.2s;
+    .exercise-card:hover {
+      box-shadow: 0 6px 20px rgba(0,0,0,0.09);
+      transform: translateY(-1px);
     }
-    
-    .exercise-card.clickable:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
+    .card-image {
+      width: 100%;
+      height: 100px;
+      object-fit: cover;
+      display: block;
+      background: #f5f8ff;
     }
-    
-    .exercise-title {
-      font-size: 17px;
-      font-weight: 600;
-      margin: 0 0 8px;
-      color: #1a1a1a;
-      line-height: 1.3;
-    }
-    
-    .exercise-tags {
+    .card-image-placeholder {
+      width: 100%;
+      height: 100px;
+      background: linear-gradient(135deg, #eef3ff 0%, #dde8ff 100%);
       display: flex;
       align-items: center;
-      gap: 4px;
-      flex-wrap: wrap;
+      justify-content: center;
+      color: #b0c0e0;
+      font-size: 28px;
+    }
+
+    .card-body { padding: 12px 14px 14px; }
+
+    .card-title {
+      font-family: 'Barlow', 'Inter', sans-serif;
+      font-size: 15px;
+      font-weight: 800;
+      color: #0a1628;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+      line-height: 1.2;
       margin-bottom: 8px;
     }
-    
+
+    .card-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      margin-bottom: 8px;
+    }
+
     .tag {
-      padding: 3px 8px;
-      border-radius: 8px;
-      font-size: 12px;
+      padding: 2px 7px;
+      border-radius: 6px;
+      font-size: 11px;
       font-weight: 500;
     }
-    
-    .tag-jugend {
-      background: #B8D4E8;
-      color: #003D82;
-    }
-    
-    .tag-skill {
-      background: #C8E6C9;
-      color: #2E7D32;
-    }
-    
-    .tag-phase {
-      background: #FFE0B2;
-      color: #E65100;
-    }
-    
-    .exercise-description {
-      font-size: 14px;
-      color: #666;
-      margin: 0;
+    .tag-jugend { background: #ddeeff; color: #1B6BF4; }
+    .tag-skill  { background: #dcf5e7; color: #1a8044; }
+    .tag-phase  { background: #fff0df; color: #c45e00; }
+
+    .card-desc {
+      font-size: 13px;
+      color: #7a8494;
       line-height: 1.5;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
     }
-    
-    /* Bottom Navigation */
+
+    .empty-state {
+      text-align: center;
+      padding: 48px 24px;
+      color: #9aa3b0;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    /* ── Bottom Nav ── */
     .bottom-nav {
-      position: absolute;
+      position: fixed;
       bottom: 0;
-      left: 0;
-      right: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 375px;
       background: white;
-      border-top: 1px solid #e0e0e0;
+      border-top: 1px solid #f0f2f5;
       display: flex;
       justify-content: space-around;
-      padding: 8px 0;
-      box-shadow: 0 -2px 10px rgba(0,0,0,0.05);
+      padding: 10px 0 14px;
+      z-index: 20;
+      box-shadow: 0 -2px 12px rgba(0,0,0,0.06);
     }
-    
+
     .nav-item {
       flex: 1;
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 4px;
+      gap: 3px;
       border: none;
       background: none;
       cursor: pointer;
-      padding: 8px;
+      padding: 4px;
       text-decoration: none;
+      color: #c0c7d3;
+      transition: color 0.15s;
     }
-    
-    .nav-item.active {
-      color: #003D82;
-    }
-    
-    .nav-item:not(.active) {
-      color: #999;
-    }
-    
-    .nav-icon {
-      font-size: 20px;
-    }
-    
+    .nav-item.active { color: #1B6BF4; }
+    .nav-icon { width: 22px; height: 22px; }
     .nav-label {
-      font-size: 11px;
+      font-family: 'Inter', sans-serif;
+      font-size: 10px;
       font-weight: 500;
     }
+
+    /* ── Burger Drawer ── */
+    .drawer-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.3);
+      z-index: 40;
+    }
+    .drawer-overlay.open { display: block; }
+
+    .drawer {
+      position: fixed;
+      top: 0;
+      right: -280px;
+      width: 260px;
+      height: 100vh;
+      background: white;
+      z-index: 50;
+      padding: 32px 24px;
+      transition: right 0.25s ease;
+      box-shadow: -8px 0 32px rgba(0,0,0,0.12);
+    }
+    .drawer.open { right: 0; }
+
+    .drawer-close {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      background: none;
+      border: none;
+      font-size: 22px;
+      cursor: pointer;
+      color: #555;
+      padding: 4px;
+    }
+
+    .drawer-logo { width: 48px; margin-bottom: 28px; }
+
+    .drawer-link {
+      display: block;
+      padding: 12px 0;
+      font-size: 15px;
+      font-weight: 500;
+      color: #1a1a2e;
+      text-decoration: none;
+      border-bottom: 1px solid #f0f2f5;
+    }
+    .drawer-link:last-child { border-bottom: none; }
+    .drawer-link:hover { color: #1B6BF4; }
   </style>
 </head>
 <body>
   <div class="container">
-    <!-- Header mit Zurück-Button -->
-    <div class="header">
-      <a href="/home" class="back-button">←</a>
-      <div class="header-title">COACH UNITED</div>
-    </div>
-    
+
+    <!-- Header -->
+    <header class="header">
+      <a href="/home" class="logo-link">
+        <img src="/logo.png" alt="Coach United">
+      </a>
+      <button class="burger-btn" onclick="openDrawer()">
+        <span></span><span></span><span></span>
+      </button>
+    </header>
+
     <!-- Filter -->
     <div class="filters">
-      <div class="filter-dropdown">
-        <button class="filter-button" onclick="toggleDropdown('jugend')">
+      <div class="filter-wrap" id="wrap-jugend">
+        <button class="filter-btn" onclick="toggleFilter('jugend')">
           <span>Jugend</span>
-          <span class="filter-arrow">▼</span>
+          <span class="badge" id="badge-jugend">0</span>
+          <span class="filter-arrow">▾</span>
         </button>
-        <div id="jugend-dropdown" class="dropdown-menu">
-          <label class="dropdown-item"><input type="checkbox"> E</label>
-          <label class="dropdown-item"><input type="checkbox"> D</label>
-          <label class="dropdown-item"><input type="checkbox"> C</label>
-          <label class="dropdown-item"><input type="checkbox"> B</label>
-          <label class="dropdown-item"><input type="checkbox"> A</label>
+        <div class="filter-dropdown" id="drop-jugend">
+          <label class="filter-option" onclick="toggleOption(this,'jugend','G-Jugend')">
+            <span class="checkmark"></span>G-Jugend
+          </label>
+          <label class="filter-option" onclick="toggleOption(this,'jugend','F-Jugend')">
+            <span class="checkmark"></span>F-Jugend
+          </label>
+          <label class="filter-option" onclick="toggleOption(this,'jugend','E-Jugend')">
+            <span class="checkmark"></span>E-Jugend
+          </label>
+          <label class="filter-option" onclick="toggleOption(this,'jugend','D-Jugend')">
+            <span class="checkmark"></span>D-Jugend
+          </label>
         </div>
       </div>
-      
-      <div class="filter-dropdown">
-        <button class="filter-button" onclick="toggleDropdown('skill')">
+
+      <div class="filter-wrap" id="wrap-skill">
+        <button class="filter-btn" onclick="toggleFilter('skill')">
           <span>Skill</span>
-          <span class="filter-arrow">▼</span>
+          <span class="badge" id="badge-skill">0</span>
+          <span class="filter-arrow">▾</span>
         </button>
-        <div id="skill-dropdown" class="dropdown-menu">
-          <label class="dropdown-item"><input type="checkbox"> Torschuss</label>
-          <label class="dropdown-item"><input type="checkbox"> Passen</label>
-          <label class="dropdown-item"><input type="checkbox"> Dribbling</label>
-          <label class="dropdown-item"><input type="checkbox"> Taktik</label>
-          <label class="dropdown-item"><input type="checkbox"> Verteidigung</label>
+        <div class="filter-dropdown" id="drop-skill">
+          <!-- dynamisch befüllt -->
         </div>
       </div>
-      
-      <div class="filter-dropdown">
-        <button class="filter-button" onclick="toggleDropdown('phase')">
+
+      <div class="filter-wrap" id="wrap-phase">
+        <button class="filter-btn" onclick="toggleFilter('phase')">
           <span>Phase</span>
-          <span class="filter-arrow">▼</span>
+          <span class="badge" id="badge-phase">0</span>
+          <span class="filter-arrow">▾</span>
         </button>
-        <div id="phase-dropdown" class="dropdown-menu">
-          <label class="dropdown-item"><input type="checkbox"> Aufwärmen</label>
-          <label class="dropdown-item"><input type="checkbox"> Übung</label>
-          <label class="dropdown-item"><input type="checkbox"> Spiel</label>
+        <div class="filter-dropdown" id="drop-phase">
+          <label class="filter-option" onclick="toggleOption(this,'phase','Aufwärmen')">
+            <span class="checkmark"></span>Aufwärmen
+          </label>
+          <label class="filter-option" onclick="toggleOption(this,'phase','Hauptteil')">
+            <span class="checkmark"></span>Hauptteil
+          </label>
+          <label class="filter-option" onclick="toggleOption(this,'phase','Spielformat')">
+            <span class="checkmark"></span>Spielformat
+          </label>
         </div>
       </div>
     </div>
-    
+
     <!-- Content -->
     <div class="content">
-      <div class="exercises" id="exercises-list">
-        <p style="text-align:center; color:#999; padding:20px; font-size:14px;">Übungen werden geladen...</p>
+      <div id="results-count" class="results-count"></div>
+      <div id="exercises-list">
+        <div class="empty-state">Übungen werden geladen...</div>
       </div>
     </div>
-    
-    <!-- Bottom Navigation -->
-        <div class="bottom-nav">
-      <a href="/home" class="nav-item">
-        <span class="nav-icon">🏠</span>
-        <span class="nav-label">Home</span>
-      </a>
-      <a href="/uebungen" class="nav-item">
-        <span class="nav-icon">⚽</span>
+
+    <!-- Bottom Nav -->
+    <nav class="bottom-nav">
+      <a href="/uebungen" class="nav-item active">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/>
+        </svg>
         <span class="nav-label">Übungen</span>
       </a>
+      <a href="https://coachunited.de/trainingseinheiten/" target="_blank" class="nav-item">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/>
+        </svg>
+        <span class="nav-label">Einheiten</span>
+      </a>
       <a href="/wissen" class="nav-item">
-        <span class="nav-icon">📚</span>
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+        </svg>
         <span class="nav-label">Wissen</span>
       </a>
-      <a href="/whatsapp-info" class="nav-item">
-        <span class="nav-icon">💬</span>
+      <a href="https://www.whatsapp.com/channel/0029VbAqTP68kyyEFg3oyX2t" target="_blank" class="nav-item">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+        </svg>
         <span class="nav-label">WhatsApp</span>
       </a>
-    </div>
+    </nav>
 
-    <!-- Burger Menu -->
-    <div id="burger-overlay" class="burger-overlay" onclick="toggleMenu()"></div>
-    <div id="burger-drawer" class="burger-drawer">
-      <a href="/einheiten" class="menu-item">📋 Einheiten</a>
-      <a href="/ueber-uns" class="menu-item">👥 Über uns</a>
-      <a href="/spenden" class="menu-item">😇 Spenden</a>
-      <a href="/impressum" class="menu-item">ℹ️ Impressum</a>
+    <!-- Burger Drawer -->
+    <div class="drawer-overlay" id="drawer-overlay" onclick="closeDrawer()"></div>
+    <div class="drawer" id="drawer">
+      <button class="drawer-close" onclick="closeDrawer()">✕</button>
+      <img src="/logo.png" alt="Coach United" class="drawer-logo">
+      <a href="/uebungen" class="drawer-link">Übungen</a>
+      <a href="https://coachunited.de/trainingseinheiten/" target="_blank" class="drawer-link">Einheiten</a>
+      <a href="/wissen" class="drawer-link">Wissen</a>
+      <a href="https://www.whatsapp.com/channel/0029VbAqTP68kyyEFg3oyX2t" target="_blank" class="drawer-link">WhatsApp</a>
+      <a href="/ueber-uns" class="drawer-link">Über uns</a>
+      <a href="/impressum" class="drawer-link">Impressum</a>
     </div>
   </div>
-  
+
   <script>
-    function toggleMenu() {
-      const overlay = document.getElementById('burger-overlay');
-      const drawer = document.getElementById('burger-drawer');
-      overlay.classList.toggle('active');
-      drawer.classList.toggle('active');
+    // ── Filter State ──────────────────────────────────────────────
+    const selected = { jugend: new Set(), skill: new Set(), phase: new Set() };
+    let allExercises = [];
+
+    // ── URL-Parameter Jugend vorladen ─────────────────────────────
+    const urlJugend = new URLSearchParams(window.location.search).get('jugend');
+
+    // ── Filter Toggle ─────────────────────────────────────────────
+    function toggleFilter(key) {
+      const wrap = document.getElementById('wrap-' + key);
+      const isOpen = wrap.classList.contains('open');
+      // Alle schließen
+      ['jugend','skill','phase'].forEach(k => {
+        document.getElementById('wrap-' + k).classList.remove('open');
+      });
+      if (!isOpen) wrap.classList.add('open');
     }
 
-    // Übungen aus JSON laden und rendern
+    document.addEventListener('click', e => {
+      if (!e.target.closest('.filter-wrap')) {
+        ['jugend','skill','phase'].forEach(k =>
+          document.getElementById('wrap-' + k).classList.remove('open'));
+      }
+    });
+
+    function toggleOption(el, key, value) {
+      el.classList.toggle('selected');
+      if (selected[key].has(value)) selected[key].delete(value);
+      else selected[key].add(value);
+
+      const btn = el.closest('.filter-wrap').querySelector('.filter-btn');
+      const badge = document.getElementById('badge-' + key);
+      badge.textContent = selected[key].size;
+      btn.classList.toggle('has-selection', selected[key].size > 0);
+      renderExercises();
+    }
+
+    // ── Jugend aus URL vorbelegen ──────────────────────────────────
+    function preSelectJugend(value) {
+      if (!value) return;
+      const drop = document.getElementById('drop-jugend');
+      const opts = drop.querySelectorAll('.filter-option');
+      opts.forEach(opt => {
+        if (opt.textContent.trim() === value) {
+          opt.classList.add('selected');
+          selected.jugend.add(value);
+        }
+      });
+      if (selected.jugend.size > 0) {
+        document.getElementById('badge-jugend').textContent = selected.jugend.size;
+        document.querySelector('#wrap-jugend .filter-btn').classList.add('has-selection');
+      }
+    }
+
+    // ── Skill-Dropdown dynamisch füllen ───────────────────────────
+    function buildSkillDropdown(exercises) {
+      const skills = [...new Set(exercises.flatMap(e => e.skills || []))].sort();
+      const drop = document.getElementById('drop-skill');
+      drop.innerHTML = skills.map(s => `
+        <label class="filter-option" onclick="toggleOption(this,'skill','${s}')">
+          <span class="checkmark"></span>${s}
+        </label>`).join('');
+    }
+
+    // ── Filter anwenden ───────────────────────────────────────────
+    function applyFilters(exercises) {
+      return exercises.filter(ex => {
+        const jugendOk = selected.jugend.size === 0 ||
+          (ex.jugend || []).some(j => selected.jugend.has(j));
+        const skillOk  = selected.skill.size === 0 ||
+          (ex.skills || []).some(s => selected.skill.has(s));
+        const phaseOk  = selected.phase.size === 0 ||
+          selected.phase.has(ex.trainingsphase);
+        return jugendOk && skillOk && phaseOk;
+      });
+    }
+
+    // ── Karten rendern ────────────────────────────────────────────
+    function renderExercises() {
+      const filtered = applyFilters(allExercises);
+      const list = document.getElementById('exercises-list');
+      const count = document.getElementById('results-count');
+
+      count.textContent = filtered.length + ' Übung' + (filtered.length !== 1 ? 'en' : '');
+
+      if (!filtered.length) {
+        list.innerHTML = '<div class="empty-state">Keine Übungen für diese Auswahl.</div>';
+        return;
+      }
+
+      list.innerHTML = filtered.map(ex => {
+        const href = ex.url_slug ? `/uebung/${ex.url_slug}` : '#';
+        const jugendTags = (ex.jugend || [])
+          .map(j => `<span class="tag tag-jugend">${j.replace('-Jugend','')}</span>`).join('');
+        const skillTags = (ex.skills || []).slice(0, 2)
+          .map(s => `<span class="tag tag-skill">${s}</span>`).join('');
+        const phaseTag = ex.trainingsphase
+          ? `<span class="tag tag-phase">${ex.trainingsphase}</span>` : '';
+        const img = ex.grafik_url
+          ? `<img class="card-image" src="${ex.grafik_url}" alt="${ex.titel}" loading="lazy" onerror="this.outerHTML='<div class=card-image-placeholder>⚽</div>'">`
+          : `<div class="card-image-placeholder">⚽</div>`;
+
+        return `
+          <a href="${href}" class="exercise-card">
+            ${img}
+            <div class="card-body">
+              <h3 class="card-title">${ex.titel}</h3>
+              <div class="card-tags">${jugendTags}${skillTags}${phaseTag}</div>
+              <p class="card-desc">${ex.kurzbeschreibung || ''}</p>
+            </div>
+          </a>`;
+      }).join('');
+    }
+
+    // ── Daten laden ───────────────────────────────────────────────
     fetch('https://raw.githubusercontent.com/roberttgreve-web/coachunited-test/main/public/exercises.json')
       .then(r => r.json())
-      .then(exercises => {
-        const list = document.getElementById('exercises-list');
-        if (!exercises.length) {
-          list.innerHTML = '<p style="text-align:center;color:#999;padding:20px;font-size:14px;">Noch keine Übungen veröffentlicht.</p>';
-          return;
-        }
-        list.innerHTML = exercises.map(ex => {
-          const jugendTags = (ex.jugend || []).map(j =>
-            `<span class="tag tag-jugend">${j.replace('-Jugend','')}</span>`).join('');
-          const skillTags = (ex.skills || []).slice(0,2).map(s =>
-            `<span class="tag tag-skill">${s}</span>`).join('');
-          const phaseTag = ex.trainingsphase
-            ? `<span class="tag tag-phase">${ex.trainingsphase}</span>` : '';
-          const href = ex.url_slug ? `/uebung/${ex.url_slug}` : '#';
-          return `
-            <a href="${href}" class="exercise-card clickable">
-              <h3 class="exercise-title">${ex.titel}</h3>
-              <div class="exercise-tags">${jugendTags}${skillTags}${phaseTag}</div>
-              <p class="exercise-description">${ex.kurzbeschreibung || ''}</p>
-            </a>`;
-        }).join('');
+      .then(data => {
+        allExercises = data;
+        buildSkillDropdown(data);
+        preSelectJugend(urlJugend);
+        renderExercises();
       })
       .catch(() => {
         document.getElementById('exercises-list').innerHTML =
-          '<p style="text-align:center;color:#999;padding:20px;font-size:14px;">Übungen konnten nicht geladen werden.</p>';
+          '<div class="empty-state">Übungen konnten nicht geladen werden.</div>';
       });
-  </script>
-</body>
-</html>
 
-  <script>
-    function toggleDropdown(id) {
-      // Close all dropdowns first
-      ['jugend', 'skill', 'phase'].forEach(dropId => {
-        const dropdown = document.getElementById(dropId + '-dropdown');
-        if (dropId !== id && dropdown) {
-          dropdown.classList.remove('active');
-        }
-      });
-      
-      // Toggle clicked dropdown
-      const dropdown = document.getElementById(id + '-dropdown');
-      if (dropdown) {
-        dropdown.classList.toggle('active');
-      }
+    // ── Burger Drawer ─────────────────────────────────────────────
+    function openDrawer() {
+      document.getElementById('drawer').classList.add('open');
+      document.getElementById('drawer-overlay').classList.add('open');
     }
-    
-    // Close dropdowns when clicking outside
-    document.addEventListener('click', function(event) {
-      if (!event.target.closest('.filter-dropdown')) {
-        document.querySelectorAll('.dropdown-menu').forEach(menu => {
-          menu.classList.remove('active');
-        });
-      }
-    });
+    function closeDrawer() {
+      document.getElementById('drawer').classList.remove('open');
+      document.getElementById('drawer-overlay').classList.remove('open');
+    }
   </script>
 </body>
 </html>
