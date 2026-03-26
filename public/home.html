@@ -3,214 +3,306 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>COACH UNITED - Home</title>
+  <title>COACH UNITED</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
     body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-      background: #f5f5f5;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #f0f2f5;
       display: flex;
       justify-content: center;
       align-items: center;
       min-height: 100vh;
     }
-    
+
     .container {
       width: 375px;
       height: 667px;
-      background: white;
-      border-radius: 24px;
+      background: #ffffff;
+      border-radius: 28px;
       overflow: hidden;
-      box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+      box-shadow: 0 24px 64px rgba(0,0,0,0.12);
       position: relative;
+      display: flex;
+      flex-direction: column;
     }
-    
+
+    /* Main content */
     .content {
+      flex: 1;
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 80px 32px 100px;
-      text-align: center;
+      padding: 52px 32px 24px;
+      overflow: hidden;
     }
-    
-    h1 {
-      font-size: 32px;
+
+    /* Logo */
+    .logo {
+      width: 88px;
+      height: 88px;
+      object-fit: contain;
+      margin-bottom: 20px;
+    }
+
+    /* Wordmark */
+    .wordmark {
+      font-size: 22px;
       font-weight: 700;
       color: #003D82;
-      letter-spacing: 2px;
-      margin: 0 0 12px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
     }
-    
+
+    /* Subtitle */
     .subtitle {
-      font-size: 15px;
-      color: #666;
-      margin: 0 0 6px;
-    }
-    
-    .tagline {
       font-size: 14px;
-      color: #999;
-      margin: 0 0 80px;
+      font-weight: 400;
+      color: #5a6476;
+      margin-bottom: 4px;
+      text-align: center;
+      line-height: 1.5;
     }
-    
-    select {
+
+    .tagline {
+      font-size: 12px;
+      font-weight: 300;
+      color: #9aa3b0;
+      letter-spacing: 0.5px;
+      margin-bottom: 44px;
+    }
+
+    /* Divider */
+    .divider {
+      width: 40px;
+      height: 1px;
+      background: #003D82;
+      opacity: 0.25;
+      margin-bottom: 36px;
+    }
+
+    /* Selection label */
+    .selection-label {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #003D82;
+      opacity: 0.6;
+      margin-bottom: 16px;
+      align-self: flex-start;
+    }
+
+    /* Jugend pills */
+    .jugend-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
       width: 100%;
-      padding: 24px 20px;
-      border: 2px solid #003D82;
-      border-radius: 16px;
-      font-size: 20px;
-      font-weight: 500;
-      text-align: center;
-      text-align-last: center;
-      color: #999;
+      margin-bottom: 32px;
+    }
+
+    .jugend-pill {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 14px 8px;
+      border: 1.5px solid #e4e8ef;
+      border-radius: 14px;
       background: white;
-      margin-bottom: 24px;
       cursor: pointer;
-      appearance: none;
-      background-image: url('data:image/svg+xml;charset=UTF-8,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2716%27 height=%2712%27 viewBox=%270 0 16 12%27%3e%3cpath fill=%27%23003D82%27 d=%27M1.88 0L8 6.12 14.12 0 16 1.88l-8 8-8-8z%27/%3e%3c/svg%3e');
-      background-repeat: no-repeat;
-      background-position: right 20px center;
-      box-shadow: 0 4px 12px rgba(0,61,130,0.15);
+      transition: all 0.18s ease;
     }
-    
-    select:focus {
-      outline: none;
+
+    .jugend-pill:hover {
       border-color: #003D82;
-      box-shadow: 0 4px 16px rgba(0, 61, 130, 0.25);
+      background: #f5f8ff;
     }
-    
-    select:valid {
-      color: #333;
+
+    .jugend-pill.selected {
+      border-color: #003D82;
+      background: #003D82;
     }
-    
-    option {
-      text-align: center;
+
+    .pill-letter {
+      font-size: 18px;
+      font-weight: 700;
+      color: #003D82;
+      line-height: 1;
+      margin-bottom: 4px;
+      transition: color 0.18s ease;
     }
-    
+
+    .jugend-pill.selected .pill-letter {
+      color: white;
+    }
+
+    .pill-age {
+      font-size: 9px;
+      font-weight: 400;
+      color: #9aa3b0;
+      transition: color 0.18s ease;
+    }
+
+    .jugend-pill.selected .pill-age {
+      color: rgba(255,255,255,0.7);
+    }
+
+    /* CTA Button */
     .cta-button {
       width: 100%;
-      padding: 20px;
+      padding: 17px;
       background: #003D82;
       color: white;
       border: none;
-      border-radius: 16px;
-      font-size: 20px;
+      border-radius: 14px;
+      font-family: 'Inter', sans-serif;
+      font-size: 15px;
       font-weight: 600;
+      letter-spacing: 0.3px;
       cursor: pointer;
-      box-shadow: 0 4px 16px rgba(0, 61, 130, 0.3);
-      transition: all 0.2s;
+      transition: all 0.18s ease;
+      opacity: 0.4;
+      pointer-events: none;
     }
-    
-    .cta-button:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 20px rgba(0, 61, 130, 0.4);
+
+    .cta-button.active {
+      opacity: 1;
+      pointer-events: all;
     }
-    
-    .cta-button:active {
-      transform: translateY(0);
+
+    .cta-button.active:hover {
+      background: #002d63;
+      transform: translateY(-1px);
+      box-shadow: 0 8px 24px rgba(0, 61, 130, 0.28);
     }
-    
+
     /* Bottom Navigation */
     .bottom-nav {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
       background: white;
-      border-top: 1px solid #e0e0e0;
+      border-top: 1px solid #f0f2f5;
       display: flex;
       justify-content: space-around;
-      padding: 8px 0;
-      box-shadow: 0 -2px 10px rgba(0,0,0,0.05);
+      padding: 10px 0 14px;
     }
-    
+
     .nav-item {
       flex: 1;
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 4px;
+      gap: 3px;
       border: none;
       background: none;
       cursor: pointer;
-      padding: 8px;
+      padding: 6px;
       text-decoration: none;
+      color: #c0c7d3;
+      transition: color 0.15s;
     }
-    
-    .nav-item.active {
-      color: #003D82;
-    }
-    
-    .nav-item:not(.active) {
-      color: #999;
-    }
-    
+
+    .nav-item.active { color: #003D82; }
+
     .nav-icon {
-      font-size: 20px;
+      width: 22px;
+      height: 22px;
     }
-    
+
     .nav-label {
-      font-size: 11px;
+      font-family: 'Inter', sans-serif;
+      font-size: 10px;
       font-weight: 500;
+      letter-spacing: 0.2px;
     }
   </style>
 </head>
 <body>
   <div class="container">
     <div class="content">
-      <h1>COACH UNITED</h1>
+
+      <img src="/logo.png" alt="Coach United Logo" class="logo">
+
+      <p class="wordmark">Coach United</p>
       <p class="subtitle">Trainingsübungen für den Kinderfußball</p>
-      <p class="tagline">Erprobt. Kostenlos. Direkt einsetzen.</p>
-      
-      <select id="jugend">
-        <option value="" selected disabled>Wähle deine Jugend</option>
-        <option value="E">E-Jugend (U10/U11)</option>
-        <option value="D">D-Jugend (U12/U13)</option>
-        <option value="C">C-Jugend (U14/U15)</option>
-        <option value="B">B-Jugend (U16/U17)</option>
-        <option value="A">A-Jugend (U18/U19)</option>
-      </select>
-      
-      <button class="cta-button" onclick="goToExercises()">Los geht's</button>
+      <p class="tagline">Erprobt · Kostenlos · Direkt einsetzen</p>
+
+      <div class="divider"></div>
+
+      <p class="selection-label">Für welche Jugend trainierst du?</p>
+
+      <div class="jugend-grid">
+        <button class="jugend-pill" data-value="G-Jugend" onclick="selectJugend(this)">
+          <span class="pill-letter">G</span>
+          <span class="pill-age">U6–U7</span>
+        </button>
+        <button class="jugend-pill" data-value="F-Jugend" onclick="selectJugend(this)">
+          <span class="pill-letter">F</span>
+          <span class="pill-age">U8–U9</span>
+        </button>
+        <button class="jugend-pill" data-value="E-Jugend" onclick="selectJugend(this)">
+          <span class="pill-letter">E</span>
+          <span class="pill-age">U10–U11</span>
+        </button>
+        <button class="jugend-pill" data-value="D-Jugend" onclick="selectJugend(this)">
+          <span class="pill-letter">D</span>
+          <span class="pill-age">U12–U13</span>
+        </button>
+      </div>
+
+      <button class="cta-button" id="cta" onclick="goToExercises()">Übungen anzeigen</button>
+
     </div>
-    
+
     <!-- Bottom Navigation -->
     <div class="bottom-nav">
       <a href="/home" class="nav-item active">
-        <span class="nav-icon">🏠</span>
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+          <polyline points="9 22 9 12 15 12 15 22"/>
+        </svg>
         <span class="nav-label">Home</span>
       </a>
       <a href="/uebungen" class="nav-item">
-        <span class="nav-icon">⚽</span>
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"/>
+          <path d="M12 8v8M8 12h8"/>
+        </svg>
         <span class="nav-label">Übungen</span>
       </a>
       <a href="https://www.whatsapp.com/channel/0029VbAqTP68kyyEFg3oyX2t" target="_blank" class="nav-item">
-        <span class="nav-icon">💬</span>
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+        </svg>
         <span class="nav-label">WhatsApp</span>
       </a>
       <a href="/spenden" class="nav-item">
-        <span class="nav-icon">😇</span>
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+        </svg>
         <span class="nav-label">Spenden</span>
       </a>
     </div>
   </div>
-  
+
   <script>
+    let selected = null;
+
+    function selectJugend(btn) {
+      document.querySelectorAll('.jugend-pill').forEach(p => p.classList.remove('selected'));
+      btn.classList.add('selected');
+      selected = btn.dataset.value;
+      document.getElementById('cta').classList.add('active');
+    }
+
     function goToExercises() {
-      const jugend = document.getElementById('jugend').value;
-      if (!jugend) {
-        alert('Bitte wähle zuerst eine Jugend aus.');
-        return;
-      }
-      // Für jetzt: Alle führen zur gleichen Übungsliste (Filter später)
-      window.location.href = 'uebungen.html';
+      if (!selected) return;
+      window.location.href = '/uebungen';
     }
   </script>
 </body>
 </html>
- 
