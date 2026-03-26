@@ -33,7 +33,7 @@
     /* ── Header ── */
     .header {
       background: white;
-      padding: 4px 16px;
+      padding: 12px 16px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -46,7 +46,7 @@
     .back-btn {
       display: flex;
       align-items: center;
-      gap: 6px;
+      gap: 5px;
       background: none;
       border: none;
       cursor: pointer;
@@ -57,10 +57,7 @@
       font-weight: 500;
       padding: 4px 0;
     }
-    .back-btn svg { width: 18px; height: 18px; }
-
-    .logo-link { display: flex; align-items: center; text-decoration: none; }
-    .logo-link img { width: 80px; height: 80px; object-fit: contain; }
+    .back-btn svg { width: 18px; height: 18px; flex-shrink: 0; }
 
     .burger-btn {
       background: none; border: none; cursor: pointer;
@@ -74,18 +71,16 @@
     /* ── Graphic ── */
     .graphics-container {
       width: 100%;
-      background: #f5f8ff;
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 24px 32px;
       border-bottom: 1px solid #f0f2f5;
     }
     .graphics-container img {
       width: 100%;
       height: auto;
       object-fit: contain;
-      max-height: 220px;
+      display: block;
     }
 
     /* ── Content ── */
@@ -139,9 +134,14 @@
       border-radius: 14px;
       margin-bottom: 10px;
       overflow: hidden;
+      transition: border-color 0.15s;
+    }
+    details[open] {
+      border-color: #1B6BF4;
+      border-left-width: 3px;
     }
     summary {
-      padding: 16px 18px;
+      padding: 15px 18px;
       font-weight: 600;
       font-size: 15px;
       cursor: pointer;
@@ -156,6 +156,11 @@
     }
     summary:hover { background: #fafbff; }
     summary::-webkit-details-marker { display: none; }
+    summary .dot {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
     summary .title { flex: 1; }
     summary .arrow {
       width: 18px; height: 18px;
@@ -163,12 +168,12 @@
       transition: transform 0.2s;
       flex-shrink: 0;
     }
-    details[open] summary .arrow { transform: rotate(90deg); }
-    details[open] summary { border-bottom: 1px solid #edf0f5; }
+    details[open] summary .arrow { transform: rotate(90deg); color: #1B6BF4; }
+    details[open] summary { border-bottom: 1px solid #edf0f5; background: #f7f9ff; }
 
     .accordion-content {
       padding: 16px 18px 18px;
-      background: #fafbff;
+      background: white;
     }
     .accordion-content p {
       font-size: 15px;
@@ -391,10 +396,7 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
           <polyline points="15 18 9 12 15 6"/>
         </svg>
-        Zurück
-      </a>
-      <a href="/home" class="logo-link">
-        <img src="/logo.png" alt="Coach United">
+        Übungen
       </a>
       <button class="burger-btn" onclick="openDrawer()">
         <span></span><span></span><span></span>
@@ -422,6 +424,7 @@
 
         <details open>
           <summary>
+            <span class="dot" style="background:#1B6BF4;"></span>
             <span class="title">Aufbau</span>
             <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
           </summary>
@@ -430,6 +433,7 @@
 
         <details open>
           <summary>
+            <span class="dot" style="background:#1B6BF4;"></span>
             <span class="title">Durchführung</span>
             <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
           </summary>
@@ -438,6 +442,7 @@
 
         <details>
           <summary>
+            <span class="dot" style="background:#f59e0b;"></span>
             <span class="title">Coaching-Fokus</span>
             <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
           </summary>
@@ -446,6 +451,7 @@
 
         <details>
           <summary>
+            <span class="dot" style="background:#22c55e;"></span>
             <span class="title">Übung leichter machen</span>
             <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
           </summary>
@@ -454,6 +460,7 @@
 
         <details>
           <summary>
+            <span class="dot" style="background:#ef4444;"></span>
             <span class="title">Übung schwieriger machen</span>
             <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
           </summary>
