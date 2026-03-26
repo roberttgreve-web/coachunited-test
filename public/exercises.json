@@ -12,6 +12,7 @@
     "varianten": "a) Nur mit schwachem Fuß dribbeln. b) Torabschluss ohne Ballstoppen. TOR SCHIESSEN UND VORRÜCKEN TOR SCHIESSEN UND VORRÜCKEN Die Spieler passen aus dem Dribbling durch farbige Hütchentore ins Minitor.",
     "quell_url": "https://coachunited.de/passen-aktiv-anfordern/",
     "jugend": [
+      "G-Jugend",
       "F-Jugend",
       "E-Jugend"
     ],
@@ -21,52 +22,17 @@
       "Torschuss",
       "Koordination"
     ],
-    "coaching_fokus": "• Blick heben vor dem Torabschluss; • Körperspannung beim Dribbling; • Schnelle Richtungswechsel üben",
-    "leichter_machen": "• Kürzere Distanz zum Tor; • Größere Tore verwenden",
-    "schwerer_machen": "• Nur mit schwachem Fuß dribbeln; • Torabschluss ohne Ballstoppen",
+    "coaching_fokus": "• Blick heben vor Abschluss; • Hüftstellung zum Tor ausrichten; • Kugel kontrolliert in Torecke schießen",
+    "leichter_machen": "• Tore näher zusammenstellen; • Dribbelstrecke verkürzen",
+    "schwerer_machen": "• Nur Schwachfuß erlaubt; • Tempodribbling zum Tor, ohne Ball zu stoppen",
     "status": "veroeffentlicht",
-    "alt_titel": "FARBIGES DRIBBLING-TOR-SPIEL",
+    "alt_titel": "Farbkodierte Torduelle",
     "seo_keyword": "Fußballübung Dribbling Kinder",
-    "url_slug": "farbiges-dribbling-tor-spiel",
-    "seo_meta_description": "Farbiges Dribbling-Tor-Spiel für Kinder (6-12 Jahre) fördert Ballkontrolle, Koordination und Torschuss",
-    "grafik_alt_text": "Kinder dribbeln in einer Fußballübung zu farbigen Toren und schließen ab",
-    "grafik_description": "Die Übung zeigt zwei Mannschaften, die nacheinander zu farbigen Toren dribbeln und darauf abschließen. Sie fördert Ballkontrolle, Koordination und Torschuss bei Kindern.",
-    "grafik_title": "Farbiges Dribbling-Tor-Spiel für Kinder",
-    "grafik_caption": "Kinder-Fußballübung: Farbiges Dribbling-Tor-Spiel"
-  },
-  {
-    "id": 2,
-    "titel": "TOR SCHIESSEN UND VORRÜCKEN",
-    "quell_trainingseinheit": "Pässe aktiv anfordern",
-    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/01/image-23.png",
-    "grafik_dateiname": "uebung-002-tor-schiessen-und-vorruecken.png",
-    "trainingsphase": "Aufwärmen",
-    "kurzbeschreibung": "Die Spieler passen aus dem Dribbling durch farbige Hütchentore ins Minitor.",
-    "aufbau": "Zwei Minitore, je ein Starthütchen 30m entfernt. Dazwischen vier verschiedenfarbige Hütchentore. Zwei Teams mit Ball an den Starthütchen.",
-    "durchfuehrung": "Erster Spieler dribbelt jeweils zum nächstgelegenen Hütchentor (hier: blau) und schließt ab. Kein Tor: Nächster Spieler aus dem Team läuft auch zu blau und versucht es. Bei Tor: Nächster Spieler darf zum nächsten Hütchentor (hier: gelb) vor und abschließen. Team, das zuerst aus allen vier Positionen getroffen hat, gewinnt.",
-    "varianten": "a) Nur mit schwachem Fuß dribbeln. b) Torabschluss ohne Ballstoppen. c) Distanz erhöhen. Pass mitnehmen und Tor erzielen Pass mitnehmen und Tor erzielen Spieler laufen zur Stange, fordern einen Pass vom seitlichen Hütchen und schließen nach Mitnahme auf das Tor ab.",
-    "quell_url": "https://coachunited.de/passen-aktiv-anfordern/",
-    "jugend": [
-      "G-Jugend",
-      "F-Jugend"
-    ],
-    "skills": [
-      "Passen",
-      "Ballkontrolle",
-      "Dribbeln",
-      "Torschuss"
-    ],
-    "coaching_fokus": "• Blick heben vor dem Abschluss; • Körper zwischen Ball und Tor positionieren; • Standbein leicht gebeugt, Schussbein durchstrecken",
-    "leichter_machen": "• Tore vergrößern; • Distanz zum Tor verringern",
-    "schwerer_machen": "• Nur schwacher Fuß erlaubt; • Torabschluss ohne Ballstoppen",
-    "status": "veroeffentlicht",
-    "alt_titel": "Torschuss-Parcours mit Vorwärtsbewegung",
-    "seo_keyword": "Fußballübung Torschuss Kinder",
-    "url_slug": "fussballubung-torschuss-kinder",
-    "seo_meta_description": "Effektive Fußballübung zum Torabschluss und Vorwärtsbewegung für Kinder von 6-12 Jahren",
-    "grafik_alt_text": "Kinder in einem Fußballtraining spielen den Ball durch bunte Tore in ein Miniaturtor",
-    "grafik_description": "Die Grafik zeigt einen Parcours mit bunten Hütchen-Toren, durch die Kinder im Fußballtraining den Ball dribbeln und auf ein Miniaturtor abschließen.",
-    "grafik_title": "Fußballübung Torschuss und Vorrücken für Kinder",
-    "grafik_caption": "Zielgerichtetes Training für Torschuss und Vorwärtsbewegung im Kinderfußball"
+    "url_slug": "fussballubung-dribbling-kinder",
+    "seo_meta_description": "Farbkodierter Torwettbewerb fördert das Dribbling, Ballkontrolle und Torabschluss bei Kindern von 6-12 Jahren. Einfach umsetzbare Fußballübung für G- bis E-Jugend.",
+    "grafik_alt_text": "Kinder dribbeln zwischen farbigen Toren und schießen aufs Minitor, Fußballtraining für Kinder",
+    "grafik_description": "Die Übung zeigt einen Koordinationsbewerb mit Farbkommandos, bei dem die Kinder zügig zum richtigen Tor dribbeln und abschließen müssen. Trainiert werden Ballkontrolle, Richtungswechsel und Torschuss.",
+    "grafik_title": "Farbkodierter Torwettbewerb - Fußballtraining für Kinder",
+    "grafik_caption": "Kindertraining: Farbige Tore erfordern schnelles Umschalten zwischen Dribbling und Abschluss"
   }
 ]
