@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trainingseinheiten – COACH UNITED</title>
+  <title>Trainingseinheit – COACH UNITED</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Barlow:wght@700;800&display=swap" rel="stylesheet">
@@ -22,7 +22,7 @@
     .container {
       width: 375px;
       min-height: 100vh;
-      background: #ffffff;
+      background: white;
       border-radius: 28px;
       overflow: hidden;
       box-shadow: 0 24px 64px rgba(0,0,0,0.12);
@@ -32,7 +32,7 @@
 
     .header {
       background: white;
-      padding: 4px 16px;
+      padding: 12px 16px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -42,33 +42,49 @@
       z-index: 20;
     }
 
-    .logo-link { display: flex; align-items: center; text-decoration: none; }
-    .logo-link img { width: 80px; height: 80px; object-fit: contain; }
+    .back-btn {
+      display: flex; align-items: center; gap: 5px;
+      background: none; border: none; cursor: pointer;
+      text-decoration: none; color: #1B6BF4;
+      font-size: 14px; font-weight: 500; padding: 4px 0;
+    }
+    .back-btn svg { width: 18px; height: 18px; flex-shrink: 0; }
 
     .burger-btn {
       background: none; border: none; cursor: pointer;
-      padding: 4px; color: #333;
-      display: flex; flex-direction: column; gap: 5px;
+      padding: 4px; display: flex; flex-direction: column; gap: 5px;
     }
     .burger-btn span { display: block; width: 22px; height: 2px; background: #333; border-radius: 2px; }
 
     .content {
       flex: 1;
       overflow-y: auto;
-      padding: 20px 16px 80px;
+      padding: 24px 16px 100px;
     }
 
-    .section-title {
+    h1 {
       font-family: 'Barlow', 'Inter', sans-serif;
-      font-size: 13px;
+      font-size: 22px;
+      font-weight: 800;
+      color: #0a1628;
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+
+    .section-label {
+      font-family: 'Barlow', 'Inter', sans-serif;
+      font-size: 11px;
       font-weight: 700;
       color: #9aa3b0;
       text-transform: uppercase;
       letter-spacing: 1px;
-      margin-bottom: 14px;
+      margin-bottom: 10px;
     }
 
-    .einheit-card {
+    /* Übungs-Karte innerhalb der Einheit */
+    .uebung-card {
+      display: flex;
+      align-items: stretch;
       text-decoration: none;
       color: inherit;
       background: white;
@@ -78,50 +94,48 @@
       overflow: hidden;
       box-shadow: 0 2px 8px rgba(0,0,0,0.04);
       transition: box-shadow 0.18s, transform 0.18s;
-      display: flex;
-      align-items: stretch;
     }
-    .einheit-card:hover {
+    .uebung-card:hover {
       box-shadow: 0 6px 20px rgba(0,0,0,0.09);
       transform: translateY(-1px);
     }
 
-    .card-accent {
-      width: 5px;
-      background: #1B6BF4;
+    .card-position {
+      width: 40px;
       flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Barlow', 'Inter', sans-serif;
+      font-size: 18px;
+      font-weight: 800;
+      color: #d0d6e0;
     }
 
     .card-body {
       flex: 1;
-      padding: 14px;
+      padding: 12px 12px 12px 0;
       min-width: 0;
     }
 
-    .card-title {
-      font-size: 14px;
-      font-weight: 600;
-      color: #0a1628;
-      line-height: 1.4;
-      margin-bottom: 6px;
-    }
-
-    .card-meta {
-      display: flex;
-      gap: 6px;
-      flex-wrap: wrap;
-    }
-
-    .phase-tag {
+    .card-phase {
       font-size: 10px;
       font-weight: 600;
       padding: 2px 7px;
       border-radius: 20px;
-      white-space: nowrap;
+      display: inline-block;
+      margin-bottom: 4px;
     }
     .phase-aufwaermen  { background: #e8f4fd; color: #1a6fa8; }
     .phase-hauptteil   { background: #e8f0ff; color: #1B6BF4; }
     .phase-spielformat { background: #e8faf0; color: #1a8a4a; }
+
+    .card-title {
+      font-size: 13px;
+      font-weight: 600;
+      color: #0a1628;
+      line-height: 1.4;
+    }
 
     .card-arrow {
       display: flex;
@@ -131,18 +145,18 @@
     }
     .card-arrow svg { width: 16px; height: 16px; }
 
+    #loading { padding: 60px 24px; text-align: center; color: #9aa3b0; font-size: 15px; }
+    #not-found { padding: 60px 24px; text-align: center; color: #9aa3b0; font-size: 15px; }
+    #not-found a { color: #1B6BF4; text-decoration: none; }
+
     /* Bottom Nav */
     .bottom-nav {
-      position: fixed;
-      bottom: 0; left: 50%;
+      position: fixed; bottom: 0; left: 50%;
       transform: translateX(-50%);
-      width: 375px;
-      background: white;
+      width: 375px; background: white;
       border-top: 1px solid #f0f2f5;
-      display: flex;
-      justify-content: space-around;
-      padding: 10px 0 14px;
-      z-index: 20;
+      display: flex; justify-content: space-around;
+      padding: 10px 0 14px; z-index: 20;
       box-shadow: 0 -2px 12px rgba(0,0,0,0.06);
     }
     .nav-item {
@@ -172,18 +186,28 @@
   <div class="container">
 
     <header class="header">
-      <a href="/home" class="logo-link">
-        <img src="/logo.png" alt="Coach United">
+      <a href="/einheiten" class="back-btn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="15 18 9 12 15 6"/>
+        </svg>
+        Einheiten
       </a>
       <button class="burger-btn" onclick="openDrawer()">
         <span></span><span></span><span></span>
       </button>
     </header>
 
-    <div class="content">
-      <p class="section-title">Trainingseinheiten</p>
-      <div id="einheiten-list">
-        <div style="padding:40px 0; text-align:center; color:#9aa3b0; font-size:14px;">Einheiten werden geladen…</div>
+    <div id="loading">Einheit wird geladen…</div>
+    <div id="not-found" style="display:none;">
+      <p>Einheit nicht gefunden.</p><br>
+      <a href="/einheiten">← Zurück zur Übersicht</a>
+    </div>
+
+    <div id="einheit-content" style="display:none; flex:1; flex-direction:column;">
+      <div class="content">
+        <h1 id="titel"></h1>
+        <p class="section-label">5 Übungen</p>
+        <div id="uebungen-list"></div>
       </div>
     </div>
 
@@ -224,6 +248,7 @@
   </div>
 
   <script>
+    const slug = window.location.pathname.replace(/^\/einheit\//, '').replace(/\/$/, '');
     const JSON_URL = 'https://raw.githubusercontent.com/roberttgreve-web/coachunited-test/main/public/einheiten.json';
 
     const phaseClass = {
@@ -235,24 +260,27 @@
     fetch(JSON_URL)
       .then(r => r.json())
       .then(einheiten => {
-        const list = document.getElementById('einheiten-list');
-        if (!einheiten.length) {
-          list.innerHTML = '<div style="padding:40px 0; text-align:center; color:#9aa3b0; font-size:14px;">Keine Einheiten vorhanden.</div>';
+        const einheit = einheiten.find(e => e.url_slug === slug);
+        if (!einheit) {
+          document.getElementById('loading').style.display = 'none';
+          document.getElementById('not-found').style.display = 'block';
           return;
         }
 
-        list.innerHTML = einheiten.map(e => {
-          const phases = [...new Set(e.uebungen.map(u => u.phase).filter(Boolean))];
-          const phaseTags = phases.map(p =>
-            `<span class="phase-tag ${phaseClass[p] || 'phase-hauptteil'}">${p}</span>`
-          ).join('');
+        document.title = einheit.titel + ' – COACH UNITED';
+        document.getElementById('titel').textContent = einheit.titel;
 
+        const list = document.getElementById('uebungen-list');
+        list.innerHTML = einheit.uebungen.map(u => {
+          const phaseTag = u.phase
+            ? `<span class="card-phase ${phaseClass[u.phase] || 'phase-hauptteil'}">${u.phase}</span>`
+            : '';
           return `
-            <a href="/einheit/${e.url_slug}" class="einheit-card">
-              <div class="card-accent"></div>
+            <a href="/uebung/${u.slug}?from=${slug}" class="uebung-card">
+              <div class="card-position">${u.position}</div>
               <div class="card-body">
-                <p class="card-title">${e.titel}</p>
-                <div class="card-meta">${phaseTags}</div>
+                ${phaseTag}
+                <p class="card-title">${u.titel}</p>
               </div>
               <div class="card-arrow">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
@@ -261,10 +289,13 @@
               </div>
             </a>`;
         }).join('');
+
+        document.getElementById('loading').style.display = 'none';
+        document.getElementById('einheit-content').style.display = 'flex';
       })
       .catch(() => {
-        document.getElementById('einheiten-list').innerHTML =
-          '<div style="padding:40px 0; text-align:center; color:#9aa3b0; font-size:14px;">Einheiten konnten nicht geladen werden.</div>';
+        document.getElementById('loading').style.display = 'none';
+        document.getElementById('not-found').style.display = 'block';
       });
 
     function openDrawer() {

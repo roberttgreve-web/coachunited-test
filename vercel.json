@@ -35,6 +35,10 @@
       "destination": "/einheiten.html"
     },
     {
+      "source": "/einheit/:slug",
+      "destination": "/einheit-detail.html"
+    },
+    {
       "source": "/wissen",
       "destination": "/wissen.html"
     },

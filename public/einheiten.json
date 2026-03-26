@@ -1,0 +1,1450 @@
+[
+  {
+    "titel": "Pässe aktiv anfordern",
+    "url_slug": "paesse-aktiv-anfordern",
+    "quell_url": "https://coachunited.de/passen-aktiv-anfordern/",
+    "uebungen": [
+      {
+        "position": 1,
+        "phase": "Aufwärmen",
+        "titel": "FARBEN-TOR-WETTKAMPF",
+        "slug": "farben-tor-wettkampf"
+      },
+      {
+        "position": 2,
+        "phase": "Aufwärmen",
+        "titel": "TOR SCHIESSEN UND VORRÜCKEN",
+        "slug": "tor-schiessen-und-vorruecken"
+      },
+      {
+        "position": 3,
+        "phase": "Hauptteil",
+        "titel": "PASS MITNEHMEN UND TOR ERZIELEN",
+        "slug": "pass-mitnehmen-und-tor-erzielen"
+      },
+      {
+        "position": 4,
+        "phase": "Hauptteil",
+        "titel": "PASS MITNEHMEN UND IM 1 GEGEN 1 DURCHSETZEN",
+        "slug": "pass-mitnehmen-und-im-1-gegen-1-durchsetzen"
+      },
+      {
+        "position": 5,
+        "phase": "Spielformat",
+        "titel": "VOM ECK INS TOR",
+        "slug": "vom-eck-ins-tor"
+      }
+    ]
+  },
+  {
+    "titel": "Technik im Fokus: Sauber dribbeln",
+    "url_slug": "technik-im-fokus-sauber-dribbeln",
+    "quell_url": "https://coachunited.de/technik-im-fokus-sauber-dribbeln/",
+    "uebungen": [
+      {
+        "position": 1,
+        "phase": "Aufwärmen",
+        "titel": "ZWEI PASSFELDER",
+        "slug": "zwei-passfelder"
+      },
+      {
+        "position": 2,
+        "phase": "Aufwärmen",
+        "titel": "SCHWEINCHEN IN DER MITTE",
+        "slug": "schweinchen-in-der-mitte"
+      },
+      {
+        "position": 3,
+        "phase": "Hauptteil",
+        "titel": "ERST SLALOM, DANN TORSCHUSS",
+        "slug": "erst-slalom-dann-torschuss"
+      },
+      {
+        "position": 4,
+        "phase": "Hauptteil",
+        "titel": "ERST SLALOM, DANN 1 GEGEN 1",
+        "slug": "erst-slalom-dann-1-gegen-1"
+      },
+      {
+        "position": 5,
+        "phase": "Spielformat",
+        "titel": "DRIBBELDUELL AUF DREI FELDERN",
+        "slug": "dribbelduell-auf-drei-feldern"
+      }
+    ]
+  },
+  {
+    "titel": "Reifen-Warmup und Angriffssituationen",
+    "url_slug": "reifen-warmup-und-angriffssituationen",
+    "quell_url": "https://coachunited.de/reifen-warmup-und-angriffssituationen/",
+    "uebungen": [
+      {
+        "position": 1,
+        "phase": "Aufwärmen",
+        "titel": "REIFEN SUCHEN",
+        "slug": "reifen-suchen"
+      },
+      {
+        "position": 2,
+        "phase": "Aufwärmen",
+        "titel": "REIFENPASS",
+        "slug": "reifenpass"
+      },
+      {
+        "position": 4,
+        "phase": "Hauptteil",
+        "titel": "SLALOM GEWINNEN UND ANGREIFEN",
+        "slug": "slalom-gewinnen-und-angreifen"
+      },
+      {
+        "position": 5,
+        "phase": "Spielformat",
+        "titel": "BLITZTURNIER MIT GOLDEN GOAL",
+        "slug": "blitzturnier-mit-golden-goal"
+      }
+    ]
+  },
+  {
+    "titel": "Breite schaffen mit Feldzonen",
+    "url_slug": "breite-schaffen-mit-feldzonen",
+    "quell_url": "https://coachunited.de/breite-schaffen-mit-feldzonen/",
+    "uebungen": [
+      {
+        "position": 1,
+        "phase": "Aufwärmen",
+        "titel": "KETTENSPRINT",
+        "slug": "kettensprint"
+      },
+      {
+        "position": 5,
+        "phase": "Spielformat",
+        "titel": "TORERFOLG DURCH HÜTCHEN-BALL-TREFFER VERDOPPELN",
+        "slug": "torerfolg-durch-huetchen-ball-treffer-verdoppeln"
+      }
+    ]
+  },
+  {
+    "titel": "Flankenläufe spielerisch trainieren",
+    "url_slug": "flankenlaeufe-spielerisch-trainieren",
+    "quell_url": "https://coachunited.de/flankenlaufe-spielerisch-trainieren/",
+    "uebungen": [
+      {
+        "position": 1,
+        "phase": "Aufwärmen",
+        "titel": "WACH SEIN, BALL KLAUEN",
+        "slug": "wach-sein-ball-klauen"
+      },
+      {
+        "position": 2,
+        "phase": "Aufwärmen",
+        "titel": "FUSSBALL-BRENNBALL",
+        "slug": "fussball-brennball"
+      },
+      {
+        "position": 3,
+        "phase": "Hauptteil",
+        "titel": "FLANKENLAUF MIT TORABSCHLUSS",
+        "slug": "flankenlauf-mit-torabschluss"
+      },
+      {
+        "position": 4,
+        "phase": "Hauptteil",
+        "titel": "VIER TORE, VIELE BÄLLE",
+        "slug": "vier-tore-viele-baelle"
+      },
+      {
+        "position": 6,
+        "phase": "Spielformat",
+        "titel": "M, FLANKENLAUF UND PASS INS 1 GEGEN 1",
+        "slug": "m-flankenlauf-und-pass-ins-1-gegen-1"
+      }
+    ]
+  },
+  {
+    "titel": "Positionen halten auf dem Feld mit dem Bahnenspiel",
+    "url_slug": "positionen-halten-auf-dem-feld-mit-dem-bahnenspiel",
+    "quell_url": "https://coachunited.de/positionen-halten-auf-dem-feld-mit-dem-bahnenspiel/",
+    "uebungen": [
+      {
+        "position": 1,
+        "phase": "Aufwärmen",
+        "titel": "DER OHNE BALL VERLIERT",
+        "slug": "der-ohne-ball-verliert"
+      },
+      {
+        "position": 3,
+        "phase": "Hauptteil",
+        "titel": "PASS VERARBEITEN UND AUS DER DREHUNG ZUM SCHUSS KOMMEN",
+        "slug": "pass-verarbeiten-und-aus-der-drehung-zum-schuss-kommen"
+      },
+      {
+        "position": 4,
+        "phase": "Hauptteil",
+        "titel": "PASS VERARBEITEN UND INS 1 GEGEN 1 STARTEN",
+        "slug": "pass-verarbeiten-und-ins-1-gegen-1-starten"
+      },
+      {
+        "position": 5,
+        "phase": "Spielformat",
+        "titel": "BAHNENSPIEL",
+        "slug": "bahnenspiel"
+      }
+    ]
+  },
+  {
+    "titel": "Schnell reagieren, dann durchsetzen und schießen",
+    "url_slug": "schnell-reagieren-dann-durchsetzen-und-schiessen",
+    "quell_url": "https://coachunited.de/schnell-reagieren-dann-durchsetzen-und-schiesen/",
+    "uebungen": [
+      {
+        "position": 1,
+        "phase": "Aufwärmen",
+        "titel": "SCHNELL REAGIEREN UND BALL ANFORDERN",
+        "slug": "schnell-reagieren-und-ball-anfordern"
+      },
+      {
+        "position": 2,
+        "phase": "Aufwärmen",
+        "titel": "SCHNELL REAGIEREN UND INS 1 GEGEN 1",
+        "slug": "schnell-reagieren-und-ins-1-gegen-1"
+      },
+      {
+        "position": 3,
+        "phase": "Hauptteil",
+        "titel": "TORSCHUSS-CHALLENGE",
+        "slug": "torschuss-challenge"
+      },
+      {
+        "position": 4,
+        "phase": "Hauptteil",
+        "titel": "FERNSCHUSS-CHALLENGE",
+        "slug": "fernschuss-challenge"
+      },
+      {
+        "position": 5,
+        "phase": "Spielformat",
+        "titel": "AUSWECHSLER HOLEN DIE PUNKTE",
+        "slug": "auswechsler-holen-die-punkte"
+      }
+    ]
+  },
+  {
+    "titel": "Slalom, 1 gegen 1 und Dribbelduelle",
+    "url_slug": "slalom-1-gegen-1-und-dribbelduelle",
+    "quell_url": "https://coachunited.de/slalom-1-gegen-1-und-dribbelduelle/",
+    "uebungen": [
+      {
+        "position": 1,
+        "phase": "Aufwärmen",
+        "titel": "DER BALL BEFREIT",
+        "slug": "der-ball-befreit"
+      },
+      {
+        "position": 2,
+        "phase": "Aufwärmen",
+        "titel": "DAS TOR BEWEGT SICH!",
+        "slug": "das-tor-bewegt-sich"
+      },
+      {
+        "position": 3,
+        "phase": "Hauptteil",
+        "titel": "ERST SLALOM, DANN TORSCHUSS",
+        "slug": "erst-slalom-dann-torschuss"
+      },
+      {
+        "position": 4,
+        "phase": "Hauptteil",
+        "titel": "ERST SLALOM, DANN 1 GEGEN 1",
+        "slug": "erst-slalom-dann-1-gegen-1"
+      },
+      {
+        "position": 5,
+        "phase": "Spielformat",
+        "titel": "DRIBBELDUELL AUF DREI FELDERN",
+        "slug": "dribbelduell-auf-drei-feldern"
+      }
+    ]
+  },
+  {
+    "titel": "Das Mittelfeld kontrollieren",
+    "url_slug": "das-mittelfeld-kontrollieren",
+    "quell_url": "https://coachunited.de/das-mittelfeld-kontrollieren/",
+    "uebungen": [
+      {
+        "position": 1,
+        "phase": "Aufwärmen",
+        "titel": "STANGEN-WETTHÜPFEN",
+        "slug": "stangen-wetthuepfen"
+      },
+      {
+        "position": 2,
+        "phase": "Aufwärmen",
+        "titel": "STANGEN-PASS MIT ABSCHLUSS",
+        "slug": "stangen-pass-mit-abschluss"
+      },
+      {
+        "position": 5,
+        "phase": "Spielformat",
+        "titel": "IN DER RICHTIGEN ANZAHL EINLAUFEN UND SPIELEN",
+        "slug": "in-der-richtigen-anzahl-einlaufen-und-spielen"
+      }
+    ]
+  },
+  {
+    "titel": "Vom sauberen Zweikampf in den Torschuss",
+    "url_slug": "vom-sauberen-zweikampf-in-den-torschuss",
+    "quell_url": "https://coachunited.de/vom-sauberen-zweikampf-in-den-torschuss/",
+    "uebungen": [
+      {
+        "position": 1,
+        "phase": "Aufwärmen",
+        "titel": "SAUBERER ZWEIKAMPF",
+        "slug": "sauberer-zweikampf"
+      },
+      {
+        "position": 2,
+        "phase": "Aufwärmen",
+        "titel": "SAUBERER ZWEIKAMPF MIT SLALOM",
+        "slug": "sauberer-zweikampf-mit-slalom"
+      },
+      {
+        "position": 5,
+        "phase": "Spielformat",
+        "titel": "5 BÄLLE-SPIEL",
+        "slug": "5-baelle-spiel"
+      }
+    ]
+  },
+  {
+    "titel": "Überzahl gemeinsam ausspielen",
+    "url_slug": "ueberzahl-gemeinsam-ausspielen",
+    "quell_url": "https://coachunited.de/uberzahl-gemeinsam-ausspielen/",
+    "uebungen": [
+      {
+        "position": 1,
+        "phase": "Aufwärmen",
+        "titel": "KEGEL-RENNEN",
+        "slug": "kegel-rennen"
+      },
+      {
+        "position": 3,
+        "phase": "Hauptteil",
+        "titel": "SPIELSTART MIT ÜBERZAHL AUS DEM REIFEN",
+        "slug": "spielstart-mit-ueberzahl-aus-dem-reifen"
+      },
+      {
+        "position": 4,
+        "phase": "Hauptteil",
+        "titel": "TURBO-SPIELSTART MIT ÜBERZAHL AUS DEM REIFEN",
+        "slug": "turbo-spielstart-mit-ueberzahl-aus-dem-reifen"
+      },
+      {
+        "position": 5,
+        "phase": "Spielformat",
+        "titel": "SPIEL UMS LEERE TOR",
+        "slug": "spiel-ums-leere-tor"
+      }
+    ]
+  },
+  {
+    "titel": "Den Ball in der Torzone verarbeiten",
+    "url_slug": "den-ball-in-der-torzone-verarbeiten",
+    "quell_url": "https://coachunited.de/den-ball-in-der-torzone-verarbeiten/",
+    "uebungen": [
+      {
+        "position": 1,
+        "phase": "Aufwärmen",
+        "titel": "6 DUELLE, 3 MINUTEN",
+        "slug": "6-duelle-3-minuten"
+      },
+      {
+        "position": 5,
+        "phase": "Spielformat",
+        "titel": "VOM TORSCHUSS INS SPIEL",
+        "slug": "vom-torschuss-ins-spiel"
+      }
+    ]
+  },
+  {
+    "titel": "Fangen spielen, bewegende Tore, Schüsse!",
+    "url_slug": "fangen-spielen-bewegende-tore-schuesse",
+    "quell_url": "https://coachunited.de/fangen-spielen-bewegende-tore-schusse/",
+    "uebungen": [
+      {
+        "position": 1,
+        "phase": "Aufwärmen",
+        "titel": "DER BALL BEFREIT",
+        "slug": "der-ball-befreit"
+      },
+      {
+        "position": 2,
+        "phase": "Aufwärmen",
+        "titel": "DAS TOR BEWEGT SICH!",
+        "slug": "das-tor-bewegt-sich"
+      },
+      {
+        "position": 3,
+        "phase": "Hauptteil",
+        "titel": "TORSCHUSS NACH FARBSIGNAL",
+        "slug": "torschuss-nach-farbsignal"
+      },
+      {
+        "position": 4,
+        "phase": "Hauptteil",
+        "titel": "TORSCHUSS MIT GEGNERPRÄSENZ",
+        "slug": "torschuss-mit-gegnerpraesenz"
+      },
+      {
+        "position": 5,
+        "phase": "Spielformat",
+        "titel": "AUS DEM KLEINFELDSPIEL ZUM TORSCHUSS",
+        "slug": "aus-dem-kleinfeldspiel-zum-torschuss"
+      }
+    ]
+  },
+  {
+    "titel": "Passen, schießen und einwechseln mit Tempo",
+    "url_slug": "passen-schiessen-und-einwechseln-mit-tempo",
+    "quell_url": "https://coachunited.de/passen-schiesen-und-einwechseln-mit-tempo/",
+    "uebungen": [
+      {
+        "position": 1,
+        "phase": "Aufwärmen",
+        "titel": "EINFACHES DRIBBELN UND PASSEN MIT TEMPO",
+        "slug": "einfaches-dribbeln-und-passen-mit-tempo"
+      },
+      {
+        "position": 3,
+        "phase": "Hauptteil",
+        "titel": "TORSCHUSS-CHALLENGE",
+        "slug": "torschuss-challenge"
+      },
+      {
+        "position": 4,
+        "phase": "Hauptteil",
+        "titel": "FERNSCHUSS-CHALLENGE",
+        "slug": "fernschuss-challenge"
+      },
+      {
+        "position": 5,
+        "phase": "Spielformat",
+        "titel": "AUSWECHSLER HOLEN DIE PUNKTE",
+        "slug": "auswechsler-holen-die-punkte"
+      }
+    ]
+  },
+  {
+    "titel": "Erst Spaß im Warmup – dann schießen, schießen, schießen",
+    "url_slug": "erst-spass-im-warmup-dann-schiessen-schiessen-schiessen",
+    "quell_url": "https://coachunited.de/erst-spas-im-warmup-dann-schiesen-schiesen-schiesen/",
+    "uebungen": [
+      {
+        "position": 1,
+        "phase": "Aufwärmen",
+        "titel": "ENTKOMME DEM BALLJÄGER",
+        "slug": "entkomme-dem-balljaeger"
+      },
+      {
+        "position": 2,
+        "phase": "Aufwärmen",
+        "titel": "DEN FRECHDACHS EINFANGEN",
+        "slug": "den-frechdachs-einfangen"
+      },
+      {
+        "position": 5,
+        "phase": "Spielformat",
+        "titel": "5 BÄLLE-SPIEL",
+        "slug": "5-baelle-spiel"
+      }
+    ]
+  },
+  {
+    "titel": "Hohe Pässe und Fernschüsse gekonnt einsetzen",
+    "url_slug": "hohe-paesse-und-fernschuesse-gekonnt-einsetzen",
+    "quell_url": "https://coachunited.de/hohe-passe-und-fernschusse-gekonnt-einsetzen/",
+    "uebungen": [
+      {
+        "position": 1,
+        "phase": "Aufwärmen",
+        "titel": "PRÄZISER PASS DURCH HÜTCHENTORE",
+        "slug": "praeziser-pass-durch-huetchentore"
+      },
+      {
+        "position": 2,
+        "phase": "Aufwärmen",
+        "titel": "HOHER PASS ÜBER HÜTCHENTORE",
+        "slug": "hoher-pass-ueber-huetchentore"
+      },
+      {
+        "position": 5,
+        "phase": "Spielformat",
+        "titel": "IN DER RICHTIGEN ANZAHL EINLAUFEN UND SPIELEN",
+        "slug": "in-der-richtigen-anzahl-einlaufen-und-spielen"
+      }
+    ]
+  },
+  {
+    "titel": "Klug aus engen Räumen befreien",
+    "url_slug": "klug-aus-engen-raeumen-befreien",
+    "quell_url": "https://coachunited.de/klug-aus-engen-raumen-befreien/",
+    "uebungen": [
+      {
+        "position": 1,
+        "phase": "Aufwärmen",
+        "titel": "KEGEL-RENNEN",
+        "slug": "kegel-rennen"
+      },
+      {
+        "position": 3,
+        "phase": "Hauptteil",
+        "titel": "AUS DER FRIEDLICHEN MITTELZONE INS SPIELGESCHEHEN",
+        "slug": "aus-der-friedlichen-mittelzone-ins-spielgeschehen"
+      },
+      {
+        "position": 4,
+        "phase": "Hauptteil",
+        "titel": "AUS DER UMKÄMPFTEN MITTELZONE INS SPIELGESCHEHEN",
+        "slug": "aus-der-umkaempften-mittelzone-ins-spielgeschehen"
+      },
+      {
+        "position": 5,
+        "phase": "Spielformat",
+        "titel": "BLITZTURNIER MIT GOLDEN GOAL",
+        "slug": "blitzturnier-mit-golden-goal"
+      }
+    ]
+  },
+  {
+    "titel": "Auch unter Gegnerdruck cool bleiben",
+    "url_slug": "auch-unter-gegnerdruck-cool-bleiben",
+    "quell_url": "https://coachunited.de/auch-unter-gegnerdruck-cool-bleiben/",
+    "uebungen": [
+      {
+        "position": 1,
+        "phase": "Aufwärmen",
+        "titel": "ERST IM FELD PASSEN, DANN FELDER TAUSCHEN",
+        "slug": "erst-im-feld-passen-dann-felder-tauschen"
+      },
+      {
+        "position": 3,
+        "phase": "Hauptteil",
+        "titel": "TORSCHUSS NACH FARBSIGNAL",
+        "slug": "torschuss-nach-farbsignal"
+      },
+      {
+        "position": 4,
+        "phase": "Hauptteil",
+        "titel": "TORSCHUSS MIT GEGNERPRÄSENZ",
+        "slug": "torschuss-mit-gegnerpraesenz"
+      },
+      {
+        "position": 5,
+        "phase": "Spielformat",
+        "titel": "AUS DEM KLEINFELDSPIEL ZUM TORSCHUSS",
+        "slug": "aus-dem-kleinfeldspiel-zum-torschuss"
+      }
+    ]
+  },
+  {
+    "titel": "Flexibel in Unterzahl und Überzahl",
+    "url_slug": "flexibel-in-unterzahl-und-ueberzahl",
+    "quell_url": "https://coachunited.de/flexibel-in-unterzahl-und-uberzahl/",
+    "uebungen": [
+      {
+        "position": 3,
+        "phase": "Hauptteil",
+        "titel": "2 GEGEN 1 AUF HEIM- UND AUSWÄRTSFELD",
+        "slug": "2-gegen-1-auf-heim-und-auswaertsfeld"
+      },
+      {
+        "position": 4,
+        "phase": "Hauptteil",
+        "titel": "FLEXIBLE TEAMGRÖSSE AUF HEIM- UND AUSWÄRTSFELD",
+        "slug": "flexible-teamgroesse-auf-heim-und-auswaertsfeld"
+      },
+      {
+        "position": 5,
+        "phase": "Spielformat",
+        "titel": "10 TORE BIS ZUR EINWECHSLUNG",
+        "slug": "10-tore-bis-zur-einwechslung"
+      }
+    ]
+  },
+  {
+    "titel": "Im viereckigen Technikfeld dribbeln, duellieren und spielen",
+    "url_slug": "im-viereckigen-technikfeld-dribbeln-duellieren-und-spielen",
+    "quell_url": "https://coachunited.de/im-viereckigen-technikfeld-dribbeln-duellieren-und-spielen/",
+    "uebungen": [
+      {
+        "position": 1,
+        "phase": "Aufwärmen",
+        "titel": "TECHNIKDRIBBLING IM FELD",
+        "slug": "technikdribbling-im-feld"
+      },
+      {
+        "position": 2,
+        "phase": "Aufwärmen",
+        "titel": "ZUSPIEL INS TECHNIK-FELD",
+        "slug": "zuspiel-ins-technik-feld"
+      },
+      {
+        "position": 4,
+        "phase": "Hauptteil",
+        "titel": "DUELL NACH DEM TORSCHUSS",
+        "slug": "duell-nach-dem-torschuss"
+      },
+      {
+        "position": 5,
+        "phase": "Spielformat",
+        "titel": "3-GEGEN-3 MIT ECKSTART",
+        "slug": "3-gegen-3-mit-eckstart"
+      }
+    ]
+  },
+  {
+    "titel": "Pässe kontrollieren und ins Tor treffen. Auch aus der Distanz.",
+    "url_slug": "paesse-kontrollieren-und-ins-tor-treffen-auch-aus-der-distanz",
+    "quell_url": "https://coachunited.de/passe-kontrollieren-und-ins-tor-treffen-auch-aus-der-distanz/",
+    "uebungen": [
+      {
+        "position": 1,
+        "phase": "Aufwärmen",
+        "titel": "UM DIE WETTE DRIBBELN UND PASSEN",
+        "slug": "um-die-wette-dribbeln-und-passen"
+      },
+      {
+        "position": 5,
+        "phase": "Spielformat",
+        "titel": "VOM TORSCHUSS INS SPIEL",
+        "slug": "vom-torschuss-ins-spiel"
+      }
+    ]
+  },
+  {
+    "titel": "Zweikampf gewinnen und direkt abschließen",
+    "url_slug": "zweikampf-gewinnen-und-direkt-abschliessen",
+    "quell_url": "https://coachunited.de/zweikampf-gewinnen-und-direkt-abschliesen/",
+    "uebungen": [
+      {
+        "position": 1,
+        "phase": "Aufwärmen",
+        "titel": "ENTKOMME DEM BALLJÄGER",
+        "slug": "entkomme-dem-balljaeger"
+      },
+      {
+        "position": 2,
+        "phase": "Aufwärmen",
+        "titel": "DEN FRECHDACHS EINFANGEN",
+        "slug": "den-frechdachs-einfangen"
+      },
+      {
+        "position": 5,
+        "phase": "Spielformat",
+        "titel": "QUADRAT-SPIEL AUF VIER KLEINE TORE",
+        "slug": "quadrat-spiel-auf-vier-kleine-tore"
+      }
+    ]
+  },
+  {
+    "titel": "Passen, tricksen, treffen, Jubel ausdenken",
+    "url_slug": "passen-tricksen-treffen-jubel-ausdenken",
+    "quell_url": "https://coachunited.de/passen-tricksen-treffen-jubel-ausdenken/",
+    "uebungen": [
+      {
+        "position": 1,
+        "phase": "Aufwärmen",
+        "titel": "ERST IM FELD PASSEN, DANN FELDER TAUSCHEN",
+        "slug": "erst-im-feld-passen-dann-felder-tauschen"
+      },
+      {
+        "position": 3,
+        "phase": "Hauptteil",
+        "titel": "ERST TRICKSEN, DANN JUBELN",
+        "slug": "erst-tricksen-dann-jubeln"
+      },
+      {
+        "position": 4,
+        "phase": "Hauptteil",
+        "titel": "TRAINER-PASS ZUM TOR VERARBEITEN",
+        "slug": "trainer-pass-zum-tor-verarbeiten"
+      },
+      {
+        "position": 5,
+        "phase": "Spielformat",
+        "titel": "4 GEGEN 4 MIT NEUTRALEN PASSSPIELERN",
+        "slug": "4-gegen-4-mit-neutralen-passspielern"
+      }
+    ]
+  },
+  {
+    "titel": "Aus dem Mittelfeld ins Angriffsspiel",
+    "url_slug": "aus-dem-mittelfeld-ins-angriffsspiel",
+    "quell_url": "https://coachunited.de/aus-dem-mittelfeld-ins-angriffsspiel/",
+    "uebungen": [
+      {
+        "position": 1,
+        "phase": "Aufwärmen",
+        "titel": "PASS-STAFFEL NACH FARBEN",
+        "slug": "pass-staffel-nach-farben"
+      },
+      {
+        "position": 3,
+        "phase": "Hauptteil",
+        "titel": "AUS DER FRIEDLICHEN MITTELZONE INS SPIELGESCHEHEN",
+        "slug": "aus-der-friedlichen-mittelzone-ins-spielgeschehen"
+      },
+      {
+        "position": 4,
+        "phase": "Hauptteil",
+        "titel": "AUS DER UMKÄMPFTEN MITTELZONE INS SPIELGESCHEHEN",
+        "slug": "aus-der-umkaempften-mittelzone-ins-spielgeschehen"
+      },
+      {
+        "position": 5,
+        "phase": "Spielformat",
+        "titel": "BLITZTURNIER MIT GOLDEN GOAL",
+        "slug": "blitzturnier-mit-golden-goal"
+      }
+    ]
+  },
+  {
+    "titel": "Zweikämpfe fair führen",
+    "url_slug": "zweikaempfe-fair-fuehren",
+    "quell_url": "https://coachunited.de/zweikampfe-fair-fuhren/",
+    "uebungen": [
+      {
+        "position": 1,
+        "phase": "Aufwärmen",
+        "titel": "PRÄZISER PASSDURCH HÜTCHENTORE",
+        "slug": "praeziser-passdurch-huetchentore"
+      },
+      {
+        "position": 2,
+        "phase": "Aufwärmen",
+        "titel": "HOHER PASSÜBER HÜTCHENTORE",
+        "slug": "hoher-passueber-huetchentore"
+      },
+      {
+        "position": 5,
+        "phase": "Spielformat",
+        "titel": "QUADRAT-SPIELAUF VIER KLEINE TORE",
+        "slug": "quadrat-spielauf-vier-kleine-tore"
+      }
+    ]
+  },
+  {
+    "titel": "Vom Sprint in die Torgefahr",
+    "url_slug": "vom-sprint-in-die-torgefahr",
+    "quell_url": "https://coachunited.de/vom-sprint-in-die-torgefahr/",
+    "uebungen": [
+      {
+        "position": 1,
+        "phase": "Aufwärmen",
+        "titel": "UM DIE WETTEDRIBBELN UND PASSEN",
+        "slug": "um-die-wettedribbeln-und-passen"
+      },
+      {
+        "position": 3,
+        "phase": "Hauptteil",
+        "titel": "SLALOM GEWINNENUND ANGREIFEN",
+        "slug": "slalom-gewinnenund-angreifen"
+      },
+      {
+        "position": 4,
+        "phase": "Hauptteil",
+        "titel": "TORERFOLG DURCHHÜTCHEN-BALL-TREFFERVERDOPPELN",
+        "slug": "torerfolg-durchhuetchen-ball-trefferverdoppeln"
+      }
+    ]
+  },
+  {
+    "titel": "Tricks, Fernschüsse – und ab in die Jubelzone",
+    "url_slug": "tricks-fernschuesse-und-ab-in-die-jubelzone",
+    "quell_url": "https://coachunited.de/tricks-fernschusse-und-ab-in-die-jubelzone/",
+    "uebungen": [
+      {
+        "position": 1,
+        "phase": "Aufwärmen",
+        "titel": "EINFACHESDRIBBELNUNDPASSENMIT TEMPO",
+        "slug": "einfachesdribbelnundpassenmit-tempo"
+      },
+      {
+        "position": 3,
+        "phase": "Hauptteil",
+        "titel": "ERST TRICKSEN, DANNJUBELN",
+        "slug": "erst-tricksen-dannjubeln"
+      },
+      {
+        "position": 4,
+        "phase": "Hauptteil",
+        "titel": "TRAINER-PASS ZUMTORVERARBEITEN",
+        "slug": "trainer-pass-zumtorverarbeiten"
+      },
+      {
+        "position": 5,
+        "phase": "Spielformat",
+        "titel": "ÜBER DAS HÜTCHENZUM TORERFOLG",
+        "slug": "ueber-das-huetchenzum-torerfolg"
+      }
+    ]
+  },
+  {
+    "titel": "Handlungsschnell sein, mit hohen Bällen umgehen und Positionen halten",
+    "url_slug": "handlungsschnell-sein-mit-hohen-baellen-umgehen-und-positionen-halten",
+    "quell_url": "https://coachunited.de/handlungsschnell-sein-mit-hohen-ballen-umgehen-und-positionen-halten/",
+    "uebungen": [
+      {
+        "position": 29,
+        "phase": "Spielformat",
+        "titel": "PASS-STAFFEL NACH FARBEN",
+        "slug": "pass-staffel-nach-farben"
+      },
+      {
+        "position": 29,
+        "phase": "Spielformat",
+        "titel": "HOHEN BALL VERARBEITEN",
+        "slug": "hohen-ball-verarbeiten"
+      },
+      {
+        "position": 29,
+        "phase": "Spielformat",
+        "titel": "HOHEN BALL VERARBEITEN UND INS 1 GEGEN 1",
+        "slug": "hohen-ball-verarbeiten-und-ins-1-gegen-1"
+      },
+      {
+        "position": 29,
+        "phase": "Spielformat",
+        "titel": "BAHNENSPIEL",
+        "slug": "bahnenspiel"
+      }
+    ]
+  },
+  {
+    "titel": "Pässe verarbeiten",
+    "url_slug": "paesse-verarbeiten",
+    "quell_url": "https://coachunited.de/passe-verarbeiten/",
+    "uebungen": [
+      {
+        "position": 1,
+        "phase": "Aufwärmen",
+        "titel": "PASS VERARBEITENUND AUS DER DREHUNG ZUM SCHUSS KOMMEN",
+        "slug": "pass-verarbeitenund-aus-der-drehung-zum-schuss-kommen"
+      },
+      {
+        "position": 2,
+        "phase": "Aufwärmen",
+        "titel": "PASS VERARBEITENUND INS 1 GEGEN 1 STARTEN",
+        "slug": "pass-verarbeitenund-ins-1-gegen-1-starten"
+      },
+      {
+        "position": 30,
+        "phase": "Spielformat",
+        "titel": "WACH SEIN, BALL KLAUEN",
+        "slug": "wach-sein-ball-klauen"
+      },
+      {
+        "position": 30,
+        "phase": "Spielformat",
+        "titel": "VOM TORSCHUSS INS SPIEL UMSCHALTEN",
+        "slug": "vom-torschuss-ins-spiel-umschalten"
+      }
+    ]
+  },
+  {
+    "titel": "Torgefahr über die Außenbahn üben",
+    "url_slug": "torgefahr-ueber-die-aussenbahn-ueben",
+    "quell_url": "https://coachunited.de/torgefahr-uber-die-ausenbahn-uben/",
+    "uebungen": [
+      {
+        "position": 2,
+        "phase": "Aufwärmen",
+        "titel": "SLALOM, FLANKENLAUF UND PASSINS 1 GEGEN 1",
+        "slug": "slalom-flankenlauf-und-passins-1-gegen-1"
+      },
+      {
+        "position": 31,
+        "phase": "Spielformat",
+        "titel": "FUSSBALLKEGELN",
+        "slug": "fussballkegeln"
+      },
+      {
+        "position": 31,
+        "phase": "Spielformat",
+        "titel": "VIER TORE, VIELE BÄLLE",
+        "slug": "vier-tore-viele-baelle"
+      }
+    ]
+  },
+  {
+    "titel": "Stationen-Warmup und viele Toraktionen",
+    "url_slug": "stationen-warmup-und-viele-toraktionen",
+    "quell_url": "https://coachunited.de/stationen-warmup-und-viele-toraktionen/",
+    "uebungen": [
+      {
+        "position": 32,
+        "phase": "Spielformat",
+        "titel": "BALLGEFÜHL AN VIER STATIONEN",
+        "slug": "ballgefuehl-an-vier-stationen"
+      },
+      {
+        "position": 32,
+        "phase": "Spielformat",
+        "titel": "SAUBER DRIBBELN, SAUBER PASSEN",
+        "slug": "sauber-dribbeln-sauber-passen"
+      },
+      {
+        "position": 32,
+        "phase": "Spielformat",
+        "titel": "VOM WETTRENNEN INS 1 GEGEN 1",
+        "slug": "vom-wettrennen-ins-1-gegen-1"
+      },
+      {
+        "position": 32,
+        "phase": "Spielformat",
+        "titel": "AUS DEM SLALOM IN DEN ANGRIFF",
+        "slug": "aus-dem-slalom-in-den-angriff"
+      },
+      {
+        "position": 32,
+        "phase": "Spielformat",
+        "titel": "ZWEIFELDSPIEL",
+        "slug": "zweifeldspiel"
+      }
+    ]
+  },
+  {
+    "titel": "1 gegen 1 nach Slalom und Wettrennen",
+    "url_slug": "1-gegen-1-nach-slalom-und-wettrennen",
+    "quell_url": "https://coachunited.de/1-gegen-1-nach-slalom-und-wettrennen/",
+    "uebungen": [
+      {
+        "position": 33,
+        "phase": "Spielformat",
+        "titel": "PARTNER-VOLLEY",
+        "slug": "partner-volley"
+      },
+      {
+        "position": 33,
+        "phase": "Spielformat",
+        "titel": "SLALOM GEWINNEN UND ANGREIFEN",
+        "slug": "slalom-gewinnen-und-angreifen"
+      },
+      {
+        "position": 33,
+        "phase": "Spielformat",
+        "titel": "TORERFOLG DURCH HÜTCHEN-BALL-TREFFER VERDOPPELN",
+        "slug": "torerfolg-durch-huetchen-ball-treffer-verdoppeln"
+      }
+    ]
+  },
+  {
+    "titel": "Mit hohen Bällen umgehen",
+    "url_slug": "mit-hohen-baellen-umgehen",
+    "quell_url": "https://coachunited.de/mit-hohen-ballen-umgehen/",
+    "uebungen": [
+      {
+        "position": 1,
+        "phase": "Aufwärmen",
+        "titel": "HOHEN BALLVERARBEITEN",
+        "slug": "hohen-ballverarbeiten"
+      },
+      {
+        "position": 2,
+        "phase": "Aufwärmen",
+        "titel": "HOHEN BALLVERARBEITEN UND INS 1 GEGEN 1",
+        "slug": "hohen-ballverarbeiten-und-ins-1-gegen-1"
+      },
+      {
+        "position": 34,
+        "phase": "Spielformat",
+        "titel": "WACH SEIN, BALL KLAUEN",
+        "slug": "wach-sein-ball-klauen"
+      },
+      {
+        "position": 34,
+        "phase": "Spielformat",
+        "titel": "BAHNENSPIEL",
+        "slug": "bahnenspiel"
+      }
+    ]
+  },
+  {
+    "titel": "Spaß mit Fußballkegeln, Dreiecken und Fernschuss-Spiel",
+    "url_slug": "spass-mit-fussballkegeln-dreiecken-und-fernschuss-spiel",
+    "quell_url": "https://coachunited.de/spas-mit-fusballkegeln-dreiecken-und-fernschuss-spiel/",
+    "uebungen": [
+      {
+        "position": 35,
+        "phase": "Spielformat",
+        "titel": "DREIECK-TORABSCHLUSS",
+        "slug": "dreieck-torabschluss"
+      },
+      {
+        "position": 35,
+        "phase": "Spielformat",
+        "titel": "2 GEGEN 1 NACH DREIECK-PÄSSEN",
+        "slug": "2-gegen-1-nach-dreieck-paessen"
+      },
+      {
+        "position": 35,
+        "phase": "Spielformat",
+        "titel": "ÜBER DAS HÜTCHEN ZUM TORERFOLG",
+        "slug": "ueber-das-huetchen-zum-torerfolg"
+      }
+    ]
+  },
+  {
+    "titel": "Vom Pass direkt in die Torchance",
+    "url_slug": "vom-pass-direkt-in-die-torchance",
+    "quell_url": "https://coachunited.de/vom-pass-direkt-in-die-torchance/",
+    "uebungen": [
+      {
+        "position": 36,
+        "phase": "Spielformat",
+        "titel": "FARBEN-TOR-WETTKAMPF",
+        "slug": "farben-tor-wettkampf"
+      },
+      {
+        "position": 36,
+        "phase": "Spielformat",
+        "titel": "TOR SCHIESSEN UND VORRÜCKEN",
+        "slug": "tor-schiessen-und-vorruecken"
+      },
+      {
+        "position": 36,
+        "phase": "Spielformat",
+        "titel": "PASS MITNEHMEN UND TOR ERZIELEN",
+        "slug": "pass-mitnehmen-und-tor-erzielen"
+      },
+      {
+        "position": 36,
+        "phase": "Spielformat",
+        "titel": "PASS MITNEHMEN UND IM 1 GEGEN 1 DURCHSETZEN",
+        "slug": "pass-mitnehmen-und-im-1-gegen-1-durchsetzen"
+      },
+      {
+        "position": 36,
+        "phase": "Spielformat",
+        "titel": "VOM ECK INS TOR",
+        "slug": "vom-eck-ins-tor"
+      }
+    ]
+  },
+  {
+    "titel": "Doppelt hält besser – Spielspaß auf zwei Feldern",
+    "url_slug": "doppelt-haelt-besser-spielspass-auf-zwei-feldern",
+    "quell_url": "https://coachunited.de/doppelt-halt-besser-spielspas-auf-zwei-feldern/",
+    "uebungen": [
+      {
+        "position": 37,
+        "phase": "Spielformat",
+        "titel": "LEIBCHEN FINDEN, TEAM FINDEN",
+        "slug": "leibchen-finden-team-finden"
+      },
+      {
+        "position": 37,
+        "phase": "Spielformat",
+        "titel": "LEIBCHEN SUCHEN, SPIEL STARTEN",
+        "slug": "leibchen-suchen-spiel-starten"
+      },
+      {
+        "position": 37,
+        "phase": "Spielformat",
+        "titel": "PARALLELES 1 GEGEN 1 MIT EINDRIBBELN",
+        "slug": "paralleles-1-gegen-1-mit-eindribbeln"
+      },
+      {
+        "position": 37,
+        "phase": "Spielformat",
+        "titel": "2 GEGEN 2 AUF VIER TORE",
+        "slug": "2-gegen-2-auf-vier-tore"
+      },
+      {
+        "position": 37,
+        "phase": "Spielformat",
+        "titel": "ZWEIFELDSPIEL",
+        "slug": "zweifeldspiel"
+      }
+    ]
+  },
+  {
+    "titel": "Reifen-Drills, direkte Duelle und Umschaltspiel",
+    "url_slug": "reifen-drills-direkte-duelle-und-umschaltspiel",
+    "quell_url": "https://coachunited.de/reifen-drills-direkte-duelle-und-umschaltspiel/",
+    "uebungen": [
+      {
+        "position": 38,
+        "phase": "Spielformat",
+        "titel": "REIFEN SUCHEN",
+        "slug": "reifen-suchen"
+      },
+      {
+        "position": 38,
+        "phase": "Spielformat",
+        "titel": "REIFENPASS",
+        "slug": "reifenpass"
+      },
+      {
+        "position": 38,
+        "phase": "Spielformat",
+        "titel": "VOM TORSCHUSS INS SPIEL UMSCHALTEN",
+        "slug": "vom-torschuss-ins-spiel-umschalten"
+      }
+    ]
+  },
+  {
+    "titel": "Volleys, Rauten und vier Bälle",
+    "url_slug": "volleys-rauten-und-vier-baelle",
+    "quell_url": "https://coachunited.de/f-jugend-fussballtraining-volleys-rautenpasse-4-gegen-4/",
+    "uebungen": [
+      {
+        "position": 39,
+        "phase": "Spielformat",
+        "titel": "PARTNER-VOLLEY",
+        "slug": "partner-volley"
+      },
+      {
+        "position": 39,
+        "phase": "Spielformat",
+        "titel": "4 GEGEN 4 MIT 4 BÄLLEN",
+        "slug": "4-gegen-4-mit-4-baellen"
+      }
+    ]
+  },
+  {
+    "titel": "Über Dreiecke und Fernschüsse zum Torjubel",
+    "url_slug": "ueber-dreiecke-und-fernschuesse-zum-torjubel",
+    "quell_url": "https://coachunited.de/uber-dreiecke-und-fernschusse-zum-torjubel/",
+    "uebungen": [
+      {
+        "position": 40,
+        "phase": "Spielformat",
+        "titel": "2 GEGEN 1 NACH DREIECK-PÄSSEN",
+        "slug": "2-gegen-1-nach-dreieck-paessen"
+      },
+      {
+        "position": 40,
+        "phase": "Spielformat",
+        "titel": "ÜBER DAS HÜTCHEN ZUM TORERFOLG",
+        "slug": "ueber-das-huetchen-zum-torerfolg"
+      }
+    ]
+  },
+  {
+    "titel": "Schnell auf wechselnde Spielsituationen reagieren",
+    "url_slug": "schnell-auf-wechselnde-spielsituationen-reagieren",
+    "quell_url": "https://coachunited.de/schnell-auf-wechselnde-spielsituationen-reagieren/",
+    "uebungen": [
+      {
+        "position": 6,
+        "phase": "Spielformat",
+        "titel": "———-",
+        "slug": ""
+      },
+      {
+        "position": 41,
+        "phase": "Spielformat",
+        "titel": "TOR SCHIESSEN UND VORRÜCKEN",
+        "slug": "tor-schiessen-und-vorruecken"
+      },
+      {
+        "position": 41,
+        "phase": "Spielformat",
+        "titel": "2 GEGEN 1 AUF HEIM- UND AUSWÄRTSFELD",
+        "slug": "2-gegen-1-auf-heim-und-auswaertsfeld"
+      },
+      {
+        "position": 41,
+        "phase": "Spielformat",
+        "titel": "FLEXIBLE TEAMGRÖSSE AUF HEIM- UND AUSWÄRTSFELD",
+        "slug": "flexible-teamgroesse-auf-heim-und-auswaertsfeld"
+      },
+      {
+        "position": 41,
+        "phase": "Spielformat",
+        "titel": "10 TORE BIS ZUR EINWECHSLUNG",
+        "slug": "10-tore-bis-zur-einwechslung"
+      }
+    ]
+  },
+  {
+    "titel": "Battles pur – Von Einzelduellen zum Mannschaftskampf",
+    "url_slug": "battles-pur-von-einzelduellen-zum-mannschaftskampf",
+    "quell_url": "https://coachunited.de/battles-pur-von-einzelduellen-zum-mannschaftskampf/",
+    "uebungen": [
+      {
+        "position": 6,
+        "phase": "Spielformat",
+        "titel": "PARALLELES 1 GEGEN 1 MIT EINDRIBBELN",
+        "slug": "paralleles-1-gegen-1-mit-eindribbeln"
+      },
+      {
+        "position": 8,
+        "phase": "Spielformat",
+        "titel": "2 GEGEN 2 AUF VIER TORE",
+        "slug": "2-gegen-2-auf-vier-tore"
+      },
+      {
+        "position": 10,
+        "phase": "Spielformat",
+        "titel": "4 GEGEN 4 MIT NEUTRALEN PASSSPIELERN",
+        "slug": "4-gegen-4-mit-neutralen-passspielern"
+      }
+    ]
+  },
+  {
+    "titel": "Vom Warm-Up mit Reifen zu Zweikampf-Duellen",
+    "url_slug": "vom-warm-up-mit-reifen-zu-zweikampf-duellen",
+    "quell_url": "https://coachunited.de/vom-warm-up-mit-reifen-zu-zweikampf-duellen/",
+    "uebungen": [
+      {
+        "position": 43,
+        "phase": "Spielformat",
+        "titel": "REIFEN SUCHEN",
+        "slug": "reifen-suchen"
+      },
+      {
+        "position": 43,
+        "phase": "Spielformat",
+        "titel": "REIFENPASS",
+        "slug": "reifenpass"
+      },
+      {
+        "position": 43,
+        "phase": "Spielformat",
+        "titel": "DUELL NACH DEM TORSCHUSS",
+        "slug": "duell-nach-dem-torschuss"
+      },
+      {
+        "position": 43,
+        "phase": "Spielformat",
+        "titel": "3-GEGEN-3 MIT ECKSTART",
+        "slug": "3-gegen-3-mit-eckstart"
+      }
+    ]
+  },
+  {
+    "titel": "Passen mit Plan und Köpfchen",
+    "url_slug": "passen-mit-plan-und-koepfchen",
+    "quell_url": "https://coachunited.de/passen-mit-plan-und-kopfchen/",
+    "uebungen": [
+      {
+        "position": 3,
+        "phase": "Hauptteil",
+        "titel": "KOMMUNIZIEREN: ZUSPIEL INS TECHNIK-FELD",
+        "slug": "kommunizieren-zuspiel-ins-technik-feld"
+      },
+      {
+        "position": 44,
+        "phase": "Spielformat",
+        "titel": "TECHNIKDRIBBLING IM FELD",
+        "slug": "technikdribbling-im-feld"
+      },
+      {
+        "position": 44,
+        "phase": "Spielformat",
+        "titel": "4 GEGEN 4 MIT 4 BÄLLEN",
+        "slug": "4-gegen-4-mit-4-baellen"
+      }
+    ]
+  },
+  {
+    "titel": "Dribbeln, flanken und Tore!",
+    "url_slug": "dribbeln-flanken-und-tore",
+    "quell_url": "https://coachunited.de/dribbeln-flanken-und-tore/",
+    "uebungen": [
+      {
+        "position": 45,
+        "phase": "Spielformat",
+        "titel": "DER OHNE BALL VERLIERT",
+        "slug": "der-ohne-ball-verliert"
+      },
+      {
+        "position": 45,
+        "phase": "Spielformat",
+        "titel": "SLALOM, FLANKENLAUF UND PASS INS 1 GEGEN 1",
+        "slug": "slalom-flankenlauf-und-pass-ins-1-gegen-1"
+      },
+      {
+        "position": 45,
+        "phase": "Spielformat",
+        "titel": "VIER TORE, VIELE BÄLLE",
+        "slug": "vier-tore-viele-baelle"
+      }
+    ]
+  },
+  {
+    "titel": "Mit Köpfchen und Körpereinsatz zum Erfolg",
+    "url_slug": "mit-koepfchen-und-koerpereinsatz-zum-erfolg",
+    "quell_url": "https://coachunited.de/mit-kopfchen-und-korpereinsatz-zum-erfolg/",
+    "uebungen": [
+      {
+        "position": 46,
+        "phase": "Spielformat",
+        "titel": "LEIBCHEN FINDEN, TEAM FINDEN",
+        "slug": "leibchen-finden-team-finden"
+      },
+      {
+        "position": 46,
+        "phase": "Spielformat",
+        "titel": "LEIBCHEN SUCHEN, SPIEL STARTEN",
+        "slug": "leibchen-suchen-spiel-starten"
+      },
+      {
+        "position": 46,
+        "phase": "Spielformat",
+        "titel": "VOM WETTRENNEN INS 1 GEGEN 1",
+        "slug": "vom-wettrennen-ins-1-gegen-1"
+      },
+      {
+        "position": 46,
+        "phase": "Spielformat",
+        "titel": "AUS DEM SLALOM IN DEN ANGRIFF",
+        "slug": "aus-dem-slalom-in-den-angriff"
+      },
+      {
+        "position": 46,
+        "phase": "Spielformat",
+        "titel": "6 GEGEN 5 MIT HÜTCHENTOREN",
+        "slug": "6-gegen-5-mit-huetchentoren"
+      }
+    ]
+  },
+  {
+    "titel": "Gespür für den Ball, Blick fürs Spiel",
+    "url_slug": "gespuer-fuer-den-ball-blick-fuers-spiel",
+    "quell_url": "https://coachunited.de/gespur-fur-den-ball-blick-furs-spiel/",
+    "uebungen": [
+      {
+        "position": 47,
+        "phase": "Spielformat",
+        "titel": "BALLGEFÜHL AN VIER STATIONEN",
+        "slug": "ballgefuehl-an-vier-stationen"
+      },
+      {
+        "position": 47,
+        "phase": "Spielformat",
+        "titel": "SAUBER DRIBBELN, SAUBER PASSEN",
+        "slug": "sauber-dribbeln-sauber-passen"
+      },
+      {
+        "position": 47,
+        "phase": "Spielformat",
+        "titel": "PASS VERARBEITEN UND AUS DER DREHUNG ZUM SCHUSS KOMMEN",
+        "slug": "pass-verarbeiten-und-aus-der-drehung-zum-schuss-kommen"
+      },
+      {
+        "position": 47,
+        "phase": "Spielformat",
+        "titel": "PASS VERARBEITEN UND INS 1 GEGEN 1 STARTEN",
+        "slug": "pass-verarbeiten-und-ins-1-gegen-1-starten"
+      },
+      {
+        "position": 47,
+        "phase": "Spielformat",
+        "titel": "VOM ECK INS TOR",
+        "slug": "vom-eck-ins-tor"
+      }
+    ]
+  },
+  {
+    "titel": "Annehmen, Mitnehmen, Durchstarten!",
+    "url_slug": "annehmen-mitnehmen-durchstarten",
+    "quell_url": "https://coachunited.de/annehmen-mitnehmen-durchstarten/",
+    "uebungen": [
+      {
+        "position": 48,
+        "phase": "Spielformat",
+        "titel": "DER OHNE BALL VERLIERT",
+        "slug": "der-ohne-ball-verliert"
+      },
+      {
+        "position": 48,
+        "phase": "Spielformat",
+        "titel": "PASS MITNEHMEN UND TOR ERZIELEN",
+        "slug": "pass-mitnehmen-und-tor-erzielen"
+      },
+      {
+        "position": 48,
+        "phase": "Spielformat",
+        "titel": "PASS MITNEHMEN UND IM 1 GEGEN 1 DURCHSETZEN",
+        "slug": "pass-mitnehmen-und-im-1-gegen-1-durchsetzen"
+      },
+      {
+        "position": 48,
+        "phase": "Spielformat",
+        "titel": "4 GEGEN 4 MIT NEUTRALEN PASSSPIELERN",
+        "slug": "4-gegen-4-mit-neutralen-passspielern"
+      }
+    ]
+  },
+  {
+    "titel": "Erst miteinander kommunizieren, dann gegenseitig duellieren",
+    "url_slug": "erst-miteinander-kommunizieren-dann-gegenseitig-duellieren",
+    "quell_url": "https://coachunited.de/enge-raume-grose-moves/",
+    "uebungen": [
+      {
+        "position": 49,
+        "phase": "Spielformat",
+        "titel": "TECHNIKDRIBBLING IM FELD",
+        "slug": "technikdribbling-im-feld"
+      },
+      {
+        "position": 49,
+        "phase": "Spielformat",
+        "titel": "ZUSPIEL INS TECHNIK-FELD",
+        "slug": "zuspiel-ins-technik-feld"
+      },
+      {
+        "position": 49,
+        "phase": "Spielformat",
+        "titel": "DUELL NACH DEM TORSCHUSS",
+        "slug": "duell-nach-dem-torschuss"
+      },
+      {
+        "position": 49,
+        "phase": "Spielformat",
+        "titel": "3-GEGEN-3 MIT ECKSTART",
+        "slug": "3-gegen-3-mit-eckstart"
+      }
+    ]
+  },
+  {
+    "titel": "Täuschung, Tempo, Tor – Dribbelspaß pur",
+    "url_slug": "taeuschung-tempo-tor-dribbelspass-pur",
+    "quell_url": "https://coachunited.de/tauschung-tempo-tor-dribbelspas-pur/",
+    "uebungen": [
+      {
+        "position": 50,
+        "phase": "Spielformat",
+        "titel": "6 GEGEN 5 MIT HÜTCHENTOREN",
+        "slug": "6-gegen-5-mit-huetchentoren"
+      }
+    ]
+  },
+  {
+    "titel": "Präzise passen – clever angreifen",
+    "url_slug": "praezise-passen-clever-angreifen",
+    "quell_url": "https://coachunited.de/prazise-passe-uben-im-kinderfusball/",
+    "uebungen": [
+      {
+        "position": 51,
+        "phase": "Spielformat",
+        "titel": "2 GEGEN 1 AUF HEIM- UND AUSWÄRTSFELD",
+        "slug": "2-gegen-1-auf-heim-und-auswaertsfeld"
+      },
+      {
+        "position": 51,
+        "phase": "Spielformat",
+        "titel": "FLEXIBLE TEAMGRÖSSE AUF HEIM- UND AUSWÄRTSFELD",
+        "slug": "flexible-teamgroesse-auf-heim-und-auswaertsfeld"
+      },
+      {
+        "position": 51,
+        "phase": "Spielformat",
+        "titel": "10 TORE BIS ZUR EINWECHSLUNG",
+        "slug": "10-tore-bis-zur-einwechslung"
+      }
+    ]
+  }
+]

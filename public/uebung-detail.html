@@ -393,11 +393,11 @@
 
     <!-- Header -->
     <header class="header">
-      <a href="/uebungen" class="back-btn">
+      <a id="back-btn" href="/uebungen" class="back-btn">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
           <polyline points="15 18 9 12 15 6"/>
         </svg>
-        Übersicht
+        <span id="back-label">Übersicht</span>
       </a>
       <button class="burger-btn" onclick="openDrawer()">
         <span></span><span></span><span></span>
@@ -542,6 +542,13 @@
     }
 
     const slug = window.location.pathname.replace(/^\/uebung\//, '').replace(/\/$/, '');
+
+    // Kontextsensitiver Zurück-Button
+    const fromEinheit = new URLSearchParams(window.location.search).get('from');
+    if (fromEinheit) {
+      document.getElementById('back-btn').href = '/einheit/' + fromEinheit;
+      document.getElementById('back-label').textContent = 'Zur Einheit';
+    }
 
     fetch('https://raw.githubusercontent.com/roberttgreve-web/coachunited-test/main/public/exercises.json')
       .then(r => r.json())
