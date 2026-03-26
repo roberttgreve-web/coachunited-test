@@ -36,6 +36,41 @@
     "grafik_caption": "Kindertraining: Farbige Tore erfordern schnelles Umschalten zwischen Dribbling und Abschluss"
   },
   {
+    "id": 3,
+    "titel": "PASS MITNEHMEN UND TOR ERZIELEN",
+    "quell_trainingseinheit": "Pässe aktiv anfordern",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/01/image-24.png",
+    "grafik_dateiname": "uebung-003-pass-mitnehmen-und-tor-erzielen.png",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "Spieler laufen zur Stange, fordern einen Pass vom seitlichen Hütchen und schließen nach Mitnahme auf das Tor ab.",
+    "aufbau": "30 x 30m Feld mit zentralem Hütchen. Zwei Tore auf gegenüberliegenden Seiten, Spieler an Hütchen, zwei Teams mit Ball. Tore mit Torhütern.",
+    "durchfuehrung": "Spieler ohne Ball umlaufen das Hütchen, fordern den Pass, verarbeiten den Pass und schießen aufs Tor. Im Uhrzeigersinn am nächsten Hütchen anstellen. Danach die anderen beiden Teams.",
+    "varianten": "a) Schusslinie definieren. b) Ball stoppen erlauben/nicht erlauben Pass mitnehmen und im 1 gegen 1 durchsetzen Pass mitnehmen und im 1 gegen 1 durchsetzen Trainer ruft eine Zahl auf und spielt den Ball ein. Jeweils diese Anzahl Spieler pro Team startet ins Spiel.",
+    "quell_url": "https://coachunited.de/passen-aktiv-anfordern/",
+    "jugend": [
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Torschuss",
+      "Raumverhalten"
+    ],
+    "coaching_fokus": "• Blick heben vor dem Pass; • Ausgewogene Körperhaltung beim Abschluss; • Genauer Zielwurf auf das Tor",
+    "leichter_machen": "• Tor vergrößern; • Kürzerer Laufweg zum Hütchen",
+    "schwerer_machen": "• Tore mit Torpfosten anstatt Hürden; • Höheres Tempo durch Ansage des Trainers",
+    "status": "veroeffentlicht",
+    "alt_titel": "PASSSPIEL MIT TORABSCHLUSS",
+    "seo_keyword": "Fußballübung Passen Kinder",
+    "url_slug": "fussballubung-passen-kinder",
+    "seo_meta_description": "Dynamische Passübung zum Torabschluss für Kinder im E- und D-Jugend-Alter. Fördert Passen, Ballkontrolle und Raumverhalten.",
+    "grafik_alt_text": "Kinder führen eine Fußballübung durch, bei der sie den Ball passen, mitnehmen und auf das Tor abschließen.",
+    "grafik_description": "Die Abbildung zeigt eine dynamische Fußballübung, bei der Kinder den Ball von einem Hütchen aus aufs Tor schießen. Dabei müssen sie den Ball zunächst annehmen und kontrollieren, bevor sie zum Abschluss kommen.",
+    "grafik_title": "Fußballübung Passspiel mit Torabschluss für Kinder",
+    "grafik_caption": "Kinder führen eine Passübung mit Torabschluss durch."
+  },
+  {
     "id": 6,
     "titel": "ZWEI PASSFELDER",
     "quell_trainingseinheit": "Technik im Fokus: Sauber dribbeln",
