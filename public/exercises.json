@@ -34,5 +34,42 @@
     "grafik_description": "Die Übung zeigt einen Koordinationsbewerb mit Farbkommandos, bei dem die Kinder zügig zum richtigen Tor dribbeln und abschließen müssen. Trainiert werden Ballkontrolle, Richtungswechsel und Torschuss.",
     "grafik_title": "Farbkodierter Torwettbewerb - Fußballtraining für Kinder",
     "grafik_caption": "Kindertraining: Farbige Tore erfordern schnelles Umschalten zwischen Dribbling und Abschluss"
+  },
+  {
+    "id": 6,
+    "titel": "ZWEI PASSFELDER",
+    "quell_trainingseinheit": "Technik im Fokus: Sauber dribbeln",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/01/image-13.jpg",
+    "grafik_dateiname": "uebung-006-zwei-passfelder.jpg",
+    "trainingsphase": "Aufwärmen",
+    "kurzbeschreibung": "Der Spieler in der Mitte des Passfeldes spielt der Reihe nach seine Mitspieler an den Ecken an.",
+    "aufbau": "Zwei 10mx10m große Felder errichten und mit Eckhütchen markieren. Je ein Spieler pro Eckhütchen. Ein Spieler in der Mitte des Feldes mit Ball.",
+    "durchfuehrung": "Der Spieler in der Mitte spielt im Uhrzeigersinn seine Mitspieler an den Eckhütchen an, erhält den Pass zurück und dreht sich zum nächsten Mitspieler und passt wieder. Wenn er den vierten Spieler angespielt hat, tauscht er mit diesem die Positionen.",
+    "varianten": "a) Spieler an Eckhütchen müssen direkt passen. b) Volleypässe aus der Hand. c) Je nach Spielstärke Tempo erhöhen, in dem ein Zeitlimit pro Durchgang festgelegt wird. SCHWEINCHEN IN DER MITTE SCHWEINCHEN IN DER MITTE Die Spieler passen sich den Ball so zu, dass der Fänger in der Mitte des Feldes den Ball nicht erobern kann.",
+    "quell_url": "https://coachunited.de/technik-im-fokus-sauber-dribbeln/",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Koordination",
+      "Raumverhalten"
+    ],
+    "coaching_fokus": "• Blick heben vor dem Pass; • Timing beim Positionswechsel; • Körperspannung beim Annehmen des Passes",
+    "leichter_machen": "• Nur direktes Weiterspielen; • Größeres Spielfeld",
+    "schwerer_machen": "• Ballkontrolle vor dem Pass; • Zeitlimit pro Durchgang",
+    "status": "veroeffentlicht",
+    "alt_titel": "Kreispassspiel mit Tempowechsel",
+    "seo_keyword": "Fußballübung Passen Kinder",
+    "url_slug": "fussballubung-passen-kinder",
+    "seo_meta_description": "Effektives Kreispassspiel für Kinder, um Passgenauigkeit, Ballkontrolle und Raumaufteilung zu verbessern. Leicht anpassbar für verschiedene Altersgruppen.",
+    "grafik_alt_text": "Zwei Spielfelder mit je vier Eckhütchen und einem Spieler in der Mitte mit Ball",
+    "grafik_description": "Die Übung besteht aus zwei 10x10 Meter großen Spielfeldern. In jeder Ecke steht ein Spieler, in der Mitte eines Feldes befindet sich ein Spieler mit Ball. Dieser spielt den Ball im Uhrzeigersinn nacheinander zu den Eckspieler und erhält ihn zurück.",
+    "grafik_title": "Fußballübung: Kreispassspiel für Kinder",
+    "grafik_caption": "Übung zum Verbessern von Passspiel, Ballkontrolle und Raumaufteilung"
   }
 ]
