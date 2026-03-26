@@ -37,102 +37,64 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 52px 32px 24px;
+      padding: 28px 28px 20px;
       overflow: hidden;
     }
 
     /* Logo */
     .logo {
-      width: 130px;
-      height: 130px;
+      width: 220px;
+      height: 220px;
       object-fit: contain;
-      margin-bottom: 20px;
+      margin-bottom: 24px;
     }
 
-    /* Subtitle */
-    .subtitle {
-      font-size: 14px;
-      font-weight: 400;
-      color: #5a6476;
-      margin-bottom: 28px;
+    /* Headline */
+    .headline {
+      font-size: 20px;
+      font-weight: 700;
+      color: #0a1628;
       text-align: center;
-      line-height: 1.5;
+      line-height: 1.3;
+      margin-bottom: 40px;
     }
 
-    /* Divider */
-    .divider {
-      width: 40px;
-      height: 1px;
-      background: #003D82;
-      opacity: 0.25;
-      margin-bottom: 36px;
-    }
-
-    /* Selection label */
-    .selection-label {
-      font-size: 10px;
-      font-weight: 600;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      color: #003D82;
-      opacity: 0.6;
-      margin-bottom: 16px;
-      align-self: flex-start;
-    }
-
-    /* Jugend pills */
-    .jugend-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 10px;
+    /* Jugend Dropdown */
+    .jugend-select-wrapper {
       width: 100%;
-      margin-bottom: 32px;
+      position: relative;
+      margin-bottom: 16px;
     }
 
-    .jugend-pill {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 14px 8px;
+    .jugend-select {
+      width: 100%;
+      padding: 18px 48px 18px 20px;
       border: 1.5px solid #e4e8ef;
       border-radius: 14px;
       background: white;
-      cursor: pointer;
-      transition: all 0.18s ease;
-    }
-
-    .jugend-pill:hover {
-      border-color: #003D82;
-      background: #f5f8ff;
-    }
-
-    .jugend-pill.selected {
-      border-color: #003D82;
-      background: #003D82;
-    }
-
-    .pill-letter {
-      font-size: 18px;
-      font-weight: 700;
-      color: #003D82;
-      line-height: 1;
-      margin-bottom: 4px;
-      transition: color 0.18s ease;
-    }
-
-    .jugend-pill.selected .pill-letter {
-      color: white;
-    }
-
-    .pill-age {
-      font-size: 9px;
+      font-family: 'Inter', sans-serif;
+      font-size: 15px;
       font-weight: 400;
       color: #9aa3b0;
-      transition: color 0.18s ease;
+      appearance: none;
+      cursor: pointer;
+      transition: border-color 0.18s;
+      outline: none;
     }
 
-    .jugend-pill.selected .pill-age {
-      color: rgba(255,255,255,0.7);
+    .jugend-select:focus,
+    .jugend-select.has-value {
+      border-color: #003D82;
+      color: #0a1628;
+    }
+
+    .select-arrow {
+      position: absolute;
+      right: 18px;
+      top: 50%;
+      transform: translateY(-50%);
+      pointer-events: none;
+      color: #003D82;
     }
 
     /* CTA Button */
@@ -209,29 +171,19 @@
 
       <img src="/logo.png" alt="Coach United Logo" class="logo">
 
-      <p class="subtitle">Trainingsübungen für den Kinderfußball</p>
+      <h1 class="headline">Trainingsübungen<br>für den Kinderfußball</h1>
 
-      <div class="divider"></div>
-
-      <p class="selection-label">Welche Jugend trainierst du?</p>
-
-      <div class="jugend-grid">
-        <button class="jugend-pill" data-value="G-Jugend" onclick="selectJugend(this)">
-          <span class="pill-letter">G</span>
-          <span class="pill-age">U6–U7</span>
-        </button>
-        <button class="jugend-pill" data-value="F-Jugend" onclick="selectJugend(this)">
-          <span class="pill-letter">F</span>
-          <span class="pill-age">U8–U9</span>
-        </button>
-        <button class="jugend-pill" data-value="E-Jugend" onclick="selectJugend(this)">
-          <span class="pill-letter">E</span>
-          <span class="pill-age">U10–U11</span>
-        </button>
-        <button class="jugend-pill" data-value="D-Jugend" onclick="selectJugend(this)">
-          <span class="pill-letter">D</span>
-          <span class="pill-age">U12–U13</span>
-        </button>
+      <div class="jugend-select-wrapper">
+        <select class="jugend-select" id="jugend" onchange="onJugendChange(this)">
+          <option value="" disabled selected>Welche Jugend trainierst du?</option>
+          <option value="G-Jugend">G-Jugend (U6 – U7)</option>
+          <option value="F-Jugend">F-Jugend (U8 – U9)</option>
+          <option value="E-Jugend">E-Jugend (U10 – U11)</option>
+          <option value="D-Jugend">D-Jugend (U12 – U13)</option>
+        </select>
+        <svg class="select-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"/>
+        </svg>
       </div>
 
       <button class="cta-button" id="cta" onclick="goToExercises()">Los geht's</button>
@@ -271,17 +223,14 @@
   </div>
 
   <script>
-    let selected = null;
-
-    function selectJugend(btn) {
-      document.querySelectorAll('.jugend-pill').forEach(p => p.classList.remove('selected'));
-      btn.classList.add('selected');
-      selected = btn.dataset.value;
+    function onJugendChange(select) {
+      select.classList.add('has-value');
       document.getElementById('cta').classList.add('active');
     }
 
     function goToExercises() {
-      if (!selected) return;
+      const jugend = document.getElementById('jugend').value;
+      if (!jugend) return;
       window.location.href = '/uebungen';
     }
   </script>
