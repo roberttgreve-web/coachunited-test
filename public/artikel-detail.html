@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wissen – COACH UNITED</title>
+  <title>Artikel – COACH UNITED</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Barlow:wght@700;800&display=swap" rel="stylesheet">
@@ -22,7 +22,7 @@
     .container {
       width: 375px;
       min-height: 100vh;
-      background: #ffffff;
+      background: white;
       border-radius: 28px;
       overflow: hidden;
       box-shadow: 0 24px 64px rgba(0,0,0,0.12);
@@ -32,7 +32,7 @@
 
     .header {
       background: white;
-      padding: 4px 16px;
+      padding: 12px 16px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -42,90 +42,76 @@
       z-index: 20;
     }
 
-    .logo-link { display: flex; align-items: center; text-decoration: none; }
-    .logo-link img { width: 80px; height: 80px; object-fit: contain; }
+    .back-btn {
+      display: flex; align-items: center; gap: 5px;
+      background: none; border: none; cursor: pointer;
+      text-decoration: none; color: #1B6BF4;
+      font-size: 14px; font-weight: 500; padding: 4px 0;
+    }
+    .back-btn svg { width: 18px; height: 18px; flex-shrink: 0; }
 
     .burger-btn {
       background: none; border: none; cursor: pointer;
-      padding: 4px; color: #333;
-      display: flex; flex-direction: column; gap: 5px;
+      padding: 4px; display: flex; flex-direction: column; gap: 5px;
     }
-    .burger-btn span {
-      display: block; width: 22px; height: 2px;
-      background: #333; border-radius: 2px;
+    .burger-btn span { display: block; width: 22px; height: 2px; background: #333; border-radius: 2px; }
+
+    /* Hero image */
+    .hero-img {
+      width: 100%;
+      max-height: 220px;
+      object-fit: cover;
+      display: block;
     }
 
     .content {
       flex: 1;
       overflow-y: auto;
-      padding: 20px 16px 80px;
+      padding: 24px 20px 100px;
     }
 
-    .section-title {
+    h1 {
       font-family: 'Barlow', 'Inter', sans-serif;
-      font-size: 13px;
-      font-weight: 700;
-      color: #9aa3b0;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      margin-bottom: 14px;
-    }
-
-    .article-card {
-      display: flex;
-      flex-direction: row;
-      text-decoration: none;
-      color: inherit;
-      background: white;
-      border-radius: 14px;
-      border: 1px solid #edf0f5;
-      margin-bottom: 12px;
-      overflow: hidden;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-      transition: box-shadow 0.18s, transform 0.18s;
-    }
-    .article-card:hover {
-      box-shadow: 0 6px 20px rgba(0,0,0,0.09);
-      transform: translateY(-1px);
-    }
-
-    .card-accent {
-      width: 5px;
-      flex-shrink: 0;
-      background: #1B6BF4;
-    }
-
-    .card-body {
-      flex: 1;
-      padding: 16px 14px;
-    }
-
-    .card-title {
-      font-size: 15px;
-      font-weight: 600;
+      font-size: 24px;
+      font-weight: 800;
       color: #0a1628;
-      line-height: 1.4;
-      margin-bottom: 4px;
+      line-height: 1.2;
+      margin-bottom: 20px;
     }
 
-    .card-label {
-      font-size: 12px;
-      color: #9aa3b0;
-      font-weight: 500;
+    /* Rich text content */
+    .article-body { font-size: 15px; line-height: 1.8; color: #4a5568; }
+    .article-body h2 {
+      font-family: 'Barlow', 'Inter', sans-serif;
+      font-size: 19px; font-weight: 800;
+      color: #0a1628; margin: 28px 0 10px;
+      padding-left: 12px;
+      border-left: 3px solid #1B6BF4;
     }
+    .article-body h3 {
+      font-size: 16px; font-weight: 700;
+      color: #1a2a40; margin: 20px 0 8px;
+    }
+    .article-body p { margin-bottom: 14px; }
+    .article-body ul, .article-body ol {
+      padding-left: 20px; margin-bottom: 14px;
+    }
+    .article-body li { margin-bottom: 6px; }
+    .article-body strong { font-weight: 700; color: #0a1628; }
+    .article-body em { font-style: italic; }
+
+    #loading { padding: 60px 24px; text-align: center; color: #9aa3b0; font-size: 15px; }
+    #not-found { padding: 60px 24px; text-align: center; color: #9aa3b0; font-size: 15px; }
+    #not-found a { color: #1B6BF4; text-decoration: none; }
 
     /* Bottom Nav */
     .bottom-nav {
-      position: fixed;
-      bottom: 0; left: 50%;
+      position: fixed; bottom: 0; left: 50%;
       transform: translateX(-50%);
-      width: 375px;
-      background: white;
+      width: 375px; background: white;
       border-top: 1px solid #f0f2f5;
-      display: flex;
-      justify-content: space-around;
-      padding: 10px 0 14px;
-      z-index: 20;
+      display: flex; justify-content: space-around;
+      padding: 10px 0 14px; z-index: 20;
       box-shadow: 0 -2px 12px rgba(0,0,0,0.06);
     }
     .nav-item {
@@ -140,32 +126,13 @@
     .nav-label { font-size: 10px; font-weight: 500; }
 
     /* Drawer */
-    .drawer-overlay {
-      display: none; position: fixed; inset: 0;
-      background: rgba(0,0,0,0.3); z-index: 40;
-    }
+    .drawer-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.3); z-index: 40; }
     .drawer-overlay.open { display: block; }
-    .drawer {
-      position: fixed; top: 0; right: -280px;
-      width: 260px; height: 100vh;
-      background: white; z-index: 50;
-      padding: 32px 24px;
-      transition: right 0.25s ease;
-      box-shadow: -8px 0 32px rgba(0,0,0,0.12);
-    }
+    .drawer { position: fixed; top: 0; right: -280px; width: 260px; height: 100vh; background: white; z-index: 50; padding: 32px 24px; transition: right 0.25s ease; box-shadow: -8px 0 32px rgba(0,0,0,0.12); }
     .drawer.open { right: 0; }
-    .drawer-close {
-      position: absolute; top: 16px; right: 16px;
-      background: none; border: none;
-      font-size: 22px; cursor: pointer; color: #555; padding: 4px;
-    }
+    .drawer-close { position: absolute; top: 16px; right: 16px; background: none; border: none; font-size: 22px; cursor: pointer; color: #555; padding: 4px; }
     .drawer-logo { width: 48px; margin-bottom: 28px; }
-    .drawer-link {
-      display: block; padding: 12px 0;
-      font-size: 15px; font-weight: 500;
-      color: #1a1a2e; text-decoration: none;
-      border-bottom: 1px solid #f0f2f5;
-    }
+    .drawer-link { display: block; padding: 12px 0; font-size: 15px; font-weight: 500; color: #1a1a2e; text-decoration: none; border-bottom: 1px solid #f0f2f5; }
     .drawer-link:last-child { border-bottom: none; }
     .drawer-link:hover { color: #1B6BF4; }
   </style>
@@ -174,18 +141,28 @@
   <div class="container">
 
     <header class="header">
-      <a href="/home" class="logo-link">
-        <img src="/logo.png" alt="Coach United">
+      <a href="/wissen" class="back-btn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="15 18 9 12 15 6"/>
+        </svg>
+        Wissen
       </a>
       <button class="burger-btn" onclick="openDrawer()">
         <span></span><span></span><span></span>
       </button>
     </header>
 
-    <div class="content">
-      <p class="section-title">Artikel &amp; Tipps</p>
-      <div id="articles-list">
-        <div style="padding:40px 0; text-align:center; color:#9aa3b0; font-size:14px;">Artikel werden geladen…</div>
+    <div id="loading">Artikel wird geladen…</div>
+    <div id="not-found" style="display:none;">
+      <p>Artikel nicht gefunden.</p><br>
+      <a href="/wissen">← Zurück zur Übersicht</a>
+    </div>
+
+    <div id="article-content" style="display:none; flex:1; flex-direction:column;">
+      <img id="hero-img" class="hero-img" src="" alt="" style="display:none;">
+      <div class="content">
+        <h1 id="titel"></h1>
+        <div id="article-body" class="article-body"></div>
       </div>
     </div>
 
@@ -226,25 +203,35 @@
   </div>
 
   <script>
+    const slug = window.location.pathname.replace(/^\/artikel\//, '').replace(/\/$/, '');
+
     fetch('https://raw.githubusercontent.com/roberttgreve-web/coachunited-test/main/public/articles.json')
       .then(r => r.json())
       .then(articles => {
-        const list = document.getElementById('articles-list');
-        if (!articles.length) {
-          list.innerHTML = '<div style="padding:40px 0; text-align:center; color:#9aa3b0; font-size:14px;">Noch keine Artikel veröffentlicht.</div>';
+        const article = articles.find(a => a.url_slug === slug);
+        if (!article) {
+          document.getElementById('loading').style.display = 'none';
+          document.getElementById('not-found').style.display = 'block';
           return;
         }
-        list.innerHTML = articles.map(a => `
-          <a href="/artikel/${a.url_slug}" class="article-card">
-            <div class="card-accent"></div>
-            <div class="card-body">
-              <p class="card-title">${a.titel}</p>
-            </div>
-          </a>`).join('');
+
+        document.title = article.titel + ' – COACH UNITED';
+        document.getElementById('titel').textContent = article.titel;
+        document.getElementById('article-body').innerHTML = article.inhalt || '';
+
+        if (article.foto_url) {
+          const img = document.getElementById('hero-img');
+          img.src = article.foto_url;
+          img.alt = article.foto_alt || article.titel;
+          img.style.display = 'block';
+        }
+
+        document.getElementById('loading').style.display = 'none';
+        document.getElementById('article-content').style.display = 'flex';
       })
       .catch(() => {
-        document.getElementById('articles-list').innerHTML =
-          '<div style="padding:40px 0; text-align:center; color:#9aa3b0; font-size:14px;">Artikel konnten nicht geladen werden.</div>';
+        document.getElementById('loading').style.display = 'none';
+        document.getElementById('not-found').style.display = 'block';
       });
 
     function openDrawer() {
