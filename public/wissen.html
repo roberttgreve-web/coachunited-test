@@ -89,29 +89,35 @@
       transform: translateY(-1px);
     }
 
-    .card-accent {
-      width: 5px;
+    .card-thumb {
+      width: 80px;
+      height: 80px;
       flex-shrink: 0;
-      background: #1B6BF4;
+      object-fit: cover;
+      background: #edf0f5;
+    }
+    .card-thumb-placeholder {
+      width: 80px;
+      height: 80px;
+      flex-shrink: 0;
+      background: #edf0f5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
     }
 
     .card-body {
       flex: 1;
-      padding: 16px 14px;
+      padding: 14px;
+      min-width: 0;
     }
 
     .card-title {
-      font-size: 15px;
+      font-size: 14px;
       font-weight: 600;
       color: #0a1628;
       line-height: 1.4;
-      margin-bottom: 4px;
-    }
-
-    .card-label {
-      font-size: 12px;
-      color: #9aa3b0;
-      font-weight: 500;
     }
 
     /* Bottom Nav */
@@ -234,13 +240,18 @@
           list.innerHTML = '<div style="padding:40px 0; text-align:center; color:#9aa3b0; font-size:14px;">Noch keine Artikel veröffentlicht.</div>';
           return;
         }
-        list.innerHTML = articles.map(a => `
-          <a href="/artikel/${a.url_slug}" class="article-card">
-            <div class="card-accent"></div>
-            <div class="card-body">
-              <p class="card-title">${a.titel}</p>
-            </div>
-          </a>`).join('');
+        list.innerHTML = articles.map(a => {
+          const thumb = a.foto_url
+            ? `<img class="card-thumb" src="${a.foto_url}" alt="${a.titel}" loading="lazy" onerror="this.outerHTML='<div class=card-thumb-placeholder>📖</div>'">`
+            : `<div class="card-thumb-placeholder">📖</div>`;
+          return `
+            <a href="/artikel/${a.url_slug}" class="article-card">
+              ${thumb}
+              <div class="card-body">
+                <p class="card-title">${a.titel}</p>
+              </div>
+            </a>`;
+        }).join('');
       })
       .catch(() => {
         document.getElementById('articles-list').innerHTML =
