@@ -365,7 +365,7 @@
           const href = ex.url_slug ? `/uebung/${ex.url_slug}` : '#';
           return `
             <a href="${href}" class="exercise-card clickable">
-              <h3 class="exercise-title">${ex.alt_titel || ex.titel}</h3>
+              <h3 class="exercise-title">${ex.titel}</h3>
               <div class="exercise-tags">${jugendTags}${skillTags}${phaseTag}</div>
               <p class="exercise-description">${ex.kurzbeschreibung || ''}</p>
             </a>`;

@@ -188,7 +188,7 @@
           return;
         }
 
-        document.title = (ex.alt_titel || ex.titel) + ' – COACH UNITED';
+        document.title = ex.titel + ' – COACH UNITED';
 
         // Grafik
         if (ex.grafik_url) {
@@ -198,7 +198,7 @@
         }
 
         // Titel & Tags
-        document.getElementById('titel').textContent = ex.alt_titel || ex.titel;
+        document.getElementById('titel').textContent = ex.titel;
         const tagsEl = document.getElementById('tags');
         (ex.jugend || []).forEach(j => {
           const span = document.createElement('span');
@@ -248,7 +248,7 @@
             const list = document.getElementById('sisters-list');
             list.innerHTML = sisters.map(s => `
               <a href="/uebung/${s.url_slug}" style="display:block; padding:12px; background:white; border:1.5px solid #003D82; border-radius:8px; text-decoration:none; color:#003D82; font-size:15px; font-weight:500; margin-bottom:8px;">
-                ${s.alt_titel || s.titel}
+                ${s.titel}
               </a>`).join('');
             document.getElementById('sisters-box').style.display = 'block';
           }
