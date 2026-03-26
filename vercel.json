@@ -17,6 +17,10 @@
       "destination": "/detail.html"
     },
     {
+      "source": "/uebung/:slug",
+      "destination": "/uebung-detail.html"
+    },
+    {
       "source": "/einheiten",
       "destination": "/einheiten.html"
     },

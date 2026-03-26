@@ -303,101 +303,8 @@
     
     <!-- Content -->
     <div class="content">
-      <div class="exercises">
-        
-        <!-- Exercise 1 - CLICKABLE -->
-        <a href="/detail" class="exercise-card clickable">
-          <h3 class="exercise-title">Im Doppelfeld Tore sammeln</h3>
-          <div class="exercise-tags">
-            <span class="tag tag-jugend">E</span>
-            <span class="tag tag-jugend">D</span>
-            <span class="tag tag-skill">Torschuss</span>
-            <span class="tag tag-phase">Spiel</span>
-          </div>
-          <p class="exercise-description">Zwei Teams sammeln Tore auf parallelen Feldern</p>
-        </a>
-        
-        <!-- Exercise 2 -->
-        <div class="exercise-card">
-          <h3 class="exercise-title">Saubere Diagonal-Pässe</h3>
-          <div class="exercise-tags">
-            <span class="tag tag-jugend">D</span>
-            <span class="tag tag-jugend">C</span>
-            <span class="tag tag-skill">Passen</span>
-            <span class="tag tag-phase">Übung</span>
-          </div>
-          <p class="exercise-description">Präzise diagonale Pässe unter Druck trainieren</p>
-        </div>
-        
-        <!-- Exercise 3 -->
-        <div class="exercise-card">
-          <h3 class="exercise-title">Mit Kegeltreffern Torschüsse gewinnen</h3>
-          <div class="exercise-tags">
-            <span class="tag tag-jugend">E</span>
-            <span class="tag tag-skill">Torschuss</span>
-            <span class="tag tag-phase">Spiel</span>
-          </div>
-          <p class="exercise-description">Trefferpunkte sammeln durch Kegel und Torschüsse</p>
-        </div>
-        
-        <!-- Exercise 4 -->
-        <div class="exercise-card">
-          <h3 class="exercise-title">Kegeln, spielen und zurück</h3>
-          <div class="exercise-tags">
-            <span class="tag tag-jugend">D</span>
-            <span class="tag tag-skill">Schnelligkeit</span>
-            <span class="tag tag-phase">Übung</span>
-          </div>
-          <p class="exercise-description">Kegel treffen, Ball holen, zurück ins Spiel</p>
-        </div>
-        
-        <!-- Exercise 5 -->
-        <div class="exercise-card">
-          <h3 class="exercise-title">Überzahl-Joker</h3>
-          <div class="exercise-tags">
-            <span class="tag tag-jugend">C</span>
-            <span class="tag tag-jugend">B</span>
-            <span class="tag tag-skill">Taktik</span>
-            <span class="tag tag-phase">Spiel</span>
-          </div>
-          <p class="exercise-description">Überzahlsituationen clever ausspielen</p>
-        </div>
-        
-        <!-- Exercise 6 -->
-        <div class="exercise-card">
-          <h3 class="exercise-title">Flexibler Dribbelstern</h3>
-          <div class="exercise-tags">
-            <span class="tag tag-jugend">E</span>
-            <span class="tag tag-jugend">D</span>
-            <span class="tag tag-skill">Dribbling</span>
-            <span class="tag tag-phase">Übung</span>
-          </div>
-          <p class="exercise-description">Sternförmige Dribbel-Parcours mit Variationen</p>
-        </div>
-        
-        <!-- Exercise 7 -->
-        <div class="exercise-card">
-          <h3 class="exercise-title">Beschütz dein Tor!</h3>
-          <div class="exercise-tags">
-            <span class="tag tag-jugend">E</span>
-            <span class="tag tag-skill">Verteidigung</span>
-            <span class="tag tag-phase">Spiel</span>
-          </div>
-          <p class="exercise-description">Defensive Grundprinzipien im Kleinfeld</p>
-        </div>
-        
-        <!-- Exercise 8 -->
-        <div class="exercise-card">
-          <h3 class="exercise-title">Spiel auf ein Tor</h3>
-          <div class="exercise-tags">
-            <span class="tag tag-jugend">D</span>
-            <span class="tag tag-jugend">C</span>
-            <span class="tag tag-skill">Angriff</span>
-            <span class="tag tag-phase">Spiel</span>
-          </div>
-          <p class="exercise-description">Angriffsspiel mit einem Tor trainieren</p>
-        </div>
-        
+      <div class="exercises" id="exercises-list">
+        <p style="text-align:center; color:#999; padding:20px; font-size:14px;">Übungen werden geladen...</p>
       </div>
     </div>
     
@@ -438,10 +345,40 @@
       overlay.classList.toggle('active');
       drawer.classList.toggle('active');
     }
+
+    // Übungen aus JSON laden und rendern
+    fetch('/exercises.json')
+      .then(r => r.json())
+      .then(exercises => {
+        const list = document.getElementById('exercises-list');
+        if (!exercises.length) {
+          list.innerHTML = '<p style="text-align:center;color:#999;padding:20px;font-size:14px;">Noch keine Übungen veröffentlicht.</p>';
+          return;
+        }
+        list.innerHTML = exercises.map(ex => {
+          const jugendTags = (ex.jugend || []).map(j =>
+            `<span class="tag tag-jugend">${j.replace('-Jugend','')}</span>`).join('');
+          const skillTags = (ex.skills || []).slice(0,2).map(s =>
+            `<span class="tag tag-skill">${s}</span>`).join('');
+          const phaseTag = ex.trainingsphase
+            ? `<span class="tag tag-phase">${ex.trainingsphase}</span>` : '';
+          const href = ex.url_slug ? `/uebung/${ex.url_slug}` : '#';
+          return `
+            <a href="${href}" class="exercise-card clickable">
+              <h3 class="exercise-title">${ex.alt_titel || ex.titel}</h3>
+              <div class="exercise-tags">${jugendTags}${skillTags}${phaseTag}</div>
+              <p class="exercise-description">${ex.kurzbeschreibung || ''}</p>
+            </a>`;
+        }).join('');
+      })
+      .catch(() => {
+        document.getElementById('exercises-list').innerHTML =
+          '<p style="text-align:center;color:#999;padding:20px;font-size:14px;">Übungen konnten nicht geladen werden.</p>';
+      });
   </script>
 </body>
 </html>
-  
+
   <script>
     function toggleDropdown(id) {
       // Close all dropdowns first

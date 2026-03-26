@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Übung – COACH UNITED</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: #f5f5f5;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+    }
+    .container {
+      width: 375px;
+      min-height: 100vh;
+      background: white;
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+    .header {
+      background: #003D82;
+      padding: 12px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    .back-button {
+      position: absolute;
+      left: 16px;
+      background: none;
+      border: none;
+      color: white;
+      font-size: 20px;
+      cursor: pointer;
+      padding: 4px;
+      text-decoration: none;
+    }
+    .header-title { color: white; font-weight: 500; font-size: 16px; letter-spacing: 1px; }
+    .graphics-container {
+      width: 100%;
+      background: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px 0;
+    }
+    .graphics-container img { width: 100%; height: auto; object-fit: contain; }
+    .content { flex: 1; overflow-y: auto; padding: 24px; padding-bottom: 80px; }
+    h1 { font-size: 26px; font-weight: 600; color: #1a1a1a; margin: 0 0 14px; line-height: 1.2; }
+    .tags { display: flex; align-items: center; gap: 4px; flex-wrap: wrap; margin-bottom: 20px; }
+    .tag { padding: 4px 8px; border-radius: 10px; font-size: 13px; font-weight: 500; }
+    .tag-jugend { background: #B8D4E8; color: #003D82; }
+    .tag-skill  { background: #C8E6C9; color: #2E7D32; }
+    .tag-phase  { background: #FFE0B2; color: #E65100; }
+    .tag-divider { color: #999; font-size: 14px; margin: 0 2px; }
+    .description { font-size: 17px; line-height: 1.8; color: #2a2a2a; margin: 0 0 24px; }
+    details { border: 0.5px solid #e0e0e0; border-radius: 12px; margin-bottom: 16px; overflow: hidden; }
+    summary {
+      padding: 18px; font-weight: 500; font-size: 17px; cursor: pointer;
+      user-select: none; display: flex; align-items: center; gap: 8px;
+      color: #1a1a1a; list-style: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary .title { flex: 1; }
+    summary .arrow { font-size: 20px; color: #999; transition: transform 0.2s; }
+    details[open] summary .arrow { transform: rotate(90deg); }
+    .accordion-content { padding: 16px 18px 18px; border-top: 0.5px solid #e0e0e0; }
+    .accordion-content p { font-size: 16px; line-height: 1.8; color: #2a2a2a; }
+    .related-box { background: #CCE0F4; border-radius: 12px; padding: 18px; margin-bottom: 24px; }
+    .related-box-title { font-weight: 500; font-size: 14px; margin: 0 0 12px; color: #003D82; text-transform: uppercase; letter-spacing: 0.5px; }
+    .related-link {
+      display: block; padding: 12px; background: white;
+      border: 2px solid #003D82; border-radius: 8px;
+      text-decoration: none; color: #003D82; font-size: 15px; font-weight: 500;
+    }
+    .feedback-box { background: #F5F8FA; border-radius: 12px; padding: 20px; border: 0.5px solid #e0e0e0; margin-bottom: 20px; }
+    .feedback-title { font-size: 16px; font-weight: 500; margin: 0 0 14px; color: #1a1a1a; }
+    textarea { width: 100%; min-height: 100px; padding: 14px; border: 1px solid #ddd; border-radius: 8px; font-size: 16px; font-family: inherit; resize: vertical; margin-bottom: 12px; box-sizing: border-box; }
+    textarea::placeholder { color: #999; }
+    .btn-primary { width: 100%; padding: 14px; background: #003D82; color: white; text-align: center; border: none; border-radius: 8px; font-size: 16px; font-weight: 500; cursor: pointer; }
+    .btn-secondary { width: 100%; padding: 14px; background: white; color: #003D82; text-align: center; border: 1px solid #003D82; border-radius: 8px; font-size: 16px; font-weight: 500; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px; }
+    .bottom-nav { position: fixed; bottom: 0; left: 50%; transform: translateX(-50%); width: 375px; background: white; border-top: 1px solid #e0e0e0; display: flex; justify-content: space-around; padding: 8px 0; box-shadow: 0 -2px 10px rgba(0,0,0,0.05); z-index: 10; }
+    .nav-item { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 4px; border: none; background: none; cursor: pointer; padding: 8px; text-decoration: none; color: #999; }
+    .nav-item.active { color: #003D82; }
+    .nav-icon { font-size: 20px; }
+    .nav-label { font-size: 11px; font-weight: 500; }
+    #loading { padding: 40px; text-align: center; color: #999; font-size: 16px; }
+    #not-found { padding: 40px; text-align: center; color: #666; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <a href="/uebungen" class="back-button">←</a>
+      <div class="header-title">COACH UNITED</div>
+    </div>
+
+    <div id="loading" class="content">Übung wird geladen...</div>
+    <div id="exercise-content" style="display:none; flex:1; flex-direction:column;">
+      <div class="graphics-container" id="grafik-container" style="display:none;">
+        <img id="grafik-img" src="" alt="">
+      </div>
+      <div class="content">
+        <h1 id="titel"></h1>
+        <div class="tags" id="tags"></div>
+        <p class="description" id="beschreibung"></p>
+        <details open>
+          <summary><span class="title">🔧 Aufbau</span><span class="arrow">›</span></summary>
+          <div class="accordion-content"><p id="aufbau"></p></div>
+        </details>
+        <details open>
+          <summary><span class="title">▶️ Durchführung</span><span class="arrow">›</span></summary>
+          <div class="accordion-content"><p id="durchfuehrung"></p></div>
+        </details>
+        <details>
+          <summary><span class="title">🎯 Coaching-Fokus</span><span class="arrow">›</span></summary>
+          <div class="accordion-content"><p id="coaching-fokus"></p></div>
+        </details>
+        <details>
+          <summary><span class="title">👶 Übung leichter machen</span><span class="arrow">›</span></summary>
+          <div class="accordion-content"><p id="leichter-machen"></p></div>
+        </details>
+        <details>
+          <summary><span class="title">💪 Übung schwieriger machen</span><span class="arrow">›</span></summary>
+          <div class="accordion-content"><p id="schwerer-machen"></p></div>
+        </details>
+        <div class="related-box" id="related-box" style="display:none;">
+          <p class="related-box-title">Zugehörige Trainingseinheit</p>
+          <a id="related-link" href="#" target="_blank" class="related-link"></a>
+        </div>
+        <div class="feedback-box">
+          <p class="feedback-title">Lasst uns die Übung gemeinsam besser machen:</p>
+          <textarea id="feedbackText" placeholder="Dein Feedback an uns"></textarea>
+          <button class="btn-primary" onclick="submitFeedback()">Feedback absenden</button>
+        </div>
+        <div class="feedback-box">
+          <button class="btn-secondary" onclick="shareExercise()">
+            <span style="font-size:18px;">↗</span>
+            <span>Übung weiterempfehlen</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="not-found" style="display:none;">
+      <p>Übung nicht gefunden.</p><br>
+      <a href="/uebungen" style="color:#003D82;">← Zurück zur Übersicht</a>
+    </div>
+
+    <div class="bottom-nav">
+      <a href="/home" class="nav-item"><span class="nav-icon">🏠</span><span class="nav-label">Home</span></a>
+      <a href="/uebungen" class="nav-item active"><span class="nav-icon">⚽</span><span class="nav-label">Übungen</span></a>
+      <a href="/wissen" class="nav-item"><span class="nav-icon">📚</span><span class="nav-label">Wissen</span></a>
+      <a href="/whatsapp-info" class="nav-item"><span class="nav-icon">💬</span><span class="nav-label">WhatsApp</span></a>
+    </div>
+  </div>
+
+  <script>
+    const slug = window.location.pathname.replace(/^\/uebung\//, '').replace(/\/$/, '');
+
+    fetch('/exercises.json')
+      .then(r => r.json())
+      .then(exercises => {
+        const ex = exercises.find(e => e.url_slug === slug);
+        if (!ex) {
+          document.getElementById('loading').style.display = 'none';
+          document.getElementById('not-found').style.display = 'block';
+          return;
+        }
+
+        document.title = (ex.alt_titel || ex.titel) + ' – COACH UNITED';
+
+        // Grafik
+        if (ex.grafik_url) {
+          document.getElementById('grafik-img').src = ex.grafik_url;
+          document.getElementById('grafik-img').alt = ex.grafik_alt_text || ex.titel;
+          document.getElementById('grafik-container').style.display = 'flex';
+        }
+
+        // Titel & Tags
+        document.getElementById('titel').textContent = ex.alt_titel || ex.titel;
+        const tagsEl = document.getElementById('tags');
+        (ex.jugend || []).forEach(j => {
+          const span = document.createElement('span');
+          span.className = 'tag tag-jugend';
+          span.textContent = j.replace('-Jugend', '');
+          tagsEl.appendChild(span);
+        });
+        if ((ex.jugend || []).length && (ex.skills || []).length) {
+          const div = document.createElement('span');
+          div.className = 'tag-divider';
+          div.textContent = '|';
+          tagsEl.appendChild(div);
+        }
+        (ex.skills || []).forEach(s => {
+          const span = document.createElement('span');
+          span.className = 'tag tag-skill';
+          span.textContent = s;
+          tagsEl.appendChild(span);
+        });
+        if (ex.trainingsphase) {
+          const div = document.createElement('span');
+          div.className = 'tag-divider';
+          div.textContent = '|';
+          tagsEl.appendChild(div);
+          const span = document.createElement('span');
+          span.className = 'tag tag-phase';
+          span.textContent = ex.trainingsphase;
+          tagsEl.appendChild(span);
+        }
+
+        // Inhalte
+        document.getElementById('beschreibung').textContent = ex.kurzbeschreibung || '';
+        document.getElementById('aufbau').textContent = ex.aufbau || '';
+        document.getElementById('durchfuehrung').textContent = ex.durchfuehrung || '';
+        document.getElementById('coaching-fokus').textContent = (ex.coaching_fokus || '').replace(/•\s*/g, '• ');
+        document.getElementById('leichter-machen').textContent = ex.leichter_machen || '';
+        document.getElementById('schwerer-machen').textContent = ex.schwerer_machen || '';
+
+        // Related link
+        if (ex.quell_url) {
+          document.getElementById('related-link').href = ex.quell_url;
+          document.getElementById('related-link').textContent = ex.quell_trainingseinheit || ex.quell_url;
+          document.getElementById('related-box').style.display = 'block';
+        }
+
+        document.getElementById('loading').style.display = 'none';
+        document.getElementById('exercise-content').style.display = 'flex';
+      })
+      .catch(() => {
+        document.getElementById('loading').style.display = 'none';
+        document.getElementById('not-found').style.display = 'block';
+      });
+
+    function submitFeedback() {
+      const feedback = document.getElementById('feedbackText').value;
+      if (feedback.trim()) {
+        alert('Vielen Dank für dein Feedback!\n\n' + feedback);
+        document.getElementById('feedbackText').value = '';
+      } else {
+        alert('Bitte gib dein Feedback ein.');
+      }
+    }
+
+    function shareExercise() {
+      const url = window.location.href;
+      const title = document.getElementById('titel').textContent;
+      if (navigator.share) {
+        navigator.share({ title, url }).catch(() => {});
+      } else {
+        navigator.clipboard.writeText(url).then(() => {
+          alert('Link wurde kopiert!');
+        });
+      }
+    }
+  </script>
+</body>
+</html>
