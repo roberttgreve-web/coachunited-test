@@ -3,118 +3,224 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Impressum - COACH UNITED</title>
+  <title>Impressum – COACH UNITED</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Barlow:wght@700;800&display=swap" rel="stylesheet">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; background: #f5f5f5; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
-    .container { width: 375px; background: white; border-radius: 24px; overflow: hidden; box-shadow: 0 20px 60px rgba(0,0,0,0.15); position: relative; display: flex; flex-direction: column; max-height: 667px; }
-    .header { background: #003D82; padding: 12px 16px; display: flex; align-items: center; justify-content: space-between; position: relative; }
-    .back-button { background: none; border: none; color: white; font-size: 20px; cursor: pointer; padding: 4px; text-decoration: none; }
-    .header-title { color: white; font-weight: 500; font-size: 16px; letter-spacing: 1px; position: absolute; left: 50%; transform: translateX(-50%); }
-    .burger-menu { background: none; border: none; color: white; font-size: 24px; cursor: pointer; padding: 4px; }
-    .content { flex: 1; overflow-y: auto; padding: 24px; padding-bottom: 100px; }
-    h1 { font-size: 20px; font-weight: 600; color: #1a1a1a; margin-bottom: 16px; }
-    h2 { font-size: 16px; font-weight: 600; color: #1a1a1a; margin-top: 20px; margin-bottom: 10px; }
-    p { font-size: 14px; line-height: 1.6; color: #2a2a2a; margin-bottom: 12px; }
-    .bottom-nav { position: absolute; bottom: 0; left: 0; right: 0; background: white; border-top: 1px solid #e0e0e0; display: flex; justify-content: space-around; padding: 8px 0; box-shadow: 0 -2px 10px rgba(0,0,0,0.05); }
-    .nav-item { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 4px; border: none; background: none; cursor: pointer; padding: 8px; text-decoration: none; }
-    .nav-item.active { color: #003D82; }
-    .nav-item:not(.active) { color: #999; }
-    .nav-icon { font-size: 20px; }
-    .nav-label { font-size: 11px; font-weight: 500; }
-    .burger-overlay { position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); opacity: 0; visibility: hidden; transition: all 0.3s; z-index: 998; }
-    .burger-overlay.active { opacity: 1; visibility: visible; }
-    .burger-drawer { position: absolute; top: 0; right: -280px; width: 280px; height: 100%; background: white; box-shadow: -2px 0 10px rgba(0,0,0,0.1); transition: right 0.3s; z-index: 999; padding-top: 60px; }
-    .burger-drawer.active { right: 0; }
-    .menu-item { display: block; padding: 18px 24px; color: #1a1a1a; text-decoration: none; font-size: 16px; font-weight: 500; border-bottom: 1px solid #e0e0e0; transition: background 0.2s; }
-    .menu-item:hover { background: #f5f5f5; }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #f0f2f5;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+    }
+
+    .container {
+      width: 375px;
+      min-height: 100vh;
+      background: #ffffff;
+      border-radius: 28px;
+      overflow: hidden;
+      box-shadow: 0 24px 64px rgba(0,0,0,0.12);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .header {
+      background: white;
+      padding: 14px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #f0f2f5;
+      position: sticky;
+      top: 0;
+      z-index: 20;
+    }
+
+    .logo-link { display: flex; align-items: center; text-decoration: none; }
+    .logo-link img { width: 62px; height: 62px; object-fit: contain; }
+
+    .burger-btn {
+      background: none; border: none; cursor: pointer;
+      padding: 4px; display: flex; flex-direction: column; gap: 5px;
+    }
+    .burger-btn span {
+      display: block; width: 22px; height: 2px;
+      background: #333; border-radius: 2px;
+    }
+
+    .content {
+      flex: 1;
+      overflow-y: auto;
+      padding: 28px 24px 100px;
+    }
+
+    h1 {
+      font-family: 'Barlow', 'Inter', sans-serif;
+      font-size: 24px;
+      font-weight: 800;
+      color: #0a1628;
+      margin-bottom: 24px;
+    }
+
+    h2 {
+      font-size: 13px;
+      font-weight: 600;
+      color: #9aa3b0;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-top: 24px;
+      margin-bottom: 8px;
+    }
+
+    p {
+      font-size: 15px;
+      line-height: 1.7;
+      color: #4a5568;
+      margin-bottom: 10px;
+    }
+
+    a { color: #1B6BF4; }
+
+    /* Bottom Nav */
+    .bottom-nav {
+      position: fixed; bottom: 0; left: 50%;
+      transform: translateX(-50%);
+      width: 375px; background: white;
+      border-top: 1px solid #f0f2f5;
+      display: flex; justify-content: space-around;
+      padding: 10px 0 14px; z-index: 20;
+      box-shadow: 0 -2px 12px rgba(0,0,0,0.06);
+    }
+    .nav-item {
+      flex: 1; display: flex; flex-direction: column;
+      align-items: center; gap: 3px;
+      border: none; background: none; cursor: pointer;
+      padding: 4px; text-decoration: none;
+      color: #c0c7d3; transition: color 0.15s;
+    }
+    .nav-item.active { color: #1B6BF4; }
+    .nav-icon { width: 22px; height: 22px; }
+    .nav-label { font-size: 10px; font-weight: 500; }
+
+    /* Drawer */
+    .drawer-overlay {
+      display: none; position: fixed; inset: 0;
+      background: rgba(0,0,0,0.3); z-index: 40;
+    }
+    .drawer-overlay.open { display: block; }
+    .drawer {
+      position: fixed; top: 0; right: -280px;
+      width: 260px; height: 100vh;
+      background: white; z-index: 50;
+      padding: 32px 24px;
+      transition: right 0.25s ease;
+      box-shadow: -8px 0 32px rgba(0,0,0,0.12);
+    }
+    .drawer.open { right: 0; }
+    .drawer-close {
+      position: absolute; top: 16px; right: 16px;
+      background: none; border: none;
+      font-size: 22px; cursor: pointer; color: #555; padding: 4px;
+    }
+    .drawer-logo { width: 48px; margin-bottom: 28px; }
+    .drawer-link {
+      display: block; padding: 12px 0;
+      font-size: 15px; font-weight: 500;
+      color: #1a1a2e; text-decoration: none;
+      border-bottom: 1px solid #f0f2f5;
+    }
+    .drawer-link:last-child { border-bottom: none; }
+    .drawer-link:hover { color: #1B6BF4; }
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="header">
-      <a href="/home" class="back-button">←</a>
-      <div class="header-title">IMPRESSUM</div>
-      <button class="burger-menu" onclick="toggleMenu()">☰</button>
-    </div>
+
+    <header class="header">
+      <a href="/home" class="logo-link">
+        <img src="/logo.png" alt="Coach United">
+      </a>
+      <button class="burger-btn" onclick="openDrawer()">
+        <span></span><span></span><span></span>
+      </button>
+    </header>
 
     <div class="content">
       <h1>Impressum</h1>
-      
+
       <h2>Angaben gemäß § 5 TMG</h2>
       <p>Robert Greve<br>Czeminskistraße 4<br>10829 Berlin<br>Deutschland</p>
-      
+
       <h2>Kontakt</h2>
-      <p>E-Mail: mail.coachunited@gmail.com</p>
-      
+      <p>E-Mail: <a href="mailto:mail.coachunited@gmail.com">mail.coachunited@gmail.com</a></p>
+
       <h2>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h2>
       <p>Robert Greve<br>Czeminskistraße 4<br>10829 Berlin</p>
-      
-      <h2>Haftungsausschluss (Disclaimer)</h2>
-      
+
       <h2>Haftung für Inhalte</h2>
       <p>Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.</p>
-      <p>Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.</p>
-      
+      <p>Eine diesbezügliche Haftung ist erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.</p>
+
       <h2>Haftung für Links</h2>
-      <p>Unser Angebot enthält ggf. Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.</p>
-      <p>Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.</p>
-      
+      <p>Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.</p>
+
       <h2>Urheberrecht</h2>
-      <p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.</p>
-      <p>Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Solltest du trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.</p>
-      
-      <h2>Online-Streitbeilegung gemäß Art. 14 Abs. 1 ODR-VO und § 36 VSBG</h2>
-      <p>Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: https://ec.europa.eu/consumers/odr</p>
-      <p>Zur Teilnahme an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle sind wir nicht verpflichtet und nicht bereit.</p>
+      <p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet.</p>
+
+      <h2>Online-Streitbeilegung</h2>
+      <p>Die EU-Kommission stellt eine Plattform zur Online-Streitbeilegung bereit: <a href="https://ec.europa.eu/consumers/odr" target="_blank">ec.europa.eu/consumers/odr</a>. Zur Teilnahme an einem Streitbeilegungsverfahren sind wir nicht verpflichtet und nicht bereit.</p>
     </div>
 
-        <div class="bottom-nav">
-      <a href="/home" class="nav-item">
-        <span class="nav-icon">🏠</span>
-        <span class="nav-label">Home</span>
-      </a>
+    <nav class="bottom-nav">
       <a href="/uebungen" class="nav-item">
-        <span class="nav-icon">⚽</span>
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/>
+        </svg>
         <span class="nav-label">Übungen</span>
       </a>
+      <a href="https://coachunited.de/trainingseinheiten/" target="_blank" class="nav-item">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/>
+        </svg>
+        <span class="nav-label">Einheiten</span>
+      </a>
       <a href="/wissen" class="nav-item">
-        <span class="nav-icon">📚</span>
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+        </svg>
         <span class="nav-label">Wissen</span>
       </a>
       <a href="/whatsapp-info" class="nav-item">
-        <span class="nav-icon">💬</span>
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+        </svg>
         <span class="nav-label">WhatsApp</span>
       </a>
-    </div>
+    </nav>
 
-    <!-- Burger Menu -->
-    <div id="burger-overlay" class="burger-overlay" onclick="toggleMenu()"></div>
-    <div id="burger-drawer" class="burger-drawer">
-      <a href="/einheiten" class="menu-item">📋 Einheiten</a>
-      <a href="/ueber-uns" class="menu-item">👥 Über uns</a>
-      <a href="/spenden" class="menu-item">😇 Spenden</a>
-      <a href="/impressum" class="menu-item">ℹ️ Impressum</a>
+    <div class="drawer-overlay" id="drawer-overlay" onclick="closeDrawer()"></div>
+    <div class="drawer" id="drawer">
+      <button class="drawer-close" onclick="closeDrawer()">✕</button>
+      <img src="/logo.png" alt="Coach United" class="drawer-logo">
+      <a href="/ueber-uns" class="drawer-link">Über uns</a>
+      <a href="/impressum" class="drawer-link">Impressum</a>
     </div>
   </div>
-  
+
   <script>
-    function toggleMenu() {
-      const overlay = document.getElementById('burger-overlay');
-      const drawer = document.getElementById('burger-drawer');
-      overlay.classList.toggle('active');
-      drawer.classList.toggle('active');
+    function openDrawer() {
+      document.getElementById('drawer').classList.add('open');
+      document.getElementById('drawer-overlay').classList.add('open');
     }
-  </script>
-</body>
-</html>
-  
-  <script>
-    function toggleMenu() {
-      const overlay = document.getElementById('burger-overlay');
-      const drawer = document.getElementById('burger-drawer');
-      overlay.classList.toggle('active');
-      drawer.classList.toggle('active');
+    function closeDrawer() {
+      document.getElementById('drawer').classList.remove('open');
+      document.getElementById('drawer-overlay').classList.remove('open');
     }
   </script>
 </body>

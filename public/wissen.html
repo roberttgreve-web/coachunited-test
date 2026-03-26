@@ -3,285 +3,289 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wissen - COACH UNITED</title>
+  <title>Wissen – COACH UNITED</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Barlow:wght@700;800&display=swap" rel="stylesheet">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
     body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-      background: #f5f5f5;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #f0f2f5;
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: flex-start;
       min-height: 100vh;
     }
-    
+
     .container {
       width: 375px;
-      background: white;
-      border-radius: 24px;
+      min-height: 100vh;
+      background: #ffffff;
+      border-radius: 28px;
       overflow: hidden;
-      box-shadow: 0 20px 60px rgba(0,0,0,0.15);
-      position: relative;
+      box-shadow: 0 24px 64px rgba(0,0,0,0.12);
       display: flex;
       flex-direction: column;
-      max-height: 667px;
     }
-    
+
     .header {
-      background: #003D82;
-      padding: 12px 16px;
+      background: white;
+      padding: 14px 16px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      position: relative;
+      border-bottom: 1px solid #f0f2f5;
+      position: sticky;
+      top: 0;
+      z-index: 20;
     }
-    
-    .back-button {
-      background: none;
-      border: none;
-      color: white;
-      font-size: 20px;
-      cursor: pointer;
-      padding: 4px;
-      text-decoration: none;
+
+    .logo-link { display: flex; align-items: center; text-decoration: none; }
+    .logo-link img { width: 62px; height: 62px; object-fit: contain; }
+
+    .burger-btn {
+      background: none; border: none; cursor: pointer;
+      padding: 4px; color: #333;
+      display: flex; flex-direction: column; gap: 5px;
     }
-    
-    .header-title {
-      color: white;
-      font-weight: 500;
-      font-size: 16px;
-      letter-spacing: 1px;
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
+    .burger-btn span {
+      display: block; width: 22px; height: 2px;
+      background: #333; border-radius: 2px;
     }
-    
-    .burger-menu {
-      background: none;
-      border: none;
-      color: white;
-      font-size: 24px;
-      cursor: pointer;
-      padding: 4px;
-    }
-    
+
     .content {
       flex: 1;
       overflow-y: auto;
-      padding: 20px;
-      padding-bottom: 80px;
+      padding: 20px 16px 80px;
     }
-    
-    .exercise-card {
+
+    .section-title {
+      font-family: 'Barlow', 'Inter', sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      color: #9aa3b0;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 14px;
+    }
+
+    .article-card {
+      display: flex;
+      flex-direction: row;
+      text-decoration: none;
+      color: inherit;
       background: white;
-      border: 1px solid #e0e0e0;
-      border-radius: 12px;
-      padding: 18px 16px;
+      border-radius: 14px;
+      border: 1px solid #edf0f5;
       margin-bottom: 12px;
-      cursor: pointer;
-      transition: all 0.2s;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      transition: box-shadow 0.18s, transform 0.18s;
     }
-    
-    .exercise-card:hover {
-      box-shadow: 0 4px 12px rgba(0,61,130,0.15);
-      border-color: #003D82;
-      transform: translateY(-2px);
+    .article-card:hover {
+      box-shadow: 0 6px 20px rgba(0,0,0,0.09);
+      transform: translateY(-1px);
     }
-    
-    .exercise-title {
-      font-size: 17px;
+
+    .card-accent {
+      width: 5px;
+      flex-shrink: 0;
+      background: #1B6BF4;
+    }
+
+    .card-body {
+      flex: 1;
+      padding: 16px 14px;
+    }
+
+    .card-title {
+      font-size: 15px;
+      font-weight: 600;
+      color: #0a1628;
+      line-height: 1.4;
+      margin-bottom: 4px;
+    }
+
+    .card-label {
+      font-size: 12px;
+      color: #9aa3b0;
       font-weight: 500;
-      color: #1a1a1a;
-      line-height: 1.5;
     }
-    
+
+    /* Bottom Nav */
     .bottom-nav {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
+      position: fixed;
+      bottom: 0; left: 50%;
+      transform: translateX(-50%);
+      width: 375px;
       background: white;
-      border-top: 1px solid #e0e0e0;
+      border-top: 1px solid #f0f2f5;
       display: flex;
       justify-content: space-around;
-      padding: 8px 0;
-      box-shadow: 0 -2px 10px rgba(0,0,0,0.05);
+      padding: 10px 0 14px;
+      z-index: 20;
+      box-shadow: 0 -2px 12px rgba(0,0,0,0.06);
     }
-    
     .nav-item {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 4px;
-      border: none;
-      background: none;
-      cursor: pointer;
-      padding: 8px;
-      text-decoration: none;
+      flex: 1; display: flex; flex-direction: column;
+      align-items: center; gap: 3px;
+      border: none; background: none; cursor: pointer;
+      padding: 4px; text-decoration: none;
+      color: #c0c7d3; transition: color 0.15s;
     }
-    
-    .nav-item.active {
-      color: #003D82;
+    .nav-item.active { color: #1B6BF4; }
+    .nav-icon { width: 22px; height: 22px; }
+    .nav-label { font-size: 10px; font-weight: 500; }
+
+    /* Drawer */
+    .drawer-overlay {
+      display: none; position: fixed; inset: 0;
+      background: rgba(0,0,0,0.3); z-index: 40;
     }
-    
-    .nav-item:not(.active) {
-      color: #999;
+    .drawer-overlay.open { display: block; }
+    .drawer {
+      position: fixed; top: 0; right: -280px;
+      width: 260px; height: 100vh;
+      background: white; z-index: 50;
+      padding: 32px 24px;
+      transition: right 0.25s ease;
+      box-shadow: -8px 0 32px rgba(0,0,0,0.12);
     }
-    
-    .nav-icon {
-      font-size: 20px;
+    .drawer.open { right: 0; }
+    .drawer-close {
+      position: absolute; top: 16px; right: 16px;
+      background: none; border: none;
+      font-size: 22px; cursor: pointer; color: #555; padding: 4px;
     }
-    
-    .nav-label {
-      font-size: 11px;
-      font-weight: 500;
+    .drawer-logo { width: 48px; margin-bottom: 28px; }
+    .drawer-link {
+      display: block; padding: 12px 0;
+      font-size: 15px; font-weight: 500;
+      color: #1a1a2e; text-decoration: none;
+      border-bottom: 1px solid #f0f2f5;
     }
-    
-    /* Burger Menu Overlay */
-    .burger-overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: rgba(0,0,0,0.5);
-      opacity: 0;
-      visibility: hidden;
-      transition: all 0.3s;
-      z-index: 998;
-    }
-    
-    .burger-overlay.active {
-      opacity: 1;
-      visibility: visible;
-    }
-    
-    /* Burger Menu Drawer */
-    .burger-drawer {
-      position: absolute;
-      top: 0;
-      right: -280px;
-      width: 280px;
-      height: 100%;
-      background: white;
-      box-shadow: -2px 0 10px rgba(0,0,0,0.1);
-      transition: right 0.3s;
-      z-index: 999;
-      padding-top: 60px;
-      border-radius: 0 24px 24px 0;
-    }
-    
-    .burger-drawer.active {
-      right: 0;
-    }
-    
-    .menu-item {
-      display: block;
-      padding: 18px 24px;
-      color: #1a1a1a;
-      text-decoration: none;
-      font-size: 16px;
-      font-weight: 500;
-      border-bottom: 1px solid #e0e0e0;
-      transition: background 0.2s;
-    }
-    
-    .menu-item:hover {
-      background: #f5f5f5;
-    }
+    .drawer-link:last-child { border-bottom: none; }
+    .drawer-link:hover { color: #1B6BF4; }
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="header">
-      <a href="/home" class="back-button">←</a>
-      <div class="header-title">WISSEN</div>
-      <button class="burger-menu" onclick="toggleMenu()">☰</button>
-    </div>
+
+    <header class="header">
+      <a href="/home" class="logo-link">
+        <img src="/logo.png" alt="Coach United">
+      </a>
+      <button class="burger-btn" onclick="openDrawer()">
+        <span></span><span></span><span></span>
+      </button>
+    </header>
 
     <div class="content">
-      <div class="exercise-card">
-        <div class="exercise-title">Was du über Kopfbälle im Kinderfußball wissen musst</div>
-      </div>
-      
-      <div class="exercise-card">
-        <div class="exercise-title">Rituale im Kinderfußball</div>
-      </div>
-      
-      <div class="exercise-card">
-        <div class="exercise-title">Motivation statt Druck: So bleiben Kinder am Ball</div>
-      </div>
-      
-      <div class="exercise-card">
-        <div class="exercise-title">Fairplay vermitteln ohne zu belehren</div>
-      </div>
-      
-      <div class="exercise-card">
-        <div class="exercise-title">Die richtige Ballgröße für jede Altersklasse</div>
-      </div>
-      
-      <div class="exercise-card">
-        <div class="exercise-title">Umgang mit Niederlagen im Kindertraining</div>
-      </div>
-      
-      <div class="exercise-card">
-        <div class="exercise-title">Spielfreude vs. Leistungsdruck: Die Balance finden</div>
-      </div>
+      <p class="section-title">Artikel &amp; Tipps</p>
+
+      <a href="#" class="article-card">
+        <div class="card-accent"></div>
+        <div class="card-body">
+          <p class="card-title">Was du über Kopfbälle im Kinderfußball wissen musst</p>
+          <p class="card-label">Gesundheit</p>
+        </div>
+      </a>
+
+      <a href="#" class="article-card">
+        <div class="card-accent"></div>
+        <div class="card-body">
+          <p class="card-title">Rituale im Kinderfußball</p>
+          <p class="card-label">Teamkultur</p>
+        </div>
+      </a>
+
+      <a href="#" class="article-card">
+        <div class="card-accent"></div>
+        <div class="card-body">
+          <p class="card-title">Motivation statt Druck: So bleiben Kinder am Ball</p>
+          <p class="card-label">Pädagogik</p>
+        </div>
+      </a>
+
+      <a href="#" class="article-card">
+        <div class="card-accent"></div>
+        <div class="card-body">
+          <p class="card-title">Fairplay vermitteln ohne zu belehren</p>
+          <p class="card-label">Werte</p>
+        </div>
+      </a>
+
+      <a href="#" class="article-card">
+        <div class="card-accent"></div>
+        <div class="card-body">
+          <p class="card-title">Die richtige Ballgröße für jede Altersklasse</p>
+          <p class="card-label">Ausrüstung</p>
+        </div>
+      </a>
+
+      <a href="#" class="article-card">
+        <div class="card-accent"></div>
+        <div class="card-body">
+          <p class="card-title">Umgang mit Niederlagen im Kindertraining</p>
+          <p class="card-label">Pädagogik</p>
+        </div>
+      </a>
+
+      <a href="#" class="article-card">
+        <div class="card-accent"></div>
+        <div class="card-body">
+          <p class="card-title">Spielfreude vs. Leistungsdruck: Die Balance finden</p>
+          <p class="card-label">Philosophie</p>
+        </div>
+      </a>
     </div>
 
-        <div class="bottom-nav">
-      <a href="/home" class="nav-item">
-        <span class="nav-icon">🏠</span>
-        <span class="nav-label">Home</span>
-      </a>
+    <nav class="bottom-nav">
       <a href="/uebungen" class="nav-item">
-        <span class="nav-icon">⚽</span>
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/>
+        </svg>
         <span class="nav-label">Übungen</span>
       </a>
-      <a href="/wissen" class="nav-item">
-        <span class="nav-icon">📚</span>
+      <a href="https://coachunited.de/trainingseinheiten/" target="_blank" class="nav-item">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/>
+        </svg>
+        <span class="nav-label">Einheiten</span>
+      </a>
+      <a href="/wissen" class="nav-item active">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+        </svg>
         <span class="nav-label">Wissen</span>
       </a>
       <a href="/whatsapp-info" class="nav-item">
-        <span class="nav-icon">💬</span>
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+        </svg>
         <span class="nav-label">WhatsApp</span>
       </a>
-    </div>
+    </nav>
 
-    <!-- Burger Menu -->
-    <div id="burger-overlay" class="burger-overlay" onclick="toggleMenu()"></div>
-    <div id="burger-drawer" class="burger-drawer">
-      <a href="/einheiten" class="menu-item">📋 Einheiten</a>
-      <a href="/ueber-uns" class="menu-item">👥 Über uns</a>
-      <a href="/spenden" class="menu-item">😇 Spenden</a>
-      <a href="/impressum" class="menu-item">ℹ️ Impressum</a>
+    <div class="drawer-overlay" id="drawer-overlay" onclick="closeDrawer()"></div>
+    <div class="drawer" id="drawer">
+      <button class="drawer-close" onclick="closeDrawer()">✕</button>
+      <img src="/logo.png" alt="Coach United" class="drawer-logo">
+      <a href="/ueber-uns" class="drawer-link">Über uns</a>
+      <a href="/impressum" class="drawer-link">Impressum</a>
     </div>
   </div>
-  
+
   <script>
-    function toggleMenu() {
-      const overlay = document.getElementById('burger-overlay');
-      const drawer = document.getElementById('burger-drawer');
-      overlay.classList.toggle('active');
-      drawer.classList.toggle('active');
+    function openDrawer() {
+      document.getElementById('drawer').classList.add('open');
+      document.getElementById('drawer-overlay').classList.add('open');
     }
-  </script>
-</body>
-</html>
-  
-  <script>
-    function toggleMenu() {
-      const overlay = document.getElementById('burger-overlay');
-      const drawer = document.getElementById('burger-drawer');
-      overlay.classList.toggle('active');
-      drawer.classList.toggle('active');
+    function closeDrawer() {
+      document.getElementById('drawer').classList.remove('open');
+      document.getElementById('drawer-overlay').classList.remove('open');
     }
   </script>
 </body>
