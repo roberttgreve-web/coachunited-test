@@ -133,6 +133,11 @@
           <summary><span class="title">💪 Übung schwieriger machen</span><span class="arrow">›</span></summary>
           <div class="accordion-content"><p id="schwerer-machen"></p></div>
         </details>
+        <div id="sisters-box" style="display:none; background:#EEF4FF; border-radius:12px; padding:18px; margin-bottom:16px;">
+          <p style="font-weight:500; font-size:14px; margin:0 0 12px; color:#003D82; text-transform:uppercase; letter-spacing:0.5px;">Andere Übungen mit gleichem Aufbau</p>
+          <div id="sisters-list"></div>
+        </div>
+
         <div class="related-box" id="related-box" style="display:none;">
           <p class="related-box-title">Zugehörige Trainingseinheit</p>
           <a id="related-link" href="#" target="_blank" class="related-link"></a>
@@ -231,6 +236,23 @@
         document.getElementById('coaching-fokus').innerHTML = toBulletList(ex.coaching_fokus);
         document.getElementById('leichter-machen').innerHTML = toBulletList(ex.leichter_machen);
         document.getElementById('schwerer-machen').innerHTML = toBulletList(ex.schwerer_machen);
+
+        // Schwesterübungen (gleiche Trainingseinheit)
+        if (ex.quell_trainingseinheit) {
+          const sisters = exercises.filter(e =>
+            e.url_slug !== slug &&
+            e.quell_trainingseinheit === ex.quell_trainingseinheit &&
+            e.url_slug
+          );
+          if (sisters.length > 0) {
+            const list = document.getElementById('sisters-list');
+            list.innerHTML = sisters.map(s => `
+              <a href="/uebung/${s.url_slug}" style="display:block; padding:12px; background:white; border:1.5px solid #003D82; border-radius:8px; text-decoration:none; color:#003D82; font-size:15px; font-weight:500; margin-bottom:8px;">
+                ${s.alt_titel || s.titel}
+              </a>`).join('');
+            document.getElementById('sisters-box').style.display = 'block';
+          }
+        }
 
         // Related link
         if (ex.quell_url) {
