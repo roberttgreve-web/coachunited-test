@@ -4,137 +4,464 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Übung – COACH UNITED</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Barlow:wght@700;800&display=swap" rel="stylesheet">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
+
     body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-      background: #f5f5f5;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #f0f2f5;
       display: flex;
       justify-content: center;
       align-items: flex-start;
       min-height: 100vh;
     }
+
     .container {
       width: 375px;
       min-height: 100vh;
       background: white;
-      border-radius: 24px;
+      border-radius: 28px;
       overflow: hidden;
-      box-shadow: 0 20px 60px rgba(0,0,0,0.15);
-      position: relative;
+      box-shadow: 0 24px 64px rgba(0,0,0,0.12);
       display: flex;
       flex-direction: column;
     }
+
+    /* ── Header ── */
     .header {
-      background: #003D82;
-      padding: 12px 16px;
+      background: white;
+      padding: 4px 16px;
       display: flex;
       align-items: center;
-      justify-content: center;
-      position: relative;
+      justify-content: space-between;
+      border-bottom: 1px solid #f0f2f5;
+      position: sticky;
+      top: 0;
+      z-index: 20;
     }
-    .back-button {
-      position: absolute;
-      left: 16px;
+
+    .back-btn {
+      display: flex;
+      align-items: center;
+      gap: 6px;
       background: none;
       border: none;
-      color: white;
-      font-size: 20px;
       cursor: pointer;
-      padding: 4px;
       text-decoration: none;
+      color: #1B6BF4;
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      padding: 4px 0;
     }
-    .header-title { color: white; font-weight: 500; font-size: 16px; letter-spacing: 1px; }
+    .back-btn svg { width: 18px; height: 18px; }
+
+    .logo-link { display: flex; align-items: center; text-decoration: none; }
+    .logo-link img { width: 80px; height: 80px; object-fit: contain; }
+
+    .burger-btn {
+      background: none; border: none; cursor: pointer;
+      padding: 4px; display: flex; flex-direction: column; gap: 5px;
+    }
+    .burger-btn span {
+      display: block; width: 22px; height: 2px;
+      background: #333; border-radius: 2px;
+    }
+
+    /* ── Graphic ── */
     .graphics-container {
       width: 100%;
-      background: white;
+      background: #f5f8ff;
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 20px 0;
+      padding: 24px 32px;
+      border-bottom: 1px solid #f0f2f5;
     }
-    .graphics-container img { width: 100%; height: auto; object-fit: contain; }
-    .content { flex: 1; overflow-y: auto; padding: 24px; padding-bottom: 80px; }
-    h1 { font-size: 26px; font-weight: 600; color: #1a1a1a; margin: 0 0 14px; line-height: 1.2; }
-    .tags { display: flex; align-items: center; gap: 4px; flex-wrap: wrap; margin-bottom: 20px; }
-    .tag { padding: 4px 8px; border-radius: 10px; font-size: 13px; font-weight: 500; }
-    .tag-jugend { background: #B8D4E8; color: #003D82; }
-    .tag-skill  { background: #C8E6C9; color: #2E7D32; }
-    .tag-phase  { background: #FFE0B2; color: #E65100; }
-    .tag-divider { color: #999; font-size: 14px; margin: 0 2px; }
-    .description { font-size: 17px; line-height: 1.8; color: #2a2a2a; margin: 0 0 24px; }
-    details { border: 0.5px solid #e0e0e0; border-radius: 12px; margin-bottom: 16px; overflow: hidden; }
+    .graphics-container img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      max-height: 220px;
+    }
+
+    /* ── Content ── */
+    .content {
+      flex: 1;
+      overflow-y: auto;
+      padding: 24px 20px 100px;
+    }
+
+    h1 {
+      font-family: 'Barlow', 'Inter', sans-serif;
+      font-size: 26px;
+      font-weight: 800;
+      color: #0a1628;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+      line-height: 1.15;
+      margin-bottom: 14px;
+    }
+
+    /* ── Tags ── */
+    .tags {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+    .tag {
+      padding: 3px 9px;
+      border-radius: 8px;
+      font-size: 12px;
+      font-weight: 500;
+    }
+    .tag-jugend { background: #ddeeff; color: #1B6BF4; }
+    .tag-skill  { background: #dcf5e7; color: #1a8044; }
+    .tag-phase  { background: #fff0df; color: #c45e00; }
+    .tag-divider { color: #d0d5dd; font-size: 12px; }
+
+    /* ── Description ── */
+    .description {
+      font-size: 16px;
+      line-height: 1.75;
+      color: #4a5568;
+      margin-bottom: 28px;
+    }
+
+    /* ── Accordions ── */
+    details {
+      border: 1px solid #edf0f5;
+      border-radius: 14px;
+      margin-bottom: 10px;
+      overflow: hidden;
+    }
     summary {
-      padding: 18px; font-weight: 500; font-size: 17px; cursor: pointer;
-      user-select: none; display: flex; align-items: center; gap: 8px;
-      color: #1a1a1a; list-style: none;
+      padding: 16px 18px;
+      font-weight: 600;
+      font-size: 15px;
+      cursor: pointer;
+      user-select: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #0a1628;
+      list-style: none;
+      background: white;
+      transition: background 0.15s;
     }
+    summary:hover { background: #fafbff; }
     summary::-webkit-details-marker { display: none; }
     summary .title { flex: 1; }
-    summary .arrow { font-size: 20px; color: #999; transition: transform 0.2s; }
-    details[open] summary .arrow { transform: rotate(90deg); }
-    .accordion-content { padding: 16px 18px 18px; border-top: 0.5px solid #e0e0e0; }
-    .accordion-content p { font-size: 16px; line-height: 1.8; color: #2a2a2a; }
-    .related-box { background: #CCE0F4; border-radius: 12px; padding: 18px; margin-bottom: 24px; }
-    .related-box-title { font-weight: 500; font-size: 14px; margin: 0 0 12px; color: #003D82; text-transform: uppercase; letter-spacing: 0.5px; }
-    .related-link {
-      display: block; padding: 12px; background: white;
-      border: 2px solid #003D82; border-radius: 8px;
-      text-decoration: none; color: #003D82; font-size: 15px; font-weight: 500;
+    summary .arrow {
+      width: 18px; height: 18px;
+      color: #c0c7d3;
+      transition: transform 0.2s;
+      flex-shrink: 0;
     }
-    .feedback-box { background: #F5F8FA; border-radius: 12px; padding: 20px; border: 0.5px solid #e0e0e0; margin-bottom: 20px; }
-    .feedback-title { font-size: 16px; font-weight: 500; margin: 0 0 14px; color: #1a1a1a; }
-    textarea { width: 100%; min-height: 100px; padding: 14px; border: 1px solid #ddd; border-radius: 8px; font-size: 16px; font-family: inherit; resize: vertical; margin-bottom: 12px; box-sizing: border-box; }
-    textarea::placeholder { color: #999; }
-    .btn-primary { width: 100%; padding: 14px; background: #003D82; color: white; text-align: center; border: none; border-radius: 8px; font-size: 16px; font-weight: 500; cursor: pointer; }
-    .btn-secondary { width: 100%; padding: 14px; background: white; color: #003D82; text-align: center; border: 1px solid #003D82; border-radius: 8px; font-size: 16px; font-weight: 500; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px; }
-    .bottom-nav { position: fixed; bottom: 0; left: 50%; transform: translateX(-50%); width: 375px; background: white; border-top: 1px solid #e0e0e0; display: flex; justify-content: space-around; padding: 8px 0; box-shadow: 0 -2px 10px rgba(0,0,0,0.05); z-index: 10; }
-    .nav-item { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 4px; border: none; background: none; cursor: pointer; padding: 8px; text-decoration: none; color: #999; }
-    .nav-item.active { color: #003D82; }
-    .nav-icon { font-size: 20px; }
-    .nav-label { font-size: 11px; font-weight: 500; }
-    #loading { padding: 40px; text-align: center; color: #999; font-size: 16px; }
-    #not-found { padding: 40px; text-align: center; color: #666; }
+    details[open] summary .arrow { transform: rotate(90deg); }
+    details[open] summary { border-bottom: 1px solid #edf0f5; }
+
+    .accordion-content {
+      padding: 16px 18px 18px;
+      background: #fafbff;
+    }
+    .accordion-content p {
+      font-size: 15px;
+      line-height: 1.8;
+      color: #4a5568;
+    }
+    .accordion-content ul {
+      padding-left: 18px;
+      margin: 0;
+    }
+    .accordion-content li {
+      font-size: 15px;
+      line-height: 1.75;
+      color: #4a5568;
+      margin-bottom: 6px;
+    }
+
+    /* ── Sisters box ── */
+    .sisters-box {
+      background: #f0f5ff;
+      border-radius: 14px;
+      padding: 18px;
+      margin-bottom: 12px;
+    }
+    .sisters-box-title {
+      font-size: 11px;
+      font-weight: 700;
+      color: #1B6BF4;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 12px;
+    }
+    .sister-link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 14px;
+      background: white;
+      border: 1px solid #ddeeff;
+      border-radius: 10px;
+      text-decoration: none;
+      color: #0a1628;
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 8px;
+      transition: box-shadow 0.15s;
+    }
+    .sister-link:last-child { margin-bottom: 0; }
+    .sister-link:hover { box-shadow: 0 2px 8px rgba(27,107,244,0.12); }
+    .sister-link::before {
+      content: '';
+      width: 4px;
+      height: 32px;
+      background: #1B6BF4;
+      border-radius: 2px;
+      flex-shrink: 0;
+    }
+
+    /* ── Related box ── */
+    .related-box {
+      background: #f0f5ff;
+      border-radius: 14px;
+      padding: 18px;
+      margin-bottom: 12px;
+    }
+    .related-box-title {
+      font-size: 11px;
+      font-weight: 700;
+      color: #1B6BF4;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 12px;
+    }
+    .related-link {
+      display: block;
+      padding: 12px 14px;
+      background: white;
+      border: 1px solid #ddeeff;
+      border-radius: 10px;
+      text-decoration: none;
+      color: #0a1628;
+      font-size: 14px;
+      font-weight: 500;
+      transition: box-shadow 0.15s;
+    }
+    .related-link:hover { box-shadow: 0 2px 8px rgba(27,107,244,0.12); }
+
+    /* ── Feedback ── */
+    .feedback-box {
+      background: #fafbff;
+      border-radius: 14px;
+      padding: 20px;
+      border: 1px solid #edf0f5;
+      margin-bottom: 12px;
+    }
+    .feedback-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: #0a1628;
+      margin-bottom: 14px;
+    }
+    textarea {
+      width: 100%;
+      min-height: 96px;
+      padding: 12px 14px;
+      border: 1px solid #e4e8ef;
+      border-radius: 10px;
+      font-size: 15px;
+      font-family: 'Inter', sans-serif;
+      resize: vertical;
+      margin-bottom: 12px;
+      color: #0a1628;
+      background: white;
+      outline: none;
+      transition: border-color 0.15s;
+    }
+    textarea:focus { border-color: #1B6BF4; }
+    textarea::placeholder { color: #b0bac9; }
+
+    .btn-primary {
+      width: 100%;
+      padding: 14px;
+      background: #1B6BF4;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-family: 'Inter', sans-serif;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+    .btn-primary:hover { background: #1458d4; }
+
+    .btn-secondary {
+      width: 100%;
+      padding: 14px;
+      background: white;
+      color: #1B6BF4;
+      border: 1.5px solid #1B6BF4;
+      border-radius: 10px;
+      font-family: 'Inter', sans-serif;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: background 0.15s;
+    }
+    .btn-secondary:hover { background: #f0f5ff; }
+
+    #loading { padding: 60px 24px; text-align: center; color: #9aa3b0; font-size: 15px; }
+    #not-found { padding: 60px 24px; text-align: center; color: #9aa3b0; font-size: 15px; }
+    #not-found a { color: #1B6BF4; text-decoration: none; }
+
+    /* ── Bottom Nav ── */
+    .bottom-nav {
+      position: fixed;
+      bottom: 0; left: 50%;
+      transform: translateX(-50%);
+      width: 375px;
+      background: white;
+      border-top: 1px solid #f0f2f5;
+      display: flex;
+      justify-content: space-around;
+      padding: 10px 0 14px;
+      z-index: 20;
+      box-shadow: 0 -2px 12px rgba(0,0,0,0.06);
+    }
+    .nav-item {
+      flex: 1; display: flex; flex-direction: column;
+      align-items: center; gap: 3px;
+      border: none; background: none; cursor: pointer;
+      padding: 4px; text-decoration: none;
+      color: #c0c7d3; transition: color 0.15s;
+    }
+    .nav-item.active { color: #1B6BF4; }
+    .nav-icon { width: 22px; height: 22px; }
+    .nav-label { font-size: 10px; font-weight: 500; }
+
+    /* ── Drawer ── */
+    .drawer-overlay {
+      display: none; position: fixed; inset: 0;
+      background: rgba(0,0,0,0.3); z-index: 40;
+    }
+    .drawer-overlay.open { display: block; }
+    .drawer {
+      position: fixed; top: 0; right: -280px;
+      width: 260px; height: 100vh;
+      background: white; z-index: 50;
+      padding: 32px 24px;
+      transition: right 0.25s ease;
+      box-shadow: -8px 0 32px rgba(0,0,0,0.12);
+    }
+    .drawer.open { right: 0; }
+    .drawer-close {
+      position: absolute; top: 16px; right: 16px;
+      background: none; border: none;
+      font-size: 22px; cursor: pointer; color: #555; padding: 4px;
+    }
+    .drawer-logo { width: 48px; margin-bottom: 28px; }
+    .drawer-link {
+      display: block; padding: 12px 0;
+      font-size: 15px; font-weight: 500;
+      color: #1a1a2e; text-decoration: none;
+      border-bottom: 1px solid #f0f2f5;
+    }
+    .drawer-link:last-child { border-bottom: none; }
+    .drawer-link:hover { color: #1B6BF4; }
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="header">
-      <a href="/uebungen" class="back-button">←</a>
-      <div class="header-title">COACH UNITED</div>
+
+    <!-- Header -->
+    <header class="header">
+      <a href="/uebungen" class="back-btn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="15 18 9 12 15 6"/>
+        </svg>
+        Zurück
+      </a>
+      <a href="/home" class="logo-link">
+        <img src="/logo.png" alt="Coach United">
+      </a>
+      <button class="burger-btn" onclick="openDrawer()">
+        <span></span><span></span><span></span>
+      </button>
+    </header>
+
+    <!-- Loading / Not found -->
+    <div id="loading">Übung wird geladen…</div>
+    <div id="not-found" style="display:none;">
+      <p>Übung nicht gefunden.</p><br>
+      <a href="/uebungen">← Zurück zur Übersicht</a>
     </div>
 
-    <div id="loading" class="content">Übung wird geladen...</div>
+    <!-- Exercise content -->
     <div id="exercise-content" style="display:none; flex:1; flex-direction:column;">
+
       <div class="graphics-container" id="grafik-container" style="display:none;">
         <img id="grafik-img" src="" alt="">
       </div>
+
       <div class="content">
         <h1 id="titel"></h1>
         <div class="tags" id="tags"></div>
         <p class="description" id="beschreibung"></p>
+
         <details open>
-          <summary><span class="title">🔧 Aufbau</span><span class="arrow">›</span></summary>
+          <summary>
+            <span class="title">Aufbau</span>
+            <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          </summary>
           <div class="accordion-content"><p id="aufbau"></p></div>
         </details>
+
         <details open>
-          <summary><span class="title">▶️ Durchführung</span><span class="arrow">›</span></summary>
+          <summary>
+            <span class="title">Durchführung</span>
+            <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          </summary>
           <div class="accordion-content"><p id="durchfuehrung"></p></div>
         </details>
+
         <details>
-          <summary><span class="title">🎯 Coaching-Fokus</span><span class="arrow">›</span></summary>
+          <summary>
+            <span class="title">Coaching-Fokus</span>
+            <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          </summary>
           <div class="accordion-content"><p id="coaching-fokus"></p></div>
         </details>
+
         <details>
-          <summary><span class="title">👶 Übung leichter machen</span><span class="arrow">›</span></summary>
+          <summary>
+            <span class="title">Übung leichter machen</span>
+            <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          </summary>
           <div class="accordion-content"><p id="leichter-machen"></p></div>
         </details>
+
         <details>
-          <summary><span class="title">💪 Übung schwieriger machen</span><span class="arrow">›</span></summary>
+          <summary>
+            <span class="title">Übung schwieriger machen</span>
+            <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          </summary>
           <div class="accordion-content"><p id="schwerer-machen"></p></div>
         </details>
-        <div id="sisters-box" style="display:none; background:#EEF4FF; border-radius:12px; padding:18px; margin-bottom:16px;">
-          <p style="font-weight:500; font-size:14px; margin:0 0 12px; color:#003D82; text-transform:uppercase; letter-spacing:0.5px;">Andere Übungen mit gleichem Aufbau</p>
+
+        <div id="sisters-box" class="sisters-box" style="display:none;">
+          <p class="sisters-box-title">Andere Übungen mit gleichem Aufbau</p>
           <div id="sisters-list"></div>
         </div>
 
@@ -142,29 +469,59 @@
           <p class="related-box-title">Zugehörige Trainingseinheit</p>
           <a id="related-link" href="#" target="_blank" class="related-link"></a>
         </div>
+
         <div class="feedback-box">
-          <p class="feedback-title">Lasst uns die Übung gemeinsam besser machen:</p>
+          <p class="feedback-title">Hilf uns, die Übung besser zu machen:</p>
           <textarea id="feedbackText" placeholder="Dein Feedback an uns"></textarea>
           <button class="btn-primary" onclick="submitFeedback()">Feedback absenden</button>
         </div>
+
         <div class="feedback-box">
           <button class="btn-secondary" onclick="shareExercise()">
-            <span style="font-size:18px;">↗</span>
-            <span>Übung weiterempfehlen</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/>
+            </svg>
+            Übung weiterempfehlen
           </button>
         </div>
       </div>
     </div>
-    <div id="not-found" style="display:none;">
-      <p>Übung nicht gefunden.</p><br>
-      <a href="/uebungen" style="color:#003D82;">← Zurück zur Übersicht</a>
-    </div>
 
-    <div class="bottom-nav">
-      <a href="/home" class="nav-item"><span class="nav-icon">🏠</span><span class="nav-label">Home</span></a>
-      <a href="/uebungen" class="nav-item active"><span class="nav-icon">⚽</span><span class="nav-label">Übungen</span></a>
-      <a href="/wissen" class="nav-item"><span class="nav-icon">📚</span><span class="nav-label">Wissen</span></a>
-      <a href="/whatsapp-info" class="nav-item"><span class="nav-icon">💬</span><span class="nav-label">WhatsApp</span></a>
+    <!-- Bottom Nav -->
+    <nav class="bottom-nav">
+      <a href="/uebungen" class="nav-item active">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/>
+        </svg>
+        <span class="nav-label">Übungen</span>
+      </a>
+      <a href="https://coachunited.de/trainingseinheiten/" target="_blank" class="nav-item">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/>
+        </svg>
+        <span class="nav-label">Einheiten</span>
+      </a>
+      <a href="/wissen" class="nav-item">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+        </svg>
+        <span class="nav-label">Wissen</span>
+      </a>
+      <a href="/whatsapp-info" class="nav-item">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+        </svg>
+        <span class="nav-label">WhatsApp</span>
+      </a>
+    </nav>
+
+    <!-- Burger Drawer -->
+    <div class="drawer-overlay" id="drawer-overlay" onclick="closeDrawer()"></div>
+    <div class="drawer" id="drawer">
+      <button class="drawer-close" onclick="closeDrawer()">✕</button>
+      <img src="/logo.png" alt="Coach United" class="drawer-logo">
+      <a href="/ueber-uns" class="drawer-link">Über uns</a>
+      <a href="/impressum" class="drawer-link">Impressum</a>
     </div>
   </div>
 
@@ -172,8 +529,8 @@
     function toBulletList(text) {
       if (!text) return '';
       const items = text.split(/[;•]/).map(s => s.trim()).filter(s => s.length > 0);
-      if (items.length <= 1) return items[0] || '';
-      return '<ul style="padding-left:18px;margin:0;">' + items.map(i => `<li style="margin-bottom:6px;">${i}</li>`).join('') + '</ul>';
+      if (items.length <= 1) return `<p>${items[0] || ''}</p>`;
+      return '<ul>' + items.map(i => `<li>${i}</li>`).join('') + '</ul>';
     }
 
     const slug = window.location.pathname.replace(/^\/uebung\//, '').replace(/\/$/, '');
@@ -190,15 +547,14 @@
 
         document.title = ex.titel + ' – COACH UNITED';
 
-        // Grafik
         if (ex.grafik_url) {
           document.getElementById('grafik-img').src = ex.grafik_url;
           document.getElementById('grafik-img').alt = ex.grafik_alt_text || ex.titel;
           document.getElementById('grafik-container').style.display = 'flex';
         }
 
-        // Titel & Tags
         document.getElementById('titel').textContent = ex.titel;
+
         const tagsEl = document.getElementById('tags');
         (ex.jugend || []).forEach(j => {
           const span = document.createElement('span');
@@ -207,10 +563,10 @@
           tagsEl.appendChild(span);
         });
         if ((ex.jugend || []).length && (ex.skills || []).length) {
-          const div = document.createElement('span');
-          div.className = 'tag-divider';
-          div.textContent = '|';
-          tagsEl.appendChild(div);
+          const sep = document.createElement('span');
+          sep.className = 'tag-divider';
+          sep.textContent = '·';
+          tagsEl.appendChild(sep);
         }
         (ex.skills || []).forEach(s => {
           const span = document.createElement('span');
@@ -219,17 +575,16 @@
           tagsEl.appendChild(span);
         });
         if (ex.trainingsphase) {
-          const div = document.createElement('span');
-          div.className = 'tag-divider';
-          div.textContent = '|';
-          tagsEl.appendChild(div);
+          const sep = document.createElement('span');
+          sep.className = 'tag-divider';
+          sep.textContent = '·';
+          tagsEl.appendChild(sep);
           const span = document.createElement('span');
           span.className = 'tag tag-phase';
           span.textContent = ex.trainingsphase;
           tagsEl.appendChild(span);
         }
 
-        // Inhalte
         document.getElementById('beschreibung').textContent = ex.kurzbeschreibung || '';
         document.getElementById('aufbau').textContent = ex.aufbau || '';
         document.getElementById('durchfuehrung').textContent = ex.durchfuehrung || '';
@@ -237,7 +592,6 @@
         document.getElementById('leichter-machen').innerHTML = toBulletList(ex.leichter_machen);
         document.getElementById('schwerer-machen').innerHTML = toBulletList(ex.schwerer_machen);
 
-        // Schwesterübungen (gleiche Trainingseinheit)
         if (ex.quell_trainingseinheit) {
           const sisters = exercises.filter(e =>
             e.url_slug !== slug &&
@@ -245,16 +599,13 @@
             e.url_slug
           );
           if (sisters.length > 0) {
-            const list = document.getElementById('sisters-list');
-            list.innerHTML = sisters.map(s => `
-              <a href="/uebung/${s.url_slug}" style="display:block; padding:12px; background:white; border:1.5px solid #003D82; border-radius:8px; text-decoration:none; color:#003D82; font-size:15px; font-weight:500; margin-bottom:8px;">
-                ${s.titel}
-              </a>`).join('');
+            document.getElementById('sisters-list').innerHTML = sisters.map(s =>
+              `<a href="/uebung/${s.url_slug}" class="sister-link">${s.titel}</a>`
+            ).join('');
             document.getElementById('sisters-box').style.display = 'block';
           }
         }
 
-        // Related link
         if (ex.quell_url) {
           document.getElementById('related-link').href = ex.quell_url;
           document.getElementById('related-link').textContent = ex.quell_trainingseinheit || ex.quell_url;
@@ -285,10 +636,17 @@
       if (navigator.share) {
         navigator.share({ title, url }).catch(() => {});
       } else {
-        navigator.clipboard.writeText(url).then(() => {
-          alert('Link wurde kopiert!');
-        });
+        navigator.clipboard.writeText(url).then(() => alert('Link wurde kopiert!'));
       }
+    }
+
+    function openDrawer() {
+      document.getElementById('drawer').classList.add('open');
+      document.getElementById('drawer-overlay').classList.add('open');
+    }
+    function closeDrawer() {
+      document.getElementById('drawer').classList.remove('open');
+      document.getElementById('drawer-overlay').classList.remove('open');
     }
   </script>
 </body>
