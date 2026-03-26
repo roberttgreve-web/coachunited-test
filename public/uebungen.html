@@ -45,7 +45,7 @@
     }
 
     .logo-link { display: flex; align-items: center; text-decoration: none; }
-    .logo-link img { width: 40px; height: 40px; object-fit: contain; }
+    .logo-link img { width: 52px; height: 52px; object-fit: contain; }
 
     .burger-btn {
       background: none;
@@ -192,7 +192,8 @@
 
     /* ── Exercise Card ── */
     .exercise-card {
-      display: block;
+      display: flex;
+      flex-direction: row;
       text-decoration: none;
       color: inherit;
       background: white;
@@ -208,16 +209,21 @@
       transform: translateY(-1px);
     }
 
+    .card-image-wrap {
+      flex-shrink: 0;
+      width: 90px;
+    }
     .card-image {
-      width: 100%;
-      height: 100px;
+      width: 90px;
+      height: 100%;
+      min-height: 90px;
       object-fit: cover;
       display: block;
-      background: #f5f8ff;
     }
     .card-image-placeholder {
-      width: 100%;
-      height: 100px;
+      width: 90px;
+      height: 100%;
+      min-height: 90px;
       background: linear-gradient(135deg, #eef3ff 0%, #dde8ff 100%);
       display: flex;
       align-items: center;
@@ -226,7 +232,7 @@
       font-size: 28px;
     }
 
-    .card-body { padding: 12px 14px 14px; }
+    .card-body { flex: 1; padding: 12px 14px 12px; min-width: 0; }
 
     .card-title {
       font-family: 'Barlow', 'Inter', sans-serif;
@@ -581,12 +587,12 @@
         const phaseTag = ex.trainingsphase
           ? `<span class="tag tag-phase">${ex.trainingsphase}</span>` : '';
         const img = ex.grafik_url
-          ? `<img class="card-image" src="${ex.grafik_url}" alt="${ex.titel}" loading="lazy" onerror="this.outerHTML='<div class=card-image-placeholder>⚽</div>'">`
+          ? `<img class="card-image" src="${ex.grafik_url}" alt="${ex.titel}" loading="lazy" onerror="this.parentElement.innerHTML='<div class=card-image-placeholder>⚽</div>'">`
           : `<div class="card-image-placeholder">⚽</div>`;
 
         return `
           <a href="${href}" class="exercise-card">
-            ${img}
+            <div class="card-image-wrap">${img}</div>
             <div class="card-body">
               <h3 class="card-title">${ex.titel}</h3>
               <div class="card-tags">${jugendTags}${skillTags}${phaseTag}</div>
