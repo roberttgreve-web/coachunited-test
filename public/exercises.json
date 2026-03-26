@@ -71,5 +71,42 @@
     "grafik_description": "Die Übung besteht aus zwei 10x10 Meter großen Spielfeldern. In jeder Ecke steht ein Spieler, in der Mitte eines Feldes befindet sich ein Spieler mit Ball. Dieser spielt den Ball im Uhrzeigersinn nacheinander zu den Eckspieler und erhält ihn zurück.",
     "grafik_title": "Fußballübung: Kreispassspiel für Kinder",
     "grafik_caption": "Übung zum Verbessern von Passspiel, Ballkontrolle und Raumaufteilung"
+  },
+  {
+    "id": 7,
+    "titel": "SCHWEINCHEN IN DER MITTE",
+    "quell_trainingseinheit": "Technik im Fokus: Sauber dribbeln",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/01/image-14.jpg",
+    "grafik_dateiname": "uebung-007-schweinchen-in-der-mitte.jpg",
+    "trainingsphase": "Aufwärmen",
+    "kurzbeschreibung": "Die Spieler passen sich den Ball so zu, dass der Fänger in der Mitte des Feldes den Ball nicht erobern kann.",
+    "aufbau": "Zwei 10mx10m große Felder errichten und mit Eckhütchen markieren. Je ein Spieler pro Eckhütchen. Ein Spieler in der Mitte des Feldes mit Ball.",
+    "durchfuehrung": "Die Spieler an den Eckhütchen passen sich den Ball zu. Der Spieler in der Mitte muss den Ball erobern. Der Spieler, der den Fehlpass gespielt hat, muss dann als Jäger in die Mitte.",
+    "varianten": "a) Spieler an den Eckhütchen bewegen sich flexibel um das gesamte Feld. b) Nur zwei oder drei Ballberührungen erlaubt. ERST SLALOM, DANN TORSCHUSS ERST SLALOM, DANN TORSCHUSS Die Spieler dribbeln im Slalom und schießen aufs Tor.",
+    "quell_url": "https://coachunited.de/technik-im-fokus-sauber-dribbeln/",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Koordination",
+      "Raumverhalten"
+    ],
+    "coaching_fokus": "• Blick zum Mitspieler vor dem Pass heben; • Körperfinte vor dem Zuspiel einbauen; • Weite Pässe mit gutem Timing spielen",
+    "leichter_machen": "• Spielfeld vergrößern; • Nur Zuspiele in eine Richtung erlauben",
+    "schwerer_machen": "• Mehr Jäger in der Mitte einsetzen; • Nur 1-2 Ballberührungen erlaubt",
+    "status": "veroeffentlicht",
+    "alt_titel": "Der Ball fliegt, der Jäger jagt",
+    "seo_keyword": "Fußballübung Ballbesitzspiel Kinder",
+    "url_slug": "schweinchen-in-der-mitte-fussballubung-kinder",
+    "seo_meta_description": "Fußballübung Schweinchen in der Mitte fördert Ballkontrolle, Passen und Raumverhalten bei 6-12-Jährigen. Varianten machen die Übung leichter oder schwerer.",
+    "grafik_alt_text": "Kinder spielen Fußball in einem Spielfeld, ein Kind in der Mitte versucht den Ball zu erobern",
+    "grafik_description": "Die Übung 'Schweinchen in der Mitte' trainiert das Zuspiel und die Ballsicherheit der Spieler. Die Kinder passen sich den Ball zu, während ein Spieler in der Mitte versucht, den Ball zu erobern.",
+    "grafik_title": "Fußballübung Schweinchen in der Mitte für Kinder",
+    "grafik_caption": "Ballbesitzspiel 'Schweinchen in der Mitte' für 6-12-jährige Fußballkinder"
   }
 ]
