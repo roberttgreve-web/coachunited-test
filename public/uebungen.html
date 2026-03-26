@@ -209,29 +209,11 @@
       transform: translateY(-1px);
     }
 
-    .card-image-wrap {
+    .card-accent {
+      width: 5px;
       flex-shrink: 0;
-      width: 90px;
-    }
-    .card-image {
-      width: 90px;
-      height: 100%;
-      min-height: 90px;
-      object-fit: contain;
-      display: block;
-      background: #f5f8ff;
-      padding: 6px;
-    }
-    .card-image-placeholder {
-      width: 90px;
-      height: 100%;
-      min-height: 90px;
-      background: linear-gradient(135deg, #eef3ff 0%, #dde8ff 100%);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #b0c0e0;
-      font-size: 28px;
+      background: #1B6BF4;
+      border-radius: 0;
     }
 
     .card-body { flex: 1; padding: 12px 14px 12px; min-width: 0; }
@@ -584,13 +566,9 @@
           .map(s => `<span class="tag tag-skill">${s}</span>`).join('');
         const phaseTag = ex.trainingsphase
           ? `<span class="tag tag-phase">${ex.trainingsphase}</span>` : '';
-        const img = ex.grafik_url
-          ? `<img class="card-image" src="${ex.grafik_url}" alt="${ex.titel}" loading="lazy" onerror="this.parentElement.innerHTML='<div class=card-image-placeholder>⚽</div>'">`
-          : `<div class="card-image-placeholder">⚽</div>`;
-
         return `
           <a href="${href}" class="exercise-card">
-            <div class="card-image-wrap">${img}</div>
+            <div class="card-accent"></div>
             <div class="card-body">
               <h3 class="card-title">${ex.titel}</h3>
               <div class="card-tags">${jugendTags}${skillTags}${phaseTag}</div>
