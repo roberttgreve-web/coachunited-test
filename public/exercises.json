@@ -71,6 +71,42 @@
     "grafik_caption": "Kinder führen eine Passübung mit Torabschluss durch."
   },
   {
+    "id": 5,
+    "titel": "VOM ECK INS TOR",
+    "quell_trainingseinheit": "Pässe aktiv anfordern",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/01/image-25.png",
+    "grafik_dateiname": "uebung-005-vom-eck-ins-tor.png",
+    "trainingsphase": "Spielformat",
+    "kurzbeschreibung": "Zwei Teams spielen gegeneinander auf zwei Tore, Zuspieler an den Ecken bringen neue Bälle ein.",
+    "aufbau": "Zwei Minitore, je ein Starthütchen 30m entfernt. Dazwischen vier verschiedenfarbige Hütchentore. Drei Teams mit möglichst je 4 Spielern einteilen. Ein Team an den vier Eckhütchen mit Bällen postieren.",
+    "durchfuehrung": "Angreifer fordern Ball von Zuspieler an den Eckhütchen, spielen nach dem Pass gegen Verteidiger. Wenn alle 4 Bälle eingespielt sind, wechseln die Teams die Rollen. Wer erzielt mehr Tore?",
+    "varianten": "Punkte für erfolgreichen ersten Pass verteilen. FREIES SPIEL – LOS GEHT’S! FREIES SPIEL – LOS GEHT’S! In © 2025 COACH UNITED",
+    "quell_url": "https://coachunited.de/passen-aktiv-anfordern/",
+    "jugend": [
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Torschuss",
+      "Raumverhalten",
+      "Umschalten"
+    ],
+    "coaching_fokus": "• Blick heben vor dem Pass; • Timing des Laufwegs abstimmen; • Körper beim Abschluss in Schussrichtung ausrichten",
+    "leichter_machen": "• Größeres Spielfeld; • Mehr Zuspieler an den Ecken",
+    "schwerer_machen": "• Kleineres Spielfeld; • Nur ein Zuspieler an einer Ecke",
+    "status": "veroeffentlicht",
+    "alt_titel": "Schnell vom Eck zum Tor",
+    "seo_keyword": "Fußballübung Passen Kinder",
+    "url_slug": "vom-eck-ins-tor-fussballtraining-kinder",
+    "seo_meta_description": "Effektive Fußballübung 'Vom Eck ins Tor' für Kinder 6-12 Jahre zum Schulen von Passen, Raumaufteilung und Abschluss.",
+    "grafik_alt_text": "Kinder spielen Fußball in zwei Viererteams mit Zuspieler an den Ecken",
+    "grafik_description": "Die Spieler in diesem Übungsspiel spielen zu den Zuspieler an den Ecken und versuchen dann den Ball gegen die Verteidiger ins Tor zu befördern. So werden Pässe, Raumaufteilung und Torschuss trainiert.",
+    "grafik_title": "Fußballübung 'Vom Eck ins Tor' für Kinder",
+    "grafik_caption": "Effektive Fußballübung für Kinder, um Pässe, Raumaufteilung und Abschluss zu verbessern."
+  },
+  {
     "id": 6,
     "titel": "ZWEI PASSFELDER",
     "quell_trainingseinheit": "Technik im Fokus: Sauber dribbeln",
