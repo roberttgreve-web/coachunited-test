@@ -347,7 +347,7 @@
     }
 
     // Übungen aus JSON laden und rendern
-    fetch('/exercises.json')
+    fetch('https://raw.githubusercontent.com/roberttgreve-web/coachunited-test/main/public/exercises.json')
       .then(r => r.json())
       .then(exercises => {
         const list = document.getElementById('exercises-list');
