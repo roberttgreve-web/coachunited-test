@@ -245,5 +245,68 @@
       5,
       3
     ]
+  },
+  {
+    "id": 5,
+    "titel": "VOM ECK INS TOR",
+    "quell_trainingseinheit": "Pässe aktiv anfordern",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/01/image-25.png",
+    "grafik_dateiname": "uebung-005-vom-eck-ins-tor.png",
+    "trainingsphase": "Spielformat",
+    "kurzbeschreibung": "Zwei Teams spielen gegeneinander auf zwei Tore, Zuspieler an den Ecken bringen neue Bälle ein.",
+    "aufbau": "Das Spielfeld ist 30 x 30 Meter groß. An zwei Seiten des Feldes befinden sich jeweils ein Tor mit Torhütern. Die Spieler sind in zwei Teams aufgeteilt. Je ein Spieler wird zudem an jedem Eckhütchen postiert. ",
+    "durchfuehrung": "Angreifer fordern Ball von Zuspieler an den Eckhütchen, spielen nach dem Pass gegen Verteidiger. Wenn alle 4 Bälle eingespielt sind, wechseln die Teams die Rollen. Wer erzielt mehr Tore?",
+    "varianten": "Punkte für erfolgreichen ersten Pass verteilen. FREIES SPIEL – LOS GEHT’S! FREIES SPIEL – LOS GEHT’S! In © 2025 COACH UNITED",
+    "quell_url": "https://coachunited.de/passen-aktiv-anfordern/",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend",
+      "E-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Dribbeln",
+      "Torschuss"
+    ],
+    "coaching_fokus": "• Pässe aktiv anfordern",
+    "leichter_machen": "• Größeres Spielfeld; • Trainer sagt an, auf wen das Zuspiel erfolgen soll",
+    "schwerer_machen": "• Zuspiele nur mit dem schwachen Fuß",
+    "status": "veroeffentlicht",
+    "alt_titel": "Zuspiele vom Rand ins Tor",
+    "seo_keyword": "Fußballübung Passen Kinder mit Zuspieler",
+    "url_slug": "fussballubung-passen-kinder",
+    "seo_meta_description": "Fußballübung 'Vom Eck ins Tor' für 6-12 Jahre. Koordination und Passspiel trainieren, Teams gegeneinander.",
+    "grafik_alt_text": "Kinder trainieren Pässe vom Rand zum Tor",
+    "grafik_description": "Optimal sind 8-12 Spieler, die in 2-3 Teams aufgeteilt werden.",
+    "grafik_title": "Die Übung 'Vom Eck ins Tor' trainiert das Passen und die Koordination von Kindern zwischen 6 und 12 Jahren. Zwei Teams spielen gegeneinander auf Tore an den Ecken, die Zuspieler an den Rändern bringen neue Bälle ins Spiel.",
+    "grafik_caption": "Kinder trainieren Pässe vom Rand zum Tor",
+    "faq": [
+      {
+        "frage": "Wie lange dauert die Übung?",
+        "antwort": "Die Dauer kann je nach Altersgruppe zwischen 10-20 Minuten variieren."
+      },
+      {
+        "frage": "Kann man die Übung auch für jüngere Kinder anpassen?",
+        "antwort": "Ja, durch ein größeres Spielfeld und einfachere Pässe ist die Übung auch für G- und F-Junioren geeignet."
+      },
+      {
+        "frage": "Kann man die Übung auch für jüngere Kinder anpassen?",
+        "antwort": "Ja, durch ein größeres Spielfeld und einfachere Pässe ist die Übung auch für G- und F-Junioren geeignet."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [
+      4,
+      3
+    ],
+    "schwester_id": 4,
+    "schwester_titel": "PASS MITNEHMEN UND IM 1 GEGEN 1 DURCHSETZEN"
   }
 ]
