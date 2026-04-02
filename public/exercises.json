@@ -115,5 +115,63 @@
     "quell_kategorie": "",
     "schwester_id": null,
     "schwester_titel": null
+  },
+  {
+    "id": 3,
+    "titel": "PASS MITNEHMEN UND TOR ERZIELEN",
+    "quell_trainingseinheit": "Pässe aktiv anfordern",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/01/image-24.png",
+    "grafik_dateiname": "uebung-003-pass-mitnehmen-und-tor-erzielen.png",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "Spieler laufen zur Stange, fordern einen Pass vom seitlichen Hütchen und schließen nach Mitnahme auf das Tor ab.",
+    "aufbau": "30 x 30m Feld mit zentralem Hütchen. Zwei Tore auf gegenüberliegenden Seiten, Spieler an Hütchen, zwei Teams mit Ball. Tore mit Torhütern.",
+    "durchfuehrung": "Spieler ohne Ball umlaufen das Hütchen, fordern den Pass, verarbeiten den Pass und schießen aufs Tor. Im Uhrzeigersinn am nächsten Hütchen anstellen. Danach die anderen beiden Teams.",
+    "varianten": "a) Schusslinie definieren. b) Ball stoppen erlauben/nicht erlauben Pass mitnehmen und im 1 gegen 1 durchsetzen Pass mitnehmen und im 1 gegen 1 durchsetzen Trainer ruft eine Zahl auf und spielt den Ball ein. Jeweils diese Anzahl Spieler pro Team startet ins Spiel.",
+    "quell_url": "https://coachunited.de/passen-aktiv-anfordern/",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Torschuss",
+      "Kommunikation"
+    ],
+    "coaching_fokus": "• Pass anfordern mit Blickkontakt; • Timing beim Anlaufen optimieren; • Standbein stabil, Schussbein durchschwingen",
+    "leichter_machen": "• Torgrößen reduzieren; • Ball stoppen vor Abschluss erlauben",
+    "schwerer_machen": "• Spieler müssen direkt abschließen nach dem Pass ohne Stoppen",
+    "status": "veroeffentlicht",
+    "alt_titel": "Schnelles Passspiel und Abschluss aufs Tor",
+    "seo_keyword": "Fußballübung Passen Kinder",
+    "url_slug": "fussballuebung-passen-kinder",
+    "seo_meta_description": "Dynamische Passübung für Kinder mit Torabschluss trainiert Ballkontrolle, Schnelligkeit und Torschuss. Inklusive einfacher und anspruchsvoller Varianten.",
+    "grafik_alt_text": "Kinder führen dynamische Passübung mit Torabschluss durch, Trainer steht seitlich",
+    "grafik_description": "Auf dem Bild sieht man eine Fußballübung, bei der Kinder im Wechsel einen Pass annehmen, zum Tor laufen und abschließen. Ein Trainer steht seitlich und beobachtet das Geschehen.",
+    "grafik_title": "Kinder-Fußballübung: Pass mitnehmen und Tor erzielen",
+    "grafik_caption": "Dynamische Passübung mit Torabschluss für Nachwuchsfußballer.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler brauche ich für diese Übung?",
+        "antwort": "Optimal sind 8-12 Spieler, die sich in zwei Teams aufteilen."
+      },
+      {
+        "frage": "Wie lange dauert die Übung?",
+        "antwort": "Die Dauer kann je nach Altersgruppe zwischen 10-20 Minuten variieren."
+      },
+      {
+        "frage": "Kann ich die Übung auch für Jüngere einsetzen?",
+        "antwort": "Ja, mit etwas Anpassung der Spielfeldgröße und Torgrößen ist die Übung auch für G- und F-Junioren geeignet."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_id": null,
+    "schwester_titel": null
   }
 ]
