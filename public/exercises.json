@@ -1,5 +1,64 @@
 [
   {
+    "id": 1,
+    "titel": "FARBEN-TOR-WETTKAMPF",
+    "quell_trainingseinheit": "Pässe aktiv anfordern",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/01/image-22.png",
+    "grafik_dateiname": "uebung-001-farben-tor-wettkampf.png",
+    "trainingsphase": "Aufwärmen",
+    "kurzbeschreibung": "Die Spieler dribbeln nach Farbkommando zum passenden Hütchentor und schließen ab.",
+    "aufbau": "Zwei Minitore, je ein Starthütchen 30m entfernt. Dazwischen vier verschiedenfarbige Hütchentore. Zwei Teams mit Ball an den Starthütchen.",
+    "durchfuehrung": "Trainer ruft Farbe. Spieler dribbeln zum entsprechenden Hütchentor und schließen durch das Hütchentor ins Minitor ab. Wer zuerst trifft, holt Punkt für Team. Wer zuerst 10 Punkte hat, gewinnt.",
+    "varianten": "a) Nur mit schwachem Fuß dribbeln. b) Torabschluss ohne Ballstoppen. TOR SCHIESSEN UND VORRÜCKEN TOR SCHIESSEN UND VORRÜCKEN Die Spieler passen aus dem Dribbling durch farbige Hütchentore ins Minitor.",
+    "quell_url": "https://coachunited.de/passen-aktiv-anfordern/",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend",
+      "E-Jugend"
+    ],
+    "skills": [
+      "Ballkontrolle",
+      "Dribbeln",
+      "Torschuss",
+      "Koordination"
+    ],
+    "coaching_fokus": "• Blick heben vor dem Abschluss; • Abschluss mit der Innenseite ",
+    "leichter_machen": "• Tor vergrößern oder je zwei Tore; • Abstand zum Tor reduzieren",
+    "schwerer_machen": "• Torabschluss ohne Ballstoppen; • Nur schwacher Fuß erlaubt",
+    "status": "veroeffentlicht",
+    "alt_titel": "Farben-Slalom mit Torschuss",
+    "seo_keyword": "Fußballübung Dribbling Kinder",
+    "url_slug": "farben-slalom-mit-torschuss",
+    "seo_meta_description": "Effektive Fußballübung zum Dribbeln, Ballannahme und Torschuss für Kinder von 6-12 Jahren. Ideales Training für G- bis E-Jugend.",
+    "grafik_alt_text": "Kinder dribbeln in einem Farbslalom und schießen auf zwei kleine Tore",
+    "grafik_description": "Die Spieler dribbeln nacheinander von einem Startpunkt zu farbigen Toren, um dort den Ball ins Tor zu schießen. Das fördert Koordination, Ballkontrolle und Torschuss.",
+    "grafik_title": "Fußballübung Farben-Slalom mit Torschuss",
+    "grafik_caption": "Dynamische Fußballübung zum Training von Dribbling, Ballkontrolle und Torabschluss für Kinder.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler können an der Übung teilnehmen?",
+        "antwort": "Die Übung eignet sich für 8-16 Spieler. Größere Gruppen können in Teams aufgeteilt werden."
+      },
+      {
+        "frage": "Wie lange dauert die Übung?",
+        "antwort": "Je nach Altersstufe und Spielerzahl kann die Übung 10-20 Minuten andauern. Mehrere Durchgänge sind sinnvoll."
+      },
+      {
+        "frage": "Kann man die Übung für jüngere Kinder anpassen?",
+        "antwort": "Ja, für G- und F-Jugend Spieler kann man die Distanzen verkürzen und größere Tore verwenden."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_id": null,
+    "schwester_titel": null
+  },
+  {
     "id": 2,
     "titel": "TOR SCHIESSEN UND VORRÜCKEN",
     "quell_trainingseinheit": "Pässe aktiv anfordern",
