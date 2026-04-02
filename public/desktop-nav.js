@@ -1,6 +1,17 @@
 (function () {
   if (window.innerWidth < 768) return;
 
+  // Auf Detailseiten: Scroll immer auf rechte Spalte lenken
+  if (document.getElementById('exercise-content')) {
+    window.addEventListener('wheel', function (e) {
+      var content = document.querySelector('#exercise-content .content');
+      if (content && !content.contains(e.target)) {
+        e.preventDefault();
+        content.scrollTop += e.deltaY;
+      }
+    }, { passive: false });
+  }
+
   var path = window.location.pathname;
 
   function isActive(href) {
