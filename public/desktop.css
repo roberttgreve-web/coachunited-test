@@ -1,0 +1,82 @@
+/* ============================================================
+   Desktop-Layout – nur aktiv ab 768px
+   Mobile bleibt exakt wie es ist.
+   ============================================================ */
+
+@media (min-width: 768px) {
+
+  /* ── Body: Handy-auf-Tisch-Look entfernen ── */
+  body {
+    display: block !important;
+    background: #ffffff !important;
+    padding: 0 !important;
+    align-items: unset !important;
+    justify-content: unset !important;
+  }
+
+  /* ── Container: kein Rahmen, volle Breite ── */
+  .container {
+    width: 100% !important;
+    max-width: none !important;
+    height: auto !important;
+    min-height: 100vh !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+
+  /* ── Content-Bereiche: lesbare Breite, zentriert ── */
+  .content {
+    max-width: 960px;
+    margin: 0 auto;
+    padding-left: 32px !important;
+    padding-right: 32px !important;
+  }
+
+  /* ── Header: volle Breite, Inhalt begrenzt ── */
+  .header {
+    padding-left: 32px !important;
+    padding-right: 32px !important;
+  }
+
+  /* ── Filter-Leiste (uebungen.html) ── */
+  .filter-section {
+    padding-left: 32px !important;
+    padding-right: 32px !important;
+  }
+
+  /* ── Bottom-Nav: volle Breite statt 375px zentriert ── */
+  .bottom-nav {
+    width: 100% !important;
+    left: 0 !important;
+    transform: none !important;
+    max-width: none !important;
+    display: flex;
+    justify-content: center;
+    gap: 0;
+  }
+
+  .bottom-nav a,
+  .bottom-nav button,
+  .nav-item {
+    max-width: 120px;
+  }
+
+  /* ── Home-Seite: Inhalt vertikal zentrieren ── */
+  .container.home-container {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  /* ── Übungsdetail: Bild nicht zu groß werden lassen ── */
+  .graphics-container img {
+    max-height: 500px;
+    object-fit: contain;
+  }
+
+  /* ── Drawer-Menü bleibt auf Container-Breite ── */
+  .burger-drawer {
+    width: 280px !important;
+  }
+}
