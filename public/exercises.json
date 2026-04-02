@@ -183,5 +183,67 @@
       5,
       4
     ]
+  },
+  {
+    "id": 4,
+    "titel": "PASS MITNEHMEN UND IM 1 GEGEN 1 DURCHSETZEN",
+    "quell_trainingseinheit": "Pässe aktiv anfordern",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/01/image-17.jpg",
+    "grafik_dateiname": "uebung-004-pass-mitnehmen-und-im-1-gegen-1-durchsetzen.jpg",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "Trainer ruft eine Zahl auf und spielt den Ball ein. Jeweils diese Anzahl Spieler pro Team startet ins Spiel.",
+    "aufbau": "Das Spielfeld ist 30 x 30 Meter groß und verfügt in der Mitte über ein zentrales Hütchen. An den gegenüberliegenden Seiten des Feldes befinden sich jeweils ein Tor mit Torhütern. Die Spieler stehen verteilt an den Hütchen, aufgeteilt in zwei Teams mit Bällen.",
+    "durchfuehrung": "Wie in Vorübung. Dieses Mal startet der Passgeber nach dem Pass direkt in ein 1 gegen 1.",
+    "varianten": "Verteidiger darf auf das zweite Tor ein Tor erzielen. Vom Eck ins Tor Vom Eck ins Tor Zwei Teams spielen gegeneinander auf zwei Tore, Zuspieler an den Ecken bringen neue Bälle ein.",
+    "quell_url": "https://coachunited.de/passen-aktiv-anfordern/",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Dribbeln",
+      "Zweikampf"
+    ],
+    "coaching_fokus": "• Blick heben vor dem Pass; • Weite des Passspiels beobachten; • Körpereinsatz und Beschleunigung im 1 gegen 1",
+    "leichter_machen": "• Vereinfachte Aufgabe im 1 gegen 1, z.B. nur ins Dribbling gehen; • Größeres Spielfeld zum Entzerren",
+    "schwerer_machen": "• Spieler müssen Tor machen, nicht nur durchsetzen; • Begrenzter Raum im 1 gegen 1 Bereich",
+    "status": "veroeffentlicht",
+    "alt_titel": "1 GEGEN 1 MIT PASSSPIEL ERÖFFNEN",
+    "seo_keyword": "Fußballübung 1 gegen 1 Kinder",
+    "url_slug": "fussballuebung-1-gegen-1-kinder",
+    "seo_meta_description": "Dynamische Fußballübung für Kinder (6-12 Jahre) mit Passspiel und 1-gegen-1-Situation. Verbessert Ballkontrolle, Dribbeln und Zweikampfstärke.",
+    "grafik_alt_text": "Kinder spielen 1 gegen 1 auf einem Fußballfeld mit Toren",
+    "grafik_description": "Die Grafik zeigt eine Fußballübung für Kinder im Alter von 6-12 Jahren. Es sind mehrere Spieler zu sehen, die sich in einem 1-gegen-1-Duell auf einem abgegrenzten Spielfeld mit Toren befinden.",
+    "grafik_title": "Fußballübung 1 gegen 1 für Kinder",
+    "grafik_caption": "Dynamische Fußballübung mit Passspiel und 1-gegen-1-Situationen für Kinder.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler braucht man für diese Übung?",
+        "antwort": "Für die Grundform benötigt man mindestens 4 Spieler, die in zwei Teams aufgeteilt werden. Für die Varianten können mehr Spieler eingesetzt werden."
+      },
+      {
+        "frage": "Wie lange dauert die Übung?",
+        "antwort": "Die Dauer der Übung hängt vom Alter und Leistungsstand der Kinder ab, liegt aber üblicherweise zwischen 10-15 Minuten."
+      },
+      {
+        "frage": "Für welche Altersklassen ist die Übung geeignet?",
+        "antwort": "Die Übung ist für Kinder der E-Jugend (10-11 Jahre) und D-Jugend (12-13 Jahre) konzipiert. Je nach Anpassung der Regeln und Größe des Spielfeldes kann sie auch für jüngere Kinder geeignet sein."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_id": 5,
+    "schwester_titel": "VOM ECK INS TOR",
+    "schwester_ids": [
+      5,
+      3
+    ]
   }
 ]
