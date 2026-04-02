@@ -6,14 +6,15 @@
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/01/image-22.png",
     "grafik_dateiname": "uebung-001-farben-tor-wettkampf.png",
     "trainingsphase": "Aufwärmen",
-    "kurzbeschreibung": "Die Spieler dribbeln nach Farbkommando zum passenden Hütchentor und schließen auf das Minitor ab.",
+    "kurzbeschreibung": "Die Spieler dribbeln nach Farbkommando zum passenden Hütchentor und schließen ab.",
     "aufbau": "Zwei Minitore, je ein Starthütchen 30m entfernt. Dazwischen vier verschiedenfarbige Hütchentore. Zwei Teams mit Ball an den Starthütchen.",
     "durchfuehrung": "Trainer ruft Farbe. Spieler dribbeln zum entsprechenden Hütchentor und schließen durch das Hütchentor ins Minitor ab. Wer zuerst trifft, holt Punkt für Team. Wer zuerst 10 Punkte hat, gewinnt.",
     "varianten": "a) Nur mit schwachem Fuß dribbeln. b) Torabschluss ohne Ballstoppen. TOR SCHIESSEN UND VORRÜCKEN TOR SCHIESSEN UND VORRÜCKEN Die Spieler passen aus dem Dribbling durch farbige Hütchentore ins Minitor.",
     "quell_url": "https://coachunited.de/passen-aktiv-anfordern/",
     "jugend": [
       "G-Jugend",
-      "F-Jugend"
+      "F-Jugend",
+      "E-Jugend"
     ],
     "skills": [
       "Ballkontrolle",
@@ -21,30 +22,88 @@
       "Torschuss",
       "Koordination"
     ],
-    "coaching_fokus": "• Blick heben vor dem Abschluss; • Körper zwischen Ball und Verteidiger halten; • Schnelle Richtungswechsel beim Dribbling",
-    "leichter_machen": "• Verkleinern des Spielfelds; • Vergrößern der Tore",
-    "schwerer_machen": "• Nur Schwachfuß erlaubt; • Torabschluss ohne Ballstoppen",
+    "coaching_fokus": "• Blick heben vor dem Abschluss; • Abschluss mit der Innenseite ",
+    "leichter_machen": "• Tor vergrößern oder je zwei Tore; • Abstand zum Tor reduzieren",
+    "schwerer_machen": "• Torabschluss ohne Ballstoppen; • Nur schwacher Fuß erlaubt",
     "status": "veroeffentlicht",
-    "alt_titel": "Farben-Tore-Challenge für Nachwuchskicker",
+    "alt_titel": "Farben-Slalom mit Torschuss",
     "seo_keyword": "Fußballübung Dribbling Kinder",
-    "url_slug": "farben-tore-challenge-fussballtraining-kinder",
-    "seo_meta_description": "Dynamische Fußballübung für G- und F-Jugendspieler, fördert Dribbling, Ballkontrolle und Torschuss.",
-    "grafik_alt_text": "Kinder dribbelnd auf Fußballfeld mit bunten Hütchentoren",
-    "grafik_description": "Abbildung zeigt den Aufbau und die Durchführung des Farben-Tor-Wettkampfs. Zwei Mannschaften dribben abwechselnd los, sobald eine Farbe genannt wird, und schließen durch das entsprechende Hütchentor auf ein Minitor ab.",
-    "grafik_title": "Fußballübung Kinder Dribbling Farben-Tore-Challenge",
-    "grafik_caption": "Koordinations- und Geschicklichkeitsübung fördert Dribbeln und Torschuss bei jungen Fußballspielern.",
+    "url_slug": "farben-slalom-mit-torschuss",
+    "seo_meta_description": "Effektive Fußballübung zum Dribbeln, Ballannahme und Torschuss für Kinder von 6-12 Jahren. Ideales Training für G- bis E-Jugend.",
+    "grafik_alt_text": "Kinder dribbeln in einem Farbslalom und schießen auf zwei kleine Tore",
+    "grafik_description": "Die Spieler dribbeln nacheinander von einem Startpunkt zu farbigen Toren, um dort den Ball ins Tor zu schießen. Das fördert Koordination, Ballkontrolle und Torschuss.",
+    "grafik_title": "Fußballübung Farben-Slalom mit Torschuss",
+    "grafik_caption": "Dynamische Fußballübung zum Training von Dribbling, Ballkontrolle und Torabschluss für Kinder.",
     "faq": [
       {
-        "frage": "Wie viele Spieler benötigt man für den Farben-Tor-Wettkampf?",
-        "antwort": "Die Übung ist für 8-12 Spieler in zwei Teams konzipiert. Die Mannschaftsgröße kann aber je nach Platzverhältnissen angepasst werden."
+        "frage": "Wie viele Spieler können an der Übung teilnehmen?",
+        "antwort": "Die Übung eignet sich für 8-16 Spieler. Größere Gruppen können in Teams aufgeteilt werden."
       },
       {
-        "frage": "Wie lange dauert der Farben-Tor-Wettkampf?",
-        "antwort": "Die Übung ist für ein Aufwärmspiel von ca. 10-15 Minuten ausgelegt. Die Spieldauer kann je nach Alter und Leistungsstand der Kinder variiert werden."
+        "frage": "Wie lange dauert die Übung?",
+        "antwort": "Je nach Altersstufe und Spielerzahl kann die Übung 10-20 Minuten andauern. Mehrere Durchgänge sind sinnvoll."
       },
       {
-        "frage": "Kann man den Farben-Tor-Wettkampf auch mit älteren Kindern spielen?",
-        "antwort": "Die Übung ist primär für G- und F-Jugendspieler konzipiert, lässt sich aber auch gut an E-Jugendspieler anpassen, indem man beispielsweise kleinere Tore oder ein größeres Spielfeld wählt."
+        "frage": "Kann man die Übung für jüngere Kinder anpassen?",
+        "antwort": "Ja, für G- und F-Jugend Spieler kann man die Distanzen verkürzen und größere Tore verwenden."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_id": null,
+    "schwester_titel": null
+  },
+  {
+    "id": 2,
+    "titel": "TOR SCHIESSEN UND VORRÜCKEN",
+    "quell_trainingseinheit": "Pässe aktiv anfordern",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/01/image-23.png",
+    "grafik_dateiname": "uebung-002-tor-schiessen-und-vorruecken.png",
+    "trainingsphase": "Aufwärmen",
+    "kurzbeschreibung": "Die Spieler passen aus dem Dribbling durch farbige Hütchentore ins Minitor.",
+    "aufbau": "Zwei Minitore sind jeweils 30 Meter von zwei Starthütchen entfernt platziert. Dazwischen befinden sich vier Hütchenreihen in verschiedenen Farben, die Tore bilden. Zwei Teams mit Bällen beginnen an den Starthütchen.",
+    "durchfuehrung": "Erster Spieler dribbelt jeweils zum nächstgelegenen Hütchentor (hier: blau) und schließt ab. Kein Tor: Nächster Spieler aus dem Team läuft auch zu blau und versucht es. Bei Tor: Nächster Spieler darf zum nächsten Hütchentor (hier: gelb) vor und abschließen. Team, das zuerst aus allen vier Positionen getroffen hat, gewinnt.",
+    "varianten": "a) Nur mit schwachem Fuß dribbeln. b) Torabschluss ohne Ballstoppen. c) Distanz erhöhen. Pass mitnehmen und Tor erzielen Pass mitnehmen und Tor erzielen Spieler laufen zur Stange, fordern einen Pass vom seitlichen Hütchen und schließen nach Mitnahme auf das Tor ab.",
+    "quell_url": "https://coachunited.de/passen-aktiv-anfordern/",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend",
+      "E-Jugend"
+    ],
+    "skills": [
+      "Ballkontrolle",
+      "Torschuss",
+      "Koordination"
+    ],
+    "coaching_fokus": "• Blick heben vor dem Abschluss; • Körper beim Schuss leicht seitlich stellen; • Spieler ermutigen, mit beiden Füßen abzuschließen",
+    "leichter_machen": "• Tore vergrößern oder je zwei Tore; • Distanz zum Tor verkürzen",
+    "schwerer_machen": "• Torabschluss ohne Ballstoppen; • Mit schwächerem Fuß dribbeln",
+    "status": "veroeffentlicht",
+    "alt_titel": "Zielschuss mit Dribbling-Aktion",
+    "seo_keyword": "Fußballübung Dribbling Kinder",
+    "url_slug": "fussballubung-dribbling-kinder",
+    "seo_meta_description": "Effektive Fußballübung zum Dribbling und Torschuss für Kinder von 6-12 Jahren. Trainiert Ballkontrolle, Koordination und Schusstechnik.",
+    "grafik_alt_text": "Kinder führen einen Dribbling-Parcours mit Torabschluss durch",
+    "grafik_description": "Auf dem Bild sind mehrere Kinder zu sehen, die einen Dribbling-Parcours mit Torabschluss absolvieren. Sie dribbeln abwechselnd durch farbige Tore und schließen dann auf ein kleines Fußballtor ab.",
+    "grafik_title": "Fußballübung: Zielschuss mit Dribbling-Aktion",
+    "grafik_caption": "Kinder trainieren Dribbling, Ballkontrolle und Torabschluss in einer dynamischen Fußballübung.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler können an der Übung teilnehmen?",
+        "antwort": "Die Übung eignet sich gut für Gruppen von 6-12 Kindern. Mehr Teilnehmer sind möglich, erhöhen aber den Organisationsaufwand."
+      },
+      {
+        "frage": "Wie lange dauert die Übung?",
+        "antwort": "Je nach Gruppengröße und Intensität kann die Übung 10-20 Minuten in Anspruch nehmen. Pausen und Feedbackrunden werden empfohlen."
+      },
+      {
+        "frage": "Für welche Altersklassen ist die Übung geeignet?",
+        "antwort": "Die Übung ist ideal für Kinder im Alter von 6-12 Jahren (G-Jugend bis E-Jugend) und trainiert grundlegende Fähigkeiten wie Dribbling und Torabschluss."
       }
     ],
     "referenz_grafik_url": "",
