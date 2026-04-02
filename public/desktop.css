@@ -243,42 +243,60 @@
   }
 
   /* ══════════════════════════════════════════
-     DETAIL-SEITE: Zwei-Spalten-Layout
-     Links: Grafik (sticky) — Rechts: Inhalt
+     DETAIL-SEITE: Split-Panel-Layout
+     Container füllt Viewport — rechte Spalte
+     scrollt, linke (Grafik) steht still.
      ══════════════════════════════════════════ */
 
+  /* Viewport-Höhe auf Container beschränken */
+  body:has(#exercise-content) .container {
+    height: 100vh !important;
+    overflow: hidden !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  /* Footer auf Detailseite ausblenden */
+  body:has(#exercise-content) .desktop-footer {
+    display: none !important;
+  }
+
+  /* Exercise-Content füllt restliche Höhe */
   #exercise-content {
     display: grid !important;
     grid-template-columns: 1fr 1fr;
-    align-items: start;
     flex: 1;
+    min-height: 0;
+    overflow: hidden;
   }
 
-  /* Linke Spalte: Grafik bleibt beim Scrollen sichtbar */
+  /* Linke Spalte: Grafik — scrollt nicht mit */
   #exercise-content .graphics-container {
-    position: sticky;
-    top: 128px; /* 64px TopNav + ~64px Header */
-    padding: 32px;
-    max-height: calc(100vh - 128px);
+    position: static !important;
+    height: 100%;
+    padding: 40px;
     display: flex !important;
     align-items: center;
     justify-content: center;
     background: #f7f9ff;
+    border-right: 1px solid #e8edf2;
+    overflow: hidden;
   }
 
   #exercise-content .graphics-container img {
-    max-height: calc(100vh - 200px);
+    max-height: 100%;
     width: 100%;
     object-fit: contain;
     border-radius: 12px;
   }
 
-  /* Rechte Spalte: Inhalt scrollt normal durch */
+  /* Rechte Spalte: Inhalt scrollt unabhängig */
   #exercise-content .content {
+    overflow-y: auto !important;
+    height: 100%;
     max-width: none !important;
     margin: 0 !important;
     padding: 32px 40px 40px 32px !important;
-    border-left: 1px solid #e8edf2;
   }
 
   /* h1 auf Detailseite etwas größer */
