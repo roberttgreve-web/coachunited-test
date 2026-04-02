@@ -468,6 +468,15 @@
           <div class="accordion-content"><p id="schwerer-machen"></p></div>
         </details>
 
+        <details id="faq-box" style="display:none;">
+          <summary>
+            <span class="dot" style="background:#8b5cf6;"></span>
+            <span class="title">FAQ – Häufige Fragen</span>
+            <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          </summary>
+          <div class="accordion-content"><ul id="faq-list"></ul></div>
+        </details>
+
         <div id="sisters-box" class="sisters-box" style="display:none;">
           <p class="sisters-box-title">Andere Übungen mit gleichem Aufbau</p>
           <div id="sisters-list"></div>
@@ -537,7 +546,7 @@
     function toBulletList(text) {
       if (!text) return '';
       const items = text.split(/[;•]/).map(s => s.trim()).filter(s => s.length > 0);
-      if (items.length <= 1) return `<p>${items[0] || ''}</p>`;
+      if (items.length === 0) return '';
       return '<ul>' + items.map(i => `<li>${i}</li>`).join('') + '</ul>';
     }
 
@@ -606,6 +615,14 @@
         document.getElementById('coaching-fokus').innerHTML = toBulletList(ex.coaching_fokus);
         document.getElementById('leichter-machen').innerHTML = toBulletList(ex.leichter_machen);
         document.getElementById('schwerer-machen').innerHTML = toBulletList(ex.schwerer_machen);
+
+        if (ex.faq && ex.faq.length > 0) {
+          const faqHtml = ex.faq.map(item =>
+            `<li><strong>${item.frage}</strong><br>${item.antwort}</li>`
+          ).join('');
+          document.getElementById('faq-list').innerHTML = faqHtml;
+          document.getElementById('faq-box').style.display = '';
+        }
 
         if (ex.quell_trainingseinheit) {
           const sisters = exercises.filter(e =>
