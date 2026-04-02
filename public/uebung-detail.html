@@ -626,12 +626,10 @@
           document.getElementById('faq-box').style.display = '';
         }
 
-        if (ex.quell_trainingseinheit) {
-          const sisters = exercises.filter(e =>
-            e.url_slug !== slug &&
-            e.quell_trainingseinheit === ex.quell_trainingseinheit &&
-            e.url_slug
-          );
+        const sisterIds = ex.schwester_ids && ex.schwester_ids.length ? ex.schwester_ids
+          : (ex.schwester_id ? [ex.schwester_id] : []);
+        if (sisterIds.length > 0) {
+          const sisters = exercises.filter(e => sisterIds.includes(e.id) && e.url_slug);
           if (sisters.length > 0) {
             document.getElementById('sisters-list').innerHTML = sisters.map(s =>
               `<a href="/uebung/${s.url_slug}" class="sister-link">${s.titel}</a>`
