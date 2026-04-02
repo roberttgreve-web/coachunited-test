@@ -6,15 +6,14 @@
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/01/image-22.png",
     "grafik_dateiname": "uebung-001-farben-tor-wettkampf.png",
     "trainingsphase": "Aufwärmen",
-    "kurzbeschreibung": "Die Spieler dribbeln nach Farbkommando zum passenden Hütchentor und schließen ab.",
+    "kurzbeschreibung": "Die Spieler dribbeln nach Farbkommando zum passenden Hütchentor und schließen auf das Minitor ab.",
     "aufbau": "Zwei Minitore, je ein Starthütchen 30m entfernt. Dazwischen vier verschiedenfarbige Hütchentore. Zwei Teams mit Ball an den Starthütchen.",
     "durchfuehrung": "Trainer ruft Farbe. Spieler dribbeln zum entsprechenden Hütchentor und schließen durch das Hütchentor ins Minitor ab. Wer zuerst trifft, holt Punkt für Team. Wer zuerst 10 Punkte hat, gewinnt.",
     "varianten": "a) Nur mit schwachem Fuß dribbeln. b) Torabschluss ohne Ballstoppen. TOR SCHIESSEN UND VORRÜCKEN TOR SCHIESSEN UND VORRÜCKEN Die Spieler passen aus dem Dribbling durch farbige Hütchentore ins Minitor.",
     "quell_url": "https://coachunited.de/passen-aktiv-anfordern/",
     "jugend": [
       "G-Jugend",
-      "F-Jugend",
-      "E-Jugend"
+      "F-Jugend"
     ],
     "skills": [
       "Ballkontrolle",
@@ -22,18 +21,32 @@
       "Torschuss",
       "Koordination"
     ],
-    "coaching_fokus": "• Blick heben vor dem Abschluss; • Tempo aus dem Dribbling herausnehmen vor dem Abschluss",
-    "leichter_machen": "• Tore vergrößern, Distanz verkürzen",
-    "schwerer_machen": "• Torabschluss ohne Ballstoppen; • Nur mit schwachem Fuß dribbeln",
+    "coaching_fokus": "• Blick heben vor dem Abschluss; • Körper zwischen Ball und Verteidiger halten; • Schnelle Richtungswechsel beim Dribbling",
+    "leichter_machen": "• Verkleinern des Spielfelds; • Vergrößern der Tore",
+    "schwerer_machen": "• Nur Schwachfuß erlaubt; • Torabschluss ohne Ballstoppen",
     "status": "veroeffentlicht",
-    "alt_titel": "FARBTORE-DRIBBELPARCOURS",
+    "alt_titel": "Farben-Tore-Challenge für Nachwuchskicker",
     "seo_keyword": "Fußballübung Dribbling Kinder",
-    "url_slug": "farbtore-dribbelparcours",
-    "seo_meta_description": "Motivierende Fußballübung Farbtore-Dribbelparcours fördert Dribbling, Ballkontrolle und Torschuss bei Kindern im Alter von 6-12 Jahren.",
-    "grafik_alt_text": "Kinder im Fußballtraining dribbelnd auf bunte Tore zulaufend",
-    "grafik_description": "Zwei Teams dribbelnd zu Farbhütchentoren. Auf Zuruf des Trainers laufen die Kinder zum entsprechenden Tor und schließen mit einem Torschuss ab.",
-    "grafik_title": "Fußballübung Farbtore-Dribbelparcours für Kinder",
-    "grafik_caption": "Dribbling- und Torschussübung mit Farbhütchentoren",
+    "url_slug": "farben-tore-challenge-fussballtraining-kinder",
+    "seo_meta_description": "Dynamische Fußballübung für G- und F-Jugendspieler, fördert Dribbling, Ballkontrolle und Torschuss.",
+    "grafik_alt_text": "Kinder dribbelnd auf Fußballfeld mit bunten Hütchentoren",
+    "grafik_description": "Abbildung zeigt den Aufbau und die Durchführung des Farben-Tor-Wettkampfs. Zwei Mannschaften dribben abwechselnd los, sobald eine Farbe genannt wird, und schließen durch das entsprechende Hütchentor auf ein Minitor ab.",
+    "grafik_title": "Fußballübung Kinder Dribbling Farben-Tore-Challenge",
+    "grafik_caption": "Koordinations- und Geschicklichkeitsübung fördert Dribbeln und Torschuss bei jungen Fußballspielern.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler benötigt man für den Farben-Tor-Wettkampf?",
+        "antwort": "Die Übung ist für 8-12 Spieler in zwei Teams konzipiert. Die Mannschaftsgröße kann aber je nach Platzverhältnissen angepasst werden."
+      },
+      {
+        "frage": "Wie lange dauert der Farben-Tor-Wettkampf?",
+        "antwort": "Die Übung ist für ein Aufwärmspiel von ca. 10-15 Minuten ausgelegt. Die Spieldauer kann je nach Alter und Leistungsstand der Kinder variiert werden."
+      },
+      {
+        "frage": "Kann man den Farben-Tor-Wettkampf auch mit älteren Kindern spielen?",
+        "antwort": "Die Übung ist primär für G- und F-Jugendspieler konzipiert, lässt sich aber auch gut an E-Jugendspieler anpassen, indem man beispielsweise kleinere Tore oder ein größeres Spielfeld wählt."
+      }
+    ],
     "referenz_grafik_url": "",
     "original_aufbau": "",
     "original_durchfuehrung": "",
