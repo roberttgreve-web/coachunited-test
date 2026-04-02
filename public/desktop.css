@@ -80,6 +80,35 @@
     width: 280px !important;
   }
 
+  /* ── 2-Spalten-Grid für Listen ── */
+  #exercises-list,
+  #einheiten-list,
+  #articles-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    align-items: start;
+  }
+
+  /* Ab 1200px: 3 Spalten */
+  @media (min-width: 1200px) {
+    #exercises-list,
+    #einheiten-list,
+    #articles-list {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  /* Karten im Grid: volle Höhe, kein Border-bottom-Separator */
+  .exercise-card,
+  .einheit-card,
+  .article-card {
+    border-radius: 12px !important;
+    border: 1px solid #e8edf2 !important;
+    margin-bottom: 0 !important;
+    height: 100%;
+  }
+
   /* ── Bottom-Nav auf Desktop ausblenden ── */
   .bottom-nav {
     display: none !important;
