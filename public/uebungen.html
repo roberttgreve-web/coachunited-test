@@ -361,6 +361,29 @@
     .drawer-link:hover { color: #1B6BF4; }
   </style>
   <link rel="stylesheet" href="/desktop.css">
+  <style>
+    @media (min-width: 768px) {
+      .container { height: 100vh; overflow: hidden; }
+      #uebungen-body { flex-direction: row; overflow: hidden; }
+      .filters {
+        position: static;
+        top: unset;
+        width: 260px;
+        flex-shrink: 0;
+        flex-direction: column;
+        gap: 12px;
+        border-bottom: none;
+        border-right: 1px solid #e8edf2;
+        background: #f9fafc;
+        padding: 28px 20px;
+        overflow: visible;
+      }
+      .filter-wrap { flex: none; width: 100%; }
+      .filter-btn { padding: 14px 16px; font-size: 15px; border-radius: 12px; font-weight: 600; }
+      .content { flex: 1; max-width: none; margin: 0; overflow-y: auto; height: 100%; padding: 28px 32px; }
+      #exercises-list { grid-template-columns: repeat(3, 1fr); }
+    }
+  </style>
   <script src="/desktop-nav.js" defer></script>
 </head>
 <body>
