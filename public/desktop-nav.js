@@ -43,8 +43,6 @@
     footer.innerHTML = `
       <a href="/ueber-uns" class="desktop-footer-link ${isActive('/ueber-uns')}">Über uns</a>
       <span class="desktop-footer-sep">·</span>
-      <a href="/spenden" class="desktop-footer-link ${isActive('/spenden')}">Spenden</a>
-      <span class="desktop-footer-sep">·</span>
       <a href="/impressum" class="desktop-footer-link ${isActive('/impressum')}">Impressum</a>
     `;
     container.appendChild(footer);
