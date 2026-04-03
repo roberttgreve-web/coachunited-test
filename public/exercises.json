@@ -494,5 +494,66 @@
     "original_coaching_fokus": "",
     "ist_gecrawlt": false,
     "quell_kategorie": ""
+  },
+  {
+    "id": 10,
+    "titel": "DRIBBELDUELL AUF DREI FELDERN",
+    "quell_trainingseinheit": "Technik im Fokus: Sauber dribbeln",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/01/image-16.jpg",
+    "grafik_dateiname": "uebung-010-dribbelduell-auf-drei-feldern.jpg",
+    "trainingsphase": "Spielformat",
+    "kurzbeschreibung": "Auf drei Feldern wird im 3 gegen 3 gespielt. Punkte werden erzielt, in dem der Ball über die Grundlinie gedribbelt wird.",
+    "aufbau": "Drei Spielfelder aufbauen, die jeweils etwas 30x15m groß sind. Keine Tore. Pro Feld zwei Teams mit Leibchen einteilen. Pro Feld einen Ball. Je nach Gruppengröße ggf. nur zwei Felder oder Teams im 2 gegen 2.",
+    "durchfuehrung": "Die Teams spielen 3 gegen 3. Punkte werden erzielt, in dem der Ball über die Grundlinie des Gegners gedribbelt (nicht geschossen!) wird. 5 Minuten pro Spiel. Danach wechseln die Teams die Felder. Auch als Turnierformat möglich. ",
+    "varianten": "",
+    "quell_url": "https://coachunited.de/technik-im-fokus-sauber-dribbeln/",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Ballkontrolle",
+      "Dribbeln",
+      "Schnelligkeit",
+      "Raumverhalten"
+    ],
+    "coaching_fokus": "• Darauf achten, dass nicht geschossen, sondern gedribbelt wird; • Raumaufteilung und Passspiel einfordern",
+    "leichter_machen": "• Teams im 2 gegen 2 spielen lassen; • größere Felder",
+    "schwerer_machen": "• Mindestens 3 Pässe vor Punktgewinn sind Pflicht; • Beschränkung auf eine bestimmte Dribbling-Technik beim Überqueren der Grundlinie (z.B. nur mi Sohle ziehen)",
+    "status": "veroeffentlicht",
+    "alt_titel": "Tempodribbeln durch 3 Felder",
+    "seo_keyword": "Fußballübung Dribbling Kinder",
+    "url_slug": "dribbelduell-auf-drei-feldern",
+    "seo_meta_description": "Dribblingübung für Kinder mit 3 Spielfeldern und Punkten für Linienüberschreitung. Fördert Tempo, Richtungswechsel und Ballkontrolle.",
+    "grafik_alt_text": "Drei Spielfelder für ein 3-gegen-3 Dribbelduell, Kinder dribbeln mit Ball in Richtung Grundlinie",
+    "grafik_description": "Visualisierung der Übung 'Dribbelduell auf drei Feldern'. Drei Felder sind aufgebaut, in denen jeweils zwei Kinderteams im 3-gegen-3 gegeneinander dribbeln und versuchen, den Ball über die Grundlinie des Gegners zu treiben.",
+    "grafik_title": "Dribbelduell in 3 Feldern für Kinder",
+    "grafik_caption": "Kinder trainieren Tempo, Richtungswechsel und Ballkontrolle im Dribbelduell auf drei Feldern.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler braucht man für diese Übung?",
+        "antwort": "Optimal sind 6 Spieler pro Feld. Entsprechend viele Felder aufbauen. "
+      },
+      {
+        "frage": "Wie lange dauert ein Spiel in dieser Übung?",
+        "antwort": "Pro Spieldurchgang sind 5 Minuten vorgesehen. Nach Ablauf der Zeit wechseln die Teams die Felder."
+      },
+      {
+        "frage": "Für welche Altersklassen eignet sich diese Dribbelübung?",
+        "antwort": "Die Übung ist gut geeignet für alle Altersklassen. "
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [],
+    "schwester_id": null,
+    "schwester_titel": null
   }
 ]
