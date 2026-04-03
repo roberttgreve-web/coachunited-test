@@ -677,5 +677,66 @@
     ],
     "schwester_id": 12,
     "schwester_titel": "REIFENPASS"
+  },
+  {
+    "id": 12,
+    "titel": "REIFENPASS",
+    "quell_trainingseinheit": "Reifen-Warmup und Angriffssituationen",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/01/image-11.jpg",
+    "grafik_dateiname": "uebung-012-reifenpass.jpg",
+    "trainingsphase": "Aufwärmen",
+    "kurzbeschreibung": "Spieler passen sich im Reifenfeld und erzielen Punkte beim Stoppen in einem Reifen.",
+    "aufbau": "Ein 20 x 20 Meter großes Feld mit vier Hütchen markieren und Reifen im Feld verteilen. Zwei Teams mit Leibchen ausstatten. Einen Ball. ",
+    "durchfuehrung": "4 gegen 4 im Reifenfeld. Ein Punkt, sobald ein Spieler den Ball nach einem Pass in einem Reifen annimmt und der Ball zum Stehen kommt. Reindribbeln nicht erlaubt. Verteidiger dürfen nicht im Reifen stehen.",
+    "varianten": "Reindribbeln erlaubt. Oder: Reifen kann „gesperrt“ werden, wenn Verteidiger einen Fuß reinstellt. SPRINT GEWINNEN UND ANGREIFEN SPRINT GEWINNEN UND ANGREIFEN Zwei Spieler liefern sich ein Wettrennen. Der Gewinner erhält das Zuspiel und wird im 1 gegen 1 zum Angreifer.",
+    "quell_url": "https://coachunited.de/reifen-warmup-und-angriffssituationen/",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Dribbeln",
+      "Koordination"
+    ],
+    "coaching_fokus": "• Blick heben vor dem Pass; • Konzentriertes Annehmen des Balles",
+    "leichter_machen": "• Größeres Spielfeld, mehr Ringe",
+    "schwerer_machen": "• Weniger Reifen; • Pässe nur mit schwächerem Fuß",
+    "status": "veroeffentlicht",
+    "schwester_ids": [
+      11
+    ],
+    "schwester_id": 11,
+    "schwester_titel": "SCHNELL IN DEN REIFEN DRIBBELN",
+    "alt_titel": "Punktesammeln im Reifenfeld",
+    "seo_keyword": "fußballübung passpiel kinder",
+    "url_slug": "reifenpass-fussballubung-kinder",
+    "seo_meta_description": "Passpiel-Übung für Kinder, bei der Punkte gesammelt werden, wenn der Ball in einem Reifen kontrolliert angenommen wird. Fördert Konzentration, Ballkontrolle und Raumaufteilung.",
+    "grafik_alt_text": "Kinder im Reifenfeld, passen sich den Ball zu und erzielen Punkte beim Stoppen in den Reifen",
+    "grafik_description": "Visualisierung der Fußballübung 'Reifenpass', bei der Kinder im Reifenfeld Pässe spielen und Punkte sammeln, wenn der Ball in einem Reifen kontrolliert angenommen wird.",
+    "grafik_title": "Fußballübung Reifenpass für Kinder",
+    "grafik_caption": "Im Reifenfeld können Kinder ihr Passspiel üben und Punkte erzielen.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler braucht man für die Übung?",
+        "antwort": "Optimal sind 6 Spieler pro Feld. Bei größeren Gruppen weitere Felder aufbauen. "
+      },
+      {
+        "frage": "Wie lange dauert die Übung?",
+        "antwort": "Je nach Alter und Leistungsstand der Kinder empfiehlt sich eine Dauer von 10-15 Minuten. Für jüngere Spieler sollte man eher kürzere Spielphasen wählen."
+      },
+      {
+        "frage": "Kann man die Übung auch für ältere Kinder anpassen?",
+        "antwort": "Ja, durch Verkleinerung des Feldes, Erhöhung der Spielerzahl oder Einführung von Jokerreifen lässt sich die Übung an D- und C-Jugendspieler anpassen."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": ""
   }
 ]
