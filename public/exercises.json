@@ -309,5 +309,65 @@
     ],
     "schwester_id": 4,
     "schwester_titel": "PASS MITNEHMEN UND IM 1 GEGEN 1 DURCHSETZEN"
+  },
+  {
+    "id": 6,
+    "titel": "Koordiniertes Passspiel im Viereck",
+    "quell_trainingseinheit": "Technik im Fokus: Sauber dribbeln",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/01/image-13.jpg",
+    "grafik_dateiname": "uebung-006-zwei-passfelder.jpg",
+    "trainingsphase": "Aufwärmen",
+    "kurzbeschreibung": "Der Spieler in der Mitte des Passfeldes spielt der Reihe nach seine Mitspieler an den Ecken an.",
+    "aufbau": "Zwei 10mx10m große Felder errichten und mit Eckhütchen markieren. Je ein Spieler pro Eckhütchen. Ein Spieler in der Mitte des Feldes mit Ball.",
+    "durchfuehrung": "Der Spieler in der Mitte spielt im Uhrzeigersinn seine Mitspieler an den Eckhütchen an, erhält den Pass zurück und dreht sich zum nächsten Mitspieler und passt wieder. Wenn er den vierten Spieler angespielt hat, tauscht er mit diesem die Positionen.",
+    "varianten": "a) Spieler an Eckhütchen müssen direkt passen. b) Volleypässe aus der Hand. c) Je nach Spielstärke Tempo erhöhen, in dem ein Zeitlimit pro Durchgang festgelegt wird. SCHWEINCHEN IN DER MITTE SCHWEINCHEN IN DER MITTE Die Spieler passen sich den Ball so zu, dass der Fänger in der Mitte des Feldes den Ball nicht erobern kann.",
+    "quell_url": "https://coachunited.de/technik-im-fokus-sauber-dribbeln/",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Koordination",
+      "Raumverhalten"
+    ],
+    "coaching_fokus": "• Blick heben vor dem Pass; • Timing des Anspielens optimieren; • Möglichst zügig passen",
+    "leichter_machen": "• Spielfeld verkleinern; • Pass erst annehmen",
+    "schwerer_machen": "• Nur direkte Zuspiele erlabt; • Zeitlimit pro Durchgang einführen; • Volleypässe aus der Hand spielen",
+    "status": "veroeffentlicht",
+    "alt_titel": "Koordiniertes Passspiel im Viereck",
+    "seo_keyword": "Fußballübung Koordination Kinder",
+    "url_slug": "fussballubung-koordination-kinder",
+    "seo_meta_description": "Eine einfache Fußballübung zur Verbesserung der Koordination und des Passpiels bei Kindern von 6-12 Jahren.",
+    "grafik_alt_text": "Zwei Spielfelder mit je vier Eckhütchen, in der Mitte ein Spieler mit Ball.",
+    "grafik_description": "Die Übung 'Zwei Passfelder' eignet sich hervorragend, um das Passspiel und die Koordination von Kindern im Fußballtraining zu fördern. Die Kinder üben das präzise Zuspiel und die Raumaufteilung.",
+    "grafik_title": "Koordinationsübung 'Zwei Passfelder' für Kinder im Fußballtraining",
+    "grafik_caption": "Fußballtraining für Kinder: Die Übung 'Zwei Passfelder' fördert das Passspiel und die Koordination.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler braucht man für diese Übung?",
+        "antwort": "Die Übung eignet sich für 5 Spieler je Feld. Je nach Gruppengröße entsprechend mehr Felder aufbauen. "
+      },
+      {
+        "frage": "Wie lange dauert die Übung?",
+        "antwort": "Je nach Alter und Erfahrungsstand der Kinder empfehlen wir 5-10 Minuten pro Durchgang. Die Übung lässt sich gut in das Aufwärmprogramm integrieren."
+      },
+      {
+        "frage": "Für welche Altersgruppen ist die Übung geeignet?",
+        "antwort": "Die Übung eignet sich für alle Kinder- und Jugendgruppen, sobald sicheres Passspielen erlernt ist. "
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [],
+    "schwester_id": null,
+    "schwester_titel": null
   }
 ]
