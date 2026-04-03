@@ -435,6 +435,67 @@
     "quell_kategorie": ""
   },
   {
+    "id": 8,
+    "titel": "ERST SLALOM, DANN TORSCHUSS",
+    "quell_trainingseinheit": "Technik im Fokus: Sauber dribbeln",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/01/image-15.jpg",
+    "grafik_dateiname": "uebung-008-erst-slalom-dann-torschuss.jpg",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "Die Spieler dribbeln im Slalom und schießen aufs Tor.",
+    "aufbau": "Etwa 15m vor dem Jugendtor Hütchen im Abstand von 5m aufstellen. Spieler am Starthütchen mit Bällen platzieren. Torhüter im Tor.",
+    "durchfuehrung": "Spieler dribbeln im Slalom um die Hütchen und schließen ab.",
+    "varianten": "a) Zweites paralleles Feld aufbauen bei großen Gruppen. Dann im Wettbewerb gegeneinander. b) Nur mit links/rechts dribbeln oder schießen. c) Hütchen mit Tricks umspielen. ERST SLALOM, DANN 1 GEGEN 1 ERST SLALOM, DANN 1 GEGEN 1 Ein Spieler dribbelt gerade aufs Tor, schließt ab und wird zum Verteidiger. Der zweite Spieler dribbelt im Slalom und geht ins 1 gegen 1.",
+    "quell_url": "https://coachunited.de/technik-im-fokus-sauber-dribbeln/",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend"
+    ],
+    "skills": [
+      "Ballkontrolle",
+      "Dribbeln",
+      "Torschuss",
+      "Koordination"
+    ],
+    "coaching_fokus": "• Blick heben vor dem Abschluss; • Eng an den Hütchen dribbeln",
+    "leichter_machen": "• Größeren Abstand zwischen den Hütchen; • Langsameres Tempo beim Dribbling",
+    "schwerer_machen": "• Enge Hütchenabstände; • Nur mit 'Innenseite' dribbeln und schießen; • Zeitlimit setzen, um Tempo zu erhöhen",
+    "status": "veroeffentlicht",
+    "alt_titel": "Fußball-Slalom mit Torabschluss",
+    "seo_keyword": "Fußballübung Dribbling Kinder",
+    "url_slug": "fussballubung-dribbling-kinder",
+    "seo_meta_description": "Dynamische Fußballübung für Kinder von 8-12 Jahren mit Slalom-Dribbling und Torabschluss. Perfekt für Koordination und Ballsicherheit.",
+    "grafik_alt_text": "Kinder führen im Slalom einen Ball und schießen dann auf das Tor",
+    "grafik_description": "Die Grafik zeigt einen Aufbau mit Hütchen, bei dem Kinder nacheinander den Ball im Slalom dribbeln und dann auf das Tor schießen. Eine dynamische Übung zur Verbesserung von Ballkontrolle und Torschuss.",
+    "grafik_title": "Fußballübung Dribbling und Torschuss für Kinder",
+    "grafik_caption": "Koordinationsübung mit Slalom-Dribbling und Torabschluss für Kinder",
+    "faq": [
+      {
+        "frage": "Wie viele Kinder können an der Übung teilnehmen?",
+        "antwort": "Die Übung ist für Gruppen von 8-16 Kindern geeignet. Bei größeren Gruppen kann ein zweites paralleles Feld aufgebaut werden."
+      },
+      {
+        "frage": "Wie lange dauert die Übung?",
+        "antwort": "Die Dauer der Übung liegt bei 10-15 Minuten. Je nach Alter und Leistungsstand der Kinder kann die Dauer angepasst werden."
+      },
+      {
+        "frage": "Für welche Altersgruppe ist diese Übung geeignet?",
+        "antwort": "Die Übung ist für Kinder der E- und F-Jugend (9-12 Jahre) konzipiert. Durch Anpassung der Distanzen und des Tempos kann sie auch für jüngere Kinder geeignet sein."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [
+      9
+    ],
+    "schwester_id": 9,
+    "schwester_titel": "ERST SLALOM, DANN 1 GEGEN 1"
+  },
+  {
     "id": 9,
     "titel": "ERST SLALOM, DANN 1 GEGEN 1",
     "quell_trainingseinheit": "Technik im Fokus: Sauber dribbeln",
