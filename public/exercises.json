@@ -193,7 +193,7 @@
     "trainingsphase": "Hauptteil",
     "kurzbeschreibung": "Trainer ruft eine Zahl auf und spielt den Ball ein. Jeweils diese Anzahl Spieler pro Team startet ins Spiel.",
     "aufbau": "Das Spielfeld ist 30 x 30 Meter groß und verfügt in der Mitte über ein zentrales Hütchen. An den gegenüberliegenden Seiten des Feldes befinden sich jeweils ein Tor mit Torhütern. Die Spieler stehen verteilt an den Hütchen, aufgeteilt in zwei Teams mit Bällen.",
-    "durchfuehrung": "Wie in Vorübung. Dieses Mal startet der Passgeber nach dem Pass direkt in ein 1 gegen 1.",
+    "durchfuehrung": "Spieler ohne Ball umlaufen das Hütchen, fordern den Pass, verarbeiten den Pass und gehen ins 1 gegen 1. Angreifer wird danach zum Verteidiger. Anschließend im Uhrzeigersinn am nächsten Hütchen anstellen. ",
     "varianten": "Verteidiger darf auf das zweite Tor ein Tor erzielen. Vom Eck ins Tor Vom Eck ins Tor Zwei Teams spielen gegeneinander auf zwei Tore, Zuspieler an den Ecken bringen neue Bälle ein.",
     "quell_url": "https://coachunited.de/passen-aktiv-anfordern/",
     "jugend": [
@@ -204,7 +204,8 @@
       "Passen",
       "Ballkontrolle",
       "Dribbeln",
-      "Zweikampf"
+      "Zweikampf",
+      "Kommunikation"
     ],
     "coaching_fokus": "• Blick heben vor dem Pass; • Weite des Passspiels beobachten; • Körpereinsatz und Beschleunigung im 1 gegen 1",
     "leichter_machen": "• Vereinfachte Aufgabe im 1 gegen 1, z.B. nur ins Dribbling gehen; • Größeres Spielfeld zum Entzerren",
