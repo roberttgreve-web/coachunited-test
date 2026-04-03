@@ -321,6 +321,7 @@
 
   #uebungen-body {
     display: flex !important;
+    flex-direction: row !important;
     flex: 1 !important;
     min-height: 0 !important;
   }
