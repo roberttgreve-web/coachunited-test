@@ -344,6 +344,7 @@
 
   body:has(#exercises-list) .filter-wrap {
     width: 100% !important;
+    flex: none !important;
   }
 
   body:has(#exercises-list) .filter-btn {
