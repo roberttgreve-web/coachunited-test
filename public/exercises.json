@@ -616,5 +616,66 @@
     "schwester_ids": [],
     "schwester_id": null,
     "schwester_titel": null
+  },
+  {
+    "id": 11,
+    "titel": "SCHNELL IN DEN REIFEN DRIBBELN",
+    "quell_trainingseinheit": "Reifen-Warmup und Angriffssituationen",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/01/image-19.png",
+    "grafik_dateiname": "uebung-011-reifen-suchen.png",
+    "trainingsphase": "Aufwärmen",
+    "kurzbeschreibung": "Spieler dribbeln um das Feld, auf Kommando stoppen sie ihren Ball in einem der ausgelegten Reifen.",
+    "aufbau": "Ein 20 x 20 Meter großes Feld mit vier Hütchen markieren und Reifen im Feld verteilen. Einen Reifen weniger als es Spieler gibt. Falls keine Reifen vorhanden, Hütchen verwenden.",
+    "durchfuehrung": "Die Kinder dribbeln um das Feld. Auf Kommando dribbeln sie in ein Hütchen und stoppen den Ball. Das Kind, das keinen Reifen findet, setzt eine Runde aus. ",
+    "varianten": "Nur mit rechts oder links dribbeln. Mit der Sohle ziehen. Rückwarts ziehen. Oder Reifenanzahl reduzieren. REIFENPASS REIFENPASS Spieler passen sich im Reifenfeld und erzielen Punkte beim Stoppen in einem Reifen.",
+    "quell_url": "https://coachunited.de/reifen-warmup-und-angriffssituationen/",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend"
+    ],
+    "skills": [
+      "Ballkontrolle",
+      "Dribbeln",
+      "Koordination",
+      "Schnelligkeit"
+    ],
+    "coaching_fokus": "• Sauberes Dribbeln und Stoppen, auch bei erhöhtem Tempo",
+    "leichter_machen": "• Erstmal so beginnen, dass alle Spieler*innen einen Reifen finden",
+    "schwerer_machen": "• Mit Sohle ziehen anstatt Innen-/Außenseite; • Reifen-Anzahl reduzieren",
+    "status": "veroeffentlicht",
+    "alt_titel": "Reifen-Jagd - Dribbling-Übung für Kinder",
+    "seo_keyword": "Fußballübung Dribbling Kinder",
+    "url_slug": "reifen-jagd-dribbling-ubung-kinder",
+    "seo_meta_description": "Illustration von Kindern, die einen Fußball in Reifen dribbeln",
+    "grafik_alt_text": "Fußballübung 'Reifen-Jagd' für Kinder",
+    "grafik_description": "Kinder dribbeln einen Fußball über ein Feld und stoppen ihn in ausgelegten Reifen. Die Übung fördert Ballkontrolle, Koordination und Schnelligkeit.",
+    "grafik_title": "Kinder-Fußballübung 'Reifen-Jagd' zur Verbesserung von Dribbling und Ballkontrolle",
+    "grafik_caption": "Kinder dribbeln einen Fußball über ein Feld und stoppen ihn in ausgelegten Reifen. Die Übung fördert Ballkontrolle, Koordination und Schnelligkeit.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler braucht man für diese Übung?",
+        "antwort": "Die Übung eignet sich gut für Gruppen von 8-12 Kindern."
+      },
+      {
+        "frage": "Wie lange dauert die Übung?",
+        "antwort": "Die Dauer kann 10-15 Minuten betragen, je nach Altersstufe und Erfahrungsstand der Kinder."
+      },
+      {
+        "frage": "Kann man die Übung auch für ältere Kinder anpassen?",
+        "antwort": "Ja, durch Erhöhung des Tempos und Reduzierung der Reifen lässt sich die Übung auch für F-Jugendspieler herausfordernder gestalten. "
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [
+      12
+    ],
+    "schwester_id": 12,
+    "schwester_titel": "REIFENPASS"
   }
 ]
