@@ -260,7 +260,6 @@
     "varianten": "Punkte für erfolgreichen ersten Pass verteilen. FREIES SPIEL – LOS GEHT’S! FREIES SPIEL – LOS GEHT’S! In © 2025 COACH UNITED",
     "quell_url": "https://coachunited.de/passen-aktiv-anfordern/",
     "jugend": [
-      "G-Jugend",
       "F-Jugend",
       "E-Jugend"
     ],
@@ -268,9 +267,10 @@
       "Passen",
       "Ballkontrolle",
       "Dribbeln",
-      "Torschuss"
+      "Torschuss",
+      "Kommunikation"
     ],
-    "coaching_fokus": "• Pässe aktiv anfordern",
+    "coaching_fokus": "• Pässe aktiv anfordern; • Saubere Pässe ins Feld spielen mit Innenseite",
     "leichter_machen": "• Größeres Spielfeld; • Trainer sagt an, auf wen das Zuspiel erfolgen soll",
     "schwerer_machen": "• Zuspiele nur mit dem schwachen Fuß",
     "status": "veroeffentlicht",
@@ -292,8 +292,8 @@
         "antwort": "Ja, durch ein größeres Spielfeld und einfachere Pässe ist die Übung auch für G- und F-Junioren geeignet."
       },
       {
-        "frage": "Kann man die Übung auch für jüngere Kinder anpassen?",
-        "antwort": "Ja, durch ein größeres Spielfeld und einfachere Pässe ist die Übung auch für G- und F-Junioren geeignet."
+        "frage": "",
+        "antwort": ""
       }
     ],
     "referenz_grafik_url": "",
