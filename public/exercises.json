@@ -366,8 +366,133 @@
     "original_coaching_fokus": "",
     "ist_gecrawlt": false,
     "quell_kategorie": "",
-    "schwester_ids": [],
-    "schwester_id": null,
-    "schwester_titel": null
+    "schwester_ids": [
+      7
+    ],
+    "schwester_id": 7,
+    "schwester_titel": "SCHWEINCHEN IN DER MITTE"
+  },
+  {
+    "id": 7,
+    "titel": "SCHWEINCHEN IN DER MITTE",
+    "quell_trainingseinheit": "Technik im Fokus: Sauber dribbeln",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/01/image-14.jpg",
+    "grafik_dateiname": "uebung-007-schweinchen-in-der-mitte.jpg",
+    "trainingsphase": "Aufwärmen",
+    "kurzbeschreibung": "Die Spieler passen sich den Ball so zu, dass der Fänger in der Mitte des Feldes den Ball nicht erobern kann.",
+    "aufbau": "Zwei 10mx10m große Felder werden errichtet und mit Eckhütchen markiert. Je ein Spieler positioniert sich pro Eckhütchen. In der Mitte des Feldes befindet sich ein Spieler ohne Ball.",
+    "durchfuehrung": "Die Spieler an den Eckhütchen passen sich den Ball zu. Der Spieler in der Mitte muss den Ball erobern. Der Spieler, der den Fehlpass gespielt hat, muss dann als Jäger in die Mitte.",
+    "varianten": "a) Spieler an den Eckhütchen bewegen sich flexibel um das gesamte Feld. b) Nur zwei oder drei Ballberührungen erlaubt. ERST SLALOM, DANN TORSCHUSS ERST SLALOM, DANN TORSCHUSS Die Spieler dribbeln im Slalom und schießen aufs Tor.",
+    "quell_url": "https://coachunited.de/technik-im-fokus-sauber-dribbeln/",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Dribbeln",
+      "Raumverhalten"
+    ],
+    "coaching_fokus": "• Blick vor dem Pass heben; • Freilaufen",
+    "leichter_machen": "• Spielfeld vergrößern; Bis zu vier Ballberührungen erlauben",
+    "schwerer_machen": "• Spielfeld verkleinern; • Nur 2 Ballberührungen erlauben",
+    "status": "veroeffentlicht",
+    "schwester_ids": [
+      6
+    ],
+    "schwester_id": 6,
+    "schwester_titel": "Koordiniertes Passspiel im Viereck",
+    "alt_titel": "Ball-Zirkulation mit Gegenspieler",
+    "seo_keyword": "Fußballübung Raumaufteilung Kinder",
+    "url_slug": "fussballuebung-raumaufteilung-kinder",
+    "seo_meta_description": "Effektive Fußballübung für Kinder (E-/D-Jugend) zum Trainieren von Passen, Ballkontrolle und Raumverhalten mit Gegnerdruck",
+    "grafik_alt_text": "Skizze eines Fußball-Spielfeldes mit Spielern und Hütchen",
+    "grafik_description": "Grafische Darstellung der Fußballübung 'Schweinchen in der Mitte' mit Spielfeldbegrenzung, Hütchen und Spielern an verschiedenen Positionen.",
+    "grafik_title": "Fußballübung Raumaufteilung mit Gegnerdruck",
+    "grafik_caption": "Spielsituation der Übung 'Schweinchen in der Mitte' mit Eckhütchen und Jäger in der Mitte",
+    "faq": [
+      {
+        "frage": "Welche Spieleranzahl ist für diese Übung optimal?",
+        "antwort": "Für die Grundform sind 5 Spieler pro Feld ideal. Bei größeren Gruppen sollte die Anzahl  der Spielfelder entsprechend angepasst werden."
+      },
+      {
+        "frage": "Wie lange sollte die Übung dauern?",
+        "antwort": "Pro Durchgang sollte die Übung 5-8 Minuten gespielt werden. Dann kann gewechselt oder eine Pause eingelegt werden."
+      },
+      {
+        "frage": "Kann man die Übung auch für jüngere Spieler anpassen?",
+        "antwort": "Diese Übung ist für alle Gruppen geeignet, die sichere klare Pässe spielen können. "
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": ""
+  },
+  {
+    "id": 9,
+    "titel": "ERST SLALOM, DANN 1 GEGEN 1",
+    "quell_trainingseinheit": "Technik im Fokus: Sauber dribbeln",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/01/image-26.png",
+    "grafik_dateiname": "uebung-009-erst-slalom-dann-1-gegen-1.png",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "Ein Spieler dribbelt gerade aufs Tor, schließt ab und wird zum Verteidiger. Der zweite Spieler dribbelt im Slalom und geht ins 1 gegen 1.",
+    "aufbau": "Etwa 15m vor dem Jugendtor Hütchen im Abstand von 5m aufstellen. Spieler am Starthütchen mit Bällen platzieren. Torhüter im Tor.",
+    "durchfuehrung": "Ein Spieler dribbelt im Slalom um die Hütchen und geht dann ins 1 gegen 1 gegen einen Verteidiger. Erobert der Verteidiger den Ball, darf er auch abschließen. Der Angreifer wird zum Verteidiger, der Verteidiger stellt sich an. ",
+    "varianten": "",
+    "quell_url": "https://coachunited.de/technik-im-fokus-sauber-dribbeln/",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend"
+    ],
+    "skills": [
+      "Ballkontrolle",
+      "Dribbeln",
+      "Torschuss",
+      "Zweikampf"
+    ],
+    "coaching_fokus": "• Blick heben vor dem Abschluss; • Körpertäuschung im 1 gegen 1 nutzen; • Rückwärtslaufen des Verteidigers kontrollieren",
+    "leichter_machen": "• Kegel weiter auseinander stellen; • Tor vergrößern für mehr Torgefahr",
+    "schwerer_machen": "• Nur mit Körpertäuschungen dribbeln; • Verteidiger muss dem Angreifer den Weg zum Tor versperren",
+    "status": "veroeffentlicht",
+    "schwester_ids": [
+      8
+    ],
+    "schwester_id": 8,
+    "schwester_titel": "ERST SLALOM, DANN TORSCHUSS",
+    "alt_titel": "Slalomdrehen und Eins-gegen-Eins",
+    "seo_keyword": "Fußballübung Dribbling Kinder",
+    "url_slug": "fussballubung-dribbling-kinder",
+    "seo_meta_description": "Effektive Fußballübung für Kinder zum Dribbling und 1 gegen 1. Fördert Ballkontrolle, Körpertäuschung und Abschluss.",
+    "grafik_alt_text": "Zwei Kinder spielen 1 gegen 1 nach Slalomdribbling",
+    "grafik_description": "Die Übung kombiniert Slalomdribbling mit einem 1 gegen 1 Duell. Ein Kind dribbelt durch die Kegel, der andere verteidigt den Torschuss.",
+    "grafik_title": "Fußballübung: Erst Slalom, dann 1 gegen 1",
+    "grafik_caption": "Kinder-Fußballübung für Dribbeln, Ballkontrolle und 1 gegen 1.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler braucht man für die Übung?",
+        "antwort": "Mindestens 2 Spieler, ideal sind 4-6 Spieler, die sich abwechseln."
+      },
+      {
+        "frage": "Wie lange dauert die Übung?",
+        "antwort": "Die Dauer ist flexibel, je nach Altersstufe ca. 10-15 Minuten."
+      },
+      {
+        "frage": "Für welche Altersgruppe ist die Übung geeignet?",
+        "antwort": "Die Übung ist für Kinder von 6-12 Jahren (G- bis D-Jugend) gut geeignet."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": ""
   }
 ]
