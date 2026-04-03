@@ -619,11 +619,13 @@
         document.getElementById('schwerer-machen').innerHTML = toBulletList(ex.schwerer_machen);
 
         if (ex.faq && ex.faq.length > 0) {
-          const faqHtml = ex.faq.map(item =>
-            `<li><strong>${item.frage}</strong><br>${item.antwort}</li>`
-          ).join('');
-          document.getElementById('faq-list').innerHTML = faqHtml;
-          document.getElementById('faq-box').style.display = '';
+          const faqItems = ex.faq.filter(item => item.frage && item.frage.trim());
+          if (faqItems.length > 0) {
+            document.getElementById('faq-list').innerHTML = faqItems.map(item =>
+              `<li><strong>${item.frage}</strong><br>${item.antwort}</li>`
+            ).join('');
+            document.getElementById('faq-box').style.display = '';
+          }
         }
 
         const sisterIds = ex.schwester_ids && ex.schwester_ids.length ? ex.schwester_ids

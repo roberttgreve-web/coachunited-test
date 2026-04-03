@@ -304,6 +304,74 @@
     font-size: 28px;
   }
 
+  /* ══════════════════════════════════════════
+     ÜBUNGEN-SEITE: Sidebar + 3-Spalten-Layout
+     ══════════════════════════════════════════ */
+
+  body:has(#exercises-list) .container {
+    height: 100vh !important;
+    overflow: hidden !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  body:has(#exercises-list) .desktop-footer {
+    display: none !important;
+  }
+
+  #uebungen-body {
+    display: flex !important;
+    flex: 1 !important;
+    min-height: 0 !important;
+  }
+
+  /* Linke Filter-Sidebar */
+  body:has(#exercises-list) .filters {
+    position: static !important;
+    top: unset !important;
+    width: 260px !important;
+    flex-shrink: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+    border-bottom: none !important;
+    border-right: 1px solid #e8edf2 !important;
+    background: #f9fafc !important;
+    padding: 28px 20px !important;
+    overflow: visible !important;
+  }
+
+  body:has(#exercises-list) .filter-wrap {
+    width: 100% !important;
+  }
+
+  body:has(#exercises-list) .filter-btn {
+    padding: 14px 16px !important;
+    font-size: 15px !important;
+    border-radius: 12px !important;
+    font-weight: 600 !important;
+  }
+
+  body:has(#exercises-list) .filter-dropdown {
+    min-width: 100% !important;
+    z-index: 50 !important;
+  }
+
+  /* Rechter Content-Bereich */
+  body:has(#exercises-list) .content {
+    flex: 1 !important;
+    max-width: none !important;
+    margin: 0 !important;
+    overflow-y: auto !important;
+    height: 100% !important;
+    padding: 28px 32px !important;
+  }
+
+  /* Immer 3 Spalten für Übungskarten */
+  body:has(#exercises-list) #exercises-list {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+
   /* ── Desktop Footer ── */
   .desktop-footer {
     display: flex;
