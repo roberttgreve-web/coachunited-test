@@ -921,5 +921,67 @@
     "original_coaching_fokus": "",
     "ist_gecrawlt": false,
     "quell_kategorie": ""
+  },
+  {
+    "id": 21,
+    "titel": "VIER TORE, VIELE BÄLLE",
+    "quell_trainingseinheit": "Flankenläufe spielerisch trainieren",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/01/image-17.png",
+    "grafik_dateiname": "uebung-021-vier-tore-viele-baelle.png",
+    "trainingsphase": "Spielformat",
+    "kurzbeschreibung": "Zwei Teams spielen auf vier kleine Tore. Trainer kann mehrere Bälle ins Spiel bringen.",
+    "aufbau": "Zwei 20 x 20 m Felder, je ein Minitor pro Seite, insgesamt also vier Tore. Zwei Teams mit Leibchen. Mehrere Bälle beim Trainer positionieren.",
+    "durchfuehrung": "Jedes Team darf auf alle Tore Treffer erzielen. Der Trainer gibt im Laufe des Spiels weitere Bälle ins Spiel, allerdings maximal vier. Das Team, das zuerst 15 Tore erzielt, gewinnt.",
+    "varianten": "FREIES SPIEL – LOS GEHT’S! FREIES SPIEL – LOS GEHT’S! In © 2025 COACH UNITED",
+    "quell_url": "https://coachunited.de/flankenlaufe-spielerisch-trainieren/",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Torschuss",
+      "Koordination",
+      "Raumverhalten"
+    ],
+    "coaching_fokus": "• Raumverhalten von Angreifern und Verteidigern",
+    "leichter_machen": "• Spielfeldgröße reduzieren; ",
+    "schwerer_machen": "• Tore nur nach vorherigen hohen Flankenpässen über die Tore erlauben; • Mindestzahl an Pflicht-Pässen vor dem Torabschluss festlegen.",
+    "status": "veroeffentlicht",
+    "alt_titel": "Bunte Vier-Tore-Jagd",
+    "seo_keyword": "Fußballübung Raumaufteilung Kinder",
+    "url_slug": "fussballuebung-raumaufteilung-kinder",
+    "seo_meta_description": "Dynamisches Vier-Tore-Spiel fördert das Raumverhalten und den Torabschluss bei 6-12-jährigen Fußballkindern.",
+    "grafik_alt_text": "Zwei Teams in bunten Leibchen spielen auf vier kleine Fußballtore, der Trainer bringt weitere Bälle ins Spiel.",
+    "grafik_description": "Das Bild zeigt einen Aufbau mit zwei 20x20m Spielfeldern, je einem Tor pro Seite. Zwei Kindermannschaften in unterschiedlichen Leibchenfarben spielen gegeneinander, während der Trainer zusätzliche Bälle einbringt.",
+    "grafik_title": "Fußballübung: Vier Tore, viele Bälle",
+    "grafik_caption": "Dynamisches Vier-Tore-Spiel fördert Raumaufteilung und Torabschluss bei Kindern.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler sind ideal für diese Übung?",
+        "antwort": "Die Übung ist für bis zu 8 Spieler pro Team geeignet, damit alle Kinder ausreichend Ballaktionen haben. Bei größeren Gruppen zweites Feld aufbauen (falls nicht ausreichen Töre vorhanden: Hütchentore nutzen). "
+      },
+      {
+        "frage": "Wie lange sollte man die Übung durchführen?",
+        "antwort": "Empfohlen sind 10-20 Minuten Spielzeit."
+      },
+      {
+        "frage": "Für welche Altersgruppe eignet sich die Übung am besten?",
+        "antwort": "Die Übung macht allen Kindern Spaß. "
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [],
+    "schwester_id": null,
+    "schwester_titel": null
   }
 ]
