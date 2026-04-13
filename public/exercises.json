@@ -858,5 +858,66 @@
     "schwester_ids": [],
     "schwester_id": null,
     "schwester_titel": null
+  },
+  {
+    "id": 19,
+    "titel": "FLANKENLAUF MIT TORABSCHLUSS",
+    "quell_trainingseinheit": "Flankenläufe spielerisch trainieren",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/01/image-15.png",
+    "grafik_dateiname": "uebung-019-flankenlauf-mit-torabschluss.png",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "Zwei Pässe, ein Flankenlauf, ein Tor.",
+    "aufbau": "Jugendtor mit Torhüter. Etwa 30m entfernt zwei Gruppen aufstellen. Eine Gruppe mit Ball, eine Gruppe ohne. Flache Hütchen wie in der Zeichnung markieren. Etwa 5m vor dem Tor ein Torabschlussfeld mit vier Hütchen markieren.",
+    "durchfuehrung": "Spieler ohne Ball startet ins Slalom um die Hütchen und erhält nach dem letzten Hütchen den Pass vom Mitspieler der zweiten Gruppe. Der Passgeber sprintet in die Torzone während der ballführende Spieler einen Flankenlauf macht und den Ball kurz vor der Grundlinie in die Mitte passt. Daraufhin folgt der Torabschluss. ",
+    "varianten": "a) Torabschluss direkt ohne Ballannahme. b) Je nach Leistungsstand auch höhere Flanken möglich. Aber ohne Kopfball. SLALOM, FLANKENLAUF UND PASS INS 1 GEGEN 1 LALO M, FLANKENLAUF UND PASS INS 1 GEGEN 1 Ein Spieler macht einen Slalom mit Flankenlauf und sucht seinen Mitspieler, der sich gegen einen Verteidiger durchsetzen muss.",
+    "quell_url": "https://coachunited.de/flankenlaufe-spielerisch-trainieren/",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Dribbeln",
+      "Torschuss"
+    ],
+    "coaching_fokus": "• Passgenauigkeit; • Timing des Flankenanlaufs; • Tempo hochhalten",
+    "leichter_machen": "• Erst Ball annehmen, dann loslaufen; • 2-3 Ballkontakte vor dem Torabschluss erlauben; • Nur Flachpässe in die Torzone erlauben",
+    "schwerer_machen": "• Schneller Slalom-Lauf ohne Ball; • Präzision der Pässe; • Tempo hochhalten; • Hohe Flanken in die Torzone",
+    "status": "veroeffentlicht",
+    "alt_titel": "Zielschießen mit Flanke & Annahme",
+    "seo_keyword": "Fußballübung Passen Kinder",
+    "url_slug": "flankenlauf-mit-torabschluss",
+    "seo_meta_description": "Fußball-Übung für Kinder zum Passen, Flanken und Abschließen. Einfach umsetzbar für G- & F-Jugend Mannschaften.",
+    "grafik_alt_text": "Zwei Gruppen spielen eine Fußballübung mit Flanke und Torabschluss",
+    "grafik_description": "Die Grafik zeigt den Aufbau einer Fußballübung mit Flanke und Torabschluss. Es sind zwei Gruppen zu sehen, eine mit Ball und eine ohne. Die Spieler durchlaufen einen Slalomlauf und erhalten dann einen Pass, bevor sie eine Flanke schlagen und auf das Tor abschließen.",
+    "grafik_title": "Fußballübung Flanke und Torabschluss für Kinder",
+    "grafik_caption": "Übungsablauf: Slalomlauf, Pass, Flanke, Torabschluss",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler braucht man für die Übung?",
+        "antwort": "Optimal für 10-16 Kinder. "
+      },
+      {
+        "frage": "Wie lange dauert die Übung?",
+        "antwort": "Je nach Intensität und Wiederholungen ca. 10-15 Minuten."
+      },
+      {
+        "frage": "Kann man die Übung für ältere Kinder anpassen?",
+        "antwort": "Ja, durch hohe Flanken oder mehr Tempo."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [
+      20
+    ],
+    "schwester_id": 20,
+    "schwester_titel": "M, FLANKENLAUF UND PASS INS 1 GEGEN 1"
   }
 ]
