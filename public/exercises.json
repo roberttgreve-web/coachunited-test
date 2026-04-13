@@ -738,5 +738,64 @@
     "original_coaching_fokus": "",
     "ist_gecrawlt": false,
     "quell_kategorie": ""
+  },
+  {
+    "id": 17,
+    "titel": "WACH SEIN, BALL EROBERN",
+    "quell_trainingseinheit": "Flankenläufe spielerisch trainieren",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/01/image-13.png",
+    "grafik_dateiname": "uebung-017-wach-sein-ball-klauen.png",
+    "trainingsphase": "Aufwärmen",
+    "kurzbeschreibung": "Spieler müssen im Trippelschritt wach sein und den Ball schneller erobern als ihr Gegenspieler.",
+    "aufbau": "Spieler stehen sich in paaren eng gegenüber. In der Mitte liegt je Paar ein Ball.",
+    "durchfuehrung": "Alle Spieler laufen in schnellen Trippelschritten auf der Stelle. Der Trainer ruft nacheinander verschiedene Körperteile, welche die Spieler mit den Händen berühren. Beim Kommando „Ball“ werfen sich die Kinder auf den Ball. Wer den Ball erobert hat, bekommt den Punkt. Etwa 10 Durchgänge. ",
+    "varianten": "",
+    "quell_url": "https://coachunited.de/flankenlaufe-spielerisch-trainieren/",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Koordination",
+      "Schnelligkeit"
+    ],
+    "coaching_fokus": "• Gleicher Abstand zum Ball; • Gerader Öberkörper beim Trippeln",
+    "leichter_machen": "• Langsamere Trippelschritte",
+    "schwerer_machen": "• Tempo der Trippelschritte erhöhen",
+    "status": "veroeffentlicht",
+    "alt_titel": "Raubkatze: Ball schnappen!",
+    "seo_keyword": "Fußballübung Ball klauen Kinder",
+    "url_slug": "fussballuebung-ball-klauen-kinder",
+    "seo_meta_description": "Konzentrierte Übung, bei der Kinder zwischen 9-12 Jahren schnell und wach den Ball vom Gegner erobern müssen. Fördert Ballkontrolle, Koordination und Reaktionsschnelligkeit.",
+    "grafik_alt_text": "Kinder in roten und blauen Trikots liegen auf dem Boden, um einen Ball in der Mitte zu erobern",
+    "grafik_description": "Zwei Gruppen von Kindern in Fußballtrikots stehen sich gegenüber. In der Mitte liegt ein Ball, den die Kinder möglichst schnell erobern müssen.",
+    "grafik_title": "Fußballübung 'Ball klauen' für Kinder",
+    "grafik_caption": "Konzentrierte Zweikampfübung zum Ballgewinn für Nachwuchsfußballer.",
+    "faq": [
+      {
+        "frage": "Wie viele Kinder braucht man für diese Übung?",
+        "antwort": "Die Übung eignet sich gut für eine beliebige Anzahl an Kindern. Je nach Platz kann man auch mehr Paare einteilen."
+      },
+      {
+        "frage": "Wie lange dauert die Übung?",
+        "antwort": "Eine Runde (10 Kommandos) sollte 5-10 Minuten dauern. "
+      },
+      {
+        "frage": "Für welche Altersgruppe ist diese Übung geeignet?",
+        "antwort": "Die Übung ist ideal für alle Altersklassen im Kinder- und Jugendfußball."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [],
+    "schwester_id": null,
+    "schwester_titel": null
   }
 ]
