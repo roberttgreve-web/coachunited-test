@@ -797,5 +797,66 @@
     "schwester_ids": [],
     "schwester_id": null,
     "schwester_titel": null
+  },
+  {
+    "id": 18,
+    "titel": "FUSSBALL-BRENNBALL",
+    "quell_trainingseinheit": "Flankenläufe spielerisch trainieren",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/01/image-14.png",
+    "grafik_dateiname": "uebung-018-fussball-brennball.png",
+    "trainingsphase": "Aufwärmen",
+    "kurzbeschreibung": "Läufer schießt ins Feld. Sobald die verteidigende Mannschaft den Ball ins Tor geschossen hat, muss der Startspieler sich an einem Hütchen gerettet haben.",
+    "aufbau": "30X20m langes Feld aufbauen. Ein leeres Jugendtor. Hütchen wie in Abbildung positionieren. Hütchentor links vom Tor aufbauen.",
+    "durchfuehrung": "Läufer schießt ins Feld und sprintet danach sofort ums Feld. Verteidigende Mannschaft kontrolliert den Ball und erzielt so schnell wie möglich ein Tor. Läufer ist „verbrannt“ und stellt sich wieder an, wenn er im Moment der Torerzielung nicht an einem Hütchen stehen geblieben ist. Hat er sich an einem Hütchen gerettet, darf er beim nächsten Einspiel weiterlaufen. Überquert er das Hütchentor (siehe Abbildung) ohne „verbrannt“ worden zu sein, gibt es einen Punkt für sein Team. Schafft er es nach seinem eigenen Einspiel komplett einmal ums Feld, gibt es zwei Punkte („Homerun“). Rollenwechsel sobald jeder Spieler des Angreiferteams zwei Mal eingespielt hat. ",
+    "varianten": "",
+    "quell_url": "https://coachunited.de/flankenlaufe-spielerisch-trainieren/",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Torschuss",
+      "Schnelligkeit",
+      "Raumverhalten"
+    ],
+    "coaching_fokus": "• Blick heben vor dem Abschlag; • Timing beim Sprint ums Feld; • ",
+    "leichter_machen": "• Nur flaches Einspielen erlaubt; • Trainer gibt Kommandos, wenn Kinder besser an den Hütchen stehen bleiben sollen",
+    "schwerer_machen": "• Größeres Spielfeld (40x30m); • Einspielen auch Volley aus der Hand erlaubt",
+    "status": "veroeffentlicht",
+    "alt_titel": "Kleinfeldversion - Fußball-Brennball",
+    "seo_keyword": "Fußballübung Koordination Kinder",
+    "url_slug": "fussball-brennball-koordination-kinder",
+    "seo_meta_description": "Verbessere die Koordination, Schnelligkeit und das Raumverhalten deiner Kinder mit dieser Fußball-Brennball-Übung für 6-12 Jährige.",
+    "grafik_alt_text": "Aufbau eines Fußballfelds mit Toren, Hütchen und laufenden Spielern",
+    "grafik_description": "Das Spielfeld ist 30x20 Meter groß. Es gibt ein leeres Jugendtor und Hütchen, die als Rettungspunkte dienen. Die Spieler führen einen Lauf ums Feld durch, während die anderen Spieler versuchen, den Ball ins Tor zu schießen.",
+    "grafik_title": "Fußball-Brennball: Koordination und Schnelligkeit für Kinder",
+    "grafik_caption": "Übungsaufbau für das Fußball-Brennball-Spiel zur Förderung von Koordination und Schnelligkeit",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler braucht man für diese Übung?",
+        "antwort": "Mindestens 10 Spieler, ideal sind 12-16 Kinder in zwei Teams."
+      },
+      {
+        "frage": "Wie lange dauert die Übung?",
+        "antwort": "Je nach Alter und Leistungsstand der Kinder dauert die Übung etwa 20 Minuten."
+      },
+      {
+        "frage": "Kann man die Übung auch für ältere Kinder anpassen?",
+        "antwort": "Ja, durch ein größeres Spielfeld lässt sich der Schwierigkeitsgrad erhöhen."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [],
+    "schwester_id": null,
+    "schwester_titel": null
   }
 ]
