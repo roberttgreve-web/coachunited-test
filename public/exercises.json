@@ -1103,5 +1103,68 @@
     ],
     "schwester_id": 24,
     "schwester_titel": "PASS VERARBEITEN UND INS 1 GEGEN 1 STARTEN"
+  },
+  {
+    "id": 24,
+    "titel": "PASS VERARBEITEN UND INS 1 GEGEN 1 STARTEN",
+    "quell_trainingseinheit": "Positionen halten auf dem Feld mit dem Bahnenspiel",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/01/image-11.png",
+    "grafik_dateiname": "uebung-024-pass-verarbeiten-und-ins-1-gegen-1-starten.png",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "Spieler passt auf Mitspieler, der sich dreht und ins 1 gegen 1 geht.",
+    "aufbau": "Zwei kleine Tore aufbauen. Jeweils etwa 12m davor ein Hütchen. Diagonal versetzt in 10m Entfernung ein weiteres Hütchen. Zwei Gruppen mit Bällen an den Hütchen platzieren. ",
+    "durchfuehrung": "Spieler erhält den Pass, dreht sich ums Hütchen und geht dann ins 1 gegen 1. Erobert der Verteidiger den Ball, darf auch er abschließen. Angreifer wird danach zum Verteidiger.",
+    "varianten": "BAHNENSPIEL BAHNENSPIEL Spieler dürfen im Spiel ihre Bahnen nicht verlassen.",
+    "quell_url": "https://coachunited.de/positionen-halten-auf-dem-feld-mit-dem-bahnenspiel/",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend",
+      "E-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Dribbeln",
+      "Zweikampf",
+      "Verteidigen"
+    ],
+    "coaching_fokus": "• Saubere Pässe; • Ballan- und Mitnahme mit Tempo; • Faires Verteidigen mit angelegtem Arm",
+    "leichter_machen": "• Trainer ist Verteidiger und täuscht Verteidigung nur an • Feld vergrößern;",
+    "schwerer_machen": "• Verteidiger darf Spieler schon direkt nach Pass angreifen; ",
+    "status": "veroeffentlicht",
+    "schwester_ids": [
+      23
+    ],
+    "schwester_id": 23,
+    "schwester_titel": "PASS VERARBEITEN UND AUS DER DREHUNG ZUM SCHUSS KOMMEN",
+    "alt_titel": "Pass verarbeiten und ins 1-gegen-1 gehen",
+    "seo_keyword": "Fußballübung 1-gegen-1 Kinder",
+    "url_slug": "fussballuebung-1-gegen-1-kinder",
+    "seo_meta_description": "Dynamische Fußballübung, bei der Kinder Pässe verarbeiten, sich drehen und dann ins 1-gegen-1 gehen. Fördert Ballkontrolle, Zweikampf und Spielverständnis.",
+    "grafik_alt_text": "Zwei Kinder Fußballspieler absolvieren eine 1-gegen-1 Übung auf einem Fußballplatz",
+    "grafik_description": "Die Grafik zeigt zwei Kinder Fußballspieler, die eine 1-gegen-1 Übung auf einem Fußballplatz durchführen. Ein Spieler erhält einen Pass, dreht sich um und geht dann in ein Eins-gegen-Eins mit einem Verteidiger.",
+    "grafik_title": "1-gegen-1 Fußballübung für Kinder",
+    "grafik_caption": "Dynamische 1-gegen-1 Fußballübung für Kinder fördert Ballkontrolle, Zweikampf und Spielverständnis.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler brauche ich für diese Übung?",
+        "antwort": "Für diese Übung benötigst du mindestens 8-10 Spieler."
+      },
+      {
+        "frage": "Wie lange sollte man diese Übung durchführen?",
+        "antwort": "Die Übung eignet sich gut für 10-15 Minuten im Training. "
+      },
+      {
+        "frage": "Für welche Altersgruppen ist diese Übung geeignet?",
+        "antwort": "Die Übung ist perfekt für Kinder der E- und F-Jugend (9-12 Jahre) geeignet. Auch für stärkere G-Jugenden."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": ""
   }
 ]
