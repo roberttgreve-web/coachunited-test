@@ -1042,5 +1042,66 @@
     "schwester_ids": [],
     "schwester_id": null,
     "schwester_titel": null
+  },
+  {
+    "id": 23,
+    "titel": "PASS VERARBEITEN UND AUS DER DREHUNG ZUM SCHUSS KOMMEN",
+    "quell_trainingseinheit": "Positionen halten auf dem Feld mit dem Bahnenspiel",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/01/image-10.png",
+    "grafik_dateiname": "uebung-023-pass-verarbeiten-und-aus-der-drehung-zum-schuss-kommen.png",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "Spieler passt auf Mitspieler, der sich dreht und abschließt.",
+    "aufbau": "Zwei kleine Tore aufbauen. Jeweils etwa 10m davor ein Hütchen. Diagonal versetzt in 10m Entfernung ein weiteres Hütchen. Zwei Gruppen mit Bällen an den Hütchen platzieren.",
+    "durchfuehrung": "Spieler passt auf Mitspieler, der den Ball annimmt, sich um ein Hütchen dreht und abschließt. Möglichst nur drei Ballkontakte. Es kann festgelegt werden, ob mit rechts oder links geschossen wird. Gruppen tauschen nach etwa 10 Minuten die Seiten. ",
+    "varianten": "PASS VERARBEITEN UND INS 1 GEGEN 1 STARTEN PASS VERARBEITEN UND INS 1 GEGEN 1 STARTEN Spieler passt auf Mitspieler, der sich dreht und ins 1 gegen 1 geht.",
+    "quell_url": "https://coachunited.de/positionen-halten-auf-dem-feld-mit-dem-bahnenspiel/",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend",
+      "E-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Torschuss"
+    ],
+    "coaching_fokus": "• Blick heben vor dem Pass; • Saubere Pässe; • Enge Ballführung um das Hütchen",
+    "leichter_machen": "• Mit Innenseite statt Vollspann schießen; • Drehung um ein Hütchen weglassen, direkt auf Tor schießen",
+    "schwerer_machen": "• Spieler muss sich vor Schuss um 360° drehen; • Spieler muss zusätzlich Pendellauf zwischen zwei Hütchen absolvieren",
+    "status": "veroeffentlicht",
+    "alt_titel": "Torabschluss aus der Drehung",
+    "seo_keyword": "Fußballübung Torabschluss Kinder",
+    "url_slug": "fussballubung-torabschluss-aus-drehung-kinder",
+    "seo_meta_description": "Fußballübung für Kinder zum Torabschluss aus der Drehung. Verbesserung von Passen, Ballkontrolle und Abschluss.",
+    "grafik_alt_text": "Junger Fußballspieler dreht sich um ein Hütchen und schießt auf ein Tor",
+    "grafik_description": "Auf dem Bild ist eine Fußballübung für Kinder zu sehen. Ein Spieler dreht sich um ein Hütchen und schließt dann auf ein kleines Tor ab.",
+    "grafik_title": "Fußballübung Torabschluss aus Drehung",
+    "grafik_caption": "Torabschluss aus der Drehung - Fußballübung für Kinder",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler braucht man für die Übung?",
+        "antwort": "Für diese Übung benötigt man mindestens 8 Spieler, die in 2 Gruppen eingeteilt werden."
+      },
+      {
+        "frage": "Wie lange dauert die Übung?",
+        "antwort": "Die Übung sollte etwa 10-15 Minuten dauern. Danach können die Gruppen die Seiten wechseln."
+      },
+      {
+        "frage": "Für welche Altersgruppe ist die Übung geeignet?",
+        "antwort": "Die Übung ist für Kinder der G- und E-Jugend gut geeignet."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [
+      24
+    ],
+    "schwester_id": 24,
+    "schwester_titel": "PASS VERARBEITEN UND INS 1 GEGEN 1 STARTEN"
   }
 ]
