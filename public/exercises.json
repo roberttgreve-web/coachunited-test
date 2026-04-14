@@ -983,5 +983,64 @@
     "schwester_ids": [],
     "schwester_id": null,
     "schwester_titel": null
+  },
+  {
+    "id": 22,
+    "titel": "DER OHNE BALL VERLIERT",
+    "quell_trainingseinheit": "Positionen halten auf dem Feld mit dem Bahnenspiel",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/01/image-2.jpg",
+    "grafik_dateiname": "uebung-022-der-ohne-ball-verliert.jpg",
+    "trainingsphase": "Aufwärmen",
+    "kurzbeschreibung": "Ein Spieler hat keinen Ball und muss den Ball erobern, bevor die Runde zu Ende ist.",
+    "aufbau": "Ein 20 x 20 Meter großes Feld markieren. Die Spieler haben alle einen Ball, nur einer nicht.",
+    "durchfuehrung": "Die Spieler dribbeln im Feld. Es gibt einen Ball weniger als es Spieler gibt. Der Spieler ohne Ball muss den Ball stets erobern. Die Runde endet, wenn der Trainer „STOP“ ruft. Der Spieler ohne Ball muss eine Runde ums Feld sprinten. (Falls eine kleine Musikbox vorhanden ist, gerne auch mit Musik durchführen und die Musik stoppen).",
+    "varianten": "Dribbeltechniken vorgeben (links/rechts/mit Sohle ziehen/Hochhalten/rückwärts). Immer mehr Bälle entnehmen, so dass es mehr Jäger gibt. EINFRIEREN MIT BALL EINFRIEREN MIT BALL Spieler dribbeln. Auf Kommando frieren alle ein. Wer sich als letzter bewegt, hat verloren.",
+    "quell_url": "https://coachunited.de/positionen-halten-auf-dem-feld-mit-dem-bahnenspiel/",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend"
+    ],
+    "skills": [
+      "Ballkontrolle",
+      "Dribbeln",
+      "Koordination",
+      "Schnelligkeit"
+    ],
+    "coaching_fokus": "• Dribbeltechniken anwenden • Körper zwischen Ball und Gegner bringen",
+    "leichter_machen": "• Größeres Spielfeld; • Langsames Tempo",
+    "schwerer_machen": "• Zweiter Spieler ohne Ball; • Kleineres Spielfeld; • Nur verschiedenen Dribbeltechniken erlaubt (Innenseite, mit der Sohle ziehen etc.);  ",
+    "status": "veroeffentlicht",
+    "alt_titel": "Ball erobern ohne Ball",
+    "seo_keyword": "Fußballübung Ballbesitzspiel Kinder",
+    "url_slug": "fussballubung-ballbesitzspiel-kinder",
+    "seo_meta_description": "Dynamische Fußballübung für Kinder, in der Spieler den Ball erobern müssen ohne selbst einen Ball zu haben. Fördert Ballkontrolle, Dribbeln und Koordination.",
+    "grafik_alt_text": "Kinder spielen einen Ballbesitzspiel ohne Ball auf einem markierten Fußballfeld",
+    "grafik_description": "Auf einem 20x20 Meter großen Feld dribbeln die Kinder mit Bällen. Ein Spieler hat keinen Ball und muss versuchen, den Ball eines anderen Spielers zu erobern.",
+    "grafik_title": "Fußballübung Ballbesitzspiel ohne Ball",
+    "grafik_caption": "Dynamische Fußballübung für Kinder mit viel Bewegung und Ballaktionen",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler braucht man für diese Übung?",
+        "antwort": "Die Übung eignet sich für 8-10 Kinder je Feld. "
+      },
+      {
+        "frage": "Wie lang sollte die Übung dauern?",
+        "antwort": "Die Übung kann 5-10 Minuten laufen, je nach Altersstufe und Intensität. "
+      },
+      {
+        "frage": "Kann man die Übung für ältere Kinder anpassen?",
+        "antwort": "Ja, für ältere Kinder (ab 10 Jahren) kann man das Spielfeld verkleinern und Dribbeltechniken vorgeben."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [],
+    "schwester_id": null,
+    "schwester_titel": null
   }
 ]
