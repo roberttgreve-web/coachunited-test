@@ -1224,5 +1224,66 @@
     "schwester_ids": [],
     "schwester_id": null,
     "schwester_titel": null
+  },
+  {
+    "id": 26,
+    "titel": "SCHNELL REAGIEREN UND BALL ANFORDERN",
+    "quell_trainingseinheit": "Schnell reagieren, dann durchsetzen und schießen",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/01/image.jpg",
+    "grafik_dateiname": "uebung-026-schnell-reagieren-und-ball-anfordern.jpg",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "Spieler sprinten zum aufgerufenen Farbhütchen, fordern das Anspiel und schließen auf ein Minitor ab.",
+    "aufbau": "Zwei Minitore aufbauen und in 15m Abstand davor jeweils drei verschiedenfarbige Hütchen. Teams mit Bällen an Starthütchen neben den Minitoren platzieren.",
+    "durchfuehrung": "Auf das Farbkommando des Trainers starten die ersten Spieler jeder Gruppe ohne Ball im Sprint und laufen um das aufgerufene Hütchen. Dann fordern sie aktiv den Pass vom nächsten Mitspieler in der Reihe ein, verarbeiten den Ball und schließen auf das Minitor ab. Auch als Wettbewerb zwischen den Teams möglich.",
+    "varianten": "Ballkontakte nach dem Pass begrenzen. SCHNELL REAGIEREN UND INS 1 GEGEN 1 SCHNELL REAGIEREN UND INS 1 GEGEN 1 Zwei Spieler sprinten zum aufgerufenen Farbhütchen. Wer als erster das Hütchen erreicht, ist Angriffspieler und fordert den Pass vom Mitspieler.",
+    "quell_url": "https://coachunited.de/schnell-reagieren-dann-durchsetzen-und-schiesen/",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend",
+      "E-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Torschuss",
+      "Schnelligkeit",
+      "Kommunikation"
+    ],
+    "coaching_fokus": "• Blick heben vor dem Pass; • Sprints zügig und dynamisch ausführen; • Pass verbal und per Körpersprache aktiv anfordern",
+    "leichter_machen": "• Beliebig viele Ballkontakte nach Passannahme erlauben",
+    "schwerer_machen": "• Pass/Torschuss nur mit schwachem Fuß; Ball darf nach Annahme maximal 2x berührt werden;",
+    "status": "veroeffentlicht",
+    "alt_titel": "Schnell reagieren und direkt aufs Tor",
+    "seo_keyword": "Fußballübung Torschuss Kinder",
+    "url_slug": "fussballubung-torschuss-kinder",
+    "seo_meta_description": "Effektives Fußballtraining für Kinder (6-12 Jahre) mit der Übung 'Schnell reagieren und direkt aufs Tor'. Fokussiert Schnelligkeit, Ballkontrolle und Torschuss.",
+    "grafik_alt_text": "Zwei Kinder sprinten zu Hütchen und schießen direkt aufs Tor",
+    "grafik_description": "Das Bild zeigt zwei Kinder, die im Sprint zu einem Farbhütchen laufen und dann direkt auf ein Minitor schießen. Sie tragen Übungsbälle und stehen auf einem Fußballplatz.",
+    "grafik_title": "Fußballübung Torschuss Kinder",
+    "grafik_caption": "Schnell reagieren und direkt aufs Tor - eine dynamische Übung für das Kinder-Fußballtraining.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler benötigt man für diese Übung?",
+        "antwort": "Ideal sind 8-14 Spieler, so dass pro Minitor zwei Teams gegeneinander antreten können. Bei größeren Gruppen zweites Feld aufbauen. "
+      },
+      {
+        "frage": "Wie lange dauert die Übung?",
+        "antwort": "Die Übungsdauer beträgt ca. 10-20 Minuten, je nach Altersstufe und Spielerzahl."
+      },
+      {
+        "frage": "Kann man die Übung an verschiedene Altersgruppen anpassen?",
+        "antwort": "Ja, durch Variationen der Sprintdistanz oder der Zahl Ballkontakte  lässt sich die Übung gut für E- und D-Jugend-Kicker gestalten."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [],
+    "schwester_id": null,
+    "schwester_titel": null
   }
 ]
