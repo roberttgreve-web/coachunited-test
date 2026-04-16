@@ -1282,8 +1282,72 @@
     "original_coaching_fokus": "",
     "ist_gecrawlt": false,
     "quell_kategorie": "",
-    "schwester_ids": [],
-    "schwester_id": null,
-    "schwester_titel": null
+    "schwester_ids": [
+      27
+    ],
+    "schwester_id": 27,
+    "schwester_titel": "SCHNELL REAGIEREN UND INS 1 GEGEN 1"
+  },
+  {
+    "id": 27,
+    "titel": "SCHNELL REAGIEREN UND INS 1 GEGEN 1",
+    "quell_trainingseinheit": "Schnell reagieren, dann durchsetzen und schießen",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/01/image-1.jpg",
+    "grafik_dateiname": "uebung-027-schnell-reagieren-und-ins-1-gegen-1.jpg",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "Zwei Spieler sprinten zum aufgerufenen Farbhütchen. Wer als erster das Hütchen erreicht, ist Angriffspieler und fordert den Pass vom Mitspieler.",
+    "aufbau": "Zwei Minitore aufbauen und in 15m Abstand davor jeweils drei verschiedenfarbige Hütchen platzieren. Teams mit Bällen an Starthütchen neben den Minitoren positionieren.",
+    "durchfuehrung": "Auf das Farbkommando des Trainers starten die ersten beidenSpieler jeder Gruppe ohne Ball im Sprint und laufen um das aufgerufene Hütchen. Der Spieler, der das Hütchen als erstes erreicht, ist der Angriffsspieler, der andere Verteidiger. Der dritte Spieler in der Gruppe passt zum Angriffsspieler, der dann abschließt. Sollte der Verteidiger ihn einholen, muss der Angriffsspieler sich freilaufen. Wartet der Passspieler zu lange, ist die Torchance also womöglich dahin. Handlungsschnelligkeit beim Passspieler ist gefragt. ",
+    "varianten": "",
+    "quell_url": "https://coachunited.de/schnell-reagieren-dann-durchsetzen-und-schiesen/",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend",
+      "E-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Koordination",
+      "Schnelligkeit"
+    ],
+    "coaching_fokus": "• Saubere Pässe; • Faire Zweikämpfe",
+    "leichter_machen": "• Laufweg verkürzen",
+    "schwerer_machen": "• Pass mit schwächerem Fuß",
+    "status": "veroeffentlicht",
+    "schwester_ids": [
+      26
+    ],
+    "schwester_id": 26,
+    "schwester_titel": "SCHNELL REAGIEREN UND BALL ANFORDERN",
+    "alt_titel": "Schnell zum Ball - Wer ist der Schnellste?",
+    "seo_keyword": "Fußballübung 1 gegen 1 Kinder",
+    "url_slug": "fussballuebung-1-gegen-1-kinder",
+    "seo_meta_description": "Effektive Fußballübung 1 gegen 1 zum Reaktionsvermögen und Antritt der Kinder (6-12 Jahre) trainieren. Optimiert für SEO.",
+    "grafik_alt_text": "Zwei Kinder rennen um ein oranges Hütchen, der Sieger dribbelt zum Tor",
+    "grafik_description": "Die Übung trainiert das schnelle Reaktions- und Sprungvermögen der Kinder. Zwei Spieler starten gleichzeitig zum Hütchen, der Schnellste wird zum Angreifer.",
+    "grafik_title": "Fußballübung 1 gegen 1 für Kinder",
+    "grafik_caption": "Schnelle Reaktion und explosiver Antritt entscheiden, wer Angreifer wird.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler braucht man für die Übung?",
+        "antwort": "8-16 Kinder sind optimal für diese Übung"
+      },
+      {
+        "frage": "Wie lange dauert die Übung?",
+        "antwort": "Insgesamt lässt sich die Übung gut in 15-20 Minuten absolvieren."
+      },
+      {
+        "frage": "Für welche Altersgruppen eignet sich die Übung?",
+        "antwort": "Die Übung ist ideal für Kinder einer stärkeren G-Jugend bis zur E-Jugend geeignet. "
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": ""
   }
 ]
