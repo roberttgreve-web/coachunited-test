@@ -1166,5 +1166,63 @@
     "original_coaching_fokus": "",
     "ist_gecrawlt": false,
     "quell_kategorie": ""
+  },
+  {
+    "id": 25,
+    "titel": "BAHNENSPIEL",
+    "quell_trainingseinheit": "Positionen halten auf dem Feld mit dem Bahnenspiel",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/01/image-12.png",
+    "grafik_dateiname": "uebung-025-bahnenspiel.png",
+    "trainingsphase": "Spielformat",
+    "kurzbeschreibung": "Spieler dürfen im Spiel ihre Bahnen nicht verlassen.",
+    "aufbau": "30x20m-Feld aufbauen mit je zwei Minitoren auf den Grundlinien. Das Feld mit flachen Hütchen in drei Bahnen aufteilen (siehe Abbildung). Zwei Teams einteilen und jeweils zwei Spieler je Team und Bahn zuordnen.",
+    "durchfuehrung": "Normales Spiel. Nur dürfen Spieler ihre eigene Bahn nicht verlassen. Der Ball darf aber über das gesamte Spielfeld gepasst werden. Beim Verlassen der Bahn: Ballbesitz für den Gegner. Hinweis: Spielstärkste Kinder möglichst in der Mittelbahn. Tore können aus der eigenen Bahn auf beide Tore erzielt werden, da der Ball ja keine Bahnbeschränkung hat. ",
+    "varianten": "",
+    "quell_url": "https://coachunited.de/positionen-halten-auf-dem-feld-mit-dem-bahnenspiel/",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Raumverhalten"
+    ],
+    "coaching_fokus": "• Passspiel zwischen den Bahnen einfordern; • Gerad ezu Beginn genau auf Einhaltung der Bahnen achten",
+    "leichter_machen": "• Weniger Kinder pro Bahn; • Feld vergrößern",
+    "schwerer_machen": "• Mittlere Bahn freilassen",
+    "status": "veroeffentlicht",
+    "alt_titel": "Teamspiel mit Bewegungsfreiheit im Korridor",
+    "seo_keyword": "Fußballübung Raumaufteilung Kinder",
+    "url_slug": "fussballubung-raumaufteilung-kinder",
+    "seo_meta_description": "Spielerische Fußballübung für Kinder von 6-12 Jahren, die das Raumverhalten, Passen und Zweikämpfe fördert. Mit leichten und schweren Varianten anpassbar.",
+    "grafik_alt_text": "Feld mit 3 Bahnen und Minitoren an den Enden, in dem zwei Teams Fußball spielen",
+    "grafik_description": "Übungsaufbau mit Markierungen für 3 parallele Bahnen, in denen jeweils 2 Spieler pro Team agieren. Auf beiden Seiten sind Minitore aufgestellt.",
+    "grafik_title": "Fußballübung: Bahnenspiel für Kinder",
+    "grafik_caption": "Das 'Bahnenspiel' fördert das Raumverständnis und die Zusammenarbeit im Team.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler braucht man für das Bahnenspiel?",
+        "antwort": "Man teilt die Spieler in zwei gleich große Teams ein, sodass jeweils 2 Spieler pro Bahn agieren."
+      },
+      {
+        "frage": "Wie lange dauert eine Runde Bahnenspiel?",
+        "antwort": "Die Dauer richtet sich nach Alter und Leistungsstand der Kinder, empfohlen sind 15-20 Minuten."
+      },
+      {
+        "frage": "Für welche Altersklasse ist das Bahnenspiel geeignet?",
+        "antwort": "Das Bahnenspiel eignet sich vor allem gut für die F- und E-Jugend."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [],
+    "schwester_id": null,
+    "schwester_titel": null
   }
 ]
