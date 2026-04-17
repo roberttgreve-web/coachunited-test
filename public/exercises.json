@@ -1349,5 +1349,67 @@
     "original_coaching_fokus": "",
     "ist_gecrawlt": false,
     "quell_kategorie": ""
+  },
+  {
+    "id": 28,
+    "titel": "TORSCHUSS-CHALLENGE",
+    "quell_trainingseinheit": "Schnell reagieren, dann durchsetzen und schießen",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/01/image-7.png",
+    "grafik_dateiname": "uebung-028-torschuss-challenge.png",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "Spieler dribbeln in zwei Teams um das gegenüberliegende Hütchen und schließen ab. Welches Team erzielt zuerst 15 Tore?",
+    "aufbau": "Ein 30mx30m-Feld markieren. Zwei Jugendtore mit Torhütern aufstellen. Zwei Teams an Eckhütchen mit Bällen einteilen. Zwei Hütchen auf Höhe der Mittellinie aufstellen.",
+    "durchfuehrung": "Spieler starten gleichzeitig, dribbeln um das gegenüberliegende Hütchen und schließen aus spitzem Winkel ab. Das Team, das zuerst 15 Tore erzielt, gewinnt. ",
+    "varianten": "a) Das nähergelegene Hütchen umdribbeln und mit links abschließen. b) Ball in der Hand um das Hütchen tragen, hochwerfen und Volley abschließen. FERNSCHUSS-CHALLENGE FERNSCHUSS-CHALLENGE Spieler versuchen in zwei Teams aus großer Entfernung mit einem hohen Fernschuss ins leere Tor zu treffen.",
+    "quell_url": "https://coachunited.de/schnell-reagieren-dann-durchsetzen-und-schiesen/",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Ballkontrolle",
+      "Dribbeln",
+      "Torschuss"
+    ],
+    "coaching_fokus": "• Blick heben vor dem Abschluss; • Tempo beim Dribbling",
+    "leichter_machen": "• Das nähergelegene Hütchen umdribbeln und mit links abschließen; • Ball stoppen vor dem Abschluss; • Ball in der Hand um das Hütchen tragen, hochwerfen und Volley abschließen",
+    "schwerer_machen": "• Das nähergelegene Hütchen umdribbeln und mit links abschließen • Aus der Bewegung heraus direkt mit dem Spann abschließen; • Nur flache Schüsse",
+    "status": "veroeffentlicht",
+    "alt_titel": "TORE SCHIESSEN, WER TRIFFT AM BESTEN?",
+    "seo_keyword": "Fußballübung Torschuss Kinder",
+    "url_slug": "fussballubung-torschuss-kinder",
+    "seo_meta_description": "Dynamische Torschuss-Challenge für Kinder von 6-12 Jahren mit verschiedenen Schwierigkeitsgraden. Fördert Ballkontrolle, Koordination und Torschuss-Technik.",
+    "grafik_alt_text": "Zwei Mannschaften von Kindern beim Torschuss-Wettbewerb auf einem Fußballfeld",
+    "grafik_description": "Das Bild zeigt eine Fußballübung, bei der zwei Mannschaften von Kindern im Alter von 6-12 Jahren gegeneinander antreten. Die Spieler dribbeln um Hütchen und schließen anschließend mit einem Torschuss ab. Im Hintergrund sind Tore und Torhüter zu sehen.",
+    "grafik_title": "Fußballübung Torschuss-Challenge für Kinder",
+    "grafik_caption": "Dynamische Torschuss-Challenge zum Üben von Ballkontrolle, Koordination und Technik",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler braucht man für diese Übung?",
+        "antwort": "Ideal sind zwei Teams mit je 6-8 Spielern, so dass ein aktiver Wettbewerb entsteht. Die Übung lässt sich aber auch mit weniger Spielern durchführen."
+      },
+      {
+        "frage": "Wie lange dauert die Torschuss-Challenge?",
+        "antwort": "Je nach Alter und Leistungsstand der Kinder empfiehlt sich eine Dauer von 10-15 Minuten. Die Übung kann in mehreren Durchgängen gespielt werden."
+      },
+      {
+        "frage": "Kann man die Torschuss-Challenge auch mit jüngeren Kindern machen?",
+        "antwort": "Ja, die Übung lässt sich gut an G-Junioren anpassen, indem man das Feld verkleinert und die Distanz zum Tor reduziert."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [
+      29
+    ],
+    "schwester_id": 29,
+    "schwester_titel": "FERNSCHUSS-CHALLENGE"
   }
 ]
