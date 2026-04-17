@@ -1472,5 +1472,65 @@
     "original_coaching_fokus": "",
     "ist_gecrawlt": false,
     "quell_kategorie": ""
+  },
+  {
+    "id": 30,
+    "titel": "AUSWECHSLER HOLEN DIE PUNKTE",
+    "quell_trainingseinheit": "Schnell reagieren, dann durchsetzen und schießen",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/01/image-9.png",
+    "grafik_dateiname": "uebung-030-auswechsler-holen-die-punkte.png",
+    "trainingsphase": "Spielformat",
+    "kurzbeschreibung": "In einem normalen Spiel ruft der Trainer je ein Kind pro Team für eine Auswechslung auf. Das Team, das schneller wechselt, erhält einen Bonuspunkt.",
+    "aufbau": "Feld auf 40mx20m erweitern. Torhüter ins Tor. Teams in 6 gegen 6 einteilen (oder je nach Gruppengröße 5 gegen 5) mit mind. einem Auswechselkind.",
+    "durchfuehrung": "Es wird ein normales Spiel gespielt. Sobald der Trainer je einen Namen aus jedem Team aufruft, müssen diese beiden im Vollsprint zur Auswechselbank und einen Wechsel durchführen. Sind sie gerade in Ballbesitz, lassen sie den Ball liegen. Das Team, das zuerst gewechselt hat, erhält einen Bonus-Punkt (zählt wie ein Tor). ",
+    "varianten": "",
+    "quell_url": "https://coachunited.de/schnell-reagieren-dann-durchsetzen-und-schiesen/",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Schnelligkeit",
+      "Raumverhalten"
+    ],
+    "coaching_fokus": "• Schnelle Reaktion auf den Auswechslungsruf; • Tempo-Sprint beim Auswechseln",
+    "leichter_machen": "",
+    "schwerer_machen": "• Zwei Auswechslungen gleichzeitig ausführen",
+    "status": "veroeffentlicht",
+    "alt_titel": "Wettrennen für die Auswechslung",
+    "seo_keyword": "Fußballübung Schnelligkeit Kinder",
+    "url_slug": "schnelle-auswechslung-fussball-uebung",
+    "seo_meta_description": "Dynamische Fußballübung zum Thema Schnelligkeit für Kinder der E- und D-Jugend. Der Fokus liegt auf Reaktion, Richtungswechseln und schnellen Läufen.",
+    "grafik_alt_text": "Zwei Kinder rennen im Fußballspiel zur Auswechselbank, um ausgewechselt zu werden.",
+    "grafik_description": "Die Übung zeigt ein 6-gegen-6 Fußballspiel. Sobald der Trainer zwei Spieler zum Wechseln aufruft, müssen diese im Sprint zur Seitenlinie laufen und die Positionen tauschen.",
+    "grafik_title": "Dynamische Fußballübung zur Schnelligkeit",
+    "grafik_caption": "Schnelle Auswechslung - Kinder-Fußballübung für E- und D-Jugend",
+    "faq": [
+      {
+        "frage": "Für welche Altersgruppen ist die Übung geeignet?",
+        "antwort": "Die Übung ist konzipiert für Kinder der E-Jugend (10-11 Jahre) und D-Jugend (12-13 Jahre)."
+      },
+      {
+        "frage": "Wie lange dauert die Übung?",
+        "antwort": "Die Spieldauer beträgt 10-15 Minuten."
+      },
+      {
+        "frage": "Welche Variationen gibt es?",
+        "antwort": "Hierzu gibt es keine Variationen."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [],
+    "schwester_id": null,
+    "schwester_titel": null
   }
 ]
