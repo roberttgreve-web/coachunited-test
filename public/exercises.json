@@ -1411,5 +1411,66 @@
     ],
     "schwester_id": 29,
     "schwester_titel": "FERNSCHUSS-CHALLENGE"
+  },
+  {
+    "id": 29,
+    "titel": "FERNSCHUSS-CHALLENGE",
+    "quell_trainingseinheit": "Schnell reagieren, dann durchsetzen und schießen",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/01/image-8.png",
+    "grafik_dateiname": "uebung-029-fernschuss-challenge.png",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "Spieler versuchen in zwei Teams aus großer Entfernung mit einem hohen Fernschuss ins leere Tor zu treffen.",
+    "aufbau": "Ein 30mx30m-Feld markieren. Zwei Jugendtore aufstellen. Zwei Teams an Eckhütchen mit Bällen einteilen. Zwei Hütchen auf Höhe der Mittellinie aufstellen. Ohne Torhüter. Jeweils drei Hütchen je nach Leistungsstärke etwa 5-10m vor den Starthütchen platzieren.",
+    "durchfuehrung": "Spieler starten gleichzeitig, dribbeln ein paar Schritte und schließen vor der Hütchenreihe per hohem Fernschuss ab. Die Hütchen dürfen dabei nicht getroffen werden. Das Team, das zuerst 20 Tore erzielt, gewinnt.",
+    "varianten": "a) Ball in die Hand nehmen und Volley schießen. b) Zu gegenüberliegenden (weiter entfernteren) Hütchenreihe dribbeln und vor dort abschließen. AUSWECHSLER HOLEN DIE PUNKTE AUSWECHSLER HOLEN DIE PUNKTE In einem normalen Spiel ruft der Trainer je ein Kind pro Team für eine Auswechslung auf. Das Team, das schneller wechselt, erhält einen Bonuspunkt.",
+    "quell_url": "https://coachunited.de/schnell-reagieren-dann-durchsetzen-und-schiesen/",
+    "jugend": [
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Ballkontrolle",
+      "Torschuss",
+      "Koordination",
+      "Schnelligkeit"
+    ],
+    "coaching_fokus": "• Blick heben vor dem Schuss; • Körperposition ausrichten für mehr Präzision; • Schussaktion kontrolliert und fokussiert ausführen",
+    "leichter_machen": "• Ball in die Hand nehmen und Volley schießen; • Abstand der Tore zu den Hütchen verringern",
+    "schwerer_machen": "• Zu gegenüberliegenden (weiter entfernteren) Hütchenreihe dribbeln und vor dort abschließen; • Torbreite mit Hütchen verringern, um genaueren Schuss zu erfordern",
+    "status": "veroeffentlicht",
+    "schwester_ids": [
+      28
+    ],
+    "schwester_id": 28,
+    "schwester_titel": "TORSCHUSS-CHALLENGE",
+    "alt_titel": "ZIELGENAUER WEITSCHUSS-WETTBEWERB",
+    "seo_keyword": "Fußballübung Fernschuss Kinder",
+    "url_slug": "fernschuss-challenge-fussballubung-kinder",
+    "seo_meta_description": "Herausfordernde Fußballübung für Kinder von 6-12 Jahren, bei der sie aus der Distanz präzise aufs Tor schießen. Fördert Technik, Koordination und Schnelligkeit.",
+    "grafik_alt_text": "Fußballspieler schießt den Ball aus großer Entfernung aufs leere Tor während Mitspieler zuschauen",
+    "grafik_description": "Zwei Kinder-Fußballmannschaften stehen an Ecken eines Spielfelds und versuchen abwechselnd, aus großer Entfernung einen Weitschuss ins Tor zu platzieren. Die Hütchen vor den Spielern dürfen dabei nicht getroffen werden.",
+    "grafik_title": "Kinder-Fußballübung: Präziser Fernschuss aufs Tor",
+    "grafik_caption": "Fernschuss-Challenge: Teamwettbewerb mit hohen Weitschüssen aufs leere Tor.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler braucht man für diese Fußballübung?",
+        "antwort": "Für die Fernschuss-Challenge eignen sich 8-12 Spieler pro Team gut. So haben alle genug Schussversuche."
+      },
+      {
+        "frage": "Wie lange dauert die Übung?",
+        "antwort": "Je nach Alter und Leistungsniveau der Kinder sollte die Fernschuss-Challenge 10-20 Minuten dauern. So bleibt die Konzentration hoch."
+      },
+      {
+        "frage": "Für welche Altersgruppen ist die Übung geeignet?",
+        "antwort": "Die Fernschuss-Challenge ist perfekt für Kinder von 8-12 Jahren (E- und D-Jugend). Mit einfacheren Varianten lässt sie sich aber auch gut für G- und F-Jugend anpassen."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": ""
   }
 ]
