@@ -48,21 +48,13 @@
     .logo-link img { width: 80px; height: 80px; object-fit: contain; }
 
     .burger-btn {
-      background: none;
-      border: none;
-      cursor: pointer;
-      padding: 4px;
-      color: #333;
-      display: flex;
-      flex-direction: column;
-      gap: 5px;
+      background: none; border: none; cursor: pointer;
+      padding: 4px; color: #333;
+      display: flex; flex-direction: column; gap: 5px;
     }
     .burger-btn span {
-      display: block;
-      width: 22px;
-      height: 2px;
-      background: #333;
-      border-radius: 2px;
+      display: block; width: 22px; height: 2px;
+      background: #333; border-radius: 2px;
     }
 
     /* ── Content ── */
@@ -74,7 +66,7 @@
 
     /* ── Session Meta ── */
     .session-meta {
-      margin-bottom: 24px;
+      margin-bottom: 20px;
     }
 
     .session-title {
@@ -84,7 +76,6 @@
       color: #0a1628;
       text-transform: uppercase;
       letter-spacing: 0.3px;
-      line-height: 1.2;
       margin-bottom: 8px;
     }
 
@@ -95,8 +86,6 @@
     }
 
     .session-badge {
-      display: inline-flex;
-      align-items: center;
       padding: 4px 10px;
       border-radius: 8px;
       font-size: 12px;
@@ -105,92 +94,69 @@
     .badge-jugend { background: #ddeeff; color: #1B6BF4; }
     .badge-skill  { background: #dcf5e7; color: #1a8044; }
 
-    /* ── Phase Section ── */
-    .phase-section {
-      margin-bottom: 24px;
-    }
-
-    .phase-header {
+    /* ── Accordion ── */
+    .accordion-list {
       display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 8px 12px;
-      border-radius: 10px;
-      margin-bottom: 10px;
+      flex-direction: column;
+      gap: 10px;
     }
 
-    .phase-header-left {
+    .accordion-item {
+      border-radius: 14px;
+      overflow: hidden;
+      border: 1px solid #e8edf2;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+
+    /* Linker Farbbalken je nach Phase */
+    .accordion-item { border-left: 4px solid #e8edf2; }
+    .phase-aufwaermen { border-left-color: #e07b16; }
+    .phase-hauptteil  { border-left-color: #1B6BF4; }
+    .phase-spielformat{ border-left-color: #1a8044; }
+
+    .accordion-header {
+      width: 100%;
+      padding: 14px 14px 14px 12px;
+      background: white;
+      border: none;
+      cursor: pointer;
       display: flex;
-      align-items: center;
-      gap: 8px;
+      align-items: flex-start;
+      gap: 10px;
+      text-align: left;
+      transition: background 0.15s;
     }
+    .accordion-header:hover { background: #fafbfd; }
 
-    .phase-dot {
-      width: 8px;
-      height: 8px;
+    .accordion-num {
+      width: 22px;
+      height: 22px;
       border-radius: 50%;
+      background: #f0f2f5;
+      font-size: 11px;
+      font-weight: 700;
+      color: #7a8494;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       flex-shrink: 0;
+      margin-top: 2px;
     }
 
-    .phase-name {
-      font-size: 12px;
+    .accordion-header-main { flex: 1; min-width: 0; }
+
+    .accordion-phase-label {
+      font-size: 10px;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.6px;
+      margin-bottom: 3px;
     }
+    .phase-aufwaermen .accordion-phase-label { color: #c45e00; }
+    .phase-hauptteil  .accordion-phase-label { color: #1B6BF4; }
+    .phase-spielformat .accordion-phase-label { color: #1a8044; }
 
-    .phase-count {
-      font-size: 11px;
-      font-weight: 500;
-      opacity: 0.7;
-    }
-
-    .phase-aufwaermen .phase-header { background: #fff4e8; }
-    .phase-aufwaermen .phase-dot    { background: #c45e00; }
-    .phase-aufwaermen .phase-name   { color: #c45e00; }
-    .phase-aufwaermen .phase-count  { color: #c45e00; }
-    .phase-aufwaermen .card-accent  { background: #e07b16 !important; }
-
-    .phase-hauptteil .phase-header  { background: #f0f5ff; }
-    .phase-hauptteil .phase-dot     { background: #1B6BF4; }
-    .phase-hauptteil .phase-name    { color: #1B6BF4; }
-    .phase-hauptteil .phase-count   { color: #1B6BF4; }
-    .phase-hauptteil .card-accent   { background: #1B6BF4 !important; }
-
-    .phase-spielformat .phase-header { background: #edfaf3; }
-    .phase-spielformat .phase-dot    { background: #1a8044; }
-    .phase-spielformat .phase-name   { color: #1a8044; }
-    .phase-spielformat .phase-count  { color: #1a8044; }
-    .phase-spielformat .card-accent  { background: #1a8044 !important; }
-
-    /* ── Exercise Card ── */
-    .exercise-card {
-      display: flex;
-      flex-direction: row;
-      text-decoration: none;
-      color: inherit;
-      background: white;
-      border-radius: 14px;
-      border: 1px solid #edf0f5;
-      margin-bottom: 10px;
-      overflow: hidden;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-      transition: box-shadow 0.18s, transform 0.18s;
-    }
-    .exercise-card:hover {
-      box-shadow: 0 6px 20px rgba(0,0,0,0.09);
-      transform: translateY(-1px);
-    }
-
-    .card-accent {
-      width: 5px;
-      flex-shrink: 0;
-      background: #1B6BF4;
-    }
-
-    .card-body { flex: 1; padding: 12px 14px; min-width: 0; }
-
-    .card-title {
+    .accordion-title {
       font-family: 'Barlow', 'Inter', sans-serif;
       font-size: 14px;
       font-weight: 800;
@@ -198,14 +164,13 @@
       text-transform: uppercase;
       letter-spacing: 0.3px;
       line-height: 1.2;
-      margin-bottom: 7px;
+      margin-bottom: 6px;
     }
 
-    .card-tags {
+    .accordion-tags {
       display: flex;
       flex-wrap: wrap;
       gap: 4px;
-      margin-bottom: 7px;
     }
 
     .tag {
@@ -217,20 +182,78 @@
     .tag-jugend { background: #ddeeff; color: #1B6BF4; }
     .tag-skill  { background: #dcf5e7; color: #1a8044; }
 
-    .card-desc {
-      font-size: 12px;
-      color: #7a8494;
-      line-height: 1.5;
-      display: -webkit-box;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
+    .accordion-chevron {
+      flex-shrink: 0;
+      margin-top: 4px;
+      color: #b0b8c8;
+      transition: transform 0.22s ease;
+    }
+    .accordion-item.open .accordion-chevron { transform: rotate(180deg); }
+
+    /* ── Accordion Body ── */
+    .accordion-body {
+      max-height: 0;
       overflow: hidden;
+      transition: max-height 0.28s ease;
+    }
+    .accordion-item.open .accordion-body {
+      max-height: 800px;
     }
 
-    /* ── Reroll Button ── */
+    .accordion-body-inner {
+      padding: 0 14px 16px 44px;
+      border-top: 1px solid #f0f2f5;
+    }
+
+    .detail-desc {
+      font-size: 13px;
+      color: #555;
+      line-height: 1.6;
+      padding: 12px 0 14px;
+      border-bottom: 1px solid #f4f5f7;
+    }
+
+    .detail-block {
+      padding: 12px 0;
+      border-bottom: 1px solid #f4f5f7;
+    }
+    .detail-block:last-of-type { border-bottom: none; }
+
+    .detail-label {
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      color: #adb5c2;
+      margin-bottom: 5px;
+    }
+
+    .detail-text {
+      font-size: 13px;
+      color: #444;
+      line-height: 1.65;
+      white-space: pre-line;
+    }
+
+    .detail-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      color: #1B6BF4;
+      font-size: 13px;
+      font-weight: 600;
+      text-decoration: none;
+      margin-top: 14px;
+      padding: 8px 14px;
+      border: 1.5px solid #dde8ff;
+      border-radius: 10px;
+      transition: background 0.15s;
+    }
+    .detail-link:hover { background: #f0f5ff; }
+
+    /* ── Reroll ── */
     .reroll-wrap {
-      margin-top: 8px;
-      margin-bottom: 16px;
+      margin-top: 16px;
     }
 
     .reroll-btn {
@@ -258,8 +281,6 @@
       transform: none;
     }
 
-    .reroll-icon { font-size: 18px; line-height: 1; }
-
     .no-variations {
       text-align: center;
       font-size: 12px;
@@ -267,7 +288,7 @@
       margin-top: 8px;
     }
 
-    /* ── Empty / Error State ── */
+    /* ── Empty / Error ── */
     .empty-state {
       text-align: center;
       padding: 48px 24px;
@@ -313,21 +334,16 @@
     /* ── Burger Drawer ── */
     .drawer-overlay {
       display: none;
-      position: fixed;
-      inset: 0;
+      position: fixed; inset: 0;
       background: rgba(0,0,0,0.3);
       z-index: 40;
     }
     .drawer-overlay.open { display: block; }
 
     .drawer {
-      position: fixed;
-      top: 0;
-      right: -280px;
-      width: 260px;
-      height: 100vh;
-      background: white;
-      z-index: 50;
+      position: fixed; top: 0; right: -280px;
+      width: 260px; height: 100vh;
+      background: white; z-index: 50;
       padding: 32px 24px;
       transition: right 0.25s ease;
       box-shadow: -8px 0 32px rgba(0,0,0,0.12);
@@ -335,26 +351,17 @@
     .drawer.open { right: 0; }
 
     .drawer-close {
-      position: absolute;
-      top: 16px;
-      right: 16px;
-      background: none;
-      border: none;
-      font-size: 22px;
-      cursor: pointer;
-      color: #555;
-      padding: 4px;
+      position: absolute; top: 16px; right: 16px;
+      background: none; border: none; font-size: 22px;
+      cursor: pointer; color: #555; padding: 4px;
     }
 
     .drawer-logo { width: 48px; margin-bottom: 28px; }
 
     .drawer-link {
-      display: block;
-      padding: 12px 0;
-      font-size: 15px;
-      font-weight: 500;
-      color: #1a1a2e;
-      text-decoration: none;
+      display: block; padding: 12px 0;
+      font-size: 15px; font-weight: 500;
+      color: #1a1a2e; text-decoration: none;
       border-bottom: 1px solid #f0f2f5;
     }
     .drawer-link:last-child { border-bottom: none; }
@@ -377,10 +384,14 @@
 
     <div class="content">
       <div id="session-meta" class="session-meta"></div>
-      <div id="session-list"></div>
+      <div id="session-list" class="accordion-list"></div>
       <div class="reroll-wrap">
         <button id="reroll-btn" class="reroll-btn" onclick="reroll()">
-          <span class="reroll-icon">↺</span> Neu würfeln
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="1 4 1 10 7 10"/><polyline points="23 20 23 14 17 14"/>
+            <path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15"/>
+          </svg>
+          Neu würfeln
         </button>
         <p id="no-variations" class="no-variations" style="display:none;">
           Keine weitere Variation verfügbar.
@@ -426,17 +437,23 @@
   </div>
 
   <script>
-    const params  = new URLSearchParams(window.location.search);
-    const jugend  = params.get('jugend');
-    const skill   = params.get('skill') || null;
+    const params = new URLSearchParams(window.location.search);
+    const jugend = params.get('jugend');
+    const skill  = params.get('skill') || null;
 
     let allExercises = [];
     let currentKey   = null;
 
-    // ── Redirect if no Jugend ─────────────────────────────────────
     if (!jugend) window.location.href = '/home';
 
-    // ── Cluster-Bildung (phasenbezogen – Variante B) ──────────────
+    // ── Phasen-Konfiguration ──────────────────────────────────────
+    const PHASES = [
+      { key: 'aufwaermen',  label: 'Aufwärmen',   match: 'Aufwärmen',   slots: 2 },
+      { key: 'hauptteil',   label: 'Hauptteil',   match: 'Hauptteil',   slots: 2 },
+      { key: 'spielformat', label: 'Spielformat',  match: 'Spielformat', slots: 1 },
+    ];
+
+    // ── Algorithmus ───────────────────────────────────────────────
     function makeClusters(exercises) {
       const visited = new Set();
       const clusters = [];
@@ -465,7 +482,6 @@
       return exercises.map(e => e.id).join('-');
     }
 
-    // ── Session generieren ────────────────────────────────────────
     function generateSession(exercises, excludeKey) {
       const valid = exercises.filter(e =>
         e.status === 'veroeffentlicht' && (e.jugend || []).includes(jugend)
@@ -477,30 +493,25 @@
         byPhase[e.trainingsphase].push(e);
       });
 
-      const aufClusters = makeClusters(byPhase['Aufwärmen']   || []).filter(c => c.length === 2 && clusterMatchesSkill(c, skill));
-      const hptClusters = makeClusters(byPhase['Hauptteil']   || []).filter(c => c.length === 2 && clusterMatchesSkill(c, skill));
-      const spfClusters = makeClusters(byPhase['Spielformat'] || []).filter(c => c.length === 1 && clusterMatchesSkill(c, skill));
+      const clustersByPhase = PHASES.map(p => ({
+        ...p,
+        clusters: makeClusters(byPhase[p.match] || [])
+          .filter(c => c.length === p.slots && clusterMatchesSkill(c, skill))
+      }));
 
-      if (!aufClusters.length || !hptClusters.length || !spfClusters.length) return null;
+      if (clustersByPhase.some(p => !p.clusters.length)) return null;
 
-      const totalCombinations = aufClusters.length * hptClusters.length * spfClusters.length;
+      const totalCombinations = clustersByPhase.reduce((acc, p) => acc * p.clusters.length, 1);
 
-      // Wenn nur eine Kombination existiert, direkt zurückgeben
       if (totalCombinations === 1) {
-        const result = [...aufClusters[0], ...hptClusters[0], ...spfClusters[0]];
+        const result = clustersByPhase.flatMap(p => p.clusters[0]);
         return { exercises: result, key: sessionKey(result), canReroll: false };
       }
 
-      // Bis zu 30 Versuche um eine andere Kombination zu finden
       for (let i = 0; i < 30; i++) {
-        const auf = pickRandom(aufClusters);
-        const hpt = pickRandom(hptClusters);
-        const spf = pickRandom(spfClusters);
-        const result = [...auf, ...hpt, ...spf];
+        const result = clustersByPhase.flatMap(p => pickRandom(p.clusters));
         const key = sessionKey(result);
-        if (key !== excludeKey) {
-          return { exercises: result, key, canReroll: true };
-        }
+        if (key !== excludeKey) return { exercises: result, key, canReroll: true };
       }
 
       return null;
@@ -510,22 +521,16 @@
     function renderSession(session) {
       if (!session) {
         document.getElementById('session-meta').innerHTML = '';
-        document.getElementById('session-list').innerHTML = `
-          <div class="empty-state">
-            Für diese Kombination aus Jugend und Skill<br>sind nicht genug Übungen vorhanden.
-          </div>`;
+        document.getElementById('session-list').innerHTML =
+          '<div class="empty-state">Für diese Kombination sind nicht genug Übungen vorhanden.</div>';
         document.getElementById('reroll-btn').disabled = true;
         return;
       }
 
       currentKey = session.key;
+      document.getElementById('reroll-btn').disabled = !session.canReroll;
+      document.getElementById('no-variations').style.display = session.canReroll ? 'none' : 'block';
 
-      const rerollBtn = document.getElementById('reroll-btn');
-      const noVar     = document.getElementById('no-variations');
-      rerollBtn.disabled = !session.canReroll;
-      noVar.style.display = session.canReroll ? 'none' : 'block';
-
-      // Meta-Header
       const skillBadge = skill
         ? `<span class="session-badge badge-skill">Fokus: ${skill}</span>` : '';
       document.getElementById('session-meta').innerHTML = `
@@ -535,56 +540,70 @@
           ${skillBadge}
         </div>`;
 
-      // Übungen nach Phase gruppieren (Reihenfolge fest: Aufwärmen → Hauptteil → Spielformat)
-      const phases = [
-        {
-          key:   'aufwaermen',
-          label: 'Aufwärmen',
-          items: session.exercises.filter(e => e.trainingsphase === 'Aufwärmen'),
-        },
-        {
-          key:   'hauptteil',
-          label: 'Hauptteil',
-          items: session.exercises.filter(e => e.trainingsphase === 'Hauptteil'),
-        },
-        {
-          key:   'spielformat',
-          label: 'Spielformat',
-          items: session.exercises.filter(e => e.trainingsphase === 'Spielformat'),
-        },
-      ];
+      document.getElementById('session-list').innerHTML =
+        session.exercises.map((ex, i) => renderAccordionItem(ex, i)).join('');
 
-      document.getElementById('session-list').innerHTML = phases.map(p => `
-        <div class="phase-section phase-${p.key}">
-          <div class="phase-header">
-            <div class="phase-header-left">
-              <span class="phase-dot"></span>
-              <span class="phase-name">${p.label}</span>
-            </div>
-            <span class="phase-count">${p.items.length} Übung${p.items.length !== 1 ? 'en' : ''}</span>
-          </div>
-          ${p.items.map(ex => renderCard(ex)).join('')}
-        </div>`).join('');
+      // Erste Übung aufgeklappt
+      const first = document.querySelector('.accordion-item');
+      if (first) first.classList.add('open');
     }
 
-    function renderCard(ex) {
-      const href = ex.url_slug ? `/uebung/${ex.url_slug}` : '#';
+    function renderAccordionItem(ex, index) {
+      const phaseKey = PHASES.find(p => p.match === ex.trainingsphase)?.key || 'hauptteil';
+      const phaseLabel = PHASES.find(p => p.match === ex.trainingsphase)?.label || ex.trainingsphase;
+      const href = ex.url_slug ? `/uebung/${ex.url_slug}` : null;
+
       const jugendTags = (ex.jugend || [])
         .map(j => `<span class="tag tag-jugend">${j.replace('-Jugend', '')}</span>`).join('');
       const skillTags = (ex.skills || []).slice(0, 2)
         .map(s => `<span class="tag tag-skill">${s}</span>`).join('');
+
+      const detailLink = href
+        ? `<a href="${href}" class="detail-link">
+             Übung im Detail
+             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+           </a>` : '';
+
+      const blocks = [
+        ex.kurzbeschreibung && { label: null,              text: ex.kurzbeschreibung, cls: 'detail-desc' },
+        ex.aufbau           && { label: 'Aufbau',          text: ex.aufbau           },
+        ex.durchfuehrung    && { label: 'Durchführung',    text: ex.durchfuehrung    },
+        ex.coaching_fokus   && { label: 'Coaching-Fokus',  text: ex.coaching_fokus   },
+        ex.varianten        && { label: 'Varianten',       text: ex.varianten        },
+      ].filter(Boolean);
+
+      const bodyContent = blocks.map(b =>
+        b.cls
+          ? `<p class="${b.cls}">${b.text}</p>`
+          : `<div class="detail-block">
+               <p class="detail-label">${b.label}</p>
+               <p class="detail-text">${b.text}</p>
+             </div>`
+      ).join('') + detailLink;
+
       return `
-        <a href="${href}" class="exercise-card">
-          <div class="card-accent"></div>
-          <div class="card-body">
-            <h3 class="card-title">${ex.titel}</h3>
-            <div class="card-tags">${jugendTags}${skillTags}</div>
-            <p class="card-desc">${ex.kurzbeschreibung || ''}</p>
+        <div class="accordion-item phase-${phaseKey}" data-index="${index}">
+          <button class="accordion-header" onclick="toggleItem(this)">
+            <span class="accordion-num">${index + 1}</span>
+            <div class="accordion-header-main">
+              <p class="accordion-phase-label">${phaseLabel}</p>
+              <h3 class="accordion-title">${ex.titel}</h3>
+              <div class="accordion-tags">${jugendTags}${skillTags}</div>
+            </div>
+            <svg class="accordion-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"/>
+            </svg>
+          </button>
+          <div class="accordion-body">
+            <div class="accordion-body-inner">${bodyContent}</div>
           </div>
-        </a>`;
+        </div>`;
     }
 
-    // ── Neu würfeln ───────────────────────────────────────────────
+    function toggleItem(btn) {
+      btn.closest('.accordion-item').classList.toggle('open');
+    }
+
     function reroll() {
       const session = generateSession(allExercises, currentKey);
       renderSession(session);
