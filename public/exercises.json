@@ -1658,6 +1658,69 @@
     "schwester_titel": "DAS TOR BEWEGT SICH!"
   },
   {
+    "id": 32,
+    "titel": "DAS TOR BEWEGT SICH!",
+    "quell_trainingseinheit": "Slalom, 1 gegen 1 und Dribbelduelle",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/01/image-1.png",
+    "grafik_dateiname": "uebung-032-das-tor-bewegt-sich.png",
+    "trainingsphase": "Aufwärmen",
+    "kurzbeschreibung": "Die Spieler eines Teams halten zu zweit Stangen, die Spieler des anderen Teams müssen hindurchpassen, um Tore zu erzielen.",
+    "aufbau": "Ein 20mx20m großes Feld markieren. Zwei Teams mit Leibchen einteilen. In einem Team jeweils Spielerpaaren eine Stange geben. Zwei Bälle im Feld.",
+    "durchfuehrung": "Die Spielerpaare mit der Stange laufen durch das Feld und versuchen es dem gegnerischen Team möglichst schwer zu machen, ein Tor zu erzielen. Das Team im Ballbesitz muss durch die Stangen hindurch einen Pass spielen, um einen Punkt zu erzielen.",
+    "varianten": "Ball muss unter der Stange gerollt oder über die Stange geworfen werden. Welches Team schafft es, die 5 Bälle am längsten in den eigenen Reihen zu halten? ERST SLALOM, DANN TORSCHUSS ERST SLALOM, DANN TORSCHUSS Die Spieler dribbeln im Slalom und schießen aufs Tor.",
+    "quell_url": "https://coachunited.de/slalom-1-gegen-1-und-dribbelduelle/",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend",
+      "E-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Dribbeln",
+      "Koordination",
+      "Raumverhalten"
+    ],
+    "coaching_fokus": "• Seitenwechsel nutzen; • Schnelle Passfolge",
+    "leichter_machen": "• Ball muss unter der Stange gerollt oder über die Stange geworfen werden; • ",
+    "schwerer_machen": "• Kleinerer Abstand bei den Stangenträgern",
+    "status": "veroeffentlicht",
+    "schwester_ids": [
+      31
+    ],
+    "schwester_id": 31,
+    "schwester_titel": "DER BALL BEFREIT",
+    "alt_titel": "Tore jagen im beweglichen Slalom",
+    "seo_keyword": "Fußballübung Passen Kinder",
+    "url_slug": "tore-jagen-im-beweglichen-slalom",
+    "seo_meta_description": "Dynamische Passübung für Kinder, bei der sich das Tor bewegt. Fördert Passen, Koordination und Raumverhalten.",
+    "grafik_alt_text": "Kinder dribbeln mit Ball zwischen beweglichen Torstangen hindurch",
+    "grafik_description": "In der Übung 'Tore jagen im beweglichen Slalom' müssen Kinder den Ball zwischen zwei beweglichen Torstangen hindurchspielen. Dies fördert das Passspiel, die Koordination und das Raumverhalten.",
+    "grafik_title": "Fußballübung für Kinder: Tore jagen im beweglichen Slalom",
+    "grafik_caption": "Dynamische Passübung mit beweglichen Torstangen für Kinder im Fußballtraining",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler braucht man für diese Übung?",
+        "antwort": "Mindestens 12 Spieler, ideal sind 12-16 Spieler."
+      },
+      {
+        "frage": "Wie lange dauert die Übung?",
+        "antwort": "Je nach Altersstufe und Spielintensität 10-15 Minuten. "
+      },
+      {
+        "frage": "Für welche Altersgruppe ist die Übung geeignet?",
+        "antwort": "Die Übung ist für die G- bis E-Jugend gut geeignet."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": ""
+  },
+  {
     "id": 33,
     "titel": "ERST SLALOM, DANN TORSCHUSS",
     "quell_trainingseinheit": "Slalom, 1 gegen 1 und Dribbelduelle",
