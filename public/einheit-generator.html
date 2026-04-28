@@ -235,6 +235,16 @@
       white-space: pre-line;
     }
 
+    .accordion-img {
+      width: 100%;
+      max-height: 200px;
+      object-fit: contain;
+      border-radius: 10px;
+      margin-top: 12px;
+      background: #f7f9ff;
+      display: block;
+    }
+
     .detail-link {
       display: inline-flex;
       align-items: center;
@@ -551,7 +561,8 @@
     function renderAccordionItem(ex, index) {
       const phaseKey = PHASES.find(p => p.match === ex.trainingsphase)?.key || 'hauptteil';
       const phaseLabel = PHASES.find(p => p.match === ex.trainingsphase)?.label || ex.trainingsphase;
-      const href = ex.url_slug ? `/uebung/${ex.url_slug}` : null;
+      const backUrl = encodeURIComponent(window.location.href);
+      const href = ex.url_slug ? `/uebung/${ex.url_slug}?back=${backUrl}` : null;
 
       const jugendTags = (ex.jugend || [])
         .map(j => `<span class="tag tag-jugend">${j.replace('-Jugend', '')}</span>`).join('');
@@ -564,6 +575,9 @@
              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
            </a>` : '';
 
+      const imgHtml = ex.grafik_url
+        ? `<img class="accordion-img" src="${ex.grafik_url}" alt="${ex.titel}" loading="lazy">` : '';
+
       const blocks = [
         ex.kurzbeschreibung && { label: null,              text: ex.kurzbeschreibung, cls: 'detail-desc' },
         ex.aufbau           && { label: 'Aufbau',          text: ex.aufbau           },
@@ -572,7 +586,7 @@
         ex.varianten        && { label: 'Varianten',       text: ex.varianten        },
       ].filter(Boolean);
 
-      const bodyContent = blocks.map(b =>
+      const bodyContent = imgHtml + blocks.map(b =>
         b.cls
           ? `<p class="${b.cls}">${b.text}</p>`
           : `<div class="detail-block">

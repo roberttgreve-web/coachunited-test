@@ -555,8 +555,13 @@
     const slug = window.location.pathname.replace(/^\/uebung\//, '').replace(/\/$/, '');
 
     // Kontextsensitiver Zurück-Button
-    const fromEinheit = new URLSearchParams(window.location.search).get('from');
-    if (fromEinheit) {
+    const urlParams = new URLSearchParams(window.location.search);
+    const backUrl = urlParams.get('back');
+    const fromEinheit = urlParams.get('from');
+    if (backUrl) {
+      document.getElementById('back-btn').href = backUrl;
+      document.getElementById('back-label').textContent = 'Zur Einheit';
+    } else if (fromEinheit) {
       document.getElementById('back-btn').href = '/einheit/' + fromEinheit;
       document.getElementById('back-label').textContent = 'Zur Einheit';
     }
