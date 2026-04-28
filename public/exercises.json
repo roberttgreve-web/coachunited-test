@@ -1966,5 +1966,69 @@
     ],
     "schwester_id": 37,
     "schwester_titel": "STANGEN-PASS MIT ABSCHLUSS"
+  },
+  {
+    "id": 37,
+    "titel": "STANGEN-PASS MIT ABSCHLUSS",
+    "quell_trainingseinheit": "Das Mittelfeld kontrollieren",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/12/image-6.jpg",
+    "grafik_dateiname": "uebung-037-stangen-pass-mit-abschluss.jpg",
+    "trainingsphase": "Aufwärmen",
+    "kurzbeschreibung": "Spieler passen den Ball kontrolliert durch eine Stange und schließen dann ab.",
+    "aufbau": "Zwei Gruppen an einem Starthütchen ohne Ball platzieren. In fünf Meter Abstand jeweils zwei Hütchen mit Stange aufstellen. Etwa 8 Meter hinter den Hütchenstangen eine Torschussmarkierung platzieren und weitere 7 Meter je ein Minitor aufbauen. Bälle verteilen.",
+    "durchfuehrung": "Spieler dribbeln bis kurz vor die Stangenhütchen und passen den Ball in kontrolliertem Tempo unter der Stange durch, hüpfen über die Stange und schließen spätestens an der Torschussmarkierung ab. Welchem Team gelingen mehr Treffer?",
+    "varianten": "a) Über die Stange lupfen. b) Um die Hütchen herum passen, an der anderen Seite vorbeilaufen und dann Ball wieder aufnehmen. c) Jugendtore mit Torhütern einsetzen. MIT GEZIELTEN FERNSCHÜSSEN GEWINNEN MIT GEZIELTEN FERNSCHÜSSEN GEWINNEN Zwei Teams spielen 4 gegen 4. Sie dürfen Tore aber nur per Fernschuss auf Minitore erzielen.",
+    "quell_url": "https://coachunited.de/das-mittelfeld-kontrollieren/",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Dribbeln",
+      "Koordination",
+      "Schnelligkeit"
+    ],
+    "coaching_fokus": "• Blick heben vor dem Pass; • Kontrollierter, kurzer Pass",
+    "leichter_machen": "• Um die Hütchen herum passen, an der anderen Seite vorbeilaufen und dann Ball wieder aufnehmen",
+    "schwerer_machen": "• Ball über die Stange lupfen; • Torschussmarkierung weiter entfernt platzieren; • Hütchen enger zusammen stellen",
+    "status": "veroeffentlicht",
+    "schwester_ids": [
+      36
+    ],
+    "schwester_id": 36,
+    "schwester_titel": "STANGEN-WETTHÜPFEN",
+    "alt_titel": "Zielgenauer Passen und Abschluss",
+    "seo_keyword": "Fußballübung Passen Koordination Kinder",
+    "url_slug": "stangen-pass-mit-abschluss",
+    "seo_meta_description": "Koordinationsübung für Kinder zum Passen und gezielten Torabschluss. Trainiert Ballgefühl, Wahrnehmung und Torschuss-Technik.",
+    "grafik_alt_text": "Kinder führen eine Fußballübung mit Passen durch Stangen und Torabschluss durch",
+    "grafik_description": "Die Grafik zeigt eine Fußballübung für Kinder im Alter von 6-12 Jahren. Die Spieler dribbeln zum Hütchen, passen den Ball kontrolliert durch die Stange und schließen direkt darauf ab.",
+    "grafik_title": "Koordinationsübung: Stangen-Pass mit Abschluss",
+    "grafik_caption": "Kinder verbessern in dieser Übung ihr Passspiel und ihren gezielten Torabschluss.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler braucht man für diese Übung?",
+        "antwort": "Die Übung lässt sich gut mit 12-18 Spielern durchführen. Es können auch kleinere oder größere Gruppen sein."
+      },
+      {
+        "frage": "Wie lange dauert die Übung?",
+        "antwort": "Die Übung sollte etwa 10-15 Minuten dauern. Je nach Lernfortschritt der Spieler kann die Zeit auch angepasst werden."
+      },
+      {
+        "frage": "Für welche Altersklassen eignet sich die Übung?",
+        "antwort": "Die Übung ist bestens für G- bis D-Jugend Spieler im Alter von 6-12 Jahren geeignet. Sie lässt sich je nach Leistungsstand der Kinder anpassen."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": ""
   }
 ]
