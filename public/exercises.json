@@ -1532,5 +1532,67 @@
     "schwester_ids": [],
     "schwester_id": null,
     "schwester_titel": null
+  },
+  {
+    "id": 31,
+    "titel": "DER BALL BEFREIT",
+    "quell_trainingseinheit": "Slalom, 1 gegen 1 und Dribbelduelle",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/01/image.png",
+    "grafik_dateiname": "uebung-031-der-ball-befreit.png",
+    "trainingsphase": "Aufwärmen",
+    "kurzbeschreibung": "Die Kinder spielen fangen. Das gejagte Team kann einen gefangenen Mitspieler durch einen sauberen Pass befreien.",
+    "aufbau": "Ein 20mx20m großes Feld markieren. Drei Jäger mit Leibchen einteilen. Ein Ball im Feld.",
+    "durchfuehrung": "Die drei Jäger versuchen so viele gegnerische Spieler durch Abschlagen einzufangen wie möglich. Ist jemand gefangen, muss er still auf der Stelle stehen bleiben. Seine Mitspieler können ihn befreien, in dem sie ihm einen sauberen Pass spielen.",
+    "varianten": "a) Zweiten Ball einspielen. b) Zahl der Jäger erhöhen/verkleinern. DAS TOR BEWEGT SICH! DAS TOR BEWEGT SICH! Die Spieler eines Teams halten zu zweit Stangen, die Spieler des anderen Teams müssen hindurchpassen, um Tore zu erzielen.",
+    "quell_url": "https://coachunited.de/slalom-1-gegen-1-und-dribbelduelle/",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Koordination"
+    ],
+    "coaching_fokus": "• Blick heben vor dem Pass; • Pass muss präzise ankommen zur Befreiung",
+    "leichter_machen": "• Spielfeld vergrößen; • Weniger Jäger einteilen",
+    "schwerer_machen": "• Zweiten Ball einspielen; • Zahl der Jäger erhöhen",
+    "status": "veroeffentlicht",
+    "alt_titel": "Das gefangene Team befreit sich",
+    "seo_keyword": "Fußballübung Koordination Kinder",
+    "url_slug": "der-ball-befreit-fussballubung-koordination-kinder",
+    "seo_meta_description": "Fußballübung 'Der Ball befreit' für Kinder, fördert Ballkontrolle, Passen und Zweikampf im Spiel. Kindergerecht und variabel anpassbar.",
+    "grafik_alt_text": "Kinder in einem Fußballfeld spielen Fangen, ein gefangenes Kind wird durch einen Pass befreit",
+    "grafik_description": "Das Bild zeigt eine Übung, bei der Kinder in einem Fußballfeld Fangen spielen. Ein Kind ist gefangen, wird aber durch einen sauberen Pass seiner Mitspieler wieder befreit.",
+    "grafik_title": "Fußballübung 'Der Ball befreit' für Kinder",
+    "grafik_caption": "Kinder spielen 'Der Ball befreit' - eine koordinative Fußballübung mit Passen und Zweikämpfen.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler braucht man für diese Übung?",
+        "antwort": "Die Übung eignet sich für Gruppen von 8-12 Kindern. pro Feld. Die Anzahl der Jäger kann variiert werden."
+      },
+      {
+        "frage": "Wie lange dauert die Übung?",
+        "antwort": "Die Übung kann 8-15 Minuten dauern. Die Zeit kann je nach Alter und Konzentration der Kinder angepasst werden."
+      },
+      {
+        "frage": "Für welche Altersgruppe ist diese Übung geeignet?",
+        "antwort": "Die Übung ist für alle geeignet. "
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [
+      32
+    ],
+    "schwester_id": 32,
+    "schwester_titel": "DAS TOR BEWEGT SICH!"
   }
 ]
