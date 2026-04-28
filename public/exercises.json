@@ -1656,5 +1656,67 @@
     ],
     "schwester_id": 34,
     "schwester_titel": "ERST SLALOM, DANN 1 GEGEN 1"
+  },
+  {
+    "id": 34,
+    "titel": "ERST SLALOM, DANN 1 GEGEN 1",
+    "quell_trainingseinheit": "Slalom, 1 gegen 1 und Dribbelduelle",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/01/image-3.png",
+    "grafik_dateiname": "uebung-034-erst-slalom-dann-1-gegen-1.png",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "Ein Spieler dribbelt gerade aufs Tor, schließt ab und wird zum Verteidiger. Der zweite Spieler dribbelt im Slalom und geht ins 1 gegen 1.",
+    "aufbau": "Etwa 15m vor dem Jugendtor. Hütchen im Abstand von 5m aufstellen. Zwei Gruppen aufteilen. Beide mit Bällen. Eine Gruppe am Starthütchen, die andere Gruppe mittig zwischen den Hütchen.",
+    "durchfuehrung": "Zwei Spieler dribbeln gleichzeitig los. Der Spieler aus der Gruppe zwischen den Hütchen läuft gerade aufs Tor, schließt ab und wird Verteidiger. Der andere Spieler dribbelt im Slalom um die Hütchen und geht dann ins 1 gegen 1 gegen den Verteidiger. Erobert der Verteidiger den Ball, darf er auch abschließen. Danach wechseln die Spieler in die jeweils andere Gruppe. ",
+    "varianten": "",
+    "quell_url": "https://coachunited.de/slalom-1-gegen-1-und-dribbelduelle/",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Ballkontrolle",
+      "Torschuss",
+      "Zweikampf"
+    ],
+    "coaching_fokus": "• Blick sofort nach dem letzten Hütchen und vor dem Zweikampf heben • Körpertäuschungen einsetzen im 1-gegen-1; • Mit Tempo aus dem Slalom kommen; ",
+    "leichter_machen": "• Weniger Hütchen im Slalomlauf aufstellen; • Abwehrspieler muss zunächst Abstand zum letzten Hütchen einhalten",
+    "schwerer_machen": "• Zusätzliche Aufgaben wie Dribbeln mit schwachem Fuß einbauen; • Slalomparcours verengen",
+    "status": "veroeffentlicht",
+    "schwester_ids": [
+      33
+    ],
+    "schwester_id": 33,
+    "schwester_titel": "ERST SLALOM, DANN TORSCHUSS",
+    "alt_titel": "Slalom-Dribbling mit 1-gegen-1-Abschluss",
+    "seo_keyword": "Fußballübung Dribbling Kinder",
+    "url_slug": "fussballubung-dribbling-kinder",
+    "seo_meta_description": "Dynamische Dribbling-Übung für Kinder mit Slalom-Lauf und 1-gegen-1-Abschluss. Fördert Ballkontrolle, Richtungswechsel und Zweikampfverhalten.",
+    "grafik_alt_text": "Zwei Jungs in Fußballkleidung beim Dribbling und Torschuss in einem Fußballtraining",
+    "grafik_description": "Die Grafik zeigt zwei Jungen, die im Fußballtraining eine Dribbling-Übung mit Slalom und Abschlussduell durchführen. Ein Junge dribbelt gerade auf das Tor, während der andere Junge im Slalom anläuft, um dann gegen den Ersten in ein 1-gegen-1 zu gehen.",
+    "grafik_title": "Kinderfußballtraining: Dribbling-Übung mit 1-gegen-1",
+    "grafik_caption": "Dynamisches Dribbling-Training mit Richtungswechseln und Abschluss-Duell",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler braucht man für diese Übung?",
+        "antwort": "Optimal sind 12-16 Spieler, die sich in 2 Gruppen aufteilen."
+      },
+      {
+        "frage": "Wie lange dauert die Übung?",
+        "antwort": "Die Übung lässt sich gut in 15-20 Minuten durchführen. Je nach Spieleranzahl und Intensität kann man sie aber auch länger oder kürzer gestalten."
+      },
+      {
+        "frage": "Für welche Altersgruppe ist die Übung geeignet?",
+        "antwort": "Die Übung ist für Kinder von 6 bis 14 Jahren (G- bis D-Jugend) gut geeignet und fördert ihre Dribbling-Fähigkeiten und das 1-gegen-1-Verhalten."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": ""
   }
 ]
