@@ -1718,5 +1718,66 @@
     "original_coaching_fokus": "",
     "ist_gecrawlt": false,
     "quell_kategorie": ""
+  },
+  {
+    "id": 35,
+    "titel": "DRIBBELDUELL AUF DREI FELDERN",
+    "quell_trainingseinheit": "Slalom, 1 gegen 1 und Dribbelduelle",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/01/image-4.png",
+    "grafik_dateiname": "uebung-035-dribbelduell-auf-drei-feldern.png",
+    "trainingsphase": "Spielformat",
+    "kurzbeschreibung": "Auf drei Feldern wird im 3 gegen 3 gespielt. Punkte werden erzielt, in dem der Ball über die Grundlinie gedribbelt wird.",
+    "aufbau": "Drei Spielfelder aufbauen, die jeweils etwas 30x15m groß sind. Keine Tore. Pro Feld zwei Teams mit Leibchen einteilen. Pro Feld einen Ball. Je nach Gruppengröße ggf. nur zwei Felder oder Teams im 2 gegen 2.",
+    "durchfuehrung": "Die Teams spielen 3 gegen 3. Punkte werden erzielt, in dem der Ball über die Grundlinie des Gegners gedribbelt (nicht geschossen!) wird. 5 Minuten pro Spiel. Danach wechseln die Teams die Felder. Auch als Turnierformat möglich.",
+    "varianten": "",
+    "quell_url": "https://coachunited.de/slalom-1-gegen-1-und-dribbelduelle/",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Ballkontrolle",
+      "Dribbeln",
+      "Koordination",
+      "Raumverhalten"
+    ],
+    "coaching_fokus": "• Keine Kompromisse bei den Dribbeltoren: Bälle müssen kontrolliert über die Linie geführt werden",
+    "leichter_machen": "• Spielfeld vergrößern; • Zwei gegen Zwei-Duelle",
+    "schwerer_machen": "• Vier gegen Vier auf gleiche Platzgröße (Raum verengen)",
+    "status": "veroeffentlicht",
+    "alt_titel": "Dribbel-Parcours mit Gegenspieler",
+    "seo_keyword": "Fußballübung Dribbling Kinder",
+    "url_slug": "dribbel-duell-auf-drei-feldern",
+    "seo_meta_description": "Tolle Fußballübung zum Dribbling-Training für Kinder von 8-12 Jahren. Verbessert Ballkontrolle und Raumaufteilung im 3 gegen 3.",
+    "grafik_alt_text": "Drei Fußballspieler dribbeln auf einem 30x15m Feld, umgeben von Hütchen",
+    "grafik_description": "Die Grafik zeigt den Aufbau der Dribbelduell-Übung auf drei Feldern. Jeweils zwei Teams mit Leibchen spielen 3 gegen 3, wobei der Ball über die Grundlinie des Gegners gedribbelt werden muss, um Punkte zu erzielen.",
+    "grafik_title": "Dribbelduell 3 gegen 3 - Fußballübung für Kinder",
+    "grafik_caption": "Dribbelduell auf drei Feldern: Effektives Dribbling- und Raumaufteilungstraining im Kleinfeld.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler braucht man für diese Fußballübung?",
+        "antwort": "Pro Spielfeld spielen jeweils 3 gegen 3 Spieler. Bei einer größeren Gruppe können beliebig viele Felder aufgebaut werden."
+      },
+      {
+        "frage": "Wie lange dauert eine Partie beim Dribbelduell?",
+        "antwort": "Eine Partie dauert 5 Minuten. Danach wechseln die Teams die Felder."
+      },
+      {
+        "frage": "Für welche Altersgruppe ist diese Übung geeignet?",
+        "antwort": "Das Dribbelduell eignet sich gut für Kinder der E- und D-Jugend im Alter von 10-14 Jahren."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [],
+    "schwester_id": null,
+    "schwester_titel": null
   }
 ]
