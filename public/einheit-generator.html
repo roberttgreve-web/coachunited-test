@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Einheit generieren – COACH UNITED</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Barlow:wght@700;800&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #f0f2f5;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+    }
+
+    .container {
+      width: 375px;
+      min-height: 100vh;
+      background: #ffffff;
+      border-radius: 28px;
+      overflow: hidden;
+      box-shadow: 0 24px 64px rgba(0,0,0,0.12);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ── Header ── */
+    .header {
+      background: white;
+      padding: 4px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #f0f2f5;
+      position: sticky;
+      top: 0;
+      z-index: 20;
+    }
+
+    .logo-link { display: flex; align-items: center; text-decoration: none; }
+    .logo-link img { width: 80px; height: 80px; object-fit: contain; }
+
+    .burger-btn {
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 4px;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+    .burger-btn span {
+      display: block;
+      width: 22px;
+      height: 2px;
+      background: #333;
+      border-radius: 2px;
+    }
+
+    /* ── Content ── */
+    .content {
+      flex: 1;
+      overflow-y: auto;
+      padding: 20px 16px 100px;
+    }
+
+    /* ── Session Meta ── */
+    .session-meta {
+      margin-bottom: 24px;
+    }
+
+    .session-title {
+      font-family: 'Barlow', 'Inter', sans-serif;
+      font-size: 20px;
+      font-weight: 800;
+      color: #0a1628;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }
+
+    .session-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .session-badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 4px 10px;
+      border-radius: 8px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .badge-jugend { background: #ddeeff; color: #1B6BF4; }
+    .badge-skill  { background: #dcf5e7; color: #1a8044; }
+
+    /* ── Phase Section ── */
+    .phase-section {
+      margin-bottom: 24px;
+    }
+
+    .phase-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 12px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .phase-header-left {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .phase-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    .phase-name {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+    }
+
+    .phase-count {
+      font-size: 11px;
+      font-weight: 500;
+      opacity: 0.7;
+    }
+
+    .phase-aufwaermen .phase-header { background: #fff4e8; }
+    .phase-aufwaermen .phase-dot    { background: #c45e00; }
+    .phase-aufwaermen .phase-name   { color: #c45e00; }
+    .phase-aufwaermen .phase-count  { color: #c45e00; }
+    .phase-aufwaermen .card-accent  { background: #e07b16 !important; }
+
+    .phase-hauptteil .phase-header  { background: #f0f5ff; }
+    .phase-hauptteil .phase-dot     { background: #1B6BF4; }
+    .phase-hauptteil .phase-name    { color: #1B6BF4; }
+    .phase-hauptteil .phase-count   { color: #1B6BF4; }
+    .phase-hauptteil .card-accent   { background: #1B6BF4 !important; }
+
+    .phase-spielformat .phase-header { background: #edfaf3; }
+    .phase-spielformat .phase-dot    { background: #1a8044; }
+    .phase-spielformat .phase-name   { color: #1a8044; }
+    .phase-spielformat .phase-count  { color: #1a8044; }
+    .phase-spielformat .card-accent  { background: #1a8044 !important; }
+
+    /* ── Exercise Card ── */
+    .exercise-card {
+      display: flex;
+      flex-direction: row;
+      text-decoration: none;
+      color: inherit;
+      background: white;
+      border-radius: 14px;
+      border: 1px solid #edf0f5;
+      margin-bottom: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      transition: box-shadow 0.18s, transform 0.18s;
+    }
+    .exercise-card:hover {
+      box-shadow: 0 6px 20px rgba(0,0,0,0.09);
+      transform: translateY(-1px);
+    }
+
+    .card-accent {
+      width: 5px;
+      flex-shrink: 0;
+      background: #1B6BF4;
+    }
+
+    .card-body { flex: 1; padding: 12px 14px; min-width: 0; }
+
+    .card-title {
+      font-family: 'Barlow', 'Inter', sans-serif;
+      font-size: 14px;
+      font-weight: 800;
+      color: #0a1628;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+      line-height: 1.2;
+      margin-bottom: 7px;
+    }
+
+    .card-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      margin-bottom: 7px;
+    }
+
+    .tag {
+      padding: 2px 7px;
+      border-radius: 6px;
+      font-size: 11px;
+      font-weight: 500;
+    }
+    .tag-jugend { background: #ddeeff; color: #1B6BF4; }
+    .tag-skill  { background: #dcf5e7; color: #1a8044; }
+
+    .card-desc {
+      font-size: 12px;
+      color: #7a8494;
+      line-height: 1.5;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    /* ── Reroll Button ── */
+    .reroll-wrap {
+      margin-top: 8px;
+      margin-bottom: 16px;
+    }
+
+    .reroll-btn {
+      width: 100%;
+      padding: 16px;
+      border: 2px solid #1B6BF4;
+      border-radius: 14px;
+      background: white;
+      color: #1B6BF4;
+      font-family: 'Inter', sans-serif;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.18s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+    .reroll-btn:hover { background: #f0f5ff; transform: translateY(-1px); }
+    .reroll-btn:disabled {
+      border-color: #e4e8ef;
+      color: #b0b8c8;
+      cursor: default;
+      transform: none;
+    }
+
+    .reroll-icon { font-size: 18px; line-height: 1; }
+
+    .no-variations {
+      text-align: center;
+      font-size: 12px;
+      color: #9aa3b0;
+      margin-top: 8px;
+    }
+
+    /* ── Empty / Error State ── */
+    .empty-state {
+      text-align: center;
+      padding: 48px 24px;
+      color: #9aa3b0;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    /* ── Bottom Nav ── */
+    .bottom-nav {
+      position: fixed;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 375px;
+      background: white;
+      border-top: 1px solid #f0f2f5;
+      display: flex;
+      justify-content: space-around;
+      padding: 10px 0 14px;
+      z-index: 20;
+      box-shadow: 0 -2px 12px rgba(0,0,0,0.06);
+    }
+
+    .nav-item {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 3px;
+      border: none;
+      background: none;
+      cursor: pointer;
+      padding: 4px;
+      text-decoration: none;
+      color: #c0c7d3;
+      transition: color 0.15s;
+    }
+    .nav-item.active { color: #1B6BF4; }
+    .nav-icon { width: 22px; height: 22px; }
+    .nav-label { font-family: 'Inter', sans-serif; font-size: 10px; font-weight: 500; }
+
+    /* ── Burger Drawer ── */
+    .drawer-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.3);
+      z-index: 40;
+    }
+    .drawer-overlay.open { display: block; }
+
+    .drawer {
+      position: fixed;
+      top: 0;
+      right: -280px;
+      width: 260px;
+      height: 100vh;
+      background: white;
+      z-index: 50;
+      padding: 32px 24px;
+      transition: right 0.25s ease;
+      box-shadow: -8px 0 32px rgba(0,0,0,0.12);
+    }
+    .drawer.open { right: 0; }
+
+    .drawer-close {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      background: none;
+      border: none;
+      font-size: 22px;
+      cursor: pointer;
+      color: #555;
+      padding: 4px;
+    }
+
+    .drawer-logo { width: 48px; margin-bottom: 28px; }
+
+    .drawer-link {
+      display: block;
+      padding: 12px 0;
+      font-size: 15px;
+      font-weight: 500;
+      color: #1a1a2e;
+      text-decoration: none;
+      border-bottom: 1px solid #f0f2f5;
+    }
+    .drawer-link:last-child { border-bottom: none; }
+    .drawer-link:hover { color: #1B6BF4; }
+  </style>
+  <link rel="stylesheet" href="/desktop.css">
+  <script src="/desktop-nav.js" defer></script>
+</head>
+<body>
+  <div class="container">
+
+    <header class="header">
+      <a href="/home" class="logo-link">
+        <img src="/logo.png" alt="Coach United">
+      </a>
+      <button class="burger-btn" onclick="openDrawer()">
+        <span></span><span></span><span></span>
+      </button>
+    </header>
+
+    <div class="content">
+      <div id="session-meta" class="session-meta"></div>
+      <div id="session-list"></div>
+      <div class="reroll-wrap">
+        <button id="reroll-btn" class="reroll-btn" onclick="reroll()">
+          <span class="reroll-icon">↺</span> Neu würfeln
+        </button>
+        <p id="no-variations" class="no-variations" style="display:none;">
+          Keine weitere Variation verfügbar.
+        </p>
+      </div>
+    </div>
+
+    <nav class="bottom-nav">
+      <a href="/uebungen" class="nav-item">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/>
+        </svg>
+        <span class="nav-label">Übungen</span>
+      </a>
+      <a href="/einheiten" class="nav-item">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/>
+        </svg>
+        <span class="nav-label">Einheiten</span>
+      </a>
+      <a href="/wissen" class="nav-item">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+        </svg>
+        <span class="nav-label">Wissen</span>
+      </a>
+      <a href="/whatsapp-info" class="nav-item">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+        </svg>
+        <span class="nav-label">WhatsApp</span>
+      </a>
+    </nav>
+
+    <div class="drawer-overlay" id="drawer-overlay" onclick="closeDrawer()"></div>
+    <div class="drawer" id="drawer">
+      <button class="drawer-close" onclick="closeDrawer()">✕</button>
+      <img src="/logo.png" alt="Coach United" class="drawer-logo">
+      <a href="/ueber-uns" class="drawer-link">Über uns</a>
+      <a href="/impressum" class="drawer-link">Impressum</a>
+    </div>
+
+  </div>
+
+  <script>
+    const params  = new URLSearchParams(window.location.search);
+    const jugend  = params.get('jugend');
+    const skill   = params.get('skill') || null;
+
+    let allExercises = [];
+    let currentKey   = null;
+
+    // ── Redirect if no Jugend ─────────────────────────────────────
+    if (!jugend) window.location.href = '/home';
+
+    // ── Cluster-Bildung (phasenbezogen – Variante B) ──────────────
+    function makeClusters(exercises) {
+      const visited = new Set();
+      const clusters = [];
+      for (const ex of exercises) {
+        if (visited.has(ex.id)) continue;
+        visited.add(ex.id);
+        const sisters = exercises.filter(o =>
+          !visited.has(o.id) && (ex.schwester_ids || []).includes(o.id)
+        );
+        sisters.forEach(s => visited.add(s.id));
+        clusters.push([ex, ...sisters]);
+      }
+      return clusters;
+    }
+
+    function clusterMatchesSkill(cluster, s) {
+      if (!s) return true;
+      return cluster.some(e => (e.skills || []).includes(s));
+    }
+
+    function pickRandom(arr) {
+      return arr[Math.floor(Math.random() * arr.length)];
+    }
+
+    function sessionKey(exercises) {
+      return exercises.map(e => e.id).join('-');
+    }
+
+    // ── Session generieren ────────────────────────────────────────
+    function generateSession(exercises, excludeKey) {
+      const valid = exercises.filter(e =>
+        e.status === 'veroeffentlicht' && (e.jugend || []).includes(jugend)
+      );
+
+      const byPhase = {};
+      valid.forEach(e => {
+        if (!byPhase[e.trainingsphase]) byPhase[e.trainingsphase] = [];
+        byPhase[e.trainingsphase].push(e);
+      });
+
+      const aufClusters = makeClusters(byPhase['Aufwärmen']   || []).filter(c => c.length === 2 && clusterMatchesSkill(c, skill));
+      const hptClusters = makeClusters(byPhase['Hauptteil']   || []).filter(c => c.length === 2 && clusterMatchesSkill(c, skill));
+      const spfClusters = makeClusters(byPhase['Spielformat'] || []).filter(c => c.length === 1 && clusterMatchesSkill(c, skill));
+
+      if (!aufClusters.length || !hptClusters.length || !spfClusters.length) return null;
+
+      const totalCombinations = aufClusters.length * hptClusters.length * spfClusters.length;
+
+      // Wenn nur eine Kombination existiert, direkt zurückgeben
+      if (totalCombinations === 1) {
+        const result = [...aufClusters[0], ...hptClusters[0], ...spfClusters[0]];
+        return { exercises: result, key: sessionKey(result), canReroll: false };
+      }
+
+      // Bis zu 30 Versuche um eine andere Kombination zu finden
+      for (let i = 0; i < 30; i++) {
+        const auf = pickRandom(aufClusters);
+        const hpt = pickRandom(hptClusters);
+        const spf = pickRandom(spfClusters);
+        const result = [...auf, ...hpt, ...spf];
+        const key = sessionKey(result);
+        if (key !== excludeKey) {
+          return { exercises: result, key, canReroll: true };
+        }
+      }
+
+      return null;
+    }
+
+    // ── Render ────────────────────────────────────────────────────
+    function renderSession(session) {
+      if (!session) {
+        document.getElementById('session-meta').innerHTML = '';
+        document.getElementById('session-list').innerHTML = `
+          <div class="empty-state">
+            Für diese Kombination aus Jugend und Skill<br>sind nicht genug Übungen vorhanden.
+          </div>`;
+        document.getElementById('reroll-btn').disabled = true;
+        return;
+      }
+
+      currentKey = session.key;
+
+      const rerollBtn = document.getElementById('reroll-btn');
+      const noVar     = document.getElementById('no-variations');
+      rerollBtn.disabled = !session.canReroll;
+      noVar.style.display = session.canReroll ? 'none' : 'block';
+
+      // Meta-Header
+      const skillBadge = skill
+        ? `<span class="session-badge badge-skill">Fokus: ${skill}</span>` : '';
+      document.getElementById('session-meta').innerHTML = `
+        <h1 class="session-title">Einheit ${jugend}</h1>
+        <div class="session-badges">
+          <span class="session-badge badge-jugend">${jugend}</span>
+          ${skillBadge}
+        </div>`;
+
+      // Übungen nach Phase gruppieren (Reihenfolge fest: Aufwärmen → Hauptteil → Spielformat)
+      const phases = [
+        {
+          key:   'aufwaermen',
+          label: 'Aufwärmen',
+          items: session.exercises.filter(e => e.trainingsphase === 'Aufwärmen'),
+        },
+        {
+          key:   'hauptteil',
+          label: 'Hauptteil',
+          items: session.exercises.filter(e => e.trainingsphase === 'Hauptteil'),
+        },
+        {
+          key:   'spielformat',
+          label: 'Spielformat',
+          items: session.exercises.filter(e => e.trainingsphase === 'Spielformat'),
+        },
+      ];
+
+      document.getElementById('session-list').innerHTML = phases.map(p => `
+        <div class="phase-section phase-${p.key}">
+          <div class="phase-header">
+            <div class="phase-header-left">
+              <span class="phase-dot"></span>
+              <span class="phase-name">${p.label}</span>
+            </div>
+            <span class="phase-count">${p.items.length} Übung${p.items.length !== 1 ? 'en' : ''}</span>
+          </div>
+          ${p.items.map(ex => renderCard(ex)).join('')}
+        </div>`).join('');
+    }
+
+    function renderCard(ex) {
+      const href = ex.url_slug ? `/uebung/${ex.url_slug}` : '#';
+      const jugendTags = (ex.jugend || [])
+        .map(j => `<span class="tag tag-jugend">${j.replace('-Jugend', '')}</span>`).join('');
+      const skillTags = (ex.skills || []).slice(0, 2)
+        .map(s => `<span class="tag tag-skill">${s}</span>`).join('');
+      return `
+        <a href="${href}" class="exercise-card">
+          <div class="card-accent"></div>
+          <div class="card-body">
+            <h3 class="card-title">${ex.titel}</h3>
+            <div class="card-tags">${jugendTags}${skillTags}</div>
+            <p class="card-desc">${ex.kurzbeschreibung || ''}</p>
+          </div>
+        </a>`;
+    }
+
+    // ── Neu würfeln ───────────────────────────────────────────────
+    function reroll() {
+      const session = generateSession(allExercises, currentKey);
+      renderSession(session);
+    }
+
+    // ── Init ──────────────────────────────────────────────────────
+    fetch('/exercises.json')
+      .then(r => r.json())
+      .then(data => {
+        allExercises = data;
+        renderSession(generateSession(data, null));
+      })
+      .catch(() => {
+        document.getElementById('session-list').innerHTML =
+          '<div class="empty-state">Übungen konnten nicht geladen werden.</div>';
+      });
+
+    // ── Burger Drawer ─────────────────────────────────────────────
+    function openDrawer() {
+      document.getElementById('drawer').classList.add('open');
+      document.getElementById('drawer-overlay').classList.add('open');
+    }
+    function closeDrawer() {
+      document.getElementById('drawer').classList.remove('open');
+      document.getElementById('drawer-overlay').classList.remove('open');
+    }
+  </script>
+</body>
+</html>

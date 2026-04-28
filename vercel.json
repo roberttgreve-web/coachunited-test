@@ -61,6 +61,10 @@
     {
       "source": "/artikel/:slug",
       "destination": "/artikel-detail.html"
+    },
+    {
+      "source": "/einheit-generator",
+      "destination": "/einheit-generator.html"
     }
   ]
 }
