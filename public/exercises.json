@@ -2030,5 +2030,66 @@
     "original_coaching_fokus": "",
     "ist_gecrawlt": false,
     "quell_kategorie": ""
+  },
+  {
+    "id": 38,
+    "titel": "IN DER RICHTIGEN ANZAHL EINLAUFEN UND SPIELEN",
+    "quell_trainingseinheit": "Das Mittelfeld kontrollieren",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/12/image-2.png",
+    "grafik_dateiname": "uebung-038-in-der-richtigen-anzahl-einlaufen-und-spielen.png",
+    "trainingsphase": "Spielformat",
+    "kurzbeschreibung": "Teams laufen in der Teamstärke aufs Feld, die der Trainer ansagt und spielen ein Spiel mit Golden Goal.",
+    "aufbau": "20mx40m großes Feld mit Hütchen markieren.  Zwei Minitore auf der Grundlinie aufstellen. Zwei Teams mit Leibchen und Ball ausstatten. ",
+    "durchfuehrung": "Trainer sagt die Teamstärke an (z.B. „Drei gegen Drei“ oder „Fünf gegen Fünf“). Die ersten Spieler aus der Reihe jedes Team laufen in entsprechender Anzahl aufs Feld und spielen bis ein Tor gefallen ist – oder maximal drei Minuten. Dann stellen sie sich hinten an und der Trainer gibt die neue Teamstärke bekannt. Ein neues Spiel startet.",
+    "varianten": "",
+    "quell_url": "https://coachunited.de/das-mittelfeld-kontrollieren/",
+    "jugend": [
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Dribbeln",
+      "Torschuss",
+      "Raumverhalten",
+      "Umschalten"
+    ],
+    "coaching_fokus": "• Schnelles Schalten nach der Traineransage - Tempo hochhalten",
+    "leichter_machen": "",
+    "schwerer_machen": "",
+    "status": "veroeffentlicht",
+    "alt_titel": "Variable Mannschaftsgrößen im Spielformat",
+    "seo_keyword": "Fußballübung Raumaufteilung Kinder",
+    "url_slug": "fussballubung-variable-mannschaftsgrossen",
+    "seo_meta_description": "Dynamisches Fußballspiel mit wechselnden Teamgrößen fördert Raumverständnis und Umschalten bei Kindern im Alter 10-12 Jahre.",
+    "grafik_alt_text": "Zwei Fußballteams laufen während eines Spiels auf ein kleineres Feld",
+    "grafik_description": "Die Grafik zeigt zwei Fußballteams, die gleichzeitig auf ein verkleinertes Spielfeld laufen, um dort ein Spiel mit wechselnder Spieleranzahl auszutragen.",
+    "grafik_title": "Fußballübung: Variable Mannschaftsgrößen",
+    "grafik_caption": "Dynamisches Fußballspiel mit wechselnder Teamstärke",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler sind optimal?",
+        "antwort": "Die Zahl der Spieler ist variabel. Entsprechend größere oder kleinere Teams wählen. "
+      },
+      {
+        "frage": "Wie lange dauert ein Durchgang?",
+        "antwort": "Pro Durchgang sind maximal 3 Minuten oder bis ein Tor fällt vorgesehen. "
+      },
+      {
+        "frage": "Für welche Altersgruppe ist die Übung geeignet?",
+        "antwort": "Die Übung eignet sich gut für Kinder im Alter von 10-12 Jahren (E- und D-Jugend)."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [],
+    "schwester_id": null,
+    "schwester_titel": null
   }
 ]
