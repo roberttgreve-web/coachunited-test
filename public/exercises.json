@@ -1904,5 +1904,67 @@
     "schwester_ids": [],
     "schwester_id": null,
     "schwester_titel": null
+  },
+  {
+    "id": 36,
+    "titel": "STANGEN-WETTHÜPFEN",
+    "quell_trainingseinheit": "Das Mittelfeld kontrollieren",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/12/image-4.jpg",
+    "grafik_dateiname": "uebung-036-stangen-wetthuepfen.jpg",
+    "trainingsphase": "Aufwärmen",
+    "kurzbeschreibung": "Spieler hüpfen um die Wette über eine Stange",
+    "aufbau": "Zwei Gruppen an einem Starthütchen ohne Ball platzieren. In fünf Meter Abstand jeweils zwei Hütchen mit Stange aufstellen.",
+    "durchfuehrung": "Die Spieler beider Gruppen laufen gleichzeitig los. Sie müssen a) vorwärts über die Stange hüpfen, b) rückwärts über die Stange hüpfen und c) seitlich über die Stange hüpfen. Danach rennen sie zurück zu ihrem Team und klatschen mit dem nächsten Spieler ab, der dann losläuft. Welches Team hat die Übung als erstes absolviert?",
+    "varianten": "",
+    "quell_url": "https://coachunited.de/das-mittelfeld-kontrollieren/",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Koordination",
+      "Schnelligkeit"
+    ],
+    "coaching_fokus": "• Sauberer Sprung und Schnelligkeit",
+    "leichter_machen": "• Stangen niedriger hängen",
+    "schwerer_machen": "• Stangen höher hängen",
+    "status": "veroeffentlicht",
+    "alt_titel": "Wetthüpfen - Koordinationsduell",
+    "seo_keyword": "Fußballübung Koordination Kinder",
+    "url_slug": "fussballubung-koordination-kinder",
+    "seo_meta_description": "Zwei Gruppen von Kindern beim Wetthüpfen über Stangen",
+    "grafik_alt_text": "Koordinationsübung Fußball Kinder Stangen-Wetthüpfen",
+    "grafik_description": "Die Kinder sprinten nacheinander los und müssen vorwärts, rückwärts und seitlich über die aufgestellten Stangen hüpfen. Es entsteht ein koordinatives Wettrennen zwischen den beiden Gruppen.",
+    "grafik_title": "Koordinative Fußballübung 'Stangen-Wetthüpfen' für Kinder im Alter von 6-12 Jahren",
+    "grafik_caption": "Die Kinder sprinten nacheinander los und müssen vorwärts, rückwärts und seitlich über die aufgestellten Stangen hüpfen. Es entsteht ein koordinatives Wettrennen zwischen den beiden Gruppen.",
+    "faq": [
+      {
+        "frage": "Für wie viele Kinder ist diese Fußballübung geeignet?",
+        "antwort": "Die Übung kann mit beliebig vielen Kindern durchgeführt werden. Einfach mehr Stangen aufstellen und weitere Gruppen einteilen. "
+      },
+      {
+        "frage": "Wie lange dauert die Fußballübung 'Stangen-Wetthüpfen'?",
+        "antwort": "Je nach Gruppengröße und Alter der Kinder kann die Übung 5-10 Minuten dauern. Für ein effektives Training sollte sie 2-3 Durchgänge umfassen."
+      },
+      {
+        "frage": "Ist die Übung auch für jüngere Kinder geeignet?",
+        "antwort": "Für die jüngste Altersklasse (F-Jugend) kann man die Stangenhöhe etwas reduzieren."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [
+      37
+    ],
+    "schwester_id": 37,
+    "schwester_titel": "STANGEN-PASS MIT ABSCHLUSS"
   }
 ]
