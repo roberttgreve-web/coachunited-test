@@ -2768,5 +2768,67 @@
     "schwester_ids": [],
     "schwester_id": null,
     "schwester_titel": null
+  },
+  {
+    "id": 53,
+    "titel": "EINFACHES DRIBBELN UND PASSEN MIT TEMPO",
+    "quell_trainingseinheit": "Passen, schießen und einwechseln mit Tempo",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/11/image-8.jpg",
+    "grafik_dateiname": "uebung-053-einfaches-dribbeln-und-passen-mit-tempo.jpg",
+    "trainingsphase": "Aufwärmen",
+    "kurzbeschreibung": "Spieler dribbeln um das Hütchen und passen zum Mitspieler zurück.",
+    "aufbau": "Vier Gruppen einteilen. Vor jeder Gruppe in etwa 6m Entfernung ein Hütchen aufstellen. Einen Ball pro Gruppe.",
+    "durchfuehrung": "Spieler dribbelt um das Hütchen und passt zum Mitspieler, der dann startet.",
+    "varianten": "a) Dribbel-Varianten vorgeben: nur linker/rechter Fuß, mit der Sohle ziehen, rückwärts etc. b) Wettbewerb: Welches Team ist am schnellsten einmal durch? SPRINTEN UND PASS EMPFANGEN SPRINTEN UND PASS EMPFANGEN Spieler sprintet um das Hütchen, Mitspieler passt den Ball zu.",
+    "quell_url": "https://coachunited.de/passen-schiesen-und-einwechseln-mit-tempo/",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend",
+      "E-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Dribbeln",
+      "Koordination",
+      "Schnelligkeit",
+      "Raumverhalten"
+    ],
+    "coaching_fokus": "• Konzentriert den Ball mitführen und nicht zu weit vorlegen; • Blickkontakt zum Mitspieler aufnehmen vor dem Pass",
+    "leichter_machen": "• Geringerer Abstand zwischen den Hütchen; • Ball mit Innenseite oder Sohle führen statt Dribbeln",
+    "schwerer_machen": "• Hoher Ball zum Annehmen und Weiterleiten",
+    "status": "veroeffentlicht",
+    "alt_titel": "Dribbeln und Passen im Slalom",
+    "seo_keyword": "Fußballübung Passen Dribbeln Kinder",
+    "url_slug": "fussballuebung-passen-dribbeln-kinder",
+    "seo_meta_description": "Effektive Fußballübung für Kinder zum Üben von Passen und Dribbling. Abwechslungsreich mit verschiedenen Schwierigkeitsgraden.",
+    "grafik_alt_text": "Kinder beim Fußballtraining: Einer dribbbelt um Hütchen, der andere wartet zum Weiterspielen",
+    "grafik_description": "Die Kinder üben in Gruppen das Dribbeln und Passen. Einer startet mit Ball, umrundet ein Hütchen und spielt den Ball dann zu seinem Mitspieler, der wiederum loslegt.",
+    "grafik_title": "Kinder-Fußballtraining: Passen und Dribbeln",
+    "grafik_caption": "Einfaches Dribbling- und Passübung für Fußball-Nachwuchs",
+    "faq": [
+      {
+        "frage": "Wie viele Kinder können diese Übung gleichzeitig machen?",
+        "antwort": "Ideal sind 4 Gruppen mit je 3-5 Kindern. So haben alle viel Praxiszeit."
+      },
+      {
+        "frage": "Wie lange sollte man diese Übung durchführen?",
+        "antwort": "Ca. 5-10 Minuten, dann die Kinder abwechseln und neue Gruppen bilden."
+      },
+      {
+        "frage": "Lässt sich die Übung an verschiedene Altersgruppen anpassen?",
+        "antwort": "Ja, durch die Variationen kann man sie von G-Jugend bis E-Jugend einsetzen."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [],
+    "schwester_id": null,
+    "schwester_titel": null
   }
 ]
