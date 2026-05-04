@@ -2581,5 +2581,68 @@
     "schwester_ids": [],
     "schwester_id": null,
     "schwester_titel": null
+  },
+  {
+    "id": 50,
+    "titel": "TORSCHUSS NACH FARBSIGNAL",
+    "quell_trainingseinheit": "Fangen spielen, bewegende Tore, Schüsse!",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/11/image-8.png",
+    "grafik_dateiname": "uebung-050-torschuss-nach-farbsignal.png",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "Nach Aufruf dribbeln die Spieler bis zur Schusslinie und schließen ab.",
+    "aufbau": "Jugendtor mit Torhüter aufstellen. 15m vor dem Tor eine Schusslinie markieren. Weitere 5m entfernt drei verschieden farbige Hütchen aufstellen. Spieler mit Ball gleichmäßig an den Hütchen verteilen.",
+    "durchfuehrung": "Trainer ruft die Farbe eines Hütchens. Spieler dribbelt zur Schusslinie und schließt vor der Schusslinie ab.",
+    "varianten": "a) Tempo erhöhen, in dem die nächste Farbe schon gerufen wird, kurz bevor der Spieler geschossen hat. b) Nur flache oder hohe Schüsse zählen. c) Nur mit rechts oder links schießen. TORSCHUSS MIT GEGNERPRÄSENZ TORSCHUSS MIT GEGNERPRÄSENZ Nach Aufruf dribbeln die Spieler bis zur Schusslinie und schließen ab. Ein Verteidiger versucht, den Schuss zu blocken.",
+    "quell_url": "https://coachunited.de/fangen-spielen-bewegende-tore-schusse/",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Dribbeln",
+      "Torschuss"
+    ],
+    "coaching_fokus": "• Konzentriert und ruhig den Ball aufs Tor bringen; • Richtige Position des Torschützen in Bezug zur Schusslinie einnehmen",
+    "leichter_machen": "• Schusslinie näher ans Tor verlegen",
+    "schwerer_machen": "• Tempo erhöhen, indem die nächste Farbe schon vor dem Schuss gerufen wird; • Nur mit rechtem oder linkem Fuß schießen erlauben",
+    "status": "veroeffentlicht",
+    "alt_titel": "Ziel-Torschuss mit Farbsignal",
+    "seo_keyword": "Fußballübung Torschuss Kinder",
+    "url_slug": "fussballubung-torschuss-kinder",
+    "seo_meta_description": "Effektives Torschusstraining für Kinder mit Farbsignalen. Verbessert Konzentration, Präzision und Reaktionsschnelligkeit.",
+    "grafik_alt_text": "Kinder führen einen Torschuss nach Farbsignal durch, ein Verteidiger versucht den Ball zu blocken",
+    "grafik_description": "Die Grafik zeigt eine Fußballübung, bei der Kinder nacheinander zum Torschuss antreten. Drei farbige Hütchen geben das Farbsignal zum Schuss. Ein Verteidiger versucht, den Schuss zu blocken.",
+    "grafik_title": "Kinder-Fußballtraining: Torschuss nach Farbsignal",
+    "grafik_caption": "Zielgerichtetes Torschusstraining mit Farbsignalen fördert die Konzentration und Präzision der jungen Fußballer.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler können an dieser Übung teilnehmen?",
+        "antwort": "Je nach Platzverhältnissen können 10-20 Kinder gleichzeitig trainieren. Alternativ kann man die Gruppe auf zwei Tore aufteilen."
+      },
+      {
+        "frage": "Wie lange sollte diese Übung dauern?",
+        "antwort": "10-20 Minuten, je nach Konzentration und Motivation der Kinder. "
+      },
+      {
+        "frage": "Kann man diese Übung für jüngere Kinder anpassen?",
+        "antwort": "Ja, für G- und F-Jugend kann man die Schussdistanz verkürzen."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [
+      51
+    ],
+    "schwester_id": 51,
+    "schwester_titel": "TORSCHUSS MIT GEGNERPRÄSENZ"
   }
 ]
