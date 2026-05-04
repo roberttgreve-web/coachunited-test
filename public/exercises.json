@@ -2153,5 +2153,67 @@
     ],
     "schwester_id": 40,
     "schwester_titel": "SAUBERER ZWEIKAMPF MIT SLALOM"
+  },
+  {
+    "id": 40,
+    "titel": "SAUBERER ZWEIKAMPF MIT SLALOM",
+    "quell_trainingseinheit": "Vom sauberen Zweikampf in den Torschuss",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/12/image-2.jpg",
+    "grafik_dateiname": "uebung-040-sauberer-zweikampf-mit-slalom.jpg",
+    "trainingsphase": "Aufwärmen",
+    "kurzbeschreibung": "Zwei Spieler gehen nach Zweikampf in ein Slalom mit Torabschluss.",
+    "aufbau": "Zwei Reihen mit Hütchen im Abstand von etwa 2m zueinander aufstellen. Zwei Teams ohne Ball platzieren. Trainer steht am Ende des Korridors. Jeweils vier Hütchen hinzufügen. Minitor aufstellen. Vor den Hütchen Bälle platzieren.",
+    "durchfuehrung": "Ein Spieler je Gruppe läuft gleichzeitig los in den Korridor. Die Spieler führen einen sauberen Zweikampf mit angelegtem Arm. Danach schnappen sie sich jeweils einen Ball, gehen im Slalom um die Hütchen und schließen aufs Minitor ab. Jeder Treffer zählt einen Punkt fürs Team.",
+    "varianten": "Weiteren Punkt für Schnelligkeit (wer zuerst abschließt) vergeben. PARALLELER TORSCHUSS PARALLELER TORSCHUSS Zwei Spieler dribbeln parallel in ihr Schussfeld und schließen auf ein Tor ihrer Wahl ab.",
+    "quell_url": "https://coachunited.de/vom-sauberen-zweikampf-in-den-torschuss/",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend",
+      "E-Jugend"
+    ],
+    "skills": [
+      "Dribbeln",
+      "Torschuss",
+      "Zweikampf",
+      "Schnelligkeit"
+    ],
+    "coaching_fokus": "• Augen nach dem Zweikampf heben; • Rasch aus der Bewegung abschließen; • Schnelle, dynamische Richtungswechsel im Slalom",
+    "leichter_machen": "• Slalom um weniger Hütchen; • Abstand der Hütchen vergrößern",
+    "schwerer_machen": "• Ball vor dem Slalom in die Hand nehmen, um die Hütchen laufen und dann Volley aufs Minitor abschließen",
+    "status": "veroeffentlicht",
+    "schwester_ids": [
+      39
+    ],
+    "schwester_id": 39,
+    "schwester_titel": "SAUBERER ZWEIKAMPF",
+    "alt_titel": "Zweikampf, Slalom und Torabschluss",
+    "seo_keyword": "Fußballübung Zweikampf Kinder",
+    "url_slug": "sauberer-zweikampf-mit-slalom",
+    "seo_meta_description": "Dynamische Fußballübung für Kinder (6-12 Jahre) mit Zweikampf, Slalom und Torschuss. Fördert Ballkontrolle, Dribbeln und Schnelligkeit.",
+    "grafik_alt_text": "Zwei Kinder führen einen sauberen Zweikampf, holen danach einen Ball und dribbeln im Slalom aufs Tor",
+    "grafik_description": "Die Kinder führen einen fairen Zweikampf aus, bevor sie den Ball aufnehmen und um Hütchen in einem Slalom-Parcours zum Torabschluss dribbeln.",
+    "grafik_title": "Fußballübung: Zweikampf, Slalom und Torschuss",
+    "grafik_caption": "Dynamisches Dribbling- und Abschlusstraining mit Zweikampf",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler braucht man für die Übung?",
+        "antwort": "Die Übung ist für Zweiergruppen mit je 4-6 Spielern konzipiert. Bei größeren Gruppen können parallele Durchgänge organisiert werden."
+      },
+      {
+        "frage": "Wie lange dauert die Übung?",
+        "antwort": "Die Durchführung pro Durchlauf dauert etwa 10 Minuten. "
+      },
+      {
+        "frage": "Kann man die Übung an verschiedene Altersstufen anpassen?",
+        "antwort": "Ja, durch Veränderung der Entfernung zwischen den Hütchen, der Länge des Parcours oder der Größe des Tores lässt sich die Übung an jüngere oder ältere Kinder anpassen."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": ""
   }
 ]
