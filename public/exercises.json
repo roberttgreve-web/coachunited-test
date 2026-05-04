@@ -2707,5 +2707,66 @@
     "original_coaching_fokus": "",
     "ist_gecrawlt": false,
     "quell_kategorie": ""
+  },
+  {
+    "id": 52,
+    "titel": "AUS DEM KLEINFELDSPIEL ZUM TORSCHUSS",
+    "quell_trainingseinheit": "Fangen spielen, bewegende Tore, Schüsse!",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/11/image-12.jpg",
+    "grafik_dateiname": "uebung-052-aus-dem-kleinfeldspiel-zum-torschuss.jpg",
+    "trainingsphase": "Spielformat",
+    "kurzbeschreibung": "Zwei Teams spielen im 5 gegen 5 auf Kleinfeldtore. Sobald ein Spieler namentlich aufgerufen wird, sprintet er zur Torschusslinie und schließt auf das Jugendtor ab.",
+    "aufbau": "Jugendtor mit Torhüter aufstellen. 15m vor dem Tor eine Schusslinie markieren.  Zusätzlich ein 40 x 20 Meter großes Feld markieren. Teams mit Leibchen aufteilen. Bei größeren Gruppen auch 6 gegen 6 möglich. Jedes Team hat mindestens einen Auswechselspieler. Zudem vier Bälle kurz vor der Torschusslinie platzieren.",
+    "durchfuehrung": "Die Teams spielen 5 gegen 5 auf die kleinen Tore. Der Trainer ruft einen Spieler namentlich auf. Dieser sprintet zur Torschusslinie und schließt ab. Danach legt er den Ball zurück an seine Position und wird zum Auswechselspieler im 5 gegen 5. (Als der Spieler aufgerufen wurde, ist ein Auswechselspieler für ihn ins Spiel gegangen.) ",
+    "varianten": "",
+    "quell_url": "https://coachunited.de/fangen-spielen-bewegende-tore-schusse/",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend",
+      "E-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Torschuss",
+      "Schnelligkeit",
+      "Raumverhalten"
+    ],
+    "coaching_fokus": "• Konzentrierter Abschluss auf das Tor!; • Schnelles Umsachalten von Spiel zu Torschuß.",
+    "leichter_machen": "• Reduzierung der Torschussdistanz",
+    "schwerer_machen": "• Zeitlimit für den Torschuss einführen",
+    "status": "veroeffentlicht",
+    "alt_titel": "Torschusstraining aus dem Kleinfeld",
+    "seo_keyword": "Fußballübung Torschuss Kinder",
+    "url_slug": "fussballuebung-torschuss-kinder",
+    "seo_meta_description": "Dynamische Fußballübung zum Torschusstraining für Kinder von 6-12 Jahren. Mit Fokus auf Technik, Schnelligkeit und Teamplay.",
+    "grafik_alt_text": "Kinder beim Torschuss aus dem Kleinfeld in Richtung des Jugendtores",
+    "grafik_description": "Die Übung beinhaltet ein 5-gegen-5-Kleinfeld mit je einem Tor pro Team. Ein Spieler sprintet auf Zuruf zur Torschusslinie und schließt direkt ab.",
+    "grafik_title": "Fußballübung Torschuss aus dem Kleinfeld",
+    "grafik_caption": "Dynamische Torschussübung für Kinder von 6-12 Jahren",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler benötigt die Übung?",
+        "antwort": "Die Grundversion spielt 5-gegen-5, lässt sich aber auch mit 6-gegen-6 durchführen. Ein drittes Team kann eingeteilt werden im Turniermodus. "
+      },
+      {
+        "frage": "Wie lange dauert die Übung?",
+        "antwort": "Die Übungsdauer lässt sich variabel gestalten, je nach Trainingszeit und Alter der Kinder."
+      },
+      {
+        "frage": "Für welche Altersgruppen ist die Übung geeignet?",
+        "antwort": "Die Übung eignet sich gut für Kinder der G- bis E-Jugend, also im Alter von 6-12 Jahren."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [],
+    "schwester_id": null,
+    "schwester_titel": null
   }
 ]
