@@ -2644,5 +2644,68 @@
     ],
     "schwester_id": 51,
     "schwester_titel": "TORSCHUSS MIT GEGNERPRÄSENZ"
+  },
+  {
+    "id": 51,
+    "titel": "TORSCHUSS MIT GEGNERPRÄSENZ",
+    "quell_trainingseinheit": "Fangen spielen, bewegende Tore, Schüsse!",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/11/image-9.png",
+    "grafik_dateiname": "uebung-051-torschuss-mit-gegnerpraesenz.png",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "Nach Aufruf dribbeln die Spieler bis zur Schusslinie und schließen ab. Ein Verteidiger versucht, den Schuss zu blocken.",
+    "aufbau": "Jugendtor mit Torhüter aufstellen. 15m vor dem Tor eine Schusslinie markieren. Weitere 5m entfernt drei verschieden farbige Hütchen aufstellen. Spieler mit Ball gleichmäßig an den Hütchen verteilen.",
+    "durchfuehrung": "Trainer ruft die Farbe eines Hütchens. Spieler dribbelt zur Schusslinie und schließt vor der Schusslinie ab. Dieses Mal versucht ein Verteidiger, den Schuss zu blocken. Danach wird der Schütze zum Verteidiger.",
+    "varianten": "a) Zwei Verteidiger einsetzen. b) Aufs leere Tor.  c) Nur flache oder hohe Schüsse zählen. AUS DEM KLEINFELDSPIEL ZUM TORSCHUSS AUS DEM KLEINFELDSPIEL ZUM TORSCHUSS Zwei Teams spielen im 5 gegen 5 auf Kleinfeldtore. Sobald ein Spieler namentlich aufgerufen wird, sprintet er zur Torschusslinie und schließt auf das Jugendtor ab.",
+    "quell_url": "https://coachunited.de/fangen-spielen-bewegende-tore-schusse/",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Ballkontrolle",
+      "Torschuss",
+      "Zweikampf",
+      "Raumverhalten"
+    ],
+    "coaching_fokus": "• Achte auf eine gute Schusstechnik beim Abschluss; • Positioniere dich zwischen Ball und Tor, um den Schuss zu blocken",
+    "leichter_machen": "• Vorsprung des Schützen vor dem Verteidiger",
+    "schwerer_machen": "• Zwei Verteidiger; • Nur flache oder hohe Schüsse zählen",
+    "status": "veroeffentlicht",
+    "schwester_ids": [
+      50
+    ],
+    "schwester_id": 50,
+    "schwester_titel": "TORSCHUSS NACH FARBSIGNAL",
+    "alt_titel": "TORJÄGER UND VERTEIDIGER: 1-GEG-1-TORSCHÜSSE",
+    "seo_keyword": "Fußballübung Torschuss Kinder",
+    "url_slug": "fussballubung-torschuss-kinder",
+    "seo_meta_description": "Verbessere den Torschuss deiner jungen Fußballer mit dieser dynamischen 1-gegen-1-Übung. Mit Verteidigerdruck und Varianten für jeden Schwierigkeitsgrad.",
+    "grafik_alt_text": "Ein Jugendspieler schließt einen Torschuss ab, während ein Verteidiger versucht, den Ball zu blocken.",
+    "grafik_description": "Die Übung beginnt mit einem Dribbling zur Schusslinie. Dort schließt der Angreifer ab, während ein Verteidiger versucht, den Schuss zu blocken. Danach wechseln die Rollen.",
+    "grafik_title": "Fußballübung: Torschuss mit Gegnerdruck für Kinder",
+    "grafik_caption": "Dynamisches 1-gegen-1-Trainingsspiel für den Torschuss mit Verteidigerpräsenz.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler benötigen wir für diese Übung?",
+        "antwort": "Die Übung eignet sich für 10-16 Spieler. Zweites Tor kann aufgestellt werden. "
+      },
+      {
+        "frage": "Wie lange soll die Übung dauern?",
+        "antwort": "Wir empfehlen 10-15 Minuten, je nach Altersstufe und Kondition der Spieler."
+      },
+      {
+        "frage": "Kann man die Übung auch für jüngere Altersklassen anpassen?",
+        "antwort": "Ja, durch Reduzierung der Distanz zur Schusslinie kann man die Übung für G- und F-Junioren vereinfachen."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": ""
   }
 ]
