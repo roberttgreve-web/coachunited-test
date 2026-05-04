@@ -2461,6 +2461,68 @@
     "quell_kategorie": ""
   },
   {
+    "id": 45,
+    "titel": "SPIEL UMS LEERE TOR",
+    "quell_trainingseinheit": "Überzahl gemeinsam ausspielen",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/11/image-19.jpg",
+    "grafik_dateiname": "uebung-045-spiel-ums-leere-tor.jpg",
+    "trainingsphase": "Spielformat",
+    "kurzbeschreibung": "Zwei Teams spiele gegeneinander bis die Bälle im eigenen Tor aufgebraucht sind.",
+    "aufbau": "40X40m-Feld aufbauen mit Jugendtoren und Torhütern. Zwei Teams einteilen. Jeweils drei Bälle in jedes Tor legen.Anzahl Bälle pro Tor auf 2 reduziere",
+    "durchfuehrung": "Wenn ein Team ein Tor erzielt, verbleibt der Ball im Tor, und das Team setzt das Spiel mit einem Ball aus dem eigenen Tor fort.\nWird der Ball ins Aus gespielt, bringt ein Spieler den Ball zurück ins eigene Tor, und das ballbesitzende Team setzt das Spiel mit einem Ball aus seinem Tor fort. Welches Team hat zuerst keine Bälle mehr in seinem Tor?",
+    "varianten": "Spielzeit auf 5min begrenzen: Das Team, das nach 5 Minuten weniger Bälle im Tor hat, gewinnt. FREIES SPIEL – LOS GEHT’S! FREIES SPIEL – LOS GEHT’S! In © 2025 COACH UNITED",
+    "quell_url": "https://coachunited.de/uberzahl-gemeinsam-ausspielen/",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Torschuss",
+      "Koordination"
+    ],
+    "coaching_fokus": "",
+    "leichter_machen": "• Anzahl Bälle pro Tor auf 2 reduzieren",
+    "schwerer_machen": "• Anzahl Bälle pro Tor auf 5 erhöhen",
+    "status": "veroeffentlicht",
+    "alt_titel": "Tore verteidigen und Konter fahren",
+    "seo_keyword": "Fußballübung Torabschluss Kinder",
+    "url_slug": "fussballuebung-torabschluss-kinder",
+    "seo_meta_description": "Zwei Fußballmannschaften kämpfen um leere Tore, Kinder trainieren Torabschluss und Konter",
+    "grafik_alt_text": "Fußballübung Torabschluss für Kinder",
+    "grafik_description": "Das Bild zeigt zwei Fußballteams, die gegeneinander um leere Tore spielen. Die Kinder üben dabei den Torabschluss, Ballsicherheit und das Umschalten vom Angriff zur Verteidigung.",
+    "grafik_title": "Effektives Fußballtraining zur Verbesserung des Torabschlusses und des Umschaltens",
+    "grafik_caption": "Das Bild zeigt zwei Fußballteams, die gegeneinander um leere Tore spielen. Die Kinder üben dabei den Torabschluss, Ballsicherheit und das Umschalten vom Angriff zur Verteidigung.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler braucht man für diese Übung?",
+        "antwort": "Die Übung ist für 6-7 Spieler pro Team geeignet. Drittes Team möglich im Turniermodus. "
+      },
+      {
+        "frage": "Wie lange dauert die Übung?",
+        "antwort": "Die Empfehlung liegt bei 10-20 Minuten Spielzeit. Je nach Leistungsstand und Motivation der Kinder kann die Zeit angepasst werden."
+      },
+      {
+        "frage": "Für welche Altersstufe eignet sich die Übung?",
+        "antwort": "Die Übung ist besonders für Kinder der F-, E- und D-Jugend (6-12 Jahre) geeignet. Sie fördert wichtige Grundlagen wie Torabschluss, Ballsicherheit und Spielverständnis."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [
+      44
+    ],
+    "schwester_id": 44,
+    "schwester_titel": "TURBO-SPIELSTART MIT ÜBERZAHL AUS DEM REIFEN"
+  },
+  {
     "id": 46,
     "titel": "6 DUELLE, 3 MINUTEN",
     "quell_trainingseinheit": "Den Ball in der Torzone verarbeiten",
