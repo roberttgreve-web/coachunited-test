@@ -2275,5 +2275,62 @@
     "schwester_ids": [],
     "schwester_id": null,
     "schwester_titel": null
+  },
+  {
+    "id": 42,
+    "titel": "KEGEL-RENNEN",
+    "quell_trainingseinheit": "Überzahl gemeinsam ausspielen",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/11/image-17.jpg",
+    "grafik_dateiname": "uebung-042-kegel-rennen.jpg",
+    "trainingsphase": "Aufwärmen",
+    "kurzbeschreibung": "Teams versuchen, nacheinander alle Kegel abzuräumen.",
+    "aufbau": "5m hinter den Starthütchen jeweils 5 Hütchen aufstellen. Abstand kann je nach Leistungsstärke der Gruppe variieren. Zwei Teams mit Bällen an den Starthütchen verteilen.",
+    "durchfuehrung": "Die Spieler der Teams versuchen nacheinander mit dem Ball das erste Hütchen zu treffen. Sobald dieses umgefallen ist, wird es weggeräumt. Danach ist das zweite Hütchen das Ziel. Welches Team hat zuerst alle Hütchen abgeräumt?",
+    "varianten": "a) Ball mit der Hand rollen, b) nur mit rechts/links schießen. KEGEL-SCHLACHT KEGEL-SCHLACHT Teams versuchen, alle Kegel der gegnerischen Mannschaft abzuräumen.",
+    "quell_url": "https://coachunited.de/uberzahl-gemeinsam-ausspielen/",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle"
+    ],
+    "coaching_fokus": "• Blick heben vor dem Schuss; • Betonung des Zielens auf die Kegel; ",
+    "leichter_machen": "• Ball mit der Hand rollen; • Abstand zwischen den Kegeln und zum Schusspunkt verkürzen",
+    "schwerer_machen": "• Nur mit rechts/links schießen; • Kegel in größerem Abstand aufstellen",
+    "status": "veroeffentlicht",
+    "alt_titel": "Fußballkegel-Jagd",
+    "seo_keyword": "Fußballübung Zielgenauigkeit Kinder",
+    "url_slug": "fussballubung-kegel-rennen-kinder",
+    "seo_meta_description": "Kegel-Rennen: Eine einfache Fußballübung zum Üben von Zielgenauigkeit und Ballkontrolle für Kinder zwischen 6-12 Jahren.",
+    "grafik_alt_text": "Zwei Kindergruppen beim Fußballspiel, bei dem sie Kegel umwerfen müssen.",
+    "grafik_description": "Die Spielkinder stehen in zwei Teams an einer Startlinie und versuchen nacheinander, mit dem Ball die aufgestellten Kegel zu treffen und umzuwerfen. Sobald ein Kegel fällt, wird er weggeräumt.",
+    "grafik_title": "Fußballübung für Kinder: Kegel-Rennen",
+    "grafik_caption": "Kinder üben mit Spaß ihre Zielgenauigkeit beim Kegel-Rennen.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler können an der Übung teilnehmen?",
+        "antwort": "Die Übung eignet sich gut für Gruppen von 8-12 Kindern, die in zwei gleichgroße Teams aufgeteilt werden können. Bei größeren Gruppen einfach weitere Kegelreihen platzieren."
+      },
+      {
+        "frage": "Wie lange dauert das Kegel-Rennen?",
+        "antwort": "Je nach Leistungsstand der Gruppe kann die Übung 10-15 Minuten dauern. Die Dauer kann durch An- oder Abpassen der Schwierigkeit angepasst werden."
+      },
+      {
+        "frage": "Für welche Altersgruppe ist die Übung geeignet?",
+        "antwort": "Das Kegel-Rennen ist perfekt für Kinder im Alter von 6 bis 10 Jahren, da es grundlegende Fähigkeiten wie Ballkontrolle und Zielgenauigkeit fördert."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [],
+    "schwester_id": null,
+    "schwester_titel": null
   }
 ]
