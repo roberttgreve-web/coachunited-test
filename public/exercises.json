@@ -2091,5 +2091,67 @@
     "schwester_ids": [],
     "schwester_id": null,
     "schwester_titel": null
+  },
+  {
+    "id": 39,
+    "titel": "SAUBERER ZWEIKAMPF",
+    "quell_trainingseinheit": "Vom sauberen Zweikampf in den Torschuss",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/12/image.jpg",
+    "grafik_dateiname": "uebung-039-sauberer-zweikampf.jpg",
+    "trainingsphase": "Aufwärmen",
+    "kurzbeschreibung": "Zwei Spieler führen mit angelegtem Arm einen Zweikampf ohne Ball.",
+    "aufbau": "Zwei Reihen mit Hütchen im Abstand von etwa 2m zueinander aufstellen. Zwei Teams ohne Ball platzieren. Trainer steht am Ende des Korridors.",
+    "durchfuehrung": "Ein Spieler je Gruppe läuft gleichzeitig los in den Korridor. Die Spieler führen einen sauberen Zweikampf mit angelegtem Arm bis sie beim Trainer angekommen sind. Dann stellen sie sich wieder an.",
+    "varianten": "Ziel, dass Spieler sich fair aus dem Korridor herausschieben. (Geht nur mit einer gewissen Reife der Kinder) SAUBERER ZWEIKAMPF MIT SLALOM SAUBERER ZWEIKAMPF MIT SLALOM Zwei Spieler gehen nach Zweikampf in ein Slalom mit Torabschluss.",
+    "quell_url": "https://coachunited.de/vom-sauberen-zweikampf-in-den-torschuss/",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Zweikampf",
+      "Koordination",
+      "Schnelligkeit"
+    ],
+    "coaching_fokus": "• Saubere Zweikämpfe mit angelegtem Arm und angemessenem Körpereinsatz",
+    "leichter_machen": "• Verringerung des Abstands zwischen den Hütchenreihen;",
+    "schwerer_machen": "• Erhöhung des Abstands zwischen den Hütchenreihen;",
+    "status": "veroeffentlicht",
+    "alt_titel": "Dynamischer Zweikampf-Parcours",
+    "seo_keyword": "Zweikampfübung Fußball Kinder",
+    "url_slug": "zweikampf-ubung-fussball-kinder",
+    "seo_meta_description": "Zwei Fußballspieler führen einen sauberen Zweikampf in einem Korridor mit Hütchen durch",
+    "grafik_alt_text": "Dynamischer Zweikampf-Parcours für Fußball-Kinder",
+    "grafik_description": "Die Übung besteht aus einem Korridor mit Hütchen, in dem zwei Spieler einen Zweikampf mit angelegtem Arm austragen. Anschließend durchlaufen sie einen Slalom-Parcours.",
+    "grafik_title": "Zweikampftraining mit Slalom-Element für die G- und F-Jugend",
+    "grafik_caption": "Die Übung besteht aus einem Korridor mit Hütchen, in dem zwei Spieler einen Zweikampf mit angelegtem Arm austragen. Anschließend durchlaufen sie einen Slalom-Parcours.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler brauche ich für diese Übung?",
+        "antwort": "Ideal sind zwei Teams mit je 4-6 Spielern. Bei einer größeren Gruppe einfach zwei Bahnen parallel aufbauen. "
+      },
+      {
+        "frage": "Wie lange sollte man die Übung dauern lassen?",
+        "antwort": "5-7 Minuten pro Durchgang sind eine gute Länge. "
+      },
+      {
+        "frage": "Kann man die Übung auch für ältere Kinder nutzen?",
+        "antwort": "Ja."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [
+      40
+    ],
+    "schwester_id": 40,
+    "schwester_titel": "SAUBERER ZWEIKAMPF MIT SLALOM"
   }
 ]
