@@ -2397,5 +2397,67 @@
     ],
     "schwester_id": 44,
     "schwester_titel": "TURBO-SPIELSTART MIT ÜBERZAHL AUS DEM REIFEN"
+  },
+  {
+    "id": 44,
+    "titel": "TURBO-SPIELSTART MIT ÜBERZAHL AUS DEM REIFEN",
+    "quell_trainingseinheit": "Überzahl gemeinsam ausspielen",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/11/image-12.png",
+    "grafik_dateiname": "uebung-044-turbo-spielstart-mit-ueberzahl-aus-dem-reifen.png",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "Zwei Teams treten in einem Spiel gegeneinander an. Ist der Ball im Tor oder im Toraus, darf ein Team einen Ball aus weiteren Reifen direkt wieder einspielen.",
+    "aufbau": "40X40m-Feld aufbauen mit Jugendtoren und Torhütern. Zwei Teams einteilen. Vier Reifen um das Feld platzieren und einen Ball hineinlegen. Jeweils zwei weitere Reifen links und rechts neben den Toren platzieren.",
+    "durchfuehrung": "Wie zuvor, nur mit mehr Reifen und Bällen.",
+    "varianten": "Strafstoß für das andere Team, wenn Spieler aus einem Team zwei gleichzeitig einen Ball aus einem Reifen einspielen. SPIEL UMS LEERE TOR SPIEL UMS LEERE TOR Zwei Teams spiele gegeneinander bis die Bälle im eigenen Tor aufgebraucht sind.",
+    "quell_url": "https://coachunited.de/uberzahl-gemeinsam-ausspielen/",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend",
+      "E-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Koordination",
+      "Schnelligkeit"
+    ],
+    "coaching_fokus": "• Blick heben vor dem Pass; • Tempo und Laufwege der Spieler beobachten; • Bewegungsausführung bei den Pässen optimieren",
+    "leichter_machen": "• Weniger Reifen/Bälle verwenden; • Spielfeld verkleinern",
+    "schwerer_machen": "• Tore verkleinern; • Zeitmangel erhöhen, z.B. durch Zeitlimit pro Angriff",
+    "status": "veroeffentlicht",
+    "schwester_ids": [
+      43
+    ],
+    "schwester_id": 43,
+    "schwester_titel": "SPIELSTART MIT ÜBERZAHL AUS DEM REIFEN",
+    "alt_titel": "Schneller Spielstart im Tempofußball",
+    "seo_keyword": "Fußballübung Schnelligkeit Kinder",
+    "url_slug": "turbo-spielstart-mit-ueberzahl-aus-dem-reifen",
+    "seo_meta_description": "Effektives Tempospiel mit Überzahl trainieren. Optimale Fußballübung für G- und F-Jugend, um Pässe, Ballkontrolle und Schnelligkeit zu verbessern.",
+    "grafik_alt_text": "Zwei Fußballteams spielen den Ball durch mehrere Reifen in Tore",
+    "grafik_description": "Die Spieler müssen den Ball schnell durch die aufgestellten Reifen in die Tore spielen. Dadurch werden Tempo, Pässe und Ballkontrolle geschult.",
+    "grafik_title": "Temporeiche Fußballübung mit Überzahl",
+    "grafik_caption": "Spieler müssen den Ball schnell durch Reifen in Tore spielen",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler braucht man für diese Übung?",
+        "antwort": "Für diese Übung benötigt man zwei Teams mit je 4-6 Spielern."
+      },
+      {
+        "frage": "Wie lange dauert die Übung?",
+        "antwort": "Die Dauer kann flexibel von 10-20 Minuten angepasst werden, je nach Alter und Leistungsstand der Kinder."
+      },
+      {
+        "frage": "Für welche Altersklassen eignet sich die Übung?",
+        "antwort": "Diese Fußballübung ist optimal für Kinder der G- und F-Jugend im Alter von 6-12 Jahren geeignet."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": ""
   }
 ]
