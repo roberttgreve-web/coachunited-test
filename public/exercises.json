@@ -2461,52 +2461,52 @@
     "quell_kategorie": ""
   },
   {
-    "id": 45,
-    "titel": "SPIEL UMS LEERE TOR",
-    "quell_trainingseinheit": "Überzahl gemeinsam ausspielen",
-    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/11/image-19.jpg",
-    "grafik_dateiname": "uebung-045-spiel-ums-leere-tor.jpg",
-    "trainingsphase": "Spielformat",
-    "kurzbeschreibung": "Zwei Teams spiele gegeneinander bis die Bälle im eigenen Tor aufgebraucht sind.",
-    "aufbau": "40X40m-Feld aufbauen mit Jugendtoren und Torhütern. Zwei Teams einteilen. Jeweils drei Bälle in jedes Tor legen.Anzahl Bälle pro Tor auf 2 reduziere",
-    "durchfuehrung": "Wenn ein Team ein Tor erzielt, verbleibt der Ball im Tor, und das Team setzt das Spiel mit einem Ball aus dem eigenen Tor fort.\nWird der Ball ins Aus gespielt, bringt ein Spieler den Ball zurück ins eigene Tor, und das ballbesitzende Team setzt das Spiel mit einem Ball aus seinem Tor fort. Welches Team hat zuerst keine Bälle mehr in seinem Tor?",
-    "varianten": "Spielzeit auf 5min begrenzen: Das Team, das nach 5 Minuten weniger Bälle im Tor hat, gewinnt. FREIES SPIEL – LOS GEHT’S! FREIES SPIEL – LOS GEHT’S! In © 2025 COACH UNITED",
-    "quell_url": "https://coachunited.de/uberzahl-gemeinsam-ausspielen/",
+    "id": 46,
+    "titel": "6 DUELLE, 3 MINUTEN",
+    "quell_trainingseinheit": "Den Ball in der Torzone verarbeiten",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/11/image-13.jpg",
+    "grafik_dateiname": "uebung-046-6-duelle-3-minuten.jpg",
+    "trainingsphase": "Aufwärmen",
+    "kurzbeschreibung": "Die Spieler treten in sechs 1 gegen 1 Duellen gegeneinander an. Nach drei Minuten wird gewechselt.",
+    "aufbau": "Im Abstand von jeweils etwa 8 Metern 6 Hütchen aufstellen. Etwa 15m gegenüber parallel die gleiche Reihe Hütchen aufstellen. Auf jedem Feld ein 1 gegen 1 einteilen. Jeweils ein Ball.",
+    "durchfuehrung": "In jedem Feld wird 1 gegen 1 gespielt. Spieldauer sind 3 Minuten. Tore dürfen nicht durch Schießen, sondern nur durch Dribbeln über die Grundlinie erzielt werden. Nach 3 Minuten teilt der Trainer die Felder neu ein. Oder: Gewinner wechselt auf das Feld rechts von ihm, Verlierer wechselt auf das Feld links von ihm.",
+    "varianten": "Bei größerer Gruppengröße weitere Felder aufbauen oder 2 gegen 2 spielen lassen. SLALOM-WETTRENNEN SLALOM-WETTRENNEN Zwei Teams treten im Slalom-Rennen gegeneinander an.",
+    "quell_url": "https://coachunited.de/den-ball-in-der-torzone-verarbeiten/",
     "jugend": [
+      "G-Jugend",
       "F-Jugend",
-      "E-Jugend",
-      "D-Jugend"
+      "E-Jugend"
     ],
     "skills": [
-      "Passen",
       "Ballkontrolle",
-      "Torschuss",
-      "Koordination"
+      "Dribbeln",
+      "Zweikampf",
+      "Schnelligkeit"
     ],
-    "coaching_fokus": "",
-    "leichter_machen": "• Anzahl Bälle pro Tor auf 2 reduzieren",
-    "schwerer_machen": "• Anzahl Bälle pro Tor auf 5 erhöhen",
+    "coaching_fokus": "• Körpertäuschungen und Dribblings auf engem Raum",
+    "leichter_machen": "• 2 gegen 2 statt 1 gegen 1 spielen lassen; • Spielfeld vergrößern",
+    "schwerer_machen": "• Nur mit der Innenseite dribbeln erlauben; • Spielfeld verkleinern, z.B. auf 5x8 Meter",
     "status": "veroeffentlicht",
-    "alt_titel": "Tore verteidigen und Konter fahren",
-    "seo_keyword": "Fußballübung Torabschluss Kinder",
-    "url_slug": "fussballuebung-torabschluss-kinder",
-    "seo_meta_description": "Zwei Fußballmannschaften kämpfen um leere Tore, Kinder trainieren Torabschluss und Konter",
-    "grafik_alt_text": "Fußballübung Torabschluss für Kinder",
-    "grafik_description": "Das Bild zeigt zwei Fußballteams, die gegeneinander um leere Tore spielen. Die Kinder üben dabei den Torabschluss, Ballsicherheit und das Umschalten vom Angriff zur Verteidigung.",
-    "grafik_title": "Effektives Fußballtraining zur Verbesserung des Torabschlusses und des Umschaltens",
-    "grafik_caption": "Das Bild zeigt zwei Fußballteams, die gegeneinander um leere Tore spielen. Die Kinder üben dabei den Torabschluss, Ballsicherheit und das Umschalten vom Angriff zur Verteidigung.",
+    "alt_titel": "Tempo-Duelle: Dribbeln gegen den Gegner",
+    "seo_keyword": "Fußballübung Dribbeln Kinder",
+    "url_slug": "fussballubung-dribbeln-kinder",
+    "seo_meta_description": "Tempo-Duelle: Kinder trainieren dynamisches 1-gegen-1-Dribbeln mit dieser effektiven Übung für die G- bis E-Jugend.",
+    "grafik_alt_text": "Zwei Fußballkinder dribbeln mit Ball durch einen Slalom aus Hütchen",
+    "grafik_description": "Die Übung besteht aus mehreren 1-gegen-1-Duellen auf jeweils einem etwa 8x15 Meter großen Feld. Die Spieler müssen den Ball dynamisch durch einen Slalom aus Hütchen auf die Grundlinie dribbeln.",
+    "grafik_title": "Fußballübung: Tempo-Duelle im 1-gegen-1-Dribbeln",
+    "grafik_caption": "Kinder verbessern in dieser Übung ihr Tempo-Dribbeln im 1-gegen-1-Duell.",
     "faq": [
       {
-        "frage": "Wie viele Spieler braucht man für diese Übung?",
-        "antwort": "Die Übung ist für 6-7 Spieler pro Team geeignet. Drittes Team möglich im Turniermodus. "
+        "frage": "Kann man die Übung auch mit mehr als 2 Spielern durchführen?",
+        "antwort": "Ja, bei größeren Gruppen können die Felder verdoppelt und 2-gegen-2-Duelle gespielt werden."
       },
       {
-        "frage": "Wie lange dauert die Übung?",
-        "antwort": "Die Empfehlung liegt bei 10-20 Minuten Spielzeit. Je nach Leistungsstand und Motivation der Kinder kann die Zeit angepasst werden."
+        "frage": "Wie lange sollte die Übung insgesamt dauern?",
+        "antwort": "Die Gesamtdauer hängt vom Alter und Niveau der Kinder ab, in der Regel zwischen 10-20 Minuten."
       },
       {
-        "frage": "Für welche Altersstufe eignet sich die Übung?",
-        "antwort": "Die Übung ist besonders für Kinder der F-, E- und D-Jugend (6-12 Jahre) geeignet. Sie fördert wichtige Grundlagen wie Torabschluss, Ballsicherheit und Spielverständnis."
+        "frage": "Ist die Übung auch für jüngere Kinder der G-Jugend geeignet?",
+        "antwort": "Mit etwas kleinerem Feld und vereinfachten Regeln (z.B. ohne Zweikämpfe) lässt sich die Übung gut an die G-Jugend anpassen."
       }
     ],
     "referenz_grafik_url": "",
@@ -2516,10 +2516,8 @@
     "original_coaching_fokus": "",
     "ist_gecrawlt": false,
     "quell_kategorie": "",
-    "schwester_ids": [
-      44
-    ],
-    "schwester_id": 44,
-    "schwester_titel": "TURBO-SPIELSTART MIT ÜBERZAHL AUS DEM REIFEN"
+    "schwester_ids": [],
+    "schwester_id": null,
+    "schwester_titel": null
   }
 ]
