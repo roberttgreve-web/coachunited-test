@@ -2215,5 +2215,65 @@
     "original_coaching_fokus": "",
     "ist_gecrawlt": false,
     "quell_kategorie": ""
+  },
+  {
+    "id": 41,
+    "titel": "5 BÄLLE-SPIEL",
+    "quell_trainingseinheit": "Vom sauberen Zweikampf in den Torschuss",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/12/image-1.png",
+    "grafik_dateiname": "uebung-041-5-baelle-spiel.png",
+    "trainingsphase": "Spielformat",
+    "kurzbeschreibung": "Zwei Teams spielen auf zwei Tore bis 5 Bälle verspielt wurden. Danach wechseln die Teams.",
+    "aufbau": "Zwei Jugendtore aufbauen. Torhüter zuordnen. Feld mit 20mX25m markieren. Drei Teams einteilen. 5 Bälle bereitlegen.",
+    "durchfuehrung": "Trainer bestimmt ein Angreiferteam, ein Verteidigerteam und ein Auswechselteam. Erster Ball wird eingespielt. Angreiferteam versucht auf beide Tore ein Tor zu erzielen. Sobald das Verteidigerteam den Ball erobert hat oder der Ball verspielt wurde (zB Seitenaus) wird der nächste Ball vom Trainer eingespielt. Sind 5 Bälle verspielt, wechseln die Rollen der Teams und es geht neu los.",
+    "varianten": "a) Verteidigerteam kann auch Punkte erzielen, indem sie den Ball über die gegenüberliegende Grundlinie dribbeln. FREIES SPIEL – LOS GEHT’S! FREIES SPIEL – LOS GEHT’S! In © 2025 COACH UNITED",
+    "quell_url": "https://coachunited.de/vom-sauberen-zweikampf-in-den-torschuss/",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Dribbeln",
+      "Torschuss"
+    ],
+    "coaching_fokus": "• Wachsamkeit und Handlungsschnelligkeit beim Einspielen der Bälle",
+    "leichter_machen": "• Ohne Torhüter durchführen",
+    "schwerer_machen": "• Anzahl von Pflicht-Pässen vor Torabschluss festlegen",
+    "status": "veroeffentlicht",
+    "alt_titel": "5 Bälle-Torjagd",
+    "seo_keyword": "Fußballübung Torschuss Kinder",
+    "url_slug": "fussball-uebung-torschuss-kinder",
+    "seo_meta_description": "Dynamische Fußballübung zum Torschuss für Kinder zwischen 6-12 Jahren, fördert Technik und Schnelligkeit.",
+    "grafik_alt_text": "Kinder spielen in zwei Teams 5-Bälle-Spiel auf zwei Tore",
+    "grafik_description": "Die Szene zeigt ein dynamisches 5-Bälle-Spiel auf einem markierten Fußballfeld. Zwei Teams kämpfen um den Ball und versuchen, Tore auf beiden Seiten zu erzielen.",
+    "grafik_title": "Fußballübung 5-Bälle-Torjagd für Kinder",
+    "grafik_caption": "Kinder-Fußballübung 5-Bälle-Spiel fördert Torschuss, Dribbling und Zweikampf.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler braucht man für die Übung?",
+        "antwort": "Für die Übung werden 3 Teams mit je 4-6 Spielern empfohlen, also insgesamt 12-18 Kinder."
+      },
+      {
+        "frage": "Wie lange dauert die Übung?",
+        "antwort": "Die Übung kann je nach Alter und Leistungsniveau 10-20 Minuten dauern. Wichtig ist, dass die Kinder genug Zeit zum Spielen haben."
+      },
+      {
+        "frage": "Kann man die Übung auch für jüngere Kinder anpassen?",
+        "antwort": "Ja, etwa durch das Herausnehmen der Torhüter oder das Verkleinern des Feldes."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [],
+    "schwester_id": null,
+    "schwester_titel": null
   }
 ]
