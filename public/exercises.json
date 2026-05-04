@@ -2334,57 +2334,55 @@
     "schwester_titel": null
   },
   {
-    "id": 44,
-    "titel": "TURBO-SPIELSTART MIT ÜBERZAHL AUS DEM REIFEN",
+    "id": 43,
+    "titel": "SPIELSTART MIT ÜBERZAHL AUS DEM REIFEN",
     "quell_trainingseinheit": "Überzahl gemeinsam ausspielen",
-    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/11/image-12.png",
-    "grafik_dateiname": "uebung-044-turbo-spielstart-mit-ueberzahl-aus-dem-reifen.png",
-    "trainingsphase": "Hauptteil",
-    "kurzbeschreibung": "Zwei Teams treten in einem Spiel gegeneinander an. Ist der Ball im Tor oder im Toraus, darf ein Team einen Ball aus weiteren Reifen direkt wieder einspielen.",
-    "aufbau": "40X40m-Feld aufbauen mit Jugendtoren und Torhütern. Zwei Teams einteilen. Vier Reifen um das Feld platzieren und einen Ball hineinlegen. Jeweils zwei weitere Reifen links und rechts neben den Toren platzieren.",
-    "durchfuehrung": "Wie zuvor, nur mit mehr Reifen und Bällen.",
-    "varianten": "Strafstoß für das andere Team, wenn Spieler aus einem Team zwei gleichzeitig einen Ball aus einem Reifen einspielen. SPIEL UMS LEERE TOR SPIEL UMS LEERE TOR Zwei Teams spiele gegeneinander bis die Bälle im eigenen Tor aufgebraucht sind.",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/11/image-13.png",
+    "grafik_dateiname": "uebung-043-spielstart-mit-ueberzahl-aus-dem-reifen.png",
+    "trainingsphase": "Spielformat",
+    "kurzbeschreibung": "Zwei Teams treten in einem Spiel gegeneinander an. Ist der Ball im Tor oder im Toraus, darf ein Team einen Ball aus einem Reifen direkt wieder einspielen.",
+    "aufbau": "40X40m-Feld aufbauen mit Jugendtoren und Torhütern. Zwei Teams einteilen. Vier Reifen um das Feld platzieren und einen Ball hineinlegen.",
+    "durchfuehrung": "Die Spieler spielen ein normales Spiel. Sobald der Ball im Tor oder im Toraus landet, darf die andere Mannschaft (schnell) einen beliebigen Ball aus einem der vier Reifen einspielen. Der Spieler, der den Ball ins Aus gespielt hatte, holt den Ball, und legt in zurück in den freien Reifen.",
+    "varianten": "Balle nicht zurückbringen lassen. Sobald alle vier Bälle verspielt sind, startet ein neues Spiel. „Shotclock“: Angreifendes Team muss nach spätestens 15 Sekunden einen Torabschluss erreicht haben. TURBO-SPIELSTART MIT ÜBERZAHL AUS DEM REIFEN TURBO-SPIELSTART MIT ÜBERZAHL AUS DEM REIFEN Zwei Teams treten in einem Spiel gegeneinander an. Ist der Ball im Tor oder im Toraus, darf ein Team einen Ball aus weiteren Reifen direkt wieder einspielen.",
     "quell_url": "https://coachunited.de/uberzahl-gemeinsam-ausspielen/",
     "jugend": [
       "G-Jugend",
       "F-Jugend",
-      "E-Jugend"
+      "E-Jugend",
+      "D-Jugend"
     ],
     "skills": [
       "Passen",
       "Ballkontrolle",
-      "Koordination",
-      "Schnelligkeit"
+      "Dribbeln",
+      "Torschuss",
+      "Zweikampf",
+      "Koordination"
     ],
-    "coaching_fokus": "• Blick heben vor dem Pass; • Tempo und Laufwege der Spieler beobachten; • Bewegungsausführung bei den Pässen optimieren",
-    "leichter_machen": "• Weniger Reifen/Bälle verwenden; • Spielfeld verkleinern",
-    "schwerer_machen": "• Tore verkleinern; • Zeitmangel erhöhen, z.B. durch Zeitlimit pro Angriff",
+    "coaching_fokus": "• Blick heben vor dem Pass; • Raumaufteilung beachten; • Entschlossenheit beim Torabschluss",
+    "leichter_machen": "• Tor vergrößern; • Spielfeldgröße reduzieren",
+    "schwerer_machen": "• Zeitlimit für Torabschluss; • Anzahl der Reifen erhöhen",
     "status": "veroeffentlicht",
-    "schwester_ids": [
-      43
-    ],
-    "schwester_id": 43,
-    "schwester_titel": "SPIELSTART MIT ÜBERZAHL AUS DEM REIFEN",
-    "alt_titel": "Schneller Spielstart im Tempofußball",
-    "seo_keyword": "Fußballübung Schnelligkeit Kinder",
-    "url_slug": "turbo-spielstart-mit-ueberzahl-aus-dem-reifen",
-    "seo_meta_description": "Effektives Tempospiel mit Überzahl trainieren. Optimale Fußballübung für G- und F-Jugend, um Pässe, Ballkontrolle und Schnelligkeit zu verbessern.",
-    "grafik_alt_text": "Zwei Fußballteams spielen den Ball durch mehrere Reifen in Tore",
-    "grafik_description": "Die Spieler müssen den Ball schnell durch die aufgestellten Reifen in die Tore spielen. Dadurch werden Tempo, Pässe und Ballkontrolle geschult.",
-    "grafik_title": "Temporeiche Fußballübung mit Überzahl",
-    "grafik_caption": "Spieler müssen den Ball schnell durch Reifen in Tore spielen",
+    "alt_titel": "Spielstart mit Überzahl aus dem Reifen",
+    "seo_keyword": "Fußballübung Spielaufbau Kinder",
+    "url_slug": "fussballubung-spielaufbau-kinder",
+    "seo_meta_description": "Effektive Fußballübung zum Spielaufbau für Kinder von 6-12 Jahren. Trainiert Passen, Ballkontrolle und Raumaufteilung.",
+    "grafik_alt_text": "Zwei Fußballteams spielen auf einem Feld mit Toren. Bälle liegen in Reifen am Spielfeldrand.",
+    "grafik_description": "Die Grafik zeigt den Aufbau und die Durchführung der Fußballübung 'Spielstart mit Überzahl aus dem Reifen'. Die Spieler treten in zwei Teams an und müssen nach einem Tor- oder Seitenaus schnell einen neuen Ball aus einem der Reifen am Rand einbringen.",
+    "grafik_title": "Fußballübung: Spielstart mit Überzahl aus dem Reifen",
+    "grafik_caption": "Effektive Übung zum Spielaufbau für Kinder im Fußballtraining",
     "faq": [
       {
-        "frage": "Wie viele Spieler braucht man für diese Übung?",
-        "antwort": "Für diese Übung benötigt man zwei Teams mit je 4-6 Spielern."
+        "frage": "Wie viele Spieler braucht man für diese Fußballübung?",
+        "antwort": "Für diese Übung eignen sich Teams mit 6-8 Spielern pro Mannschaft. Die genaue Spieleranzahl kann jedoch an die Gruppengröße angepasst werden."
       },
       {
-        "frage": "Wie lange dauert die Übung?",
-        "antwort": "Die Dauer kann flexibel von 10-20 Minuten angepasst werden, je nach Alter und Leistungsstand der Kinder."
+        "frage": "Wie lange dauert die Durchführung der Übung?",
+        "antwort": "Die Dauer kann variabel gestaltet werden, z.B. 10-15 Minuten pro Durchgang. Wichtig ist, dass die Spieler genug Zeit haben, die Spielsituation mehrmals zu üben."
       },
       {
-        "frage": "Für welche Altersklassen eignet sich die Übung?",
-        "antwort": "Diese Fußballübung ist optimal für Kinder der G- und F-Jugend im Alter von 6-12 Jahren geeignet."
+        "frage": "Für welche Altersgruppen ist diese Übung geeignet?",
+        "antwort": "Die Übung eignet sich hervorragend für Kinder von 6-12 Jahren (G- bis D-Jugend). Durch Anpassungen der Regeln und Spielfeldgrößen kann sie an verschiedene Altersstufen angepasst werden."
       }
     ],
     "referenz_grafik_url": "",
@@ -2393,6 +2391,11 @@
     "original_varianten": "",
     "original_coaching_fokus": "",
     "ist_gecrawlt": false,
-    "quell_kategorie": ""
+    "quell_kategorie": "",
+    "schwester_ids": [
+      44
+    ],
+    "schwester_id": 44,
+    "schwester_titel": "TURBO-SPIELSTART MIT ÜBERZAHL AUS DEM REIFEN"
   }
 ]
