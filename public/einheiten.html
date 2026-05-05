@@ -347,7 +347,7 @@
       );
       const container = document.getElementById('skill-pills');
       container.innerHTML = validSkills.map(s =>
-        `<button class="skill-pill" onclick="toggleSkill('${s.replace(/'/g,"\\'")}',this)" data-skill="${s}">${s}</button>`
+        `<button class="skill-pill" onclick="toggleSkill(event,'${s.replace(/'/g,"\\'")}',this)" data-skill="${s}">${s}</button>`
       ).join('');
     }
 
@@ -402,7 +402,8 @@
       closeSkills();
     }
 
-    function toggleSkill(skill) {
+    function toggleSkill(e, skill) {
+      e.stopPropagation();
       isSurprise = false;
       document.getElementById('surprise-btn').classList.remove('active');
       if (selectedSkills.has(skill)) {
