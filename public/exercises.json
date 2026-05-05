@@ -3013,5 +3013,70 @@
     "original_coaching_fokus": "",
     "ist_gecrawlt": false,
     "quell_kategorie": ""
+  },
+  {
+    "id": 56,
+    "titel": "AUSWECHSLER HOLEN DIE PUNKTE",
+    "quell_trainingseinheit": "Passen, schießen und einwechseln mit Tempo",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/11/image-5.png",
+    "grafik_dateiname": "uebung-056-auswechsler-holen-die-punkte.png",
+    "trainingsphase": "Spielformat",
+    "kurzbeschreibung": "In einem normalen Spiel ruft der Trainer je ein Kind pro Team für eine Auswechslung auf. Das Team, das schneller wechselt, erhält einen Bonuspunkt.",
+    "aufbau": "Feld auf 40mx20m erweitern. Torhüter ins Tor. Teams in 6 gegen 6 einteilen (oder je nach Gruppengröße 5 gegen 5) mit mind. einem Auswechselkind.",
+    "durchfuehrung": "Es wird ein normales Spiel gespielt. Sobald der Trainer je einen Namen aus jedem Team aufruft, müssen diese beiden im Vollsprint zur Auswechselbank und einen Wechsel durchführen. Sind sie gerade in Ballbesitz, lassen sie den Ball liegen. Das Team, das zuerst gewechselt hat, erhält einen Bonus-Punkt (zählt wie ein Tor). ",
+    "varianten": "",
+    "quell_url": "https://coachunited.de/passen-schiesen-und-einwechseln-mit-tempo/",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Dribbeln",
+      "Torschuss",
+      "Koordination",
+      "Schnelligkeit",
+      "Raumverhalten",
+      "Taktik"
+    ],
+    "coaching_fokus": "• Schnelle Wechsel mit Dynamik",
+    "leichter_machen": "",
+    "schwerer_machen": "",
+    "status": "veroeffentlicht",
+    "alt_titel": "Werde zum Auswechselkönig!",
+    "seo_keyword": "Fußballübung Schnelligkeit Kinder",
+    "url_slug": "auswechsler-holen-die-punkte",
+    "seo_meta_description": "Dynamische Fußballübung zum Trainieren von Schnelligkeit und Teamwork für Kinder von 6-12 Jahren.",
+    "grafik_alt_text": "Zwei Jungen laufen im Fußballstadion zur Auswechselbank, um schnell ausgewechselt zu werden.",
+    "grafik_description": "Die Grafik zeigt zwei Fußballspieler, die auf dem Spielfeld zur Auswechselbank laufen, um im Rahmen der Übung schnell ausgewechselt zu werden. Das Training fördert die Schnelligkeit und das Teamwork der Kinder.",
+    "grafik_title": "Fußballtraining: Kinder beim Auswechseln",
+    "grafik_caption": "Kinder-Fußballtraining: Schnell ausgewechselt werden, um Bonuspunkte zu holen.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler benötige ich für diese Übung?",
+        "antwort": "Die Übung ist für 6 gegen 6 Spieler ausgelegt, lässt sich aber auch auf 5 gegen 5 oder 7 gegen 7 anpassen."
+      },
+      {
+        "frage": "Wie lange dauert die Übung?",
+        "antwort": "Die Dauer kann flexibel an das Training angepasst werden, z.B. 10-15 Minuten."
+      },
+      {
+        "frage": "Für welche Altersgruppen ist die Übung geeignet?",
+        "antwort": "Die Übung eignet sich gut für Kinder von 6-12 Jahren (G- bis D-Jugend)."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [],
+    "schwester_id": null,
+    "schwester_titel": null
   }
 ]
