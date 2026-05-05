@@ -120,7 +120,7 @@
       font-size: 15px; font-weight: 600; cursor: pointer; transition: all 0.12s;
     }
     .skill-pill.active { background: #1E6BFF; color: #fff; border-color: #1E6BFF; }
-    .skill-pill:disabled { opacity: 0.4; cursor: not-allowed; }
+    .skill-pill.capped { opacity: 0.4; cursor: not-allowed; }
 
     .skill-done-row {
       display: flex; align-items: center; gap: 10px;
@@ -395,7 +395,7 @@
       isSurprise = true;
       selectedSkills.clear();
       document.getElementById('surprise-btn').classList.add('active');
-      document.querySelectorAll('.skill-pill').forEach(p => { p.classList.remove('active'); p.disabled = false; });
+      document.querySelectorAll('.skill-pill').forEach(p => { p.classList.remove('active', 'capped'); });
       document.getElementById('skill-label').textContent = 'Überrasch mich';
       document.getElementById('skill-btn').classList.add('has-value');
       document.getElementById('skill-status').textContent = 'Überrasch mich';
@@ -417,7 +417,7 @@
         const on = selectedSkills.has(s);
         const capped = !on && selectedSkills.size >= 2;
         p.classList.toggle('active', on);
-        p.disabled = capped;
+        p.classList.toggle('capped', capped);
       });
       const label = selectedSkills.size === 0 ? 'Auswählen…' : Array.from(selectedSkills).join(' · ');
       document.getElementById('skill-label').textContent = label;
