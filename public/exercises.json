@@ -3259,5 +3259,64 @@
     "schwester_ids": [],
     "schwester_id": null,
     "schwester_titel": null
+  },
+  {
+    "id": 60,
+    "titel": "PRÄZISER PASS DURCH HÜTCHENTORE",
+    "quell_trainingseinheit": "Hohe Pässe und Fernschüsse gekonnt einsetzen",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/11/image.jpg",
+    "grafik_dateiname": "uebung-060-praeziser-pass-durch-huetchentore.jpg",
+    "trainingsphase": "Aufwärmen",
+    "kurzbeschreibung": "Spieler passen sich präzise durch zwei Hütchentore zu.",
+    "aufbau": "Starthütchen im Abstand von 20m aufbauen. Zentral jeweils zwei Hütchentore platzieren. Vier Gruppen einteilen.",
+    "durchfuehrung": "Spieler passt durch die Hütchentore zum Mitspieler und stellt sich wieder hinten an. Verfehlt er die Hütchentore oder berührt er ein Hütchen, müssen alle Kinder seiner Gruppe (beide Seiten) zwei Liegestütze machen, bevor es weitergeht. Welches Team zuerst wieder in seiner Ausgangsposition steht, gewinnt.",
+    "varianten": "Nur mit links oder rechts passen. Nur zwei Ballkontakte oder sogar nur einen Ballkontakt (Direktpass). HOHER PASS ÜBER HÜTCHENTORE HOHER PASS ÜBER HÜTCHENTORE Spieler passen sich mit einem hohen Pass über Hütchen zu.",
+    "quell_url": "https://coachunited.de/hohe-passe-und-fernschusse-gekonnt-einsetzen/",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle"
+    ],
+    "coaching_fokus": "• Präzise, konzentrierte Pässe; • Richtige Haltung bei den Liegestützen",
+    "leichter_machen": "• Hütchenabstand vergrößern",
+    "schwerer_machen": "• Nur ein Ballkontakt erlaubt (Direktpass); • Nur mit rechts oder links passen",
+    "status": "veroeffentlicht",
+    "alt_titel": "Zielgenaues Pärchenspiel durch Tore",
+    "seo_keyword": "Fußballübung Passspiel Kinder",
+    "url_slug": "praezisor-pass-durch-huetchentore",
+    "seo_meta_description": "Zwei Kinder passen sich den Ball durch Tore aus Hütchen zu",
+    "grafik_alt_text": "Präziser Pass durch Hütchentore - Fußballübung für Kinder",
+    "grafik_description": "Die Kinder stehen in zwei Gruppen und passen sich den Ball abwechselnd durch die aufgestellten Tore aus Hütchen. Durch diese zielgenauen Pässe trainieren sie ihre Passgenauigkeit und Raumaufteilung.",
+    "grafik_title": "Übung zum präzisen Zuspiel durch Tore",
+    "grafik_caption": "Die Kinder stehen in zwei Gruppen und passen sich den Ball abwechselnd durch die aufgestellten Tore aus Hütchen. Durch diese zielgenauen Pässe trainieren sie ihre Passgenauigkeit und Raumaufteilung.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler braucht man für die Übung?",
+        "antwort": "Die Übung ist für 12-16 Spieler geeignet. Die Kinder werden in 4 Gruppen eingeteilt. Bei größeren Gruppen einfach ein weiteres Aktionsfeld aufbauen."
+      },
+      {
+        "frage": "Wie lange dauert die Übung?",
+        "antwort": "Die Übung kann in 10-15 Minuten durchgeführt werden. "
+      },
+      {
+        "frage": "Kann man die Übung an verschiedene Altersgruppen anpassen?",
+        "antwort": "Ja, siehe \"Übung schwerer machen\" oder \"Übung leichter machen\"."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [
+      61
+    ],
+    "schwester_id": 61,
+    "schwester_titel": "HOHER PASS ÜBER HÜTCHENTORE"
   }
 ]
