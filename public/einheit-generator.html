@@ -104,7 +104,7 @@
       margin-bottom: 8px; padding-right: 30px;
     }
     .ex-card-desc {
-      font-size: 15px; color: #3B4565; line-height: 1.6;
+      font-size: 16px; color: #3B4565; line-height: 1.65;
     }
     .ex-chevron {
       position: absolute; top: 20px; right: 16px;
@@ -142,7 +142,7 @@
       background: #1E6BFF; flex-shrink: 0;
     }
     .ex-section-title { font-size: 16px; font-weight: 700; color: #0E1430; letter-spacing: -0.01em; }
-    .ex-section-text { font-size: 15px; color: #3B4565; line-height: 1.7; white-space: pre-line; }
+    .ex-section-text { font-size: 16px; color: #3B4565; line-height: 1.75; white-space: pre-line; }
 
     .ex-detail-link {
       display: inline-flex; align-items: center; gap: 6px;
@@ -388,12 +388,12 @@
 
       const skillBadge = skill
         ? `<span class="session-badge badge-skill">Fokus: ${skill}</span>` : '';
-      document.getElementById('session-meta').innerHTML = `
-        <h1 class="session-title">Einheit ${jugend}</h1>
-        <div class="session-badges">
-          <span class="session-badge badge-jugend">${jugend}</span>
-          ${skillBadge}
-        </div>`;
+      const badges = [
+        `<span class="session-badge badge-jugend">${jugend}</span>`,
+        skillBadge,
+      ].filter(Boolean).join('');
+      document.getElementById('session-meta').innerHTML = badges
+        ? `<div class="session-badges">${badges}</div>` : '';
 
       document.getElementById('session-list').innerHTML =
         session.exercises.map((ex, i) => renderAccordionItem(ex, i)).join('');

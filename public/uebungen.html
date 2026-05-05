@@ -255,14 +255,15 @@
 
     .card-grid {
       display: grid;
-      grid-template-columns: 40% 1fr;
+      grid-template-columns: 52% 1fr;
       gap: 14px;
+      min-height: 80px;
     }
     .card-left {
-      padding-right: 8px;
+      padding-right: 10px;
       border-right: 1px solid #E6E8EF;
       display: flex;
-      align-items: center;
+      align-items: flex-start;
     }
     .card-title {
       font-family: 'Inter Tight', system-ui, sans-serif;
@@ -272,14 +273,14 @@
       line-height: 1.18;
       letter-spacing: -0.02em;
     }
-    .card-right { display: flex; align-items: center; }
+    .card-right { display: flex; align-items: flex-start; }
     .card-desc {
       font-family: 'Inter Tight', system-ui, sans-serif;
       font-size: 13px;
       line-height: 1.5;
       color: #3B4565;
       display: -webkit-box;
-      -webkit-line-clamp: 4;
+      -webkit-line-clamp: 5;
       -webkit-box-orient: vertical;
       overflow: hidden;
     }
