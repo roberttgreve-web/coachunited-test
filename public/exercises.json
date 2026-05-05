@@ -3318,5 +3318,65 @@
     ],
     "schwester_id": 61,
     "schwester_titel": "HOHER PASS ÜBER HÜTCHENTORE"
+  },
+  {
+    "id": 61,
+    "titel": "HOHER PASS ÜBER HÜTCHENTORE",
+    "quell_trainingseinheit": "Hohe Pässe und Fernschüsse gekonnt einsetzen",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/11/image-1.jpg",
+    "grafik_dateiname": "uebung-061-hoher-pass-ueber-huetchentore.jpg",
+    "trainingsphase": "Aufwärmen",
+    "kurzbeschreibung": "Spieler passen sich mit einem hohen Pass über Hütchen zu.",
+    "aufbau": "Starthütchen im Abstand von 20m aufbauen. Zentral jeweils drei Hütchen nebeneinander in zwei Reihen aufbauen. ",
+    "durchfuehrung": "Spieler passt mit einem hohen Pass über die Hütchen zum Mitspieler und stellt sich wieder hinten an. Berührt er ein Hütchen, müssen alle Kinder seiner Gruppe (beide Seiten) zwei Liegestütze machen, bevor es weitergeht. Welches Team zuerst wieder in seiner Ausgangsposition steht, gewinnt.",
+    "varianten": "Je nach Spielstärke den Abstand zu den Hütchen vergrößern, verringern oder eine dritte/vierte Reihe Hütchen aufstellen. MIT GEZIELTEN FERNSCHÜSSEN GEWINNEN MIT GEZIELTEN FERNSCHÜSSEN GEWINNEN Zwei Teams spielen 4 gegen 4. Sie dürfen Tore aber nur per Fernschuss auf Minitore erzielen.",
+    "quell_url": "https://coachunited.de/hohe-passe-und-fernschusse-gekonnt-einsetzen/",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Koordination"
+    ],
+    "coaching_fokus": "• Länge der hohen Bälle richtig spielen; • Ballannahme; • Technik der Liegestützen",
+    "leichter_machen": "• Abstand zu den Hütchen verkürzen und aus dem Stand lupfen lassen; • Volley aus der Hand spielen",
+    "schwerer_machen": "• Den Abstand zwischen den Hütchen vergrößern; • Zwei weitere Reihen Hütchen aufbauen, um die notwendige Distanz zu erhöhen",
+    "status": "veroeffentlicht",
+    "schwester_ids": [
+      60
+    ],
+    "schwester_id": 60,
+    "schwester_titel": "PRÄZISER PASS DURCH HÜTCHENTORE",
+    "alt_titel": "ZIELGENAU UND PRÄZISE ÜBER DIE HÜTCHEN PASSEN",
+    "seo_keyword": "Fußballübung Hoher Pass Kinder",
+    "url_slug": "fussballubung-hoher-pass-kinder",
+    "seo_meta_description": "Verbessere das präzise Passen über Hütchen mit dieser Fußballübung für Kinder von 8-12 Jahren. Steigere die Genauigkeit und Kontrolle deiner Spieler.",
+    "grafik_alt_text": "Zwei Kinder passen sich mit einem hohen Ball über Hütchen zu",
+    "grafik_description": "Die Kinder stehen in zwei Reihen und passen sich einen hohen Ball über mehrere Hütchen hinweg zu. Dadurch trainieren sie das präzise Pässen über längere Distanzen.",
+    "grafik_title": "Fußballübung: Hoher Pass über Hütchentore",
+    "grafik_caption": "Kinder verbessern mit dieser Übung ihre Passfähigkeiten über größere Entfernungen.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler werden für diese Übung benötigt?",
+        "antwort": "Die Übung kann mit 8-16 Spielern durchgeführt werden, aufgeteilt in vier Teams."
+      },
+      {
+        "frage": "Wie lange dauert eine Durchführung der Übung?",
+        "antwort": "Je nach Alter und Spielstärke der Kinder empfiehlt sich eine Dauer von 10-15 Minuten pro Durchgang."
+      },
+      {
+        "frage": "Kann diese Übung für jüngere Altersklassen angepasst werden?",
+        "antwort": "Ja, für jüngere Spieler kann der Abstand zwischen den Hütchen verringert und die Höhe der Hütchen reduziert werden."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": ""
   }
 ]
