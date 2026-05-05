@@ -439,9 +439,11 @@
       closeSkills();
     }
 
-    document.getElementById('skill-picker').addEventListener('click', e => e.stopPropagation());
     document.addEventListener('click', e => {
-      if (!e.target.closest('#field-jugend') && !e.target.closest('#field-skills')) closeAll();
+      if (!e.target.closest('#field-jugend')) {
+        document.getElementById('jugend-btn').classList.remove('open');
+        document.getElementById('jugend-dropdown').classList.remove('open');
+      }
     });
 
     function goToGenerator() {
