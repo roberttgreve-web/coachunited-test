@@ -3139,5 +3139,66 @@
     ],
     "schwester_id": 58,
     "schwester_titel": "DEN FRECHDACHS EINFANGEN"
+  },
+  {
+    "id": 58,
+    "titel": "DEN FRECHDACHS EINFANGEN",
+    "quell_trainingseinheit": "Erst Spaß im Warmup – dann schießen, schießen, schießen",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/11/image-5.jpg",
+    "grafik_dateiname": "uebung-058-den-frechdachs-einfangen.jpg",
+    "trainingsphase": "Aufwärmen",
+    "kurzbeschreibung": "Ein Spieler läuft mit Ball ums Feld und tippt einen anderen Spieler an, der ihn daraufhin im Wettrennen einholen muss.",
+    "aufbau": "Ein 15mX15m großes Feld markieren. Alle Kinder haben einen Ball. Ein Spieler (Jäger) ohne Ball an der Grundlinie, die anderen Spieler mit Ball an der gegenüberliegenden Grundlinie.",
+    "durchfuehrung": "Das Kinderspiel “Plumpsack geht rum“ in der Fussballversion: Alle Spieler stehen mit Ball um das Feld mit Blick aufs Feld. Ein Spieler dribbelt in ihrem Rücken hinter ihnen und tippt einen Spieler an. Danach beginnt ein Wettrennen einmal um das Feld (mit Ball am Fuß). Wer zuerst wieder am Ort, wo getippt wurde, angekommen ist, hat gewonnen. Der andere sucht sich den nächsten zum Antippen.",
+    "varianten": "a) Trainer sagt Dribbelformen an (nur mit links/rechts, Sohle ziehen etc.), b) Zwei Frechdachse gleichzeitig. PARALLELER TORSCHUSS PARALLELER TORSCHUSS Zwei Spieler dribbeln parallel in ihr Schussfeld und schließen auf ein Tor ihrer Wahl ab.",
+    "quell_url": "https://coachunited.de/erst-spas-im-warmup-dann-schiesen-schiesen-schiesen/",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend"
+    ],
+    "skills": [
+      "Ballkontrolle",
+      "Dribbeln",
+      "Schnelligkeit",
+      "Raumverhalten"
+    ],
+    "coaching_fokus": "• Ball nah am Fuß halten",
+    "leichter_machen": "• Spielfeld verkleinern",
+    "schwerer_machen": "",
+    "status": "veroeffentlicht",
+    "schwester_ids": [
+      57
+    ],
+    "schwester_id": 57,
+    "schwester_titel": "ENTKOMME DEM BALLJÄGER",
+    "alt_titel": "Dem Frechdachs auf den Fersen",
+    "seo_keyword": "Fußballübung Dribbeln Kinder",
+    "url_slug": "fussballubung-dribbeln-kinder",
+    "seo_meta_description": "Eine dynamische Fußballübung für Kinder von 6-12 Jahren, die Dribbeln, Ballkontrolle und Schnelligkeit fördert. Ideal für den Trainingseinsatz.",
+    "grafik_alt_text": "Kinder in einem Fußballspiel, bei dem ein Spieler mit Ball von einem anderen verfolgt wird.",
+    "grafik_description": "Die Abbildung zeigt eine Szene aus dem Fußballspiel 'Den Frechdachs einfangen'. Ein Spieler mit Ball läuft vor einem Mitspieler davon, der ihn zu fangen versucht.",
+    "grafik_title": "Fußballspiel 'Den Frechdachs einfangen' für Kinder",
+    "grafik_caption": "Kinder spielen 'Den Frechdachs einfangen' - eine dynamische Fußballübung, die Dribbeln und Schnelligkeit fördert.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler werden für diese Übung benötigt?",
+        "antwort": "Die Übung kann mit 8-12 Spielern durchgeführt werden. Die Gruppengröße kann je nach Platz und Alter angepasst werden."
+      },
+      {
+        "frage": "Wie lang soll die Übung dauern?",
+        "antwort": "Die Übungsdauer liegt idealerweise zwischen 10-15 Minuten. Passen Sie die Zeit je nach Konzentration und Motivation der Kinder an."
+      },
+      {
+        "frage": "Für welche Altersgruppen eignet sich diese Übung?",
+        "antwort": "Die Übung ist für Kinder im Alter von 6-12 Jahren (G- bis E-Jugend) gut geeignet. Sie fördert grundlegende Fertigkeiten wie Dribbeln und Schnelligkeit."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": ""
   }
 ]
