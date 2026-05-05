@@ -12,7 +12,7 @@
       background: #1E6BFF;
       color: #fff;
       border: none;
-      border-radius: 10px 0 0 10px;
+      border-radius: 0 10px 10px 0;
       padding: 14px 10px;
       cursor: pointer;
       writing-mode: vertical-rl;

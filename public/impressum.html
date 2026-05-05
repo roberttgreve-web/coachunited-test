@@ -26,12 +26,13 @@
     .burger-btn { background: none; border: none; cursor: pointer; padding: 6px; display: flex; flex-direction: column; gap: 5px; }
     .burger-btn span { display: block; width: 22px; height: 2px; background: #0E1430; border-radius: 2px; }
 
-    .content { flex: 1; overflow-y: auto; padding: 28px 22px 100px; }
-
-    h1 {
-      font-size: 24px; font-weight: 800; color: #0a1628;
-      margin-bottom: 28px; line-height: 1.2;
+    .page-hero { background: #0E1430; padding: 22px 22px 26px; }
+    .page-hero h1 {
+      font-size: 24px; font-weight: 800; color: #fff;
+      letter-spacing: -0.02em; line-height: 1.2; margin: 0;
     }
+
+    .content { flex: 1; overflow-y: auto; padding: 24px 22px 100px; }
 
     h2 {
       font-family: 'JetBrains Mono', ui-monospace, monospace;
@@ -96,9 +97,11 @@
       </button>
     </header>
 
-    <div class="content">
+    <div class="page-hero">
       <h1>Impressum</h1>
+    </div>
 
+    <div class="content">
       <h2>Angaben gemäß § 5 TMG</h2>
       <p>Robert Greve<br>Czeminskistraße 4<br>10829 Berlin<br>Deutschland</p>
 
