@@ -3200,5 +3200,64 @@
     "original_coaching_fokus": "",
     "ist_gecrawlt": false,
     "quell_kategorie": ""
+  },
+  {
+    "id": 59,
+    "titel": "5 BÄLLE-SPIEL",
+    "quell_trainingseinheit": "Erst Spaß im Warmup – dann schießen, schießen, schießen",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/11/image-2.png",
+    "grafik_dateiname": "uebung-059-5-baelle-spiel.png",
+    "trainingsphase": "Spielformat",
+    "kurzbeschreibung": "Zwei Teams spielen auf zwei Tore bis 5 Bälle verspielt wurden. Danach wechseln die Teams.",
+    "aufbau": "Zwei Jugendtore aufbauen. Torhüter zuordnen. Feld mit 20mX25m markieren. Drei Teams einteilen. 5 Bälle bereitlegen.",
+    "durchfuehrung": "Trainer bestimmt ein Angreiferteam, ein Verteidigerteam und ein Auswechselteam. Erster Ball wird eingespielt. Angreiferteam versucht auf beide Tore ein Tor zu erzielen. Sobald das Verteidigerteam den Ball erobert hat oder der Ball verspielt wurde (zB Seitenaus) wird der nächste Ball vom Trainer eingespielt. Sind 5 Bälle verspielt, wechseln die Rollen der Teams und es geht neu los.",
+    "varianten": "a) Verteidigerteam kann auch Punkte erzielen, indem sie den Ball über die gegenüberliegende Grundlinie dribbeln. FREIES SPIEL – LOS GEHT’S! FREIES SPIEL – LOS GEHT’S! In © 2025 COACH UNITED",
+    "quell_url": "https://coachunited.de/erst-spas-im-warmup-dann-schiesen-schiesen-schiesen/",
+    "jugend": [
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Dribbeln",
+      "Torschuss"
+    ],
+    "coaching_fokus": "• Passt den Ball gezielt zu euren Mitspielern in Ballbesitz; • Schaut immer, wo eure Mitspieler sind, um schnell zu spielen; • Sprecht laut mit euren Teamkameraden, um euch abzusichern",
+    "leichter_machen": "• Größeres Spielfeld, damit mehr Platz zum Dribbling; • Nur 1 Ball für beide Teams, damit der Druck reduziert wird",
+    "schwerer_machen": "• Kleineres Spielfeld, um mehr Zweikämpfe zu erzwingen; • Teams müssen den Ball 3 Mal passen, bevor sie aufs Tor schießen dürfen",
+    "status": "veroeffentlicht",
+    "alt_titel": "Tor-Zähler-Spiel",
+    "seo_keyword": "Fußballübung Torspiel Kinder",
+    "url_slug": "fussballubung-torspiel-kinder",
+    "seo_meta_description": "5-Bälle-Spiel - ein dynamisches Fußballtraining für Kinder von 8-12 Jahren, das Passen, Dribbeln und Torschuss fördert.",
+    "grafik_alt_text": "Zwei Fußballteams spielen gegeneinander auf zwei Tore, 5 Bälle werden gleichzeitig verwendet.",
+    "grafik_description": "Das 5-Bälle-Spiel ist eine intensive Fußballübung für Kinder, bei der zwei Teams auf zwei Tore spielen. Insgesamt 5 Bälle werden gleichzeitig eingesetzt, was hohe Konzentration und Übersicht erfordert.",
+    "grafik_title": "Fußballübung 5-Bälle-Spiel für Kinder",
+    "grafik_caption": "Dynamisches Fußballtraining mit 5 Bällen fördert die Spielübersicht und Ballkontrolle bei Kindern.",
+    "faq": [
+      {
+        "frage": "Wie viele Kinder können an dieser Übung teilnehmen?",
+        "antwort": "Ideal sind 12-16 Kinder, die in 3 Teams eingeteilt werden. So haben alle genug Spielanteile."
+      },
+      {
+        "frage": "Wie lange sollte das 5-Bälle-Spiel dauern?",
+        "antwort": "Die Übung eignet sich gut für ein 10-15 minütiges Trainingsspiel. So bleibt die Intensität hoch."
+      },
+      {
+        "frage": "Kann man die Übung an jüngere Altersklassen anpassen?",
+        "antwort": "Ja, für G- und F-Jugend Kinder kann man das Spielfeld vergrößern und nur 3 Bälle verwenden, um den Schwierigkeitsgrad zu reduzieren."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [],
+    "schwester_id": null,
+    "schwester_titel": null
   }
 ]
