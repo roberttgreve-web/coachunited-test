@@ -6,13 +6,13 @@
   <title>Übung – COACH UNITED</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Barlow:wght@700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
     body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-      background: #f0f2f5;
+      font-family: 'Inter Tight', system-ui, sans-serif;
+      background: #f0eee9;
       display: flex;
       justify-content: center;
       align-items: flex-start;
@@ -22,315 +22,420 @@
     .container {
       width: 375px;
       min-height: 100vh;
-      background: white;
+      background: #fff;
       border-radius: 28px;
       overflow: hidden;
-      box-shadow: 0 24px 64px rgba(0,0,0,0.12);
+      box-shadow: 0 24px 64px rgba(0,0,0,0.14);
       display: flex;
       flex-direction: column;
     }
 
     /* ── Header ── */
     .header {
-      background: white;
-      padding: 12px 16px;
+      background: #fff;
+      padding: 14px 18px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      border-bottom: 1px solid #f0f2f5;
+      border-bottom: 1px solid #E6E8EF;
       position: sticky;
       top: 0;
       z-index: 20;
     }
-
-    .back-btn {
-      display: flex;
-      align-items: center;
-      gap: 5px;
-      background: none;
-      border: none;
-      cursor: pointer;
-      text-decoration: none;
-      color: #1B6BF4;
-      font-family: 'Inter', sans-serif;
-      font-size: 14px;
-      font-weight: 500;
-      padding: 4px 0;
-    }
-    .back-btn svg { width: 18px; height: 18px; flex-shrink: 0; }
+    .logo-link { display: flex; align-items: center; text-decoration: none; }
+    .logo-link img { width: 34px; height: 34px; object-fit: contain; }
 
     .burger-btn {
       background: none; border: none; cursor: pointer;
-      padding: 4px; display: flex; flex-direction: column; gap: 5px;
+      padding: 4px; display: flex; flex-direction: column; gap: 4.5px;
     }
     .burger-btn span {
       display: block; width: 22px; height: 2px;
-      background: #333; border-radius: 2px;
+      background: #0E1430; border-radius: 2px;
     }
 
-    /* ── Graphic ── */
-    .graphics-container {
-      width: 100%;
+    /* ── Dark Back Bar ── */
+    .back-bar {
+      background: #0E1430;
+      padding: 12px 18px;
       display: flex;
       align-items: center;
-      justify-content: center;
-      padding: 12px;
-      border-bottom: 1px solid #f0f2f5;
+      gap: 8px;
+      flex-shrink: 0;
     }
-    .graphics-container img {
-      width: 100%;
-      height: auto;
-      object-fit: contain;
-      display: block;
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: transparent;
+      border: none;
+      color: rgba(255,255,255,0.85);
+      font-family: 'Inter Tight', system-ui, sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      padding: 0;
+      text-decoration: none;
+    }
+    .share-btn {
+      margin-left: auto;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.16);
+      border-radius: 8px;
+      color: #fff;
+      cursor: pointer;
+      padding: 0;
     }
 
-    /* ── Content ── */
+    /* ── Grafik ── */
+    .grafik-panel {
+      background: #F4F6FA;
+      padding: 24px 18px;
+      border-bottom: 1px solid #E6E8EF;
+      display: none;
+    }
+    .grafik-panel img {
+      width: 100%;
+      display: block;
+      max-height: 240px;
+      object-fit: contain;
+    }
+
+    /* ── Scrollable Content ── */
     .content {
       flex: 1;
       overflow-y: auto;
-      padding: 24px 20px 100px;
+      padding-bottom: 90px;
     }
 
-    h1 {
-      font-family: 'Barlow', 'Inter', sans-serif;
-      font-size: 26px;
-      font-weight: 800;
-      color: #0a1628;
+    /* ── Title Block ── */
+    .title-block {
+      padding: 22px 18px 18px;
+    }
+    .phase-row {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-bottom: 14px;
+      flex-wrap: wrap;
+    }
+    .phase-badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 4px 9px;
+      color: #fff;
+      border-radius: 4px;
+      font-family: 'Inter Tight', system-ui, sans-serif;
+      font-size: 9.5px;
+      font-weight: 700;
+      letter-spacing: 0.07em;
       text-transform: uppercase;
-      letter-spacing: 0.3px;
-      line-height: 1.15;
+    }
+    .jahrgang-badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 4px 9px;
+      background: #EEF1F6;
+      color: #0E1430;
+      border-radius: 4px;
+      font-family: 'JetBrains Mono', ui-monospace, monospace;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+    }
+
+    .ex-title {
+      font-family: 'Inter Tight', system-ui, sans-serif;
+      font-size: 28px;
+      font-weight: 700;
+      color: #0E1430;
+      line-height: 1.07;
+      letter-spacing: -0.025em;
       margin-bottom: 14px;
     }
 
-    /* ── Tags ── */
-    .tags {
-      display: flex;
-      align-items: center;
-      gap: 5px;
-      flex-wrap: wrap;
-      margin-bottom: 20px;
-    }
-    .tag {
-      padding: 3px 9px;
-      border-radius: 8px;
-      font-size: 12px;
-      font-weight: 500;
-    }
-    .tag-jugend { background: #ddeeff; color: #1B6BF4; }
-    .tag-skill  { background: #dcf5e7; color: #1a8044; }
-    .tag-phase  { background: #fff0df; color: #c45e00; }
-    .tag-divider { color: #d0d5dd; font-size: 12px; }
-
-    /* ── Description ── */
-    .description {
+    .ex-desc {
+      font-family: 'Inter Tight', system-ui, sans-serif;
       font-size: 16px;
-      line-height: 1.75;
-      color: #4a5568;
-      margin-bottom: 28px;
+      line-height: 1.6;
+      color: #3B4565;
+      margin-bottom: 16px;
+    }
+
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+    .skill-tag {
+      display: inline-flex;
+      align-items: center;
+      padding: 4px 9px;
+      background: #FF4D1F;
+      color: #fff;
+      border-radius: 4px;
+      font-family: 'Inter Tight', system-ui, sans-serif;
+      font-size: 10px;
+      font-weight: 600;
     }
 
     /* ── Accordions ── */
-    details {
-      border: 1px solid #edf0f5;
-      border-radius: 14px;
-      margin-bottom: 10px;
-      overflow: hidden;
-      transition: border-color 0.15s;
+    .accordion-group { padding: 0 18px; }
+
+    .accordion {
+      border-top: 1px solid #E6E8EF;
     }
-    details[open] {
-      border-color: #1B6BF4;
-      border-left-width: 3px;
-    }
-    summary {
-      padding: 15px 18px;
-      font-weight: 600;
-      font-size: 15px;
-      cursor: pointer;
-      user-select: none;
+    .accordion:last-child { border-bottom: 1px solid #E6E8EF; }
+
+    .accordion-btn {
+      width: 100%;
+      padding: 16px 0;
       display: flex;
       align-items: center;
       gap: 10px;
-      color: #0a1628;
-      list-style: none;
-      background: white;
-      transition: background 0.15s;
+      background: transparent;
+      border: none;
+      text-align: left;
+      cursor: pointer;
+      font-family: 'Inter Tight', system-ui, sans-serif;
     }
-    summary:hover { background: #fafbff; }
-    summary::-webkit-details-marker { display: none; }
-    summary .dot {
+    .acc-dot {
       width: 8px; height: 8px;
-      border-radius: 50%;
+      border-radius: 4px;
       flex-shrink: 0;
     }
-    summary .title { flex: 1; }
-    summary .arrow {
-      width: 18px; height: 18px;
-      color: #c0c7d3;
-      transition: transform 0.2s;
-      flex-shrink: 0;
-    }
-    details[open] summary .arrow { transform: rotate(90deg); color: #1B6BF4; }
-    details[open] summary { border-bottom: 1px solid #edf0f5; background: #f7f9ff; }
-
-    .accordion-content {
-      padding: 16px 18px 18px;
-      background: white;
-    }
-    .accordion-content p {
-      font-size: 15px;
-      line-height: 1.8;
-      color: #4a5568;
-    }
-    .accordion-content ul {
-      padding-left: 18px;
-      margin: 0;
-    }
-    .accordion-content li {
-      font-size: 15px;
-      line-height: 1.75;
-      color: #4a5568;
-      margin-bottom: 6px;
-    }
-
-    /* ── Sisters box ── */
-    .sisters-box {
-      background: #f0f5ff;
-      border-radius: 14px;
-      padding: 18px;
-      margin-bottom: 12px;
-    }
-    .sisters-box-title {
-      font-size: 11px;
+    .acc-title {
+      flex: 1;
+      font-size: 16px;
       font-weight: 700;
-      color: #1B6BF4;
+      color: #0E1430;
+      letter-spacing: -0.01em;
+    }
+    .acc-icon {
+      flex-shrink: 0;
+      transition: transform 0.2s;
+    }
+    .accordion.open .acc-icon { transform: rotate(45deg); }
+
+    .accordion-body {
+      display: none;
+      padding-bottom: 18px;
+      font-family: 'Inter Tight', system-ui, sans-serif;
+      font-size: 15.5px;
+      line-height: 1.6;
+      color: #3B4565;
+    }
+    .accordion.open .accordion-body { display: block; }
+    .accordion-body ul { padding-left: 18px; }
+    .accordion-body li { margin-bottom: 6px; }
+
+    /* ── Sektion-Kacheln (Coaching, Leichter, Schwieriger, FAQ) ── */
+    .tiles-section { padding: 18px 18px 0; }
+    .tiles-label {
+      font-family: 'JetBrains Mono', ui-monospace, monospace;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
       text-transform: uppercase;
-      letter-spacing: 0.8px;
-      margin-bottom: 12px;
+      color: #6B7390;
+      margin-bottom: 10px;
+    }
+    .tiles-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+    .tile-btn {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+      padding: 14px 14px 13px;
+      background: #fff;
+      border: 1px solid #E6E8EF;
+      border-radius: 10px;
+      cursor: pointer;
+      text-align: left;
+      font-family: 'Inter Tight', system-ui, sans-serif;
+      transition: box-shadow 0.15s;
+    }
+    .tile-btn:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.07); }
+    .tile-icon {
+      width: 30px; height: 30px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .tile-name {
+      font-size: 13px;
+      font-weight: 700;
+      color: #0E1430;
+      letter-spacing: -0.01em;
+    }
+    .tile-hint {
+      font-family: 'JetBrains Mono', ui-monospace, monospace;
+      font-size: 9.5px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #6B7390;
+      margin-top: -2px;
+    }
+
+    /* ── Bottom Sheet ── */
+    .sheet-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(14,20,48,0.45);
+      z-index: 50;
+    }
+    .sheet-overlay.open { display: block; }
+    .sheet {
+      position: absolute;
+      left: 0; right: 0; bottom: 0;
+      background: #fff;
+      border-top-left-radius: 18px;
+      border-top-right-radius: 18px;
+      padding: 12px 18px 28px;
+      box-shadow: 0 -8px 30px rgba(0,0,0,0.18);
+    }
+    .sheet-handle {
+      width: 36px; height: 4px;
+      border-radius: 2px;
+      background: #D8D5CD;
+      margin: 0 auto 14px;
+    }
+    .sheet-title-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+    .sheet-dot { width: 8px; height: 8px; border-radius: 50%; }
+    .sheet-title {
+      font-family: 'Inter Tight', system-ui, sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      color: #0E1430;
+    }
+    .sheet-body {
+      font-family: 'Inter Tight', system-ui, sans-serif;
+      font-size: 15.5px;
+      line-height: 1.6;
+      color: #3B4565;
+    }
+    .sheet-body ul { padding-left: 18px; }
+    .sheet-body li { margin-bottom: 6px; }
+
+    /* ── Sisters & Related ── */
+    .section-block { padding: 24px 18px 0; }
+    .section-label {
+      font-family: 'JetBrains Mono', ui-monospace, monospace;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #6B7390;
+      margin-bottom: 10px;
     }
     .sister-link {
       display: flex;
       align-items: center;
-      gap: 10px;
-      padding: 12px 14px;
-      background: white;
-      border: 1px solid #ddeeff;
-      border-radius: 10px;
+      gap: 12px;
+      padding: 14px 14px;
+      border: 1px solid #E6E8EF;
+      border-radius: 12px;
       text-decoration: none;
-      color: #0a1628;
-      font-size: 14px;
-      font-weight: 500;
       margin-bottom: 8px;
-      transition: box-shadow 0.15s;
     }
     .sister-link:last-child { margin-bottom: 0; }
-    .sister-link:hover { box-shadow: 0 2px 8px rgba(27,107,244,0.12); }
-    .sister-link::before {
-      content: '';
-      width: 4px;
-      height: 32px;
-      background: #1B6BF4;
+    .sister-link:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.07); }
+    .sister-accent {
+      width: 3px; height: 28px;
+      background: #1E6BFF;
       border-radius: 2px;
       flex-shrink: 0;
     }
-
-    /* ── Related box ── */
-    .related-box {
-      background: #f0f5ff;
-      border-radius: 14px;
-      padding: 18px;
-      margin-bottom: 12px;
-    }
-    .related-box-title {
-      font-size: 11px;
+    .sister-name {
+      flex: 1;
+      font-family: 'Inter Tight', system-ui, sans-serif;
+      font-size: 14px;
       font-weight: 700;
-      color: #1B6BF4;
-      text-transform: uppercase;
-      letter-spacing: 0.8px;
-      margin-bottom: 12px;
+      color: #0E1430;
+      letter-spacing: -0.01em;
     }
+    .sister-chevron { color: #6B7390; }
+
     .related-link {
-      display: block;
-      padding: 12px 14px;
-      background: white;
-      border: 1px solid #ddeeff;
-      border-radius: 10px;
-      text-decoration: none;
-      color: #0a1628;
-      font-size: 14px;
-      font-weight: 500;
-      transition: box-shadow 0.15s;
-    }
-    .related-link:hover { box-shadow: 0 2px 8px rgba(27,107,244,0.12); }
-
-    /* ── Feedback ── */
-    .feedback-box {
-      background: #fafbff;
-      border-radius: 14px;
-      padding: 20px;
-      border: 1px solid #edf0f5;
-      margin-bottom: 12px;
-    }
-    .feedback-title {
-      font-size: 14px;
-      font-weight: 600;
-      color: #0a1628;
-      margin-bottom: 14px;
-    }
-    textarea {
-      width: 100%;
-      min-height: 96px;
-      padding: 12px 14px;
-      border: 1px solid #e4e8ef;
-      border-radius: 10px;
-      font-size: 15px;
-      font-family: 'Inter', sans-serif;
-      resize: vertical;
-      margin-bottom: 12px;
-      color: #0a1628;
-      background: white;
-      outline: none;
-      transition: border-color 0.15s;
-    }
-    textarea:focus { border-color: #1B6BF4; }
-    textarea::placeholder { color: #b0bac9; }
-
-    .btn-primary {
-      width: 100%;
-      padding: 14px;
-      background: #1B6BF4;
-      color: white;
-      border: none;
-      border-radius: 10px;
-      font-family: 'Inter', sans-serif;
-      font-size: 15px;
-      font-weight: 600;
-      cursor: pointer;
-      transition: background 0.15s;
-    }
-    .btn-primary:hover { background: #1458d4; }
-
-    .btn-secondary {
-      width: 100%;
-      padding: 14px;
-      background: white;
-      color: #1B6BF4;
-      border: 1.5px solid #1B6BF4;
-      border-radius: 10px;
-      font-family: 'Inter', sans-serif;
-      font-size: 15px;
-      font-weight: 600;
-      cursor: pointer;
       display: flex;
       align-items: center;
-      justify-content: center;
-      gap: 8px;
-      transition: background 0.15s;
+      gap: 12px;
+      padding: 14px 14px;
+      border: 1px solid #E6E8EF;
+      border-radius: 12px;
+      text-decoration: none;
     }
-    .btn-secondary:hover { background: #f0f5ff; }
+    .related-link:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.07); }
+    .related-name {
+      flex: 1;
+      font-family: 'Inter Tight', system-ui, sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      color: #0E1430;
+    }
 
-    #loading { padding: 60px 24px; text-align: center; color: #9aa3b0; font-size: 15px; }
-    #not-found { padding: 60px 24px; text-align: center; color: #9aa3b0; font-size: 15px; }
-    #not-found a { color: #1B6BF4; text-decoration: none; }
+    /* ── Feedback ── */
+    .feedback-block { padding: 24px 18px 0; }
+    .feedback-card {
+      background: #0E1430;
+      color: #fff;
+      border-radius: 14px;
+      padding: 18px 16px;
+    }
+    .feedback-title {
+      font-family: 'Inter Tight', system-ui, sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 10px;
+      letter-spacing: -0.01em;
+    }
+    .feedback-card textarea {
+      width: 100%;
+      min-height: 70px;
+      padding: 10px 12px;
+      background: rgba(255,255,255,0.10);
+      border: 1px solid rgba(255,255,255,0.22);
+      border-radius: 8px;
+      color: #fff;
+      font-family: 'Inter Tight', system-ui, sans-serif;
+      font-size: 14px;
+      line-height: 1.5;
+      resize: none;
+      outline: none;
+    }
+    .feedback-card textarea::placeholder { color: rgba(255,255,255,0.45); }
+    .feedback-card textarea:focus { border-color: rgba(255,255,255,0.45); }
+    .feedback-submit {
+      width: 100%;
+      margin-top: 10px;
+      padding: 12px;
+      background: #1E6BFF;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-family: 'Inter Tight', system-ui, sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+    }
 
     /* ── Bottom Nav ── */
     .bottom-nav {
@@ -338,24 +443,32 @@
       bottom: 0; left: 50%;
       transform: translateX(-50%);
       width: 375px;
-      background: white;
-      border-top: 1px solid #f0f2f5;
+      background: #fff;
+      border-top: 1px solid #E6E8EF;
       display: flex;
-      justify-content: space-around;
-      padding: 10px 0 14px;
+      padding: 10px 0 24px;
       z-index: 20;
-      box-shadow: 0 -2px 12px rgba(0,0,0,0.06);
+      box-shadow: 0 -2px 12px rgba(0,0,0,0.05);
     }
     .nav-item {
-      flex: 1; display: flex; flex-direction: column;
-      align-items: center; gap: 3px;
-      border: none; background: none; cursor: pointer;
-      padding: 4px; text-decoration: none;
-      color: #c0c7d3; transition: color 0.15s;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 3px;
+      border: none;
+      background: none;
+      cursor: pointer;
+      padding: 4px;
+      text-decoration: none;
+      color: #6B7390;
+      font-family: 'Inter Tight', system-ui, sans-serif;
+      font-size: 10.5px;
+      font-weight: 600;
+      letter-spacing: 0.01em;
     }
-    .nav-item.active { color: #1B6BF4; }
+    .nav-item.active { color: #1E6BFF; }
     .nav-icon { width: 22px; height: 22px; }
-    .nav-label { font-size: 10px; font-weight: 500; }
 
     /* ── Drawer ── */
     .drawer-overlay {
@@ -366,7 +479,7 @@
     .drawer {
       position: fixed; top: 0; right: -280px;
       width: 260px; height: 100vh;
-      background: white; z-index: 50;
+      background: #fff; z-index: 50;
       padding: 32px 24px;
       transition: right 0.25s ease;
       box-shadow: -8px 0 32px rgba(0,0,0,0.12);
@@ -375,17 +488,22 @@
     .drawer-close {
       position: absolute; top: 16px; right: 16px;
       background: none; border: none;
-      font-size: 22px; cursor: pointer; color: #555; padding: 4px;
+      font-size: 22px; cursor: pointer; color: #555;
     }
     .drawer-logo { width: 48px; margin-bottom: 28px; }
     .drawer-link {
       display: block; padding: 12px 0;
+      font-family: 'Inter Tight', system-ui, sans-serif;
       font-size: 15px; font-weight: 500;
-      color: #1a1a2e; text-decoration: none;
-      border-bottom: 1px solid #f0f2f5;
+      color: #0E1430; text-decoration: none;
+      border-bottom: 1px solid #E6E8EF;
     }
     .drawer-link:last-child { border-bottom: none; }
-    .drawer-link:hover { color: #1B6BF4; }
+    .drawer-link:hover { color: #1E6BFF; }
+
+    #loading { padding: 60px 24px; text-align: center; color: #6B7390; font-size: 15px; }
+    #not-found { display: none; padding: 60px 24px; text-align: center; color: #6B7390; font-size: 15px; }
+    #not-found a { color: #1E6BFF; text-decoration: none; }
   </style>
   <link rel="stylesheet" href="/desktop.css">
   <script src="/desktop-nav.js" defer></script>
@@ -393,148 +511,160 @@
 <body>
   <div class="container">
 
-    <!-- Header -->
     <header class="header">
-      <a id="back-btn" href="/uebungen" class="back-btn">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-          <polyline points="15 18 9 12 15 6"/>
-        </svg>
-        <span id="back-label">Übersicht</span>
+      <a href="/home" class="logo-link">
+        <img src="/logo.png" alt="Coach United">
       </a>
       <button class="burger-btn" onclick="openDrawer()">
         <span></span><span></span><span></span>
       </button>
     </header>
 
-    <!-- Loading / Not found -->
+    <!-- Zurück-Bar -->
+    <div class="back-bar">
+      <a id="back-btn" href="/uebungen" class="back-btn">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <path d="M9 2L4 7L9 12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span id="back-label">Übersicht</span>
+      </a>
+      <button class="share-btn" onclick="shareExercise()" aria-label="Übung weiterempfehlen">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <path d="M8 2v8M5 5l3-3 3 3M3 10v3a1 1 0 001 1h8a1 1 0 001-1v-3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </div>
+
     <div id="loading">Übung wird geladen…</div>
-    <div id="not-found" style="display:none;">
+    <div id="not-found">
       <p>Übung nicht gefunden.</p><br>
       <a href="/uebungen">← Zurück zur Übersicht</a>
     </div>
 
-    <!-- Exercise content -->
     <div id="exercise-content" style="display:none; flex:1; flex-direction:column;">
 
-      <div class="graphics-container" id="grafik-container" style="display:none;">
+      <!-- Grafik -->
+      <div class="grafik-panel" id="grafik-panel">
         <img id="grafik-img" src="" alt="">
       </div>
 
       <div class="content">
-        <h1 id="titel"></h1>
-        <div class="tags" id="tags"></div>
-        <p class="description" id="beschreibung"></p>
 
-        <details open>
-          <summary>
-            <span class="dot" style="background:#1B6BF4;"></span>
-            <span class="title">Aufbau</span>
-            <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
-          </summary>
-          <div class="accordion-content"><p id="aufbau"></p></div>
-        </details>
+        <!-- Title Block -->
+        <div class="title-block">
+          <div class="phase-row" id="phase-row"></div>
+          <h1 class="ex-title" id="titel"></h1>
+          <p class="ex-desc" id="beschreibung"></p>
+          <div class="skill-tags" id="skill-tags"></div>
+        </div>
 
-        <details open>
-          <summary>
-            <span class="dot" style="background:#1B6BF4;"></span>
-            <span class="title">Durchführung</span>
-            <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
-          </summary>
-          <div class="accordion-content"><p id="durchfuehrung"></p></div>
-        </details>
+        <!-- Aufbau + Durchführung — immer offen -->
+        <div class="accordion-group">
+          <div class="accordion open" id="acc-aufbau">
+            <button class="accordion-btn" onclick="toggleAcc('aufbau')">
+              <span class="acc-dot" style="background:#1E6BFF;"></span>
+              <span class="acc-title">Aufbau</span>
+              <svg class="acc-icon" width="14" height="14" viewBox="0 0 14 14">
+                <line x1="7" y1="2" x2="7" y2="12" stroke="#3B4565" stroke-width="1.5" stroke-linecap="round"/>
+                <line x1="2" y1="7" x2="12" y2="7" stroke="#3B4565" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </button>
+            <div class="accordion-body"><p id="aufbau"></p></div>
+          </div>
 
-        <details>
-          <summary>
-            <span class="dot" style="background:#f59e0b;"></span>
-            <span class="title">Coaching-Fokus</span>
-            <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
-          </summary>
-          <div class="accordion-content"><p id="coaching-fokus"></p></div>
-        </details>
+          <div class="accordion open" id="acc-durchfuehrung">
+            <button class="accordion-btn" onclick="toggleAcc('durchfuehrung')">
+              <span class="acc-dot" style="background:#1E6BFF;"></span>
+              <span class="acc-title">Durchführung</span>
+              <svg class="acc-icon" width="14" height="14" viewBox="0 0 14 14">
+                <line x1="7" y1="2" x2="7" y2="12" stroke="#3B4565" stroke-width="1.5" stroke-linecap="round"/>
+                <line x1="2" y1="7" x2="12" y2="7" stroke="#3B4565" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </button>
+            <div class="accordion-body"><p id="durchfuehrung"></p></div>
+          </div>
+        </div>
 
-        <details>
-          <summary>
-            <span class="dot" style="background:#22c55e;"></span>
-            <span class="title">Übung leichter machen</span>
-            <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
-          </summary>
-          <div class="accordion-content"><p id="leichter-machen"></p></div>
-        </details>
+        <!-- Sekundär-Kacheln -->
+        <div class="tiles-section" id="tiles-section">
+          <p class="tiles-label">Mehr zur Übung</p>
+          <div class="tiles-grid" id="tiles-grid"></div>
+        </div>
 
-        <details>
-          <summary>
-            <span class="dot" style="background:#ef4444;"></span>
-            <span class="title">Übung schwieriger machen</span>
-            <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
-          </summary>
-          <div class="accordion-content"><p id="schwerer-machen"></p></div>
-        </details>
+        <!-- Bottom Sheet -->
+        <div class="sheet-overlay" id="sheet-overlay" onclick="closeSheet()">
+          <div class="sheet" onclick="event.stopPropagation()">
+            <div class="sheet-handle"></div>
+            <div class="sheet-title-row">
+              <span class="sheet-dot" id="sheet-dot"></span>
+              <span class="sheet-title" id="sheet-title"></span>
+            </div>
+            <div class="sheet-body" id="sheet-body"></div>
+          </div>
+        </div>
 
-        <details id="faq-box" style="display:none;">
-          <summary>
-            <span class="dot" style="background:#8b5cf6;"></span>
-            <span class="title">FAQ – Häufige Fragen</span>
-            <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
-          </summary>
-          <div class="accordion-content"><ul id="faq-list"></ul></div>
-        </details>
-
-        <div id="sisters-box" class="sisters-box" style="display:none;">
-          <p class="sisters-box-title">Andere Übungen mit gleichem Aufbau</p>
+        <!-- Sisters -->
+        <div class="section-block" id="sisters-block" style="display:none;">
+          <p class="section-label">Andere Übungen mit gleichem Aufbau</p>
           <div id="sisters-list"></div>
         </div>
 
-        <div class="related-box" id="related-box" style="display:none;">
-          <p class="related-box-title">Zugehörige Trainingseinheit</p>
-          <a id="related-link" href="#" target="_blank" class="related-link"></a>
-        </div>
-
-        <div class="feedback-box">
-          <p class="feedback-title">Hilf uns, die Übung besser zu machen:</p>
-          <textarea id="feedbackText" placeholder="Dein Feedback an uns"></textarea>
-          <button class="btn-primary" onclick="submitFeedback()">Feedback absenden</button>
-        </div>
-
-        <div class="feedback-box">
-          <button class="btn-secondary" onclick="shareExercise()">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/>
+        <!-- Related -->
+        <div class="section-block" id="related-block" style="display:none;">
+          <p class="section-label">Zugehörige Trainingseinheit</p>
+          <a id="related-link" href="#" target="_blank" class="related-link">
+            <span class="sister-accent" style="background:#E89844;"></span>
+            <span class="related-name" id="related-name"></span>
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" class="sister-chevron">
+              <path d="M5 2L10 7L5 12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
-            Übung weiterempfehlen
-          </button>
+          </a>
         </div>
+
+        <!-- Feedback -->
+        <div class="feedback-block">
+          <div class="feedback-card">
+            <p class="feedback-title">Hilf uns, die Übung besser zu machen.</p>
+            <textarea id="feedbackText" placeholder="Dein Feedback an uns"></textarea>
+            <button class="feedback-submit" onclick="submitFeedback()">Feedback absenden</button>
+          </div>
+        </div>
+        <div style="height:24px;"></div>
+
       </div>
     </div>
 
     <!-- Bottom Nav -->
     <nav class="bottom-nav">
       <a href="/uebungen" class="nav-item active">
-        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/>
+        <svg class="nav-icon" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M11 4 L6 17 L16 17 Z"/><line x1="7.5" y1="11" x2="14.5" y2="11"/><line x1="4.5" y1="17" x2="17.5" y2="17"/>
         </svg>
-        <span class="nav-label">Übungen</span>
+        <span>Übungen</span>
       </a>
       <a href="/einheiten" class="nav-item">
-        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/>
+        <svg class="nav-icon" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="4" y="3" width="14" height="16" rx="2"/><line x1="7" y1="8" x2="15" y2="8"/><line x1="7" y1="12" x2="15" y2="12"/><line x1="7" y1="16" x2="12" y2="16"/>
         </svg>
-        <span class="nav-label">Einheiten</span>
+        <span>Einheiten</span>
       </a>
       <a href="/wissen" class="nav-item">
-        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+        <svg class="nav-icon" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 4h6a3 3 0 013 3v12a3 3 0 00-3-3H4z"/><path d="M18 4h-6a3 3 0 00-3 3v12a3 3 0 013-3h6z"/>
         </svg>
-        <span class="nav-label">Wissen</span>
+        <span>Wissen</span>
       </a>
       <a href="/whatsapp-info" class="nav-item">
-        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+        <svg class="nav-icon" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 6a2 2 0 012-2h10a2 2 0 012 2v7a2 2 0 01-2 2H9l-4 3v-3H6a2 2 0 01-2-2z"/>
+          <circle cx="8" cy="9.5" r="0.6" fill="currentColor" stroke="none"/>
+          <circle cx="11" cy="9.5" r="0.6" fill="currentColor" stroke="none"/>
+          <circle cx="14" cy="9.5" r="0.6" fill="currentColor" stroke="none"/>
         </svg>
-        <span class="nav-label">WhatsApp</span>
+        <span>WhatsApp</span>
       </a>
     </nav>
 
-    <!-- Burger Drawer -->
     <div class="drawer-overlay" id="drawer-overlay" onclick="closeDrawer()"></div>
     <div class="drawer" id="drawer">
       <button class="drawer-close" onclick="closeDrawer()">✕</button>
@@ -545,16 +675,53 @@
   </div>
 
   <script>
+    const PHASE_COLORS = {
+      'Aufwärmen': '#C2611F',
+      'Hauptteil': '#0E6A45',
+      'Spielformat': '#0F3FA8',
+    };
+
+    const TILE_CONFIG = [
+      { key: 'coaching_fokus',  label: 'Coaching-Fokus',        short: 'Coaching',    color: '#E89844' },
+      { key: 'leichter_machen', label: 'Übung leichter machen', short: 'Leichter',    color: '#16A571' },
+      { key: 'schwerer_machen', label: 'Übung schwieriger machen', short: 'Schwieriger', color: '#F23D3D' },
+      { key: 'faq',             label: 'FAQ – Häufige Fragen',   short: 'FAQ',         color: '#7B61FF' },
+    ];
+
     function toBulletList(text) {
       if (!text) return '';
-      const items = text.split(/[;•]/).map(s => s.trim()).filter(s => s.length > 0);
-      if (items.length === 0) return '';
-      return '<ul>' + items.map(i => `<li>${i}</li>`).join('') + '</ul>';
+      const items = text.split(/[;•]/).map(s => s.trim()).filter(Boolean);
+      return items.length ? '<ul>' + items.map(i => `<li>${i}</li>`).join('') + '</ul>' : '';
     }
 
-    const slug = window.location.pathname.replace(/^\/uebung\//, '').replace(/\/$/, '');
+    function faqToHtml(faqArr) {
+      if (!faqArr || !faqArr.length) return '';
+      const items = faqArr.filter(f => f.frage && f.frage.trim());
+      return items.length
+        ? '<ul>' + items.map(f => `<li><strong>${f.frage}</strong><br>${f.antwort}</li>`).join('') + '</ul>'
+        : '';
+    }
 
-    // Kontextsensitiver Zurück-Button
+    function toggleAcc(id) {
+      document.getElementById('acc-' + id).classList.toggle('open');
+    }
+
+    // Bottom Sheet
+    let sheetData = {};
+    function openSheet(key) {
+      const cfg = TILE_CONFIG.find(t => t.key === key);
+      if (!cfg || !sheetData[key]) return;
+      document.getElementById('sheet-dot').style.background = cfg.color;
+      document.getElementById('sheet-title').textContent = cfg.label;
+      document.getElementById('sheet-body').innerHTML = sheetData[key];
+      document.getElementById('sheet-overlay').classList.add('open');
+    }
+    function closeSheet() {
+      document.getElementById('sheet-overlay').classList.remove('open');
+    }
+
+    // Slug + back button
+    const slug = window.location.pathname.replace(/^\/uebung\//, '').replace(/\/$/, '');
     const urlParams = new URLSearchParams(window.location.search);
     const backUrl = urlParams.get('back');
     const fromEinheit = urlParams.get('from');
@@ -578,77 +745,106 @@
 
         document.title = ex.titel + ' – COACH UNITED';
 
+        // Grafik
         if (ex.grafik_url) {
           document.getElementById('grafik-img').src = ex.grafik_url;
           document.getElementById('grafik-img').alt = ex.grafik_alt_text || ex.titel;
-          document.getElementById('grafik-container').style.display = 'flex';
+          document.getElementById('grafik-panel').style.display = 'block';
         }
 
+        // Phase + Jahrgang
+        const phaseRow = document.getElementById('phase-row');
+        if (ex.trainingsphase) {
+          const phaseColor = PHASE_COLORS[ex.trainingsphase] || '#0E1430';
+          const pb = document.createElement('span');
+          pb.className = 'phase-badge';
+          pb.style.background = phaseColor;
+          pb.textContent = ex.trainingsphase;
+          phaseRow.appendChild(pb);
+        }
+        const jahrgangStr = (ex.jugend || []).map(j => j.replace('-Jugend','')).join('·');
+        if (jahrgangStr) {
+          const jb = document.createElement('span');
+          jb.className = 'jahrgang-badge';
+          jb.textContent = jahrgangStr;
+          phaseRow.appendChild(jb);
+        }
+
+        // Titel + Beschreibung
         document.getElementById('titel').textContent = ex.titel;
+        document.getElementById('beschreibung').textContent = ex.kurzbeschreibung || '';
 
-        const tagsEl = document.getElementById('tags');
-        (ex.jugend || []).forEach(j => {
-          const span = document.createElement('span');
-          span.className = 'tag tag-jugend';
-          span.textContent = j.replace('-Jugend', '');
-          tagsEl.appendChild(span);
-        });
-        if ((ex.jugend || []).length && (ex.skills || []).length) {
-          const sep = document.createElement('span');
-          sep.className = 'tag-divider';
-          sep.textContent = '·';
-          tagsEl.appendChild(sep);
-        }
+        // Skill-Tags
+        const skillContainer = document.getElementById('skill-tags');
         (ex.skills || []).forEach(s => {
           const span = document.createElement('span');
-          span.className = 'tag tag-skill';
+          span.className = 'skill-tag';
           span.textContent = s;
-          tagsEl.appendChild(span);
+          skillContainer.appendChild(span);
         });
-        if (ex.trainingsphase) {
-          const sep = document.createElement('span');
-          sep.className = 'tag-divider';
-          sep.textContent = '·';
-          tagsEl.appendChild(sep);
-          const span = document.createElement('span');
-          span.className = 'tag tag-phase';
-          span.textContent = ex.trainingsphase;
-          tagsEl.appendChild(span);
-        }
 
-        document.getElementById('beschreibung').textContent = ex.kurzbeschreibung || '';
+        // Akkordeons
         document.getElementById('aufbau').textContent = ex.aufbau || '';
         document.getElementById('durchfuehrung').textContent = ex.durchfuehrung || '';
-        document.getElementById('coaching-fokus').innerHTML = toBulletList(ex.coaching_fokus);
-        document.getElementById('leichter-machen').innerHTML = toBulletList(ex.leichter_machen);
-        document.getElementById('schwerer-machen').innerHTML = toBulletList(ex.schwerer_machen);
 
-        if (ex.faq && ex.faq.length > 0) {
-          const faqItems = ex.faq.filter(item => item.frage && item.frage.trim());
-          if (faqItems.length > 0) {
-            document.getElementById('faq-list').innerHTML = faqItems.map(item =>
-              `<li><strong>${item.frage}</strong><br>${item.antwort}</li>`
-            ).join('');
-            document.getElementById('faq-box').style.display = '';
-          }
+        // Sekundär-Kacheln
+        const hasCoaching = !!ex.coaching_fokus;
+        const hasLeichter = !!ex.leichter_machen;
+        const hasSchwerer = !!ex.schwerer_machen;
+        const hasFaq = ex.faq && ex.faq.some(f => f.frage && f.frage.trim());
+
+        sheetData['coaching_fokus'] = toBulletList(ex.coaching_fokus);
+        sheetData['leichter_machen'] = toBulletList(ex.leichter_machen);
+        sheetData['schwerer_machen'] = toBulletList(ex.schwerer_machen);
+        sheetData['faq'] = faqToHtml(ex.faq);
+
+        const tiles = TILE_CONFIG.filter(t =>
+          t.key === 'faq' ? hasFaq
+          : t.key === 'coaching_fokus' ? hasCoaching
+          : t.key === 'leichter_machen' ? hasLeichter
+          : t.key === 'schwerer_machen' ? hasSchwerer
+          : false
+        );
+
+        if (tiles.length) {
+          document.getElementById('tiles-grid').innerHTML = tiles.map(t => `
+            <button class="tile-btn" onclick="openSheet('${t.key}')">
+              <span class="tile-icon" style="background:${t.color}1A;">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <circle cx="10" cy="10" r="6" stroke="${t.color}" stroke-width="1.6"/>
+                  <circle cx="10" cy="10" r="2.5" stroke="${t.color}" stroke-width="1.6"/>
+                </svg>
+              </span>
+              <span class="tile-name">${t.short}</span>
+              <span class="tile-hint">Antippen →</span>
+            </button>`).join('');
+        } else {
+          document.getElementById('tiles-section').style.display = 'none';
         }
 
+        // Sisters
         const sisterIds = ex.schwester_ids && ex.schwester_ids.length ? ex.schwester_ids
           : (ex.schwester_id ? [ex.schwester_id] : []);
-        if (sisterIds.length > 0) {
+        if (sisterIds.length) {
           const sisters = exercises.filter(e => sisterIds.includes(e.id) && e.url_slug);
-          if (sisters.length > 0) {
-            document.getElementById('sisters-list').innerHTML = sisters.map(s =>
-              `<a href="/uebung/${s.url_slug}" class="sister-link">${s.titel}</a>`
-            ).join('');
-            document.getElementById('sisters-box').style.display = 'block';
+          if (sisters.length) {
+            document.getElementById('sisters-list').innerHTML = sisters.map(s => `
+              <a href="/uebung/${s.url_slug}" class="sister-link">
+                <span class="sister-accent"></span>
+                <span class="sister-name">${s.titel}</span>
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" class="sister-chevron">
+                  <path d="M5 2L10 7L5 12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>`).join('');
+            document.getElementById('sisters-block').style.display = 'block';
           }
         }
 
+        // Related
         if (ex.quell_url) {
           document.getElementById('related-link').href = ex.quell_url;
-          document.getElementById('related-link').textContent = ex.quell_trainingseinheit || ex.quell_url;
-          document.getElementById('related-box').style.display = 'block';
+          document.getElementById('related-name').textContent = ex.quell_trainingseinheit || ex.quell_url;
+          document.getElementById('related-block').style.display = 'block';
         }
 
         document.getElementById('loading').style.display = 'none';
