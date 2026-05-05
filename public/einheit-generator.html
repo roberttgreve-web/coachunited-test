@@ -27,6 +27,22 @@
     .burger-btn { background: none; border: none; cursor: pointer; padding: 6px; display: flex; flex-direction: column; gap: 5px; }
     .burger-btn span { display: block; width: 22px; height: 2px; background: #0E1430; border-radius: 2px; }
 
+    /* ── Page Hero ── */
+    .page-hero { background: #0E1430; padding: 14px 18px 22px; }
+    .back-btn {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: none; border: none; cursor: pointer;
+      color: rgba(255,255,255,0.55);
+      font-family: 'Inter Tight', system-ui, sans-serif;
+      font-size: 13px; font-weight: 600; padding: 0; margin-bottom: 14px;
+      transition: color 0.15s;
+    }
+    .back-btn:hover { color: #fff; }
+    .hero-title {
+      font-size: 24px; font-weight: 800; color: #fff;
+      letter-spacing: -0.02em; line-height: 1.2; margin: 0;
+    }
+
     /* ── Content ── */
     .content { flex: 1; overflow-y: auto; padding: 20px 16px 100px; }
 
@@ -211,6 +227,14 @@
         <span></span><span></span><span></span>
       </button>
     </header>
+
+    <div class="page-hero">
+      <button class="back-btn" onclick="history.back()">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Zur Auswahl
+      </button>
+      <h1 class="hero-title">Deine Trainingseinheit</h1>
+    </div>
 
     <div class="content">
       <div id="session-meta" class="session-meta"></div>
@@ -443,15 +467,34 @@
 
     function reroll() {
       const session = generateSession(allExercises, currentKey);
+      if (session) sessionStorage.setItem(SESSION_KEY, JSON.stringify(session.exercises.map(e => e.id)));
       renderSession(session);
     }
 
     // ── Init ──────────────────────────────────────────────────────
+    const SESSION_KEY = `gen_${jugend}_${skill || ''}`;
+
     fetch('/exercises.json')
       .then(r => r.json())
       .then(data => {
         allExercises = data;
-        renderSession(generateSession(data, null));
+
+        // Restore session on back-navigation
+        const saved = sessionStorage.getItem(SESSION_KEY);
+        if (saved) {
+          try {
+            const ids = JSON.parse(saved);
+            const exercises = ids.map(id => data.find(e => e.id === id)).filter(Boolean);
+            if (exercises.length > 0) {
+              renderSession({ exercises, key: sessionKey(exercises), canReroll: true });
+              return;
+            }
+          } catch(e) {}
+        }
+
+        const session = generateSession(data, null);
+        if (session) sessionStorage.setItem(SESSION_KEY, JSON.stringify(session.exercises.map(e => e.id)));
+        renderSession(session);
       })
       .catch(() => {
         document.getElementById('session-list').innerHTML =
