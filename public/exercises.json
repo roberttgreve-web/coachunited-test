@@ -1,67 +1,5 @@
 [
   {
-    "id": 1,
-    "titel": "FARBEN-TOR-WETTKAMPF",
-    "quell_trainingseinheit": "Pässe aktiv anfordern",
-    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/01/image-22.png",
-    "grafik_dateiname": "uebung-001-farben-tor-wettkampf.png",
-    "trainingsphase": "Aufwärmen",
-    "kurzbeschreibung": "Die Spieler dribbeln nach Farbkommando zum passenden Hütchentor und schließen ab.",
-    "aufbau": "Zwei Minitore, je ein Starthütchen 30m entfernt. Dazwischen vier verschiedenfarbige Hütchentore. Zwei Teams mit Ball an den Starthütchen.",
-    "durchfuehrung": "Trainer ruft Farbe. Spieler dribbeln zum entsprechenden Hütchentor und schließen durch das Hütchentor ins Minitor ab. Wer zuerst trifft, holt Punkt für Team. Wer zuerst 10 Punkte hat, gewinnt.",
-    "varianten": "a) Nur mit schwachem Fuß dribbeln. b) Torabschluss ohne Ballstoppen. TOR SCHIESSEN UND VORRÜCKEN TOR SCHIESSEN UND VORRÜCKEN Die Spieler passen aus dem Dribbling durch farbige Hütchentore ins Minitor.",
-    "quell_url": "https://coachunited.de/passen-aktiv-anfordern/",
-    "jugend": [
-      "G-Jugend",
-      "F-Jugend",
-      "E-Jugend"
-    ],
-    "skills": [
-      "Ballkontrolle",
-      "Dribbeln",
-      "Torschuss",
-      "Koordination"
-    ],
-    "coaching_fokus": "• Blick heben vor dem Abschluss; • Abschluss mit der Innenseite ",
-    "leichter_machen": "• Tor vergrößern oder je zwei Tore; • Abstand zum Tor reduzieren",
-    "schwerer_machen": "• Torabschluss ohne Ballstoppen; • Nur schwacher Fuß erlaubt",
-    "status": "veroeffentlicht",
-    "alt_titel": "Farben-Slalom mit Torschuss",
-    "seo_keyword": "Fußballübung Dribbling Kinder",
-    "url_slug": "farben-slalom-mit-torschuss",
-    "seo_meta_description": "Effektive Fußballübung zum Dribbeln, Ballannahme und Torschuss für Kinder von 6-12 Jahren. Ideales Training für G- bis E-Jugend.",
-    "grafik_alt_text": "Kinder dribbeln in einem Farbslalom und schießen auf zwei kleine Tore",
-    "grafik_description": "Die Spieler dribbeln nacheinander von einem Startpunkt zu farbigen Toren, um dort den Ball ins Tor zu schießen. Das fördert Koordination, Ballkontrolle und Torschuss.",
-    "grafik_title": "Fußballübung Farben-Slalom mit Torschuss",
-    "grafik_caption": "Dynamische Fußballübung zum Training von Dribbling, Ballkontrolle und Torabschluss für Kinder.",
-    "faq": [
-      {
-        "frage": "Wie viele Spieler können an der Übung teilnehmen?",
-        "antwort": "Die Übung eignet sich für 8-16 Spieler. Größere Gruppen können in Teams aufgeteilt werden."
-      },
-      {
-        "frage": "Wie lange dauert die Übung?",
-        "antwort": "Je nach Altersstufe und Spielerzahl kann die Übung 10-20 Minuten andauern. Mehrere Durchgänge sind sinnvoll."
-      },
-      {
-        "frage": "Kann man die Übung für jüngere Kinder anpassen?",
-        "antwort": "Ja, für G- und F-Jugend Spieler kann man die Distanzen verkürzen und größere Tore verwenden."
-      }
-    ],
-    "referenz_grafik_url": "",
-    "original_aufbau": "",
-    "original_durchfuehrung": "",
-    "original_varianten": "",
-    "original_coaching_fokus": "",
-    "ist_gecrawlt": false,
-    "quell_kategorie": "",
-    "schwester_id": 2,
-    "schwester_titel": "TOR SCHIESSEN UND VORRÜCKEN",
-    "schwester_ids": [
-      2
-    ]
-  },
-  {
     "id": 2,
     "titel": "TOR SCHIESSEN UND VORRÜCKEN",
     "quell_trainingseinheit": "Pässe aktiv anfordern",
@@ -2581,6 +2519,67 @@
     "schwester_ids": [],
     "schwester_id": null,
     "schwester_titel": null
+  },
+  {
+    "id": 48,
+    "titel": "DER BALL BEFREIT",
+    "quell_trainingseinheit": "Fangen spielen, bewegende Tore, Schüsse!",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/11/image-10.jpg",
+    "grafik_dateiname": "uebung-048-der-ball-befreit.jpg",
+    "trainingsphase": "Aufwärmen",
+    "kurzbeschreibung": "Die Kinder spielen Fangen. Das gejagte Team kann einen gefangenen Mitspieler durch einen sauberen Pass befreien.",
+    "aufbau": "Ein 20mx20m großes Feld markieren. Drei Jäger mit Leibchen einteilen. Ein Ball im Feld.",
+    "durchfuehrung": "Die drei Jäger versuchen so viele gegnerische Spieler durch Abschlagen einzufangen. Ist jemand gefangen, muss er still auf der Stelle stehen bleiben. Seine Mitspieler können ihn befreien, in dem sie ihm einen sauberen Pass spielen.",
+    "varianten": "a) Zweiten Ball einspielen. b) Zahl der Jäger erhöhen/verkleinern. DAS TOR BEWEGT SICH! DAS TOR BEWEGT SICH! Die Spieler eines Teams halten zu zweit Stangen, die Spieler des anderen Teams müssen hindurchpassen, um Tore zu erzielen.",
+    "quell_url": "https://coachunited.de/fangen-spielen-bewegende-tore-schusse/",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Koordination",
+      "Raumverhalten"
+    ],
+    "coaching_fokus": "• Präzise, flache Pässe; • Immer in Bewegung bleiben, Freiräume erkennen",
+    "leichter_machen": "• Feld vergrößern; • Anzahl der Jäger reduzieren",
+    "schwerer_machen": "• Zweiten Ball einbringen; • Zahl der Jäger erhöhen",
+    "status": "veroeffentlicht",
+    "alt_titel": "Befreie deinen Mitspieler mit dem Pass",
+    "seo_keyword": "Fußballübung Passen Kinder",
+    "url_slug": "befreie-deinen-mitspieler-mit-dem-pass",
+    "seo_meta_description": "Zwei Kinder spielen einen sauberen Pass, um einen gefangenen Mitspieler zu befreien",
+    "grafik_alt_text": "Kinder befreien Mitspieler mit Pass in Fußballübung",
+    "grafik_description": "Die Übung 'Der Ball befreit' trainiert das Passspiel der Kinder. Ein Kind spielt einen präzisen Pass, um einen gefangenen Teamkameraden zu befreien. Dazu rennen alle Spieler in einem 20x20m Feld.",
+    "grafik_title": "Präzises Passspiel befreit gefangenen Teamkameraden",
+    "grafik_caption": "Die Übung 'Der Ball befreit' trainiert das Passspiel der Kinder. Ein Kind spielt einen präzisen Pass, um einen gefangenen Teamkameraden zu befreien. Dazu rennen alle Spieler in einem 20x20m Feld.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler braucht man für diese Übung?",
+        "antwort": "Empfohlen sind 10-15 Kinder. Das Feld kann an die Teilnehmerzahl angepasst werden."
+      },
+      {
+        "frage": "Wie lange dauert die Übung?",
+        "antwort": "Die Dauer liegt bei ca. 5-10 Minuten. Je nach Alter und Konzentration der Kinder kann sie verlängert werden."
+      },
+      {
+        "frage": "Kann man diese Übung auch für ältere Kinder nutzen?",
+        "antwort": "Ja, die Übung lässt sich gut an D-Junioren oder sogar C-Junioren anpassen, indem man das Feld vergrößert und mehr Jäger einsetzt."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [
+      49
+    ],
+    "schwester_id": 49,
+    "schwester_titel": "DAS TOR BEWEGT SICH!"
   },
   {
     "id": 50,
