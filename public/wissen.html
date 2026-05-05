@@ -10,74 +10,75 @@
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
-    body { font-family: 'Inter Tight', system-ui, sans-serif; background: #0E1430; min-height: 100dvh; }
+    body { font-family: 'Inter Tight', system-ui, sans-serif; background: #f0eee9; display: flex; justify-content: center; align-items: flex-start; min-height: 100vh; }
 
-    .container { width: 100%; min-height: 100dvh; background: #0E1430; display: flex; flex-direction: column; }
+    .container { width: 375px; min-height: 100vh; background: #fff; border-radius: 28px; overflow: hidden; box-shadow: 0 24px 64px rgba(0,0,0,0.14); display: flex; flex-direction: column; }
 
     .header {
-      background: #0E1430;
+      background: #fff;
       padding: 10px 16px;
       display: flex; align-items: center; justify-content: space-between;
-      border-bottom: 1px solid rgba(255,255,255,0.08);
+      border-bottom: 1px solid #E6E8EF;
       position: sticky; top: 0; z-index: 20;
     }
     .logo-link { display: flex; align-items: center; text-decoration: none; }
-    .logo-link img { width: 34px; height: 34px; object-fit: contain; }
+    .logo-link img { width: 40px; height: 40px; object-fit: contain; }
     .burger-btn { background: none; border: none; cursor: pointer; padding: 6px; display: flex; flex-direction: column; gap: 5px; }
-    .burger-btn span { display: block; width: 22px; height: 2px; background: #fff; border-radius: 2px; }
+    .burger-btn span { display: block; width: 22px; height: 2px; background: #0E1430; border-radius: 2px; }
 
     .content { flex: 1; overflow-y: auto; padding: 24px 20px 100px; }
 
     .section-title {
       font-family: 'JetBrains Mono', ui-monospace, monospace;
-      font-size: 10px; font-weight: 600; color: rgba(255,255,255,0.4);
+      font-size: 10px; font-weight: 600; color: #9aa3b0;
       text-transform: uppercase; letter-spacing: 0.12em; margin-bottom: 16px;
     }
 
     .article-card {
       display: flex; flex-direction: row; text-decoration: none; color: inherit;
-      background: rgba(255,255,255,0.05); border-radius: 14px;
-      border: 1px solid rgba(255,255,255,0.08);
+      background: #fff; border-radius: 14px;
+      border: 1px solid #edf0f5;
       margin-bottom: 10px; overflow: hidden; transition: background 0.15s;
     }
-    .article-card:hover { background: rgba(255,255,255,0.09); }
+    .article-card:hover { background: #f5f7fb; }
 
-    .card-thumb { width: 80px; height: 80px; flex-shrink: 0; object-fit: cover; background: rgba(255,255,255,0.08); }
+    .card-thumb { width: 80px; height: 80px; flex-shrink: 0; object-fit: cover; background: #f0f2f5; }
     .card-thumb-placeholder {
       width: 80px; height: 80px; flex-shrink: 0;
-      background: rgba(255,255,255,0.06);
+      background: #f0f2f5;
       display: flex; align-items: center; justify-content: center; font-size: 26px;
     }
     .card-body { flex: 1; padding: 16px; min-width: 0; }
-    .card-title { font-size: 14px; font-weight: 600; color: #fff; line-height: 1.4; }
+    .card-title { font-size: 14px; font-weight: 600; color: #0E1430; line-height: 1.4; }
 
     /* Bottom Nav */
     .bottom-nav {
-      position: fixed; bottom: 0; left: 0; width: 100%;
-      background: #0E1430; border-top: 1px solid rgba(255,255,255,0.1);
+      position: fixed; bottom: 0; left: 50%; transform: translateX(-50%);
+      width: 375px; background: #fff; border-top: 1px solid #E6E8EF;
       display: flex; padding: 10px 0 24px; z-index: 20;
+      box-shadow: 0 -2px 12px rgba(0,0,0,0.05);
     }
     .nav-item {
       flex: 1; display: flex; flex-direction: column; align-items: center; gap: 3px;
       border: none; background: none; cursor: pointer; padding: 4px; text-decoration: none;
-      color: rgba(255,255,255,0.4); font-family: 'Inter Tight', system-ui, sans-serif;
+      color: #6B7390; font-family: 'Inter Tight', system-ui, sans-serif;
       font-size: 10.5px; font-weight: 600; letter-spacing: 0.01em; transition: color 0.15s;
     }
     .nav-item.active { color: #1E6BFF; }
     .nav-icon { width: 22px; height: 22px; }
 
     /* Drawer */
-    .drawer-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 40; }
+    .drawer-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.35); z-index: 40; }
     .drawer-overlay.open { display: block; }
     .drawer {
       position: fixed; top: 0; right: -280px; width: 260px; height: 100vh;
-      background: #131929; z-index: 50; padding: 32px 24px;
-      transition: right 0.25s ease; box-shadow: -8px 0 32px rgba(0,0,0,0.4);
+      background: #fff; z-index: 50; padding: 32px 24px;
+      transition: right 0.25s ease; box-shadow: -8px 0 32px rgba(0,0,0,0.12);
     }
     .drawer.open { right: 0; }
-    .drawer-close { position: absolute; top: 16px; right: 16px; background: none; border: none; font-size: 22px; cursor: pointer; color: rgba(255,255,255,0.6); padding: 4px; }
+    .drawer-close { position: absolute; top: 16px; right: 16px; background: none; border: none; font-size: 22px; cursor: pointer; color: #555; padding: 4px; }
     .drawer-logo { width: 36px; margin-bottom: 28px; }
-    .drawer-link { display: block; padding: 12px 0; font-family: 'Inter Tight', system-ui, sans-serif; font-size: 15px; font-weight: 600; color: rgba(255,255,255,0.85); text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.1); }
+    .drawer-link { display: block; padding: 12px 0; font-family: 'Inter Tight', system-ui, sans-serif; font-size: 15px; font-weight: 600; color: #1a1a2e; text-decoration: none; border-bottom: 1px solid #f0f2f5; }
     .drawer-link:last-child { border-bottom: none; }
     .drawer-link:hover { color: #1E6BFF; }
   </style>
@@ -100,7 +101,7 @@
     <div class="content">
       <p class="section-title">Artikel &amp; Tipps</p>
       <div id="articles-list">
-        <div style="padding:40px 0; text-align:center; color:rgba(255,255,255,0.3); font-size:14px;">Artikel werden geladen…</div>
+        <div style="padding:40px 0; text-align:center; color:#9aa3b0; font-size:14px;">Artikel werden geladen…</div>
       </div>
     </div>
 
@@ -147,7 +148,7 @@
       .then(articles => {
         const list = document.getElementById('articles-list');
         if (!articles.length) {
-          list.innerHTML = '<div style="padding:40px 0; text-align:center; color:rgba(255,255,255,0.3); font-size:14px;">Noch keine Artikel veröffentlicht.</div>';
+          list.innerHTML = '<div style="padding:40px 0; text-align:center; color:#9aa3b0; font-size:14px;">Noch keine Artikel veröffentlicht.</div>';
           return;
         }
         list.innerHTML = articles.map(a => {
@@ -165,7 +166,7 @@
       })
       .catch(() => {
         document.getElementById('articles-list').innerHTML =
-          '<div style="padding:40px 0; text-align:center; color:rgba(255,255,255,0.3); font-size:14px;">Artikel konnten nicht geladen werden.</div>';
+          '<div style="padding:40px 0; text-align:center; color:#9aa3b0; font-size:14px;">Artikel konnten nicht geladen werden.</div>';
       });
 
     function openDrawer() {

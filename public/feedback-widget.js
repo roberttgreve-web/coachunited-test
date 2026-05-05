@@ -6,7 +6,7 @@
     .cu-fb-tab {
       position: fixed;
       right: 0;
-      top: 62%;
+      top: 75%;
       transform: translateY(-50%);
       z-index: 890;
       background: #1E6BFF;
