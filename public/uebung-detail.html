@@ -733,11 +733,7 @@
           return;
         }
 
-        function niceTitle(s) {
-          if (!s) return s;
-          return s.charAt(0).toUpperCase() + s.slice(1).toLowerCase();
-        }
-        document.title = niceTitle(ex.titel) + ' – COACH UNITED';
+        document.title = ex.titel + ' – COACH UNITED';
 
         // Grafik
         if (ex.grafik_url) {
@@ -765,7 +761,7 @@
         }
 
         // Titel + Beschreibung
-        document.getElementById('titel').textContent = niceTitle(ex.titel);
+        document.getElementById('titel').textContent = ex.titel;
         document.getElementById('beschreibung').textContent = ex.kurzbeschreibung || '';
 
         // Skill-Tags
