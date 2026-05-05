@@ -439,6 +439,7 @@
       closeSkills();
     }
 
+    document.getElementById('skill-picker').addEventListener('click', e => e.stopPropagation());
     document.addEventListener('click', e => {
       if (!e.target.closest('#field-jugend') && !e.target.closest('#field-skills')) closeAll();
     });
