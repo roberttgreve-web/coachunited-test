@@ -449,7 +449,6 @@
       } else {
         if (selectedSkills.size >= 2) return;
         selectedSkills.add(skill);
-        if (selectedSkills.size === 2) setTimeout(closeSkills, 220);
       }
       document.querySelectorAll('.skill-pill').forEach(p => {
         const s = p.dataset.skill;
