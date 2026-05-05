@@ -65,6 +65,10 @@
     {
       "source": "/einheit-generator",
       "destination": "/einheit-generator.html"
+    },
+    {
+      "source": "/umgang-mit-ki",
+      "destination": "/umgang-mit-ki.html"
     }
   ]
 }

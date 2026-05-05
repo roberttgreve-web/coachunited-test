@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Impressum – COACH UNITED</title>
+  <title>Umgang mit KI – COACH UNITED</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -34,21 +34,42 @@
 
     .content { flex: 1; overflow-y: auto; padding: 24px 22px 100px; }
 
-    h2 {
-      font-family: 'JetBrains Mono', ui-monospace, monospace;
-      font-size: 10px; font-weight: 600; color: #9aa3b0;
-      text-transform: uppercase; letter-spacing: 0.1em;
-      margin-top: 28px; margin-bottom: 10px;
-    }
-
     p {
-      font-size: 15px; line-height: 1.7;
+      font-size: 16px; line-height: 1.75;
       color: #4a5568;
-      margin-bottom: 10px;
+      margin-bottom: 18px;
     }
 
-    a { color: #1E6BFF; text-decoration: none; }
-    a:hover { text-decoration: underline; }
+    .highlight-box {
+      background: #f0f4ff;
+      border-left: 3px solid #1E6BFF;
+      border-radius: 0 10px 10px 0;
+      padding: 14px 16px;
+      margin-bottom: 18px;
+    }
+    .highlight-box p {
+      font-size: 14px; line-height: 1.65;
+      color: #3B4565; margin: 0;
+    }
+
+    .ki-uses {
+      display: flex; flex-direction: column; gap: 10px;
+      margin-bottom: 18px;
+    }
+    .ki-use-item {
+      display: flex; align-items: flex-start; gap: 12px;
+      padding: 12px 14px;
+      background: #f7f9ff;
+      border-radius: 10px;
+    }
+    .ki-use-dot {
+      width: 8px; height: 8px; border-radius: 50%;
+      background: #1E6BFF; flex-shrink: 0; margin-top: 5px;
+    }
+    .ki-use-text {
+      font-size: 15px; line-height: 1.55;
+      color: #3B4565; margin: 0;
+    }
 
     /* Bottom Nav */
     .bottom-nav {
@@ -98,31 +119,42 @@
     </header>
 
     <div class="page-hero">
-      <h1>Impressum</h1>
+      <h1>Umgang mit KI</h1>
     </div>
 
     <div class="content">
-      <h2>Angaben gemäß § 5 TMG</h2>
-      <p>Robert Greve<br>Czeminskistraße 4<br>10829 Berlin<br>Deutschland</p>
+      <p>
+        Alle Übungen auf dieser Plattform haben wir selbst auf dem Platz erprobt. Kein Algorithmus hat sie entworfen – sie stammen aus echten Trainingseinheiten mit Kindern, gespielt und verfeinert über viele Jahre.
+      </p>
 
-      <h2>Kontakt</h2>
-      <p>E-Mail: <a href="mailto:mail.coachunited@gmail.com">mail.coachunited@gmail.com</a></p>
+      <div class="highlight-box">
+        <p>
+          Fußballtraining lebt von menschlicher Erfahrung. Generationen von Trainerinnen und Trainern haben beobachtet, ausprobiert und weitergegeben. Dieses Wissen lässt sich nicht automatisieren – es entsteht auf dem Platz, im Umgang mit Kindern und in der Liebe zum Spiel.
+        </p>
+      </div>
 
-      <h2>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h2>
-      <p>Robert Greve<br>Czeminskistraße 4<br>10829 Berlin</p>
+      <p>
+        KI hilft uns dort, wo sie sinnvoll Zeit spart – ohne das Wesentliche zu berühren:
+      </p>
 
-      <h2>Haftung für Inhalte</h2>
-      <p>Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.</p>
-      <p>Eine diesbezügliche Haftung ist erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.</p>
+      <div class="ki-uses">
+        <div class="ki-use-item">
+          <span class="ki-use-dot"></span>
+          <span class="ki-use-text">Erstellung von Übungsgrafiken</span>
+        </div>
+        <div class="ki-use-item">
+          <span class="ki-use-dot"></span>
+          <span class="ki-use-text">Programmierung dieser Website</span>
+        </div>
+        <div class="ki-use-item">
+          <span class="ki-use-dot"></span>
+          <span class="ki-use-text">Gelegentliche Textformulierungen</span>
+        </div>
+      </div>
 
-      <h2>Haftung für Links</h2>
-      <p>Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.</p>
-
-      <h2>Urheberrecht</h2>
-      <p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet.</p>
-
-      <h2>Online-Streitbeilegung</h2>
-      <p>Die EU-Kommission stellt eine Plattform zur Online-Streitbeilegung bereit: <a href="https://ec.europa.eu/consumers/odr" target="_blank">ec.europa.eu/consumers/odr</a>. Zur Teilnahme an einem Streitbeilegungsverfahren sind wir nicht verpflichtet und nicht bereit.</p>
+      <p>
+        Die Inhalte selbst – die Übungen, die Methodik, die Erfahrung auf dem Platz – kommen von uns.
+      </p>
     </div>
 
     <nav class="bottom-nav">
