@@ -2582,6 +2582,67 @@
     "schwester_titel": "DAS TOR BEWEGT SICH!"
   },
   {
+    "id": 49,
+    "titel": "DAS TOR BEWEGT SICH!",
+    "quell_trainingseinheit": "Fangen spielen, bewegende Tore, Schüsse!",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/11/image-11.jpg",
+    "grafik_dateiname": "uebung-049-das-tor-bewegt-sich.jpg",
+    "trainingsphase": "Aufwärmen",
+    "kurzbeschreibung": "Die Spieler eines Teams halten zu zweit Stangen, die Spieler des anderen Teams müssen hindurchpassen, um Tore zu erzielen.",
+    "aufbau": "Ein 20mx20m großes Feld markieren. Zwei Teams mit Leibchen einteilen. In einem Team jeweils Spielerpaaren eine Stange geben. Zwei Bälle im Feld.",
+    "durchfuehrung": "Die Spielerpaare mit der Stange laufen durch das Feld und versuchen es dem gegnerischen Team möglichst schwer zu machen, ein Tor zu erzielen. Das Team im Ballbesitz muss durch die Stangen hindurch einen Pass spielen, um einen Punkt zu erzielen.",
+    "varianten": "Ball muss unter der Stange gerollt oder über die Stange geworfen werden. Welches Team schafft es, die 5 Bälle am längsten in den eigenen Reihen zu halten? TORSCHUSS NACH FARBSIGNAL TORSCHUSS NACH FARBSIGNAL Nach Aufruf dribbeln die Spieler bis zur Schusslinie und schließen ab.",
+    "quell_url": "https://coachunited.de/fangen-spielen-bewegende-tore-schusse/",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Koordination",
+      "Raumverhalten"
+    ],
+    "coaching_fokus": "• Präzise flache Pässe durch die Stangen",
+    "leichter_machen": "• Ball muss nur unter der Stange gerollt oder über die Stange geworfenwerden",
+    "schwerer_machen": "• Ball muss per Volley über die Stange geschossen werden",
+    "status": "veroeffentlicht",
+    "schwester_ids": [
+      48
+    ],
+    "schwester_id": 48,
+    "schwester_titel": "DER BALL BEFREIT",
+    "alt_titel": "Zirkusreif: Ball durch das bewegte Tor!",
+    "seo_keyword": "Fußballübung Passen Koordination Kinder",
+    "url_slug": "fussballubung-tor-bewegt-sich-kinder",
+    "seo_meta_description": "Kreative Fußballübung für Kinder: Pässe durchs bewegte Tor üben und Koordination trainieren. Ideal für E- und D-Jugend.",
+    "grafik_alt_text": "Zwei Kinder halten eine Stange, andere Kinder versuchen den Ball durch die Stangen zu passen",
+    "grafik_description": "Auf dem Bild sieht man eine Fußballübung, bei der zwei Kinder eine Stange hochhalten, während andere Kinder versuchen, den Ball durch die Stangen zu passen. Die Kinder tragen unterschiedliche Leibchen, um die Teams zu unterscheiden.",
+    "grafik_title": "Fußballübung für Koordination und Passen",
+    "grafik_caption": "Kreative Fußballübung zum Trainieren von Pässen und Koordination",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler braucht man für diese Übung?",
+        "antwort": "Ideal sind 8-12 Spieler, damit zwei Teams mit je 4-6 Kindern gebildet werden können. Bei größeren Gruppen ein zweites Feld aufbauen."
+      },
+      {
+        "frage": "Wie lange dauert die Übung?",
+        "antwort": "Die Übung kann 5-10 Minuten dauern. Je nach Altersgruppe und Konzentration der Kinder kann die Zeit angepasst werden."
+      },
+      {
+        "frage": "Für welche Altersgruppen ist diese Übung geeignet?",
+        "antwort": "Die Übung ist gut für jüngere Kinder geeignet. "
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": ""
+  },
+  {
     "id": 50,
     "titel": "TORSCHUSS NACH FARBSIGNAL",
     "quell_trainingseinheit": "Fangen spielen, bewegende Tore, Schüsse!",
