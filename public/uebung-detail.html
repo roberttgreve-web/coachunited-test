@@ -701,7 +701,7 @@
     let sheetData = {};
     function openSheet(key) {
       const cfg = TILE_CONFIG.find(t => t.key === key);
-      if (!cfg || !sheetData[key]) return;
+      if (!cfg) return;
       document.getElementById('sheet-dot').style.background = cfg.color;
       document.getElementById('sheet-title').textContent = cfg.label;
       document.getElementById('sheet-body').innerHTML = sheetData[key];
@@ -779,39 +779,23 @@
         document.getElementById('durchfuehrung').textContent = ex.durchfuehrung || '';
 
         // Sekundär-Kacheln
-        const hasCoaching = !!ex.coaching_fokus;
-        const hasLeichter = !!ex.leichter_machen;
-        const hasSchwerer = !!ex.schwerer_machen;
-        const hasFaq = ex.faq && ex.faq.some(f => f.frage && f.frage.trim());
+        const EMPTY = '<p style="color:#9aa3b0;font-style:italic;margin:0;">Keine Hinweise zu dieser Übung.</p>';
+        sheetData['coaching_fokus'] = toBulletList(ex.coaching_fokus) || EMPTY;
+        sheetData['leichter_machen'] = toBulletList(ex.leichter_machen) || EMPTY;
+        sheetData['schwerer_machen'] = toBulletList(ex.schwerer_machen) || EMPTY;
+        sheetData['faq'] = faqToHtml(ex.faq) || EMPTY;
 
-        sheetData['coaching_fokus'] = toBulletList(ex.coaching_fokus);
-        sheetData['leichter_machen'] = toBulletList(ex.leichter_machen);
-        sheetData['schwerer_machen'] = toBulletList(ex.schwerer_machen);
-        sheetData['faq'] = faqToHtml(ex.faq);
-
-        const tiles = TILE_CONFIG.filter(t =>
-          t.key === 'faq' ? hasFaq
-          : t.key === 'coaching_fokus' ? hasCoaching
-          : t.key === 'leichter_machen' ? hasLeichter
-          : t.key === 'schwerer_machen' ? hasSchwerer
-          : false
-        );
-
-        if (tiles.length) {
-          document.getElementById('tiles-grid').innerHTML = tiles.map(t => `
-            <button class="tile-btn" onclick="openSheet('${t.key}')">
-              <span class="tile-icon" style="background:${t.color}1A;">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                  <circle cx="10" cy="10" r="6" stroke="${t.color}" stroke-width="1.6"/>
-                  <circle cx="10" cy="10" r="2.5" stroke="${t.color}" stroke-width="1.6"/>
-                </svg>
-              </span>
-              <span class="tile-name">${t.short}</span>
-              <span class="tile-hint">Antippen →</span>
-            </button>`).join('');
-        } else {
-          document.getElementById('tiles-section').style.display = 'none';
-        }
+        document.getElementById('tiles-grid').innerHTML = TILE_CONFIG.map(t => `
+          <button class="tile-btn" onclick="openSheet('${t.key}')">
+            <span class="tile-icon" style="background:${t.color}1A;">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <circle cx="10" cy="10" r="6" stroke="${t.color}" stroke-width="1.6"/>
+                <circle cx="10" cy="10" r="2.5" stroke="${t.color}" stroke-width="1.6"/>
+              </svg>
+            </span>
+            <span class="tile-name">${t.short}</span>
+            <span class="tile-hint">Antippen →</span>
+          </button>`).join('');
 
         // Sisters
         const sisterIds = ex.schwester_ids && ex.schwester_ids.length ? ex.schwester_ids
