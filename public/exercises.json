@@ -2952,5 +2952,66 @@
     ],
     "schwester_id": 55,
     "schwester_titel": "FERNSCHUSS-CHALLENGE"
+  },
+  {
+    "id": 55,
+    "titel": "FERNSCHUSS-CHALLENGE",
+    "quell_trainingseinheit": "Passen, schießen und einwechseln mit Tempo",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/11/image-4.png",
+    "grafik_dateiname": "uebung-055-fernschuss-challenge.png",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "Spieler versuchen in zwei Teams aus großer Entfernung mit einem hohen Fernschuss ins leere Tor zu treffen.",
+    "aufbau": "Vier Gruppen einteilen. Vor jeder Gruppe in etwa 6m Entfernung ein Hütchen aufstellen. Einen Ball pro Gruppe. Jeweils drei Hütchen je nach Leistungsstärke etwa 5-10m vor den Starthütchen platzieren. Ohne Torhüter.",
+    "durchfuehrung": "Spieler starten gleichzeitig, dribbeln ein paar Schritte und schließen vor der Hütchenreihe per hohem Fernschuss ab. Die Hütchen dürfen dabei nicht getroffen werden. Das Team, das zuerst 20 Tore erzielt, gewinnt.",
+    "varianten": "a) Ball in die Hand nehmen und Volley schießen. b) Zu gegenüberliegenden (weiter entfernteren) Hütchenreihe dribbeln und vor dort abschließen. AUSWECHSLER HOLEN DIE PUNKTE AUSWECHSLER HOLEN DIE PUNKTE In einem normalen Spiel ruft der Trainer je ein Kind pro Team für eine Auswechslung auf. Das Team, das schneller wechselt, erhält einen Bonuspunkt.",
+    "quell_url": "https://coachunited.de/passen-schiesen-und-einwechseln-mit-tempo/",
+    "jugend": [
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Ballkontrolle",
+      "Dribbeln",
+      "Torschuss",
+      "Koordination"
+    ],
+    "coaching_fokus": "• Tempo vor dem Abschluss herausnehmen; • Kopf hoch vor dem Torschuss",
+    "leichter_machen": "• Ball in die Hand nehmen und Volley oder per Drop-Kick schießen; • Kürzere Tor-Entfernung zu den Hütchen wählen",
+    "schwerer_machen": "• Zu gegenüberliegenden (weiter entfernteren) Hütchenreihen dribbeln, drehen und von dort abschließen; • Nur mit schwachem Fuß abschließen",
+    "status": "veroeffentlicht",
+    "schwester_ids": [
+      54
+    ],
+    "schwester_id": 54,
+    "schwester_titel": "TORSCHUSS-CHALLENGE",
+    "alt_titel": "FERN-TORSCHUSS-CHALLENGE",
+    "seo_keyword": "Fußballübung Fernschuss Kinder",
+    "url_slug": "fernschuss-challenge-fussballubung-kinder",
+    "seo_meta_description": "Effektive Fußballübung für Kinder, bei der sie aus großer Entfernung auf leere Tore schießen. Fördert Ballkontrolle, Koordination und Torschuss-Technik.",
+    "grafik_alt_text": "Kinder führen Fernschüsse auf leere Tore in zwei Teams durch",
+    "grafik_description": "Die Grafik zeigt zwei Kinderteams, die bei der 'Fernschuss-Challenge' Torschüsse aus großer Entfernung ausführen. Die Spieler dribbeln zunächst einige Schritte an, bevor sie den Ball per hohem Fernschuss ins Tor befördern.",
+    "grafik_title": "Fußballübung 'Fernschuss-Challenge' für Kinder",
+    "grafik_caption": "Kinder-Fußballtraining: Fernschuss-Challenge mit hohen Torschüssen",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler benötigen wir für die Übung?",
+        "antwort": "Ideal sind 8-12 Spieler, damit beide Teams gleich groß sind und genug Platz zum Schießen haben."
+      },
+      {
+        "frage": "Wie lange dauert die Übung?",
+        "antwort": "Etwa 10-15 Minuten, je nach Spieleranzahl und Leistungsstand. Die Übung kann auch in mehreren Durchgängen gespielt werden."
+      },
+      {
+        "frage": "Für welche Altersgruppen eignet sich die Fernschuss-Challenge?",
+        "antwort": "Die Übung ist gut geeignet für Kinder im Alter von 9-12 Jahren (E-Jugend und D-Jugend). Jüngere Kinder können die Entfernung evtl. noch nicht gut bewältigen."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": ""
   }
 ]
