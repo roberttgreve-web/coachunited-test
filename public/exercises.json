@@ -3078,5 +3078,66 @@
     "schwester_ids": [],
     "schwester_id": null,
     "schwester_titel": null
+  },
+  {
+    "id": 57,
+    "titel": "ENTKOMME DEM BALLJÄGER",
+    "quell_trainingseinheit": "Erst Spaß im Warmup – dann schießen, schießen, schießen",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/11/image-4.jpg",
+    "grafik_dateiname": "uebung-057-entkomme-dem-balljaeger.jpg",
+    "trainingsphase": "Aufwärmen",
+    "kurzbeschreibung": "Spieler müssen an die gegenüberliegende Linie dribbeln ohne den Ball an die Jäger zu verlieren.",
+    "aufbau": "Ein 15mX15m großes Feld markieren. Ein Spieler (Jäger) ohne Ball an die Grundlinie, alle anderen mit Ball an die gegenüberliegende Grundlinie.",
+    "durchfuehrung": "Spieler dribbeln mit dem Ball und versuchen, über die gegenüberliegende Grundlinie zu gelangen, ohne dass der Jäger den Ball abjagt. Sie dürfen nur nach vorne laufen, nicht wieder zurück. Sobald jemand den Ball an den Jäger verloren hat, wird der Ball aus dem Spiel genommen und beide sind in der nächsten Runde Jäger. Spiel endet, wenn auch der letzte Spieler seinen Ball an die Jäger verloren hat.",
+    "varianten": "Trainer sagt Dribbelformen an (nur mit links/rechts, Sohle ziehen etc.) DEN FRECHDACHS EINFANGEN DEN FRECHDACHS EINFANGEN Ein Spieler läuft mit Ball ums Feld und tippt einen anderen Spieler an, der ihn daraufhin im Wettrennen einholen muss.",
+    "quell_url": "https://coachunited.de/erst-spas-im-warmup-dann-schiesen-schiesen-schiesen/",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend"
+    ],
+    "skills": [
+      "Ballkontrolle",
+      "Dribbeln",
+      "Schnelligkeit",
+      "Raumverhalten"
+    ],
+    "coaching_fokus": "• Kopf oben beim Dribbeln halten; • Immer in Bewegung bleiben, Richtungswechsel nutzen",
+    "leichter_machen": "• Spielfeld vergrößern",
+    "schwerer_machen": "• Bestimmte Dribbelformen vorgeben (z.B. nur mit links/rechts)",
+    "status": "veroeffentlicht",
+    "alt_titel": "Fange den Ballräuber",
+    "seo_keyword": "Fußballübung Dribbeln Kinder",
+    "url_slug": "fussballubung-dribbeln-kinder",
+    "seo_meta_description": "Kinder dribbeln mit Fußbällen in einem markierten Spielfeld, ein Jäger versucht, ihren Ball abzujagen.",
+    "grafik_alt_text": "Fußballübung 'Fange den Ballräuber' für Kinder",
+    "grafik_description": "Die Übung 'Fange den Ballräuber' für Kinder im Fußballtraining zeigt Spieler, die versuchen, mit dem Ball an der gegenüberliegenden Grundlinie anzukommen, ohne vom Jäger den Ball zu verlieren.",
+    "grafik_title": "Kinder trainieren Dribbeln, Ballkontrolle und Raumverhalten in der Übung 'Fange den Ballräuber'.",
+    "grafik_caption": "Die Übung 'Fange den Ballräuber' für Kinder im Fußballtraining zeigt Spieler, die versuchen, mit dem Ball an der gegenüberliegenden Grundlinie anzukommen, ohne vom Jäger den Ball zu verlieren.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler braucht man für diese Übung?",
+        "antwort": "Diese Übung kann mit beliebig vielen Spielern gemacht werden."
+      },
+      {
+        "frage": "Wie lange sollte man diese Übung spielen lassen?",
+        "antwort": "Je nach Alter und Konzentration der Kinder 5-10 Minuten."
+      },
+      {
+        "frage": "Kann man die Übung auch für ältere Kinder anpassen?",
+        "antwort": "Der verspielte Ansatz ist eher für jüngere Kinder geeignet. "
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [
+      58
+    ],
+    "schwester_id": 58,
+    "schwester_titel": "DEN FRECHDACHS EINFANGEN"
   }
 ]
