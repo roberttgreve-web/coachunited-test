@@ -12,21 +12,14 @@
 
     body {
       font-family: 'Inter Tight', system-ui, sans-serif;
-      background: #f0eee9;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
+      background: #0E1430;
+      min-height: 100dvh;
     }
 
     .container {
-      width: 375px;
-      min-height: 667px;
-      height: auto;
+      width: 100%;
+      min-height: 100dvh;
       background: #0E1430;
-      border-radius: 28px;
-      overflow: hidden;
-      box-shadow: 0 24px 64px rgba(0,0,0,0.22);
       display: flex;
       flex-direction: column;
     }
@@ -35,7 +28,7 @@
     .crest-panel {
       position: relative;
       width: 100%;
-      height: 290px;
+      height: 280px;
       flex-shrink: 0;
     }
     .crest-shape {
@@ -52,24 +45,12 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      padding-top: 20px;
-      padding-bottom: 44px;
+      padding-bottom: 36px;
     }
     .crest-inner img {
-      width: 86px;
+      width: 130px;
       height: auto;
       object-fit: contain;
-    }
-    .crest-wordmark {
-      margin-top: 10px;
-      font-family: 'Inter Tight', system-ui, sans-serif;
-      font-size: 19px;
-      font-weight: 800;
-      color: #1E6BFF;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-      text-align: center;
-      line-height: 1.1;
     }
 
     /* ── Content ── */
@@ -283,7 +264,6 @@
       </svg>
       <div class="crest-inner">
         <img src="/logo.png" alt="Coach United Logo">
-        <div class="crest-wordmark">Coach<br>United</div>
       </div>
     </div>
 

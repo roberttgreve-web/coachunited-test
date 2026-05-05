@@ -3,202 +3,112 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Einheit generieren – COACH UNITED</title>
+  <title>Einheit zusammenstellen – COACH UNITED</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Barlow:wght@700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
-    body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-      background: #f0f2f5;
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      min-height: 100vh;
-    }
+    body { font-family: 'Inter Tight', system-ui, sans-serif; background: #0E1430; min-height: 100dvh; }
 
-    .container {
-      width: 375px;
-      min-height: 100vh;
-      background: #ffffff;
-      border-radius: 28px;
-      overflow: hidden;
-      box-shadow: 0 24px 64px rgba(0,0,0,0.12);
-      position: relative;
-      display: flex;
-      flex-direction: column;
-    }
+    .container { width: 100%; min-height: 100dvh; background: #0E1430; display: flex; flex-direction: column; }
 
     /* ── Header ── */
     .header {
-      background: white;
-      padding: 4px 16px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      border-bottom: 1px solid #f0f2f5;
-      position: sticky;
-      top: 0;
-      z-index: 20;
+      background: #0E1430;
+      padding: 10px 16px;
+      display: flex; align-items: center; justify-content: space-between;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      position: sticky; top: 0; z-index: 20;
     }
-
     .logo-link { display: flex; align-items: center; text-decoration: none; }
-    .logo-link img { width: 80px; height: 80px; object-fit: contain; }
-
-    .burger-btn {
-      background: none; border: none; cursor: pointer;
-      padding: 4px; color: #333;
-      display: flex; flex-direction: column; gap: 5px;
-    }
-    .burger-btn span {
-      display: block; width: 22px; height: 2px;
-      background: #333; border-radius: 2px;
-    }
+    .logo-link img { width: 34px; height: 34px; object-fit: contain; }
+    .burger-btn { background: none; border: none; cursor: pointer; padding: 6px; display: flex; flex-direction: column; gap: 5px; }
+    .burger-btn span { display: block; width: 22px; height: 2px; background: #fff; border-radius: 2px; }
 
     /* ── Content ── */
-    .content {
-      flex: 1;
-      overflow-y: auto;
-      padding: 20px 16px 100px;
-    }
+    .content { flex: 1; overflow-y: auto; padding: 20px 16px 100px; }
 
     /* ── Session Meta ── */
-    .session-meta {
-      margin-bottom: 20px;
-    }
+    .session-meta { margin-bottom: 20px; }
 
     .session-title {
-      font-family: 'Barlow', 'Inter', sans-serif;
-      font-size: 20px;
-      font-weight: 800;
-      color: #0a1628;
-      text-transform: uppercase;
-      letter-spacing: 0.3px;
-      margin-bottom: 8px;
+      font-size: 20px; font-weight: 800; color: #fff;
+      letter-spacing: -0.01em; margin-bottom: 10px;
     }
 
-    .session-badges {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-    }
+    .session-badges { display: flex; flex-wrap: wrap; gap: 6px; }
 
     .session-badge {
-      padding: 4px 10px;
-      border-radius: 8px;
-      font-size: 12px;
-      font-weight: 600;
+      padding: 4px 10px; border-radius: 8px;
+      font-size: 12px; font-weight: 600;
     }
-    .badge-jugend { background: #ddeeff; color: #1B6BF4; }
-    .badge-skill  { background: #dcf5e7; color: #1a8044; }
+    .badge-jugend { background: rgba(30,107,255,0.2); color: #5b9bff; }
+    .badge-skill  { background: rgba(14,106,69,0.3); color: #4dd69a; }
 
     /* ── Accordion ── */
-    .accordion-list {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
+    .accordion-list { display: flex; flex-direction: column; gap: 10px; }
 
     .accordion-item {
-      border-radius: 14px;
-      overflow: hidden;
-      border: 1px solid #e8edf2;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      border-radius: 14px; overflow: hidden;
+      background: #fff;
+      border-left: 4px solid #E6E8EF;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.15);
     }
-
-    /* Linker Farbbalken je nach Phase */
-    .accordion-item { border-left: 4px solid #e8edf2; }
-    .phase-aufwaermen { border-left-color: #e07b16; }
-    .phase-hauptteil  { border-left-color: #1B6BF4; }
-    .phase-spielformat{ border-left-color: #1a8044; }
+    .phase-aufwaermen { border-left-color: #C2611F; }
+    .phase-hauptteil  { border-left-color: #0E6A45; }
+    .phase-spielformat{ border-left-color: #0F3FA8; }
 
     .accordion-header {
-      width: 100%;
-      padding: 14px 14px 14px 12px;
-      background: white;
-      border: none;
-      cursor: pointer;
-      display: flex;
-      align-items: flex-start;
-      gap: 10px;
-      text-align: left;
-      transition: background 0.15s;
+      width: 100%; padding: 14px 14px 14px 12px;
+      background: #fff; border: none; cursor: pointer;
+      display: flex; align-items: flex-start; gap: 10px;
+      text-align: left; transition: background 0.15s;
     }
     .accordion-header:hover { background: #fafbfd; }
 
     .accordion-num {
-      width: 22px;
-      height: 22px;
-      border-radius: 50%;
-      background: #f0f2f5;
-      font-size: 11px;
-      font-weight: 700;
-      color: #7a8494;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-      margin-top: 2px;
+      width: 22px; height: 22px; border-radius: 50%;
+      background: #f0f2f5; font-size: 11px; font-weight: 700;
+      color: #7a8494; display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0; margin-top: 2px;
     }
 
     .accordion-header-main { flex: 1; min-width: 0; }
 
     .accordion-phase-label {
-      font-size: 10px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.6px;
-      margin-bottom: 3px;
+      font-family: 'JetBrains Mono', ui-monospace, monospace;
+      font-size: 9px; font-weight: 600;
+      text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 3px;
     }
-    .phase-aufwaermen .accordion-phase-label { color: #c45e00; }
-    .phase-hauptteil  .accordion-phase-label { color: #1B6BF4; }
-    .phase-spielformat .accordion-phase-label { color: #1a8044; }
+    .phase-aufwaermen .accordion-phase-label { color: #C2611F; }
+    .phase-hauptteil  .accordion-phase-label { color: #0E6A45; }
+    .phase-spielformat .accordion-phase-label { color: #0F3FA8; }
 
     .accordion-title {
-      font-family: 'Barlow', 'Inter', sans-serif;
-      font-size: 14px;
-      font-weight: 800;
-      color: #0a1628;
-      text-transform: uppercase;
-      letter-spacing: 0.3px;
-      line-height: 1.2;
-      margin-bottom: 6px;
+      font-size: 14px; font-weight: 800; color: #0E1430;
+      letter-spacing: -0.005em; line-height: 1.2; margin-bottom: 6px;
     }
 
-    .accordion-tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 4px;
-    }
+    .accordion-tags { display: flex; flex-wrap: wrap; gap: 4px; }
 
     .tag {
-      padding: 2px 7px;
-      border-radius: 6px;
-      font-size: 11px;
-      font-weight: 500;
+      padding: 2px 7px; border-radius: 6px;
+      font-size: 11px; font-weight: 600;
     }
-    .tag-jugend { background: #ddeeff; color: #1B6BF4; }
-    .tag-skill  { background: #dcf5e7; color: #1a8044; }
+    .tag-jugend { background: rgba(30,107,255,0.12); color: #1E6BFF; }
+    .tag-skill  { background: rgba(14,106,69,0.12); color: #0E6A45; }
 
     .accordion-chevron {
-      flex-shrink: 0;
-      margin-top: 4px;
-      color: #b0b8c8;
+      flex-shrink: 0; margin-top: 4px; color: #b0b8c8;
       transition: transform 0.22s ease;
     }
     .accordion-item.open .accordion-chevron { transform: rotate(180deg); }
 
     /* ── Accordion Body ── */
-    .accordion-body {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.28s ease;
-    }
-    .accordion-item.open .accordion-body {
-      max-height: 800px;
-    }
+    .accordion-body { max-height: 0; overflow: hidden; transition: max-height 0.28s ease; }
+    .accordion-item.open .accordion-body { max-height: 900px; }
 
     .accordion-body-inner {
       padding: 0 14px 16px 44px;
@@ -206,176 +116,95 @@
     }
 
     .detail-desc {
-      font-size: 13px;
-      color: #555;
-      line-height: 1.6;
-      padding: 12px 0 14px;
-      border-bottom: 1px solid #f4f5f7;
+      font-size: 13px; color: #555; line-height: 1.6;
+      padding: 12px 0 14px; border-bottom: 1px solid #f4f5f7;
     }
 
-    .detail-block {
-      padding: 12px 0;
-      border-bottom: 1px solid #f4f5f7;
-    }
+    .detail-block { padding: 12px 0; border-bottom: 1px solid #f4f5f7; }
     .detail-block:last-of-type { border-bottom: none; }
 
     .detail-label {
-      font-size: 10px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.6px;
-      color: #adb5c2;
-      margin-bottom: 5px;
+      font-family: 'JetBrains Mono', ui-monospace, monospace;
+      font-size: 9px; font-weight: 600; text-transform: uppercase;
+      letter-spacing: 0.1em; color: #adb5c2; margin-bottom: 5px;
     }
 
     .detail-text {
-      font-size: 13px;
-      color: #444;
-      line-height: 1.65;
-      white-space: pre-line;
+      font-size: 13px; color: #444;
+      line-height: 1.65; white-space: pre-line;
     }
 
     .accordion-img {
-      width: 100%;
-      max-height: 200px;
-      object-fit: contain;
-      border-radius: 10px;
-      margin-top: 12px;
-      background: #f7f9ff;
-      display: block;
+      width: 100%; max-height: 200px; object-fit: contain;
+      border-radius: 10px; margin-top: 12px;
+      background: #f7f9ff; display: block;
     }
 
     .detail-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 5px;
-      color: #1B6BF4;
-      font-size: 13px;
-      font-weight: 600;
-      text-decoration: none;
-      margin-top: 14px;
-      padding: 8px 14px;
-      border: 1.5px solid #dde8ff;
-      border-radius: 10px;
-      transition: background 0.15s;
+      display: inline-flex; align-items: center; gap: 5px;
+      color: #1E6BFF; font-size: 13px; font-weight: 600;
+      text-decoration: none; margin-top: 14px;
+      padding: 8px 14px; border: 1.5px solid rgba(30,107,255,0.25);
+      border-radius: 10px; transition: background 0.15s;
     }
     .detail-link:hover { background: #f0f5ff; }
 
     /* ── Reroll ── */
-    .reroll-wrap {
-      margin-top: 16px;
-    }
+    .reroll-wrap { margin-top: 16px; }
 
     .reroll-btn {
-      width: 100%;
-      padding: 16px;
-      border: 2px solid #1B6BF4;
-      border-radius: 14px;
-      background: white;
-      color: #1B6BF4;
-      font-family: 'Inter', sans-serif;
-      font-size: 15px;
-      font-weight: 600;
-      cursor: pointer;
+      width: 100%; padding: 16px;
+      border: 1.5px solid rgba(30,107,255,0.4);
+      border-radius: 14px; background: rgba(30,107,255,0.08);
+      color: #5b9bff;
+      font-family: 'Inter Tight', system-ui, sans-serif;
+      font-size: 15px; font-weight: 700; cursor: pointer;
       transition: all 0.18s;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
+      display: flex; align-items: center; justify-content: center; gap: 8px;
     }
-    .reroll-btn:hover { background: #f0f5ff; transform: translateY(-1px); }
-    .reroll-btn:disabled {
-      border-color: #e4e8ef;
-      color: #b0b8c8;
-      cursor: default;
-      transform: none;
-    }
+    .reroll-btn:hover { background: rgba(30,107,255,0.15); transform: translateY(-1px); }
+    .reroll-btn:disabled { border-color: rgba(255,255,255,0.1); color: rgba(255,255,255,0.25); background: transparent; cursor: default; transform: none; }
 
     .no-variations {
-      text-align: center;
-      font-size: 12px;
-      color: #9aa3b0;
-      margin-top: 8px;
+      text-align: center; font-size: 12px;
+      color: rgba(255,255,255,0.3); margin-top: 8px;
     }
 
     /* ── Empty / Error ── */
     .empty-state {
-      text-align: center;
-      padding: 48px 24px;
-      color: #9aa3b0;
-      font-size: 14px;
-      line-height: 1.6;
+      text-align: center; padding: 48px 24px;
+      color: rgba(255,255,255,0.35); font-size: 14px; line-height: 1.6;
     }
 
     /* ── Bottom Nav ── */
     .bottom-nav {
-      position: fixed;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 375px;
-      background: white;
-      border-top: 1px solid #f0f2f5;
-      display: flex;
-      justify-content: space-around;
-      padding: 10px 0 14px;
-      z-index: 20;
-      box-shadow: 0 -2px 12px rgba(0,0,0,0.06);
+      position: fixed; bottom: 0; left: 0; width: 100%;
+      background: #0E1430; border-top: 1px solid rgba(255,255,255,0.1);
+      display: flex; padding: 10px 0 24px; z-index: 20;
     }
-
     .nav-item {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 3px;
-      border: none;
-      background: none;
-      cursor: pointer;
-      padding: 4px;
-      text-decoration: none;
-      color: #c0c7d3;
-      transition: color 0.15s;
+      flex: 1; display: flex; flex-direction: column; align-items: center; gap: 3px;
+      border: none; background: none; cursor: pointer; padding: 4px; text-decoration: none;
+      color: rgba(255,255,255,0.4); font-family: 'Inter Tight', system-ui, sans-serif;
+      font-size: 10.5px; font-weight: 600; letter-spacing: 0.01em; transition: color 0.15s;
     }
-    .nav-item.active { color: #1B6BF4; }
+    .nav-item.active { color: #1E6BFF; }
     .nav-icon { width: 22px; height: 22px; }
-    .nav-label { font-family: 'Inter', sans-serif; font-size: 10px; font-weight: 500; }
 
-    /* ── Burger Drawer ── */
-    .drawer-overlay {
-      display: none;
-      position: fixed; inset: 0;
-      background: rgba(0,0,0,0.3);
-      z-index: 40;
-    }
+    /* ── Drawer ── */
+    .drawer-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 40; }
     .drawer-overlay.open { display: block; }
-
     .drawer {
-      position: fixed; top: 0; right: -280px;
-      width: 260px; height: 100vh;
-      background: white; z-index: 50;
-      padding: 32px 24px;
-      transition: right 0.25s ease;
-      box-shadow: -8px 0 32px rgba(0,0,0,0.12);
+      position: fixed; top: 0; right: -280px; width: 260px; height: 100vh;
+      background: #131929; z-index: 50; padding: 32px 24px;
+      transition: right 0.25s ease; box-shadow: -8px 0 32px rgba(0,0,0,0.4);
     }
     .drawer.open { right: 0; }
-
-    .drawer-close {
-      position: absolute; top: 16px; right: 16px;
-      background: none; border: none; font-size: 22px;
-      cursor: pointer; color: #555; padding: 4px;
-    }
-
-    .drawer-logo { width: 48px; margin-bottom: 28px; }
-
-    .drawer-link {
-      display: block; padding: 12px 0;
-      font-size: 15px; font-weight: 500;
-      color: #1a1a2e; text-decoration: none;
-      border-bottom: 1px solid #f0f2f5;
-    }
+    .drawer-close { position: absolute; top: 16px; right: 16px; background: none; border: none; font-size: 22px; cursor: pointer; color: rgba(255,255,255,0.6); padding: 4px; }
+    .drawer-logo { width: 36px; margin-bottom: 28px; }
+    .drawer-link { display: block; padding: 12px 0; font-family: 'Inter Tight', system-ui, sans-serif; font-size: 15px; font-weight: 600; color: rgba(255,255,255,0.85); text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.1); }
     .drawer-link:last-child { border-bottom: none; }
-    .drawer-link:hover { color: #1B6BF4; }
+    .drawer-link:hover { color: #1E6BFF; }
   </style>
   <link rel="stylesheet" href="/desktop.css">
   <script src="/desktop-nav.js" defer></script>
@@ -411,28 +240,28 @@
 
     <nav class="bottom-nav">
       <a href="/uebungen" class="nav-item">
-        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/>
+        <svg class="nav-icon" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M11 4 L6 17 L16 17 Z"/><line x1="7.5" y1="11" x2="14.5" y2="11"/><line x1="4.5" y1="17" x2="17.5" y2="17"/>
         </svg>
-        <span class="nav-label">Übungen</span>
+        <span>Übungen</span>
       </a>
       <a href="/einheiten" class="nav-item">
-        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/>
+        <svg class="nav-icon" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="4" y="3" width="14" height="16" rx="2"/><line x1="7" y1="8" x2="15" y2="8"/><line x1="7" y1="12" x2="15" y2="12"/><line x1="7" y1="16" x2="12" y2="16"/>
         </svg>
-        <span class="nav-label">Einheiten</span>
+        <span>Einheiten</span>
       </a>
       <a href="/wissen" class="nav-item">
-        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+        <svg class="nav-icon" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 4h6a3 3 0 013 3v12a3 3 0 00-3-3H4z"/><path d="M18 4h-6a3 3 0 00-3 3v12a3 3 0 013-3h6z"/>
         </svg>
-        <span class="nav-label">Wissen</span>
+        <span>Wissen</span>
       </a>
       <a href="/whatsapp-info" class="nav-item">
-        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+        <svg class="nav-icon" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 6a2 2 0 012-2h10a2 2 0 012 2v7a2 2 0 01-2 2H9l-4 3v-3H6a2 2 0 01-2-2z"/>
         </svg>
-        <span class="nav-label">WhatsApp</span>
+        <span>WhatsApp</span>
       </a>
     </nav>
 
@@ -553,7 +382,6 @@
       document.getElementById('session-list').innerHTML =
         session.exercises.map((ex, i) => renderAccordionItem(ex, i)).join('');
 
-      // Erste Übung aufgeklappt
       const first = document.querySelector('.accordion-item');
       if (first) first.classList.add('open');
     }
@@ -635,7 +463,7 @@
           '<div class="empty-state">Übungen konnten nicht geladen werden.</div>';
       });
 
-    // ── Burger Drawer ─────────────────────────────────────────────
+    // ── Drawer ────────────────────────────────────────────────────
     function openDrawer() {
       document.getElementById('drawer').classList.add('open');
       document.getElementById('drawer-overlay').classList.add('open');
