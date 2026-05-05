@@ -507,6 +507,7 @@
   </style>
   <link rel="stylesheet" href="/desktop.css">
   <script src="/desktop-nav.js" defer></script>
+  <script src="/feedback-widget.js" defer></script>
 </head>
 <body>
   <div class="container">
@@ -838,13 +839,39 @@
         document.getElementById('not-found').style.display = 'block';
       });
 
-    function submitFeedback() {
-      const feedback = document.getElementById('feedbackText').value;
-      if (feedback.trim()) {
-        alert('Vielen Dank für dein Feedback!\n\n' + feedback);
-        document.getElementById('feedbackText').value = '';
-      } else {
-        alert('Bitte gib dein Feedback ein.');
+    async function submitFeedback() {
+      const text = document.getElementById('feedbackText').value.trim();
+      if (!text) return;
+      const btn = document.querySelector('.feedback-submit');
+      const exTitle = document.getElementById('titel')?.textContent || window.location.pathname;
+      btn.disabled = true;
+      btn.textContent = 'Wird gesendet…';
+      try {
+        const res = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            access_key: '178bfb57-6bf5-45c0-9788-064568110b35',
+            subject: `Übungs-Feedback: ${exTitle}`,
+            from_name: 'Coach United Übungsdetail',
+            message: text,
+            uebung: exTitle,
+            seite: window.location.pathname,
+          }),
+        });
+        if (res.ok) {
+          btn.textContent = 'Danke für dein Feedback!';
+          btn.style.background = '#0E6A45';
+          document.getElementById('feedbackText').value = '';
+          setTimeout(() => {
+            btn.disabled = false;
+            btn.textContent = 'Feedback absenden';
+            btn.style.background = '';
+          }, 3000);
+        } else throw new Error();
+      } catch {
+        btn.disabled = false;
+        btn.textContent = 'Erneut versuchen';
       }
     }
 
