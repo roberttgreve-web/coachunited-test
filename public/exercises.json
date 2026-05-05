@@ -3378,5 +3378,66 @@
     "original_coaching_fokus": "",
     "ist_gecrawlt": false,
     "quell_kategorie": ""
+  },
+  {
+    "id": 62,
+    "titel": "IN DER RICHTIGEN ANZAHL EINLAUFEN UND SPIELEN",
+    "quell_trainingseinheit": "Hohe Pässe und Fernschüsse gekonnt einsetzen",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/11/image-1.png",
+    "grafik_dateiname": "uebung-062-in-der-richtigen-anzahl-einlaufen-und-spielen.png",
+    "trainingsphase": "Spielformat",
+    "kurzbeschreibung": "Teams laufen in der Teamstärke aufs Feld, die der Trainer ansagt und spielen ein Spiel mit Golden Goal.",
+    "aufbau": "Starthütchen im Abstand von 20m aufbauen. Zentral jeweils zwei Hütchentore platzieren. Vier Gruppen einteilen. Mittelzone entfernen. Jeweils zweites Minitor auf der Grundlinie platzieren. Zwei Teams stehen an der Seitenlinie an. Trainier mittig mit Ball.",
+    "durchfuehrung": "Trainer sagt die Teamstärke an (z.B. „Drei gegen Drei“ oder „Fünf gegen Fünf“). Die ersten Spieler aus der Reihe jedes Team laufen in entsprechender Anzahl aufs Feld und spielen bis ein Tor gefallen ist – oder maximal drei Minuten. Dann stellen sie sich hinten an und der Trainer gibt die neue Teamstärke bekannt. Ein neues Spiel startet. ",
+    "varianten": "",
+    "quell_url": "https://coachunited.de/hohe-passe-und-fernschusse-gekonnt-einsetzen/",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Dribbeln",
+      "Torschuss"
+    ],
+    "coaching_fokus": "• Schnelles Schalten beim Ansagen der Teamstärke",
+    "leichter_machen": "• Auf Jugendtore spielen lassen",
+    "schwerer_machen": "• Einführung eines zweiten Balles",
+    "status": "veroeffentlicht",
+    "alt_titel": "Dynamisches Raumspiel in wechselnder Mannschaftsstärke",
+    "seo_keyword": "Fußballübung Raumspiel Kinder",
+    "url_slug": "dynamisches-raumspiel-wechselnde-mannschaftsstärke",
+    "seo_meta_description": "Dynamisches Fußballtraining für Kinder mit wechselnder Mannschaftsstärke - fördert Passen, Ballkontrolle und Raumverständnis.",
+    "grafik_alt_text": "Kinder spielen Fußball auf einem Kleinfeld mit wechselnder Spieleranzahl pro Team",
+    "grafik_description": "Das Bild zeigt ein dynamisches Fußballspiel auf einem überschaubaren Feld. Die Kinder spielen in wechselnder Teamstärke gegeneinander, was ihre Bewegung im Raum und das Zusammenspiel fördert.",
+    "grafik_title": "Fußballübung: Dynamisches Raumspiel in wechselnder Mannschaftsstärke",
+    "grafik_caption": "Kinder trainieren das Raumspiel und die Teamkoordination in wechselnder Aufstellung.",
+    "faq": [
+      {
+        "frage": "Wie passe ich die Spielerzahl an?",
+        "antwort": "Die Teamstärke lässt sich je nach Leistungsstand der Kinder anpassen. Beginne mit 3 gegen 3 und erhöhe dann langsam bis maximal 5 gegen 5."
+      },
+      {
+        "frage": "Wie lange soll die Spielphase dauern?",
+        "antwort": "Pro Spielphase sollten maximal 3 Minuten gespielt werden. Danach erfolgt der Wechsel der Teamstärke."
+      },
+      {
+        "frage": "Für welche Altersgruppen eignet sich die Übung?",
+        "antwort": "Die Übung ist für Kinder von 6-12 Jahren (G- bis D-Jugend) gut geeignet und fördert wichtige fußballerische Grundlagen."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [],
+    "schwester_id": null,
+    "schwester_titel": null
   }
 ]
