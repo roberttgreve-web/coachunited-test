@@ -47,107 +47,96 @@
     .badge-jugend { background: rgba(30,107,255,0.1); color: #1E6BFF; }
     .badge-skill  { background: rgba(14,106,69,0.1); color: #0E6A45; }
 
-    /* ── Accordion ── */
-    .accordion-list { display: flex; flex-direction: column; gap: 10px; }
+    /* ── Exercise Cards ── */
+    .ex-card-list { display: flex; flex-direction: column; gap: 14px; }
 
-    .accordion-item {
-      border-radius: 14px; overflow: hidden;
+    .ex-card {
+      border-radius: 16px; overflow: hidden;
       background: #fff;
-      border-left: 4px solid #E6E8EF;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+      border-top: 4px solid #E6E8EF;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.08);
     }
-    .phase-aufwaermen { border-left-color: #C2611F; }
-    .phase-hauptteil  { border-left-color: #0E6A45; }
-    .phase-spielformat{ border-left-color: #0F3FA8; }
+    .phase-aufwaermen { border-top-color: #C2611F; }
+    .phase-hauptteil  { border-top-color: #0E6A45; }
+    .phase-spielformat{ border-top-color: #0F3FA8; }
 
-    .accordion-header {
-      width: 100%; padding: 16px 14px 16px 14px;
+    .ex-card-header {
+      width: 100%; padding: 18px 18px 16px;
       background: #fff; border: none; cursor: pointer;
-      display: flex; align-items: flex-start; gap: 12px;
-      text-align: left; transition: background 0.15s;
+      text-align: left; position: relative; transition: background 0.15s;
     }
-    .accordion-header:hover { background: #fafbfd; }
+    .ex-card-header:hover { background: #fafbfd; }
 
-    .accordion-num {
-      width: 22px; height: 22px; border-radius: 50%;
-      background: #f0f2f5; font-size: 11px; font-weight: 700;
-      color: #7a8494; display: flex; align-items: center; justify-content: center;
-      flex-shrink: 0; margin-top: 2px;
+    .ex-badges { display: flex; align-items: center; gap: 7px; margin-bottom: 12px; }
+
+    .ex-phase-badge {
+      padding: 4px 10px; border-radius: 6px;
+      font-family: 'Inter Tight', system-ui, sans-serif;
+      font-size: 10px; font-weight: 700; color: #fff;
+      letter-spacing: 0.06em; text-transform: uppercase;
     }
-
-    .accordion-header-main { flex: 1; min-width: 0; }
-
-    .accordion-phase-label {
+    .ex-jugend-badge {
       font-family: 'JetBrains Mono', ui-monospace, monospace;
-      font-size: 9px; font-weight: 600;
-      text-transform: uppercase; letter-spacing: 0.12em; margin-bottom: 5px;
-    }
-    .phase-aufwaermen .accordion-phase-label { color: #C2611F; }
-    .phase-hauptteil  .accordion-phase-label { color: #0E6A45; }
-    .phase-spielformat .accordion-phase-label { color: #0F3FA8; }
-
-    .accordion-title {
-      font-size: 17px; font-weight: 800; color: #0E1430;
-      letter-spacing: -0.01em; line-height: 1.2; margin-bottom: 6px;
+      font-size: 10px; font-weight: 700;
+      padding: 4px 9px; background: #EEF1F6;
+      color: #0E1430; border-radius: 4px; letter-spacing: 0.05em;
     }
 
-    .accordion-tags { display: flex; flex-wrap: wrap; gap: 4px; }
-
-    .tag {
-      padding: 2px 7px; border-radius: 6px;
-      font-size: 11px; font-weight: 600;
+    .ex-card-title {
+      font-size: 22px; font-weight: 800; color: #0E1430;
+      letter-spacing: -0.02em; line-height: 1.1;
+      margin-bottom: 8px; padding-right: 30px;
     }
-    .tag-jugend { background: rgba(30,107,255,0.12); color: #1E6BFF; }
-    .tag-skill  { background: rgba(14,106,69,0.12); color: #0E6A45; }
-
-    .accordion-chevron {
-      flex-shrink: 0; margin-top: 4px; color: #b0b8c8;
-      transition: transform 0.22s ease;
+    .ex-card-desc {
+      font-size: 15px; color: #3B4565; line-height: 1.6;
     }
-    .accordion-item.open .accordion-chevron { transform: rotate(180deg); }
-
-    /* ── Accordion Body ── */
-    .accordion-body { max-height: 0; overflow: hidden; transition: max-height 0.28s ease; }
-    .accordion-item.open .accordion-body { max-height: 900px; }
-
-    .accordion-body-inner {
-      padding: 0 16px 20px 46px;
-      border-top: 1px solid #f0f2f5;
+    .ex-chevron {
+      position: absolute; top: 20px; right: 16px;
+      color: #b0b8c8; transition: transform 0.22s ease;
     }
+    .ex-card.open .ex-chevron { transform: rotate(180deg); }
 
-    .detail-desc {
-      font-size: 15px; color: #3B4565; line-height: 1.65;
-      padding: 14px 0 16px; border-bottom: 1px solid #f0f2f5;
-    }
+    /* ── Card Body ── */
+    .ex-card-body { max-height: 0; overflow: hidden; transition: max-height 0.32s ease; }
+    .ex-card.open .ex-card-body { max-height: 1400px; }
 
-    .detail-block { padding: 14px 0; border-bottom: 1px solid #f0f2f5; }
-    .detail-block:last-of-type { border-bottom: none; }
-
-    .detail-label {
-      font-family: 'JetBrains Mono', ui-monospace, monospace;
-      font-size: 9px; font-weight: 600; text-transform: uppercase;
-      letter-spacing: 0.12em; color: #9aa3b0; margin-bottom: 6px;
-    }
-
-    .detail-text {
-      font-size: 14px; color: #3B4565;
-      line-height: 1.7; white-space: pre-line;
-    }
-
-    .accordion-img {
-      width: 100%; max-height: 200px; object-fit: contain;
-      border-radius: 10px; margin-top: 12px;
+    .ex-img {
+      width: 100%; max-height: 240px; object-fit: contain;
       background: #f7f9ff; display: block;
+      border-top: 1px solid #f0f2f5;
+      padding: 16px; box-sizing: border-box;
     }
 
-    .detail-link {
+    .ex-skills {
+      display: flex; flex-wrap: wrap; gap: 6px;
+      padding: 14px 18px 16px;
+      border-bottom: 1px solid #f0f2f5;
+    }
+    .ex-skill-tag {
+      padding: 5px 12px; border-radius: 999px;
+      background: #FF4D1F; color: #fff;
+      font-family: 'Inter Tight', system-ui, sans-serif;
+      font-size: 12px; font-weight: 600;
+    }
+
+    .ex-section { padding: 16px 18px; border-top: 1px solid #f0f2f5; }
+    .ex-section-head { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+    .ex-section-dot {
+      width: 10px; height: 10px; border-radius: 50%;
+      background: #1E6BFF; flex-shrink: 0;
+    }
+    .ex-section-title { font-size: 16px; font-weight: 700; color: #0E1430; letter-spacing: -0.01em; }
+    .ex-section-text { font-size: 15px; color: #3B4565; line-height: 1.7; white-space: pre-line; }
+
+    .ex-detail-link {
       display: inline-flex; align-items: center; gap: 6px;
+      margin: 14px 18px 18px;
       color: #1E6BFF; font-size: 14px; font-weight: 700;
-      text-decoration: none; margin-top: 16px;
+      text-decoration: none;
       padding: 10px 16px; border: 1.5px solid rgba(30,107,255,0.3);
       border-radius: 10px; transition: background 0.15s;
     }
-    .detail-link:hover { background: #f0f5ff; }
+    .ex-detail-link:hover { background: #f0f5ff; }
 
     /* ── Reroll ── */
     .reroll-wrap { margin-top: 16px; }
@@ -225,7 +214,7 @@
 
     <div class="content">
       <div id="session-meta" class="session-meta"></div>
-      <div id="session-list" class="accordion-list"></div>
+      <div id="session-list" class="ex-card-list"></div>
       <div class="reroll-wrap">
         <button id="reroll-btn" class="reroll-btn" onclick="reroll()">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
@@ -385,7 +374,7 @@
       document.getElementById('session-list').innerHTML =
         session.exercises.map((ex, i) => renderAccordionItem(ex, i)).join('');
 
-      const first = document.querySelector('.accordion-item');
+      const first = document.querySelector('.ex-card');
       if (first) first.classList.add('open');
     }
 
@@ -395,56 +384,61 @@
       const backUrl = encodeURIComponent(window.location.href);
       const href = ex.url_slug ? `/uebung/${ex.url_slug}?back=${backUrl}` : null;
 
-      const jugendTags = (ex.jugend || [])
-        .map(j => `<span class="tag tag-jugend">${j.replace('-Jugend', '')}</span>`).join('');
-      const skillTags = (ex.skills || []).slice(0, 2)
-        .map(s => `<span class="tag tag-skill">${s}</span>`).join('');
+      const phaseColors = { aufwaermen: '#C2611F', hauptteil: '#0E6A45', spielformat: '#0F3FA8' };
+      const phaseColor = phaseColors[phaseKey] || '#0E1430';
+
+      const jugendStr = (ex.jugend || []).map(j => j.replace('-Jugend', '')).join('·');
+
+      const skillTagsHtml = (ex.skills || [])
+        .map(s => `<span class="ex-skill-tag">${s}</span>`).join('');
+
+      const imgHtml = ex.grafik_url
+        ? `<img class="ex-img" src="${ex.grafik_url}" alt="${ex.titel}" loading="lazy">` : '';
+
+      const sections = [
+        ex.aufbau        && { label: 'Aufbau',       text: ex.aufbau },
+        ex.durchfuehrung && { label: 'Durchführung', text: ex.durchfuehrung },
+      ].filter(Boolean);
+
+      const sectionsHtml = sections.map(s => `
+        <div class="ex-section">
+          <div class="ex-section-head">
+            <span class="ex-section-dot"></span>
+            <span class="ex-section-title">${s.label}</span>
+          </div>
+          <p class="ex-section-text">${s.text}</p>
+        </div>`).join('');
 
       const detailLink = href
-        ? `<a href="${href}" class="detail-link">
+        ? `<a href="${href}" class="ex-detail-link">
              Übung im Detail
              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
            </a>` : '';
 
-      const imgHtml = ex.grafik_url
-        ? `<img class="accordion-img" src="${ex.grafik_url}" alt="${ex.titel}" loading="lazy">` : '';
-
-      const blocks = [
-        ex.kurzbeschreibung && { label: null,              text: ex.kurzbeschreibung, cls: 'detail-desc' },
-        ex.aufbau           && { label: 'Aufbau',          text: ex.aufbau           },
-        ex.durchfuehrung    && { label: 'Durchführung',    text: ex.durchfuehrung    },
-      ].filter(Boolean);
-
-      const bodyContent = imgHtml + blocks.map(b =>
-        b.cls
-          ? `<p class="${b.cls}">${b.text}</p>`
-          : `<div class="detail-block">
-               <p class="detail-label">${b.label}</p>
-               <p class="detail-text">${b.text}</p>
-             </div>`
-      ).join('') + detailLink;
-
       return `
-        <div class="accordion-item phase-${phaseKey}" data-index="${index}">
-          <button class="accordion-header" onclick="toggleItem(this)">
-            <span class="accordion-num">${index + 1}</span>
-            <div class="accordion-header-main">
-              <p class="accordion-phase-label">${phaseLabel}</p>
-              <h3 class="accordion-title">${ex.titel}</h3>
-              <div class="accordion-tags">${jugendTags}${skillTags}</div>
+        <div class="ex-card phase-${phaseKey}" data-index="${index}">
+          <button class="ex-card-header" onclick="toggleItem(this)">
+            <div class="ex-badges">
+              <span class="ex-phase-badge" style="background:${phaseColor}">${phaseLabel.toUpperCase()}</span>
+              ${jugendStr ? `<span class="ex-jugend-badge">${jugendStr}</span>` : ''}
             </div>
-            <svg class="accordion-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <h3 class="ex-card-title">${ex.titel}</h3>
+            ${ex.kurzbeschreibung ? `<p class="ex-card-desc">${ex.kurzbeschreibung}</p>` : ''}
+            <svg class="ex-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="6 9 12 15 18 9"/>
             </svg>
           </button>
-          <div class="accordion-body">
-            <div class="accordion-body-inner">${bodyContent}</div>
+          <div class="ex-card-body">
+            ${imgHtml}
+            ${skillTagsHtml ? `<div class="ex-skills">${skillTagsHtml}</div>` : ''}
+            ${sectionsHtml}
+            ${detailLink}
           </div>
         </div>`;
     }
 
     function toggleItem(btn) {
-      btn.closest('.accordion-item').classList.toggle('open');
+      btn.closest('.ex-card').classList.toggle('open');
     }
 
     function reroll() {
