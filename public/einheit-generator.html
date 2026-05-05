@@ -23,7 +23,7 @@
       position: sticky; top: 0; z-index: 20;
     }
     .logo-link { display: flex; align-items: center; text-decoration: none; }
-    .logo-link img { width: 40px; height: 40px; object-fit: contain; }
+    .logo-link img { width: 48px; height: 48px; object-fit: contain; }
     .burger-btn { background: none; border: none; cursor: pointer; padding: 6px; display: flex; flex-direction: column; gap: 5px; }
     .burger-btn span { display: block; width: 22px; height: 2px; background: #0E1430; border-radius: 2px; }
 
@@ -34,8 +34,8 @@
     .session-meta { margin-bottom: 20px; }
 
     .session-title {
-      font-size: 20px; font-weight: 800; color: #0E1430;
-      letter-spacing: -0.01em; margin-bottom: 10px;
+      font-size: 22px; font-weight: 800; color: #0E1430;
+      letter-spacing: -0.02em; margin-bottom: 10px;
     }
 
     .session-badges { display: flex; flex-wrap: wrap; gap: 6px; }
@@ -61,9 +61,9 @@
     .phase-spielformat{ border-left-color: #0F3FA8; }
 
     .accordion-header {
-      width: 100%; padding: 14px 14px 14px 12px;
+      width: 100%; padding: 16px 14px 16px 14px;
       background: #fff; border: none; cursor: pointer;
-      display: flex; align-items: flex-start; gap: 10px;
+      display: flex; align-items: flex-start; gap: 12px;
       text-align: left; transition: background 0.15s;
     }
     .accordion-header:hover { background: #fafbfd; }
@@ -80,15 +80,15 @@
     .accordion-phase-label {
       font-family: 'JetBrains Mono', ui-monospace, monospace;
       font-size: 9px; font-weight: 600;
-      text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 3px;
+      text-transform: uppercase; letter-spacing: 0.12em; margin-bottom: 5px;
     }
     .phase-aufwaermen .accordion-phase-label { color: #C2611F; }
     .phase-hauptteil  .accordion-phase-label { color: #0E6A45; }
     .phase-spielformat .accordion-phase-label { color: #0F3FA8; }
 
     .accordion-title {
-      font-size: 14px; font-weight: 800; color: #0E1430;
-      letter-spacing: -0.005em; line-height: 1.2; margin-bottom: 6px;
+      font-size: 17px; font-weight: 800; color: #0E1430;
+      letter-spacing: -0.01em; line-height: 1.2; margin-bottom: 6px;
     }
 
     .accordion-tags { display: flex; flex-wrap: wrap; gap: 4px; }
@@ -111,27 +111,27 @@
     .accordion-item.open .accordion-body { max-height: 900px; }
 
     .accordion-body-inner {
-      padding: 0 14px 16px 44px;
+      padding: 0 16px 20px 46px;
       border-top: 1px solid #f0f2f5;
     }
 
     .detail-desc {
-      font-size: 13px; color: #555; line-height: 1.6;
-      padding: 12px 0 14px; border-bottom: 1px solid #f4f5f7;
+      font-size: 15px; color: #3B4565; line-height: 1.65;
+      padding: 14px 0 16px; border-bottom: 1px solid #f0f2f5;
     }
 
-    .detail-block { padding: 12px 0; border-bottom: 1px solid #f4f5f7; }
+    .detail-block { padding: 14px 0; border-bottom: 1px solid #f0f2f5; }
     .detail-block:last-of-type { border-bottom: none; }
 
     .detail-label {
       font-family: 'JetBrains Mono', ui-monospace, monospace;
       font-size: 9px; font-weight: 600; text-transform: uppercase;
-      letter-spacing: 0.1em; color: #adb5c2; margin-bottom: 5px;
+      letter-spacing: 0.12em; color: #9aa3b0; margin-bottom: 6px;
     }
 
     .detail-text {
-      font-size: 13px; color: #444;
-      line-height: 1.65; white-space: pre-line;
+      font-size: 14px; color: #3B4565;
+      line-height: 1.7; white-space: pre-line;
     }
 
     .accordion-img {
@@ -141,10 +141,10 @@
     }
 
     .detail-link {
-      display: inline-flex; align-items: center; gap: 5px;
-      color: #1E6BFF; font-size: 13px; font-weight: 600;
-      text-decoration: none; margin-top: 14px;
-      padding: 8px 14px; border: 1.5px solid rgba(30,107,255,0.25);
+      display: inline-flex; align-items: center; gap: 6px;
+      color: #1E6BFF; font-size: 14px; font-weight: 700;
+      text-decoration: none; margin-top: 16px;
+      padding: 10px 16px; border: 1.5px solid rgba(30,107,255,0.3);
       border-radius: 10px; transition: background 0.15s;
     }
     .detail-link:hover { background: #f0f5ff; }
@@ -288,6 +288,11 @@
 
     if (!jugend) window.location.href = '/home';
 
+    function niceTitle(s) {
+      if (!s) return s;
+      return s.charAt(0).toUpperCase() + s.slice(1).toLowerCase();
+    }
+
     // ── Phasen-Konfiguration ──────────────────────────────────────
     const PHASES = [
       { key: 'aufwaermen',  label: 'Aufwärmen',   match: 'Aufwärmen',   slots: 2 },
@@ -430,7 +435,7 @@
             <span class="accordion-num">${index + 1}</span>
             <div class="accordion-header-main">
               <p class="accordion-phase-label">${phaseLabel}</p>
-              <h3 class="accordion-title">${ex.titel}</h3>
+              <h3 class="accordion-title">${niceTitle(ex.titel)}</h3>
               <div class="accordion-tags">${jugendTags}${skillTags}</div>
             </div>
             <svg class="accordion-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
