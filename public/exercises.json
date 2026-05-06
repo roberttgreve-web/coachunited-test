@@ -3625,5 +3625,68 @@
     ],
     "schwester_id": 65,
     "schwester_titel": "AUS DER UMKÄMPFTEN MITTELZONE INS SPIELGESCHEHEN"
+  },
+  {
+    "id": 65,
+    "titel": "AUS DER UMKÄMPFTEN MITTELZONE INS SPIELGESCHEHEN",
+    "quell_trainingseinheit": "Klug aus engen Räumen befreien",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/10/image-6.png",
+    "grafik_dateiname": "uebung-065-aus-der-umkaempften-mittelzone-ins-spielgeschehen.png",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "Zwei Teams kämpfen in der Mittelzone um den Ball bis der Trainer ein Team zum Angreifen auffordert.",
+    "aufbau": "30x20m-Feld aufbauen mit Jugendtoren und Torhütern. Zwei Teams einteilen. Mittelzone markieren. Ein Ball.",
+    "durchfuehrung": "Teams passen sich in den eigenen Reihen jeweils ihren Ball zu. Alle sind in Bewegung. Trainer ruft eine Farbe auf. Dieses Team startet in den Angriff auf eines der beiden Tore (egal, welches). Das andere Team lässt seinen Ball liegen und verteidigt. Gelingt eine Balleroberung, darf das verteidigende Team auch angreifen auf eines der Tore. Nach spätestens 3 Minuten abbrechen und neu starten.",
+    "varianten": "„Shotclock“: Angreifendes Team muss nach spätestens 15 Sekunden einen Torabschluss erreicht haben. BLITZTURNIER MIT GOLDEN GOAL BLITZTURNIER MIT GOLDEN GOAL Drei Teams spielen ein Turnier. Kassiert ein Team ein Tor, muss es runter. Gewinner bleibt stehen.",
+    "quell_url": "https://coachunited.de/klug-aus-engen-raumen-befreien/",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Zweikampf",
+      "Raumverhalten",
+      "Umschalten"
+    ],
+    "coaching_fokus": "• Präzise Pässe; • Schnelles Umschalten",
+    "leichter_machen": "• uss",
+    "schwerer_machen": "• „Shotclock“: Angreifendes Team muss nach spätestens 15 Sekunden einen Torabschluss erreicht haben.",
+    "status": "veroeffentlicht",
+    "schwester_ids": [
+      64
+    ],
+    "schwester_id": 64,
+    "schwester_titel": "AUS DER FRIEDLICHEN MITTELZONE INS SPIELGESCHEHEN",
+    "alt_titel": "Balljagd in der Mittelzone - Schnelle Umschaltmomente",
+    "seo_keyword": "Fußballübung Umschaltspiel Kinder",
+    "url_slug": "fussballubung-umschaltspiel-kinder",
+    "seo_meta_description": "Interaktive Fußballübung für Kinder trainiert schnelle Umschaltmomente und Zweikämpfe in der Mittelzone. Ideal für G- und F-Jugend.",
+    "grafik_alt_text": "Zwei Fußballmannschaften kämpfen um den Ball in der Mittelzone, bevor eine Mannschaft zum Angriff startet.",
+    "grafik_description": "Die Grafik zeigt den Aufbau der Übung 'Aus der umkämpften Mittelzone ins Spielgeschehen'. Zwei Teams kämpfen in einer definierten Mittelzone um den Ball, bis der Trainer ein Team zum Angriff auffordert.",
+    "grafik_title": "Fußballübung: Umschaltmomente trainieren",
+    "grafik_caption": "Übungsaufbau: Zwei Teams kämpfen in der Mittelzone um den Ball, bis der Trainer ein Team zum Angriff auffordert.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler können an der Übung teilnehmen?",
+        "antwort": "Ideal sind 8-12 Spieler pro Team. Die Mittelzone kann dann entsprechend angepasst werden."
+      },
+      {
+        "frage": "Wie lange sollte die Übung dauern?",
+        "antwort": "Je nach Altersgruppe 10-15 Minuten. Wichtig ist, dass die Spieler aktiv bleiben und nicht zu lange in der Übung sind."
+      },
+      {
+        "frage": "Kann man die Übung auch mit anderen Altersstufen durchführen?",
+        "antwort": "Ja, mit leichten Anpassungen der Regeln und Größe des Spielfelds kann die Übung auch für ältere Jugendmannschaften genutzt werden."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": ""
   }
 ]
