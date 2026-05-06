@@ -803,6 +803,64 @@
     "schwester_titel": null
   },
   {
+    "id": 14,
+    "titel": "KETTENSPRINT",
+    "quell_trainingseinheit": "Breite schaffen mit Feldzonen",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/01/image-6.jpg",
+    "grafik_dateiname": "uebung-015-kettensprint.jpg",
+    "trainingsphase": "Aufwärmen",
+    "kurzbeschreibung": "Alle Spieler joggen auf dem Feld in einer Reihe dem Trainer hinterher. Der letzte Spieler in der Kette muss nach vorne sprinten.",
+    "aufbau": "Kein Aufbau.",
+    "durchfuehrung": "Der Trainer führt die Kette von Spielern an, die in lockerem Tempo um den Platz joggen. Der letzte Spieler in der Kette sprintet an allen vorbei auf die zweite Position hinter dem Trainer. Danach startet der nächste – bis alle ein oder zwei Mal durch sind.",
+    "varianten": "Beim Joggen verschiedene Aufwärm-Drills durchführen: Knie hoch, Hacken nach hinten, seitlich laufen etc. TECHNIKKETTE TECHNIKKETTE Die Spieler führen in einer Reihe verschiedene Dribbeltechniken durch.",
+    "quell_url": "https://coachunited.de/breite-schaffen-mit-feldzonen/",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Schnelligkeit"
+    ],
+    "coaching_fokus": "• Gruppe muss eng aneinander bleiben",
+    "leichter_machen": "",
+    "schwerer_machen": "• Beim Joggen verschiedene Aufwärm-Drills durchführen: Knie hoch, Hacken nach hinten, seitlich laufen",
+    "status": "veroeffentlicht",
+    "alt_titel": "Dynamisches Passingsprint",
+    "seo_keyword": "Fußballübung Passspiel Kinder",
+    "url_slug": "fussballubung-passspiel-kinder",
+    "seo_meta_description": "Dynamische Passing-Übung, bei der Kinder ihr Passspiel, Laufwege und Kommunikation trainieren. Geeignet für E- und D-Jugend-Fußballtraining.",
+    "grafik_alt_text": "Kinder in Fußballausrüstung führen einen Passingdrill durch und sprinten nach hinten durch die Reihe",
+    "grafik_description": "Eine Gruppe von Kindern im Fußballtraining führt eine Passübung durch. Sie joggen in einer Reihe mit dem Ball am Fuß, und der letzte Spieler in der Reihe sprintet nach vorne, um sich an den Anfang der Kette zu setzen.",
+    "grafik_title": "Kinder-Fußballtraining: Dynamisches Passspielen",
+    "grafik_caption": "Kinder führen einen dynamischen Passingdrill durch, bei dem der letzte Spieler nach vorne sprintet.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler sind optimal für diese Übung?",
+        "antwort": "Für eine effektive Durchführung empfehlen wir 6-12 Spieler. Sonst wird die Kette zu lang. Auch zwei Ketten parallel möglich."
+      },
+      {
+        "frage": "Wie lange sollte man diese Übung machen?",
+        "antwort": "Je nach Alter und Kondition der Kinder empfehlen wir 5 Minuten."
+      },
+      {
+        "frage": "Kann man die Übung auch mit jüngeren Kindern machen?",
+        "antwort": "Klar."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [],
+    "schwester_id": null,
+    "schwester_titel": null
+  },
+  {
     "id": 15,
     "titel": "TORERFOLG DURCH HÜTCHEN-BALL-TREFFER VERDOPPELN",
     "quell_trainingseinheit": "Breite schaffen mit Feldzonen",
