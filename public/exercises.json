@@ -3692,52 +3692,50 @@
     "quell_kategorie": ""
   },
   {
-    "id": 66,
-    "titel": "BLITZTURNIER MIT GOLDEN GOAL",
-    "quell_trainingseinheit": "Klug aus engen Räumen befreien",
-    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/10/image-5.jpg",
-    "grafik_dateiname": "uebung-066-blitzturnier-mit-golden-goal.jpg",
-    "trainingsphase": "Spielformat",
-    "kurzbeschreibung": "Drei Teams spielen ein Turnier. Kassiert ein Team ein Tor, muss es runter. Gewinner bleibt stehen.",
-    "aufbau": "30x20m-Feld aufbauen mit Jugendtoren und Torhütern. Zwei Teams einteilen.",
-    "durchfuehrung": "Zwei Teams starten, ein Team wartet draußen. Jedes Spiel dauert 3 Minuten. Schießt ein Team ein Tor, endet das Spiel vorzeitig. Gewinner bleibt stehen, Verlierer gehen vom Platz. Bei Unentschieden muss das Team runter, was länger auf dem Platz war.",
-    "varianten": "",
-    "quell_url": "https://coachunited.de/klug-aus-engen-raumen-befreien/",
+    "id": 67,
+    "titel": "ERST IM FELD PASSEN, DANN FELDER TAUSCHEN",
+    "quell_trainingseinheit": "Auch unter Gegnerdruck cool bleiben",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/09/image-18.jpg",
+    "grafik_dateiname": "uebung-067-erst-im-feld-passen-dann-felder-tauschen.jpg",
+    "trainingsphase": "Aufwärmen",
+    "kurzbeschreibung": "Teams passen sich in ihrer Hälfte zu und wechseln nach Kommando zügig die Seiten.",
+    "aufbau": "Zwei 20 x 15 Meter große Felder nebeneinander markieren. Zwei Teams mit je einem Ball in ein Feld stellen.",
+    "durchfuehrung": "Die Spieler passen sich innerhalb ihres Feldes mit sauberen flachen Pässen den Ball zu. Auf Trainerkommando wechseln beide Teams ins jeweils andere Feld. Das Team, das als erstes mit allen Spielern (und dem Ball) das Feld gewechselt hat, gewinnt die Runde.",
+    "varianten": "a) Werfen statt Passen. B) Hohe Pässe. c) Zwei Bälle pro Team. d) Zeitabstände zwischen Feldwechseln kurz halten für viel Dynamik. BALL UNTER DRUCK IN DEN EIGENEN REIHEN HALTEN BALL UNTER DRUCK IN DEN EIGENEN REIHEN HALTEN Ein Team versucht den Ball durch Pässe in den eigenen Reihen zu halten während zwei Jäger aus dem anderen Team versuchen, den Ball zu erobern.",
+    "quell_url": "https://coachunited.de/auch-unter-gegnerdruck-cool-bleiben/",
     "jugend": [
       "G-Jugend",
-      "F-Jugend",
-      "E-Jugend"
+      "F-Jugend"
     ],
     "skills": [
       "Passen",
       "Ballkontrolle",
-      "Dribbeln",
-      "Torschuss"
+      "Raumverhalten"
     ],
-    "coaching_fokus": "",
-    "leichter_machen": "",
-    "schwerer_machen": "",
+    "coaching_fokus": "• Saubere Pässe; • Schnelle Reaktion",
+    "leichter_machen": "• Kleineres Feld; • Werfen statt Passen",
+    "schwerer_machen": "• Hohe Pässe (Feld vergrößern); • Zwei Bälle pro Team; • Zeitabstände zwischen Feldwechseln kurz halten für viel Dynamik",
     "status": "veroeffentlicht",
-    "alt_titel": "Fußballturnier mit Sudden Death",
-    "seo_keyword": "Dynamisches Fußballturnier für Kinder mit einfachen Regeln und direkten Konsequenzen. Fördert Ballkontrolle, Torabschluss und Teamspiel.",
-    "url_slug": "fussballubung-turnier-kinder",
-    "seo_meta_description": "Fußballturnier für Kinder mit Sudden Death",
-    "grafik_alt_text": "Dynamisches Fußballturnier fördert Balltechnik und Teamspiel",
-    "grafik_description": "Für diese Übung eignen sich 3-4 Spieler pro Team optimal. So bleibt das Spielfeld überschaubar und jeder kommt häufig an den Ball.",
-    "grafik_title": "Die Grafik zeigt drei Kinder, die bei einem Fußballturnier mit Sudden Death Regel spielen. Sie rennen mit dem Ball auf das Tor zu und versuchen ein Tor zu erzielen, bevor das gegnerische Team sie vom Ball trennt.",
-    "grafik_caption": "Die Grafik zeigt drei Kinder, die bei einem Fußballturnier mit Sudden Death Regel spielen. Sie rennen mit dem Ball auf das Tor zu und versuchen ein Tor zu erzielen, bevor das gegnerische Team sie vom Ball trennt.",
+    "alt_titel": "Feld-Wechselspiel mit Passpräzision",
+    "seo_keyword": "Fußballübung Pässe Koordination Kinder",
+    "url_slug": "fussballuebung-felder-wechseln-pass-koordination",
+    "seo_meta_description": "Koordinationsreiche Fußballübung für Kinder, bei der Pässe im eigenen Feld und schnelle Feldwechsel trainiert werden.",
+    "grafik_alt_text": "Zwei Fußballfelder nebeneinander, Kinder passen sich den Ball zu und wechseln dann schnell die Seiten",
+    "grafik_description": "Symbolische Darstellung der Fußballübung 'Erst im Feld passen, dann Felder tauschen'. Zwei Felder sind nebeneinander aufgebaut, Kinder in zwei Teams passen sich den Ball zu und wechseln dann zügig die Seiten.",
+    "grafik_title": "Koordinationsübung Fußball Felder wechseln",
+    "grafik_caption": "Kinder trainieren Pässe und Positionswechsel in dieser Fußballübung",
     "faq": [
       {
-        "frage": "Wie lange dauert ein Spiel?",
-        "antwort": "Die Spiele dauern in der Regel jeweils 2-3 Minuten. So bleibt die Intensität hoch und die Kinder sind dauerhaft aktiv."
+        "frage": "Welche Ballkontrolle ist wichtig in dieser Übung?",
+        "antwort": "Flache, kontrollierte Pässe sind entscheidend."
       },
       {
-        "frage": "Kann man die Übung für jüngere Kinder anpassen?",
-        "antwort": "Ja, das Format passt für alle Altersstufen."
+        "frage": "Wie viele Kinder können maximal mitspielen?",
+        "antwort": "Ideal sind 6-8 Kinder pro Feld, damit alle Spieler genügend Ballkontakte haben."
       },
       {
-        "frage": "Kann man die Übung für jüngere Kinder anpassen?",
-        "antwort": "Ja, das passt. "
+        "frage": "Für welche Altersgruppen eignet sich die Übung am besten?",
+        "antwort": "Die Übung ist gut geeignet für jüngere Kinder."
       }
     ],
     "referenz_grafik_url": "",
@@ -3747,11 +3745,8 @@
     "original_coaching_fokus": "",
     "ist_gecrawlt": false,
     "quell_kategorie": "",
-    "schwester_ids": [
-      65,
-      64
-    ],
-    "schwester_id": 65,
-    "schwester_titel": "AUS DER UMKÄMPFTEN MITTELZONE INS SPIELGESCHEHEN"
+    "schwester_ids": [],
+    "schwester_id": null,
+    "schwester_titel": null
   }
 ]
