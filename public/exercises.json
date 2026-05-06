@@ -3621,10 +3621,11 @@
     "ist_gecrawlt": false,
     "quell_kategorie": "",
     "schwester_ids": [
+      66,
       65
     ],
-    "schwester_id": 65,
-    "schwester_titel": "AUS DER UMKÄMPFTEN MITTELZONE INS SPIELGESCHEHEN"
+    "schwester_id": 66,
+    "schwester_titel": "BLITZTURNIER MIT GOLDEN GOAL"
   },
   {
     "id": 65,
@@ -3655,10 +3656,11 @@
     "schwerer_machen": "• „Shotclock“: Angreifendes Team muss nach spätestens 15 Sekunden einen Torabschluss erreicht haben.",
     "status": "veroeffentlicht",
     "schwester_ids": [
+      66,
       64
     ],
-    "schwester_id": 64,
-    "schwester_titel": "AUS DER FRIEDLICHEN MITTELZONE INS SPIELGESCHEHEN",
+    "schwester_id": 66,
+    "schwester_titel": "BLITZTURNIER MIT GOLDEN GOAL",
     "alt_titel": "Balljagd in der Mittelzone - Schnelle Umschaltmomente",
     "seo_keyword": "Fußballübung Umschaltspiel Kinder",
     "url_slug": "fussballubung-umschaltspiel-kinder",
@@ -3688,5 +3690,68 @@
     "original_coaching_fokus": "",
     "ist_gecrawlt": false,
     "quell_kategorie": ""
+  },
+  {
+    "id": 66,
+    "titel": "BLITZTURNIER MIT GOLDEN GOAL",
+    "quell_trainingseinheit": "Klug aus engen Räumen befreien",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/10/image-5.jpg",
+    "grafik_dateiname": "uebung-066-blitzturnier-mit-golden-goal.jpg",
+    "trainingsphase": "Spielformat",
+    "kurzbeschreibung": "Drei Teams spielen ein Turnier. Kassiert ein Team ein Tor, muss es runter. Gewinner bleibt stehen.",
+    "aufbau": "30x20m-Feld aufbauen mit Jugendtoren und Torhütern. Zwei Teams einteilen.",
+    "durchfuehrung": "Zwei Teams starten, ein Team wartet draußen. Jedes Spiel dauert 3 Minuten. Schießt ein Team ein Tor, endet das Spiel vorzeitig. Gewinner bleibt stehen, Verlierer gehen vom Platz. Bei Unentschieden muss das Team runter, was länger auf dem Platz war.",
+    "varianten": "",
+    "quell_url": "https://coachunited.de/klug-aus-engen-raumen-befreien/",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend",
+      "E-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Dribbeln",
+      "Torschuss"
+    ],
+    "coaching_fokus": "",
+    "leichter_machen": "",
+    "schwerer_machen": "",
+    "status": "veroeffentlicht",
+    "alt_titel": "Fußballturnier mit Sudden Death",
+    "seo_keyword": "Dynamisches Fußballturnier für Kinder mit einfachen Regeln und direkten Konsequenzen. Fördert Ballkontrolle, Torabschluss und Teamspiel.",
+    "url_slug": "fussballubung-turnier-kinder",
+    "seo_meta_description": "Fußballturnier für Kinder mit Sudden Death",
+    "grafik_alt_text": "Dynamisches Fußballturnier fördert Balltechnik und Teamspiel",
+    "grafik_description": "Für diese Übung eignen sich 3-4 Spieler pro Team optimal. So bleibt das Spielfeld überschaubar und jeder kommt häufig an den Ball.",
+    "grafik_title": "Die Grafik zeigt drei Kinder, die bei einem Fußballturnier mit Sudden Death Regel spielen. Sie rennen mit dem Ball auf das Tor zu und versuchen ein Tor zu erzielen, bevor das gegnerische Team sie vom Ball trennt.",
+    "grafik_caption": "Die Grafik zeigt drei Kinder, die bei einem Fußballturnier mit Sudden Death Regel spielen. Sie rennen mit dem Ball auf das Tor zu und versuchen ein Tor zu erzielen, bevor das gegnerische Team sie vom Ball trennt.",
+    "faq": [
+      {
+        "frage": "Wie lange dauert ein Spiel?",
+        "antwort": "Die Spiele dauern in der Regel jeweils 2-3 Minuten. So bleibt die Intensität hoch und die Kinder sind dauerhaft aktiv."
+      },
+      {
+        "frage": "Kann man die Übung für jüngere Kinder anpassen?",
+        "antwort": "Ja, das Format passt für alle Altersstufen."
+      },
+      {
+        "frage": "Kann man die Übung für jüngere Kinder anpassen?",
+        "antwort": "Ja, das passt. "
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [
+      65,
+      64
+    ],
+    "schwester_id": 65,
+    "schwester_titel": "AUS DER UMKÄMPFTEN MITTELZONE INS SPIELGESCHEHEN"
   }
 ]
