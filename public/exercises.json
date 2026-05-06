@@ -2578,6 +2578,66 @@
     "schwester_titel": null
   },
   {
+    "id": 43,
+    "titel": "VOM TORSCHUSS INS SPIEL",
+    "quell_trainingseinheit": "Den Ball in der Torzone verarbeiten",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/11/image-10.png",
+    "grafik_dateiname": "uebung-047-vom-torschuss-ins-spiel.png",
+    "trainingsphase": "Spielformat",
+    "kurzbeschreibung": "Zunächst suchen die Spieler nacheinander von der Mittellinie den Torabschluss. Auf Trainerkommando verwandelt sich die Torschussübung in ein Spiel.",
+    "aufbau": "Zwei Jugendtore im Abstand von 20m diagonal voneinander aufbauen. 5 Meter vor den Toren jeweils eine Torzone markieren. 20m vom Tor entfernt ein Starthütchen aufstellen. Neben der Torzone jeweils ebenfalls ein Starthütchen aufstellen. Teams wie auf der Abbildung verteilen. Leibchen verteilen und Teams gleichmäßig aufteilen.",
+    "durchfuehrung": "Die Spieler starten nacheinander, dribbeln zur Mittellinie und müssen vor der Mittellinie abschließen. Für jedes Tor erhält das Team einen Punkt. Nach einiger Zeit ruft der Trainer „Spielen“. Alle Spieler laufen ins Feld und spielen ein 6+1 aus, bis ein Tor fällt. Ein Tor im Spiel zählt zwei Punkte. Nach dem Tor (oder spätestens nach 3 Minuten) geht’s zurück in die Torschussübung.",
+    "varianten": "",
+    "quell_url": "https://coachunited.de/den-ball-in-der-torzone-verarbeiten/",
+    "jugend": [
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Dribbeln",
+      "Torschuss",
+      "Raumverhalten"
+    ],
+    "coaching_fokus": "• Schnelles Umschalten von Torschuss zur Spielsituation",
+    "leichter_machen": "• Torschusslinie näher zum Tor rücken (statt die Mittellinie zu nutzen)",
+    "schwerer_machen": "",
+    "status": "veroeffentlicht",
+    "alt_titel": "Torschuss ins Spiel verwandeln",
+    "seo_keyword": "Fußballübung Torschuss Kinder",
+    "url_slug": "fussballubung-torschuss-kinder",
+    "seo_meta_description": "Effektive Fußballübung um das Torschießen und den Spielaufbau bei Kindern zu trainieren. Inklusive Varianten zum Anpassen des Schwierigkeitsgrads.",
+    "grafik_alt_text": "Kinder führen einen Torschuss aus und spielen anschließend ein Miniturnier mit Toren aus.",
+    "grafik_description": "Die Grafik zeigt eine Trainingsübung, bei der die Kinder zunächst einzeln den Torschuss üben und dann in ein Spiel übergehen. Es ist ein 20x20 Meter großes Feld mit Toren an den Seiten zu sehen.",
+    "grafik_title": "Fußballübung Torschuss und Spiel für Kinder",
+    "grafik_caption": "Einlaufen, Torschussübung, dann ins Spiel wechseln.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler brauche ich für diese Übung?",
+        "antwort": "12-16 Kinder sind ideal."
+      },
+      {
+        "frage": "Wie lange dauert die Übung?",
+        "antwort": "Ca. 10-15 Minuten, je nach Alter und Leistungsstand der Kinder."
+      },
+      {
+        "frage": "Kann ich die Übung für jüngere Kinder anpassen?",
+        "antwort": "Eher nicht."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [],
+    "schwester_id": null,
+    "schwester_titel": null
+  },
+  {
     "id": 44,
     "titel": "TORSCHUSS NACH FARBSIGNAL",
     "quell_trainingseinheit": "Fangen spielen, bewegende Tore, Schüsse!",
