@@ -3501,5 +3501,65 @@
     "schwester_ids": [],
     "schwester_id": null,
     "schwester_titel": null
+  },
+  {
+    "id": 63,
+    "titel": "KEGEL-RENNEN",
+    "quell_trainingseinheit": "Klug aus engen Räumen befreien",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/10/image-3.jpg",
+    "grafik_dateiname": "uebung-063-kegel-rennen.jpg",
+    "trainingsphase": "Aufwärmen",
+    "kurzbeschreibung": "Teams versuchen, nacheinander alle Kegel abzuräumen.",
+    "aufbau": "5m hinter den Starthütchen jeweils 5 Hütchen aufstellen. Abstand kann je nach Leistungsstärke der Gruppe variieren. Zwei Teams mit Bällen an den Starthütchen verteilen.",
+    "durchfuehrung": "Die Spieler der Teams versuchen nacheinander mit dem Ball das erste Hütchen zu treffen. Sobald dieses umgefallen ist, wird es weggeräumt. Danach ist das zweite Hütchen das Ziel. Welches Team hat zuerst alle Hütchen abgeräumt?",
+    "varianten": "a) Ball mit der Hand rollen, b) nur mit rechts/links schießen. KEGEL-SCHLACHT KEGEL-SCHLACHT Teams versuchen, alle Kegel der gegnerischen Mannschaft abzuräumen.",
+    "quell_url": "https://coachunited.de/klug-aus-engen-raumen-befreien/",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend",
+      "E-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Dribbeln",
+      "Torschuss"
+    ],
+    "coaching_fokus": "• Konzentriert den Ball treffen, um den Kegel umzuwerfen",
+    "leichter_machen": "• Ball mit der Hand rollen; • Abstand zwischen Kegel und Starthütchen verringern",
+    "schwerer_machen": "• Nur mit rechts/links schießen; • Distanzen vergrößern",
+    "status": "veroeffentlicht",
+    "alt_titel": "Kegel-Staffel - Team-Geschicklichkeit",
+    "seo_keyword": "Fußballübung Kinder Koordination",
+    "url_slug": "kegel-staffel-team-geschicklichkeit",
+    "seo_meta_description": "Koordinations- und Teamübung für Kinder im Fußballtraining: Zwei Teams versuchen, die Kegel des Gegners schnell abzuräumen.",
+    "grafik_alt_text": "Kinder spielen in Teams Kegel-Staffel auf dem Fußballplatz",
+    "grafik_description": "Auf dem Fußballplatz sind zwei Reihen mit Hütchen aufgestellt. Jeweils zwei Mannschaften versuchen, die Hütchen der Gegner abzuräumen, indem sie den Ball gezielt darauf schießen.",
+    "grafik_title": "Fußballübung für Kinder: Kegel-Staffel",
+    "grafik_caption": "Koordinations- und Teamübung 'Kegel-Staffel' im Kinder-Fußballtraining",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler sind pro Team optimal?",
+        "antwort": "Pro Team sollten 4-6 Spieler eingesetzt werden. So haben alle ausreichend Ballkontakte. Bei größeren Gruppen mehrere Bahnen aufbauen."
+      },
+      {
+        "frage": "Wie lange soll die Übung dauern?",
+        "antwort": "Die Übungsdauer kann zwischen 5-10 Minuten betragen. So bleibt die Konzentration der Kinder hoch."
+      },
+      {
+        "frage": "Für welche Altersgruppen ist die Übung geeignet?",
+        "antwort": "Die Übung eignet sich gut für Kinder im Alter von 6-12 Jahren (G- bis E-Jugend)."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [],
+    "schwester_id": null,
+    "schwester_titel": null
   }
 ]
