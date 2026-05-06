@@ -740,50 +740,51 @@
     "quell_kategorie": ""
   },
   {
-    "id": 14,
-    "titel": "KETTENSPRINT",
+    "id": 15,
+    "titel": "TORERFOLG DURCH HÜTCHEN-BALL-TREFFER VERDOPPELN",
     "quell_trainingseinheit": "Breite schaffen mit Feldzonen",
-    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/01/image-6.jpg",
-    "grafik_dateiname": "uebung-015-kettensprint.jpg",
-    "trainingsphase": "Aufwärmen",
-    "kurzbeschreibung": "Alle Spieler joggen auf dem Feld in einer Reihe dem Trainer hinterher. Der letzte Spieler in der Kette muss nach vorne sprinten.",
-    "aufbau": "Kein Aufbau.",
-    "durchfuehrung": "Der Trainer führt die Kette von Spielern an, die in lockerem Tempo um den Platz joggen. Der letzte Spieler in der Kette sprintet an allen vorbei auf die zweite Position hinter dem Trainer. Danach startet der nächste – bis alle ein oder zwei Mal durch sind.",
-    "varianten": "Beim Joggen verschiedene Aufwärm-Drills durchführen: Knie hoch, Hacken nach hinten, seitlich laufen etc. TECHNIKKETTE TECHNIKKETTE Die Spieler führen in einer Reihe verschiedene Dribbeltechniken durch.",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/01/image-18.png",
+    "grafik_dateiname": "uebung-016-torerfolg-durch-huetchen-ball-treffer-verdoppeln.png",
+    "trainingsphase": "Spielformat",
+    "kurzbeschreibung": "Nach Torerfolg erhält das Team durch einen gezielten Treffer die Möglichkeit gleich zwei Punkte zu erhalten.",
+    "aufbau": "25×40 Meter Feld, 2 Tor mit Torwart, zwei Teams ein Ball im Spiel. Torzone mit Hütchen markieren. Auf jeder Grundlinie jeweils vier Bälle auf flache Hütchen legen.",
+    "durchfuehrung": "Normales Spiel. Nach Torerfolg erhält der Torschütze die Möglichkeit, sich ein Ball vom flachen Hütchen zu schnappen und ihn von Höhe der Torzone aufs Tor zu schiessen. Trifft er, zählt sein Tor doppelt.",
+    "varianten": "Beim zweiten Tor zählt der Bonustreffer sogar zwei Punkte mehr, beim dritten Tor drei Treffer mehr usw. So hat die unterlegene Mannschaft immer wieder die Chance aufzuholen und es bleibt spannend. FREIES SPIEL – LOS GEHT’S! FREIES SPIEL – LOS GEHT’S! In © 2025 COACH UNITED",
     "quell_url": "https://coachunited.de/breite-schaffen-mit-feldzonen/",
     "jugend": [
-      "G-Jugend",
-      "F-Jugend",
       "E-Jugend",
       "D-Jugend"
     ],
     "skills": [
-      "Schnelligkeit"
+      "Passen",
+      "Ballkontrolle",
+      "Torschuss",
+      "Raumverhalten"
     ],
-    "coaching_fokus": "• Gruppe muss eng aneinander bleiben",
-    "leichter_machen": "",
-    "schwerer_machen": "• Beim Joggen verschiedene Aufwärm-Drills durchführen: Knie hoch, Hacken nach hinten, seitlich laufen",
+    "coaching_fokus": "",
+    "leichter_machen": "• Beim zweiten Tor zählt der Bonustreffer sogar zwei Punkte mehr, beim dritten Tor drei Treffer mehr usw. So hat die unterlegene Mannschaft immer wieder die Chance aufzuholen und es bleibt spannend",
+    "schwerer_machen": "• Torzonen-Abstand vergrößern",
     "status": "veroeffentlicht",
-    "alt_titel": "Dynamisches Passingsprint",
-    "seo_keyword": "Fußballübung Passspiel Kinder",
-    "url_slug": "fussballubung-passspiel-kinder",
-    "seo_meta_description": "Dynamische Passing-Übung, bei der Kinder ihr Passspiel, Laufwege und Kommunikation trainieren. Geeignet für E- und D-Jugend-Fußballtraining.",
-    "grafik_alt_text": "Kinder in Fußballausrüstung führen einen Passingdrill durch und sprinten nach hinten durch die Reihe",
-    "grafik_description": "Eine Gruppe von Kindern im Fußballtraining führt eine Passübung durch. Sie joggen in einer Reihe mit dem Ball am Fuß, und der letzte Spieler in der Reihe sprintet nach vorne, um sich an den Anfang der Kette zu setzen.",
-    "grafik_title": "Kinder-Fußballtraining: Dynamisches Passspielen",
-    "grafik_caption": "Kinder führen einen dynamischen Passingdrill durch, bei dem der letzte Spieler nach vorne sprintet.",
+    "alt_titel": "TORE VERDOPPELN MIT PRÄZISIONSSCHUSS",
+    "seo_keyword": "Fußballübung Torschuss Kinder",
+    "url_slug": "fussballuebung-torschuss-kinder",
+    "seo_meta_description": "Erhöhe den Torerfolg deiner Fußballkinder (E- und D-Jugend) mit dieser Übung zum präzisen Torschuss auf Hütchen",
+    "grafik_alt_text": "Kinder kicken Fußball auf einem Spielfeld mit Toren und Hütchen",
+    "grafik_description": "Auf einem 25x40 Meter Fußballfeld sieht man zwei Tore und jeweils vier Hütchen auf den Grundlinien. Zwei Kindermannschaften spielen Fußball, nachdem ein Team ein Tor erzielt hat, darf ein Spieler von der Torlinie aus einen Ball auf ein Hütchen schießen.",
+    "grafik_title": "Fußballkinder erzielen Doppeltore mit Präzisionsschüssen",
+    "grafik_caption": "Kinder verbessern ihren Torschuss durch Bonusschüsse auf Hütchen",
     "faq": [
       {
-        "frage": "Wie viele Spieler sind optimal für diese Übung?",
-        "antwort": "Für eine effektive Durchführung empfehlen wir 6-12 Spieler. Sonst wird die Kette zu lang. Auch zwei Ketten parallel möglich."
+        "frage": "Wie viele Spieler benötigt man für diese Übung?",
+        "antwort": "Die Übung ist für 10-14 Kinder in zwei Teams geeignet. Die Teams sollten möglichst ausgeglichen sein. Bei größeren Gruppen: Turniermodus. "
       },
       {
-        "frage": "Wie lange sollte man diese Übung machen?",
-        "antwort": "Je nach Alter und Kondition der Kinder empfehlen wir 5 Minuten."
+        "frage": "Wie lange dauert die Übung?",
+        "antwort": "Je nach Altersgruppe empfehlen sich 10-15 Minuten reine Spielzeit. "
       },
       {
-        "frage": "Kann man die Übung auch mit jüngeren Kindern machen?",
-        "antwort": "Klar."
+        "frage": "Kann man die Übung an jüngere Kinder anpassen?",
+        "antwort": "Nein, das Jugendfeld eignet sich eher ab der E-Jugend."
       }
     ],
     "referenz_grafik_url": "",
