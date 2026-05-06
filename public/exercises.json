@@ -740,6 +740,69 @@
     "quell_kategorie": ""
   },
   {
+    "id": 13,
+    "titel": "SLALOM GEWINNEN UND ANGREIFEN",
+    "quell_trainingseinheit": "Reifen-Warmup und Angriffssituationen",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/01/image-20.png",
+    "grafik_dateiname": "uebung-013-slalom-gewinnen-und-angreifen.png",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "Zwei Spieler liefern sich ein Wettrennen im Slalom Dribbling – Sieger im Duell erhält Angriffsrecht im 2 gegen 2.",
+    "aufbau": "Ein Feld von 20x10m mit Jugendtoren und Torhütern aufbauen. 8 Hütchen an der einen Seitenlinie. An jedem Ende jeweils ein Team mit Leibchen platzieren. Auf der anderen Seite ebenfalls zwei Teams mit Leibchen an einem Hütchen platzieren.",
+    "durchfuehrung": "Trainer ruft das Zielhütchen (hier: drittes Hütchen). Spieler aus jedem Team umlaufen die Hütchen mit Ball im Slalom. Gewinner des Sprints erhält Angriffsrecht mit Ball, Verlierer lässt seinen Ball liegen. Mitspieler von oben ohne Ball sprinten ins Feld zum 2 gegen 2. Rollenrotation, wenn alle einmal dran waren.",
+    "varianten": "Slalom-Gewinner 2 gegen 1 stürmen lassen. BLITZTURNIER MIT GOLDEN GOAL BLITZTURNIER MIT GOLDEN GOAL Drei Teams spielen ein Turnier. Kassiert ein Team ein Tor, muss es runter. Gewinner bleibt stehen.",
+    "quell_url": "https://coachunited.de/reifen-warmup-und-angriffssituationen/",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Dribbeln",
+      "Koordination",
+      "Schnelligkeit",
+      "Raumverhalten",
+      "Taktik"
+    ],
+    "coaching_fokus": "• Kopf oben behalten beim Dribbling; • Dynamisch in den freien Raum laufen; • Kommunikation für das 2 gegen 2",
+    "leichter_machen": "• Slalom mit weniger Hütchen; • Slalom-Gewinner 2 gegen 1 stürmen lassen.",
+    "schwerer_machen": "• Slalom-Strecke verlängern; • Slalom-Hütchen enger setzen",
+    "status": "veroeffentlicht",
+    "alt_titel": "Slalom-Sprint zum Angriff",
+    "seo_keyword": "Fußballübung Dribbling Kinder",
+    "url_slug": "slalom-sprint-zum-angriff",
+    "seo_meta_description": "Dynamische Fußballübung zum Dribbling und Angriffsspiel für Kinder von 6-12 Jahren.",
+    "grafik_alt_text": "Junge Fußballspieler dribbleln im Slalom und stürmen dann zum 2 gegen 2",
+    "grafik_description": "Die Grafik zeigt einen Aufbau mit Slalom-Hütchen. Zwei Spieler aus verschiedenen Teams dribbleln im Wettbewerb durch den Slalom, der Gewinner startet dann mit seinem Partner im 2 gegen 2 Angriff.",
+    "grafik_title": "Fußballübung: Slalom-Sprint zum Angriff",
+    "grafik_caption": "Dynamisches Dribbling-Duell mit anschließendem 2 gegen 2",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler braucht man für diese Übung?",
+        "antwort": "Optimal sind 12-16 Kinder."
+      },
+      {
+        "frage": "Wie lange dauert die Übung?",
+        "antwort": "Die Dauer hängt von der Anzahl der Durchgänge ab, ca. 15-20 Minuten sind realistisch."
+      },
+      {
+        "frage": "Für welche Altersgruppe ist diese Übung geeignet?",
+        "antwort": "Die Übung eignet sich gut für Kinder der F- bis E-Jugend (6-12 Jahre)."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [],
+    "schwester_id": null,
+    "schwester_titel": null
+  },
+  {
     "id": 15,
     "titel": "TORERFOLG DURCH HÜTCHEN-BALL-TREFFER VERDOPPELN",
     "quell_trainingseinheit": "Breite schaffen mit Feldzonen",
