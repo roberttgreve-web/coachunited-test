@@ -740,7 +740,70 @@
     "quell_kategorie": ""
   },
   {
-    "id": 17,
+    "id": 13,
+    "titel": "SLALOM GEWINNEN UND ANGREIFEN",
+    "quell_trainingseinheit": "Reifen-Warmup und Angriffssituationen",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/01/image-20.png",
+    "grafik_dateiname": "uebung-013-slalom-gewinnen-und-angreifen.png",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "Zwei Spieler liefern sich ein Wettrennen im Slalom Dribbling – Sieger im Duell erhält Angriffsrecht im 2 gegen 2.",
+    "aufbau": "Ein Feld von 20x10m mit Jugendtoren und Torhütern aufbauen. 8 Hütchen an der einen Seitenlinie. An jedem Ende jeweils ein Team mit Leibchen platzieren. Auf der anderen Seite ebenfalls zwei Teams mit Leibchen an einem Hütchen platzieren.",
+    "durchfuehrung": "Trainer ruft das Zielhütchen (hier: drittes Hütchen). Spieler aus jedem Team umlaufen die Hütchen mit Ball im Slalom. Gewinner des Sprints erhält Angriffsrecht mit Ball, Verlierer lässt seinen Ball liegen. Mitspieler von oben ohne Ball sprinten ins Feld zum 2 gegen 2. Rollenrotation, wenn alle einmal dran waren.",
+    "varianten": "Slalom-Gewinner 2 gegen 1 stürmen lassen. BLITZTURNIER MIT GOLDEN GOAL BLITZTURNIER MIT GOLDEN GOAL Drei Teams spielen ein Turnier. Kassiert ein Team ein Tor, muss es runter. Gewinner bleibt stehen.",
+    "quell_url": "https://coachunited.de/reifen-warmup-und-angriffssituationen/",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Dribbeln",
+      "Koordination",
+      "Schnelligkeit",
+      "Raumverhalten",
+      "Taktik"
+    ],
+    "coaching_fokus": "• Kopf oben behalten beim Dribbling; • Dynamisch in den freien Raum laufen; • Kommunikation für das 2 gegen 2",
+    "leichter_machen": "• Slalom mit weniger Hütchen; • Slalom-Gewinner 2 gegen 1 stürmen lassen.",
+    "schwerer_machen": "• Slalom-Strecke verlängern; • Slalom-Hütchen enger setzen",
+    "status": "veroeffentlicht",
+    "alt_titel": "Slalom-Sprint zum Angriff",
+    "seo_keyword": "Fußballübung Dribbling Kinder",
+    "url_slug": "slalom-sprint-zum-angriff",
+    "seo_meta_description": "Dynamische Fußballübung zum Dribbling und Angriffsspiel für Kinder von 6-12 Jahren.",
+    "grafik_alt_text": "Junge Fußballspieler dribbleln im Slalom und stürmen dann zum 2 gegen 2",
+    "grafik_description": "Die Grafik zeigt einen Aufbau mit Slalom-Hütchen. Zwei Spieler aus verschiedenen Teams dribbleln im Wettbewerb durch den Slalom, der Gewinner startet dann mit seinem Partner im 2 gegen 2 Angriff.",
+    "grafik_title": "Fußballübung: Slalom-Sprint zum Angriff",
+    "grafik_caption": "Dynamisches Dribbling-Duell mit anschließendem 2 gegen 2",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler braucht man für diese Übung?",
+        "antwort": "Optimal sind 12-16 Kinder."
+      },
+      {
+        "frage": "Wie lange dauert die Übung?",
+        "antwort": "Die Dauer hängt von der Anzahl der Durchgänge ab, ca. 15-20 Minuten sind realistisch."
+      },
+      {
+        "frage": "Für welche Altersgruppe ist diese Übung geeignet?",
+        "antwort": "Die Übung eignet sich gut für Kinder der F- bis E-Jugend (6-12 Jahre)."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [],
+    "schwester_id": null,
+    "schwester_titel": null
+  },
+  {
+    "id": 16,
     "titel": "WACH SEIN, BALL EROBERN",
     "quell_trainingseinheit": "Flankenläufe spielerisch trainieren",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/01/image-13.png",
@@ -799,7 +862,7 @@
     "schwester_titel": null
   },
   {
-    "id": 18,
+    "id": 17,
     "titel": "FUSSBALL-BRENNBALL",
     "quell_trainingseinheit": "Flankenläufe spielerisch trainieren",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/01/image-14.png",
@@ -860,7 +923,7 @@
     "schwester_titel": null
   },
   {
-    "id": 19,
+    "id": 18,
     "titel": "FLANKENLAUF MIT TORABSCHLUSS",
     "quell_trainingseinheit": "Flankenläufe spielerisch trainieren",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/01/image-15.png",
@@ -922,7 +985,7 @@
     "schwester_titel": "M, FLANKENLAUF UND PASS INS 1 GEGEN 1"
   },
   {
-    "id": 20,
+    "id": 19,
     "titel": "FLANKENLAUF UND PASS INS 1 GEGEN 1",
     "quell_trainingseinheit": "Flankenläufe spielerisch trainieren",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/01/image-16.png",
@@ -985,7 +1048,7 @@
     "quell_kategorie": ""
   },
   {
-    "id": 21,
+    "id": 20,
     "titel": "VIER TORE, VIELE BÄLLE",
     "quell_trainingseinheit": "Flankenläufe spielerisch trainieren",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/01/image-17.png",
@@ -1047,7 +1110,7 @@
     "schwester_titel": null
   },
   {
-    "id": 22,
+    "id": 21,
     "titel": "DER OHNE BALL VERLIERT",
     "quell_trainingseinheit": "Positionen halten auf dem Feld mit dem Bahnenspiel",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/01/image-2.jpg",
@@ -1106,7 +1169,7 @@
     "schwester_titel": null
   },
   {
-    "id": 23,
+    "id": 22,
     "titel": "PASS VERARBEITEN UND AUS DER DREHUNG ZUM SCHUSS KOMMEN",
     "quell_trainingseinheit": "Positionen halten auf dem Feld mit dem Bahnenspiel",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/01/image-10.png",
@@ -1167,7 +1230,7 @@
     "schwester_titel": "PASS VERARBEITEN UND INS 1 GEGEN 1 STARTEN"
   },
   {
-    "id": 24,
+    "id": 23,
     "titel": "PASS VERARBEITEN UND INS 1 GEGEN 1 STARTEN",
     "quell_trainingseinheit": "Positionen halten auf dem Feld mit dem Bahnenspiel",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/01/image-11.png",
@@ -1230,7 +1293,7 @@
     "quell_kategorie": ""
   },
   {
-    "id": 25,
+    "id": 24,
     "titel": "BAHNENSPIEL",
     "quell_trainingseinheit": "Positionen halten auf dem Feld mit dem Bahnenspiel",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/01/image-12.png",
@@ -1288,7 +1351,7 @@
     "schwester_titel": null
   },
   {
-    "id": 26,
+    "id": 25,
     "titel": "SCHNELL REAGIEREN UND BALL ANFORDERN",
     "quell_trainingseinheit": "Schnell reagieren, dann durchsetzen und schießen",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/01/image.jpg",
@@ -1351,7 +1414,7 @@
     "schwester_titel": "SCHNELL REAGIEREN UND INS 1 GEGEN 1"
   },
   {
-    "id": 27,
+    "id": 26,
     "titel": "SCHNELL REAGIEREN UND INS 1 GEGEN 1",
     "quell_trainingseinheit": "Schnell reagieren, dann durchsetzen und schießen",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/01/image-1.jpg",
@@ -1413,7 +1476,7 @@
     "quell_kategorie": ""
   },
   {
-    "id": 28,
+    "id": 27,
     "titel": "TORSCHUSS-CHALLENGE",
     "quell_trainingseinheit": "Schnell reagieren, dann durchsetzen und schießen",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/01/image-7.png",
@@ -1475,7 +1538,7 @@
     "schwester_titel": "FERNSCHUSS-CHALLENGE"
   },
   {
-    "id": 29,
+    "id": 28,
     "titel": "FERNSCHUSS-CHALLENGE",
     "quell_trainingseinheit": "Schnell reagieren, dann durchsetzen und schießen",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/01/image-8.png",
@@ -1536,7 +1599,7 @@
     "quell_kategorie": ""
   },
   {
-    "id": 30,
+    "id": 29,
     "titel": "AUSWECHSLER HOLEN DIE PUNKTE",
     "quell_trainingseinheit": "Schnell reagieren, dann durchsetzen und schießen",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/01/image-9.png",
@@ -1596,7 +1659,7 @@
     "schwester_titel": null
   },
   {
-    "id": 31,
+    "id": 30,
     "titel": "DER BALL BEFREIT",
     "quell_trainingseinheit": "Slalom, 1 gegen 1 und Dribbelduelle",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/01/image.png",
@@ -1658,7 +1721,7 @@
     "schwester_titel": "DAS TOR BEWEGT SICH!"
   },
   {
-    "id": 32,
+    "id": 31,
     "titel": "DAS TOR BEWEGT SICH!",
     "quell_trainingseinheit": "Slalom, 1 gegen 1 und Dribbelduelle",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/01/image-1.png",
@@ -1721,192 +1784,7 @@
     "quell_kategorie": ""
   },
   {
-    "id": 33,
-    "titel": "ERST SLALOM, DANN TORSCHUSS",
-    "quell_trainingseinheit": "Slalom, 1 gegen 1 und Dribbelduelle",
-    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/01/image-2.png",
-    "grafik_dateiname": "uebung-033-erst-slalom-dann-torschuss.png",
-    "trainingsphase": "Hauptteil",
-    "kurzbeschreibung": "Die Spieler dribbeln im Slalom und schießen aufs Tor.",
-    "aufbau": "Etwa 15m vor dem Jugendtor Hütchen im Abstand von 5m aufstellen. Spieler am Starthütchen mit Bällen platzieren. Torhüter im Tor.",
-    "durchfuehrung": "Spieler dribbeln im Slalom um die Hütchen und schließen ab.",
-    "varianten": "a) Zweites paralleles Feld aufbauen bei großen Gruppen. Dann im Wettbewerb gegeneinander. b) Nur mit links/rechts dribbeln oder schießen. c) Hütchen mit Tricks umspielen. ERST SLALOM, DANN 1 GEGEN 1 ERST SLALOM, DANN 1 GEGEN 1 Ein Spieler dribbelt gerade aufs Tor, schließt ab und wird zum Verteidiger. Der zweite Spieler dribbelt im Slalom und geht ins 1 gegen 1.",
-    "quell_url": "https://coachunited.de/slalom-1-gegen-1-und-dribbelduelle/",
-    "jugend": [
-      "G-Jugend",
-      "F-Jugend",
-      "E-Jugend"
-    ],
-    "skills": [
-      "Ballkontrolle",
-      "Dribbeln",
-      "Torschuss",
-      "Koordination"
-    ],
-    "coaching_fokus": "• Enge Ballführung im Slalom; • Körper beim Schuss über den Ball bringen; • Kopf heben vor dem Schuss. ",
-    "leichter_machen": "• Große Hütchenabstände im Slalom; • Ball in die Hand nehmen nach dem Slalom und Volley abschließen",
-    "schwerer_machen": "• Enger Hütchenparcours für den Slalom; • Körpertäuschung vor dem Torschuss; • Nur mit dem schwachen Fuß",
-    "status": "veroeffentlicht",
-    "alt_titel": "Dribbling-Slalom mit Abschluss aufs Tor",
-    "seo_keyword": "Fußballtraining Kinder Dribbling Slalom Torschuss",
-    "url_slug": "fussballubung-dribbling-slalom-torschuss-kinder",
-    "seo_meta_description": "Bild zeigt Kinder, die im Slalom um Hütchen dribbeln und dann auf ein Fußballtor schießen",
-    "grafik_alt_text": "Fußballübung: Dribbling-Slalom mit Torschuss",
-    "grafik_description": "Auf dem Bild sind Kinder zu sehen, die in einem Slalom-Parcours um Hütchen dribbeln und dann aufs Tor schießen. Die Übung fördert das Dribbling, die Ballkontrolle und den Torabschluss.",
-    "grafik_title": "Koordinationsreiche Fußballübung für Kinder, die Dribbling, Ballkontrolle und Torschuss verbessert.",
-    "grafik_caption": "Auf dem Bild sind Kinder zu sehen, die in einem Slalom-Parcours um Hütchen dribbeln und dann aufs Tor schießen. Die Übung fördert das Dribbling, die Ballkontrolle und den Torabschluss.",
-    "faq": [
-      {
-        "frage": "Wie viele Kinder können gleichzeitig an der Übung teilnehmen?",
-        "antwort": "6-8 Kinder pro Slalom und Tor, damit nicht zu lange Wartezeiten entstehen. "
-      },
-      {
-        "frage": "Wie lange sollte die Übung dauern?",
-        "antwort": "Die Übung eignet sich gut für etwa 15 Minuten."
-      },
-      {
-        "frage": "Für welche Altersklassen ist die Übung geeignet?",
-        "antwort": "Die Übung ist perfekt für Kinder der G- bis E-Jugend (6-12 Jahre) und fördert die grundlegenden Fußballtechniken."
-      }
-    ],
-    "referenz_grafik_url": "",
-    "original_aufbau": "",
-    "original_durchfuehrung": "",
-    "original_varianten": "",
-    "original_coaching_fokus": "",
-    "ist_gecrawlt": false,
-    "quell_kategorie": "",
-    "schwester_ids": [
-      34
-    ],
-    "schwester_id": 34,
-    "schwester_titel": "ERST SLALOM, DANN 1 GEGEN 1"
-  },
-  {
-    "id": 34,
-    "titel": "ERST SLALOM, DANN 1 GEGEN 1",
-    "quell_trainingseinheit": "Slalom, 1 gegen 1 und Dribbelduelle",
-    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/01/image-3.png",
-    "grafik_dateiname": "uebung-034-erst-slalom-dann-1-gegen-1.png",
-    "trainingsphase": "Hauptteil",
-    "kurzbeschreibung": "Ein Spieler dribbelt gerade aufs Tor, schließt ab und wird zum Verteidiger. Der zweite Spieler dribbelt im Slalom und geht ins 1 gegen 1.",
-    "aufbau": "Etwa 15m vor dem Jugendtor. Hütchen im Abstand von 5m aufstellen. Zwei Gruppen aufteilen. Beide mit Bällen. Eine Gruppe am Starthütchen, die andere Gruppe mittig zwischen den Hütchen.",
-    "durchfuehrung": "Zwei Spieler dribbeln gleichzeitig los. Der Spieler aus der Gruppe zwischen den Hütchen läuft gerade aufs Tor, schließt ab und wird Verteidiger. Der andere Spieler dribbelt im Slalom um die Hütchen und geht dann ins 1 gegen 1 gegen den Verteidiger. Erobert der Verteidiger den Ball, darf er auch abschließen. Danach wechseln die Spieler in die jeweils andere Gruppe. ",
-    "varianten": "",
-    "quell_url": "https://coachunited.de/slalom-1-gegen-1-und-dribbelduelle/",
-    "jugend": [
-      "G-Jugend",
-      "F-Jugend",
-      "E-Jugend",
-      "D-Jugend"
-    ],
-    "skills": [
-      "Ballkontrolle",
-      "Torschuss",
-      "Zweikampf"
-    ],
-    "coaching_fokus": "• Blick sofort nach dem letzten Hütchen und vor dem Zweikampf heben • Körpertäuschungen einsetzen im 1-gegen-1; • Mit Tempo aus dem Slalom kommen; ",
-    "leichter_machen": "• Weniger Hütchen im Slalomlauf aufstellen; • Abwehrspieler muss zunächst Abstand zum letzten Hütchen einhalten",
-    "schwerer_machen": "• Zusätzliche Aufgaben wie Dribbeln mit schwachem Fuß einbauen; • Slalomparcours verengen",
-    "status": "veroeffentlicht",
-    "schwester_ids": [
-      33
-    ],
-    "schwester_id": 33,
-    "schwester_titel": "ERST SLALOM, DANN TORSCHUSS",
-    "alt_titel": "Slalom-Dribbling mit 1-gegen-1-Abschluss",
-    "seo_keyword": "Fußballübung Dribbling Kinder",
-    "url_slug": "fussballubung-dribbling-kinder",
-    "seo_meta_description": "Dynamische Dribbling-Übung für Kinder mit Slalom-Lauf und 1-gegen-1-Abschluss. Fördert Ballkontrolle, Richtungswechsel und Zweikampfverhalten.",
-    "grafik_alt_text": "Zwei Jungs in Fußballkleidung beim Dribbling und Torschuss in einem Fußballtraining",
-    "grafik_description": "Die Grafik zeigt zwei Jungen, die im Fußballtraining eine Dribbling-Übung mit Slalom und Abschlussduell durchführen. Ein Junge dribbelt gerade auf das Tor, während der andere Junge im Slalom anläuft, um dann gegen den Ersten in ein 1-gegen-1 zu gehen.",
-    "grafik_title": "Kinderfußballtraining: Dribbling-Übung mit 1-gegen-1",
-    "grafik_caption": "Dynamisches Dribbling-Training mit Richtungswechseln und Abschluss-Duell",
-    "faq": [
-      {
-        "frage": "Wie viele Spieler braucht man für diese Übung?",
-        "antwort": "Optimal sind 12-16 Spieler, die sich in 2 Gruppen aufteilen."
-      },
-      {
-        "frage": "Wie lange dauert die Übung?",
-        "antwort": "Die Übung lässt sich gut in 15-20 Minuten durchführen. Je nach Spieleranzahl und Intensität kann man sie aber auch länger oder kürzer gestalten."
-      },
-      {
-        "frage": "Für welche Altersgruppe ist die Übung geeignet?",
-        "antwort": "Die Übung ist für Kinder von 6 bis 14 Jahren (G- bis D-Jugend) gut geeignet und fördert ihre Dribbling-Fähigkeiten und das 1-gegen-1-Verhalten."
-      }
-    ],
-    "referenz_grafik_url": "",
-    "original_aufbau": "",
-    "original_durchfuehrung": "",
-    "original_varianten": "",
-    "original_coaching_fokus": "",
-    "ist_gecrawlt": false,
-    "quell_kategorie": ""
-  },
-  {
-    "id": 35,
-    "titel": "DRIBBELDUELL AUF DREI FELDERN",
-    "quell_trainingseinheit": "Slalom, 1 gegen 1 und Dribbelduelle",
-    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/01/image-4.png",
-    "grafik_dateiname": "uebung-035-dribbelduell-auf-drei-feldern.png",
-    "trainingsphase": "Spielformat",
-    "kurzbeschreibung": "Auf drei Feldern wird im 3 gegen 3 gespielt. Punkte werden erzielt, in dem der Ball über die Grundlinie gedribbelt wird.",
-    "aufbau": "Drei Spielfelder aufbauen, die jeweils etwas 30x15m groß sind. Keine Tore. Pro Feld zwei Teams mit Leibchen einteilen. Pro Feld einen Ball. Je nach Gruppengröße ggf. nur zwei Felder oder Teams im 2 gegen 2.",
-    "durchfuehrung": "Die Teams spielen 3 gegen 3. Punkte werden erzielt, in dem der Ball über die Grundlinie des Gegners gedribbelt (nicht geschossen!) wird. 5 Minuten pro Spiel. Danach wechseln die Teams die Felder. Auch als Turnierformat möglich.",
-    "varianten": "",
-    "quell_url": "https://coachunited.de/slalom-1-gegen-1-und-dribbelduelle/",
-    "jugend": [
-      "G-Jugend",
-      "F-Jugend",
-      "E-Jugend",
-      "D-Jugend"
-    ],
-    "skills": [
-      "Ballkontrolle",
-      "Dribbeln",
-      "Koordination",
-      "Raumverhalten"
-    ],
-    "coaching_fokus": "• Keine Kompromisse bei den Dribbeltoren: Bälle müssen kontrolliert über die Linie geführt werden",
-    "leichter_machen": "• Spielfeld vergrößern; • Zwei gegen Zwei-Duelle",
-    "schwerer_machen": "• Vier gegen Vier auf gleiche Platzgröße (Raum verengen)",
-    "status": "veroeffentlicht",
-    "alt_titel": "Dribbel-Parcours mit Gegenspieler",
-    "seo_keyword": "Fußballübung Dribbling Kinder",
-    "url_slug": "dribbel-duell-auf-drei-feldern",
-    "seo_meta_description": "Tolle Fußballübung zum Dribbling-Training für Kinder von 8-12 Jahren. Verbessert Ballkontrolle und Raumaufteilung im 3 gegen 3.",
-    "grafik_alt_text": "Drei Fußballspieler dribbeln auf einem 30x15m Feld, umgeben von Hütchen",
-    "grafik_description": "Die Grafik zeigt den Aufbau der Dribbelduell-Übung auf drei Feldern. Jeweils zwei Teams mit Leibchen spielen 3 gegen 3, wobei der Ball über die Grundlinie des Gegners gedribbelt werden muss, um Punkte zu erzielen.",
-    "grafik_title": "Dribbelduell 3 gegen 3 - Fußballübung für Kinder",
-    "grafik_caption": "Dribbelduell auf drei Feldern: Effektives Dribbling- und Raumaufteilungstraining im Kleinfeld.",
-    "faq": [
-      {
-        "frage": "Wie viele Spieler braucht man für diese Fußballübung?",
-        "antwort": "Pro Spielfeld spielen jeweils 3 gegen 3 Spieler. Bei einer größeren Gruppe können beliebig viele Felder aufgebaut werden."
-      },
-      {
-        "frage": "Wie lange dauert eine Partie beim Dribbelduell?",
-        "antwort": "Eine Partie dauert 5 Minuten. Danach wechseln die Teams die Felder."
-      },
-      {
-        "frage": "Für welche Altersgruppe ist diese Übung geeignet?",
-        "antwort": "Das Dribbelduell eignet sich gut für Kinder der E- und D-Jugend im Alter von 10-14 Jahren."
-      }
-    ],
-    "referenz_grafik_url": "",
-    "original_aufbau": "",
-    "original_durchfuehrung": "",
-    "original_varianten": "",
-    "original_coaching_fokus": "",
-    "ist_gecrawlt": false,
-    "quell_kategorie": "",
-    "schwester_ids": [],
-    "schwester_id": null,
-    "schwester_titel": null
-  },
-  {
-    "id": 36,
+    "id": 32,
     "titel": "STANGEN-WETTHÜPFEN",
     "quell_trainingseinheit": "Das Mittelfeld kontrollieren",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/12/image-4.jpg",
@@ -1968,7 +1846,7 @@
     "schwester_titel": "STANGEN-PASS MIT ABSCHLUSS"
   },
   {
-    "id": 37,
+    "id": 33,
     "titel": "STANGEN-PASS MIT ABSCHLUSS",
     "quell_trainingseinheit": "Das Mittelfeld kontrollieren",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/12/image-6.jpg",
@@ -2032,7 +1910,7 @@
     "quell_kategorie": ""
   },
   {
-    "id": 38,
+    "id": 34,
     "titel": "IN DER RICHTIGEN ANZAHL EINLAUFEN UND SPIELEN",
     "quell_trainingseinheit": "Das Mittelfeld kontrollieren",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/12/image-2.png",
@@ -2093,7 +1971,7 @@
     "schwester_titel": null
   },
   {
-    "id": 39,
+    "id": 35,
     "titel": "SAUBERER ZWEIKAMPF",
     "quell_trainingseinheit": "Vom sauberen Zweikampf in den Torschuss",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/12/image.jpg",
@@ -2155,7 +2033,7 @@
     "schwester_titel": "SAUBERER ZWEIKAMPF MIT SLALOM"
   },
   {
-    "id": 40,
+    "id": 36,
     "titel": "SAUBERER ZWEIKAMPF MIT SLALOM",
     "quell_trainingseinheit": "Vom sauberen Zweikampf in den Torschuss",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/12/image-2.jpg",
@@ -2217,7 +2095,7 @@
     "quell_kategorie": ""
   },
   {
-    "id": 41,
+    "id": 37,
     "titel": "5 BÄLLE-SPIEL",
     "quell_trainingseinheit": "Vom sauberen Zweikampf in den Torschuss",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/12/image-1.png",
@@ -2277,7 +2155,7 @@
     "schwester_titel": null
   },
   {
-    "id": 42,
+    "id": 38,
     "titel": "KEGEL-RENNEN",
     "quell_trainingseinheit": "Überzahl gemeinsam ausspielen",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/11/image-17.jpg",
@@ -2334,7 +2212,7 @@
     "schwester_titel": null
   },
   {
-    "id": 43,
+    "id": 39,
     "titel": "SPIELSTART MIT ÜBERZAHL AUS DEM REIFEN",
     "quell_trainingseinheit": "Überzahl gemeinsam ausspielen",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/11/image-13.png",
@@ -2399,7 +2277,7 @@
     "schwester_titel": "TURBO-SPIELSTART MIT ÜBERZAHL AUS DEM REIFEN"
   },
   {
-    "id": 44,
+    "id": 40,
     "titel": "TURBO-SPIELSTART MIT ÜBERZAHL AUS DEM REIFEN",
     "quell_trainingseinheit": "Überzahl gemeinsam ausspielen",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/11/image-12.png",
@@ -2461,7 +2339,7 @@
     "quell_kategorie": ""
   },
   {
-    "id": 45,
+    "id": 41,
     "titel": "SPIEL UMS LEERE TOR",
     "quell_trainingseinheit": "Überzahl gemeinsam ausspielen",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/11/image-19.jpg",
@@ -2523,7 +2401,7 @@
     "schwester_titel": "TURBO-SPIELSTART MIT ÜBERZAHL AUS DEM REIFEN"
   },
   {
-    "id": 46,
+    "id": 42,
     "titel": "6 DUELLE, 3 MINUTEN",
     "quell_trainingseinheit": "Den Ball in der Torzone verarbeiten",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/11/image-13.jpg",
@@ -2583,129 +2461,7 @@
     "schwester_titel": null
   },
   {
-    "id": 48,
-    "titel": "DER BALL BEFREIT",
-    "quell_trainingseinheit": "Fangen spielen, bewegende Tore, Schüsse!",
-    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/11/image-10.jpg",
-    "grafik_dateiname": "uebung-048-der-ball-befreit.jpg",
-    "trainingsphase": "Aufwärmen",
-    "kurzbeschreibung": "Die Kinder spielen Fangen. Das gejagte Team kann einen gefangenen Mitspieler durch einen sauberen Pass befreien.",
-    "aufbau": "Ein 20mx20m großes Feld markieren. Drei Jäger mit Leibchen einteilen. Ein Ball im Feld.",
-    "durchfuehrung": "Die drei Jäger versuchen so viele gegnerische Spieler durch Abschlagen einzufangen. Ist jemand gefangen, muss er still auf der Stelle stehen bleiben. Seine Mitspieler können ihn befreien, in dem sie ihm einen sauberen Pass spielen.",
-    "varianten": "a) Zweiten Ball einspielen. b) Zahl der Jäger erhöhen/verkleinern. DAS TOR BEWEGT SICH! DAS TOR BEWEGT SICH! Die Spieler eines Teams halten zu zweit Stangen, die Spieler des anderen Teams müssen hindurchpassen, um Tore zu erzielen.",
-    "quell_url": "https://coachunited.de/fangen-spielen-bewegende-tore-schusse/",
-    "jugend": [
-      "G-Jugend",
-      "F-Jugend"
-    ],
-    "skills": [
-      "Passen",
-      "Ballkontrolle",
-      "Koordination",
-      "Raumverhalten"
-    ],
-    "coaching_fokus": "• Präzise, flache Pässe; • Immer in Bewegung bleiben, Freiräume erkennen",
-    "leichter_machen": "• Feld vergrößern; • Anzahl der Jäger reduzieren",
-    "schwerer_machen": "• Zweiten Ball einbringen; • Zahl der Jäger erhöhen",
-    "status": "veroeffentlicht",
-    "alt_titel": "Befreie deinen Mitspieler mit dem Pass",
-    "seo_keyword": "Fußballübung Passen Kinder",
-    "url_slug": "befreie-deinen-mitspieler-mit-dem-pass",
-    "seo_meta_description": "Zwei Kinder spielen einen sauberen Pass, um einen gefangenen Mitspieler zu befreien",
-    "grafik_alt_text": "Kinder befreien Mitspieler mit Pass in Fußballübung",
-    "grafik_description": "Die Übung 'Der Ball befreit' trainiert das Passspiel der Kinder. Ein Kind spielt einen präzisen Pass, um einen gefangenen Teamkameraden zu befreien. Dazu rennen alle Spieler in einem 20x20m Feld.",
-    "grafik_title": "Präzises Passspiel befreit gefangenen Teamkameraden",
-    "grafik_caption": "Die Übung 'Der Ball befreit' trainiert das Passspiel der Kinder. Ein Kind spielt einen präzisen Pass, um einen gefangenen Teamkameraden zu befreien. Dazu rennen alle Spieler in einem 20x20m Feld.",
-    "faq": [
-      {
-        "frage": "Wie viele Spieler braucht man für diese Übung?",
-        "antwort": "Empfohlen sind 10-15 Kinder. Das Feld kann an die Teilnehmerzahl angepasst werden."
-      },
-      {
-        "frage": "Wie lange dauert die Übung?",
-        "antwort": "Die Dauer liegt bei ca. 5-10 Minuten. Je nach Alter und Konzentration der Kinder kann sie verlängert werden."
-      },
-      {
-        "frage": "Kann man diese Übung auch für ältere Kinder nutzen?",
-        "antwort": "Ja, die Übung lässt sich gut an D-Junioren oder sogar C-Junioren anpassen, indem man das Feld vergrößert und mehr Jäger einsetzt."
-      }
-    ],
-    "referenz_grafik_url": "",
-    "original_aufbau": "",
-    "original_durchfuehrung": "",
-    "original_varianten": "",
-    "original_coaching_fokus": "",
-    "ist_gecrawlt": false,
-    "quell_kategorie": "",
-    "schwester_ids": [
-      49
-    ],
-    "schwester_id": 49,
-    "schwester_titel": "DAS TOR BEWEGT SICH!"
-  },
-  {
-    "id": 49,
-    "titel": "DAS TOR BEWEGT SICH!",
-    "quell_trainingseinheit": "Fangen spielen, bewegende Tore, Schüsse!",
-    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/11/image-11.jpg",
-    "grafik_dateiname": "uebung-049-das-tor-bewegt-sich.jpg",
-    "trainingsphase": "Aufwärmen",
-    "kurzbeschreibung": "Die Spieler eines Teams halten zu zweit Stangen, die Spieler des anderen Teams müssen hindurchpassen, um Tore zu erzielen.",
-    "aufbau": "Ein 20mx20m großes Feld markieren. Zwei Teams mit Leibchen einteilen. In einem Team jeweils Spielerpaaren eine Stange geben. Zwei Bälle im Feld.",
-    "durchfuehrung": "Die Spielerpaare mit der Stange laufen durch das Feld und versuchen es dem gegnerischen Team möglichst schwer zu machen, ein Tor zu erzielen. Das Team im Ballbesitz muss durch die Stangen hindurch einen Pass spielen, um einen Punkt zu erzielen.",
-    "varianten": "Ball muss unter der Stange gerollt oder über die Stange geworfen werden. Welches Team schafft es, die 5 Bälle am längsten in den eigenen Reihen zu halten? TORSCHUSS NACH FARBSIGNAL TORSCHUSS NACH FARBSIGNAL Nach Aufruf dribbeln die Spieler bis zur Schusslinie und schließen ab.",
-    "quell_url": "https://coachunited.de/fangen-spielen-bewegende-tore-schusse/",
-    "jugend": [
-      "G-Jugend",
-      "F-Jugend"
-    ],
-    "skills": [
-      "Passen",
-      "Ballkontrolle",
-      "Koordination",
-      "Raumverhalten"
-    ],
-    "coaching_fokus": "• Präzise flache Pässe durch die Stangen",
-    "leichter_machen": "• Ball muss nur unter der Stange gerollt oder über die Stange geworfenwerden",
-    "schwerer_machen": "• Ball muss per Volley über die Stange geschossen werden",
-    "status": "veroeffentlicht",
-    "schwester_ids": [
-      48
-    ],
-    "schwester_id": 48,
-    "schwester_titel": "DER BALL BEFREIT",
-    "alt_titel": "Zirkusreif: Ball durch das bewegte Tor!",
-    "seo_keyword": "Fußballübung Passen Koordination Kinder",
-    "url_slug": "fussballubung-tor-bewegt-sich-kinder",
-    "seo_meta_description": "Kreative Fußballübung für Kinder: Pässe durchs bewegte Tor üben und Koordination trainieren. Ideal für E- und D-Jugend.",
-    "grafik_alt_text": "Zwei Kinder halten eine Stange, andere Kinder versuchen den Ball durch die Stangen zu passen",
-    "grafik_description": "Auf dem Bild sieht man eine Fußballübung, bei der zwei Kinder eine Stange hochhalten, während andere Kinder versuchen, den Ball durch die Stangen zu passen. Die Kinder tragen unterschiedliche Leibchen, um die Teams zu unterscheiden.",
-    "grafik_title": "Fußballübung für Koordination und Passen",
-    "grafik_caption": "Kreative Fußballübung zum Trainieren von Pässen und Koordination",
-    "faq": [
-      {
-        "frage": "Wie viele Spieler braucht man für diese Übung?",
-        "antwort": "Ideal sind 8-12 Spieler, damit zwei Teams mit je 4-6 Kindern gebildet werden können. Bei größeren Gruppen ein zweites Feld aufbauen."
-      },
-      {
-        "frage": "Wie lange dauert die Übung?",
-        "antwort": "Die Übung kann 5-10 Minuten dauern. Je nach Altersgruppe und Konzentration der Kinder kann die Zeit angepasst werden."
-      },
-      {
-        "frage": "Für welche Altersgruppen ist diese Übung geeignet?",
-        "antwort": "Die Übung ist gut für jüngere Kinder geeignet. "
-      }
-    ],
-    "referenz_grafik_url": "",
-    "original_aufbau": "",
-    "original_durchfuehrung": "",
-    "original_varianten": "",
-    "original_coaching_fokus": "",
-    "ist_gecrawlt": false,
-    "quell_kategorie": ""
-  },
-  {
-    "id": 50,
+    "id": 44,
     "titel": "TORSCHUSS NACH FARBSIGNAL",
     "quell_trainingseinheit": "Fangen spielen, bewegende Tore, Schüsse!",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/11/image-8.png",
@@ -2768,7 +2524,7 @@
     "schwester_titel": "TORSCHUSS MIT GEGNERPRÄSENZ"
   },
   {
-    "id": 51,
+    "id": 45,
     "titel": "TORSCHUSS MIT GEGNERPRÄSENZ",
     "quell_trainingseinheit": "Fangen spielen, bewegende Tore, Schüsse!",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/11/image-9.png",
@@ -2831,7 +2587,7 @@
     "quell_kategorie": ""
   },
   {
-    "id": 52,
+    "id": 46,
     "titel": "AUS DEM KLEINFELDSPIEL ZUM TORSCHUSS",
     "quell_trainingseinheit": "Fangen spielen, bewegende Tore, Schüsse!",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/11/image-12.jpg",
@@ -2892,7 +2648,7 @@
     "schwester_titel": null
   },
   {
-    "id": 53,
+    "id": 47,
     "titel": "EINFACHES DRIBBELN UND PASSEN MIT TEMPO",
     "quell_trainingseinheit": "Passen, schießen und einwechseln mit Tempo",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/11/image-8.jpg",
@@ -2954,195 +2710,7 @@
     "schwester_titel": null
   },
   {
-    "id": 54,
-    "titel": "TORSCHUSS-CHALLENGE",
-    "quell_trainingseinheit": "Passen, schießen und einwechseln mit Tempo",
-    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/11/image-3.png",
-    "grafik_dateiname": "uebung-054-torschuss-challenge.png",
-    "trainingsphase": "Hauptteil",
-    "kurzbeschreibung": "Spieler dribbeln in zwei Teams um das gegenüberliegende Hütchen und schließen ab. Welches Team erzielt zuerst 15 Tore?",
-    "aufbau": "Ein 30mx30m-Feld markieren. Zwei Jugendtore mit Torhütern aufstellen. Zwei Teams an Eckhütchen mit Bällen einteilen. Zwei Hütchen auf Höhe der Mittellinie aufstellen.",
-    "durchfuehrung": "Spieler starten gleichzeitig, dribbeln um das gegenüberliegende Hütchen und schließen aus spitzem Winkel ab. Das Team, das zuerst 15 Tore erzielt, gewinnt.",
-    "varianten": "a) Das nähergelegene Hütchen umdribbeln und mit links abschließen. b) Ball in der Hand um das Hütchen tragen, hochwerfen und Volley abschließen. FERNSCHUSS-CHALLENGE FERNSCHUSS-CHALLENGE Spieler versuchen in zwei Teams aus großer Entfernung mit einem hohen Fernschuss ins leere Tor zu treffen.",
-    "quell_url": "https://coachunited.de/passen-schiesen-und-einwechseln-mit-tempo/",
-    "jugend": [
-      "G-Jugend",
-      "F-Jugend",
-      "E-Jugend",
-      "D-Jugend"
-    ],
-    "skills": [
-      "Ballkontrolle",
-      "Dribbeln",
-      "Torschuss"
-    ],
-    "coaching_fokus": "• Kopf heben für Schuss; • Dribblings mit Tempo ausführen",
-    "leichter_machen": "• Torschussabstand veringern; • Nur mit rechts oder links schießen lassen",
-    "schwerer_machen": "• Fußwechsel nach dem Dribbling; • Ball erst hochwerfen, dann Volley abschließen; • Nur mit rechts oder links schießen lassen",
-    "status": "veroeffentlicht",
-    "alt_titel": "Torjäger-Challenge",
-    "seo_keyword": "Fußballübung Torschuss Kinder",
-    "url_slug": "torschuss-challenge-fussballubung-kinder",
-    "seo_meta_description": "Zwei Kinder-Fußballteams beim Torschuss-Wettkampf auf einem markierten Spielfeld",
-    "grafik_alt_text": "Fußballübung: Torschuss-Challenge für Kinder",
-    "grafik_description": "Die Übung zeigt zwei Kinder-Fußballteams, die in einem 30x30m-Feld gegeneinander antreten. Die Spieler dribbeln zum gegenüberliegenden Hütchen und schließen dann aus spitzem Winkel ab, um möglichst viele Tore für ihr Team zu erzielen.",
-    "grafik_title": "Dynamische Torschuss-Übung fördert Ballgefühl, Präzision und Teamspiel bei jungen Fußballern.",
-    "grafik_caption": "Die Übung zeigt zwei Kinder-Fußballteams, die in einem 30x30m-Feld gegeneinander antreten. Die Spieler dribbeln zum gegenüberliegenden Hütchen und schließen dann aus spitzem Winkel ab, um möglichst viele Tore für ihr Team zu erzielen.",
-    "faq": [
-      {
-        "frage": "Wie viele Spieler pro Team empfehlen Sie?",
-        "antwort": "Für die Torschuss-Challenge eignen sich 6-8 Spieler pro Team. So haben alle genug Bewegungsraum und Abschlussmöglichkeiten."
-      },
-      {
-        "frage": "Wie lange sollte die Übung dauern?",
-        "antwort": "Die Torschuss-Challenge lässt sich gut in einem 10-15-minütigen Trainingselement einbauen. Je nach Alter und Leistungsstand der Kinder kann sie kürzer oder etwas länger sein."
-      },
-      {
-        "frage": "Für welche Altersgruppe ist die Übung geeignet?",
-        "antwort": "Die Torschuss-Challenge ist prima für Kinder der G- bis D-Jugend. Die Übung lässt sich je nach Schwierigkeitsgrad einfach an die Fähigkeiten der Spieler anpassen."
-      }
-    ],
-    "referenz_grafik_url": "",
-    "original_aufbau": "",
-    "original_durchfuehrung": "",
-    "original_varianten": "",
-    "original_coaching_fokus": "",
-    "ist_gecrawlt": false,
-    "quell_kategorie": "",
-    "schwester_ids": [
-      55
-    ],
-    "schwester_id": 55,
-    "schwester_titel": "FERNSCHUSS-CHALLENGE"
-  },
-  {
-    "id": 55,
-    "titel": "FERNSCHUSS-CHALLENGE",
-    "quell_trainingseinheit": "Passen, schießen und einwechseln mit Tempo",
-    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/11/image-4.png",
-    "grafik_dateiname": "uebung-055-fernschuss-challenge.png",
-    "trainingsphase": "Hauptteil",
-    "kurzbeschreibung": "Spieler versuchen in zwei Teams aus großer Entfernung mit einem hohen Fernschuss ins leere Tor zu treffen.",
-    "aufbau": "Vier Gruppen einteilen. Vor jeder Gruppe in etwa 6m Entfernung ein Hütchen aufstellen. Einen Ball pro Gruppe. Jeweils drei Hütchen je nach Leistungsstärke etwa 5-10m vor den Starthütchen platzieren. Ohne Torhüter.",
-    "durchfuehrung": "Spieler starten gleichzeitig, dribbeln ein paar Schritte und schließen vor der Hütchenreihe per hohem Fernschuss ab. Die Hütchen dürfen dabei nicht getroffen werden. Das Team, das zuerst 20 Tore erzielt, gewinnt.",
-    "varianten": "a) Ball in die Hand nehmen und Volley schießen. b) Zu gegenüberliegenden (weiter entfernteren) Hütchenreihe dribbeln und vor dort abschließen. AUSWECHSLER HOLEN DIE PUNKTE AUSWECHSLER HOLEN DIE PUNKTE In einem normalen Spiel ruft der Trainer je ein Kind pro Team für eine Auswechslung auf. Das Team, das schneller wechselt, erhält einen Bonuspunkt.",
-    "quell_url": "https://coachunited.de/passen-schiesen-und-einwechseln-mit-tempo/",
-    "jugend": [
-      "E-Jugend",
-      "D-Jugend"
-    ],
-    "skills": [
-      "Ballkontrolle",
-      "Dribbeln",
-      "Torschuss",
-      "Koordination"
-    ],
-    "coaching_fokus": "• Tempo vor dem Abschluss herausnehmen; • Kopf hoch vor dem Torschuss",
-    "leichter_machen": "• Ball in die Hand nehmen und Volley oder per Drop-Kick schießen; • Kürzere Tor-Entfernung zu den Hütchen wählen",
-    "schwerer_machen": "• Zu gegenüberliegenden (weiter entfernteren) Hütchenreihen dribbeln, drehen und von dort abschließen; • Nur mit schwachem Fuß abschließen",
-    "status": "veroeffentlicht",
-    "schwester_ids": [
-      54
-    ],
-    "schwester_id": 54,
-    "schwester_titel": "TORSCHUSS-CHALLENGE",
-    "alt_titel": "FERN-TORSCHUSS-CHALLENGE",
-    "seo_keyword": "Fußballübung Fernschuss Kinder",
-    "url_slug": "fernschuss-challenge-fussballubung-kinder",
-    "seo_meta_description": "Effektive Fußballübung für Kinder, bei der sie aus großer Entfernung auf leere Tore schießen. Fördert Ballkontrolle, Koordination und Torschuss-Technik.",
-    "grafik_alt_text": "Kinder führen Fernschüsse auf leere Tore in zwei Teams durch",
-    "grafik_description": "Die Grafik zeigt zwei Kinderteams, die bei der 'Fernschuss-Challenge' Torschüsse aus großer Entfernung ausführen. Die Spieler dribbeln zunächst einige Schritte an, bevor sie den Ball per hohem Fernschuss ins Tor befördern.",
-    "grafik_title": "Fußballübung 'Fernschuss-Challenge' für Kinder",
-    "grafik_caption": "Kinder-Fußballtraining: Fernschuss-Challenge mit hohen Torschüssen",
-    "faq": [
-      {
-        "frage": "Wie viele Spieler benötigen wir für die Übung?",
-        "antwort": "Ideal sind 8-12 Spieler, damit beide Teams gleich groß sind und genug Platz zum Schießen haben."
-      },
-      {
-        "frage": "Wie lange dauert die Übung?",
-        "antwort": "Etwa 10-15 Minuten, je nach Spieleranzahl und Leistungsstand. Die Übung kann auch in mehreren Durchgängen gespielt werden."
-      },
-      {
-        "frage": "Für welche Altersgruppen eignet sich die Fernschuss-Challenge?",
-        "antwort": "Die Übung ist gut geeignet für Kinder im Alter von 9-12 Jahren (E-Jugend und D-Jugend). Jüngere Kinder können die Entfernung evtl. noch nicht gut bewältigen."
-      }
-    ],
-    "referenz_grafik_url": "",
-    "original_aufbau": "",
-    "original_durchfuehrung": "",
-    "original_varianten": "",
-    "original_coaching_fokus": "",
-    "ist_gecrawlt": false,
-    "quell_kategorie": ""
-  },
-  {
-    "id": 56,
-    "titel": "AUSWECHSLER HOLEN DIE PUNKTE",
-    "quell_trainingseinheit": "Passen, schießen und einwechseln mit Tempo",
-    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/11/image-5.png",
-    "grafik_dateiname": "uebung-056-auswechsler-holen-die-punkte.png",
-    "trainingsphase": "Spielformat",
-    "kurzbeschreibung": "In einem normalen Spiel ruft der Trainer je ein Kind pro Team für eine Auswechslung auf. Das Team, das schneller wechselt, erhält einen Bonuspunkt.",
-    "aufbau": "Feld auf 40mx20m erweitern. Torhüter ins Tor. Teams in 6 gegen 6 einteilen (oder je nach Gruppengröße 5 gegen 5) mit mind. einem Auswechselkind.",
-    "durchfuehrung": "Es wird ein normales Spiel gespielt. Sobald der Trainer je einen Namen aus jedem Team aufruft, müssen diese beiden im Vollsprint zur Auswechselbank und einen Wechsel durchführen. Sind sie gerade in Ballbesitz, lassen sie den Ball liegen. Das Team, das zuerst gewechselt hat, erhält einen Bonus-Punkt (zählt wie ein Tor). ",
-    "varianten": "",
-    "quell_url": "https://coachunited.de/passen-schiesen-und-einwechseln-mit-tempo/",
-    "jugend": [
-      "G-Jugend",
-      "F-Jugend",
-      "E-Jugend",
-      "D-Jugend"
-    ],
-    "skills": [
-      "Passen",
-      "Ballkontrolle",
-      "Dribbeln",
-      "Torschuss",
-      "Koordination",
-      "Schnelligkeit",
-      "Raumverhalten",
-      "Taktik"
-    ],
-    "coaching_fokus": "• Schnelle Wechsel mit Dynamik",
-    "leichter_machen": "",
-    "schwerer_machen": "",
-    "status": "veroeffentlicht",
-    "alt_titel": "Werde zum Auswechselkönig!",
-    "seo_keyword": "Fußballübung Schnelligkeit Kinder",
-    "url_slug": "auswechsler-holen-die-punkte",
-    "seo_meta_description": "Dynamische Fußballübung zum Trainieren von Schnelligkeit und Teamwork für Kinder von 6-12 Jahren.",
-    "grafik_alt_text": "Zwei Jungen laufen im Fußballstadion zur Auswechselbank, um schnell ausgewechselt zu werden.",
-    "grafik_description": "Die Grafik zeigt zwei Fußballspieler, die auf dem Spielfeld zur Auswechselbank laufen, um im Rahmen der Übung schnell ausgewechselt zu werden. Das Training fördert die Schnelligkeit und das Teamwork der Kinder.",
-    "grafik_title": "Fußballtraining: Kinder beim Auswechseln",
-    "grafik_caption": "Kinder-Fußballtraining: Schnell ausgewechselt werden, um Bonuspunkte zu holen.",
-    "faq": [
-      {
-        "frage": "Wie viele Spieler benötige ich für diese Übung?",
-        "antwort": "Die Übung ist für 6 gegen 6 Spieler ausgelegt, lässt sich aber auch auf 5 gegen 5 oder 7 gegen 7 anpassen."
-      },
-      {
-        "frage": "Wie lange dauert die Übung?",
-        "antwort": "Die Dauer kann flexibel an das Training angepasst werden, z.B. 10-15 Minuten."
-      },
-      {
-        "frage": "Für welche Altersgruppen ist die Übung geeignet?",
-        "antwort": "Die Übung eignet sich gut für Kinder von 6-12 Jahren (G- bis D-Jugend)."
-      }
-    ],
-    "referenz_grafik_url": "",
-    "original_aufbau": "",
-    "original_durchfuehrung": "",
-    "original_varianten": "",
-    "original_coaching_fokus": "",
-    "ist_gecrawlt": false,
-    "quell_kategorie": "",
-    "schwester_ids": [],
-    "schwester_id": null,
-    "schwester_titel": null
-  },
-  {
-    "id": 57,
+    "id": 48,
     "titel": "ENTKOMME DEM BALLJÄGER",
     "quell_trainingseinheit": "Erst Spaß im Warmup – dann schießen, schießen, schießen",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/11/image-4.jpg",
@@ -3203,7 +2771,7 @@
     "schwester_titel": "DEN FRECHDACHS EINFANGEN"
   },
   {
-    "id": 58,
+    "id": 49,
     "titel": "DEN FRECHDACHS EINFANGEN",
     "quell_trainingseinheit": "Erst Spaß im Warmup – dann schießen, schießen, schießen",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/11/image-5.jpg",
@@ -3264,66 +2832,7 @@
     "quell_kategorie": ""
   },
   {
-    "id": 59,
-    "titel": "5 BÄLLE-SPIEL",
-    "quell_trainingseinheit": "Erst Spaß im Warmup – dann schießen, schießen, schießen",
-    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/11/image-2.png",
-    "grafik_dateiname": "uebung-059-5-baelle-spiel.png",
-    "trainingsphase": "Spielformat",
-    "kurzbeschreibung": "Zwei Teams spielen auf zwei Tore bis 5 Bälle verspielt wurden. Danach wechseln die Teams.",
-    "aufbau": "Zwei Jugendtore aufbauen. Torhüter zuordnen. Feld mit 20mX25m markieren. Drei Teams einteilen. 5 Bälle bereitlegen.",
-    "durchfuehrung": "Trainer bestimmt ein Angreiferteam, ein Verteidigerteam und ein Auswechselteam. Erster Ball wird eingespielt. Angreiferteam versucht auf beide Tore ein Tor zu erzielen. Sobald das Verteidigerteam den Ball erobert hat oder der Ball verspielt wurde (zB Seitenaus) wird der nächste Ball vom Trainer eingespielt. Sind 5 Bälle verspielt, wechseln die Rollen der Teams und es geht neu los.",
-    "varianten": "a) Verteidigerteam kann auch Punkte erzielen, indem sie den Ball über die gegenüberliegende Grundlinie dribbeln. FREIES SPIEL – LOS GEHT’S! FREIES SPIEL – LOS GEHT’S! In © 2025 COACH UNITED",
-    "quell_url": "https://coachunited.de/erst-spas-im-warmup-dann-schiesen-schiesen-schiesen/",
-    "jugend": [
-      "E-Jugend",
-      "D-Jugend"
-    ],
-    "skills": [
-      "Passen",
-      "Ballkontrolle",
-      "Dribbeln",
-      "Torschuss"
-    ],
-    "coaching_fokus": "• Passt den Ball gezielt zu euren Mitspielern in Ballbesitz; • Schaut immer, wo eure Mitspieler sind, um schnell zu spielen; • Sprecht laut mit euren Teamkameraden, um euch abzusichern",
-    "leichter_machen": "• Größeres Spielfeld, damit mehr Platz zum Dribbling; • Nur 1 Ball für beide Teams, damit der Druck reduziert wird",
-    "schwerer_machen": "• Kleineres Spielfeld, um mehr Zweikämpfe zu erzwingen; • Teams müssen den Ball 3 Mal passen, bevor sie aufs Tor schießen dürfen",
-    "status": "veroeffentlicht",
-    "alt_titel": "Tor-Zähler-Spiel",
-    "seo_keyword": "Fußballübung Torspiel Kinder",
-    "url_slug": "fussballubung-torspiel-kinder",
-    "seo_meta_description": "5-Bälle-Spiel - ein dynamisches Fußballtraining für Kinder von 8-12 Jahren, das Passen, Dribbeln und Torschuss fördert.",
-    "grafik_alt_text": "Zwei Fußballteams spielen gegeneinander auf zwei Tore, 5 Bälle werden gleichzeitig verwendet.",
-    "grafik_description": "Das 5-Bälle-Spiel ist eine intensive Fußballübung für Kinder, bei der zwei Teams auf zwei Tore spielen. Insgesamt 5 Bälle werden gleichzeitig eingesetzt, was hohe Konzentration und Übersicht erfordert.",
-    "grafik_title": "Fußballübung 5-Bälle-Spiel für Kinder",
-    "grafik_caption": "Dynamisches Fußballtraining mit 5 Bällen fördert die Spielübersicht und Ballkontrolle bei Kindern.",
-    "faq": [
-      {
-        "frage": "Wie viele Kinder können an dieser Übung teilnehmen?",
-        "antwort": "Ideal sind 12-16 Kinder, die in 3 Teams eingeteilt werden. So haben alle genug Spielanteile."
-      },
-      {
-        "frage": "Wie lange sollte das 5-Bälle-Spiel dauern?",
-        "antwort": "Die Übung eignet sich gut für ein 10-15 minütiges Trainingsspiel. So bleibt die Intensität hoch."
-      },
-      {
-        "frage": "Kann man die Übung an jüngere Altersklassen anpassen?",
-        "antwort": "Ja, für G- und F-Jugend Kinder kann man das Spielfeld vergrößern und nur 3 Bälle verwenden, um den Schwierigkeitsgrad zu reduzieren."
-      }
-    ],
-    "referenz_grafik_url": "",
-    "original_aufbau": "",
-    "original_durchfuehrung": "",
-    "original_varianten": "",
-    "original_coaching_fokus": "",
-    "ist_gecrawlt": false,
-    "quell_kategorie": "",
-    "schwester_ids": [],
-    "schwester_id": null,
-    "schwester_titel": null
-  },
-  {
-    "id": 60,
+    "id": 50,
     "titel": "PRÄZISER PASS DURCH HÜTCHENTORE",
     "quell_trainingseinheit": "Hohe Pässe und Fernschüsse gekonnt einsetzen",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/11/image.jpg",
@@ -3382,7 +2891,7 @@
     "schwester_titel": "HOHER PASS ÜBER HÜTCHENTORE"
   },
   {
-    "id": 61,
+    "id": 51,
     "titel": "HOHER PASS ÜBER HÜTCHENTORE",
     "quell_trainingseinheit": "Hohe Pässe und Fernschüsse gekonnt einsetzen",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/11/image-1.jpg",
@@ -3442,128 +2951,7 @@
     "quell_kategorie": ""
   },
   {
-    "id": 62,
-    "titel": "IN DER RICHTIGEN ANZAHL EINLAUFEN UND SPIELEN",
-    "quell_trainingseinheit": "Hohe Pässe und Fernschüsse gekonnt einsetzen",
-    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/11/image-1.png",
-    "grafik_dateiname": "uebung-062-in-der-richtigen-anzahl-einlaufen-und-spielen.png",
-    "trainingsphase": "Spielformat",
-    "kurzbeschreibung": "Teams laufen in der Teamstärke aufs Feld, die der Trainer ansagt und spielen ein Spiel mit Golden Goal.",
-    "aufbau": "Starthütchen im Abstand von 20m aufbauen. Zentral jeweils zwei Hütchentore platzieren. Vier Gruppen einteilen. Mittelzone entfernen. Jeweils zweites Minitor auf der Grundlinie platzieren. Zwei Teams stehen an der Seitenlinie an. Trainier mittig mit Ball.",
-    "durchfuehrung": "Trainer sagt die Teamstärke an (z.B. „Drei gegen Drei“ oder „Fünf gegen Fünf“). Die ersten Spieler aus der Reihe jedes Team laufen in entsprechender Anzahl aufs Feld und spielen bis ein Tor gefallen ist – oder maximal drei Minuten. Dann stellen sie sich hinten an und der Trainer gibt die neue Teamstärke bekannt. Ein neues Spiel startet. ",
-    "varianten": "",
-    "quell_url": "https://coachunited.de/hohe-passe-und-fernschusse-gekonnt-einsetzen/",
-    "jugend": [
-      "G-Jugend",
-      "F-Jugend",
-      "E-Jugend",
-      "D-Jugend"
-    ],
-    "skills": [
-      "Passen",
-      "Ballkontrolle",
-      "Dribbeln",
-      "Torschuss"
-    ],
-    "coaching_fokus": "• Schnelles Schalten beim Ansagen der Teamstärke",
-    "leichter_machen": "• Auf Jugendtore spielen lassen",
-    "schwerer_machen": "• Einführung eines zweiten Balles",
-    "status": "veroeffentlicht",
-    "alt_titel": "Dynamisches Raumspiel in wechselnder Mannschaftsstärke",
-    "seo_keyword": "Fußballübung Raumspiel Kinder",
-    "url_slug": "dynamisches-raumspiel-wechselnde-mannschaftsstärke",
-    "seo_meta_description": "Dynamisches Fußballtraining für Kinder mit wechselnder Mannschaftsstärke - fördert Passen, Ballkontrolle und Raumverständnis.",
-    "grafik_alt_text": "Kinder spielen Fußball auf einem Kleinfeld mit wechselnder Spieleranzahl pro Team",
-    "grafik_description": "Das Bild zeigt ein dynamisches Fußballspiel auf einem überschaubaren Feld. Die Kinder spielen in wechselnder Teamstärke gegeneinander, was ihre Bewegung im Raum und das Zusammenspiel fördert.",
-    "grafik_title": "Fußballübung: Dynamisches Raumspiel in wechselnder Mannschaftsstärke",
-    "grafik_caption": "Kinder trainieren das Raumspiel und die Teamkoordination in wechselnder Aufstellung.",
-    "faq": [
-      {
-        "frage": "Wie passe ich die Spielerzahl an?",
-        "antwort": "Die Teamstärke lässt sich je nach Leistungsstand der Kinder anpassen. Beginne mit 3 gegen 3 und erhöhe dann langsam bis maximal 5 gegen 5."
-      },
-      {
-        "frage": "Wie lange soll die Spielphase dauern?",
-        "antwort": "Pro Spielphase sollten maximal 3 Minuten gespielt werden. Danach erfolgt der Wechsel der Teamstärke."
-      },
-      {
-        "frage": "Für welche Altersgruppen eignet sich die Übung?",
-        "antwort": "Die Übung ist für Kinder von 6-12 Jahren (G- bis D-Jugend) gut geeignet und fördert wichtige fußballerische Grundlagen."
-      }
-    ],
-    "referenz_grafik_url": "",
-    "original_aufbau": "",
-    "original_durchfuehrung": "",
-    "original_varianten": "",
-    "original_coaching_fokus": "",
-    "ist_gecrawlt": false,
-    "quell_kategorie": "",
-    "schwester_ids": [],
-    "schwester_id": null,
-    "schwester_titel": null
-  },
-  {
-    "id": 63,
-    "titel": "KEGEL-RENNEN",
-    "quell_trainingseinheit": "Klug aus engen Räumen befreien",
-    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/10/image-3.jpg",
-    "grafik_dateiname": "uebung-063-kegel-rennen.jpg",
-    "trainingsphase": "Aufwärmen",
-    "kurzbeschreibung": "Teams versuchen, nacheinander alle Kegel abzuräumen.",
-    "aufbau": "5m hinter den Starthütchen jeweils 5 Hütchen aufstellen. Abstand kann je nach Leistungsstärke der Gruppe variieren. Zwei Teams mit Bällen an den Starthütchen verteilen.",
-    "durchfuehrung": "Die Spieler der Teams versuchen nacheinander mit dem Ball das erste Hütchen zu treffen. Sobald dieses umgefallen ist, wird es weggeräumt. Danach ist das zweite Hütchen das Ziel. Welches Team hat zuerst alle Hütchen abgeräumt?",
-    "varianten": "a) Ball mit der Hand rollen, b) nur mit rechts/links schießen. KEGEL-SCHLACHT KEGEL-SCHLACHT Teams versuchen, alle Kegel der gegnerischen Mannschaft abzuräumen.",
-    "quell_url": "https://coachunited.de/klug-aus-engen-raumen-befreien/",
-    "jugend": [
-      "G-Jugend",
-      "F-Jugend",
-      "E-Jugend"
-    ],
-    "skills": [
-      "Passen",
-      "Ballkontrolle",
-      "Dribbeln",
-      "Torschuss"
-    ],
-    "coaching_fokus": "• Konzentriert den Ball treffen, um den Kegel umzuwerfen",
-    "leichter_machen": "• Ball mit der Hand rollen; • Abstand zwischen Kegel und Starthütchen verringern",
-    "schwerer_machen": "• Nur mit rechts/links schießen; • Distanzen vergrößern",
-    "status": "veroeffentlicht",
-    "alt_titel": "Kegel-Staffel - Team-Geschicklichkeit",
-    "seo_keyword": "Fußballübung Kinder Koordination",
-    "url_slug": "kegel-staffel-team-geschicklichkeit",
-    "seo_meta_description": "Koordinations- und Teamübung für Kinder im Fußballtraining: Zwei Teams versuchen, die Kegel des Gegners schnell abzuräumen.",
-    "grafik_alt_text": "Kinder spielen in Teams Kegel-Staffel auf dem Fußballplatz",
-    "grafik_description": "Auf dem Fußballplatz sind zwei Reihen mit Hütchen aufgestellt. Jeweils zwei Mannschaften versuchen, die Hütchen der Gegner abzuräumen, indem sie den Ball gezielt darauf schießen.",
-    "grafik_title": "Fußballübung für Kinder: Kegel-Staffel",
-    "grafik_caption": "Koordinations- und Teamübung 'Kegel-Staffel' im Kinder-Fußballtraining",
-    "faq": [
-      {
-        "frage": "Wie viele Spieler sind pro Team optimal?",
-        "antwort": "Pro Team sollten 4-6 Spieler eingesetzt werden. So haben alle ausreichend Ballkontakte. Bei größeren Gruppen mehrere Bahnen aufbauen."
-      },
-      {
-        "frage": "Wie lange soll die Übung dauern?",
-        "antwort": "Die Übungsdauer kann zwischen 5-10 Minuten betragen. So bleibt die Konzentration der Kinder hoch."
-      },
-      {
-        "frage": "Für welche Altersgruppen ist die Übung geeignet?",
-        "antwort": "Die Übung eignet sich gut für Kinder im Alter von 6-12 Jahren (G- bis E-Jugend)."
-      }
-    ],
-    "referenz_grafik_url": "",
-    "original_aufbau": "",
-    "original_durchfuehrung": "",
-    "original_varianten": "",
-    "original_coaching_fokus": "",
-    "ist_gecrawlt": false,
-    "quell_kategorie": "",
-    "schwester_ids": [],
-    "schwester_id": null,
-    "schwester_titel": null
-  },
-  {
-    "id": 64,
+    "id": 52,
     "titel": "AUS DER FRIEDLICHEN MITTELZONE INS SPIELGESCHEHEN",
     "quell_trainingseinheit": "Klug aus engen Räumen befreien",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/10/image-5.png",
@@ -3628,7 +3016,7 @@
     "schwester_titel": "BLITZTURNIER MIT GOLDEN GOAL"
   },
   {
-    "id": 65,
+    "id": 53,
     "titel": "AUS DER UMKÄMPFTEN MITTELZONE INS SPIELGESCHEHEN",
     "quell_trainingseinheit": "Klug aus engen Räumen befreien",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/10/image-6.png",
@@ -3692,7 +3080,7 @@
     "quell_kategorie": ""
   },
   {
-    "id": 67,
+    "id": 55,
     "titel": "ERST IM FELD PASSEN, DANN FELDER TAUSCHEN",
     "quell_trainingseinheit": "Auch unter Gegnerdruck cool bleiben",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/09/image-18.jpg",
