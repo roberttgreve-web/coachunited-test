@@ -740,55 +740,50 @@
     "quell_kategorie": ""
   },
   {
-    "id": 13,
-    "titel": "SLALOM GEWINNEN UND ANGREIFEN",
-    "quell_trainingseinheit": "Reifen-Warmup und Angriffssituationen",
-    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/01/image-20.png",
-    "grafik_dateiname": "uebung-013-slalom-gewinnen-und-angreifen.png",
-    "trainingsphase": "Hauptteil",
-    "kurzbeschreibung": "Zwei Spieler liefern sich ein Wettrennen im Slalom Dribbling – Sieger im Duell erhält Angriffsrecht im 2 gegen 2.",
-    "aufbau": "Ein Feld von 20x10m mit Jugendtoren und Torhütern aufbauen. 8 Hütchen an der einen Seitenlinie. An jedem Ende jeweils ein Team mit Leibchen platzieren. Auf der anderen Seite ebenfalls zwei Teams mit Leibchen an einem Hütchen platzieren.",
-    "durchfuehrung": "Trainer ruft das Zielhütchen (hier: drittes Hütchen). Spieler aus jedem Team umlaufen die Hütchen mit Ball im Slalom. Gewinner des Sprints erhält Angriffsrecht mit Ball, Verlierer lässt seinen Ball liegen. Mitspieler von oben ohne Ball sprinten ins Feld zum 2 gegen 2. Rollenrotation, wenn alle einmal dran waren.",
-    "varianten": "Slalom-Gewinner 2 gegen 1 stürmen lassen. BLITZTURNIER MIT GOLDEN GOAL BLITZTURNIER MIT GOLDEN GOAL Drei Teams spielen ein Turnier. Kassiert ein Team ein Tor, muss es runter. Gewinner bleibt stehen.",
-    "quell_url": "https://coachunited.de/reifen-warmup-und-angriffssituationen/",
+    "id": 14,
+    "titel": "KETTENSPRINT",
+    "quell_trainingseinheit": "Breite schaffen mit Feldzonen",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/01/image-6.jpg",
+    "grafik_dateiname": "uebung-015-kettensprint.jpg",
+    "trainingsphase": "Aufwärmen",
+    "kurzbeschreibung": "Alle Spieler joggen auf dem Feld in einer Reihe dem Trainer hinterher. Der letzte Spieler in der Kette muss nach vorne sprinten.",
+    "aufbau": "Kein Aufbau.",
+    "durchfuehrung": "Der Trainer führt die Kette von Spielern an, die in lockerem Tempo um den Platz joggen. Der letzte Spieler in der Kette sprintet an allen vorbei auf die zweite Position hinter dem Trainer. Danach startet der nächste – bis alle ein oder zwei Mal durch sind.",
+    "varianten": "Beim Joggen verschiedene Aufwärm-Drills durchführen: Knie hoch, Hacken nach hinten, seitlich laufen etc. TECHNIKKETTE TECHNIKKETTE Die Spieler führen in einer Reihe verschiedene Dribbeltechniken durch.",
+    "quell_url": "https://coachunited.de/breite-schaffen-mit-feldzonen/",
     "jugend": [
+      "G-Jugend",
       "F-Jugend",
       "E-Jugend",
       "D-Jugend"
     ],
     "skills": [
-      "Passen",
-      "Ballkontrolle",
-      "Dribbeln",
-      "Koordination",
-      "Schnelligkeit",
-      "Raumverhalten",
-      "Taktik"
+      "Schnelligkeit"
     ],
-    "coaching_fokus": "• Kopf oben behalten beim Dribbling; • Dynamisch in den freien Raum laufen; • Kommunikation für das 2 gegen 2",
-    "leichter_machen": "• Slalom mit weniger Hütchen; • Slalom-Gewinner 2 gegen 1 stürmen lassen.",
-    "schwerer_machen": "• Slalom-Strecke verlängern; • Slalom-Hütchen enger setzen",
+    "coaching_fokus": "• Gruppe muss eng aneinander bleiben",
+    "leichter_machen": "",
+    "schwerer_machen": "• Beim Joggen verschiedene Aufwärm-Drills durchführen: Knie hoch, Hacken nach hinten, seitlich laufen",
     "status": "veroeffentlicht",
-    "alt_titel": "Slalom-Sprint zum Angriff",
-    "seo_keyword": "Fußballübung Dribbling Kinder",
-    "url_slug": "slalom-sprint-zum-angriff",
-    "seo_meta_description": "Dynamische Fußballübung zum Dribbling und Angriffsspiel für Kinder von 6-12 Jahren.",
-    "grafik_alt_text": "Junge Fußballspieler dribbleln im Slalom und stürmen dann zum 2 gegen 2",
-    "grafik_description": "Die Grafik zeigt einen Aufbau mit Slalom-Hütchen. Zwei Spieler aus verschiedenen Teams dribbleln im Wettbewerb durch den Slalom, der Gewinner startet dann mit seinem Partner im 2 gegen 2 Angriff.",
-    "grafik_title": "Fußballübung: Slalom-Sprint zum Angriff",
-    "grafik_caption": "Dynamisches Dribbling-Duell mit anschließendem 2 gegen 2",
+    "alt_titel": "Dynamisches Passingsprint",
+    "seo_keyword": "Fußballübung Passspiel Kinder",
+    "url_slug": "fussballubung-passspiel-kinder",
+    "seo_meta_description": "Dynamische Passing-Übung, bei der Kinder ihr Passspiel, Laufwege und Kommunikation trainieren. Geeignet für E- und D-Jugend-Fußballtraining.",
+    "grafik_alt_text": "Kinder in Fußballausrüstung führen einen Passingdrill durch und sprinten nach hinten durch die Reihe",
+    "grafik_description": "Eine Gruppe von Kindern im Fußballtraining führt eine Passübung durch. Sie joggen in einer Reihe mit dem Ball am Fuß, und der letzte Spieler in der Reihe sprintet nach vorne, um sich an den Anfang der Kette zu setzen.",
+    "grafik_title": "Kinder-Fußballtraining: Dynamisches Passspielen",
+    "grafik_caption": "Kinder führen einen dynamischen Passingdrill durch, bei dem der letzte Spieler nach vorne sprintet.",
     "faq": [
       {
-        "frage": "Wie viele Spieler braucht man für diese Übung?",
-        "antwort": "Optimal sind 12-16 Kinder."
+        "frage": "Wie viele Spieler sind optimal für diese Übung?",
+        "antwort": "Für eine effektive Durchführung empfehlen wir 6-12 Spieler. Sonst wird die Kette zu lang. Auch zwei Ketten parallel möglich."
       },
       {
-        "frage": "Wie lange dauert die Übung?",
-        "antwort": "Die Dauer hängt von der Anzahl der Durchgänge ab, ca. 15-20 Minuten sind realistisch."
+        "frage": "Wie lange sollte man diese Übung machen?",
+        "antwort": "Je nach Alter und Kondition der Kinder empfehlen wir 5 Minuten."
       },
       {
-        "frage": "Für welche Altersgruppe ist diese Übung geeignet?",
-        "antwort": "Die Übung eignet sich gut für Kinder der F- bis E-Jugend (6-12 Jahre)."
+        "frage": "Kann man die Übung auch mit jüngeren Kindern machen?",
+        "antwort": "Klar."
       }
     ],
     "referenz_grafik_url": "",
