@@ -3437,5 +3437,68 @@
     ],
     "schwester_id": 57,
     "schwester_titel": "FLEXIBLE TEAMGRÖSSE AUF HEIM- UND AUSWÄRTSFELD"
+  },
+  {
+    "id": 57,
+    "titel": "FLEXIBLE TEAMGRÖSSE AUF HEIM- UND AUSWÄRTSFELD",
+    "quell_trainingseinheit": "Flexibel in Unterzahl und Überzahl",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/09/image-16.png",
+    "grafik_dateiname": "uebung-072-flexible-teamgroesse-auf-heim-und-auswaertsfeld.png",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "Trainer ruft eine Zahl auf und spielt den Ball ein. Jeweils diese Anzahl Spieler pro Team startet ins Spiel.",
+    "aufbau": "Zwei 20 x 15 Meter große Felder nebeneinander markieren. Felder mit Tor und Torhüter an einer Grundlinie. Spieler beider Teams stehen beim Trainer, der zentral mit Bällen postiert ist.",
+    "durchfuehrung": "Trainer ruft Zahl von 1 bis 3 auf und spielt den Ball in eines der Felder, dann starten die Spieler. Wechsel und neuer Ball im anderen Feld nach Tor, Aus oder 2 Minuten.",
+    "varianten": "Bei größeren Gruppen zwei Spiele parallel möglich. Längere Spielzeiten möglich. 10 Tore bis zur Einwechslung 10 Tore bis zur Einwechslung Zwei Teams spielen auf Tor mit Torhüter, das dritte Team schießt separat aufs Minitor. Nach 10 Treffern auf das Minitor, um sich die Einwechslung zu erarbeiten.",
+    "quell_url": "https://coachunited.de/flexibel-in-unterzahl-und-uberzahl/",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Koordination",
+      "Raumverhalten",
+      "Kommunikation"
+    ],
+    "coaching_fokus": "• Schnelle Reaktion der Kinder nach der Traineransage",
+    "leichter_machen": "• Felder größer machen",
+    "schwerer_machen": "",
+    "status": "veroeffentlicht",
+    "schwester_ids": [
+      56
+    ],
+    "schwester_id": 56,
+    "schwester_titel": "2 GEGEN 1 AUF HEIM- UND AUSWÄRTSFELD",
+    "alt_titel": "Flexibles Teamspiel im Wechsel",
+    "seo_keyword": "Fußballübung Teamspiel Kinder",
+    "url_slug": "flexible-teamgroesse-heim-auswarts",
+    "seo_meta_description": "Abwechslungsreiche Fußballübung für Kinder, bei der die Teamgröße flexibel ist. Fördert Raumaufteilung, Kommunikation und Ballkontrolle.",
+    "grafik_alt_text": "Kinder spielen Fußball auf einem Feld mit flexibler Teamgröße",
+    "grafik_description": "In dieser Fußballübung für Kinder startet eine variable Anzahl von Spielern je nach Trainer-Ansage. Das fördert die Teamkoordination und den Umgang mit dem Ball.",
+    "grafik_title": "Flexible Teamgrößen im Fußballspiel für Kinder",
+    "grafik_caption": "Kinder passen und dribbeln im flexiblen Teamspiel",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler sind am besten pro Team?",
+        "antwort": "Pro Team sind 4-6 Spieler ideal. "
+      },
+      {
+        "frage": "Wie lange sollte die Spielzeit sein?",
+        "antwort": "Für Kinder zwischen 8 und 12 Jahren empfehlen sich Spielzeiten von 2-3 Minuten. So bleibt die Übung konzentriert und abwechslungsreich."
+      },
+      {
+        "frage": "Kann ich die Übung auch mit älteren Kindern machen?",
+        "antwort": "Bei älteren Kindern können die Teamgrößen größer sein und das Tempo erhöht werden."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": ""
   }
 ]
