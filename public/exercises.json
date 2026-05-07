@@ -3500,5 +3500,67 @@
     "original_coaching_fokus": "",
     "ist_gecrawlt": false,
     "quell_kategorie": ""
+  },
+  {
+    "id": 58,
+    "titel": "10 TORE BIS ZUR EINWECHSLUNG",
+    "quell_trainingseinheit": "Flexibel in Unterzahl und Überzahl",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/09/image-17.jpg",
+    "grafik_dateiname": "uebung-073-10-tore-bis-zur-einwechslung.jpg",
+    "trainingsphase": "Spielformat",
+    "kurzbeschreibung": "Zwei Teams spielen auf Tor mit Torhüter, das dritte Team schießt separat aufs Minitor. Nach 10 Treffern auf das Minitor, um sich die Einwechslung zu erarbeiten.",
+    "aufbau": "30 x 20 m Spielfeld mit 1 Tor und 1 Minitor. 3 Teams, Torhüter, Spieler mit Bällen beim Minitor.",
+    "durchfuehrung": "4 gegen 4 auf Tor mit Torwart. Parallel: Minitor-Abschluss bis 10 Treffer. Nach 10 Treffern darf das dritte Team eingewechselt werden, das bis dahin unterlegene Team des großen Feldes geht raus und startet mit den 10 Treffern.",
+    "varianten": "Auf Minitor: Mit schwachem Fuß. Je nach Kadergröße auch 3 gegen 3 oder 5 gegen 5 auf großes Feld möglich. FREIES SPIEL – LOS GEHT’S! FREIES SPIEL – LOS GEHT’S! In © 2025 COACH UNITED",
+    "quell_url": "https://coachunited.de/flexibel-in-unterzahl-und-uberzahl/",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Torschuss",
+      "Koordination",
+      "Raumverhalten",
+      "Verteidigen"
+    ],
+    "coaching_fokus": "• Konzentrierter Torschuss auf das Minitor; • Schnelle Teamwechsel nach dem 10. Treffer",
+    "leichter_machen": "• Weniger Distanz beim Minitor",
+    "schwerer_machen": "• Größere Distanz beim Minitor; • Nur mit links/rechts schießen",
+    "status": "veroeffentlicht",
+    "alt_titel": "Tor-Duelle: Aufwärmen mit Toren bis zum Wechsel",
+    "seo_keyword": "Fußballübung Torschuss Kinder",
+    "url_slug": "fussballubung-torschuss-kinder",
+    "seo_meta_description": "Effektive Fußballübung zum Torschusstraining für Kinder von 6-12 Jahren. Mit Zwei-Tore-Prinzip und Wechselmöglichkeit.",
+    "grafik_alt_text": "Zwei Teams spielen auf ein Haupttor, ein drittes Team schießt auf ein Minitor. Ein Torwart steht im Haupttor.",
+    "grafik_description": "Die Übung beinhaltet zwei parallele Spielaktionen. Auf einem kleineren Spielfeld spielen zwei Teams gegeneinander auf ein Haupttor. Auf einem zweiten Minitor versucht ein drittes Team, Tore zu erzielen. Nach 10 Treffern darf das dritte Team eingewechselt werden.",
+    "grafik_title": "Fußballübung Torschuss mit Wechselmöglichkeit",
+    "grafik_caption": "Zwei-Tore-Prinzip mit Wechseloption für mehr Spielzeit",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler sind optimal für diese Übung?",
+        "antwort": "Am besten etwa 5 gegen 5 auf dem Hauptfeld und 5 Spieler am Minitor. So haben alle genug Ballaktionen."
+      },
+      {
+        "frage": "Wie lange sollte die Übung dauern?",
+        "antwort": "15-20 Minuten sind ideal, damit jedes Team mehrmals dran kommt."
+      },
+      {
+        "frage": "Kann man die Übung auch für jüngere Spieler nutzen?",
+        "antwort": "Ja, mit Verkleinerung/Vergrößerung der Schussdistanzen aufs Minitor."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [],
+    "schwester_id": null,
+    "schwester_titel": null
   }
 ]
