@@ -3373,5 +3373,69 @@
     "schwester_ids": [],
     "schwester_id": null,
     "schwester_titel": null
+  },
+  {
+    "id": 56,
+    "titel": "2 GEGEN 1 AUF HEIM- UND AUSWÄRTSFELD",
+    "quell_trainingseinheit": "Flexibel in Unterzahl und Überzahl",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/09/image-15.png",
+    "grafik_dateiname": "uebung-071-2-gegen-1-auf-heim-und-auswaertsfeld.png",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "Zwei Teams spielen abwechselnd 2 gegen 1 auf zwei Feldern.",
+    "aufbau": "Zwei 20 x 15 Meter große Felder nebeneinander markieren. Felder mit Tor und Torhüter an einer Grundlinie. Spieler beider Teams stehen beim Trainer, der zentral mit Bällen postiert ist.",
+    "durchfuehrung": "Trainer spielt den Ball auf ein Feld ein. Mannschaft, die näher an dem Feld steht (Heimfeld) darf mit zwei Spielern einlaufen, andere Mannschaft mit einem Spieler. Wechsel und neuer Ball im anderen Feld nach Tor, Aus oder 1 Minute. ",
+    "varianten": "Auch als 3 gegen 2 möglich. Auch gleichzeitig auf beiden Feldern möglich. FLEXIBLE TEAMGRÖßE AUF HEIM- UND AUSWÄRTSFELD FLEXIBLE TEAMGRÖßE AUF HEIM- UND AUSWÄRTSFELD Trainer ruft eine Zahl auf und spielt den Ball ein. Jeweils diese Anzahl Spieler pro Team startet ins Spiel.",
+    "quell_url": "https://coachunited.de/flexibel-in-unterzahl-und-uberzahl/",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Dribbeln",
+      "Torschuss",
+      "Zweikampf",
+      "Koordination"
+    ],
+    "coaching_fokus": "• Schnelle Reaktion der Kinder beim Einlaufen",
+    "leichter_machen": "",
+    "schwerer_machen": "• Auch als 3 gegen 2 möglich.; • Auch gleichzeitig auf beiden Feldern möglich.",
+    "status": "veroeffentlicht",
+    "alt_titel": "2-gegen-1-Übung mit Heimfeld-Vorteil",
+    "seo_keyword": "Fußballübung 2 gegen 1 Kinder",
+    "url_slug": "fussballuebung-2-gegen-1-kinder",
+    "seo_meta_description": "Zwei Fußballteams spielen 2 gegen 1 auf jeweils einem Spielfeld",
+    "grafik_alt_text": "2-gegen-1-Fußballübung im Kleinfeld",
+    "grafik_description": "Die Grafik zeigt den Aufbau der 2-gegen-1-Fußballübung mit zwei nebeneinanderliegenden Spielfeldern. Zwei Spieler attackieren einen Verteidiger.",
+    "grafik_title": "Effektives 2-gegen-1-Übungsspiel für Kinder zur Förderung von Passen, Ballkontrolle und Zweikampf.",
+    "grafik_caption": "Die Grafik zeigt den Aufbau der 2-gegen-1-Fußballübung mit zwei nebeneinanderliegenden Spielfeldern. Zwei Spieler attackieren einen Verteidiger.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler benötige ich für diese Übung?",
+        "antwort": "Die Übung lässt sich mit 8-14 Spielern gut durchführen. Die Varianten erlauben eine flexible Teamentwicklung."
+      },
+      {
+        "frage": "Wie lange sollte man diese Übung spielen lassen?",
+        "antwort": "Pro Durchgang empfehlen sich 1-2 Minuten. Die Kinder können dann mehrmals starten, um viel Spielpraxis zu bekommen."
+      },
+      {
+        "frage": "Ist die Übung auch für jüngere Kinder (6-8 Jahre) geeignet?",
+        "antwort": "Eher nicht. G-Jugend ist aus unserer Sicht zu früh. "
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [
+      57
+    ],
+    "schwester_id": 57,
+    "schwester_titel": "FLEXIBLE TEAMGRÖSSE AUF HEIM- UND AUSWÄRTSFELD"
   }
 ]
