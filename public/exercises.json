@@ -3743,8 +3743,74 @@
     "original_coaching_fokus": "",
     "ist_gecrawlt": false,
     "quell_kategorie": "",
-    "schwester_ids": [],
-    "schwester_id": null,
-    "schwester_titel": null
+    "schwester_ids": [
+      62
+    ],
+    "schwester_id": 62,
+    "schwester_titel": "3-GEGEN-3 MIT ECKSTART"
+  },
+  {
+    "id": 62,
+    "titel": "3-GEGEN-3 MIT ECKSTART",
+    "quell_trainingseinheit": "Im viereckigen Technikfeld dribbeln, duellieren und spielen",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/09/image-14.jpg",
+    "grafik_dateiname": "uebung-077-3-gegen-3-mit-eckstart.jpg",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "Vier Teams spielen abwechselnd 3 gegen 3 mit Start aus den Ecken. Tore auf Grund- und Seitenlinien.",
+    "aufbau": "30 x 15 Meter großes Spielfeld mit zwei Jugendtoren auf den Grundlinien und zwei Minitoren auf den Seitenlinien. Pro Jugendtor ein Torhüter. Vier Teams an den Ecken verteilen. Jeweils ein Ball pro Team.",
+    "durchfuehrung": "Trainer ruft zwei Teams auf. Erstes Team greift auf die gegenüberliegenden Tore an, zweites Team kontert auf die anderen. 2 Minuten pro Spiel.",
+    "varianten": "Tore auf Jugendtore zählen doppelt. FREIES SPIEL – LOS GEHT’S! FREIES SPIEL – LOS GEHT’S! In © 2025 COACH UNITED",
+    "quell_url": "https://coachunited.de/im-viereckigen-technikfeld-dribbeln-duellieren-und-spielen/",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend",
+      "E-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Dribbeln",
+      "Torschuss",
+      "Zweikampf",
+      "Raumverhalten"
+    ],
+    "coaching_fokus": "• Richtige Entscheidungen auf engem Raum",
+    "leichter_machen": "• Tore auf Jugendtore zählen doppelt.",
+    "schwerer_machen": "",
+    "status": "veroeffentlicht",
+    "alt_titel": "Dynamisches 3-Gegen-3 mit Eckstart",
+    "seo_keyword": "Fußballtraining Kinder 3-gegen-3",
+    "url_slug": "fussballtraining-kinder-3-gegen-3",
+    "seo_meta_description": "Zwei Fußballteams spielen 3-gegen-3 auf einem Kleinfeld mit Toren an den Seiten- und Grundlinien.",
+    "grafik_alt_text": "Dynamisches 3-gegen-3 Fußballtraining für Kinder",
+    "grafik_description": "Das Bild zeigt ein 3-gegen-3 Fußballspiel auf einem Kleinfeld. Zwei Teams in unterschiedlichen Trikots kämpfen um den Ball, während an den Seiten- und Grundlinien Tore aufgestellt sind.",
+    "grafik_title": "Abwechslungsreiches 3-gegen-3 Fußballspiel mit Eckstart fördert Spielverständnis und Teamwork.",
+    "grafik_caption": "Das Bild zeigt ein 3-gegen-3 Fußballspiel auf einem Kleinfeld. Zwei Teams in unterschiedlichen Trikots kämpfen um den Ball, während an den Seiten- und Grundlinien Tore aufgestellt sind.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler sollen insgesamt teilnehmen?",
+        "antwort": "Für das 3-gegen-3 Spiel benötigt man 12 Spieler, also 4 Teams zu je 3 Spielern. Bei größeren Gruppen weiteres Team hinzufügen. Oder zweites Feld aufbauen."
+      },
+      {
+        "frage": "Wie lange sollte eine Partie dauern?",
+        "antwort": "Die empfohlene Spielzeit beträgt 2 Minuten pro Partie. "
+      },
+      {
+        "frage": "Für welche Altersgruppe ist die Übung geeignet?",
+        "antwort": "Die Übung ist optimal für Kinder der G-Jugend (6-8 Jahre), F-Jugend (8-10 Jahre) und E-Jugend (10-12 Jahre) geeignet."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [
+      61
+    ],
+    "schwester_id": 61,
+    "schwester_titel": "DUELL NACH DEM TORSCHUSS"
   }
 ]
