@@ -3622,5 +3622,68 @@
     ],
     "schwester_id": 60,
     "schwester_titel": "ZUSPIEL INS TECHNIK-FELD"
+  },
+  {
+    "id": 60,
+    "titel": "ZUSPIEL INS TECHNIK-FELD",
+    "quell_trainingseinheit": "Im viereckigen Technikfeld dribbeln, duellieren und spielen",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/09/image-12.jpg",
+    "grafik_dateiname": "uebung-075-zuspiel-ins-technik-feld.jpg",
+    "trainingsphase": "Aufwärmen",
+    "kurzbeschreibung": "Ein Spieler ruft eine Farbe, der andere läuft zum entsprechenden Hütchen, erhält ein Zuspiel und nimmt mit.",
+    "aufbau": "Ein 5 x 5 Meter großes Feld mit vier verschiedenfarbigen Hütchen markieren. Je ein Starthütchen an beiden Seiten. Eine Gruppe mit Ball, die andere Gruppe ohne Ball. ",
+    "durchfuehrung": "Erster Spieler aus Gruppe ohne Ball läuft ins Feld. Spieler mit Ball ruft eine Farbe. Der Spieler im Feld umläuft das entsprechende Hütchen und fordert ein Zuspiel. Spieler passt. Ballannahme und Dribbling mit Ball ans Ende der Schlange. Passgeber stellt sich bei anderer Gruppe ohne Ball hinten an.",
+    "varianten": "Ball flach oder hoch zuspielen. Ball stets in Bewegung mitnehmen. Augenkontakt vor Zuspiel abwarten. 1 GEGEN 1 MIT FARBSIGNAL 1 GEGEN 1 MIT FARBSIGNAL Ein Spieler greift nach Trainerkommando an, der andere verteidigt. Nach dem Duell wechseln die Rollen.",
+    "quell_url": "https://coachunited.de/im-viereckigen-technikfeld-dribbeln-duellieren-und-spielen/",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend",
+      "E-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Dribbeln",
+      "Koordination",
+      "Kommunikation"
+    ],
+    "coaching_fokus": "• Laute, klare Ansagen; • Schnelle Reaktion auf Ansagen; • Präzise Pässe; • Augenkontakt vor Zuspiel abwarten.",
+    "leichter_machen": "• Feld verkleinern",
+    "schwerer_machen": "• Ball hoch zuspielen; • Ball stets in Bewegung mitnehmen.",
+    "status": "veroeffentlicht",
+    "schwester_ids": [
+      59
+    ],
+    "schwester_id": 59,
+    "schwester_titel": "TECHNIKDRIBBLING IM FELD",
+    "alt_titel": "Zielgerichtetes Kurzpassspiel mit Farbsignal",
+    "seo_keyword": "Fußballübung Pässe Kinder",
+    "url_slug": "zuspiel-ins-technik-feld",
+    "seo_meta_description": "Eine Fußballübung für Kinder, bei der Pässe mit Farbsignalen trainiert werden. Fördert Ballkontrolle, Koordination und Kommunikation.",
+    "grafik_alt_text": "Kinder führen Fußballübung mit Farbhütchen und Pässen durch",
+    "grafik_description": "Die Grafik zeigt eine Fußballübung für Kinder, bei der ein Spieler eine Farbe ruft und ein anderer Spieler zum entsprechenden Hütchen läuft, um dort einen Pass zu erhalten und weiterzudribbeln.",
+    "grafik_title": "Fußballübung Pässe Kinder",
+    "grafik_caption": "Technikschulung mit Farbsignalen und Pässen für Kinder",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler braucht man für diese Übung?",
+        "antwort": "Optimal sind 8-14 Spieler aufgeteilt in zwei Gruppen."
+      },
+      {
+        "frage": "Wie lange dauert die Übung?",
+        "antwort": "Die Übung kann 5-10 Minuten dauern. Wichtig ist, dass alle Spieler mehrmals dran kommen."
+      },
+      {
+        "frage": "Für welche Altersgruppe ist die Übung geeignet?",
+        "antwort": "Die Übung ist gut für Kinder im Alter von 6-12 Jahren (G- bis E-Jugend) geeignet."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": ""
   }
 ]
