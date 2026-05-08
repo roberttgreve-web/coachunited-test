@@ -3685,5 +3685,66 @@
     "original_coaching_fokus": "",
     "ist_gecrawlt": false,
     "quell_kategorie": ""
+  },
+  {
+    "id": 61,
+    "titel": "DUELL NACH DEM TORSCHUSS",
+    "quell_trainingseinheit": "Im viereckigen Technikfeld dribbeln, duellieren und spielen",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/09/image-14.png",
+    "grafik_dateiname": "uebung-076-duell-nach-dem-torschuss.png",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "Ein Spieler schießt und wird danach Verteidiger im darauffolgenden 1 gegen 1.",
+    "aufbau": "Feld (30 x 15 Meter) aufbauen. Ein Minitor platzieren. Jugendtor auf der anderen Grundlinie hinzufügen. Zwei verschiedenfarbige Starthütchen neben dem Jugendtor. Drei verschiedenfarbige Starthütchen auf der Grundlinie. Spieler mit Bällen an den Hütchen und hinter dem Minitor.",
+    "durchfuehrung": "Der Spieler hinter dem Minitor dribbelt ins Feld, schießt aufs Tor und wird anschließend Verteidiger. Nach dem Torschuss ruft der Trainer ein Hütchen auf, der dort wartende Spieler greift aufs Minitor an. Bei Ballgewinn kontert der Verteidiger aufs Tor.",
+    "varianten": "Verteidiger oder Torwart ruft das Hütchen auf 3-GEGEN-3 MIT ECKSTART 3-GEGEN-3 MIT ECKSTART Vier Teams spielen abwechselnd 3 gegen 3 mit Start aus den Ecken. Tore auf Grund- und Seitenlinien.",
+    "quell_url": "https://coachunited.de/im-viereckigen-technikfeld-dribbeln-duellieren-und-spielen/",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend",
+      "E-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Dribbeln",
+      "Torschuss",
+      "Zweikampf"
+    ],
+    "coaching_fokus": "• Konzentrierter Abschluss beim Torschuss; • Schnelle Positionierung als Verteidiger",
+    "leichter_machen": "",
+    "schwerer_machen": "• Verteidiger oder Torwart ruft das Hütchen auf",
+    "status": "veroeffentlicht",
+    "alt_titel": "Gewinne das 1-gegen-1 nach dem Torabschluss",
+    "seo_keyword": "Fußballübung 1-gegen-1 Kinder",
+    "url_slug": "fussballuebung-1-gegen-1-kinder",
+    "seo_meta_description": "Verbessere Ballkontrolle, Torschuss und Zweikampf mit der Fußballübung '1-gegen-1 nach dem Torabschluss' für Kinder von 6-12 Jahren.",
+    "grafik_alt_text": "Zwei Kinder spielen 1-gegen-1 nach einem Torabschluss auf einem Fußballfeld",
+    "grafik_description": "Die Grafik zeigt den Ablauf der Fußballübung '1-gegen-1 nach dem Torabschluss'. Ein Spieler schießt auf das Tor, wird dann Verteidiger und greift den nächsten Angreifer an.",
+    "grafik_title": "Fußballübung 1-gegen-1 nach Torabschluss",
+    "grafik_caption": "Fußballübung zur Verbesserung von Ballkontrolle, Torschuss und Zweikampf",
+    "faq": [
+      {
+        "frage": "Wie kann ich die Übung für jüngere Spieler anpassen?",
+        "antwort": "Eher nicht."
+      },
+      {
+        "frage": "Wie lange sollte die Übung dauern?",
+        "antwort": "Etwa 10-15 Minuten, je nach Alter und Leistungsstand der Spieler."
+      },
+      {
+        "frage": "Können auch ältere Spieler diese Übung machen?",
+        "antwort": "Ja."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [],
+    "schwester_id": null,
+    "schwester_titel": null
   }
 ]
