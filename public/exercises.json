@@ -3562,5 +3562,65 @@
     "schwester_ids": [],
     "schwester_id": null,
     "schwester_titel": null
+  },
+  {
+    "id": 59,
+    "titel": "TECHNIKDRIBBLING IM FELD",
+    "quell_trainingseinheit": "Im viereckigen Technikfeld dribbeln, duellieren und spielen",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/09/image.jpeg",
+    "grafik_dateiname": "uebung-074-technikdribbling-im-feld.jpeg",
+    "trainingsphase": "Aufwärmen",
+    "kurzbeschreibung": "Zwei Spieler dribbeln gleichzeitig im Technik-Feld mit Richtungswechseln und Ausweichbewegungen.",
+    "aufbau": "Ein 5 x 5 Meter großes Feld mit vier verschiedenfarbigen Hütchen markieren. Je ein Starthütchen an beiden Seiten. Spieler mit Ball an die Hütchen stellen.",
+    "durchfuehrung": "Je ein Spieler pro Seite läuft los und dribbelt gleichzeitig für einige Sekunden im Feld. Auf Kommando 'Wechsel' umdribbeln sie das nächstgelegene Hütchen und laufen mit Ball zurück. Die nächsten starten.",
+    "varianten": "Im Feld nur mit a) rechts oder links dribbeln, b) Ball mit der Sohle ziehen, c) Ball rückwarts nachziehen, d) Finten vor Hütchen ausführen. Oder: Zwei Spieler pro Gruppe gleichzeitig losschicken. ZUSPIEL INS TECHNIK-FELD ZUSPIEL INS TECHNIK-FELD Ein Spieler ruft eine Farbe, der andere läuft zum entsprechenden Hütchen, erhält ein Zuspiel und nimmt mit.",
+    "quell_url": "https://coachunited.de/im-viereckigen-technikfeld-dribbeln-duellieren-und-spielen/",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend"
+    ],
+    "skills": [
+      "Ballkontrolle",
+      "Dribbeln",
+      "Koordination"
+    ],
+    "coaching_fokus": "• Ball eng am Fuß; • Schnelle Reaktion auf Kommando",
+    "leichter_machen": "• Spielfeld verkleinern",
+    "schwerer_machen": "• Erhöhte Geschwindigkeit beim Dribbling; • Finten vor Hütchen ausführen",
+    "status": "veroeffentlicht",
+    "alt_titel": "Dribbling-Parcours für Kinder",
+    "seo_keyword": "Fußballübung Dribbling Kinder",
+    "url_slug": "fussballubung-dribbling-kinder",
+    "seo_meta_description": "Zwei Fußballspieler dribbelnd in einem Farbhütchen-Parcours",
+    "grafik_alt_text": "Technikdribbling Fußball Kinder",
+    "grafik_description": "Die Grafik zeigt zwei Fußballspieler, die gleichzeitig einen Dribbling-Parcours aus farbigen Hütchen absolvieren. Sie führen Richtungswechsel und Ausweichbewegungen aus.",
+    "grafik_title": "Technikdribbling-Übung für Fußballkinder im Alter von 6-12 Jahren",
+    "grafik_caption": "Die Grafik zeigt zwei Fußballspieler, die gleichzeitig einen Dribbling-Parcours aus farbigen Hütchen absolvieren. Sie führen Richtungswechsel und Ausweichbewegungen aus.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler können gleichzeitig trainieren?",
+        "antwort": "8-12 Kinder pro Feld. "
+      },
+      {
+        "frage": "Wie lange soll die Übung dauern?",
+        "antwort": "Etwa 5-10 Minuten."
+      },
+      {
+        "frage": "Kann man die Übung für ältere Kinder anpassen?",
+        "antwort": "Eher nicht."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [
+      60
+    ],
+    "schwester_id": 60,
+    "schwester_titel": "ZUSPIEL INS TECHNIK-FELD"
   }
 ]
