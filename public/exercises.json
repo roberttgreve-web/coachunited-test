@@ -861,6 +861,68 @@
     "schwester_titel": null
   },
   {
+    "id": 15,
+    "titel": "TECHNIKKETTE",
+    "quell_trainingseinheit": "Breite schaffen mit Feldzonen",
+    "quell_url": "https://coachunited.de/breite-schaffen-mit-feldzonen/",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/01/image-7.jpg",
+    "trainingsphase": "Aufwärmen",
+    "kurzbeschreibung": "Die Spieler führen in einer Reihe verschiedene Dribbeltechniken durch.",
+    "aufbau": "Alle Spieler einen Ball und in einer Linie aufstellen.",
+    "durchfuehrung": "Der Trainer sagt pro Durchgang einen Dribbel-Skill an. Etwa: Nur mit links dribbeln, mit der Sohle ziehen, rückwärts ziehen, Übersteiger etc. Die Spieler führen die Übung aus und versuchen möglichst auf einer Linie zu bleiben.",
+    "varianten": "Auch als Rennen (Schnelligkeit) oder Kür (saubere Ausführung) möglich.",
+    "coaching_fokus": "• Haltet den Ball nah am Fuß, um ihn gut unter Kontrolle zu haben; • Versucht, gerade Linien zu laufen und nicht quer über den Platz",
+    "leichter_machen": "• Verkürzung der Strecke; • Einfache Dribbel-techniken vorgeben",
+    "schwerer_machen": "• Erhöhung des Tempos",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Ballkontrolle",
+      "Dribbeln",
+      "Koordination",
+      "Schnelligkeit"
+    ],
+    "seo_keyword": "Fußballübung Dribbling Kinder",
+    "url_slug": "dribbelparcours-fussball-kids",
+    "seo_meta_description": "Technisch-koordinative Fußballübung für Kinder von 6-12 Jahren zum Üben von Dribbling und Ballkontrolle. Ideal für G- bis D-Jugend.",
+    "grafik_alt_text": "Kinder führen verschiedene Dribbling-Techniken in einer Reihe durch",
+    "grafik_description": "Die Kinder stehen in einer Reihe hintereinander und führen verschiedene Dribbling-Techniken wie Sohle, Rückwärts oder Übersteiger aus. Sie versuchen, möglichst auf einer Linie zu bleiben.",
+    "grafik_title": "Fußballübung Dribbelparcours für Kinder",
+    "grafik_caption": "Koordinative Dribbling-Übung für den Fußballtraining von 6- bis 12-Jährigen",
+    "status": "veroeffentlicht",
+    "nachtraeglich_eingefuegt": true,
+    "alt_titel": "Dribbelparcours für Fußball-Kids",
+    "faq": [
+      {
+        "frage": "Wie viele Kinder können an dieser Übung teilnehmen?",
+        "antwort": "Die Übung ist für eine unbegrenzte Zahl von Spielern geeignet. "
+      },
+      {
+        "frage": "Wie lange sollte man diese Übung durchführen?",
+        "antwort": "Etwa 10-15 Minuten sind optimal, um die Konzentration der Kinder nicht zu überfordern."
+      },
+      {
+        "frage": "Für welche Altersgruppen ist die Übung geeignet?",
+        "antwort": "Die Übung ist perfekt für Kinder von 6 bis 12 Jahren, also von der G-Jugend bis zur D-Jugend."
+      }
+    ],
+    "grafik_dateiname": "",
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [],
+    "schwester_id": null,
+    "schwester_titel": null
+  },
+  {
     "id": 18,
     "titel": "TORERFOLG DURCH HÜTCHEN-BALL-TREFFER VERDOPPELN",
     "quell_trainingseinheit": "Breite schaffen mit Feldzonen",
@@ -2695,9 +2757,9 @@
     "ist_gecrawlt": false,
     "quell_kategorie": "",
     "schwester_ids": [
-      68
+      63
     ],
-    "schwester_id": 68,
+    "schwester_id": 63,
     "schwester_titel": "TORSCHUSS MIT GEGNERPRÄSENZ"
   },
   {
@@ -2729,9 +2791,9 @@
     "schwerer_machen": "• Zwei Verteidiger; • Nur flache oder hohe Schüsse zählen",
     "status": "veroeffentlicht",
     "schwester_ids": [
-      67
+      62
     ],
-    "schwester_id": 67,
+    "schwester_id": 62,
     "schwester_titel": "TORSCHUSS NACH FARBSIGNAL",
     "alt_titel": "TORJÄGER UND VERTEIDIGER: 1-GEG-1-TORSCHÜSSE",
     "seo_keyword": "Fußballübung Torschuss Kinder",
@@ -2887,7 +2949,7 @@
     "schwester_titel": null
   },
   {
-    "id": 63,
+    "id": 60,
     "titel": "ENTKOMME DEM BALLJÄGER",
     "quell_trainingseinheit": "Erst Spaß im Warmup – dann schießen, schießen, schießen",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/11/image-4.jpg",
@@ -2942,13 +3004,13 @@
     "ist_gecrawlt": false,
     "quell_kategorie": "",
     "schwester_ids": [
-      82
+      71
     ],
-    "schwester_id": 82,
+    "schwester_id": 71,
     "schwester_titel": "DEN FRECHDACHS EINFANGEN"
   },
   {
-    "id": 64,
+    "id": 61,
     "titel": "DEN FRECHDACHS EINFANGEN",
     "quell_trainingseinheit": "Erst Spaß im Warmup – dann schießen, schießen, schießen",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/11/image-5.jpg",
@@ -2974,9 +3036,9 @@
     "schwerer_machen": "",
     "status": "veroeffentlicht",
     "schwester_ids": [
-      81
+      70
     ],
-    "schwester_id": 81,
+    "schwester_id": 70,
     "schwester_titel": "ENTKOMME DEM BALLJÄGER",
     "alt_titel": "Dem Frechdachs auf den Fersen",
     "seo_keyword": "Fußballübung Dribbeln Kinder",
@@ -3009,7 +3071,7 @@
     "quell_kategorie": ""
   },
   {
-    "id": 67,
+    "id": 62,
     "titel": "PRÄZISER PASS DURCH HÜTCHENTORE",
     "quell_trainingseinheit": "Hohe Pässe und Fernschüsse gekonnt einsetzen",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/11/image.jpg",
@@ -3062,13 +3124,13 @@
     "ist_gecrawlt": false,
     "quell_kategorie": "",
     "schwester_ids": [
-      85
+      74
     ],
-    "schwester_id": 85,
+    "schwester_id": 74,
     "schwester_titel": "HOHER PASS ÜBER HÜTCHENTORE"
   },
   {
-    "id": 68,
+    "id": 63,
     "titel": "HOHER PASS ÜBER HÜTCHENTORE",
     "quell_trainingseinheit": "Hohe Pässe und Fernschüsse gekonnt einsetzen",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/11/image-1.jpg",
@@ -3093,9 +3155,9 @@
     "schwerer_machen": "• Den Abstand zwischen den Hütchen vergrößern; • Zwei weitere Reihen Hütchen aufbauen, um die notwendige Distanz zu erhöhen",
     "status": "veroeffentlicht",
     "schwester_ids": [
-      84
+      73
     ],
-    "schwester_id": 84,
+    "schwester_id": 73,
     "schwester_titel": "PRÄZISER PASS DURCH HÜTCHENTORE",
     "alt_titel": "ZIELGENAU UND PRÄZISE ÜBER DIE HÜTCHEN PASSEN",
     "seo_keyword": "Fußballübung Hoher Pass Kinder",
@@ -3128,7 +3190,7 @@
     "quell_kategorie": ""
   },
   {
-    "id": 72,
+    "id": 64,
     "titel": "AUS DER FRIEDLICHEN MITTELZONE INS SPIELGESCHEHEN",
     "quell_trainingseinheit": "Klug aus engen Räumen befreien",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/10/image-5.png",
@@ -3186,14 +3248,14 @@
     "ist_gecrawlt": false,
     "quell_kategorie": "",
     "schwester_ids": [
-      94,
-      93
+      80,
+      79
     ],
-    "schwester_id": 94,
+    "schwester_id": 80,
     "schwester_titel": "BLITZTURNIER MIT GOLDEN GOAL"
   },
   {
-    "id": 73,
+    "id": 65,
     "titel": "AUS DER UMKÄMPFTEN MITTELZONE INS SPIELGESCHEHEN",
     "quell_trainingseinheit": "Klug aus engen Räumen befreien",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/10/image-6.png",
@@ -3221,10 +3283,10 @@
     "schwerer_machen": "• „Shotclock“: Angreifendes Team muss nach spätestens 15 Sekunden einen Torabschluss erreicht haben.",
     "status": "veroeffentlicht",
     "schwester_ids": [
-      94,
-      92
+      80,
+      78
     ],
-    "schwester_id": 94,
+    "schwester_id": 80,
     "schwester_titel": "BLITZTURNIER MIT GOLDEN GOAL",
     "alt_titel": "Balljagd in der Mittelzone - Schnelle Umschaltmomente",
     "seo_keyword": "Fußballübung Umschaltspiel Kinder",
@@ -3257,7 +3319,7 @@
     "quell_kategorie": ""
   },
   {
-    "id": 74,
+    "id": 66,
     "titel": "BLITZTURNIER MIT GOLDEN GOAL",
     "quell_trainingseinheit": "Klug aus engen Räumen befreien",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/10/image-5.jpg",
@@ -3317,7 +3379,7 @@
     "schwester_titel": null
   },
   {
-    "id": 75,
+    "id": 67,
     "titel": "ERST IM FELD PASSEN, DANN FELDER TAUSCHEN",
     "quell_trainingseinheit": "Auch unter Gegnerdruck cool bleiben",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/09/image-18.jpg",
@@ -3375,7 +3437,7 @@
     "schwester_titel": null
   },
   {
-    "id": 80,
+    "id": 69,
     "titel": "2 GEGEN 1 AUF HEIM- UND AUSWÄRTSFELD",
     "quell_trainingseinheit": "Flexibel in Unterzahl und Überzahl",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/09/image-15.png",
@@ -3433,13 +3495,13 @@
     "ist_gecrawlt": false,
     "quell_kategorie": "",
     "schwester_ids": [
-      81
+      70
     ],
-    "schwester_id": 81,
+    "schwester_id": 70,
     "schwester_titel": "FLEXIBLE TEAMGRÖSSE AUF HEIM- UND AUSWÄRTSFELD"
   },
   {
-    "id": 81,
+    "id": 70,
     "titel": "FLEXIBLE TEAMGRÖSSE AUF HEIM- UND AUSWÄRTSFELD",
     "quell_trainingseinheit": "Flexibel in Unterzahl und Überzahl",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/09/image-16.png",
@@ -3467,9 +3529,9 @@
     "schwerer_machen": "",
     "status": "veroeffentlicht",
     "schwester_ids": [
-      80
+      69
     ],
-    "schwester_id": 80,
+    "schwester_id": 69,
     "schwester_titel": "2 GEGEN 1 AUF HEIM- UND AUSWÄRTSFELD",
     "alt_titel": "Flexibles Teamspiel im Wechsel",
     "seo_keyword": "Fußballübung Teamspiel Kinder",
@@ -3502,7 +3564,7 @@
     "quell_kategorie": ""
   },
   {
-    "id": 82,
+    "id": 71,
     "titel": "10 TORE BIS ZUR EINWECHSLUNG",
     "quell_trainingseinheit": "Flexibel in Unterzahl und Überzahl",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/09/image-17.jpg",
@@ -3564,7 +3626,7 @@
     "schwester_titel": null
   },
   {
-    "id": 83,
+    "id": 72,
     "titel": "TECHNIKDRIBBLING IM FELD",
     "quell_trainingseinheit": "Im viereckigen Technikfeld dribbeln, duellieren und spielen",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/09/image.jpeg",
@@ -3618,13 +3680,13 @@
     "ist_gecrawlt": false,
     "quell_kategorie": "",
     "schwester_ids": [
-      84
+      73
     ],
-    "schwester_id": 84,
+    "schwester_id": 73,
     "schwester_titel": "ZUSPIEL INS TECHNIK-FELD"
   },
   {
-    "id": 84,
+    "id": 73,
     "titel": "ZUSPIEL INS TECHNIK-FELD",
     "quell_trainingseinheit": "Im viereckigen Technikfeld dribbeln, duellieren und spielen",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/09/image-12.jpg",
@@ -3652,9 +3714,9 @@
     "schwerer_machen": "• Ball hoch zuspielen; • Ball stets in Bewegung mitnehmen.",
     "status": "veroeffentlicht",
     "schwester_ids": [
-      83
+      72
     ],
-    "schwester_id": 83,
+    "schwester_id": 72,
     "schwester_titel": "TECHNIKDRIBBLING IM FELD",
     "alt_titel": "Zielgerichtetes Kurzpassspiel mit Farbsignal",
     "seo_keyword": "Fußballübung Pässe Kinder",
@@ -3687,7 +3749,7 @@
     "quell_kategorie": ""
   },
   {
-    "id": 85,
+    "id": 74,
     "titel": "DUELL NACH DEM TORSCHUSS",
     "quell_trainingseinheit": "Im viereckigen Technikfeld dribbeln, duellieren und spielen",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/09/image-14.png",
@@ -3744,13 +3806,13 @@
     "ist_gecrawlt": false,
     "quell_kategorie": "",
     "schwester_ids": [
-      86
+      75
     ],
-    "schwester_id": 86,
+    "schwester_id": 75,
     "schwester_titel": "3-GEGEN-3 MIT ECKSTART"
   },
   {
-    "id": 86,
+    "id": 75,
     "titel": "3-GEGEN-3 MIT ECKSTART",
     "quell_trainingseinheit": "Im viereckigen Technikfeld dribbeln, duellieren und spielen",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/09/image-14.jpg",
@@ -3808,262 +3870,13 @@
     "ist_gecrawlt": false,
     "quell_kategorie": "",
     "schwester_ids": [
-      85
+      74
     ],
-    "schwester_id": 85,
+    "schwester_id": 74,
     "schwester_titel": "DUELL NACH DEM TORSCHUSS"
   },
   {
-    "id": 108,
-    "titel": "EINFACHES DRIBBELN UND PASSEN MIT TEMPO",
-    "quell_trainingseinheit": "Tricks, Fernschüsse – und ab in die Jubelzone",
-    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/07/image-7.jpg",
-    "grafik_dateiname": "uebung-097-einfachesdribbelnundpassenmit-tempo.jpg",
-    "trainingsphase": "Aufwärmen",
-    "kurzbeschreibung": "Spieler dribbeln um das Hütchen und passen zum Mitspieler zurück.",
-    "aufbau": "Vier Gruppen einteilen. Vor jeder Gruppe in etwa 6m Entfernung ein Hütchen aufstellen. Einen Ball pro Gruppe.",
-    "durchfuehrung": "Spieler dribbelt um das Hütchen und passt zum Mitspieler, der dann startet.",
-    "varianten": "a) Dribbel-Varianten vorgeben: nur linker/rechter Fuß, mit der Sohle ziehen, rückwärts etc. b) Wettbewerb: Welches Team ist am schnellsten einmal durch? SPRINTEN UNDPASS EMPFANGEN SPRINTEN UNDPASS EMPFANGEN Spieler sprintet um das Hütchen, Mitspieler passt den Ball zu.",
-    "quell_url": "https://coachunited.de/tricks-fernschusse-und-ab-in-die-jubelzone/",
-    "jugend": [
-      "G-Jugend",
-      "F-Jugend",
-      "E-Jugend"
-    ],
-    "skills": [
-      "Passen",
-      "Ballkontrolle",
-      "Dribbeln",
-      "Koordination"
-    ],
-    "coaching_fokus": "• Enge Ballführung beim Dribbeln; • Tempo hochhalten; • Blickkontakt zum Mitspieler",
-    "leichter_machen": "• Abstand zum Hütchen verkürzen; • Tempo rausnehmen",
-    "schwerer_machen": "• Dribbel-Varianten vorgeben: nur linker/rechter Fuß, mit der Sohle ziehen, rückwärts etc.; • Wettbewerb: Welches Team ist am schnellsten einmal durch?",
-    "status": "veroeffentlicht",
-    "alt_titel": "Schnelles Dribbling und Passen im Wettbewerb",
-    "seo_keyword": "Fußballübung Dribbling Kinder",
-    "url_slug": "fussballubung-dribbling-kinder",
-    "seo_meta_description": "Einfaches Dribbling- und Passübung mit Tempo für Kinder im Fußballtraining, mit Varianten zum Leichter- und Schwerer-Machen.",
-    "grafik_alt_text": "Kinder dribbeln einen Ball um Hütchen herum und passen ihn dann zu einem Mitspieler",
-    "grafik_description": "Die Grafik zeigt eine Fußballübung, bei der Kinder im Alter von 6-12 Jahren den Ball um Hütchen herum dribbeln und anschließend zu einem Mitspieler passen. Es sind vier Gruppen mit je einem Ball zu sehen.",
-    "grafik_title": "Fußballübung: Dribbling und Passen für Kinder",
-    "grafik_caption": "Dynamisches Dribbling- und Passspiel für den Fußballnachwuchs",
-    "faq": [
-      {
-        "frage": "Wie viele Spieler benötigt diese Übung?",
-        "antwort": "Für die Grundversion 12-16 Spieler, die in 4 Gruppen eingeteilt werden. Die Übung lässt sich aber auch mit weniger oder mehr Spielern durchführen."
-      },
-      {
-        "frage": "Wie lange dauert die Übung?",
-        "antwort": "Die Dauer hängt vom Leistungsstand der Kinder ab, ca. 5-10 Minuten sind realistisch. "
-      },
-      {
-        "frage": "Für welche Altersgruppe eignet sich die Übung besonders?",
-        "antwort": "Die Übung ist primär für die G- bis E-Jugend (6-12 Jahre) geeignet. "
-      }
-    ],
-    "referenz_grafik_url": "",
-    "original_aufbau": "",
-    "original_durchfuehrung": "",
-    "original_varianten": "",
-    "original_coaching_fokus": "",
-    "ist_gecrawlt": false,
-    "quell_kategorie": "",
-    "schwester_ids": [
-      109
-    ],
-    "schwester_id": 109,
-    "schwester_titel": "SPRINTEN UND PASS EMPFANGEN"
-  },
-  {
-    "id": 109,
-    "titel": "SPRINTEN UND PASS EMPFANGEN",
-    "quell_trainingseinheit": "Tricks, Fernschüsse – und ab in die Jubelzone",
-    "quell_url": "https://coachunited.de/tricks-fernschusse-und-ab-in-die-jubelzone/",
-    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/07/image-8.jpg",
-    "trainingsphase": "Hauptteil",
-    "kurzbeschreibung": "Spieler sprintet um das Hütchen, Mitspieler passt den Ball zu.",
-    "aufbau": "Vier Gruppen einteilen. Vor jeder Gruppe in etwa 6m Entfernung ein Hütchen aufstellen. Einen Ball pro Gruppe.",
-    "durchfuehrung": "Der erste Spieler jeder Gruppe sprinten um das Hütchen. Sobald er es umkurvt hat, passt der der nächste Spieler präzise.",
-    "varianten": "a) Wettbewerb: Welches Team ist am schnellsten einmal durch?  b) Hütchen deutlich weiter entfernt aufstellen und Flugpässe spielen.",
-    "coaching_fokus": "• Blickkontakt aufnehmen; • Präziser, flacher Pass zum Mitspieler",
-    "leichter_machen": "• Abstände verringern",
-    "schwerer_machen": "• Hütchen weiter entfernt aufstellen für längere Pässe; • Flugpässen spielen; • Wettbewerb: Welches Team ist am schnellsten einmal durch?",
-    "jugend": [
-      "G-Jugend",
-      "F-Jugend",
-      "E-Jugend"
-    ],
-    "skills": [
-      "Passen",
-      "Ballkontrolle",
-      "Koordination",
-      "Schnelligkeit"
-    ],
-    "seo_keyword": "Fußballübung Passen Kinder",
-    "url_slug": "fussballubung-passen-kinder",
-    "seo_meta_description": "Dynamische Passübung für Kinder im Fußballtraining, die Technik und Koordination fördert. Mit Varianten zum Leichter- und Schwerer-Machen.",
-    "grafik_alt_text": "Kinder führen einen Sprint mit anschließendem Zuspiel durch, um ein Hütchen herum",
-    "grafik_description": "Die Spieler führen einen Sprint um ein Hütchen durch und erhalten anschließend einen präzisen Pass von ihrem Mitspieler. Die Übung fördert Passen, Ballkontrolle und Schnelligkeit.",
-    "grafik_title": "Fußballübung: Sprint und Passempfang",
-    "grafik_caption": "Dynamische Passübung für Kinder im Fußballtraining",
-    "status": "veroeffentlicht",
-    "nachtraeglich_eingefuegt": true,
-    "alt_titel": "SPRINT UND PASSSPIEL",
-    "faq": [
-      {
-        "frage": "Wie viele Spieler benötige ich für diese Übung?",
-        "antwort": "Die Übung eignet sich gut für Gruppen von 8-16 Kindern. Größere Gruppen sind ebenfalls möglich, erfordern dann aber mehr Platz."
-      },
-      {
-        "frage": "Wie lange sollte die Übung dauern?",
-        "antwort": "Je nach Alter und Leistungsstand der Kinder empfiehlt sich eine Dauer von 5-10 Minuten. "
-      },
-      {
-        "frage": "Kann ich die Übung auch für ältere Kinder anpassen?",
-        "antwort": "Ja, durch die vorgeschlagenen Varianten lässt sich die Übung auch für D-Jugend und C-Jugend Spieler erweitern. Dabei können die Abstände größer und die Pässe anspruchsvoller gestaltet werden."
-      }
-    ],
-    "grafik_dateiname": "",
-    "referenz_grafik_url": "",
-    "original_aufbau": "",
-    "original_durchfuehrung": "",
-    "original_varianten": "",
-    "original_coaching_fokus": "",
-    "ist_gecrawlt": false,
-    "quell_kategorie": "",
-    "schwester_ids": [
-      108
-    ],
-    "schwester_id": 108,
-    "schwester_titel": "EINFACHES DRIBBELN UND PASSEN MIT TEMPO"
-  },
-  {
-    "id": 110,
-    "titel": "ERST TRICKSEN, DANN JUBELN",
-    "quell_trainingseinheit": "Tricks, Fernschüsse – und ab in die Jubelzone",
-    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/07/image-8.png",
-    "grafik_dateiname": "uebung-098-erst-tricksen-dannjubeln.png",
-    "trainingsphase": "Hauptteil",
-    "kurzbeschreibung": "Spieler dribbelt und geht am Hütchen mit einem Trick oder einer Finte vorbei. Danach schließt er ab und darf bei Torerfolg seinen Lieblingsjubel zeigen.",
-    "aufbau": "Gruppe mit Bällen an Hütchen postieren. Etwa 20m entfernt ein Jugendtor mit Torhüter platzieren. Etwa 8m vor dem Jugendtor zentral ein weiteres Hütchen aufstellen. Seitlich vom Tor ein kleines Jubelfeld mit vier Hütchen markieren.",
-    "durchfuehrung": "Spieler dribbelt zum zentralen Hütchen und geht daran mit einem Lieblingstrick vorbei (Übersteiger, Zidane-Rolle, Körpertäuschung, Lupfer etc). Nach erfolgreichem Torabschluss läuft der Spieler in das Jubelfeld und darf seinen Lieblingsjubel zeigen.",
-    "varianten": "a) Angreifer wird nach dem Jubel zum Verteidiger (ersetzt das Hütchen). b) Trick/Finte vorgeben. c) Torwart darf rauskommen, Angreifer muss Torwart umkurven (kein Fernschuss) TRAINER-PASS ZUMTORVERARBEITEN TRAINER-PASS ZUMTORVERARBEITEN Spieler passt zum Trainer, läuft in die Torzone und versucht, den Pass vom Trainer in ein Tor zu verwandeln.",
-    "quell_url": "https://coachunited.de/tricks-fernschusse-und-ab-in-die-jubelzone/",
-    "jugend": [
-      "G-Jugend",
-      "F-Jugend",
-      "E-Jugend"
-    ],
-    "skills": [
-      "Ballkontrolle",
-      "Dribbeln",
-      "Torschuss",
-      "Koordination"
-    ],
-    "coaching_fokus": "• Kreativität der Tricks loben; • Spaß haben; • Kopf heben bei den Torschüssen",
-    "leichter_machen": "• Reduziere die Distanz zum Tor; • Erlaube den Spielern, den Schussfuß frei zu wählen",
-    "schwerer_machen": "• Stelle einen Verteidiger zwischen Spieler und Tor; • Fordere einen Torwartspiel-Trick wie Tunnel oder Heber",
-    "status": "veroeffentlicht",
-    "alt_titel": "Finte, Tor, Jubel - Kreatives Abschlussduell",
-    "seo_keyword": "Fußballübung Dribbling Kinder",
-    "url_slug": "fussballuebung-dribbling-kinder",
-    "seo_meta_description": "Junge führt Ball am Hütchen vorbei und jubelt nach Torschuss",
-    "grafik_alt_text": "Dribbling-Übung mit kreativem Torjubel für Kinder",
-    "grafik_description": "Grafik zeigt einen jungen Fußballspieler, der den Ball am Hütchen vorbeidribbelt und anschließend nach einem erfolgreichen Torschuss einen Jubeltanz aufführt.",
-    "grafik_title": "Übung zur Förderung von Dribbling, Torschuss und Kreativität für Nachwuchsfußballer.",
-    "grafik_caption": "Grafik zeigt einen jungen Fußballspieler, der den Ball am Hütchen vorbeidribbelt und anschließend nach einem erfolgreichen Torschuss einen Jubeltanz aufführt.",
-    "faq": [
-      {
-        "frage": "Wie viele Spieler können an dieser Übung teilnehmen?",
-        "antwort": "Die Übung ist für Gruppen von 6-12 Spielern geeignet. Bei größeren Gruppen kann ein zweites Tor. "
-      },
-      {
-        "frage": "Wie lange sollte die Übung dauern?",
-        "antwort": "Je nach Alter und Leistungsstand der Kinder empfiehlt sich eine Dauer von 10-15 Minuten pro Durchgang. Die Übung kann mehrmals wiederholt werden."
-      },
-      {
-        "frage": "Kann man die Übung auch für ältere Kinder anpassen?",
-        "antwort": "Ja, durch Erhöhung der Distanz zum Tor, Einbinden eines Torhüters oder Vorgabe bestimmter Tricks lässt sich die Übung auch für D- und C-Jugendspieler herausfordernder gestalten."
-      }
-    ],
-    "referenz_grafik_url": "",
-    "original_aufbau": "",
-    "original_durchfuehrung": "",
-    "original_varianten": "",
-    "original_coaching_fokus": "",
-    "ist_gecrawlt": false,
-    "quell_kategorie": "",
-    "schwester_ids": [
-      111
-    ],
-    "schwester_id": 111,
-    "schwester_titel": "TRAINER-PASS ZUMTORVERARBEITEN"
-  },
-  {
-    "id": 111,
-    "titel": "TRAINER-PASS ZUM TOR VERARBEITEN",
-    "quell_trainingseinheit": "Tricks, Fernschüsse – und ab in die Jubelzone",
-    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/07/image-9.png",
-    "grafik_dateiname": "uebung-099-trainer-pass-zumtorverarbeiten.png",
-    "trainingsphase": "Hauptteil",
-    "kurzbeschreibung": "Spieler passt zum Trainer, läuft in die Torzone und versucht, den Pass vom Trainer in ein Tor zu verwandeln.",
-    "aufbau": "Gruppe mit Bällen an Hütchen postieren. Etwa 20m entfernt ein Jugendtor mit Torhüter platzieren. Etwa 8m vor dem Jugendtor zentral ein weiteres Hütchen aufstellen. Vor dem vom Tor ein Schussfeld platzieren.",
-    "durchfuehrung": "Spieler passt zum Trainer und sprintet in die Torzone. Trainer spielt einen Pass in die Torzone. Spieler verarbeitet den Ball und kommt zum Torabschluss.",
-    "varianten": "a) Pass als Trainer halbhoch spielen oder werfen. b) Abstand des Hütchens zur Torzone verringern und Doppelpass spielen. c) Trainer wird von Spieler ersetzt. ÜBER DAS HÜTCHENZUM TORERFOLG ÜBER DAS HÜTCHENZUM TORERFOLG Tore werden nur per hohem Fernschuss auf das leere Tor erzielt.",
-    "quell_url": "https://coachunited.de/tricks-fernschusse-und-ab-in-die-jubelzone/",
-    "jugend": [
-      "G-Jugend",
-      "F-Jugend",
-      "E-Jugend"
-    ],
-    "skills": [
-      "Passen",
-      "Ballkontrolle",
-      "Torschuss",
-      "Koordination"
-    ],
-    "coaching_fokus": "• Konzentriert den Ball annehmen und kontrollieren; • Blick zum Tor richten und präzise abschließen; • Ball per Blickkontakt anfordern",
-    "leichter_machen": "• Pass als Trainer immer flach und mit geringem Tempo spielen",
-    "schwerer_machen": "• Trainer wird vom Spieler ersetzt; • Trainer spielt Flanken; • Nur eine Ballberührung bei Torabschluss",
-    "status": "veroeffentlicht",
-    "schwester_ids": [
-      110
-    ],
-    "schwester_id": 110,
-    "schwester_titel": "ERST TRICKSEN, DANN JUBELN",
-    "alt_titel": "Zielgenau in den Torwinkel schießen",
-    "seo_keyword": "Fußballübung Torschuss Kinder",
-    "url_slug": "fussballuebung-torschuss-kinder",
-    "seo_meta_description": "Torabschluss-Übung für Kinder: Spieler passt zum Trainer, läuft in die Torzone und verwandelt den Pass im Tor. Mit anpassbaren Schwierigkeitsstufen.",
-    "grafik_alt_text": "Zwei Kinder spielen einen Pass zum Trainer und laufen dann auf das Tor zu, um den Pass abzuschließen.",
-    "grafik_description": "Die Übung zeigt, wie Kinder im Fußballtraining ihre Torschuss-Technik verbessern können. Ein Spieler spielt einen Pass zum Trainer und läuft dann in die Torzone, um den Ball im Tor zu versenken.",
-    "grafik_title": "Kinder-Fußballübung Torschuss mit Trainer-Pass",
-    "grafik_caption": "Kinder trainieren Torabschluss nach Trainer-Pass in der Torzone.",
-    "faq": [
-      {
-        "frage": "Wie viele Spieler braucht man für diese Übung?",
-        "antwort": "8-16 Kinder, zur Not zweites Tor aufstellen (Co-Trainer benötigt dann)."
-      },
-      {
-        "frage": "Wie lange dauert die Übung?",
-        "antwort": "Die Dauer liegt typischerweise zwischen 10-15 Minuten."
-      },
-      {
-        "frage": "Für welche Altersgruppen ist die Übung geeignet?",
-        "antwort": "Die Übung ist für Kinder von 6 bis 12 Jahren (G- bis E-Jugend) gut geeignet."
-      }
-    ],
-    "referenz_grafik_url": "",
-    "original_aufbau": "",
-    "original_durchfuehrung": "",
-    "original_varianten": "",
-    "original_coaching_fokus": "",
-    "ist_gecrawlt": false,
-    "quell_kategorie": ""
-  },
-  {
-    "id": 112,
+    "id": 86,
     "titel": "ÜBER DAS HÜTCHEN ZUM TORERFOLG",
     "quell_trainingseinheit": "Tricks, Fernschüsse – und ab in die Jubelzone",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/07/image-10.png",
@@ -4124,7 +3937,7 @@
     "schwester_titel": null
   },
   {
-    "id": 123,
+    "id": 93,
     "titel": "BALLGEFÜHL AN VIER STATIONEN",
     "quell_trainingseinheit": "Stationen-Warmup und viele Toraktionen",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/06/image-16.jpg",
@@ -4184,7 +3997,7 @@
     "schwester_titel": null
   },
   {
-    "id": 124,
+    "id": 94,
     "titel": "SAUBER DRIBBELN, SAUBER PASSEN",
     "quell_trainingseinheit": "Stationen-Warmup und viele Toraktionen",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/06/image-30.png",
@@ -4243,7 +4056,7 @@
     "schwester_titel": null
   },
   {
-    "id": 125,
+    "id": 95,
     "titel": "VOM WETTRENNEN INS 1 GEGEN 1",
     "quell_trainingseinheit": "Stationen-Warmup und viele Toraktionen",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/06/image-31.png",
@@ -4298,13 +4111,13 @@
     "ist_gecrawlt": false,
     "quell_kategorie": "",
     "schwester_ids": [
-      126
+      96
     ],
-    "schwester_id": 126,
+    "schwester_id": 96,
     "schwester_titel": "AUS DEM SLALOM IN DEN ANGRIFF"
   },
   {
-    "id": 126,
+    "id": 96,
     "titel": "AUS DEM SLALOM IN DEN ANGRIFF",
     "quell_trainingseinheit": "Stationen-Warmup und viele Toraktionen",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/06/image-32.png",
@@ -4332,9 +4145,9 @@
     "schwerer_machen": "• Mindestzahl an Pässen definieren vor dem Torabschluss.; • Entfernung zwischen Hütchen verringern für engeren Slalom",
     "status": "veroeffentlicht",
     "schwester_ids": [
-      125
+      95
     ],
-    "schwester_id": 125,
+    "schwester_id": 95,
     "schwester_titel": "VOM WETTRENNEN INS 1 GEGEN 1",
     "alt_titel": "Slalomdribbling in den Torabschluss",
     "seo_keyword": "Fußballübung Dribbling Kinder",
@@ -4367,7 +4180,7 @@
     "quell_kategorie": ""
   },
   {
-    "id": 127,
+    "id": 97,
     "titel": "ZWEIFELDSPIEL",
     "quell_trainingseinheit": "Stationen-Warmup und viele Toraktionen",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/06/image-33.png",
