@@ -26,10 +26,10 @@
       <span>COACH UNITED</span>
     </a>
     <div class="desktop-topnav-links">
-      <a href="/uebungen"     class="desktop-topnav-link ${isActive('/uebungen')}">Übungen</a>
-      <a href="/einheiten"    class="desktop-topnav-link ${isActive('/einheiten')}">Einheiten</a>
-      <a href="/wissen"       class="desktop-topnav-link ${isActive('/wissen')}">Wissen</a>
-      <a href="/whatsapp-info" class="desktop-topnav-link ${isActive('/whatsapp-info')}">WhatsApp</a>
+      <a href="/uebungen"      class="desktop-topnav-link ${isActive('/uebungen')}">Alle Übungen</a>
+      <a href="/einheiten"     class="desktop-topnav-link ${isActive('/einheiten')}">Einheit erstellen</a>
+      <a href="/whatsapp-info" class="desktop-topnav-link ${isActive('/whatsapp-info')}">Übung des Tages</a>
+      <a href="/wissen"        class="desktop-topnav-link ${isActive('/wissen')}">Wissen</a>
     </div>
   `;
 
@@ -42,6 +42,10 @@
     footer.className = 'desktop-footer';
     footer.innerHTML = `
       <a href="/ueber-uns" class="desktop-footer-link ${isActive('/ueber-uns')}">Über uns</a>
+      <span class="desktop-footer-sep">·</span>
+      <a href="https://coachunited.de/trainingseinheiten/" target="_blank" class="desktop-footer-link">Einheiten-Katalog</a>
+      <span class="desktop-footer-sep">·</span>
+      <a href="/umgang-mit-ki" class="desktop-footer-link ${isActive('/umgang-mit-ki')}">Umgang mit KI</a>
       <span class="desktop-footer-sep">·</span>
       <a href="/impressum" class="desktop-footer-link ${isActive('/impressum')}">Impressum</a>
     `;
