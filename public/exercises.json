@@ -4061,5 +4061,66 @@
     "original_coaching_fokus": "",
     "ist_gecrawlt": false,
     "quell_kategorie": ""
+  },
+  {
+    "id": 112,
+    "titel": "ÜBER DAS HÜTCHEN ZUM TORERFOLG",
+    "quell_trainingseinheit": "Tricks, Fernschüsse – und ab in die Jubelzone",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/07/image-10.png",
+    "grafik_dateiname": "uebung-100-ueber-das-huetchenzum-torerfolg.png",
+    "trainingsphase": "Spielformat",
+    "kurzbeschreibung": "Tore werden nur per hohem Fernschuss auf das leere Tor erzielt.",
+    "aufbau": "Jugend- Spielfeld mit 2 Toren aufbauen. Strafräume abstecken. In den Strafraum fünf höhere Hütchen stellen. Kein Torhüter. Zwei Teams mit Leibchen einteilen (bei größeren Gruppen drittes Team, das rotiert).",
+    "durchfuehrung": "Normales Spiel. Strafraum darf nicht betreten werden. Tor zählt nur bei Torschuss außerhalb des Strafraums. Der Ball darf die Hütchen dabei nicht berühren. Spiel bis 5. Danach neues Spiel.",
+    "varianten": "a) Strafräume je nach Schussstärke der Gruppe verkleinern/vergrößern. b) Mit Torhütern. FREIES SPIEL– LOS GEHT’S! FREIES SPIEL– LOS GEHT’S! In © 2025 COACH UNITED",
+    "quell_url": "https://coachunited.de/tricks-fernschusse-und-ab-in-die-jubelzone/",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Torschuss",
+      "Koordination",
+      "Raumverhalten"
+    ],
+    "coaching_fokus": "• Schusstechnik für hohe Bälle; • Durch kluges Passspiel Mitspieler in die richtige Position bringen",
+    "leichter_machen": "• Hütchen mit größerem Abstand zum Tor verteilen; • Auch Flachschüssen durch die Hütchen durch erlauben",
+    "schwerer_machen": "• Strafräume und Anzahl der Hütchen vergrößern",
+    "status": "veroeffentlicht",
+    "alt_titel": "Tor-Distanzschüsse ohne Druck",
+    "seo_keyword": "Fußballübung Torschuss Kinder",
+    "url_slug": "fussballubung-torschuss-kinder",
+    "seo_meta_description": "Effektive Fußballübung für Kinder zum Torschießen aus der Distanz ohne Druck. Fördert Genauigkeit und Entscheidungsfähigkeit.",
+    "grafik_alt_text": "Zwei Kinder schießen den Ball über Hütchen hinweg ins Tor",
+    "grafik_description": "Die Übung 'Tor-Distanzschüsse ohne Druck' fördert das präzise Schießen aus der Ferne. Die Spieler dürfen den Strafraum nicht betreten und müssen den Ball über Hütchen hinweg ins Tor befördern.",
+    "grafik_title": "Fußballübung für Kinder: Tor-Distanzschüsse ohne Druck",
+    "grafik_caption": "Kinder üben präzise Distanzschüsse ins Tor ohne Druck durch Verteidiger.",
+    "faq": [
+      {
+        "frage": "Wie kann ich die Übung an die Fähigkeiten der Kinder anpassen?",
+        "antwort": "Passen Sie die Größe des Strafraums und die Anzahl der Verteidiger an die Altersgruppe und Leistungsstufe an. So können alle Kinder erfolgreich Tore erzielen."
+      },
+      {
+        "frage": "Wie lange soll die Übung dauern?",
+        "antwort": "Je nach Aufmerksamkitsspanne der Kinder zwischen 10-20 Minuten. "
+      },
+      {
+        "frage": "Für welche Altersgruppen ist diese Übung geeignet?",
+        "antwort": "Die Übung eignet sich gut für Kinder der E- und D-Jugend (9-12 Jahre). Passen Sie die Schwierigkeit bei Bedarf an jüngere Gruppen an."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [],
+    "schwester_id": null,
+    "schwester_titel": null
   }
 ]
