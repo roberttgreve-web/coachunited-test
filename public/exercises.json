@@ -4182,5 +4182,64 @@
     "schwester_ids": [],
     "schwester_id": null,
     "schwester_titel": null
+  },
+  {
+    "id": 124,
+    "titel": "SAUBER DRIBBELN, SAUBER PASSEN",
+    "quell_trainingseinheit": "Stationen-Warmup und viele Toraktionen",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/06/image-30.png",
+    "grafik_dateiname": "uebung-113-sauber-dribbeln-sauber-passen.png",
+    "trainingsphase": "Spielformat",
+    "kurzbeschreibung": "In zwei Gruppen dribbeln die Spieler um ein Hütchen und passen dem Mitspieler sauber zu.",
+    "aufbau": "Zwei Gruppen, je vier Hütchen sowie ein Dribbelhütchen. Ein Ball pro Gruppe.",
+    "durchfuehrung": "Durch die Hütchen um das Dribbelhütchen dribbeln, dann sauberer Pass durch die beiden anderen Hütchen zum Mitspieler. Mitspieler stoppt den Ball und rückt vor, um nun ebenfalls zu dribbeln.",
+    "varianten": "Wettbewerb daraus machen: Welches Team beendet zuerst einen Durchgang. Wenn Pass außerhalb des Hütchentores: Spieler muss die Runde nochmal machen (Team verliert Zeit dadurch). SCHNELL ZUM TOR:VOM WETTRENNEN INS 1 GEGEN 1 VOM WETTRENNEN INS 1 GEGEN 1 Je nach Farbsignal rennt ein Spieler mit Ball, einer ohne. Hinter der Mittellinie geht es ins 1 gegen 1.",
+    "quell_url": "https://coachunited.de/stationen-warmup-und-viele-toraktionen/",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend",
+      "E-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Dribbeln"
+    ],
+    "coaching_fokus": "• Kopf beim Dribbling oben halten; • Passspiel zum Mitspieler präzise spielen; • Kommunikation und Blickkontakt während des Passens",
+    "leichter_machen": "• Größeres Hütchenabstände; • Ballführung nur mit Innenseite des Fußes",
+    "schwerer_machen": "• Wettbewerb daraus machen: Welches Team beendet zuerst einen Durchgang. Wenn Pass außerhalb des Hütchentores: Spieler muss die Runde nochmal machen (Team verliert Zeit dadurch).",
+    "status": "veroeffentlicht",
+    "alt_titel": "Präzises Dribbling und Passen im Wettbewerb",
+    "seo_keyword": "Fußballübung Dribbling Passen Kinder",
+    "url_slug": "sauber-dribbeln-sauber-passen",
+    "seo_meta_description": "Effektives Dribbling- und Passübung für 6-12 Jährige: Kinder lernen präzises Ballführen und sauberes Passspiel in einem Wettbewerb.",
+    "grafik_alt_text": "Zwei Gruppen von Kindern, die nacheinander um Hütchen dribbeln und sich dann präzise zupassen",
+    "grafik_description": "Die Kinder dribbeln abwechselnd um ein Hütchen und passen dann den Ball sauber durch zwei weitere Hütchen zum Mitspieler. Dadurch trainieren sie Dribbling, Ballgefühl und präzises Passspiel.",
+    "grafik_title": "Präzises Dribbling und Passen im Kinderfußball",
+    "grafik_caption": "Effektive Trainingsübung für Ballkontrolle und Passgenauigkeit",
+    "faq": [
+      {
+        "frage": "Wie passe ich die Übung für jüngere Kinder an?",
+        "antwort": "Vergrößern Sie die Abstände."
+      },
+      {
+        "frage": "Wie lange sollte die Übung dauern?",
+        "antwort": "Je nach Alter und Leistungsstand der Kinder 10-15 Minuten. "
+      },
+      {
+        "frage": "Kann ich die Übung auch mit Torschuss-Variante machen?",
+        "antwort": "Nein, eher nicht."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [],
+    "schwester_id": null,
+    "schwester_titel": null
   }
 ]
