@@ -27,9 +27,9 @@
     </a>
     <div class="desktop-topnav-links">
       <a href="/uebungen"      class="desktop-topnav-link ${isActive('/uebungen')}">Alle Übungen</a>
-      <a href="/einheiten"     class="desktop-topnav-link ${isActive('/einheiten')}">Einheit erstellen</a>
+      <a href="/einheiten"     class="desktop-topnav-link ${isActive('/einheiten')}">Einheit erhalten</a>
       <a href="/whatsapp-info" class="desktop-topnav-link ${isActive('/whatsapp-info')}">Übung des Tages</a>
-      <a href="/wissen"        class="desktop-topnav-link ${isActive('/wissen')}">Wissen</a>
+      <a href="/uebung-einreichen" class="desktop-topnav-link ${isActive('/uebung-einreichen')}">Übung einreichen</a>
     </div>
   `;
 
@@ -41,6 +41,8 @@
     var footer = document.createElement('footer');
     footer.className = 'desktop-footer';
     footer.innerHTML = `
+      <a href="/wissen" class="desktop-footer-link ${isActive('/wissen')}">Wissen</a>
+      <span class="desktop-footer-sep">·</span>
       <a href="/ueber-uns" class="desktop-footer-link ${isActive('/ueber-uns')}">Über uns</a>
       <span class="desktop-footer-sep">·</span>
       <a href="https://coachunited.de/trainingseinheiten/" target="_blank" class="desktop-footer-link">Einheiten-Katalog</a>
