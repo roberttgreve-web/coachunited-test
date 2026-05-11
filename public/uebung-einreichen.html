@@ -68,6 +68,40 @@
     .field textarea { resize: vertical; min-height: 100px; line-height: 1.5; }
     .field select { cursor: pointer; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 22 22' fill='none' stroke='%236B7390' stroke-width='2'%3E%3Cpath d='M5 8l6 6 6-6'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 12px center; padding-right: 36px; }
 
+    /* Prominenter Audio-Upload */
+    .audio-primary {
+      display: flex; flex-direction: column; align-items: center;
+      gap: 10px; padding: 22px 16px;
+      background: #0E1430; border-radius: 14px;
+      cursor: pointer; transition: background 0.15s;
+      margin-bottom: 4px;
+    }
+    .audio-primary:hover { background: #1a2347; }
+    .audio-primary input[type="file"] { display: none; }
+    .audio-primary svg { color: #fff; opacity: 0.9; }
+    .audio-primary-title { font-size: 16px; font-weight: 700; color: #fff; }
+    .audio-primary-sub { font-size: 12px; color: rgba(255,255,255,0.5); }
+    .audio-primary.has-file { background: #0E6A45; }
+    .audio-primary.has-file svg { opacity: 1; }
+
+    .or-divider {
+      display: flex; align-items: center; gap: 12px;
+      margin: 20px 0;
+    }
+    .or-divider::before, .or-divider::after {
+      content: ''; flex: 1; height: 1px; background: #E6E8EF;
+    }
+    .or-divider span {
+      font-family: 'JetBrains Mono', ui-monospace, monospace;
+      font-size: 10px; font-weight: 700; color: #9aa3b0;
+      text-transform: uppercase; letter-spacing: 0.12em;
+    }
+
+    .schriftlich-title {
+      font-size: 15px; font-weight: 700; color: #0E1430;
+      margin-bottom: 16px;
+    }
+
     .file-upload-label {
       display: flex; align-items: center; gap: 10px;
       padding: 12px 14px;
@@ -171,20 +205,37 @@
         <p class="form-section-title">Über dich</p>
 
         <div class="field">
-          <label class="field-label" for="trainer-name">Name des Trainers</label>
+          <label class="field-label" for="trainer-name">
+            Name des Trainers
+            <span class="field-optional">wie er erscheinen soll</span>
+          </label>
           <input type="text" id="trainer-name" name="trainer_name" placeholder="z.B. Max Mustermann" required>
         </div>
 
         <div class="field">
-          <label class="field-label" for="trainer-email">Deine E-Mail-Adresse</label>
+          <label class="field-label" for="trainer-email">E-Mail-Adresse</label>
           <input type="email" id="trainer-email" name="trainer_email" placeholder="deine@email.de" required>
         </div>
 
-        <p class="form-section-title">Die Übung</p>
+        <!-- Prominente Sprachnachricht -->
+        <label class="audio-primary" id="audio-primary-label" for="audio-upload">
+          <svg width="32" height="32" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M11 2a3 3 0 013 3v6a3 3 0 01-6 0V5a3 3 0 013-3z"/>
+            <path d="M5 10a6 6 0 0012 0"/>
+            <line x1="11" y1="18" x2="11" y2="22"/>
+          </svg>
+          <span class="audio-primary-title" id="audio-primary-title">Sprachnachricht hochladen</span>
+          <span class="audio-primary-sub" id="audio-primary-sub">Einfach die Übung einsprechen · MP3, M4A, WAV</span>
+          <input type="file" id="audio-upload" name="audio" accept="audio/*" onchange="onAudioChange(this)">
+        </label>
+
+        <div class="or-divider"><span>oder</span></div>
+
+        <p class="schriftlich-title">Schriftlich einreichen</p>
 
         <div class="field">
           <label class="field-label" for="uebung-titel">Titel der Übung</label>
-          <input type="text" id="uebung-titel" name="uebung_titel" placeholder="z.B. Passdreiecke mit Abschluss" required>
+          <input type="text" id="uebung-titel" name="uebung_titel" placeholder="z.B. Passdreiecke mit Abschluss" oninput="checkReady()">
         </div>
 
         <div class="field">
@@ -232,8 +283,6 @@
           <textarea id="durchfuehrung" name="durchfuehrung" placeholder="Wie läuft die Übung ab?"></textarea>
         </div>
 
-        <p class="form-section-title">Anhänge</p>
-
         <div class="field">
           <div class="field-label">
             Skizze oder Foto
@@ -252,26 +301,6 @@
             <input type="file" id="foto-upload" name="attachment" accept="image/*,.pdf" onchange="showFileName(this, 'foto-name')">
           </label>
           <div class="file-name" id="foto-name"></div>
-        </div>
-
-        <div class="field">
-          <div class="field-label">
-            Sprachnachricht
-            <span class="field-optional">Optional</span>
-          </div>
-          <label class="file-upload-label" for="audio-upload">
-            <svg width="20" height="20" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M11 2a3 3 0 013 3v6a3 3 0 01-6 0V5a3 3 0 013-3z"/>
-              <path d="M5 10a6 6 0 0012 0"/>
-              <line x1="11" y1="18" x2="11" y2="22"/>
-            </svg>
-            <div>
-              <span>Aufnahme auswählen</span>
-              <small>MP3, M4A oder WAV · max. 10 MB</small>
-            </div>
-            <input type="file" id="audio-upload" name="audio" accept="audio/*" onchange="showFileName(this, 'audio-name')">
-          </label>
-          <div class="file-name" id="audio-name"></div>
         </div>
 
         <div class="legal-block">
@@ -347,24 +376,39 @@
       document.getElementById('drawer-overlay').classList.remove('open');
     }
 
-    function showFileName(input, targetId) {
-      const el = document.getElementById(targetId);
-      el.textContent = input.files[0] ? input.files[0].name : '';
+    function onAudioChange(input) {
+      const label = document.getElementById('audio-primary-label');
+      const title = document.getElementById('audio-primary-title');
+      const sub = document.getElementById('audio-primary-sub');
+      if (input.files[0]) {
+        label.classList.add('has-file');
+        title.textContent = input.files[0].name;
+        sub.textContent = 'Aufnahme ausgewählt · Tippen zum Ändern';
+      } else {
+        label.classList.remove('has-file');
+        title.textContent = 'Sprachnachricht hochladen';
+        sub.textContent = 'Einfach die Übung einsprechen · MP3, M4A, WAV';
+      }
       checkReady();
+    }
+
+    function showFileName(input, targetId) {
+      document.getElementById(targetId).textContent = input.files[0] ? input.files[0].name : '';
     }
 
     function checkReady() {
       const name = document.getElementById('trainer-name').value.trim();
       const email = document.getElementById('trainer-email').value.trim();
-      const titel = document.getElementById('uebung-titel').value.trim();
       const legal = document.getElementById('legal-check').checked;
+      const hasAudio = !!document.getElementById('audio-upload').files[0];
+      const hasTitel = !!document.getElementById('uebung-titel').value.trim();
       const btn = document.getElementById('submit-btn');
-      const ready = name && email && titel && legal;
+      const ready = name && email && legal && (hasAudio || hasTitel);
       btn.disabled = !ready;
       btn.classList.toggle('ready', ready);
     }
 
-    ['trainer-name', 'trainer-email', 'uebung-titel'].forEach(id => {
+    ['trainer-name', 'trainer-email'].forEach(id => {
       document.getElementById(id).addEventListener('input', checkReady);
     });
 
@@ -376,13 +420,21 @@
       btn.classList.add('loading');
       btn.textContent = 'Wird gesendet…';
 
+      const name = document.getElementById('trainer-name').value.trim();
+      const titel = document.getElementById('uebung-titel').value.trim();
+      const hasAudio = !!document.getElementById('audio-upload').files[0];
+
+      const subject = titel
+        ? 'Neue Übungs-Einreichung: ' + titel
+        : 'Neue Übungs-Einreichung (Sprachnachricht) von ' + name;
+
       const formData = new FormData();
       formData.append('access_key', '178bfb57-6bf5-45c0-9788-064568110b35');
-      formData.append('subject', 'Neue Übungs-Einreichung: ' + document.getElementById('uebung-titel').value.trim());
+      formData.append('subject', subject);
       formData.append('from_name', 'Coach United Übung einreichen');
-      formData.append('trainer_name', document.getElementById('trainer-name').value.trim());
+      formData.append('trainer_name', name);
       formData.append('trainer_email', document.getElementById('trainer-email').value.trim());
-      formData.append('uebung_titel', document.getElementById('uebung-titel').value.trim());
+      if (titel) formData.append('uebung_titel', titel);
       formData.append('trainingsphase', document.getElementById('trainingsphase').value);
       formData.append('jugend', document.getElementById('jugend').value);
       formData.append('aufbau', document.getElementById('aufbau').value.trim());
