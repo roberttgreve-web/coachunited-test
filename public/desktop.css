@@ -1160,3 +1160,137 @@
   /* Reroll */
   body:has(.page-hero) .reroll-wrap { margin-top: 24px !important; }
 }
+
+
+/* ══════════════════════════════════════════════════════════
+   EINHEITEN — Editorial Desktop Layout
+   Heller Hintergrund · Zentrierte Card · Weißes Formular
+   ══════════════════════════════════════════════════════════ */
+
+@media (min-width: 768px) {
+  body:has(.selection-section) {
+    background: #F7F6F2 !important;
+  }
+
+  body:has(.selection-section) .container {
+    background: #F7F6F2 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    width: 100% !important;
+    max-width: none !important;
+    min-height: 100vh !important;
+    height: auto !important;
+    overflow: visible !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  body:has(.selection-section) .header { display: none !important; }
+
+  /* Weiße TopNav */
+  body:has(.selection-section) .desktop-topnav {
+    background: #fff !important;
+    border-bottom: 1px solid #E6E8EF !important;
+  }
+  body:has(.selection-section) .desktop-topnav-logo { color: #1E6BFF !important; }
+  body:has(.selection-section) .desktop-topnav-link { color: #0E1430 !important; }
+  body:has(.selection-section) .desktop-topnav-link:hover { background: #f0f4ff !important; color: #1E6BFF !important; }
+  body:has(.selection-section) .desktop-topnav-link.active { background: #1E6BFF !important; color: #fff !important; }
+
+  /* Hauptbereich: transparenter Hintergrund, zentrierter Inhalt */
+  body:has(.selection-section) .selection-section {
+    background: transparent !important;
+    flex: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    padding: 72px 24px 96px !important;
+    overflow: visible !important;
+  }
+
+  /* Headline: dekorative Linie als Eyebrow + 44px H1 */
+  body:has(.selection-section) .page-title {
+    width: 100% !important;
+    max-width: 720px !important;
+    font-size: 44px !important;
+    font-weight: 700 !important;
+    color: #0E1430 !important;
+    letter-spacing: -0.025em !important;
+    line-height: 1.1 !important;
+    margin-bottom: 14px !important;
+  }
+
+  body:has(.selection-section) .page-title::before {
+    content: '';
+    display: block;
+    width: 28px;
+    height: 1px;
+    background: #0E1430;
+    margin-bottom: 18px;
+  }
+
+  /* Subtitle */
+  body:has(.selection-section) .page-subtitle {
+    width: 100% !important;
+    max-width: 720px !important;
+    font-size: 17px !important;
+    line-height: 1.55 !important;
+    color: #3B4565 !important;
+    margin-bottom: 36px !important;
+  }
+
+  /* Weiße Card für die Auswahl-Felder */
+  body:has(.selection-section) .selects {
+    width: 100% !important;
+    max-width: 720px !important;
+    background: #fff !important;
+    border: 1px solid #E6E8EF !important;
+    border-radius: 10px !important;
+    padding: 34px 38px 30px !important;
+    gap: 22px !important;
+    box-shadow: 0 1px 0 rgba(14,20,48,0.02), 0 24px 48px -32px rgba(14,20,48,0.18) !important;
+    overflow: visible !important;
+  }
+
+  /* Feld-Labels: dunkel auf weißem Hintergrund */
+  body:has(.selection-section) .field-label { color: #0E1430 !important; }
+  body:has(.selection-section) .field-optional { color: #6B7390 !important; }
+
+  /* Select-Button: subtile Border */
+  body:has(.selection-section) .sel-btn {
+    border-color: #E6E8EF !important;
+    border-radius: 6px !important;
+  }
+  body:has(.selection-section) .sel-btn:hover {
+    border-color: #3B4565 !important;
+  }
+
+  /* Divider + CTA am Kartenende (volle Breite, dunkel) */
+  body:has(.selection-section) .cta-btn {
+    background: #0E1430 !important;
+    color: #fff !important;
+    cursor: pointer !important;
+    font-size: 15px !important;
+    width: calc(100% + 76px) !important;
+    justify-content: flex-end !important;
+    margin: 4px -38px -30px !important;
+    padding: 22px 38px !important;
+    border-top: 1px solid #E6E8EF !important;
+    border-radius: 0 0 9px 9px !important;
+  }
+
+  body:has(.selection-section) .cta-btn:hover {
+    background: #192245 !important;
+  }
+
+  /* Leerer Flex-Spacer ausblenden */
+  body:has(.selection-section) .container > div[style*="flex:1"] {
+    display: none !important;
+  }
+
+  /* Weißer Footer */
+  body:has(.selection-section) .desktop-footer {
+    background: #fff !important;
+    border-top: 1px solid #E6E8EF !important;
+  }
+}
