@@ -1469,9 +1469,73 @@
     "original_coaching_fokus": "",
     "ist_gecrawlt": false,
     "quell_kategorie": "",
-    "schwester_ids": [],
-    "schwester_id": null,
-    "schwester_titel": null
+    "schwester_ids": [
+      25
+    ],
+    "schwester_id": 25,
+    "schwester_titel": "EINFRIEREN MIT BALL"
+  },
+  {
+    "id": 25,
+    "titel": "EINFRIEREN MIT BALL",
+    "quell_trainingseinheit": "Positionen halten auf dem Feld mit dem Bahnenspiel",
+    "quell_url": "https://coachunited.de/positionen-halten-auf-dem-feld-mit-dem-bahnenspiel/",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/01/image-3.jpg",
+    "trainingsphase": "Aufwärmen",
+    "kurzbeschreibung": "Spieler dribbeln. Auf Kommando frieren alle ein. Wer sich als letzter bewegt, hat verloren.",
+    "aufbau": "Ein 20 x 20 Meter großes Feld markieren. Alle Spieler haben einen Ball.",
+    "durchfuehrung": "Spieler dribbeln im Feld. Auf Kommando müssen alle einfrieren (still stehen). Auch der Ball darf sich nicht mehr bewegen. Wer sich als letzter bewegt, hat verloren und muss eine Runde ums Feld sprinten. (Falls eine kleine Musikbox vorhanden ist, gerne auch mit Musik durchführen und die Musik stoppen).",
+    "varianten": "Dribbeltechniken vorgeben (links/rechts/mit Sohle ziehen/Hochhalten/rückwärts). Immer mehr Bälle entnehmen, so dass es mehr Jäger gibt.",
+    "coaching_fokus": "• Seid schnell im Einfrieren! Haltet den Ball unter Kontrolle",
+    "leichter_machen": "• Einfrieren ankündigen",
+    "schwerer_machen": "• Spezifische Dribbling-Techniken vorgeben (z.B. rückwärts, mit der Sohle)",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend"
+    ],
+    "skills": [
+      "Ballkontrolle",
+      "Dribbeln",
+      "Koordination",
+      "Schnelligkeit"
+    ],
+    "seo_keyword": "Fußballübung Einfrieren mit Ball Kinder",
+    "url_slug": "fussballubung-einfrieren-mit-ball-fur-kinder",
+    "seo_meta_description": "Dynamische Fußballübung 'Einfrieren mit Ball' für Kinder von 6-12 Jahren. Fördert Ballkontrolle, Koordination und Schnelligkeit.",
+    "grafik_alt_text": "Kinder spielen die Fußballübung 'Einfrieren mit Ball', halten den Ball unter Kontrolle und bleiben still stehen.",
+    "grafik_description": "Das Bild zeigt mehrere Kinder im Alter von 6-12 Jahren, die bei der Fußballübung 'Einfrieren mit Ball' mitspielen. Sie haben ihre Bälle unter Kontrolle und stehen bewegungslos da, nachdem das Kommando zum Einfrieren gekommen ist.",
+    "grafik_title": "Fußballübung 'Einfrieren mit Ball' für Kinder",
+    "grafik_caption": "Kinder üben die Ballkontrolle und Schnelligkeit bei der Fußballübung 'Einfrieren mit Ball'.",
+    "status": "veroeffentlicht",
+    "nachtraeglich_eingefuegt": true,
+    "alt_titel": "Stoppt den Spieler!",
+    "faq": [
+      {
+        "frage": "Wie viele Kinder können an dieser Übung teilnehmen?",
+        "antwort": "Die Übung eignet sich für Gruppen von 8-16 Kindern. Für größere Gruppen kann das Feld vergrößert werden."
+      },
+      {
+        "frage": "Wie lange dauert die Übung?",
+        "antwort": "Die Übung kann je nach Alter und Niveau der Kinder 10-15 Minuten dauern. "
+      },
+      {
+        "frage": "Kann man die Übung auch für ältere Kinder anpassen?",
+        "antwort": "Ja, durch Varianten wie schnelleres Einfrieren oder komplexere Dribbling-Techniken lässt sich die Übung auch für D-Jugend und E-Jugend Kinder anpassen."
+      }
+    ],
+    "grafik_dateiname": "",
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [
+      24
+    ],
+    "schwester_id": 24,
+    "schwester_titel": "DER OHNE BALL VERLIERT"
   },
   {
     "id": 26,
