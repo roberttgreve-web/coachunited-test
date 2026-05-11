@@ -4241,5 +4241,66 @@
     "schwester_ids": [],
     "schwester_id": null,
     "schwester_titel": null
+  },
+  {
+    "id": 125,
+    "titel": "VOM WETTRENNEN INS 1 GEGEN 1",
+    "quell_trainingseinheit": "Stationen-Warmup und viele Toraktionen",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/06/image-31.png",
+    "grafik_dateiname": "uebung-114-vom-wettrennen-ins-1-gegen-1.png",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "Je nach Farbsignal rennt ein Spieler mit Ball, einer ohne. Hinter der Mittellinie geht es ins 1 gegen 1.",
+    "aufbau": "30 x 20 Meter Feld mit einem Jugendtor und Torhüter. Zwei Teams jeweils mit Bällen an der gegenüberliegenden Grundlinie. Mittellinie mit zwei Hütchen markieren.",
+    "durchfuehrung": "Trainer ruft Farbe. Spieler aus dem gerufenen Team läuft mit Ball los, anderer Spieler lässt Ball liegen und läuft los. 1 gegen 1 ab der Mittellinie. Angreifer will Tor auf das Jugendtor erzielen. Erobert der Verteidiger den Ball, kann er punkten, in dem er mit Ball zurück über die Mittellinie dribbelt. Team, das zuerst 10 Punkte erreicht, gewinnt.",
+    "varianten": "a) Trainer gibt Ball per Flugball statt mit Farbruf. B) Zwei gegen Eins, c) Mittellinie je nach Spielstärke nach vorne oder hinten verschieben. TORGEFAHR:AUS DEM SLALOM IN DEN ANGRIFF AUS DEM SLALOM IN DEN ANGRIFF Angreiferteam läuft Slalom in Richtung Ball, Verteidiger bringen sich unterdessen in Position für das 2 gegen 2.",
+    "quell_url": "https://coachunited.de/stationen-warmup-und-viele-toraktionen/",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend"
+    ],
+    "skills": [
+      "Ballkontrolle",
+      "Dribbeln",
+      "Zweikampf",
+      "Schnelligkeit"
+    ],
+    "coaching_fokus": "• Schneller Sprintstart und volles Tempo; • Fairer Zweikampf; • Zügiger Torabschluss",
+    "leichter_machen": "• Mittellinie weiter nach vorne verlegen",
+    "schwerer_machen": "• Trainer gibt Ball per Flugball statt mit Farbruf.; • Zwei gegen Eins",
+    "status": "veroeffentlicht",
+    "alt_titel": "Sprinten und Verteidigen - 1 gegen 1",
+    "seo_keyword": "Fußballübung 1 gegen 1 Kinder",
+    "url_slug": "fussballuebung-1-gegen-1-kinder",
+    "seo_meta_description": "Zwei Kinder rennen mit und ohne Ball auf ein Fußballtor zu",
+    "grafik_alt_text": "Fußballübung 1 gegen 1 für Kinder",
+    "grafik_description": "Die Übung 'Vom Wettrennen ins 1 gegen 1' fördert Dribbling, Zweikämpfe und Torschuss bei Kindern. Ein Kind mit Ball rennt los, das andere Kind folgt ohne Ball. Ab der Mittellinie beginnt das 1 gegen 1 auf das Tor.",
+    "grafik_title": "Dynamisches 1-gegen-1 Fußballspiel für 6-12 Jährige",
+    "grafik_caption": "Die Übung 'Vom Wettrennen ins 1 gegen 1' fördert Dribbling, Zweikämpfe und Torschuss bei Kindern. Ein Kind mit Ball rennt los, das andere Kind folgt ohne Ball. Ab der Mittellinie beginnt das 1 gegen 1 auf das Tor.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler braucht man für diese Übung?",
+        "antwort": "Am besten 8-14 Spieler für zwei Teams. "
+      },
+      {
+        "frage": "Wie lange sollte die Übung dauern?",
+        "antwort": "Circa 10-15 Minuten, je nach Alter und Konzentration der Kinder. Wichtig ist, dass alle Kinder ausreichend Ballkontakte haben."
+      },
+      {
+        "frage": "Für welche Altersgruppen eignet sich die Übung am besten?",
+        "antwort": "Die Übung ist gut geeignet für Kinder von 8-12 Jahren (F- bis E-Jugend). "
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [
+      126
+    ],
+    "schwester_id": 126,
+    "schwester_titel": "AUS DEM SLALOM IN DEN ANGRIFF"
   }
 ]
