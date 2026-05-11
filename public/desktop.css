@@ -327,3 +327,338 @@
     font-size: 13px;
   }
 }
+
+/* ══════════════════════════════════════════════════════════
+   HOME — Zwei-Panel-Split
+   Links: dunkle Navy-Branding-Fläche · Rechts: weißes Formular
+   ══════════════════════════════════════════════════════════ */
+
+.home-tagline-desktop { display: none; }
+
+@media (min-width: 768px) {
+  body:has(.crest-panel) {
+    background: #0E1430 !important;
+  }
+
+  body:has(.crest-panel) .container {
+    flex-direction: row !important;
+    min-height: 100vh !important;
+    height: 100vh !important;
+    width: 100% !important;
+    max-width: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    background: #fff !important;
+    overflow: hidden !important;
+  }
+
+  /* Linkes Panel: Branding */
+  body:has(.crest-panel) .crest-panel {
+    width: 420px !important;
+    height: 100vh !important;
+    flex-shrink: 0 !important;
+    overflow: hidden !important;
+    background: #0E1430 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-right: 1px solid rgba(255,255,255,0.06) !important;
+  }
+
+  body:has(.crest-panel) .crest-shape { display: none !important; }
+
+  body:has(.crest-panel) .crest-inner {
+    position: static !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    justify-content: center !important;
+    padding: 0 56px !important;
+    width: 100% !important;
+    height: auto !important;
+    gap: 0 !important;
+  }
+
+  body:has(.crest-panel) .crest-inner img {
+    width: 72px !important;
+    height: 72px !important;
+    object-fit: contain !important;
+    margin-bottom: 36px;
+  }
+
+  body:has(.crest-panel) .home-tagline-desktop {
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgba(255,255,255,0.5);
+    line-height: 1.7;
+    letter-spacing: -0.01em;
+  }
+
+  body:has(.crest-panel) .home-tagline-desktop strong {
+    color: #fff;
+    font-weight: 700;
+  }
+
+  /* Rechtes Panel: Formular */
+  body:has(.crest-panel) .content {
+    flex: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: flex-start !important;
+    padding: 64px !important;
+    background: #fff !important;
+    max-width: none !important;
+    margin: 0 !important;
+    overflow-y: auto !important;
+    height: 100vh !important;
+  }
+
+  body:has(.crest-panel) .selects {
+    width: 100%;
+    max-width: 440px;
+  }
+
+  body:has(.crest-panel) .tagline { display: none !important; }
+}
+
+
+/* ══════════════════════════════════════════════════════════
+   ÜBUNGEN — Listenansicht statt Kachelgrid
+   ══════════════════════════════════════════════════════════ */
+
+@media (min-width: 768px) {
+  body:has(.filter-section) #exercises-list {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0 !important;
+  }
+
+  body:has(.filter-section) .exercise-card {
+    flex-direction: row !important;
+    align-items: center !important;
+    border-radius: 0 !important;
+    border: none !important;
+    border-bottom: 1px solid #E6E8EF !important;
+    margin-bottom: 0 !important;
+    min-height: 0 !important;
+    padding: 15px 16px 15px 20px !important;
+    gap: 24px !important;
+    position: relative !important;
+  }
+
+  body:has(.filter-section) .exercise-card:first-child {
+    border-top: 1px solid #E6E8EF !important;
+  }
+
+  body:has(.filter-section) .exercise-card:hover {
+    transform: none !important;
+    box-shadow: none !important;
+    background: #F8F9FC !important;
+  }
+
+  /* Farbbalken links nach Phase */
+  body:has(.filter-section) .exercise-card::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 3px;
+    height: 28px;
+    border-radius: 2px;
+    background: #E6E8EF;
+  }
+  body:has(.filter-section) .exercise-card[data-phase="Aufwärmen"]::before { background: #C2611F; }
+  body:has(.filter-section) .exercise-card[data-phase="Hauptteil"]::before  { background: #0E6A45; }
+  body:has(.filter-section) .exercise-card[data-phase="Spielformat"]::before { background: #0F3FA8; }
+
+  body:has(.filter-section) .card-accent { display: none !important; }
+
+  body:has(.filter-section) .card-grid {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 0 !important;
+    min-height: 0 !important;
+    flex: 1 !important;
+    grid-template-columns: unset !important;
+  }
+
+  body:has(.filter-section) .card-left {
+    flex: 0 0 300px !important;
+    border-right: none !important;
+    padding-right: 28px !important;
+    align-items: center !important;
+  }
+
+  body:has(.filter-section) .card-title {
+    font-size: 15px !important;
+    margin-bottom: 0 !important;
+  }
+
+  body:has(.filter-section) .card-right { flex: 1 !important; }
+
+  body:has(.filter-section) .card-desc {
+    font-size: 13px !important;
+    -webkit-line-clamp: 2 !important;
+  }
+
+  body:has(.filter-section) .card-tags {
+    display: none !important;
+  }
+
+  body:has(.filter-section) .card-body {
+    padding: 0 !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  body:has(.filter-section) .card-left {
+    flex: 0 0 360px !important;
+  }
+}
+
+
+/* ══════════════════════════════════════════════════════════
+   ÜBUNGS-DETAIL — Dunkle TopNav, Back-Bar ausblenden
+   ══════════════════════════════════════════════════════════ */
+
+@media (min-width: 768px) {
+  body:has(#exercise-content) .desktop-topnav {
+    background: #0E1430;
+    border-bottom: none;
+  }
+
+  body:has(#exercise-content) .desktop-topnav-logo {
+    color: rgba(255,255,255,0.9);
+  }
+
+  body:has(#exercise-content) .desktop-topnav-link {
+    color: rgba(255,255,255,0.6);
+  }
+
+  body:has(#exercise-content) .desktop-topnav-link:hover {
+    background: rgba(255,255,255,0.08);
+    color: #fff;
+  }
+
+  body:has(#exercise-content) .desktop-topnav-link.active {
+    background: rgba(255,255,255,0.15);
+    color: #fff;
+  }
+
+  body:has(#exercise-content) .back-bar {
+    display: none !important;
+  }
+}
+
+
+/* ══════════════════════════════════════════════════════════
+   EINHEIT-DETAIL — Warmer Hintergrund, dunkler Hero-Header
+   ══════════════════════════════════════════════════════════ */
+
+@media (min-width: 768px) {
+  body:has(#einheit-content) .header {
+    display: none !important;
+  }
+
+  /* Dunkle TopNav nahtlos zum Hero */
+  body:has(#einheit-content) .desktop-topnav {
+    background: #0E1430;
+    border-bottom: none;
+  }
+
+  body:has(#einheit-content) .desktop-topnav-logo {
+    color: rgba(255,255,255,0.9);
+  }
+
+  body:has(#einheit-content) .desktop-topnav-link {
+    color: rgba(255,255,255,0.6);
+  }
+
+  body:has(#einheit-content) .desktop-topnav-link:hover {
+    background: rgba(255,255,255,0.08);
+    color: #fff;
+  }
+
+  body:has(#einheit-content) .desktop-topnav-link.active {
+    background: rgba(255,255,255,0.15);
+    color: #fff;
+  }
+
+  body:has(#einheit-content) {
+    background: #FBFAF6 !important;
+  }
+
+  body:has(#einheit-content) .container {
+    background: #FBFAF6 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    width: 100% !important;
+    max-width: none !important;
+    min-height: 100vh !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+
+  /* Dunkler Hero-Bereich mit Einheit-Titel */
+  body:has(#einheit-content) .einheit-hero {
+    background: #0E1430 !important;
+    padding: 80px !important;
+    width: 100% !important;
+  }
+
+  body:has(#einheit-content) .einheit-hero #titel {
+    font-size: 64px !important;
+    font-weight: 800 !important;
+    color: #fff !important;
+    letter-spacing: -0.04em !important;
+    line-height: 1.0 !important;
+    max-width: 900px;
+    margin-bottom: 0 !important;
+  }
+
+  /* Content-Bereich */
+  body:has(#einheit-content) .content {
+    max-width: 900px !important;
+    margin: 0 auto !important;
+    padding: 56px 80px 80px !important;
+  }
+
+  /* Phasen-Header */
+  body:has(#einheit-content) .phase-section-header {
+    padding: 40px 0 20px !important;
+    gap: 12px !important;
+  }
+
+  body:has(#einheit-content) .phase-section:first-child .phase-section-header {
+    padding-top: 8px !important;
+  }
+
+  body:has(#einheit-content) .phase-header-bar {
+    height: 4px !important;
+  }
+
+  body:has(#einheit-content) .phase-header-label {
+    font-family: 'Inter Tight', system-ui, sans-serif !important;
+    font-size: 28px !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.02em !important;
+    text-transform: none !important;
+  }
+
+  /* Übungs-Karten in der Einheit */
+  body:has(#einheit-content) .uebung-card {
+    background: #fff !important;
+    border-radius: 12px !important;
+    border: 1px solid #E6E8EF !important;
+    margin-bottom: 8px !important;
+  }
+
+  body:has(#einheit-content) .uebung-card:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.09) !important;
+    transform: translateY(-1px);
+  }
+}

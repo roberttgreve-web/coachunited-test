@@ -6,12 +6,12 @@
   <title>Trainingseinheit – COACH UNITED</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Barlow:wght@700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
     body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-family: 'Inter Tight', system-ui, sans-serif;
       background: #f0f2f5;
       display: flex;
       justify-content: center;
@@ -63,23 +63,55 @@
     }
 
     h1 {
-      font-family: 'Barlow', 'Inter', sans-serif;
+      font-family: 'Inter Tight', system-ui, sans-serif;
       font-size: 22px;
       font-weight: 800;
-      color: #0a1628;
-      line-height: 1.2;
-      margin-bottom: 20px;
+      color: #0E1430;
+      line-height: 1.15;
+      letter-spacing: -0.025em;
+      margin-bottom: 0;
     }
 
     .section-label {
-      font-family: 'Barlow', 'Inter', sans-serif;
-      font-size: 11px;
-      font-weight: 700;
-      color: #9aa3b0;
+      font-family: 'JetBrains Mono', ui-monospace, monospace;
+      font-size: 10px;
+      font-weight: 600;
+      color: #6B7390;
       text-transform: uppercase;
-      letter-spacing: 1px;
-      margin-bottom: 10px;
+      letter-spacing: 0.14em;
+      margin-bottom: 12px;
     }
+
+    /* ── Phase-Section-Header ── */
+    .phase-section { margin-bottom: 8px; }
+    .phase-section-header {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      padding: 24px 0 12px;
+    }
+    .phase-section:first-child .phase-section-header { padding-top: 4px; }
+    .phase-header-bar {
+      height: 3px;
+      width: 100%;
+      border-radius: 2px;
+    }
+    .phase-header-label {
+      font-family: 'JetBrains Mono', ui-monospace, monospace;
+      font-size: 10px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+    }
+    .phase-section-header[data-phase="Aufwärmen"] .phase-header-bar { background: #C2611F; }
+    .phase-section-header[data-phase="Aufwärmen"] .phase-header-label { color: #C2611F; }
+    .phase-section-header[data-phase="Hauptteil"] .phase-header-bar { background: #0E6A45; }
+    .phase-section-header[data-phase="Hauptteil"] .phase-header-label { color: #0E6A45; }
+    .phase-section-header[data-phase="Spielformat"] .phase-header-bar { background: #0F3FA8; }
+    .phase-section-header[data-phase="Spielformat"] .phase-header-label { color: #0F3FA8; }
+
+    /* ── Einheit Hero (Desktop) ── */
+    .einheit-hero { padding: 24px 16px 16px; }
 
     /* Übungs-Karte innerhalb der Einheit */
     .uebung-card {
@@ -88,15 +120,14 @@
       text-decoration: none;
       color: inherit;
       background: white;
-      border-radius: 14px;
-      border: 1px solid #edf0f5;
-      margin-bottom: 10px;
+      border-radius: 12px;
+      border: 1px solid #E6E8EF;
+      margin-bottom: 8px;
       overflow: hidden;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
       transition: box-shadow 0.18s, transform 0.18s;
     }
     .uebung-card:hover {
-      box-shadow: 0 6px 20px rgba(0,0,0,0.09);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.09);
       transform: translateY(-1px);
     }
 
@@ -106,42 +137,32 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      font-family: 'Barlow', 'Inter', sans-serif;
-      font-size: 18px;
-      font-weight: 800;
-      color: #d0d6e0;
+      font-family: 'JetBrains Mono', ui-monospace, monospace;
+      font-size: 14px;
+      font-weight: 700;
+      color: #D0D6E0;
     }
 
     .card-body {
       flex: 1;
-      padding: 12px 12px 12px 0;
+      padding: 13px 12px 13px 0;
       min-width: 0;
     }
 
-    .card-phase {
-      font-size: 10px;
-      font-weight: 600;
-      padding: 2px 7px;
-      border-radius: 20px;
-      display: inline-block;
-      margin-bottom: 4px;
-    }
-    .phase-aufwaermen  { background: #e8f4fd; color: #1a6fa8; }
-    .phase-hauptteil   { background: #e8f0ff; color: #1B6BF4; }
-    .phase-spielformat { background: #e8faf0; color: #1a8a4a; }
-
     .card-title {
-      font-size: 13px;
+      font-family: 'Inter Tight', system-ui, sans-serif;
+      font-size: 14px;
       font-weight: 600;
-      color: #0a1628;
-      line-height: 1.4;
+      color: #0E1430;
+      line-height: 1.35;
+      letter-spacing: -0.01em;
     }
 
     .card-arrow {
       display: flex;
       align-items: center;
       padding-right: 14px;
-      color: #c0c7d3;
+      color: #B0B8CC;
     }
     .card-arrow svg { width: 16px; height: 16px; }
 
@@ -206,9 +227,11 @@
     </div>
 
     <div id="einheit-content" style="display:none; flex:1; flex-direction:column;">
-      <div class="content">
+      <div class="einheit-hero">
         <h1 id="titel"></h1>
-        <p class="section-label">5 Übungen</p>
+      </div>
+      <div class="content">
+        <p class="section-label" id="einheit-count"></p>
         <div id="uebungen-list"></div>
       </div>
     </div>
@@ -253,11 +276,22 @@
     const slug = window.location.pathname.replace(/^\/einheit\//, '').replace(/\/$/, '');
     const JSON_URL = 'https://raw.githubusercontent.com/roberttgreve-web/coachunited-test/main/public/einheiten.json';
 
-    const phaseClass = {
-      'Aufwärmen':   'phase-aufwaermen',
-      'Hauptteil':   'phase-hauptteil',
-      'Spielformat': 'phase-spielformat',
-    };
+    const PHASE_ORDER = ['Aufwärmen', 'Hauptteil', 'Spielformat'];
+
+    function renderCard(u) {
+      return `
+        <a href="/uebung/${u.slug}?from=${slug}" class="uebung-card">
+          <div class="card-position">${u.position}</div>
+          <div class="card-body">
+            <p class="card-title">${u.titel}</p>
+          </div>
+          <div class="card-arrow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6"/>
+            </svg>
+          </div>
+        </a>`;
+    }
 
     fetch(JSON_URL)
       .then(r => r.json())
@@ -272,25 +306,29 @@
         document.title = einheit.titel + ' – COACH UNITED';
         document.getElementById('titel').textContent = einheit.titel;
 
+        const count = einheit.uebungen.length;
+        document.getElementById('einheit-count').textContent = count + ' Übung' + (count !== 1 ? 'en' : '');
+
+        // Gruppiere nach Phase
+        const grouped = {};
+        PHASE_ORDER.forEach(p => { grouped[p] = []; });
+        einheit.uebungen.forEach(u => {
+          const phase = u.phase || 'Hauptteil';
+          if (!grouped[phase]) grouped[phase] = [];
+          grouped[phase].push(u);
+        });
+
         const list = document.getElementById('uebungen-list');
-        list.innerHTML = einheit.uebungen.map(u => {
-          const phaseTag = u.phase
-            ? `<span class="card-phase ${phaseClass[u.phase] || 'phase-hauptteil'}">${u.phase}</span>`
-            : '';
-          return `
-            <a href="/uebung/${u.slug}?from=${slug}" class="uebung-card">
-              <div class="card-position">${u.position}</div>
-              <div class="card-body">
-                ${phaseTag}
-                <p class="card-title">${u.titel}</p>
+        list.innerHTML = PHASE_ORDER
+          .filter(p => grouped[p] && grouped[p].length)
+          .map(phase => `
+            <div class="phase-section">
+              <div class="phase-section-header" data-phase="${phase}">
+                <div class="phase-header-bar"></div>
+                <span class="phase-header-label">${phase}</span>
               </div>
-              <div class="card-arrow">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="9 18 15 12 9 6"/>
-                </svg>
-              </div>
-            </a>`;
-        }).join('');
+              ${grouped[phase].map(u => renderCard(u)).join('')}
+            </div>`).join('');
 
         document.getElementById('loading').style.display = 'none';
         document.getElementById('einheit-content').style.display = 'flex';

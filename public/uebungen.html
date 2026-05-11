@@ -695,7 +695,7 @@
         const visSkills = skills.slice(0, 2).map(s => `<span class="tag-skill">${s}</span>`).join('');
         const more = skills.length > 2 ? `<span class="tag-more">+${skills.length - 2}</span>` : '';
         return `
-          <a href="${href}" class="exercise-card">
+          <a href="${href}" class="exercise-card" data-phase="${ex.trainingsphase || ''}">
             <div class="card-grid">
               <div class="card-left">
                 <h3 class="card-title">${ex.titel}</h3>
