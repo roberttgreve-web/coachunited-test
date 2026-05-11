@@ -3869,8 +3869,73 @@
     "original_coaching_fokus": "",
     "ist_gecrawlt": false,
     "quell_kategorie": "",
-    "schwester_ids": [],
-    "schwester_id": null,
-    "schwester_titel": null
+    "schwester_ids": [
+      109
+    ],
+    "schwester_id": 109,
+    "schwester_titel": "SPRINTEN UND PASS EMPFANGEN"
+  },
+  {
+    "id": 109,
+    "titel": "SPRINTEN UND PASS EMPFANGEN",
+    "quell_trainingseinheit": "Tricks, Fernschüsse – und ab in die Jubelzone",
+    "quell_url": "https://coachunited.de/tricks-fernschusse-und-ab-in-die-jubelzone/",
+    "grafik_url": "",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "Spieler sprintet um das Hütchen, Mitspieler passt den Ball zu.",
+    "aufbau": "Vier Gruppen einteilen. Vor jeder Gruppe in etwa 6m Entfernung ein Hütchen aufstellen. Einen Ball pro Gruppe.",
+    "durchfuehrung": "Der erste Spieler jeder Gruppe sprinten um das Hütchen. Sobald er es umkurvt hat, passt der der nächste Spieler präzise.",
+    "varianten": "a) Wettbewerb: Welches Team ist am schnellsten einmal durch?  b) Hütchen deutlich weiter entfernt aufstellen und Flugpässe spielen.",
+    "coaching_fokus": "• Blickkontakt aufnehmen; • Präziser, flacher Pass zum Mitspieler",
+    "leichter_machen": "• Abstände verringern",
+    "schwerer_machen": "• Hütchen weiter entfernt aufstellen für längere Pässe; • Flugpässen spielen; • Wettbewerb: Welches Team ist am schnellsten einmal durch?",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend",
+      "E-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Koordination",
+      "Schnelligkeit"
+    ],
+    "seo_keyword": "Fußballübung Passen Kinder",
+    "url_slug": "fussballubung-passen-kinder",
+    "seo_meta_description": "Dynamische Passübung für Kinder im Fußballtraining, die Technik und Koordination fördert. Mit Varianten zum Leichter- und Schwerer-Machen.",
+    "grafik_alt_text": "Kinder führen einen Sprint mit anschließendem Zuspiel durch, um ein Hütchen herum",
+    "grafik_description": "Die Spieler führen einen Sprint um ein Hütchen durch und erhalten anschließend einen präzisen Pass von ihrem Mitspieler. Die Übung fördert Passen, Ballkontrolle und Schnelligkeit.",
+    "grafik_title": "Fußballübung: Sprint und Passempfang",
+    "grafik_caption": "Dynamische Passübung für Kinder im Fußballtraining",
+    "status": "veroeffentlicht",
+    "nachtraeglich_eingefuegt": true,
+    "alt_titel": "SPRINT UND PASSSPIEL",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler benötige ich für diese Übung?",
+        "antwort": "Die Übung eignet sich gut für Gruppen von 8-16 Kindern. Größere Gruppen sind ebenfalls möglich, erfordern dann aber mehr Platz."
+      },
+      {
+        "frage": "Wie lange sollte die Übung dauern?",
+        "antwort": "Je nach Alter und Leistungsstand der Kinder empfiehlt sich eine Dauer von 5-10 Minuten. "
+      },
+      {
+        "frage": "Kann ich die Übung auch für ältere Kinder anpassen?",
+        "antwort": "Ja, durch die vorgeschlagenen Varianten lässt sich die Übung auch für D-Jugend und C-Jugend Spieler erweitern. Dabei können die Abstände größer und die Pässe anspruchsvoller gestaltet werden."
+      }
+    ],
+    "grafik_dateiname": "",
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [
+      108
+    ],
+    "schwester_id": 108,
+    "schwester_titel": "EINFACHES DRIBBELN UND PASSEN MIT TEMPO"
   }
 ]
