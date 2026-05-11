@@ -4365,5 +4365,67 @@
     "original_coaching_fokus": "",
     "ist_gecrawlt": false,
     "quell_kategorie": ""
+  },
+  {
+    "id": 127,
+    "titel": "ZWEIFELDSPIEL",
+    "quell_trainingseinheit": "Stationen-Warmup und viele Toraktionen",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/06/image-33.png",
+    "grafik_dateiname": "uebung-116-zweifeldspiel.png",
+    "trainingsphase": "Spielformat",
+    "kurzbeschreibung": "Zwei Teams spielen 6 gegen 6 auf zwei Feldern gleichzeitig. Die Spieler dürfen das Feld wechseln.",
+    "aufbau": "Zwei Felder mit jeweils zwei Toren aufbauen, jeweils etwa 15X20. Zwei Teams. Zwei Bälle im Feld.",
+    "durchfuehrung": "6 gegen 6 auf beiden Feldern. Teams verteidigen ihre Seite und greifen auf die gegenüberliegende an. Spieler dürfen das Feld wechseln.",
+    "varianten": "a) Alle Spieler dürfen auf alle Tore treffen. b) Ball darf das designierte Feld nicht verlassen, Spieler schon. FREIES SPIEL– VIEL SPAß In © 2025 COACH UNITED",
+    "quell_url": "https://coachunited.de/stationen-warmup-und-viele-toraktionen/",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Dribbeln",
+      "Torschuss",
+      "Zweikampf",
+      "Koordination",
+      "Raumverhalten"
+    ],
+    "coaching_fokus": "• Raumgefühl entwickeln, in welchem Feld man mehr gebraucht ist; • Freie Räume geschickt nutzen; • Zu langen Pässen auf das zweite Feld ermutigen",
+    "leichter_machen": "• Alle Spieler dürfen auf alle Tore treffen; • Nur ein Ball",
+    "schwerer_machen": "• Ball darf das designierte Feld nicht verlassen, Spieler schon",
+    "status": "veroeffentlicht",
+    "alt_titel": "Zwei-Felder-Duell",
+    "seo_keyword": "Fußballübung Zweikampf Kinder",
+    "url_slug": "zweifeldspiel-fussballubung-kinder",
+    "seo_meta_description": "Das Zweifeldspiel ist eine effektive Fußballübung für Kinder von 6-12 Jahren, die Zweikampf, Raumverhalten und Kommunikation fördert.",
+    "grafik_alt_text": "Zwei Teams spielen 6 gegen 6 auf zwei Feldern gleichzeitig, die Spieler dürfen das Feld wechseln.",
+    "grafik_description": "Die Grafik zeigt den Aufbau des Zweifeldspiel-Trainings. Zwei Mannschaften mit jeweils 6 Spielern treten auf gegenüberliegenden Spielfeldern gegeneinander an. Die Spieler dürfen dabei frei zwischen den Feldern wechseln.",
+    "grafik_title": "Fußballtraining: Zweifeldspiel für Kinder",
+    "grafik_caption": "Zweikampf, Raumverhalten und Kommunikation stehen im Fokus des Zweifeldspiel-Trainings.",
+    "faq": [
+      {
+        "frage": "Wie passe ich die Spieleranzahl an?",
+        "antwort": "Die Spieleranzahl kann je nach Alter und Leistungsstand der Kinder angepasst werden, z.B. 4 gegen 4 oder 6 gegen 6. Größe der Felder anpassen."
+      },
+      {
+        "frage": "Wie lange sollte man das Zweifeldspiel durchführen?",
+        "antwort": "Eine Dauer von 10-15 Minuten ist sinnvoll, um die Kinder nicht zu überfordern und genügend Spielzeit zu haben."
+      },
+      {
+        "frage": "Für welche Altersgruppen eignet sich das Zweifeldspiel?",
+        "antwort": "Die Übung ist gut geeignet für Kinder von 8-12 Jahren (F- bis E-Jugend), da sie ein gewisses Raumverständnis einfordert."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [],
+    "schwester_id": null,
+    "schwester_titel": null
   }
 ]
