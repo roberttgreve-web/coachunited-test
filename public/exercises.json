@@ -2341,6 +2341,69 @@
     "schwester_titel": "AUS DEM MITTELFELD INS SPIELGESCHEHEN"
   },
   {
+    "id": 39,
+    "titel": "AUS DEM MITTELFELD INS SPIELGESCHEHEN",
+    "quell_trainingseinheit": "Das Mittelfeld kontrollieren",
+    "quell_url": "https://coachunited.de/das-mittelfeld-kontrollieren/",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/12/image-5.jpg",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "Die Teams versuchen in der Mittelzone den Ball zu halten bis sie auf Kommando des Trainers in ein 4 gegen 4 starten.",
+    "aufbau": "20mx40m großes Feld mit Hütchen markieren. Darin eine etwa 20mx20m große Mittelzone platzieren. Zwei Minitore 5 bis 10m auf die Grundlinie stellen. Zwei Teams mit Leibchen und Ball ausstatten. Bei größeren Gruppen zwei Felder parallel oder mit Auswechselteam agieren. ",
+    "durchfuehrung": "Das Team mit Ballbesitz versucht in der Mittelzone den Ball durch Pässe in den eigenen Reihen zu halten. Das andere Team versucht zu erobern und dann den Ball zu halten. Auf Kommando des Trainers starten die Teams in ein 4 gegen 4-Spiel aufs gesamte Feld.",
+    "varianten": "",
+    "coaching_fokus": "• Wach sein, um auf engem Raum den ball in den eigenen Reihen zu halten; • Anspieloptionen durch viel Bewegung auf engem Raum schaffen",
+    "leichter_machen": "• Vergrößerung der Mittelzone, damit mehr Platz zum Kombinieren",
+    "schwerer_machen": "• Anzahl der Pässe erhöhen, die in der Mittelzone gespielt werden müssen",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Raumverhalten",
+      "Umschalten"
+    ],
+    "seo_keyword": "Fußballübung Spielaufbau Kinder",
+    "url_slug": "fussballubung-spielaufbau-kinder",
+    "seo_meta_description": "Effektive Fußballübung, um Kinder im Alter von 10-12 Jahren beim Spielaufbau aus dem Mittelfeld zu fördern - mit Varianten zum Leichter- und Schwerer-Machen.",
+    "grafik_alt_text": "Zwei Fußballteams in gelben und roten Trikots spielen 4 gegen 4 nach Ballgewinn in der Mittelzone",
+    "grafik_description": "Die Kinder trainieren in dieser Übung den Spielaufbau aus dem Mittelfeld. Sie versuchen, den Ball durch Pässe in der Mittelzone zu behaupten, bis das Trainersignal zum 4-gegen-4-Spiel kommt.",
+    "grafik_title": "Fußballübung: Spielaufbau aus dem Mittelfeld",
+    "grafik_caption": "Kinder im Fußballtraining üben den Spielaufbau aus dem Mittelfeld",
+    "status": "veroeffentlicht",
+    "nachtraeglich_eingefuegt": true,
+    "schwester_ids": [
+      38
+    ],
+    "schwester_id": 38,
+    "schwester_titel": "MIT GEZIELTEN FERNSCHÜSSEN GEWINNEN",
+    "alt_titel": "Im Mittelfeld Spielzüge aufbauen",
+    "faq": [
+      {
+        "frage": "Wie viele Kinder nehmen an dieser Übung teil?",
+        "antwort": "Ideal sind 8-12 Kinder, sodass zwei Teams mit je 4-6 Spielern gegeneinander antreten können."
+      },
+      {
+        "frage": "Wie lange dauert die Übung?",
+        "antwort": "Die Dauer beträgt ca. 10-15 Minuten. Der Trainer kann je nach Leistungsstand und Konzentration der Kinder die Zeit anpassen."
+      },
+      {
+        "frage": "Kann man diese Übung auch für jüngere Kinder nutzen?",
+        "antwort": "Ja, die Übung lässt sich gut an E-Junioren (9-10 Jahre) anpassen, indem man z.B. die Mittelzone vergrößert oder die Anzahl der Pässe reduziert."
+      }
+    ],
+    "grafik_dateiname": "",
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": ""
+  },
+  {
     "id": 40,
     "titel": "IN DER RICHTIGEN ANZAHL EINLAUFEN UND SPIELEN",
     "quell_trainingseinheit": "Das Mittelfeld kontrollieren",
