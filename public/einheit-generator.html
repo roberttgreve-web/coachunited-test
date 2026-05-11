@@ -175,6 +175,29 @@
       color: #9aa3b0; margin-top: 8px;
     }
 
+    /* ── Phasen-Header (mobil) ── */
+    .gen-phase-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 20px 0 10px;
+    }
+    .gen-phase-header:first-child { margin-top: 0; }
+    .gen-phase-bar {
+      flex: 1;
+      height: 3px;
+      border-radius: 2px;
+    }
+    .gen-phase-label {
+      font-family: 'JetBrains Mono', ui-monospace, monospace;
+      font-size: 10px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: #6B7390;
+      flex-shrink: 0;
+    }
+
     /* ── Empty / Error ── */
     .empty-state {
       text-align: center; padding: 48px 24px;
@@ -387,6 +410,12 @@
       document.getElementById('reroll-btn').disabled = !session.canReroll;
       document.getElementById('no-variations').style.display = session.canReroll ? 'none' : 'block';
 
+      // Hero-Titel dynamisch setzen
+      const heroTitleEl = document.querySelector('.hero-title');
+      if (heroTitleEl) {
+        heroTitleEl.textContent = skill ? jugend + ' · ' + skill : jugend;
+      }
+
       const skillBadge = skill
         ? `<span class="session-badge badge-skill">Fokus: ${skill}</span>` : '';
       const badges = [
@@ -396,8 +425,27 @@
       document.getElementById('session-meta').innerHTML = badges
         ? `<div class="session-badges">${badges}</div>` : '';
 
-      document.getElementById('session-list').innerHTML =
-        session.exercises.map((ex, i) => renderAccordionItem(ex, i)).join('');
+      // Übungen nach Phasen gruppieren
+      const phaseColors = { aufwaermen: '#C2611F', hauptteil: '#0E6A45', spielformat: '#0F3FA8' };
+      const grouped = {};
+      PHASES.forEach(p => { grouped[p.key] = []; });
+      session.exercises.forEach((ex, i) => {
+        const phaseKey = PHASES.find(p => p.match === ex.trainingsphase)?.key || 'hauptteil';
+        grouped[phaseKey].push({ ex, i });
+      });
+
+      document.getElementById('session-list').innerHTML = PHASES
+        .filter(p => grouped[p.key].length)
+        .map(p => {
+          const color = phaseColors[p.key] || '#0E1430';
+          const header = `
+            <div class="gen-phase-header">
+              <div class="gen-phase-bar" style="background:${color}"></div>
+              <span class="gen-phase-label">${p.label}</span>
+            </div>`;
+          const cards = grouped[p.key].map(({ ex, i }) => renderAccordionItem(ex, i)).join('');
+          return header + cards;
+        }).join('');
 
       const first = document.querySelector('.ex-card');
       if (first) first.classList.add('open');
