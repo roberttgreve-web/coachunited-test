@@ -3880,7 +3880,7 @@
     "titel": "SPRINTEN UND PASS EMPFANGEN",
     "quell_trainingseinheit": "Tricks, Fernschüsse – und ab in die Jubelzone",
     "quell_url": "https://coachunited.de/tricks-fernschusse-und-ab-in-die-jubelzone/",
-    "grafik_url": "",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/07/image-8.jpg",
     "trainingsphase": "Hauptteil",
     "kurzbeschreibung": "Spieler sprintet um das Hütchen, Mitspieler passt den Ball zu.",
     "aufbau": "Vier Gruppen einteilen. Vor jeder Gruppe in etwa 6m Entfernung ein Hütchen aufstellen. Einen Ball pro Gruppe.",
@@ -4110,6 +4110,66 @@
       {
         "frage": "Für welche Altersgruppen ist diese Übung geeignet?",
         "antwort": "Die Übung eignet sich gut für Kinder der E- und D-Jugend (9-12 Jahre). Passen Sie die Schwierigkeit bei Bedarf an jüngere Gruppen an."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [],
+    "schwester_id": null,
+    "schwester_titel": null
+  },
+  {
+    "id": 123,
+    "titel": "BALLGEFÜHL AN VIER STATIONEN",
+    "quell_trainingseinheit": "Stationen-Warmup und viele Toraktionen",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/06/image-16.jpg",
+    "grafik_dateiname": "uebung-112-ballgefuehl-an-vier-stationen.jpg",
+    "trainingsphase": "Spielformat",
+    "kurzbeschreibung": "Die Spieler erfüllen an vier Stationen im Uhrzeigersinn verschiedene Aufgaben.",
+    "aufbau": "Vier Stationen wie im Bild aufbauen und die Spieler gleichmäßig verteilen.",
+    "durchfuehrung": "Alle Spieler führen die Stationen im Uhrzeigersinn aus. 10-20 Durchgänge. Slalom: Kurzer Slalom durch drei Hütchen oder Stangen. Slalom Hochhalten: Ball hochhalten. Ein Versuch, dann weiter. Hochhalten Hüpfen: Ball zwischen die Beine klemmen und zwischen Hütchen hüpfen (falls vorhanden: Stangen nutzen). Hüpfen Torschuss: Gezielter Torschuss auf kleines Tor. Torschuss",
+    "varianten": "a) Rekord beim Hochhalten laut ansagen. b) Tore zählen. c) Beliebig viele eigene Stationen hinzufügen. PASSEN:SAUBER DRIBBELN, SAUBER PASSEN SAUBER DRIBBELN, SAUBER PASSEN In zwei Gruppen dribbeln die Spieler um ein Hütchen und passen dem Mitspieler sauber zu.",
+    "quell_url": "https://coachunited.de/stationen-warmup-und-viele-toraktionen/",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Dribbeln",
+      "Koordination"
+    ],
+    "coaching_fokus": "",
+    "leichter_machen": "",
+    "schwerer_machen": "",
+    "status": "veroeffentlicht",
+    "alt_titel": "Ballsicher durch den Parcours",
+    "seo_keyword": "Fußballübung Ballgefühl Kinder",
+    "url_slug": "fussballubung-ballgefuhl-kinder",
+    "seo_meta_description": "Verbessere das Ballgefühl deiner Fußballkinder (6-12 Jahre) mit dieser abwechslungsreichen Übung mit 4 Stationen. Koordination und Dribbling stehen im Fokus.",
+    "grafik_alt_text": "Vier Stationen zur Verbesserung des Ballgefühls bei Kindern im Fußballtraining",
+    "grafik_description": "Auf dem Bild ist ein Fußballplatz mit vier Stationen zu sehen. Die Kinder führen verschiedene Dribbling- und Koordinationsaufgaben mit dem Ball durch.",
+    "grafik_title": "Fußballübung für Kinder: Ballgefühl an 4 Stationen",
+    "grafik_caption": "Vielseitige Fußballübung für Kinder, um das Ballgefühl zu verbessern.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler können an dieser Übung teilnehmen?",
+        "antwort": "Die Übung ist für Gruppen von 8-16 Kindern geeignet.  Abstände und Stationsgrößen entsprechend anpassen."
+      },
+      {
+        "frage": "Wie lange dauert die Übung?",
+        "antwort": "15-20 Minuten bitte einplanen. "
+      },
+      {
+        "frage": "Kann ich die Übung auch für jüngere Kinder anpassen?",
+        "antwort": "Ja, für Kinder der F-Jugend können Sie die Abstände, Stationsaufgaben und Dauer entsprechend reduzieren."
       }
     ],
     "referenz_grafik_url": "",
