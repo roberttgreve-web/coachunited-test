@@ -923,6 +923,69 @@
     "schwester_titel": null
   },
   {
+    "id": 16,
+    "titel": "POSITIONEN HALTEN: NO-PLAY-ZONE",
+    "quell_trainingseinheit": "Breite schaffen mit Feldzonen",
+    "quell_url": "https://coachunited.de/breite-schaffen-mit-feldzonen/",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/01/image-8.jpg",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "Zwei Teams spielen ein Match. Die No-Play-Zone in der Mitte des Feldes darf nicht betreten werden.",
+    "aufbau": "Ein Feld von 20x10m mit Jugendtoren und Torhütern aufbauen. In der Mitte des Feldes ein etwa 4mX4m großes Feld mit Hütchen abstecken. Zwei Teams mit Leibchen. Einen Ball.",
+    "durchfuehrung": "Es wird ein normales Spiel gespielt. Außer dass die Spieler die No-Play-Zone nicht betreten dürfen. Bei Verstößen gibt es Freistoß für die gegnerische Mannschaft. Die Spieler dürfen den Ball aber durch die Zone passen.",
+    "varianten": "Keine flachen Bässe durch die No-Play-Zone. Nur hohe Bälle.",
+    "coaching_fokus": "• Betreten der Zone konsequent abpfeifen; • Verteilung auf dem gesamten Spielfeld einfordern",
+    "leichter_machen": "• No-Play-Zone verkleinern",
+    "schwerer_machen": "• No-Play-Zone vergrößern; • Keine flachen Bässe durch die No-Play-Zone. Nur hohe Bälle.",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Raumverhalten",
+      "Kommunikation"
+    ],
+    "seo_keyword": "Fußballübung Raumaufteilung Kinder",
+    "url_slug": "fussballubung-raumaufteilung-kinder",
+    "seo_meta_description": "Zwei Fußballteams spielen auf einem Feld mit einer markierten Sperrzone in der Mitte",
+    "grafik_alt_text": "Fußballübung 'No-Play-Zone' für Kinder",
+    "grafik_description": "Die Grafik zeigt das Spielfeld für die Übung 'No-Play-Zone'. Es ist in zwei Hälften geteilt, in der Mitte befindet sich eine etwa 4x4 Meter große Sperrzone, die die Spieler nicht betreten dürfen.",
+    "grafik_title": "Die 'No-Play-Zone' in der Mitte des Feldes muss umspielt werden.",
+    "grafik_caption": "Die Grafik zeigt das Spielfeld für die Übung 'No-Play-Zone'. Es ist in zwei Hälften geteilt, in der Mitte befindet sich eine etwa 4x4 Meter große Sperrzone, die die Spieler nicht betreten dürfen.",
+    "status": "veroeffentlicht",
+    "nachtraeglich_eingefuegt": true,
+    "alt_titel": "Slalom durch die No-Play-Zone",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler benötigt man für diese Übung?",
+        "antwort": "Die Übung eignet sich für Mannschaften von 5-7 Spielern pro Team. Bei größeren Gruppen drittes Team einteilen. "
+      },
+      {
+        "frage": "Wie lange sollte man diese Übung durchführen?",
+        "antwort": "Die Spielzeit beträgt am besten 8-12 Minuten pro Spiel, um den Fokus der Kinder nicht zu überfordern."
+      },
+      {
+        "frage": "Kann man die Übung auch für ältere Kinder anpassen?",
+        "antwort": "Ja, man kann die Größe der No-Play-Zone an die Altersgruppe anpassen. "
+      }
+    ],
+    "grafik_dateiname": "",
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [
+      17
+    ],
+    "schwester_id": 17,
+    "schwester_titel": "POSITIONEN HALTEN: SAFE-ZONE"
+  },
+  {
     "id": 18,
     "titel": "TORERFOLG DURCH HÜTCHEN-BALL-TREFFER VERDOPPELN",
     "quell_trainingseinheit": "Breite schaffen mit Feldzonen",
