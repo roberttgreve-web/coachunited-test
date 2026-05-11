@@ -725,16 +725,20 @@
 
 /* ══════════════════════════════════════════════════════════
    EINHEIT-GENERATOR — Coach-Ansicht (Desktop)
-   Dunkler Hero + warmer Hintergrund + Phasen-Sektionen
+   Kompakter Header-Band + Sidebar + aufgeklappte Karten
    ══════════════════════════════════════════════════════════ */
+
+/* Sidebar auf Mobile ausblenden */
+.dr-sidebar { display: none; }
+.dr-main { flex: 1; min-width: 0; }
 
 @media (min-width: 768px) {
   body:has(.page-hero) {
-    background: #FBFAF6 !important;
+    background: #F5F6F9 !important;
   }
 
   body:has(.page-hero) .container {
-    background: #FBFAF6 !important;
+    background: #F5F6F9 !important;
     border-radius: 0 !important;
     box-shadow: none !important;
     width: 100% !important;
@@ -744,11 +748,8 @@
     overflow: visible !important;
   }
 
-  /* Dunkle TopNav nahtlos zum Hero */
-  body:has(.page-hero) .desktop-topnav {
-    background: #0E1430;
-    border-bottom: none;
-  }
+  /* Dunkle TopNav nahtlos zum Hero-Band */
+  body:has(.page-hero) .desktop-topnav { background: #0E1430; border-bottom: none; }
   body:has(.page-hero) .desktop-topnav-logo { color: rgba(255,255,255,0.9); }
   body:has(.page-hero) .desktop-topnav-link { color: rgba(255,255,255,0.6); }
   body:has(.page-hero) .desktop-topnav-link:hover { background: rgba(255,255,255,0.08); color: #fff; }
@@ -757,84 +758,245 @@
   /* Mobilen Header ausblenden */
   body:has(.page-hero) .header { display: none !important; }
 
-  /* Hero: groß und dunkel */
+  /* Hero: kompaktes dunkles Band */
   body:has(.page-hero) .page-hero {
-    padding: 72px 80px 80px !important;
+    padding: 20px 56px 22px !important;
+    border-bottom: 1px solid rgba(255,255,255,0.08) !important;
   }
 
   body:has(.page-hero) .back-btn {
-    font-size: 14px !important;
-    margin-bottom: 24px !important;
-    color: rgba(255,255,255,0.5) !important;
+    font-size: 12.5px !important;
+    margin-bottom: 8px !important;
+    color: rgba(255,255,255,0.65) !important;
   }
 
   body:has(.page-hero) .hero-title {
-    font-size: 64px !important;
-    font-weight: 800 !important;
-    letter-spacing: -0.04em !important;
-    line-height: 1.0 !important;
+    font-size: 26px !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.015em !important;
+    line-height: 1.2 !important;
   }
 
-  /* Content: zentriert, warm */
+  /* Content: zwei Spalten (Sidebar + Main) */
   body:has(.page-hero) .content {
-    max-width: 900px !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: flex-start !important;
+    gap: 40px !important;
+    max-width: 1280px !important;
     margin: 0 auto !important;
-    padding: 56px 80px 80px !important;
+    padding: 28px 56px 80px !important;
     overflow-y: visible !important;
   }
 
-  /* Session-Badges */
-  body:has(.page-hero) .session-meta {
-    margin-bottom: 32px !important;
+  /* ── Sidebar ── */
+  body:has(.page-hero) .dr-sidebar {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 24px !important;
+    width: 220px !important;
+    flex-shrink: 0 !important;
+    position: sticky !important;
+    top: 28px !important;
+    align-self: flex-start !important;
   }
 
-  /* Phasen-Header zwischen Übungsgruppen */
-  body:has(.page-hero) .gen-phase-header {
+  .dr-sidebar-section {
     display: flex;
     flex-direction: column;
-    gap: 12px;
-    padding: 40px 0 20px;
+    gap: 8px;
   }
 
-  body:has(.page-hero) .gen-phase-header:first-child {
-    padding-top: 0;
+  .dr-sidebar-label {
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #6B7390;
   }
 
-  body:has(.page-hero) .gen-phase-bar {
-    height: 4px;
-    width: 100%;
+  .dr-sidebar-phases {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin-top: 4px;
+  }
+
+  .dr-sidebar-phase { display: flex; flex-direction: column; }
+
+  .dr-sidebar-phase-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 7px 8px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-family: 'Inter Tight', system-ui, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: #0E1430;
+    transition: background 0.12s;
+  }
+  .dr-sidebar-phase-link:hover { background: #E6E8EF; }
+
+  .dr-sidebar-dot {
+    width: 8px;
+    height: 8px;
     border-radius: 2px;
+    flex-shrink: 0;
   }
+
+  .dr-sidebar-ex-link {
+    display: block;
+    padding: 4px 8px 4px 24px;
+    font-family: 'Inter Tight', system-ui, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #3B4565;
+    text-decoration: none;
+    line-height: 1.4;
+    transition: color 0.12s;
+  }
+  .dr-sidebar-ex-link:hover { color: #1E6BFF; }
+
+  .dr-sidebar-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 4px;
+  }
+
+  .dr-sidebar-action-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    background: #fff;
+    border: 1px solid #E6E8EF;
+    border-radius: 6px;
+    font-family: 'Inter Tight', system-ui, sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: #0E1430;
+    cursor: pointer;
+    transition: background 0.12s;
+  }
+  .dr-sidebar-action-btn:hover { background: #F5F6F9; }
+
+  /* ── Phase-Header ── */
+  body:has(.page-hero) .gen-phase-header {
+    flex-direction: row !important;
+    align-items: baseline !important;
+    margin: 32px 0 12px !important;
+    padding: 0 0 10px !important;
+    border-bottom: 2px solid #E6E8EF !important;
+    gap: 0 !important;
+  }
+  body:has(.page-hero) .gen-phase-header:first-child { margin-top: 0 !important; }
+
+  body:has(.page-hero) .gen-phase-aufwaermen { border-bottom-color: #0F3FA8 !important; }
+  body:has(.page-hero) .gen-phase-hauptteil  { border-bottom-color: #1E6BFF !important; }
+  body:has(.page-hero) .gen-phase-spielformat { border-bottom-color: #00B85C !important; }
+
+  body:has(.page-hero) .gen-phase-bar { display: none !important; }
 
   body:has(.page-hero) .gen-phase-label {
-    font-family: 'Inter Tight', system-ui, sans-serif;
-    font-size: 28px;
-    font-weight: 700;
-    letter-spacing: -0.02em;
-    color: #0E1430;
+    font-family: 'Inter Tight', system-ui, sans-serif !important;
+    font-size: 20px !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.015em !important;
+    text-transform: none !important;
+    color: #0E1430 !important;
   }
 
-  /* Übungskarten breiter, schöner */
+  /* ── Exercise Cards ── */
   body:has(.page-hero) .ex-card {
-    border-radius: 16px !important;
-    overflow: hidden !important;
+    border-radius: 8px !important;
+    border: 1px solid #E6E8EF !important;
+    border-top-width: 1px !important;
+    box-shadow: none !important;
+    overflow: visible !important;
+    margin-bottom: 10px !important;
   }
 
-  body:has(.page-hero) .ex-card-header {
-    padding: 24px 24px 20px !important;
+  /* Phasen-Farben der Badges auf Desktop */
+  body:has(.page-hero) .ex-card[data-phase="aufwaermen"] .ex-phase-badge { background: #0F3FA8 !important; }
+  body:has(.page-hero) .ex-card[data-phase="hauptteil"]  .ex-phase-badge { background: #1E6BFF !important; }
+  body:has(.page-hero) .ex-card[data-phase="spielformat"] .ex-phase-badge { background: #00B85C !important; }
+
+  /* Immer geöffnet (kein Accordion) */
+  body:has(.page-hero) .ex-card-body {
+    max-height: none !important;
+    overflow: visible !important;
+    padding: 0 22px 18px !important;
   }
+
+  /* Card Header: kein Klick-Stil */
+  body:has(.page-hero) .ex-card-header {
+    cursor: default !important;
+    padding: 18px 22px 14px !important;
+  }
+  body:has(.page-hero) .ex-card-header:hover { background: #fff !important; }
+
+  body:has(.page-hero) .ex-chevron { display: none !important; }
 
   body:has(.page-hero) .ex-card-title {
-    font-size: 26px !important;
-    padding-right: 36px !important;
+    font-size: 19px !important;
+    padding-right: 0 !important;
+    margin-bottom: 4px !important;
   }
 
-  body:has(.page-hero) .ex-img {
-    max-height: 320px !important;
+  body:has(.page-hero) .ex-card-desc {
+    font-size: 14px !important;
+    line-height: 1.5 !important;
   }
 
-  /* Reroll-Button */
-  body:has(.page-hero) .reroll-wrap {
-    margin-top: 40px !important;
+  /* Bild ausblenden (Platz für Text-Layout) */
+  body:has(.page-hero) .ex-img { display: none !important; }
+
+  /* Skills-Zeile */
+  body:has(.page-hero) .ex-skills {
+    padding: 0 0 10px !important;
+    border-bottom: none !important;
   }
+
+  /* Aufbau / Durchführung nebeneinander */
+  body:has(.page-hero) .dr-sections-grid {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 14px 24px !important;
+    padding-top: 12px !important;
+    border-top: 1px solid #E6E8EF !important;
+    margin-top: 4px !important;
+  }
+
+  body:has(.page-hero) .ex-section { padding: 0 !important; border: none !important; }
+  body:has(.page-hero) .ex-section-head { margin-bottom: 5px !important; }
+  body:has(.page-hero) .ex-section-dot { display: none !important; }
+  body:has(.page-hero) .ex-section-title {
+    font-size: 11px !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.07em !important;
+    text-transform: uppercase !important;
+    color: #6B7390 !important;
+  }
+  body:has(.page-hero) .ex-section-text {
+    font-size: 13.5px !important;
+    line-height: 1.55 !important;
+    color: #3B4565 !important;
+  }
+
+  /* Detail-Link */
+  body:has(.page-hero) .ex-detail-link {
+    margin: 12px 0 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    font-size: 12.5px !important;
+    color: #1E6BFF !important;
+  }
+  body:has(.page-hero) .ex-detail-link:hover { background: none !important; }
+
+  /* Reroll */
+  body:has(.page-hero) .reroll-wrap { margin-top: 24px !important; }
 }

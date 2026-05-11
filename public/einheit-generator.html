@@ -260,19 +260,22 @@
     </div>
 
     <div class="content">
-      <div id="session-meta" class="session-meta"></div>
-      <div id="session-list" class="ex-card-list"></div>
-      <div class="reroll-wrap">
-        <button id="reroll-btn" class="reroll-btn" onclick="reroll()">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-            <polyline points="1 4 1 10 7 10"/><polyline points="23 20 23 14 17 14"/>
-            <path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15"/>
-          </svg>
-          Neu würfeln
-        </button>
-        <p id="no-variations" class="no-variations" style="display:none;">
-          Keine weitere Variation verfügbar.
-        </p>
+      <aside id="dr-sidebar" class="dr-sidebar"></aside>
+      <div class="dr-main">
+        <div id="session-meta" class="session-meta"></div>
+        <div id="session-list" class="ex-card-list"></div>
+        <div class="reroll-wrap">
+          <button id="reroll-btn" class="reroll-btn" onclick="reroll()">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="1 4 1 10 7 10"/><polyline points="23 20 23 14 17 14"/>
+              <path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15"/>
+            </svg>
+            Neu würfeln
+          </button>
+          <p id="no-variations" class="no-variations" style="display:none;">
+            Keine weitere Variation verfügbar.
+          </p>
+        </div>
       </div>
     </div>
 
@@ -425,8 +428,13 @@
       document.getElementById('session-meta').innerHTML = badges
         ? `<div class="session-badges">${badges}</div>` : '';
 
+      // Phasen-Farben: Desktop vs. Mobile
+      const isDesktop = window.innerWidth >= 768;
+      const phaseColors = isDesktop
+        ? { aufwaermen: '#0F3FA8', hauptteil: '#1E6BFF', spielformat: '#00B85C' }
+        : { aufwaermen: '#C2611F', hauptteil: '#0E6A45', spielformat: '#0F3FA8' };
+
       // Übungen nach Phasen gruppieren
-      const phaseColors = { aufwaermen: '#C2611F', hauptteil: '#0E6A45', spielformat: '#0F3FA8' };
       const grouped = {};
       PHASES.forEach(p => { grouped[p.key] = []; });
       session.exercises.forEach((ex, i) => {
@@ -434,31 +442,68 @@
         grouped[phaseKey].push({ ex, i });
       });
 
-      document.getElementById('session-list').innerHTML = PHASES
-        .filter(p => grouped[p.key].length)
-        .map(p => {
+      const activePhases = PHASES.filter(p => grouped[p.key].length);
+
+      document.getElementById('session-list').innerHTML = activePhases
+        .map((p, phaseIdx) => {
           const color = phaseColors[p.key] || '#0E1430';
           const header = `
-            <div class="gen-phase-header">
+            <div class="gen-phase-header gen-phase-${p.key}" id="dr-phase-${phaseIdx}">
               <div class="gen-phase-bar" style="background:${color}"></div>
               <span class="gen-phase-label">${p.label}</span>
             </div>`;
-          const cards = grouped[p.key].map(({ ex, i }) => renderAccordionItem(ex, i)).join('');
+          const cards = grouped[p.key].map(({ ex, i }) => renderAccordionItem(ex, i, phaseColors)).join('');
           return header + cards;
         }).join('');
 
+      // Sidebar befüllen
+      const sidebar = document.getElementById('dr-sidebar');
+      if (sidebar) {
+        const phaseLinks = activePhases.map((p, phaseIdx) => {
+          const color = phaseColors[p.key] || '#0E1430';
+          const exLinks = grouped[p.key].map(({ ex }) =>
+            `<a href="#dr-ex-${ex.id}" class="dr-sidebar-ex-link">${ex.titel}</a>`
+          ).join('');
+          return `
+            <div class="dr-sidebar-phase">
+              <a href="#dr-phase-${phaseIdx}" class="dr-sidebar-phase-link">
+                <span class="dr-sidebar-dot" style="background:${color}"></span>
+                <span>${p.label}</span>
+              </a>
+              ${exLinks}
+            </div>`;
+        }).join('');
+
+        sidebar.innerHTML = `
+          <div class="dr-sidebar-section">
+            <div class="dr-sidebar-label">Inhalt</div>
+            <div class="dr-sidebar-phases">${phaseLinks}</div>
+          </div>
+          <div class="dr-sidebar-section">
+            <div class="dr-sidebar-label">Aktionen</div>
+            <div class="dr-sidebar-actions">
+              <button class="dr-sidebar-action-btn" onclick="window.print()">
+                <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 6V2h8v4M4 12H3a1 1 0 01-1-1V8a2 2 0 012-2h8a2 2 0 012 2v3a1 1 0 01-1 1h-1M4 10h8v4H4z"/>
+                </svg>
+                Drucken
+              </button>
+            </div>
+          </div>`;
+      }
+
       const first = document.querySelector('.ex-card');
-      if (first) first.classList.add('open');
+      if (first && !isDesktop) first.classList.add('open');
     }
 
-    function renderAccordionItem(ex, index) {
+    function renderAccordionItem(ex, index, phaseColors) {
       const phaseKey = PHASES.find(p => p.match === ex.trainingsphase)?.key || 'hauptteil';
       const phaseLabel = PHASES.find(p => p.match === ex.trainingsphase)?.label || ex.trainingsphase;
       const backUrl = encodeURIComponent(window.location.href);
       const href = ex.url_slug ? `/uebung/${ex.url_slug}?back=${backUrl}` : null;
 
-      const phaseColors = { aufwaermen: '#C2611F', hauptteil: '#0E6A45', spielformat: '#0F3FA8' };
-      const phaseColor = phaseColors[phaseKey] || '#0E1430';
+      const _colors = phaseColors || { aufwaermen: '#C2611F', hauptteil: '#0E6A45', spielformat: '#0F3FA8' };
+      const phaseColor = _colors[phaseKey] || '#0E1430';
 
       const jugendStr = (ex.jugend || []).map(j => j.replace('-Jugend', '')).join('·');
 
@@ -473,14 +518,14 @@
         ex.durchfuehrung && { label: 'Durchführung', text: ex.durchfuehrung },
       ].filter(Boolean);
 
-      const sectionsHtml = sections.map(s => `
+      const sectionsHtml = `<div class="dr-sections-grid">${sections.map(s => `
         <div class="ex-section">
           <div class="ex-section-head">
             <span class="ex-section-dot"></span>
             <span class="ex-section-title">${s.label}</span>
           </div>
           <p class="ex-section-text">${s.text}</p>
-        </div>`).join('');
+        </div>`).join('')}</div>`;
 
       const detailLink = href
         ? `<a href="${href}" class="ex-detail-link">
@@ -489,7 +534,7 @@
            </a>` : '';
 
       return `
-        <div class="ex-card phase-${phaseKey}" data-index="${index}">
+        <div class="ex-card phase-${phaseKey}" data-phase="${phaseKey}" data-index="${index}" id="dr-ex-${ex.id}">
           <button class="ex-card-header" onclick="toggleItem(this)">
             <div class="ex-badges">
               <span class="ex-phase-badge" style="background:${phaseColor}">${phaseLabel.toUpperCase()}</span>
