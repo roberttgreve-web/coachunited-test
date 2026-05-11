@@ -986,6 +986,69 @@
     "schwester_titel": "POSITIONEN HALTEN: SAFE-ZONE"
   },
   {
+    "id": 17,
+    "titel": "POSITIONEN HALTEN: SAFE-ZONE",
+    "quell_trainingseinheit": "Breite schaffen mit Feldzonen",
+    "quell_url": "https://coachunited.de/breite-schaffen-mit-feldzonen/",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/01/image-9.jpg",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "Zwei Teams spielen ein Match. Nur der Spieler mit Ball darf sich in der Safe-Zone aufhalten.",
+    "aufbau": "Ein Feld von 20x10m mit Jugendtoren und Torhütern aufbauen. In der Mitte des Feldes ein etwa 4mX4m großes Feld mit Hütchen abstecken. Zwei Teams mit Leibchen. Einen Ball. ",
+    "durchfuehrung": "Es wird ein normales Spiel gespielt. Spieler, die in Ballbesitz kommen, dürfen sich in die Safe Zone in der Mitte begeben. (Nur der Spieler in Ballbesitz darf die Safe-Zone in der Mitte betreten!). Er darf also nicht angegriffen werden. Allerdings muss er den Ball mit einem Pass aus der Safe-Zone spielen, darf also nicht herausdribbeln. Bei Verstößen gibt es Freistoß für die gegnerische Mannschaft.",
+    "varianten": "",
+    "coaching_fokus": "• Überlegt passen, um Mitspieler in der Mitte anzuspielen; • In den freien Raum laufen, wenn Safe-Zone-Spieler den Ball hat",
+    "leichter_machen": "• Vergrößern der Safe-Zone",
+    "schwerer_machen": "• Verkleinerung der Safe-Zone; • Zeitlimit für den Ballbesitz in der Safe-Zone",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Raumverhalten",
+      "Kommunikation"
+    ],
+    "seo_keyword": "Fußballübung Raumverhalten Kinder",
+    "url_slug": "fussballubung-raumverhalten-kinder",
+    "seo_meta_description": "Die 'Positionen halten: Safe-Zone' Fußballübung fördert das Raumverhalten und die Kommunikation von Kindern im Alter von 6 bis 12 Jahren.",
+    "grafik_alt_text": "Zwei Fußballteams spielen ein Match mit einer markierten Schutzzone in der Mitte des Spielfeldes",
+    "grafik_description": "Das Bild zeigt ein Fußballfeld mit einer zentralen, markierten Schutzzone. Zwei Teams spielen ein Spiel, wobei nur der Spieler mit dem Ball die Schutzzone betreten darf.",
+    "grafik_title": "Fußballübung: Positionen halten in der Schutzzone",
+    "grafik_caption": "Kinder trainieren in der 'Positionen halten: Safe-Zone' Übung ihr Raumverhalten und ihre Kommunikation.",
+    "status": "veroeffentlicht",
+    "nachtraeglich_eingefuegt": true,
+    "schwester_ids": [
+      16
+    ],
+    "schwester_id": 16,
+    "schwester_titel": "POSITIONEN HALTEN: NO-PLAY-ZONE",
+    "alt_titel": "Sicher in der Zone: Geschickter Ballbesitz",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler braucht man für diese Übung?",
+        "antwort": "Die Übung eignet sich für 5-7 Spieler. So entsteht genug Bewegung und Dynamik im Spiel."
+      },
+      {
+        "frage": "Wie lange sollte man diese Übung spielen?",
+        "antwort": "Empfohlen sind 10-15 Minuten, damit die Kinder genug Spielzeit in der Schutzzone haben und die Übung gut verstehen."
+      },
+      {
+        "frage": "Für welche Altersgruppe ist diese Übung geeignet?",
+        "antwort": "Die 'Positionen halten: Safe-Zone' Übung eignet sich hervorragend für Kinder im Alter von 8-12 Jahren (F- bis E-Jugend)."
+      }
+    ],
+    "grafik_dateiname": "",
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": ""
+  },
+  {
     "id": 18,
     "titel": "TORERFOLG DURCH HÜTCHEN-BALL-TREFFER VERDOPPELN",
     "quell_trainingseinheit": "Breite schaffen mit Feldzonen",
