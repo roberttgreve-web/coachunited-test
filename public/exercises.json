@@ -4302,5 +4302,68 @@
     ],
     "schwester_id": 126,
     "schwester_titel": "AUS DEM SLALOM IN DEN ANGRIFF"
+  },
+  {
+    "id": 126,
+    "titel": "AUS DEM SLALOM IN DEN ANGRIFF",
+    "quell_trainingseinheit": "Stationen-Warmup und viele Toraktionen",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/06/image-32.png",
+    "grafik_dateiname": "uebung-115-aus-dem-slalom-in-den-angriff.png",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "Angreiferteam läuft Slalom in Richtung Ball, Verteidiger bringen sich unterdessen in Position für das 2 gegen 2.",
+    "aufbau": "30 x 20 Meter Feld mit einem Jugendtor und Torhüter. Zwei Teams jeweils mit Bällen an der gegenüberliegenden Grundlinie. Mittellinie mit zwei Hütchen markieren. Ball auf Höhe der Mittellinie platzieren. Zwei Reihen Slalomhütchen positionieren wie gezeigt. Die zwei Teams jeweils in zwei Reihen aufstellen.",
+    "durchfuehrung": "Team mit Slalomhütchen läuft in zwei Reihen im Slalom in Richtung Ball und nimmt den Ball auf. Verteidigerteam läuft auf direktem Wege in Verteidigungsposition. Dann zwei gegen zwei. Verteidigerteam kann Punkte erzielen, in dem es mit Ball zurück über die Mittellinie dribbelt.",
+    "varianten": "a) Statt Slalom hüpfen oder Hütchen berühren. b) Mindestzahl an Pässen definieren vor dem Torabschluss. c) Slalom-Hütchen entfernen und direktes Wettrennen um den Ball. Spielen:Zweifeldspiel Zweifeldspiel Zwei Teams spielen 6 gegen 6 auf zwei Feldern gleichzeitig. Die Spieler dürfen das Feld wechseln.",
+    "quell_url": "https://coachunited.de/stationen-warmup-und-viele-toraktionen/",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Dribbeln",
+      "Raumverhalten",
+      "Umschalten"
+    ],
+    "coaching_fokus": "• Hohes Tempo; • Schnelles Umschalten in die Defensive; • Statt Slalom hüpfen oder Hütchen berühren.",
+    "leichter_machen": "• Slalom-Hütchen entfernen und direktes Laufen zum Ball; • Verteidiger bieten mehr Platz für Angreifer; • Slalom-Hütchen entfernen und direktes Wettrennen um den Ball",
+    "schwerer_machen": "• Mindestzahl an Pässen definieren vor dem Torabschluss.; • Entfernung zwischen Hütchen verringern für engeren Slalom",
+    "status": "veroeffentlicht",
+    "schwester_ids": [
+      125
+    ],
+    "schwester_id": 125,
+    "schwester_titel": "VOM WETTRENNEN INS 1 GEGEN 1",
+    "alt_titel": "Slalomdribbling in den Torabschluss",
+    "seo_keyword": "Fußballübung Dribbling Kinder",
+    "url_slug": "fussballubung-dribbling-kinder",
+    "seo_meta_description": "Dynamische Fußballübung zum Dribbling, Umschalten und Torabschluss für Kinder von 8-12 Jahren.",
+    "grafik_alt_text": "Zwei Fußballteams führen einen Slalomlauf mit Ballmitnahme durch, um dann im 2-gegen-2 auf das Tor zu spielen.",
+    "grafik_description": "Die Übung fördert das Dribbling, Raumverhalten und Umschalten zwischen Angriff und Verteidigung. Die Kinder absolvieren einen Slalomlauf mit dem Ball, bevor sie in einem 2-gegen-2 auf das Tor spielen.",
+    "grafik_title": "Fußballübung: Slalomdribbling in den Torabschluss",
+    "grafik_caption": "Dynamische Fußballübung zur Verbesserung von Dribbling und Umschalten.",
+    "faq": [
+      {
+        "frage": "Wie passe ich die Übung für jüngere Kinder an?",
+        "antwort": "Für jüngere Kinder können die Slalom-Hütchen weiter auseinanderstehen und das 2-gegen-2 durch ein 1-gegen-1 ersetzt werden."
+      },
+      {
+        "frage": "Wie lange sollte die Übung dauern?",
+        "antwort": "Je nach Alter und Leistungsstand der Kinder empfiehlt sich eine Dauer von 10-15 Minuten."
+      },
+      {
+        "frage": "Lässt sich die Übung auch für ältere Kinder anpassen?",
+        "antwort": "Ja, für ältere Kinder kann man den Slalom enger gestalten oder die Mindestzahl an Pässen erhöhen."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": ""
   }
 ]
