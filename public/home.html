@@ -254,6 +254,7 @@
     .tagline strong { color: #fff; font-weight: 700; }
   </style>
   <link rel="stylesheet" href="/desktop.css">
+  <script src="/desktop-nav.js" defer></script>
   <script src="/feedback-widget.js" defer></script>
 </head>
 <body>
@@ -264,7 +265,8 @@
       </svg>
       <div class="crest-inner">
         <img src="/logo.png" alt="Coach United Logo">
-        <p class="home-tagline-desktop">Erprobte Trainingseinheiten<br>für den Kinderfußball.<br><strong>Keine KI.</strong></p>
+        <h2 class="home-hero-headline">Trainingseinheit<br>in zwei Klicks.</h2>
+        <p class="home-hero-sub">Erprobte Einheiten für den Kinderfußball. Keine KI.</p>
       </div>
     </div>
 
@@ -340,6 +342,15 @@
       </p>
     </div>
   </div>
+
+  <!-- SVG-ClipPath für die Crest-Naht auf Desktop (rechtes Formular-Panel) -->
+  <svg style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true">
+    <defs>
+      <clipPath id="crestSeam" clipPathUnits="objectBoundingBox">
+        <path d="M 0.08,0 L 1,0 L 1,1 L 0.08,1 C 0.04,0.78 0.13,0.62 0.10,0.50 C 0.13,0.38 0.04,0.22 0.08,0 Z" />
+      </clipPath>
+    </defs>
+  </svg>
 
   <script>
     let allExercises = [];

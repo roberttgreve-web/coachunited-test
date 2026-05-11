@@ -329,114 +329,153 @@
 }
 
 /* ══════════════════════════════════════════════════════════
-   HOME — Zwei-Panel-Split
-   Links: dunkle Navy-Branding-Fläche · Rechts: weißes Formular
+   HOME — Foto-Panel-Split (Desktop)
+   Links: Fußball-Foto mit Headline · Rechts: dunkles Formular
    ══════════════════════════════════════════════════════════ */
 
-.home-tagline-desktop { display: none; }
+.home-hero-headline { display: none; }
+.home-hero-sub { display: none; }
 
 @media (min-width: 768px) {
   body:has(.crest-panel) {
     background: #0E1430 !important;
   }
 
+  /* Grid: Nav oben (volle Breite), Panels mitte, Footer unten */
   body:has(.crest-panel) .container {
-    flex-direction: row !important;
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    grid-template-rows: auto 1fr auto !important;
+    grid-template-areas:
+      "topnav topnav"
+      "photo  form"
+      "footer footer" !important;
     min-height: 100vh !important;
     height: 100vh !important;
     width: 100% !important;
     max-width: none !important;
     border-radius: 0 !important;
     box-shadow: none !important;
-    background: #fff !important;
+    background: #0E1430 !important;
     overflow: hidden !important;
+    flex-direction: unset !important;
   }
 
-  /* Linkes Panel: Branding */
-  body:has(.crest-panel) .crest-panel {
-    width: 420px !important;
-    height: 100vh !important;
-    flex-shrink: 0 !important;
-    overflow: hidden !important;
+  /* Nav: weiß, volle Breite */
+  body:has(.crest-panel) .desktop-topnav {
+    grid-area: topnav !important;
+    background: #ffffff !important;
+    border-bottom: 1px solid #e8edf2 !important;
+  }
+
+  body:has(.crest-panel) .desktop-topnav-logo { color: #003D82 !important; }
+  body:has(.crest-panel) .desktop-topnav-link { color: #555 !important; }
+  body:has(.crest-panel) .desktop-topnav-link:hover { background: #f0f4ff !important; color: #003D82 !important; }
+  body:has(.crest-panel) .desktop-topnav-link.active { background: #003D82 !important; color: #fff !important; }
+
+  /* Footer: dunkel, volle Breite */
+  body:has(.crest-panel) .desktop-footer {
+    grid-area: footer !important;
     background: #0E1430 !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    border-right: 1px solid rgba(255,255,255,0.06) !important;
+    border-top: 1px solid rgba(255,255,255,0.08) !important;
+    margin-top: 0 !important;
+  }
+
+  body:has(.crest-panel) .desktop-footer-link { color: rgba(255,255,255,0.45) !important; }
+  body:has(.crest-panel) .desktop-footer-link:hover { color: #fff !important; }
+  body:has(.crest-panel) .desktop-footer-sep { color: rgba(255,255,255,0.18) !important; }
+
+  /* Linkes Panel: Fußball-Foto */
+  body:has(.crest-panel) .crest-panel {
+    grid-area: photo !important;
+    position: relative !important;
+    width: 100% !important;
+    height: 100% !important;
+    background: #0E1430 url('/hero-photo.jpg') center/cover no-repeat !important;
+    overflow: hidden !important;
+    flex-shrink: unset !important;
+  }
+
+  /* Gradient overlay */
+  body:has(.crest-panel) .crest-panel::before {
+    content: '' !important;
+    position: absolute !important;
+    inset: 0 !important;
+    background: linear-gradient(150deg, rgba(14,20,48,0.72) 0%, rgba(14,20,48,0.28) 100%) !important;
+    z-index: 1 !important;
   }
 
   body:has(.crest-panel) .crest-shape { display: none !important; }
 
   body:has(.crest-panel) .crest-inner {
-    position: static !important;
+    position: absolute !important;
+    inset: 0 !important;
+    z-index: 2 !important;
     display: flex !important;
     flex-direction: column !important;
     align-items: flex-start !important;
-    justify-content: center !important;
-    padding: 0 56px !important;
-    width: 100% !important;
-    height: auto !important;
-    gap: 0 !important;
-  }
-
-  body:has(.crest-panel) .crest-inner img {
-    width: 72px !important;
-    height: 72px !important;
-    object-fit: contain !important;
-    margin-bottom: 36px;
-  }
-
-  body:has(.crest-panel) .home-tagline-desktop {
-    display: block;
-    font-size: 18px;
-    font-weight: 500;
-    color: rgba(255,255,255,0.5);
-    line-height: 1.7;
-    letter-spacing: -0.01em;
-  }
-
-  body:has(.crest-panel) .home-tagline-desktop strong {
-    color: #fff;
-    font-weight: 700;
-  }
-
-  /* Rechtes Panel: Formular */
-  body:has(.crest-panel) .content {
-    flex: 1 !important;
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: center !important;
-    align-items: flex-start !important;
+    justify-content: flex-end !important;
     padding: 64px !important;
-    background: #fff !important;
+    gap: 14px !important;
+    width: 100% !important;
+    height: 100% !important;
+    padding-bottom: 64px !important;
+  }
+
+  /* Logo in TopNav — im Foto-Panel ausblenden */
+  body:has(.crest-panel) .crest-inner img { display: none !important; }
+
+  /* Große Headline auf dem Foto */
+  body:has(.crest-panel) .home-hero-headline {
+    display: block !important;
+    font-family: 'Inter Tight', system-ui, sans-serif !important;
+    font-size: 52px !important;
+    font-weight: 800 !important;
+    color: #ffffff !important;
+    line-height: 1.05 !important;
+    letter-spacing: -0.04em !important;
+    margin: 0 !important;
+  }
+
+  /* Untertitel unter Headline */
+  body:has(.crest-panel) .home-hero-sub {
+    display: block !important;
+    font-size: 15px !important;
+    font-weight: 500 !important;
+    color: rgba(255,255,255,0.60) !important;
+    line-height: 1.5 !important;
+    margin: 0 !important;
+  }
+
+  /* Rechtes Panel: dunkles Formular mit Crest-Naht */
+  body:has(.crest-panel) .content {
+    grid-area: form !important;
+    background: #0E1430 !important;
+    clip-path: url(#crestSeam) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: flex-start !important;
+    padding: 64px 72px 64px 132px !important;
     max-width: none !important;
     margin: 0 !important;
     overflow-y: auto !important;
-    height: 100vh !important;
+    height: 100% !important;
   }
 
   body:has(.crest-panel) .selects {
     width: 100%;
-    max-width: 440px;
+    max-width: 400px;
   }
 
   body:has(.crest-panel) .tagline { display: none !important; }
 
-  /* Labels + CTA auf weißem Hintergrund sichtbar machen */
-  body:has(.crest-panel) .field-label {
-    color: #0E1430 !important;
-  }
+  /* Labels + Felder auf dunklem Hintergrund */
+  body:has(.crest-panel) .field-label { color: #ffffff !important; }
+  body:has(.crest-panel) .field-optional { color: rgba(255,255,255,0.45) !important; }
 
-  body:has(.crest-panel) .field-optional {
-    color: rgba(14,20,48,0.4) !important;
-  }
-
+  /* CTA immer blau auf Desktop */
   body:has(.crest-panel) .cta-btn {
-    background: #E6E8EF !important;
-    color: #9AA3B0 !important;
-  }
-
-  body:has(.crest-panel) .cta-btn.active {
     background: #1E6BFF !important;
     color: #fff !important;
     cursor: pointer !important;
