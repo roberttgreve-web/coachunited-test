@@ -2652,6 +2652,69 @@
     "schwester_titel": "PARALLELER TORSCHUSS NACH FARBSIGNAL"
   },
   {
+    "id": 44,
+    "titel": "PARALLELER TORSCHUSS NACH FARBSIGNAL",
+    "quell_trainingseinheit": "Vom sauberen Zweikampf in den Torschuss",
+    "quell_url": "https://coachunited.de/vom-sauberen-zweikampf-in-den-torschuss/",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/12/image-1.jpg",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "Zwei Spieler dribbeln in das Schussfeld und schließen auf ein Tor ihrer Wahl ab.",
+    "aufbau": "Zwei Jugendtore aufbauen. Torhüter zuordnen. Etwa 10m vor den Toren zentral ein 10mX10m großes Schussfeld markieren. Etwa 5m dahinter drei Starthütchen platzieren. Alle drei Gruppen mit Bällen. ",
+    "durchfuehrung": "Trainer ruft zwei Farben. Die ersten Spieler der aufgerufenen Farbgruppe dribbeln ins Schussfeld und schießen auf eines der beiden Tore. Schießen beide gleichzeitig oder kurz hintereinander auf das gleiche Tor, zählt der Punkt für beide nicht. Welches Team erzielt die meisten Tore?",
+    "varianten": "",
+    "coaching_fokus": "• Zweiten Spieler im Blick haben, um Kollisionen zu vermeiden; • Schneller Abschluss nach Eindringen ins Schussfeld",
+    "leichter_machen": "• Vergrößerung des Schussfeldes",
+    "schwerer_machen": "• Aufstellung von Hindernissen im Schussfeld",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Ballkontrolle",
+      "Dribbeln",
+      "Torschuss",
+      "Raumverhalten"
+    ],
+    "seo_keyword": "Fußballübung Torschuss Kinder",
+    "url_slug": "fussballubung-torschuss-kinder",
+    "seo_meta_description": "Dynamische Fußballübung zum Torschusstraining für Kinder von 6-12 Jahren. Mit Farbsignal und Wettkampfcharakter. Perfekt für G- bis E-Jugend.",
+    "grafik_alt_text": "Zwei Fußballspieler dribbeln in ein Schussfeld und schießen auf ein Tor ihrer Wahl",
+    "grafik_description": "Die Kinder dribbeln im Wettbewerb gegeneinander in ein Schussfeld und schießen auf ein Tor ihrer Wahl. Der Trainer gibt ein Farbsignal, welche Kinder gerade am Zug sind.",
+    "grafik_title": "Fußballübung Torschuss mit Farbsignal",
+    "grafik_caption": "Paralleler Torschuss nach Farbsignal - eine dynamische Übung für Kinder",
+    "status": "veroeffentlicht",
+    "nachtraeglich_eingefuegt": true,
+    "schwester_id": 43,
+    "schwester_ids": [
+      43
+    ],
+    "schwester_titel": "PARALLELER TORSCHUSS",
+    "alt_titel": "Torschuss-Duell mit Farbsignal",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler können gleichzeitig in der Übung mitmachen?",
+        "antwort": "Ideal sind 8-16 Spieler, die in drei gleichgroße Teams eingeteilt werden. So haben alle ausreichend Schussversuche."
+      },
+      {
+        "frage": "Wie lange sollte die Übung dauern?",
+        "antwort": "Etwa 10-15 Minuten, damit die Kinder genug Wiederholungen haben."
+      },
+      {
+        "frage": "Kann man diese Übung auch für ältere Kinder anpassen?",
+        "antwort": "Ja, man kann die Abstände, Geschwindigkeit und Präzisionsanforderungen steigern, um die Übung für D-Junioren herausfordernder zu gestalten."
+      }
+    ],
+    "grafik_dateiname": "",
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": ""
+  },
+  {
     "id": 45,
     "titel": "5 BÄLLE-SPIEL",
     "quell_trainingseinheit": "Vom sauberen Zweikampf in den Torschuss",
