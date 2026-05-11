@@ -1,6 +1,7 @@
 {
   "buildCommand": "",
   "outputDirectory": "public",
+  "ignoreCommand": "git log -1 --pretty=%s | grep -q \"^publisher:\"",
   "headers": [
     {
       "source": "/(.*)",
@@ -69,6 +70,10 @@
     {
       "source": "/umgang-mit-ki",
       "destination": "/umgang-mit-ki.html"
+    },
+    {
+      "source": "/uebung-einreichen",
+      "destination": "/uebung-einreichen.html"
     }
   ]
 }
