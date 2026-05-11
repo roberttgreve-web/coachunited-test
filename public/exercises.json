@@ -2279,6 +2279,68 @@
     "quell_kategorie": ""
   },
   {
+    "id": 38,
+    "titel": "MIT GEZIELTEN FERNSCHÜSSEN GEWINNEN",
+    "quell_trainingseinheit": "Das Mittelfeld kontrollieren",
+    "quell_url": "https://coachunited.de/das-mittelfeld-kontrollieren/",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/12/image-7.jpg",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "Zwei Teams spielen 4 gegen 4. Sie dürfen Tore aber nur per Fernschuss auf Minitore erzielen.",
+    "aufbau": "20mx40m großes Feld mit Hütchen markieren. Darin eine etwa 20mx30m große Mittelzone platzieren. Zwei Minitore 5 bis 10m (je nach Spielstärke) hinter der Grundlinie aufstellen. Zwei Teams mit Leibchen und Ball ausstatten. Bei größeren Gruppen zwei Felder parallel oder mit Auswechselteam agieren.",
+    "durchfuehrung": "Teams spielen 4 gegen 4 auf das gesamte Feld. Tore dürfen jedoch nur aus der Mittelzone heraus per Fernschuss erzielt werden.",
+    "varianten": "a) Distanz der Tore verändern. b) Zweiten ball einspielen.         c) Gruppe verkleinern auf 2 gegen 2.",
+    "coaching_fokus": "• Körperhaltung beim Torschuss; • Smarte Pässe, um Mitspieler in gute Schussposition zu bringen",
+    "leichter_machen": "• Größere Tore; • Distanz der Tore zum Spielfeld verringern",
+    "schwerer_machen": "• Zweiten Ball einführen; • Gruppe auf 2 gegen 2 verkleinern",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend"
+    ],
+    "skills": [
+      "Ballkontrolle",
+      "Torschuss",
+      "Raumverhalten",
+      "Taktik"
+    ],
+    "seo_keyword": "Fußballübung Torschuss Kinder",
+    "url_slug": "fussballubung-torschuss-kinder",
+    "seo_meta_description": "Zwei Teams spielen 4 gegen 4 Fußball auf einem Feld mit Minitoren zum Torschuss-Training",
+    "grafik_alt_text": "Fußballübung Torschuss mit Minitoren für Kinder",
+    "grafik_description": "Die Übung zeigt zwei Fußballteams, die 4 gegen 4 auf einem abgegrenzten Feld spielen. In der Mitte befindet sich eine Zone, aus der heraus per Fernschuss auf die Minitore an den Grundlinien geschossen werden muss.",
+    "grafik_title": "Fernschuss-Training mit Minitoren fördert Ballkontrolle und Taktik bei Kindern.",
+    "grafik_caption": "Die Übung zeigt zwei Fußballteams, die 4 gegen 4 auf einem abgegrenzten Feld spielen. In der Mitte befindet sich eine Zone, aus der heraus per Fernschuss auf die Minitore an den Grundlinien geschossen werden muss.",
+    "status": "veroeffentlicht",
+    "nachtraeglich_eingefuegt": true,
+    "alt_titel": "Fernschuss-Turnier mit Minitoren",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler sind optimal für diese Übung?",
+        "antwort": "Für Kinder im Alter von 6-12 Jahren eignen sich Mannschaftsgrößen von 5 gegen 5 gut. So haben alle Spieler viel Ballkontakt. Bei größeren Gruppen ein drittes Team oder ein zweites Feld aufbauen. "
+      },
+      {
+        "frage": "Wie lange dauert die Übung?",
+        "antwort": "Die Übungsdauer sollte etwa 15-20 Minuten betragen, damit die Kinder konzentriert bleiben können."
+      },
+      {
+        "frage": "Kann man die Übung auch für ältere Kinder anpassen?",
+        "antwort": "Ja, man kann die Distanz zu den Toren oder die Größe des Spielfelds erhöhen, um die Schwierigkeit für D- oder C-Jugendliche anzupassen."
+      }
+    ],
+    "grafik_dateiname": "",
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [
+      39
+    ],
+    "schwester_id": 39,
+    "schwester_titel": "AUS DEM MITTELFELD INS SPIELGESCHEHEN"
+  },
+  {
     "id": 40,
     "titel": "IN DER RICHTIGEN ANZAHL EINLAUFEN UND SPIELEN",
     "quell_trainingseinheit": "Das Mittelfeld kontrollieren",
