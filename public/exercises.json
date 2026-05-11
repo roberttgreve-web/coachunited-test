@@ -3937,5 +3937,67 @@
     ],
     "schwester_id": 108,
     "schwester_titel": "EINFACHES DRIBBELN UND PASSEN MIT TEMPO"
+  },
+  {
+    "id": 110,
+    "titel": "ERST TRICKSEN, DANN JUBELN",
+    "quell_trainingseinheit": "Tricks, Fernschüsse – und ab in die Jubelzone",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/07/image-8.png",
+    "grafik_dateiname": "uebung-098-erst-tricksen-dannjubeln.png",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "Spieler dribbelt und geht am Hütchen mit einem Trick oder einer Finte vorbei. Danach schließt er ab und darf bei Torerfolg seinen Lieblingsjubel zeigen.",
+    "aufbau": "Gruppe mit Bällen an Hütchen postieren. Etwa 20m entfernt ein Jugendtor mit Torhüter platzieren. Etwa 8m vor dem Jugendtor zentral ein weiteres Hütchen aufstellen. Seitlich vom Tor ein kleines Jubelfeld mit vier Hütchen markieren.",
+    "durchfuehrung": "Spieler dribbelt zum zentralen Hütchen und geht daran mit einem Lieblingstrick vorbei (Übersteiger, Zidane-Rolle, Körpertäuschung, Lupfer etc). Nach erfolgreichem Torabschluss läuft der Spieler in das Jubelfeld und darf seinen Lieblingsjubel zeigen.",
+    "varianten": "a) Angreifer wird nach dem Jubel zum Verteidiger (ersetzt das Hütchen). b) Trick/Finte vorgeben. c) Torwart darf rauskommen, Angreifer muss Torwart umkurven (kein Fernschuss) TRAINER-PASS ZUMTORVERARBEITEN TRAINER-PASS ZUMTORVERARBEITEN Spieler passt zum Trainer, läuft in die Torzone und versucht, den Pass vom Trainer in ein Tor zu verwandeln.",
+    "quell_url": "https://coachunited.de/tricks-fernschusse-und-ab-in-die-jubelzone/",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend",
+      "E-Jugend"
+    ],
+    "skills": [
+      "Ballkontrolle",
+      "Dribbeln",
+      "Torschuss",
+      "Koordination"
+    ],
+    "coaching_fokus": "• Kreativität der Tricks loben; • Spaß haben; • Kopf heben bei den Torschüssen",
+    "leichter_machen": "• Reduziere die Distanz zum Tor; • Erlaube den Spielern, den Schussfuß frei zu wählen",
+    "schwerer_machen": "• Stelle einen Verteidiger zwischen Spieler und Tor; • Fordere einen Torwartspiel-Trick wie Tunnel oder Heber",
+    "status": "veroeffentlicht",
+    "alt_titel": "Finte, Tor, Jubel - Kreatives Abschlussduell",
+    "seo_keyword": "Fußballübung Dribbling Kinder",
+    "url_slug": "fussballuebung-dribbling-kinder",
+    "seo_meta_description": "Junge führt Ball am Hütchen vorbei und jubelt nach Torschuss",
+    "grafik_alt_text": "Dribbling-Übung mit kreativem Torjubel für Kinder",
+    "grafik_description": "Grafik zeigt einen jungen Fußballspieler, der den Ball am Hütchen vorbeidribbelt und anschließend nach einem erfolgreichen Torschuss einen Jubeltanz aufführt.",
+    "grafik_title": "Übung zur Förderung von Dribbling, Torschuss und Kreativität für Nachwuchsfußballer.",
+    "grafik_caption": "Grafik zeigt einen jungen Fußballspieler, der den Ball am Hütchen vorbeidribbelt und anschließend nach einem erfolgreichen Torschuss einen Jubeltanz aufführt.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler können an dieser Übung teilnehmen?",
+        "antwort": "Die Übung ist für Gruppen von 6-12 Spielern geeignet. Bei größeren Gruppen kann ein zweites Tor. "
+      },
+      {
+        "frage": "Wie lange sollte die Übung dauern?",
+        "antwort": "Je nach Alter und Leistungsstand der Kinder empfiehlt sich eine Dauer von 10-15 Minuten pro Durchgang. Die Übung kann mehrmals wiederholt werden."
+      },
+      {
+        "frage": "Kann man die Übung auch für ältere Kinder anpassen?",
+        "antwort": "Ja, durch Erhöhung der Distanz zum Tor, Einbinden eines Torhüters oder Vorgabe bestimmter Tricks lässt sich die Übung auch für D- und C-Jugendspieler herausfordernder gestalten."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [
+      111
+    ],
+    "schwester_id": 111,
+    "schwester_titel": "TRAINER-PASS ZUMTORVERARBEITEN"
   }
 ]
