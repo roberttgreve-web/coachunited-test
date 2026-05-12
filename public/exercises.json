@@ -2827,9 +2827,73 @@
     "original_coaching_fokus": "",
     "ist_gecrawlt": false,
     "quell_kategorie": "",
-    "schwester_ids": [],
-    "schwester_id": null,
-    "schwester_titel": null
+    "schwester_ids": [
+      47
+    ],
+    "schwester_id": 47,
+    "schwester_titel": "KEGEL-SCHLACHT"
+  },
+  {
+    "id": 47,
+    "titel": "KEGEL-SCHLACHT",
+    "quell_trainingseinheit": "Überzahl gemeinsam ausspielen",
+    "quell_url": "https://coachunited.de/uberzahl-gemeinsam-ausspielen/",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/11/image-18.jpg",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "Teams versuchen, alle Kegel der gegnerischen Mannschaft abzuräumen.",
+    "aufbau": "Teams diagonal voneinander platzieren. In etwa 5m Abstand (kann je nach Spielstärke variieren) 6 Hütchen aufstellen.",
+    "durchfuehrung": "Die Spieler der Teams versuchen nacheinander mit dem Ball die Hütchen des gegnerischen Teams zu treffen. Welches Team hat zuerst alle sechs Kegel der gegnerischen Mannschaft getroffen?",
+    "varianten": "a) Ball mit der Hand rollen, b) nur mit rechts/links schießen.",
+    "coaching_fokus": "• Konzentrierte Schüsse; • Augen zum Ziel, nicht auf den Ball schauen",
+    "leichter_machen": "• Ball mit der Hand rollen; • Reduzierung der Kegelanzahl von 6 auf 4",
+    "schwerer_machen": "• Nur mit dem schwächeren Fuß schießen; • Erhöhung des Abstands von 5m auf 8m",
+    "jugend": [
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Torschuss",
+      "Koordination"
+    ],
+    "seo_keyword": "Fußballübung Torschuss Kinder",
+    "url_slug": "zielschießen-duell-fussballubung-kinder",
+    "seo_meta_description": "Zwei Fußballteams konkurrieren darum, die Kegel des Gegners abzuschießen",
+    "grafik_alt_text": "Fußballübung Zielschießen-Duell für Kinder",
+    "grafik_description": "Die Spieler stehen in zwei Teams diagonal voneinander und versuchen, die Kegel des gegnerischen Teams abzuschießen. Es ist eine dynamische Übung, die Torschuss-Technik, Konzentration und Teamarbeit fördert.",
+    "grafik_title": "Kinder-Fußballübung: Zielschießen-Duell",
+    "grafik_caption": "Die Spieler stehen in zwei Teams diagonal voneinander und versuchen, die Kegel des gegnerischen Teams abzuschießen. Es ist eine dynamische Übung, die Torschuss-Technik, Konzentration und Teamarbeit fördert.",
+    "status": "veroeffentlicht",
+    "nachtraeglich_eingefuegt": true,
+    "alt_titel": "Zielschießen-Duell",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler braucht man für diese Übung?",
+        "antwort": "Die Übung ist für 8-12 Spieler geeignet, aufgeteilt in zwei gleich große Teams. Bei größeren Gruppen kann eine dritte Kegelgruppe aufgebaut werden."
+      },
+      {
+        "frage": "Wie lange dauert die Übung?",
+        "antwort": "Die Übung kann 10-15 Minuten dauern. Sie lässt sich je nach Spielstand und Konzentration der Kinder anpassen."
+      },
+      {
+        "frage": "Kann man die Übung auch für jüngere Kinder nutzen?",
+        "antwort": "Ja, für die G- und F-Jugend kann man die Abstände und Kegelanzahl reduzieren, um die Übung an das Können der Kinder anzupassen."
+      }
+    ],
+    "grafik_dateiname": "",
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [
+      46
+    ],
+    "schwester_id": 46,
+    "schwester_titel": "KEGEL-RENNEN"
   },
   {
     "id": 48,
@@ -3076,9 +3140,73 @@
     "original_coaching_fokus": "",
     "ist_gecrawlt": false,
     "quell_kategorie": "",
-    "schwester_ids": [],
-    "schwester_id": null,
-    "schwester_titel": null
+    "schwester_ids": [
+      52
+    ],
+    "schwester_id": 52,
+    "schwester_titel": "SLALOM-WETTRENNEN"
+  },
+  {
+    "id": 52,
+    "titel": "SLALOM-WETTRENNEN",
+    "quell_trainingseinheit": "Den Ball in der Torzone verarbeiten",
+    "quell_url": "https://coachunited.de/den-ball-in-der-torzone-verarbeiten/",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/11/image-14.jpg",
+    "trainingsphase": "Aufwärmen",
+    "kurzbeschreibung": "Zwei Teams treten im Slalom-Rennen gegeneinander an.",
+    "aufbau": "Im Abstand von jeweils etwa 8 Metern 6 Hütchen aufstellen. Etwa 15m gegenüber parallel die gleiche Reihe Hütchen aufstellen. Zwei Teams am ersten Hütchen platzieren. Jedes Kind mit Ball.",
+    "durchfuehrung": "Der erste Spieler startet in ein Dribbling mit Ball in den Slalom-Parcours. Der nächste Spieler darf genau starten, wenn der Spieler vor ihm das letzte Hütchen erreicht hat. Welches Team ist schneller fertig?",
+    "varianten": "a) Nur mit links/rechts dribbeln. Rückwärts den Ball ziehen. Eine volle Runde um jedes Hütchen dribbeln. b) Nur ein Ball pro Gruppe und mit Ballübergabe (wie Staffelübergabe).",
+    "coaching_fokus": "• Balance zwischen Tempo und genauer Ballführung; • Kleine, schnelle Schritte beim Slalomdribbeln",
+    "leichter_machen": "• Größere Abstände zwischen den Hütchen",
+    "schwerer_machen": "• Rückwärtsdribbeln zwischen den Hütchen; • Nur mit Innenseite/Außenseite des Fußes dribbeln; • Nur ein Ball pro Gruppe und mit Ballübergabe (wie Staffelübergabe).",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend"
+    ],
+    "skills": [
+      "Ballkontrolle",
+      "Dribbeln",
+      "Koordination",
+      "Schnelligkeit"
+    ],
+    "seo_keyword": "Fußballübung Slalom-Wettrennen Kinder",
+    "url_slug": "fussballubung-slalom-wettrennen-kinder",
+    "seo_meta_description": "Zwei Kinder-Fußballteams in blau und rot führen ein Slalom-Wettrennen mit Bällen durch.",
+    "grafik_alt_text": "Slalom-Wettrennen im Kinder-Fußballtraining",
+    "grafik_description": "Das Bild zeigt zwei Kinder-Fußballteams, die sich in einem Slalom-Wettrennen mit Bällen messen. Die Spieler tragen farblich unterschiedliche Trikots und dribbeln nacheinander durch die aufgestellten Hütchen.",
+    "grafik_title": "Dynamisches Slalom-Wettrennen fördert das Ballgefühl und die Schnelligkeit im Kinder-Fußballtraining.",
+    "grafik_caption": "Das Bild zeigt zwei Kinder-Fußballteams, die sich in einem Slalom-Wettrennen mit Bällen messen. Die Spieler tragen farblich unterschiedliche Trikots und dribbeln nacheinander durch die aufgestellten Hütchen.",
+    "status": "veroeffentlicht",
+    "nachtraeglich_eingefuegt": true,
+    "alt_titel": "Schnelles Slalom-Rennen im Teamwettbewerb",
+    "faq": [
+      {
+        "frage": "Wie viele Kinder können an dieser Übung teilnehmen?",
+        "antwort": "Die Übung ist für 8-12 Kinder in zwei gleich großen Teams geeignet. Bei mehr Kindern können mehrere Parcours parallel aufgebaut werden."
+      },
+      {
+        "frage": "Wie lange sollte man diese Übung durchführen?",
+        "antwort": "Je nach Altersgruppe und Intensität empfehlen sich 5-10 Minuten pro Durchgang. Die Kinder sollten nicht zu lange warten müssen, bis sie an der Reihe sind."
+      },
+      {
+        "frage": "Kann man diese Übung auch für ältere Kinder nutzen?",
+        "antwort": "Ja, durch Anpassungen wie engere Abstände, schnelleres Tempo oder Zusatzaufgaben lässt sich die Übung gut an D- oder C-Jugendliche anpassen."
+      }
+    ],
+    "grafik_dateiname": "",
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [
+      51
+    ],
+    "schwester_id": 51,
+    "schwester_titel": "6 DUELLE, 3 MINUTEN"
   },
   {
     "id": 55,
