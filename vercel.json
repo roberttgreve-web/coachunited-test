@@ -74,6 +74,10 @@
     {
       "source": "/uebung-einreichen",
       "destination": "/uebung-einreichen.html"
+    },
+    {
+      "source": "/danke",
+      "destination": "/danke.html"
     }
   ]
 }
