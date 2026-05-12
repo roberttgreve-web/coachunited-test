@@ -229,19 +229,11 @@
         <p class="form-section-title">Über dich</p>
 
         <div class="field">
-          <label class="field-label" for="vorname">
-            Dein Vorname
+          <label class="field-label" for="trainer-name">
+            Dein Name
             <span class="field-optional">wird nicht veröffentlicht</span>
           </label>
-          <input type="text" id="vorname" name="vorname" placeholder="z.B. Max" required>
-        </div>
-
-        <div class="field">
-          <label class="field-label" for="nachname">
-            Dein Nachname
-            <span class="field-optional">wird nicht veröffentlicht</span>
-          </label>
-          <input type="text" id="nachname" name="nachname" placeholder="z.B. Mustermann" required>
+          <input type="text" id="trainer-name" name="trainer_name" placeholder="z.B. Max Mustermann" required>
         </div>
 
         <div class="field">
@@ -300,59 +292,14 @@
 
         <div class="or-divider"><span>oder</span></div>
 
-        <p class="schriftlich-title">Schriftlich einreichen</p>
+        <p class="schriftlich-title">Oder schriftlich beschreiben</p>
 
         <div class="field">
-          <label class="field-label" for="uebung-titel">
-            Titel der Übung
+          <label class="field-label" for="beschreibung">
+            Beschreibe deine Übung
             <span class="field-optional">Optional</span>
           </label>
-          <input type="text" id="uebung-titel" name="uebung_titel" placeholder="z.B. Passdreiecke mit Abschluss" oninput="checkReady()">
-        </div>
-
-        <div class="field">
-          <label class="field-label" for="trainingsphase">
-            Trainingsphase
-            <span class="field-optional">Optional</span>
-          </label>
-          <select id="trainingsphase" name="trainingsphase">
-            <option value="">— bitte wählen —</option>
-            <option value="Aufwärmen">Aufwärmen</option>
-            <option value="Hauptteil">Hauptteil</option>
-            <option value="Spielformat">Spielformat</option>
-          </select>
-        </div>
-
-        <div class="field">
-          <label class="field-label" for="jugend">
-            Jugend / Altersgruppe
-            <span class="field-optional">Optional</span>
-          </label>
-          <select id="jugend" name="jugend">
-            <option value="">— bitte wählen —</option>
-            <option value="U6">U6 (Bambini)</option>
-            <option value="U8">U8 (F-Jugend)</option>
-            <option value="U10">U10 (E-Jugend)</option>
-            <option value="U12">U12 (D-Jugend)</option>
-            <option value="U15">U15+ (C-Jugend &amp; älter)</option>
-            <option value="Alle">Alle Altersgruppen</option>
-          </select>
-        </div>
-
-        <div class="field">
-          <label class="field-label" for="aufbau">
-            Aufbau
-            <span class="field-optional">Optional</span>
-          </label>
-          <textarea id="aufbau" name="aufbau" placeholder="Wie wird das Spielfeld / die Übung aufgebaut?"></textarea>
-        </div>
-
-        <div class="field">
-          <label class="field-label" for="durchfuehrung">
-            Durchführung
-            <span class="field-optional">Optional</span>
-          </label>
-          <textarea id="durchfuehrung" name="durchfuehrung" placeholder="Wie läuft die Übung ab?"></textarea>
+          <textarea id="beschreibung" name="beschreibung" placeholder="Aufbau, Ablauf, Variationen …" oninput="checkReady()"></textarea>
         </div>
 
         <div class="field">
@@ -370,7 +317,7 @@
               <span>Bild auswählen</span>
               <small>JPG, PNG oder PDF · max. 5 MB</small>
             </div>
-            <input type="file" id="foto-upload" name="attachment" accept="image/*,.pdf" onchange="showFileName(this, 'foto-name')">
+            <input type="file" id="foto-upload" name="foto" accept="image/*,.pdf" onchange="showFileName(this, 'foto-name')">
           </label>
           <div class="file-name" id="foto-name"></div>
         </div>
@@ -526,19 +473,18 @@
     }
 
     function checkReady() {
-      const vorname = document.getElementById('vorname').value.trim();
-      const nachname = document.getElementById('nachname').value.trim();
+      const name = document.getElementById('trainer-name').value.trim();
       const email = document.getElementById('trainer-email').value.trim();
       const legal = document.getElementById('legal-check').checked;
       const hasAudio = !!recordedBlob || !!document.getElementById('audio-upload').files[0];
-      const hasTitel = !!document.getElementById('uebung-titel').value.trim();
+      const hasBeschreibung = !!document.getElementById('beschreibung').value.trim();
       const btn = document.getElementById('submit-btn');
-      const ready = vorname && nachname && email && legal && (hasAudio || hasTitel);
+      const ready = name && email && legal && (hasAudio || hasBeschreibung);
       btn.disabled = !ready;
       btn.classList.toggle('ready', ready);
     }
 
-    ['vorname', 'nachname', 'trainer-email'].forEach(id => {
+    ['trainer-name', 'trainer-email'].forEach(id => {
       document.getElementById(id).addEventListener('input', checkReady);
     });
 
@@ -550,16 +496,14 @@
       btn.classList.add('loading');
       btn.textContent = 'Wird gesendet…';
 
-      const vorname = document.getElementById('vorname').value.trim();
-      const nachname = document.getElementById('nachname').value.trim();
-      const name = vorname + ' ' + nachname;
+      const name = document.getElementById('trainer-name').value.trim();
       const webname = document.getElementById('webname').value.trim();
-      const titel = document.getElementById('uebung-titel').value.trim();
+      const beschreibung = document.getElementById('beschreibung').value.trim();
       const hasAudio = !!recordedBlob || !!document.getElementById('audio-upload').files[0];
 
-      const subject = titel
-        ? 'Neue Übungs-Einreichung: ' + titel
-        : 'Neue Übungs-Einreichung (Sprachnachricht) von ' + name;
+      const subject = hasAudio
+        ? 'Neue Übungs-Einreichung (Sprachnachricht) von ' + name
+        : 'Neue Übungs-Einreichung von ' + name;
 
       const formData = new FormData();
       formData.append('access_key', '178bfb57-6bf5-45c0-9788-064568110b35');
@@ -568,24 +512,19 @@
       formData.append('trainer_name', name);
       if (webname) formData.append('webname', webname);
       formData.append('trainer_email', document.getElementById('trainer-email').value.trim());
-      if (titel) formData.append('uebung_titel', titel);
-      formData.append('trainingsphase', document.getElementById('trainingsphase').value);
-      formData.append('jugend', document.getElementById('jugend').value);
-      formData.append('aufbau', document.getElementById('aufbau').value.trim());
-      formData.append('durchfuehrung', document.getElementById('durchfuehrung').value.trim());
+      if (beschreibung) formData.append('beschreibung', beschreibung);
 
-      const fotoInput = document.getElementById('foto-upload');
-      if (fotoInput.files[0]) formData.append('attachment', fotoInput.files[0]);
-
+      // Anhang: Audio hat Vorrang vor Foto
       if (recordedBlob) {
-        const m = Math.floor(recordingSeconds / 60);
-        const s = String(recordingSeconds % 60).padStart(2, '0');
-        formData.append('sprachnachricht', 'Ja – Browser-Aufnahme (' + m + ':' + s + ' min)');
+        const ext = recordedBlob.type.includes('mp4') ? 'm4a' : recordedBlob.type.includes('ogg') ? 'ogg' : 'webm';
+        formData.append('attachment', new File([recordedBlob], 'sprachnachricht.' + ext, { type: recordedBlob.type }));
       } else {
         const audioInput = document.getElementById('audio-upload');
         if (audioInput.files[0]) {
-          formData.append('sprachnachricht', 'Ja – Datei hochgeladen: ' + audioInput.files[0].name);
           formData.append('attachment', audioInput.files[0]);
+        } else {
+          const fotoInput = document.getElementById('foto-upload');
+          if (fotoInput.files[0]) formData.append('attachment', fotoInput.files[0]);
         }
       }
 
