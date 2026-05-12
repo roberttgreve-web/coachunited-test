@@ -45,8 +45,6 @@
       <span class="desktop-footer-sep">·</span>
       <a href="/ueber-uns" class="desktop-footer-link ${isActive('/ueber-uns')}">Über uns</a>
       <span class="desktop-footer-sep">·</span>
-      <a href="https://coachunited.de/trainingseinheiten/" target="_blank" class="desktop-footer-link">Einheiten-Katalog</a>
-      <span class="desktop-footer-sep">·</span>
       <a href="/umgang-mit-ki" class="desktop-footer-link ${isActive('/umgang-mit-ki')}">Umgang mit KI</a>
       <span class="desktop-footer-sep">·</span>
       <a href="/impressum" class="desktop-footer-link ${isActive('/impressum')}">Impressum</a>
