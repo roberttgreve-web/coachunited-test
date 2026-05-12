@@ -2827,9 +2827,73 @@
     "original_coaching_fokus": "",
     "ist_gecrawlt": false,
     "quell_kategorie": "",
-    "schwester_ids": [],
-    "schwester_id": null,
-    "schwester_titel": null
+    "schwester_ids": [
+      47
+    ],
+    "schwester_id": 47,
+    "schwester_titel": "KEGEL-SCHLACHT"
+  },
+  {
+    "id": 47,
+    "titel": "KEGEL-SCHLACHT",
+    "quell_trainingseinheit": "Überzahl gemeinsam ausspielen",
+    "quell_url": "https://coachunited.de/uberzahl-gemeinsam-ausspielen/",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/11/image-18.jpg",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "Teams versuchen, alle Kegel der gegnerischen Mannschaft abzuräumen.",
+    "aufbau": "Teams diagonal voneinander platzieren. In etwa 5m Abstand (kann je nach Spielstärke variieren) 6 Hütchen aufstellen.",
+    "durchfuehrung": "Die Spieler der Teams versuchen nacheinander mit dem Ball die Hütchen des gegnerischen Teams zu treffen. Welches Team hat zuerst alle sechs Kegel der gegnerischen Mannschaft getroffen?",
+    "varianten": "a) Ball mit der Hand rollen, b) nur mit rechts/links schießen.",
+    "coaching_fokus": "• Konzentrierte Schüsse; • Augen zum Ziel, nicht auf den Ball schauen",
+    "leichter_machen": "• Ball mit der Hand rollen; • Reduzierung der Kegelanzahl von 6 auf 4",
+    "schwerer_machen": "• Nur mit dem schwächeren Fuß schießen; • Erhöhung des Abstands von 5m auf 8m",
+    "jugend": [
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Torschuss",
+      "Koordination"
+    ],
+    "seo_keyword": "Fußballübung Torschuss Kinder",
+    "url_slug": "zielschießen-duell-fussballubung-kinder",
+    "seo_meta_description": "Zwei Fußballteams konkurrieren darum, die Kegel des Gegners abzuschießen",
+    "grafik_alt_text": "Fußballübung Zielschießen-Duell für Kinder",
+    "grafik_description": "Die Spieler stehen in zwei Teams diagonal voneinander und versuchen, die Kegel des gegnerischen Teams abzuschießen. Es ist eine dynamische Übung, die Torschuss-Technik, Konzentration und Teamarbeit fördert.",
+    "grafik_title": "Kinder-Fußballübung: Zielschießen-Duell",
+    "grafik_caption": "Die Spieler stehen in zwei Teams diagonal voneinander und versuchen, die Kegel des gegnerischen Teams abzuschießen. Es ist eine dynamische Übung, die Torschuss-Technik, Konzentration und Teamarbeit fördert.",
+    "status": "veroeffentlicht",
+    "nachtraeglich_eingefuegt": true,
+    "alt_titel": "Zielschießen-Duell",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler braucht man für diese Übung?",
+        "antwort": "Die Übung ist für 8-12 Spieler geeignet, aufgeteilt in zwei gleich große Teams. Bei größeren Gruppen kann eine dritte Kegelgruppe aufgebaut werden."
+      },
+      {
+        "frage": "Wie lange dauert die Übung?",
+        "antwort": "Die Übung kann 10-15 Minuten dauern. Sie lässt sich je nach Spielstand und Konzentration der Kinder anpassen."
+      },
+      {
+        "frage": "Kann man die Übung auch für jüngere Kinder nutzen?",
+        "antwort": "Ja, für die G- und F-Jugend kann man die Abstände und Kegelanzahl reduzieren, um die Übung an das Können der Kinder anzupassen."
+      }
+    ],
+    "grafik_dateiname": "",
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [
+      46
+    ],
+    "schwester_id": 46,
+    "schwester_titel": "KEGEL-RENNEN"
   },
   {
     "id": 48,
