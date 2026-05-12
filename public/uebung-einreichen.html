@@ -506,9 +506,8 @@
         : 'Neue Übungs-Einreichung von ' + name;
 
       const formData = new FormData();
-      formData.append('access_key', '178bfb57-6bf5-45c0-9788-064568110b35');
-      formData.append('subject', subject);
-      formData.append('from_name', 'Coach United Übung einreichen');
+      formData.append('_subject', subject);
+      formData.append('_captcha', 'false');
       formData.append('trainer_name', name);
       if (webname) formData.append('webname', webname);
       formData.append('trainer_email', document.getElementById('trainer-email').value.trim());
@@ -529,12 +528,12 @@
       }
 
       try {
-        const res = await fetch('https://api.web3forms.com/submit', {
+        const res = await fetch('https://formsubmit.co/ajax/mail.coachunited@gmail.com', {
           method: 'POST',
           body: formData,
         });
         const data = await res.json();
-        if (data.success) {
+        if (data.success === 'true') {
           document.getElementById('form-area').style.display = 'none';
           document.getElementById('success-state').style.display = 'block';
         } else {
