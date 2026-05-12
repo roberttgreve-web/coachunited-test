@@ -3271,6 +3271,68 @@
     "schwester_titel": "PASS VERARBEITEN, DRIBBELN UND DANN TOR ERZIELEN"
   },
   {
+    "id": 54,
+    "titel": "PASS VERARBEITEN, DRIBBELN UND DANN TOR ERZIELEN",
+    "quell_trainingseinheit": "Den Ball in der Torzone verarbeiten",
+    "quell_url": "https://coachunited.de/den-ball-in-der-torzone-verarbeiten/",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/11/image-16.jpg",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "Spieler erhalten einen Pass in die Torzone, nehmen den Ball an, dribbeln in die gegnerische Torzone und schließen ab.",
+    "aufbau": "Zwei Jugendtore im Abstand von 20m diagonal voneinander aufbauen. 5 Meter vor den Toren jeweils eine Torzone markieren. 20m vom Tor entfernt ein Starthütchen aufstellen. Neben der Torzone jeweils ebenfalls ein Starthütchen aufstellen. Teams wie auf der Abbildung verteilen.",
+    "durchfuehrung": "Spieler ohne Ball startet in die Torzone. Passgeber spielt einen flachen, präzisen Pass. Angreifer verarbeitet den Pass und schießt noch innerhalb der Torzone aufs Tor. Spieler stellen sich jeweils an der anderen Schlange wieder an.",
+    "varianten": "",
+    "coaching_fokus": "• Konzentrierte Ballannahme; • Saubere Pässe",
+    "leichter_machen": "• Größere Torzonen; • Tempo herausnehmen",
+    "schwerer_machen": "• Hohes Tempo einfordern; • Wenig Ballkontakte bei Ballannahme und - mitnahme",
+    "jugend": [
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Dribbeln",
+      "Torschuss"
+    ],
+    "seo_keyword": "Fußballübung Zuspiel Dribbeln Kinder",
+    "url_slug": "fussballubung-zuspiel-dribbeln-kinder",
+    "seo_meta_description": "Fußballübung für Kinder, bei der das Verarbeiten von Zuspielen, Dribbeln und Torabschluss trainiert wird. Entwickelt Ballkontrolle, Spielsinn und Abschlussqualität.",
+    "grafik_alt_text": "Kinder führen Pässe, Dribblings und Torschüsse in einer Fußballübung durch",
+    "grafik_description": "Die Grafik zeigt eine Fußballübung, bei der Kinder Pässe verarbeiten, dann dribbeln und schließlich auf das Tor abschließen. Die Spieler sind in Bewegung und üben wichtige Fußballtechniken.",
+    "grafik_title": "Fußballübung für Kinder: Pässe, Dribbeln, Torschuss",
+    "grafik_caption": "Spieler üben das Verarbeiten von Pässen, Dribbeln und Torabschluss in dieser dynamischen Fußballübung.",
+    "status": "veroeffentlicht",
+    "nachtraeglich_eingefuegt": true,
+    "schwester_ids": [
+      53
+    ],
+    "schwester_id": 53,
+    "schwester_titel": "BALL IN TORZONE VERARBEITEN UND ABSCHLIESSEN",
+    "alt_titel": "Zuspiel verarbeiten, dribbeln, abschließen",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler brauche ich für diese Übung?",
+        "antwort": "Die Übung eignet sich für 8-14 Spieler. So entstehen genug Spielaktionen ohne zu viel Wartezeit."
+      },
+      {
+        "frage": "Wie lange kann man diese Übung durchführen?",
+        "antwort": "Je nach Alter und Leistungsstand der Kinder empfehlen sich 10-15 Minuten Übungsdauer. So bleibt die Konzentration hoch."
+      },
+      {
+        "frage": "Kann man die Übung für jüngere Spieler anpassen?",
+        "antwort": "Eher nicht."
+      }
+    ],
+    "grafik_dateiname": "",
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": ""
+  },
+  {
     "id": 55,
     "titel": "VOM TORSCHUSS INS SPIEL",
     "quell_trainingseinheit": "Den Ball in der Torzone verarbeiten",
