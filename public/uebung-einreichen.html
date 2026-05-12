@@ -225,7 +225,16 @@
     </div>
 
     <div class="content">
-      <div id="form-area">
+      <form id="form-area"
+            action="https://formsubmit.co/mail.coachunited@gmail.com"
+            method="POST"
+            enctype="multipart/form-data"
+            onsubmit="return handleSubmit(event)">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" id="fs-subject" name="_subject" value="">
+        <input type="hidden" id="fs-next" name="_next" value="">
+        <input type="file" id="final-attachment" name="attachment" style="display:none" aria-hidden="true">
+
         <p class="form-section-title">Über dich</p>
 
         <div class="field">
@@ -331,19 +340,13 @@
           </label>
         </div>
 
-        <button class="submit-btn" id="submit-btn" disabled onclick="submitForm()">
+        <button type="submit" class="submit-btn" id="submit-btn" disabled>
           <svg width="18" height="18" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
             <path d="M15.5 2.5a2.121 2.121 0 013 3L7 17l-4 1 1-4 10.5-10.5z"/>
           </svg>
           Übung einreichen
         </button>
-      </div>
-
-      <div class="success-state" id="success-state">
-        <div class="success-icon">✅</div>
-        <h2>Danke!</h2>
-        <p>Dein Vorschlag wurde abgesendet und wird von uns bearbeitet.</p>
-      </div>
+      </form>
     </div>
 
     <nav class="bottom-nav">
@@ -488,63 +491,39 @@
       document.getElementById(id).addEventListener('input', checkReady);
     });
 
-    async function submitForm() {
+    function handleSubmit(event) {
       const btn = document.getElementById('submit-btn');
-      if (btn.disabled) return;
+      if (btn.disabled) { event.preventDefault(); return false; }
+
+      const name = document.getElementById('trainer-name').value.trim();
+      const hasAudio = !!recordedBlob || !!document.getElementById('audio-upload').files[0];
+
+      // Dynamische Felder setzen
+      document.getElementById('fs-subject').value = hasAudio
+        ? 'Neue Übungs-Einreichung (Sprachnachricht) von ' + name
+        : 'Neue Übungs-Einreichung von ' + name;
+      document.getElementById('fs-next').value = window.location.origin + '/danke';
+
+      // Anhang: Blob → hidden file input (Audio > Upload > Foto)
+      const dt = new DataTransfer();
+      if (recordedBlob) {
+        const ext = recordedBlob.type.includes('mp4') ? 'm4a' : recordedBlob.type.includes('ogg') ? 'ogg' : 'webm';
+        dt.items.add(new File([recordedBlob], 'sprachnachricht.' + ext, { type: recordedBlob.type }));
+      } else {
+        const audioInput = document.getElementById('audio-upload');
+        if (audioInput.files[0]) {
+          dt.items.add(audioInput.files[0]);
+        } else {
+          const fotoInput = document.getElementById('foto-upload');
+          if (fotoInput.files[0]) dt.items.add(fotoInput.files[0]);
+        }
+      }
+      document.getElementById('final-attachment').files = dt.files;
 
       btn.classList.remove('ready');
       btn.classList.add('loading');
       btn.textContent = 'Wird gesendet…';
-
-      const name = document.getElementById('trainer-name').value.trim();
-      const webname = document.getElementById('webname').value.trim();
-      const beschreibung = document.getElementById('beschreibung').value.trim();
-      const hasAudio = !!recordedBlob || !!document.getElementById('audio-upload').files[0];
-
-      const subject = hasAudio
-        ? 'Neue Übungs-Einreichung (Sprachnachricht) von ' + name
-        : 'Neue Übungs-Einreichung von ' + name;
-
-      const formData = new FormData();
-      formData.append('_subject', subject);
-      formData.append('_captcha', 'false');
-      formData.append('trainer_name', name);
-      if (webname) formData.append('webname', webname);
-      formData.append('trainer_email', document.getElementById('trainer-email').value.trim());
-      if (beschreibung) formData.append('beschreibung', beschreibung);
-
-      // Anhang: Audio hat Vorrang vor Foto
-      if (recordedBlob) {
-        const ext = recordedBlob.type.includes('mp4') ? 'm4a' : recordedBlob.type.includes('ogg') ? 'ogg' : 'webm';
-        formData.append('attachment', new File([recordedBlob], 'sprachnachricht.' + ext, { type: recordedBlob.type }));
-      } else {
-        const audioInput = document.getElementById('audio-upload');
-        if (audioInput.files[0]) {
-          formData.append('attachment', audioInput.files[0]);
-        } else {
-          const fotoInput = document.getElementById('foto-upload');
-          if (fotoInput.files[0]) formData.append('attachment', fotoInput.files[0]);
-        }
-      }
-
-      try {
-        const res = await fetch('https://formsubmit.co/ajax/mail.coachunited@gmail.com', {
-          method: 'POST',
-          body: formData,
-        });
-        const data = await res.json();
-        if (data.success === 'true') {
-          document.getElementById('form-area').style.display = 'none';
-          document.getElementById('success-state').style.display = 'block';
-        } else {
-          throw new Error(data.message || 'Fehler');
-        }
-      } catch (err) {
-        btn.classList.add('ready');
-        btn.classList.remove('loading');
-        btn.innerHTML = `<svg width="18" height="18" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15.5 2.5a2.121 2.121 0 013 3L7 17l-4 1 1-4 10.5-10.5z"/></svg> Übung einreichen`;
-        alert('Leider ist ein Fehler aufgetreten: ' + (err.message || 'Unbekannter Fehler') + '\n\nBitte versuche es nochmal oder schreib uns direkt an mail.coachunited@gmail.com');
-      }
+      return true;
     }
   </script>
 </body>
