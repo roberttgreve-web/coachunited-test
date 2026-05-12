@@ -1112,8 +1112,7 @@
     line-height: 1.5 !important;
   }
 
-  /* Bild ausblenden (Platz für Text-Layout) */
-  body:has(.page-hero) .ex-img { display: none !important; }
+  body:has(.page-hero) .ex-img { max-height: 280px !important; }
 
   /* Skills-Zeile */
   body:has(.page-hero) .ex-skills {
