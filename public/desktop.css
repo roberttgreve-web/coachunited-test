@@ -783,27 +783,27 @@
     display: none !important;
   }
 
-  /* Dunkle TopNav nahtlos zum Hero */
+  /* Weiße TopNav */
   body:has(#einheit-content) .desktop-topnav {
-    background: #0E1430;
-    border-bottom: none;
+    background: #fff;
+    border-bottom: 1px solid #e8edf2;
   }
 
   body:has(#einheit-content) .desktop-topnav-logo {
-    color: rgba(255,255,255,0.9);
+    color: #003D82;
   }
 
   body:has(#einheit-content) .desktop-topnav-link {
-    color: rgba(255,255,255,0.6);
+    color: #555;
   }
 
   body:has(#einheit-content) .desktop-topnav-link:hover {
-    background: rgba(255,255,255,0.08);
-    color: #fff;
+    background: #f0f4ff;
+    color: #003D82;
   }
 
   body:has(#einheit-content) .desktop-topnav-link.active {
-    background: rgba(255,255,255,0.15);
+    background: #003D82;
     color: #fff;
   }
 
@@ -908,12 +908,12 @@
     overflow: visible !important;
   }
 
-  /* Dunkle TopNav nahtlos zum Hero-Band */
-  body:has(.page-hero) .desktop-topnav { background: #0E1430; border-bottom: none; }
-  body:has(.page-hero) .desktop-topnav-logo { color: rgba(255,255,255,0.9); }
-  body:has(.page-hero) .desktop-topnav-link { color: rgba(255,255,255,0.6); }
-  body:has(.page-hero) .desktop-topnav-link:hover { background: rgba(255,255,255,0.08); color: #fff; }
-  body:has(.page-hero) .desktop-topnav-link.active { background: rgba(255,255,255,0.15); color: #fff; }
+  /* Weiße TopNav */
+  body:has(.page-hero) .desktop-topnav { background: #fff; border-bottom: 1px solid #e8edf2; }
+  body:has(.page-hero) .desktop-topnav-logo { color: #003D82; }
+  body:has(.page-hero) .desktop-topnav-link { color: #555; }
+  body:has(.page-hero) .desktop-topnav-link:hover { background: #f0f4ff; color: #003D82; }
+  body:has(.page-hero) .desktop-topnav-link.active { background: #003D82; color: #fff; }
 
   /* Mobilen Header ausblenden */
   body:has(.page-hero) .header { display: none !important; }
