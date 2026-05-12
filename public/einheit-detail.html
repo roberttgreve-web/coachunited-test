@@ -284,18 +284,20 @@
 
   <script>
     const slug = window.location.pathname.replace(/^\/einheit\//, '').replace(/\/$/, '');
-    const JSON_URL = 'https://raw.githubusercontent.com/roberttgreve-web/coachunited-test/main/public/einheiten.json';
+    const EINHEITEN_URL = 'https://raw.githubusercontent.com/roberttgreve-web/coachunited-test/main/public/einheiten.json';
+    const EXERCISES_URL = 'https://raw.githubusercontent.com/roberttgreve-web/coachunited-test/main/public/exercises.json';
 
     const PHASE_ORDER = ['Aufwärmen', 'Hauptteil', 'Spielformat'];
 
-    function renderCard(u) {
+    function renderCard(u, grafikMap) {
+      const grafik = grafikMap[u.slug] || '';
       return `
         <a href="/uebung/${u.slug}?from=${slug}" class="uebung-card">
           <div class="card-position">${u.position}</div>
           <div class="card-body">
             <p class="card-title">${u.titel}</p>
           </div>
-          ${u.grafik_url ? `<div class="card-image"><img src="${u.grafik_url}" alt="" loading="lazy"></div>` : ''}
+          ${grafik ? `<div class="card-image"><img src="${grafik}" alt="" loading="lazy"></div>` : ''}
           <div class="card-arrow">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="9 18 15 12 9 6"/>
@@ -304,9 +306,11 @@
         </a>`;
     }
 
-    fetch(JSON_URL)
-      .then(r => r.json())
-      .then(einheiten => {
+    Promise.all([fetch(EINHEITEN_URL).then(r => r.json()), fetch(EXERCISES_URL).then(r => r.json())])
+      .then(([einheiten, exercises]) => {
+        const grafikMap = {};
+        exercises.forEach(e => { if (e.slug && e.grafik_url) grafikMap[e.slug] = e.grafik_url; });
+
         const einheit = einheiten.find(e => e.url_slug === slug);
         if (!einheit) {
           document.getElementById('loading').style.display = 'none';
@@ -338,7 +342,7 @@
                 <div class="phase-header-bar"></div>
                 <span class="phase-header-label">${phase}</span>
               </div>
-              ${grouped[phase].map(u => renderCard(u)).join('')}
+              ${grouped[phase].map(u => renderCard(u, grafikMap)).join('')}
             </div>`).join('');
 
         document.getElementById('loading').style.display = 'none';
