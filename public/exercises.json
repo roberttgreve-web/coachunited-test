@@ -3209,6 +3209,68 @@
     "schwester_titel": "6 DUELLE, 3 MINUTEN"
   },
   {
+    "id": 53,
+    "titel": "BALL IN TORZONE VERARBEITEN UND ABSCHLIESSEN",
+    "quell_trainingseinheit": "Den Ball in der Torzone verarbeiten",
+    "quell_url": "https://coachunited.de/den-ball-in-der-torzone-verarbeiten/",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/11/image-15.jpg",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "Spieler erhalten einen Pass in die Torzone, nehmen den Ball an, drehen sich und schließen ab.",
+    "aufbau": "Zwei Jugendtore im Abstand von 20m diagonal voneinander aufbauen. 5 Meter vor den Toren jeweils eine Torzone markieren. 20m vom Tor entfernt ein Starthütchen aufstellen. Neben der Torzone jeweils ebenfalls ein Starthütchen aufstellen. Teams wie auf der Abbildung verteilen.",
+    "durchfuehrung": "Spieler ohne Ball startet in die Torzone. Passgeber spielt einen flachen, präzisen Pass. Angreifer verarbeitet den Pass und schießt noch innerhalb der Torzone aufs Tor. Spieler stellen sich jeweils an der anderen Schlange wieder an.",
+    "varianten": "",
+    "coaching_fokus": "• Kontrollierte Ballannahme für den Abschluss; • Blick zum Tor bei Drehung; • Kommunikation Passgeber-Angreifer",
+    "leichter_machen": "• Torzone vergrößern; • Passentfernung reduzieren",
+    "schwerer_machen": "• Kleinere Torzone",
+    "jugend": [
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Torschuss",
+      "Raumverhalten"
+    ],
+    "seo_keyword": "Fußballübung Torschuss Kinder",
+    "url_slug": "fussballubung-torschuss-kinder",
+    "seo_meta_description": "Junge Fußballspieler üben kontrollierte Ballannahme und Torschuss in der Torzone",
+    "grafik_alt_text": "Fußballübung Torschuss in der Torzone",
+    "grafik_description": "Die Abbildung zeigt einen Übungsaufbau mit zwei diagonal angeordneten Toren. Spieler in Teams üben den Torabschluss nach Ballannahme und Drehung in der Torzone.",
+    "grafik_title": "Gezielte Übung zum Torabschluss nach Ballannahme in der Torzone",
+    "grafik_caption": "Die Abbildung zeigt einen Übungsaufbau mit zwei diagonal angeordneten Toren. Spieler in Teams üben den Torabschluss nach Ballannahme und Drehung in der Torzone.",
+    "status": "veroeffentlicht",
+    "nachtraeglich_eingefuegt": true,
+    "alt_titel": "Torschuss nach Annahme und Drehung",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler benötige ich für diese Übung?",
+        "antwort": "Ideal sind 8-14 Spieler, aufgeteilt in vier Gruppen. So haben alle ausreichend Wiederholungen."
+      },
+      {
+        "frage": "Wie lange sollte man die Übung durchführen?",
+        "antwort": "Etwa 10-15 Minuten. "
+      },
+      {
+        "frage": "Kann man die Übung auch für jüngere Kinder einsetzen?",
+        "antwort": "Ja, mit leichten Anpassungen wie größerer Torzone oder kürzerer Passentfernung lässt sich die Übung gut an G- und F-Junioren anpassen."
+      }
+    ],
+    "grafik_dateiname": "",
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [
+      54
+    ],
+    "schwester_id": 54,
+    "schwester_titel": "PASS VERARBEITEN, DRIBBELN UND DANN TOR ERZIELEN"
+  },
+  {
     "id": 55,
     "titel": "VOM TORSCHUSS INS SPIEL",
     "quell_trainingseinheit": "Den Ball in der Torzone verarbeiten",
