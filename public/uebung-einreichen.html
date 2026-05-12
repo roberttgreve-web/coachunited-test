@@ -73,16 +73,40 @@
       display: flex; flex-direction: column; align-items: center;
       gap: 10px; padding: 22px 16px;
       background: #0E1430; border-radius: 14px;
-      cursor: pointer; transition: background 0.15s;
+      cursor: default; transition: background 0.25s;
       margin-bottom: 4px;
     }
-    .audio-primary:hover { background: #1a2347; }
-    .audio-primary input[type="file"] { display: none; }
     .audio-primary svg { color: #fff; opacity: 0.9; }
     .audio-primary-title { font-size: 16px; font-weight: 700; color: #fff; }
     .audio-primary-sub { font-size: 12px; color: rgba(255,255,255,0.5); }
     .audio-primary.has-file { background: #0E6A45; }
     .audio-primary.has-file svg { opacity: 1; }
+    .audio-primary.recording { background: #7a1a1a; }
+    .audio-action-btn {
+      margin-top: 4px; padding: 8px 22px;
+      background: rgba(255,255,255,0.15);
+      color: #fff; border: 1.5px solid rgba(255,255,255,0.25);
+      border-radius: 8px;
+      font-family: 'Inter Tight', system-ui, sans-serif;
+      font-size: 13px; font-weight: 700;
+      cursor: pointer; transition: background 0.15s;
+    }
+    .audio-action-btn:hover { background: rgba(255,255,255,0.25); }
+    .audio-stop-btn { border-color: rgba(255,80,80,0.6); }
+    .audio-stop-btn:hover { background: rgba(255,80,80,0.25); }
+    .audio-timer {
+      font-family: 'JetBrains Mono', ui-monospace, monospace;
+      font-size: 24px; font-weight: 700; color: #fff; letter-spacing: 0.05em;
+    }
+    .audio-pulse-dot {
+      width: 14px; height: 14px; border-radius: 50%; background: #ff5555;
+      animation: pulse-dot 1s ease-in-out infinite;
+    }
+    @keyframes pulse-dot {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.5); opacity: 0.5; }
+    }
+    .audio-file-fallback { margin-top: 10px; }
 
     .or-divider {
       display: flex; align-items: center; gap: 12px;
@@ -205,11 +229,27 @@
         <p class="form-section-title">Über dich</p>
 
         <div class="field">
-          <label class="field-label" for="trainer-name">
-            Name des Trainers
-            <span class="field-optional">wie er erscheinen soll</span>
+          <label class="field-label" for="vorname">
+            Dein Vorname
+            <span class="field-optional">wird nicht veröffentlicht</span>
           </label>
-          <input type="text" id="trainer-name" name="trainer_name" placeholder="z.B. Max Mustermann" required>
+          <input type="text" id="vorname" name="vorname" placeholder="z.B. Max" required>
+        </div>
+
+        <div class="field">
+          <label class="field-label" for="nachname">
+            Dein Nachname
+            <span class="field-optional">wird nicht veröffentlicht</span>
+          </label>
+          <input type="text" id="nachname" name="nachname" placeholder="z.B. Mustermann" required>
+        </div>
+
+        <div class="field">
+          <label class="field-label" for="webname">
+            Webname
+            <span class="field-optional">Optional</span>
+          </label>
+          <input type="text" id="webname" name="webname" placeholder="wie du als Autor*in erscheinen möchtest">
         </div>
 
         <div class="field">
@@ -218,23 +258,55 @@
         </div>
 
         <!-- Prominente Sprachnachricht -->
-        <label class="audio-primary" id="audio-primary-label" for="audio-upload">
-          <svg width="32" height="32" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M11 2a3 3 0 013 3v6a3 3 0 01-6 0V5a3 3 0 013-3z"/>
-            <path d="M5 10a6 6 0 0012 0"/>
-            <line x1="11" y1="18" x2="11" y2="22"/>
+        <div class="audio-primary" id="audio-primary-area">
+          <div id="audio-idle" style="display:flex;flex-direction:column;align-items:center;gap:10px;width:100%">
+            <svg width="32" height="32" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M11 2a3 3 0 013 3v6a3 3 0 01-6 0V5a3 3 0 013-3z"/>
+              <path d="M5 10a6 6 0 0012 0"/>
+              <line x1="11" y1="18" x2="11" y2="22"/>
+            </svg>
+            <span class="audio-primary-title">Sprachnachricht aufnehmen</span>
+            <span class="audio-primary-sub">Direkt im Browser · kein Extra-Upload</span>
+            <button class="audio-action-btn" onclick="startRecording()">Aufnehmen</button>
+          </div>
+          <div id="audio-recording" style="display:none;flex-direction:column;align-items:center;gap:10px;width:100%">
+            <div class="audio-pulse-dot"></div>
+            <span class="audio-primary-title">Aufnahme läuft …</span>
+            <span class="audio-timer" id="audio-timer">0:00</span>
+            <button class="audio-action-btn audio-stop-btn" onclick="stopRecording()">Stopp</button>
+          </div>
+          <div id="audio-done" style="display:none;flex-direction:column;align-items:center;gap:10px;width:100%">
+            <svg width="32" height="32" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 6L9 17l-5-5"/>
+            </svg>
+            <span class="audio-primary-title">Aufnahme bereit</span>
+            <span class="audio-primary-sub" id="audio-done-duration"></span>
+            <button class="audio-action-btn" onclick="reRecord()">Erneut aufnehmen</button>
+          </div>
+        </div>
+        <label class="file-upload-label audio-file-fallback" for="audio-upload">
+          <svg width="18" height="18" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 01-2 2H3a2 2 0 01-2-2v-4"/>
+            <polyline points="17 8 12 3 7 8"/>
+            <line x1="12" y1="3" x2="12" y2="15"/>
           </svg>
-          <span class="audio-primary-title" id="audio-primary-title">Sprachnachricht hochladen</span>
-          <span class="audio-primary-sub" id="audio-primary-sub">Einfach die Übung einsprechen · MP3, M4A, WAV</span>
+          <div>
+            <span>Datei hochladen</span>
+            <small>MP3, M4A, WAV</small>
+          </div>
           <input type="file" id="audio-upload" name="audio" accept="audio/*" onchange="onAudioChange(this)">
         </label>
+        <div class="file-name" id="audio-file-name"></div>
 
         <div class="or-divider"><span>oder</span></div>
 
         <p class="schriftlich-title">Schriftlich einreichen</p>
 
         <div class="field">
-          <label class="field-label" for="uebung-titel">Titel der Übung</label>
+          <label class="field-label" for="uebung-titel">
+            Titel der Übung
+            <span class="field-optional">Optional</span>
+          </label>
           <input type="text" id="uebung-titel" name="uebung_titel" placeholder="z.B. Passdreiecke mit Abschluss" oninput="checkReady()">
         </div>
 
@@ -376,18 +448,75 @@
       document.getElementById('drawer-overlay').classList.remove('open');
     }
 
+    let mediaRecorder = null;
+    let recordedChunks = [];
+    let recordedBlob = null;
+    let recordingInterval = null;
+    let recordingSeconds = 0;
+
+    async function startRecording() {
+      try {
+        const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+        const mimeType = ['audio/webm', 'audio/mp4', 'audio/ogg'].find(t => {
+          try { return MediaRecorder.isTypeSupported(t); } catch(e) { return false; }
+        }) || '';
+        recordedChunks = [];
+        recordedBlob = null;
+        document.getElementById('audio-upload').value = '';
+        document.getElementById('audio-file-name').textContent = '';
+        mediaRecorder = new MediaRecorder(stream, mimeType ? { mimeType } : {});
+        mediaRecorder.ondataavailable = e => { if (e.data.size > 0) recordedChunks.push(e.data); };
+        mediaRecorder.onstop = () => {
+          stream.getTracks().forEach(t => t.stop());
+          recordedBlob = new Blob(recordedChunks, { type: mimeType || 'audio/webm' });
+          const m = Math.floor(recordingSeconds / 60);
+          const s = String(recordingSeconds % 60).padStart(2, '0');
+          document.getElementById('audio-done-duration').textContent = m + ':' + s + ' aufgenommen';
+          showAudioState('done');
+          checkReady();
+        };
+        mediaRecorder.start();
+        recordingSeconds = 0;
+        document.getElementById('audio-timer').textContent = '0:00';
+        showAudioState('recording');
+        recordingInterval = setInterval(() => {
+          recordingSeconds++;
+          const m = Math.floor(recordingSeconds / 60);
+          const s = String(recordingSeconds % 60).padStart(2, '0');
+          document.getElementById('audio-timer').textContent = m + ':' + s;
+        }, 1000);
+      } catch (err) {
+        alert('Mikrofon-Zugriff nicht möglich. Bitte erlaube den Zugriff in deinen Browser-Einstellungen.');
+      }
+    }
+
+    function stopRecording() {
+      clearInterval(recordingInterval);
+      if (mediaRecorder && mediaRecorder.state !== 'inactive') mediaRecorder.stop();
+    }
+
+    function reRecord() {
+      recordedBlob = null;
+      showAudioState('idle');
+      checkReady();
+    }
+
+    function showAudioState(state) {
+      const area = document.getElementById('audio-primary-area');
+      document.getElementById('audio-idle').style.display = state === 'idle' ? 'flex' : 'none';
+      document.getElementById('audio-recording').style.display = state === 'recording' ? 'flex' : 'none';
+      document.getElementById('audio-done').style.display = state === 'done' ? 'flex' : 'none';
+      area.classList.toggle('recording', state === 'recording');
+      area.classList.toggle('has-file', state === 'done');
+    }
+
     function onAudioChange(input) {
-      const label = document.getElementById('audio-primary-label');
-      const title = document.getElementById('audio-primary-title');
-      const sub = document.getElementById('audio-primary-sub');
       if (input.files[0]) {
-        label.classList.add('has-file');
-        title.textContent = input.files[0].name;
-        sub.textContent = 'Aufnahme ausgewählt · Tippen zum Ändern';
+        recordedBlob = null;
+        showAudioState('idle');
+        document.getElementById('audio-file-name').textContent = input.files[0].name;
       } else {
-        label.classList.remove('has-file');
-        title.textContent = 'Sprachnachricht hochladen';
-        sub.textContent = 'Einfach die Übung einsprechen · MP3, M4A, WAV';
+        document.getElementById('audio-file-name').textContent = '';
       }
       checkReady();
     }
@@ -397,18 +526,19 @@
     }
 
     function checkReady() {
-      const name = document.getElementById('trainer-name').value.trim();
+      const vorname = document.getElementById('vorname').value.trim();
+      const nachname = document.getElementById('nachname').value.trim();
       const email = document.getElementById('trainer-email').value.trim();
       const legal = document.getElementById('legal-check').checked;
-      const hasAudio = !!document.getElementById('audio-upload').files[0];
+      const hasAudio = !!recordedBlob || !!document.getElementById('audio-upload').files[0];
       const hasTitel = !!document.getElementById('uebung-titel').value.trim();
       const btn = document.getElementById('submit-btn');
-      const ready = name && email && legal && (hasAudio || hasTitel);
+      const ready = vorname && nachname && email && legal && (hasAudio || hasTitel);
       btn.disabled = !ready;
       btn.classList.toggle('ready', ready);
     }
 
-    ['trainer-name', 'trainer-email'].forEach(id => {
+    ['vorname', 'nachname', 'trainer-email'].forEach(id => {
       document.getElementById(id).addEventListener('input', checkReady);
     });
 
@@ -420,9 +550,12 @@
       btn.classList.add('loading');
       btn.textContent = 'Wird gesendet…';
 
-      const name = document.getElementById('trainer-name').value.trim();
+      const vorname = document.getElementById('vorname').value.trim();
+      const nachname = document.getElementById('nachname').value.trim();
+      const name = vorname + ' ' + nachname;
+      const webname = document.getElementById('webname').value.trim();
       const titel = document.getElementById('uebung-titel').value.trim();
-      const hasAudio = !!document.getElementById('audio-upload').files[0];
+      const hasAudio = !!recordedBlob || !!document.getElementById('audio-upload').files[0];
 
       const subject = titel
         ? 'Neue Übungs-Einreichung: ' + titel
@@ -433,6 +566,7 @@
       formData.append('subject', subject);
       formData.append('from_name', 'Coach United Übung einreichen');
       formData.append('trainer_name', name);
+      if (webname) formData.append('webname', webname);
       formData.append('trainer_email', document.getElementById('trainer-email').value.trim());
       if (titel) formData.append('uebung_titel', titel);
       formData.append('trainingsphase', document.getElementById('trainingsphase').value);
@@ -443,8 +577,13 @@
       const fotoInput = document.getElementById('foto-upload');
       if (fotoInput.files[0]) formData.append('attachment', fotoInput.files[0]);
 
-      const audioInput = document.getElementById('audio-upload');
-      if (audioInput.files[0]) formData.append('audio', audioInput.files[0]);
+      if (recordedBlob) {
+        const ext = recordedBlob.type.includes('mp4') ? 'm4a' : recordedBlob.type.includes('ogg') ? 'ogg' : 'webm';
+        formData.append('audio', new File([recordedBlob], 'sprachnachricht.' + ext, { type: recordedBlob.type }));
+      } else {
+        const audioInput = document.getElementById('audio-upload');
+        if (audioInput.files[0]) formData.append('audio', audioInput.files[0]);
+      }
 
       try {
         const res = await fetch('https://api.web3forms.com/submit', {
