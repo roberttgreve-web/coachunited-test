@@ -4702,6 +4702,70 @@
     "schwester_titel": "DUELL NACH DEM TORSCHUSS"
   },
   {
+    "id": 78,
+    "titel": "DURCH DEN TRICHTER",
+    "quell_trainingseinheit": "Pässe kontrollieren und ins Tor treffen. Auch aus der Distanz.",
+    "quell_url": "https://coachunited.de/passe-kontrollieren-und-ins-tor-treffen-auch-aus-der-distanz/",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/09/image-12.png",
+    "trainingsphase": "Aufwärmen",
+    "kurzbeschreibung": "Zwei Teams müssen den Ball durch einen Hütchentrichter passen, ohne dass ein Hütchen berührt wird. Welches Team schafft zuerst 15 Pässe?",
+    "aufbau": "Zwei Hütchentrichtr aufbauen und in etwa 8m Entfernung jeweils links und rechts zwei Gruppen postieren. Eine Gruppe je Hütchentrichter mit einem Ball.",
+    "durchfuehrung": "Spieler passt den Ball präzise durch den Hütchentrichter zum Mitspieler. Mitpieler stoppt den Ball und sprintet außen herum mit Ball zur gegenüberliegenden Gruppe und stellt sich an. Wird beim Passen ein Hütchen berührt oder das Hütchentor insgesamt verfehlt, gibt es keinen Punkt. Team, das zuerst 15 saubere Pässe schafft, gewinnt.",
+    "varianten": "",
+    "coaching_fokus": "• Konzentriert den Pass durch den Trichter spielen; • Nach Ballannahme zügigs Dribbling zum Hintenanstellen",
+    "leichter_machen": "• Trichter vergrößern; • Zwei Versuche pro Spieler erlauben",
+    "schwerer_machen": "• Trichter verkleinern",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Koordination",
+      "Raumverhalten",
+      "Kommunikation"
+    ],
+    "seo_keyword": "Fußballübung Passspiel Kinder",
+    "url_slug": "fussballubung-passspiel-kinder",
+    "seo_meta_description": "Zwei Gruppen Kinder spielen Fußball durch einen Hütchentrichter",
+    "grafik_alt_text": "Fußballübung 'Durch den Trichter' für Kinder",
+    "grafik_description": "Die Grafik zeigt den Aufbau der Fußballübung 'Durch den Trichter'. Zwei Teams müssen den Ball präzise durch einen Hütchentrichter zum Mitspieler passen, ohne die Hütchen zu berühren.",
+    "grafik_title": "Effektives Passspiel-Training für Kinder mit Fokus auf Präzision und Kommunikation.",
+    "grafik_caption": "Die Grafik zeigt den Aufbau der Fußballübung 'Durch den Trichter'. Zwei Teams müssen den Ball präzise durch einen Hütchentrichter zum Mitspieler passen, ohne die Hütchen zu berühren.",
+    "status": "veroeffentlicht",
+    "nachtraeglich_eingefuegt": true,
+    "alt_titel": "Der präzise Trichterpass",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler braucht man für diese Übung?",
+        "antwort": "Ideal sind 8-16 Spieler, aufgeteilt in vier Teams. So entsteht eine gute Intensität und jeder kommt häufig ran."
+      },
+      {
+        "frage": "Wie lange sollte man diese Übung spielen?",
+        "antwort": "Etwa 10-15 Minuten sind sinnvoll, bevor die Konzentration nachlässt. Mehrmals in einem Training wiederholen."
+      },
+      {
+        "frage": "Für welche Altersgruppe eignet sich die Übung?",
+        "antwort": "Die Übung ist gut geeignet für Kinder der E- und D-Jugend (9-12 Jahre). Jüngere Kinder benötigen eventuell größere Hütechntrichter. "
+      }
+    ],
+    "grafik_dateiname": "",
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [
+      77
+    ],
+    "schwester_id": 77,
+    "schwester_titel": "UM DIE WETTE DRIBBELN UND PASSEN"
+  },
+  {
     "id": 87,
     "titel": "ÜBER DAS HÜTCHEN ZUM TORERFOLG",
     "quell_trainingseinheit": "Tricks, Fernschüsse – und ab in die Jubelzone",
