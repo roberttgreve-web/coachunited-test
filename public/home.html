@@ -386,9 +386,9 @@
         if (!byPhase[e.trainingsphase]) byPhase[e.trainingsphase] = [];
         byPhase[e.trainingsphase].push(e);
       });
-      const aufClusters = makeClusters(byPhase['Aufwärmen'] || []).filter(c => c.length === 2);
-      const hptClusters = makeClusters(byPhase['Hauptteil'] || []).filter(c => c.length === 2);
-      const spfClusters = makeClusters(byPhase['Spielformat'] || []).filter(c => c.length === 1);
+      const aufClusters = makeClusters(byPhase['Aufwärmen'] || []);
+      const hptClusters = makeClusters(byPhase['Hauptteil'] || []);
+      const spfClusters = makeClusters(byPhase['Spielformat'] || []);
       const allSkills = [...new Set(valid.flatMap(e => e.skills || []))].sort();
       const validSkills = allSkills.filter(s =>
         aufClusters.some(c => c.some(e => (e.skills || []).includes(s))) &&
