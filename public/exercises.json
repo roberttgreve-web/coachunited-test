@@ -5634,6 +5634,66 @@
     "schwester_titel": null
   },
   {
+    "id": 92,
+    "titel": "VOM TORSCHUSS INS SPIEL UMSCHALTEN",
+    "quell_trainingseinheit": "Pässe verarbeiten",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/07/image-4.jpg",
+    "grafik_dateiname": "uebung-108-vom-torschuss-ins-spiel-umschalten.jpg",
+    "trainingsphase": "Spielformat",
+    "kurzbeschreibung": "Zwei Teams schießen aufs Tor – bis der Trainer „Spielen!“ ruft.",
+    "aufbau": "Ein 20 x 20 Meter großes Feld mit zwei diagonal versetzten Toren aufbauen. Mit Torhütern. Teams gegenüber vom Tor mit Ball und Leibchen platzieren.",
+    "durchfuehrung": "Spieler dribbeln nacheinander einzeln zur Mittellinie und schießen. Mitten in der Übunbg ruft der Trainer „Spielen“. Dann stürmen alle ins 6 gegen 6 (oder 7 gegen 7). Trainer spielt Ball ein. Spielzeit: 6 Minuten. Danach: Schussübung beginnt wieder bis der Trainer erneut „Spielen!“ ruft.",
+    "varianten": "a) Nur mit links oder rechts schießen. b) Selber an der Mittellinie Ball hochwerfen und Volley schießen. FREIES SPIEL– LOS GEHT’S! FREIES SPIEL– LOS GEHT’S! In © 2025 COACH UNITED",
+    "quell_url": "https://coachunited.de/passe-verarbeiten/",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Torschuss",
+      "Zweikampf",
+      "Raumverhalten",
+      "Umschalten"
+    ],
+    "coaching_fokus": "• Schnelles Umschalten nach dem Kommando; • Präziser Torschuss",
+    "leichter_machen": "• Entfernung des Torschusses verkleinern (Torschusslinie markieren); • Selber an der Mittellinie Ball hochwerfen und Volley schießen.",
+    "schwerer_machen": "• Nur mit links oder rechts schießen.",
+    "status": "veroeffentlicht",
+    "alt_titel": "Torschuss - Umschalten - Spielen",
+    "seo_keyword": "Fußballübung Torschuss Umschalten Kinder",
+    "url_slug": "fussballuebung-torschuss-umschalten-kinder",
+    "seo_meta_description": "Dynamische Fußballübung zum Torschuss und schnellen Umschalten in den Angriff für Kinder von 6-12 Jahren.",
+    "grafik_alt_text": "Zwei Fußballspieler schießen nacheinander aufs Tor, bevor sie nach dem Signal des Trainers umschalten und ins Spiel gehen.",
+    "grafik_description": "Die Grafik zeigt den Aufbau und Ablauf der Fußballübung 'Vom Torschuss ins Spiel umschalten'. Zwei Teams befinden sich diagonal versetzt voneinander in einem 20x20 Meter Spielfeld mit zwei Toren. Die Spieler führen einzeln Torschüsse durch, bis der Trainer 'Spielen!' ruft, woraufhin sie in ein 6 gegen 6 oder 7 gegen 7 Spiel übergehen.",
+    "grafik_title": "Fußballübung Torschuss und Umschalten",
+    "grafik_caption": "Dynamische Übung zum Torschuss und schnellen Umschalten in den Angriff für Kinder.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler benötigt man für diese Übung?",
+        "antwort": "Für das 6 gegen 6 bzw. 7 gegen 7 Spiel benötigt man je nach Altersklasse 12-14 Spieler. Die Übung lässt sich aber auch mit weniger Spielern durchführen."
+      },
+      {
+        "frage": "Wie lange sollte die Übung dauern?",
+        "antwort": "Die Spielzeit pro Durchgang beträgt 6 Minuten. Nach jeder Spielphase folgt wieder eine Schussübungsphase."
+      },
+      {
+        "frage": "Für welche Altersklassen eignet sich die Übung?",
+        "antwort": "Die Übung ist gut geeignet für Kinder der F-Jugend bis D-Jugend."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [],
+    "schwester_id": null,
+    "schwester_titel": null
+  },
+  {
     "id": 95,
     "titel": "BALLGEFÜHL AN VIER STATIONEN",
     "quell_trainingseinheit": "Stationen-Warmup und viele Toraktionen",
