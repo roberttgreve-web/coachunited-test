@@ -6178,5 +6178,68 @@
     ],
     "schwester_id": 101,
     "schwester_titel": "TECHNIK UND SCHNELLIGKEIT: VOLLEY UND WETTRENNEN"
+  },
+  {
+    "id": 101,
+    "titel": "VOLLEY UND WETTRENNEN",
+    "quell_trainingseinheit": "1 gegen 1 nach Slalom und Wettrennen",
+    "quell_url": "https://coachunited.de/1-gegen-1-nach-slalom-und-wettrennen/",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/06/image-14.jpg",
+    "trainingsphase": "Aufwärmen",
+    "kurzbeschreibung": "Zwei Teams spielen sich den Ball per Volleypass zu. Nach dem Pass sprinten die Ballbesitzer um die Wette zum Trainer.",
+    "aufbau": "Zwei Starthütchen im Abstand von 10 Metern nebeneinander aufstellen, 5 Meter davor ein weiteres Hütchen zentral aufstellen. Trainer steht 20 Meter entfernt.",
+    "durchfuehrung": "Die Ballbesitzer passen volley zum Mitspieler und sprinten zum Trainer. Passempfänger fängt den Ball und wechselt die Position. Punkte zählen. Neue Runde beginnt.",
+    "varianten": "a) Punkt zählt nur, wenn der Ball aus der Luft gefangen wurde (also sauberes Zuspiel). b) Vier Spieler gleichzeitig. c) Linken oder rechten Fuß vorgeben.",
+    "coaching_fokus": "• Konzentrierter Volleypass auf den Mitspieler; • Schneller Sprint",
+    "leichter_machen": "• Geringere Distanzen",
+    "schwerer_machen": "• Punkt zählt nur, wenn der Ball aus der Luft gefangen wurde (also sauberes Zuspiel); • Vier Spieler gleichzeitig.; • Linken oder rechten Fuß vorgeben.",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Koordination",
+      "Schnelligkeit"
+    ],
+    "seo_keyword": "Fußballübung Technik Schnelligkeit Kinder",
+    "url_slug": "fussballubung-technik-und-schnelligkeit-volley-und-wettrennen",
+    "seo_meta_description": "Verbinde Technik und Schnelligkeit in einer dynamischen Fußballübung für Kinder. Schule Volley-Pässe, Raumaufteilung und Sprintfähigkeit.",
+    "grafik_alt_text": "Zwei Fußballspieler passen sich den Ball per Volley zu und sprinten dann zum Trainer.",
+    "grafik_description": "Die Grafik zeigt den Aufbau und Ablauf der Fußballübung 'Technik und Schnelligkeit: Volley und Wettrennen'. Zwei Spieler stehen in 10 Metern Abstand und spielen sich den Ball per Volley-Pass zu, bevor sie dann um die Wette zum Trainer sprinten.",
+    "grafik_title": "Fußballübung Technik und Schnelligkeit Volley Wettrennen",
+    "grafik_caption": "Dynamische Übung zum Training von Technik, Pässen und Schnelligkeit für Kinder im Fußball.",
+    "status": "veroeffentlicht",
+    "nachtraeglich_eingefuegt": true,
+    "schwester_ids": [
+      100
+    ],
+    "schwester_id": 100,
+    "schwester_titel": "PARTNER-VOLLEY",
+    "alt_titel": "Technik-Wettbewerb: Volley und Sprint",
+    "faq": [
+      {
+        "frage": "Wie kann ich die Übung für jüngere Spieler anpassen?",
+        "antwort": "Für jüngere Spieler (G/F-Jugend) das Spielfeld verkürzen und den Trainer näher positionieren."
+      },
+      {
+        "frage": "Wie lange soll die Übung dauern?",
+        "antwort": "Die Übung eignet sich gut für ein 10-15-minütiges Techniktraining. "
+      },
+      {
+        "frage": "Welche Variationen gibt es noch?",
+        "antwort": "Siehe oben."
+      }
+    ],
+    "grafik_dateiname": "",
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": ""
   }
 ]
