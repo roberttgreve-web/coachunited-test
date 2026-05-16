@@ -5444,6 +5444,68 @@
     "schwester_titel": null
   },
   {
+    "id": 89,
+    "titel": "HOHEN BALL VERARBEITEN",
+    "quell_trainingseinheit": "Handlungsschnell sein, mit hohen Bällen umgehen und Positionen halten",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/07/image-5.png",
+    "grafik_dateiname": "uebung-102-hohen-ball-verarbeiten.png",
+    "trainingsphase": "Spielformat",
+    "kurzbeschreibung": "Trainer wirft einen Ball. Spieler dreht sich, sprintet und sucht den Torabschluss.",
+    "aufbau": "Ein Starthütchen, ein Wartehütchen platzieren. Jugendtor mit Torwart in etwa 20-30m Entfernung aufbauen.",
+    "durchfuehrung": "Erster Spieler steht am Hütchen mit dem Gesicht zum Trainer. Sobald der Trainer den Ball wirft, dreht sich der Spieler schnell, kontrolliert den Ball und schließt ab. Trainer variiert beim werfen der Bälle (links/rechts/zentral; höher/flacher).",
+    "varianten": "a) 1 gegen 1 gegen Torhüter erlauben oder nicht erlauben (dann Torschusszone markieren); b) nur zwei Ballkontakte TECHNIK:HOHEN BALL VERARBEITEN UND INS 1 GEGEN 1 HOHEN BALL VERARBEITEN UND INS 1 GEGEN 1 Trainer wirft einen Ball. Spieler dreht sich, sprintet und geht danach ins 1 gegen 1.",
+    "quell_url": "https://coachunited.de/handlungsschnell-sein-mit-hohen-ballen-umgehen-und-positionen-halten/",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Ballkontrolle",
+      "Torschuss",
+      "Koordination",
+      "Schnelligkeit"
+    ],
+    "coaching_fokus": "• Konzentriert auf den Ball schauen beim Fangnehmen; • Ballmitnahme mit dem richtigen Körperteil vorbereiten; • Nach dem Dribbling den Kopf heben und Ziel ausmachen",
+    "leichter_machen": "• 1 gegen 1 gegen Torhüter erlauben; • Abstand zum Tor verringern, um Sprint zu verkürzen",
+    "schwerer_machen": "• Nur zwei Ballkontakte; • 1 gegen 1 gegen Torhüter nicht erlauben (Torschusszone markiere",
+    "status": "veroeffentlicht",
+    "alt_titel": "Hoher Ball - Kontroile und Abschluss",
+    "seo_keyword": "Fußballübung hoher Ball Kinder",
+    "url_slug": "hoher-ball-verarbeiten-und-abschluss",
+    "seo_meta_description": "Fußballübung für Kinder 6-12 Jahre zum kontrollieren und abschließen hoher Bälle. Verbessert Ballkontrolle, Torschuss und Schnelligkeit.",
+    "grafik_alt_text": "Jugendliche Fußballspieler üben das Kontrollieren und Abschließen hoher Bälle auf einem Fußballplatz.",
+    "grafik_description": "Die Grafik zeigt eine Fußballübung, bei der ein Jugendlicher einen hohen Ball kontrolliert und dann auf ein Tor abschließt. Weitere Spieler sind als Statisten zu sehen.",
+    "grafik_title": "Kinder-Fußballübung: Hoher Ball kontrollieren und abschließen",
+    "grafik_caption": "Übung zum Kontrollieren und Abschließen hoher Bälle für junge Fußballer.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler braucht man für diese Übung?",
+        "antwort": "Ideal sind 10-15 Spieler, die sich abwechseln."
+      },
+      {
+        "frage": "Wie lange dauert die Übung?",
+        "antwort": "5-10 Minuten. "
+      },
+      {
+        "frage": "Für welche Altersklassen ist die Übung geeignet?",
+        "antwort": "Die Übung ist für F- bis D-Jugend Spieler im Alter von 8-12 Jahren geeignet."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [
+      90
+    ],
+    "schwester_id": 90,
+    "schwester_titel": "HOHEN BALL VERARBEITEN UND INS 1 GEGEN 1"
+  },
+  {
     "id": 95,
     "titel": "BALLGEFÜHL AN VIER STATIONEN",
     "quell_trainingseinheit": "Stationen-Warmup und viele Toraktionen",
