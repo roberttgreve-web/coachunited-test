@@ -5511,6 +5511,70 @@
     "schwester_titel": "HOHEN BALL VERARBEITEN UND INS 1 GEGEN 1"
   },
   {
+    "id": 90,
+    "titel": "HOHEN BALL VERARBEITEN UND INS 1 GEGEN 1",
+    "quell_trainingseinheit": "Handlungsschnell sein, mit hohen Bällen umgehen und Positionen halten",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/07/image-6.png",
+    "grafik_dateiname": "uebung-103-hohen-ball-verarbeiten-und-ins-1-gegen-1.png",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "Trainer wirft einen Ball. Spieler dreht sich, sprintet und geht danach ins 1 gegen 1.",
+    "aufbau": "Ein Starthütchen, ein Wartehütchen platzieren. Jugendtor mit Torwart in etwa 20-30m Entfernung aufbauen. Kleines Feld vor dem Tor mit Hütchen markieren.",
+    "durchfuehrung": "Erster Spieler steht am Hütchen mit dem Gesicht zum Trainer. Sobald der Trainer den Ball wirft, dreht sich der Spieler schnell, kontrolliert den Ball und schließt ab. Trainer variiert beim werfen der Bälle (links/rechts/zentral; höher/flacher). Dieses Mal mit 1 gegen 1 mit Torabschluss. Angreifer wird nach Abschluss zum Verteidiger.",
+    "varianten": "Beide Spieler starten parallel und gehen direkt nach dem Wurf ins 1 gegen 1. POSITIONEN HALTEN:BAHNENSPIEL BAHNENSPIEL Spieler dürfen im Spiel ihre Bahnen nicht verlassen.",
+    "quell_url": "https://coachunited.de/handlungsschnell-sein-mit-hohen-ballen-umgehen-und-positionen-halten/",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Dribbeln",
+      "Torschuss",
+      "Zweikampf",
+      "Schnelligkeit"
+    ],
+    "coaching_fokus": "• Ball aus der Luft mit Kontrolle annehmen; • Kopf hoch nach Ballannahme",
+    "leichter_machen": "• Ball flach rollen",
+    "schwerer_machen": "• Beide Spieler starten parallel und gehen direkt nach dem Wurf ins 1 gegen 1.",
+    "status": "veroeffentlicht",
+    "schwester_ids": [
+      89
+    ],
+    "schwester_id": 89,
+    "schwester_titel": "HOHEN BALL VERARBEITEN",
+    "alt_titel": "Hoher Ball verarbeiten und zum Torabschluss im 1vs1",
+    "seo_keyword": "Fußballübung hoher Ball 1vs1 Kinder",
+    "url_slug": "fussballubung-hoher-ball-1vs1-kinder",
+    "seo_meta_description": "Verbessere die Ballannahme und den Torabschluss im 1vs1 mit dieser effektiven Fußballübung für Kinder von 6-12 Jahren.",
+    "grafik_alt_text": "Zwei Kinder spielen im 1vs1 nach Ballannahme aus der Luft.",
+    "grafik_description": "Die Übung trainiert die Ballannahme aus der Luft und das anschließende 1vs1 mit Torabschluss. Ein Trainer wirft den Ball, die Spieler müssen ihn kontrollieren und dann direkt ins Eins-gegen-Eins gehen.",
+    "grafik_title": "Fußballübung für Kinder: Hoher Ball verarbeiten und 1vs1",
+    "grafik_caption": "Verbesserung der Ballannahme und des Torabschlusses im 1vs1.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler benötige ich für diese Übung?",
+        "antwort": "Ideal sind 8-15 Spieler. "
+      },
+      {
+        "frage": "Wie lange sollte man diese Übung durchführen?",
+        "antwort": "Etwa 5-10 Minuten sind optimal, damit die Spieler genug Wiederholungen bekommen."
+      },
+      {
+        "frage": "Für welche Altersgruppe eignet sich die Übung am besten?",
+        "antwort": "Die Übung ist perfekt für Kinder der F- bis D-Jugend (8-14 Jahre) geeignet."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": ""
+  },
+  {
     "id": 95,
     "titel": "BALLGEFÜHL AN VIER STATIONEN",
     "quell_trainingseinheit": "Stationen-Warmup und viele Toraktionen",
