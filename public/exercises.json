@@ -6427,10 +6427,11 @@
     "ist_gecrawlt": false,
     "quell_kategorie": "",
     "schwester_ids": [
+      106,
       105
     ],
-    "schwester_id": 105,
-    "schwester_titel": "LEIBCHEN SUCHEN, SPIEL STARTEN"
+    "schwester_id": 106,
+    "schwester_titel": "PARALLELES 1 GEGEN 1 MIT EINDRIBBELN"
   },
   {
     "id": 105,
@@ -6458,10 +6459,11 @@
     "schwerer_machen": "• Nur 2 Ballberührungen pro Spielzug",
     "status": "veroeffentlicht",
     "schwester_ids": [
+      106,
       104
     ],
-    "schwester_id": 104,
-    "schwester_titel": "LEIBCHEN FINDEN, TEAM FINDEN",
+    "schwester_id": 106,
+    "schwester_titel": "PARALLELES 1 GEGEN 1 MIT EINDRIBBELN",
     "alt_titel": "Leibchen-Jagd - Schnelles Teamspiel",
     "seo_keyword": "Fußballübung Teamspiel Kinder",
     "url_slug": "leibchen-jagd-teamspiel-fussball-kinder",
@@ -6491,5 +6493,67 @@
     "original_coaching_fokus": "",
     "ist_gecrawlt": false,
     "quell_kategorie": ""
+  },
+  {
+    "id": 106,
+    "titel": "PARALLELES 1 GEGEN 1 MIT EINDRIBBELN",
+    "quell_trainingseinheit": "Doppelt hält besser – Spielspaß auf zwei Feldern",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/06/image-14.png",
+    "grafik_dateiname": "uebung-134-paralleles-1-gegen-1-mit-eindribbeln.png",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "Ein Spieler dribbelt durch ein Hütchentor und greift auf zwei Minitore an, der andere verteidigt.",
+    "aufbau": "20 x 40 m Feld. Vier kleine Tore hinzufügen. Siehe Abbildung. Zwei Teams je Feld auf den Seitenlinien, je ein Hütchentor davor. Ballbesitzer stehen vor dem Hütchentor.",
+    "durchfuehrung": "Ballbesitzer dribbelt durch das Hütchentor und greift an. Der andere Spieler läuft als Verteidiger ins Feld. Nach Ballverlust darf auch dieser auf die Minitore angreifen. Danach rotieren alle Positionen im Uhrzeigersinn.",
+    "varianten": "Slalom statt Hütchentore. Oder 2 gegen 1 (jeweils zweites Hütchentor hinzufügen). SPIELEN:2 GEGEN 2 AUF VIER TORE 2 GEGEN 2 AUF VIER TORE Trainer spielt ins Feld, zwei Teams greifen auf jeweils zwei Tore an.",
+    "quell_url": "https://coachunited.de/doppelt-halt-besser-spielspas-auf-zwei-feldern/",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend"
+    ],
+    "skills": [
+      "Ballkontrolle",
+      "Dribbeln",
+      "Zweikampf",
+      "Raumverhalten"
+    ],
+    "coaching_fokus": "• Kopf hoch beim Dribbling, Spielübersicht behalten; • Enge Körperstellung beim Verteidigen, Angriffslinie blockieren; • Schnelles Umschalten",
+    "leichter_machen": "• Spielfeld verkleinern",
+    "schwerer_machen": "• Slalom statt Hütchentore.; • 2 gegen 1 (jeweils zweites Hütchentor hinzufügen).",
+    "status": "veroeffentlicht",
+    "alt_titel": "WENDIGES 1 GEGEN 1 MIT MINIZIELEN",
+    "seo_keyword": "Fußballübung 1 gegen 1 Dribbling Kinder",
+    "url_slug": "paralleles-1-gegen-1-mit-eindribbeln",
+    "seo_meta_description": "Dynamische Fußballübung für Kinder zum Dribbling, Ballkontrolle und Zweikampf. Mit Varianten zum Anpassen des Schwierigkeitsgrads.",
+    "grafik_alt_text": "Zwei Kinder spielen ein 1 gegen 1 Dribbling-Duell mit Minizielen",
+    "grafik_description": "Die Kinder dribbeln durch ein Hütchentor und greifen dann auf zwei Minitore an. Ein Verteidiger versucht, den Ball zu erobern.",
+    "grafik_title": "Fußballübung 1 gegen 1 Dribbling Kinder",
+    "grafik_caption": "Dynamisches 1 gegen 1 Dribbling-Duell mit Minizielen",
+    "faq": [
+      {
+        "frage": "Wie kann ich das Tempo in dieser Übung anpassen?",
+        "antwort": "Das Tempo lässt sich durch die Größe des Spielfelds, die Entfernung der Minitore und das Einbeziehen des Trainers als zusätzlicher Gegenspieler steuern."
+      },
+      {
+        "frage": "Welche Altersstufen eignen sich für diese Übung?",
+        "antwort": "Die Übung ist gut geeignet für E-Jugend und D-Jugend Kinder im Alter von 10-12 Jahren."
+      },
+      {
+        "frage": "Gibt es weitere Varianten dieser Dribbling-Übung?",
+        "antwort": "Ja, man kann z.B. Slalom-Dribbling oder 2 gegen 1 Situationen einbauen, um den Schwierigkeitsgrad anzupassen."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [
+      105,
+      104
+    ],
+    "schwester_id": 105,
+    "schwester_titel": "LEIBCHEN SUCHEN, SPIEL STARTEN"
   }
 ]
