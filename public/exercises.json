@@ -5078,6 +5078,68 @@
     "schwester_titel": "TRAINER-PASS ZUM TOR VERARBEITEN"
   },
   {
+    "id": 83,
+    "titel": "TRAINER-PASS ZUM TOR VERARBEITEN",
+    "quell_trainingseinheit": "Passen, tricksen, treffen, Jubel ausdenken",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/09/image-3.png",
+    "grafik_dateiname": "uebung-085-trainer-pass-zum-tor-verarbeiten.png",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "Spieler passt zum Trainer, läuft in die Torzone und versucht, den Pass vom Trainer in ein Tor zu verwandeln.",
+    "aufbau": "Gruppe mit Bällen an Hütchen postieren. Etwa 20m entfernt ein Jugendtor mit Torhüter platzieren. Etwa 8m vor dem Jugendtor zentral eine Torzone markieren. ",
+    "durchfuehrung": "Spieler passt zum Trainer und sprintet in die Torzone. Trainer spielt einen Pass in die Torzone. Spieler verarbeitet den Ball und kommt zum Torabschluss.",
+    "varianten": "a) Pass als Trainer halbhoch spielen oder werfen. b) Abstand des Hütchens zur Torzone verringern und Doppelpass spielen. c) Trainer wird von Spieler ersetzt. 4 GEGEN 4 MIT NEUTRALEN PASSSPIELERN 4 GEGEN 4 MIT NEUTRALEN PASSSPIELERN Zwei Teams spielen gegeneinander, neutrale Passspieler hinter den Toren können eingebunden werden. Treffer führen zu Wechseln.",
+    "quell_url": "https://coachunited.de/passen-tricksen-treffen-jubel-ausdenken/",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Torschuss",
+      "Raumverhalten"
+    ],
+    "coaching_fokus": "• Torabschluss möglichst ohne Ballannahme; • Blickkontakt zum Trainer beim Abspiel; • Mit hohem Tempo in die Torzone laufen",
+    "leichter_machen": "• Abstand des Hütchens zur Torzone verringern und Doppelpass spielen.; • Langsamer Pass in die Torzone.; • 2-3 Ballkontakte zur Ballkontrolle erlaubt.",
+    "schwerer_machen": "• Pass als Trainer halbhoch spielen oder werfen.; • Trainer wird von Spieler ersetzt.",
+    "status": "veroeffentlicht",
+    "schwester_ids": [
+      82
+    ],
+    "schwester_id": 82,
+    "schwester_titel": "ERST TRICKSEN, DANN JUBELN",
+    "alt_titel": "Schnelle Torabschlüsse nach Spieleransage",
+    "seo_keyword": "Fußballübung Torschuss Kinder",
+    "url_slug": "fussballubung-torschuss-kinder",
+    "seo_meta_description": "Effektive Fußballübung zum Torschusstraining für Kinder (6-12 Jahre). Gezieltes Training von Ballkontrolle, Raumverhalten und Torabschluss.",
+    "grafik_alt_text": "Zwei Kinder beim Fußballspiel, eines schießt auf das Tor",
+    "grafik_description": "Die Grafik zeigt zwei Kinder beim Fußballspielen. Ein Kind läuft mit dem Ball auf das Tor zu und schießt den Ball in Richtung Tor.",
+    "grafik_title": "Kinder Fußballübung Torschuss",
+    "grafik_caption": "Kinder Fußballübung zur Verbesserung des Torschusses",
+    "faq": [
+      {
+        "frage": "Wie passe ich die Übung für jüngere Spieler an?",
+        "antwort": "Verringern Sie den Abstand zum Tor und lassen Sie den Trainer den Ball direkt vor das Tor spielen."
+      },
+      {
+        "frage": "Wie lange sollte die Übung dauern?",
+        "antwort": "Etwa 10-15 Minuten, je nach Alter und Konzentration der Spieler."
+      },
+      {
+        "frage": "Kann ich die Übung auch für ältere Kinder nutzen?",
+        "antwort": "Ja, durch Erhöhen der Spielerzahl, des Tempos und Einführen von Gegnern lässt sich die Übung gut an ältere Kinder anpassen."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": ""
+  },
+  {
     "id": 89,
     "titel": "ÜBER DAS HÜTCHEN ZUM TORERFOLG",
     "quell_trainingseinheit": "Tricks, Fernschüsse – und ab in die Jubelzone",
