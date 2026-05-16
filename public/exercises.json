@@ -1903,8 +1903,7 @@
     "ist_gecrawlt": false,
     "quell_kategorie": "",
     "schwester_ids": [
-      32,
-      33
+      32
     ],
     "schwester_id": 32,
     "schwester_titel": "FERNSCHUSS-CHALLENGE"
@@ -1936,8 +1935,7 @@
     "schwerer_machen": "• Zu gegenüberliegenden (weiter entfernteren) Hütchenreihe dribbeln und vor dort abschließen; • Torbreite mit Hütchen verringern, um genaueren Schuss zu erfordern",
     "status": "veroeffentlicht",
     "schwester_ids": [
-      31,
-      33
+      31
     ],
     "schwester_id": 31,
     "schwester_titel": "TORSCHUSS-CHALLENGE",
@@ -2027,12 +2025,9 @@
     "original_coaching_fokus": "",
     "ist_gecrawlt": false,
     "quell_kategorie": "",
-    "schwester_ids": [
-      31,
-      32
-    ],
-    "schwester_id": 31,
-    "schwester_titel": "TORSCHUSS-CHALLENGE"
+    "schwester_ids": [],
+    "schwester_id": null,
+    "schwester_titel": null
   },
   {
     "id": 34,
