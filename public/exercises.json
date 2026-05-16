@@ -5199,6 +5199,67 @@
     "schwester_titel": null
   },
   {
+    "id": 85,
+    "titel": "PASS-STAFFEL NACH FARBEN",
+    "quell_trainingseinheit": "Aus dem Mittelfeld ins Angriffsspiel",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/09/image.jpg",
+    "grafik_dateiname": "uebung-087-pass-staffel-nach-farben.jpg",
+    "trainingsphase": "Aufwärmen",
+    "kurzbeschreibung": "Spieler passen nach Einrollen des Torhüters in der vorgegebenen Farbkombination.",
+    "aufbau": "20x30m-Feld markieren. Zwei Torhüter an den Grundlinien positionieren. Drei Leibchenfarben gleichmäßig verteilen.",
+    "durchfuehrung": "Trainer ruft eine Farbkombinaton mit drei Farben (z.B. „Orange, Grün, Blau“). Torwart rollt den Ball zu einem Spieler mit orangefarbenen Leibchen ein, dieser passt zu grün, dieser passt zu blau. Der blaue Spieler passt zum gegenüberliegenden Torhüter.",
+    "varianten": "a) Torhüter können mit dem Fuß einspielen oder einen langen Abwurf machen. b) Bei spielstarken Gruppen: Feld vergrößern und lange Pässe spielen lassen. c) Wettbewerb mit zwei Teams gleichzeitig: Wer passt schneller zum gegenüberliegenden Torhüter? VERTEIDIGEN NACH FARBEN VERTEIDIGEN NACH FARBEN Die aufgerufene Farbe ist die verteidigende Mannschaft. Die anderen beiden Teams bringen den Ball von einem Torhüter zum anderen.",
+    "quell_url": "https://coachunited.de/aus-dem-mittelfeld-ins-angriffsspiel/",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Koordination",
+      "Raumverhalten"
+    ],
+    "coaching_fokus": "• Konzentriert den Ball zum Mitspieler passen; • Raumaufteilung und Bewegung ohne Ball beobachten; • Lautweckseln und Orientierung im Team verbessern",
+    "leichter_machen": "• Torhüter können den Ball mit der Hand einwerfen; • Feldgröße verkleinern und eine Farbe weniger verwenden",
+    "schwerer_machen": "• Feld vergrößern; • Lange Pässe spielen lassen.; • Wettbewerb mit zwei Teams gleichzeitig: Wer passt schneller zum gegenüberliegenden Torhüter?",
+    "status": "veroeffentlicht",
+    "alt_titel": "Farbkombinierte Passstafette für Kinder",
+    "seo_keyword": "Fußballübung Koordination Kinder",
+    "url_slug": "fussballubung-koordination-kinder",
+    "seo_meta_description": "Fußballübung für Kinder zur Verbesserung von Koordination, Kommunikation und Raumaufteilung im Team. Einfach anpassbar für verschiedene Altersgruppen.",
+    "grafik_alt_text": "Kinder in bunten Trikots spielen einen Fußballpass-Staffellauf auf einem Feld",
+    "grafik_description": "Auf einem 20x30 Meter großen Spielfeld befinden sich zwei Tore an den Grundlinien. Drei Spieler in unterschiedlichen Trikotfarben passen sich den Ball zu, bevor dieser zum gegenüberliegenden Torwart gelangt.",
+    "grafik_title": "Koordinationsübung Fußballpass-Staffel für Kinder",
+    "grafik_caption": "Fußballübung 'Pass-Staffel nach Farben' zur Förderung von Teamspiel und Raumaufteilung",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler benötigt man für die Übung?",
+        "antwort": "Mindestens 8 Spieler, je nach Feldgröße auch mehr. Die Übung lässt sich gut in Gruppen von 8-14 Kindern durchführen."
+      },
+      {
+        "frage": "Wie lange dauert eine Runde der Übung?",
+        "antwort": "5-10 Minuten einplanen. "
+      },
+      {
+        "frage": "Für welche Altersgruppen eignet sich die Übung?",
+        "antwort": "Die 'Pass-Staffel nach Farben' ist bestens geeignet für G-Jugend bis F-Jugend Kinder im Alter von 6 bis 10 Jahren."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [
+      86
+    ],
+    "schwester_id": 86,
+    "schwester_titel": "VERTEIDIGEN NACH FARBEN"
+  },
+  {
     "id": 89,
     "titel": "ÜBER DAS HÜTCHEN ZUM TORERFOLG",
     "quell_trainingseinheit": "Tricks, Fernschüsse – und ab in die Jubelzone",
