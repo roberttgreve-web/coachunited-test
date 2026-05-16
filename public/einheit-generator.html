@@ -369,34 +369,60 @@
         e.status === 'veroeffentlicht' && (e.jugend || []).includes(jugend)
       );
 
-      const byPhase = {};
-      valid.forEach(e => {
-        if (!byPhase[e.trainingsphase]) byPhase[e.trainingsphase] = [];
-        byPhase[e.trainingsphase].push(e);
+      // Global BFS: group exercises by sister links across all phases
+      const visited = new Set();
+      const superClusters = [];
+      for (const ex of valid) {
+        if (visited.has(ex.id)) continue;
+        visited.add(ex.id);
+        const group = [ex];
+        for (let i = 0; i < group.length; i++) {
+          valid.filter(o => !visited.has(o.id) && (group[i].schwester_ids || []).includes(o.id))
+               .forEach(s => { visited.add(s.id); group.push(s); });
+        }
+        if (!clusterMatchesSkill(group, skill)) continue;
+        const byPhase = {};
+        group.forEach(e => {
+          if (!byPhase[e.trainingsphase]) byPhase[e.trainingsphase] = [];
+          byPhase[e.trainingsphase].push(e);
+        });
+        superClusters.push({ byPhase });
+      }
+
+      const phaseOptions = {};
+      PHASES.forEach(p => {
+        phaseOptions[p.key] = superClusters.filter(sc => sc.byPhase[p.match]);
       });
 
-      const clustersByPhase = PHASES.map(p => ({
-        ...p,
-        clusters: makeClusters(byPhase[p.match] || [])
-          .filter(c => clusterMatchesSkill(c, skill))
-      }));
+      if (PHASES.some(p => !phaseOptions[p.key].length)) return null;
 
-      if (clustersByPhase.some(p => !p.clusters.length)) return null;
-
-      const totalCombinations = clustersByPhase.reduce((acc, p) => acc * p.clusters.length, 1);
-
-      if (totalCombinations === 1) {
-        const result = clustersByPhase.flatMap(p => p.clusters[0]);
-        return { exercises: result, key: sessionKey(result), canReroll: false };
+      function buildSession() {
+        const assignment = {};
+        const used = new Set();
+        for (const p of PHASES) {
+          if (assignment[p.key]) continue;
+          const candidates = phaseOptions[p.key].filter(sc => !used.has(sc));
+          if (!candidates.length) return null;
+          const chosen = candidates[Math.floor(Math.random() * candidates.length)];
+          used.add(chosen);
+          PHASES.forEach(ph => {
+            if (chosen.byPhase[ph.match] && !assignment[ph.key])
+              assignment[ph.key] = chosen;
+          });
+        }
+        return PHASES.flatMap(p => assignment[p.key]?.byPhase[p.match] || []);
       }
 
       for (let i = 0; i < 30; i++) {
-        const result = clustersByPhase.flatMap(p => pickRandom(p.clusters));
-        const key = sessionKey(result);
-        if (key !== excludeKey) return { exercises: result, key, canReroll: true };
+        const s = buildSession();
+        if (!s) continue;
+        const k = sessionKey(s);
+        if (k !== excludeKey) return { exercises: s, key: k, canReroll: true };
       }
 
-      return null;
+      const fallback = buildSession();
+      if (!fallback) return null;
+      return { exercises: fallback, key: sessionKey(fallback), canReroll: false };
     }
 
     // ── Render ────────────────────────────────────────────────────
