@@ -4190,9 +4190,77 @@
     "original_coaching_fokus": "",
     "ist_gecrawlt": false,
     "quell_kategorie": "",
-    "schwester_ids": [],
-    "schwester_id": null,
-    "schwester_titel": null
+    "schwester_ids": [
+      69
+    ],
+    "schwester_id": 69,
+    "schwester_titel": "BALL UNTER DRUCK IN DEN EIGENEN REIHEN HALTEN"
+  },
+  {
+    "id": 69,
+    "titel": "BALL UNTER DRUCK IN DEN EIGENEN REIHEN HALTEN",
+    "quell_trainingseinheit": "Auch unter Gegnerdruck cool bleiben",
+    "quell_url": "https://coachunited.de/auch-unter-gegnerdruck-cool-bleiben/",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/09/image-19.jpg",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "Ein Team versucht den Ball durch Pässe in den eigenen Reihen zu halten während zwei Jäger aus dem anderen Team versuchen, den Ball zu erobern.",
+    "aufbau": "EZwei 20 x 15 Meter große Felder nebeneinander markieren. Zwei Teams. Ein Team an zwei Hütchen gleichmäßig positionieren. Trainer in der Mitte mit 5 Bällen. Stoppuhr bereit halten.",
+    "durchfuehrung": "Der Trainer spielt den Ball ein und startet die Stoppuhr. Gleichzeitig starten zwei Jäger. Das Team in Ballbesitz versucht durch Pässe den Ball so lange wie möglich in den eigenen Reihen zu halten. Die Jäger versuchen zu erobern. Sobald sie erfolgreich waren oder der Ball im Aus ist, wird der nächste Ball eingespielt und die nächsten zwei Jäger starten. Welches Team schafft es, die 5 Bälle am längsten in den eigenen Reihen zu halten?",
+    "varianten": "",
+    "coaching_fokus": "• Schnelle, präzise Pässe; • Schnelles Anlaufen der Jäger; • Kommunikation in der sichpassenden Mannschaft",
+    "leichter_machen": "• Spielfeld vergrößern; • Anzahl der Jäger reduzieren",
+    "schwerer_machen": "• Zweiter Ball; • Dritten Jäger einsetzen",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Dribbeln",
+      "Zweikampf",
+      "Raumverhalten",
+      "Taktik"
+    ],
+    "seo_keyword": "Fußballübung Ballbesitz Kinder",
+    "url_slug": "fussballubung-ballbesitz-kinder",
+    "seo_meta_description": "Eine effektive Fußballübung für Kinder, um Ballkontrolle, Pässe und Raumverhalten unter Gegnerdruck zu trainieren.",
+    "grafik_alt_text": "Zwei Mannschaften spielen einen Ballbesitzwettbewerb mit Gegnerdruck auf einem Fußballfeld",
+    "grafik_description": "Die Übung zeigt zwei Mannschaften, die versuchen, den Ball durch kurze Pässe in den eigenen Reihen zu behaupten, während zwei gegnerische Spieler den Ball zu erobern versuchen. Auf dem Feld sind Hütchen als Markierungen aufgestellt.",
+    "grafik_title": "Fußballübung: Ballbesitz unter Druck halten",
+    "grafik_caption": "Trainingsübung zum Training von Ballbesitz, Pässen und Raumverhalten unter Gegnerdruck",
+    "status": "veroeffentlicht",
+    "nachtraeglich_eingefuegt": true,
+    "alt_titel": "Ballbesitzspiel mit Gegnerdruck",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler braucht man für diese Übung?",
+        "antwort": "Idealerweise 6-8 Spieler pro Team, damit genügend Bewegung und Pässe möglich sind."
+      },
+      {
+        "frage": "Wie lange sollte man diese Übung durchführen?",
+        "antwort": "Je nach Alter und Leistungsstand 5-10 Minuten pro Durchgang. "
+      },
+      {
+        "frage": "Kann man die Übung auch für ältere Spieler anpassen?",
+        "antwort": "Ja, man kann das Spielfeld verkleinern, die Anzahl der Gegner erhöhen oder Einschränkungen bei den Pässen einbauen, um die Schwierigkeit zu steigern."
+      }
+    ],
+    "grafik_dateiname": "",
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [
+      68
+    ],
+    "schwester_id": 68,
+    "schwester_titel": "ERST IM FELD PASSEN, DANN FELDER TAUSCHEN"
   },
   {
     "id": 70,
