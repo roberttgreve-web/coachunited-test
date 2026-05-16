@@ -5755,6 +5755,65 @@
     "schwester_titel": "PRÄZISION: FUSSBALLKEGELN FÜR PROFIS"
   },
   {
+    "id": 94,
+    "titel": "FUSSBALLKEGELN FÜR PROFIS",
+    "quell_trainingseinheit": "Torgefahr über die Außenbahn üben",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/07/image-2.jpg",
+    "grafik_dateiname": "uebung-110-fussballkegeln-fuer-profis.jpg",
+    "trainingsphase": "Aufwärmen",
+    "kurzbeschreibung": "Welches Team räumt als erstes alle Hütchen trotz schwierigen Hütchenpositionen ab?",
+    "aufbau": "Teams mit je 4 oder 5 Spielern an einem Hütchen platzieren. Jeweils 6 Hütchen in Kegelformation je nach Spielstärke der Gruppe 4 bis 8 Meter entfernt aufstellen.",
+    "durchfuehrung": "Die Spieler eines Teams versuchen nacheinander mit dem Ball die Hütchen zu treffen. Alle Teams starten gleichzeitig. Nach dem Versuch: Ball holen und hinten anstellen. Wer als erstes alle Kegel umschießt, hat gewonnen. Sobald ein Team gewonnen hat, wird eine neue Kegelformation für alle Teams aufgebaut.",
+    "varianten": "a) Distanz zu Kegeln verändern, um Schwierigkeitsgrad anzupassen. b) Nur mit schwachem Fuß.",
+    "quell_url": "https://coachunited.de/torgefahr-uber-die-ausenbahn-uben/",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle"
+    ],
+    "coaching_fokus": "• Präzise Schusstechnik beim Abräumen der Kegel; • Zügige Ausführung, damit die Übung nicht zu lange dauert",
+    "leichter_machen": "• Verkleinern der Distanz; • Einfache Kegelformationen",
+    "schwerer_machen": "• Schwierige Kegelformationen; • Nur mit schwachem Fuß",
+    "status": "veroeffentlicht",
+    "alt_titel": "Präzisionsspiel: Fußballkegeln mit Hindernissen",
+    "seo_keyword": "Fußballübung Präzision Kinder",
+    "url_slug": "fussballubung-prazision-kinder",
+    "seo_meta_description": "Fußballübung für Kinder (6-12 Jahre) zum Trainieren der Präzision. Kegel zielgenau abschießen, mit verschiedenen Schwierigkeitsstufen.",
+    "grafik_alt_text": "Kinder, die Fußballkegel in einem Spielfeld abschießen",
+    "grafik_description": "Die Kinder stehen in einem Spielfeld und schießen Fußballkegel mit gezielten Pässen um. Die Kegel sind in verschiedenen Formationen aufgebaut, um die Präzision zu fordern.",
+    "grafik_title": "Fußballübung Präzision für Kinder",
+    "grafik_caption": "Gezielte Schüsse auf die Kegel fördern die Präzision der jungen Fußballer.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler braucht man für diese Übung?",
+        "antwort": "Die Übung eignet sich gut für 8-16 Spieler. Die Kinder können in 2-4 Teams aufgeteilt werden."
+      },
+      {
+        "frage": "Wie lange sollte man diese Übung durchführen?",
+        "antwort": "Etwa 10-15 Minuten ist eine gute Dauer, damit die Kinder genug Zeit haben, die verschiedenen Kegelformationen zu besiegen."
+      },
+      {
+        "frage": "Für welche Altersgruppe ist diese Übung geeignet?",
+        "antwort": "Die Präzisionsübung mit Fußballkegeln passt gut für Kinder im Alter von 6-10 Jahren (F- bis G-Jugend)."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": true,
+    "quell_kategorie": "",
+    "schwester_ids": [
+      93
+    ],
+    "schwester_id": 93,
+    "schwester_titel": "FUSSBALLKEGELN"
+  },
+  {
     "id": 96,
     "titel": "BALLGEFÜHL AN VIER STATIONEN",
     "quell_trainingseinheit": "Stationen-Warmup und viele Toraktionen",
