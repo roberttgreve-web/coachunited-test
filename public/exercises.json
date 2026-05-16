@@ -4702,6 +4702,68 @@
     "schwester_titel": "DUELL NACH DEM TORSCHUSS"
   },
   {
+    "id": 77,
+    "titel": "UM DIE WETTE DRIBBELN UND PASSEN",
+    "quell_trainingseinheit": "Pässe kontrollieren und ins Tor treffen. Auch aus der Distanz.",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/09/image-9.jpg",
+    "grafik_dateiname": "uebung-078-um-die-wette-dribbeln-und-passen.jpg",
+    "trainingsphase": "Aufwärmen",
+    "kurzbeschreibung": "Spieler dribbeln Slalom um das Hütchentor und passen zum Mitspieler. Welches Team schafft zuerst 25 Pässe?",
+    "aufbau": "Zwei Hütchentore aufbauen und in etwa 8m Entfernung jeweils links und rechts zwei Gruppen postieren. Eine Gruppe je Hütchentor mit einem Ball.",
+    "durchfuehrung": "Der Spieler dribbelt zum Hütchentor, läuft im Slalom um die Hütchen, passt zum Mitspieler und stellt sich hinten an. Der Mitspieler geht nun ebenfalls ins Dribbling. Team, das zuerst 25 saubere Pässe schafft, gewinnt.",
+    "varianten": "Dribbeltechniken vorgeben (z.B. nur links, nur rechts, mit Sohle, rückwärts, hochhalten) DURCH DEN TRICHTER DURCH DEN TRICHTER Zwei Teams müssen den Ball durch einen Hütchentrichter passen, ohne dass ein Hütchen berührt wird. Welches Team schafft zuerst 15 Pässe?",
+    "quell_url": "https://coachunited.de/passe-kontrollieren-und-ins-tor-treffen-auch-aus-der-distanz/",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend",
+      "E-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Dribbeln",
+      "Koordination"
+    ],
+    "coaching_fokus": "• Enge Ballführung am Fuß; • Präziser Passe",
+    "leichter_machen": "• Abstand der Hütchen vergrößern",
+    "schwerer_machen": "• Erhöhe die Anzahl der Hütchen im Slalom; • Vorgabe der Dribbeltechnik (z.B. nur Sohle)",
+    "status": "veroeffentlicht",
+    "schwester_ids": [
+      78
+    ],
+    "schwester_id": 78,
+    "schwester_titel": "DURCH DEN TRICHTER",
+    "alt_titel": "Wettrennen mit Passen und Dribbeln",
+    "seo_keyword": "Fußballübung Dribbling und Passen Kinder",
+    "url_slug": "fussballubung-dribbling-und-passen-kinder",
+    "seo_meta_description": "Dynamische Fußballübung für Kinder, bei der Dribbling und Passen trainiert werden. Zwei Teams spielen im Wettbewerb um die meisten Pässe.",
+    "grafik_alt_text": "Zwei Kinder Fußballspieler dribbeln Slalom mit Ball und passen ihn zum Mitspieler",
+    "grafik_description": "Die Grafik zeigt zwei Kindern Fußballspieler, die einen Slalom mit dem Ball dribbeln und ihn dann zum Mitspieler passen. Sie stehen auf einem Fußballfeld mit Hütchen als Tore.",
+    "grafik_title": "Fußballübung Dribbling und Passen für Kinder",
+    "grafik_caption": "Kinder trainieren Dribbling und Passen in einem dynamischen Wettbewerbsspiel.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler braucht man für diese Übung?",
+        "antwort": "Am besten 8-16 Kinder, die in vier gleichgroße Teams eingeteilt werden."
+      },
+      {
+        "frage": "Wie lange sollte man diese Übung durchführen?",
+        "antwort": "Etwa 10-15 Minuten, je nach Alter und Konzentration der Kinder."
+      },
+      {
+        "frage": "Kann man die Übung auch für ältere Kinder anpassen?",
+        "antwort": "Ja, man kann den Schwierigkeitsgrad durch mehr Hütchen, weitere Entfernung oder Vorgabe von Dribbeltechniken erhöhen."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": ""
+  },
+  {
     "id": 78,
     "titel": "DURCH DEN TRICHTER",
     "quell_trainingseinheit": "Pässe kontrollieren und ins Tor treffen. Auch aus der Distanz.",
