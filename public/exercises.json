@@ -6427,11 +6427,11 @@
     "ist_gecrawlt": false,
     "quell_kategorie": "",
     "schwester_ids": [
-      106,
-      105
+      107,
+      106
     ],
-    "schwester_id": 106,
-    "schwester_titel": "PARALLELES 1 GEGEN 1 MIT EINDRIBBELN"
+    "schwester_id": 107,
+    "schwester_titel": "2 GEGEN 2 AUF VIER TORE"
   },
   {
     "id": 105,
@@ -6459,11 +6459,11 @@
     "schwerer_machen": "• Nur 2 Ballberührungen pro Spielzug",
     "status": "veroeffentlicht",
     "schwester_ids": [
-      106,
-      104
+      107,
+      106
     ],
-    "schwester_id": 106,
-    "schwester_titel": "PARALLELES 1 GEGEN 1 MIT EINDRIBBELN",
+    "schwester_id": 107,
+    "schwester_titel": "2 GEGEN 2 AUF VIER TORE",
     "alt_titel": "Leibchen-Jagd - Schnelles Teamspiel",
     "seo_keyword": "Fußballübung Teamspiel Kinder",
     "url_slug": "leibchen-jagd-teamspiel-fussball-kinder",
@@ -6550,10 +6550,72 @@
     "ist_gecrawlt": false,
     "quell_kategorie": "",
     "schwester_ids": [
-      105,
+      107,
       104
     ],
-    "schwester_id": 105,
-    "schwester_titel": "LEIBCHEN SUCHEN, SPIEL STARTEN"
+    "schwester_id": 107,
+    "schwester_titel": "2 GEGEN 2 AUF VIER TORE"
+  },
+  {
+    "id": 107,
+    "titel": "2 GEGEN 2 AUF VIER TORE",
+    "quell_trainingseinheit": "Doppelt hält besser – Spielspaß auf zwei Feldern",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/06/image-15.png",
+    "grafik_dateiname": "uebung-135-2-gegen-2-auf-vier-tore.png",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "Trainer spielt ins Feld, zwei Teams greifen auf jeweils zwei Tore an.",
+    "aufbau": "20 x 40 m Feld. Vier kleine Tore hinzufügen. Siehe Abbildung. Zwei Teams jeweils mit Leibchen diagonal voneinander positionieren. Trainer hat Bälle.",
+    "durchfuehrung": "Trainer spielt einen Ball ins Feld. Zwei Spieler von jeder Mannschaft starten ins 2 gegen 2 – Team A greift auf mittlere Minitore an, Team B auf äußere. Nach Tor oder Aus: Nächste Runde.",
+    "varianten": "Bei größeren Gruppen: Auch im 3 gegen 3 möglich. B) Zwei Bälle einspielen. SPIELEN:ZWEIFELDSPIEL ZWEIFELDSPIEL Zwei Teams spielen 6 gegen 6 auf zwei Feldern gleichzeitig. Die Spieler dürfen das Feld wechseln.",
+    "quell_url": "https://coachunited.de/doppelt-halt-besser-spielspas-auf-zwei-feldern/",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Dribbeln",
+      "Zweikampf"
+    ],
+    "coaching_fokus": "• Konzentriertes Auge auf den Ball beim Passen; • Beobachte den freien Mitspieler und spiele ihn schnell an",
+    "leichter_machen": "• Größeres Feld",
+    "schwerer_machen": "• Zusätzlicher Verteidiger pro Team (3 gegen 3); • Der Trainer spielt Pässe zu einem Team, das dann in Überzahl angreift",
+    "status": "veroeffentlicht",
+    "alt_titel": "Hin und Her: 2 gegen 2 auf zwei Tore",
+    "seo_keyword": "Fußballübung 2 gegen 2 Kinder",
+    "url_slug": "fussballubung-2-gegen-2-kinder",
+    "seo_meta_description": "Effektive 2-gegen-2-Übung für Kinder von 9-12 Jahren, fördert Passen, Dribbling und Zweikampf. Tipps zum Coaching und Varianten zum Schwerer- oder Leichter-Machen.",
+    "grafik_alt_text": "Zwei Kinder-Fußballteams spielen 2 gegen 2 auf zwei kleine Tore",
+    "grafik_description": "Die Grafik zeigt den Aufbau einer 2-gegen-2-Fußballübung für Kinder. Zwei Teams mit je zwei Spielern greifen diagonal auf jeweils zwei kleine Tore an, während der Trainer einen Ball ins Feld spielt.",
+    "grafik_title": "2-gegen-2-Fußballübung für Kinder",
+    "grafik_caption": "Dynamische 2-gegen-2-Übung fördert Passen, Dribbling und Zweikampf bei Kindern.",
+    "faq": [
+      {
+        "frage": "Wie passe ich die Übung an eine größere Gruppe an?",
+        "antwort": "Bei mehr Spielern kann man das Spiel auch im 3 gegen 3 durchführen. Dafür wird das Spielfeld entsprechend vergrößert."
+      },
+      {
+        "frage": "Wie lange sollte die Übung dauern?",
+        "antwort": "10-15 Minuten sind für diese Übung optimal. So bleibt die Intensität hoch und die Kinder bleiben konzentriert."
+      },
+      {
+        "frage": "Für welche Altersgruppen eignet sich die Übung?",
+        "antwort": "Die 2-gegen-2-Übung ist besonders gut geeignet für Kinder im Alter von 6-9 Jahren (G- und F-Jugend)."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [
+      106,
+      104
+    ],
+    "schwester_id": 106,
+    "schwester_titel": "PARALLELES 1 GEGEN 1 MIT EINDRIBBELN"
   }
 ]
