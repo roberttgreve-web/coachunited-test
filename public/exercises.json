@@ -6305,5 +6305,69 @@
     ],
     "schwester_id": 103,
     "schwester_titel": "2 GEGEN 1 NACH DREIECK-PÄSSEN"
+  },
+  {
+    "id": 103,
+    "titel": "2 GEGEN 1 NACH DREIECK-PÄSSEN",
+    "quell_trainingseinheit": "Spaß mit Fußballkegeln, Dreiecken und Fernschuss-Spiel",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/06/image-23.png",
+    "grafik_dateiname": "uebung-125-2-gegen-1-nach-dreieck-paessen.png",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "Spieler passen den Ball im Dreieck und starten dann in ein 2 gegen 1 mit Torabschluss.",
+    "aufbau": "Zwei 15 Meter große Dreiecke. Ein Jugendtor mit Torhüter, ein Minitor.  ",
+    "durchfuehrung": "Spieler spielen den Ball einmal im Dreieck bis der Ball wieder beim ersten Passgeber ist. Dann starten die beiden torentfernten Spieler als Offensiv-Spieler in ein 2 gegen 1 mit Torabschluss. Der dritte Spieler verteidigt. Danach rotieren alle drei zum nächsten Hütchen. Nach 10 Treffern auf das Minitor wechseln die Teams die Tore. ",
+    "varianten": "",
+    "quell_url": "https://coachunited.de/spas-mit-fusballkegeln-dreiecken-und-fernschuss-spiel/",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Torschuss",
+      "Zweikampf",
+      "Raumverhalten",
+      "Umschalten"
+    ],
+    "coaching_fokus": "• Präzise, sichere Pässe im Dreieck; • Smartes Freilaufen im 2 gegen 1",
+    "leichter_machen": "",
+    "schwerer_machen": "",
+    "status": "veroeffentlicht",
+    "schwester_ids": [
+      102
+    ],
+    "schwester_id": 102,
+    "schwester_titel": "DREIECK-TORABSCHLUSS",
+    "alt_titel": "Pässe im Dreieck - 2 gegen 1 Abschluss",
+    "seo_keyword": "Fußballübung Passen Kinder",
+    "url_slug": "fussballubung-passen-kinder",
+    "seo_meta_description": "Fußballübung für Kinder (E-D-Jugend) zum Passen, Ballkontrolle und Abschluss im 2 gegen 1. Mit Varianten zum Leichter- und Schwerermaachen.",
+    "grafik_alt_text": "Skizze eines Fußballfeldes mit Dreiecksformation und 2 gegen 1 Situation",
+    "grafik_description": "Die Übung besteht aus einem Dreieck-Passspiel, das in ein 2 gegen 1 mit Torabschluss übergeht. Die Spieler rotieren nach jedem Durchgang zum nächsten Hütchen.",
+    "grafik_title": "Fußballübung: 2 gegen 1 nach Dreiecks-Pässen",
+    "grafik_caption": "Fußballübung zum Passen, Ballkontrolle und Abschluss im 2 gegen 1",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler braucht man für die Übung?",
+        "antwort": "6-15 Spieler. "
+      },
+      {
+        "frage": "Wie lange sollte man diese Übung machen?",
+        "antwort": "Je nach Alter und Leistungsstand der Kinder 10-15 Minuten, damit sie konzentriert bleiben."
+      },
+      {
+        "frage": "Kann man die Übung auch für jüngere Kinder anpassen?",
+        "antwort": "Eher nicht. Sie ist dafür etwas zu komplex. "
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": ""
   }
 ]
