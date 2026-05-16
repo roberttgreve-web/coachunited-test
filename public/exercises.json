@@ -2903,7 +2903,7 @@
     "quell_trainingseinheit": "Überzahl gemeinsam ausspielen",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/11/image-13.png",
     "grafik_dateiname": "uebung-043-spielstart-mit-ueberzahl-aus-dem-reifen.png",
-    "trainingsphase": "Spielformat",
+    "trainingsphase": "Hauptteil",
     "kurzbeschreibung": "Zwei Teams treten in einem Spiel gegeneinander an. Ist der Ball im Tor oder im Toraus, darf ein Team einen Ball aus einem Reifen direkt wieder einspielen.",
     "aufbau": "40X40m-Feld aufbauen mit Jugendtoren und Torhütern. Zwei Teams einteilen. Vier Reifen um das Feld platzieren und einen Ball hineinlegen.",
     "durchfuehrung": "Die Spieler spielen ein normales Spiel. Sobald der Ball im Tor oder im Toraus landet, darf die andere Mannschaft (schnell) einen beliebigen Ball aus einem der vier Reifen einspielen. Der Spieler, der den Ball ins Aus gespielt hatte, holt den Ball, und legt in zurück in den freien Reifen.",
@@ -2957,9 +2957,9 @@
     "ist_gecrawlt": false,
     "quell_kategorie": "",
     "schwester_ids": [
-      56
+      49
     ],
-    "schwester_id": 56,
+    "schwester_id": 49,
     "schwester_titel": "TURBO-SPIELSTART MIT ÜBERZAHL AUS DEM REIFEN"
   },
   {
@@ -2990,10 +2990,10 @@
     "schwerer_machen": "• Tore verkleinern; • Zeitmangel erhöhen, z.B. durch Zeitlimit pro Angriff",
     "status": "veroeffentlicht",
     "schwester_ids": [
-      57
+      48
     ],
-    "schwester_id": 57,
-    "schwester_titel": "SPIEL UMS LEERE TOR",
+    "schwester_id": 48,
+    "schwester_titel": "SPIELSTART MIT ÜBERZAHL AUS DEM REIFEN",
     "alt_titel": "Schneller Spielstart im Tempofußball",
     "seo_keyword": "Fußballübung Schnelligkeit Kinder",
     "url_slug": "turbo-spielstart-mit-ueberzahl-aus-dem-reifen",
