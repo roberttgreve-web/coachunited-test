@@ -5260,6 +5260,67 @@
     "schwester_titel": "VERTEIDIGEN NACH FARBEN"
   },
   {
+    "id": 86,
+    "titel": "VERTEIDIGEN NACH FARBEN",
+    "quell_trainingseinheit": "Aus dem Mittelfeld ins Angriffsspiel",
+    "quell_url": "https://coachunited.de/aus-dem-mittelfeld-ins-angriffsspiel/",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/09/image-1.jpg",
+    "trainingsphase": "Aufwärmen",
+    "kurzbeschreibung": "Die aufgerufene Farbe ist die verteidigende Mannschaft. Die anderen beiden Teams bringen den Ball von einem Torhüter zum anderen.",
+    "aufbau": "20x30m-Feld markieren. Zwei Torhüter an den Grundlinien positionieren. Drei Leibchenfarben gleichmäßig verteilen. ",
+    "durchfuehrung": "Die aufgerufene Mannschaft (z.B. „Orange“) ist die verteidigende Mannschaft. Die anderen beiden Teams müssen den Ball durch Pässe nach Abwurf des Torhüters zum anderen Torhüter bringen. Gelingt dies, erhält jedes Team einen Punk. Erobert die verteidigende Mannschaft den Ball, erhält sie einen Punkt.",
+    "varianten": "a) Nur drei Ballkontakte pro Person bei den angreifenden Teams. b) Jeder Spieler muss mindestens einen Pass erhalten haben, damit der Punkt zählt",
+    "coaching_fokus": "• Bleibt in eurer Farbzone und versucht, den Ball zu erobern; • Spielt schnelle Pässe, um den Ball sicher zum anderen Tor zu bringen; • Kommuniziert laut, wer welche Farbe deckt und wo der Gegner gerade ist",
+    "leichter_machen": "• Mehr als drei Ballkontakte pro Person bei den angreifenden Teams erlaubt.; • Größeres Spielfeld, um mehr Platz zum Angreifen zu haben",
+    "schwerer_machen": "• Nur ein/zwei Kontakte pro Spieler bei den Angreifern erlaubt; • Jeder Spieler muss mindestens einen Pass erhalten haben, damit der Punkt zählt",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Verteidigen"
+    ],
+    "seo_keyword": "Fußballübung Verteidigen Kinder",
+    "url_slug": "fussballubung-verteidigen-kinder",
+    "seo_meta_description": "Effektive Fußballübung zum Verteidigen für Kinder von 6-12 Jahren. Trainiert Teamwork, Konzentration und Entscheidungsfähigkeit.",
+    "grafik_alt_text": "Drei Kinder-Fußballspieler passen sich den Ball zu, während ein vierter Spieler in einer anderen Farbe versucht, den Ball zu erobern.",
+    "grafik_description": "Die Übung 'Verteidigen nach Farben' fördert das Zusammenspiel und die Verteidigungsfähigkeiten von Kindern im Fußballtraining. Die Spieler müssen schnell den Ball zum Tor des anderen Teams passen, während ein gegnerisches Team in einer bestimmten Farbe versucht, den Ball zu erobern.",
+    "grafik_title": "Kinder-Fußballübung 'Verteidigen nach Farben'",
+    "grafik_caption": "In der Übung 'Verteidigen nach Farben' müssen die Kinder den Ball zum anderen Tor spielen, während ein Team in einer bestimmten Farbe verteidigt.",
+    "status": "veroeffentlicht",
+    "nachtraeglich_eingefuegt": true,
+    "schwester_ids": [
+      85
+    ],
+    "schwester_id": 85,
+    "schwester_titel": "PASS-STAFFEL NACH FARBEN",
+    "alt_titel": "Verteidigen durch Farbabwehr",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler benötigt man für diese Übung?",
+        "antwort": "Für ein optimales Training empfehlen wir 8-12 Spieler, damit alle Kinder ausreichend Ballkontakte haben."
+      },
+      {
+        "frage": "Wie lange sollte man diese Übung durchführen?",
+        "antwort": "Die Übung eignet sich gut für eine Dauer von 5-10 Minuten im Training. So bleibt die Konzentration der Kinder hoch."
+      },
+      {
+        "frage": "Ist diese Übung auch für jüngere Kinder geeignet?",
+        "antwort": "Ja, die Übung kann auch gut mit G-Junioren (6-8 Jahre) durchgeführt werden. Dabei kann man das Spielfeld größer wählen und die Regeln einfacher halten."
+      }
+    ],
+    "grafik_dateiname": "",
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": ""
+  },
+  {
     "id": 89,
     "titel": "ÜBER DAS HÜTCHEN ZUM TORERFOLG",
     "quell_trainingseinheit": "Tricks, Fernschüsse – und ab in die Jubelzone",
