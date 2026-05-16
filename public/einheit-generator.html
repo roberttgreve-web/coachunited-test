@@ -330,9 +330,9 @@
 
     // ── Phasen-Konfiguration ──────────────────────────────────────
     const PHASES = [
-      { key: 'aufwaermen',  label: 'Aufwärmen',   match: 'Aufwärmen',   slots: 2 },
-      { key: 'hauptteil',   label: 'Hauptteil',   match: 'Hauptteil',   slots: 2 },
-      { key: 'spielformat', label: 'Spielformat',  match: 'Spielformat', slots: 1 },
+      { key: 'aufwaermen',  label: 'Aufwärmen',   match: 'Aufwärmen'   },
+      { key: 'hauptteil',   label: 'Hauptteil',   match: 'Hauptteil'   },
+      { key: 'spielformat', label: 'Spielformat',  match: 'Spielformat' },
     ];
 
     // ── Algorithmus ───────────────────────────────────────────────
@@ -378,7 +378,7 @@
       const clustersByPhase = PHASES.map(p => ({
         ...p,
         clusters: makeClusters(byPhase[p.match] || [])
-          .filter(c => c.length === p.slots && clusterMatchesSkill(c, skill))
+          .filter(c => clusterMatchesSkill(c, skill))
       }));
 
       if (clustersByPhase.some(p => !p.clusters.length)) return null;
