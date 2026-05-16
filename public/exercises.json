@@ -1286,9 +1286,9 @@
     "ist_gecrawlt": false,
     "quell_kategorie": "",
     "schwester_ids": [
-      113
+      112
     ],
-    "schwester_id": 113,
+    "schwester_id": 112,
     "schwester_titel": "SLALOM, FLANKENLAUF UND PASS INS 1 GEGEN 1"
   },
   {
@@ -6244,45 +6244,6 @@
   },
   {
     "id": 102,
-    "titel": "PRÄZISION: TORERFOLG DURCH HÜTCHEN-BALL-TREFFER VERDOPPELN",
-    "quell_trainingseinheit": "1 gegen 1 nach Slalom und Wettrennen",
-    "quell_url": "https://coachunited.de/1-gegen-1-nach-slalom-und-wettrennen/",
-    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/06/image-29.png",
-    "trainingsphase": "Hauptteil",
-    "kurzbeschreibung": "Nach Torerfolg erhält das Team durch einen gezielten Treffer die Möglichkeit, gleich zwei Punkte zu erhalten.",
-    "aufbau": "25×40 Meter Feld, 2 Tor mit Torwart, zwei Teams ein Ball im Spiel. Torzone mit Hütchen markieren. Auf jeder Grundlinie jeweils vier Bälle auf flache Hütchen legen.",
-    "durchfuehrung": "Normales Spiel. Nach Torerfolg erhält der Torschütze die Möglichkeit von Höhe der Torzone einen Ball von einem Hütchen zu schiessen. Trifft er, zählt sein Tor doppelt.",
-    "varianten": "Beim zweiten Tor zählt der Bonustreffer sogar zwei Punkte mehr, beim dritten Tor drei Treffer mehr usw. So hat die unterlegene Mannschaft immer wieder die Chance aufzuholen und es bleibt spannend.",
-    "coaching_fokus": "",
-    "leichter_machen": "",
-    "schwerer_machen": "",
-    "jugend": [],
-    "skills": [],
-    "seo_keyword": "",
-    "url_slug": "",
-    "seo_meta_description": "",
-    "grafik_alt_text": "",
-    "grafik_description": "",
-    "grafik_title": "",
-    "grafik_caption": "",
-    "status": "in_bearbeitung",
-    "nachtraeglich_eingefuegt": true,
-    "alt_titel": "",
-    "faq": [],
-    "grafik_dateiname": "",
-    "referenz_grafik_url": "",
-    "original_aufbau": "",
-    "original_durchfuehrung": "",
-    "original_varianten": "",
-    "original_coaching_fokus": "",
-    "ist_gecrawlt": false,
-    "quell_kategorie": "",
-    "schwester_ids": [],
-    "schwester_id": null,
-    "schwester_titel": null
-  },
-  {
-    "id": 103,
     "titel": "DREIECK-TORABSCHLUSS",
     "quell_trainingseinheit": "Spaß mit Fußballkegeln, Dreiecken und Fernschuss-Spiel",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/06/image-22.png",
@@ -6298,10 +6259,10 @@
     "coaching_fokus": "",
     "leichter_machen": "",
     "schwerer_machen": "",
-    "status": "offen"
+    "status": "in_bearbeitung"
   },
   {
-    "id": 104,
+    "id": 103,
     "titel": "2 GEGEN 1 NACH DREIECK-PÄSSEN",
     "quell_trainingseinheit": "Spaß mit Fußballkegeln, Dreiecken und Fernschuss-Spiel",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/06/image-23.png",
@@ -6317,10 +6278,10 @@
     "coaching_fokus": "",
     "leichter_machen": "",
     "schwerer_machen": "",
-    "status": "offen"
+    "status": "in_bearbeitung"
   },
   {
-    "id": 105,
+    "id": 104,
     "titel": "LEIBCHEN FINDEN, TEAM FINDEN",
     "quell_trainingseinheit": "Doppelt hält besser – Spielspaß auf zwei Feldern",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/06/image-8.jpg",
@@ -6339,7 +6300,7 @@
     "status": "offen"
   },
   {
-    "id": 106,
+    "id": 105,
     "titel": "LEIBCHEN SUCHEN, SPIEL STARTEN",
     "quell_trainingseinheit": "Doppelt hält besser – Spielspaß auf zwei Feldern",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/06/image-13.png",
@@ -6358,7 +6319,7 @@
     "status": "offen"
   },
   {
-    "id": 107,
+    "id": 106,
     "titel": "PARALLELES 1 GEGEN 1 MIT EINDRIBBELN",
     "quell_trainingseinheit": "Doppelt hält besser – Spielspaß auf zwei Feldern",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/06/image-14.png",
@@ -6377,7 +6338,7 @@
     "status": "offen"
   },
   {
-    "id": 108,
+    "id": 107,
     "titel": "2 GEGEN 2 AUF VIER TORE",
     "quell_trainingseinheit": "Doppelt hält besser – Spielspaß auf zwei Feldern",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/06/image-15.png",
@@ -6396,7 +6357,7 @@
     "status": "offen"
   },
   {
-    "id": 109,
+    "id": 108,
     "titel": "REIFEN SUCHEN",
     "quell_trainingseinheit": "Reifen-Drills, direkte Duelle und Umschaltspiel",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/06/image-11.png",
@@ -6415,7 +6376,7 @@
     "status": "offen"
   },
   {
-    "id": 110,
+    "id": 109,
     "titel": "4 GEGEN 4 MIT 4 BÄLLEN",
     "quell_trainingseinheit": "Volleys, Rauten und vier Bälle",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/06/image-10.png",
@@ -6434,7 +6395,7 @@
     "status": "offen"
   },
   {
-    "id": 111,
+    "id": 110,
     "titel": "———-",
     "quell_trainingseinheit": "Schnell auf wechselnde Spielsituationen reagieren",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/06/image-5.png",
@@ -6453,7 +6414,7 @@
     "status": "offen"
   },
   {
-    "id": 112,
+    "id": 111,
     "titel": "KOMMUNIZIEREN: ZUSPIEL INS TECHNIK-FELD",
     "quell_trainingseinheit": "Passen mit Plan und Köpfchen",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/05/image-48.jpg",
@@ -6472,7 +6433,7 @@
     "status": "offen"
   },
   {
-    "id": 113,
+    "id": 112,
     "titel": "SLALOM, FLANKENLAUF UND PASS INS 1 GEGEN 1",
     "quell_trainingseinheit": "Dribbeln, flanken und Tore!",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/05/image-21.png",
@@ -6496,7 +6457,7 @@
     "schwester_titel": "FLANKENLAUF MIT TORABSCHLUSS"
   },
   {
-    "id": 114,
+    "id": 113,
     "titel": "6 GEGEN 5 MIT HÜTCHENTOREN",
     "quell_trainingseinheit": "Mit Köpfchen und Körpereinsatz zum Erfolg",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/05/image-12.png",
@@ -6515,7 +6476,7 @@
     "status": "offen"
   },
   {
-    "id": 115,
+    "id": 114,
     "titel": "DIAGONALE PÄSSE IM VIERECK",
     "quell_trainingseinheit": "Trainieren mit dem Ajax-Viereck",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/04/image-2.png",
@@ -6534,7 +6495,7 @@
     "status": "offen"
   },
   {
-    "id": 116,
+    "id": 115,
     "titel": "DAS AJAX-VIERECK",
     "quell_trainingseinheit": "Trainieren mit dem Ajax-Viereck",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/04/image-3.png",
@@ -6553,7 +6514,7 @@
     "status": "offen"
   },
   {
-    "id": 117,
+    "id": 116,
     "titel": "AUS DEM DOPPELFELD INS GROSSFELDSPIEL",
     "quell_trainingseinheit": "Trainieren mit dem Ajax-Viereck",
     "grafik_url": "blob:https://coachunited.de/1c7178ca-f143-497b-b045-413fc126b1f0",
@@ -6572,7 +6533,7 @@
     "status": "offen"
   },
   {
-    "id": 118,
+    "id": 117,
     "titel": "2 GEGEN 2 GEGEN 2 TORHÜTER",
     "quell_trainingseinheit": "Trainieren mit dem Ajax-Viereck",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/04/image-11.jpg",
@@ -6591,7 +6552,7 @@
     "status": "offen"
   },
   {
-    "id": 119,
+    "id": 118,
     "titel": "PASS FORDERN",
     "quell_trainingseinheit": "Flexibel sein beim Torschuss",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/04/image-8.jpg",
@@ -6610,7 +6571,7 @@
     "status": "offen"
   },
   {
-    "id": 120,
+    "id": 119,
     "titel": "LAUFWEG BEACHTEN UND PASS FORDERN",
     "quell_trainingseinheit": "Flexibel sein beim Torschuss",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/04/image-9.jpg",
@@ -6629,7 +6590,7 @@
     "status": "offen"
   },
   {
-    "id": 121,
+    "id": 120,
     "titel": "FERNSCHUSS-SPIEL",
     "quell_trainingseinheit": "Flexibel sein beim Torschuss",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/04/image-1.png",
@@ -6648,7 +6609,7 @@
     "status": "offen"
   },
   {
-    "id": 122,
+    "id": 121,
     "titel": "PASS-FLOW IM SECHSECK",
     "quell_trainingseinheit": "Die Passjäger",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/04/image-4.jpg",
@@ -6667,7 +6628,7 @@
     "status": "offen"
   },
   {
-    "id": 123,
+    "id": 122,
     "titel": "PASSJÄGER VERMEIDEN",
     "quell_trainingseinheit": "Die Passjäger",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/04/image-5.jpg",
@@ -6686,7 +6647,7 @@
     "status": "offen"
   },
   {
-    "id": 124,
+    "id": 123,
     "titel": "TORSCHUSS-VORSPRUNG FÜR SPIEL ERARBEITEN",
     "quell_trainingseinheit": "Die Passjäger",
     "grafik_url": "blob:https://coachunited.de/4f190189-796c-4c83-93cb-257a87dc8bf2",
@@ -6705,7 +6666,7 @@
     "status": "offen"
   },
   {
-    "id": 125,
+    "id": 124,
     "titel": "DOPPELPASS MIT DREIERHÜTCHEN",
     "quell_trainingseinheit": "Passen, passen, passen",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/04/image.jpg",
@@ -6724,7 +6685,7 @@
     "status": "offen"
   },
   {
-    "id": 126,
+    "id": 125,
     "titel": "DIE HÜTCHEN MÜSSEN FALLEN",
     "quell_trainingseinheit": "Passen, passen, passen",
     "quell_url": "https://coachunited.de/passen-passen-passen/",
@@ -6750,7 +6711,7 @@
     "nachtraeglich_eingefuegt": true
   },
   {
-    "id": 127,
+    "id": 126,
     "titel": "PASS-, DRIBBEL- UND SCHUSSPARCOURS",
     "quell_trainingseinheit": "Passen, passen, passen",
     "quell_url": "https://coachunited.de/passen-passen-passen/",
@@ -6776,7 +6737,7 @@
     "nachtraeglich_eingefuegt": true
   },
   {
-    "id": 128,
+    "id": 127,
     "titel": "VOM PASSERFOLG IN DIE ÜBERZAHLSITUATION",
     "quell_trainingseinheit": "Passen, passen, passen",
     "quell_url": "https://coachunited.de/passen-passen-passen/",
@@ -6802,7 +6763,7 @@
     "nachtraeglich_eingefuegt": true
   },
   {
-    "id": 129,
+    "id": 128,
     "titel": "ALS BELOHNUNG AUFS GROSSE TOR SPIELEN",
     "quell_trainingseinheit": "Passen, passen, passen",
     "grafik_url": "blob:https://coachunited.de/142e4736-dd73-4eb3-a677-fc896dc90323",
@@ -6821,7 +6782,7 @@
     "status": "offen"
   },
   {
-    "id": 130,
+    "id": 129,
     "titel": "DYNAMISCHE DREIECKE",
     "quell_trainingseinheit": "Dreiecke, Überzahl und 2 gegen 2 gegen 2",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/03/image-30.jpg",
@@ -6840,7 +6801,7 @@
     "status": "offen"
   },
   {
-    "id": 131,
+    "id": 130,
     "titel": "DREIECKE MIT MITTIGER ANSPIELSTATION",
     "quell_trainingseinheit": "Dreiecke, Überzahl und 2 gegen 2 gegen 2",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/03/image-31.jpg",
@@ -6859,7 +6820,7 @@
     "status": "offen"
   },
   {
-    "id": 132,
+    "id": 131,
     "titel": "ÜBERZAHL UND UNTERZAHL",
     "quell_trainingseinheit": "Dreiecke, Überzahl und 2 gegen 2 gegen 2",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/03/image-32.jpg",
@@ -6878,7 +6839,7 @@
     "status": "offen"
   },
   {
-    "id": 133,
+    "id": 132,
     "titel": "ÜBERZAHL CLEVER NUTZEN",
     "quell_trainingseinheit": "Dreiecke, Überzahl und 2 gegen 2 gegen 2",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/03/image-8.png",
@@ -6897,7 +6858,7 @@
     "status": "offen"
   },
   {
-    "id": 134,
+    "id": 133,
     "titel": "EINWURF ÜBEN",
     "quell_trainingseinheit": "Einwürfe und 1 gegen 1 üben",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/03/image-25.jpg",
@@ -6916,7 +6877,7 @@
     "status": "offen"
   },
   {
-    "id": 135,
+    "id": 134,
     "titel": "SCHNELLEN EINWURF ÜBEN",
     "quell_trainingseinheit": "Einwürfe und 1 gegen 1 üben",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/03/image-27.jpg",
@@ -6935,7 +6896,7 @@
     "status": "offen"
   },
   {
-    "id": 136,
+    "id": 135,
     "titel": "ZWEI SPIELE, EIN FELD",
     "quell_trainingseinheit": "Einwürfe und 1 gegen 1 üben",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/03/image-29.jpg",
@@ -6954,7 +6915,7 @@
     "status": "offen"
   },
   {
-    "id": 137,
+    "id": 136,
     "titel": "SAUBERE DIAGONAL-PÄSSE",
     "quell_trainingseinheit": "Erst diagonale Pässe, dann Fußballkegeln",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/03/image-20.jpg",
@@ -6973,7 +6934,7 @@
     "status": "in_bearbeitung"
   },
   {
-    "id": 138,
+    "id": 137,
     "titel": "SAUBERE DIAGONAL-SCHÜSSE",
     "quell_trainingseinheit": "Erst diagonale Pässe, dann Fußballkegeln",
     "quell_url": "https://coachunited.de/erst-diagonale-passe-dann-fusballkegeln/",
@@ -6999,7 +6960,7 @@
     "nachtraeglich_eingefuegt": true
   },
   {
-    "id": 139,
+    "id": 138,
     "titel": "MIT KEGELTREFFERN TORSCHÜSSE GEWINNEN",
     "quell_trainingseinheit": "Erst diagonale Pässe, dann Fußballkegeln",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/03/image-22.jpg",
@@ -7018,7 +6979,7 @@
     "status": "offen"
   },
   {
-    "id": 140,
+    "id": 139,
     "titel": "KEGELN, SPIELEN UND ZURÜCK",
     "quell_trainingseinheit": "Erst diagonale Pässe, dann Fußballkegeln",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/03/image-23.jpg",
@@ -7037,7 +6998,7 @@
     "status": "offen"
   },
   {
-    "id": 141,
+    "id": 140,
     "titel": "ÜBERZAHL-JOKER",
     "quell_trainingseinheit": "Erst diagonale Pässe, dann Fußballkegeln",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/03/image-24.jpg",
@@ -7056,7 +7017,7 @@
     "status": "offen"
   },
   {
-    "id": 142,
+    "id": 141,
     "titel": "FLEXIBLER DRIBBELSTERN",
     "quell_trainingseinheit": "Vom Dribbelstern zum Spiel auf ein Tor",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/03/image-16.jpg",
@@ -7075,7 +7036,7 @@
     "status": "offen"
   },
   {
-    "id": 143,
+    "id": 142,
     "titel": "FLEXIBLER DRIBBELSTERN MIT BALLWECHSEL",
     "quell_trainingseinheit": "Vom Dribbelstern zum Spiel auf ein Tor",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/03/image-17.jpg",
@@ -7094,7 +7055,7 @@
     "status": "offen"
   },
   {
-    "id": 144,
+    "id": 143,
     "titel": "BESCHÜTZ DEIN TOR!",
     "quell_trainingseinheit": "Vom Dribbelstern zum Spiel auf ein Tor",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/03/image-18.jpg",
@@ -7113,7 +7074,7 @@
     "status": "offen"
   },
   {
-    "id": 145,
+    "id": 144,
     "titel": "DRIBBEL-TORE ZUM SIEG",
     "quell_trainingseinheit": "Vom Dribbelstern zum Spiel auf ein Tor",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/03/image-7.png",
@@ -7132,7 +7093,7 @@
     "status": "offen"
   },
   {
-    "id": 146,
+    "id": 145,
     "titel": "SPIEL AUF EIN TOR",
     "quell_trainingseinheit": "Vom Dribbelstern zum Spiel auf ein Tor",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/03/image-19.jpg",
@@ -7151,7 +7112,7 @@
     "status": "offen"
   },
   {
-    "id": 147,
+    "id": 146,
     "titel": "WER GEGEN WEN?",
     "quell_trainingseinheit": "Training auf dem Doppelfeld",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/03/image-15.jpg",
@@ -7170,7 +7131,7 @@
     "status": "offen"
   },
   {
-    "id": 148,
+    "id": 147,
     "titel": "SPIEL MIT MITTELZONE UND TABUZONE",
     "quell_trainingseinheit": "Pässe anfordern",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/03/image-5.png",
@@ -7189,7 +7150,7 @@
     "status": "offen"
   },
   {
-    "id": 149,
+    "id": 148,
     "titel": "SPIEL MIT FARBREIHENFOLGE",
     "quell_trainingseinheit": "Training mit Farbsignalen",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/03/image-4.png",
@@ -7208,7 +7169,7 @@
     "status": "offen"
   },
   {
-    "id": 150,
+    "id": 149,
     "titel": "ZWEI PASSFELDER",
     "quell_trainingseinheit": "Überzahl und Unterzahl",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/03/image.jpg",
@@ -7237,7 +7198,7 @@
     "status": "offen"
   },
   {
-    "id": 151,
+    "id": 150,
     "titel": "SELBER ENTSCHEIDEN IM PASSFELD",
     "quell_trainingseinheit": "Struktur im Mittelfeld mit No-Play-Zone und Safe-Zone üben",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/02/image-19.jpg",
@@ -7256,7 +7217,7 @@
     "status": "offen"
   },
   {
-    "id": 152,
+    "id": 151,
     "titel": "SCHNELL REAGIEREN IM PASSFELD",
     "quell_trainingseinheit": "Struktur im Mittelfeld mit No-Play-Zone und Safe-Zone üben",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/02/image-20.jpg",
@@ -7275,7 +7236,7 @@
     "status": "offen"
   },
   {
-    "id": 153,
+    "id": 152,
     "titel": "ÜBERZAHL-SPIEL",
     "quell_trainingseinheit": "Struktur im Mittelfeld mit No-Play-Zone und Safe-Zone üben",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/02/image-5.png",
@@ -7294,7 +7255,7 @@
     "status": "offen"
   },
   {
-    "id": 154,
+    "id": 153,
     "titel": "SCHÜSSE UND 1 GEGEN 1 MIT FARBREIHENFOLGE",
     "quell_trainingseinheit": "Schießen und Angreifen nach Farbreihenfolge",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/02/image-3.jpg",
