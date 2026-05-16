@@ -5140,6 +5140,65 @@
     "quell_kategorie": ""
   },
   {
+    "id": 84,
+    "titel": "4 GEGEN 4 MIT NEUTRALEN PASSSPIELERN",
+    "quell_trainingseinheit": "Passen, tricksen, treffen, Jubel ausdenken",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/09/image-5.jpg",
+    "grafik_dateiname": "uebung-086-4-gegen-4-mit-neutralen-passspielern.jpg",
+    "trainingsphase": "Spielformat",
+    "kurzbeschreibung": "Zwei Teams spielen gegeneinander, neutrale Passspieler hinter den Toren können eingebunden werden. Treffer führen zu Wechseln.",
+    "aufbau": "Ein 40 x 20 Meter großes Feld mit zwei Toren und zwei Teams im Feld. Drittes Team stellt neutrale Passspieler hinter den Toren.",
+    "durchfuehrung": "4 gegen 4 auf zwei Tore. Neutrale Passspieler können eingebunden werden. Nach Tor wechselt das Team mit Gegentor die Position mit den Passspielern.",
+    "varianten": "a) Passspieler können flexibel um das gesamte Spielfeld herumlaufen. b) Passspieler müssen vor dem Tor mindestens ein mal eingebunden werden. FREIES SPIEL – LOS GEHT’S! FREIES SPIEL – LOS GEHT’S! In © 2025 COACH UNITED",
+    "quell_url": "https://coachunited.de/passen-tricksen-treffen-jubel-ausdenken/",
+    "jugend": [
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Raumverhalten",
+      "Umschalten"
+    ],
+    "coaching_fokus": "• Häufiges Einbinden der neutralen Passspieler",
+    "leichter_machen": "• Passspieler können flexibel um das gesamte Spielfeld herumlaufen.",
+    "schwerer_machen": "• Passspieler müssen vor dem Torschuss einmal eingebunden werden",
+    "status": "veroeffentlicht",
+    "alt_titel": "Spielaufbau mit Jokers - 4 gegen 4 mit Unterstützung",
+    "seo_keyword": "fußballübung kinder 4 gegen 4 passspiel",
+    "url_slug": "fussballubung-kinder-4-gegen-4-passspiel",
+    "seo_meta_description": "Effektive Fußballübung 4 gegen 4 mit neutralen Passspielern für Kinder von 9-12 Jahren. Trainiert Übersicht, Raumaufteilung und Zusammenspiel.",
+    "grafik_alt_text": "Kinder spielen 4 gegen 4 Fußball auf einem 40x20m Feld mit Passspielern hinter den Toren",
+    "grafik_description": "Die Fußballübung zeigt zwei Teams, die 4 gegen 4 gegeneinander spielen. Hinter den Toren befinden sich neutrale Passspieler, die in den Spielaufbau eingebunden werden können.",
+    "grafik_title": "Fußballübung 4 gegen 4 mit Passspielern",
+    "grafik_caption": "4 gegen 4 mit Unterstützung neutraler Passspieler",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler sind insgesamt auf dem Feld?",
+        "antwort": "Insgesamt spielen 12 Spieler mit - 8 Feldspieler und 4 neutrale Passspieler. Kann auch auf 5 gegen 5 oder 6 gegen 6 erweitert werden.  "
+      },
+      {
+        "frage": "Wie lange dauert die Übung?",
+        "antwort": "Die Übung kann 15-20 Minuten dauern, je nach Alter und Leistungsstand der Kinder."
+      },
+      {
+        "frage": "Kann man die Übung auch für jüngere Kinder anpassen?",
+        "antwort": "Ja, man kann das Spielfeld verkleinern und die Anzahl der Feldspieler reduzieren, um die Übung an G- oder F-Junioren anzupassen."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [],
+    "schwester_id": null,
+    "schwester_titel": null
+  },
+  {
     "id": 89,
     "titel": "ÜBER DAS HÜTCHEN ZUM TORERFOLG",
     "quell_trainingseinheit": "Tricks, Fernschüsse – und ab in die Jubelzone",
