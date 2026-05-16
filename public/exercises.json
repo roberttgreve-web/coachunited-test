@@ -704,12 +704,9 @@
     "leichter_machen": "• Größeres Spielfeld, mehr Ringe",
     "schwerer_machen": "• Weniger Reifen; • Pässe nur mit schwächerem Fuß",
     "status": "veroeffentlicht",
-    "schwester_ids": [
-      11,
-      108
-    ],
-    "schwester_id": 11,
-    "schwester_titel": "SCHNELL IN DEN REIFEN DRIBBELN",
+    "schwester_ids": [],
+    "schwester_id": null,
+    "schwester_titel": null,
     "alt_titel": "Punktesammeln im Reifenfeld",
     "seo_keyword": "fußballübung passpiel kinder",
     "url_slug": "reifenpass-fussballubung-kinder",
@@ -6679,10 +6676,10 @@
     "ist_gecrawlt": false,
     "quell_kategorie": "",
     "schwester_ids": [
-      11
+      12
     ],
-    "schwester_id": 11,
-    "schwester_titel": "SCHNELL IN DEN REIFEN DRIBBELN"
+    "schwester_id": 12,
+    "schwester_titel": "REIFENPASS"
   },
   {
     "id": 109,
