@@ -6370,5 +6370,66 @@
     "original_coaching_fokus": "",
     "ist_gecrawlt": false,
     "quell_kategorie": ""
+  },
+  {
+    "id": 104,
+    "titel": "LEIBCHEN FINDEN, TEAM FINDEN",
+    "quell_trainingseinheit": "Doppelt hält besser – Spielspaß auf zwei Feldern",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/06/image-8.jpg",
+    "grafik_dateiname": "uebung-132-leibchen-finden-team-finden.jpg",
+    "trainingsphase": "Aufwärmen",
+    "kurzbeschreibung": "Die Spieler dribbeln frei im Feld. Auf ein Trainerkommando schnappen sie sich ein Leibchen und sammeln sich nach Farben in Teams.",
+    "aufbau": "20 x 40 m Feld mit 12-16 Leibchen in 3 bis 4 Farben (je nach Gruppengröße). Pro Spieler 1 Ball.",
+    "durchfuehrung": "Freies Dribbling. Auf Kommando Leibchen nehmen und mit gleichfarbigen Spielern an einem Eckhütchen zusammentreffen. Schnellstes Team bekommt einen Punkt.",
+    "varianten": "Mit verschiedenen Dribbelarten (rechts/links, rückwärts, mit der Sohle). Ball auch prellen oder rollen. Oder ganz ohne Ball. TEAMWORK:LEIBCHEN SUCHEN, SPIEL STARTEN LEIBCHEN SUCHEN, SPIEL STARTEN Die Spieler passen sich zu. Auf Kommando nehmen sie ein Leibchen, bilden Teams und spielen direkt ein Spiel.",
+    "quell_url": "https://coachunited.de/doppelt-halt-besser-spielspas-auf-zwei-feldern/",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend"
+    ],
+    "skills": [
+      "Ballkontrolle",
+      "Dribbeln",
+      "Koordination",
+      "Raumverhalten"
+    ],
+    "coaching_fokus": "• Haltet euren Kopf beim Dribbling hoch, so habt ihr den Überblick; • Tempo hochhalten!",
+    "leichter_machen": "• Ohne Ball spielen.",
+    "schwerer_machen": "• Mit verschiedenen Dribbelarten (rechts/links, rückwärts, mit der Sohle). Ball auch prellen oder rollen.",
+    "status": "veroeffentlicht",
+    "alt_titel": "Farbige Leibchen-Jagd - Teambildung im Spiel",
+    "seo_keyword": "Fußballübung Teambildung Kinder",
+    "url_slug": "fussballubung-teambildung-kinder",
+    "seo_meta_description": "Kinder spielen Fußball und suchen bunte Leibchen, um Teams zu bilden",
+    "grafik_alt_text": "Fußballübung Teambildung Kinder",
+    "grafik_description": "Die Kinder dribbeln frei auf dem Fußballfeld. Auf ein Kommando des Trainers suchen sie schnell bunte Leibchen und stellen sich in gleichfarbige Teams auf.",
+    "grafik_title": "Dynamische Übung zur Teambildung für junge Fußballspieler",
+    "grafik_caption": "Die Kinder dribbeln frei auf dem Fußballfeld. Auf ein Kommando des Trainers suchen sie schnell bunte Leibchen und stellen sich in gleichfarbige Teams auf.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler brauche ich für diese Übung?",
+        "antwort": "Die Übung ist für 8-16 Spieler ausgelegt. Die Teilnehmerzahl kann aber je nach Feldgröße angepasst werden."
+      },
+      {
+        "frage": "Wie lange sollte man diese Übung durchführen?",
+        "antwort": "Die Übung eignet sich gut für eine Dauer von 5 Minuten."
+      },
+      {
+        "frage": "Ist die Übung auch für jüngere Altersklassen geeignet?",
+        "antwort": "Ja, die Grundversion der Übung kann gut mit Kindern ab 6 Jahren durchgeführt werden. Eher für Jüngere geeignet."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [
+      105
+    ],
+    "schwester_id": 105,
+    "schwester_titel": "LEIBCHEN SUCHEN, SPIEL STARTEN"
   }
 ]
