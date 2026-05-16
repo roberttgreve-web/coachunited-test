@@ -4785,9 +4785,9 @@
     "leichter_machen": "• Trichter vergrößern; • Zwei Versuche pro Spieler erlauben",
     "schwerer_machen": "• Trichter verkleinern",
     "jugend": [
+      "G-Jugend",
       "F-Jugend",
-      "E-Jugend",
-      "D-Jugend"
+      "E-Jugend"
     ],
     "skills": [
       "Passen",
