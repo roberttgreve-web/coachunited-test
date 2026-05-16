@@ -6740,5 +6740,67 @@
     "schwester_ids": [],
     "schwester_id": null,
     "schwester_titel": null
+  },
+  {
+    "id": 110,
+    "titel": "SLALOM, FLANKENLAUF UND PASS INS 1 GEGEN 1",
+    "quell_trainingseinheit": "Dribbeln, flanken und Tore!",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/05/image-21.png",
+    "grafik_dateiname": "uebung-160-slalom-flankenlauf-und-pass-ins-1-gegen-1.png",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "Ein Spieler macht einen Slalom mit Flankenlauf und sucht seinen Mitspieler, der sich gegen einen Verteidiger durchsetzen muss.",
+    "aufbau": "Jugendtor mit Torhüter. Etwa 30m entfernt zwei Gruppen aufstellen. Eine Gruppe mit Ball, eine Gruppe ohne. Flache Hütchen wie in der Zeichnung markieren. Dritte Gruppe an Hütchen platzieren. Gruppe mit Ball an flachen Slalom-Hütchen positionieren. Gruppe mit Ball und eine Gruppe ohne Ball haben gleichfarbige Leibchen. Eine Verteidiger-Gruppe mit andersfarbigen Leibchen. Torzone vor dem Tor markieren.",
+    "durchfuehrung": "Spieler mit Ball startet ins Slalom um die Hütchen, dribbelt den Ball bis zum Eckhütchen. Gleichzeitig starten je ein Spieler aus den Gruppen ohne Ball im Wettrennen in die Torzone. Spieler mit Ball passt vom Eckhütchen auf den Mitspieler, der auf das Tor abschließt. Verteidiger versucht, Torabschluss zu verhindern. Wenn alle Spieler zwei Mal dran waren: Gruppen tauschen.",
+    "varianten": "",
+    "quell_url": "https://coachunited.de/dribbeln-flanken-und-tore/",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Dribbeln",
+      "Torschuss"
+    ],
+    "coaching_fokus": "• Enge Ballführung im Slalom; • Kopf hoch vor der Flanke; • Fairer Zweikmapf im 1 gegen 1",
+    "leichter_machen": "• Flacher Pass statt Flanke; • Zeitlimit zum Torabschluss nach Flanke festlegen",
+    "schwerer_machen": "• Hohe Flanke Pflicht; • Verkleinerung der Torzone",
+    "status": "veroeffentlicht",
+    "schwester_ids": [
+      21
+    ],
+    "schwester_id": 21,
+    "schwester_titel": "FLANKENLAUF MIT TORABSCHLUSS",
+    "alt_titel": "Slalom, Flankenlauf & Eins-gegen-Eins",
+    "seo_keyword": "Fußballübung Koordination Kinder",
+    "url_slug": "slalom-flankenlauf-und-pass-ins-1-gegen-1",
+    "seo_meta_description": "Fußballübung mit Slalom, Flankenlauf und Abschluss im 1-gegen-1 für Kinder von 6-12 Jahren. Fördert Koordination, Ballkontrolle und Entscheidungsschnelligkeit.",
+    "grafik_alt_text": "Illustration einer dynamischen Fußballübung mit Slalom, Flankenpass und Abschluss",
+    "grafik_description": "Die Grafik zeigt den Ablauf der Fußballübung 'Slalom, Flankenlauf und Pass ins 1 gegen 1'. Ein Spieler dribbbelt den Ball durch einen Slalom, flankt dann auf einen Mitspieler, der im 1-gegen-1 zum Abschluss kommt.",
+    "grafik_title": "Fußballübung Koordination und Ballkontrolle",
+    "grafik_caption": "Spielerische Fußballübung für Kinder, die Koordination und Entscheidungsfähigkeit fördert.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler braucht man für diese Übung?",
+        "antwort": "Für diese Übung eignen sich 8-14 Spieler. Es werden je eine Angriffs- und Verteidigungsgruppe sowie eine Ballbesitzgruppe benötigt."
+      },
+      {
+        "frage": "Wie lange dauert die Übung?",
+        "antwort": "Die Übungsdauer beträgt ca. 10-15 Minuten. Es können mehrere Durchgänge mit Positionswechsel absolviert werden."
+      },
+      {
+        "frage": "Für welche Altersgruppen ist diese Übung geeignet?",
+        "antwort": "Diese Übung ist für Kinder im Alter von 8-12 Jahren (F- bis D-Jugend) gut geeignet. Sie fördert grundlegende technische und koordinative Fähigkeiten."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": ""
   }
 ]
