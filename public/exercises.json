@@ -4828,6 +4828,69 @@
     "schwester_titel": "UM DIE WETTE DRIBBELN UND PASSEN"
   },
   {
+    "id": 79,
+    "titel": "ERST ZWEIKAMPF, DANN TORSCHUSS",
+    "quell_trainingseinheit": "Zweikampf gewinnen und direkt abschließen",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/09/image-8.jpg",
+    "grafik_dateiname": "uebung-155-erst-zweikampf-dann-torschuss.jpg",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "Zwei Spieler bestreiten einen Zweikampf um den Ball und versuchen dann zu treffen.",
+    "aufbau": "15m×15m Feld mit Jugendtor. Zwei Teams an gegenüberliegender Grundlinie aufstellen. Trainer steht in der Mitte mit mehreren Bällen.",
+    "durchfuehrung": "Der Trainer rollt oder schießt den Ball ins Feld. Je ein Spieler jedes Teams läuft zum Ball und geht gegeneinander in den Zweikampf. Wer den Ball gewinnt, versucht ein Tor zu erzielen.",
+    "varianten": "a) Trainer wirft den Ball hoch statt zu rollen. b) Zeitlimit pro Angriff einführen. c) Torschusslinie markieren für Fernschüsse.",
+    "coaching_fokus": "• Sauberer Zweikampf mit angelegtem Arm; • Zügiger Torabschluss",
+    "leichter_machen": "• Trainer rollt den Ball langsam ins Feld; • Verkürzung des Spielfeldes",
+    "schwerer_machen": "• Trainer wirft den Ball hoch ins Feld; • Zeitlimit von 10 Sekunden pro Angriff einführen; • Torschusslinie markieren für Fernschüsse",
+    "quell_url": "https://coachunited.de/zweikampf-gewinnen-und-direkt-abschliesen/",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Torschuss",
+      "Zweikampf"
+    ],
+    "status": "veroeffentlicht",
+    "schwester_ids": [
+      80,
+      81
+    ],
+    "schwester_id": 80,
+    "schwester_titel": "VON DER ECKE IN DEN ZWEIKAMPF",
+    "alt_titel": "Zweikampf-Duell mit Abschluss",
+    "seo_keyword": "Fußballübung Zweikämpfe Kinder",
+    "url_slug": "fussballubung-zweikampfe-kinder",
+    "seo_meta_description": "Fußballübung für Kinder (6-12 Jahre) mit Zweikampf und Torschuss. Fördert Zweikampfverhalten, Ballkontrolle und Abschluss.",
+    "grafik_alt_text": "Zwei Kinder kämpfen um einen Fußball auf einem kleinen Feld mit Fußballtor im Hintergrund.",
+    "grafik_description": "Die Grafik zeigt eine Fußballübung mit zwei Kindern, die um einen Ball kämpfen. Im Hintergrund ist ein Fußballtor zu sehen. Die Übung fördert den Zweikampf, die Ballkontrolle und den Torabschluss bei Kindern im Alter von 6 bis 12 Jahren.",
+    "grafik_title": "Fußballübung Zweikampf und Torschuss für Kinder",
+    "grafik_caption": "Kinder trainieren Zweikampf und Torschuss in einer 15x15m Übungsform.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler benötigt man für diese Übung?",
+        "antwort": "Zwei Teams mit je 6-8 Spieler."
+      },
+      {
+        "frage": "Wie lange soll die Übung dauern?",
+        "antwort": "Etwa 10 Minuten."
+      },
+      {
+        "frage": "Kann man die Übung auch mit jüngeren Kindern machen?",
+        "antwort": "Die Übung ist gut für Kinder ab 8 Jahren geeignet. Bei jüngeren Kindern (6-7 Jahre) sollte man den Zweikampf etwas vereinfachen, z.B. durch langsameres Zuspiel des Trainers."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": true,
+    "quell_kategorie": "G-Jugend"
+  },
+  {
     "id": 81,
     "titel": "QUADRAT-SPIEL AUF VIER KLEINE TORE",
     "quell_trainingseinheit": "Zweikampf gewinnen und direkt abschließen",
