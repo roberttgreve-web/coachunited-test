@@ -5017,6 +5017,67 @@
     "quell_kategorie": ""
   },
   {
+    "id": 82,
+    "titel": "ERST TRICKSEN, DANN JUBELN",
+    "quell_trainingseinheit": "Passen, tricksen, treffen, Jubel ausdenken",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/09/image-5.png",
+    "grafik_dateiname": "uebung-084-erst-tricksen-dann-jubeln.png",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "Spieler dribbelt und geht am Hütchen mit einem Trick oder einer Finte vorbei. Danach schließt er ab und darf bei Torerfolg seinen Lieblingsjubel zeigen.",
+    "aufbau": "Gruppe mit Bällen an Hütchen postieren. Etwa 20m entfernt ein Jugendtor mit Torhüter platzieren. Etwa 8m vor dem Jugendtor zentral ein weiteres Hütchen aufstellen. Seitlich vom Tor ein kleines Jubelfeld mit vier Hütchen markieren.",
+    "durchfuehrung": "Spieler dribbelt zum zentralen Hütchen und geht daran mit einem Lieblingstrick vorbei (Übersteiger, Zidane-Rolle, Körpertäuschung, Lupfer etc). Nach erfolgreichem Torabschluss läuft der Spieler in das Jubelfeld und darf seinen Lieblingsjubel zeigen.",
+    "varianten": "a) Angreifer wird nach dem Jubel zum Verteidiger (ersetzt das Hütchen). b) Trick/Finte vorgeben. c) Torwart darf rauskommen, Angreifer muss Torwart umkurven (kein Fernschuss) TRAINER-PASS ZUM TOR VERARBEITEN TRAINER-PASS ZUM TOR VERARBEITEN Spieler passt zum Trainer, läuft in die Torzone und versucht, den Pass vom Trainer in ein Tor zu verwandeln.",
+    "quell_url": "https://coachunited.de/passen-tricksen-treffen-jubel-ausdenken/",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend"
+    ],
+    "skills": [
+      "Ballkontrolle",
+      "Dribbeln",
+      "Torschuss",
+      "Koordination"
+    ],
+    "coaching_fokus": "• Präzise Ausführung des Lieblingstricks; • Konzentrierter Torabschluss; • Spaß haben!",
+    "leichter_machen": "• Vereinfachter Trick/Finte vorgeben (Überschlag statt Zidane-Rolle); • Kürzere Distanz zum Tor",
+    "schwerer_machen": "• Angreifer wird nach dem Jubel zum Verteidiger (ersetzt das Hütchen); • Trick/Finte vorgeben.; • Torwart darf rauskommen, Angreifer muss Torwart umkurven (kein Fernschuss).",
+    "status": "veroeffentlicht",
+    "alt_titel": "Trickreich zum Tor - Jubeln inklusive",
+    "seo_keyword": "Fußballübung Dribbling Kinder",
+    "url_slug": "fussballubung-dribbling-kinder",
+    "seo_meta_description": "Junger Fußballspieler dribbelt mit Ball um ein Hütchen, schießt dann aufs Tor und jubelt nach dem Torerfolg.",
+    "grafik_alt_text": "Fußballübung - Erst Tricksen, dann Jubeln",
+    "grafik_description": "Die Übung beinhaltet Dribbling mit einem Trick oder einer Finte, Torschuss und anschließendes Jubeln. Sie fördert technische Fertigkeiten und Kreativität der Spieler.",
+    "grafik_title": "Fußballspieler zeigt seinen Lieblingsjubel nach erfolgreichen Torabschluss.",
+    "grafik_caption": "Die Übung beinhaltet Dribbling mit einem Trick oder einer Finte, Torschuss und anschließendes Jubeln. Sie fördert technische Fertigkeiten und Kreativität der Spieler.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler können gleichzeitig an der Übung teilnehmen?",
+        "antwort": "Die Übung eignet sich am besten für Gruppen von 8-14 Spielern. So haben alle genug Platz zum Dribbling und Abschluss."
+      },
+      {
+        "frage": "Wie lange sollte die Übung dauern?",
+        "antwort": "Etwa 15-20 Minuten sind ideal, um alle Spieler mehrmals durchlaufen zu lassen und die Konzentration aufrechtzuerhalten."
+      },
+      {
+        "frage": "Kann man die Übung auch für ältere Spieler anpassen?",
+        "antwort": "Ja, durch Erhöhung von Schwierigkeitsgrad (z.B. Slalom, Gegenspieler) lässt sich die Übung gut an D-Junioren oder C-Junioren anpassen."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [
+      83
+    ],
+    "schwester_id": 83,
+    "schwester_titel": "TRAINER-PASS ZUM TOR VERARBEITEN"
+  },
+  {
     "id": 89,
     "titel": "ÜBER DAS HÜTCHEN ZUM TORERFOLG",
     "quell_trainingseinheit": "Tricks, Fernschüsse – und ab in die Jubelzone",
