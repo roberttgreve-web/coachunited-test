@@ -4006,10 +4006,10 @@
     "ist_gecrawlt": false,
     "quell_kategorie": "",
     "schwester_ids": [
-      81,
-      80
+      83,
+      82
     ],
-    "schwester_id": 81,
+    "schwester_id": 83,
     "schwester_titel": "BLITZTURNIER MIT GOLDEN GOAL"
   },
   {
@@ -4041,10 +4041,10 @@
     "schwerer_machen": "• „Shotclock“: Angreifendes Team muss nach spätestens 15 Sekunden einen Torabschluss erreicht haben.",
     "status": "veroeffentlicht",
     "schwester_ids": [
-      81,
-      79
+      83,
+      81
     ],
-    "schwester_id": 81,
+    "schwester_id": 83,
     "schwester_titel": "BLITZTURNIER MIT GOLDEN GOAL",
     "alt_titel": "Balljagd in der Mittelzone - Schnelle Umschaltmomente",
     "seo_keyword": "Fußballübung Umschaltspiel Kinder",
@@ -4828,7 +4828,70 @@
     "schwester_titel": "UM DIE WETTE DRIBBELN UND PASSEN"
   },
   {
-    "id": 87,
+    "id": 81,
+    "titel": "QUADRAT-SPIEL AUF VIER KLEINE TORE",
+    "quell_trainingseinheit": "Zweikampf gewinnen und direkt abschließen",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/09/image-6.png",
+    "grafik_dateiname": "uebung-082-quadrat-spiel-auf-vier-kleine-tore.png",
+    "trainingsphase": "Spielformat",
+    "kurzbeschreibung": "Zwei Teams spielen im quadratischen Feld auf vier kleine Tore.",
+    "aufbau": "Ein 15mX15m großes Feld markieren. Vier Kleintore auf je eine Grundlinie verteilen. Zwei Teams, ein Ball. ",
+    "durchfuehrung": "Normales Spiel. Beide Teams dürfen auf alle vier Tore ein Tor erzielen. Nach Torerfolg erfolgt der Anstoß von einem Eckhütchen oder alternativ durch den Trainer.",
+    "varianten": "a) Feste Tore zuweisen. b) Zweiten Ball einspielen. unterlegene Mannschaft immer wieder die Chance aufzuholen und es bleibt spannend. FREIES SPIEL – LOS GEHT’S! FREIES SPIEL – LOS GEHT’S! In © 2025 COACH UNITED",
+    "quell_url": "https://coachunited.de/zweikampf-gewinnen-und-direkt-abschliesen/",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend",
+      "E-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Dribbeln",
+      "Torschuss"
+    ],
+    "coaching_fokus": "• Gute Bewegung im Raum - alle vier Tore können bespielt und müssen verteidigt werden!; • Laut kommunizieren mit Mitspielern",
+    "leichter_machen": "• Feste Tore zuweisen.",
+    "schwerer_machen": "• Spieler müssen den Ball mindestens zweimal berühren, bevor sie ein Tor erzielen können; • Zeitlimit pro Angriff einführen; • Zweiten Ball einspielen",
+    "status": "veroeffentlicht",
+    "schwester_ids": [
+      79,
+      80
+    ],
+    "schwester_id": 79,
+    "schwester_titel": "ERST ZWEIKAMPF, DANN TORSCHUSS",
+    "alt_titel": "Tore-Jagd im Quadrat",
+    "seo_keyword": "Fußballübung Koordination Kinder",
+    "url_slug": "quadrat-spiel-auf-vier-kleine-tore",
+    "seo_meta_description": "Dynamisches Koordinations-Spiel mit 4 Toren, fördert Passen, Dribbeln und Ballgefühl bei Kindern im Fußballtraining.",
+    "grafik_alt_text": "Zwei Fußballteams spielen auf einem quadratischen Feld mit vier kleinen Toren gegeneinander.",
+    "grafik_description": "Die Grafik zeigt ein quadratisches Fußballspielfeld mit vier kleinen Toren an den Ecken. Zwei Fußballteams mit je 5 Spielern treten gegeneinander an.",
+    "grafik_title": "Fußballübung Koordination Kinder - Quadrat-Spiel mit 4 Toren",
+    "grafik_caption": "Dynamische Koordinations-Übung für Kinder im Fußballtraining",
+    "faq": [
+      {
+        "frage": "Welche Altersstufe eignet sich am besten für diese Übung?",
+        "antwort": "Die Übung ist ideal für Kinder der G-Jugend bis E-Jugend (6-12 Jahre) geeignet."
+      },
+      {
+        "frage": "Wie lange kann man diese Übung spielen lassen?",
+        "antwort": "Je nach Kondition und Konzentration der Kinder empfehlen sich 10-15 Minuten Spielzeit."
+      },
+      {
+        "frage": "Gibt es weitere Varianten für die Übung?",
+        "antwort": "Ja, man kann z.B. die Größe des Spielfelds, die Anzahl der Tore oder Regeln wie Ballkontakte anpassen, um die Übung zu erschweren oder zu vereinfachen."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": ""
+  },
+  {
+    "id": 89,
     "titel": "ÜBER DAS HÜTCHEN ZUM TORERFOLG",
     "quell_trainingseinheit": "Tricks, Fernschüsse – und ab in die Jubelzone",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/07/image-10.png",
@@ -4889,7 +4952,7 @@
     "schwester_titel": null
   },
   {
-    "id": 94,
+    "id": 96,
     "titel": "BALLGEFÜHL AN VIER STATIONEN",
     "quell_trainingseinheit": "Stationen-Warmup und viele Toraktionen",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/06/image-16.jpg",
@@ -4949,7 +5012,7 @@
     "schwester_titel": null
   },
   {
-    "id": 95,
+    "id": 97,
     "titel": "SAUBER DRIBBELN, SAUBER PASSEN",
     "quell_trainingseinheit": "Stationen-Warmup und viele Toraktionen",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/06/image-30.png",
@@ -5008,7 +5071,7 @@
     "schwester_titel": null
   },
   {
-    "id": 96,
+    "id": 98,
     "titel": "VOM WETTRENNEN INS 1 GEGEN 1",
     "quell_trainingseinheit": "Stationen-Warmup und viele Toraktionen",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/06/image-31.png",
@@ -5063,13 +5126,13 @@
     "ist_gecrawlt": false,
     "quell_kategorie": "",
     "schwester_ids": [
-      97
+      99
     ],
-    "schwester_id": 97,
+    "schwester_id": 99,
     "schwester_titel": "AUS DEM SLALOM IN DEN ANGRIFF"
   },
   {
-    "id": 97,
+    "id": 99,
     "titel": "AUS DEM SLALOM IN DEN ANGRIFF",
     "quell_trainingseinheit": "Stationen-Warmup und viele Toraktionen",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/06/image-32.png",
@@ -5097,9 +5160,9 @@
     "schwerer_machen": "• Mindestzahl an Pässen definieren vor dem Torabschluss.; • Entfernung zwischen Hütchen verringern für engeren Slalom",
     "status": "veroeffentlicht",
     "schwester_ids": [
-      96
+      98
     ],
-    "schwester_id": 96,
+    "schwester_id": 98,
     "schwester_titel": "VOM WETTRENNEN INS 1 GEGEN 1",
     "alt_titel": "Slalomdribbling in den Torabschluss",
     "seo_keyword": "Fußballübung Dribbling Kinder",
@@ -5132,7 +5195,7 @@
     "quell_kategorie": ""
   },
   {
-    "id": 98,
+    "id": 100,
     "titel": "ZWEIFELDSPIEL",
     "quell_trainingseinheit": "Stationen-Warmup und viele Toraktionen",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/06/image-33.png",
