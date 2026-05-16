@@ -6682,5 +6682,65 @@
     ],
     "schwester_id": 12,
     "schwester_titel": "REIFENPASS"
+  },
+  {
+    "id": 109,
+    "titel": "4 GEGEN 4 MIT 4 BÄLLEN",
+    "quell_trainingseinheit": "Volleys, Rauten und vier Bälle",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/06/image-10.png",
+    "grafik_dateiname": "uebung-141-4-gegen-4-mit-4-baellen.png",
+    "trainingsphase": "Spielformat",
+    "kurzbeschreibung": "2 Teams spielen im Wechsel 4 gegen 4 auf ein Tor bis alle vier Bälle verspielt sind.",
+    "aufbau": "25×40 Meter Feld, 1 Tor mit Torwart, Teams rotieren.",
+    "durchfuehrung": "Angreiferteam und Verteidigerteam spielen 4 gegen 4 auf ein Tor. Wenn Ball im Tor oder im Aus: Neuer Ball wird vom Angreiferteam eingespielt. Sobald alle vier Bälle verspielt sind, rotiert das Angreiferteam raus und setzt eine Runde aus.",
+    "varianten": "Bei größeren Gruppen ist 5 gegen 5 möglich. Oder viertes Team. Zudem: Verteidigerteam kann punkten, indem sie über die gegenüberliegende Grundlinie dribbeln (nicht schießen). ———- ———- FREIES SPIEL – LOS GEHT’S! FREIES SPIEL – LOS GEHT’S! In © 2025 COACH UNITED",
+    "quell_url": "https://coachunited.de/f-jugend-fussballtraining-volleys-rautenpasse-4-gegen-4/",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend",
+      "E-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Dribbeln",
+      "Torschuss"
+    ],
+    "coaching_fokus": "• Spielpass",
+    "leichter_machen": "• Spiel auf ein größeres Feld; • Weniger Gegenspieler (3 gegen 3); • Zusätzliche Mini-Tore an den Grundlinien zum Punkten",
+    "schwerer_machen": "• Spiel auf ein kleineres Feld; • 5 gegen 5 spielen lassen",
+    "status": "veroeffentlicht",
+    "alt_titel": "4:4 mit 4 Bällen – Kreatives Zuspiel üben",
+    "seo_keyword": "Fußballübung Zuspiel Kinder",
+    "url_slug": "fussballuebung-zuspiel-kinder",
+    "seo_meta_description": "Kreative Fußballübung 4 gegen 4 mit 4 Bällen zum Üben des präzisen Zuspiels und der Kommunikation für Kinder von 6-12 Jahren.",
+    "grafik_alt_text": "Vier Kinder spielen Fußball auf einem Feld mit vier Bällen gegeneinander.",
+    "grafik_description": "Die Grafik zeigt eine Fußballübung mit vier Kindern auf einem 25x40m großen Spielfeld. Zwei Teams spielen 4 gegen 4, wobei insgesamt vier Bälle im Einsatz sind.",
+    "grafik_title": "Fußballübung 4 gegen 4 mit 4 Bällen",
+    "grafik_caption": "Kreative Fußballübung zum Üben des präzisen Zuspiels und der Kommunikation",
+    "faq": [
+      {
+        "frage": "Wie kann ich die Übung für jüngere Kinder anpassen?",
+        "antwort": "Für jüngere Kinder (G-/F-Jugend) könnt ihr das Spielfeld vergrößern und mit weniger Gegenspielern (3 gegen 3) spielen."
+      },
+      {
+        "frage": "Wie lange sollte die Übung dauern?",
+        "antwort": "Die Übung eignet sich gut für 10-15 Minuten. Danach können die Teams wechseln."
+      },
+      {
+        "frage": "Welche Variationen gibt es noch?",
+        "antwort": "Ihr könnt zusätzliche Tore an den Grundlinien einbauen. Oder ihr spielt mit 5 gegen 5, wenn ihr eine größere Gruppe habt."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [],
+    "schwester_id": null,
+    "schwester_titel": null
   }
 ]
