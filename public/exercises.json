@@ -798,9 +798,11 @@
     "original_coaching_fokus": "",
     "ist_gecrawlt": false,
     "quell_kategorie": "",
-    "schwester_ids": [],
-    "schwester_id": null,
-    "schwester_titel": null
+    "schwester_ids": [
+      87
+    ],
+    "schwester_id": 87,
+    "schwester_titel": "SPRINT GEWINNEN UND ANGREIFEN"
   },
   {
     "id": 14,
@@ -5321,7 +5323,71 @@
     "quell_kategorie": ""
   },
   {
-    "id": 89,
+    "id": 87,
+    "titel": "SPRINT GEWINNEN UND ANGREIFEN",
+    "quell_trainingseinheit": "Vom Sprint in die Torgefahr",
+    "quell_url": "https://coachunited.de/vom-sprint-in-die-torgefahr/",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/07/image-11.jpg",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "Zwei Spieler liefern sich ein Wettrennen. Der Gewinner erhält das Zuspiel und wird im 1 gegen 1 zum Angreifer.",
+    "aufbau": "Ein Feld von 20x10m mit Jugendtoren und Torhütern aufbauen. 8 Hütchen an der einen Seitenlinie. An jedem Ende jeweils ein Team mit Leibchen platzieren. Auf der anderen Seite ebenfalls zwei Teams mit Leibchen an einem Hütchen platzieren.",
+    "durchfuehrung": "Trainer ruft das Zielhütchen (hier: drittes Hütchen). Sprinter aus jedem Team umlaufen das Hütchen. Gewinner des Sprints erhält den Pass von seinem Mitspieler und wird im 1 gegen 1 zum Angreifer. Verlierer ist Verteidiger. Rollenrotation, wenn alle einmal dran waren.",
+    "varianten": "Passspieler greift ein und es wird zum 2 gegen 1.",
+    "coaching_fokus": "• Tempo beim Sprint; • Präsziser Pass; • Faires 1 gegen 1",
+    "leichter_machen": "",
+    "schwerer_machen": "• Passspieler greift ein und es wird zum 2 gegen 1.; • Begrenze Ballkontakte, um Tempo und Direktheit zu erhöhen",
+    "jugend": [
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Dribbeln",
+      "Zweikampf",
+      "Schnelligkeit",
+      "Umschalten"
+    ],
+    "seo_keyword": "Fußballübung Sprint Kinder",
+    "url_slug": "fussballubung-sprint-kinder",
+    "seo_meta_description": "Effektive Sprint-Übung, um Tempo, Entscheidungsfindung und Umschaltspiel bei 6-12-jährigen Fußballspielern zu trainieren.",
+    "grafik_alt_text": "Zwei Kinder im Fußball-Wettrennen, um den Ball zum Tor zu bringen",
+    "grafik_description": "Die Grafik zeigt zwei Fußball-Nachwuchsspieler, die in einem 20x10m-Feld um den Ball sprinten. Einer wird zum Angreifer, der andere zum Verteidiger.",
+    "grafik_title": "Fußballübung: Sprint-Duell um den Torabschluss",
+    "grafik_caption": "Sprint-Wettkampf, bei dem der Sieger zum 1-gegen-1-Angriff startet.",
+    "status": "veroeffentlicht",
+    "nachtraeglich_eingefuegt": true,
+    "schwester_ids": [
+      13
+    ],
+    "schwester_id": 13,
+    "schwester_titel": "SLALOM GEWINNEN UND ANGREIFEN",
+    "alt_titel": "Sprint-Duell um den Torabschluss",
+    "faq": [
+      {
+        "frage": "Wie passe ich die Übung für jüngere Spieler an?",
+        "antwort": "Leider gibt es hier keine Möglichkeiten zum Erleichtern dieser Übung. "
+      },
+      {
+        "frage": "Wie lange dauert die Übung?",
+        "antwort": "Die Übungdauert etwa 20 Minuten. "
+      },
+      {
+        "frage": "Kann ich die Übung auch mit Torschuss kombinieren?",
+        "antwort": "Ja, am Ende des 1 gegen 1 steht ein Torschuss."
+      }
+    ],
+    "grafik_dateiname": "",
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": ""
+  },
+  {
+    "id": 88,
     "titel": "ÜBER DAS HÜTCHEN ZUM TORERFOLG",
     "quell_trainingseinheit": "Tricks, Fernschüsse – und ab in die Jubelzone",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/07/image-10.png",
@@ -5382,7 +5448,7 @@
     "schwester_titel": null
   },
   {
-    "id": 96,
+    "id": 95,
     "titel": "BALLGEFÜHL AN VIER STATIONEN",
     "quell_trainingseinheit": "Stationen-Warmup und viele Toraktionen",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/06/image-16.jpg",
@@ -5442,7 +5508,7 @@
     "schwester_titel": null
   },
   {
-    "id": 97,
+    "id": 96,
     "titel": "SAUBER DRIBBELN, SAUBER PASSEN",
     "quell_trainingseinheit": "Stationen-Warmup und viele Toraktionen",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/06/image-30.png",
@@ -5501,7 +5567,7 @@
     "schwester_titel": null
   },
   {
-    "id": 98,
+    "id": 97,
     "titel": "VOM WETTRENNEN INS 1 GEGEN 1",
     "quell_trainingseinheit": "Stationen-Warmup und viele Toraktionen",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/06/image-31.png",
@@ -5562,7 +5628,7 @@
     "schwester_titel": "AUS DEM SLALOM IN DEN ANGRIFF"
   },
   {
-    "id": 99,
+    "id": 98,
     "titel": "AUS DEM SLALOM IN DEN ANGRIFF",
     "quell_trainingseinheit": "Stationen-Warmup und viele Toraktionen",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/06/image-32.png",
@@ -5625,7 +5691,7 @@
     "quell_kategorie": ""
   },
   {
-    "id": 100,
+    "id": 99,
     "titel": "ZWEIFELDSPIEL",
     "quell_trainingseinheit": "Stationen-Warmup und viele Toraktionen",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/06/image-33.png",
