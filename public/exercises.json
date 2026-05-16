@@ -6431,5 +6431,65 @@
     ],
     "schwester_id": 105,
     "schwester_titel": "LEIBCHEN SUCHEN, SPIEL STARTEN"
+  },
+  {
+    "id": 105,
+    "titel": "LEIBCHEN SUCHEN, SPIEL STARTEN",
+    "quell_trainingseinheit": "Doppelt hält besser – Spielspaß auf zwei Feldern",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/06/image-13.png",
+    "grafik_dateiname": "uebung-133-leibchen-suchen-spiel-starten.png",
+    "trainingsphase": "Aufwärmen",
+    "kurzbeschreibung": "Die Spieler passen sich zu. Auf Kommando nehmen sie ein Leibchen, bilden Teams und spielen direkt ein Spiel.",
+    "aufbau": "20 x 40 m Feld mit 12-16 Leibchen in 3 bis 4 Farben (je nach Gruppengröße). Vier kleine Tore hinzufügen. Siehe Abbildung. Zwei Bälle ins Feld geben. Jeweils zwei Sets von drei gleichfarbigen Leibchen in jede Hälfte legen,",
+    "durchfuehrung": "Freies Passspiel. Auf Kommando die Leibchen nehmen. 4 Teams entstehen. Leibchen anziehen und auf Startsignal des Trainers auf beiden Feldern jeweils 3 gegen 3 spielen. Nach 2 Min. neuer Durchgang.",
+    "varianten": "Je nach Gruppengröße 2 gegen 2 oder 4 gegen 4 möglich. DUELL:PARALLELES 1 GEGEN 1 MIT EINDRIBBELN PARALLELES 1 GEGEN 1 MIT EINDRIBBELN Ein Spieler dribbelt durch ein Hütchentor und greift auf zwei Minitore an, der andere verteidigt.",
+    "quell_url": "https://coachunited.de/doppelt-halt-besser-spielspas-auf-zwei-feldern/",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Dribbeln"
+    ],
+    "coaching_fokus": "• Köpfe hoch, Mitspieler im Blick behalten; • Schnelle Teambildung",
+    "leichter_machen": "• Kleinere Teams; • Nur zwei Tore",
+    "schwerer_machen": "• Nur 2 Ballberührungen pro Spielzug",
+    "status": "veroeffentlicht",
+    "schwester_ids": [
+      104
+    ],
+    "schwester_id": 104,
+    "schwester_titel": "LEIBCHEN FINDEN, TEAM FINDEN",
+    "alt_titel": "Leibchen-Jagd - Schnelles Teamspiel",
+    "seo_keyword": "Fußballübung Teamspiel Kinder",
+    "url_slug": "leibchen-jagd-teamspiel-fussball-kinder",
+    "seo_meta_description": "Schnelles, spielerisches Training für Teamspiel und Reaktion bei Fußballkindern von 6-12 Jahren.",
+    "grafik_alt_text": "Vier kleine Fußballtore sind auf einem Spielfeld aufgestellt. Kinder rennen mit Leibchen los, um Teams zu bilden.",
+    "grafik_description": "Das Bild zeigt den Aufbau für die Fußballübung 'Leibchen Suchen, Spiel Starten'. Es sind vier kleine Tore auf einem Spielfeld aufgestellt, in der Mitte liegen verschiedenfarbige Leibchen zum Teambilden.",
+    "grafik_title": "Fußballübung: Leibchen Suchen, Spiel Starten",
+    "grafik_caption": "Schnelles Teamspiel mit Passspiel und Reaktion für Kinder.",
+    "faq": [
+      {
+        "frage": "Wie viele Kinder können an dieser Übung teilnehmen?",
+        "antwort": "Je nach Platzgröße können 8-16 Kinder mitspielen. Empfohlen sind 12 Kinder für ein optimal bespieltes Feld."
+      },
+      {
+        "frage": "Wie lange dauert die Übung?",
+        "antwort": "Pro Durchgang sind 3-5 Minuten Spielzeit sinnvoll. Die Übung kann in mehreren Durchgängen wiederholt werden."
+      },
+      {
+        "frage": "Kann ich die Übung auch für ältere Kinder anpassen?",
+        "antwort": "Ja, für D-Jugend Spieler kannst du das Spielfeld vergrößern und die Anzahl der Gegner erhöhen, um mehr Komplexität zu erzeugen."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": ""
   }
 ]
