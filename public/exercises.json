@@ -1286,10 +1286,10 @@
     "ist_gecrawlt": false,
     "quell_kategorie": "",
     "schwester_ids": [
-      23
+      114
     ],
-    "schwester_id": 23,
-    "schwester_titel": "M, FLANKENLAUF UND PASS INS 1 GEGEN 1"
+    "schwester_id": 114,
+    "schwester_titel": "SLALOM, FLANKENLAUF UND PASS INS 1 GEGEN 1"
   },
   {
     "id": 22,
@@ -1595,9 +1595,9 @@
     "ist_gecrawlt": false,
     "quell_kategorie": "",
     "schwester_ids": [
-      28
+      27
     ],
-    "schwester_id": 28,
+    "schwester_id": 27,
     "schwester_titel": "PASS VERARBEITEN UND INS 1 GEGEN 1 STARTEN"
   },
   {
@@ -1629,9 +1629,9 @@
     "schwerer_machen": "• Verteidiger darf Spieler schon direkt nach Pass angreifen; ",
     "status": "veroeffentlicht",
     "schwester_ids": [
-      27
+      26
     ],
-    "schwester_id": 27,
+    "schwester_id": 26,
     "schwester_titel": "PASS VERARBEITEN UND AUS DER DREHUNG ZUM SCHUSS KOMMEN",
     "alt_titel": "Pass verarbeiten und ins 1-gegen-1 gehen",
     "seo_keyword": "Fußballübung 1-gegen-1 Kinder",
@@ -1779,9 +1779,9 @@
     "ist_gecrawlt": false,
     "quell_kategorie": "",
     "schwester_ids": [
-      31
+      30
     ],
-    "schwester_id": 31,
+    "schwester_id": 30,
     "schwester_titel": "SCHNELL REAGIEREN UND INS 1 GEGEN 1"
   },
   {
@@ -1812,9 +1812,9 @@
     "schwerer_machen": "• Pass mit schwächerem Fuß",
     "status": "veroeffentlicht",
     "schwester_ids": [
-      30
+      29
     ],
-    "schwester_id": 30,
+    "schwester_id": 29,
     "schwester_titel": "SCHNELL REAGIEREN UND BALL ANFORDERN",
     "alt_titel": "Schnell zum Ball - Wer ist der Schnellste?",
     "seo_keyword": "Fußballübung 1 gegen 1 Kinder",
@@ -1903,9 +1903,10 @@
     "ist_gecrawlt": false,
     "quell_kategorie": "",
     "schwester_ids": [
+      32,
       33
     ],
-    "schwester_id": 33,
+    "schwester_id": 32,
     "schwester_titel": "FERNSCHUSS-CHALLENGE"
   },
   {
@@ -1935,9 +1936,10 @@
     "schwerer_machen": "• Zu gegenüberliegenden (weiter entfernteren) Hütchenreihe dribbeln und vor dort abschließen; • Torbreite mit Hütchen verringern, um genaueren Schuss zu erfordern",
     "status": "veroeffentlicht",
     "schwester_ids": [
-      32
+      31,
+      33
     ],
-    "schwester_id": 32,
+    "schwester_id": 31,
     "schwester_titel": "TORSCHUSS-CHALLENGE",
     "alt_titel": "ZIELGENAUER WEITSCHUSS-WETTBEWERB",
     "seo_keyword": "Fußballübung Fernschuss Kinder",
@@ -2025,9 +2027,12 @@
     "original_coaching_fokus": "",
     "ist_gecrawlt": false,
     "quell_kategorie": "",
-    "schwester_ids": [],
-    "schwester_id": null,
-    "schwester_titel": null
+    "schwester_ids": [
+      31,
+      32
+    ],
+    "schwester_id": 31,
+    "schwester_titel": "TORSCHUSS-CHALLENGE"
   },
   {
     "id": 34,
@@ -2086,9 +2091,9 @@
     "ist_gecrawlt": false,
     "quell_kategorie": "",
     "schwester_ids": [
-      36
+      35
     ],
-    "schwester_id": 36,
+    "schwester_id": 35,
     "schwester_titel": "DAS TOR BEWEGT SICH!"
   },
   {
@@ -2120,9 +2125,9 @@
     "schwerer_machen": "• Kleinerer Abstand bei den Stangenträgern",
     "status": "veroeffentlicht",
     "schwester_ids": [
-      35
+      34
     ],
-    "schwester_id": 35,
+    "schwester_id": 34,
     "schwester_titel": "DER BALL BEFREIT",
     "alt_titel": "Tore jagen im beweglichen Slalom",
     "seo_keyword": "Fußballübung Passen Kinder",
@@ -2211,9 +2216,9 @@
     "ist_gecrawlt": false,
     "quell_kategorie": "",
     "schwester_ids": [
-      45
+      37
     ],
-    "schwester_id": 45,
+    "schwester_id": 37,
     "schwester_titel": "STANGEN-PASS MIT ABSCHLUSS"
   },
   {
@@ -2246,9 +2251,9 @@
     "schwerer_machen": "• Ball über die Stange lupfen; • Torschussmarkierung weiter entfernt platzieren; • Hütchen enger zusammen stellen",
     "status": "veroeffentlicht",
     "schwester_ids": [
-      42
+      36
     ],
-    "schwester_id": 42,
+    "schwester_id": 36,
     "schwester_titel": "STANGEN-WETTHÜPFEN",
     "alt_titel": "Zielgenauer Passen und Abschluss",
     "seo_keyword": "Fußballübung Passen Koordination Kinder",
@@ -2648,7 +2653,8 @@
     "ist_gecrawlt": false,
     "quell_kategorie": "",
     "schwester_ids": [
-      44
+      44,
+      45
     ],
     "schwester_id": 44,
     "schwester_titel": "PARALLELER TORSCHUSS NACH FARBSIGNAL"
@@ -2689,7 +2695,8 @@
     "nachtraeglich_eingefuegt": true,
     "schwester_id": 43,
     "schwester_ids": [
-      43
+      43,
+      45
     ],
     "schwester_titel": "PARALLELER TORSCHUSS",
     "alt_titel": "Torschuss-Duell mit Farbsignal",
@@ -2772,9 +2779,12 @@
     "original_coaching_fokus": "",
     "ist_gecrawlt": false,
     "quell_kategorie": "",
-    "schwester_ids": [],
-    "schwester_id": null,
-    "schwester_titel": null
+    "schwester_ids": [
+      43,
+      44
+    ],
+    "schwester_id": 43,
+    "schwester_titel": "PARALLELER TORSCHUSS"
   },
   {
     "id": 46,
@@ -3080,11 +3090,9 @@
     "original_coaching_fokus": "",
     "ist_gecrawlt": false,
     "quell_kategorie": "",
-    "schwester_ids": [
-      56
-    ],
-    "schwester_id": 56,
-    "schwester_titel": "TURBO-SPIELSTART MIT ÜBERZAHL AUS DEM REIFEN"
+    "schwester_ids": [],
+    "schwester_id": null,
+    "schwester_titel": null
   },
   {
     "id": 51,
@@ -3452,9 +3460,9 @@
     "ist_gecrawlt": false,
     "quell_kategorie": "",
     "schwester_ids": [
-      64
+      57
     ],
-    "schwester_id": 64,
+    "schwester_id": 57,
     "schwester_titel": "TORSCHUSS MIT GEGNERPRÄSENZ"
   },
   {
@@ -3486,9 +3494,9 @@
     "schwerer_machen": "• Zwei Verteidiger; • Nur flache oder hohe Schüsse zählen",
     "status": "veroeffentlicht",
     "schwester_ids": [
-      63
+      56
     ],
-    "schwester_id": 63,
+    "schwester_id": 56,
     "schwester_titel": "TORSCHUSS NACH FARBSIGNAL",
     "alt_titel": "TORJÄGER UND VERTEIDIGER: 1-GEG-1-TORSCHÜSSE",
     "seo_keyword": "Fußballübung Torschuss Kinder",
@@ -3764,9 +3772,9 @@
     "ist_gecrawlt": false,
     "quell_kategorie": "",
     "schwester_ids": [
-      72
+      62
     ],
-    "schwester_id": 72,
+    "schwester_id": 62,
     "schwester_titel": "DEN FRECHDACHS EINFANGEN"
   },
   {
@@ -3796,9 +3804,9 @@
     "schwerer_machen": "",
     "status": "veroeffentlicht",
     "schwester_ids": [
-      71
+      61
     ],
-    "schwester_id": 71,
+    "schwester_id": 61,
     "schwester_titel": "ENTKOMME DEM BALLJÄGER",
     "alt_titel": "Dem Frechdachs auf den Fersen",
     "seo_keyword": "Fußballübung Dribbeln Kinder",
@@ -4008,11 +4016,10 @@
     "ist_gecrawlt": false,
     "quell_kategorie": "",
     "schwester_ids": [
-      83,
-      82
+      66
     ],
-    "schwester_id": 83,
-    "schwester_titel": "BLITZTURNIER MIT GOLDEN GOAL"
+    "schwester_id": 66,
+    "schwester_titel": "AUS DER UMKÄMPFTEN MITTELZONE INS SPIELGESCHEHEN"
   },
   {
     "id": 66,
@@ -4043,11 +4050,10 @@
     "schwerer_machen": "• „Shotclock“: Angreifendes Team muss nach spätestens 15 Sekunden einen Torabschluss erreicht haben.",
     "status": "veroeffentlicht",
     "schwester_ids": [
-      83,
-      81
+      65
     ],
-    "schwester_id": 83,
-    "schwester_titel": "BLITZTURNIER MIT GOLDEN GOAL",
+    "schwester_id": 65,
+    "schwester_titel": "AUS DER FRIEDLICHEN MITTELZONE INS SPIELGESCHEHEN",
     "alt_titel": "Balljagd in der Mittelzone - Schnelle Umschaltmomente",
     "seo_keyword": "Fußballübung Umschaltspiel Kinder",
     "url_slug": "fussballubung-umschaltspiel-kinder",
@@ -4857,8 +4863,7 @@
     ],
     "status": "veroeffentlicht",
     "schwester_ids": [
-      80,
-      81
+      80
     ],
     "schwester_id": 80,
     "schwester_titel": "VON DER ECKE IN DEN ZWEIKAMPF",
@@ -4920,8 +4925,7 @@
     ],
     "status": "veroeffentlicht",
     "schwester_ids": [
-      79,
-      81
+      79
     ],
     "schwester_id": 79,
     "schwester_titel": "ERST ZWEIKAMPF, DANN TORSCHUSS",
@@ -4982,12 +4986,9 @@
     "leichter_machen": "• Feste Tore zuweisen.",
     "schwerer_machen": "• Spieler müssen den Ball mindestens zweimal berühren, bevor sie ein Tor erzielen können; • Zeitlimit pro Angriff einführen; • Zweiten Ball einspielen",
     "status": "veroeffentlicht",
-    "schwester_ids": [
-      79,
-      80
-    ],
-    "schwester_id": 79,
-    "schwester_titel": "ERST ZWEIKAMPF, DANN TORSCHUSS",
+    "schwester_ids": [],
+    "schwester_id": null,
+    "schwester_titel": null,
     "alt_titel": "Tore-Jagd im Quadrat",
     "seo_keyword": "Fußballübung Koordination Kinder",
     "url_slug": "quadrat-spiel-auf-vier-kleine-tore",
@@ -5622,9 +5623,9 @@
     "ist_gecrawlt": false,
     "quell_kategorie": "",
     "schwester_ids": [
-      99
+      98
     ],
-    "schwester_id": 99,
+    "schwester_id": 98,
     "schwester_titel": "AUS DEM SLALOM IN DEN ANGRIFF"
   },
   {
@@ -5656,9 +5657,9 @@
     "schwerer_machen": "• Mindestzahl an Pässen definieren vor dem Torabschluss.; • Entfernung zwischen Hütchen verringern für engeren Slalom",
     "status": "veroeffentlicht",
     "schwester_ids": [
-      98
+      97
     ],
-    "schwester_id": 98,
+    "schwester_id": 97,
     "schwester_titel": "VOM WETTRENNEN INS 1 GEGEN 1",
     "alt_titel": "Slalomdribbling in den Torabschluss",
     "seo_keyword": "Fußballübung Dribbling Kinder",
