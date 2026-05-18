@@ -7235,5 +7235,67 @@
     ],
     "schwester_id": 118,
     "schwester_titel": "LAUFWEG BEACHTEN UND PASS FORDERN"
+  },
+  {
+    "id": 118,
+    "titel": "LAUFWEG BEACHTEN UND PASS FORDERN",
+    "quell_trainingseinheit": "Flexibel sein beim Torschuss",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/04/image-9.jpg",
+    "grafik_dateiname": "uebung-189-laufweg-beachten-und-pass-fordern.jpg",
+    "trainingsphase": "Aufwärmen",
+    "kurzbeschreibung": "Die Spieler umkurven die Stange in der Mitte und fordern am gegenüberliegenden Hütchen den Ball.",
+    "aufbau": "15mX15m großes Feld markieren. In der Mitte eine Stange aufstellen (im Bild rot markiert). Darum herum ein weiteres Hütchenquadrat aufbauen. Vier Spieler an einem inneren Hütchen verteilen. Restliche Spieler gleichmäßig mit einem Ball an den äußeren Eckhütchen platzieren.",
+    "durchfuehrung": "Die Spieler im inneren Feld laufen zur Stange, umrunden sie einmal vollständig und laufen zum gegenüberliegenden äußeren Eckhütchen. Kurz nach der Umrundung der Stange fordern sie mit Blickkontakt zum Passgeber den Pass. Der Passgeber spielt den Pass. Der Passempfänger nimmt ihn im Lauf mit, dribbelt zum Eckhütchen und stellt sich an. Der Passgeber wechselt nun zum Innenhütchen.",
+    "varianten": "",
+    "quell_url": "https://coachunited.de/flexibel-sein-beim-torschuss/",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Raumverhalten",
+      "Kommunikation"
+    ],
+    "coaching_fokus": "• Blickkontakt aufnehmen vor dem Pass; • Tempo hochhalten; • Präzise Pässe",
+    "leichter_machen": "",
+    "schwerer_machen": "",
+    "status": "veroeffentlicht",
+    "schwester_ids": [
+      117
+    ],
+    "schwester_id": 117,
+    "schwester_titel": "PASS FORDERN",
+    "alt_titel": "Passen und Laufen im Slalom",
+    "seo_keyword": "Fußballübung Passen Kinder",
+    "url_slug": "fussballubung-passen-kinder",
+    "seo_meta_description": "Effektive Fußballübung für Kinder, um das Passen und Raumverhalten zu verbessern. Ideale Übung für G- bis E-Jugend.",
+    "grafik_alt_text": "Kinder laufen in einem Slalom-Parcours, passen sich den Ball zu",
+    "grafik_description": "Die Übung zeigt Kinder in einem Slalom-Parcours, bei dem sie den Ball hin- und herpassen. Sie üben dabei ihre Passgenauigkeit und Laufwege.",
+    "grafik_title": "Fußballübung Passen Slalom für Kinder",
+    "grafik_caption": "Kinder trainieren das Passen und Raumverhalten in einem Slalom-Parcours.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler braucht man für die Übung?",
+        "antwort": "8-15 Spieler."
+      },
+      {
+        "frage": "Wie lange dauert die Übung?",
+        "antwort": "Die Übung eignet sich gut als 5-0-minütige Aktivität im Training. "
+      },
+      {
+        "frage": "Kann man die Übung für ältere Kinder anpassen?",
+        "antwort": "Ja, für ältere Kinder (D-Jugend) kann man die Distanzen erhöhen, um die Übung anspruchsvoller zu gestalten."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": ""
   }
 ]
