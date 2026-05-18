@@ -7482,5 +7482,65 @@
     "schwester_ids": [],
     "schwester_id": null,
     "schwester_titel": null
+  },
+  {
+    "id": 122,
+    "titel": "PASS-FLOW IM SECHSECK",
+    "quell_trainingseinheit": "Die Passjäger",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/04/image-4.jpg",
+    "grafik_dateiname": "uebung-191-pass-flow-im-sechseck.jpg",
+    "trainingsphase": "Aufwärmen",
+    "kurzbeschreibung": "Spieler in der Mitte des Sechsecks passen den Ball und laufen ihrem Ball nach.",
+    "aufbau": "Mit Hütchen ein Rechteck platzieren, bei dem jede Seite etwa 5m lang ist. An jedem Außenhütchen 2-3 Spieler platzieren. In der Mitte zwei Spieler mit Ball platzieren.",
+    "durchfuehrung": "Die Spieler mit Ball in der Mitte suchen sich einen Passpartner an einem Hütchen aus und passen ihm zu. Sie laufen ihrem eigenen Ball hinterher und stellen sich hinten an. Der Passempfänger nimmt den Ball, dribbelt ins Feld und passt dann auch.",
+    "varianten": "a) Spieleranzahl in der Mitte erhöhen. b) Spieler müssen vor dem Pass den Namen des Passempfängers ansagen. c) per Volleyschuss passen. PASSJÄGER VERMEIDEN PASSJÄGER VERMEIDEN Die Spieler müssen von ihrer Feldseite auf die gegenüberliegende Seite passen, ohne dass die Balljäger in der Mitte den Pass erreichen.",
+    "quell_url": "https://coachunited.de/die-passjager/",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Koordination",
+      "Raumverhalten",
+      "Kommunikation"
+    ],
+    "coaching_fokus": "• Tempo hochalten; • Präzise Pässe spielen; • Blickkontakt vor Pass aufnehmen",
+    "leichter_machen": "• Spieler müssen vor dem Pass den Namen des Passempfängers ansagen.",
+    "schwerer_machen": "• Spieleranzahl in der Mitte erhöhen.; • Per Volleyschuss passen.",
+    "status": "veroeffentlicht",
+    "alt_titel": "Sechseck-Passspiel mit Laufwegen",
+    "seo_keyword": "Fußballübung Passen Kinder",
+    "url_slug": "fussballubung-passen-kinder",
+    "seo_meta_description": "Effektives Passspiel im Sechseck trainiert Koordination, Raumverhalten und Kommunikation bei Kindern von 6-12 Jahren.",
+    "grafik_alt_text": "Sechs Spieler passen sich den Ball im Sechseck zu, während zwei Spieler in der Mitte den Ball abfangen wollen.",
+    "grafik_description": "Die Abbildung zeigt den Aufbau und die Durchführung des Passspiels im Sechseck. Zwei Spieler in der Mitte versuchen, die Pässe der anderen Spieler an den Außenpositionen zu erreichen.",
+    "grafik_title": "Passspiel im Sechseck - Fußballübung für Kinder",
+    "grafik_caption": "Das Sechseck-Passspiel fördert das Zusammenspiel und die Kommunikation im Fußballtraining mit Kindern.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler brauchen wir für diese Übung?",
+        "antwort": "Ideal sind 12-14 Spieler."
+      },
+      {
+        "frage": "Wie lange sollten wir die Übung durchführen?",
+        "antwort": "Etwa 5-10 Minuten sind sinnvoll, damit die Kinder genügend Wiederholungen bekommen."
+      },
+      {
+        "frage": "Kann man die Übung auch für ältere Kinder anpassen?",
+        "antwort": "Ja, etwa durch weitere Spieler in der Mitte."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [],
+    "schwester_id": null,
+    "schwester_titel": null
   }
 ]
