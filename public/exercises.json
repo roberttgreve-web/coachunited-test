@@ -7112,5 +7112,66 @@
     ],
     "schwester_id": 114,
     "schwester_titel": "IM DOPPELFELD TORE SAMMELN"
+  },
+  {
+    "id": 116,
+    "titel": "2 GEGEN 2 GEGEN 2 TORHÜTER",
+    "quell_trainingseinheit": "Trainieren mit dem Ajax-Viereck",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/04/image-11.jpg",
+    "grafik_dateiname": "uebung-187-2-gegen-2-gegen-2-torhueter.jpg",
+    "trainingsphase": "Spielformat",
+    "kurzbeschreibung": "Auf jedem Feld wird 2 gegen 2 gespielt. Das dritte Team stellt zwei Torhüter. Nach Torerfolg wird gewechselt.",
+    "aufbau": "Zwei etwa 30m x 30m große Felder markieren (ggf. drittes Spielfeld je nach Spieleranzahl). Jeweils ein Jugendtor aufstellen und jeweils einen Ball bereitstellen.",
+    "durchfuehrung": "Zwei Teams spielen im 2 gegen 2 auf ein Tor. Das dritte Team stellt zwei Torhüter gleichzeitig. Nach 5 Minuten oder nach Torerfolg wird gewechselt: Die Mannschaft, die ein Tor erzielt hat, bleibt auf dem Feld. Die andere Mannschaft wechselt ins Tor. Steht es nach 5 Minuten 0:0, geht die Mannschaft ins Tor, die länger auf dem Feld gestanden hat.",
+    "varianten": "",
+    "quell_url": "https://coachunited.de/trainieren-mit-dem-ajax-viereck/",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Dribbeln",
+      "Torschuss",
+      "Zweikampf"
+    ],
+    "coaching_fokus": "• Schnelle Ballzirkulation durch kurze Pässe; • Präziser Abschluss, um gleich zwei Torhüter zu überwinden; • Positionsspiel der Torhüter untereinander abstimmen",
+    "leichter_machen": "• Vergrößerung der Spielfelder",
+    "schwerer_machen": "• Einführung von 1-2-Pässen als Pflicht vor Torerzielung",
+    "status": "veroeffentlicht",
+    "alt_titel": "Drei Teams, zwei Tore – Dynamisches Angriffsspiel",
+    "seo_keyword": "Fußballübung Dribbeln Kinder",
+    "url_slug": "fussballubung-dribbeln-kinder",
+    "seo_meta_description": "Dynamisches 2 gegen 2 gegen 2-Spiel mit Torhütern zum Üben von Dribbling und Torschuss bei Kindern im Fußballtraining.",
+    "grafik_alt_text": "Zwei Kinder-Fußballteams spielen 2 gegen 2 auf zwei Tore, mit zwei Torwarten in der Mitte.",
+    "grafik_description": "Das Bild zeigt eine Fußballübung mit zwei Spielfeldern, auf denen jeweils zwei Kinder-Teams 2 gegen 2 spielen. Außerdem sind in der Mitte zwei Tore mit Torhütern zu sehen.",
+    "grafik_title": "Fußballübung: 2 gegen 2 gegen 2 Torhüter",
+    "grafik_caption": "Dynamische Übung zum Üben von Dribbling, Pässen und Torabschluss für Kinder.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler braucht man für diese Übung?",
+        "antwort": "6-8 pro Feld, also 12-16. "
+      },
+      {
+        "frage": "Wie lange dauert eine Runde?",
+        "antwort": "Eine Runde dauert etwa 5 Minuten, danach wechseln die Teams."
+      },
+      {
+        "frage": "Für welche Altersklasse ist die Übung geeignet?",
+        "antwort": "Die Übung ist vor allem ab der F-Jugend geeignet. "
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [],
+    "schwester_id": null,
+    "schwester_titel": null
   }
 ]
