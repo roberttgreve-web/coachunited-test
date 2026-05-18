@@ -7723,5 +7723,65 @@
     "original_coaching_fokus": "",
     "ist_gecrawlt": false,
     "quell_kategorie": ""
+  },
+  {
+    "id": 126,
+    "titel": "TORSCHUSS-VORSPRUNG FÜR SPIEL ERARBEITEN",
+    "quell_trainingseinheit": "Die Passjäger",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/04/image-5.png",
+    "grafik_dateiname": "uebung-193-torschuss-vorsprung-fuer-spiel-erarbeiten.png",
+    "trainingsphase": "Spielformat",
+    "kurzbeschreibung": "Vor dem Spiel dürfen alle Spieler einmal schießen und sich so einen Vorsprung für das Spiel erarbeiten.",
+    "aufbau": "Ein etwa 40x25m großes Feld aufbauen mit Torschusshütchen etwa 8m vor dem Tor. Die Teams hinter ihren Toren platzieren mit Bällen.",
+    "durchfuehrung": "Jeweils ein Spieler Mannschaft startet und schießt auf Höhe der Torschussmarkierung aufs Tor. Wenn alle Spieler einmal geschossen haben, startet direkt ein Spiel. Die Tore werden aus dem Torschuss-Wettbewerb übernommen. Nach 8 Minuten endet das Spiel und wir starten von vorne.",
+    "varianten": "",
+    "quell_url": "https://coachunited.de/die-passjager/",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend"
+    ],
+    "skills": [
+      "Ballkontrolle",
+      "Torschuss",
+      "Zweikampf",
+      "Raumverhalten",
+      "Verteidigen"
+    ],
+    "coaching_fokus": "• Konzentrierte Schusstechnik; • Schneller Start ins Spiel, wenn alle geschossen haben",
+    "leichter_machen": "• Reduziere die Schussentfernung",
+    "schwerer_machen": "• Erhöhe die Schussentfernung",
+    "status": "veroeffentlicht",
+    "alt_titel": "Torschuss-Duell vor dem Spiel",
+    "seo_keyword": "Fußballübung Torschuss Kinder",
+    "url_slug": "fussballubung-torschuss-kinder",
+    "seo_meta_description": "Fußballübung zum Torschuss-Training für Kinder im Alter von 6-12 Jahren. Erarbeitet einen Vorsprung für das anschließende Spiel.",
+    "grafik_alt_text": "Kinder schießen Fußball aus einer Distanz von etwa 8 Metern auf das Tor.",
+    "grafik_description": "Die Grafik zeigt einen Aufbau für eine Torschuss-Übung, bei der die Kinder von einer festen Linie aus auf das Tor schießen. Es sind zwei Teams hinter den Toren zu sehen, die abwechselnd zum Schuss kommen.",
+    "grafik_title": "Fußballübung: Torschuss-Vorsprung für das Spiel",
+    "grafik_caption": "Torschuss-Training als Einstimmung vor dem Spiel",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler nehmen an der Übung teil?",
+        "antwort": "Die Übung ist für Mannschaften von 6-8 Spielern pro Team konzipiert. Die Spieler werden in zwei Teams aufgeteilt."
+      },
+      {
+        "frage": "Wie lange dauert die Übung?",
+        "antwort": "Die Übung dauert insgesamt etwa 15 Minuten. Mehrmaliges Widerholen möglich. "
+      },
+      {
+        "frage": "Für welche Altersklasse eignet sich die Übung am besten?",
+        "antwort": "Die Übung ist ideal für Kinder der F- und E-Jugend im Alter von 8-12 Jahren geeignet."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [],
+    "schwester_id": null,
+    "schwester_titel": null
   }
 ]
