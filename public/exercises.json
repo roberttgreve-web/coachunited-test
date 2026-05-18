@@ -6986,5 +6986,68 @@
     "original_coaching_fokus": "",
     "ist_gecrawlt": false,
     "quell_kategorie": ""
+  },
+  {
+    "id": 114,
+    "titel": "IM DOPPELFELD TORE SAMMELN",
+    "quell_trainingseinheit": "Trainieren mit dem Ajax-Viereck",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/04/image-10.jpg",
+    "grafik_dateiname": "uebung-im-doppelfeld-tore-sammeln.jpg",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "Jeweils zwei Teams treten auf zwei Feldern parallel gegeneinander an. Nach Torerfolg wird der Ball als Trophäe hinter dem eigenen Tor verwahrt. ",
+    "aufbau": "Zwei Felder zu je 40mX20m aufstellen. Etwa 10m Abstand zwischen den Feldern. Je zwei Minitore pro Feld. Vier Teams (zu je vier Spielern) mit Leibchen einteilen. Trainer steht mit 10 Bällen in der Mitte der Felder.",
+    "durchfuehrung": "Auf beiden Feldern wird parallel ein 4 gegen 4 gespielt, so dass alle vier Teams gleichzeitig spielen. Bei Torerfolg wird der Ball von der erfolgreichen Mannschaft aus dem Tor geholt und hinter dem eigenen Tor abgelegt. Der Trainer spielt einen neuen Ball ein. Wer hat die meisten Bälle hinter dem Tor, sobald die 10 Bälle durchgespielt sind?",
+    "varianten": "Vor einem Torerfolg muss jeder einzelne Spieler eines Teams den Ball mindestens ein Mal berührt haben.",
+    "quell_url": "https://coachunited.de/trainieren-mit-dem-ajax-viereck/",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Torschuss",
+      "Koordination",
+      "Taktik",
+      "Umschalten"
+    ],
+    "coaching_fokus": "• Präzise Pässe auf engem Raum",
+    "leichter_machen": "• Spielfeldgröße vergrößern; • Weniger Spieler pro Team",
+    "schwerer_machen": "• Vor einem Torerfolg muss jeder einzelne Spieler eines Teams den Ball mindestens ein Mal berührt haben.",
+    "status": "veroeffentlicht",
+    "schwester_ids": [
+      115
+    ],
+    "schwester_id": 115,
+    "schwester_titel": "AUS DEM DOPPELFELD INS GROSSFELDSPIEL",
+    "alt_titel": "Tore sammeln im Doppelfeld",
+    "seo_keyword": "Fußballübung Tore schießen Kinder",
+    "url_slug": "fussballubung-tore-schiessen-kinder",
+    "seo_meta_description": "Zwei Fußballteams spielen auf zwei Kleinfeldern parallel gegeneinander",
+    "grafik_alt_text": "Fußballübung: Tore sammeln im Doppelfeld",
+    "grafik_description": "Die Übung zeigt zwei Fußballteams, die auf zwei parallel angeordneten Kleinfeldern gegeneinander spielen. Auf Trainerkommando wechselt das Spiel auf ein größeres Feld.",
+    "grafik_title": "Effektive Fußballübung zum Tore schießen für Kinder.",
+    "grafik_caption": "Die Übung zeigt zwei Fußballteams, die auf zwei parallel angeordneten Kleinfeldern gegeneinander spielen. Auf Trainerkommando wechselt das Spiel auf ein größeres Feld.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler braucht man für diese Übung?",
+        "antwort": "Die Übung ist für 12-16 Spieler pro Team ausgelegt. Die Mannschaftsgröße kann aber auch angepasst werden."
+      },
+      {
+        "frage": "Wie lange dauert die Übung normalerweise?",
+        "antwort": "Die Spielzeit beträgt ca. 10-15 Minuten. Je nach Alter und Leistungsstand der Kinder kann die Dauer variiert werden."
+      },
+      {
+        "frage": "Für welche Altersgruppe ist diese Übung geeignet?",
+        "antwort": "Die Übung ist für die F- und E-Jugend gut geeignet."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": ""
   }
 ]
