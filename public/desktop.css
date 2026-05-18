@@ -661,6 +661,7 @@
   }
 
   body:has(.crest-panel) .tagline { display: none !important; }
+  body:has(.crest-panel) .home-intro { display: none !important; }
 
   /* Labels + Felder auf dunklem Hintergrund */
   body:has(.crest-panel) .field-label { color: #ffffff !important; }
