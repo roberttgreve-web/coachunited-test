@@ -7783,5 +7783,67 @@
     "schwester_ids": [],
     "schwester_id": null,
     "schwester_titel": null
+  },
+  {
+    "id": 127,
+    "titel": "DOPPELPASS MIT DREIERHÜTCHEN",
+    "quell_trainingseinheit": "Passen, passen, passen",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/04/image.jpg",
+    "grafik_dateiname": "uebung-194-doppelpass-mit-dreierhuetchen.jpg",
+    "trainingsphase": "Aufwärmen",
+    "kurzbeschreibung": "Spielerpaare passen sich den Ball im Doppelpass jeweils durch zwei Hütchentore.",
+    "aufbau": "Ein 30mx30m großes Feld markieren. Mit drei Hütchen mehrere 2mX2m großes Doppeltore aufstellen. Pro Doppeltor ein Spielerpaar mit Ball platzieren.",
+    "durchfuehrung": "Die Spieler spielen sich durch die Doppeltore den Ball zu. Der erste Pass muss durch das eine Hütchentor, der zweite Pass durch das andere Hütchentor erfolgen. Möglichst im direkten Doppelpass. Je nach Leistungsfähigkeit sonst mit zwei Ballberührungen (Ball annehmen und dann passen).",
+    "varianten": "a) Nicht am gleichen Hütchentor bleiben sondern als Paar alle Hütchentore im Feld einmal „bespielen“. b) Spieler werfen sich den Ball zu statt zu passen. c) Abstand der Hütchentore verringern. DIE HÜTCHEN MÜSSEN FALLEN DIE HÜTCHEN MÜSSEN FALLEN Ein Team versucht möglichst viele Hütchen mit Bällen umzuschießen. Das andere Team stellt sie wieder auf. Wer hat nach zwei Minuten gewonnen?",
+    "quell_url": "https://coachunited.de/passen-passen-passen/",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend",
+      "E-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Koordination",
+      "Raumverhalten"
+    ],
+    "coaching_fokus": "• Präzise Pässe; • Immer in Bewegung sein",
+    "leichter_machen": "• Spieler werfen sich den Ball zu statt zu passen.; • Abstand der Hütchentore vergrößern.",
+    "schwerer_machen": "• Nicht am gleichen Hütchentor bleiben sondern als Paar alle Hütchentore im Feld einmal „bespielen“.; • Abstand der Hütchentore verringern.",
+    "status": "veroeffentlicht",
+    "alt_titel": "Doppelpass durch Hütchengassen",
+    "seo_keyword": "Fußballübung Doppelpass Kinder",
+    "url_slug": "fussballuebung-doppelpass-kinder",
+    "seo_meta_description": "Zwei Kinder passen sich einen Fußball durch Hütchengassen",
+    "grafik_alt_text": "Fußballübung Doppelpass durch Hütchengassen",
+    "grafik_description": "Die Grafik zeigt einen Aufbau mit Hütchentoren, durch die zwei Kinder den Ball spielen. Sie üben so den Doppelpass und das präzise Zuspiel.",
+    "grafik_title": "Kinder-Fußballübung für präzises Passspiel",
+    "grafik_caption": "Die Grafik zeigt einen Aufbau mit Hütchentoren, durch die zwei Kinder den Ball spielen. Sie üben so den Doppelpass und das präzise Zuspiel.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler braucht man für diese Übung?",
+        "antwort": "Beliebig viele. Entsprechend die Anzahl der Hütchentore anpassen."
+      },
+      {
+        "frage": "Wie lange sollte man diese Übung machen?",
+        "antwort": "Je nach Alter und Können der Kinder 5-10 Minuten. Nicht zu lange, sonst wird es langweilig. "
+      },
+      {
+        "frage": "Kann man die Übung auch für ältere Kinder nutzen?",
+        "antwort": "Ja, man kann die Abstände zwischen den Hütchen verkleinern und das Tempo erhöhen."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [
+      128
+    ],
+    "schwester_id": 128,
+    "schwester_titel": "DIE HÜTCHEN MÜSSEN FALLEN"
   }
 ]
