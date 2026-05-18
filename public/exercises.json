@@ -7173,5 +7173,67 @@
     "schwester_ids": [],
     "schwester_id": null,
     "schwester_titel": null
+  },
+  {
+    "id": 117,
+    "titel": "PASS FORDERN",
+    "quell_trainingseinheit": "Flexibel sein beim Torschuss",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/04/image-8.jpg",
+    "grafik_dateiname": "uebung-188-pass-fordern.jpg",
+    "trainingsphase": "Aufwärmen",
+    "kurzbeschreibung": "Spieler laufen zur zentralen Stange, drehen sich um und fordern den Pass, den sie dann zum Ausgangshütchen dribbeln.",
+    "aufbau": "15mX15m großes Feld markieren. In der Mitte eine Stange aufstellen (im Bild rot markiert). Darum herum ein weiteres Hütchenquadrat aufbauen. Vier Spieler an einem inneren Hütchen verteilen. Restliche Spieler gleichmäßig mit einem Ball an den äußeren Eckhütchen platzieren.",
+    "durchfuehrung": "Die Spieler im inneren Feld laufen zur Stange, berühren sie kurz mit der Hand, drehen sich und laufen zum äußeren Eckhütchen. Kurz nach der Drehung fordern sie mit Blickkontakt zum Passgeber den Pass. Der Passgeber spielt den Pass. Der Passempfänger nimmt ihn im Lauf mit, dribbelt zum Eckhütchen und stellt sich an. Der Passgeber wechselt nun zum Innenhütchen.",
+    "varianten": "a) Per Volley zuspiele. b) Werfen statt passen. LAUFWEG BEACHTEN UND PASS FORDERN LAUFWEG BEACHTEN UND PASS FORDERN Die Spieler umkurven die Stange in der Mitte und fordern am gegenüberliegenden Hütchen den Ball.",
+    "quell_url": "https://coachunited.de/flexibel-sein-beim-torschuss/",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Dribbeln",
+      "Raumverhalten"
+    ],
+    "coaching_fokus": "• Per Blickkontakt den Pass anfordern; • Hohes Tempo; • Klare, saubere Pässe",
+    "leichter_machen": "• Werfen statt passen.",
+    "schwerer_machen": "• Per Volley zuspiele.",
+    "status": "veroeffentlicht",
+    "alt_titel": "Ballfordern und Weiterleiten",
+    "seo_keyword": "Fußballübung Ballkontrolle Kinder",
+    "url_slug": "fussballubung-ballkontrolle-kinder",
+    "seo_meta_description": "Vier Kinder spielen einen kurzen Pass in einem 15x15 Meter Spielfeld mit einer Stange in der Mitte.",
+    "grafik_alt_text": "Fußballübung 'Ball fordern' für Kinder",
+    "grafik_description": "Die Abbildung zeigt den Aufbau und die Durchführung der Fußballübung 'Ball fordern'. Die Kinder laufen zur Stange in der Mitte, drehen sich und fordern dann den Pass vom Mitspieler am Rand.",
+    "grafik_title": "Effektive Übung zum Training von Ballkontrolle, Passen und Raumverhalten für 8-12-jährige Fußballspieler.",
+    "grafik_caption": "Die Abbildung zeigt den Aufbau und die Durchführung der Fußballübung 'Ball fordern'. Die Kinder laufen zur Stange in der Mitte, drehen sich und fordern dann den Pass vom Mitspieler am Rand.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler braucht man für diese Übung?",
+        "antwort": "8-15 Spieler. So haben alle genug Ballkontakte."
+      },
+      {
+        "frage": "Wie lang soll die Übung dauern?",
+        "antwort": "Etwa 5-10 Minuten. Mehrmals wiederholen, um die Bewegungsabläufe zu festigen."
+      },
+      {
+        "frage": "Für welche Altersgruppe ist die Übung geeignet?",
+        "antwort": "Die Übung ist ideal für Kinder ab der F-Jugend geeignet. Sie fördert grundlegende technische und taktische Fähigkeiten."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [
+      118
+    ],
+    "schwester_id": 118,
+    "schwester_titel": "LAUFWEG BEACHTEN UND PASS FORDERN"
   }
 ]
