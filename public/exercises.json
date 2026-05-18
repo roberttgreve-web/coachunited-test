@@ -7422,5 +7422,65 @@
     "original_coaching_fokus": "",
     "ist_gecrawlt": false,
     "quell_kategorie": ""
+  },
+  {
+    "id": 121,
+    "titel": "FERNSCHUSS-SPIEL",
+    "quell_trainingseinheit": "Flexibel sein beim Torschuss",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/04/image-1.png",
+    "grafik_dateiname": "uebung-190-fernschuss-spiel.png",
+    "trainingsphase": "Spielformat",
+    "kurzbeschreibung": "In einem 6 gegen 6 darf nur von außerhalb der Torschusszone auf das leere Tor abgeschlossen werden.",
+    "aufbau": "Feld mit den Maßen 40x20m errichten. Auf jeder Seite ein Jugendtor. Vor jedem Tor eine Torschusszone von 10mx10m markieren. Zwei Teams einteilen.",
+    "durchfuehrung": "Die Teams spielen ein reguläres Spiel. Allerdings ohne Torhüter. Die angreifende Mannschaft darf die gegnerische Torschusszone nicht betreten und entsprechend auch nur von außerhalb der Torschusszone per Fernschuss abschließen. Die verteidigende Mannschaft darf die eigene Torschusszone betreten.",
+    "varianten": "",
+    "quell_url": "https://coachunited.de/flexibel-sein-beim-torschuss/",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Torschuss",
+      "Raumverhalten",
+      "Taktik"
+    ],
+    "coaching_fokus": "• Kontrollierte, hohe Torschüsse; • Pass zum freien Mitspieler, wenn dieser in besserer Schussposition steht",
+    "leichter_machen": "• Torschusszone verkleinern; • Auch Abwehrspieler dürfen nicht in die Torschusszone",
+    "schwerer_machen": "• Torschusszone vergrößern",
+    "status": "veroeffentlicht",
+    "alt_titel": "Zielschuss aus der Distanz",
+    "seo_keyword": "Fußballübung Fernschuss Kinder",
+    "url_slug": "fussballubung-fernschuss-kinder",
+    "seo_meta_description": "Fernschuss-Spiel: Effektives Fußballtraining für Kinder von 6-12 Jahren zum Verbessern von Torschuss, Raumaufteilung und Taktik.",
+    "grafik_alt_text": "Kinder spielen Fernschuss-Spiel auf einem Fußballfeld mit Toren",
+    "grafik_description": "Das Bild zeigt zwei Teams, die in einer 40x20m-Spielfeldhälfte ein Fernschuss-Spiel durchführen. Die Torschusszone ist mit Markierungen abgetrennt.",
+    "grafik_title": "Fußballübung Fernschuss für Kinder",
+    "grafik_caption": "Fernschuss-Spiel: Effektives Torschusstraining für 6-12-jährige Fußballspieler",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler braucht man für diese Übung?",
+        "antwort": "Ideal sind 6 gegen 6 Spieler. So entsteht genug Bewegung und Dynamik im Spiel. Auch 7 gegen 7 möglich. Bei größeren Gruppen drittes Team mit Tunriermodus. "
+      },
+      {
+        "frage": "Wie lange soll die Übung dauern?",
+        "antwort": "Empfohlen sind 10-15 Minuten pro Durchgang. So haben die Kinder genug Zeit, die Übung zu verinnerlichen."
+      },
+      {
+        "frage": "Kann man die Übung auch für ältere Kinder nutzen?",
+        "antwort": "Ja, das Fernschuss-Spiel eignet sich gut für Kinder von 8-12 Jahren. "
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [],
+    "schwester_id": null,
+    "schwester_titel": null
   }
 ]
