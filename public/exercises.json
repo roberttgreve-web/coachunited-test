@@ -7300,11 +7300,11 @@
   },
   {
     "id": 119,
-    "titel": "FERNSCHUSS-SPIEL",
+    "titel": "TORSCHÜSSE IM SCHNELLEN WECHSEL",
     "quell_trainingseinheit": "Flexibel sein beim Torschuss",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/04/image.png",
     "grafik_dateiname": "uebung-torschuesse-im-schnellen-wechsel.png",
-    "trainingsphase": "Spielformat",
+    "trainingsphase": "Hauptteil",
     "kurzbeschreibung": "Zwei Teams liefern sich einen schnellen Torschusswettkampf. ",
     "aufbau": "Zwei Teams an Starthütchen etwas 20m vor dem Jugendtor platzieren. In 10m Entfernung eine Schusslinie mit zwei Hütchen markieren. Ein Torhüter im Tor, ein zweiter Torhüter neben dem Tor.",
     "durchfuehrung": "Der erste Spieler des ersten Teams dribbelt zur Schusslinie und schließt ab. Sobald er geschossen hat, startet der erste Spieler des zweiten Teams. Nach jedem Schuss wechseln die Torhüter schnell. Das Team, das zuerst 10 Tore geschossen hat, gewinnt.",
@@ -7326,9 +7326,11 @@
     "leichter_machen": "• Volley-Abschlüsse erlauben (Ball aufnehmen und sich selbst hochwerfen); • Abstand zum Tor verringern",
     "schwerer_machen": "• Nur mit dem schwächeren Fuß schießen",
     "status": "veroeffentlicht",
-    "schwester_ids": [],
-    "schwester_id": null,
-    "schwester_titel": null,
+    "schwester_ids": [
+      120
+    ],
+    "schwester_id": 120,
+    "schwester_titel": "ERST SCHIESSEN, DANN TORWART SEIN",
     "alt_titel": "Fernschuss-Challenge",
     "seo_keyword": "Fußballübung Fernschuss Kinder",
     "url_slug": "fussballubung-fernschuss-kinder",
@@ -7363,8 +7365,8 @@
     "id": 120,
     "titel": "ERST SCHIESSEN, DANN TORWART SEIN",
     "quell_trainingseinheit": "Flexibel sein beim Torschuss",
-    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/04/image-1.png",
-    "grafik_dateiname": "uebung-erst-schiessen-dann-torwart-sein.png",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/04/image.png",
+    "grafik_dateiname": "uebung-torschuesse-im-schnellen-wechsel.png",
     "trainingsphase": "Hauptteil",
     "kurzbeschreibung": "Nach dem eigenen Torschuss übernimmt der Spieler die Torhüterrolle für den nächsten Schützen.",
     "aufbau": "Feld mit den Maßen 40x20m errichten. Auf jeder Seite ein Jugendtor. Vor jedem Tor eine Torschusszone von 10mx10m markieren. Zwei Teams einteilen.",
@@ -7387,9 +7389,9 @@
     "schwerer_machen": "• Nur mit dem schwächeren Fuß schießen.",
     "status": "veroeffentlicht",
     "schwester_ids": [
-      121
+      119
     ],
-    "schwester_id": 121,
+    "schwester_id": 119,
     "schwester_titel": "FERNSCHUSS-SPIEL",
     "alt_titel": "Torwart für eine Minute",
     "seo_keyword": "Fußballübung Torhüter Kinder",
