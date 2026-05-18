@@ -7297,5 +7297,66 @@
     "original_coaching_fokus": "",
     "ist_gecrawlt": false,
     "quell_kategorie": ""
+  },
+  {
+    "id": 119,
+    "titel": "FERNSCHUSS-SPIEL",
+    "quell_trainingseinheit": "Flexibel sein beim Torschuss",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/04/image.png",
+    "grafik_dateiname": "uebung-torschuesse-im-schnellen-wechsel.png",
+    "trainingsphase": "Spielformat",
+    "kurzbeschreibung": "Zwei Teams liefern sich einen schnellen Torschusswettkampf. ",
+    "aufbau": "Zwei Teams an Starthütchen etwas 20m vor dem Jugendtor platzieren. In 10m Entfernung eine Schusslinie mit zwei Hütchen markieren. Ein Torhüter im Tor, ein zweiter Torhüter neben dem Tor.",
+    "durchfuehrung": "Der erste Spieler des ersten Teams dribbelt zur Schusslinie und schließt ab. Sobald er geschossen hat, startet der erste Spieler des zweiten Teams. Nach jedem Schuss wechseln die Torhüter schnell. Das Team, das zuerst 10 Tore geschossen hat, gewinnt.",
+    "varianten": "a) Nur mit dem schwächeren Fuß schießen. b) Volley-Abschluss.",
+    "quell_url": "https://coachunited.de/flexibel-sein-beim-torschuss/",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Torschuss",
+      "Raumverhalten",
+      "Taktik"
+    ],
+    "coaching_fokus": "• Präzise Schusstechnik beim Fernschuss; • Zügiges Andribbeln der Torschusslinie; • Spaß haben",
+    "leichter_machen": "• Volley-Abschlüsse erlauben (Ball aufnehmen und sich selbst hochwerfen); • Abstand zum Tor verringern",
+    "schwerer_machen": "• Nur mit dem schwächeren Fuß schießen",
+    "status": "veroeffentlicht",
+    "schwester_ids": [],
+    "schwester_id": null,
+    "schwester_titel": null,
+    "alt_titel": "Fernschuss-Challenge",
+    "seo_keyword": "Fußballübung Fernschuss Kinder",
+    "url_slug": "fussballubung-fernschuss-kinder",
+    "seo_meta_description": "Fernschuss-Challenge: Effektives Fußballtraining für Kinder (6-12 Jahre) zum Verbessern von Torschuss, Raumaufteilung und Taktik.",
+    "grafik_alt_text": "Zwei Fußballteams spielen ein Fernschuss-Spiel auf einem Kleinfeld mit Toren",
+    "grafik_description": "Die Grafik zeigt ein Fußballfeld mit zwei Toren. Vor jedem Tor ist eine markierte Torschusszone. Die Spieler müssen den Ball aus dem Feld heraus auf das leere Tor schießen.",
+    "grafik_title": "Fußballübung: Fernschuss-Spiel für Kinder",
+    "grafik_caption": "Fernschuss-Übung zum Torschuss-Training für Kinder im Fußball",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler sollen an dieser Übung teilnehmen?",
+        "antwort": "Die optimale Teilnehmerzahl liegt bei 12-16 Kindern, die in zwei Teams à 6-8 Spieler eingeteilt werden."
+      },
+      {
+        "frage": "Wie lange sollte die Übung dauern?",
+        "antwort": "Die Fernschuss-Challenge eignet sich gut für 10-15 Minuten."
+      },
+      {
+        "frage": "Für welche Altersklassen ist diese Übung geeignet?",
+        "antwort": "Die Fernschuss-Übung macht allen Altersgruppen Spaß. Für G-Jugend auch gerne mit Minitoren durchführen."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": ""
   }
 ]
