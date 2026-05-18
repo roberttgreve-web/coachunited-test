@@ -6919,8 +6919,72 @@
     "original_coaching_fokus": "",
     "ist_gecrawlt": false,
     "quell_kategorie": "",
-    "schwester_ids": [],
-    "schwester_id": null,
-    "schwester_titel": null
+    "schwester_ids": [
+      113
+    ],
+    "schwester_id": 113,
+    "schwester_titel": "DAS AJAX-VIERECK"
+  },
+  {
+    "id": 113,
+    "titel": "DAS AJAX-VIERECK",
+    "quell_trainingseinheit": "Trainieren mit dem Ajax-Viereck",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/04/image-3.png",
+    "grafik_dateiname": "uebung-185-das-ajax-viereck.png",
+    "trainingsphase": "Aufwärmen",
+    "kurzbeschreibung": "Spieler passen, erhalten den Ball zurück und spielen dann in den Lauf.",
+    "aufbau": "Ein etwa 5mx5m großes Quadrat mit Hütchen abstecken. An jedem Hütchen 3-4 Spieler platzieren. Einen Ball an einem Hütchen platzieren.",
+    "durchfuehrung": "1) Der Spieler mit dem Ball passt dem Spieler den Ball am nächsten Hütchen zu.\n\n2) Der Passempfänger lässt klatschen, spielt den Ball also wieder zurück und läuft dann gegen den Uhrzeigersinn zum nächsten Hütchen.\n\n3) Der Spieler, der nun wieder den Ball erhalten hat, spielt den Passempfänger erneut an, dieses Mal in den Lauf.\n\n4) Der Passempfänger nimmt den Ball an und spielt ihn weiter zum Spieler an dem nächsten Hütchen.\n\nVon dort startet der Ablauf erneut. Das bedeutet, die involvierten Spieler rücken nach der Aktion ein Hütchen vor.",
+    "varianten": "",
+    "quell_url": "https://coachunited.de/trainieren-mit-dem-ajax-viereck/",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Koordination",
+      "Raumverhalten"
+    ],
+    "coaching_fokus": "• Konzentrierte, präzise Pässe in den Lauf; • Hohe Konzentration notwendig",
+    "leichter_machen": "• Sehr langsame Durchführung am Anfang",
+    "schwerer_machen": "• Tempo erhöhen.",
+    "status": "veroeffentlicht",
+    "schwester_ids": [
+      112
+    ],
+    "schwester_id": 112,
+    "schwester_titel": "DIAGONALE PÄSSE IM VIERECK",
+    "alt_titel": "Koordination und Zusammenspiel im Viereck",
+    "seo_keyword": "Fußballübung Passen Kinder",
+    "url_slug": "fussballubung-passen-kinder",
+    "seo_meta_description": "Effektive Fußballübung für Kinder zum Passspiel, Koordination und Raumverständnis. Leicht anpassbar für G- bis E-Jugend.",
+    "grafik_alt_text": "Kinder führen im Viereck Pässe, Klatschen und Läufe aus",
+    "grafik_description": "Abbildung der 'Das Ajax-Viereck' Fußballübung. Vier Spieler stehen an den Ecken eines Quadrats und kombinieren mit Pässen, Klatschen und Laufwegen.",
+    "grafik_title": "Fußballübung 'Das Ajax-Viereck' für Kinder",
+    "grafik_caption": "Koordinations- und Passspielübung 'Das Ajax-Viereck' für Kinder von 6 bis 12 Jahren.",
+    "faq": [
+      {
+        "frage": "Wie passe ich die Übung für verschiedene Altersstufen an?",
+        "antwort": "Das ist bei dieser Übung nicht möglich."
+      },
+      {
+        "frage": "Wie lange sollte man die Übung machen?",
+        "antwort": "10-15 Minuten sind optimal, um die Konzentration der Kinder nicht zu überfordern."
+      },
+      {
+        "frage": "Wie erhöhe ich den Schwierigkeitsgrad?",
+        "antwort": "Tempo erhöhen."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": ""
   }
 ]
