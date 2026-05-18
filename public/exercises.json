@@ -6864,5 +6864,63 @@
     ],
     "schwester_id": 97,
     "schwester_titel": "VOM WETTRENNEN INS 1 GEGEN 1"
+  },
+  {
+    "id": 112,
+    "titel": "DIAGONALE PÄSSE IM VIERECK",
+    "quell_trainingseinheit": "Trainieren mit dem Ajax-Viereck",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/04/image-2.png",
+    "grafik_dateiname": "uebung-184-diagonale-paesse-im-viereck.png",
+    "trainingsphase": "Aufwärmen",
+    "kurzbeschreibung": "Die Spieler passen den Ball einem Mitspieler im Viereck zu, laufen ihrem Ball hinterher und stellen sich hinten an. Sollten sie mit ihrem Ball den anderen Ball berühren, müssen sie eine Strafrunde um das Viereck laufen.",
+    "aufbau": "Ein etwa 5mx5m großes Quadrat mit Hütchen abstecken. An jedem Hütchen 3-4 Spieler platzieren. Zwei Bälle jeweils an einem Hütchen platzieren.",
+    "durchfuehrung": "Die Spieler passen den Ball einem Mitspieler im Viereck zu, laufen ihrem Ball hinterher und stellen sich hinten an. Die Pässe dürfen diagonal erfolgen und länge die Linie runter. Sie achten dabei über Blickkontakt darauf, dass die beiden Bälle nicht kollidieren und dass kein Spieler zwei Bälle auf einmal hat .Sollten sie mit ihrem Ball den anderen Ball berühren oder einem Spieler einen zweiten Ball zugespielt haben, müssen sie eine Strafrunde um das Viereck laufen. ",
+    "varianten": "",
+    "quell_url": "https://coachunited.de/trainieren-mit-dem-ajax-viereck/",
+    "jugend": [
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Raumverhalten"
+    ],
+    "coaching_fokus": "• Saubere Pässe; • Zweiten Ball im Auge behalten, um Kollissionen zu verhindern",
+    "leichter_machen": "",
+    "schwerer_machen": "",
+    "status": "veroeffentlicht",
+    "alt_titel": "Kreative Pässe im Quadrat",
+    "seo_keyword": "Fußballübung diagonal passen Kinder",
+    "url_slug": "fussballubung-diagonal-passen-kinder",
+    "seo_meta_description": "Spielerische Fußballübung zum Diagonal-Passen für Kinder von 6-12 Jahren. Trainiert Technik, Raumaufteilung und Kommunikation.",
+    "grafik_alt_text": "Kinder spielen Fußball in einem Quadrat und passen sich den Ball diagonal zu",
+    "grafik_description": "Das Bild zeigt eine Gruppe von Kindern, die in einem 5x5 Meter Quadrat Fußball spielen. Sie passen sich den Ball diagonal zu und laufen dann zum nächsten Hütchen.",
+    "grafik_title": "Kinder Fußballübung: Diagonale Pässe im Quadrat",
+    "grafik_caption": "Übung zum Diagonal-Passen fördert Technik und Raumaufteilung der Kinder.",
+    "faq": [
+      {
+        "frage": "Wie viele Kinder können an der Übung teilnehmen?",
+        "antwort": "Die Übung ist für 12-16 Kinder ausgelegt. Die Anzahl kann aber an die Gruppengröße angepasst werden."
+      },
+      {
+        "frage": "Wie lange dauert die Übung?",
+        "antwort": "Die Dauer liegt bei 5-10 Minuten. Je nach Konzentration und Aktivität der Kinder kann sie verlängert werden."
+      },
+      {
+        "frage": "Für welche Altersgruppe ist die Übung geeignet?",
+        "antwort": "Die Übung ist für Kinder ab der E-Jugend geeignet. "
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [],
+    "schwester_id": null,
+    "schwester_titel": null
   }
 ]
