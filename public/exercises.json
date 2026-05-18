@@ -7661,5 +7661,67 @@
     "original_coaching_fokus": "",
     "ist_gecrawlt": false,
     "quell_kategorie": ""
+  },
+  {
+    "id": 125,
+    "titel": "JAGDFELD UMSPIELEN",
+    "quell_trainingseinheit": "Die Passjäger",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/04/image-7.jpg",
+    "grafik_dateiname": "uebung-jagdfeld-umspielen.jpg",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "Spieler dribbelt seitlich um das Jagdfeld und passt in die Mitte, wo ein Mitspieler direkt mit einem Kontakt abschließt.",
+    "aufbau": "Zwei Jugendtore aufbauen. Torhüter zuordnen. Etwa 10m vor den Toren jeweils zentral ein 10mX10m ein Jagdfeld markieren. Etwa 5m dahinter jeweils ein Starthütchen platzieren. An den beiden vorderen Eckhütchen des Jagdfeldes jeweils einen Spieler platzieren. ",
+    "durchfuehrung": "Passgeber sucht sich einen der beiden Mitspieler für einen Pass aus. Der Passempfänger nimmt den Ball auf, dribbelt seitlich um das Jagdfeld herum und passt den Ball in die Mitte. Der Spieler, der den Pass nicht erhalten hat, sprintet am Jagdfeld vorbei, erhält hinter dem Jagdfeld den Pass und schließt direkt mit dem ersten Kontakt ab.",
+    "varianten": "",
+    "quell_url": "https://coachunited.de/die-passjager/",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Dribbeln",
+      "Torschuss",
+      "Raumverhalten"
+    ],
+    "coaching_fokus": "• Tempo hochhalten; • Zügiges Dribbeln; • Abschluss mit der ersten Ballberührung",
+    "leichter_machen": "• Mehrere Ballkontakte vor Torabschluss erlauben",
+    "schwerer_machen": "",
+    "status": "veroeffentlicht",
+    "schwester_ids": [
+      124
+    ],
+    "schwester_id": 124,
+    "schwester_titel": "PASSJÄGER UMSPIELEN UND TOR SCHIESSEN",
+    "alt_titel": "Koordination mit Pässen und Abschluss",
+    "seo_keyword": "Fußballübung Passen Dribbeln Kinder",
+    "url_slug": "fussballuebung-passen-dribbeln-kinder",
+    "seo_meta_description": "Eine koordinative Fußballübung für Kinder von 6-12 Jahren zum Trainieren von Passen, Dribbeln und Torschuss.",
+    "grafik_alt_text": "Fußballspieler dribbelt seitlich um ein Jagdfeld und spielt den Ball in die Mitte zum Abschluss",
+    "grafik_description": "Die Spieler dribbbeln seitlich um ein Jagdfeld herum und spielen dann den Ball in die Mitte, wo ein Mitspieler den Ball direkt abschließt. Die Übung fördert Ballkontrolle, Passspiel und Torschuss.",
+    "grafik_title": "Fußballübung Passen und Abschluss für Kinder",
+    "grafik_caption": "Koordinative Fußballübung für den Trainingsalltag von Kindermannschaften.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler brauche ich für diese Übung?",
+        "antwort": "Ideal sind 7-8 Spieler pro Gruppe, also 14 bis 16. "
+      },
+      {
+        "frage": "Wie lange soll man diese Übung durchführen?",
+        "antwort": "Etwa 10-15 Minuten sind sinnvoll, damit alle Spieler mehrmals an der Reihe sind."
+      },
+      {
+        "frage": "Für welche Altersklasse eignet sich die Übung am besten?",
+        "antwort": "Die Übung ist perfekt für Kinder der F- bis E-Jugend geeignet, also 6 bis 12 Jahre alt."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": ""
   }
 ]
