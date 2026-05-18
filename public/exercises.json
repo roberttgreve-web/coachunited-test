@@ -7358,5 +7358,67 @@
     "original_coaching_fokus": "",
     "ist_gecrawlt": false,
     "quell_kategorie": ""
+  },
+  {
+    "id": 120,
+    "titel": "ERST SCHIESSEN, DANN TORWART SEIN",
+    "quell_trainingseinheit": "Flexibel sein beim Torschuss",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/04/image-1.png",
+    "grafik_dateiname": "uebung-erst-schiessen-dann-torwart-sein.png",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "Nach dem eigenen Torschuss übernimmt der Spieler die Torhüterrolle für den nächsten Schützen.",
+    "aufbau": "Feld mit den Maßen 40x20m errichten. Auf jeder Seite ein Jugendtor. Vor jedem Tor eine Torschusszone von 10mx10m markieren. Zwei Teams einteilen.",
+    "durchfuehrung": "Der erste Spieler des ersten Teams dribbelt zur Schusslinie und schließt ab. Sobald er geschossen hat, sprintet er zum Tor und wird Torhüter. Direkt nach dem Torschuss des Vorgängers startet der erste Spieler des zweiten Teams, schießt und wird dann seinerseits zum Torwart. Das Team, das zuerst 10 Tore geschossen hat, gewinnt.",
+    "varianten": "a) Nur mit dem schwächeren Fuß schießen. b) Volley-Abschluss.",
+    "quell_url": "https://coachunited.de/flexibel-sein-beim-torschuss/",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Ballkontrolle",
+      "Dribbeln",
+      "Torschuss",
+      "Torhüter"
+    ],
+    "coaching_fokus": "• Scharfer Abschluss mit dem starken Fuß; • Schnelle Übergänge von Schütze zu Torhüter",
+    "leichter_machen": "• Torschuss aus kürzerer Distanz (Torzonen verkleinern)",
+    "schwerer_machen": "• Nur mit dem schwächeren Fuß schießen.",
+    "status": "veroeffentlicht",
+    "schwester_ids": [
+      121
+    ],
+    "schwester_id": 121,
+    "schwester_titel": "FERNSCHUSS-SPIEL",
+    "alt_titel": "Torwart für eine Minute",
+    "seo_keyword": "Fußballübung Torhüter Kinder",
+    "url_slug": "fussballubung-torwart-fur-eine-minute",
+    "seo_meta_description": "Kinder spielen Fußball, ein Spieler schießt aufs Tor, ein anderer wartet im Tor",
+    "grafik_alt_text": "Kinder-Fußballübung mit Torhüterrolle",
+    "grafik_description": "Das Bild zeigt eine Fußballübung, bei der ein Kind den Ball auf das Tor schießt, während ein anderes Kind als Torhüter bereitsteht. Im Hintergrund sind weitere Kinder zu sehen, die offenbar darauf warten, ebenfalls an der Reihe zu sein.",
+    "grafik_title": "Dynamische Fußballübung für Kinder, die Torschuss und Torhüterqualitäten fördert.",
+    "grafik_caption": "Das Bild zeigt eine Fußballübung, bei der ein Kind den Ball auf das Tor schießt, während ein anderes Kind als Torhüter bereitsteht. Im Hintergrund sind weitere Kinder zu sehen, die offenbar darauf warten, ebenfalls an der Reihe zu sein.",
+    "faq": [
+      {
+        "frage": "Wie viele Kinder benötigt man für diese Übung?",
+        "antwort": "Optimal sind 8-16 Kinder, so dass alle regelmäßig dran kommen."
+      },
+      {
+        "frage": "Wie lange dauert die Übung?",
+        "antwort": "Die Dauer hängt von der Gruppengröße ab, bei 8-12 Kindern empfehlen sich 10-15 Minuten. Wichtig ist, dass alle Kinder mehrmals abwechselnd schießen und Torhüter sein können."
+      },
+      {
+        "frage": "Für welche Altersgruppe ist diese Übung geeignet?",
+        "antwort": "Die Übung ist gut geeignet für Kinder ab der F-Jugend. "
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": ""
   }
 ]
