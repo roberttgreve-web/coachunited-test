@@ -7049,5 +7049,68 @@
     "original_coaching_fokus": "",
     "ist_gecrawlt": false,
     "quell_kategorie": ""
+  },
+  {
+    "id": 115,
+    "titel": "AUS DEM DOPPELFELD INS GROSSFELDSPIEL",
+    "quell_trainingseinheit": "Trainieren mit dem Ajax-Viereck",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/04/image-6.png",
+    "grafik_dateiname": "uebung-186-aus-dem-doppelfeld-ins-grossfeldspiel.png",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "Jeweils zwei Teams treten auf zwei Kleinfeldern parallel gegeneinander an. Auf Trainerkommando wandelt sich das Spiel in ein Großfeldspiel.",
+    "aufbau": "Zwei Felder zu je 40mX20m aufstellen. Etwa 10m Abstand zwischen den Feldern. Je zwei Minitore pro Feld. Zwei Jugendtore an den Grundlinien platzieren. Vier Teams (zu je vier Spielern) mit Leibchen einteilen. ",
+    "durchfuehrung": "Auf Trainerkommando spielen die beiden Teams des linken Feldes gegen die beiden Teams des rechten Feldes auf das Großfeld. Ein Torerfolg wird für beide Teams gewertet. Es wird der Ball aus dem linken Feld zum Spielen genutzt. Letzter Mann ist jeweils Torwart. Auf Trainerkommando wechseln die Teams wieder zurück ins Kleinfeldspiel.",
+    "varianten": "",
+    "quell_url": "https://coachunited.de/trainieren-mit-dem-ajax-viereck/",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Dribbeln",
+      "Torschuss",
+      "Zweikampf",
+      "Koordination"
+    ],
+    "coaching_fokus": "• Schnelles Umschalten aufs Großfeld; • Schnell den freien Mitspieler in der neuen Spielfeldgröße finden; • Raum nutzen zum Freilaufen",
+    "leichter_machen": "• Reduzieren der Spieleranzahl pro Team",
+    "schwerer_machen": "• Jeder Spieler mit Ballberührung bevor ein Tor erzielt werden darf.",
+    "status": "veroeffentlicht",
+    "alt_titel": "Vom Doppelfeld ins Großspiel",
+    "seo_keyword": "Fußballtraining Kinder Großfeld",
+    "url_slug": "fussballubung-doppelfeld-grossfeld-kinder",
+    "seo_meta_description": "Effektive Fußballübung, um Kinder vom Kleinfeld aufs Großfeld zu bringen. Fördert Pässen, Raumaufteilung und Kommunikation.",
+    "grafik_alt_text": "Zwei Teams spielen auf einem Großfeld Fußball, nachdem sie zuvor auf Kleinfeldern gegeneinander angetreten sind.",
+    "grafik_description": "Die Grafik zeigt den Aufbau und Ablauf der Übung 'Aus dem Doppelfeld ins Großfeldspiel'. Zunächst spielen zwei Teams parallel auf Kleinfeldern gegeneinander, bevor auf Trainerkommando das Spiel auf ein großes Spielfeld gewechselt wird.",
+    "grafik_title": "Fußballübung: Vom Doppelfeld ins Großspiel",
+    "grafik_caption": "Dynamischer Übergang vom Kleinfeld- zum Großfeldspiel fördert verschiedene Fähigkeiten.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler benötigt diese Übung?",
+        "antwort": "3-4 Spieler pro Team. Insgesamt 12-16 Kinder."
+      },
+      {
+        "frage": "Wie lange dauert die Übung?",
+        "antwort": "10-15 Minuten, je nach Intensität und Anzahl der Wechsel."
+      },
+      {
+        "frage": "Ist diese Übung auch für jüngere Kinder geeignet?",
+        "antwort": "Nein, eher nicht."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [
+      114
+    ],
+    "schwester_id": 114,
+    "schwester_titel": "IM DOPPELFELD TORE SAMMELN"
   }
 ]
