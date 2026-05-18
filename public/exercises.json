@@ -7542,5 +7542,63 @@
     "schwester_ids": [],
     "schwester_id": null,
     "schwester_titel": null
+  },
+  {
+    "id": 123,
+    "titel": "PASSJÄGER VERMEIDEN",
+    "quell_trainingseinheit": "Die Passjäger",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/04/image-5.jpg",
+    "grafik_dateiname": "uebung-192-passjaeger-vermeiden.jpg",
+    "trainingsphase": "Aufwärmen",
+    "kurzbeschreibung": "Die Spieler müssen von ihrer Feldseite auf die gegenüberliegende Seite passen, ohne dass die Balljäger in der Mitte den Pass erreichen.",
+    "aufbau": "Ein rechteckiges Feld mit etwa 6 x 10m markieren. 6-7 Kinder ohne Ball stehen an der einen Seitenlinie, die anderen 6-7 Kinder auf der anderen Seite. Für jede Seite einen Ball verteilen. Zwei Spieler gehen in die Mitte – ohne Ball.",
+    "durchfuehrung": "Das Kind mit Ball muss den Ball zu einem Mitspieler seiner Wahl auf der gegenüberliegenden Seite passen. Die beiden Balljäger in der Mitte, versuchen den Ball abzufangen. Gelingt dem Passjäger das, wechseln Passjäger und Passgeber die Rollen.",
+    "varianten": "a) Mehr Passjäger in der Mitte platzieren. b) Passjäger in der Mitte dürfen nur auf Füßen und Händen als „Krebse“ agieren, dafür den Ball aber auch mit der Hand stoppen PASSJÄGER UMSPIELEN UND TOR SCHIESSEN PASSJÄGER UMSPIELEN UND TOR SCHIESSEN Ein Spieler passt zu seinem Mitspieler, der ein Tor erzielen möchte. Der Torjäger versucht das zu verhindern.",
+    "quell_url": "https://coachunited.de/die-passjager/",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle"
+    ],
+    "coaching_fokus": "• Auch diagonale Bälle spielen.; • Auch unter Druck ruhig bleiben.",
+    "leichter_machen": "• Spielfeld vergrößern; • Nur einen Balljäger in der Mitte platzieren; • Passjäger in der Mitte dürfen nur auf Füßen und Händen als „Krebse“ agieren, dafür den Ball aber auch mit der Hand stoppen",
+    "schwerer_machen": "• Mehr Balljäger in der Mitte platzieren",
+    "status": "veroeffentlicht",
+    "alt_titel": "PASSSICHERHEIT UND REAKTION TRAINIEREN",
+    "seo_keyword": "Fußballübung Passspiel Kinder",
+    "url_slug": "fussballubung-passspiel-kinder",
+    "seo_meta_description": "Passsicherheit und Reaktionsschnelligkeit von Kindern zwischen 9 und 12 Jahren trainieren. Einfach umzusetzende Fußballübung für den Vereinstraining.",
+    "grafik_alt_text": "Zwei Kinder passen sich einen Fußball in einem Fußballfeld zu, während zwei weitere Kinder in der Mitte versuchen, den Ball abzufangen.",
+    "grafik_description": "Die Fußballübung 'Passjäger vermeiden' trainiert das genaue Zuspielen und die Reaktionsschnelligkeit von Kindern im Fußball. Zwei Teams stehen an gegenüberliegenden Seiten des Spielfelds und müssen den Ball zielsicher zum Mitspieler passen, während zwei Balljäger in der Mitte versuchen, den Pass zu unterbinden.",
+    "grafik_title": "Fußballübung Passspiel für Kinder",
+    "grafik_caption": "Kinder trainieren das präzise Zuspielen und schnelle Reagieren im Fußball",
+    "faq": [
+      {
+        "frage": "Wie viele Kinder benötigt man für diese Übung?",
+        "antwort": "Ideal sind zwei Mannschaften mit je 6-7 Spielern. "
+      },
+      {
+        "frage": "Wie lange sollte man diese Übung durchführen?",
+        "antwort": "Je nach Intensität und Alter der Kinder empfehlen sich 10-15 Minuten. "
+      },
+      {
+        "frage": "Für welche Altersgruppen eignet sich die Übung?",
+        "antwort": "Die 'Passjäger vermeiden'-Übung ist ideal für Kinder der F- und D-Jugend, also zwischen 7 und 12 Jahren. So werden wichtige Grundlagen des Passspiels trainiert."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [],
+    "schwester_id": null,
+    "schwester_titel": null
   }
 ]
