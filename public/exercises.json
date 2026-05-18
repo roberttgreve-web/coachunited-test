@@ -7600,5 +7600,66 @@
     "schwester_ids": [],
     "schwester_id": null,
     "schwester_titel": null
+  },
+  {
+    "id": 124,
+    "titel": "PASSJÄGER UMSPIELEN UND TOR SCHIESSEN",
+    "quell_trainingseinheit": "Die Passjäger",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/04/image-6.jpg",
+    "grafik_dateiname": "uebung-passjaeger-umspielen-und-tor-schiessen.jpg",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "Passgeber spielt durch das Jagdfeld zu einem freilaufenden Mitspieler, der den Ball annimmt und unmittelbar abschließt.",
+    "aufbau": "Zwei Jugendtore aufstellen. Ein Jagdfeld (10×10m) etwa 10m jeweils vor dem Tor markieren. Einen Passjäger im Jagdfeld platzieren.",
+    "durchfuehrung": "Passgeber sucht sich einen der beiden Mitspieler für einen Pass aus. Der Passempfänger nimmt den Ball auf, dribbelt seitlich um das Jagdfeld herum und passt den Ball in die Mitte. Der Spieler, der den Pass nicht erhalten hat, sprintet am Jagdfeld vorbei, erhält hinter dem Jagdfeld den pass und schleißt direkt mit einem Kontakt ab.",
+    "varianten": "Lupfer über den Jäger ist erlaubt.",
+    "quell_url": "https://coachunited.de/die-passjager/",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Torschuss",
+      "Raumverhalten"
+    ],
+    "coaching_fokus": "• In die freien Räume laufen; • Im richtigen Moment passen",
+    "leichter_machen": "• Jagdfeld verkleinern; • Torentfernung verkürzen",
+    "schwerer_machen": "• Jagdfeld vergrößern; • Lupfer über den Jäger ist erlaubt",
+    "status": "veroeffentlicht",
+    "schwester_ids": [
+      125
+    ],
+    "schwester_id": 125,
+    "schwester_titel": "JAGDFELD UMSPIELEN",
+    "alt_titel": "TORE UMSPIELEN UND ABSCHLIESSEN",
+    "seo_keyword": "Fußballübung Torschuss Kinder",
+    "url_slug": "fussballubung-torschuss-kinder",
+    "seo_meta_description": "Zwei Jugendfußballer bei Passspiel und Torschuss, auf einem 10x10m Feld mit Toren",
+    "grafik_alt_text": "Fußballübung: Tore umspielen und abschließen",
+    "grafik_description": "Die Abbildung zeigt eine Fußballübung für Kinder im Alter von 6 bis 12 Jahren. Zwei Spieler sind zu sehen, von denen einer den Ball zu seinem Mitspieler spielt, der dann direkt auf das Tor schießt.",
+    "grafik_title": "Passspiel und Torschuss - effektive Fußballübung für Kinder",
+    "grafik_caption": "Die Abbildung zeigt eine Fußballübung für Kinder im Alter von 6 bis 12 Jahren. Zwei Spieler sind zu sehen, von denen einer den Ball zu seinem Mitspieler spielt, der dann direkt auf das Tor schießt.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler braucht man für diese Übung?",
+        "antwort": "12-16 Kinder sind ideal."
+      },
+      {
+        "frage": "Wie lange sollte man diese Übung durchführen?",
+        "antwort": "Je nach Alter und Leistungsstand der Kinder empfehlen sich 10-15 Minuten pro Durchgang. Mehrere Durchgänge mit Wechsel der Rollen sind sinnvoll."
+      },
+      {
+        "frage": "Gibt es Alternativen zur Jagdfeld-Variante?",
+        "antwort": "An dieser Stelle nicht. "
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": ""
   }
 ]
