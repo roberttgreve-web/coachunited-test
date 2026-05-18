@@ -7845,5 +7845,69 @@
     ],
     "schwester_id": 128,
     "schwester_titel": "DIE HÜTCHEN MÜSSEN FALLEN"
+  },
+  {
+    "id": 128,
+    "titel": "DIE HÜTCHEN MÜSSEN FALLEN",
+    "quell_trainingseinheit": "Passen, passen, passen",
+    "quell_url": "https://coachunited.de/passen-passen-passen/",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/04/image-1.jpg",
+    "trainingsphase": "Aufwärmen",
+    "kurzbeschreibung": "Ein Team versucht möglichst viele Hütchen mit Bällen umzuschießen. Das andere Team stellt sie wieder auf. Wer hat nach zwei Minuten gewonnen?",
+    "aufbau": "Ein 30mx30m großes Feld markieren. Mit drei Hütchen mehrere 2mX2m großes Doppeltore aufstellen. Zwei Teams mit Leibchen einteilen. Die Spieler eines Teams haben jeweils einen Ball.",
+    "durchfuehrung": "Das Team mit Bällen versucht innerhalb von zwei Minuten so viele Hütchen wie möglich umzuschießen. Das andere Team stellt sie wieder auf. Nach zwei Minuten wechseln die Rollen. Wer hat geschafft, dass nach zwei Minuten die meisten Hütchen liegen?",
+    "varianten": "a) Größe der Teams ggf. anpassen (mehr Spieler im Team mit Ball). b) Bälle rollen statt zu schießen.",
+    "coaching_fokus": "• Schaut, dass ihr die Hütchen nicht zu fest trefft! Kontrollierte Schüsse sind gefragt; • Sprecht mit eurem Teamkollegen ab, wer welche Hütchen umschießt - so deckt ihr das Feld optimal ab; • Ermutigt euch gegenseitig, konzentriert zu bleiben und weiter zu kämpfen!",
+    "leichter_machen": "• Größe der Teams anpassen, mehr Spieler im Team mit Bällen; • Bälle rollen statt schießen",
+    "schwerer_machen": "• Spielfeld vergrößern, damit die Abstände größer werden",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend",
+      "E-Jugend"
+    ],
+    "skills": [
+      "Ballkontrolle",
+      "Dribbeln",
+      "Torschuss",
+      "Koordination",
+      "Schnelligkeit"
+    ],
+    "seo_keyword": "Fußballübung Hütchenjagd Kinder",
+    "url_slug": "fussballubung-hutchenjagd-kinder",
+    "seo_meta_description": "Dynamische Fußballübung 'Die Hütchen müssen fallen' fördert Ballkontrolle, Teamwork und Durchsetzungsvermögen bei Kindern zwischen 6-12 Jahren.",
+    "grafik_alt_text": "Zwei Kinder-Fußballteams kämpfen darum, möglichst viele Hütchen mit Bällen umzuschießen",
+    "grafik_description": "Die Kinder sind in zwei Teams eingeteilt. Das Team mit den Bällen versucht, möglichst viele Hütchen umzuschießen, während das andere Team diese wieder aufstellt. Nach zwei Minuten wechseln die Rollen.",
+    "grafik_title": "Fußballübung 'Hütchenjagd' für Kinder",
+    "grafik_caption": "Dynamische Teamübung fördert Ballgefühl und Zielgenauigkeit",
+    "status": "veroeffentlicht",
+    "nachtraeglich_eingefuegt": true,
+    "schwester_ids": [
+      127
+    ],
+    "schwester_id": 127,
+    "schwester_titel": "DOPPELPASS MIT DREIERHÜTCHEN",
+    "alt_titel": "Hütchenjagd - Teamwork im Visier",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler sollten pro Team bei dieser Übung eingesetzt werden?",
+        "antwort": "Beliebig. Anzahl der Hütchentore und Feldgröße entsprechend anpassen."
+      },
+      {
+        "frage": "Wie lange sollte die Übung insgesamt dauern?",
+        "antwort": "Zwei Minuten pro Durchgang sind optimal. So haben die Kinder genug Zeit, sich zu fokussieren, ohne dass die Konzentration nachlässt."
+      },
+      {
+        "frage": "Lässt sich die Übung auch für ältere Kinder anpassen?",
+        "antwort": "Eher nicht. Sehr verspielte Übung."
+      }
+    ],
+    "grafik_dateiname": "",
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": ""
   }
 ]
