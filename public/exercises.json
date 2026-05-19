@@ -8219,5 +8219,68 @@
     "original_coaching_fokus": "",
     "ist_gecrawlt": false,
     "quell_kategorie": ""
+  },
+  {
+    "id": 134,
+    "titel": "ÜBERZAHL UND UNTERZAHL",
+    "quell_trainingseinheit": "Dreiecke, Überzahl und 2 gegen 2 gegen 2",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/03/image-32.jpg",
+    "grafik_dateiname": "uebung-198-ueberzahl-und-unterzahl.jpg",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "Die Spieler passen sich in der Mittelzone. Auf Kommando des Trainers versuchen sie im 4 gegen 8 ein Tor zu erzielen.",
+    "aufbau": "Ein Spielfeld (20x30m) mit zwei Jugendtoren, zwei Torhütern und einer Mittelzone aufbauen. Drei Teams zu je vier Spielern mit unterschiedlicher Leibchenfarbe einteilen. Einen Ball bereitstellen.",
+    "durchfuehrung": "Die Spieler passen sich unbedrängt in der Mittelzone den Ball zu. Ein Spieler darf nur zu einem Spieler mit einer anderen Leibchenfarbe passen. Auf Kommando des Trainers greift das Team, das zum Zeitpunkt des Kommandos gerade den Ball hat, im 4 gegen 8 an. Erobern die verteidigende Mannschaften den Ball, dürfen sie gemeinsam in Überzahl versuchen, ein Tor zu erzielen.",
+    "varianten": "a) Zeitlimit für einen Angriff festlegen (zum Beispiel 15 Sekunden). b) Tore in Unterzahl zählen doppelt. ÜBERZAHL CLEVER NUTZEN ÜBERZAHL CLEVER NUTZEN Das angreifende Team kann vier weitere Spieler als Anspielstationen nutzen, die ums Feld herum postiert sind.",
+    "quell_url": "https://coachunited.de/dreiecke-uberzahl-und-2-gegen-2-gegen-2/",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Torschuss",
+      "Raumverhalten",
+      "Umschalten"
+    ],
+    "coaching_fokus": "• Schnelles Umschalten nach Kommando; • Cleveres Ausspielen der Überzahl durch breites Aufstellen und kluge Pässe",
+    "leichter_machen": "• Tore in Unterzahl zählen doppelt",
+    "schwerer_machen": "• Zeitlimit für einen Angriff von 10 bis 15 Sekunden festlegen",
+    "status": "veroeffentlicht",
+    "alt_titel": "Zahl-Spiel: Überzahl geschickt nutzen",
+    "seo_keyword": "Fußballübung Überzahl Kinder",
+    "url_slug": "fussballubung-uberzahl-kinder",
+    "seo_meta_description": "Kinder im 4-gegen-8-Spiel mit Toren und Trainern am Spielfeldrand",
+    "grafik_alt_text": "Fußballübung Überzahl Kinder",
+    "grafik_description": "Das Bild zeigt eine Fußballübung im 4-gegen-8-Spielformat. Zwei Tore sind aufgestellt, die Spieler in drei Gruppen eingeteilt. Der Trainer steht am Spielfeldrand.",
+    "grafik_title": "Dynamisches Überzahl-Spiel für fußballbegeisterte Kinder.",
+    "grafik_caption": "Das Bild zeigt eine Fußballübung im 4-gegen-8-Spielformat. Zwei Tore sind aufgestellt, die Spieler in drei Gruppen eingeteilt. Der Trainer steht am Spielfeldrand.",
+    "faq": [
+      {
+        "frage": "Wie passe ich die Übung an eine jüngere Altersgruppe an?",
+        "antwort": "Für die G-Jugend kommt diese Übung noch zu früh."
+      },
+      {
+        "frage": "Wie lange sollte die Übung dauern?",
+        "antwort": "Etwa 10-15 Minuten."
+      },
+      {
+        "frage": "Welche Variationen sind noch möglich?",
+        "antwort": "Punkte für gelungene Pässe vergeben."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [
+      135
+    ],
+    "schwester_id": 135,
+    "schwester_titel": "ÜBERZAHL CLEVER NUTZEN"
   }
 ]
