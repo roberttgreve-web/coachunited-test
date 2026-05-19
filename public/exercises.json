@@ -8158,5 +8158,66 @@
     ],
     "schwester_id": 133,
     "schwester_titel": "DREIECKE MIT MITTIGER ANSPIELSTATION"
+  },
+  {
+    "id": 133,
+    "titel": "DREIECKE MIT MITTIGER ANSPIELSTATION",
+    "quell_trainingseinheit": "Dreiecke, Überzahl und 2 gegen 2 gegen 2",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/03/image-31.jpg",
+    "grafik_dateiname": "uebung-197-dreiecke-mit-mittiger-anspielstation.jpg",
+    "trainingsphase": "Aufwärmen",
+    "kurzbeschreibung": "Die Spieler an den Außenhütchen passen in die Mitte und rennen ihrem eigenen Ball nach. Der Spieler in der Mitte nimmt an, passt zu einem beliebigen Mitspieler an einem Außenhütchen und läuft ebenfalls seinem Ball nach.",
+    "aufbau": "Je nach Anzahl der Spieler 3-6 Dreiecke aufbauen mit jeweils etwa 10-15m Seitenlänge. In jedes Dreieck mittig ein flaches Hütchen setzen. Dort jeweils einen Spieler platzieren. An den Außenhütchen jeweils zwei Spieler stellen.",
+    "durchfuehrung": "Ein Spieler am Außenhütchen passt den Ball zu dem Mitspieler in der Mitte und läuft seinem Ball nach. Der Spieler in der Mitte nimmt den Ball an, sucht sich ein Außenhütchen aus und passt dorthin. Dann läuft auch er seinem Ball nach. ",
+    "varianten": "",
+    "quell_url": "https://coachunited.de/dreiecke-uberzahl-und-2-gegen-2-gegen-2/",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend",
+      "E-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Raumverhalten"
+    ],
+    "coaching_fokus": "• Konzentriert den Ball annehmen und passen; • Kopf hoch und Blickkontakt aufnehmen; • Tempo hochhalten",
+    "leichter_machen": "• Distanzen verringern",
+    "schwerer_machen": "• One-Touch oder nur zwei ballkontakte erlauben; • Nur mit schwachem Fuß",
+    "status": "veroeffentlicht",
+    "schwester_ids": [
+      132
+    ],
+    "schwester_id": 132,
+    "schwester_titel": "DYNAMISCHE DREIECKE",
+    "alt_titel": "DREIECKE MIT ZENTRALER AUFNAHME-STATION",
+    "seo_keyword": "Fußballübung Raumaufteilung Kinder",
+    "url_slug": "dreiecke-mit-zentraler-aufnahme-station",
+    "seo_meta_description": "Fußballübung für Kinder (6-12 Jahre) zum Passen, Positionsspiel und Kommunikation. Mit Varianten zum Leichter- und Schwerer-Machen.",
+    "grafik_alt_text": "Dreieckige Aufbauformation mit Spielern an den Außenpositionen und einer Mitspieler-Station in der Mitte",
+    "grafik_description": "Die Übung sieht einen Aufbau mit mehreren dreieckigen Feldern vor, in deren Mitte sich jeweils ein Spieler befindet. An den äußeren Positionen stehen zwei weitere Spieler pro Dreieck.",
+    "grafik_title": "Fußballübung: Dreiecke mit zentraler Aufnahme-Station",
+    "grafik_caption": "Spieler passen in die Mitte und laufen ihrem Ball nach, der Mittelspieler verteilt weiter",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler braucht man für diese Übung?",
+        "antwort": "Beliebige Anzahl. Entsprechend viele Dreiecke aufbauen. "
+      },
+      {
+        "frage": "Wie lange sollte man diese Übung durchführen?",
+        "antwort": "Etwa 5-10 Minuten. "
+      },
+      {
+        "frage": "Kann man die Übung auch für ältere Kinder anpassen?",
+        "antwort": "Ja, durch Vergrößerung der Dreiecke, höheres Tempo oder zusätzliche Aufgaben lässt sich die Übung an D- und C-Junioren anpassen."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": ""
   }
 ]
