@@ -8037,5 +8037,64 @@
     "original_coaching_fokus": "",
     "ist_gecrawlt": false,
     "quell_kategorie": ""
+  },
+  {
+    "id": 131,
+    "titel": "ALS BELOHNUNG AUFS GROSSE TOR SPIELEN",
+    "quell_trainingseinheit": "Passen, passen, passen",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/04/image-4.png",
+    "grafik_dateiname": "uebung-195-als-belohnung-aufs-grosse-tor-spielen.png",
+    "trainingsphase": "Spielformat",
+    "kurzbeschreibung": "Zwei Teams spielen gegeneinander. Nach einem Torerfolg auf die Minitore wechseln die Teams die Seiten.",
+    "aufbau": "Ein 40x20m großes Spielfeld markieren. Ein Jugendtor auf der einen Grundlinie. Zwei Minitore auf der anderen Grundlinie. Zwei Teams einteilen.",
+    "durchfuehrung": "Ein reguläres Spiel wird gespielt. Trifft ein Team auf eines der beiden Minitore, wecheln die Teams die Seiten und dürfen als Belohnung nun auf das Jugendtor spielen. ",
+    "varianten": "",
+    "quell_url": "https://coachunited.de/passen-passen-passen/",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Torschuss",
+      "Raumverhalten"
+    ],
+    "coaching_fokus": "• Schnelles Wechseln der Seiten",
+    "leichter_machen": "",
+    "schwerer_machen": "",
+    "status": "veroeffentlicht",
+    "alt_titel": "Tor-Achterbahn – Miniore als Belohnung",
+    "seo_keyword": "fußballübung kinder miniore tor",
+    "url_slug": "fussball-uebung-kinder-miniore-tor",
+    "seo_meta_description": "Eine spannende Fußballübung für Kinder von 6-12 Jahren, bei der nach Toren auf Minitore aufs große Tor gespielt wird. Fördert Passen, Torabschluss und Raumaufteilung.",
+    "grafik_alt_text": "Kinder spielen Fußball auf einem Spielfeld mit einem Jugendtor und zwei Minitoren",
+    "grafik_description": "Das Bild zeigt ein Fußballfeld mit Jugendtor und Minitoren. Zwei Teams spielen gegeneinander und wechseln nach Toren auf die Minitore die Spielrichtung, um dann auf das große Tor zu spielen.",
+    "grafik_title": "Fußballübung Kinder: Tore auf Miniore als Belohnung",
+    "grafik_caption": "Abwechslungsreiche Fußballübung, bei der Tore auf Miniore belohnt werden",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler braucht man für diese Übung?",
+        "antwort": "Für diese Übung eignen sich am besten 6-7 Spieler pro Team. "
+      },
+      {
+        "frage": "Wie lange sollte man diese Übung spielen lassen?",
+        "antwort": "Eine Spielzeit von 15-20 Minuten ist ideal. "
+      },
+      {
+        "frage": "Kann man diese Übung auch mit älteren Kindern machen?",
+        "antwort": "Ja, Spielformate passen häufig für alle Altersstufen."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [],
+    "schwester_id": null,
+    "schwester_titel": null
   }
 ]
