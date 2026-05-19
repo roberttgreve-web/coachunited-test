@@ -8096,5 +8096,67 @@
     "schwester_ids": [],
     "schwester_id": null,
     "schwester_titel": null
+  },
+  {
+    "id": 132,
+    "titel": "DYNAMISCHE DREIECKE",
+    "quell_trainingseinheit": "Dreiecke, Überzahl und 2 gegen 2 gegen 2",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/03/image-30.jpg",
+    "grafik_dateiname": "uebung-196-dynamische-dreiecke.jpg",
+    "trainingsphase": "Aufwärmen",
+    "kurzbeschreibung": "Drei Spieler passen sich im Dreieck die Bälle zu. Spieler ohne Ball sind in Bewegung und bieten sich entlang der Seitenlinien des Dreiecks an.",
+    "aufbau": "Je nach Anzahl der Spieler 3-6 Dreiecke aufbauen mit jeweils etwa 10-15m Seitenlänge. Pro Dreieck drei Spieler und ein Ball.",
+    "durchfuehrung": "Die Spieler eines Dreiecks passen sich den Ball zu. Die Spieler ohne Ball bewegen sich entlang ihrer Seitenlinie des Dreiecks und bieten sich aktiv an. Alle Spieler sollten stets in Bewegung ein.",
+    "varianten": "Spieler laufen ihrem eigenen Pass hinterher und nehmen die Position des angespielten Mitspielers ein. DREIECKE MIT MITTIGER ANSPIELSTATION DREIECKE MIT MITTIGER ANSPIELSTATION Die Spieler an den Außenhütchen passen in die Mitte und rennen ihrem eigenen Ball nach. Der Spieler in der Mitte nimmt an, passt zu einem beliebigen Mitspieler an einem Außenhütchen und läuft ebenfalls seinem Ball nach.",
+    "quell_url": "https://coachunited.de/dreiecke-uberzahl-und-2-gegen-2-gegen-2/",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Raumverhalten"
+    ],
+    "coaching_fokus": "• Immer in Bewegung bleiben und sich aktiv anbieten; • Saubere Pässe mit Blickkontakt",
+    "leichter_machen": "• Reduzierung der Seitenlänge des Dreiecks",
+    "schwerer_machen": "• Spieler laufen ihrem eigenen Pass hinterher und nehmen die Position des angespielten Mitspielers ein; • Begrenzung der Ballkontakte pro Spieler",
+    "status": "veroeffentlicht",
+    "alt_titel": "Dynamisches Dreieckspassspiel",
+    "seo_keyword": "Fußballübung Passen Kinder",
+    "url_slug": "dynamisches-dreieckspassspiel-fussball-kinder",
+    "seo_meta_description": "Kinder in einem Dreieck passen sich den Ball zu, während andere Spieler sich laufend anbieten",
+    "grafik_alt_text": "Dynamisches Dreieckspassspiel im Fußballtraining",
+    "grafik_description": "Das Bild zeigt eine Fußballübung mit mehreren Dreiecken. In jedem Dreieck passen sich drei Kinder den Ball zu, während die anderen Kinder entlang der Seitenlinie laufen und sich aktiv als Anspielstationen anbieten.",
+    "grafik_title": "Passsicherheit, Raumverhalten und Kommunikation trainieren mit dem Dynamischen Dreieckspassspiel.",
+    "grafik_caption": "Das Bild zeigt eine Fußballübung mit mehreren Dreiecken. In jedem Dreieck passen sich drei Kinder den Ball zu, während die anderen Kinder entlang der Seitenlinie laufen und sich aktiv als Anspielstationen anbieten.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler braucht man für diese Übung?",
+        "antwort": "Beliebig viele Spieler. Entsprechend mehrere Dreiecke aufbauen."
+      },
+      {
+        "frage": "Wie lange dauert ein Durchgang?",
+        "antwort": "Ein Durchgang sollte 3-5 Minuten dauern. Je nach Alter und Leistungsstand der Kinder kann die Dauer angepasst werden."
+      },
+      {
+        "frage": "Welche Variationen sind möglich?",
+        "antwort": "Die Übung kann durch Reduzierung der Seitenlänge, Zeitlimit oder Ballkontaktbegrenzung angepasst werden. "
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [
+      133
+    ],
+    "schwester_id": 133,
+    "schwester_titel": "DREIECKE MIT MITTIGER ANSPIELSTATION"
   }
 ]
