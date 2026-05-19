@@ -8282,5 +8282,67 @@
     ],
     "schwester_id": 135,
     "schwester_titel": "ÜBERZAHL CLEVER NUTZEN"
+  },
+  {
+    "id": 135,
+    "titel": "ÜBERZAHL CLEVER NUTZEN",
+    "quell_trainingseinheit": "Dreiecke, Überzahl und 2 gegen 2 gegen 2",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/03/image-8.png",
+    "grafik_dateiname": "uebung-199-ueberzahl-clever-nutzen.png",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "Das angreifende Team kann vier weitere Spieler als Anspielstationen nutzen, die ums Feld herum postiert sind.",
+    "aufbau": "Ein Spielfeld (20x30m) mit zwei Jugendtoren und zwei Torhütern aufbauen. Drei Teams zu je vier Spielern mit unterschiedlicher Leibchenfarbe einteilen. Einen Ball bereitstellen.",
+    "durchfuehrung": "Je ein Team pro Durchgang greift an, das andere verteidigt. Das dritte Team postiert sich an den Grund- und Seitenlinien des Spielfelds als Anspielstationen. Die Anspielstationen können vom angreifenden Team angespielt werden und dürfen vom verteidigenden Team nicht angegriffen werden. Jedes Team hat drei Angriffsversuche, danach wechseln die Teams die Rollen. Jeder Angriffsversuche startet vom Torhüter der angreifenden Mannschaft. Bei Balleroberung kann die verteidigende Mannschaft ebenfalls angreifen (sie binden die Anspielstationen am Feldrand jedoch nicht ein).",
+    "varianten": "a) 1-2 Anspiele zu den Anspielstationen sind Pflicht pro Angriff. b) Angriffe auf 15 Sekunden limitieren. 2 GEGEN 2 GEGEN 2 TORHÜTER 2 GEGEN 2 GEGEN 2 TORHÜTER Auf jedem Feld wird 2 gegen 2 gespielt. Das dritte Team stellt zwei Torhüter. Nach Torerfolg wird gewechselt.",
+    "quell_url": "https://coachunited.de/dreiecke-uberzahl-und-2-gegen-2-gegen-2/",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Raumverhalten",
+      "Taktik"
+    ],
+    "coaching_fokus": "• Zusätzliche Anspielstationen nutzen; • Geschickte Positionierung, um Überzahl zu nutzen",
+    "leichter_machen": "",
+    "schwerer_machen": "• 1-2 Anspiele zu den Anspielstationen sind Pflicht pro Angriff.; • Angriffe auf 15 Sekunden limitieren.",
+    "status": "veroeffentlicht",
+    "schwester_ids": [
+      134
+    ],
+    "schwester_id": 134,
+    "schwester_titel": "ÜBERZAHL UND UNTERZAHL",
+    "alt_titel": "Überzahl geschickt ausspielen",
+    "seo_keyword": "Fußballübung Überzahl Kinder",
+    "url_slug": "fussballubung-uberzahl-clever-nutzen",
+    "seo_meta_description": "Fußballübung für Kinder (6-12 Jahre), um Überzahlsituationen geschickt auszuspielen und Abstimmung im Team zu trainieren.",
+    "grafik_alt_text": "Kinder spielen Fußball mit Überzahl auf einem Kleinfeld",
+    "grafik_description": "Die Grafik zeigt eine Fußballübung, bei der ein angreifendes Team Überzahl auf dem Feld nutzt, um die Verteidigung auszuspielen. Dafür sind Anspielstationen an den Seiten aufgestellt.",
+    "grafik_title": "Fußballübung: Überzahl clever nutzen",
+    "grafik_caption": "Kinder trainieren in Kleingruppen das Ausspielen von Überzahlsituationen.",
+    "faq": [
+      {
+        "frage": "Wie viele Anspiele zu den Seitenspielern sind Pflicht?",
+        "antwort": "Variante: 1-2 Anspiele pro Angriff."
+      },
+      {
+        "frage": "Wie lange dauert ein Angriff in dieser Übung?",
+        "antwort": "Die Variante begrenzt die Angriffe auf 15 Sekunden."
+      },
+      {
+        "frage": "Für welche Altersklasse ist diese Übung geeignet?",
+        "antwort": "Die Übung ist für Kinder ab der F-Jugend konzipiert."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": ""
   }
 ]
