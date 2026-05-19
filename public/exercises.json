@@ -7974,5 +7974,68 @@
     ],
     "schwester_id": 130,
     "schwester_titel": "VOM PASSERFOLG IN DIE ÜBERZAHLSITUATION"
+  },
+  {
+    "id": 130,
+    "titel": "VOM PASSERFOLG IN DIE ÜBERZAHLSITUATION",
+    "quell_trainingseinheit": "Passen, passen, passen",
+    "quell_url": "https://coachunited.de/passen-passen-passen/",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/04/image-3.jpg",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "Das Team, das zuerst das Minitor trifft, geht in ein 2 gegen 1 auf das Jugendtor.",
+    "aufbau": "Ein Jugendtor und zwei Minitore in etwa 15m Abstand aufstellen. Zwei Teams jeweils recht und links vom Jugendtor platzieren. In der Mitte zwischen den Minitoren zwei Hütchen aufstellen. Gruppe in vier Teams aufteilen und zwei Gruppen gegenüberliegend vom Jugendtor platzieren.",
+    "durchfuehrung": "Jeweils ein Spieler von jedem Team, die neben dem Jugendtor stehen, startet gleichzeitig mit einem gezielten Pass auf das Minitor. Das Team das trifft, geht in ein 2 gegen 1. Hierfür spielt der gegenüberstehende Mitspieler des erfolgreichen Teams den Ball ein, der nicht erfolgreiche Spieler wird zum Abwehrspieler.\n\nWenn beide treffen: Das Team, das zuerst getroffen hat, darf ins 2 gegen 1\n\nWenn niemand trifft: Wieder anstellen und die nächsten. Kein 2 gegen 1.",
+    "varianten": "",
+    "coaching_fokus": "• Präzise und ruhig beim Schießen aufs Minitor; • Überzahl durch kluge Pässe beim 2 gegen 1 ausspielen; • Schnelles Umschalten vom Minitor-Schuss ins 2 gegen 1",
+    "leichter_machen": "• Größeres Spielfeld, um mehr Zeit und Raum zu haben; • Distanzen verringern",
+    "schwerer_machen": "• Tempo erhöhen",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Torschuss",
+      "Raumverhalten"
+    ],
+    "seo_keyword": "Fußballübung Passspiel Kinder",
+    "url_slug": "fussballuebung-passspiel-kinder",
+    "seo_meta_description": "Effektive Fußballübung für Kinder, um Pässe zu spielen und in Überzahlsituationen zu kommen. Verbesserung von Technik und Taktik.",
+    "grafik_alt_text": "Zwei Kinder spielen den Ball in einem Fußballübungsfeld",
+    "grafik_description": "Die Grafik zeigt zwei Fußballspieler, die den Ball in einem Übungsfeld spielen. Im Hintergrund ist ein Fußballtor zu sehen.",
+    "grafik_title": "Fußballübung: Vom Passspiel in die Überzahl",
+    "grafik_caption": "Kinder lernen in dieser Übung, Pässe zu spielen und in Überzahlsituationen zu kommen.",
+    "status": "veroeffentlicht",
+    "nachtraeglich_eingefuegt": true,
+    "schwester_ids": [
+      129
+    ],
+    "schwester_id": 129,
+    "schwester_titel": "PASS-, DRIBBEL- UND SCHUSSPARCOURS",
+    "alt_titel": "Vom Passспiel in die Überzahl",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler braucht man für diese Übung?",
+        "antwort": "Ideal sind 12-16 Spieler, die in 4 Teams eingeteilt werden."
+      },
+      {
+        "frage": "Wie lange dauert die Übung?",
+        "antwort": "Die Übung kann je nach Altersgruppe und Leistungsstand 15-20 Minuten dauern."
+      },
+      {
+        "frage": "Kann man die Übung für jüngere Kinder anpassen?",
+        "antwort": "Ja, man kann das Spielfeld vergrößern und die Anzahl der Gegenspieler reduzieren, um die Übung für F- und E-Junioren einfacher zu gestalten."
+      }
+    ],
+    "grafik_dateiname": "",
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": ""
   }
 ]
