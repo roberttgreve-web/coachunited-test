@@ -7909,5 +7909,70 @@
     "original_coaching_fokus": "",
     "ist_gecrawlt": false,
     "quell_kategorie": ""
+  },
+  {
+    "id": 129,
+    "titel": "PASS-, DRIBBEL- UND SCHUSSPARCOURS",
+    "quell_trainingseinheit": "Passen, passen, passen",
+    "quell_url": "https://coachunited.de/passen-passen-passen/",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/04/image-2.jpg",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "Spieler passen ins Minitor, dribbeln im Slalom um die Hütchen und schließen dann auf das große Tor ab.",
+    "aufbau": "Ein Jugendtor und zwei Minitore in etwa 15m Abstand aufstellen. Zwei Teams jeweils recht und links vom Jugendtor platzieren. In der Mitte zwei Slalom-Parcours aufbauen und eine Torschusszone markieren.",
+    "durchfuehrung": "Jeweils ein Spieler von jedem Team startet gleichzeitig. Er läuft bis zur Markierung und spielt einen gezielten Pass ins Minitor. Er holt den Ball aus dem Tor, dribbelt durch den Slalom-Parcours und schließt von der Torschusslinie auf das Jugendtor ab. Ein Tor auf das Minitor und ein Tor auf das Jugendtor zählen jeweils einen Punkt. Welches Team erreicht mehr Punkte?",
+    "varianten": "a) Pässe und Schüsse nur mit links oder rechts. b) Pässe auf die Minitore diagonal auf das andere Minitor ausführen.",
+    "coaching_fokus": "• Präziser, konzentrierter Ball ins Minitor mit geringerem Tempo; • Enge Ballführung im Slalom; • Kopf hoch beim Torschuss",
+    "leichter_machen": "• Distanzen verringern; • Tempro herausnehmen",
+    "schwerer_machen": "• Pässe und Schüsse mit dem schwächeren Fuß; • Entfernung zwischen Toren und Parcours vergrößern; • Schüsse auf die Minitore diagonal auf das andere Minitor ausführen.",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Dribbeln",
+      "Torschuss",
+      "Koordination",
+      "Schnelligkeit"
+    ],
+    "seo_keyword": "Fußballübung Dribbling Kinder",
+    "url_slug": "fussballuebung-dribbling-kinder",
+    "seo_meta_description": "Kinder führen einen Fußballparcours mit Pässen, Dribbling und Torschüssen durch",
+    "grafik_alt_text": "Dynamischer Fußballparcours für Kinder",
+    "grafik_description": "Die Grafik zeigt einen Fußballparcours mit Minitoren zum Passen, Slalomstangen zum Dribbling und einem Tor zum Abschließen. Mehrere Kinder führen die Übung nacheinander durch.",
+    "grafik_title": "Abwechslungsreiche Übung zur Verbesserung von Ballkontrolle, Koordination und Schnelligkeit.",
+    "grafik_caption": "Die Grafik zeigt einen Fußballparcours mit Minitoren zum Passen, Slalomstangen zum Dribbling und einem Tor zum Abschließen. Mehrere Kinder führen die Übung nacheinander durch.",
+    "status": "veroeffentlicht",
+    "nachtraeglich_eingefuegt": true,
+    "alt_titel": "Zielschuss-Geschicklichkeitsparcours",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler können gleichzeitig die Übung machen?",
+        "antwort": "Ideal sind 2 Teams mit je 4-8 Spielern. "
+      },
+      {
+        "frage": "Wie lange dauert die Übung?",
+        "antwort": "Je nach Gruppengröße ca. 15-20 Minuten. Wichtig ist, dass alle Spieler mehrmals durchlaufen können."
+      },
+      {
+        "frage": "Für welche Altersklassen eignet sich die Übung?",
+        "antwort": "Die Übung ist ideal für Kinder von 8-12 Jahren (F- bis D-Jugend). Anpassungen bei Schwierigkeitsgrad und Feld möglich."
+      }
+    ],
+    "grafik_dateiname": "",
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [
+      130
+    ],
+    "schwester_id": 130,
+    "schwester_titel": "VOM PASSERFOLG IN DIE ÜBERZAHLSITUATION"
   }
 ]
