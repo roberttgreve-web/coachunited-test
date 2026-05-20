@@ -8344,5 +8344,184 @@
     "original_coaching_fokus": "",
     "ist_gecrawlt": false,
     "quell_kategorie": ""
+  },
+  {
+    "id": 136,
+    "titel": "EINWURF ÜBEN",
+    "quell_trainingseinheit": "Einwürfe und 1 gegen 1 üben",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/03/image-25.jpg",
+    "grafik_dateiname": "uebung-201-einwurf-ueben.jpg",
+    "trainingsphase": "Aufwärmen",
+    "kurzbeschreibung": "Spieler werfen den Ball zum Mitspieler, der ihn annimmt und kontrolliert.",
+    "aufbau": "In einem abgesteckten Feld stehen sich jeweils zwei Spieler gegenüber. Ein Spieler hat den Ball.",
+    "durchfuehrung": "Auf Kommando des Trainers werfen die Spieler den Ball in einem korrekt ausgeführten Einwurf zum Mitspieler. Der Mitspieler versucht, den Ball mit der Brust anzunehmen und zu kontrollieren.",
+    "varianten": "a) Die Spieler nacheinander werfen lassen, um als Trainer korrigieren zu können. b) Den Abstand vergrößern, um Annahmen auch mit dem Knie oder Oberschenkel zu ermöglichen. c) Die werfenden Kinder auf die Grundlinie stellen, um eine echte Einwurfsituation zu simulieren. SCHNELLEN EINWURF ÜBEN SCHNELLEN EINWURF ÜBEN Spieler laufen nach Trainerkommando aufeinander zu. Der Einwerfer wirft den Ball zum Mitspieler, der ihn annimmt und kontrolliert.",
+    "quell_url": "https://coachunited.de/einwurfe-und-1-gegen-1-uben/",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend"
+    ],
+    "skills": [
+      "Einwürfe"
+    ],
+    "coaching_fokus": "• Beide Füße auf dem Boden; • Nicht hüpfen; • Saubere Ausführung",
+    "leichter_machen": "• Die Spieler nacheinander werfen lassen, um korrigieren zu können",
+    "schwerer_machen": "• Die werfenden Kinder auf die Grundlinie stellen, um eine echte Einwurfsituation zu simulieren; • Den Abstand vergrößern, um Annahmen auch mit dem Knie oder Oberschenkel zu ermöglichen",
+    "status": "veroeffentlicht",
+    "alt_titel": "Präzises Einwerfen und kontrollierte Annahme",
+    "seo_keyword": "Fußballübung Einwurf Kinder",
+    "url_slug": "fussballuebung-einwurf-kinder",
+    "seo_meta_description": "Zwei Kinder stehen sich im Fußballfeld gegenüber, der eine wirft den Ball, der andere nimmt ihn an.",
+    "grafik_alt_text": "Fußballübung: Korrekter Einwurf und kontrollierte Annahme",
+    "grafik_description": "Die Übung 'Einwurf üben' trainiert die korrekte Technik des Einwerfens und die kontrollierte Annahme des Balls. Die Spieler stehen sich in einem Spielfeld gegenüber und üben den Ablauf.",
+    "grafik_title": "Kinder üben den korrekten Einwurf und die kontrollierte Ballannahme.",
+    "grafik_caption": "Die Übung 'Einwurf üben' trainiert die korrekte Technik des Einwerfens und die kontrollierte Annahme des Balls. Die Spieler stehen sich in einem Spielfeld gegenüber und üben den Ablauf.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler braucht man für diese Übung?",
+        "antwort": "Beliebig viele Kinder können diese Übung machen. "
+      },
+      {
+        "frage": "Wie lange dauert die Übung?",
+        "antwort": "Die Dauer ist flexibel, je nach Trainingsschwerpunkt und Alter der Kinder. 5-10 Minuten sind eine gute Orientierung."
+      },
+      {
+        "frage": "Kann man die Übung auch für ältere Kinder nutzen?",
+        "antwort": "In der Regel sollten ältere Kinder einen Einwurf bereits beherrschen. "
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [
+      137
+    ],
+    "schwester_id": 137,
+    "schwester_titel": "SCHNELLEN EINWURF ÜBEN"
+  },
+  {
+    "id": 137,
+    "titel": "SCHNELLEN EINWURF ÜBEN",
+    "quell_trainingseinheit": "Einwürfe und 1 gegen 1 üben",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/03/image-27.jpg",
+    "grafik_dateiname": "uebung-202-schnellen-einwurf-ueben.jpg",
+    "trainingsphase": "Aufwärmen",
+    "kurzbeschreibung": "Spieler laufen nach Trainerkommando aufeinander zu. Der Einwerfer wirft den Ball zum Mitspieler, der ihn annimmt und kontrolliert.",
+    "aufbau": "In einem abgesteckten Feld stehen sich jeweils zwei Spieler gegenüber. Ein Spieler hat den Ball. Beide Spieler stehen etwa 1m hinter der Linie.",
+    "durchfuehrung": "Auf das Trainerkommando läuft der werfende Spieler bis zur Linie und wirf den Ball dann ein. Sein Partner läuft auf das Kommando ebenfalls los. Er läuft bis zu seiner eigenen Linie auf ihn zu, um den Ball in Empfang zu nehmen.",
+    "varianten": "a) Wurfempfänger kann die Distanz zum Werfer selber festlegen, muss also nicht an der Linie stoppen. b) Welches Paar hat zuerst den Pass korrekt ausgeführt, angenommen und danach kontrolliert wieder zur eigenen Linie zurcükgedribbelt? DRIBBELN, SCHIEßEN UND INS 1 GEGEN 1 DRIBBELN, SCHIEßEN UND INS 1 GEGEN 1 Ein Spieler dribbelt aufs Tor, schließt ab und wird zum Verteidiger gegen de anderen Spieler, der aus dem Slalom-Dribbling in die Torzone eindringt.",
+    "quell_url": "https://coachunited.de/einwurfe-und-1-gegen-1-uben/",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend"
+    ],
+    "skills": [
+      "Ballkontrolle",
+      "Einwürfe"
+    ],
+    "coaching_fokus": "• Beide Füße auf dem Boden; • Kein Hüpfen; • Saubere Ausführung",
+    "leichter_machen": "• Wurfempfänger kann die Distanz zum Werfer selber festlegen, muss also nicht an der Linie stoppen.",
+    "schwerer_machen": "• Wettbewerb: Welches Paar hat zuerst den Pass korrekt ausgeführt, angenommen und danach kontrolliert wieder zur eigenen Linie zurcükgedribbelt?",
+    "status": "veroeffentlicht",
+    "schwester_ids": [
+      136
+    ],
+    "schwester_id": 136,
+    "schwester_titel": "EINWURF ÜBEN",
+    "alt_titel": "Schnelle Einwürfe gezielt üben",
+    "seo_keyword": "Fußballübung Einwürfe Kinder",
+    "url_slug": "fussballubung-einwurfe-uben-kinder",
+    "seo_meta_description": "Effektive Fußballübung zum Üben schneller Einwürfe für Kinder von 6-12 Jahren. Verbessert Passen, Ballkontrolle und Koordination.",
+    "grafik_alt_text": "Zwei Kinder führen einen Einwurf aus, der andere Kind kontrolliert den Ball",
+    "grafik_description": "Die Übung zeigt zwei Kinder bei der Durchführung eines Einwurfes. Der werfende Spieler steht hinter der Seitenlinie und wirft den Ball zum laufenden Mitspieler, der den Ball gekonnt annimmt und kontrolliert.",
+    "grafik_title": "Fußballübung: Schnelle Einwürfe üben mit Kindern",
+    "grafik_caption": "Kinder üben sichere Einwürfe im Fußballtraining",
+    "faq": [
+      {
+        "frage": "Wie viele Kinder braucht man für diese Übung?",
+        "antwort": "Beliebig viele Kinder können diese Übung machen. "
+      },
+      {
+        "frage": "Wie lange sollte man diese Übung durchführen?",
+        "antwort": "Je nach Alter und Leistungsstand 5-10 Minuten, mehrmals wiederholen."
+      },
+      {
+        "frage": "Für welche Altersgruppen eignet sich die Übung?",
+        "antwort": "Die Übung ist gut geeignet für Kinder von 8-12 Jahren (F- bis E-Jugend)."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": ""
+  },
+  {
+    "id": 138,
+    "titel": "DRIBBELN, SCHIEßEN UND INS 1 GEGEN 1",
+    "quell_trainingseinheit": "Einwürfe und 1 gegen 1 üben",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/03/image-26.jpg",
+    "grafik_dateiname": "uebung-138-dribbeln-schiessen-und-ins-1-gegen-1.jpg",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "Ein Spieler dribbelt aufs Tor, schließt ab und wird zum Verteidiger gegen den anderen Spieler, der aus dem Slalom-Dribbling in die Torzone eindringt.",
+    "aufbau": "20m x 20m große Torzone vor einem Jugendtor mit Torhüter markieren. Etwa 10m dahinter zwei Gruppen positionieren. Eine Gruppe nutzt Hütchen oder Stangen als Slalom.",
+    "durchfuehrung": "Ein Spieler dribbelt aufs Tor, schließt ab und wird zum Verteidiger. Gleichzeitig läuft der andere Spieler durch den Slalom und dringt in die Torzone ein. Es kommt zum 1 gegen 1.",
+    "varianten": "a) Der Spieler ohne Slalom soll nicht schießen, sondern den Torwart ausspielen. VOM 1 GEGEN 2 INS 2 GEGEN 2 VOM 1 GEGEN 2 INS 2 GEGEN 2 Ein Spieler dribbelt aufs Tor, versucht im 1 gegen 2 gegen die beiden Gegner abzuschließen und wird danach zweiter Angreifer.",
+    "quell_url": "https://coachunited.de/einwurfe-und-1-gegen-1-uben/",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Ballkontrolle",
+      "Dribbeln",
+      "Torschuss",
+      "Zweikampf"
+    ],
+    "coaching_fokus": "• Enge Ballführung beim Slalom; • Schnelles Umschalten von Torschuss zu Verteidigung; • Faire Zweikampfführung",
+    "leichter_machen": "• Tempo drosseln",
+    "schwerer_machen": "• ianten (KI-umgeschrieben)  a) Der Spieler ohne Slalom soll nicht schießen, sondern den Torwart ausspielen.",
+    "status": "veroeffentlicht",
+    "alt_titel": "Torjäger-Training: Dribbeln, Schießen, 1-gegen-1",
+    "seo_keyword": "Fußballübung Dribbeln Schießen 1 gegen 1 Kinder",
+    "url_slug": "fussballubung-dribbeln-schiessen-1-gegen-1-kinder",
+    "seo_meta_description": "Effektive Fußballübung für Kinder: Dribbeln, Schießen und 1-gegen-1. Verbessert Ballkontrolle, Torschuss und Zweikampfverhalten.",
+    "grafik_alt_text": "Zwei Fußballspieler im 1-gegen-1-Zweikampf vor dem Tor",
+    "grafik_description": "Die Grafik zeigt den Verlauf der Fußballübung. Ein Spieler dribbelt auf das Tor zu, während der zweite Spieler durch einen Slalom läuft und dann in den 1-gegen-1-Zweikampf geht.",
+    "grafik_title": "Fußballtraining: 1-gegen-1 nach Dribbling und Torschuss",
+    "grafik_caption": "Dynamisches 1-gegen-1-Training für Kinder fördert Ballkontrolle und Zweikampfverhalten.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler brauche ich für diese Übung?",
+        "antwort": "Optimal sind 10-14 Spieler, die im Wechsel durchlaufen."
+      },
+      {
+        "frage": "Wie lange kann man diese Übung durchführen?",
+        "antwort": "Je nach Alter und Konzentration der Kinder 10-15 Minuten. "
+      },
+      {
+        "frage": "Für welche Altersgruppen ist diese Übung geeignet?",
+        "antwort": "Die Übung eignet sich gut ab der F-Jugend. "
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": true,
+    "quell_kategorie": "",
+    "schwester_ids": [
+      139
+    ],
+    "schwester_id": 139,
+    "schwester_titel": "VOM 1 GEGEN 2 INS 2 GEGEN 2"
   }
 ]
