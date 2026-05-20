@@ -9321,6 +9321,69 @@
     "schwester_titel": "SCHÜSSE UND 1 GEGEN 1 MIT FARBREIHENFOLGE"
   },
   {
+    "id": 152,
+    "titel": "SPIEL MIT MITTELZONE UND TABUZONE",
+    "quell_trainingseinheit": "Pässe anfordern",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/03/image-5.png",
+    "grafik_dateiname": "uebung-218-spiel-mit-mittelzone-und-tabuzone.png",
+    "trainingsphase": "Spielformat",
+    "kurzbeschreibung": "Zwei Teams spielen auf zwei Tore. Tore aus der Mittelzone zählen drei Punkte, Tore aus der Torzonezählen ein Punkt.",
+    "aufbau": "30x20m-Spielfeld aufbauen mit zwei Toren und jeweils Torhütern. Jugendtor mit Torhüter aufstellen. 8m vor jedem Tor eine Torzone markieren. Zwei Teams einteilen.",
+    "durchfuehrung": "Zwei Teams spielen gegeneinander in einem normalen Spiel. Tore per Fernschuss aus der Mittelzone zählen dreifach, Tore aus der Torzone einfach.",
+    "varianten": "Treffer aus der Torzone gar nicht zählen. FREIES SPIEL – LOS GEHT’S! FREIES SPIEL – LOS GEHT’S! In © 2025 COACH UNITED",
+    "quell_url": "https://coachunited.de/passen-anfordern/",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Torschuss",
+      "Raumverhalten"
+    ],
+    "coaching_fokus": "• Gute Verteilung auf dem Feld; • Besser positionierten Mitspieler finden",
+    "leichter_machen": "• Verkleinert das Spielfeld",
+    "schwerer_machen": "• Treffer aus der Torzone gar nicht zählen.",
+    "status": "veroeffentlicht",
+    "schwester_ids": [
+      149,
+      150
+    ],
+    "schwester_id": 149,
+    "schwester_titel": "EIN WETTLAUF, ZWEI TORSCHÜSSE",
+    "alt_titel": "TORESCHIESSEN MIT ZONEN-BONUS",
+    "seo_keyword": "Fußballübung Torschuss Kinder",
+    "url_slug": "fussballubung-torschuss-kinder",
+    "seo_meta_description": "Fußballübung für Kinder (6-12 Jahre) mit Mittelzone und Torzonenbonuspunkten, fördert Torschuss und Raumaufteilung.",
+    "grafik_alt_text": "Zwei Fußballteams spielen auf zwei Tore, mit markierten Zonen und Punktevergabe",
+    "grafik_description": "Die Grafik zeigt den Spielaufbau mit Mittelzone und Torzone. Zwei gegnerische Teams spielen gegeneinander und erzielen je nach Torzone unterschiedliche Punktwerte.",
+    "grafik_title": "Fußballübung mit Punktbonussystem",
+    "grafik_caption": "Spiel mit Mittelzone und Torzonenbonus – fördert den Torabschluss und das Raumverhalten.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler braucht man für diese Übung?",
+        "antwort": "Ideal sind je 5-7 Spieler pro Team. "
+      },
+      {
+        "frage": "Wie lange dauert eine Runde?",
+        "antwort": "Eine Spielrunde sollte etwa 15-20 Minuten betragen. Je nach Alter und Kondition der Kinder kann die Dauer angepasst werden."
+      },
+      {
+        "frage": "Für welche Altersklasse ist diese Übung geeignet?",
+        "antwort": "Die Übung ist für Kinder ab der F-Jugend geeignet."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": ""
+  },
+  {
     "id": 153,
     "titel": "SPIEL MIT FARBREIHENFOLGE",
     "quell_trainingseinheit": "Training mit Farbsignalen",
