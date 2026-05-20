@@ -8720,8 +8720,7 @@
     "quell_url": "https://coachunited.de/erst-diagonale-passe-dann-fusballkegeln/",
     "jugend": [
       "F-Jugend",
-      "E-Jugend",
-      "D-Jugend"
+      "E-Jugend"
     ],
     "skills": [
       "Passen",
@@ -9075,5 +9074,67 @@
     "schwester_ids": [],
     "schwester_id": null,
     "schwester_titel": null
+  },
+  {
+    "id": 148,
+    "titel": "WER GEGEN WEN?",
+    "quell_trainingseinheit": "Training auf dem Doppelfeld",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/03/image-15.jpg",
+    "grafik_dateiname": "uebung-215-wer-gegen-wen.jpg",
+    "trainingsphase": "Spielformat",
+    "kurzbeschreibung": "Zwei Teams spielen ein 6+1. Nach 8 Minuten werden die Teams nach Kriterien gewechselt, die der Trainer vorgibt.",
+    "aufbau": "40X40m-Feld aufbauen mit Jugendtoren und Torhütern. Zwei Teams einteilen.",
+    "durchfuehrung": "Zwei Teams spielen ein 6+1. Nach 8 Minuten werden die Teams nach Kriterien gewechselt, die der Trainer vorgibt. \n\nMögliche Kriterien: \n\nHelle Schuhe gegen dunkle Schuhe. \nHelle Trikots gegen dunkle Trikots. \n6 ältesten Kinder gegen die 6 jüngsten Kinder. \nAbwehrspieler gegen Offensivspieler usw.",
+    "varianten": "",
+    "quell_url": "https://coachunited.de/924-2/",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Dribbeln",
+      "Zweikampf",
+      "Raumverhalten",
+      "Umschalten"
+    ],
+    "coaching_fokus": "• Spaß haben!",
+    "leichter_machen": "",
+    "schwerer_machen": "",
+    "status": "veroeffentlicht",
+    "schwester_ids": [],
+    "schwester_id": null,
+    "schwester_titel": null,
+    "alt_titel": "Wer findet den Weg zum Tor?",
+    "seo_keyword": "Fußballübung Raumaufteilung Kinder",
+    "url_slug": "fussballubung-raumaufteilung-kinder",
+    "seo_meta_description": "Effektive Fußballübung für Kinder zum Training von Raumaufteilung, Kommunikation und Passen. Für G- bis E-Jugend geeignet.",
+    "grafik_alt_text": "Kinder spielen Fußball auf einem 40x40m Feld mit Toren",
+    "grafik_description": "Die Kinder spielen in zwei Teams gegeneinander auf einem rechteckigen Fußballfeld. Sie müssen den Ball präzise zuspielen und ihre Positionen im Feld gut abstimmen, um Tore zu erzielen.",
+    "grafik_title": "Fußballübung für Kinder zum Raumverständnis",
+    "grafik_caption": "Spielerisches Fußballtraining fördert die Raumaufteilung und Kommunikation im Team.",
+    "faq": [
+      {
+        "frage": "Wie passe ich die Übung an, wenn einige Kinder deutlich jünger sind?",
+        "antwort": "Dann passt das große Feld eher nicht. "
+      },
+      {
+        "frage": "Wie lange sollte ich diese Übung durchführen?",
+        "antwort": "Es empfehlen sich 10-15 Minuten."
+      },
+      {
+        "frage": "Welche Variationen können die Übung zusätzlich herausfordern?",
+        "antwort": "Ohne Torhüter spielen, die Ballbesitzzeit pro Spieler begrenzen oder das Spielfeld verkleinern, um das Tempo und den Druck zu erhöhen."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": ""
   }
 ]
