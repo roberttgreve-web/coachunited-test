@@ -191,7 +191,7 @@
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/01/image-17.jpg",
     "grafik_dateiname": "uebung-004-pass-mitnehmen-und-im-1-gegen-1-durchsetzen.jpg",
     "trainingsphase": "Hauptteil",
-    "kurzbeschreibung": "Trainer ruft eine Zahl auf und spielt den Ball ein. Jeweils diese Anzahl Spieler pro Team startet ins Spiel.",
+    "kurzbeschreibung": "Spieler laufen eine Route, erhalten den Pass und gehen ins 1 gegen 1",
     "aufbau": "Das Spielfeld ist 30 x 30 Meter groß und verfügt in der Mitte über ein zentrales Hütchen. An den gegenüberliegenden Seiten des Feldes befinden sich jeweils ein Tor mit Torhütern. Die Spieler stehen verteilt an den Hütchen, aufgeteilt in zwei Teams mit Bällen.",
     "durchfuehrung": "Spieler ohne Ball umlaufen das Hütchen, fordern den Pass, verarbeiten den Pass und gehen ins 1 gegen 1. Angreifer wird danach zum Verteidiger. Anschließend im Uhrzeigersinn am nächsten Hütchen anstellen. ",
     "varianten": "Verteidiger darf auf das zweite Tor ein Tor erzielen. Vom Eck ins Tor Vom Eck ins Tor Zwei Teams spielen gegeneinander auf zwei Tore, Zuspieler an den Ecken bringen neue Bälle ein.",
@@ -672,10 +672,8 @@
     "original_coaching_fokus": "",
     "ist_gecrawlt": false,
     "quell_kategorie": "",
-    "schwester_ids": [
-      108
-    ],
-    "schwester_id": 108,
+    "schwester_ids": [],
+    "schwester_id": null,
     "schwester_titel": "REIFEN SUCHEN"
   },
   {
@@ -1284,10 +1282,8 @@
     "original_coaching_fokus": "",
     "ist_gecrawlt": false,
     "quell_kategorie": "",
-    "schwester_ids": [
-      110
-    ],
-    "schwester_id": 110,
+    "schwester_ids": [],
+    "schwester_id": null,
     "schwester_titel": "SLALOM, FLANKENLAUF UND PASS INS 1 GEGEN 1"
   },
   {
@@ -1318,11 +1314,9 @@
     "leichter_machen": "• Slalom-Hütchen mit größeren Abständen aufstellen; • Ball vor der Flanke stoppen",
     "schwerer_machen": "• Nur hohe Flanken erlauben; • Trainer sagt erst kurz vor der Flanke an, wer Angreifer und wer Verteidiger ist",
     "status": "veroeffentlicht",
-    "schwester_ids": [
-      22
-    ],
-    "schwester_id": 22,
-    "schwester_titel": "FLANKENLAUF MIT TORABSCHLUSS",
+    "schwester_ids": [],
+    "schwester_id": null,
+    "schwester_titel": null,
     "alt_titel": "Flankenlauf und 1-gegen-1 mit Verteidiger",
     "seo_keyword": "Fußballübung Passen Kinder",
     "url_slug": "flankenlauf-und-pass-ins-1-gegen-1",
@@ -5574,65 +5568,6 @@
   },
   {
     "id": 91,
-    "titel": "WACH SEIN, BALL KLAUEN",
-    "quell_trainingseinheit": "Pässe verarbeiten",
-    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/07/image-2.png",
-    "grafik_dateiname": "uebung-105-wach-sein-ball-klauen.png",
-    "trainingsphase": "Aufwärmen",
-    "kurzbeschreibung": "Spieler müssen im Trippelschritt wach sein und den Ball schneller erobern als ihr Gegenspieler.",
-    "aufbau": "Spieler stehen sich in paaren eng gegenüber. In der Mitte liegt je Paar ein Ball.",
-    "durchfuehrung": "Alle Spieler laufen in schnellen Trippelschritten auf der Stelle. Der Trainer ruft nacheinander verschiedene Körperteile, welche die Spieler mit den Händen berühren. Beim Kommando „Ball“ werfen sich die Kinder auf den Ball. Wer den Ball erobert hat, bekommt den Punkt. Etwa 10 Durchgänge. ",
-    "varianten": "",
-    "quell_url": "https://coachunited.de/passe-verarbeiten/",
-    "jugend": [
-      "G-Jugend",
-      "F-Jugend",
-      "E-Jugend"
-    ],
-    "skills": [
-      "Zweikampf",
-      "Koordination",
-      "Schnelligkeit"
-    ],
-    "coaching_fokus": "• Gleicher Abstand zum Ball; • Schnelle Abfolge; • Konzentration einfordern",
-    "leichter_machen": "",
-    "schwerer_machen": "",
-    "status": "veroeffentlicht",
-    "alt_titel": "Schnell zum Ball - Zweikampftraining für Kinder",
-    "seo_keyword": "Fußballübung Balleroberung Kinder",
-    "url_slug": "fussballubung-balleroberung-kinder",
-    "seo_meta_description": "Dynamische Fußballübung für Kinder, bei der es um schnelle Reaktion und Balleroberung geht. Perfekt für das Training in der G- und F-Jugend.",
-    "grafik_alt_text": "Kinder in einem Fußballtraining stehen sich paarweise gegenüber und versuchen, einen in der Mitte liegenden Ball schnell zu erobern.",
-    "grafik_description": "Das Bild zeigt eine Gruppe von Kindern im Fußballtraining. Sie stehen sich paarweise gegenüber, in der Mitte eines jeden Paares liegt ein Fußball. Die Kinder sind in Bereitschaftsstellung und warten darauf, dass der Trainer 'Ball' ruft, damit sie sich auf den Ball stürzen und ihn erobern können.",
-    "grafik_title": "Fußballübung Balleroberung für Kinder",
-    "grafik_caption": "Dynamisches Balleroberungsspiel im Fußballtraining für Kinder",
-    "faq": [
-      {
-        "frage": "Wie viele Kinder können an dieser Übung teilnehmen?",
-        "antwort": "Die Übung ist für Gruppen von 8-16 Kindern geeignet. Die Spieler stehen sich paarweise gegenüber, sodass die Gruppengröße flexibel angepasst werden kann."
-      },
-      {
-        "frage": "Wie lange dauert die Übung?",
-        "antwort": "Die Übung kann je nach Altersgruppe und Konzentration der Kinder 5-10 Minuten dauern. Es sind ca. 10 Durchgänge vorgesehen, die schnell hintereinander ablaufen."
-      },
-      {
-        "frage": "Kann man die Übung auch für ältere Kinder anpassen?",
-        "antwort": "Die Übung macht eigentlich allen Altersgruppen Spaß. "
-      }
-    ],
-    "referenz_grafik_url": "",
-    "original_aufbau": "",
-    "original_durchfuehrung": "",
-    "original_varianten": "",
-    "original_coaching_fokus": "",
-    "ist_gecrawlt": false,
-    "quell_kategorie": "",
-    "schwester_ids": [],
-    "schwester_id": null,
-    "schwester_titel": null
-  },
-  {
-    "id": 92,
     "titel": "VOM TORSCHUSS INS SPIEL UMSCHALTEN",
     "quell_trainingseinheit": "Pässe verarbeiten",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/07/image-4.jpg",
@@ -5692,7 +5627,7 @@
     "schwester_titel": null
   },
   {
-    "id": 93,
+    "id": 92,
     "titel": "FUSSBALLKEGELN",
     "quell_trainingseinheit": "Torgefahr über die Außenbahn üben",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/07/image.jpg",
@@ -5747,13 +5682,13 @@
     "ist_gecrawlt": false,
     "quell_kategorie": "",
     "schwester_ids": [
-      94
+      93
     ],
-    "schwester_id": 94,
+    "schwester_id": 93,
     "schwester_titel": "PRÄZISION: FUSSBALLKEGELN FÜR PROFIS"
   },
   {
-    "id": 94,
+    "id": 93,
     "titel": "FUSSBALLKEGELN FÜR PROFIS",
     "quell_trainingseinheit": "Torgefahr über die Außenbahn üben",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/07/image-2.jpg",
@@ -5806,13 +5741,13 @@
     "ist_gecrawlt": true,
     "quell_kategorie": "",
     "schwester_ids": [
-      93
+      92
     ],
-    "schwester_id": 93,
+    "schwester_id": 92,
     "schwester_titel": "FUSSBALLKEGELN"
   },
   {
-    "id": 95,
+    "id": 94,
     "titel": "BALLGEFÜHL AN VIER STATIONEN",
     "quell_trainingseinheit": "Stationen-Warmup und viele Toraktionen",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/06/image-16.jpg",
@@ -5872,7 +5807,7 @@
     "schwester_titel": null
   },
   {
-    "id": 96,
+    "id": 95,
     "titel": "SAUBER DRIBBELN, SAUBER PASSEN",
     "quell_trainingseinheit": "Stationen-Warmup und viele Toraktionen",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/06/image-30.png",
@@ -5931,7 +5866,7 @@
     "schwester_titel": null
   },
   {
-    "id": 97,
+    "id": 96,
     "titel": "VOM WETTRENNEN INS 1 GEGEN 1",
     "quell_trainingseinheit": "Stationen-Warmup und viele Toraktionen",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/06/image-31.png",
@@ -5987,14 +5922,14 @@
     "ist_gecrawlt": false,
     "quell_kategorie": "",
     "schwester_ids": [
-      111,
-      98
+      108,
+      97
     ],
-    "schwester_id": 111,
+    "schwester_id": 108,
     "schwester_titel": "6 GEGEN 5 MIT HÜTCHENTOREN"
   },
   {
-    "id": 98,
+    "id": 97,
     "titel": "AUS DEM SLALOM IN DEN ANGRIFF",
     "quell_trainingseinheit": "Stationen-Warmup und viele Toraktionen",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/06/image-32.png",
@@ -6022,10 +5957,10 @@
     "schwerer_machen": "• Mindestzahl an Pässen definieren vor dem Torabschluss.; • Entfernung zwischen Hütchen verringern für engeren Slalom",
     "status": "veroeffentlicht",
     "schwester_ids": [
-      111,
-      97
+      108,
+      96
     ],
-    "schwester_id": 111,
+    "schwester_id": 108,
     "schwester_titel": "6 GEGEN 5 MIT HÜTCHENTOREN",
     "alt_titel": "Slalomdribbling in den Torabschluss",
     "seo_keyword": "Fußballübung Dribbling Kinder",
@@ -6058,7 +5993,7 @@
     "quell_kategorie": ""
   },
   {
-    "id": 99,
+    "id": 98,
     "titel": "ZWEIFELDSPIEL",
     "quell_trainingseinheit": "Stationen-Warmup und viele Toraktionen",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/06/image-33.png",
@@ -6120,7 +6055,7 @@
     "schwester_titel": null
   },
   {
-    "id": 100,
+    "id": 99,
     "titel": "PARTNER-VOLLEY",
     "quell_trainingseinheit": "1 gegen 1 nach Slalom und Wettrennen",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/06/image-13.jpg",
@@ -6175,13 +6110,13 @@
     "ist_gecrawlt": false,
     "quell_kategorie": "",
     "schwester_ids": [
-      101
+      100
     ],
-    "schwester_id": 101,
+    "schwester_id": 100,
     "schwester_titel": "TECHNIK UND SCHNELLIGKEIT: VOLLEY UND WETTRENNEN"
   },
   {
-    "id": 101,
+    "id": 100,
     "titel": "VOLLEY UND WETTRENNEN",
     "quell_trainingseinheit": "1 gegen 1 nach Slalom und Wettrennen",
     "quell_url": "https://coachunited.de/1-gegen-1-nach-slalom-und-wettrennen/",
@@ -6215,9 +6150,9 @@
     "status": "veroeffentlicht",
     "nachtraeglich_eingefuegt": true,
     "schwester_ids": [
-      100
+      99
     ],
-    "schwester_id": 100,
+    "schwester_id": 99,
     "schwester_titel": "PARTNER-VOLLEY",
     "alt_titel": "Technik-Wettbewerb: Volley und Sprint",
     "faq": [
@@ -6244,7 +6179,7 @@
     "quell_kategorie": ""
   },
   {
-    "id": 102,
+    "id": 101,
     "titel": "DREIECK-TORABSCHLUSS",
     "quell_trainingseinheit": "Spaß mit Fußballkegeln, Dreiecken und Fernschuss-Spiel",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/06/image-22.png",
@@ -6302,13 +6237,13 @@
     "ist_gecrawlt": false,
     "quell_kategorie": "",
     "schwester_ids": [
-      103
+      102
     ],
-    "schwester_id": 103,
+    "schwester_id": 102,
     "schwester_titel": "2 GEGEN 1 NACH DREIECK-PÄSSEN"
   },
   {
-    "id": 103,
+    "id": 102,
     "titel": "2 GEGEN 1 NACH DREIECK-PÄSSEN",
     "quell_trainingseinheit": "Spaß mit Fußballkegeln, Dreiecken und Fernschuss-Spiel",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/06/image-23.png",
@@ -6337,9 +6272,9 @@
     "schwerer_machen": "",
     "status": "veroeffentlicht",
     "schwester_ids": [
-      102
+      101
     ],
-    "schwester_id": 102,
+    "schwester_id": 101,
     "schwester_titel": "DREIECK-TORABSCHLUSS",
     "alt_titel": "Pässe im Dreieck - 2 gegen 1 Abschluss",
     "seo_keyword": "Fußballübung Passen Kinder",
@@ -6372,7 +6307,7 @@
     "quell_kategorie": ""
   },
   {
-    "id": 104,
+    "id": 103,
     "titel": "LEIBCHEN FINDEN, TEAM FINDEN",
     "quell_trainingseinheit": "Doppelt hält besser – Spielspaß auf zwei Feldern",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/06/image-8.jpg",
@@ -6427,15 +6362,15 @@
     "ist_gecrawlt": false,
     "quell_kategorie": "",
     "schwester_ids": [
+      104,
       105,
-      106,
-      107
+      106
     ],
-    "schwester_id": 105,
+    "schwester_id": 104,
     "schwester_titel": "2 GEGEN 2 AUF VIER TORE"
   },
   {
-    "id": 105,
+    "id": 104,
     "titel": "LEIBCHEN SUCHEN, SPIEL STARTEN",
     "quell_trainingseinheit": "Doppelt hält besser – Spielspaß auf zwei Feldern",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/06/image-13.png",
@@ -6460,11 +6395,11 @@
     "schwerer_machen": "• Nur 2 Ballberührungen pro Spielzug",
     "status": "veroeffentlicht",
     "schwester_ids": [
-      104,
-      106,
-      107
+      103,
+      105,
+      106
     ],
-    "schwester_id": 104,
+    "schwester_id": 103,
     "schwester_titel": "2 GEGEN 2 AUF VIER TORE",
     "alt_titel": "Leibchen-Jagd - Schnelles Teamspiel",
     "seo_keyword": "Fußballübung Teamspiel Kinder",
@@ -6497,7 +6432,7 @@
     "quell_kategorie": ""
   },
   {
-    "id": 106,
+    "id": 105,
     "titel": "PARALLELES 1 GEGEN 1 MIT EINDRIBBELN",
     "quell_trainingseinheit": "Doppelt hält besser – Spielspaß auf zwei Feldern",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/06/image-14.png",
@@ -6552,15 +6487,15 @@
     "ist_gecrawlt": false,
     "quell_kategorie": "",
     "schwester_ids": [
+      103,
       104,
-      105,
-      107
+      106
     ],
-    "schwester_id": 104,
+    "schwester_id": 103,
     "schwester_titel": "2 GEGEN 2 AUF VIER TORE"
   },
   {
-    "id": 107,
+    "id": 106,
     "titel": "2 GEGEN 2 AUF VIER TORE",
     "quell_trainingseinheit": "Doppelt hält besser – Spielspaß auf zwei Feldern",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/06/image-15.png",
@@ -6615,76 +6550,15 @@
     "ist_gecrawlt": false,
     "quell_kategorie": "",
     "schwester_ids": [
+      103,
       104,
-      105,
-      106
+      105
     ],
-    "schwester_id": 104,
+    "schwester_id": 103,
     "schwester_titel": "PARALLELES 1 GEGEN 1 MIT EINDRIBBELN"
   },
   {
-    "id": 108,
-    "titel": "REIFEN SUCHEN",
-    "quell_trainingseinheit": "Reifen-Drills, direkte Duelle und Umschaltspiel",
-    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/06/image-11.png",
-    "grafik_dateiname": "uebung-137-reifen-suchen.png",
-    "trainingsphase": "Aufwärmen",
-    "kurzbeschreibung": "Spieler dribbeln um das Feld, auf Kommando stoppen sie ihren Ball in einem der ausgelegten Reifen.",
-    "aufbau": "Ein 20 x 20 Meter großes Feld mit vier Hütchen markieren und  Reifen im Feld verteilen. Einen Reifen weniger als es Spieler gibt. Falls keine Reifen vorhanden, Hütchen verwenden.",
-    "durchfuehrung": "Die Spieler dribbeln um das Feld. Auf Kommando des Trainers dribbeln sie in das Feld und stoppen ihren Ball in einem Reifen. Wer keinen findet, muss einmal um das Feld sprinten.",
-    "varianten": "Nur mit rechts oder links dribbeln. Mit der Sohle ziehen. Rückwarts ziehen. Oder Reifenanzahl reduzieren. ———- ———- PASSEN UND STOPPEN:REIFENPASS REIFENPASS Spieler passen sich im Reifenfeld und erzielen Punkte beim Stoppen in einem Reifen.",
-    "quell_url": "https://coachunited.de/reifen-drills-direkte-duelle-und-umschaltspiel/",
-    "jugend": [
-      "G-Jugend",
-      "F-Jugend"
-    ],
-    "skills": [
-      "Ballkontrolle",
-      "Dribbeln",
-      "Koordination",
-      "Raumverhalten"
-    ],
-    "coaching_fokus": "• Haltet den Ball nah am Fuß beim Dribbeln; • Schaut euch um, wo die freien Reifen sind; • Sprecht mit eurem Mitspieler, wenn ihr einen Reifen findet",
-    "leichter_machen": "• Mehr Reifen als Spieler auslegen; • Spielfeldg vergrößern",
-    "schwerer_machen": "• Nur mit rechts oder links dribbeln. Mit der Sohle ziehen. Rückwarts ziehen.; • Reifenanzahl reduzieren.",
-    "status": "veroeffentlicht",
-    "alt_titel": "Ball-Reifenjagd",
-    "seo_keyword": "Fußballübung Reifen Kinder",
-    "url_slug": "fussballubung-reifen-suchen-kinder",
-    "seo_meta_description": "Koordinative Fußballübung für Kinder von 6-12 Jahren zum Dribbeln, Ballkontrolle und Raumverständnis. Einfach durchzuführen mit Reifen oder Hütchen.",
-    "grafik_alt_text": "Kinder dribbeln in einem Fußballfeld und stoppen ihre Bälle in Reifen",
-    "grafik_description": "Die Grafik zeigt eine Übungsszene, in der Kinder in einem Fußballfeld mit Reifen dribbeln. Auf ein Kommando des Trainers stoppen sie ihre Bälle in den Reifen.",
-    "grafik_title": "Fußballübung Reifen Suchen für Kinder",
-    "grafik_caption": "Spieler dribbelten ihre Bälle in die Reifen auf dem Feld.",
-    "faq": [
-      {
-        "frage": "Wie viele Spieler können an dieser Übung teilnehmen?",
-        "antwort": "Die Übung ist für 8-12 Spieler geeignet. Mehr Spieler erfordern ein größeres Feld."
-      },
-      {
-        "frage": "Wie lange sollte die Übung dauern?",
-        "antwort": "Etwa 5-10 Minuten, je nach Alter und Leistungsstand der Spieler."
-      },
-      {
-        "frage": "Kann man die Übung auch für ältere Kinder anpassen?",
-        "antwort": "Ja, durch Erhöhen der Geschwindigkeit, Reduzieren der Reifen oder Einführen von Pässen kann die Übung an E-Jugendspieler angepasst werden."
-      }
-    ],
-    "referenz_grafik_url": "",
-    "original_aufbau": "",
-    "original_durchfuehrung": "",
-    "original_varianten": "",
-    "original_coaching_fokus": "",
-    "ist_gecrawlt": false,
-    "quell_kategorie": "",
-    "schwester_ids": [
-      11
-    ],
-    "schwester_id": 11,
-    "schwester_titel": "SCHNELL IN DEN REIFEN DRIBBELN"
-  },
-  {
-    "id": 109,
+    "id": 107,
     "titel": "4 GEGEN 4 MIT 4 BÄLLEN",
     "quell_trainingseinheit": "Volleys, Rauten und vier Bälle",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/06/image-10.png",
@@ -6744,69 +6618,7 @@
     "schwester_titel": null
   },
   {
-    "id": 110,
-    "titel": "SLALOM, FLANKENLAUF UND PASS INS 1 GEGEN 1",
-    "quell_trainingseinheit": "Dribbeln, flanken und Tore!",
-    "grafik_url": "https://coachunited.de/wp-content/uploads/2025/05/image-21.png",
-    "grafik_dateiname": "uebung-160-slalom-flankenlauf-und-pass-ins-1-gegen-1.png",
-    "trainingsphase": "Hauptteil",
-    "kurzbeschreibung": "Ein Spieler macht einen Slalom mit Flankenlauf und sucht seinen Mitspieler, der sich gegen einen Verteidiger durchsetzen muss.",
-    "aufbau": "Jugendtor mit Torhüter. Etwa 30m entfernt zwei Gruppen aufstellen. Eine Gruppe mit Ball, eine Gruppe ohne. Flache Hütchen wie in der Zeichnung markieren. Dritte Gruppe an Hütchen platzieren. Gruppe mit Ball an flachen Slalom-Hütchen positionieren. Gruppe mit Ball und eine Gruppe ohne Ball haben gleichfarbige Leibchen. Eine Verteidiger-Gruppe mit andersfarbigen Leibchen. Torzone vor dem Tor markieren.",
-    "durchfuehrung": "Spieler mit Ball startet ins Slalom um die Hütchen, dribbelt den Ball bis zum Eckhütchen. Gleichzeitig starten je ein Spieler aus den Gruppen ohne Ball im Wettrennen in die Torzone. Spieler mit Ball passt vom Eckhütchen auf den Mitspieler, der auf das Tor abschließt. Verteidiger versucht, Torabschluss zu verhindern. Wenn alle Spieler zwei Mal dran waren: Gruppen tauschen.",
-    "varianten": "",
-    "quell_url": "https://coachunited.de/dribbeln-flanken-und-tore/",
-    "jugend": [
-      "F-Jugend",
-      "E-Jugend",
-      "D-Jugend"
-    ],
-    "skills": [
-      "Passen",
-      "Ballkontrolle",
-      "Dribbeln",
-      "Torschuss"
-    ],
-    "coaching_fokus": "• Enge Ballführung im Slalom; • Kopf hoch vor der Flanke; • Fairer Zweikmapf im 1 gegen 1",
-    "leichter_machen": "• Flacher Pass statt Flanke; • Zeitlimit zum Torabschluss nach Flanke festlegen",
-    "schwerer_machen": "• Hohe Flanke Pflicht; • Verkleinerung der Torzone",
-    "status": "veroeffentlicht",
-    "schwester_ids": [
-      21
-    ],
-    "schwester_id": 21,
-    "schwester_titel": "FLANKENLAUF MIT TORABSCHLUSS",
-    "alt_titel": "Slalom, Flankenlauf & Eins-gegen-Eins",
-    "seo_keyword": "Fußballübung Koordination Kinder",
-    "url_slug": "slalom-flankenlauf-und-pass-ins-1-gegen-1",
-    "seo_meta_description": "Fußballübung mit Slalom, Flankenlauf und Abschluss im 1-gegen-1 für Kinder von 6-12 Jahren. Fördert Koordination, Ballkontrolle und Entscheidungsschnelligkeit.",
-    "grafik_alt_text": "Illustration einer dynamischen Fußballübung mit Slalom, Flankenpass und Abschluss",
-    "grafik_description": "Die Grafik zeigt den Ablauf der Fußballübung 'Slalom, Flankenlauf und Pass ins 1 gegen 1'. Ein Spieler dribbbelt den Ball durch einen Slalom, flankt dann auf einen Mitspieler, der im 1-gegen-1 zum Abschluss kommt.",
-    "grafik_title": "Fußballübung Koordination und Ballkontrolle",
-    "grafik_caption": "Spielerische Fußballübung für Kinder, die Koordination und Entscheidungsfähigkeit fördert.",
-    "faq": [
-      {
-        "frage": "Wie viele Spieler braucht man für diese Übung?",
-        "antwort": "Für diese Übung eignen sich 8-14 Spieler. Es werden je eine Angriffs- und Verteidigungsgruppe sowie eine Ballbesitzgruppe benötigt."
-      },
-      {
-        "frage": "Wie lange dauert die Übung?",
-        "antwort": "Die Übungsdauer beträgt ca. 10-15 Minuten. Es können mehrere Durchgänge mit Positionswechsel absolviert werden."
-      },
-      {
-        "frage": "Für welche Altersgruppen ist diese Übung geeignet?",
-        "antwort": "Diese Übung ist für Kinder im Alter von 8-12 Jahren (F- bis D-Jugend) gut geeignet. Sie fördert grundlegende technische und koordinative Fähigkeiten."
-      }
-    ],
-    "referenz_grafik_url": "",
-    "original_aufbau": "",
-    "original_durchfuehrung": "",
-    "original_varianten": "",
-    "original_coaching_fokus": "",
-    "ist_gecrawlt": false,
-    "quell_kategorie": ""
-  },
-  {
-    "id": 111,
+    "id": 108,
     "titel": "6 GEGEN 5 MIT HÜTCHENTOREN",
     "quell_trainingseinheit": "Mit Köpfchen und Körpereinsatz zum Erfolg",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2025/05/image-12.png",
@@ -6859,14 +6671,14 @@
     "ist_gecrawlt": false,
     "quell_kategorie": "",
     "schwester_ids": [
-      97,
-      98
+      96,
+      97
     ],
-    "schwester_id": 97,
+    "schwester_id": 96,
     "schwester_titel": "VOM WETTRENNEN INS 1 GEGEN 1"
   },
   {
-    "id": 112,
+    "id": 109,
     "titel": "DIAGONALE PÄSSE IM VIERECK",
     "quell_trainingseinheit": "Trainieren mit dem Ajax-Viereck",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/04/image-2.png",
@@ -6920,13 +6732,13 @@
     "ist_gecrawlt": false,
     "quell_kategorie": "",
     "schwester_ids": [
-      113
+      110
     ],
-    "schwester_id": 113,
+    "schwester_id": 110,
     "schwester_titel": "DAS AJAX-VIERECK"
   },
   {
-    "id": 113,
+    "id": 110,
     "titel": "DAS AJAX-VIERECK",
     "quell_trainingseinheit": "Trainieren mit dem Ajax-Viereck",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/04/image-3.png",
@@ -6938,7 +6750,6 @@
     "varianten": "",
     "quell_url": "https://coachunited.de/trainieren-mit-dem-ajax-viereck/",
     "jugend": [
-      "F-Jugend",
       "E-Jugend",
       "D-Jugend"
     ],
@@ -6953,9 +6764,9 @@
     "schwerer_machen": "• Tempo erhöhen.",
     "status": "veroeffentlicht",
     "schwester_ids": [
-      112
+      109
     ],
-    "schwester_id": 112,
+    "schwester_id": 109,
     "schwester_titel": "DIAGONALE PÄSSE IM VIERECK",
     "alt_titel": "Koordination und Zusammenspiel im Viereck",
     "seo_keyword": "Fußballübung Passen Kinder",
@@ -6988,7 +6799,7 @@
     "quell_kategorie": ""
   },
   {
-    "id": 114,
+    "id": 111,
     "titel": "IM DOPPELFELD TORE SAMMELN",
     "quell_trainingseinheit": "Trainieren mit dem Ajax-Viereck",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/04/image-10.jpg",
@@ -7016,9 +6827,9 @@
     "schwerer_machen": "• Vor einem Torerfolg muss jeder einzelne Spieler eines Teams den Ball mindestens ein Mal berührt haben.",
     "status": "veroeffentlicht",
     "schwester_ids": [
-      115
+      112
     ],
-    "schwester_id": 115,
+    "schwester_id": 112,
     "schwester_titel": "AUS DEM DOPPELFELD INS GROSSFELDSPIEL",
     "alt_titel": "Tore sammeln im Doppelfeld",
     "seo_keyword": "Fußballübung Tore schießen Kinder",
@@ -7051,7 +6862,7 @@
     "quell_kategorie": ""
   },
   {
-    "id": 115,
+    "id": 112,
     "titel": "AUS DEM DOPPELFELD INS GROSSFELDSPIEL",
     "quell_trainingseinheit": "Trainieren mit dem Ajax-Viereck",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/04/image-6.png",
@@ -7108,13 +6919,13 @@
     "ist_gecrawlt": false,
     "quell_kategorie": "",
     "schwester_ids": [
-      114
+      111
     ],
-    "schwester_id": 114,
+    "schwester_id": 111,
     "schwester_titel": "IM DOPPELFELD TORE SAMMELN"
   },
   {
-    "id": 116,
+    "id": 113,
     "titel": "2 GEGEN 2 GEGEN 2 TORHÜTER",
     "quell_trainingseinheit": "Trainieren mit dem Ajax-Viereck",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/04/image-11.jpg",
@@ -7175,7 +6986,7 @@
     "schwester_titel": null
   },
   {
-    "id": 117,
+    "id": 114,
     "titel": "PASS FORDERN",
     "quell_trainingseinheit": "Flexibel sein beim Torschuss",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/04/image-8.jpg",
@@ -7231,13 +7042,13 @@
     "ist_gecrawlt": false,
     "quell_kategorie": "",
     "schwester_ids": [
-      118
+      115
     ],
-    "schwester_id": 118,
+    "schwester_id": 115,
     "schwester_titel": "LAUFWEG BEACHTEN UND PASS FORDERN"
   },
   {
-    "id": 118,
+    "id": 115,
     "titel": "LAUFWEG BEACHTEN UND PASS FORDERN",
     "quell_trainingseinheit": "Flexibel sein beim Torschuss",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/04/image-9.jpg",
@@ -7264,9 +7075,9 @@
     "schwerer_machen": "",
     "status": "veroeffentlicht",
     "schwester_ids": [
-      117
+      114
     ],
-    "schwester_id": 117,
+    "schwester_id": 114,
     "schwester_titel": "PASS FORDERN",
     "alt_titel": "Passen und Laufen im Slalom",
     "seo_keyword": "Fußballübung Passen Kinder",
@@ -7299,7 +7110,7 @@
     "quell_kategorie": ""
   },
   {
-    "id": 119,
+    "id": 116,
     "titel": "TORSCHÜSSE IM SCHNELLEN WECHSEL",
     "quell_trainingseinheit": "Flexibel sein beim Torschuss",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/04/image.png",
@@ -7327,9 +7138,9 @@
     "schwerer_machen": "• Nur mit dem schwächeren Fuß schießen",
     "status": "veroeffentlicht",
     "schwester_ids": [
-      120
+      117
     ],
-    "schwester_id": 120,
+    "schwester_id": 117,
     "schwester_titel": "ERST SCHIESSEN, DANN TORWART SEIN",
     "alt_titel": "Fernschuss-Challenge",
     "seo_keyword": "Fußballübung Fernschuss Kinder",
@@ -7362,7 +7173,7 @@
     "quell_kategorie": ""
   },
   {
-    "id": 120,
+    "id": 117,
     "titel": "ERST SCHIESSEN, DANN TORWART SEIN",
     "quell_trainingseinheit": "Flexibel sein beim Torschuss",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/04/image.png",
@@ -7389,9 +7200,9 @@
     "schwerer_machen": "• Nur mit dem schwächeren Fuß schießen.",
     "status": "veroeffentlicht",
     "schwester_ids": [
-      119
+      116
     ],
-    "schwester_id": 119,
+    "schwester_id": 116,
     "schwester_titel": "FERNSCHUSS-SPIEL",
     "alt_titel": "Torwart für eine Minute",
     "seo_keyword": "Fußballübung Torhüter Kinder",
@@ -7424,7 +7235,7 @@
     "quell_kategorie": ""
   },
   {
-    "id": 121,
+    "id": 118,
     "titel": "FERNSCHUSS-SPIEL",
     "quell_trainingseinheit": "Flexibel sein beim Torschuss",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/04/image-1.png",
@@ -7484,7 +7295,7 @@
     "schwester_titel": null
   },
   {
-    "id": 122,
+    "id": 119,
     "titel": "PASS-FLOW IM SECHSECK",
     "quell_trainingseinheit": "Die Passjäger",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/04/image-4.jpg",
@@ -7544,7 +7355,7 @@
     "schwester_titel": null
   },
   {
-    "id": 123,
+    "id": 120,
     "titel": "PASSJÄGER VERMEIDEN",
     "quell_trainingseinheit": "Die Passjäger",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/04/image-5.jpg",
@@ -7602,7 +7413,7 @@
     "schwester_titel": null
   },
   {
-    "id": 124,
+    "id": 121,
     "titel": "PASSJÄGER UMSPIELEN UND TOR SCHIESSEN",
     "quell_trainingseinheit": "Die Passjäger",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/04/image-6.jpg",
@@ -7628,9 +7439,9 @@
     "schwerer_machen": "• Jagdfeld vergrößern; • Lupfer über den Jäger ist erlaubt",
     "status": "veroeffentlicht",
     "schwester_ids": [
-      125
+      122
     ],
-    "schwester_id": 125,
+    "schwester_id": 122,
     "schwester_titel": "JAGDFELD UMSPIELEN",
     "alt_titel": "TORE UMSPIELEN UND ABSCHLIESSEN",
     "seo_keyword": "Fußballübung Torschuss Kinder",
@@ -7663,7 +7474,7 @@
     "quell_kategorie": ""
   },
   {
-    "id": 125,
+    "id": 122,
     "titel": "JAGDFELD UMSPIELEN",
     "quell_trainingseinheit": "Die Passjäger",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/04/image-7.jpg",
@@ -7690,9 +7501,9 @@
     "schwerer_machen": "",
     "status": "veroeffentlicht",
     "schwester_ids": [
-      124
+      121
     ],
-    "schwester_id": 124,
+    "schwester_id": 121,
     "schwester_titel": "PASSJÄGER UMSPIELEN UND TOR SCHIESSEN",
     "alt_titel": "Koordination mit Pässen und Abschluss",
     "seo_keyword": "Fußballübung Passen Dribbeln Kinder",
@@ -7725,7 +7536,7 @@
     "quell_kategorie": ""
   },
   {
-    "id": 126,
+    "id": 123,
     "titel": "TORSCHUSS-VORSPRUNG FÜR SPIEL ERARBEITEN",
     "quell_trainingseinheit": "Die Passjäger",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/04/image-5.png",
@@ -7785,7 +7596,7 @@
     "schwester_titel": null
   },
   {
-    "id": 127,
+    "id": 124,
     "titel": "DOPPELPASS MIT DREIERHÜTCHEN",
     "quell_trainingseinheit": "Passen, passen, passen",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/04/image.jpg",
@@ -7841,13 +7652,13 @@
     "ist_gecrawlt": false,
     "quell_kategorie": "",
     "schwester_ids": [
-      128
+      125
     ],
-    "schwester_id": 128,
+    "schwester_id": 125,
     "schwester_titel": "DIE HÜTCHEN MÜSSEN FALLEN"
   },
   {
-    "id": 128,
+    "id": 125,
     "titel": "DIE HÜTCHEN MÜSSEN FALLEN",
     "quell_trainingseinheit": "Passen, passen, passen",
     "quell_url": "https://coachunited.de/passen-passen-passen/",
@@ -7882,9 +7693,9 @@
     "status": "veroeffentlicht",
     "nachtraeglich_eingefuegt": true,
     "schwester_ids": [
-      127
+      124
     ],
-    "schwester_id": 127,
+    "schwester_id": 124,
     "schwester_titel": "DOPPELPASS MIT DREIERHÜTCHEN",
     "alt_titel": "Hütchenjagd - Teamwork im Visier",
     "faq": [
@@ -7911,7 +7722,7 @@
     "quell_kategorie": ""
   },
   {
-    "id": 129,
+    "id": 126,
     "titel": "PASS-, DRIBBEL- UND SCHUSSPARCOURS",
     "quell_trainingseinheit": "Passen, passen, passen",
     "quell_url": "https://coachunited.de/passen-passen-passen/",
@@ -7970,13 +7781,13 @@
     "ist_gecrawlt": false,
     "quell_kategorie": "",
     "schwester_ids": [
-      130
+      127
     ],
-    "schwester_id": 130,
+    "schwester_id": 127,
     "schwester_titel": "VOM PASSERFOLG IN DIE ÜBERZAHLSITUATION"
   },
   {
-    "id": 130,
+    "id": 127,
     "titel": "VOM PASSERFOLG IN DIE ÜBERZAHLSITUATION",
     "quell_trainingseinheit": "Passen, passen, passen",
     "quell_url": "https://coachunited.de/passen-passen-passen/",
@@ -8010,9 +7821,9 @@
     "status": "veroeffentlicht",
     "nachtraeglich_eingefuegt": true,
     "schwester_ids": [
-      129
+      126
     ],
-    "schwester_id": 129,
+    "schwester_id": 126,
     "schwester_titel": "PASS-, DRIBBEL- UND SCHUSSPARCOURS",
     "alt_titel": "Vom Passспiel in die Überzahl",
     "faq": [
@@ -8039,7 +7850,7 @@
     "quell_kategorie": ""
   },
   {
-    "id": 131,
+    "id": 128,
     "titel": "ALS BELOHNUNG AUFS GROSSE TOR SPIELEN",
     "quell_trainingseinheit": "Passen, passen, passen",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/04/image-4.png",
@@ -8098,7 +7909,7 @@
     "schwester_titel": null
   },
   {
-    "id": 132,
+    "id": 129,
     "titel": "DYNAMISCHE DREIECKE",
     "quell_trainingseinheit": "Dreiecke, Überzahl und 2 gegen 2 gegen 2",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/03/image-30.jpg",
@@ -8154,13 +7965,13 @@
     "ist_gecrawlt": false,
     "quell_kategorie": "",
     "schwester_ids": [
-      133
+      130
     ],
-    "schwester_id": 133,
+    "schwester_id": 130,
     "schwester_titel": "DREIECKE MIT MITTIGER ANSPIELSTATION"
   },
   {
-    "id": 133,
+    "id": 130,
     "titel": "DREIECKE MIT MITTIGER ANSPIELSTATION",
     "quell_trainingseinheit": "Dreiecke, Überzahl und 2 gegen 2 gegen 2",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/03/image-31.jpg",
@@ -8186,9 +7997,9 @@
     "schwerer_machen": "• One-Touch oder nur zwei ballkontakte erlauben; • Nur mit schwachem Fuß",
     "status": "veroeffentlicht",
     "schwester_ids": [
-      132
+      129
     ],
-    "schwester_id": 132,
+    "schwester_id": 129,
     "schwester_titel": "DYNAMISCHE DREIECKE",
     "alt_titel": "DREIECKE MIT ZENTRALER AUFNAHME-STATION",
     "seo_keyword": "Fußballübung Raumaufteilung Kinder",
@@ -8221,7 +8032,7 @@
     "quell_kategorie": ""
   },
   {
-    "id": 134,
+    "id": 131,
     "titel": "ÜBERZAHL UND UNTERZAHL",
     "quell_trainingseinheit": "Dreiecke, Überzahl und 2 gegen 2 gegen 2",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/03/image-32.jpg",
@@ -8278,13 +8089,13 @@
     "ist_gecrawlt": false,
     "quell_kategorie": "",
     "schwester_ids": [
-      135
+      132
     ],
-    "schwester_id": 135,
+    "schwester_id": 132,
     "schwester_titel": "ÜBERZAHL CLEVER NUTZEN"
   },
   {
-    "id": 135,
+    "id": 132,
     "titel": "ÜBERZAHL CLEVER NUTZEN",
     "quell_trainingseinheit": "Dreiecke, Überzahl und 2 gegen 2 gegen 2",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/03/image-8.png",
@@ -8311,9 +8122,9 @@
     "schwerer_machen": "• 1-2 Anspiele zu den Anspielstationen sind Pflicht pro Angriff.; • Angriffe auf 15 Sekunden limitieren.",
     "status": "veroeffentlicht",
     "schwester_ids": [
-      134
+      131
     ],
-    "schwester_id": 134,
+    "schwester_id": 131,
     "schwester_titel": "ÜBERZAHL UND UNTERZAHL",
     "alt_titel": "Überzahl geschickt ausspielen",
     "seo_keyword": "Fußballübung Überzahl Kinder",
@@ -8346,7 +8157,7 @@
     "quell_kategorie": ""
   },
   {
-    "id": 136,
+    "id": 133,
     "titel": "EINWURF ÜBEN",
     "quell_trainingseinheit": "Einwürfe und 1 gegen 1 üben",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/03/image-25.jpg",
@@ -8398,13 +8209,13 @@
     "ist_gecrawlt": false,
     "quell_kategorie": "",
     "schwester_ids": [
-      137
+      134
     ],
-    "schwester_id": 137,
+    "schwester_id": 134,
     "schwester_titel": "SCHNELLEN EINWURF ÜBEN"
   },
   {
-    "id": 137,
+    "id": 134,
     "titel": "SCHNELLEN EINWURF ÜBEN",
     "quell_trainingseinheit": "Einwürfe und 1 gegen 1 üben",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/03/image-27.jpg",
@@ -8428,9 +8239,9 @@
     "schwerer_machen": "• Wettbewerb: Welches Paar hat zuerst den Pass korrekt ausgeführt, angenommen und danach kontrolliert wieder zur eigenen Linie zurcükgedribbelt?",
     "status": "veroeffentlicht",
     "schwester_ids": [
-      136
+      133
     ],
-    "schwester_id": 136,
+    "schwester_id": 133,
     "schwester_titel": "EINWURF ÜBEN",
     "alt_titel": "Schnelle Einwürfe gezielt üben",
     "seo_keyword": "Fußballübung Einwürfe Kinder",
@@ -8463,7 +8274,7 @@
     "quell_kategorie": ""
   },
   {
-    "id": 138,
+    "id": 135,
     "titel": "DRIBBELN, SCHIEßEN UND INS 1 GEGEN 1",
     "quell_trainingseinheit": "Einwürfe und 1 gegen 1 üben",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/03/image-26.jpg",
@@ -8519,13 +8330,13 @@
     "ist_gecrawlt": true,
     "quell_kategorie": "",
     "schwester_ids": [
-      139
+      136
     ],
-    "schwester_id": 139,
+    "schwester_id": 136,
     "schwester_titel": "VOM 1 GEGEN 2 INS 2 GEGEN 2"
   },
   {
-    "id": 139,
+    "id": 136,
     "titel": "VOM 1 GEGEN 2 INS 2 GEGEN 2",
     "quell_trainingseinheit": "Einwürfe und 1 gegen 1 üben",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/03/image-28.jpg",
@@ -8580,13 +8391,13 @@
     "ist_gecrawlt": true,
     "quell_kategorie": "",
     "schwester_ids": [
-      138
+      135
     ],
-    "schwester_id": 138,
+    "schwester_id": 135,
     "schwester_titel": "DRIBBELN, SCHIEßEN UND INS 1 GEGEN 1"
   },
   {
-    "id": 140,
+    "id": 137,
     "titel": "ZWEI SPIELE, EIN FELD",
     "quell_trainingseinheit": "Einwürfe und 1 gegen 1 üben",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/03/image-29.jpg",
@@ -8646,7 +8457,7 @@
     "schwester_titel": null
   },
   {
-    "id": 141,
+    "id": 138,
     "titel": "SAUBERE DIAGONAL-PÄSSE",
     "quell_trainingseinheit": "Erst diagonale Pässe, dann Fußballkegeln",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/03/image-20.jpg",
@@ -8702,13 +8513,13 @@
     "ist_gecrawlt": false,
     "quell_kategorie": "",
     "schwester_ids": [
-      142
+      139
     ],
-    "schwester_id": 142,
+    "schwester_id": 139,
     "schwester_titel": "SAUBERE DIAGONAL-SCHÜSSE"
   },
   {
-    "id": 142,
+    "id": 139,
     "titel": "Dribbeln und abschließen",
     "quell_trainingseinheit": "Erst diagonale Pässe, dann Fußballkegeln",
     "quell_url": "https://coachunited.de/erst-diagonale-passe-dann-fusballkegeln/",
@@ -8765,13 +8576,13 @@
     "ist_gecrawlt": false,
     "quell_kategorie": "",
     "schwester_ids": [
-      141
+      138
     ],
-    "schwester_id": 141,
+    "schwester_id": 138,
     "schwester_titel": "SAUBERE DIAGONAL-PÄSSE"
   },
   {
-    "id": 143,
+    "id": 140,
     "titel": "MIT KEGELTREFFERN TORSCHÜSSE GEWINNEN",
     "quell_trainingseinheit": "Erst diagonale Pässe, dann Fußballkegeln",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/03/image-22.jpg",
@@ -8826,14 +8637,14 @@
     "ist_gecrawlt": false,
     "quell_kategorie": "",
     "schwester_ids": [
-      145,
-      144
+      142,
+      141
     ],
-    "schwester_id": 145,
+    "schwester_id": 142,
     "schwester_titel": "ÜBERZAHL-JOKER"
   },
   {
-    "id": 144,
+    "id": 141,
     "titel": "KEGELN, SPIELEN UND ZURÜCK",
     "quell_trainingseinheit": "Erst diagonale Pässe, dann Fußballkegeln",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/03/image-23.jpg",
@@ -8858,10 +8669,10 @@
     "schwerer_machen": "• Begrenzt die Ballkontakte pro Spieler auf maximal 2",
     "status": "veroeffentlicht",
     "schwester_ids": [
-      145,
-      143
+      142,
+      140
     ],
-    "schwester_id": 145,
+    "schwester_id": 142,
     "schwester_titel": "ÜBERZAHL-JOKER",
     "alt_titel": "KEGELN, TORE SCHIESSEN UND WECHSELN",
     "seo_keyword": "Fußballübung Koordination Kinder",
@@ -8894,7 +8705,7 @@
     "quell_kategorie": ""
   },
   {
-    "id": 145,
+    "id": 142,
     "titel": "ÜBERZAHL-JOKER",
     "quell_trainingseinheit": "Erst diagonale Pässe, dann Fußballkegeln",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/03/image-24.jpg",
@@ -8946,14 +8757,14 @@
     "ist_gecrawlt": false,
     "quell_kategorie": "",
     "schwester_ids": [
-      144,
-      143
+      141,
+      140
     ],
-    "schwester_id": 144,
+    "schwester_id": 141,
     "schwester_titel": "KEGELN, SPIELEN UND ZURÜCK"
   },
   {
-    "id": 146,
+    "id": 143,
     "titel": "FLEXIBLER DRIBBELSTERN",
     "quell_trainingseinheit": "Vom Dribbelstern zum Spiel auf ein Tor",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/03/image-16.jpg",
@@ -9008,13 +8819,13 @@
     "ist_gecrawlt": false,
     "quell_kategorie": "",
     "schwester_ids": [
-      147
+      144
     ],
-    "schwester_id": 147,
+    "schwester_id": 144,
     "schwester_titel": "FLEXIBLER DRIBBELSTERN MIT BALLWECHSEL"
   },
   {
-    "id": 147,
+    "id": 144,
     "titel": "FLEXIBLER DRIBBELSTERN MIT BALLWECHSEL",
     "quell_trainingseinheit": "Vom Dribbelstern zum Spiel auf ein Tor",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/03/image-17.jpg",
@@ -9041,9 +8852,9 @@
     "schwerer_machen": "",
     "status": "veroeffentlicht",
     "schwester_ids": [
-      146
+      143
     ],
-    "schwester_id": 146,
+    "schwester_id": 143,
     "schwester_titel": "FLEXIBLER DRIBBELSTERN",
     "alt_titel": "Dynamisches Dribbeltraining mit Ballwechsel",
     "seo_keyword": "Fußballübung Dribbling Kinder",
@@ -9076,7 +8887,7 @@
     "quell_kategorie": ""
   },
   {
-    "id": 148,
+    "id": 145,
     "titel": "BESCHÜTZ DEIN TOR!",
     "quell_trainingseinheit": "Vom Dribbelstern zum Spiel auf ein Tor",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/03/image-18.jpg",
@@ -9135,13 +8946,13 @@
     "ist_gecrawlt": false,
     "quell_kategorie": "",
     "schwester_ids": [
-      149
+      146
     ],
-    "schwester_id": 149,
+    "schwester_id": 146,
     "schwester_titel": "DRIBBEL-TORE ZUM SIEG"
   },
   {
-    "id": 149,
+    "id": 146,
     "titel": "DRIBBEL-TORE ZUM SIEG",
     "quell_trainingseinheit": "Vom Dribbelstern zum Spiel auf ein Tor",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/03/image-7.png",
@@ -9197,13 +9008,13 @@
     "ist_gecrawlt": false,
     "quell_kategorie": "",
     "schwester_ids": [
-      148
+      145
     ],
-    "schwester_id": 148,
+    "schwester_id": 145,
     "schwester_titel": "BESCHÜTZ DEIN TOR!"
   },
   {
-    "id": 150,
+    "id": 147,
     "titel": "SPIEL AUF EIN TOR",
     "quell_trainingseinheit": "Vom Dribbelstern zum Spiel auf ein Tor",
     "grafik_url": "https://coachunited.de/wp-content/uploads/2026/03/image-19.jpg",
