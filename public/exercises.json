@@ -8644,5 +8644,130 @@
     "schwester_ids": [],
     "schwester_id": null,
     "schwester_titel": null
+  },
+  {
+    "id": 141,
+    "titel": "SAUBERE DIAGONAL-PÄSSE",
+    "quell_trainingseinheit": "Erst diagonale Pässe, dann Fußballkegeln",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/03/image-20.jpg",
+    "grafik_dateiname": "uebung-204-saubere-diagonal-paesse.jpg",
+    "trainingsphase": "Aufwärmen",
+    "kurzbeschreibung": "Die Spieler passen diagonal zum Mitspieler und laufen ihrem Ball nach.",
+    "aufbau": "20mx20m großes Feld mit Hütchen markieren. Vier Teams einteilen. Zwei Bälle bereitstellen.",
+    "durchfuehrung": "Jeweils der erste Spieler mit Ball passt diagonal zum Mitspieler und läuft danach seinem ball hinterher und stellt sich hinten an. Spieler und Läufer achten darauf, dass sie sich und die Bälle im Feld nicht behindern (falls das nicht klappt, Spieler außen ums Feld laufen lassen.)",
+    "varianten": "a) Mit vier Bällen spielen. b) Erst ein paar Schritte eindribbeln. SAUBERE DIAGONAL-SCHÜSSE SAUBERE DIAGONAL-SCHÜSSE Die Spieler dribbeln zur Markierung, drehen sich und schießen aufs Minitor.",
+    "quell_url": "https://coachunited.de/erst-diagonale-passe-dann-fusballkegeln/",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Dribbeln",
+      "Raumverhalten"
+    ],
+    "coaching_fokus": "• Saubere Annahme, sauberer Pass; • Tempo beim Nachlaufen",
+    "leichter_machen": "• Erst ein paar Schritte eindribbeln, bevor der Diagonalpass gespielt wird; • Länge der Diagonalpässe verkürzen (Viereck verkleinern)",
+    "schwerer_machen": "• Mit vier Bällen gleichzeitig spielen",
+    "status": "veroeffentlicht",
+    "alt_titel": "Präzise Diagonal-Pässe spielen",
+    "seo_keyword": "Fußballübung Diagonal-Pässe Kinder",
+    "url_slug": "fussballubung-diagonal-passe-kinder",
+    "seo_meta_description": "Zwei Nachwuchsfußballer spielen einen präzisen Diagonalpass auf dem Trainingsplatz",
+    "grafik_alt_text": "Präzise Diagonalpässe im Kinder-Fußballtraining",
+    "grafik_description": "Die Grafik zeigt zwei junge Fußballer, die einen präzisen Diagonalpass auf einem markierten Spielfeld ausführen. Sie laufen dann ihrem Pass hinterher, um den Ball aufzunehmen.",
+    "grafik_title": "Fußballspieler üben präzise Diagonalpässe im Training",
+    "grafik_caption": "Die Grafik zeigt zwei junge Fußballer, die einen präzisen Diagonalpass auf einem markierten Spielfeld ausführen. Sie laufen dann ihrem Pass hinterher, um den Ball aufzunehmen.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler benötigt man für diese Übung?",
+        "antwort": "Für die Grundversion eignen sich 8-12 Spieler. Bei Bedarf ein weiteres Viereck aufbauen. "
+      },
+      {
+        "frage": "Wie lange sollte man diese Übung durchführen?",
+        "antwort": "Je nach Alter und Leistungsstand der Kinder empfehlen sich 5-10 Minuten, damit es nicht langweilig wird. "
+      },
+      {
+        "frage": "Kann man diese Übung auch für ältere Jugendliche nutzen?",
+        "antwort": "Ja, die Grundübung lässt sich gut an die D- und C-Jugend anpassen, indem man beispielsweise das Spielfeld vergrößert oder schnellere Pässe fordert."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [
+      142
+    ],
+    "schwester_id": 142,
+    "schwester_titel": "SAUBERE DIAGONAL-SCHÜSSE"
+  },
+  {
+    "id": 142,
+    "titel": "Dribbeln und abschließen",
+    "quell_trainingseinheit": "Erst diagonale Pässe, dann Fußballkegeln",
+    "quell_url": "https://coachunited.de/erst-diagonale-passe-dann-fusballkegeln/",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/03/image-21.jpg",
+    "trainingsphase": "Aufwärmen",
+    "kurzbeschreibung": "Die Spieler dribbeln zur Markierung, drehen sich und schießen aufs Minitor.",
+    "aufbau": "20mx20m großes Feld mit Hütchen markieren. Etwa 3m vor zwei Eckhütchen ein weiteres Hütchen platzieren. Zwei Minitore Rücken an Rücken ins Zentrum stellen. Zwei Teams diagonal voneinander aufstellen. Zwei Bälle bereitstellen. ",
+    "durchfuehrung": "Die ersten Spieler dribbeln vom Starthütchen zum Markierungshütchen, umdribbeln es und schließen aufs Minitor ab. Danach stellen sie sich in der anderen Gruppe hinten an.",
+    "varianten": "Als Wettbewerb zwischen den beiden Teams durchführen.",
+    "coaching_fokus": "• Tempo beim Dribbling; • Enge Ballführung; • Kopf heben vor Abschluss",
+    "leichter_machen": "",
+    "schwerer_machen": "• Erhöhung des Tempos durch Wettbewerbscharakter",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Ballkontrolle",
+      "Dribbeln",
+      "Torschuss",
+      "Koordination"
+    ],
+    "seo_keyword": "Fußballübung Diagonal-Schüsse Kinder",
+    "url_slug": "fussballubung-diagonal-schusse-kinder",
+    "seo_meta_description": "Präzise Diagonal-Schüsse für Kinder trainieren. Die Übung fördert Ballkontrolle, Dribbeln und Torschuss im kompakten Spielfeld.",
+    "grafik_alt_text": "Kinder führen Diagonal-Schüsse auf kleine Tore in einem markierten Spielfeld aus",
+    "grafik_description": "In der Fußballübung 'Saubere Diagonal-Schüsse' dribbeln Kinder zu einem Hütchen, drehen sich und schießen aufs Minitor. Die Spieler trainieren so Ballkontrolle, Dribbeln und Torschuss.",
+    "grafik_title": "Fußballübung Diagonal-Schüsse für Kinder",
+    "grafik_caption": "Kinder trainieren präzise Diagonal-Schüsse auf kleine Tore",
+    "status": "veroeffentlicht",
+    "nachtraeglich_eingefuegt": true,
+    "alt_titel": "Präzise Diagonal-Schüsse trainieren",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler braucht man für die Übung?",
+        "antwort": "Optimal sind 8-12 Spieler, damit alle regelmäßig an die Reihe kommen. Zweites Viereck kann errichtet werden."
+      },
+      {
+        "frage": "Wie lange sollte man die Übung machen?",
+        "antwort": "Etwa 10-15 Minuten, je nach Alter und Konzentration der Kinder. Wichtig ist, dass die Spieler motiviert und fokussiert bleiben."
+      },
+      {
+        "frage": "Für welche Altersgruppen eignet sich die Übung?",
+        "antwort": "Die Übung ist bestens geeignet für die f-Jugend (6-8 Jahre) bis zur D-Jugend (10-12 Jahre). Sie fördert wichtige fußballerische Grundlagen."
+      }
+    ],
+    "grafik_dateiname": "",
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [
+      141
+    ],
+    "schwester_id": 141,
+    "schwester_titel": "SAUBERE DIAGONAL-PÄSSE"
   }
 ]
