@@ -9138,6 +9138,127 @@
     "quell_kategorie": ""
   },
   {
+    "id": 149,
+    "titel": "EIN WETTLAUF, ZWEI TORSCHÜSSE",
+    "quell_trainingseinheit": "Pässe anfordern",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/03/image-9.jpg",
+    "grafik_dateiname": "",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "Zwei Spieler sprinten auf Kommando mit Ball in die Torzone. Der Gewinner darf schießen, der Verlierer muss einen Umweg laufen.  ",
+    "aufbau": "Jugendtor mit Torhüter aufstellen. Davor ein etwa 10mX10m großes Feld als Torzone markieren. Zwei Gruppen einteilen und jeweils an einem Starthütchen platzieren. Alle Spieler haben einen Ball.",
+    "durchfuehrung": "Zwei Spieler sprinten auf Kommando mit Ball in die Torzone. Derjenige, der als erstes ankommt, darf innerhalb der Torzone schießen. Der zweite muss das diagonal gegenüberliegende Hütchen umdribbeln und dann aus spitzem Winkel abschließen.  ",
+    "varianten": "a) Ball in Hand tragen und per Drop-Kick oder Volley abschließen. b) Wettbewerb-Modus über 6 Minuten.",
+    "quell_url": "https://coachunited.de/passen-anfordern/",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Dribbeln",
+      "Torschuss"
+    ],
+    "coaching_fokus": "• Hohes Tempo; • Schnelles Umschalten nach verlorenem Wettlauf",
+    "leichter_machen": "• Ball in Hand tragen und per Drop-Kick abschließen",
+    "schwerer_machen": "• Wettbewerbs-Modus über 6 Minuten",
+    "status": "veroeffentlicht",
+    "alt_titel": "Zielschuss-Wettrennen mit Hürdendribbling",
+    "seo_keyword": "Dynamische Fußballübung für Kinder (6-12 Jahre) zum Üben von Torschuss und Dribbling. Mit Wettbewerbs-Variante.",
+    "url_slug": "fussballubung-torschuss-kinder",
+    "seo_meta_description": "Fußballübung Torschuss Kinder",
+    "grafik_alt_text": "Kinder üben Torschuss und Dribbling in einer dynamischen Fußballübung.",
+    "grafik_description": "Verkleinerung der Torzone und Erlaubnis, den Ball in der Hand zu tragen, machen die Übung für G- und F-Jugendspieler geeignet.",
+    "grafik_title": "Die Grafik zeigt eine Fußballübung, bei der zwei Kinder im Wettlauf mit Ball in eine Torzone rennen und dort einen Torschuss platzieren. Ein Torwart ist ebenfalls im Bild.",
+    "grafik_caption": "Die Grafik zeigt eine Fußballübung, bei der zwei Kinder im Wettlauf mit Ball in eine Torzone rennen und dort einen Torschuss platzieren. Ein Torwart ist ebenfalls im Bild.",
+    "faq": [
+      {
+        "frage": "Wie kann ich die Übungsdauer variieren?",
+        "antwort": "Du kannst die Dauer der Übung nach Belieben gestalten. "
+      },
+      {
+        "frage": "Welche Altersstufe ist diese Übung am besten geeignet?",
+        "antwort": "Die Übung eignet sich ab der F-Jugend. "
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [
+      150,
+      152
+    ],
+    "schwester_id": 150,
+    "schwester_titel": "EIN SPIELER, ZWEI TORSCHÜSSE"
+  },
+  {
+    "id": 150,
+    "titel": "EIN SPIELER, ZWEI TORSCHÜSSE",
+    "quell_trainingseinheit": "Pässe anfordern",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/03/image-11.jpg",
+    "grafik_dateiname": "",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "Ein Spieler startet auf das erste Tor und schließt per Volley ab. Dann sprintet er zum zweiten Tor und schießt per Vollspann. ",
+    "aufbau": "Zwei Jugendtore in etwa 30m Entfernung aufbauen. Beide mit Torhütern. Jeweils einen Trainer mit Bällen neben den Toren postieren. (Falls kein zweiter Trainer vorhanden, einen spielstarken Spieler dort postieren). Alle Spieler mittig am Starthütchen ohne Ball platzieren.",
+    "durchfuehrung": "Ein Spieler startet auf das erste Tor, erhält per Wurf ein hohes Zuspiel vom Trainer und versucht, Volley abzuschließen. Dann sprintet er direkt zum anderen Tor, erhält vom zweiten Trainer einen flachen Ball, den er direkt per Vollspann abschließt. Schon nachdem der erste Schuss abgegeben wurde, startet direkt der zweite Spieler.",
+    "varianten": "Statt Volley: Schuss mit der Innenseite beim ersten Tor.",
+    "quell_url": "https://coachunited.de/passen-anfordern/",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Ballkontrolle",
+      "Torschuss",
+      "Schnelligkeit"
+    ],
+    "coaching_fokus": "• Konzentrierter Vollspannschuss aufs Tor; • Gute Wurfqualität der Trainer (nicht zu scharf); • Hohes Tempo",
+    "leichter_machen": "• Entfernung zwischen den Toren reduzieren; • Zuspiele flach statt hoch",
+    "schwerer_machen": "",
+    "status": "veroeffentlicht",
+    "alt_titel": "Ziel-Doppelschuss im Sprinterduell",
+    "seo_keyword": "Fußballübung Torschuss Kinder",
+    "url_slug": "fussballubung-torschuss-kinder",
+    "seo_meta_description": "Abwechslungsreiche Fußballübung zum Torschusstraining für Kinder von 6-12 Jahren. Trainiert Konzentration, Schnelligkeit und Technik.",
+    "grafik_alt_text": "Zwei Kinder schießen mit hoher Intensität auf Tore in etwa 30 Metern Entfernung.",
+    "grafik_description": "Auf dem Bild ist eine Fußballübung zu sehen, bei der zwei Spieler im Sprint auf zwei Tore zulaufen und jeweils einen Torschuss ausführen. Der eine Schuss ist ein Volley, der andere ein Vollspannschuss.",
+    "grafik_title": "Torschussübung Fußball Kinder",
+    "grafik_caption": "Dynamische Fußballübung zum Torschusstraining für Kinder.",
+    "faq": [
+      {
+        "frage": "Wie kann ich die Übung für jüngere Kinder anpassen?",
+        "antwort": "Eher nicht. "
+      },
+      {
+        "frage": "Wie lange sollte diese Übung dauern?",
+        "antwort": "Je nach Gruppengröße und Intensität 10-15 Minuten."
+      },
+      {
+        "frage": "Welche Varianten gibt es noch?",
+        "antwort": "Zusätzlich zum Volley- und Vollspannschuss auch Schüsse mit der Innenseite oder dem Außenrist ausprobieren."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [
+      149,
+      152
+    ],
+    "schwester_id": 149,
+    "schwester_titel": "EIN WETTLAUF, ZWEI TORSCHÜSSE"
+  },
+  {
     "id": 151,
     "titel": "SCHÜSSE MIT FARBREIHENFOLGE",
     "quell_trainingseinheit": "Training mit Farbsignalen",
