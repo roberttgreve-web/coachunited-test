@@ -9074,5 +9074,132 @@
     "original_coaching_fokus": "",
     "ist_gecrawlt": false,
     "quell_kategorie": ""
+  },
+  {
+    "id": 148,
+    "titel": "BESCHÜTZ DEIN TOR!",
+    "quell_trainingseinheit": "Vom Dribbelstern zum Spiel auf ein Tor",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/03/image-18.jpg",
+    "grafik_dateiname": "uebung-210-beschuetz-dein-tor.jpg",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "2er-Teams müssen ihr eigenes Hütchentor beschützen und gleichzeitig versuchen, bei den gegnerischen Teams ein Tor zu erzielen.",
+    "aufbau": "2er-Teams einteilen. Für jedes Team ein Hütchentor aufstellen und jeweils einem 2er-Team ein Tor zuteilen. Drei Bälle ins Feld legen. (Bei größeren Gruppen weitere Hütchentore hinzufügen).",
+    "durchfuehrung": "Alle 2er-Teams spielen mit den drei Bällen im Feld. Jedes Team muss aufpassen, dass auf das eigene Hütchentor kein Tor erzielt wird. Gleichzeitig versuchen alle, auf die Hütchentore der anderen Teams ein Tor zu erzielen, in dem sie durch das Hütchentor dribbeln. Sobald auf ein Hütchentor ein Tor erzielt wurde, wird ein Hütchen hingelegt. Sobald auf das gleiche Hütchentor ein zweites Tor erzielt wurde, wird das Hütchentor entfernt und das 2er-Team ist für diese Runde draußen. Das letzte Team, das im Spiel verbleibt, gewinnt die Runde.",
+    "varianten": "",
+    "quell_url": "https://coachunited.de/vom-dribbelstern-zum-spiel-auf-ein-tor/",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend",
+      "E-Jugend"
+    ],
+    "skills": [
+      "Ballkontrolle",
+      "Dribbeln",
+      "Torschuss",
+      "Zweikampf",
+      "Raumverhalten",
+      "Verteidigen",
+      "Kommunikation"
+    ],
+    "coaching_fokus": "• Gute Balance zwischen Offensive und Defensive halten; • Trotz Wuseligkeit den Blick für den freien Ball haben; • Miteinander kommunizieren",
+    "leichter_machen": "• Nur ein Ball im Spiel; • Größere Hütchentore zum Erzielen der Tore",
+    "schwerer_machen": "• Mehr Bälle gleichzeitig im Spiel; • Kleinere Hütchentore zum Verteidigen",
+    "status": "veroeffentlicht",
+    "alt_titel": "Tore schützen und erzielen",
+    "seo_keyword": "Fußballübung Tore schützen Kinder",
+    "url_slug": "fussballubung-tore-schutzen-kinder",
+    "seo_meta_description": "Kinder spielen in Teams Fußball und versuchen, durch Hütchentore zu dribbeln",
+    "grafik_alt_text": "Kinder-Fußballübung: Tore schützen und erzielen",
+    "grafik_description": "Das Bild zeigt zwei Kinder-Fußballteams, die auf einem Fußballfeld gegeneinander spielen. Jedes Team hat ein Hütchentor, das es verteidigen muss. Die Kinder dribbeln mit dem Ball, um das gegnerische Tor zu erzielen.",
+    "grafik_title": "Kinder üben das Verteidigen und Angreifen in Teams",
+    "grafik_caption": "Das Bild zeigt zwei Kinder-Fußballteams, die auf einem Fußballfeld gegeneinander spielen. Jedes Team hat ein Hütchentor, das es verteidigen muss. Die Kinder dribbeln mit dem Ball, um das gegnerische Tor zu erzielen.",
+    "faq": [
+      {
+        "frage": "Wie viele Kinder können an dieser Übung teilnehmen?",
+        "antwort": "Die Übung ist für Gruppen von 8-16 Kindern geeignet. Bei größeren Gruppen können weitere Hütchentore aufgestellt werden."
+      },
+      {
+        "frage": "Wie lange sollte die Übung dauern?",
+        "antwort": "Die Übung ist für 10-15 Minuten Spieldauer ausgelegt. Passen Sie die Zeit an die Konzentrationsfähigkeit der Kinder an."
+      },
+      {
+        "frage": "Kann man die Übung für verschiedene Altersgruppen anpassen?",
+        "antwort": "Ja, die Übung lässt sich gut an G-Jugend, F-Jugend und E-Jugend anpassen, indem man die Größe der Hütchentore, die Anzahl der Bälle und die Spielfeldgröße anpasst."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [
+      149
+    ],
+    "schwester_id": 149,
+    "schwester_titel": "DRIBBEL-TORE ZUM SIEG"
+  },
+  {
+    "id": 149,
+    "titel": "DRIBBEL-TORE ZUM SIEG",
+    "quell_trainingseinheit": "Vom Dribbelstern zum Spiel auf ein Tor",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/03/image-7.png",
+    "grafik_dateiname": "uebung-211-dribbel-tore-zum-sieg.png",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "Zwei Teams versuchen durch die Hütchentore zu dribbeln und den Sieg zu holen.",
+    "aufbau": "Sechs Hütechntore aufstellen. Zwei Teams einteilen und mit Leibchen ausstatten. Einen Ball.",
+    "durchfuehrung": "Zwei Teams spielen gegeneinander und versuchen durch Dribblings auf Hütchentore, Punkte zu erzielen. Sie dürfen auf alle Hütchentore erzielt werden.",
+    "varianten": "Zahl der Bälle erhöhen/verringern. SPIEL AUF EIN TOR SPIEL AUF EIN TOR Ein Team greift an, das andere verteidigt. Sobald das verteidigende Team den Ball über die Grundlinie gedribbelt hat, wechseln die Rollen.",
+    "quell_url": "https://coachunited.de/vom-dribbelstern-zum-spiel-auf-ein-tor/",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend",
+      "E-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Dribbeln",
+      "Torschuss"
+    ],
+    "coaching_fokus": "• Haltet den Ball nah am Fuß beim Dribbling; • Keine Schüsse erlaubt, nur Dribblings durch die Hütchentore",
+    "leichter_machen": "• Weitere Tore aufstellen; • Größeres Spielfeld",
+    "schwerer_machen": "• Weniger Tore aufstellen; • Kleineres Spielfeld",
+    "status": "veroeffentlicht",
+    "alt_titel": "Dribbel-Duell zum Siegtor",
+    "seo_keyword": "Fußballübung Dribbling Kinder",
+    "url_slug": "dribbel-duell-zum-siegtor",
+    "seo_meta_description": "Dribbling-Übung für Kinder von 6-12 Jahren: Zwei Teams dribbeln um Punkte durch Tore zu erzielen. Fördert Ballkontrolle und Entscheidungsfähigkeit.",
+    "grafik_alt_text": "Zwei Kinder-Fußballteams beim Dribbling-Wettbewerb durch Tore",
+    "grafik_description": "Das Bild zeigt zwei gegnerische Fußballteams, die versuchen, mit dem Ball am Fuß durch kleine Torhütchen zu dribbeln, um Punkte für ihr Team zu erzielen. Die Kinder tragen bunte Leibchen und konzentrieren sich auf ihr Dribbling.",
+    "grafik_title": "Kinder-Fußballer beim Dribbling-Wettbewerb",
+    "grafik_caption": "Zwei Kinder-Teams beim Dribbling-Duell um die Tore",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler braucht man für diese Übung?",
+        "antwort": "Am besten 4-6 Spieler pro Team, damit alle genug Ballkontakte haben. Bei größeren Gruppen: Turniermodus mit mehreren Teams. "
+      },
+      {
+        "frage": "Wie lange dauert die Übung?",
+        "antwort": "Etwa 10-15 Minuten ist eine gute Dauer, damit die Kinder genug Zeit haben, ihre Dribbling-Fähigkeiten einzusetzen."
+      },
+      {
+        "frage": "Ist die Übung auch für jüngere Kinder geeignet?",
+        "antwort": "Ja."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [
+      148
+    ],
+    "schwester_id": 148,
+    "schwester_titel": "BESCHÜTZ DEIN TOR!"
   }
 ]
