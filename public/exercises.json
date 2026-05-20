@@ -9136,5 +9136,67 @@
     "original_coaching_fokus": "",
     "ist_gecrawlt": false,
     "quell_kategorie": ""
+  },
+  {
+    "id": 151,
+    "titel": "SCHÜSSE MIT FARBREIHENFOLGE",
+    "quell_trainingseinheit": "Training mit Farbsignalen",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/03/image-6.jpg",
+    "grafik_dateiname": "",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "Spieler dribbeln aufs Tor und schießen – je nach aufgerufener Farbreihenfolge.",
+    "aufbau": "Zwei Teams etwa 20m vor dem Jugendtor mit Torhüter aufstellen. In 5m Entfernung dazu zwei farbig markierte Hütchentore aufstellen und je einen Ball in die Mitte legen. Etwa 5m hinter den Teams ein Hütchen aufstellen.",
+    "durchfuehrung": "Der Trainer nennt eine Farbe. Der Spieler beim entsprechenden Hütchentor nimmt den Ball auf, dribbelt zum Tor und schießt ab. Der andere Spieler sprintet zunächst zum Laufhütchen, nimmt dann seinen Ball und schließt als zweiter ab.",
+    "varianten": "",
+    "quell_url": "https://coachunited.de/training-mit-farbsignalen/",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Dribbeln",
+      "Torschuss"
+    ],
+    "coaching_fokus": "• Schnelle Reaktion auf Farbsignal; • Konzentration beim Torschuss",
+    "leichter_machen": "• Entfernung zum Tor auf 15m verkürzen",
+    "schwerer_machen": "• Distanz vergrößern",
+    "status": "veroeffentlicht",
+    "alt_titel": "Torschuss-Staffel mit Farbreaktionen",
+    "seo_keyword": "Fußballübung Torschuss Kinder",
+    "url_slug": "fussballubung-torschuss-kinder",
+    "seo_meta_description": "Torschuss-Übung für Kinder (6-12 Jahre) mit Farbreaktion - trainiert Torschuss, Konzentration und Entscheidungsfähigkeit",
+    "grafik_alt_text": "Kinder führen eine Fußballübung mit Torschüssen und bunten Hütchen durch",
+    "grafik_description": "In der Übung dribbeln die Kinder auf ein Jugendtor zu und schießen je nach Farbruf unterschiedlich. Zwei Teams und farbige Hütchentore sind aufgebaut.",
+    "grafik_title": "Fußballübung Torschuss Kinder",
+    "grafik_caption": "Torschussübung mit Farbreaktion für Kinder im Training",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler machen bei der Übung mit?",
+        "antwort": "Ideal sind je 4-8 Spieler pro Team. So haben alle genug Wiederholungen, aber es bleibt noch überschaubar."
+      },
+      {
+        "frage": "Wie lange dauert die Übung?",
+        "antwort": "Die Übung lässt sich gut in 10-15 Minuten durchführen. Wichtig ist, dass alle Spieler mehrmals dran kommen."
+      },
+      {
+        "frage": "Für welche Altersklasse ist die Übung geeignet?",
+        "antwort": "Die Übung passt gut für Kinder der F- und E-Jugend. Jüngere Kinder könnten etwas überfordert sein."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [
+      157,
+      153
+    ],
+    "schwester_id": 157,
+    "schwester_titel": "SCHÜSSE UND 1 GEGEN 1 MIT FARBREIHENFOLGE"
   }
 ]
