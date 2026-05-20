@@ -9201,5 +9201,66 @@
     ],
     "schwester_id": 148,
     "schwester_titel": "BESCHÜTZ DEIN TOR!"
+  },
+  {
+    "id": 150,
+    "titel": "SPIEL AUF EIN TOR",
+    "quell_trainingseinheit": "Vom Dribbelstern zum Spiel auf ein Tor",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/03/image-19.jpg",
+    "grafik_dateiname": "uebung-212-spiel-auf-ein-tor.jpg",
+    "trainingsphase": "Spielformat",
+    "kurzbeschreibung": "Ein Team greift an, das andere verteidigt. Sobald das verteidigende Team den Ball über die Grundlinie gedribbelt hat, wechseln die Rollen.",
+    "aufbau": "Ein 25mx40m großes Feld markieren. Zwei Teams mit Leibchen einteilen. Ein Jugendtor mit Torhüter.",
+    "durchfuehrung": "Ein Team startet als Angreiferteam, das andere verteidigt das Tor. Sobald das Verteidigerteam den Ball erobert hat, versucht es, den Ball über die gegenüberliegende Grundlinie zu dribbeln. Sobald dies gelingt, wechseln sofort die Rollen: die Verteidigung wird zum Angreiferteam, die Angreifer verteidigen.",
+    "varianten": "",
+    "quell_url": "https://coachunited.de/vom-dribbelstern-zum-spiel-auf-ein-tor/",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Dribbeln",
+      "Raumverhalten",
+      "Umschalten"
+    ],
+    "coaching_fokus": "• Schnelles Umschalten im Kopf jedes Mal, wenn die Seiten gewechselt werden; • Keine Abstauber erlaubt aufs Jugendtor",
+    "leichter_machen": "",
+    "schwerer_machen": "",
+    "status": "veroeffentlicht",
+    "alt_titel": "Fangen und Angreifen - Teamspiel mit Torschuss",
+    "seo_keyword": "Fußballübung Teamspiel Kinder",
+    "url_slug": "fussballubung-teamspiel-kinder",
+    "seo_meta_description": "Kreatives Fußballspiel mit Torabschluss für Kinder (8-12 Jahre). Fördert Ballkontrolle, Teamspiel und Umschalten zwischen Angriff und Verteidigung.",
+    "grafik_alt_text": "Kinder spielen Fußball auf einem Kleinfeld mit einem Tor, ein Team greift an und ein Team verteidigt",
+    "grafik_description": "Das Bild zeigt einen Ausschnitt aus einem Fußballfeld, auf dem zwei Kindermannschaften gegeneinander spielen. Ein Team greift auf ein Tor an, während das andere Team verteidigt. Die Kinder tragen farbige Leibchen.",
+    "grafik_title": "Fußballtraining Kinder Teamspiel Torabschluss",
+    "grafik_caption": "Kreatives Fußballspiel mit Torabschluss fördert das Teamspiel von Kindern.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler benötigt man?",
+        "antwort": "Ideal sind zwei Teams mit 4-6 Spielern pro Team. So haben alle ausreichend Spielanteile. Bei größeren Gruppen ein zwetes Tor aufstellen oder im Turniermodus spielen."
+      },
+      {
+        "frage": "Wie lang sollte die Übung dauern?",
+        "antwort": "15-20 Minuten sind optimal, damit die Kinder konzentriert bleiben können."
+      },
+      {
+        "frage": "Kann man die Übung an verschiedene Altersgruppen anpassen?",
+        "antwort": "Das ist nicht notwendig. "
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [],
+    "schwester_id": null,
+    "schwester_titel": null
   }
 ]
