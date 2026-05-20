@@ -8769,5 +8769,66 @@
     ],
     "schwester_id": 141,
     "schwester_titel": "SAUBERE DIAGONAL-PÄSSE"
+  },
+  {
+    "id": 143,
+    "titel": "MIT KEGELTREFFERN TORSCHÜSSE GEWINNEN",
+    "quell_trainingseinheit": "Erst diagonale Pässe, dann Fußballkegeln",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/03/image-22.jpg",
+    "grafik_dateiname": "uebung-205-mit-kegeltreffern-torschuesse-gewinnen.jpg",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "Zwei Teams treten in einem Spiel gegeneinander an. Die Teams starten mit Fussballkegeln. Die Anzahl der umgeschossenen Kegel bestimmt, wie viele Schussversuche sie aufs Jugendtor erhalten.",
+    "aufbau": "Zwei Jugentore mit Torhütern im Abstand von etwa 10m aufstellen. Neben den Toren jeweils sechs Kegel in einer Pyramide platzieren. 15 Metern vor den Kegeln ein Starthütchen aufstellen. 10 Metern vor den Jugendtoren eine Schusslinie markieren. Gruppe mit Leibchen in zwei Teams aufteilen, die sich wiederum gleichmäßig jeweils an der Kegelmarkierung und an der Schusslinie aufstellen.",
+    "durchfuehrung": "Die Kegelgruppen starten. Jedes Kind hat einen Versuch, die Kegel zu treffen. Trifft ein Team z.B. 3 Kegel, werden danach drei Bälle auf der Schusslinie platziert. Die Mitspieler des eigenen Teams haben drei mit drei Schüssen die Möglichkeit, Tore zu erzielen. Danach tauschen die Rollen. Wer erzielt mehr Tore?",
+    "varianten": "",
+    "quell_url": "https://coachunited.de/erst-diagonale-passe-dann-fusballkegeln/",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Torschuss",
+      "Koordination"
+    ],
+    "coaching_fokus": "• Präzision und Konzentration beim Kegel-Schießen; • Übung mit Tempo durchführen",
+    "leichter_machen": "• Entfernung der Kegel reduzieren; • Entfernung der Torschusslinie reduzieren",
+    "schwerer_machen": "• Entfernung der Kegel erhöhen; • Distanz der Schusszone vergrößern",
+    "status": "veroeffentlicht",
+    "alt_titel": "Kegel-Zielschießen um Torwurfchancen zu verdienen",
+    "seo_keyword": "Fußballübung Torschuss Kinder",
+    "url_slug": "fussballubung-torschuss-kinder",
+    "seo_meta_description": "Kinder bei Fußballübung zum Treffen von Kegeln, um Torschüsse auszuführen.",
+    "grafik_alt_text": "Fußballübung für Kinder: Mit Kegeltreffern Torschüsse gewinnen",
+    "grafik_description": "Die Kinder treten in zwei Teams an und versuchen, die aufgebauten Kegel zu treffen. Die Anzahl der umgeworfenen Kegel bestimmt, wie viele Schüsse auf das Tor erlaubt sind.",
+    "grafik_title": "Zielgenaues Kegelschießen erhöht die Chancen auf Torerfolg.",
+    "grafik_caption": "Die Kinder treten in zwei Teams an und versuchen, die aufgebauten Kegel zu treffen. Die Anzahl der umgeworfenen Kegel bestimmt, wie viele Schüsse auf das Tor erlaubt sind.",
+    "faq": [
+      {
+        "frage": "Wie passe ich die Übung an eine kleine Gruppe an?",
+        "antwort": "Bei kleineren Gruppen haben die einzelnen Spieler mehr Ballaktionen. Sehr gut. Keine Anpassungen notwendig. "
+      },
+      {
+        "frage": "Wie lange sollte die Übung dauern?",
+        "antwort": "Je nach Altersstufe und Konzentration der Kinder 15-25 Minuten einplanen."
+      },
+      {
+        "frage": "Kann ich die Übung auch für ältere Kinder nutzen?",
+        "antwort": "Ja, durch Erhöhen der Distanz und Einführen einer Schusszone lässt sich die Übung anpassen."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [
+      144
+    ],
+    "schwester_id": 144,
+    "schwester_titel": "KEGELN, SPIELEN UND ZURÜCK"
   }
 ]
