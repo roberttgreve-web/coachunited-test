@@ -8826,9 +8826,191 @@
     "ist_gecrawlt": false,
     "quell_kategorie": "",
     "schwester_ids": [
+      145,
       144
+    ],
+    "schwester_id": 145,
+    "schwester_titel": "ÜBERZAHL-JOKER"
+  },
+  {
+    "id": 144,
+    "titel": "KEGELN, SPIELEN UND ZURÜCK",
+    "quell_trainingseinheit": "Erst diagonale Pässe, dann Fußballkegeln",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/03/image-23.jpg",
+    "grafik_dateiname": "uebung-206-kegeln-spielen-und-zurueck.jpg",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "Zwei Teams spielen im Feld 3 gegen 3. Gleichzeitig liefern sich zwei andere Teams ein Kegel-Battle. Nach drei Minuten wird gewechselt und die Punkte vom Kegeln oder aus dem Feld werden mitgenommen.",
+    "aufbau": "Ein etwa 30x15m großes Feld mit zwei Jugentoren errichten. Neben den Toren jeweils sechs Kegel in einer Pyramide platzieren. 15 Metern vor den Kegeln ein Starthütchen aufstellen. Die Teams mit Leibchen nun in vier Teams unterzeilen.",
+    "durchfuehrung": "Team Blau und Team Orange treten im Kegeln gegeneinander an. Gleichzeitig spielen Team Grün und Team Grau im 3 gegen 3 ein Spiel gegeneinander. Nach drei Minuten wechseln die Teams Blau und Orange aufs Feld. Die Punkte aus dem Kegelduell werden auf das Spiel übertragen. Teams Grün und Grau wechseln zum Kegeln und nehmen den Spielstand aus dem Spiel ebenfalls mit.",
+    "varianten": "",
+    "quell_url": "https://coachunited.de/erst-diagonale-passe-dann-fusballkegeln/",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Koordination"
+    ],
+    "coaching_fokus": "• Konzentration beim Kegel-Schießen; • Schnelle Wechsel nach 3 Minuten",
+    "leichter_machen": "• Distanz zu den Kegeln verkleinern",
+    "schwerer_machen": "• Begrenzt die Ballkontakte pro Spieler auf maximal 2",
+    "status": "veroeffentlicht",
+    "schwester_ids": [
+      145,
+      143
+    ],
+    "schwester_id": 145,
+    "schwester_titel": "ÜBERZAHL-JOKER",
+    "alt_titel": "KEGELN, TORE SCHIESSEN UND WECHSELN",
+    "seo_keyword": "Fußballübung Koordination Kinder",
+    "url_slug": "kegeln-tore-schiessen-wechseln",
+    "seo_meta_description": "Abwechslungsreiche Fußballübung für Kinder von 6-12 Jahren mit Kegeln, Spielen und regelmäßigen Wechseln zwischen den Aufgaben. Fördert Koordination, Raumverhalten und Kommunikation.",
+    "grafik_alt_text": "Zwei Kinder spielen Fußball auf einem Feld, während zwei andere Kinder Kegel umwerfen.",
+    "grafik_description": "Die Grafik zeigt einen Aufbau mit zwei Jugendtoren, in dem zwei Teams Fußball spielen. Gleichzeitig treten zwei andere Teams in einem Kegelwettbewerb gegeneinander an.",
+    "grafik_title": "Fußballtraining mit Kegeln und Wechseln",
+    "grafik_caption": "Abwechslungsreiche Übung, die Koordination und Kommunikation fördert.",
+    "faq": [
+      {
+        "frage": "Wie lange soll die Übung insgesamt dauern?",
+        "antwort": "Die Übung ist in Spiele von je 3 Minuten eingeteilt. Insgesamt empfehlen wir eine Dauer von 15-20 Minuten."
+      },
+      {
+        "frage": "Kann man die Übung auch mit weniger Spielern durchführen?",
+        "antwort": "Ja, die Übung lässt sich gut an die Teilnehmerzahl anpassen. Zum Beispiel kann man mit 2 gegen 2 auf einem kleineren Feld spielen."
+      },
+      {
+        "frage": "Eignet sich die Übung auch für Einsteiger?",
+        "antwort": "Eher nicht. "
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": ""
+  },
+  {
+    "id": 145,
+    "titel": "ÜBERZAHL-JOKER",
+    "quell_trainingseinheit": "Erst diagonale Pässe, dann Fußballkegeln",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/03/image-24.jpg",
+    "grafik_dateiname": "uebung-207-ueberzahl-joker.jpg",
+    "trainingsphase": "Spielformat",
+    "kurzbeschreibung": "Zwei Teams treten gegeneinander an. Die Spieler des dritten Teams stehen jeweils als zusätzliche Anspielstationen für jene Mannschaft zur Verfügung, die gerade den Ball hat.",
+    "aufbau": "30x15m großes Feld mit zwei Jugendtoren errichten. Drei Teams einteilen. ",
+    "durchfuehrung": "Zwei Teams spielen im 4 gegen 4 gegeneinander. Das dritte Team darf sich frei um das Feld bewegen und steht immer für jene Mannschaft zusätzlich als Anspielstationen zur Verfügung, die gerade den Ball hat. Das Team in Ballbesitz hat also immer Überzahl.",
+    "varianten": "a) 1-2 Anspiele zu den Anspielstationen sind Pflicht pro Angriff. FREIES SPIEL – LOS GEHT’S! FREIES SPIEL – LOS GEHT’S! In © 2025 COACH UNITED",
+    "quell_url": "https://coachunited.de/erst-diagonale-passe-dann-fusballkegeln/",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Dribbeln",
+      "Raumverhalten"
+    ],
+    "coaching_fokus": "• Schnelle, präzise Pässe zu den Joker-Spielern finden; • Geschicktes Nutzen der Überzahl im Angriff; • Ständiges Kommunizieren und Orientieren im Team",
+    "leichter_machen": "",
+    "schwerer_machen": "• Nur maximal 2 Ballkontakte erlaubt; • 1-2 Anspiele zu den Anspielstationen sind Pflicht pro Angriff.",
+    "status": "veroeffentlicht",
+    "alt_titel": "Überzahlspiel mit frei laufenden Joker-Spielern",
+    "seo_keyword": "Dynamisches Überzahlspiel mit zusätzlichen Joker-Spielern fördert Passen, Raumverhalten und Kommunikation im Fußballtraining für Kinder von 6-12 Jahren.",
+    "url_slug": "uberzahlspiel-mit-joker-spielern",
+    "seo_meta_description": "Fußballübung: Überzahlspiel mit Joker-Spielern",
+    "grafik_alt_text": "Dynamisches Überzahlspiel fördert Pässe, Raumaufteilung und Kommunikation im Kinderfußball.",
+    "grafik_description": "Für diese Übung werden 12 Spieler aufgeteilt in 3 Teams à 4 Spieler benötigt.",
+    "grafik_title": "Auf einem Fußballfeld sind zwei Teams zu sehen, die gegeneinander spielen. Zusätzlich gibt es ein drittes Team, dessen Spieler sich frei auf dem Feld bewegen und als Anspielstationen für das ballbesitzende Team dienen.",
+    "grafik_caption": "Auf einem Fußballfeld sind zwei Teams zu sehen, die gegeneinander spielen. Zusätzlich gibt es ein drittes Team, dessen Spieler sich frei auf dem Feld bewegen und als Anspielstationen für das ballbesitzende Team dienen.",
+    "faq": [
+      {
+        "frage": "Wie lange dauert eine Runde der Übung?",
+        "antwort": "Eine Runde der Übung sollte etwa 5-10 Minuten dauern, damit alle Spieler genug Spielzeit haben."
+      },
+      {
+        "frage": "Kann man die Übung auch für jüngere Altersklassen anpassen?",
+        "antwort": "Eher nicht. "
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [
+      144,
+      143
     ],
     "schwester_id": 144,
     "schwester_titel": "KEGELN, SPIELEN UND ZURÜCK"
+  },
+  {
+    "id": 146,
+    "titel": "FLEXIBLER DRIBBELSTERN",
+    "quell_trainingseinheit": "Vom Dribbelstern zum Spiel auf ein Tor",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/03/image-16.jpg",
+    "grafik_dateiname": "uebung-208-flexibler-dribbelstern.jpg",
+    "trainingsphase": "Aufwärmen",
+    "kurzbeschreibung": "Spieler absolvieren im Dribbelstern verschiedene Dribbelaufgaben.",
+    "aufbau": "Vier Teams an vier Starthütchen (hier: rot) mit Bällen verteilen. In der Mitte, wie abgebildet, Ein Hütchen-Stern aus 5 Hütchen errichten.",
+    "durchfuehrung": "In verschiedenen Durchgängen absolvieren die Spieler Dribbelübungen, die vom Trainer vorgegeben werden. Etwa:\n\nDribbeln im Slalom zum gegenüberliegenden Hütchen.\n\nDas nahstehendste Hütchen umdribbeln und zum Starthütchen zurückkehren.\n\nEinmal das mittlere Hütchen des Sterns umdribbeln und zum Starthütchen zurückkehren.\n\nEinmal jedes der fünf Hütchen vollständig im Kreis umdribbeln und zum Starthütchen zurückkehren (vier Spieler starten gleichzeitig à Wer ist als erster wieder am Starthütchen?)",
+    "varianten": "",
+    "quell_url": "https://coachunited.de/vom-dribbelstern-zum-spiel-auf-ein-tor/",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend",
+      "E-Jugend"
+    ],
+    "skills": [
+      "Ballkontrolle",
+      "Dribbeln",
+      "Koordination"
+    ],
+    "coaching_fokus": "• Enge Ballführung; • Überblick behalten, um nicht zusammenzustoßen",
+    "leichter_machen": "",
+    "schwerer_machen": "",
+    "status": "veroeffentlicht",
+    "alt_titel": "Zielgerichtetes Dribbling im Sternfeld",
+    "seo_keyword": "Fußballübung Dribbling Kinder",
+    "url_slug": "flexibler-dribbelstern-fussballtraining-kinder",
+    "seo_meta_description": "Vier Spielergruppen dribbelnd auf einem Fußballplatz mit einem Hütchenstern in der Mitte",
+    "grafik_alt_text": "Fußballübung Dribbling Kinder mit Hütchenstern",
+    "grafik_description": "Die Grafik zeigt einen Aufbau für eine Dribbelübung mit einem Hütchenstern in der Mitte des Spielfelds. Vier Teams an Starthütchen absolvieren nacheinander verschiedene Dribbelaufgaben.",
+    "grafik_title": "Flexible Dribbelaufgaben im Hütchen-Sternfeld fördern die Ballbeherrschung der Kinder.",
+    "grafik_caption": "Die Grafik zeigt einen Aufbau für eine Dribbelübung mit einem Hütchenstern in der Mitte des Spielfelds. Vier Teams an Starthütchen absolvieren nacheinander verschiedene Dribbelaufgaben.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler können bei dieser Übung mitmachen?",
+        "antwort": "Die Übung ist für 12-20 Kinder geeignet. Die Spieler werden in 4 Teams eingeteilt, die nacheinander durch den Stern dribbelnd die Aufgaben absolvieren."
+      },
+      {
+        "frage": "Wie lange dauert die Übung?",
+        "antwort": "Die komplette Übung benötigt ca. 10-15 Minuten. "
+      },
+      {
+        "frage": "Kann ich die Übung auch für ältere Kinder nutzen?",
+        "antwort": "Ja, durch Anpassungen wie schnelleres Tempo, engere Hütchenabstände oder komplexere Dribbelaufgaben lässt sich die Übung gut an D-Junioren oder sogar C-Junioren anpassen."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [
+      147
+    ],
+    "schwester_id": 147,
+    "schwester_titel": "FLEXIBLER DRIBBELSTERN MIT BALLWECHSEL"
   }
 ]
