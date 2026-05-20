@@ -9261,5 +9261,68 @@
     "original_coaching_fokus": "",
     "ist_gecrawlt": false,
     "quell_kategorie": ""
+  },
+  {
+    "id": 157,
+    "titel": "SCHÜSSE UND 1 GEGEN 1 MIT FARBREIHENFOLGE",
+    "quell_trainingseinheit": "Schießen und Angreifen nach Farbreihenfolge",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/02/image-3.jpg",
+    "grafik_dateiname": "uebung-245-schuesse-und-1-gegen-1-mit-farbreihenfolge.jpg",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "Spieler dribbelt aufs Tor und schießt – je nach aufgerufener Farbreihenfolge. Danach geht es ins 1 gegen 1.",
+    "aufbau": "Zwei Teams etwa 20m vor dem Jugendtor mit Torhüter aufstellen. In 5m Entfernung dazu zwei farbig markierte Hütchentore aufstellen und je einen Ball in die Mitte legen. Etwa 5m hinter den Teams ein Hütchen aufstellen.",
+    "durchfuehrung": "Der Trainer sagt eine Farbe an. Der Spieler, der an dem farblich aufgerufenen Hütchentor steht nimmt den Ball auf, dribbelt aufs Tor und schließt ab. Der andere Spieler sprintet zunächst zurück zum Laufhütchen, nimmt dann den Ball auf und schließt als Zweiter ab. Nach dem Schuss des ersten Spielers wird dieser zum Verteidiger. Der zweite Spieler geht ins 1 gegen 1 und versucht, ein Tor zu erzielen. Erobert der Verteidiger den Ball, darf er ebenfalls abschließen.",
+    "varianten": "",
+    "quell_url": "https://coachunited.de/schiesen-und-angreifen-nach-farbreihenfolge/",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Dribbeln",
+      "Torschuss",
+      "Zweikampf"
+    ],
+    "coaching_fokus": "• Hohes Tempo; • Fairer Zweikampf",
+    "leichter_machen": "• Distanzen verkleinern",
+    "schwerer_machen": "• Zeiotbegrenzung für Torabschluss im 1 gegen 1",
+    "status": "veroeffentlicht",
+    "schwester_ids": [
+      151,
+      153
+    ],
+    "schwester_id": 151,
+    "schwester_titel": "SCHÜSSE MIT FARBREIHENFOLGE",
+    "alt_titel": "Torschüsse und 1 gegen 1 mit Farbsteuerung",
+    "seo_keyword": "Fußballübung Torschuss Kinder",
+    "url_slug": "fussballubung-torschuss-kinder",
+    "seo_meta_description": "Verbessere die Torschussqualität deiner Jugendfußballer mit dieser interaktiven Fußballübung mit 1-gegen-1-Situationen.",
+    "grafik_alt_text": "Zwei Jugendfußballer im 1-gegen-1 mit Torabschluss",
+    "grafik_description": "Die Grafik zeigt zwei Jugendfußballer, von denen einer gerade auf das Tor schießt, während der andere versucht, den Ball zu verteidigen. Im Hintergrund sind Farbmarkierungen auf dem Boden zu sehen, die die Spieler in ihrer Aktion steuern.",
+    "grafik_title": "Fußballübung: Torschüsse und 1-gegen-1 mit Farbsteuerung",
+    "grafik_caption": "Abschlussübung mit Farbsteuerung zur Verbesserung von Torschuss und Zweikampfverhalten.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler benötige ich für diese Übung?",
+        "antwort": "Ideal sind je 5-7 Spieler, die sich in zwei Gruppen aufteilen."
+      },
+      {
+        "frage": "Wie lange sollte man diese Übung durchführen?",
+        "antwort": "Eine Dauer von 10-15 Minuten ist sinnvoll."
+      },
+      {
+        "frage": "Ist diese Übung auch für jüngere Spieler geeignet?",
+        "antwort": "Für die G-Jugend eher noch nicht. "
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": ""
   }
 ]
