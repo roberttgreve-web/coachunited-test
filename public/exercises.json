@@ -9012,5 +9012,67 @@
     ],
     "schwester_id": 147,
     "schwester_titel": "FLEXIBLER DRIBBELSTERN MIT BALLWECHSEL"
+  },
+  {
+    "id": 147,
+    "titel": "FLEXIBLER DRIBBELSTERN MIT BALLWECHSEL",
+    "quell_trainingseinheit": "Vom Dribbelstern zum Spiel auf ein Tor",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/03/image-17.jpg",
+    "grafik_dateiname": "uebung-209-flexibler-dribbelstern-mit-ballwechsel.jpg",
+    "trainingsphase": "Aufwärmen",
+    "kurzbeschreibung": "Die Spieler dribbeln zwischen zwei Hütchen, lassen ihren Ball liegen und dribbeln mit einem neuen Ball zum gegenüberliegenden Hütchen.",
+    "aufbau": "Vier Teams an vier Starthütchen (hier: rot) mit Bällen verteilen. In der Mitte, wie abgebildet, Ein Hütchen-Stern aus 5 Hütchen errichten. Zwischen die Hütchen, wie abgebildet, jeweils zwei Bälle platzieren.",
+    "durchfuehrung": "Die Spieler dribbeln mit Ball zum Hütchentor, das links von ihrem Starthütchen steht. Sie stoppen dort ihren Ball sauber, lassen ihn liegen und dribbeln mit einem neuen Ball zu dem gegenüberliegenden Starthütchen. Dort stellen sie sich hinten an. Auch als Wettbewerb möglich: Immer die ersten vier Spieler starten gleichzeitig. Wer kommt als erstes an und führt die Übung am saubersten aus?",
+    "varianten": "",
+    "quell_url": "https://coachunited.de/vom-dribbelstern-zum-spiel-auf-ein-tor/",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend",
+      "E-Jugend"
+    ],
+    "skills": [
+      "Ballkontrolle",
+      "Dribbeln",
+      "Koordination",
+      "Raumverhalten"
+    ],
+    "coaching_fokus": "• Sauberes Stoppen und Liegenlassen (Ball muss ruhen); • Enge Ballführung; • Tempo hochhalten",
+    "leichter_machen": "",
+    "schwerer_machen": "",
+    "status": "veroeffentlicht",
+    "schwester_ids": [
+      146
+    ],
+    "schwester_id": 146,
+    "schwester_titel": "FLEXIBLER DRIBBELSTERN",
+    "alt_titel": "Dynamisches Dribbeltraining mit Ballwechsel",
+    "seo_keyword": "Fußballübung Dribbling Kinder",
+    "url_slug": "flexibler-dribbelstern-mit-ballwechsel",
+    "seo_meta_description": "Dynamisches Dribbeltraining mit Ballwechsel für Kinder von 6-12 Jahren, fördert Ballkontrolle und Raumaufteilung.",
+    "grafik_alt_text": "Illustration eines dynamischen Dribbeltrainings mit zwei Hütchenreihen und Ballwechsel zwischen Spielern",
+    "grafik_description": "Die Grafik zeigt einen Aufbau mit zwei Hütchenreihen, in dessen Mitte die Spieler im Wechsel dribbelnd mit dem Ball zwischen den Hütchen hindurch laufen und dann den Ball an einen Mitspieler weitergeben.",
+    "grafik_title": "Dynamisches Dribbeltraining mit Ballwechsel",
+    "grafik_caption": "Fußballübung zur Förderung von Ballkontrolle und Raumaufteilung bei Kindern",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler benötigt diese Übung?",
+        "antwort": "Die Übung ist für 12-20 Spieler geeignet. "
+      },
+      {
+        "frage": "Wie lange dauert die Übung?",
+        "antwort": "Die Dauer ist variabel, je nach Alter und Leistungsstand der Kinder ca. 10-15 Minuten."
+      },
+      {
+        "frage": "Kann ich die Übung auch mit jüngeren Kindern durchführen?",
+        "antwort": "Ja."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": ""
   }
 ]
