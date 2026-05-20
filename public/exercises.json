@@ -8523,5 +8523,126 @@
     ],
     "schwester_id": 139,
     "schwester_titel": "VOM 1 GEGEN 2 INS 2 GEGEN 2"
+  },
+  {
+    "id": 139,
+    "titel": "VOM 1 GEGEN 2 INS 2 GEGEN 2",
+    "quell_trainingseinheit": "Einwürfe und 1 gegen 1 üben",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/03/image-28.jpg",
+    "grafik_dateiname": "uebung-139-vom-1-gegen-2-ins-2-gegen-2.jpg",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "Ein Spieler dribbelt aufs Tor, versucht im 1 gegen 2 abzuschließen und wird danach zum zweiten Angreifer im 2 gegen 2.",
+    "aufbau": "20mx20m große Torzone vor einem Jugendtor mit Torhüter markieren. Etwa 10m dahinter zwei Gruppen mit Bällen einteilen. Vor einer Gruppe mit Hütchen oder Stangen in Slalom markieren. Neben dem Tor zwei weitere Gruppen ohne Ball als Verteidiger platzieren.",
+    "durchfuehrung": "Ein Spieler dribbelt aufs Tor, versucht im 1 gegen 2 gegen die beiden Verteidiger aufs Tor abzuschließen und wird danach der zweite Angreifer, der zusammen mit dem Spieler, der aus dem Slalom kommt, im 2 gegen 2 versucht ein Tor zu erzielen. Erobern die Verteidiger den Ball, können sie eine Punkt erzielen, in dem sie über die gegenüberliegende Grundlinie der Torzone dribbeln.",
+    "varianten": "a) Zweites paralleles Feld aufbauen bei großen Gruppen. ZWEI SPIELE, EIN FELD ZWEI SPIELE, EIN FELD Zwei 3 gegen 3-Matches gleichzeitig, damit Kinder Orientierung in engen Räumen üben.",
+    "quell_url": "https://coachunited.de/einwurfe-und-1-gegen-1-uben/",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend"
+    ],
+    "skills": [
+      "Ballkontrolle",
+      "Dribbeln",
+      "Zweikampf",
+      "Raumverhalten"
+    ],
+    "coaching_fokus": "• Kopf beim Dribbling oben behalten; • Verteidiger umspielen mit Richtungswechseln; • Kommunikation und Abstimmung im 2 gegen 2",
+    "leichter_machen": "",
+    "schwerer_machen": "",
+    "status": "veroeffentlicht",
+    "alt_titel": "1 gegen 2 zum 2 gegen 2 - Torjägerspiel",
+    "seo_keyword": "Fußballübung 1 gegen 2 Kinder",
+    "url_slug": "fussballuebung-1-gegen-2-kinder",
+    "seo_meta_description": "Fußballübung für Kinder von 6-12 Jahren zum Training von Dribbling, Ballkontrolle und Zweikampf im 1 gegen 2 und 2 gegen 2",
+    "grafik_alt_text": "Zwei Kinder dribbelnd mit Ball auf ein Tor zu, zwei Verteidiger stehen daneben",
+    "grafik_description": "Die Übung 'Vom 1 gegen 2 ins 2 gegen 2' lässt Kinder im Einzeldribbling auf zwei Verteidiger treffen und dann im Angriffsduo weiterspielen. So üben sie Ballkontrolle, Zweikämpfe und Raumaufteilung.",
+    "grafik_title": "Fußballübung 1 gegen 2 zum 2 gegen 2 für Kinder",
+    "grafik_caption": "Dribbling-Übung mit Torschuss und anschließendem 2-gegen-2",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler brauche ich für diese Übung?",
+        "antwort": "8-15 Spieler sind optimal."
+      },
+      {
+        "frage": "Wie lange dauert die Übung?",
+        "antwort": "Je nach Alter und Leistungsstand der Kinder 10-15 Minuten. Mehrmals wiederholen für ausreichend Praxis."
+      },
+      {
+        "frage": "Kann ich die Übung für jüngere Kinder anpassen?",
+        "antwort": "Eher nicht. "
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": true,
+    "quell_kategorie": "",
+    "schwester_ids": [
+      138
+    ],
+    "schwester_id": 138,
+    "schwester_titel": "DRIBBELN, SCHIEßEN UND INS 1 GEGEN 1"
+  },
+  {
+    "id": 140,
+    "titel": "ZWEI SPIELE, EIN FELD",
+    "quell_trainingseinheit": "Einwürfe und 1 gegen 1 üben",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/03/image-29.jpg",
+    "grafik_dateiname": "uebung-203-zwei-spiele-ein-feld.jpg",
+    "trainingsphase": "Spielformat",
+    "kurzbeschreibung": "Auf einem viereckigen Feld finden zwei 3 gegen 3- Matches gleichzeitig statt, damit die Kinder üben, in engen Räumen die Orientierung zu behalten.",
+    "aufbau": "Ein etwa 20mx20m großes Feld markieren. Vier kleine Tore auf den Grundlinien aufstellen. Vier Teams mit Leibchen einteilen. Zwei Bälle bereitstellen.",
+    "durchfuehrung": "Zwei Teams spielen auf die horizontalen Tore, die anderen beiden Teams auf die vertikalen Tore ein 3 gegen 3. Eindribbeln bei Seitenaus. 3 Minuten Spielzeit, dann wechseln die Partien (Turnierformat). ",
+    "varianten": "",
+    "quell_url": "https://coachunited.de/einwurfe-und-1-gegen-1-uben/",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Ballkontrolle",
+      "Dribbeln",
+      "Raumverhalten",
+      "Kommunikation"
+    ],
+    "coaching_fokus": "• Übersicht behalten als Spieler, es wird wuselig",
+    "leichter_machen": "• Nur ein Spiel auf dem Spielfeld, trotzdem vier Tore; • Weniger Gegner (2 gegen 2 statt 3 gegen 3); • Größeres Spielfeld",
+    "schwerer_machen": "",
+    "status": "veroeffentlicht",
+    "alt_titel": "Taktisches Kleinfeld-Fußballspiel",
+    "seo_keyword": "Fußballübung Raumaufteilung Kinder",
+    "url_slug": "fussballubung-raumaufteilung-kinder",
+    "seo_meta_description": "Taktische Fußballübung für Kinder, um in engen Räumen die Orientierung zu behalten und geschickt Platz zu nutzen.",
+    "grafik_alt_text": "Zwei Fußballspiele gleichzeitig auf einem geteilten Feld mit 4 Toren",
+    "grafik_description": "Das Bild zeigt einen Fußballplatz, der in zwei Hälften geteilt ist. Auf jeder Hälfte finden zwei 3-gegen-3-Spiele statt, mit jeweils zwei Toren an den Grundlinien.",
+    "grafik_title": "Taktisches Kleinfeld-Fußballspiel für Kinder",
+    "grafik_caption": "Zwei Spiele auf einem Feld fördern das taktische Verständnis der jungen Fußballer.",
+    "faq": [
+      {
+        "frage": "Wie viele Kinder benötige ich für diese Übung?",
+        "antwort": "Für das Spiel-Format sind 12 Kinder ideal - je 3 pro Team. Bei größeren Gruppen zweites Feld aufbauen."
+      },
+      {
+        "frage": "Wie lange sollte die Übung dauern?",
+        "antwort": "Empfohlen sind 3-minütige Spiele im Turnier-Modus."
+      },
+      {
+        "frage": "Für welche Altersklasse ist die Übung geeignet?",
+        "antwort": "Die Übung ist gut für Kinder ab der F-Jugend geeignet. "
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": "",
+    "schwester_ids": [],
+    "schwester_id": null,
+    "schwester_titel": null
   }
 ]
