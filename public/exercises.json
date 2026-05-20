@@ -9198,5 +9198,68 @@
     ],
     "schwester_id": 157,
     "schwester_titel": "SCHÜSSE UND 1 GEGEN 1 MIT FARBREIHENFOLGE"
+  },
+  {
+    "id": 153,
+    "titel": "SPIEL MIT FARBREIHENFOLGE",
+    "quell_trainingseinheit": "Training mit Farbsignalen",
+    "grafik_url": "https://coachunited.de/wp-content/uploads/2026/03/image-4.png",
+    "grafik_dateiname": "uebung-220-spiel-mit-farbreihenfolge.png",
+    "trainingsphase": "Spielformat",
+    "kurzbeschreibung": "Zwei Teams starten nach dem Farbsignal ins Spielfeld. Das Team mit der aufgerufenen Farbe ist das Angreiferteam, das andere Team verteidigt und versucht durch ein Dribbling über die Grundlinie selber Punkte zu erzielen. ",
+    "aufbau": "Mit Hütchen ein 30x20m großes Feld markieren. Zwei Teams mit Leibchen einteilen und auf der Grundlinie platzieren. Ball mittig in der Nähe der Teams platzieren.",
+    "durchfuehrung": "Der Trainer ruft die Leibchenfarbe eines Teams auf. Das Team ist das Angreiferteam, stürmt ins Feld, nimmt den Ball auf und versucht ein Tor auf das Jugendtor zu erzielen. Das andere Team stürmt aufs Feld und verteidigt. Erobert das verteidigende Team den Ball, kann es durch ein Dribbling über die dem Tor gegenüberliegende Grundlinie auch einen Punkt erzielen. Nach Tor oder Punkt: Neustart.",
+    "varianten": "a) Kein Torhüter zu Beginn. Das Verteidigerteam muss auch schnell den Torhüter stellen. b) Angreiferteam muss vor dem Torabschluss zunächst eine bestimmte Anzahl an Pässen spielen. FREIES SPIEL – LOS GEHT’S! FREIES SPIEL – LOS GEHT’S! In © 2025 COACH UNITED",
+    "quell_url": "https://coachunited.de/training-mit-farbsignalen/",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend",
+      "E-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Dribbeln",
+      "Torschuss"
+    ],
+    "coaching_fokus": "• Schnelles Umschalten nach Farbsignal; • Direkt nach Farbsignal auf dem Feld verteilen - nicht alle auf den Ball stürmen",
+    "leichter_machen": "",
+    "schwerer_machen": "• Kein Torhüter zu Beginn. Das Verteidigerteam muss auch schnell den Torhüter stellen; • Angreiferteam muss vor dem Torabschluss zunächst eine bestimmte Anzahl an Pässen spielen.",
+    "status": "veroeffentlicht",
+    "schwester_ids": [
+      151,
+      157
+    ],
+    "schwester_id": 151,
+    "schwester_titel": "SCHÜSSE MIT FARBREIHENFOLGE",
+    "alt_titel": "Farbrennen - Angriff und Verteidigung",
+    "seo_keyword": "Fußballübung Farbrennen Kinder",
+    "url_slug": "fussballuebung-farbrennen-kinder",
+    "seo_meta_description": "Dynamische Fußballübung 'Farbrennen' für G- bis E-Jugend - fördert Passen, Dribbling und Teamspiel",
+    "grafik_alt_text": "Zwei Fußballteams laufen los, sobald der Trainer eine Mannschaftsfarbe nennt",
+    "grafik_description": "Die Übung 'Farbrennen' zeigt zwei Fußballmannschaften, die auf ein markiertes Spielfeld rennen. Der Trainer ruft eine Teamfarbe auf, woraufhin dieses Team angreift und versucht, ein Tor zu erzielen.",
+    "grafik_title": "Fußballübung 'Farbrennen' für Kinder",
+    "grafik_caption": "Dynamische Fußballübung 'Farbrennen' für Kinder von 6 bis 12 Jahren",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler benötigt man für diese Übung?",
+        "antwort": "Für diese Übung eignen sich Gruppen von 5-6 Spieler pro Team."
+      },
+      {
+        "frage": "Wie lange sollte man die Übung spielen lassen?",
+        "antwort": "Es empfehlen sich 10 bis 15 Minuten pro Durchgang. "
+      },
+      {
+        "frage": "Kann man die Übung auch für ältere Kinder anpassen?",
+        "antwort": "Ja, siehe \"Übung schwerer machen\"."
+      }
+    ],
+    "referenz_grafik_url": "",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "ist_gecrawlt": false,
+    "quell_kategorie": ""
   }
 ]
