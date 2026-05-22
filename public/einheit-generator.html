@@ -469,6 +469,26 @@
       return exercises.map(e => e.id).join('-');
     }
 
+    // ── Verlaufs-Gedächtnis ───────────────────────────────────────
+    const HIST_KEY = `gen_hist_${jugend}`;
+    const HIST_MAX = 8;
+
+    function loadHistory() {
+      try { return JSON.parse(localStorage.getItem(HIST_KEY) || '{}'); }
+      catch(e) { return {}; }
+    }
+
+    function saveToHistory(exs) {
+      const hist = loadHistory();
+      for (const ex of exs) {
+        const ph = ex.trainingsphase;
+        if (!hist[ph]) hist[ph] = [];
+        if (!hist[ph].includes(ex.id)) hist[ph].unshift(ex.id);
+        hist[ph] = hist[ph].slice(0, HIST_MAX);
+      }
+      localStorage.setItem(HIST_KEY, JSON.stringify(hist));
+    }
+
     function generateSession(exercises, excludeKey) {
       const valid = exercises.filter(e =>
         e.status === 'veroeffentlicht' && (e.jugend || []).includes(jugend)
@@ -501,14 +521,22 @@
 
       if (PHASES.some(p => !phaseOptions[p.key].length)) return null;
 
-      function buildSession() {
+      const history = loadHistory();
+
+      function buildSession(avoidHistory) {
         const assignment = {};
         const used = new Set();
         for (const p of PHASES) {
           if (assignment[p.key]) continue;
           const candidates = phaseOptions[p.key].filter(sc => !used.has(sc));
           if (!candidates.length) return null;
-          const chosen = candidates[Math.floor(Math.random() * candidates.length)];
+          let pool = candidates;
+          if (avoidHistory) {
+            const recentIds = new Set(history[p.match] || []);
+            const fresh = candidates.filter(sc => !sc.byPhase[p.match]?.some(e => recentIds.has(e.id)));
+            if (fresh.length > 0) pool = fresh;
+          }
+          const chosen = pool[Math.floor(Math.random() * pool.length)];
           used.add(chosen);
           PHASES.forEach(ph => {
             if (chosen.byPhase[ph.match] && !assignment[ph.key])
@@ -518,14 +546,23 @@
         return PHASES.flatMap(p => assignment[p.key]?.byPhase[p.match] || []);
       }
 
-      for (let i = 0; i < 30; i++) {
-        const s = buildSession();
+      // Zuerst: frische Übungen + anderer Key (40 Versuche)
+      for (let i = 0; i < 40; i++) {
+        const s = buildSession(true);
+        if (!s) break;
+        const k = sessionKey(s);
+        if (k !== excludeKey) return { exercises: s, key: k, canReroll: true };
+      }
+
+      // Fallback: ohne History-Filter, aber anderer Key
+      for (let i = 0; i < 20; i++) {
+        const s = buildSession(false);
         if (!s) continue;
         const k = sessionKey(s);
         if (k !== excludeKey) return { exercises: s, key: k, canReroll: true };
       }
 
-      const fallback = buildSession();
+      const fallback = buildSession(false);
       if (!fallback) return null;
       return { exercises: fallback, key: sessionKey(fallback), canReroll: false };
     }
@@ -690,7 +727,10 @@
 
     function reroll() {
       const session = generateSession(allExercises, currentKey);
-      if (session) sessionStorage.setItem(SESSION_KEY, JSON.stringify(session.exercises.map(e => e.id)));
+      if (session) {
+        saveToHistory(session.exercises);
+        sessionStorage.setItem(SESSION_KEY, JSON.stringify(session.exercises.map(e => e.id)));
+      }
       renderSession(session);
     }
 
@@ -723,7 +763,10 @@
         }
 
         const session = generateSession(data, null);
-        if (session) sessionStorage.setItem(SESSION_KEY, JSON.stringify(session.exercises.map(e => e.id)));
+        if (session) {
+          saveToHistory(session.exercises);
+          sessionStorage.setItem(SESSION_KEY, JSON.stringify(session.exercises.map(e => e.id)));
+        }
         renderSession(session);
       })
       .catch(() => {
