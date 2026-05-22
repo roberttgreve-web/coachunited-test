@@ -23,7 +23,6 @@
   nav.innerHTML = `
     <a href="/home" class="desktop-topnav-logo">
       <img src="/logo.png" alt="Coach United">
-      <span>COACH UNITED</span>
     </a>
     <div class="desktop-topnav-links">
       <a href="/uebungen"      class="desktop-topnav-link ${isActive('/uebungen')}">Alle Übungen</a>

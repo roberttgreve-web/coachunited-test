@@ -153,8 +153,10 @@
   /* Thumb-Bild bei einheit/artikel-Karten volle Breite */
   .card-thumb {
     width: 100% !important;
-    height: 160px !important;
+    height: auto !important;
+    max-height: 220px !important;
     object-fit: cover !important;
+    object-position: center top !important;
     border-radius: 0 !important;
   }
 
@@ -211,8 +213,8 @@
   }
 
   .desktop-topnav-logo img {
-    width: 56px;
-    height: 56px;
+    height: 48px;
+    width: auto;
     object-fit: contain;
   }
 
@@ -335,6 +337,8 @@
     border-radius: 6px !important;
     padding: 16px !important;
     margin: 0 !important;
+    position: sticky !important;
+    top: 64px !important;
   }
 
   body:has(#exercise-content) .grafik-panel img {
@@ -616,6 +620,9 @@
 
   /* Logo in TopNav — im Foto-Panel ausblenden */
   body:has(.crest-panel) .crest-inner img { display: none !important; }
+
+  /* Hero-Foto-Div (mobil) auf Desktop ausblenden — Foto kommt via crest-panel bg */
+  body:has(.crest-panel) .hero-photo-panel { display: none !important; }
 
   /* Große Headline auf dem Foto */
   body:has(.crest-panel) .home-hero-headline {
@@ -1159,6 +1166,9 @@
 
   /* Reroll */
   body:has(.page-hero) .reroll-wrap { margin-top: 24px !important; }
+
+  /* Criteria-Bar (mobil) im Generator auf Desktop ausblenden */
+  body:has(.page-hero) .criteria-bar { display: none !important; }
 }
 
 
@@ -1293,4 +1303,14 @@
     background: #fff !important;
     border-top: 1px solid #E6E8EF !important;
   }
+}
+
+/* ══════════════════════════════════════════════════════════
+   ÜBUNG EINREICHEN — Desktop: direkt in Sprachnachricht
+   ══════════════════════════════════════════════════════════ */
+
+@media (min-width: 768px) {
+  /* Auswahl-Ebene ausblenden — auf Desktop direkt Voice-Sektion zeigen */
+  body:has(.mode-choice) .mode-choice { display: none !important; }
+  body:has(.mode-choice) #section-voice { display: block !important; }
 }
