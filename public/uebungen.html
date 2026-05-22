@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta property="og:image" content="https://test.coachunited.de/og-image.png">
   <title>Übungen – COACH UNITED</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -123,9 +126,9 @@
     }
     .pill-label {
       font-family: 'JetBrains Mono', ui-monospace, monospace;
-      font-size: 8px;
+      font-size: 10px;
       font-weight: 600;
-      letter-spacing: 0.12em;
+      letter-spacing: 0.10em;
       text-transform: uppercase;
       color: rgba(255,255,255,0.5);
       margin-bottom: 2px;
@@ -133,7 +136,7 @@
     .filter-pill.has-selection .pill-label { color: rgba(14,20,48,0.55); }
     .pill-value {
       font-family: 'Inter Tight', system-ui, sans-serif;
-      font-size: 12px;
+      font-size: 14px;
       font-weight: 600;
       color: #fff;
       white-space: nowrap;
@@ -253,18 +256,6 @@
       transform: translateY(-1px);
     }
 
-    .card-grid {
-      display: grid;
-      grid-template-columns: 52% 1fr;
-      gap: 14px;
-      min-height: 80px;
-    }
-    .card-left {
-      padding-right: 10px;
-      border-right: 1px solid #E6E8EF;
-      display: flex;
-      align-items: flex-start;
-    }
     .card-title {
       font-family: 'Inter Tight', system-ui, sans-serif;
       font-size: 17px;
@@ -273,14 +264,13 @@
       line-height: 1.18;
       letter-spacing: -0.02em;
     }
-    .card-right { display: flex; align-items: flex-start; }
     .card-desc {
       font-family: 'Inter Tight', system-ui, sans-serif;
       font-size: 13px;
       line-height: 1.5;
       color: #3B4565;
       display: -webkit-box;
-      -webkit-line-clamp: 5;
+      -webkit-line-clamp: 3;
       -webkit-box-orient: vertical;
       overflow: hidden;
     }
@@ -561,7 +551,7 @@
           <circle cx="11" cy="9.5" r="0.6" fill="currentColor" stroke="none"/>
           <circle cx="14" cy="9.5" r="0.6" fill="currentColor" stroke="none"/>
         </svg>
-        <span>Übung des Tages</span>
+        <span>WhatsApp-Kanal</span>
       </a>
       <a href="/uebung-einreichen" class="nav-item">
         <svg class="nav-icon" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
@@ -696,14 +686,8 @@
         const more = skills.length > 2 ? `<span class="tag-more">+${skills.length - 2}</span>` : '';
         return `
           <a href="${href}" class="exercise-card" data-phase="${ex.trainingsphase || ''}">
-            <div class="card-grid">
-              <div class="card-left">
-                <h3 class="card-title">${ex.titel}</h3>
-              </div>
-              <div class="card-right">
-                <p class="card-desc">${ex.kurzbeschreibung || ''}</p>
-              </div>
-            </div>
+            <h3 class="card-title">${ex.titel}</h3>
+            ${ex.kurzbeschreibung ? `<p class="card-desc">${ex.kurzbeschreibung}</p>` : ''}
             <div class="card-tags">${phaseTag}${jahrgangTag}${visSkills}${more}</div>
           </a>`;
       }).join('');

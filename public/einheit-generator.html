@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta property="og:image" content="https://test.coachunited.de/og-image.png">
   <title>Einheit zusammenstellen – COACH UNITED</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,7 +31,7 @@
     .burger-btn span { display: block; width: 22px; height: 2px; background: #0E1430; border-radius: 2px; }
 
     /* ── Page Hero ── */
-    .page-hero { background: #0E1430; padding: 14px 18px 22px; }
+    .page-hero { background: #0E1430; padding: 14px 18px 18px; }
     .back-btn {
       display: inline-flex; align-items: center; gap: 6px;
       background: none; border: none; cursor: pointer;
@@ -40,8 +43,55 @@
     .back-btn:hover { color: #fff; }
     .hero-title {
       font-size: 24px; font-weight: 800; color: #fff;
-      letter-spacing: -0.02em; line-height: 1.2; margin: 0;
+      letter-spacing: -0.02em; line-height: 1.2; margin: 0 0 14px;
     }
+
+    /* ── Kriterien-Bar ── */
+    .criteria-bar {
+      display: flex; gap: 8px; flex-wrap: wrap;
+      position: relative;
+    }
+    .crit-wrap { position: relative; }
+    .crit-pill {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 7px 12px;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.22);
+      border-radius: 999px;
+      color: #fff;
+      font-family: 'Inter Tight', system-ui, sans-serif;
+      font-size: 13px; font-weight: 600;
+      cursor: pointer; transition: background 0.15s;
+    }
+    .crit-pill:hover { background: rgba(255,255,255,0.2); }
+    .crit-pill svg { opacity: 0.7; transition: transform 0.15s; }
+    .crit-wrap.open .crit-pill svg { transform: rotate(180deg); }
+    .crit-pill-clear {
+      opacity: 0.6; font-size: 14px; line-height: 1;
+      background: none; border: none; color: inherit; cursor: pointer; padding: 0;
+    }
+    .crit-pill-clear:hover { opacity: 1; }
+    .crit-dropdown {
+      display: none;
+      position: absolute;
+      top: calc(100% + 6px); left: 0;
+      min-width: 160px;
+      background: #fff; border-radius: 10px;
+      padding: 6px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.28);
+      z-index: 50;
+    }
+    .crit-wrap.open .crit-dropdown { display: block; }
+    .crit-option {
+      display: block; width: 100%;
+      padding: 9px 12px; border: none; background: none;
+      text-align: left; border-radius: 6px;
+      font-family: 'Inter Tight', system-ui, sans-serif;
+      font-size: 14px; font-weight: 600; color: #0E1430;
+      cursor: pointer; transition: background 0.12s;
+    }
+    .crit-option:hover { background: #f0f4ff; }
+    .crit-option.active { background: #EEF3FF; color: #1E6BFF; }
 
     /* ── Content ── */
     .content { flex: 1; overflow-y: auto; padding: 20px 16px 100px; }
@@ -257,6 +307,7 @@
         Zur Auswahl
       </button>
       <h1 class="hero-title">Deine Trainingseinheit</h1>
+      <div class="criteria-bar" id="criteria-bar"></div>
     </div>
 
     <div class="content">
@@ -273,7 +324,7 @@
             Neu würfeln
           </button>
           <p id="no-variations" class="no-variations" style="display:none;">
-            Keine weitere Variation verfügbar.
+            Für diese Auswahl gibt es keine weitere Kombination. Ändere Jugend oder Skill für mehr Variationen.
           </p>
         </div>
       </div>
@@ -296,7 +347,7 @@
         <svg class="nav-icon" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
           <path d="M4 6a2 2 0 012-2h10a2 2 0 012 2v7a2 2 0 01-2 2H9l-4 3v-3H6a2 2 0 01-2-2z"/>
         </svg>
-        <span>Übung des Tages</span>
+        <span>WhatsApp-Kanal</span>
       </a>
       <a href="/uebung-einreichen" class="nav-item">
         <svg class="nav-icon" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
@@ -327,6 +378,66 @@
     let currentKey   = null;
 
     if (!jugend) window.location.href = '/home';
+
+    const heroTitleEl = document.querySelector('.hero-title');
+    if (heroTitleEl && jugend) {
+      heroTitleEl.textContent = skill ? jugend + ' · ' + skill : jugend;
+    }
+
+    // ── Kriterien-Bar ─────────────────────────────────────────────
+    const JUGEND_OPTIONS = ['G-Jugend','F-Jugend','E-Jugend','D-Jugend'];
+    const chevronSvg = `<svg width="10" height="10" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>`;
+
+    function buildCriteriaBar(skillOptions) {
+      const bar = document.getElementById('criteria-bar');
+      const jugendOpts = JUGEND_OPTIONS.map(j =>
+        `<button class="crit-option${j === jugend ? ' active' : ''}" onclick="changeCrit('jugend','${j}')">${j}</button>`
+      ).join('');
+
+      const skillOpts = skillOptions.map(s =>
+        `<button class="crit-option${s === skill ? ' active' : ''}" onclick="changeCrit('skill','${s}')">${s}</button>`
+      ).join('');
+
+      const skillClearBtn = skill
+        ? `<button class="crit-pill-clear" onclick="changeCrit('skill',null)" title="Skill entfernen">✕</button>` : '';
+      const skillLabel = skill || 'Alle Skills';
+
+      bar.innerHTML = `
+        <div class="crit-wrap" id="crit-wrap-jugend">
+          <button class="crit-pill" onclick="toggleCritDrop('jugend')">
+            ${jugend} ${chevronSvg}
+          </button>
+          <div class="crit-dropdown">${jugendOpts}</div>
+        </div>
+        <div class="crit-wrap" id="crit-wrap-skill">
+          <button class="crit-pill" onclick="toggleCritDrop('skill')">
+            ${skillLabel} ${chevronSvg}
+          </button>
+          ${skillClearBtn}
+          <div class="crit-dropdown">${skillOpts}</div>
+        </div>`;
+
+      document.addEventListener('click', e => {
+        if (!e.target.closest('.crit-wrap')) {
+          document.querySelectorAll('.crit-wrap').forEach(w => w.classList.remove('open'));
+        }
+      });
+    }
+
+    function toggleCritDrop(key) {
+      const wrap = document.getElementById('crit-wrap-' + key);
+      const wasOpen = wrap.classList.contains('open');
+      document.querySelectorAll('.crit-wrap').forEach(w => w.classList.remove('open'));
+      if (!wasOpen) wrap.classList.add('open');
+    }
+
+    function changeCrit(key, value) {
+      const newJugend = key === 'jugend' ? value : jugend;
+      const newSkill  = key === 'skill'  ? value : (key === 'skill-clear' ? null : skill);
+      let url = '/einheit-generator?jugend=' + encodeURIComponent(newJugend);
+      if (newSkill) url += '&skill=' + encodeURIComponent(newSkill);
+      window.location.href = url;
+    }
 
     // ── Phasen-Konfiguration ──────────────────────────────────────
     const PHASES = [
@@ -439,12 +550,6 @@
       document.getElementById('reroll-btn').disabled = !session.canReroll;
       document.getElementById('no-variations').style.display = session.canReroll ? 'none' : 'block';
 
-      // Hero-Titel dynamisch setzen
-      const heroTitleEl = document.querySelector('.hero-title');
-      if (heroTitleEl) {
-        heroTitleEl.textContent = skill ? jugend + ' · ' + skill : jugend;
-      }
-
       const skillBadge = skill
         ? `<span class="session-badge badge-skill">Fokus: ${skill}</span>` : '';
       const badges = [
@@ -519,7 +624,10 @@
       }
 
       const first = document.querySelector('.ex-card');
-      if (first && !isDesktop) first.classList.add('open');
+      if (first && !isDesktop) {
+        first.classList.add('open');
+        document.querySelector('.content').scrollTop = 0;
+      }
     }
 
     function renderAccordionItem(ex, index, phaseColors) {
@@ -598,6 +706,13 @@
       .then(r => r.json())
       .then(data => {
         allExercises = data;
+
+        // Kriterien-Bar mit Skills befüllen
+        const validSkills = [...new Set(
+          data.filter(e => e.status === 'veroeffentlicht' && (e.jugend || []).includes(jugend))
+              .flatMap(e => e.skills || [])
+        )].sort();
+        buildCriteriaBar(validSkills);
 
         // Restore session on back-navigation
         const saved = sessionStorage.getItem(SESSION_KEY);

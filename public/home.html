@@ -1,8 +1,11 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta property="og:image" content="https://test.coachunited.de/og-image.png">
   <title>COACH UNITED</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,6 +25,7 @@
       background: #0E1430;
       display: flex;
       flex-direction: column;
+      position: relative;
     }
 
     /* ── Wappen-Panel ── */
@@ -30,6 +34,7 @@
       width: 100%;
       height: 280px;
       flex-shrink: 0;
+      z-index: 1;
     }
     .crest-shape {
       position: absolute;
@@ -60,6 +65,32 @@
       flex-direction: column;
       padding: 30px 22px 28px;
       overflow-y: auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* ── Hero-Foto ── */
+    .hero-photo-panel {
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 320px;
+      z-index: 0;
+      pointer-events: none;
+    }
+    .hero-photo-panel::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, #0E1430 0%, rgba(14,20,48,0.55) 100%);
+      z-index: 1;
+    }
+    .hero-photo-panel img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 40%;
+      opacity: 0.38;
+      display: block;
     }
 
     .selects { display: flex; flex-direction: column; gap: 18px; }
@@ -270,9 +301,7 @@
         <path d="M 0 0 L 375 0 L 375 210 C 375 224 355 231 327 237 C 299 243 261 250 224 263 C 206 269 196 276 187.5 286 C 179 276 169 269 151 263 C 114 250 76 243 48 237 C 20 231 0 224 0 210 Z" fill="#FFFFFF"/>
       </svg>
       <div class="crest-inner">
-        <img src="/logo.png" alt="Coach United Logo">
-        <h2 class="home-hero-headline">Deine kostenlose Übungs-Bibliothek für den Kinderfußball.</h2>
-        <p class="home-hero-sub">Aus dem Ehrenamt. Für das Ehrenamt.</p>
+        <img src="/logo-home.png" alt="Coach United Logo">
       </div>
     </div>
 
@@ -346,6 +375,10 @@
 
       </div>
 
+    </div>
+
+    <div class="hero-photo-panel" aria-hidden="true">
+      <img src="/hero-photo.jpg" alt="">
     </div>
   </div>
 

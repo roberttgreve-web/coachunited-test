@@ -208,7 +208,8 @@
             seite: window.location.pathname,
           }),
         });
-        if (res.ok) {
+        const data = await res.json().catch(() => ({}));
+        if (res.ok && data.success !== false) {
           document.getElementById('cu-fb-form-wrap').style.display = 'none';
           document.getElementById('cu-fb-success').classList.add('show');
           setTimeout(() => this.close(), 3200);
@@ -221,9 +222,11 @@
             btn.textContent = 'Feedback absenden';
           }, 3400);
         } else {
-          throw new Error();
+          console.error('Feedback fehlgeschlagen:', res.status, data);
+          throw new Error(data.message || 'Unbekannter Fehler');
         }
-      } catch {
+      } catch (err) {
+        console.error('Feedback submit error:', err);
         btn.disabled = false;
         btn.textContent = 'Erneut versuchen';
       }

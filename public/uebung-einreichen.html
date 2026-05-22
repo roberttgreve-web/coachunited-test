@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta property="og:image" content="https://test.coachunited.de/og-image.png">
   <title>Übung einreichen – COACH UNITED</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -108,23 +111,37 @@
     }
     .audio-file-fallback { margin-top: 10px; }
 
-    .or-divider {
-      display: flex; align-items: center; gap: 12px;
-      margin: 20px 0;
+    /* ── Zwei-Wege-Auswahl ── */
+    .mode-choice {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 10px;
+      margin-bottom: 28px;
     }
-    .or-divider::before, .or-divider::after {
-      content: ''; flex: 1; height: 1px; background: #E6E8EF;
+    .mode-btn {
+      display: flex; flex-direction: column; align-items: center;
+      gap: 10px; padding: 20px 12px;
+      background: #F5F6F9; border: 2px solid #E6E8EF;
+      border-radius: 14px; cursor: pointer;
+      text-align: center; transition: all 0.18s;
     }
-    .or-divider span {
-      font-family: 'JetBrains Mono', ui-monospace, monospace;
-      font-size: 10px; font-weight: 700; color: #9aa3b0;
-      text-transform: uppercase; letter-spacing: 0.12em;
+    .mode-btn:hover { border-color: #1E6BFF; background: #f0f4ff; }
+    .mode-btn.active {
+      background: #0E1430; border-color: #0E1430; color: #fff;
     }
+    .mode-btn svg { transition: color 0.18s; color: #6B7390; }
+    .mode-btn.active svg { color: #fff; }
+    .mode-btn-label {
+      font-size: 14px; font-weight: 700; color: #0E1430;
+      letter-spacing: -0.01em; transition: color 0.18s;
+    }
+    .mode-btn.active .mode-btn-label { color: #fff; }
+    .mode-btn-hint {
+      font-size: 11px; color: #9aa3b0; line-height: 1.4;
+      transition: color 0.18s;
+    }
+    .mode-btn.active .mode-btn-hint { color: rgba(255,255,255,0.55); }
 
-    .schriftlich-title {
-      font-size: 15px; font-weight: 700; color: #0E1430;
-      margin-bottom: 16px;
-    }
+    .mode-section { display: none; }
+    .mode-section.open { display: block; }
 
     .file-upload-label {
       display: flex; align-items: center; gap: 10px;
@@ -225,129 +242,156 @@
     </div>
 
     <div class="content">
-      <form id="form-area"
-            action="https://formsubmit.co/mail.coachunited@gmail.com"
-            method="POST"
-            enctype="multipart/form-data"
-            novalidate
-            onsubmit="return handleSubmit(event)">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" id="fs-subject" name="_subject" value="">
-        <input type="hidden" id="fs-next" name="_next" value="">
-        <input type="file" id="final-attachment" name="attachment" style="display:none" aria-hidden="true">
 
-        <p class="form-section-title">Über dich</p>
-
-        <div class="field">
-          <label class="field-label" for="trainer-name">
-            Dein Name
-            <span class="field-optional">wird nicht veröffentlicht</span>
-          </label>
-          <input type="text" id="trainer-name" name="trainer_name" placeholder="z.B. Max Mustermann" required>
-        </div>
-
-        <div class="field">
-          <label class="field-label" for="webname">
-            Webname
-            <span class="field-optional">Optional</span>
-          </label>
-          <input type="text" id="webname" name="webname" placeholder="wie du als Autor*in erscheinen möchtest">
-        </div>
-
-        <div class="field">
-          <label class="field-label" for="trainer-email">E-Mail-Adresse</label>
-          <input type="email" id="trainer-email" name="trainer_email" placeholder="deine@email.de" required>
-        </div>
-
-        <!-- Prominente Sprachnachricht -->
-        <div class="audio-primary" id="audio-primary-area">
-          <div id="audio-idle" style="display:flex;flex-direction:column;align-items:center;gap:10px;width:100%">
-            <svg width="32" height="32" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M11 2a3 3 0 013 3v6a3 3 0 01-6 0V5a3 3 0 013-3z"/>
-              <path d="M5 10a6 6 0 0012 0"/>
-              <line x1="11" y1="18" x2="11" y2="22"/>
-            </svg>
-            <span class="audio-primary-title">Sprachnachricht aufnehmen</span>
-            <span class="audio-primary-sub">Direkt im Browser · kein Extra-Upload</span>
-            <button class="audio-action-btn" onclick="startRecording()">Aufnehmen</button>
-          </div>
-          <div id="audio-recording" style="display:none;flex-direction:column;align-items:center;gap:10px;width:100%">
-            <div class="audio-pulse-dot"></div>
-            <span class="audio-primary-title">Aufnahme läuft …</span>
-            <span class="audio-timer" id="audio-timer">0:00</span>
-            <button class="audio-action-btn audio-stop-btn" onclick="stopRecording()">Stopp</button>
-          </div>
-          <div id="audio-done" style="display:none;flex-direction:column;align-items:center;gap:10px;width:100%">
-            <svg width="32" height="32" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M20 6L9 17l-5-5"/>
-            </svg>
-            <span class="audio-primary-title">Aufnahme bereit</span>
-            <span class="audio-primary-sub" id="audio-done-duration"></span>
-            <button class="audio-action-btn" onclick="reRecord()">Erneut aufnehmen</button>
-          </div>
-        </div>
-        <label class="file-upload-label audio-file-fallback" for="audio-upload">
-          <svg width="18" height="18" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M21 15v4a2 2 0 01-2 2H3a2 2 0 01-2-2v-4"/>
-            <polyline points="17 8 12 3 7 8"/>
-            <line x1="12" y1="3" x2="12" y2="15"/>
+      <!-- Zwei-Wege-Auswahl -->
+      <div class="mode-choice">
+        <button class="mode-btn" id="btn-voice" onclick="selectMode('voice')">
+          <svg width="28" height="28" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M11 2a3 3 0 013 3v6a3 3 0 01-6 0V5a3 3 0 013-3z"/>
+            <path d="M5 10a6 6 0 0012 0"/>
+            <line x1="11" y1="18" x2="11" y2="22"/>
           </svg>
-          <div>
-            <span>Datei hochladen</span>
-            <small>MP3, M4A, WAV</small>
-          </div>
-          <input type="file" id="audio-upload" name="audio" accept="audio/*" onchange="onAudioChange(this)">
-        </label>
-        <div class="file-name" id="audio-file-name"></div>
-
-        <div class="or-divider"><span>oder</span></div>
-
-        <p class="schriftlich-title">Oder schriftlich beschreiben</p>
-
-        <div class="field">
-          <label class="field-label" for="beschreibung">
-            Beschreibe deine Übung
-            <span class="field-optional">Optional</span>
-          </label>
-          <textarea id="beschreibung" name="beschreibung" placeholder="Aufbau, Ablauf, Variationen …" oninput="checkReady()"></textarea>
-        </div>
-
-        <div class="field">
-          <div class="field-label">
-            Skizze oder Foto
-            <span class="field-optional">Optional</span>
-          </div>
-          <label class="file-upload-label" for="foto-upload">
-            <svg width="20" height="20" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="3" y="3" width="16" height="16" rx="2"/>
-              <circle cx="8" cy="8" r="1.5"/>
-              <path d="M3 15l5-5 4 4 2-2 5 5"/>
-            </svg>
-            <div>
-              <span>Bild auswählen</span>
-              <small>JPG, PNG oder PDF · max. 5 MB</small>
-            </div>
-            <input type="file" id="foto-upload" name="foto" accept="image/*,.pdf" onchange="showFileName(this, 'foto-name')">
-          </label>
-          <div class="file-name" id="foto-name"></div>
-        </div>
-
-        <div class="legal-block">
-          <label class="legal-check">
-            <input type="checkbox" id="legal-check" onchange="checkReady()">
-            <span class="legal-text">
-              Ich bestätige, dass ich Coach United hiermit unwiderruflich und zeitlich unbefristet das Recht einräume, diese Übung auf der Plattform zu veröffentlichen. Coach United behält sich vor, die Übung zu bearbeiten oder anzupassen.
-            </span>
-          </label>
-        </div>
-
-        <button type="submit" class="submit-btn" id="submit-btn" disabled>
-          <svg width="18" height="18" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M15.5 2.5a2.121 2.121 0 013 3L7 17l-4 1 1-4 10.5-10.5z"/>
-          </svg>
-          Übung einreichen
+          <span class="mode-btn-label">Per Sprach&shy;nachricht</span>
+          <span class="mode-btn-hint">Aufnehmen oder Datei hochladen</span>
         </button>
-      </form>
+        <button class="mode-btn" id="btn-text" onclick="selectMode('text')">
+          <svg width="28" height="28" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17 3H5a2 2 0 00-2 2v14l4-4h10a2 2 0 002-2V5a2 2 0 00-2-2z"/>
+            <line x1="8" y1="10" x2="14" y2="10"/>
+            <line x1="8" y1="14" x2="11" y2="14"/>
+          </svg>
+          <span class="mode-btn-label">Per Text</span>
+          <span class="mode-btn-hint">Schriftlich beschreiben</span>
+        </button>
+      </div>
+
+      <!-- Section: Sprachnachricht -->
+      <div class="mode-section" id="section-voice">
+        <form action="https://formsubmit.co/mail.coachunited@gmail.com" method="POST" enctype="multipart/form-data" novalidate onsubmit="return handleSubmit(event,'voice')">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" id="fs-subject-voice" name="_subject" value="">
+          <input type="hidden" id="fs-next-voice" name="_next" value="">
+          <input type="file" id="final-attachment-voice" name="attachment" style="display:none" aria-hidden="true">
+
+          <p class="form-section-title">Über dich</p>
+          <div class="field">
+            <label class="field-label" for="trainer-name-voice">Dein Name <span class="field-optional">wird nicht veröffentlicht</span></label>
+            <input type="text" id="trainer-name-voice" name="trainer_name" placeholder="z.B. Max Mustermann" required oninput="checkReady('voice')">
+          </div>
+          <div class="field">
+            <label class="field-label" for="webname-voice">Webname <span class="field-optional">Optional</span></label>
+            <input type="text" id="webname-voice" name="webname" placeholder="wie du als Autor*in erscheinen möchtest">
+          </div>
+          <div class="field">
+            <label class="field-label" for="trainer-email-voice">E-Mail-Adresse</label>
+            <input type="email" id="trainer-email-voice" name="trainer_email" placeholder="deine@email.de" required oninput="checkReady('voice')">
+          </div>
+
+          <p class="form-section-title">Deine Sprachnachricht</p>
+          <div class="audio-primary" id="audio-primary-area">
+            <div id="audio-idle" style="display:flex;flex-direction:column;align-items:center;gap:10px;width:100%">
+              <svg width="32" height="32" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M11 2a3 3 0 013 3v6a3 3 0 01-6 0V5a3 3 0 013-3z"/>
+                <path d="M5 10a6 6 0 0012 0"/>
+                <line x1="11" y1="18" x2="11" y2="22"/>
+              </svg>
+              <span class="audio-primary-title">Sprachnachricht aufnehmen</span>
+              <span class="audio-primary-sub">Direkt im Browser · kein Extra-Upload</span>
+              <button class="audio-action-btn" type="button" onclick="startRecording()">Aufnehmen</button>
+            </div>
+            <div id="audio-recording" style="display:none;flex-direction:column;align-items:center;gap:10px;width:100%">
+              <div class="audio-pulse-dot"></div>
+              <span class="audio-primary-title">Aufnahme läuft …</span>
+              <span class="audio-timer" id="audio-timer">0:00</span>
+              <button class="audio-action-btn audio-stop-btn" type="button" onclick="stopRecording()">Stopp</button>
+            </div>
+            <div id="audio-done" style="display:none;flex-direction:column;align-items:center;gap:10px;width:100%">
+              <svg width="32" height="32" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 6L9 17l-5-5"/>
+              </svg>
+              <span class="audio-primary-title">Aufnahme bereit</span>
+              <span class="audio-primary-sub" id="audio-done-duration"></span>
+              <button class="audio-action-btn" type="button" onclick="reRecord()">Erneut aufnehmen</button>
+            </div>
+          </div>
+          <label class="file-upload-label audio-file-fallback" for="audio-upload">
+            <svg width="18" height="18" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 01-2 2H3a2 2 0 01-2-2v-4"/>
+              <polyline points="17 8 12 3 7 8"/>
+              <line x1="12" y1="3" x2="12" y2="15"/>
+            </svg>
+            <div><span>Oder Datei hochladen</span><small>MP3, M4A, WAV</small></div>
+            <input type="file" id="audio-upload" name="audio" accept="audio/*" onchange="onAudioChange(this)">
+          </label>
+          <div class="file-name" id="audio-file-name"></div>
+
+          <div class="legal-block" style="margin-top:24px">
+            <label class="legal-check">
+              <input type="checkbox" id="legal-check-voice" onchange="checkReady('voice')">
+              <span class="legal-text">Ich bestätige, dass ich Coach United hiermit unwiderruflich und zeitlich unbefristet das Recht einräume, diese Übung auf der Plattform zu veröffentlichen. Coach United behält sich vor, die Übung zu bearbeiten oder anzupassen.</span>
+            </label>
+          </div>
+          <button type="submit" class="submit-btn" id="submit-btn-voice" disabled>
+            <svg width="18" height="18" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15.5 2.5a2.121 2.121 0 013 3L7 17l-4 1 1-4 10.5-10.5z"/></svg>
+            Übung einreichen
+          </button>
+        </form>
+      </div>
+
+      <!-- Section: Text -->
+      <div class="mode-section" id="section-text">
+        <form action="https://formsubmit.co/mail.coachunited@gmail.com" method="POST" enctype="multipart/form-data" novalidate onsubmit="return handleSubmit(event,'text')">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" id="fs-subject-text" name="_subject" value="">
+          <input type="hidden" id="fs-next-text" name="_next" value="">
+          <input type="file" id="final-attachment-text" name="attachment" style="display:none" aria-hidden="true">
+
+          <p class="form-section-title">Über dich</p>
+          <div class="field">
+            <label class="field-label" for="trainer-name-text">Dein Name <span class="field-optional">wird nicht veröffentlicht</span></label>
+            <input type="text" id="trainer-name-text" name="trainer_name" placeholder="z.B. Max Mustermann" required oninput="checkReady('text')">
+          </div>
+          <div class="field">
+            <label class="field-label" for="webname-text">Webname <span class="field-optional">Optional</span></label>
+            <input type="text" id="webname-text" name="webname" placeholder="wie du als Autor*in erscheinen möchtest">
+          </div>
+          <div class="field">
+            <label class="field-label" for="trainer-email-text">E-Mail-Adresse</label>
+            <input type="email" id="trainer-email-text" name="trainer_email" placeholder="deine@email.de" required oninput="checkReady('text')">
+          </div>
+
+          <p class="form-section-title">Deine Übung</p>
+          <div class="field">
+            <label class="field-label" for="beschreibung">Beschreibe deine Übung</label>
+            <textarea id="beschreibung" name="beschreibung" placeholder="Aufbau, Ablauf, Variationen …" oninput="checkReady('text')"></textarea>
+          </div>
+          <div class="field">
+            <div class="field-label">Skizze oder Foto <span class="field-optional">Optional</span></div>
+            <label class="file-upload-label" for="foto-upload">
+              <svg width="20" height="20" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="16" height="16" rx="2"/>
+                <circle cx="8" cy="8" r="1.5"/>
+                <path d="M3 15l5-5 4 4 2-2 5 5"/>
+              </svg>
+              <div><span>Bild auswählen</span><small>JPG, PNG oder PDF · max. 5 MB</small></div>
+              <input type="file" id="foto-upload" name="foto" accept="image/*,.pdf" onchange="showFileName(this, 'foto-name')">
+            </label>
+            <div class="file-name" id="foto-name"></div>
+          </div>
+
+          <div class="legal-block" style="margin-top:8px">
+            <label class="legal-check">
+              <input type="checkbox" id="legal-check-text" onchange="checkReady('text')">
+              <span class="legal-text">Ich bestätige, dass ich Coach United hiermit unwiderruflich und zeitlich unbefristet das Recht einräume, diese Übung auf der Plattform zu veröffentlichen. Coach United behält sich vor, die Übung zu bearbeiten oder anzupassen.</span>
+            </label>
+          </div>
+          <button type="submit" class="submit-btn" id="submit-btn-text" disabled>
+            <svg width="18" height="18" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15.5 2.5a2.121 2.121 0 013 3L7 17l-4 1 1-4 10.5-10.5z"/></svg>
+            Übung einreichen
+          </button>
+        </form>
+      </div>
+
     </div>
 
     <nav class="bottom-nav">
@@ -367,7 +411,7 @@
         <svg class="nav-icon" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
           <path d="M4 6a2 2 0 012-2h10a2 2 0 012 2v7a2 2 0 01-2 2H9l-4 3v-3H6a2 2 0 01-2-2z"/>
         </svg>
-        <span>Übung des Tages</span>
+        <span>WhatsApp-Kanal</span>
       </a>
       <a href="/uebung-einreichen" class="nav-item active">
         <svg class="nav-icon" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
@@ -398,6 +442,13 @@
       document.getElementById('drawer-overlay').classList.remove('open');
     }
 
+    function selectMode(mode) {
+      document.getElementById('btn-voice').classList.toggle('active', mode === 'voice');
+      document.getElementById('btn-text').classList.toggle('active', mode === 'text');
+      document.getElementById('section-voice').classList.toggle('open', mode === 'voice');
+      document.getElementById('section-text').classList.toggle('open', mode === 'text');
+    }
+
     let mediaRecorder = null;
     let recordedChunks = [];
     let recordedBlob = null;
@@ -423,7 +474,7 @@
           const s = String(recordingSeconds % 60).padStart(2, '0');
           document.getElementById('audio-done-duration').textContent = m + ':' + s + ' aufgenommen';
           showAudioState('done');
-          checkReady();
+          checkReady('voice');
         };
         mediaRecorder.start();
         recordingSeconds = 0;
@@ -448,7 +499,7 @@
     function reRecord() {
       recordedBlob = null;
       showAudioState('idle');
-      checkReady();
+      checkReady('voice');
     }
 
     function showAudioState(state) {
@@ -468,57 +519,55 @@
       } else {
         document.getElementById('audio-file-name').textContent = '';
       }
-      checkReady();
+      checkReady('voice');
     }
 
     function showFileName(input, targetId) {
       document.getElementById(targetId).textContent = input.files[0] ? input.files[0].name : '';
     }
 
-    function checkReady() {
-      const name = document.getElementById('trainer-name').value.trim();
-      const email = document.getElementById('trainer-email').value.trim();
-      const legal = document.getElementById('legal-check').checked;
-      const hasAudio = !!recordedBlob || !!document.getElementById('audio-upload').files[0];
-      const hasBeschreibung = !!document.getElementById('beschreibung').value.trim();
-      const btn = document.getElementById('submit-btn');
-      const ready = name && email && legal && (hasAudio || hasBeschreibung);
+    function checkReady(mode) {
+      const name = document.getElementById('trainer-name-' + mode).value.trim();
+      const email = document.getElementById('trainer-email-' + mode).value.trim();
+      const legal = document.getElementById('legal-check-' + mode).checked;
+      let hasContent = false;
+      if (mode === 'voice') {
+        hasContent = !!recordedBlob || !!document.getElementById('audio-upload').files[0];
+      } else {
+        hasContent = !!document.getElementById('beschreibung').value.trim();
+      }
+      const btn = document.getElementById('submit-btn-' + mode);
+      const ready = !!(name && email && legal && hasContent);
       btn.disabled = !ready;
       btn.classList.toggle('ready', ready);
     }
 
-    ['trainer-name', 'trainer-email'].forEach(id => {
-      document.getElementById(id).addEventListener('input', checkReady);
-    });
-
-    function handleSubmit(event) {
-      const btn = document.getElementById('submit-btn');
+    function handleSubmit(event, mode) {
+      const btn = document.getElementById('submit-btn-' + mode);
       if (btn.disabled) { event.preventDefault(); return false; }
 
-      const name = document.getElementById('trainer-name').value.trim();
-      const hasAudio = !!recordedBlob || !!document.getElementById('audio-upload').files[0];
+      const name = document.getElementById('trainer-name-' + mode).value.trim();
 
-      // Dynamische Felder setzen
-      document.getElementById('fs-subject').value = hasAudio
-        ? 'Neue Übungs-Einreichung (Sprachnachricht) von ' + name
-        : 'Neue Übungs-Einreichung von ' + name;
-      document.getElementById('fs-next').value = window.location.origin + '/danke';
-
-      // Anhang: Blob → hidden file input (Audio > Upload > Foto)
-      const dt = new DataTransfer();
-      if (recordedBlob) {
-        const ext = recordedBlob.type.includes('mp4') ? 'm4a' : recordedBlob.type.includes('ogg') ? 'ogg' : 'webm';
-        dt.items.add(new File([recordedBlob], 'sprachnachricht.' + ext, { type: recordedBlob.type }));
-      } else {
-        const audioInput = document.getElementById('audio-upload');
-        if (audioInput.files[0]) {
-          dt.items.add(audioInput.files[0]);
+      if (mode === 'voice') {
+        document.getElementById('fs-subject-voice').value = 'Neue Übungs-Einreichung (Sprachnachricht) von ' + name;
+        document.getElementById('fs-next-voice').value = window.location.origin + '/danke';
+        const dt = new DataTransfer();
+        if (recordedBlob) {
+          const ext = recordedBlob.type.includes('mp4') ? 'm4a' : recordedBlob.type.includes('ogg') ? 'ogg' : 'webm';
+          dt.items.add(new File([recordedBlob], 'sprachnachricht.' + ext, { type: recordedBlob.type }));
         } else {
-          const fotoInput = document.getElementById('foto-upload');
-          if (fotoInput.files[0]) dt.items.add(fotoInput.files[0]);
+          const audioInput = document.getElementById('audio-upload');
+          if (audioInput.files[0]) dt.items.add(audioInput.files[0]);
         }
+        document.getElementById('final-attachment-voice').files = dt.files;
+      } else {
+        document.getElementById('fs-subject-text').value = 'Neue Übungs-Einreichung von ' + name;
+        document.getElementById('fs-next-text').value = window.location.origin + '/danke';
+        const dt = new DataTransfer();
+        const fotoInput = document.getElementById('foto-upload');
+        if (fotoInput.files[0]) dt.items.add(fotoInput.files[0]);
+        document.getElementById('final-attachment-text').files = dt.files;
       }
-      document.getElementById('final-attachment').files = dt.files;
 
       btn.classList.remove('ready');
       btn.classList.add('loading');

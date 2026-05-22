@@ -28,7 +28,7 @@
     <div class="desktop-topnav-links">
       <a href="/uebungen"      class="desktop-topnav-link ${isActive('/uebungen')}">Alle Übungen</a>
       <a href="/einheiten"     class="desktop-topnav-link ${isActive('/einheiten')}">Einheit erhalten</a>
-      <a href="/whatsapp-info" class="desktop-topnav-link ${isActive('/whatsapp-info')}">Übung des Tages</a>
+      <a href="/whatsapp-info" class="desktop-topnav-link ${isActive('/whatsapp-info')}">WhatsApp-Kanal</a>
       <a href="/uebung-einreichen" class="desktop-topnav-link ${isActive('/uebung-einreichen')}">Übung einreichen</a>
     </div>
   `;
