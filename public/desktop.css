@@ -1309,8 +1309,3 @@
    ÜBUNG EINREICHEN — Desktop: direkt in Sprachnachricht
    ══════════════════════════════════════════════════════════ */
 
-@media (min-width: 768px) {
-  /* Auswahl-Ebene ausblenden — auf Desktop direkt Voice-Sektion zeigen */
-  body:has(.mode-choice) .mode-choice { display: none !important; }
-  body:has(.mode-choice) #section-voice { display: block !important; }
-}
