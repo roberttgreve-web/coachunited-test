@@ -26,7 +26,7 @@
       position: sticky; top: 0; z-index: 20;
     }
     .logo-link { display: flex; align-items: center; text-decoration: none; }
-    .logo-link img { width: 56px; height: 56px; object-fit: contain; }
+    .logo-link img { height: 40px; width: auto; object-fit: contain; }
     .burger-btn { background: none; border: none; cursor: pointer; padding: 6px; display: flex; flex-direction: column; gap: 5px; }
     .burger-btn span { display: block; width: 22px; height: 2px; background: #0E1430; border-radius: 2px; }
 
@@ -624,10 +624,11 @@
       }
 
       const first = document.querySelector('.ex-card');
-      if (first && !isDesktop) {
-        first.classList.add('open');
-        document.querySelector('.content').scrollTop = 0;
-      }
+      if (first && !isDesktop) first.classList.add('open');
+      requestAnimationFrame(() => {
+        const c = document.querySelector('.content');
+        if (c) c.scrollTop = 0;
+      });
     }
 
     function renderAccordionItem(ex, index, phaseColors) {

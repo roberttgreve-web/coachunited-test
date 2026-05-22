@@ -25,7 +25,7 @@
       position: sticky; top: 0; z-index: 20;
     }
     .logo-link { display: flex; align-items: center; text-decoration: none; }
-    .logo-link img { width: 56px; height: 56px; object-fit: contain; }
+    .logo-link img { height: 40px; width: auto; object-fit: contain; }
     .burger-btn { background: none; border: none; cursor: pointer; padding: 6px; display: flex; flex-direction: column; gap: 5px; }
     .burger-btn span { display: block; width: 22px; height: 2px; background: #0E1430; border-radius: 2px; }
 
@@ -252,7 +252,7 @@
             <line x1="11" y1="18" x2="11" y2="22"/>
           </svg>
           <span class="mode-btn-label">Per Sprach&shy;nachricht</span>
-          <span class="mode-btn-hint">Aufnehmen oder Datei hochladen</span>
+          <span class="mode-btn-hint">Direkt im Browser aufnehmen</span>
         </button>
         <button class="mode-btn" id="btn-text" onclick="selectMode('text')">
           <svg width="28" height="28" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
@@ -314,17 +314,6 @@
               <button class="audio-action-btn" type="button" onclick="reRecord()">Erneut aufnehmen</button>
             </div>
           </div>
-          <label class="file-upload-label audio-file-fallback" for="audio-upload">
-            <svg width="18" height="18" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M21 15v4a2 2 0 01-2 2H3a2 2 0 01-2-2v-4"/>
-              <polyline points="17 8 12 3 7 8"/>
-              <line x1="12" y1="3" x2="12" y2="15"/>
-            </svg>
-            <div><span>Oder Datei hochladen</span><small>MP3, M4A, WAV</small></div>
-            <input type="file" id="audio-upload" name="audio" accept="audio/*" onchange="onAudioChange(this)">
-          </label>
-          <div class="file-name" id="audio-file-name"></div>
-
           <div class="legal-block" style="margin-top:24px">
             <label class="legal-check">
               <input type="checkbox" id="legal-check-voice" onchange="checkReady('voice')">
@@ -463,8 +452,6 @@
         }) || '';
         recordedChunks = [];
         recordedBlob = null;
-        document.getElementById('audio-upload').value = '';
-        document.getElementById('audio-file-name').textContent = '';
         mediaRecorder = new MediaRecorder(stream, mimeType ? { mimeType } : {});
         mediaRecorder.ondataavailable = e => { if (e.data.size > 0) recordedChunks.push(e.data); };
         mediaRecorder.onstop = () => {
@@ -511,17 +498,6 @@
       area.classList.toggle('has-file', state === 'done');
     }
 
-    function onAudioChange(input) {
-      if (input.files[0]) {
-        recordedBlob = null;
-        showAudioState('idle');
-        document.getElementById('audio-file-name').textContent = input.files[0].name;
-      } else {
-        document.getElementById('audio-file-name').textContent = '';
-      }
-      checkReady('voice');
-    }
-
     function showFileName(input, targetId) {
       document.getElementById(targetId).textContent = input.files[0] ? input.files[0].name : '';
     }
@@ -532,7 +508,7 @@
       const legal = document.getElementById('legal-check-' + mode).checked;
       let hasContent = false;
       if (mode === 'voice') {
-        hasContent = !!recordedBlob || !!document.getElementById('audio-upload').files[0];
+        hasContent = !!recordedBlob;
       } else {
         hasContent = !!document.getElementById('beschreibung').value.trim();
       }
@@ -555,9 +531,6 @@
         if (recordedBlob) {
           const ext = recordedBlob.type.includes('mp4') ? 'm4a' : recordedBlob.type.includes('ogg') ? 'ogg' : 'webm';
           dt.items.add(new File([recordedBlob], 'sprachnachricht.' + ext, { type: recordedBlob.type }));
-        } else {
-          const audioInput = document.getElementById('audio-upload');
-          if (audioInput.files[0]) dt.items.add(audioInput.files[0]);
         }
         document.getElementById('final-attachment-voice').files = dt.files;
       } else {
