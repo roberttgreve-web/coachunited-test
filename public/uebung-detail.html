@@ -14,8 +14,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <meta property="og:image" content="https://test.coachunited.de/og-image.png">
-  <title>Übung – COACH UNITED</title>
+  <meta name="description" content="">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Fußballübung | COACH UNITED">
+  <meta property="og:description" content="">
+  <meta property="og:image" content="https://coachunited.de/og-image.png">
+  <meta property="og:url" content="">
+  <meta property="og:site_name" content="COACH UNITED">
+  <link rel="canonical" href="">
+  <title>Fußballübung | COACH UNITED</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -746,17 +753,50 @@
       document.getElementById('back-label').textContent = 'Zurück';
     }
 
+    // Slug-Normalisierung für Backwards-Compat (alte Slugs ohne Skill-Prefix)
+    function toSlug(text) {
+      if (!text) return '';
+      return text.toLowerCase()
+        .replace(/ä/g,'ae').replace(/ö/g,'oe').replace(/ü/g,'ue').replace(/ß/g,'ss')
+        .replace(/[^a-z0-9\s\-]/g,'').replace(/[\s\-]+/g,'-').replace(/^-+|-+$/g,'');
+    }
+
     fetch('https://raw.githubusercontent.com/roberttgreve-web/coachunited-test/main/public/exercises.json')
       .then(r => r.json())
       .then(exercises => {
-        const ex = exercises.find(e => e.url_slug === slug);
+        // Slug-Lookup: aktuell (mit Skill-Prefix) ODER alt (nur alt_titel/titel)
+        const ex = exercises.find(e =>
+          e.url_slug === slug ||
+          toSlug(e.alt_titel || e.titel) === slug ||
+          toSlug(e.titel) === slug
+        );
         if (!ex) {
           document.getElementById('loading').style.display = 'none';
           document.getElementById('not-found').style.display = 'block';
           return;
         }
 
-        document.title = ex.titel + ' – COACH UNITED';
+        // Seitentitel + Meta-Tags
+        const displayTitle = ex.alt_titel || ex.titel;
+        const pageTitle = displayTitle + ' | COACH UNITED';
+        document.title = pageTitle;
+
+        const canonicalUrl = 'https://coachunited.de/uebung/' + ex.url_slug + '/';
+        const metaDesc = document.querySelector('meta[name="description"]');
+        const ogTitle  = document.querySelector('meta[property="og:title"]');
+        const ogDesc   = document.querySelector('meta[property="og:description"]');
+        const ogUrl    = document.querySelector('meta[property="og:url"]');
+        const ogImage  = document.querySelector('meta[property="og:image"]');
+        const canonical = document.querySelector('link[rel="canonical"]');
+
+        if (ex.seo_meta_description) {
+          if (metaDesc)  metaDesc.setAttribute('content', ex.seo_meta_description);
+          if (ogDesc)    ogDesc.setAttribute('content', ex.seo_meta_description);
+        }
+        if (ogTitle)    ogTitle.setAttribute('content', pageTitle);
+        if (ogUrl)      ogUrl.setAttribute('content', canonicalUrl);
+        if (canonical)  canonical.setAttribute('href', canonicalUrl);
+        if (ogImage && ex.grafik_url) ogImage.setAttribute('content', ex.grafik_url);
 
         // Grafik
         if (ex.grafik_url) {
@@ -784,7 +824,7 @@
         }
 
         // Titel + Beschreibung
-        document.getElementById('titel').textContent = ex.titel;
+        document.getElementById('titel').textContent = ex.alt_titel || ex.titel;
         document.getElementById('beschreibung').textContent = ex.kurzbeschreibung || '';
 
         // Skill-Tags

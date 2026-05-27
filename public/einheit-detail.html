@@ -14,8 +14,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <meta property="og:image" content="https://test.coachunited.de/og-image.png">
-  <title>Trainingseinheit – COACH UNITED</title>
+  <meta name="description" content="">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Trainingseinheit | COACH UNITED">
+  <meta property="og:description" content="">
+  <meta property="og:image" content="https://coachunited.de/og-image.png">
+  <meta property="og:url" content="">
+  <meta property="og:site_name" content="COACH UNITED">
+  <link rel="canonical" href="">
+  <title>Trainingseinheit | COACH UNITED</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -330,8 +337,23 @@
           return;
         }
 
-        document.title = einheit.titel + ' – COACH UNITED';
+        const pageTitle = einheit.titel + ' | COACH UNITED';
+        document.title = pageTitle;
         document.getElementById('titel').textContent = einheit.titel;
+
+        // Meta-Tags
+        const canonicalUrl = 'https://coachunited.de/einheit/' + einheit.url_slug + '/';
+        const metaDesc  = document.querySelector('meta[name="description"]');
+        const ogTitle   = document.querySelector('meta[property="og:title"]');
+        const ogDesc    = document.querySelector('meta[property="og:description"]');
+        const ogUrl     = document.querySelector('meta[property="og:url"]');
+        const canonical = document.querySelector('link[rel="canonical"]');
+        const descText  = einheit.beschreibung ? einheit.beschreibung.slice(0, 155) : (einheit.titel + ' – komplette Fußball-Trainingseinheit für den Kinderfußball bei COACH UNITED.');
+        if (metaDesc)  metaDesc.setAttribute('content', descText);
+        if (ogTitle)   ogTitle.setAttribute('content', pageTitle);
+        if (ogDesc)    ogDesc.setAttribute('content', descText);
+        if (ogUrl)     ogUrl.setAttribute('content', canonicalUrl);
+        if (canonical) canonical.setAttribute('href', canonicalUrl);
 
         const count = einheit.uebungen.length;
         document.getElementById('einheit-count').textContent = count + ' Übung' + (count !== 1 ? 'en' : '');
