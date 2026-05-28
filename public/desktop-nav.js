@@ -25,7 +25,17 @@
       <img src="/logo.png" alt="Coach United">
     </a>
     <div class="desktop-topnav-links">
-      <a href="/uebungen"      class="desktop-topnav-link ${isActive('/uebungen')}">Alle Übungen</a>
+      <div class="desktop-topnav-dropdown">
+        <a href="/uebungen" class="desktop-topnav-link ${isActive('/uebungen')}">
+          Alle Übungen
+          <svg width="10" height="6" viewBox="0 0 10 6" fill="none" style="margin-left:4px;vertical-align:middle;opacity:0.5"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </a>
+        <div class="desktop-topnav-submenu">
+          <a href="/uebungen/alter" class="desktop-topnav-sublink">Nach Alter</a>
+          <a href="/uebungen/skill" class="desktop-topnav-sublink">Nach Skill</a>
+          <a href="/uebungen/phase" class="desktop-topnav-sublink">Nach Phase</a>
+        </div>
+      </div>
       <a href="/einheiten"     class="desktop-topnav-link ${isActive('/einheiten')}">Einheit erhalten</a>
       <a href="/whatsapp-info" class="desktop-topnav-link ${isActive('/whatsapp-info')}">WhatsApp-Kanal</a>
       <a href="/uebung-einreichen" class="desktop-topnav-link ${isActive('/uebung-einreichen')}">Übung einreichen</a>
