@@ -966,11 +966,11 @@
 .dr-main { flex: 1; min-width: 0; }
 
 @media (min-width: 768px) {
-  body:has(.page-hero) {
+  body:has(.page-hero):has(.dr-main) {
     background: #F5F6F9 !important;
   }
 
-  body:has(.page-hero) .container {
+  body:has(.page-hero):has(.dr-main) .container {
     background: #F5F6F9 !important;
     border-radius: 0 !important;
     box-shadow: none !important;
@@ -982,28 +982,28 @@
   }
 
   /* Weiße TopNav */
-  body:has(.page-hero) .desktop-topnav { background: #fff; border-bottom: 1px solid #e8edf2; }
-  body:has(.page-hero) .desktop-topnav-logo { color: #003D82; }
-  body:has(.page-hero) .desktop-topnav-link { color: #555; }
-  body:has(.page-hero) .desktop-topnav-link:hover { background: #f0f4ff; color: #003D82; }
-  body:has(.page-hero) .desktop-topnav-link.active { background: #003D82; color: #fff; }
+  body:has(.page-hero):has(.dr-main) .desktop-topnav { background: #fff; border-bottom: 1px solid #e8edf2; }
+  body:has(.page-hero):has(.dr-main) .desktop-topnav-logo { color: #003D82; }
+  body:has(.page-hero):has(.dr-main) .desktop-topnav-link { color: #555; }
+  body:has(.page-hero):has(.dr-main) .desktop-topnav-link:hover { background: #f0f4ff; color: #003D82; }
+  body:has(.page-hero):has(.dr-main) .desktop-topnav-link.active { background: #003D82; color: #fff; }
 
   /* Mobilen Header ausblenden */
-  body:has(.page-hero) .header { display: none !important; }
+  body:has(.page-hero):has(.dr-main) .header { display: none !important; }
 
   /* Hero: kompaktes dunkles Band */
-  body:has(.page-hero) .page-hero {
+  body:has(.page-hero):has(.dr-main) .page-hero {
     padding: 20px 56px 22px !important;
     border-bottom: 1px solid rgba(255,255,255,0.08) !important;
   }
 
-  body:has(.page-hero) .back-btn {
+  body:has(.page-hero):has(.dr-main) .back-btn {
     font-size: 12.5px !important;
     margin-bottom: 8px !important;
     color: rgba(255,255,255,0.65) !important;
   }
 
-  body:has(.page-hero) .hero-title {
+  body:has(.page-hero):has(.dr-main) .hero-title {
     font-size: 26px !important;
     font-weight: 700 !important;
     letter-spacing: -0.015em !important;
@@ -1011,7 +1011,7 @@
   }
 
   /* Content: zwei Spalten (Sidebar + Main) */
-  body:has(.page-hero) .content {
+  body:has(.page-hero):has(.dr-main) .content {
     display: flex !important;
     flex-direction: row !important;
     align-items: flex-start !important;
@@ -1023,7 +1023,7 @@
   }
 
   /* ── Sidebar ── */
-  body:has(.page-hero) .dr-sidebar {
+  body:has(.page-hero):has(.dr-main) .dr-sidebar {
     display: flex !important;
     flex-direction: column !important;
     gap: 24px !important;
@@ -1118,7 +1118,7 @@
   .dr-sidebar-action-btn:hover { background: #F5F6F9; }
 
   /* ── Phase-Header ── */
-  body:has(.page-hero) .gen-phase-header {
+  body:has(.page-hero):has(.dr-main) .gen-phase-header {
     flex-direction: row !important;
     align-items: baseline !important;
     margin: 32px 0 12px !important;
@@ -1126,15 +1126,15 @@
     border-bottom: 2px solid #E6E8EF !important;
     gap: 0 !important;
   }
-  body:has(.page-hero) .gen-phase-header:first-child { margin-top: 0 !important; }
+  body:has(.page-hero):has(.dr-main) .gen-phase-header:first-child { margin-top: 0 !important; }
 
-  body:has(.page-hero) .gen-phase-aufwaermen { border-bottom-color: #0F3FA8 !important; }
-  body:has(.page-hero) .gen-phase-hauptteil  { border-bottom-color: #1E6BFF !important; }
-  body:has(.page-hero) .gen-phase-spielformat { border-bottom-color: #00B85C !important; }
+  body:has(.page-hero):has(.dr-main) .gen-phase-aufwaermen { border-bottom-color: #0F3FA8 !important; }
+  body:has(.page-hero):has(.dr-main) .gen-phase-hauptteil  { border-bottom-color: #1E6BFF !important; }
+  body:has(.page-hero):has(.dr-main) .gen-phase-spielformat { border-bottom-color: #00B85C !important; }
 
-  body:has(.page-hero) .gen-phase-bar { display: none !important; }
+  body:has(.page-hero):has(.dr-main) .gen-phase-bar { display: none !important; }
 
-  body:has(.page-hero) .gen-phase-label {
+  body:has(.page-hero):has(.dr-main) .gen-phase-label {
     font-family: 'Inter Tight', system-ui, sans-serif !important;
     font-size: 20px !important;
     font-weight: 700 !important;
@@ -1144,7 +1144,7 @@
   }
 
   /* ── Exercise Cards ── */
-  body:has(.page-hero) .ex-card {
+  body:has(.page-hero):has(.dr-main) .ex-card {
     border-radius: 8px !important;
     border: 1px solid #E6E8EF !important;
     border-top-width: 1px !important;
@@ -1154,47 +1154,47 @@
   }
 
   /* Phasen-Farben der Badges auf Desktop */
-  body:has(.page-hero) .ex-card[data-phase="aufwaermen"] .ex-phase-badge { background: #0F3FA8 !important; }
-  body:has(.page-hero) .ex-card[data-phase="hauptteil"]  .ex-phase-badge { background: #1E6BFF !important; }
-  body:has(.page-hero) .ex-card[data-phase="spielformat"] .ex-phase-badge { background: #00B85C !important; }
+  body:has(.page-hero):has(.dr-main) .ex-card[data-phase="aufwaermen"] .ex-phase-badge { background: #0F3FA8 !important; }
+  body:has(.page-hero):has(.dr-main) .ex-card[data-phase="hauptteil"]  .ex-phase-badge { background: #1E6BFF !important; }
+  body:has(.page-hero):has(.dr-main) .ex-card[data-phase="spielformat"] .ex-phase-badge { background: #00B85C !important; }
 
   /* Immer geöffnet (kein Accordion) */
-  body:has(.page-hero) .ex-card-body {
+  body:has(.page-hero):has(.dr-main) .ex-card-body {
     max-height: none !important;
     overflow: visible !important;
     padding: 0 22px 18px !important;
   }
 
   /* Card Header: kein Klick-Stil */
-  body:has(.page-hero) .ex-card-header {
+  body:has(.page-hero):has(.dr-main) .ex-card-header {
     cursor: default !important;
     padding: 18px 22px 14px !important;
   }
-  body:has(.page-hero) .ex-card-header:hover { background: #fff !important; }
+  body:has(.page-hero):has(.dr-main) .ex-card-header:hover { background: #fff !important; }
 
-  body:has(.page-hero) .ex-chevron { display: none !important; }
+  body:has(.page-hero):has(.dr-main) .ex-chevron { display: none !important; }
 
-  body:has(.page-hero) .ex-card-title {
+  body:has(.page-hero):has(.dr-main) .ex-card-title {
     font-size: 19px !important;
     padding-right: 0 !important;
     margin-bottom: 4px !important;
   }
 
-  body:has(.page-hero) .ex-card-desc {
+  body:has(.page-hero):has(.dr-main) .ex-card-desc {
     font-size: 14px !important;
     line-height: 1.5 !important;
   }
 
-  body:has(.page-hero) .ex-img { max-height: 140px !important; }
+  body:has(.page-hero):has(.dr-main) .ex-img { max-height: 140px !important; }
 
   /* Skills-Zeile */
-  body:has(.page-hero) .ex-skills {
+  body:has(.page-hero):has(.dr-main) .ex-skills {
     padding: 0 0 10px !important;
     border-bottom: none !important;
   }
 
   /* Aufbau / Durchführung nebeneinander */
-  body:has(.page-hero) .dr-sections-grid {
+  body:has(.page-hero):has(.dr-main) .dr-sections-grid {
     display: grid !important;
     grid-template-columns: 1fr 1fr !important;
     gap: 14px 24px !important;
@@ -1203,37 +1203,37 @@
     margin-top: 4px !important;
   }
 
-  body:has(.page-hero) .ex-section { padding: 0 !important; border: none !important; }
-  body:has(.page-hero) .ex-section-head { margin-bottom: 5px !important; }
-  body:has(.page-hero) .ex-section-dot { display: none !important; }
-  body:has(.page-hero) .ex-section-title {
+  body:has(.page-hero):has(.dr-main) .ex-section { padding: 0 !important; border: none !important; }
+  body:has(.page-hero):has(.dr-main) .ex-section-head { margin-bottom: 5px !important; }
+  body:has(.page-hero):has(.dr-main) .ex-section-dot { display: none !important; }
+  body:has(.page-hero):has(.dr-main) .ex-section-title {
     font-size: 11px !important;
     font-weight: 700 !important;
     letter-spacing: 0.07em !important;
     text-transform: uppercase !important;
     color: #6B7390 !important;
   }
-  body:has(.page-hero) .ex-section-text {
+  body:has(.page-hero):has(.dr-main) .ex-section-text {
     font-size: 13.5px !important;
     line-height: 1.55 !important;
     color: #3B4565 !important;
   }
 
   /* Detail-Link */
-  body:has(.page-hero) .ex-detail-link {
+  body:has(.page-hero):has(.dr-main) .ex-detail-link {
     margin: 12px 0 0 !important;
     padding: 0 !important;
     border: none !important;
     font-size: 12.5px !important;
     color: #1E6BFF !important;
   }
-  body:has(.page-hero) .ex-detail-link:hover { background: none !important; }
+  body:has(.page-hero):has(.dr-main) .ex-detail-link:hover { background: none !important; }
 
   /* Reroll */
-  body:has(.page-hero) .reroll-wrap { margin-top: 24px !important; }
+  body:has(.page-hero):has(.dr-main) .reroll-wrap { margin-top: 24px !important; }
 
   /* Criteria-Bar (mobil) im Generator auf Desktop ausblenden */
-  body:has(.page-hero) .criteria-bar { display: none !important; }
+  body:has(.page-hero):has(.dr-main) .criteria-bar { display: none !important; }
 }
 
 
