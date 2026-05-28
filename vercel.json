@@ -3,6 +3,7 @@
   "outputDirectory": "public",
   "ignoreCommand": "git log -1 --pretty=%s | grep -q \"^publisher:\"",
   "redirects": [
+    { "source": "/wp-content/:path*", "destination": "https://archiv.coachunited.de/wp-content/:path*", "permanent": false },
     { "source": "/trainingseinheiten",  "destination": "https://archiv.coachunited.de/trainingseinheiten/", "permanent": false },
     { "source": "/trainingseinheiten/", "destination": "https://archiv.coachunited.de/trainingseinheiten/", "permanent": false },
     { "source": "/1-gegen-1-nach-slalom-und-wettrennen",  "destination": "https://archiv.coachunited.de/1-gegen-1-nach-slalom-und-wettrennen/",  "permanent": false },
