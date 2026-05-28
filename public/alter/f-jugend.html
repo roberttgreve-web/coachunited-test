@@ -70,12 +70,39 @@
     .drawer-link:last-child{border-bottom:none;}
     .drawer-link:hover{color:#1E6BFF;}
     .drawer-divider{height:1px;background:#E6E8EF;margin:10px 0 12px;}
+    .filter-section{background:#0E1430;padding:14px 18px 16px;position:sticky;top:69px;z-index:15;}
+    .filter-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;}
+    .filter-count{font-family:'Inter Tight',system-ui,sans-serif;font-size:13px;font-weight:600;color:#fff;display:flex;align-items:center;gap:6px;}
+    .filter-dot{width:6px;height:6px;border-radius:3px;background:#25D366;box-shadow:0 0 0 3px rgba(37,211,102,0.25);flex-shrink:0;}
+    .filter-pills{display:flex;gap:6px;}
+    .filter-wrap{flex:1;position:relative;}
+    .filter-pill{width:100%;display:flex;align-items:center;gap:4px;padding:11px 10px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.18);border-radius:12px;cursor:pointer;transition:background 0.15s;}
+    .filter-pill.has-selection{background:#fff;border-color:transparent;}
+    .filter-pill-inner{display:flex;flex-direction:column;align-items:flex-start;flex:1;min-width:0;line-height:1.1;}
+    .pill-label{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:10px;font-weight:600;letter-spacing:0.10em;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-bottom:2px;}
+    .filter-pill.has-selection .pill-label{color:rgba(14,20,48,0.55);}
+    .pill-value{font-family:'Inter Tight',system-ui,sans-serif;font-size:14px;font-weight:600;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+    .filter-pill.has-selection .pill-value{color:#0E1430;}
+    .pill-badge{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:9.5px;font-weight:600;padding:2px 6px;border-radius:999px;background:rgba(255,255,255,0.12);color:#fff;flex-shrink:0;display:none;}
+    .filter-pill.has-selection .pill-badge{background:#EEF3FF;color:#0F3FA8;display:inline;}
+    .pill-arrow{flex-shrink:0;color:rgba(255,255,255,0.5);transition:transform 0.15s;}
+    .filter-pill.has-selection .pill-arrow{color:rgba(14,20,48,0.5);}
+    .filter-wrap.open .pill-arrow{transform:rotate(180deg);}
+    .filter-dropdown{display:none;position:absolute;top:calc(100% + 6px);left:0;min-width:180px;background:#fff;border:1px solid #E6E8EF;border-radius:12px;padding:6px;box-shadow:0 8px 28px rgba(0,0,0,0.18);z-index:30;}
+    .filter-wrap.open .filter-dropdown{display:block;}
+    .filter-option{display:flex;align-items:center;gap:9px;padding:9px 10px;border-radius:8px;cursor:pointer;font-family:'Inter Tight',system-ui,sans-serif;font-size:13px;color:#0E1430;user-select:none;transition:background 0.12s;}
+    .filter-option:hover{background:#f5f7fa;}
+    .checkmark{width:16px;height:16px;border:1.5px solid #D1D5DC;border-radius:4px;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all 0.12s;}
+    .filter-option.selected .checkmark{background:#1E6BFF;border-color:#1E6BFF;}
+    .filter-option.selected .checkmark::after{content:'';width:8px;height:5px;border-left:2px solid #fff;border-bottom:2px solid #fff;transform:rotate(-45deg) translateY(-1px);display:block;}
     @media(min-width:768px){
       body{background:#0E1430;}
       .container{width:100%;max-width:860px;border-radius:0;min-height:100vh;}
       .page-content{padding:40px 48px 120px;max-width:720px;}
       .hero{padding:40px 48px 44px;}
       .hero-h1{font-size:36px;}
+      .filter-section{position:static;top:unset;padding:16px 48px 20px;}
+      .filter-pills{max-width:560px;}
     }
   </style>
   <link rel="stylesheet" href="/desktop.css">
@@ -103,6 +130,47 @@
     <p class="hero-lead">In der F-Jugend beginnen Kinder, Grundtechniken zu festigen und erste taktische Grundbegriffe kennenzulernen. Der Spa&#223; steht weiter im Vordergrund &#8211; aber die Anforderungen wachsen.</p>
   </div>
 
+  <div class="filter-section">
+    <div class="filter-header">
+      <span class="filter-count"><span class="filter-dot"></span><span id="count-label"></span></span>
+    </div>
+    <div class="filter-pills">
+      <div class="filter-wrap" id="wrap-jugend">
+        <button class="filter-pill" id="pill-jugend" onclick="toggleFilter('jugend')">
+          <div class="filter-pill-inner"><span class="pill-label">Alter</span><span class="pill-value" id="pill-val-jugend">Jugend</span></div>
+          <span class="pill-badge" id="badge-jugend"></span>
+          <svg class="pill-arrow" width="8" height="5" viewBox="0 0 8 5" fill="none"><path d="M1 1L4 4L7 1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+        </button>
+        <div class="filter-dropdown" id="drop-jugend">
+          <label class="filter-option" onclick="toggleOption(this,'jugend','G-Jugend')"><span class="checkmark"></span>G-Jugend</label>
+          <label class="filter-option" onclick="toggleOption(this,'jugend','F-Jugend')"><span class="checkmark"></span>F-Jugend</label>
+          <label class="filter-option" onclick="toggleOption(this,'jugend','E-Jugend')"><span class="checkmark"></span>E-Jugend</label>
+          <label class="filter-option" onclick="toggleOption(this,'jugend','D-Jugend')"><span class="checkmark"></span>D-Jugend</label>
+        </div>
+      </div>
+      <div class="filter-wrap" id="wrap-skill">
+        <button class="filter-pill" id="pill-skill" onclick="toggleFilter('skill')">
+          <div class="filter-pill-inner"><span class="pill-label">Skill</span><span class="pill-value" id="pill-val-skill">Alle</span></div>
+          <span class="pill-badge" id="badge-skill"></span>
+          <svg class="pill-arrow" width="8" height="5" viewBox="0 0 8 5" fill="none"><path d="M1 1L4 4L7 1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+        </button>
+        <div class="filter-dropdown" id="drop-skill"></div>
+      </div>
+      <div class="filter-wrap" id="wrap-phase">
+        <button class="filter-pill" id="pill-phase" onclick="toggleFilter('phase')">
+          <div class="filter-pill-inner"><span class="pill-label">Phase</span><span class="pill-value" id="pill-val-phase">Alle</span></div>
+          <span class="pill-badge" id="badge-phase"></span>
+          <svg class="pill-arrow" width="8" height="5" viewBox="0 0 8 5" fill="none"><path d="M1 1L4 4L7 1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+        </button>
+        <div class="filter-dropdown" id="drop-phase">
+          <label class="filter-option" onclick="toggleOption(this,'phase','Aufwärmen')"><span class="checkmark"></span>Aufw&#228;rmen</label>
+          <label class="filter-option" onclick="toggleOption(this,'phase','Hauptteil')"><span class="checkmark"></span>Hauptteil</label>
+          <label class="filter-option" onclick="toggleOption(this,'phase','Spielformat')"><span class="checkmark"></span>Spielformat</label>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="page-content">
     <section class="text-section">
       <h2 class="section-h2">F-Jugend trainieren &#8211; worauf kommt es an?</h2>
@@ -112,7 +180,6 @@
     <section>
       <div class="exercises-header">
         <h2 class="section-h2">Alle F-Jugend &#220;bungen</h2>
-        <span class="exercise-count" id="count-label"></span>
       </div>
       <div id="exercises-list"><div class="empty-state">&#220;bungen werden geladen&#8230;</div></div>
     </section>
@@ -156,32 +223,86 @@
   const FILTER_KEY = 'jugend';
   const FILTER_VALUE = 'F-Jugend';
   const PHASE_COLORS = {'Aufwaermen':'#C2611F','Aufw\u00e4rmen':'#C2611F','Hauptteil':'#0E6A45','Spielformat':'#0F3FA8'};
-  function filterEx(data){
-    if(FILTER_KEY==='jugend') return data.filter(e=>(e.jugend||[]).includes(FILTER_VALUE));
-    if(FILTER_KEY==='phase') return data.filter(e=>e.trainingsphase===FILTER_VALUE);
-    if(FILTER_KEY==='skill') return data.filter(e=>(e.skills||[]).includes(FILTER_VALUE));
+  const selected = {jugend: new Set(), skill: new Set(), phase: new Set()};
+  let allExercises = [];
+
+  // Hide the filter pill for the primary dimension (already fixed by this page)
+  document.getElementById('wrap-' + FILTER_KEY).style.display = 'none';
+
+  function toggleFilter(key) {
+    const wrap = document.getElementById('wrap-' + key);
+    const isOpen = wrap.classList.contains('open');
+    ['jugend','skill','phase'].forEach(k => document.getElementById('wrap-' + k).classList.remove('open'));
+    if (!isOpen) wrap.classList.add('open');
+  }
+  document.addEventListener('click', e => {
+    if (!e.target.closest('.filter-wrap'))
+      ['jugend','skill','phase'].forEach(k => document.getElementById('wrap-' + k).classList.remove('open'));
+  });
+  function toggleOption(el, key, value) {
+    el.classList.toggle('selected');
+    if (selected[key].has(value)) selected[key].delete(value); else selected[key].add(value);
+    updatePill(key);
+    renderEx(applyFilters());
+  }
+  function updatePill(key) {
+    const size = selected[key].size;
+    const pill = document.getElementById('pill-' + key);
+    const badge = document.getElementById('badge-' + key);
+    const valEl = document.getElementById('pill-val-' + key);
+    const labels = {jugend:'Jugend', skill:'Alle', phase:'Alle'};
+    if (size === 0) {
+      pill.classList.remove('has-selection');
+      badge.style.display = 'none';
+      valEl.textContent = labels[key];
+    } else {
+      pill.classList.add('has-selection');
+      badge.textContent = size;
+      badge.style.display = 'inline';
+      valEl.textContent = size === 1 ? (key === 'jugend' ? Array.from(selected[key])[0].replace('-Jugend','') : Array.from(selected[key])[0]) : size + ' ausgew\u00e4hlt';
+    }
+  }
+  function buildSkillDropdown(exercises) {
+    const skills = [...new Set(exercises.flatMap(e => e.skills || []))].sort();
+    document.getElementById('drop-skill').innerHTML = skills.map(s =>
+      `<label class="filter-option" onclick="toggleOption(this,'skill','${s.replace(/'/g,"\\'")}')"><span class="checkmark"></span>${s}</label>`
+    ).join('');
+  }
+  function primaryFilter(data) {
+    if (FILTER_KEY === 'jugend') return data.filter(e => (e.jugend||[]).includes(FILTER_VALUE));
+    if (FILTER_KEY === 'phase') return data.filter(e => e.trainingsphase === FILTER_VALUE);
+    if (FILTER_KEY === 'skill') return data.filter(e => (e.skills||[]).includes(FILTER_VALUE));
     return data;
   }
-  function renderEx(list){
-    const el=document.getElementById('exercises-list');
-    const n=list.length;
-    document.getElementById('count-label').textContent=n+' \u00dcbung'+(n!==1?'en':'');
-    if(!n){el.innerHTML='<div class="empty-state">Keine \u00dcbungen gefunden.</div>';return;}
-    el.innerHTML=list.map(ex=>{
-      const href=ex.url_slug?`/uebung/${ex.url_slug}`:'#';
-      const pc=PHASE_COLORS[ex.trainingsphase]||'#0E1430';
-      const pt=ex.trainingsphase?`<span class="tag-phase" style="background:${pc}">${ex.trainingsphase}</span>`:'';
-      const js=(ex.jugend||[]).map(j=>j.replace('-Jugend','')).join('\u00b7');
-      const jt=js?`<span class="tag-jahrgang">${js}</span>`:'';
-      const sk=ex.skills||[];
-      const sv=sk.slice(0,2).map(s=>`<span class="tag-skill">${s}</span>`).join('');
-      const sm=sk.length>2?`<span class="tag-more">+${sk.length-2}</span>`:'';
+  function applyFilters() {
+    return primaryFilter(allExercises).filter(ex => {
+      const jugendOk = selected.jugend.size === 0 || (ex.jugend||[]).some(j => selected.jugend.has(j));
+      const skillOk  = selected.skill.size  === 0 || (ex.skills||[]).some(s => selected.skill.has(s));
+      const phaseOk  = selected.phase.size  === 0 || selected.phase.has(ex.trainingsphase);
+      return jugendOk && skillOk && phaseOk;
+    });
+  }
+  function renderEx(list) {
+    const el = document.getElementById('exercises-list');
+    const n = list.length;
+    document.getElementById('count-label').textContent = n + ' \u00dcbung' + (n !== 1 ? 'en' : '');
+    if (!n) { el.innerHTML = '<div class="empty-state">Keine \u00dcbungen gefunden.</div>'; return; }
+    el.innerHTML = list.map(ex => {
+      const href = ex.url_slug ? `/uebung/${ex.url_slug}` : '#';
+      const pc = PHASE_COLORS[ex.trainingsphase] || '#0E1430';
+      const pt = ex.trainingsphase ? `<span class="tag-phase" style="background:${pc}">${ex.trainingsphase}</span>` : '';
+      const js = (ex.jugend||[]).map(j => j.replace('-Jugend','')).join('\u00b7');
+      const jt = js ? `<span class="tag-jahrgang">${js}</span>` : '';
+      const sk = ex.skills || [];
+      const sv = sk.slice(0,2).map(s => `<span class="tag-skill">${s}</span>`).join('');
+      const sm = sk.length > 2 ? `<span class="tag-more">+${sk.length-2}</span>` : '';
       return `<a href="${href}" class="exercise-card"><div class="card-grid"><div class="card-left"><h3 class="card-title">${ex.titel}</h3></div><div class="card-right">${ex.kurzbeschreibung?`<p class="card-desc">${ex.kurzbeschreibung}</p>`:''}<div class="card-tags">${pt}${jt}${sv}${sm}</div></div></div></a>`;
     }).join('');
   }
   fetch('https://raw.githubusercontent.com/roberttgreve-web/coachunited-test/main/public/exercises.json')
-    .then(r=>r.json()).then(d=>renderEx(filterEx(d)))
-    .catch(()=>{document.getElementById('exercises-list').innerHTML='<div class="empty-state">\u00dcbungen konnten nicht geladen werden.</div>';});
+    .then(r => r.json())
+    .then(d => { allExercises = d; buildSkillDropdown(primaryFilter(d)); renderEx(applyFilters()); })
+    .catch(() => { document.getElementById('exercises-list').innerHTML = '<div class="empty-state">\u00dcbungen konnten nicht geladen werden.</div>'; });
   function openDrawer(){document.getElementById('drawer').classList.add('open');document.getElementById('drawer-overlay').classList.add('open');}
   function closeDrawer(){document.getElementById('drawer').classList.remove('open');document.getElementById('drawer-overlay').classList.remove('open');}
 </script>
