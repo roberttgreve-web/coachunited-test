@@ -567,15 +567,15 @@ $subPages = @(
   },
   @{
     file='public\skill\torhueter.html'; url='/uebungen/skill/torhueter'
-    title='Torwart-&#220;bungen f&#252;r Kinder &#8211; Kinderfu&#223;ball | COACH UNITED'
-    meta='Torwart-&#220;bungen f&#252;r das Kinderfu&#223;ball-Training. Kostenlose &#220;bungen f&#252;r Torh&#252;ter der G-, F-, E- und D-Jugend.'
-    h1='Torwart-&#220;bungen f&#252;r den Kinderfu&#223;ball'
+    title='Torh&#252;ter-&#220;bungen f&#252;r Kinder &#8211; Kinderfu&#223;ball | COACH UNITED'
+    meta='Torh&#252;ter-&#220;bungen f&#252;r das Kinderfu&#223;ball-Training. Kostenlose &#220;bungen f&#252;r Torh&#252;ter der G-, F-, E- und D-Jugend.'
+    h1='Torh&#252;ter-&#220;bungen f&#252;r den Kinderfu&#223;ball'
     badge='Skill &#183; Torh&#252;ter'
     lead='Der Torh&#252;ter ist das Fundament einer Mannschaft. Mit den richtigen &#220;bungen entwickeln auch junge Torh&#252;ter Mut, Technik und Spielverst&#228;ndnis.'
     parent_url='/uebungen/skill'; parent_label='Nach Skill'; breadcrumb='Torh&#252;ter'
     h2_1='Torh&#252;ter-Training im Kinderfu&#223;ball &#8211; was z&#228;hlt?'
     body_1='Torh&#252;ter-Training im Kinderfu&#223;ball bedeutet: Grundtechniken (Abwehrposition, Beinarbeit, Ballannahme) spielerisch einf&#252;hren und viele Abschl&#252;sse auf das Tor inszenieren. Junge Torh&#252;ter brauchen vor allem Mut und Selbstvertrauen &#8211; das entsteht durch Erfolge im Training.'
-    body_2='Die Torwart-&#220;bungen auf dieser Seite sind in komplette &#220;bungsformen eingebettet, die auch die Feldspieler einbinden. So ist der Torh&#252;ter Teil des Trainings &#8211; nicht isoliert vom Rest der Gruppe.'
+    body_2='Die Torh&#252;ter-&#220;bungen auf dieser Seite sind in komplette &#220;bungsformen eingebettet, die auch die Feldspieler einbinden. So ist der Torh&#252;ter Teil des Trainings &#8211; nicht isoliert vom Rest der Gruppe.'
     h2_2='Alle Torh&#252;ter-&#220;bungen'; filter_key='skill'; filter_value='Torh\u00fcter'
   },
   @{
