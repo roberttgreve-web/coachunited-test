@@ -635,6 +635,12 @@
           <div id="sisters-list"></div>
         </div>
 
+        <!-- Category Links -->
+        <div class="section-block" id="category-links-block" style="display:none;">
+          <p class="section-label">Weitere Übungen</p>
+          <div id="category-links-list"></div>
+        </div>
+
         <!-- Feedback -->
         <div class="feedback-block">
           <div class="feedback-card">
@@ -802,6 +808,51 @@
         if (ogUrl)      ogUrl.setAttribute('content', canonicalUrl);
         if (canonical)  canonical.setAttribute('href', canonicalUrl);
         if (ogImage && ex.grafik_url) ogImage.setAttribute('content', ex.grafik_url);
+
+        // JSON-LD
+        const phaseUrlMap = {
+          'Aufwärmen': '/uebungen/phase/aufwaermen',
+          'Hauptteil':      '/uebungen/phase/hauptteil',
+          'Spielformat':    '/uebungen/phase/spielformat'
+        };
+        const phaseUrl = phaseUrlMap[ex.trainingsphase];
+        const breadcrumbItems = [
+          {'@type':'ListItem','position':1,'name':'Übungen','item':'https://coachunited.de/uebungen'}
+        ];
+        if (phaseUrl) breadcrumbItems.push({'@type':'ListItem','position':2,'name':ex.trainingsphase,'item':'https://coachunited.de'+phaseUrl});
+        breadcrumbItems.push({'@type':'ListItem','position':breadcrumbItems.length+1,'name':displayTitle,'item':canonicalUrl});
+        const ldScript = document.createElement('script');
+        ldScript.type = 'application/ld+json';
+        ldScript.text = JSON.stringify({'@context':'https://schema.org','@graph':[
+          {'@type':'Article','name':displayTitle,'headline':displayTitle,
+           'description':ex.seo_meta_description||'',
+           'url':canonicalUrl,
+           'image':ex.grafik_url||'https://coachunited.de/og-image.png',
+           'publisher':{'@id':'https://coachunited.de/#organization'}},
+          {'@type':'BreadcrumbList','itemListElement':breadcrumbItems}
+        ]});
+        document.head.appendChild(ldScript);
+
+        // Category back-links
+        const jugendUrlMap = {
+          'G-Jugend':'/uebungen/alter/g-jugend','F-Jugend':'/uebungen/alter/f-jugend',
+          'E-Jugend':'/uebungen/alter/e-jugend','D-Jugend':'/uebungen/alter/d-jugend'
+        };
+        const catLinks = [];
+        (ex.jugend || []).forEach(j => {
+          if (jugendUrlMap[j]) catLinks.push({label:'Weitere '+j+'-Übungen', url:jugendUrlMap[j]});
+        });
+        if (phaseUrl) catLinks.push({label:'Alle '+ex.trainingsphase+'-Übungen', url:phaseUrl});
+        (ex.skills || []).slice(0,2).forEach(s => {
+          catLinks.push({label:'Alle '+s+'-Übungen', url:'/uebungen/skill/'+toSlug(s)});
+        });
+        if (catLinks.length) {
+          const chevron = '<svg width="14" height="14" viewBox="0 0 14 14" fill="none" class="sister-chevron"><path d="M5 2L10 7L5 12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+          document.getElementById('category-links-list').innerHTML = catLinks
+            .map(c => '<a href="'+c.url+'" class="related-link" style="margin-bottom:8px;"><span class="related-name">'+c.label+'</span>'+chevron+'</a>')
+            .join('');
+          document.getElementById('category-links-block').style.display = 'block';
+        }
 
         // Grafik
         if (ex.grafik_url) {

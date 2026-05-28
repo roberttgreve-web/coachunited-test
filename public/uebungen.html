@@ -425,6 +425,32 @@
     }
     .drawer-link:last-child { border-bottom: none; }
     .drawer-link:hover { color: #1E6BFF; }
+
+    /* ── Hub category shortcuts ── */
+    .hub-cats { padding: 16px 18px 0; }
+    .hub-cats-label {
+      font-family: 'JetBrains Mono', ui-monospace, monospace;
+      font-size: 9.5px; font-weight: 700;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      color: #9BA3B8; display: block; margin-bottom: 10px;
+    }
+    .hub-cats-row { display: flex; gap: 8px; }
+    .hub-cat-link {
+      flex: 1; display: flex; flex-direction: column; gap: 1px;
+      text-decoration: none;
+      background: #F5F6FA; border: 1px solid #E6E8EF;
+      border-radius: 10px; padding: 10px 10px 8px;
+      transition: background .15s, border-color .15s;
+    }
+    .hub-cat-link:hover { background: #EEF3FF; border-color: #C5D3F7; }
+    .hub-cat-name {
+      font-size: 12px; font-weight: 700; color: #0E1430;
+      letter-spacing: -0.01em; line-height: 1.2;
+    }
+    .hub-cat-sub {
+      font-size: 10.5px; color: #6B7390; line-height: 1.3;
+    }
+    .hub-cats-divider { height: 1px; background: #E6E8EF; margin: 16px 18px 0; }
   </style>
   <link rel="stylesheet" href="/desktop.css">
   <style>
@@ -540,6 +566,26 @@
 
         </div>
       </div>
+
+      <!-- Hub category shortcuts -->
+      <div class="hub-cats">
+        <span class="hub-cats-label">Übungen filtern nach</span>
+        <div class="hub-cats-row">
+          <a href="/uebungen/alter" class="hub-cat-link">
+            <span class="hub-cat-name">Alter</span>
+            <span class="hub-cat-sub">G– bis D-Jugend</span>
+          </a>
+          <a href="/uebungen/skill" class="hub-cat-link">
+            <span class="hub-cat-name">Skill</span>
+            <span class="hub-cat-sub">Technik, Taktik …</span>
+          </a>
+          <a href="/uebungen/phase" class="hub-cat-link">
+            <span class="hub-cat-name">Phase</span>
+            <span class="hub-cat-sub">Aufwärmen, Hauptteil …</span>
+          </a>
+        </div>
+      </div>
+      <div class="hub-cats-divider"></div>
 
       <!-- Content -->
       <div class="content">
