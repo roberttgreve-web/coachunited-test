@@ -1,0 +1,194 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5D2HZBJESR"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-5D2HZBJESR');</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="description" content="Spielformen und Spielformate fuer das Fussballtraining mit Kindern. Kleine Spiele und wettkampfnahe Uebungen fuer G-, F-, E- und D-Jugend.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Spielformen und Spielformate im Kinderfussball | COACH UNITED">
+  <meta property="og:description" content="Spielformen und Spielformate fuer das Fussballtraining mit Kindern. Kleine Spiele und wettkampfnahe Uebungen fuer G-, F-, E- und D-Jugend.">
+  <meta property="og:image" content="https://coachunited.de/og-image.png">
+  <meta property="og:url" content="https://coachunited.de/uebungen/phase/spielformat">
+  <meta property="og:site_name" content="COACH UNITED">
+  <link rel="canonical" href="https://coachunited.de/uebungen/phase/spielformat">
+  <title>Spielformen und Spielformate im Kinderfussball | COACH UNITED</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{font-family:'Inter Tight',system-ui,sans-serif;background:#f0eee9;display:flex;justify-content:center;align-items:flex-start;min-height:100vh;}
+    .container{width:375px;min-height:100vh;background:#fff;border-radius:28px;overflow:hidden;box-shadow:0 24px 64px rgba(0,0,0,0.14);display:flex;flex-direction:column;}
+    .header{background:#fff;padding:14px 18px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #E6E8EF;position:sticky;top:0;z-index:20;}
+    .logo-link{display:flex;align-items:center;text-decoration:none;}
+    .logo-link img{height:40px;width:auto;object-fit:contain;}
+    .burger-btn{background:none;border:none;cursor:pointer;padding:4px;display:flex;flex-direction:column;gap:4.5px;}
+    .burger-btn span{display:block;width:22px;height:2px;background:#0E1430;border-radius:2px;}
+    /* Hero */
+    .hero{background:#0E1430;padding:24px 20px 28px;}
+    .breadcrumb{display:flex;align-items:center;gap:6px;margin-bottom:16px;}
+    .bc-link{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:10px;font-weight:600;letter-spacing:0.08em;color:rgba(255,255,255,0.45);text-decoration:none;}
+    .bc-link:hover{color:rgba(255,255,255,0.75);}
+    .bc-sep{font-size:10px;color:rgba(255,255,255,0.25);}
+    .bc-current{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:10px;font-weight:600;letter-spacing:0.08em;color:rgba(255,255,255,0.7);}
+    .hero-h1{font-size:26px;font-weight:800;color:#fff;line-height:1.12;letter-spacing:-0.03em;margin-bottom:12px;}
+    .hero-badge{display:inline-flex;align-items:center;padding:4px 10px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.18);border-radius:999px;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:10px;font-weight:600;color:rgba(255,255,255,0.65);letter-spacing:0.06em;margin-bottom:14px;}
+    .hero-lead{font-size:14px;line-height:1.6;color:rgba(255,255,255,0.72);max-width:320px;}
+    /* Content */
+    .page-content{flex:1;overflow-y:auto;padding:28px 20px 100px;}
+    .text-section{margin-bottom:28px;padding-bottom:28px;border-bottom:1px solid #E6E8EF;}
+    .section-h2{font-size:18px;font-weight:700;color:#0E1430;letter-spacing:-0.02em;line-height:1.25;margin-bottom:12px;}
+    .body-text{font-size:14px;line-height:1.65;color:#3B4565;margin-bottom:10px;}
+    .body-text:last-child{margin-bottom:0;}
+    /* Exercise section */
+    .exercises-header{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:16px;}
+    .exercise-count{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11px;font-weight:600;color:#6B7390;letter-spacing:0.06em;}
+    /* Cards */
+    .exercise-card{display:flex;flex-direction:column;gap:10px;text-decoration:none;color:inherit;background:#fff;border:1px solid #E6E8EF;border-radius:16px;padding:16px 14px;margin-bottom:10px;transition:box-shadow .18s,transform .18s;}
+    .exercise-card:hover{box-shadow:0 4px 16px rgba(0,0,0,0.08);transform:translateY(-1px);}
+    .card-grid{display:flex;flex-direction:column;gap:10px;}
+    .card-title{font-size:17px;font-weight:700;color:#0E1430;line-height:1.18;letter-spacing:-0.02em;}
+    .card-desc{font-size:13px;line-height:1.5;color:#3B4565;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;}
+    .card-tags{display:flex;align-items:center;gap:5px;flex-wrap:nowrap;overflow:hidden;}
+    .tag-phase{display:inline-flex;align-items:center;padding:4px 9px;color:#fff;border-radius:4px;font-size:9.5px;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;white-space:nowrap;flex-shrink:0;}
+    .tag-jahrgang{display:inline-flex;align-items:center;padding:4px 9px;background:#EEF1F6;color:#0E1430;border-radius:4px;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:10px;font-weight:700;white-space:nowrap;flex-shrink:0;}
+    .tag-skill{display:inline-flex;align-items:center;padding:4px 9px;background:#0E1430;color:#fff;border-radius:4px;font-size:10px;font-weight:600;white-space:nowrap;flex-shrink:0;}
+    .tag-more{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:9.5px;font-weight:600;color:#6B7390;flex-shrink:0;}
+    .empty-state{text-align:center;padding:48px 24px;color:#6B7390;font-size:14px;line-height:1.6;}
+    /* Bottom Nav */
+    .bottom-nav{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:375px;background:#fff;border-top:1px solid #E6E8EF;display:flex;padding:10px 0 24px;z-index:20;box-shadow:0 -2px 12px rgba(0,0,0,0.05);}
+    .nav-item{flex:1;display:flex;flex-direction:column;align-items:center;gap:3px;border:none;background:none;cursor:pointer;padding:4px;text-decoration:none;color:#6B7390;transition:color .15s;font-family:'Inter Tight',system-ui,sans-serif;font-size:10.5px;font-weight:600;}
+    .nav-item.active{color:#1E6BFF;}
+    .nav-icon{width:22px;height:22px;}
+    /* Drawer */
+    .drawer-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.3);z-index:40;}
+    .drawer-overlay.open{display:block;}
+    .drawer{position:fixed;top:0;right:-280px;width:260px;height:100vh;background:#fff;z-index:50;padding:32px 24px;transition:right .25s ease;box-shadow:-8px 0 32px rgba(0,0,0,0.12);}
+    .drawer.open{right:0;}
+    .drawer-close{position:absolute;top:16px;right:16px;background:none;border:none;font-size:22px;cursor:pointer;color:#555;padding:4px;}
+    .drawer-logo{width:48px;margin-bottom:24px;}
+    .drawer-section-label{display:block;padding:8px 0 6px;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:9.5px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:#9BA3B8;}
+    .drawer-link{display:block;padding:11px 0;font-family:'Inter Tight',system-ui,sans-serif;font-size:15px;font-weight:500;color:#0E1430;text-decoration:none;border-bottom:1px solid #E6E8EF;}
+    .drawer-link:last-child{border-bottom:none;}
+    .drawer-link:hover{color:#1E6BFF;}
+    .drawer-divider{height:1px;background:#E6E8EF;margin:10px 0 12px;}
+    @media(min-width:768px){
+      body{background:#0E1430;}
+      .container{width:100%;max-width:860px;border-radius:0;min-height:100vh;}
+      .page-content{padding:40px 48px 120px;max-width:720px;}
+      .hero{padding:40px 48px 44px;}
+      .hero-h1{font-size:36px;}
+    }
+  </style>
+  <link rel="stylesheet" href="/desktop.css">
+  <script src="/desktop-nav.js" defer></script>
+  <script src="/feedback-widget.js" defer></script>
+</head>
+<body>
+<div class="container">
+  <header class="header">
+    <a href="/home" class="logo-link"><img src="/logo.png" alt="Coach United"></a>
+    <button class="burger-btn" onclick="openDrawer()"><span></span><span></span><span></span></button>
+  </header>
+
+  <div class="hero">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/uebungen" class="bc-link">&#220;bungen</a>
+      <span class="bc-sep">&#8250;</span>
+      <a href="/uebungen/phase" class="bc-link">Nach Phase</a>
+      <span class="bc-sep">&#8250;</span>
+      <span class="bc-current">Spielformat</span>
+    </nav>
+    <h1 class="hero-h1">Spielformen und Spielformate fuer den Kinderfussball</h1>
+    <span class="hero-badge">Trainingsphase Â· Spielformat</span>
+    <p class="hero-lead">Spielformen sind der beste Lernkontext im Fussball. Kinder ueben in wettkampfnahen Situationen und lernen durch das Spiel selbst.</p>
+  </div>
+
+  <div class="page-content">
+    <section class="text-section">
+      <h2 class="section-h2">Warum sind Spielformen so wertvoll?</h2>
+      <p class="body-text">Spielformen bringen alle Elemente des echten Spiels zusammen: Technik, Taktik, Entscheidungsfindung und Zweikampf. Kinder, die viel in Spielformen ueben, entwickeln besseres Spielverstaendnis als durch isolierte Technikuebungen.</p>
+      <p class="body-text">Die Spielformate auf dieser Seite reichen von einfachen 1v1-Situationen bis hin zu kleinen Mannschaftsspielen. Sie eignen sich als Abschluss einer Trainingseinheit oder als spielerischer Hauptteil.</p>
+    </section>
+    <section>
+      <div class="exercises-header">
+        <h2 class="section-h2">Alle Spielformate</h2>
+        <span class="exercise-count" id="count-label"></span>
+      </div>
+      <div id="exercises-list"><div class="empty-state">&#220;bungen werden geladen&#8230;</div></div>
+    </section>
+  </div>
+
+  <nav class="bottom-nav">
+    <a href="/uebungen" class="nav-item active">
+      <svg class="nav-icon" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4 L6 17 L16 17 Z"/><line x1="7.5" y1="11" x2="14.5" y2="11"/><line x1="4.5" y1="17" x2="17.5" y2="17"/></svg>
+      <span>Alle &#220;bungen</span>
+    </a>
+    <a href="/einheiten" class="nav-item">
+      <svg class="nav-icon" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="14" height="16" rx="2"/><line x1="7" y1="8" x2="15" y2="8"/><line x1="7" y1="12" x2="15" y2="12"/><line x1="7" y1="16" x2="12" y2="16"/></svg>
+      <span>Einheit erhalten</span>
+    </a>
+    <a href="/whatsapp-info" class="nav-item">
+      <svg class="nav-icon" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6a2 2 0 012-2h10a2 2 0 012 2v7a2 2 0 01-2 2H9l-4 3v-3H6a2 2 0 01-2-2z"/><circle cx="8" cy="9.5" r="0.6" fill="currentColor" stroke="none"/><circle cx="11" cy="9.5" r="0.6" fill="currentColor" stroke="none"/><circle cx="14" cy="9.5" r="0.6" fill="currentColor" stroke="none"/></svg>
+      <span>WhatsApp-Kanal</span>
+    </a>
+    <a href="/uebung-einreichen" class="nav-item">
+      <svg class="nav-icon" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15.5 2.5a2.121 2.121 0 013 3L7 17l-4 1 1-4 10.5-10.5z"/></svg>
+      <span>Einreichen</span>
+    </a>
+  </nav>
+
+  <div class="drawer-overlay" id="drawer-overlay" onclick="closeDrawer()"></div>
+  <div class="drawer" id="drawer">
+    <button class="drawer-close" onclick="closeDrawer()">&#x2715;</button>
+    <img src="/logo.png" alt="Coach United" class="drawer-logo">
+    <span class="drawer-section-label">&#220;bungen entdecken</span>
+    <a href="/uebungen/alter" class="drawer-link">&#220;bungen nach Alter</a>
+    <a href="/uebungen/skill" class="drawer-link">&#220;bungen nach Skill</a>
+    <a href="/uebungen/phase" class="drawer-link">&#220;bungen nach Phase</a>
+    <div class="drawer-divider"></div>
+    <a href="/wissen" class="drawer-link">Wissen</a>
+    <a href="/ueber-uns" class="drawer-link">&#220;ber uns</a>
+    <a href="/umgang-mit-ki" class="drawer-link">Umgang mit KI</a>
+    <a href="/impressum" class="drawer-link">Impressum</a>
+  </div>
+</div>
+<script>
+  const FILTER_KEY = 'phase';
+  const FILTER_VALUE = 'Spielformat';
+  const PHASE_COLORS = {'Aufwaermen':'#C2611F','AufwÃ¤rmen':'#C2611F','Hauptteil':'#0E6A45','Spielformat':'#0F3FA8'};
+  function filterEx(data){
+    if(FILTER_KEY==='jugend') return data.filter(e=>(e.jugend||[]).includes(FILTER_VALUE));
+    if(FILTER_KEY==='phase') return data.filter(e=>e.trainingsphase===FILTER_VALUE);
+    if(FILTER_KEY==='skill') return data.filter(e=>(e.skills||[]).includes(FILTER_VALUE));
+    return data;
+  }
+  function renderEx(list){
+    const el=document.getElementById('exercises-list');
+    const n=list.length;
+    document.getElementById('count-label').textContent=n+' Ãœbung'+(n!==1?'en':'');
+    if(!n){el.innerHTML='<div class="empty-state">Keine Ãœbungen gefunden.</div>';return;}
+    el.innerHTML=list.map(ex=>{
+      const href=ex.url_slug?`/uebung/${ex.url_slug}`:'#';
+      const pc=PHASE_COLORS[ex.trainingsphase]||'#0E1430';
+      const pt=ex.trainingsphase?`<span class="tag-phase" style="background:${pc}">${ex.trainingsphase}</span>`:'';
+      const js=(ex.jugend||[]).map(j=>j.replace('-Jugend','')).join('Â·');
+      const jt=js?`<span class="tag-jahrgang">${js}</span>`:'';
+      const sk=ex.skills||[];
+      const sv=sk.slice(0,2).map(s=>`<span class="tag-skill">${s}</span>`).join('');
+      const sm=sk.length>2?`<span class="tag-more">+${sk.length-2}</span>`:'';
+      return `<a href="${href}" class="exercise-card"><div class="card-grid"><div class="card-left"><h3 class="card-title">${ex.titel}</h3></div><div class="card-right">${ex.kurzbeschreibung?`<p class="card-desc">${ex.kurzbeschreibung}</p>`:''}<div class="card-tags">${pt}${jt}${sv}${sm}</div></div></div></a>`;
+    }).join('');
+  }
+  fetch('https://raw.githubusercontent.com/roberttgreve-web/coachunited-test/main/public/exercises.json')
+    .then(r=>r.json()).then(d=>renderEx(filterEx(d)))
+    .catch(()=>{document.getElementById('exercises-list').innerHTML='<div class="empty-state">Ãœbungen konnten nicht geladen werden.</div>';});
+  function openDrawer(){document.getElementById('drawer').classList.add('open');document.getElementById('drawer-overlay').classList.add('open');}
+  function closeDrawer(){document.getElementById('drawer').classList.remove('open');document.getElementById('drawer-overlay').classList.remove('open');}
+</script>
+</body>
+</html>

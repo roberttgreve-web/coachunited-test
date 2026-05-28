@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5D2HZBJESR"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-5D2HZBJESR');</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="description" content="Alle Fussballuebungen nach Altersgruppe geordnet. Kostenlose Uebungen fuer G-Jugend (Bambini), F-Jugend, E-Jugend und D-Jugend.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Fussballuebungen nach Alter â€“ G bis D-Jugend | COACH UNITED">
+  <meta property="og:description" content="Alle Fussballuebungen nach Altersgruppe geordnet. Kostenlose Uebungen fuer G-Jugend (Bambini), F-Jugend, E-Jugend und D-Jugend.">
+  <meta property="og:image" content="https://coachunited.de/og-image.png">
+  <meta property="og:url" content="https://coachunited.de/uebungen/alter">
+  <meta property="og:site_name" content="COACH UNITED">
+  <link rel="canonical" href="https://coachunited.de/uebungen/alter">
+  <title>Fussballuebungen nach Alter â€“ G bis D-Jugend | COACH UNITED</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{font-family:'Inter Tight',system-ui,sans-serif;background:#f0eee9;display:flex;justify-content:center;align-items:flex-start;min-height:100vh;}
+    .container{width:375px;min-height:100vh;background:#fff;border-radius:28px;overflow:hidden;box-shadow:0 24px 64px rgba(0,0,0,0.14);display:flex;flex-direction:column;}
+    .header{background:#fff;padding:14px 18px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #E6E8EF;position:sticky;top:0;z-index:20;}
+    .logo-link{display:flex;align-items:center;text-decoration:none;}
+    .logo-link img{height:40px;width:auto;object-fit:contain;}
+    .burger-btn{background:none;border:none;cursor:pointer;padding:4px;display:flex;flex-direction:column;gap:4.5px;}
+    .burger-btn span{display:block;width:22px;height:2px;background:#0E1430;border-radius:2px;}
+    .hero{background:#0E1430;padding:28px 20px 32px;}
+    .breadcrumb{display:flex;align-items:center;gap:6px;margin-bottom:16px;}
+    .bc-link{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:10px;font-weight:600;letter-spacing:0.08em;color:rgba(255,255,255,0.45);text-decoration:none;}
+    .bc-link:hover{color:rgba(255,255,255,0.75);}
+    .bc-sep{font-size:10px;color:rgba(255,255,255,0.25);}
+    .bc-current{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:10px;font-weight:600;letter-spacing:0.08em;color:rgba(255,255,255,0.7);}
+    .hero-h1{font-size:26px;font-weight:800;color:#fff;line-height:1.12;letter-spacing:-0.03em;margin-bottom:10px;}
+    .hero-lead{font-size:14px;line-height:1.6;color:rgba(255,255,255,0.72);}
+    .page-content{flex:1;overflow-y:auto;padding:24px 16px 100px;}
+    .hub-grid{display:flex;flex-direction:column;gap:12px;}
+    .hub-card{display:block;text-decoration:none;background:#fff;border:1px solid #E6E8EF;border-radius:16px;padding:18px 16px;transition:box-shadow .18s,transform .18s;}
+    .hub-card:hover{box-shadow:0 6px 20px rgba(0,0,0,0.09);transform:translateY(-2px);}
+    .hub-card-tag{display:inline-block;margin-bottom:8px;padding:3px 10px;background:#0E1430;color:#fff;border-radius:4px;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:9.5px;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;}
+    .hub-card-title{font-size:16px;font-weight:700;color:#0E1430;line-height:1.2;letter-spacing:-0.02em;margin-bottom:7px;}
+    .hub-card-desc{font-size:13px;line-height:1.5;color:#3B4565;margin-bottom:10px;}
+    .hub-card-cta{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:10.5px;font-weight:700;color:#1E6BFF;letter-spacing:0.04em;}
+    .bottom-nav{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:375px;background:#fff;border-top:1px solid #E6E8EF;display:flex;padding:10px 0 24px;z-index:20;box-shadow:0 -2px 12px rgba(0,0,0,0.05);}
+    .nav-item{flex:1;display:flex;flex-direction:column;align-items:center;gap:3px;border:none;background:none;cursor:pointer;padding:4px;text-decoration:none;color:#6B7390;transition:color .15s;font-family:'Inter Tight',system-ui,sans-serif;font-size:10.5px;font-weight:600;}
+    .nav-item.active{color:#1E6BFF;}
+    .nav-icon{width:22px;height:22px;}
+    .drawer-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.3);z-index:40;}
+    .drawer-overlay.open{display:block;}
+    .drawer{position:fixed;top:0;right:-280px;width:260px;height:100vh;background:#fff;z-index:50;padding:32px 24px;transition:right .25s ease;box-shadow:-8px 0 32px rgba(0,0,0,0.12);}
+    .drawer.open{right:0;}
+    .drawer-close{position:absolute;top:16px;right:16px;background:none;border:none;font-size:22px;cursor:pointer;color:#555;padding:4px;}
+    .drawer-logo{width:48px;margin-bottom:24px;}
+    .drawer-section-label{display:block;padding:8px 0 6px;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:9.5px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:#9BA3B8;}
+    .drawer-link{display:block;padding:11px 0;font-family:'Inter Tight',system-ui,sans-serif;font-size:15px;font-weight:500;color:#0E1430;text-decoration:none;border-bottom:1px solid #E6E8EF;}
+    .drawer-link:last-child{border-bottom:none;}
+    .drawer-link:hover{color:#1E6BFF;}
+    .drawer-divider{height:1px;background:#E6E8EF;margin:10px 0 12px;}
+    @media(min-width:768px){
+      body{background:#0E1430;}
+      .container{width:100%;max-width:860px;border-radius:0;min-height:100vh;}
+      .hero{padding:40px 48px 44px;}
+      .hero-h1{font-size:36px;}
+      .page-content{padding:36px 48px 120px;}
+      .hub-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;}
+    }
+  </style>
+  <link rel="stylesheet" href="/desktop.css">
+  <script src="/desktop-nav.js" defer></script>
+  <script src="/feedback-widget.js" defer></script>
+</head>
+<body>
+<div class="container">
+  <header class="header">
+    <a href="/home" class="logo-link"><img src="/logo.png" alt="Coach United"></a>
+    <button class="burger-btn" onclick="openDrawer()"><span></span><span></span><span></span></button>
+  </header>
+
+  <div class="hero">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/uebungen" class="bc-link">&#220;bungen</a>
+      <span class="bc-sep">&#8250;</span>
+      <span class="bc-current">Nach Alter</span>
+    </nav>
+    <h1 class="hero-h1">Fussballuebungen nach Alter</h1>
+    <p class="hero-lead">Finde die richtigen Uebungen fuer deine Altersgruppe. Alle Uebungen sind gezielt auf die motorischen und kognitiven Faehigkeiten der jeweiligen Jahrgangsstufe abgestimmt.</p>
+  </div>
+
+  <div class="page-content">
+    <div class="hub-grid">
+      <a href="/uebungen/alter/g-jugend" class="hub-card">
+        <span class="hub-card-tag">G-Jugend Â· Bambini</span>
+        <h2 class="hub-card-title">Fussballuebungen fuer die G-Jugend</h2>
+        <p class="hub-card-desc">Altersgerechte Uebungen fuer Bambinis und Einsteiger (5â€“7 Jahre) â€“ spielerisch, ballreich, motivierend.</p>
+        <span class="hub-card-cta">Zu den Uebungen &rarr;</span>
+      </a>
+      <a href="/uebungen/alter/f-jugend" class="hub-card">
+        <span class="hub-card-tag">F-Jugend</span>
+        <h2 class="hub-card-title">Fussballuebungen fuer die F-Jugend</h2>
+        <p class="hub-card-desc">Grundtechniken festigen und erste Spielprinzipien kennenlernen (8â€“9 Jahre).</p>
+        <span class="hub-card-cta">Zu den Uebungen &rarr;</span>
+      </a>
+      <a href="/uebungen/alter/e-jugend" class="hub-card">
+        <span class="hub-card-tag">E-Jugend</span>
+        <h2 class="hub-card-title">Fussballuebungen fuer die E-Jugend</h2>
+        <p class="hub-card-desc">Spielverstaendnis, Zweikampf und Positionsspiel in der ersten Meisterschaftsklasse (10â€“11 Jahre).</p>
+        <span class="hub-card-cta">Zu den Uebungen &rarr;</span>
+      </a>
+      <a href="/uebungen/alter/d-jugend" class="hub-card">
+        <span class="hub-card-tag">D-Jugend</span>
+        <h2 class="hub-card-title">Fussballuebungen fuer die D-Jugend</h2>
+        <p class="hub-card-desc">Taktik, Umschalten und Positionsspiel auf dem naechsten Level (12â€“13 Jahre).</p>
+        <span class="hub-card-cta">Zu den Uebungen &rarr;</span>
+      </a>
+    </div>
+  </div>
+
+  <nav class="bottom-nav">
+    <a href="/uebungen" class="nav-item active">
+      <svg class="nav-icon" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4 L6 17 L16 17 Z"/><line x1="7.5" y1="11" x2="14.5" y2="11"/><line x1="4.5" y1="17" x2="17.5" y2="17"/></svg>
+      <span>Alle &#220;bungen</span>
+    </a>
+    <a href="/einheiten" class="nav-item">
+      <svg class="nav-icon" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="14" height="16" rx="2"/><line x1="7" y1="8" x2="15" y2="8"/><line x1="7" y1="12" x2="15" y2="12"/><line x1="7" y1="16" x2="12" y2="16"/></svg>
+      <span>Einheit erhalten</span>
+    </a>
+    <a href="/whatsapp-info" class="nav-item">
+      <svg class="nav-icon" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6a2 2 0 012-2h10a2 2 0 012 2v7a2 2 0 01-2 2H9l-4 3v-3H6a2 2 0 01-2-2z"/><circle cx="8" cy="9.5" r="0.6" fill="currentColor" stroke="none"/><circle cx="11" cy="9.5" r="0.6" fill="currentColor" stroke="none"/><circle cx="14" cy="9.5" r="0.6" fill="currentColor" stroke="none"/></svg>
+      <span>WhatsApp-Kanal</span>
+    </a>
+    <a href="/uebung-einreichen" class="nav-item">
+      <svg class="nav-icon" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15.5 2.5a2.121 2.121 0 013 3L7 17l-4 1 1-4 10.5-10.5z"/></svg>
+      <span>Einreichen</span>
+    </a>
+  </nav>
+
+  <div class="drawer-overlay" id="drawer-overlay" onclick="closeDrawer()"></div>
+  <div class="drawer" id="drawer">
+    <button class="drawer-close" onclick="closeDrawer()">&#x2715;</button>
+    <img src="/logo.png" alt="Coach United" class="drawer-logo">
+    <span class="drawer-section-label">&#220;bungen entdecken</span>
+    <a href="/uebungen/alter" class="drawer-link">&#220;bungen nach Alter</a>
+    <a href="/uebungen/skill" class="drawer-link">&#220;bungen nach Skill</a>
+    <a href="/uebungen/phase" class="drawer-link">&#220;bungen nach Phase</a>
+    <div class="drawer-divider"></div>
+    <a href="/wissen" class="drawer-link">Wissen</a>
+    <a href="/ueber-uns" class="drawer-link">&#220;ber uns</a>
+    <a href="/umgang-mit-ki" class="drawer-link">Umgang mit KI</a>
+    <a href="/impressum" class="drawer-link">Impressum</a>
+  </div>
+</div>
+<script>
+  function openDrawer(){document.getElementById('drawer').classList.add('open');document.getElementById('drawer-overlay').classList.add('open');}
+  function closeDrawer(){document.getElementById('drawer').classList.remove('open');document.getElementById('drawer-overlay').classList.remove('open');}
+</script>
+</body>
+</html>

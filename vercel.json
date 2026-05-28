@@ -178,6 +178,31 @@
     {
       "source": "/danke",
       "destination": "/danke.html"
-    }
+    },
+    { "source": "/uebungen/alter",             "destination": "/uebungen-nach-alter.html" },
+    { "source": "/uebungen/alter/g-jugend",    "destination": "/alter/g-jugend.html" },
+    { "source": "/uebungen/alter/f-jugend",    "destination": "/alter/f-jugend.html" },
+    { "source": "/uebungen/alter/e-jugend",    "destination": "/alter/e-jugend.html" },
+    { "source": "/uebungen/alter/d-jugend",    "destination": "/alter/d-jugend.html" },
+    { "source": "/uebungen/skill",             "destination": "/uebungen-nach-skill.html" },
+    { "source": "/uebungen/skill/ballkontrolle","destination": "/skill/ballkontrolle.html" },
+    { "source": "/uebungen/skill/dribbeln",    "destination": "/skill/dribbeln.html" },
+    { "source": "/uebungen/skill/einwuerfe",   "destination": "/skill/einwuerfe.html" },
+    { "source": "/uebungen/skill/flanken",     "destination": "/skill/flanken.html" },
+    { "source": "/uebungen/skill/kommunikation","destination": "/skill/kommunikation.html" },
+    { "source": "/uebungen/skill/koordination","destination": "/skill/koordination.html" },
+    { "source": "/uebungen/skill/passen",      "destination": "/skill/passen.html" },
+    { "source": "/uebungen/skill/raumverhalten","destination": "/skill/raumverhalten.html" },
+    { "source": "/uebungen/skill/schnelligkeit","destination": "/skill/schnelligkeit.html" },
+    { "source": "/uebungen/skill/taktik",      "destination": "/skill/taktik.html" },
+    { "source": "/uebungen/skill/torhueter",   "destination": "/skill/torhueter.html" },
+    { "source": "/uebungen/skill/torschuss",   "destination": "/skill/torschuss.html" },
+    { "source": "/uebungen/skill/umschalten",  "destination": "/skill/umschalten.html" },
+    { "source": "/uebungen/skill/verteidigen", "destination": "/skill/verteidigen.html" },
+    { "source": "/uebungen/skill/zweikampf",   "destination": "/skill/zweikampf.html" },
+    { "source": "/uebungen/phase",             "destination": "/uebungen-nach-phase.html" },
+    { "source": "/uebungen/phase/aufwaermen",  "destination": "/phase/aufwaermen.html" },
+    { "source": "/uebungen/phase/hauptteil",   "destination": "/phase/hauptteil.html" },
+    { "source": "/uebungen/phase/spielformat", "destination": "/phase/spielformat.html" }
   ]
 }
