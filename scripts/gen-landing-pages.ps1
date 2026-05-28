@@ -345,7 +345,7 @@ $subPages = @(
   @{
     file='public\alter\g-jugend.html'; url='/uebungen/alter/g-jugend'
     title='Fu&#223;ball&#252;bungen f&#252;r die G-Jugend (Bambini) | COACH UNITED'
-    meta='Altersgerechte Fu&#223;ball&#252;bungen f&#252;r Bambinis und G-Jugend (5&#8211;7 Jahre). Kostenlose &#220;bungen mit Grafiken, Aufbau und Coaching-Tipps f&#252;r Trainer.'
+    meta='Altersgerechtes Fu&#223;balltraining f&#252;r Bambinis und G-Jugend (5&#8211;7 Jahre). Kostenlose &#220;bungen mit Grafiken, Aufbau und Coaching-Tipps f&#252;r Trainer.'
     h1='Fu&#223;ball&#252;bungen f&#252;r die G-Jugend'
     badge='Bambini &#183; 5&#8211;7 Jahre'
     lead='Die G-Jugend ist der erste Kontakt mit dem Vereinsfu&#223;ball. Spa&#223;, viel Ballkontakt und spielerisches Lernen stehen im Mittelpunkt.'
@@ -358,7 +358,7 @@ $subPages = @(
   @{
     file='public\alter\f-jugend.html'; url='/uebungen/alter/f-jugend'
     title='Fu&#223;ball&#252;bungen f&#252;r die F-Jugend | COACH UNITED'
-    meta='Fu&#223;ball&#252;bungen f&#252;r die F-Jugend (8&#8211;9 Jahre). Kostenlose Trainings&#252;bungen mit Grafiken und Coaching-Tipps zum Dribbeln, Passen und Torschuss.'
+    meta='Fu&#223;balltraining f&#252;r die F-Jugend (8&#8211;9 Jahre). Kostenlose &#220;bungen mit Grafiken und Coaching-Tipps zum Dribbeln, Passen und Torschuss.'
     h1='Fu&#223;ball&#252;bungen f&#252;r die F-Jugend'
     badge='F-Jugend &#183; 8&#8211;9 Jahre'
     lead='In der F-Jugend beginnen Kinder, Grundtechniken zu festigen und erste taktische Grundbegriffe kennenzulernen. Der Spa&#223; steht weiter im Vordergrund &#8211; aber die Anforderungen wachsen.'
@@ -371,7 +371,7 @@ $subPages = @(
   @{
     file='public\alter\e-jugend.html'; url='/uebungen/alter/e-jugend'
     title='Fu&#223;ball&#252;bungen f&#252;r die E-Jugend | COACH UNITED'
-    meta='Fu&#223;ball&#252;bungen f&#252;r die E-Jugend (10&#8211;11 Jahre). Kostenlose &#220;bungen f&#252;r Dribbling, Zweikampf, Taktik und Spielverst&#228;ndnis mit Grafiken.'
+    meta='Fu&#223;balltraining f&#252;r die E-Jugend (10&#8211;11 Jahre). Kostenlose &#220;bungen f&#252;r Dribbling, Zweikampf, Taktik und Spielverst&#228;ndnis mit Grafiken.'
     h1='Fu&#223;ball&#252;bungen f&#252;r die E-Jugend'
     badge='E-Jugend &#183; 10&#8211;11 Jahre'
     lead='Die E-Jugend ist die erste Altersklasse mit Meisterschaftsspielen in voller St&#228;rke. Spielverst&#228;ndnis, Zweikampf und Positionen werden jetzt gezielt trainiert.'
@@ -384,7 +384,7 @@ $subPages = @(
   @{
     file='public\alter\d-jugend.html'; url='/uebungen/alter/d-jugend'
     title='Fu&#223;ball&#252;bungen f&#252;r die D-Jugend | COACH UNITED'
-    meta='Fu&#223;ball&#252;bungen f&#252;r die D-Jugend (12&#8211;13 Jahre). &#220;bungen f&#252;r Taktik, Zweikampf, Umschalten und Spielvorbereitung mit Grafiken und Coaching-Tipps.'
+    meta='Fu&#223;balltraining f&#252;r die D-Jugend (12&#8211;13 Jahre). &#220;bungen f&#252;r Taktik, Zweikampf, Umschalten und Spielvorbereitung mit Grafiken und Coaching-Tipps.'
     h1='Fu&#223;ball&#252;bungen f&#252;r die D-Jugend'
     badge='D-Jugend &#183; 12&#8211;13 Jahre'
     lead='Die D-Jugend markiert den &#220;bergang zum leistungsorientierten Fu&#223;ball. Taktik, Umschalten und Positionsspiel r&#252;cken ins Zentrum des Trainings.'
@@ -438,7 +438,7 @@ $subPages = @(
   @{
     file='public\skill\ballkontrolle.html'; url='/uebungen/skill/ballkontrolle'
     title='Ballkontrolle trainieren &#8211; &#220;bungen f&#252;r Kinder | COACH UNITED'
-    meta='&#220;bungen zur Ballkontrolle im Kinderfu&#223;ball. Kostenlose Trainings&#252;bungen f&#252;r G-, F-, E- und D-Jugend mit Grafiken und Coaching-Tipps.'
+    meta='&#220;bungen zur Ballkontrolle im Fu&#223;balltraining. Kostenlose &#220;bungen f&#252;r G-, F-, E- und D-Jugend mit Grafiken und Coaching-Tipps.'
     h1='Ballkontrolle trainieren im Kinderfu&#223;ball'
     badge='Skill &#183; Ballkontrolle'
     lead='Ballkontrolle ist die Grundlage jeder Fu&#223;ballbewegung. Wer den Ball sicher f&#252;hren kann, hat mehr Zeit f&#252;r die n&#228;chste Spielentscheidung.'
@@ -451,7 +451,7 @@ $subPages = @(
   @{
     file='public\skill\dribbeln.html'; url='/uebungen/skill/dribbeln'
     title='Dribbling-&#220;bungen f&#252;r Kinder &#8211; Kinderfu&#223;ball | COACH UNITED'
-    meta='Dribbling-&#220;bungen f&#252;r das Kinderfu&#223;ball-Training. Kostenlose &#220;bungen f&#252;r G-, F-, E- und D-Jugend mit Grafiken, Aufbau und Coaching-Tipps.'
+    meta='Dribbling-&#220;bungen f&#252;r das Fu&#223;balltraining mit Kindern. Kostenlose &#220;bungen f&#252;r G-, F-, E- und D-Jugend mit Grafiken, Aufbau und Coaching-Tipps.'
     h1='Dribbling-&#220;bungen f&#252;r den Kinderfu&#223;ball'
     badge='Skill &#183; Dribbeln'
     lead='Dribbeln ist die K&#246;nigsdisziplin im Kinderfu&#223;ball. Wer fr&#252;h lernt, den Ball zu behaupten und am Gegner vorbeizukommen, legt das Fundament f&#252;r eine starke Entwicklung.'
@@ -464,7 +464,7 @@ $subPages = @(
   @{
     file='public\skill\einwuerfe.html'; url='/uebungen/skill/einwuerfe'
     title='Einwurf-&#220;bungen f&#252;r Kinder &#8211; Fu&#223;balltraining | COACH UNITED'
-    meta='Einwurf-&#220;bungen f&#252;r das Kinderfu&#223;ball-Training. Kostenlose &#220;bungen zur Technik des Einwurfs f&#252;r G-, F-, E- und D-Jugend.'
+    meta='Einwurf-&#220;bungen f&#252;r das Fu&#223;balltraining mit Kindern. Kostenlose &#220;bungen zur Technik des Einwurfs f&#252;r G-, F-, E- und D-Jugend.'
     h1='Einwurf-&#220;bungen f&#252;r das Fu&#223;balltraining'
     badge='Skill &#183; Einw&#252;rfe'
     lead='Der Einwurf ist eine oft vernachl&#228;ssigte Technik &#8211; dabei entscheidet ein guter Einwurf h&#228;ufig &#252;ber Ballbesitz und Spielaufbau.'
@@ -477,7 +477,7 @@ $subPages = @(
   @{
     file='public\skill\flanken.html'; url='/uebungen/skill/flanken'
     title='Flanken-&#220;bungen f&#252;r Kinder &#8211; Fu&#223;balltraining | COACH UNITED'
-    meta='Flanken-&#220;bungen f&#252;r das Kinderfu&#223;ball-Training. Kostenlose &#220;bungen zur Flanken-Technik f&#252;r F-, E- und D-Jugend.'
+    meta='Flanken-&#220;bungen f&#252;r das Fu&#223;balltraining mit Kindern. Kostenlose &#220;bungen zur Flanken-Technik f&#252;r F-, E- und D-Jugend.'
     h1='Flanken-&#220;bungen f&#252;r den Kinderfu&#223;ball'
     badge='Skill &#183; Flanken'
     lead='Flanken sind im Kinderfu&#223;ball ein wichtiger Baustein des Angriffsspiels. Wer pr&#228;zise flanken kann, schafft Torchancen aus weiten Positionen.'
@@ -490,7 +490,7 @@ $subPages = @(
   @{
     file='public\skill\kommunikation.html'; url='/uebungen/skill/kommunikation'
     title='Kommunikation im Fu&#223;ball trainieren | COACH UNITED'
-    meta='&#220;bungen zur Kommunikation im Kinderfu&#223;ball. Kostenlose Trainingsformen, die Absprachen und Teamkommunikation f&#246;rdern.'
+    meta='&#220;bungen zur Kommunikation im Fu&#223;balltraining. Kostenlose Trainingsformen f&#252;r Absprachen und Teamkommunikation im Kinderfu&#223;ball.'
     h1='Kommunikation im Fu&#223;ball trainieren'
     badge='Skill &#183; Kommunikation'
     lead='Fu&#223;ball ist ein Mannschaftssport &#8211; und Kommunikation ist der Klebstoff, der ein Team zusammenh&#228;lt. Fr&#252;h gelernt, macht Kommunikation den Unterschied auf dem Platz.'
@@ -503,7 +503,7 @@ $subPages = @(
   @{
     file='public\skill\koordination.html'; url='/uebungen/skill/koordination'
     title='Koordinations&#252;bungen f&#252;r Kinder &#8211; Fu&#223;ball | COACH UNITED'
-    meta='Koordinations&#252;bungen f&#252;r das Kinderfu&#223;ball-Training. Kostenlose &#220;bungen f&#252;r bessere K&#246;rperkontrolle, Reaktion und Motorik.'
+    meta='Koordinations&#252;bungen f&#252;r das Fu&#223;balltraining mit Kindern. Kostenlose &#220;bungen f&#252;r bessere K&#246;rperkontrolle, Reaktion und Motorik.'
     h1='Koordinations&#252;bungen im Kinderfu&#223;ball'
     badge='Skill &#183; Koordination'
     lead='Gute Koordination ist die unsichtbare Grundlage aller Fu&#223;balltechniken. Kinder mit guter K&#246;rperkoordination lernen neue Bewegungen schneller und sicherer.'
@@ -516,7 +516,7 @@ $subPages = @(
   @{
     file='public\skill\passen.html'; url='/uebungen/skill/passen'
     title='Passen-&#220;bungen f&#252;r Kinder &#8211; Fu&#223;balltraining | COACH UNITED'
-    meta='Passen-&#220;bungen f&#252;r das Kinderfu&#223;ball-Training. Kostenlose Trainings&#252;bungen f&#252;r sicheres Passspiel f&#252;r G-, F-, E- und D-Jugend.'
+    meta='Passen-&#220;bungen f&#252;r das Fu&#223;balltraining mit Kindern. Kostenlose &#220;bungen f&#252;r sicheres Passspiel f&#252;r G-, F-, E- und D-Jugend.'
     h1='Passen-&#220;bungen f&#252;r den Kinderfu&#223;ball'
     badge='Skill &#183; Passen'
     lead='Sicheres Passspiel ist das Herzst&#252;ck des modernen Fu&#223;balls. Kinder, die fr&#252;h lernen, pr&#228;zise zu passen, spielen intelligenter und schaffen mehr Torchancen.'
@@ -529,7 +529,7 @@ $subPages = @(
   @{
     file='public\skill\raumverhalten.html'; url='/uebungen/skill/raumverhalten'
     title='Raumverhalten trainieren &#8211; Kinderfu&#223;ball | COACH UNITED'
-    meta='&#220;bungen zum Raumverhalten und Stellungsspiel im Kinderfu&#223;ball. Kostenlose Trainingsformen f&#252;r E- und D-Jugend.'
+    meta='&#220;bungen zum Raumverhalten im Fu&#223;balltraining. Kostenlose Trainingsformen f&#252;r Stellungsspiel und Freilaufverhalten bei E- und D-Jugend.'
     h1='Raumverhalten und Stellungsspiel trainieren'
     badge='Skill &#183; Raumverhalten'
     lead='Wer den Raum liest, spielt intelligent. Kinder, die fr&#252;h lernen, sich richtig zu positionieren, haben immer eine gute L&#246;sung auf dem Platz.'
@@ -542,7 +542,7 @@ $subPages = @(
   @{
     file='public\skill\schnelligkeit.html'; url='/uebungen/skill/schnelligkeit'
     title='Schnelligkeitstraining f&#252;r Kinder &#8211; Fu&#223;ball | COACH UNITED'
-    meta='Schnelligkeits&#252;bungen f&#252;r das Kinderfu&#223;ball-Training. Kostenlose Sprints, Reaktions&#252;bungen und Tempodribbling f&#252;r alle Altersgruppen.'
+    meta='Schnelligkeits&#252;bungen f&#252;r das Fu&#223;balltraining mit Kindern. Kostenlose Sprints, Reaktions&#252;bungen und Tempodribbling f&#252;r alle Altersgruppen.'
     h1='Schnelligkeitstraining im Kinderfu&#223;ball'
     badge='Skill &#183; Schnelligkeit'
     lead='Schnelligkeit im Fu&#223;ball ist mehr als reine Sprintgeschwindigkeit &#8211; es geht um Reaktion, erste Schritte und das schnelle Handeln unter Druck.'
@@ -555,7 +555,7 @@ $subPages = @(
   @{
     file='public\skill\taktik.html'; url='/uebungen/skill/taktik'
     title='Taktik-&#220;bungen f&#252;r Kinder &#8211; Fu&#223;balltraining | COACH UNITED'
-    meta='Taktik-&#220;bungen f&#252;r das Kinderfu&#223;ball-Training. Kostenlose Spielformen f&#252;r Pressing, Umschalten und Positionsspiel f&#252;r E- und D-Jugend.'
+    meta='Taktik-&#220;bungen f&#252;r das Fu&#223;balltraining mit Kindern. Kostenlose Spielformen f&#252;r Pressing, Umschalten und Positionsspiel f&#252;r E- und D-Jugend.'
     h1='Taktik-&#220;bungen f&#252;r den Kinderfu&#223;ball'
     badge='Skill &#183; Taktik'
     lead='Taktik ist kein Erwachsenenthema. Schon Kinder ab der E-Jugend k&#246;nnen einfache Spielprinzipien verstehen und umsetzen &#8211; wenn man sie richtig beibringt.'
@@ -568,7 +568,7 @@ $subPages = @(
   @{
     file='public\skill\torhueter.html'; url='/uebungen/skill/torhueter'
     title='Torh&#252;ter-&#220;bungen f&#252;r Kinder &#8211; Kinderfu&#223;ball | COACH UNITED'
-    meta='Torh&#252;ter-&#220;bungen f&#252;r das Kinderfu&#223;ball-Training. Kostenlose &#220;bungen f&#252;r Torh&#252;ter der G-, F-, E- und D-Jugend.'
+    meta='Torh&#252;ter-&#220;bungen f&#252;r das Fu&#223;balltraining mit Kindern. Kostenlose &#220;bungen f&#252;r Torh&#252;ter der G-, F-, E- und D-Jugend.'
     h1='Torh&#252;ter-&#220;bungen f&#252;r den Kinderfu&#223;ball'
     badge='Skill &#183; Torh&#252;ter'
     lead='Der Torh&#252;ter ist das Fundament einer Mannschaft. Mit den richtigen &#220;bungen entwickeln auch junge Torh&#252;ter Mut, Technik und Spielverst&#228;ndnis.'
@@ -581,7 +581,7 @@ $subPages = @(
   @{
     file='public\skill\torschuss.html'; url='/uebungen/skill/torschuss'
     title='Torschuss-&#220;bungen f&#252;r Kinder &#8211; Fu&#223;ball | COACH UNITED'
-    meta='Torschuss-&#220;bungen f&#252;r das Kinderfu&#223;ball-Training. Kostenlose &#220;bungen f&#252;r Abschluss, Schusstechnik und Torabschluss f&#252;r alle Altersgruppen.'
+    meta='Torschuss-&#220;bungen f&#252;r das Fu&#223;balltraining mit Kindern. Kostenlose &#220;bungen f&#252;r Abschluss, Schusstechnik und Torabschluss f&#252;r alle Altersgruppen.'
     h1='Torschuss-&#220;bungen f&#252;r den Kinderfu&#223;ball'
     badge='Skill &#183; Torschuss'
     lead='Tore schie&#223;en macht Spa&#223; &#8211; und das Torschusstraining geh&#246;rt zu den beliebtesten Trainingsinhalten f&#252;r Kinder. Mit den richtigen &#220;bungen lernen sie, effektiv und pr&#228;zise abzuschlie&#223;en.'
@@ -594,7 +594,7 @@ $subPages = @(
   @{
     file='public\skill\umschalten.html'; url='/uebungen/skill/umschalten'
     title='Umschalten trainieren &#8211; Kinderfu&#223;ball | COACH UNITED'
-    meta='&#220;bungen zum Umschalten im Kinderfu&#223;ball. Kostenlose Trainingsformen f&#252;r schnelles Umschalten von Angriff auf Abwehr f&#252;r E- und D-Jugend.'
+    meta='&#220;bungen zum Umschalten im Fu&#223;balltraining. Kostenlose Trainingsformen f&#252;r schnelles Umschalten von Angriff auf Abwehr f&#252;r E- und D-Jugend.'
     h1='Umschalten trainieren im Kinderfu&#223;ball'
     badge='Skill &#183; Umschalten'
     lead='Der Moment, in dem eine Mannschaft vom Angriff in die Abwehr (oder umgekehrt) wechselt, entscheidet oft &#252;ber Sieg oder Niederlage. Schnelles Umschalten muss trainiert werden.'
@@ -607,7 +607,7 @@ $subPages = @(
   @{
     file='public\skill\verteidigen.html'; url='/uebungen/skill/verteidigen'
     title='Verteidigen trainieren &#8211; Kinderfu&#223;ball | COACH UNITED'
-    meta='Verteidigungs-&#220;bungen f&#252;r das Kinderfu&#223;ball-Training. Kostenlose &#220;bungen f&#252;r Zweikampf, Abwehrverhalten und Pressing f&#252;r E- und D-Jugend.'
+    meta='Verteidigungs-&#220;bungen f&#252;r das Fu&#223;balltraining mit Kindern. Kostenlose &#220;bungen f&#252;r Zweikampf, Abwehrverhalten und Pressing f&#252;r E- und D-Jugend.'
     h1='Verteidigungs-&#220;bungen f&#252;r den Kinderfu&#223;ball'
     badge='Skill &#183; Verteidigen'
     lead='Verteidigen ist eine Technik &#8211; und eine Einstellung. Kinder, die fr&#252;h defensives Bewusstsein entwickeln, werden zu kompletten Fu&#223;ballern.'
@@ -620,7 +620,7 @@ $subPages = @(
   @{
     file='public\skill\zweikampf.html'; url='/uebungen/skill/zweikampf'
     title='Zweikampf-&#220;bungen f&#252;r Kinder &#8211; Fu&#223;ball | COACH UNITED'
-    meta='Zweikampf-&#220;bungen f&#252;r das Kinderfu&#223;ball-Training. Kostenlose &#220;bungen f&#252;r Zweikampftechnik und Ballbehauptung f&#252;r alle Altersgruppen.'
+    meta='Zweikampf-&#220;bungen f&#252;r das Fu&#223;balltraining mit Kindern. Kostenlose &#220;bungen f&#252;r Zweikampftechnik und Ballbehauptung f&#252;r alle Altersgruppen.'
     h1='Zweikampf-&#220;bungen f&#252;r den Kinderfu&#223;ball'
     badge='Skill &#183; Zweikampf'
     lead='Den Zweikampf gewinnen ist eine F&#228;higkeit, die trainiert werden will. Kinder, die gelernt haben, B&#228;lle zu behaupten, haben im Spiel klare Vorteile.'
@@ -703,7 +703,7 @@ $hubPages = @(
   @{
     file='public\uebungen-nach-alter.html'; url='/uebungen/alter'
     title='Fu&#223;ball&#252;bungen nach Alter &#8211; G bis D-Jugend | COACH UNITED'
-    meta='Alle Fu&#223;ball&#252;bungen nach Altersgruppe geordnet. Kostenlose &#220;bungen f&#252;r G-Jugend (Bambini), F-Jugend, E-Jugend und D-Jugend.'
+    meta='Fu&#223;balltraining nach Altersgruppe: Kostenlose &#220;bungen f&#252;r G-Jugend (Bambini), F-Jugend, E-Jugend und D-Jugend.'
     h1='Fu&#223;ball&#252;bungen nach Alter'; breadcrumb='Nach Alter'
     lead='Finde die richtigen &#220;bungen f&#252;r deine Altersgruppe. Alle &#220;bungen sind gezielt auf die motorischen und kognitiven F&#228;higkeiten der jeweiligen Jahrgangsstufe abgestimmt.'
     cards=$alterCards
@@ -711,7 +711,7 @@ $hubPages = @(
   @{
     file='public\uebungen-nach-skill.html'; url='/uebungen/skill'
     title='Fu&#223;ball&#252;bungen nach Skill &#8211; Alle Skills | COACH UNITED'
-    meta='Alle Fu&#223;ball&#252;bungen nach Skill sortiert. Gezieltes Training f&#252;r Ballkontrolle, Dribbeln, Passen, Torschuss und 11 weitere Skills.'
+    meta='Fu&#223;balltraining nach Skill: Gezieltes Training f&#252;r Ballkontrolle, Dribbeln, Passen, Torschuss und 11 weitere Skills im Kinderfu&#223;ball.'
     h1='Fu&#223;ball&#252;bungen nach Skill'; breadcrumb='Nach Skill'
     lead='Gezieltes Training f&#252;r jeden Fu&#223;ball-Skill. W&#228;hle einen Skill und finde alle passenden &#220;bungen auf einen Blick.'
     cards=$skillCards
@@ -719,7 +719,7 @@ $hubPages = @(
   @{
     file='public\uebungen-nach-phase.html'; url='/uebungen/phase'
     title='Fu&#223;ball&#252;bungen nach Trainingsphase | COACH UNITED'
-    meta='Alle Fu&#223;ball&#252;bungen nach Trainingsphase sortiert. Aufw&#228;rmen, Hauptteil und Spielformat f&#252;r den strukturierten Trainingsaufbau.'
+    meta='Fu&#223;balltraining strukturieren: Aufw&#228;rmen, Hauptteil und Spielformat mit kostenlosen &#220;bungen f&#252;r den Kinderfu&#223;ball.'
     h1='Fu&#223;ball&#252;bungen nach Trainingsphase'; breadcrumb='Nach Phase'
     lead='Struktur und Rhythmus bestimmen gutes Fu&#223;balltraining. Finde hier die richtigen &#220;bungen f&#252;r jede Phase deiner Trainingseinheit.'
     cards=$phaseCards
