@@ -14,6 +14,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="description" id="meta-description" content="">
+  <meta name="keywords" id="meta-keywords" content="">
+  <link rel="canonical" id="canonical" href="">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="COACH UNITED">
+  <meta property="og:title" id="og-title" content="">
+  <meta property="og:description" id="og-description" content="">
+  <meta property="og:url" id="og-url" content="">
   <meta property="og:image" content="https://coachunited.de/og-image.png">
   <title>Artikel – COACH UNITED</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -238,6 +246,39 @@
         }
 
         document.title = article.titel + ' – COACH UNITED';
+
+        const pageUrl = 'https://coachunited.de/artikel/' + article.url_slug;
+        if (article.seo_meta_description) {
+          document.getElementById('meta-description').setAttribute('content', article.seo_meta_description);
+          document.getElementById('og-description').setAttribute('content', article.seo_meta_description);
+        }
+        if (article.seo_keyword) {
+          document.getElementById('meta-keywords').setAttribute('content', article.seo_keyword);
+        }
+        document.getElementById('canonical').setAttribute('href', pageUrl);
+        document.getElementById('og-title').setAttribute('content', article.titel + ' – COACH UNITED');
+        document.getElementById('og-url').setAttribute('content', pageUrl);
+
+        const jsonLd = {
+          '@context': 'https://schema.org',
+          '@type': 'Article',
+          headline: article.titel,
+          description: article.seo_meta_description || '',
+          keywords: article.seo_keyword || '',
+          url: pageUrl,
+          datePublished: article.erstellt_am || '',
+          publisher: {
+            '@type': 'Organization',
+            name: 'COACH UNITED',
+            url: 'https://coachunited.de'
+          }
+        };
+        if (article.foto_url) jsonLd.image = article.foto_url;
+        const script = document.createElement('script');
+        script.type = 'application/ld+json';
+        script.textContent = JSON.stringify(jsonLd);
+        document.head.appendChild(script);
+
         document.getElementById('titel').textContent = article.titel;
         document.getElementById('article-body').innerHTML = article.inhalt || '';
 
