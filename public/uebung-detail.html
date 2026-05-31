@@ -821,16 +821,25 @@
         ];
         if (phaseUrl) breadcrumbItems.push({'@type':'ListItem','position':2,'name':ex.trainingsphase,'item':'https://coachunited.de'+phaseUrl});
         breadcrumbItems.push({'@type':'ListItem','position':breadcrumbItems.length+1,'name':displayTitle,'item':canonicalUrl});
-        const ldScript = document.createElement('script');
-        ldScript.type = 'application/ld+json';
-        ldScript.text = JSON.stringify({'@context':'https://schema.org','@graph':[
+        const ldGraph = [
           {'@type':'Article','name':displayTitle,'headline':displayTitle,
            'description':ex.seo_meta_description||'',
            'url':canonicalUrl,
            'image':ex.grafik_url||'https://coachunited.de/og-image.png',
            'publisher':{'@id':'https://coachunited.de/#organization'}},
           {'@type':'BreadcrumbList','itemListElement':breadcrumbItems}
-        ]});
+        ];
+        const faqItems = (ex.faq || []).filter(f => f.frage && f.antwort);
+        if (faqItems.length) {
+          ldGraph.push({'@type':'FAQPage','mainEntity':faqItems.map(f => ({
+            '@type':'Question',
+            'name': f.frage,
+            'acceptedAnswer':{'@type':'Answer','text': f.antwort}
+          }))});
+        }
+        const ldScript = document.createElement('script');
+        ldScript.type = 'application/ld+json';
+        ldScript.text = JSON.stringify({'@context':'https://schema.org','@graph':ldGraph});
         document.head.appendChild(ldScript);
 
         // Category back-links
