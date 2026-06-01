@@ -1,8 +1,19 @@
 {
   "buildCommand": "",
   "outputDirectory": "public",
+  "trailingSlash": false,
   "ignoreCommand": "git log -1 --pretty=%s | grep -q \"^publisher:\"",
   "redirects": [
+    {
+      "source": "/whatsapp-kanal",
+      "destination": "/whatsapp-info",
+      "permanent": true
+    },
+    {
+      "source": "/category/:path*",
+      "destination": "/uebungen",
+      "permanent": true
+    },
     {
       "source": "/wp-content/:path*",
       "destination": "https://archiv.coachunited.de/wp-content/:path*",
