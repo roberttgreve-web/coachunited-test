@@ -1,5 +1,5 @@
 {
-  "buildCommand": "",
+  "buildCommand": "node scripts/build-exercise-pages.js",
   "outputDirectory": "public",
   "trailingSlash": false,
   "ignoreCommand": "git log -1 --pretty=%s | grep -q \"^publisher:\"",
@@ -555,7 +555,7 @@
     },
     {
       "source": "/uebung/:slug",
-      "destination": "/uebung-detail.html"
+      "destination": "/uebung/:slug.html"
     },
     {
       "source": "/einheiten",
