@@ -17,22 +17,22 @@
     {
       "source": "/wp-content/:path*",
       "destination": "https://archiv.coachunited.de/wp-content/:path*",
-      "permanent": false
+      "permanent": true
     },
     {
       "source": "/minitt",
       "destination": "https://archiv.coachunited.de/minitt/",
-      "permanent": false
+      "permanent": true
     },
     {
       "source": "/minitt/",
       "destination": "https://archiv.coachunited.de/minitt/",
-      "permanent": false
+      "permanent": true
     },
     {
       "source": "/minitt/:path*",
       "destination": "https://archiv.coachunited.de/minitt/:path*",
-      "permanent": false
+      "permanent": true
     },
     {
       "source": "/trainingseinheiten",
