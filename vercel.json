@@ -20,21 +20,6 @@
       "permanent": true
     },
     {
-      "source": "/minitt",
-      "destination": "https://archiv.coachunited.de/minitt/",
-      "permanent": true
-    },
-    {
-      "source": "/minitt/",
-      "destination": "https://archiv.coachunited.de/minitt/",
-      "permanent": true
-    },
-    {
-      "source": "/minitt/:path*",
-      "destination": "https://archiv.coachunited.de/minitt/:path*",
-      "permanent": true
-    },
-    {
       "source": "/trainingseinheiten",
       "destination": "/uebungen",
       "permanent": true
