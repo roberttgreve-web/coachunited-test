@@ -2,7 +2,6 @@
   "buildCommand": "node scripts/build-exercise-pages.js",
   "outputDirectory": "public",
   "trailingSlash": false,
-  "ignoreCommand": "git log -1 --pretty=%s | grep -q \"^publisher:\"",
   "redirects": [
     {
       "source": "/whatsapp-kanal",
