@@ -4978,9 +4978,14 @@
     "leichter_machen": "• Feste Tore zuweisen.",
     "schwerer_machen": "• Spieler müssen den Ball mindestens zweimal berühren, bevor sie ein Tor erzielen können; • Zeitlimit pro Angriff einführen; • Zweiten Ball einspielen",
     "status": "veroeffentlicht",
-    "schwester_ids": [],
-    "schwester_id": null,
-    "schwester_titel": null,
+    "schwester_ids": [
+      163,
+      162,
+      159,
+      158
+    ],
+    "schwester_id": 163,
+    "schwester_titel": "STANGEN-DSCHUNGEL MIT ZWEI TOREN",
     "alt_titel": "Tore-Jagd im Quadrat",
     "seo_keyword": "Fußballübung Passen",
     "url_slug": "passen-tore-jagd-im-quadrat",
@@ -9749,12 +9754,13 @@
     "original_varianten": "Durch die Stangen hüpfen.\nRückwärts laufen.\nWettbewerb: Die Stangen leicht berühren, ohne dass sie umkippen. Wer berührt in 2 Minuten die meisten?",
     "original_coaching_fokus": "Die Stangen fördern Ausweichbewegungen.\nFehlende Stangen durch Hütchen ersetzen.",
     "schwester_ids": [
+      81,
+      163,
       162,
-      159,
-      163
+      159
     ],
-    "schwester_id": 162,
-    "schwester_titel": "STANGEN-DSCHUNGEL MIT VIER TOREN"
+    "schwester_id": 81,
+    "schwester_titel": "QUADRAT-SPIEL AUF VIER KLEINE TORE"
   },
   {
     "id": 159,
@@ -9814,12 +9820,13 @@
     "original_varianten": "Die Stangen mit der rechten/linken Hand kurz berühren.\nNur mit rechts/links dribbeln.\nAuf ein Trainerkommando rasch um ein Eckhütchen und wieder zu den Stangen dribbeln.",
     "original_coaching_fokus": "Die Stangen fordern leichte Richtungsänderungen mit Ball am Fuß.\nBei Dribbelspielen mit Bambini auf viele Ballkontakte und nicht auf hohes Tempo achten.",
     "schwester_ids": [
+      81,
+      163,
       162,
-      158,
-      163
+      158
     ],
-    "schwester_id": 162,
-    "schwester_titel": "STANGEN-DSCHUNGEL MIT VIER TOREN"
+    "schwester_id": 81,
+    "schwester_titel": "QUADRAT-SPIEL AUF VIER KLEINE TORE"
   },
   {
     "id": 162,
@@ -9879,12 +9886,13 @@
     "original_varianten": "Die Stangen mit der rechten/linken Hand kurz berühren.\nNur mit rechts/links dribbeln.\nAuf ein Trainerkommando rasch um ein Eckhütchen und wieder zu den Stangen dribbeln.",
     "original_coaching_fokus": "Die Stangen fordern leichte Richtungsänderungen mit Ball am Fuß.\nBei Dribbelspielen mit Bambini auf viele Ballkontakte und nicht auf hohes Tempo achten.",
     "schwester_ids": [
-      158,
+      81,
+      163,
       159,
-      163
+      158
     ],
-    "schwester_id": 158,
-    "schwester_titel": "WARMUP IM STANGEN-DSCHUNGEL"
+    "schwester_id": 81,
+    "schwester_titel": "QUADRAT-SPIEL AUF VIER KLEINE TORE"
   },
   {
     "id": 163,
@@ -9943,11 +9951,12 @@
     "original_varianten": "Wettbewerb: Wer gewinnt die Segelregatta (schießt mit rechts/links die meisten Tore)?\nDurch die Stangen und zurück dribbeln und auf das Tor neben dem Startpunkt schießen.\nMinitore ohne Torhüter statt Stangentore nutzen.",
     "original_coaching_fokus": "n Torschuss durch viele Wiederholungen schulen.\nZusätzlich üben die Kinder das Dribbeln.\nBereits bei Bambini auf Beidfüßigkeit achten.\nStatt zu kritisieren vermehrt gelungene Aktionen loben.",
     "schwester_ids": [
+      81,
       162,
-      158,
-      159
+      159,
+      158
     ],
-    "schwester_id": 162,
-    "schwester_titel": "STANGEN-DSCHUNGEL MIT VIER TOREN"
+    "schwester_id": 81,
+    "schwester_titel": "QUADRAT-SPIEL AUF VIER KLEINE TORE"
   }
 ]
