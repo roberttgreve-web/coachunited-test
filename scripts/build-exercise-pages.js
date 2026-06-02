@@ -34,6 +34,7 @@ for (const ex of published) {
   const title       = `${displayTitle} | COACH UNITED`;
   const description = ex.seo_meta_description || ex.kurzbeschreibung || '';
   const canonical   = `https://coachunited.de/uebung/${slug}`;
+  const ogImage     = ex.grafik_url || 'https://coachunited.de/og-image.png';
 
   let faqSchema = '';
   if (Array.isArray(ex.faq) && ex.faq.length > 0) {
@@ -61,6 +62,10 @@ for (const ex of published) {
     .replace(
       '<meta property="og:description" content="">',
       `<meta property="og:description" content="${esc(description)}">`
+    )
+    .replace(
+      '<meta property="og:image" content="https://coachunited.de/og-image.png">',
+      `<meta property="og:image" content="${esc(ogImage)}">`
     )
     .replace(
       '<meta property="og:url" content="">',
