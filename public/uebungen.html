@@ -754,8 +754,8 @@
     fetch('https://raw.githubusercontent.com/roberttgreve-web/coachunited-test/main/public/exercises.json')
       .then(r => r.json())
       .then(data => {
-        allExercises = data;
-        buildSkillDropdown(data);
+        allExercises = data.slice().sort((a, b) => b.id - a.id);
+        buildSkillDropdown(allExercises);
         preSelectJugend(urlJugend);
         renderExercises();
       })

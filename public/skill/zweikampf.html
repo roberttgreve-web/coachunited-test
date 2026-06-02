@@ -301,7 +301,7 @@
   }
   fetch('https://raw.githubusercontent.com/roberttgreve-web/coachunited-test/main/public/exercises.json')
     .then(r => r.json())
-    .then(d => { allExercises = d; buildSkillDropdown(primaryFilter(d)); renderEx(applyFilters()); })
+    .then(d => { allExercises = d.slice().sort((a, b) => b.id - a.id); buildSkillDropdown(primaryFilter(allExercises)); renderEx(applyFilters()); })
     .catch(() => { document.getElementById('exercises-list').innerHTML = '<div class="empty-state">\u00dcbungen konnten nicht geladen werden.</div>'; });
   function openDrawer(){document.getElementById('drawer').classList.add('open');document.getElementById('drawer-overlay').classList.add('open');}
   function closeDrawer(){document.getElementById('drawer').classList.remove('open');document.getElementById('drawer-overlay').classList.remove('open');}
