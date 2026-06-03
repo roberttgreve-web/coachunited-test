@@ -133,6 +133,8 @@ async function main() {
     const description  = ex.seo_meta_description || ex.kurzbeschreibung || '';
     const canonical    = `https://coachunited.de/uebung/${slug}`;
     const ogImage      = await resolveGrafikUrl(ex);
+    const grafikAlt    = ex.grafik_alt_text || displayTitle;
+    const grafikTitle  = ex.grafik_title || displayTitle;
 
     let faqSchema = '';
     if (Array.isArray(ex.faq) && ex.faq.length > 0) {
@@ -153,9 +155,11 @@ async function main() {
       .replace('content="Fußballübung | COACH UNITED"', `content="${esc(title)}"`)
       .replace('<meta property="og:description" content="">', `<meta property="og:description" content="${esc(description)}">`)
       .replace('<meta property="og:image" content="https://coachunited.de/og-image.png">', `<meta property="og:image" content="${esc(ogImage)}">`)
+      .replace('<meta property="og:image:alt" content="">', `<meta property="og:image:alt" content="${esc(grafikAlt)}">`)
       .replace('<meta property="og:url" content="">', `<meta property="og:url" content="${canonical}">`)
       .replace('<link rel="canonical" href="">', `<link rel="canonical" href="${canonical}">${faqSchema}`)
-      .replace('<title>Fußballübung | COACH UNITED</title>', `<title>${esc(title)}</title>`);
+      .replace('<title>Fußballübung | COACH UNITED</title>', `<title>${esc(title)}</title>`)
+      .replace('<img id="grafik-img" src="" alt="" title="">', `<img id="grafik-img" src="${esc(ogImage)}" alt="${esc(grafikAlt)}" title="${esc(grafikTitle)}">`);
 
     fs.writeFileSync(path.join(outputDir, `${slug}.html`), html, 'utf-8');
     count++;
