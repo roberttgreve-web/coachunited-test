@@ -789,7 +789,7 @@
         }
 
         // Seitentitel + Meta-Tags
-        const displayTitle = ex.alt_titel || ex.titel;
+        const displayTitle = ex.titel || ex.alt_titel;
         const pageTitle = displayTitle + ' | COACH UNITED';
         document.title = pageTitle;
 
@@ -890,7 +890,7 @@
         }
 
         // Titel + Beschreibung
-        document.getElementById('titel').textContent = ex.alt_titel || ex.titel;
+        document.getElementById('titel').textContent = ex.titel || ex.alt_titel;
         document.getElementById('beschreibung').textContent = ex.kurzbeschreibung || '';
 
         // Skill-Tags

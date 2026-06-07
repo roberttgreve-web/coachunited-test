@@ -128,7 +128,7 @@ async function main() {
 
   for (const ex of published) {
     const slug         = ex.url_slug;
-    const displayTitle = ex.alt_titel || ex.titel || 'Fußballübung';
+    const displayTitle = ex.titel || ex.alt_titel || 'Fußballübung';
     const title        = `${displayTitle} | COACH UNITED`;
     const description  = ex.seo_meta_description || ex.kurzbeschreibung || '';
     const canonical    = `https://coachunited.de/uebung/${slug}`;
