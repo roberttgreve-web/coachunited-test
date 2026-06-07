@@ -9986,7 +9986,7 @@
     "schwerer_machen": "• Statt ein Schusshütchen noch dort ein Slalom einbauen, dann Torschuss",
     "alt_titel": "Dribbelkünstler am Werk - Torschuss mit Links",
     "seo_keyword": "Fußballtraining Torschuss",
-    "url_slug": "DRIBBELN UND MIT LINKS SCHIEßEN",
+    "url_slug": "DRIBBELN-UND-MIT-LINKS-SCHIEßEN",
     "seo_meta_description": "Fußballübung für Kinder: Dribbeln und mit links schießen - verbessert Ballkontrolle, Koordination und Torschuss",
     "grafik_alt_text": "Junge Fußballspieler dribbelnd mit Ball und schießend aufs Tor",
     "grafik_description": "Die Kinder führen den Ball mit Kontrolle, umkurvenden Hütchen und schießen dann mit links aufs Tor. Dies fördert ihre Dribbel-, Schuss- und Koordinationsfähigkeiten.",
@@ -10014,8 +10014,10 @@
     "original_durchfuehrung": "dribbelt kurz an, spielt einen Pass durch das Hütchentor, läuft durch das andere Hütchentor und nimmt wieder an und mit.\nDann dribbelt er um das Positionshütchen und schließt auf das Tor ab.\nAnschließend stellt er sich bei der Gruppe auf der anderen Seite wieder an.",
     "original_varianten": "Größe der Passtore verkleinern oder vergrößern (je nach Leistungsstand).\nEinen Wettbewerb durchführen: Welcher Spieler erzielt in 10 Minuten die meisten Treffer?",
     "original_coaching_fokus": "",
-    "schwester_ids": [],
-    "schwester_id": null,
-    "schwester_titel": null
+    "schwester_ids": [
+      176
+    ],
+    "schwester_id": 176,
+    "schwester_titel": "ORGANISATION"
   }
 ]
