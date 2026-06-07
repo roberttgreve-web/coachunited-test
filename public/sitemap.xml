@@ -1183,7 +1183,13 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://coachunited.de/uebung/DRIBBELN-UND-MIT-LINKS-SCHIEßEN</loc>
+    <loc>https://coachunited.de/uebung/vom-zielschiessen-ins-spiel</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://coachunited.de/uebung/dribbeln-und-mit-links-schiessen</loc>
     <lastmod>2026-06-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
