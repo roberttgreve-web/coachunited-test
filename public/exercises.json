@@ -10157,7 +10157,6 @@
     "quell_url": "https://training-service.fussball.de/trainer/d-juniorin/artikel/das-wettspiel-ins-kindertraining-integrieren-3511/",
     "quell_spiel_nr": 1,
     "jugend": [
-      "F-Jugend",
       "E-Jugend",
       "D-Jugend"
     ],
@@ -10201,10 +10200,10 @@
     "original_varianten": "",
     "original_coaching_fokus": "",
     "schwester_ids": [
-      164
+      166
     ],
-    "schwester_id": 164,
-    "schwester_titel": "VOM ZIELSCHIEßEN INS SPIEL\n"
+    "schwester_id": 166,
+    "schwester_titel": "VOM TURBO-FITNESSPARCOURS INS DUELL"
   },
   {
     "id": 166,
@@ -10262,8 +10261,7 @@
     "original_varianten": "ie Position der Hütchentore variieren.\nDas Feld vergrößern/verkleinern.",
     "original_coaching_fokus": "",
     "schwester_ids": [
-      165,
-      187
+      165
     ],
     "schwester_id": 165,
     "schwester_titel": "AUS DEM FITNESSPARCOURS INS DUELL"
