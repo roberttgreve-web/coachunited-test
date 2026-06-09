@@ -10009,10 +10009,11 @@
     "original_varianten": "Größe der Passtore verkleinern oder vergrößern (je nach Leistungsstand).\nEinen Wettbewerb durchführen: Welcher Spieler erzielt in 10 Minuten die meisten Treffer?",
     "original_coaching_fokus": "",
     "schwester_ids": [
+      164,
       163
     ],
-    "schwester_id": 163,
-    "schwester_titel": "DURCHSTECKEN, HÜPFEN UND MIT RECHTS SCHIEßEN"
+    "schwester_id": 164,
+    "schwester_titel": "VOM ZIELSCHIEßEN INS SPIEL\n"
   },
   {
     "id": 163,
@@ -10071,10 +10072,11 @@
     "original_varianten": "Spieler dribbeln von der anderen Seite um die Stangen.\nDie Distanz erhöhen/verringern.",
     "original_coaching_fokus": "",
     "schwester_ids": [
+      164,
       162
     ],
-    "schwester_id": 162,
-    "schwester_titel": "DRIBBELN UND MIT LINKS SCHIEßEN"
+    "schwester_id": 164,
+    "schwester_titel": "VOM ZIELSCHIEßEN INS SPIEL\n"
   },
   {
     "id": 164,
@@ -10135,11 +10137,11 @@
     "original_varianten": "",
     "original_coaching_fokus": "",
     "schwester_ids": [
-      164,
-      165
+      163,
+      162
     ],
-    "schwester_id": 162,
-    "schwester_titel": "DRIBBELN UND MIT LINKS SCHIEßEN"
+    "schwester_id": 163,
+    "schwester_titel": "DURCHSTECKEN, HÜPFEN UND MIT RECHTS SCHIEßEN"
   },
   {
     "id": 165,
@@ -10199,10 +10201,10 @@
     "original_varianten": "",
     "original_coaching_fokus": "",
     "schwester_ids": [
-      162
+      164
     ],
-    "schwester_id": 162,
-    "schwester_titel": "DRIBBELN UND MIT LINKS SCHIEßEN"
+    "schwester_id": 164,
+    "schwester_titel": "VOM ZIELSCHIEßEN INS SPIEL\n"
   },
   {
     "id": 166,
