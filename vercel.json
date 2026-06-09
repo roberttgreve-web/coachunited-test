@@ -4,6 +4,16 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/tag/:path*",
+      "destination": "/uebungen",
+      "permanent": true
+    },
+    {
+      "source": "/uebung/:slug/",
+      "destination": "/uebung/:slug",
+      "permanent": true
+    },
+    {
       "source": "/whatsapp-kanal",
       "destination": "/whatsapp-info",
       "permanent": true
