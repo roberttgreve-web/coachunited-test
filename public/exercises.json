@@ -10009,11 +10009,10 @@
     "original_varianten": "Größe der Passtore verkleinern oder vergrößern (je nach Leistungsstand).\nEinen Wettbewerb durchführen: Welcher Spieler erzielt in 10 Minuten die meisten Treffer?",
     "original_coaching_fokus": "",
     "schwester_ids": [
-      166,
-      165
+      163
     ],
-    "schwester_id": 164,
-    "schwester_titel": "VOM ZIELSCHIEßEN INS SPIEL\n"
+    "schwester_id": 163,
+    "schwester_titel": "DURCHSTECKEN, HÜPFEN UND MIT RECHTS SCHIEßEN"
   },
   {
     "id": 163,
@@ -10072,10 +10071,10 @@
     "original_varianten": "Spieler dribbeln von der anderen Seite um die Stangen.\nDie Distanz erhöhen/verringern.",
     "original_coaching_fokus": "",
     "schwester_ids": [
-      166
+      162
     ],
-    "schwester_id": 166,
-    "schwester_titel": "VOM TURBO-FITNESSPARCOURS INS DUELL"
+    "schwester_id": 162,
+    "schwester_titel": "DRIBBELN UND MIT LINKS SCHIEßEN"
   },
   {
     "id": 164,
@@ -10200,11 +10199,10 @@
     "original_varianten": "",
     "original_coaching_fokus": "",
     "schwester_ids": [
-      187,
-      166
+      162
     ],
-    "schwester_id": null,
-    "schwester_titel": null
+    "schwester_id": 162,
+    "schwester_titel": "DRIBBELN UND MIT LINKS SCHIEßEN"
   },
   {
     "id": 166,
