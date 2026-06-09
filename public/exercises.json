@@ -4978,11 +4978,12 @@
     "schwerer_machen": "• Spieler müssen den Ball mindestens zweimal berühren, bevor sie ein Tor erzielen können; • Zeitlimit pro Angriff einführen; • Zweiten Ball einspielen",
     "status": "veroeffentlicht",
     "schwester_ids": [
-      160,
+      161,
+      159,
       158
     ],
-    "schwester_id": 160,
-    "schwester_titel": "STANGEN-DSCHUNGEL MIT ZWEI TOREN",
+    "schwester_id": 161,
+    "schwester_titel": "STANGEN-DSCHUNGEL MIT VIER TOREN",
     "alt_titel": "Tore-Jagd im Quadrat",
     "seo_keyword": "Fußballübung Passen",
     "url_slug": "passen-tore-jagd-im-quadrat",
@@ -9751,11 +9752,12 @@
     "original_varianten": "Durch die Stangen hüpfen.\nRückwärts laufen.\nWettbewerb: Die Stangen leicht berühren, ohne dass sie umkippen. Wer berührt in 2 Minuten die meisten?",
     "original_coaching_fokus": "Die Stangen fördern Ausweichbewegungen.\nFehlende Stangen durch Hütchen ersetzen.",
     "schwester_ids": [
-      160,
-      81
+      161,
+      81,
+      159
     ],
-    "schwester_id": 160,
-    "schwester_titel": "STANGEN-DSCHUNGEL MIT ZWEI TOREN"
+    "schwester_id": 161,
+    "schwester_titel": "STANGEN-DSCHUNGEL MIT VIER TOREN"
   },
   {
     "id": 159,
@@ -9815,12 +9817,12 @@
     "original_varianten": "Die Stangen mit der rechten/linken Hand kurz berühren.\nNur mit rechts/links dribbeln.\nAuf ein Trainerkommando rasch um ein Eckhütchen und wieder zu den Stangen dribbeln.",
     "original_coaching_fokus": "Die Stangen fordern leichte Richtungsänderungen mit Ball am Fuß.\nBei Dribbelspielen mit Bambini auf viele Ballkontakte und nicht auf hohes Tempo achten.",
     "schwester_ids": [
-      160,
+      161,
       81,
       158
     ],
-    "schwester_id": 160,
-    "schwester_titel": "STANGEN-DSCHUNGEL MIT ZWEI TOREN"
+    "schwester_id": 161,
+    "schwester_titel": "STANGEN-DSCHUNGEL MIT VIER TOREN"
   },
   {
     "id": 160,
@@ -9944,7 +9946,6 @@
     "original_coaching_fokus": "Die Stangen fordern leichte Richtungsänderungen mit Ball am Fuß.\nBei Dribbelspielen mit Bambini auf viele Ballkontakte und nicht auf hohes Tempo achten.",
     "schwester_ids": [
       81,
-      162,
       159,
       158
     ],
