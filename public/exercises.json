@@ -4978,9 +4978,7 @@
     "schwerer_machen": "• Spieler müssen den Ball mindestens zweimal berühren, bevor sie ein Tor erzielen können; • Zeitlimit pro Angriff einführen; • Zweiten Ball einspielen",
     "status": "veroeffentlicht",
     "schwester_ids": [
-      162,
-      163,
-      159,
+      160,
       158
     ],
     "schwester_id": 160,
@@ -9753,13 +9751,11 @@
     "original_varianten": "Durch die Stangen hüpfen.\nRückwärts laufen.\nWettbewerb: Die Stangen leicht berühren, ohne dass sie umkippen. Wer berührt in 2 Minuten die meisten?",
     "original_coaching_fokus": "Die Stangen fördern Ausweichbewegungen.\nFehlende Stangen durch Hütchen ersetzen.",
     "schwester_ids": [
-      81,
-      162,
-      163,
-      159
+      160,
+      81
     ],
-    "schwester_id": 81,
-    "schwester_titel": "QUADRAT-SPIEL AUF VIER KLEINE TORE"
+    "schwester_id": 160,
+    "schwester_titel": "STANGEN-DSCHUNGEL MIT ZWEI TOREN"
   },
   {
     "id": 159,
@@ -9819,13 +9815,12 @@
     "original_varianten": "Die Stangen mit der rechten/linken Hand kurz berühren.\nNur mit rechts/links dribbeln.\nAuf ein Trainerkommando rasch um ein Eckhütchen und wieder zu den Stangen dribbeln.",
     "original_coaching_fokus": "Die Stangen fordern leichte Richtungsänderungen mit Ball am Fuß.\nBei Dribbelspielen mit Bambini auf viele Ballkontakte und nicht auf hohes Tempo achten.",
     "schwester_ids": [
+      160,
       81,
-      162,
-      163,
       158
     ],
-    "schwester_id": 81,
-    "schwester_titel": "QUADRAT-SPIEL AUF VIER KLEINE TORE"
+    "schwester_id": 160,
+    "schwester_titel": "STANGEN-DSCHUNGEL MIT ZWEI TOREN"
   },
   {
     "id": 160,
@@ -9885,8 +9880,6 @@
     "original_coaching_fokus": "n Torschuss durch viele Wiederholungen schulen.\nZusätzlich üben die Kinder das Dribbeln.\nBereits bei Bambini auf Beidfüßigkeit achten.\nStatt zu kritisieren vermehrt gelungene Aktionen loben.",
     "schwester_ids": [
       81,
-      163,
-      159,
       158
     ],
     "schwester_id": 81,
