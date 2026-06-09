@@ -10200,10 +10200,11 @@
     "original_varianten": "",
     "original_coaching_fokus": "",
     "schwester_ids": [
-      187
+      187,
+      166
     ],
-    "schwester_id": 166,
-    "schwester_titel": "ORGANISATION"
+    "schwester_id": null,
+    "schwester_titel": null
   },
   {
     "id": 166,
@@ -10261,10 +10262,11 @@
     "original_varianten": "ie Position der Hütchentore variieren.\nDas Feld vergrößern/verkleinern.",
     "original_coaching_fokus": "",
     "schwester_ids": [
-      163
+      165,
+      187
     ],
-    "schwester_id": 163,
-    "schwester_titel": "DURCHSTECKEN, HÜPFEN UND MIT RECHTS SCHIEßEN"
+    "schwester_id": 165,
+    "schwester_titel": "AUS DEM FITNESSPARCOURS INS DUELL"
   },
   {
     "id": 175,
