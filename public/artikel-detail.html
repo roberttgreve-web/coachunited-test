@@ -233,7 +233,7 @@
   </div>
 
   <script>
-    const slug = window.location.pathname.replace(/^\/artikel\//, '').replace(/\/$/, '');
+    const slug = decodeURIComponent(window.location.pathname.replace(/^\/artikel\//, '').replace(/\/$/, ''));
 
     fetch('https://raw.githubusercontent.com/roberttgreve-web/coachunited-test/main/public/articles.json')
       .then(r => r.json())

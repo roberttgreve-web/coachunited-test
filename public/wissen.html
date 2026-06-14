@@ -183,6 +183,7 @@
           list.innerHTML = '<div style="padding:40px 0; text-align:center; color:#9aa3b0; font-size:14px;">Noch keine Artikel veröffentlicht.</div>';
           return;
         }
+        articles.sort((a, b) => (b.erstellt_am || '').localeCompare(a.erstellt_am || ''));
         list.innerHTML = articles.map(a => {
           const thumb = a.foto_url
             ? `<img class="card-thumb" src="${a.foto_url}" alt="${a.titel}" loading="lazy" onerror="this.outerHTML='<div class=card-thumb-placeholder>📖</div>'">`
