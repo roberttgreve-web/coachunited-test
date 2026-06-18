@@ -276,9 +276,19 @@
       .reroll-wrap, .ex-chevron, .ex-detail-link,
       .dr-sidebar, .dr-sidebar-action-btn { display: none !important; }
       .content { padding: 0; overflow: visible; }
+      .ex-card-list { display: block; }
       .ex-card-body { max-height: none !important; overflow: visible !important; }
-      .ex-card { break-inside: avoid; box-shadow: none; border: 1px solid #E6E8EF; }
+      .ex-card {
+        display: block;
+        overflow: visible !important;
+        break-inside: avoid;
+        page-break-inside: avoid;
+        box-shadow: none;
+        border: 1px solid #E6E8EF;
+        margin-bottom: 16px;
+      }
       .ex-card-header { cursor: default; }
+      .gen-phase-header { break-after: avoid; page-break-after: avoid; }
     }
 
     /* ── Phasen-Header (mobil) ── */
@@ -898,7 +908,7 @@
         // 1. Prio: session param in URL (geteilter / gespeicherter Link)
         if (sessionParam) {
           const ids = sessionParam.split(',').filter(Boolean);
-          const exercises = ids.map(id => data.find(e => e.id === id)).filter(Boolean);
+          const exercises = ids.map(id => data.find(e => String(e.id) === id)).filter(Boolean);
           if (exercises.length > 0) {
             renderSession({ exercises, key: sessionKey(exercises), canReroll: true });
             showActionBar();
@@ -911,7 +921,7 @@
         if (saved) {
           try {
             const ids = JSON.parse(saved);
-            const exercises = ids.map(id => data.find(e => e.id === id)).filter(Boolean);
+            const exercises = ids.map(id => data.find(e => String(e.id) === String(id))).filter(Boolean);
             if (exercises.length > 0) {
               renderSession({ exercises, key: sessionKey(exercises), canReroll: true });
               updateUrlSession(ids);
