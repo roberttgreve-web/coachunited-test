@@ -134,6 +134,17 @@
     }
     .saved-card-del:hover { color: #e05050; }
 
+    /* ── Einheiten: kompakte Übungsliste innerhalb einer Karte ── */
+    .saved-card--einheit { align-items: flex-start; }
+    .saved-einheit-exercises { display: flex; flex-direction: column; gap: 3px; margin-top: 6px; }
+    .saved-einheit-exercise {
+      font-size: 12px; font-weight: 600; color: #0E1430;
+      padding: 2px 0 2px 8px;
+      border-left: 3px solid #1E6BFF;
+      margin-left: 2px;
+      line-height: 1.35;
+    }
+
     /* ── Empty State ── */
     .empty-state {
       padding: 40px 20px;
@@ -317,12 +328,12 @@
         const date = new Date(entry.savedAt);
         const label = date.toLocaleDateString('de-DE', { day: '2-digit', month: '2-digit', year: '2-digit', hour: '2-digit', minute: '2-digit' });
         const titlesHtml = (entry.exerciseTitles || [])
-          .map(t => `<div class="saved-card-exercise">${t}</div>`).join('');
+          .map(t => `<div class="saved-einheit-exercise">${t}</div>`).join('');
         return `
-          <a href="${entry.url}" class="saved-card">
+          <a href="${entry.url}" class="saved-card saved-card--einheit">
             <div class="saved-card-body">
               <div class="saved-card-meta">${label}</div>
-              ${titlesHtml}
+              <div class="saved-einheit-exercises">${titlesHtml}</div>
             </div>
             <button class="saved-card-del" onclick="deleteEinheit(event, ${i})" title="L&#246;schen">
               ${trashIcon}
