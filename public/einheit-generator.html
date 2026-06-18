@@ -759,6 +759,7 @@
                 Drucken
               </button>
             </div>
+            <div id="dr-save-feedback" style="font-size:12px;font-weight:600;color:#1E6BFF;margin-top:6px;max-height:0;overflow:hidden;transition:max-height 0.25s ease;"></div>
           </div>`;
       }
 
@@ -903,6 +904,12 @@
         fb.textContent = 'Hat geklappt. Du findest die Einheit in deiner Merkliste wieder.';
         fb.classList.add('show');
         setTimeout(() => fb.classList.remove('show'), 5000);
+      }
+      const drFb = document.getElementById('dr-save-feedback');
+      if (drFb) {
+        drFb.textContent = 'Hat geklappt. Du findest die Einheit in deiner Merkliste wieder.';
+        drFb.style.maxHeight = '60px';
+        setTimeout(() => { drFb.style.maxHeight = '0'; }, 5000);
       }
     }
 
