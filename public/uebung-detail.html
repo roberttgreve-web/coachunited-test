@@ -830,14 +830,6 @@
            'publisher':{'@id':'https://coachunited.de/#organization'}},
           {'@type':'BreadcrumbList','itemListElement':breadcrumbItems}
         ];
-        const faqItems = (ex.faq || []).filter(f => f.frage && f.antwort);
-        if (faqItems.length) {
-          ldGraph.push({'@type':'FAQPage','mainEntity':faqItems.map(f => ({
-            '@type':'Question',
-            'name': f.frage,
-            'acceptedAnswer':{'@type':'Answer','text': f.antwort}
-          }))});
-        }
         const ldScript = document.createElement('script');
         ldScript.type = 'application/ld+json';
         ldScript.text = JSON.stringify({'@context':'https://schema.org','@graph':ldGraph});
