@@ -533,6 +533,7 @@
       list.innerHTML = saved.map((entry, i) => {
         const date = new Date(entry.savedAt);
         const label = date.toLocaleDateString('de-DE', { day: '2-digit', month: '2-digit', year: '2-digit', hour: '2-digit', minute: '2-digit' });
+        const titles = (entry.exerciseTitles || []).join(' · ');
         return `
           <a href="${entry.url}" class="saved-card">
             <div class="saved-card-icon">
@@ -542,6 +543,7 @@
             </div>
             <div class="saved-card-body">
               <div class="saved-card-title">${label}</div>
+              ${titles ? `<div class="saved-card-meta">${titles}</div>` : ''}
             </div>
             <button class="saved-card-del" onclick="deleteEntry(event, ${i})" title="Löschen">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
