@@ -683,14 +683,7 @@
       document.getElementById('reroll-btn').disabled = !session.canReroll;
       document.getElementById('no-variations').style.display = session.canReroll ? 'none' : 'block';
 
-      const skillBadge = skill
-        ? `<span class="session-badge badge-skill">Fokus: ${skill}</span>` : '';
-      const badges = [
-        `<span class="session-badge badge-jugend">${jugend}</span>`,
-        skillBadge,
-      ].filter(Boolean).join('');
-      document.getElementById('session-meta').innerHTML = badges
-        ? `<div class="session-badges">${badges}</div>` : '';
+      document.getElementById('session-meta').innerHTML = '';
 
       // Phasen-Farben: Desktop vs. Mobile
       const isDesktop = window.innerWidth >= 768;
@@ -709,28 +702,22 @@
       const activePhases = PHASES.filter(p => grouped[p.key].length);
 
       document.getElementById('session-list').innerHTML = activePhases
-        .map((p, phaseIdx) => {
-          const color = phaseColors[p.key] || '#0E1430';
-          const header = `
-            <div class="gen-phase-header gen-phase-${p.key}" id="dr-phase-${phaseIdx}">
-              <div class="gen-phase-bar" style="background:${color}"></div>
-              <span class="gen-phase-label">${p.label}</span>
-            </div>`;
-          const cards = grouped[p.key].map(({ ex, i }) => renderAccordionItem(ex, i, phaseColors)).join('');
-          return header + cards;
+        .map((p) => {
+          return grouped[p.key].map(({ ex, i }) => renderAccordionItem(ex, i, phaseColors)).join('');
         }).join('');
 
       // Sidebar befüllen
       const sidebar = document.getElementById('dr-sidebar');
       if (sidebar) {
-        const phaseLinks = activePhases.map((p, phaseIdx) => {
+        const phaseLinks = activePhases.map((p) => {
           const color = phaseColors[p.key] || '#0E1430';
+          const firstExId = grouped[p.key][0]?.ex.id;
           const exLinks = grouped[p.key].map(({ ex }) =>
             `<a href="#dr-ex-${ex.id}" class="dr-sidebar-ex-link">${ex.titel}</a>`
           ).join('');
           return `
             <div class="dr-sidebar-phase">
-              <a href="#dr-phase-${phaseIdx}" class="dr-sidebar-phase-link">
+              <a href="#dr-ex-${firstExId}" class="dr-sidebar-phase-link">
                 <span class="dr-sidebar-dot" style="background:${color}"></span>
                 <span>${p.label}</span>
               </a>
