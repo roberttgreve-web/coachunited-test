@@ -402,8 +402,7 @@
     border-radius: 6px !important;
     padding: 16px !important;
     margin: 0 !important;
-    position: sticky !important;
-    top: 64px !important;
+    position: static !important;
   }
 
   body:has(#exercise-content) .grafik-panel img {

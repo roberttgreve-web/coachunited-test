@@ -565,11 +565,20 @@
     }
     .action-bar-feedback.show { display: block; }
 
+    /* ── Print-only Tile Sektion ── */
+    #print-tiles { display: none; }
+    .print-tile-item { margin-top: 18px; break-inside: avoid; page-break-inside: avoid; }
+    .print-tile-label { font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 6px; }
+    .print-tile-body { font-size: 14px; line-height: 1.55; color: #3B4565; }
+    .print-tile-body ul { padding-left: 18px; }
+    .print-tile-body li { margin-bottom: 4px; }
+
     /* ── Print styles ── */
     @media print {
       .header, .back-bar, .action-bar, .action-bar-feedback,
       .bottom-nav, .drawer, .drawer-overlay, .sheet-overlay,
       .feedback-block, .tiles-section { display: none !important; }
+      #print-tiles { display: block !important; }
       .accordion-body { display: block !important; }
       .accordion.open .accordion-body, .accordion-body { display: block !important; }
       body, .container { background: #fff; box-shadow: none; }
@@ -685,6 +694,9 @@
           <p class="tiles-label">Mehr zur Übung</p>
           <div class="tiles-grid" id="tiles-grid"></div>
         </div>
+
+        <!-- Print-only: Coaching / Leichter / Schwieriger inline -->
+        <div id="print-tiles"></div>
 
         <!-- Bottom Sheet -->
         <div class="sheet-overlay" id="sheet-overlay" onclick="closeSheet()">
@@ -973,6 +985,21 @@
         sheetData['leichter_machen'] = toBulletList(ex.leichter_machen) || EMPTY;
         sheetData['schwerer_machen'] = toBulletList(ex.schwerer_machen) || EMPTY;
         sheetData['faq'] = faqToHtml(ex.faq) || EMPTY;
+
+        // Print-only: Coaching / Leichter / Schwieriger inline rendern
+        const printTiles = document.getElementById('print-tiles');
+        if (printTiles) {
+          const printCfg = [
+            { key: 'coaching_fokus',  label: 'Coaching-Fokus',          color: '#E89844' },
+            { key: 'leichter_machen', label: 'Übung leichter machen',   color: '#16A571' },
+            { key: 'schwerer_machen', label: 'Übung schwieriger machen', color: '#F23D3D' },
+          ];
+          printTiles.innerHTML = printCfg.map(t => `
+            <div class="print-tile-item">
+              <div class="print-tile-label" style="color:${t.color}">${t.label}</div>
+              <div class="print-tile-body">${sheetData[t.key]}</div>
+            </div>`).join('');
+        }
 
         document.getElementById('tiles-grid').innerHTML = TILE_CONFIG.map(t => `
           <button class="tile-btn" onclick="openSheet('${t.key}')">
