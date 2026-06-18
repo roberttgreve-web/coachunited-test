@@ -65,9 +65,9 @@
         </div>
       </div>
       <a href="/einheiten"     class="desktop-topnav-link ${isActive('/einheiten')}">Einheit erhalten</a>
+      <a href="/merkliste"     class="desktop-topnav-link ${isActive('/merkliste')}">Merkliste</a>
       <a href="/wissen"        class="desktop-topnav-link ${isActive('/wissen')}">Wissen</a>
       <a href="/whatsapp-info" class="desktop-topnav-link ${isActive('/whatsapp-info')}">WhatsApp-Kanal</a>
-      <a href="/uebung-einreichen" class="desktop-topnav-link ${isActive('/uebung-einreichen')}">Übung einreichen</a>
     </div>
   `;
 
@@ -79,7 +79,7 @@
     var footer = document.createElement('footer');
     footer.className = 'desktop-footer';
     footer.innerHTML = `
-      <a href="/wissen" class="desktop-footer-link ${isActive('/wissen')}">Wissen</a>
+      <a href="/uebung-einreichen" class="desktop-footer-link ${isActive('/uebung-einreichen')}">Übung einreichen</a>
       <span class="desktop-footer-sep">·</span>
       <a href="/ueber-uns" class="desktop-footer-link ${isActive('/ueber-uns')}">Über uns</a>
       <span class="desktop-footer-sep">·</span>

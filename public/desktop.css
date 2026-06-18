@@ -1373,6 +1373,23 @@
   }
 }
 
+/* ── Übungsdetail Desktop: alten Teilen-Button im Header verstecken ── */
+@media (min-width: 768px) {
+  body:has(#exercise-content) .share-btn { display: none !important; }
+
+  /* Teilen-Button in action-bar → "Link kopieren" auf Desktop */
+  body:has(#exercise-content) .action-btn[onclick*="shareExerciseBar"] { font-size: 0 !important; gap: 6px !important; }
+  body:has(#exercise-content) .action-btn[onclick*="shareExerciseBar"]::after {
+    content: 'Link kopieren';
+    font-size: 13px; font-weight: 600;
+    font-family: 'Inter Tight', system-ui, sans-serif;
+    color: #0E1430;
+  }
+
+  /* Einheit-Generator: mobile action-bar auf Desktop verstecken (Sidebar übernimmt) */
+  body:has(.page-hero):has(.dr-main) .action-bar { display: none !important; }
+}
+
 /* ══════════════════════════════════════════════════════════
    ÜBUNG EINREICHEN — Desktop: direkt in Sprachnachricht
    ══════════════════════════════════════════════════════════ */
