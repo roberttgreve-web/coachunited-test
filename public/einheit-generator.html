@@ -389,6 +389,13 @@
         </svg>
         Link kopieren
       </button>
+      <button class="action-bar-btn" onclick="shareSession()">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/>
+          <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
+        </svg>
+        Teilen
+      </button>
       <button class="action-bar-btn" onclick="window.print()">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M4 6V2h16v4M4 18H3a1 1 0 01-1-1V9a2 2 0 012-2h16a2 2 0 012 2v8a1 1 0 01-1 1h-1M4 14h16v6H4z"/>
@@ -753,6 +760,13 @@
                 </svg>
                 Link kopieren
               </button>
+              <button class="dr-sidebar-action-btn" onclick="shareSession()">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/>
+                  <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
+                </svg>
+                Teilen
+              </button>
               <button class="dr-sidebar-action-btn" onclick="window.print()">
                 <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
                   <path d="M4 6V2h8v4M4 12H3a1 1 0 01-1-1V8a2 2 0 012-2h8a2 2 0 012 2v3a1 1 0 01-1 1h-1M4 10h8v4H4z"/>
@@ -864,6 +878,15 @@
         if (btn) { btn.classList.add('success'); setTimeout(() => btn.classList.remove('success'), 2000); }
         showToast('Link kopiert!');
       }).catch(() => showToast('Kopieren nicht möglich'));
+    }
+
+    function shareSession() {
+      const url = window.location.href;
+      if (navigator.share) {
+        navigator.share({ title: 'Trainingseinheit – COACH UNITED', url });
+      } else {
+        copyLink();
+      }
     }
 
     function saveSession() {
