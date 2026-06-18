@@ -215,6 +215,15 @@
       }
       .merkliste-section { padding-left: 0 !important; padding-right: 0 !important; }
       .merkliste-section + .merkliste-section { margin-top: 0; }
+
+      /* Karten innerhalb jeder Spalte untereinander (kein inneres Grid) */
+      #einheiten-list,
+      #uebungen-list {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 10px !important;
+        grid-template-columns: unset !important;
+      }
     }
   </style>
   <link rel="stylesheet" href="/desktop.css">
