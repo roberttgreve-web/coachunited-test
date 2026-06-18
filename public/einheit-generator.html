@@ -236,11 +236,19 @@
 
     /* ── Action Bar (below hero) ── */
     .action-bar {
-      display: flex; justify-content: flex-end; gap: 6px;
+      display: flex; flex-direction: column;
       padding: 8px 16px;
       border-bottom: 1px solid #E6E8EF;
       background: #fff;
     }
+    .action-bar-btns { display: flex; justify-content: flex-end; gap: 6px; }
+    .save-feedback {
+      font-size: 13px; font-weight: 600; color: #0E6A45;
+      text-align: right; padding-top: 6px;
+      max-height: 0; overflow: hidden;
+      transition: max-height 0.25s ease, padding-top 0.25s ease;
+    }
+    .save-feedback.show { max-height: 60px; }
     .action-bar-btn {
       display: inline-flex; align-items: center; gap: 5px;
       padding: 7px 12px;
@@ -375,26 +383,29 @@
       <div class="criteria-bar" id="criteria-bar"></div>
     </div>
     <div class="action-bar" id="action-bar" style="display:none;">
-      <button class="action-bar-btn" id="btn-save" onclick="saveSession()">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M19 21H5a2 2 0 01-2-2V5a2 2 0 012-2h11l5 5v11a2 2 0 01-2 2z"/>
-          <polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/>
-        </svg>
-        Speichern
-      </button>
-      <button class="action-bar-btn" onclick="shareSession()">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/>
-          <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
-        </svg>
-        Teilen
-      </button>
-      <button class="action-bar-btn" onclick="window.print()">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M4 6V2h16v4M4 18H3a1 1 0 01-1-1V9a2 2 0 012-2h16a2 2 0 012 2v8a1 1 0 01-1 1h-1M4 14h16v6H4z"/>
-        </svg>
-        Drucken
-      </button>
+      <div class="action-bar-btns">
+        <button class="action-bar-btn" id="btn-save" onclick="saveSession()">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M19 21H5a2 2 0 01-2-2V5a2 2 0 012-2h11l5 5v11a2 2 0 01-2 2z"/>
+            <polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/>
+          </svg>
+          Speichern
+        </button>
+        <button class="action-bar-btn" onclick="shareSession()">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/>
+            <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
+          </svg>
+          Teilen
+        </button>
+        <button class="action-bar-btn" onclick="window.print()">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 6V2h16v4M4 18H3a1 1 0 01-1-1V9a2 2 0 012-2h16a2 2 0 012 2v8a1 1 0 01-1 1h-1M4 14h16v6H4z"/>
+          </svg>
+          Drucken
+        </button>
+      </div>
+      <div class="save-feedback" id="save-feedback"></div>
     </div>
 
     <div class="content">
@@ -883,7 +894,12 @@
       localStorage.setItem('cu_saved_einheiten', JSON.stringify(saved.slice(0, 20)));
       const btn = document.getElementById('btn-save');
       if (btn) { btn.classList.add('success'); setTimeout(() => btn.classList.remove('success'), 3500); }
-      showToast('Hat geklappt. Du findest sie wieder, wenn du auf „Einheit erhalten" tippst.');
+      const fb = document.getElementById('save-feedback');
+      if (fb) {
+        fb.textContent = 'Hat geklappt. Du findest die Einheit wieder, wenn du auf „Einheit erhalten" tippst.';
+        fb.classList.add('show');
+        setTimeout(() => fb.classList.remove('show'), 5000);
+      }
     }
 
     // ── Init ──────────────────────────────────────────────────────
