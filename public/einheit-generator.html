@@ -259,12 +259,12 @@
     .toast {
       position: fixed; bottom: 90px; left: 50%; transform: translateX(-50%) translateY(20px);
       background: #0E1430; color: #fff;
-      padding: 10px 20px; border-radius: 10px;
+      padding: 12px 18px; border-radius: 12px;
       font-family: 'Inter Tight', system-ui, sans-serif;
-      font-size: 14px; font-weight: 600;
+      font-size: 14px; font-weight: 600; line-height: 1.45;
       opacity: 0; pointer-events: none;
       transition: opacity 0.2s, transform 0.2s;
-      z-index: 100; white-space: nowrap;
+      z-index: 100; width: 310px; text-align: center;
     }
     .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
 
@@ -854,7 +854,7 @@
       const t = document.getElementById('toast');
       t.textContent = msg;
       t.classList.add('show');
-      setTimeout(() => t.classList.remove('show'), 2200);
+      setTimeout(() => t.classList.remove('show'), 4000);
     }
 
     function copyLink() {
@@ -882,8 +882,8 @@
       saved.unshift(entry);
       localStorage.setItem('cu_saved_einheiten', JSON.stringify(saved.slice(0, 20)));
       const btn = document.getElementById('btn-save');
-      if (btn) { btn.classList.add('success'); setTimeout(() => btn.classList.remove('success'), 2000); }
-      showToast('Einheit gespeichert!');
+      if (btn) { btn.classList.add('success'); setTimeout(() => btn.classList.remove('success'), 3500); }
+      showToast('Hat geklappt. Du findest sie wieder, wenn du auf „Einheit erhalten" tippst.');
     }
 
     // ── Init ──────────────────────────────────────────────────────
