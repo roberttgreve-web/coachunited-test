@@ -708,6 +708,10 @@
     {
       "source": "/uebungen/phase/spielformat",
       "destination": "/phase/spielformat.html"
+    },
+    {
+      "source": "/merkliste",
+      "destination": "/merkliste.html"
     }
   ]
 }
