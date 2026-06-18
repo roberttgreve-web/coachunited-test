@@ -966,6 +966,9 @@
 .dr-main { flex: 1; min-width: 0; }
 
 @media (min-width: 768px) {
+  body:has(.page-hero):has(.dr-main) .action-bar-btns { justify-content: flex-end; }
+  body:has(.page-hero):has(.dr-main) .save-feedback { text-align: right; }
+
   body:has(.page-hero):has(.dr-main) {
     background: #F5F6F9 !important;
   }
