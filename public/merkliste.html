@@ -202,6 +202,19 @@
       .tab-bar { display: none; }
       .merkliste-section { display: block !important; }
       .merkliste-section + .merkliste-section { margin-top: 8px; }
+
+      /* 2-Spalten-Grid für Einheiten + Übungen nebeneinander */
+      .merkliste-sections-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0 32px;
+        align-items: start;
+        padding: 0 32px;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      .merkliste-section { padding-left: 0 !important; padding-right: 0 !important; }
+      .merkliste-section + .merkliste-section { margin-top: 0; }
     }
   </style>
   <link rel="stylesheet" href="/desktop.css">
@@ -230,16 +243,20 @@
       <button class="tab-btn" id="tab-uebungen" onclick="switchTab('uebungen')">Übungen</button>
     </div>
 
-    <!-- Einheiten Section -->
-    <div class="merkliste-section" id="section-einheiten">
-      <div class="section-label">Gespeicherte Einheiten</div>
-      <div class="card-list" id="einheiten-list"></div>
-    </div>
+    <div class="merkliste-sections-wrapper">
 
-    <!-- Übungen Section -->
-    <div class="merkliste-section" id="section-uebungen" style="display:none;">
-      <div class="section-label">Gespeicherte &#220;bungen</div>
-      <div class="card-list" id="uebungen-list"></div>
+      <!-- Einheiten Section -->
+      <div class="merkliste-section" id="section-einheiten">
+        <div class="section-label">Gespeicherte Einheiten</div>
+        <div class="card-list" id="einheiten-list"></div>
+      </div>
+
+      <!-- Übungen Section -->
+      <div class="merkliste-section" id="section-uebungen" style="display:none;">
+        <div class="section-label">Gespeicherte &#220;bungen</div>
+        <div class="card-list" id="uebungen-list"></div>
+      </div>
+
     </div>
 
     <div class="nav-spacer"></div>
