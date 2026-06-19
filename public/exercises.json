@@ -11279,8 +11279,8 @@
     "grafik_dateiname": "Sprinten, dribbeln, Ball ablegen, gewinnen. .png",
     "trainingsphase": "Hauptteil",
     "kurzbeschreibung": "Die Kinder dribbeln bis zur Schusslinie, schließen aufs Jugendtor ab und sprinten hinterm Tor zur nächsten Gruppe. ",
-    "aufbau": "",
-    "durchfuehrung": "",
+    "aufbau": "Etwa 20x15m-Feld mit zwei leict versetzten Jugendtoren aufbauen. Torhüter in den Toren. Auf der gegenüberliegenden Grundlinie jeweils ein Team platzieren. Jedens Kind einen Ball. Etwa 7m vor beiden Toren eine Schusslinie markieren.",
+    "durchfuehrung": "Die Kinder dribbeln mit Ball am Fuß zur Schusslinie und schießen aufs Tor. Nach dem Schuss sprinten sie hinter dem Tor entlang, um sich bei der nächsten Gruppe anzustellen. ",
     "varianten": "Erleichtern I: Den Ball auf Torschusslinien legen und aus dem Stand schießen.\nErleichtern II: Den Ball rollen oder prellen.\nErleichtern III: Ohne Torhüter spielen.\nErschweren: Eine Hütchengasse markieren, durch die die Kinder dribbeln sollen.\nWettbewerb: Wer erkennt die meisten Autos (erzielt die meisten Treffer)?",
     "quell_url": "https://training-service.fussball.de/trainer/bambinie/training-online/trainingseinheiten-detail/den-torschuss-im-rundlauf-schulen-725/",
     "quell_spiel_nr": 3,
@@ -11292,20 +11292,34 @@
       "Ballkontrolle",
       "Dribbeln",
       "Torschuss",
+      "Koordination",
       "Schnelligkeit"
     ],
-    "coaching_fokus": "",
-    "leichter_machen": "",
-    "schwerer_machen": "",
-    "alt_titel": "",
-    "seo_keyword": "",
-    "url_slug": "rnundlauf_dribbeln_zielen_schiessen_sprinten",
-    "seo_meta_description": "",
-    "grafik_alt_text": "",
-    "grafik_description": "",
-    "grafik_title": "",
-    "grafik_caption": "",
-    "faq": [],
+    "coaching_fokus": "• Kop heben vor dem Torschuss; • Enge Ballführung beim Dribbeln; • Sprint mit Tempo; • Torhüter spielen die Bälle kontrolliert zu den Gruppen neben ihrem Tor",
+    "leichter_machen": "• Schusslinie näher ans Tor; • Statt Sprint: Hüpfen, gehen, joggen",
+    "schwerer_machen": "• Entfernung erweitern; • Dribbeltechnik vorgeben (zum Beisiel rückwärts, mit schwachem Fuß, mit Sohle ziehen); • Mit schwachem Fuß schießen",
+    "alt_titel": "Wendige Dribbelstaffel mit Torschussabschluss",
+    "seo_keyword": "Fußballtraining Torschuss",
+    "url_slug": "rundlauf_dribbeln_zielen_schießen_sprinten",
+    "seo_meta_description": "Abwechslungsreiche Fußballübung für 6-12 Jährige zum Dribbeln, Zielen und Sprinten. Mit Varianten zum Schwierigkeitsgrad.",
+    "grafik_alt_text": "Kinder dribbelnd mit Fußball auf ein Jugendtor zu, eine Hütchenreihe neben dem Weg",
+    "grafik_description": "Auf dem Bild sind mehrere Kinder im Dribbling mit einem Fußball zu sehen. Sie laufen auf ein Jugendtor zu. Neben dem Laufweg sind einige Hütchen aufgestellt, durch die sie hindurchdribbeln müssen.",
+    "grafik_title": "Fußballkids beim dynamischen Zielschuss-Training",
+    "grafik_caption": "Dynamisches Dribbling-Shooting-Training für Kinder.",
+    "faq": [
+      {
+        "frage": "Wie viele Kinder können an der Übung gleichzeitig teilnehmen?",
+        "antwort": "Optimal sind 12-16 Kinder, so dass jeder genug Wiederholungen hat."
+      },
+      {
+        "frage": "Wie lange sollte die Übung dauern?",
+        "antwort": "Je nach Alter und Leistungsstand 10-15 Minuten."
+      },
+      {
+        "frage": "Kann man die Übung auch für ältere Kinder anpassen?",
+        "antwort": "Die Übung eignet sich eher für jüngere kinder."
+      }
+    ],
     "status": "veroeffentlicht",
     "referenz_grafik_url": "https://training-service.fussball.de/assets/img/csm_271644-526-bam-sp3-01_2e2fdf02de.png",
     "quell_kategorie": "G-Jugend",
