@@ -194,7 +194,7 @@
     }
     .card-arrow svg { width: 16px; height: 16px; }
 
-    #loading { padding: 60px 24px; text-align: center; color: #9aa3b0; font-size: 15px; }
+    #loading { display: none; padding: 60px 24px; text-align: center; color: #9aa3b0; font-size: 15px; }
     #not-found { padding: 60px 24px; text-align: center; color: #9aa3b0; font-size: 15px; }
     #not-found a { color: #1B6BF4; text-decoration: none; }
 
@@ -254,7 +254,7 @@
       <a href="/einheiten">← Zurück zur Übersicht</a>
     </div>
 
-    <div id="einheit-content" style="display:none; flex:1; flex-direction:column;">
+    <div id="einheit-content" style="display:flex; flex:1; flex-direction:column;">
       <div class="einheit-hero">
         <h1 id="titel"></h1>
       </div>
@@ -315,10 +315,18 @@
 
     const PHASE_ORDER = ['Aufwärmen', 'Hauptteil', 'Spielformat'];
 
-    function renderCard(u, grafikMap) {
-      const grafik = grafikMap[u.slug] || '';
-      return `
-        <a href="/uebung/${u.slug}?from=${slug}" class="uebung-card">
+    // Slug-Normalisierung für Backwards-Compat (alte Slugs ohne Skill-Prefix)
+    function toSlug(text) {
+      if (!text) return '';
+      return text.toLowerCase()
+        .replace(/ä/g,'ae').replace(/ö/g,'oe').replace(/ü/g,'ue').replace(/ß/g,'ss')
+        .replace(/[^a-z0-9\s\-]/g,'').replace(/[\s\-]+/g,'-').replace(/^-+|-+$/g,'');
+    }
+
+    function renderCard(u, grafikMap, slugMap) {
+      const resolvedSlug = slugMap[u.slug] || null;
+      const grafik = resolvedSlug ? (grafikMap[resolvedSlug] || '') : '';
+      const inner = `
           <div class="card-position">${u.position}</div>
           <div class="card-body">
             <p class="card-title">${u.titel}</p>
@@ -328,14 +336,23 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="9 18 15 12 9 6"/>
             </svg>
-          </div>
-        </a>`;
+          </div>`;
+      if (!resolvedSlug) {
+        return `<div class="uebung-card" style="cursor:default;">${inner}</div>`;
+      }
+      return `<a href="/uebung/${resolvedSlug}?from=${slug}" class="uebung-card">${inner}</a>`;
     }
 
     Promise.all([fetch(EINHEITEN_URL).then(r => r.json()), fetch(EXERCISES_URL).then(r => r.json())])
       .then(([einheiten, exercises]) => {
         const grafikMap = {};
-        exercises.forEach(e => { if (e.slug && e.grafik_url) grafikMap[e.slug] = e.grafik_url; });
+        exercises.forEach(e => { if (e.url_slug && e.grafik_url) grafikMap[e.url_slug] = e.grafik_url; });
+
+        const slugMap = {};
+        exercises.forEach(e => {
+          if (!e.url_slug) return;
+          [toSlug(e.titel), toSlug(e.alt_titel)].forEach(key => { if (key) slugMap[key] = e.url_slug; });
+        });
 
         const einheit = einheiten.find(e => e.url_slug === slug);
         if (!einheit) {
@@ -349,7 +366,7 @@
         document.getElementById('titel').textContent = einheit.titel;
 
         // Meta-Tags
-        const canonicalUrl = 'https://coachunited.de/einheit/' + einheit.url_slug + '/';
+        const canonicalUrl = 'https://coachunited.de/einheit/' + einheit.url_slug;
         const metaDesc  = document.querySelector('meta[name="description"]');
         const ogTitle   = document.querySelector('meta[property="og:title"]');
         const ogDesc    = document.querySelector('meta[property="og:description"]');
@@ -383,7 +400,7 @@
                 <div class="phase-header-bar"></div>
                 <span class="phase-header-label">${phase}</span>
               </div>
-              ${grouped[phase].map(u => renderCard(u, grafikMap)).join('')}
+              ${grouped[phase].map(u => renderCard(u, grafikMap, slugMap)).join('')}
             </div>`).join('');
 
         document.getElementById('loading').style.display = 'none';

@@ -131,6 +131,9 @@ async function main() {
     const displayTitle = ex.titel || ex.alt_titel || 'Fußballübung';
     const title        = `${displayTitle} | COACH UNITED`;
     const description  = ex.seo_meta_description || ex.kurzbeschreibung || '';
+    const kurzbeschreibung = ex.kurzbeschreibung || '';
+    const aufbau       = ex.aufbau || '';
+    const durchfuehrung = ex.durchfuehrung || '';
     const canonical    = `https://coachunited.de/uebung/${slug}`;
     const ogImage      = await resolveGrafikUrl(ex);
     const grafikAlt    = ex.grafik_alt_text || displayTitle;
@@ -159,7 +162,11 @@ async function main() {
       .replace('<meta property="og:url" content="">', `<meta property="og:url" content="${canonical}">`)
       .replace('<link rel="canonical" href="">', `<link rel="canonical" href="${canonical}">${faqSchema}`)
       .replace('<title>Fußballübung | COACH UNITED</title>', `<title>${esc(title)}</title>`)
-      .replace('<img id="grafik-img" src="" alt="" title="">', `<img id="grafik-img" src="${esc(ogImage)}" alt="${esc(grafikAlt)}" title="${esc(grafikTitle)}">`);
+      .replace('<img id="grafik-img" src="" alt="" title="">', `<img id="grafik-img" src="${esc(ogImage)}" alt="${esc(grafikAlt)}" title="${esc(grafikTitle)}">`)
+      .replace('<h1 class="ex-title" id="titel"></h1>', `<h1 class="ex-title" id="titel">${esc(displayTitle)}</h1>`)
+      .replace('<p class="ex-desc" id="beschreibung"></p>', `<p class="ex-desc" id="beschreibung">${esc(kurzbeschreibung)}</p>`)
+      .replace('<p id="aufbau"></p>', `<p id="aufbau">${esc(aufbau)}</p>`)
+      .replace('<p id="durchfuehrung"></p>', `<p id="durchfuehrung">${esc(durchfuehrung)}</p>`);
 
     fs.writeFileSync(path.join(outputDir, `${slug}.html`), html, 'utf-8');
     count++;

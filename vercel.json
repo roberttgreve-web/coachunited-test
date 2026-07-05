@@ -1,5 +1,5 @@
 {
-  "buildCommand": "node scripts/build-exercise-pages.js",
+  "buildCommand": "node scripts/build-exercise-pages.js && node scripts/build-einheit-pages.js && node scripts/build-artikel-pages.js && node scripts/build-sitemap.js",
   "outputDirectory": "public",
   "trailingSlash": false,
   "redirects": [
@@ -24,6 +24,71 @@
       "permanent": true
     },
     {
+      "source": "/author/:path*",
+      "destination": "/uebungen",
+      "permanent": true
+    },
+    {
+      "source": "/contact-page",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/contact-page/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/ideen-fur-ein-tolles-hallenturnier",
+      "destination": "/uebungen",
+      "permanent": true
+    },
+    {
+      "source": "/ideen-fur-ein-tolles-hallenturnier/",
+      "destination": "/uebungen",
+      "permanent": true
+    },
+    {
+      "source": "/zweikampfe-und-sprints",
+      "destination": "/uebungen",
+      "permanent": true
+    },
+    {
+      "source": "/zweikampfe-und-sprints/",
+      "destination": "/uebungen",
+      "permanent": true
+    },
+    {
+      "source": "/vom-pass-direkt-in-die-torchance",
+      "destination": "/uebungen",
+      "permanent": true
+    },
+    {
+      "source": "/vom-pass-direkt-in-die-torchance/",
+      "destination": "/uebungen",
+      "permanent": true
+    },
+    {
+      "source": "/mit-hohen-ballen-umgehen",
+      "destination": "/uebungen",
+      "permanent": true
+    },
+    {
+      "source": "/mit-hohen-ballen-umgehen/",
+      "destination": "/uebungen",
+      "permanent": true
+    },
+    {
+      "source": "/wissen-rund-um-das-training-im-kinderfussball-fur-die-e-jugend-und-f-jugend",
+      "destination": "/wissen",
+      "permanent": true
+    },
+    {
+      "source": "/wissen-rund-um-das-training-im-kinderfussball-fur-die-e-jugend-und-f-jugend/",
+      "destination": "/wissen",
+      "permanent": true
+    },
+    {
       "source": "/minitt",
       "destination": "https://archiv.coachunited.de/minitt/",
       "permanent": false
@@ -44,7 +109,7 @@
       "permanent": true
     },
     {
-      "source": "/trainingseinheiten/",
+      "source": "/trainingseinheiten/:path*",
       "destination": "/uebungen",
       "permanent": true
     },
@@ -567,7 +632,7 @@
     },
     {
       "source": "/einheit/:slug",
-      "destination": "/einheit-detail.html"
+      "destination": "/einheit/:slug.html"
     },
     {
       "source": "/wissen",
@@ -591,7 +656,7 @@
     },
     {
       "source": "/artikel/:slug",
-      "destination": "/artikel-detail.html"
+      "destination": "/artikel/:slug.html"
     },
     {
       "source": "/einheit-generator",
