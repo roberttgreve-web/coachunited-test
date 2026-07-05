@@ -248,8 +248,8 @@
 
     <!-- Mobile Tab Bar -->
     <div class="tab-bar">
-      <button class="tab-btn active" id="tab-einheiten" onclick="switchTab('einheiten')">Einheiten</button>
-      <button class="tab-btn" id="tab-uebungen" onclick="switchTab('uebungen')">Übungen</button>
+      <button class="tab-btn active" id="tab-einheiten" onclick="switchTab('einheiten')">Einheiten<span id="count-einheiten"></span></button>
+      <button class="tab-btn" id="tab-uebungen" onclick="switchTab('uebungen')">Übungen<span id="count-uebungen"></span></button>
     </div>
 
     <div class="merkliste-sections-wrapper">
@@ -348,7 +348,7 @@
       const list = document.getElementById('einheiten-list');
       if (!saved.length) {
         list.innerHTML = emptyEinheitenHtml;
-        return;
+        return 0;
       }
       list.innerHTML = saved.map((entry, i) => {
         const date = new Date(entry.savedAt);
@@ -366,6 +366,7 @@
             </button>
           </a>`;
       }).join('');
+      return saved.length;
     }
 
     function deleteEinheit(e, i) {
@@ -374,7 +375,7 @@
       const saved = JSON.parse(localStorage.getItem('cu_saved_einheiten') || '[]');
       saved.splice(i, 1);
       localStorage.setItem('cu_saved_einheiten', JSON.stringify(saved));
-      renderEinheiten();
+      updateTabCount('einheiten', renderEinheiten());
     }
 
     // ── Übungen ────────────────────────────────────
@@ -383,7 +384,7 @@
       const list = document.getElementById('uebungen-list');
       if (!saved.length) {
         list.innerHTML = emptyUebungenHtml;
-        return;
+        return 0;
       }
       list.innerHTML = saved.map((entry, i) => {
         const date = new Date(entry.savedAt);
@@ -401,6 +402,7 @@
             </button>
           </a>`;
       }).join('');
+      return saved.length;
     }
 
     function deleteUebung(e, i) {
@@ -409,7 +411,12 @@
       const saved = JSON.parse(localStorage.getItem('cu_saved_uebungen') || '[]');
       saved.splice(i, 1);
       localStorage.setItem('cu_saved_uebungen', JSON.stringify(saved));
-      renderUebungen();
+      updateTabCount('uebungen', renderUebungen());
+    }
+
+    // ── Tab-Counter ────────────────────────────────
+    function updateTabCount(tab, count) {
+      document.getElementById('count-' + tab).textContent = count > 0 ? ` (${count})` : '';
     }
 
     // ── Tab switching (mobile only) ────────────────
@@ -432,8 +439,15 @@
     }
 
     // ── Init ────────────────────────────────────
-    renderEinheiten();
-    renderUebungen();
+    const einheitenCount = renderEinheiten();
+    const uebungenCount = renderUebungen();
+    updateTabCount('einheiten', einheitenCount);
+    updateTabCount('uebungen', uebungenCount);
+
+    // Smarter Default-Tab: zeigt direkt den Tab mit Inhalt, statt immer "Einheiten"
+    if (einheitenCount === 0 && uebungenCount > 0) {
+      switchTab('uebungen');
+    }
   </script>
 </body>
 </html>
