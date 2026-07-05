@@ -276,6 +276,13 @@
     }
     .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
 
+    /* ── Print-only Coaching / Leichter / Schwieriger ── */
+    .print-extra-item { display: none; margin-top: 16px; break-inside: avoid; page-break-inside: avoid; }
+    .print-extra-label { font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 6px; }
+    .print-extra-body { font-size: 14px; line-height: 1.55; color: #3B4565; }
+    .print-extra-body ul { padding-left: 18px; }
+    .print-extra-body li { margin-bottom: 4px; }
+
     /* ── Print ── */
     @media print {
       body { background: #fff; }
@@ -297,6 +304,7 @@
       }
       .ex-card-header { cursor: default; }
       .gen-phase-header { break-after: avoid; page-break-after: avoid; }
+      .print-extra-item { display: block !important; }
     }
 
     /* ── Phasen-Header (mobil) ── */
@@ -601,56 +609,49 @@
         e.status === 'veroeffentlicht' && (e.jugend || []).includes(jugend)
       );
 
-      // Global BFS: group exercises by sister links across all phases
-      const visited = new Set();
-      const superClusters = [];
-      for (const ex of valid) {
-        if (visited.has(ex.id)) continue;
-        visited.add(ex.id);
-        const group = [ex];
-        for (let i = 0; i < group.length; i++) {
-          valid.filter(o => !visited.has(o.id) && (group[i].schwester_ids || []).includes(o.id))
-               .forEach(s => { visited.add(s.id); group.push(s); });
+      // Phase-getrennte Cluster: BFS nur innerhalb jeder Phase
+      const TARGET_SIZE = { 'Aufwärmen': 2, 'Hauptteil': 2, 'Spielformat': 1 };
+      const phasePools = {};
+      for (const p of PHASES) {
+        const phaseExs = valid.filter(e => e.trainingsphase === p.match);
+        const visited = new Set();
+        const clusters = [];
+        for (const ex of phaseExs) {
+          if (visited.has(ex.id)) continue;
+          visited.add(ex.id);
+          const group = [ex];
+          for (let i = 0; i < group.length; i++) {
+            phaseExs
+              .filter(o => !visited.has(o.id) && (group[i].schwester_ids || []).includes(o.id))
+              .forEach(s => { visited.add(s.id); group.push(s); });
+          }
+          if (clusterMatchesSkill(group, skill)) clusters.push(group);
         }
-        if (!clusterMatchesSkill(group, skill)) continue;
-        const byPhase = {};
-        group.forEach(e => {
-          if (!byPhase[e.trainingsphase]) byPhase[e.trainingsphase] = [];
-          byPhase[e.trainingsphase].push(e);
-        });
-        superClusters.push({ byPhase });
+        // Bevorzuge Cluster mit Zielgröße; Fallback auf alle
+        const target = TARGET_SIZE[p.match] || 1;
+        const full = clusters.filter(c => c.length >= target);
+        phasePools[p.key] = full.length > 0 ? full : clusters;
       }
 
-      const phaseOptions = {};
-      PHASES.forEach(p => {
-        phaseOptions[p.key] = superClusters.filter(sc => sc.byPhase[p.match]);
-      });
-
-      if (PHASES.some(p => !phaseOptions[p.key].length)) return null;
+      if (PHASES.some(p => !phasePools[p.key].length)) return null;
 
       const history = loadHistory();
 
       function buildSession(avoidHistory) {
-        const assignment = {};
-        const used = new Set();
+        const result = [];
         for (const p of PHASES) {
-          if (assignment[p.key]) continue;
-          const candidates = phaseOptions[p.key].filter(sc => !used.has(sc));
+          const candidates = phasePools[p.key];
           if (!candidates.length) return null;
           let pool = candidates;
           if (avoidHistory) {
             const recentIds = new Set(history[p.match] || []);
-            const fresh = candidates.filter(sc => !sc.byPhase[p.match]?.some(e => recentIds.has(e.id)));
+            const fresh = candidates.filter(cluster => !cluster.some(e => recentIds.has(e.id)));
             if (fresh.length > 0) pool = fresh;
           }
           const chosen = pool[Math.floor(Math.random() * pool.length)];
-          used.add(chosen);
-          PHASES.forEach(ph => {
-            if (chosen.byPhase[ph.match] && !assignment[ph.key])
-              assignment[ph.key] = chosen;
-          });
+          result.push(...chosen);
         }
-        return PHASES.flatMap(p => assignment[p.key]?.byPhase[p.match] || []);
+        return result;
       }
 
       // Zuerst: frische Übungen + anderer Key (40 Versuche)
@@ -672,6 +673,14 @@
       const fallback = buildSession(false);
       if (!fallback) return null;
       return { exercises: fallback, key: sessionKey(fallback), canReroll: false };
+    }
+
+    function toBulletList(val) {
+      if (!val) return '';
+      const items = Array.isArray(val) ? val : val.split('\n').map(s => s.trim()).filter(Boolean);
+      if (!items.length) return '';
+      if (items.length === 1) return `<p>${items[0]}</p>`;
+      return `<ul>${items.map(i => `<li>${i}</li>`).join('')}</ul>`;
     }
 
     // ── Render ────────────────────────────────────────────────────
@@ -802,6 +811,16 @@
           <p class="ex-section-text">${s.text}</p>
         </div>`).join('')}</div>`;
 
+      const printExtras = [
+        { key: 'coaching_fokus',  label: 'Coaching-Fokus',          color: '#E89844' },
+        { key: 'leichter_machen', label: 'Übung leichter machen',   color: '#16A571' },
+        { key: 'schwerer_machen', label: 'Übung schwieriger machen', color: '#F23D3D' },
+      ].filter(t => ex[t.key])
+       .map(t => `<div class="print-extra-item">
+          <div class="print-extra-label" style="color:${t.color}">${t.label}</div>
+          <div class="print-extra-body">${toBulletList(ex[t.key])}</div>
+        </div>`).join('');
+
       const detailLink = href
         ? `<a href="${href}" class="ex-detail-link">
              Übung im Detail
@@ -825,6 +844,7 @@
           <div class="ex-card-body">
             ${skillTagsHtml ? `<div class="ex-skills">${skillTagsHtml}</div>` : ''}
             ${sectionsHtml}
+            ${printExtras}
             ${detailLink}
           </div>
         </div>`;
