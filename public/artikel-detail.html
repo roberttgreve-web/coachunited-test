@@ -290,6 +290,10 @@
           img.style.display = 'block';
         }
 
+        if (article.url_slug === 'der-fussball-ferienkalender') {
+          applyFerienkalenderLayout(article);
+        }
+
         document.getElementById('loading').style.display = 'none';
         document.getElementById('article-content').style.display = 'flex';
       })
@@ -297,6 +301,42 @@
         document.getElementById('loading').style.display = 'none';
         document.getElementById('not-found').style.display = 'block';
       });
+
+    // Sonder-Layout NUR für den Ferienkalender-Artikel (nicht global im Template)
+    function applyFerienkalenderLayout(article) {
+      const titel = document.getElementById('titel');
+      const body  = document.getElementById('article-body');
+      const heroImg = document.getElementById('hero-img');
+
+      if (heroImg) heroImg.style.objectPosition = 'center 42%';
+
+      titel.style.fontSize = '32px';
+      titel.style.marginBottom = '4px';
+
+      const row = document.createElement('div');
+      row.style.cssText = 'display:flex; align-items:flex-start; justify-content:space-between; gap:12px; flex-wrap:wrap;';
+      titel.parentNode.insertBefore(row, titel);
+      row.appendChild(titel);
+
+      if (article.pdf_url) {
+        const btn = document.createElement('a');
+        btn.href = article.pdf_url;
+        btn.target = '_blank';
+        btn.rel = 'noopener';
+        btn.textContent = 'Kostenlos herunterladen';
+        btn.style.cssText = 'flex-shrink:0; background:#1B6BF4; color:#fff; font-size:13px; font-weight:700; padding:10px 16px; border-radius:999px; text-decoration:none; white-space:nowrap; margin-top:4px;';
+        row.appendChild(btn);
+      }
+
+      const firstP = body.querySelector('p');
+      if (firstP && firstP.querySelector('em')) {
+        const sub = document.createElement('div');
+        sub.style.cssText = 'font-weight:700; color:#0a1628; margin:4px 0 20px; font-size:15px;';
+        sub.textContent = firstP.textContent;
+        row.insertAdjacentElement('afterend', sub);
+        firstP.remove();
+      }
+    }
 
     function openDrawer() {
       document.getElementById('drawer').classList.add('open');

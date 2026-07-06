@@ -36,9 +36,31 @@ function main() {
     const canonical    = `https://coachunited.de/artikel/${slug}`;
     const inhalt       = article.inhalt || '';
 
+    const isFerienkalender = article.url_slug === 'der-fussball-ferienkalender';
+
+    const heroImgStyle = isFerienkalender ? 'display:block; object-position:center 42%;' : 'display:block;';
     const heroImg = article.foto_url
-      ? `<img id="hero-img" class="hero-img" src="${esc(article.foto_url)}" alt="${esc(article.foto_alt || displayTitle)}" style="display:block;">`
+      ? `<img id="hero-img" class="hero-img" src="${esc(article.foto_url)}" alt="${esc(article.foto_alt || displayTitle)}" style="${heroImgStyle}">`
       : `<img id="hero-img" class="hero-img" src="" alt="" style="display:none;">`;
+
+    // Sonder-Layout NUR für den Ferienkalender-Artikel (nicht global im Template)
+    let titelBlock = `<h1 id="titel">${esc(displayTitle)}</h1>`;
+    let articleInhalt = inhalt;
+    if (isFerienkalender) {
+      const subMatch = inhalt.match(/^\s*<p>\s*<em>([\s\S]*?)<\/em>\s*<\/p>/);
+      const subText = subMatch ? subMatch[1].replace(/<[^>]+>/g, '') : '';
+      if (subMatch) articleInhalt = inhalt.slice(subMatch[0].length);
+
+      const downloadBtn = article.pdf_url
+        ? `<a href="${esc(article.pdf_url)}" target="_blank" rel="noopener" style="flex-shrink:0; background:#1B6BF4; color:#fff; font-size:13px; font-weight:700; padding:10px 16px; border-radius:999px; text-decoration:none; white-space:nowrap; margin-top:4px;">Kostenlos herunterladen</a>`
+        : '';
+
+      titelBlock = `<div style="display:flex; align-items:flex-start; justify-content:space-between; gap:12px; flex-wrap:wrap;">`
+        + `<h1 id="titel" style="font-size:32px; margin-bottom:4px;">${esc(displayTitle)}</h1>`
+        + downloadBtn
+        + `</div>`
+        + (subText ? `<div style="font-weight:700; color:#0a1628; margin:4px 0 20px; font-size:15px;">${esc(subText)}</div>` : '');
+    }
 
     const jsonLd = {
       '@context': 'https://schema.org',
@@ -62,8 +84,8 @@ function main() {
       .replace('<meta property="og:url" id="og-url" content="">', `<meta property="og:url" id="og-url" content="${canonical}">`)
       .replace('<title>Artikel – COACH UNITED</title>', `<title>${esc(title)}</title>`)
       .replace('<img id="hero-img" class="hero-img" src="" alt="" style="display:none;">', heroImg)
-      .replace('<h1 id="titel"></h1>', `<h1 id="titel">${esc(displayTitle)}</h1>`)
-      .replace('<div id="article-body" class="article-body"></div>', `<div id="article-body" class="article-body">${inhalt}</div>`);
+      .replace('<h1 id="titel"></h1>', titelBlock)
+      .replace('<div id="article-body" class="article-body"></div>', `<div id="article-body" class="article-body">${articleInhalt}</div>`);
 
     fs.writeFileSync(path.join(outputDir, `${slug}.html`), html, 'utf-8');
     count++;
