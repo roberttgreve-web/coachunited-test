@@ -52,14 +52,14 @@ function main() {
       if (subMatch) articleInhalt = inhalt.slice(subMatch[0].length);
 
       const downloadBtn = article.pdf_url
-        ? `<a href="${esc(article.pdf_url)}" target="_blank" rel="noopener" style="flex-shrink:0; background:#1B6BF4; color:#fff; font-size:13px; font-weight:700; padding:10px 16px; border-radius:999px; text-decoration:none; white-space:nowrap; margin-top:4px;">Kostenlos herunterladen</a>`
+        ? `<a id="ferienkalender-download-btn" href="${esc(article.pdf_url)}" target="_blank" rel="noopener" style="flex-shrink:0; background:#1B6BF4; color:#fff; font-size:13px; font-weight:700; padding:10px 16px; border-radius:999px; text-decoration:none; white-space:nowrap; margin-top:4px;">Kostenlos herunterladen</a>`
         : '';
 
-      titelBlock = `<div style="display:flex; align-items:flex-start; justify-content:space-between; gap:12px; flex-wrap:wrap;">`
+      titelBlock = `<div id="ferienkalender-row" style="display:flex; align-items:flex-start; justify-content:space-between; gap:12px; flex-wrap:wrap;">`
         + `<h1 id="titel" style="font-size:32px; margin-bottom:4px;">${esc(displayTitle)}</h1>`
         + downloadBtn
         + `</div>`
-        + (subText ? `<div style="font-weight:700; color:#0a1628; margin:4px 0 20px; font-size:15px;">${esc(subText)}</div>` : '');
+        + (subText ? `<div id="ferienkalender-sub" style="font-weight:700; color:#0a1628; margin:4px 0 20px; font-size:15px;">${esc(subText)}</div>` : '');
     }
 
     const jsonLd = {
