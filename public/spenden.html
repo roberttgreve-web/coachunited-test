@@ -1,15 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="de">
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5D2HZBJESR"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-5D2HZBJESR');
-  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" href="/favicon.png">
@@ -176,6 +167,7 @@
   </style>
   <link rel="stylesheet" href="/desktop.css">
   <script src="/desktop-nav.js" defer></script>
+  <script src="/cookie-consent.js" defer></script>
 </head>
 <body>
   <div class="container">
@@ -236,9 +228,11 @@
       <a href="/ueber-uns" class="menu-item">👥 Über uns</a>
       <a href="/spenden" class="menu-item">😇 Spenden</a>
       <a href="/impressum" class="menu-item">ℹ️ Impressum</a>
+      <a href="/datenschutz" class="menu-item">🔒 Datenschutz</a>
+      <a href="#" class="menu-item" onclick="event.preventDefault(); if (typeof toggleMenu === 'function') toggleMenu(); window.cuOpenCookieSettings && window.cuOpenCookieSettings();">🍪 Cookie-Einstellungen</a>
     </div>
   </div>
-  
+
   <script>
     function toggleMenu() {
       const overlay = document.getElementById('burger-overlay');

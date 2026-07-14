@@ -660,6 +660,10 @@
       "destination": "/impressum.html"
     },
     {
+      "source": "/datenschutz",
+      "destination": "/datenschutz.html"
+    },
+    {
       "source": "/artikel/:slug",
       "destination": "/artikel/:slug.html"
     },

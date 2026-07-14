@@ -20,6 +20,7 @@ const STATIC_PAGES = [
   { loc: '/whatsapp-info',                 changefreq: 'monthly', priority: '0.4' },
   { loc: '/spenden',                       changefreq: 'monthly', priority: '0.3' },
   { loc: '/impressum',                     changefreq: 'monthly', priority: '0.2' },
+  { loc: '/datenschutz',                   changefreq: 'monthly', priority: '0.2' },
   { loc: '/uebungen/alter',                changefreq: 'weekly',  priority: '0.8' },
   { loc: '/uebungen/alter/g-jugend',       changefreq: 'weekly',  priority: '0.8' },
   { loc: '/uebungen/alter/f-jugend',       changefreq: 'weekly',  priority: '0.8' },
