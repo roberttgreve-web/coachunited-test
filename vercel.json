@@ -4,6 +4,46 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/erst-diagonal-passen-und-schiesen-dann-uberzahl-uben",
+      "destination": "/einheiten",
+      "permanent": true
+    },
+    {
+      "source": "/erst-diagonal-passen-und-schiesen-dann-uberzahl-uben/",
+      "destination": "/einheiten",
+      "permanent": true
+    },
+    {
+      "source": "/hutchentore-schutzen-und-punkte-erdribbeln",
+      "destination": "/einheiten",
+      "permanent": true
+    },
+    {
+      "source": "/hutchentore-schutzen-und-punkte-erdribbeln/",
+      "destination": "/einheiten",
+      "permanent": true
+    },
+    {
+      "source": "/uberzahl-und-unterzahl",
+      "destination": "/einheiten",
+      "permanent": true
+    },
+    {
+      "source": "/uberzahl-und-unterzahl/",
+      "destination": "/einheiten",
+      "permanent": true
+    },
+    {
+      "source": "/vom-warmup-mit-stangen-zu-angriffssituationen-uben",
+      "destination": "/einheiten",
+      "permanent": true
+    },
+    {
+      "source": "/vom-warmup-mit-stangen-zu-angriffssituationen-uben/",
+      "destination": "/einheiten",
+      "permanent": true
+    },
+    {
       "source": "/annehmen-mitnehmen-durchstarten",
       "destination": "/einheit/annehmen-mitnehmen-durchstarten",
       "permanent": true
@@ -310,12 +350,12 @@
     },
     {
       "source": "/trainingseinheiten",
-      "destination": "/uebungen",
+      "destination": "/einheiten",
       "permanent": true
     },
     {
       "source": "/trainingseinheiten/:path*",
-      "destination": "/uebungen",
+      "destination": "/einheiten",
       "permanent": true
     },
     {

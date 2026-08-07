@@ -837,6 +837,16 @@
     } else if (refSlug) {
       document.getElementById('back-btn').href = '/uebung/' + refSlug;
       document.getElementById('back-label').textContent = 'Zurück';
+    } else {
+      // Herkunft ohne Query-Parameter (die erzeugten sonst crawlbare Duplikat-URLs).
+      // Gilt nur, wenn sie beim Klick genau für diese Seite hinterlegt wurde.
+      try {
+        const stored = JSON.parse(sessionStorage.getItem('cu_back') || 'null');
+        if (stored && stored.target === window.location.pathname) {
+          document.getElementById('back-btn').href = stored.url;
+          document.getElementById('back-label').textContent = stored.label;
+        }
+      } catch (e) {}
     }
 
     // Slug-Normalisierung für Backwards-Compat (alte Slugs ohne Skill-Prefix)
@@ -1013,13 +1023,24 @@
           const sisters = exercises.filter(e => sisterIds.includes(e.id) && e.url_slug);
           if (sisters.length) {
             document.getElementById('sisters-list').innerHTML = sisters.map(s => `
-              <a href="/uebung/${s.url_slug}?ref=${slug}" class="sister-link">
+              <a href="/uebung/${s.url_slug}" class="sister-link" data-back-target="/uebung/${s.url_slug}">
                 <span class="sister-accent"></span>
                 <span class="sister-name">${s.titel}</span>
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none" class="sister-chevron">
                   <path d="M5 2L10 7L5 12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
               </a>`).join('');
+            document.querySelectorAll('#sisters-list .sister-link').forEach(a => {
+              a.addEventListener('click', () => {
+                try {
+                  sessionStorage.setItem('cu_back', JSON.stringify({
+                    target: a.getAttribute('data-back-target'),
+                    url: '/uebung/' + slug,
+                    label: 'Zurück'
+                  }));
+                } catch (e) {}
+              });
+            });
             document.getElementById('sisters-block').style.display = 'block';
           }
         }

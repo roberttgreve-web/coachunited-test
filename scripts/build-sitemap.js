@@ -6,7 +6,10 @@ const einheitenPath = path.join(__dirname, '..', 'public', 'einheiten.json');
 const articlesPath  = path.join(__dirname, '..', 'public', 'articles.json');
 const outputPath    = path.join(__dirname, '..', 'public', 'sitemap.xml');
 
-const today = new Date().toISOString().slice(0, 10);
+// Kein pauschales Build-Datum als lastmod: Wenn bei jedem Deploy alle URLs als
+// "heute geaendert" gemeldet werden, stuft Google das Signal als unzuverlaessig
+// ein und ignoriert es. Lieber nur dort ein lastmod, wo ein echtes Datum vorliegt.
+const ISO_DATE = /^\d{4}-\d{2}-\d{2}$/;
 
 const STATIC_PAGES = [
   { loc: '/',                              changefreq: 'daily',   priority: '1.0' },
@@ -19,8 +22,8 @@ const STATIC_PAGES = [
   { loc: '/uebung-einreichen',             changefreq: 'monthly', priority: '0.4' },
   { loc: '/whatsapp-info',                 changefreq: 'monthly', priority: '0.4' },
   { loc: '/spenden',                       changefreq: 'monthly', priority: '0.3' },
-  { loc: '/impressum',                     changefreq: 'monthly', priority: '0.2' },
-  { loc: '/datenschutz',                   changefreq: 'monthly', priority: '0.2' },
+  // /impressum und /datenschutz stehen bewusst nicht hier: beide tragen
+  // <meta name="robots" content="noindex"> – in der Sitemap waeren sie ein Widerspruch.
   { loc: '/uebungen/alter',                changefreq: 'weekly',  priority: '0.8' },
   { loc: '/uebungen/alter/g-jugend',       changefreq: 'weekly',  priority: '0.8' },
   { loc: '/uebungen/alter/f-jugend',       changefreq: 'weekly',  priority: '0.8' },
@@ -61,12 +64,17 @@ function main() {
     ...STATIC_PAGES,
     ...exercises.map(e => ({ loc: `/uebung/${e.url_slug}`, changefreq: 'monthly', priority: '0.6' })),
     ...einheiten.map(e => ({ loc: `/einheit/${e.url_slug}`, changefreq: 'monthly', priority: '0.6' })),
-    ...articles.map(a => ({ loc: `/artikel/${a.url_slug}`, changefreq: 'monthly', priority: '0.5' })),
+    ...articles.map(a => ({
+      loc: `/artikel/${a.url_slug}`,
+      changefreq: 'monthly',
+      priority: '0.5',
+      lastmod: ISO_DATE.test(a.erstellt_am || '') ? a.erstellt_am : null,
+    })),
   ];
 
   const body = entries.map(e => `  <url>
-    <loc>https://coachunited.de${e.loc}</loc>
-    <lastmod>${today}</lastmod>
+    <loc>https://coachunited.de${e.loc}</loc>${e.lastmod ? `
+    <lastmod>${e.lastmod}</lastmod>` : ''}
     <changefreq>${e.changefreq}</changefreq>
     <priority>${e.priority}</priority>
   </url>`).join('\n');

@@ -333,8 +333,21 @@
       if (!resolvedSlug) {
         return `<div class="uebung-card" style="cursor:default;">${inner}</div>`;
       }
-      return `<a href="/uebung/${resolvedSlug}?from=${slug}" class="uebung-card">${inner}</a>`;
+      return `<a href="/uebung/${resolvedSlug}" class="uebung-card" data-back-target="/uebung/${resolvedSlug}">${inner}</a>`;
     }
+
+    // Herkunft ohne Query-Parameter merken (die erzeugten sonst crawlbare Duplikat-URLs).
+    document.addEventListener('click', (ev) => {
+      const card = ev.target.closest && ev.target.closest('.uebung-card[data-back-target]');
+      if (!card) return;
+      try {
+        sessionStorage.setItem('cu_back', JSON.stringify({
+          target: card.getAttribute('data-back-target'),
+          url: '/einheit/' + slug,
+          label: 'Zur Einheit'
+        }));
+      } catch (e) {}
+    });
 
     Promise.all([fetch(EINHEITEN_URL).then(r => r.json()), fetch(EXERCISES_URL).then(r => r.json())])
       .then(([einheiten, exercises]) => {
