@@ -9,6 +9,11 @@
       "permanent": true
     },
     {
+      "source": "/spenden.html",
+      "destination": "/ueber-uns",
+      "permanent": true
+    },
+    {
       "source": "/spenden/",
       "destination": "/ueber-uns",
       "permanent": true
