@@ -4,6 +4,76 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/dehnen-im-kinderfusball-ab-wann-macht-es-sinn",
+      "destination": "/artikel/dehnen-im-kinderfusball-ab-wann-macht-es-sinn",
+      "permanent": true
+    },
+    {
+      "source": "/dehnen-im-kinderfusball-ab-wann-macht-es-sinn/",
+      "destination": "/artikel/dehnen-im-kinderfusball-ab-wann-macht-es-sinn",
+      "permanent": true
+    },
+    {
+      "source": "/elternarbeit-kinderfussball-tipps",
+      "destination": "/artikel/elternarbeit-kinderfussball-tipps",
+      "permanent": true
+    },
+    {
+      "source": "/elternarbeit-kinderfussball-tipps/",
+      "destination": "/artikel/elternarbeit-kinderfussball-tipps",
+      "permanent": true
+    },
+    {
+      "source": "/kinderfussball-tipps-umbaupausen-nutzen",
+      "destination": "/artikel/kinderfussball-tipps-umbaupausen-nutzen",
+      "permanent": true
+    },
+    {
+      "source": "/kinderfussball-tipps-umbaupausen-nutzen/",
+      "destination": "/artikel/kinderfussball-tipps-umbaupausen-nutzen",
+      "permanent": true
+    },
+    {
+      "source": "/kopfballe-im-kinderfusball-was-du-wissen-solltest",
+      "destination": "/artikel/kopfballe-im-kinderfusball-was-du-wissen-solltest",
+      "permanent": true
+    },
+    {
+      "source": "/kopfballe-im-kinderfusball-was-du-wissen-solltest/",
+      "destination": "/artikel/kopfballe-im-kinderfusball-was-du-wissen-solltest",
+      "permanent": true
+    },
+    {
+      "source": "/kreatives-training-ausrustung-jenseits-der-standardausstattung",
+      "destination": "/artikel/kreatives-training-ausrustung-jenseits-der-standardausstattung",
+      "permanent": true
+    },
+    {
+      "source": "/kreatives-training-ausrustung-jenseits-der-standardausstattung/",
+      "destination": "/artikel/kreatives-training-ausrustung-jenseits-der-standardausstattung",
+      "permanent": true
+    },
+    {
+      "source": "/rituale-im-kinderfusball-sicherheit-struktur-und-teamgeist-schaffen",
+      "destination": "/artikel/rituale-im-kinderfusball-sicherheit-struktur-und-teamgeist-schaffen",
+      "permanent": true
+    },
+    {
+      "source": "/rituale-im-kinderfusball-sicherheit-struktur-und-teamgeist-schaffen/",
+      "destination": "/artikel/rituale-im-kinderfusball-sicherheit-struktur-und-teamgeist-schaffen",
+      "permanent": true
+    },
+    {
+      "source": "/training-im-kinderfussball-wichtige-grundlagen-fur-trainerinnen",
+      "destination": "/artikel/training-im-kinderfussball-wichtige-grundlagen-fur-trainerinnen",
+      "permanent": true
+    },
+    {
+      "source": "/training-im-kinderfussball-wichtige-grundlagen-fur-trainerinnen/",
+      "destination": "/artikel/training-im-kinderfussball-wichtige-grundlagen-fur-trainerinnen",
+      "permanent": true
+    },
+    {
       "source": "/tag/:path*",
       "destination": "/uebungen",
       "permanent": true
@@ -40,12 +110,12 @@
     },
     {
       "source": "/ideen-fur-ein-tolles-hallenturnier",
-      "destination": "/uebungen",
+      "destination": "/artikel/ideen-fur-ein-tolles-hallenturnier",
       "permanent": true
     },
     {
       "source": "/ideen-fur-ein-tolles-hallenturnier/",
-      "destination": "/uebungen",
+      "destination": "/artikel/ideen-fur-ein-tolles-hallenturnier",
       "permanent": true
     },
     {
