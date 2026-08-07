@@ -21,7 +21,8 @@ const STATIC_PAGES = [
   { loc: '/umgang-mit-ki',                 changefreq: 'monthly', priority: '0.4' },
   { loc: '/uebung-einreichen',             changefreq: 'monthly', priority: '0.4' },
   { loc: '/whatsapp-info',                 changefreq: 'monthly', priority: '0.4' },
-  { loc: '/spenden',                       changefreq: 'monthly', priority: '0.3' },
+  // /spenden ist entfernt: Spenden sind mangels Vereinskonto noch nicht moeglich,
+  // und ein nicht funktionierender Spendenweg ist ein Ablehnungsgrund bei Google Ad Grants.
   // /impressum und /datenschutz stehen bewusst nicht hier: beide tragen
   // <meta name="robots" content="noindex"> – in der Sitemap waeren sie ein Widerspruch.
   { loc: '/uebungen/alter',                changefreq: 'weekly',  priority: '0.8' },

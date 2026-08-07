@@ -1,6 +1,6 @@
 # Übergabe – coachunited.de
 
-Stand: 2026-07-07. Dieses Dokument ist der Einstiegspunkt für alle, die künftig an coachunited.de weiterarbeiten (Entwickler, Freelancer, Nachfolger).
+Stand: 2026-08-07. Dieses Dokument ist der Einstiegspunkt für alle, die künftig an coachunited.de weiterarbeiten (Entwickler, Freelancer, Nachfolger).
 
 ## 1. Was ist das für ein Projekt?
 
@@ -24,7 +24,8 @@ coachunited-next/
 │   ├── artikel-detail.html   Template für Fachartikel
 │   ├── artikel/                generiert: eine .html pro Artikel (Build-Zeit)
 │   ├── merkliste.html, wissen.html, whatsapp-info.html, ueber-uns.html,
-│   │   impressum.html, spenden.html, uebung-einreichen.html, umgang-mit-ki.html, danke.html
+│   │   impressum.html, datenschutz.html, uebung-einreichen.html, umgang-mit-ki.html, danke.html
+│   ├── cookie-consent.js      Consent-Banner (Google Analytics erst nach Einwilligung)
 │   ├── uebungen-nach-alter.html / -phase.html / -skill.html   (Übersichtsseiten)
 │   ├── alter/{g,f,e,d}-jugend.html      Landingpages je Altersstufe
 │   ├── phase/{aufwaermen,hauptteil,spielformat}.html
@@ -44,6 +45,8 @@ coachunited-next/
 │   ├── build-sitemap.js          generiert public/sitemap.xml aus allen drei JSON-Quellen
 │   ├── upload-grafik-images.js   Hilfsscript zum Hochladen von Übungsgrafiken
 │   └── gen-landing-pages.ps1     PowerShell-Helfer zum Erzeugen der Alter/Phase/Skill-Landingpages
+├── api/
+│   └── consent-log.js        Serverless-Function, protokolliert Consent-Entscheidungen
 ├── vercel.json               Build-Command, Redirects/Rewrites (sehr lang – viele Alt-URL-Weiterleitungen)
 ├── Archiv/                    alte/verworfene Entwürfe, nicht live
 ├── Indexierung/               Exporte aus der Google Search Console (Coverage-Reports)
@@ -67,7 +70,8 @@ Wichtig: `uebung-detail.html`, `einheit-detail.html` und `artikel-detail.html` s
 - **Sitemap**: `public/sitemap.xml`, wird bei jedem Build aus `STATIC_PAGES` (hart codiert in `build-sitemap.js`) plus allen veröffentlichten Übungen/Einheiten/Artikeln neu geschrieben. Neue statische Seiten (z. B. eine neue Landingpage) müssen manuell in die `STATIC_PAGES`-Liste in `scripts/build-sitemap.js` eingetragen werden.
 - **robots.txt**: erlaubt alles, verweist auf die Sitemap.
 - **Redirects/Rewrites**: `vercel.json` enthält sehr viele 301-Redirects von alten WordPress-URLs (Migration von einer früheren WordPress-Seite) sowie die Rewrites, die z. B. `/uebung/:slug` auf `/uebung/:slug.html` mappen.
-- **Altseite/Assets**: Alte WordPress-Inhalte (`/wp-content`, `/wp-includes`, `/minitt`) werden per Rewrite auf `archiv.coachunited.de` weitergeleitet, die alte Seite bleibt dort als Archiv erreichbar.
+- **Altseite/Assets**: Alte WordPress-Inhalte (`/wp-content`, `/wp-includes`, `/minitt`) werden auf `archiv.coachunited.de` weitergeleitet – technisch als **Redirect**, nicht als Rewrite. Die alte Seite bleibt dort als Archiv erreichbar.
+- **Zuordnung Alt-URL → neue Seite**: `einheiten.json` führt pro Einheit das Feld `quell_url` mit der ursprünglichen WordPress-URL. Das ist die autoritative Quelle, wenn ein alter Pfad auf die richtige neue Seite gemappt werden soll – nicht über Titelvergleich raten. Die alten WordPress-Beiträge waren **Trainingseinheiten** (mehrere Übungen je Beitrag) und wurden zu `/einheit/<slug>` migriert, nicht zu `/uebung/<slug>`.
 - **Google Search Console**: Coverage-Exporte werden manuell im Ordner `Indexierung/` abgelegt (kein automatischer Sync).
 - **Analytics**: Google Analytics 4 via `gtag.js`, Property-ID `G-5D2HZBJESR`, eingebunden im `<head>` jeder Seite.
 
@@ -78,7 +82,7 @@ Wichtig: `uebung-detail.html`, `einheit-detail.html` und `artikel-detail.html` s
   - Desktop: Karte unten rechts, fliegt nach ~0,9 s sanft ein.
   - Beide verlinken auf `/artikel/der-fussball-ferienkalender`, haben ein „✕“ zum Schließen (Dismiss wird 14 Tage in `localStorage` gemerkt) und werden auf der Artikelseite selbst nicht angezeigt.
   - Titel/Bild/Link sind aktuell hart codiert in der Funktion – für eine neue Kampagne dort die Variablen `slug`, `tabText`, `cardTitle`, `img` anpassen.
-- **`feedback-widget.js`**: aktuell nur ein Kommentar ("Beta-Phase beendet"), ist NICHT auf allen Seiten eingebunden (fehlt z. B. auf `merkliste.html`, `spenden.html`, `detail.html`, `einheit-detail.html`, `artikel-detail.html`). Für neue sitewide Funktionen `desktop-nav.js` verwenden, nicht dieses.
+- **`feedback-widget.js`**: aktuell nur ein Kommentar ("Beta-Phase beendet"), ist NICHT auf allen Seiten eingebunden (fehlt z. B. auf `merkliste.html`, `detail.html`, `einheit-detail.html`, `artikel-detail.html`). Für neue sitewide Funktionen `desktop-nav.js` verwenden, nicht dieses.
 - **`desktop.css`**: Layout-Overrides für ≥768px, wird zusätzlich zum mobilen Inline-CSS jeder Seite geladen.
 
 ## 6. Externe Abhängigkeiten
@@ -99,10 +103,110 @@ Wichtig: `uebung-detail.html`, `einheit-detail.html` und `artikel-detail.html` s
 - **Output-Directory**: `public/` (in `vercel.json` als `outputDirectory` gesetzt).
 - **Lokale Vorschau**: Da es sich um reines Static-HTML handelt, reicht ein einfacher statischer Server, z. B. `python -m http.server 3000 --directory public` oder `npx serve public`. Danach die Build-Scripts einmal manuell mit `node scripts/build-...js` laufen lassen, wenn generierte Seiten (Übung/Einheit/Artikel) getestet werden sollen.
 
-⚠️ **Sicherheitshinweis**: Die lokale Git-Remote-URL (`git remote -v`) enthält aktuell ein GitHub Personal Access Token im Klartext (`https://ghp_...@github.com/...`). Das Token liegt damit unverschlüsselt in `.git/config` auf diesem Rechner. Empfehlung: Token in den GitHub-Einstellungen rotieren/löschen und stattdessen den Windows-Credential-Manager, GitHub CLI (`gh auth login`) oder SSH-Keys für die Authentifizierung nutzen, statt es in der Remote-URL zu speichern.
+⚠️ **Sicherheitshinweise** (beide am 2026-08-07 erneut geprüft und weiterhin offen):
+
+1. Die lokale Git-Remote-URL (`git remote -v`) enthält ein GitHub Personal Access Token im Klartext (`https://ghp_...@github.com/...`). Das Token liegt damit unverschlüsselt in `.git/config` auf diesem Rechner. Empfehlung: Token in den GitHub-Einstellungen rotieren/löschen und stattdessen den Windows-Credential-Manager, GitHub CLI (`gh auth login`) oder SSH-Keys nutzen.
+2. Die Zugangsdaten in `.env` (`WP_USER`/`WP_APP_PASSWORD`) gehören zu einem WordPress-Konto mit **Administrator-Rechten** auf `archiv.coachunited.de`, nicht zu einem reinen Medien-Konto. Für den Bild-Upload der Build-Scripts würde eine Rolle mit Upload-Rechten genügen.
 
 ## 8. Bekannte Baustellen / offene Punkte
 
 - `Archiv/` enthält alte, nicht mehr verwendete Entwürfe (u. a. ein angefangener echter Next.js-Versuch unter `Archiv/app/`) – rein zur Referenz, nicht Teil des Live-Betriebs.
 - Es gibt keine automatisierten Tests. Änderungen an Templates sollten nach dem Edit immer stichprobenartig über einen lokalen Static-Server in Mobile- und Desktop-Ansicht geprüft werden (siehe Abschnitt 7, „Lokale Vorschau").
 - `feedback-widget.js` ist nicht überall eingebunden (s. o.) – falls es reaktiviert werden soll, vorher prüfen, ob es auf allen relevanten Seiten verlinkt ist.
+
+## 9. Google Ad Grants – offene Maßnahmen (Stand 2026-08-07)
+
+Die Bewerbung um Google Ad Grants wurde abgelehnt. Begründung von Google:
+
+> Die Website sollte schnell laden und die Navigation eindeutig sein. Achten Sie auf relevante Inhalte und Calls-to-Action.
+
+Maßgeblich sind die [Ad Grants-Website-Richtlinien](https://support.google.com/grants/answer/1657899). Die folgenden Punkte wurden am 2026-08-07 an der Live-Seite gemessen und sind die Grundlage für einen erneuten Antrag.
+
+### 9.1 Bereits erledigt
+
+- **Spendenseite entfernt.** Ein nicht funktionierender Spendenweg ist ein ausdrücklicher Ablehnungsgrund. Auf `/spenden` stand nur die PayPal-Adresse `spende@coachunited.de` als reiner Text, ohne Link oder Button – und Spenden sind mangels Vereinskonto ohnehin noch nicht möglich. `public/spenden.html` wurde gelöscht, `/spenden` leitet per 301 auf `/ueber-uns`, der Eintrag ist aus `STATIC_PAGES` in `build-sitemap.js` raus. **Sobald ein Vereinskonto existiert**, kann die Seite aus der Git-Historie zurückgeholt werden – dann aber mit funktionierendem Spenden-Button (z. B. `paypal.me`-Link) statt einer abzutippenden Adresse.
+- Sämtliche 404-Fehler aus der Search Console wurden behoben (siehe Abschnitt 10).
+
+### 9.2 Messwerte, die zur Ablehnung geführt haben
+
+**Ladezeit** – die Startseite überträgt **6,77 MB**:
+
+| Ressource | Übertragen | Anmerkung |
+|---|---|---|
+| `images/artikel/fussball-ferienkalender-…png` | 2.884 KB | Störer-Bild, wird von `desktop-nav.js` auf **jeder** Seite geladen |
+| `exercises.json` | 1.622 KB | 2,6 MB entpackt – auf der Startseite nur für das Jugend-Dropdown |
+| `hero-photo.jpg` | 1.590 KB | ein einzelnes Hintergrundbild |
+| `logo-home.png` | 459 KB | Logo |
+| `logo.png` | 201 KB | dasselbe Logo, kleiner eingebunden |
+
+Verschärfend: In `vercel.json` gilt für **alle** Pfade `Cache-Control: no-cache, no-store, must-revalidate`. Dadurch wird nichts zwischengespeichert – jeder Seitenwechsel lädt Störerbild, Logos und Übungsdaten komplett neu. Die Richtlinie verlangt ausdrücklich aktives Browser-Caching.
+
+**Textmenge** – sichtbarer Text je Seite:
+
+| Seite | Wörter |
+|---|---|
+| `/home` | ~71 |
+| `/ueber-uns` | ~113 |
+| `/spenden` (entfernt) | ~73 |
+| `/uebungen` | ~56 |
+| `/wissen` | ~42 |
+
+Google nennt „sehr wenig Textinhalt (Inhalte ohne Mehrwert)" als Ablehnungsgrund. Der eigentliche Wert – 177 Übungen, 50 Einheiten, 11 Artikel – ist echter Originalinhalt und würde die Anforderung erfüllen, ist aber dort nicht sichtbar, wo geprüft wird. `/wissen` zeigt beim Aufruf nur „Artikel werden geladen…", was wie eine unfertige Seite wirkt.
+
+**Navigation** – in der Hauptnavigation stehen nur *Alle Übungen, Einheit erhalten, Merkliste, Wissen, WhatsApp-Kanal*. „Über uns" liegt ausschließlich im ausklappbaren Menü. Zusätzlich erscheinen beim ersten Aufruf Cookie-Banner und Ferienkalender-Störer gleichzeitig.
+
+**Gemeinnütziger Status** – „Über uns" erwähnt nur „ehrenamtliche Fußballtrainer aus Berlin". Dass es sich um einen eingetragenen, gemeinnützigen Verein handelt, steht nirgends; die Registernummer VR 42714 B nur im Impressum. Die Richtlinie fordert Registernummer und/oder Jahresbericht.
+
+### 9.3 Priorisierte Maßnahmenliste
+
+| # | Maßnahme | Aufwand | Wirkung |
+|---|---|---|---|
+| 1 | `Cache-Control` in `vercel.json` differenzieren: HTML kurz, Bilder/JSON lang cachen | 5 Min | sehr hoch |
+| 2 | Störerbild 2,9 MB → WebP unter 150 KB, oder Störer nur auf der Startseite ausspielen | 30 Min | sehr hoch |
+| 3 | `hero-photo.jpg` (1,6 MB) und `logo-home.png` (459 KB) komprimieren, WebP | 30 Min | hoch |
+| 4 | Startseite um Inhaltssektionen und Calls-to-Action erweitern (Struktur s. u.) | mehrere Std. | sehr hoch |
+| 5 | „Über uns" ausbauen: Verein, Gemeinnützigkeit, VR 42714 B, Wirkung/Zahlen | 1–2 Std. | hoch |
+| 6 | „Über uns" in die Hauptnavigation aufnehmen | 30 Min | mittel |
+| 7 | `exercises.json` auf der Startseite nicht mehr laden (das Dropdown braucht es nicht) | 1 Std. | mittel |
+| 8 | `/wissen` und `/uebungen` mit statischem Einleitungstext versehen | 1 Std. | mittel |
+
+Die Punkte 1–3 senken die übertragene Datenmenge voraussichtlich von 6,77 MB auf unter 500 KB und adressieren damit Googles ersten Kritikpunkt vollständig.
+
+Vorgeschlagene Sektionsstruktur für die Startseite (Punkt 4):
+
+1. Hero – Anliegen in einem Satz, sichtbar „gemeinnütziger Verein", primärer CTA
+2. Was wir bereitstellen – drei Blöcke (Übungen / Einheiten / Wissen) mit je eigenem CTA und 2–3 Sätzen
+3. Warum es uns gibt – das Anliegen: ehrenamtliche Trainer:innen im Kinderfußball entlasten
+4. Zahlen – 177 Übungen, 50 Einheiten, 11 Artikel, kostenlos, werbefrei
+5. Für wen – G- bis D-Jugend, mit Links auf die Altersseiten
+6. Wer wir sind – Verein, Gemeinnützigkeit, VR-Nummer, Link auf „Über uns"
+7. Mitmachen – „Übung einreichen" (Spenden-CTA erst, wenn ein Konto existiert)
+8. Aktuelle Artikel – Teaser mit echtem Text, nicht nur Kacheln
+
+### 9.4 Prüfwerkzeuge vor dem erneuten Antrag
+
+- [PageSpeed Insights](https://pagespeed.web.dev/) – besonders den Mobilwert beachten
+- [Test auf Optimierung für Mobilgeräte](https://search.google.com/test/mobile-friendly)
+- Search Console → Abdeckungsbericht auf verbliebene 404er prüfen
+
+Mobil ist die Seite unkritisch (Mobile-First-Design mit Bottom-Nav) – das ist die geringste Sorge.
+
+## 10. SEO-Arbeiten August 2026
+
+Am 2026-08-07 wurden folgende Punkte behoben und live verifiziert:
+
+- **404er**: 24 alte WordPress-URLs lieferten einen 404. Ursache: Sie fehlten in der Redirect-Liste der Migration. Behoben über `quell_url` aus `einheiten.json` (siehe Abschnitt 4).
+- **Pauschal-Redirects**: 74 Regeln zeigten auf `/uebungen`, obwohl die migrierte Einheit existierte. Google wertet solche Weiterleitungen wie einen Soft-404 und überträgt kein Ranking. Sie zeigen jetzt auf `/einheit/<slug>`.
+- **Query-Parameter**: `?ref=`, `?from=` und `?back=` wurden aus allen internen Links entfernt – sie erzeugten pro Übung mehrere crawlbare URLs mit identischem Inhalt.
+- **Sitemap**: `lastmod` wird nicht mehr pauschal auf das Build-Datum gesetzt (das entwertet das Signal), sondern nur noch für Artikel aus `erstellt_am`. `/impressum` und `/datenschutz` sind raus, da sie `noindex` tragen.
+- **Archiv**: Auf `archiv.coachunited.de` wurden in Yoast SEO Tag- und Kategorie-Archive auf `noindex` gesetzt, Feeds und Autoren-Archive abgeschaltet. Damit fallen rund 220 wertlose URLs weg, die zuvor das Crawl-Budget aufgebraucht haben. **Nicht** den Schalter „Suchmaschinen abhalten" verwenden – der setzt `noindex` auf alles, auch auf die 82 Inhaltsseiten, und blockiert `/wp-content/` (Bilder).
+
+### 10.1 Zwei Fallstricke für künftige Änderungen
+
+- **Übungskarten werden doppelt erzeugt.** Die Karten auf den Einheiten-Seiten entstehen serverseitig in `scripts/build-einheit-pages.js` **und** clientseitig in `public/einheit-detail.html`. Wer dort etwas ändert, muss beide Stellen anfassen. Ein Grep nur über `public/*.html` übersieht die vorgerenderte Variante – und genau die crawlt Google.
+- **Zurück-Button ohne Query-Parameter.** Die Herkunft liegt in `sessionStorage` unter dem Key `cu_back` als `{target, url, label}`. Sie greift nur, wenn `target` mit dem aktuellen Pfad übereinstimmt – dadurch kann kein veralteter Zurück-Link hängenbleiben. Alte Links mit `?ref=`/`?from=`/`?back=` werden weiterhin ausgewertet und dürfen nicht entfernt werden, solange sie noch indexiert sind.
+
+### 10.2 Noch offen
+
+- 15 alte Slugs zeigen weiter pauschal auf `/uebungen`, weil es dazu keine migrierte Einheit gibt (u. a. `/vom-dribbelstern-zum-spiel-auf-ein-tor`, `/passen-passen-passen`).
+- Auf dem Archiv steht `author-sitemap.xml` noch im Sitemap-Index, obwohl Autoren-Archive deaktiviert sind. Vermutlich Object-Cache (GoDaddy Managed WordPress) – Flush über das Menü „Managed WordPress" in der Adminleiste.
