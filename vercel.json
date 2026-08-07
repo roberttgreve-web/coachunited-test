@@ -4,6 +4,136 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/annehmen-mitnehmen-durchstarten",
+      "destination": "/einheit/annehmen-mitnehmen-durchstarten",
+      "permanent": true
+    },
+    {
+      "source": "/annehmen-mitnehmen-durchstarten/",
+      "destination": "/einheit/annehmen-mitnehmen-durchstarten",
+      "permanent": true
+    },
+    {
+      "source": "/battles-pur-von-einzelduellen-zum-mannschaftskampf",
+      "destination": "/einheit/battles-pur-von-einzelduellen-zum-mannschaftskampf",
+      "permanent": true
+    },
+    {
+      "source": "/battles-pur-von-einzelduellen-zum-mannschaftskampf/",
+      "destination": "/einheit/battles-pur-von-einzelduellen-zum-mannschaftskampf",
+      "permanent": true
+    },
+    {
+      "source": "/dribbeln-flanken-und-tore",
+      "destination": "/einheit/dribbeln-flanken-und-tore",
+      "permanent": true
+    },
+    {
+      "source": "/dribbeln-flanken-und-tore/",
+      "destination": "/einheit/dribbeln-flanken-und-tore",
+      "permanent": true
+    },
+    {
+      "source": "/enge-raume-grose-moves",
+      "destination": "/einheit/erst-miteinander-kommunizieren-dann-gegenseitig-duellieren",
+      "permanent": true
+    },
+    {
+      "source": "/enge-raume-grose-moves/",
+      "destination": "/einheit/erst-miteinander-kommunizieren-dann-gegenseitig-duellieren",
+      "permanent": true
+    },
+    {
+      "source": "/gespur-fur-den-ball-blick-furs-spiel",
+      "destination": "/einheit/gespuer-fuer-den-ball-blick-fuers-spiel",
+      "permanent": true
+    },
+    {
+      "source": "/gespur-fur-den-ball-blick-furs-spiel/",
+      "destination": "/einheit/gespuer-fuer-den-ball-blick-fuers-spiel",
+      "permanent": true
+    },
+    {
+      "source": "/passen-mit-plan-und-kopfchen",
+      "destination": "/einheit/passen-mit-plan-und-koepfchen",
+      "permanent": true
+    },
+    {
+      "source": "/passen-mit-plan-und-kopfchen/",
+      "destination": "/einheit/passen-mit-plan-und-koepfchen",
+      "permanent": true
+    },
+    {
+      "source": "/prazise-passe-uben-im-kinderfusball",
+      "destination": "/einheit/praezise-passen-clever-angreifen",
+      "permanent": true
+    },
+    {
+      "source": "/prazise-passe-uben-im-kinderfusball/",
+      "destination": "/einheit/praezise-passen-clever-angreifen",
+      "permanent": true
+    },
+    {
+      "source": "/reifen-drills-direkte-duelle-und-umschaltspiel",
+      "destination": "/einheit/reifen-drills-direkte-duelle-und-umschaltspiel",
+      "permanent": true
+    },
+    {
+      "source": "/reifen-drills-direkte-duelle-und-umschaltspiel/",
+      "destination": "/einheit/reifen-drills-direkte-duelle-und-umschaltspiel",
+      "permanent": true
+    },
+    {
+      "source": "/schnell-auf-wechselnde-spielsituationen-reagieren",
+      "destination": "/einheit/schnell-auf-wechselnde-spielsituationen-reagieren",
+      "permanent": true
+    },
+    {
+      "source": "/schnell-auf-wechselnde-spielsituationen-reagieren/",
+      "destination": "/einheit/schnell-auf-wechselnde-spielsituationen-reagieren",
+      "permanent": true
+    },
+    {
+      "source": "/tauschung-tempo-tor-dribbelspas-pur",
+      "destination": "/einheit/taeuschung-tempo-tor-dribbelspass-pur",
+      "permanent": true
+    },
+    {
+      "source": "/tauschung-tempo-tor-dribbelspas-pur/",
+      "destination": "/einheit/taeuschung-tempo-tor-dribbelspass-pur",
+      "permanent": true
+    },
+    {
+      "source": "/uber-dreiecke-und-fernschusse-zum-torjubel",
+      "destination": "/einheit/ueber-dreiecke-und-fernschuesse-zum-torjubel",
+      "permanent": true
+    },
+    {
+      "source": "/uber-dreiecke-und-fernschusse-zum-torjubel/",
+      "destination": "/einheit/ueber-dreiecke-und-fernschuesse-zum-torjubel",
+      "permanent": true
+    },
+    {
+      "source": "/vom-warm-up-mit-reifen-zu-zweikampf-duellen",
+      "destination": "/einheit/vom-warm-up-mit-reifen-zu-zweikampf-duellen",
+      "permanent": true
+    },
+    {
+      "source": "/vom-warm-up-mit-reifen-zu-zweikampf-duellen/",
+      "destination": "/einheit/vom-warm-up-mit-reifen-zu-zweikampf-duellen",
+      "permanent": true
+    },
+    {
+      "source": "/zweikampfe-fair-fuhren",
+      "destination": "/einheit/zweikaempfe-fair-fuehren",
+      "permanent": true
+    },
+    {
+      "source": "/zweikampfe-fair-fuhren/",
+      "destination": "/einheit/zweikaempfe-fair-fuehren",
+      "permanent": true
+    },
+    {
       "source": "/dehnen-im-kinderfusball-ab-wann-macht-es-sinn",
       "destination": "/artikel/dehnen-im-kinderfusball-ab-wann-macht-es-sinn",
       "permanent": true
@@ -130,22 +260,22 @@
     },
     {
       "source": "/vom-pass-direkt-in-die-torchance",
-      "destination": "/uebungen",
+      "destination": "/einheit/vom-pass-direkt-in-die-torchance",
       "permanent": true
     },
     {
       "source": "/vom-pass-direkt-in-die-torchance/",
-      "destination": "/uebungen",
+      "destination": "/einheit/vom-pass-direkt-in-die-torchance",
       "permanent": true
     },
     {
       "source": "/mit-hohen-ballen-umgehen",
-      "destination": "/uebungen",
+      "destination": "/einheit/mit-hohen-baellen-umgehen",
       "permanent": true
     },
     {
       "source": "/mit-hohen-ballen-umgehen/",
-      "destination": "/uebungen",
+      "destination": "/einheit/mit-hohen-baellen-umgehen",
       "permanent": true
     },
     {
@@ -190,12 +320,12 @@
     },
     {
       "source": "/1-gegen-1-nach-slalom-und-wettrennen",
-      "destination": "/uebungen",
+      "destination": "/einheit/1-gegen-1-nach-slalom-und-wettrennen",
       "permanent": true
     },
     {
       "source": "/1-gegen-1-nach-slalom-und-wettrennen/",
-      "destination": "/uebungen",
+      "destination": "/einheit/1-gegen-1-nach-slalom-und-wettrennen",
       "permanent": true
     },
     {
@@ -210,52 +340,52 @@
     },
     {
       "source": "/auch-unter-gegnerdruck-cool-bleiben",
-      "destination": "/uebungen",
+      "destination": "/einheit/auch-unter-gegnerdruck-cool-bleiben",
       "permanent": true
     },
     {
       "source": "/auch-unter-gegnerdruck-cool-bleiben/",
-      "destination": "/uebungen",
+      "destination": "/einheit/auch-unter-gegnerdruck-cool-bleiben",
       "permanent": true
     },
     {
       "source": "/aus-dem-mittelfeld-ins-angriffsspiel",
-      "destination": "/uebungen",
+      "destination": "/einheit/aus-dem-mittelfeld-ins-angriffsspiel",
       "permanent": true
     },
     {
       "source": "/aus-dem-mittelfeld-ins-angriffsspiel/",
-      "destination": "/uebungen",
+      "destination": "/einheit/aus-dem-mittelfeld-ins-angriffsspiel",
       "permanent": true
     },
     {
       "source": "/breite-schaffen-mit-feldzonen",
-      "destination": "/uebungen",
+      "destination": "/einheit/breite-schaffen-mit-feldzonen",
       "permanent": true
     },
     {
       "source": "/breite-schaffen-mit-feldzonen/",
-      "destination": "/uebungen",
+      "destination": "/einheit/breite-schaffen-mit-feldzonen",
       "permanent": true
     },
     {
       "source": "/das-mittelfeld-kontrollieren",
-      "destination": "/uebungen",
+      "destination": "/einheit/das-mittelfeld-kontrollieren",
       "permanent": true
     },
     {
       "source": "/das-mittelfeld-kontrollieren/",
-      "destination": "/uebungen",
+      "destination": "/einheit/das-mittelfeld-kontrollieren",
       "permanent": true
     },
     {
       "source": "/den-ball-in-der-torzone-verarbeiten",
-      "destination": "/uebungen",
+      "destination": "/einheit/den-ball-in-der-torzone-verarbeiten",
       "permanent": true
     },
     {
       "source": "/den-ball-in-der-torzone-verarbeiten/",
-      "destination": "/uebungen",
+      "destination": "/einheit/den-ball-in-der-torzone-verarbeiten",
       "permanent": true
     },
     {
@@ -270,12 +400,12 @@
     },
     {
       "source": "/doppelt-halt-besser-spielspas-auf-zwei-feldern",
-      "destination": "/uebungen",
+      "destination": "/einheit/doppelt-haelt-besser-spielspass-auf-zwei-feldern",
       "permanent": true
     },
     {
       "source": "/doppelt-halt-besser-spielspas-auf-zwei-feldern/",
-      "destination": "/uebungen",
+      "destination": "/einheit/doppelt-haelt-besser-spielspass-auf-zwei-feldern",
       "permanent": true
     },
     {
@@ -310,52 +440,52 @@
     },
     {
       "source": "/erst-spas-im-warmup-dann-schiesen-schiesen-schiesen",
-      "destination": "/uebungen",
+      "destination": "/einheit/erst-spass-im-warmup-dann-schiessen-schiessen-schiessen",
       "permanent": true
     },
     {
       "source": "/erst-spas-im-warmup-dann-schiesen-schiesen-schiesen/",
-      "destination": "/uebungen",
+      "destination": "/einheit/erst-spass-im-warmup-dann-schiessen-schiessen-schiessen",
       "permanent": true
     },
     {
       "source": "/f-jugend-fussballtraining-volleys-rautenpasse-4-gegen-4",
-      "destination": "/uebungen",
+      "destination": "/einheit/volleys-rauten-und-vier-baelle",
       "permanent": true
     },
     {
       "source": "/f-jugend-fussballtraining-volleys-rautenpasse-4-gegen-4/",
-      "destination": "/uebungen",
+      "destination": "/einheit/volleys-rauten-und-vier-baelle",
       "permanent": true
     },
     {
       "source": "/fangen-spielen-bewegende-tore-schusse",
-      "destination": "/uebungen",
+      "destination": "/einheit/fangen-spielen-bewegende-tore-schuesse",
       "permanent": true
     },
     {
       "source": "/fangen-spielen-bewegende-tore-schusse/",
-      "destination": "/uebungen",
+      "destination": "/einheit/fangen-spielen-bewegende-tore-schuesse",
       "permanent": true
     },
     {
       "source": "/flankenlaufe-spielerisch-trainieren",
-      "destination": "/uebungen",
+      "destination": "/einheit/flankenlaeufe-spielerisch-trainieren",
       "permanent": true
     },
     {
       "source": "/flankenlaufe-spielerisch-trainieren/",
-      "destination": "/uebungen",
+      "destination": "/einheit/flankenlaeufe-spielerisch-trainieren",
       "permanent": true
     },
     {
       "source": "/flexibel-in-unterzahl-und-uberzahl",
-      "destination": "/uebungen",
+      "destination": "/einheit/flexibel-in-unterzahl-und-ueberzahl",
       "permanent": true
     },
     {
       "source": "/flexibel-in-unterzahl-und-uberzahl/",
-      "destination": "/uebungen",
+      "destination": "/einheit/flexibel-in-unterzahl-und-ueberzahl",
       "permanent": true
     },
     {
@@ -370,82 +500,82 @@
     },
     {
       "source": "/handlungsschnell-sein-mit-hohen-ballen-umgehen-und-positionen-halten",
-      "destination": "/uebungen",
+      "destination": "/einheit/handlungsschnell-sein-mit-hohen-baellen-umgehen-und-positionen-halten",
       "permanent": true
     },
     {
       "source": "/handlungsschnell-sein-mit-hohen-ballen-umgehen-und-positionen-halten/",
-      "destination": "/uebungen",
+      "destination": "/einheit/handlungsschnell-sein-mit-hohen-baellen-umgehen-und-positionen-halten",
       "permanent": true
     },
     {
       "source": "/hohe-passe-und-fernschusse-gekonnt-einsetzen",
-      "destination": "/uebungen",
+      "destination": "/einheit/hohe-paesse-und-fernschuesse-gekonnt-einsetzen",
       "permanent": true
     },
     {
       "source": "/hohe-passe-und-fernschusse-gekonnt-einsetzen/",
-      "destination": "/uebungen",
+      "destination": "/einheit/hohe-paesse-und-fernschuesse-gekonnt-einsetzen",
       "permanent": true
     },
     {
       "source": "/im-viereckigen-technikfeld-dribbeln-duellieren-und-spielen",
-      "destination": "/uebungen",
+      "destination": "/einheit/im-viereckigen-technikfeld-dribbeln-duellieren-und-spielen",
       "permanent": true
     },
     {
       "source": "/im-viereckigen-technikfeld-dribbeln-duellieren-und-spielen/",
-      "destination": "/uebungen",
+      "destination": "/einheit/im-viereckigen-technikfeld-dribbeln-duellieren-und-spielen",
       "permanent": true
     },
     {
       "source": "/klug-aus-engen-raumen-befreien",
-      "destination": "/uebungen",
+      "destination": "/einheit/klug-aus-engen-raeumen-befreien",
       "permanent": true
     },
     {
       "source": "/klug-aus-engen-raumen-befreien/",
-      "destination": "/uebungen",
+      "destination": "/einheit/klug-aus-engen-raeumen-befreien",
       "permanent": true
     },
     {
       "source": "/mit-kopfchen-und-korpereinsatz-zum-erfolg",
-      "destination": "/uebungen",
+      "destination": "/einheit/mit-koepfchen-und-koerpereinsatz-zum-erfolg",
       "permanent": true
     },
     {
       "source": "/mit-kopfchen-und-korpereinsatz-zum-erfolg/",
-      "destination": "/uebungen",
+      "destination": "/einheit/mit-koepfchen-und-koerpereinsatz-zum-erfolg",
       "permanent": true
     },
     {
       "source": "/passe-kontrollieren-und-ins-tor-treffen-auch-aus-der-distanz",
-      "destination": "/uebungen",
+      "destination": "/einheit/paesse-kontrollieren-und-ins-tor-treffen-auch-aus-der-distanz",
       "permanent": true
     },
     {
       "source": "/passe-kontrollieren-und-ins-tor-treffen-auch-aus-der-distanz/",
-      "destination": "/uebungen",
+      "destination": "/einheit/paesse-kontrollieren-und-ins-tor-treffen-auch-aus-der-distanz",
       "permanent": true
     },
     {
       "source": "/passe-verarbeiten",
-      "destination": "/uebungen",
+      "destination": "/einheit/paesse-verarbeiten",
       "permanent": true
     },
     {
       "source": "/passe-verarbeiten/",
-      "destination": "/uebungen",
+      "destination": "/einheit/paesse-verarbeiten",
       "permanent": true
     },
     {
       "source": "/passen-aktiv-anfordern",
-      "destination": "/uebungen",
+      "destination": "/einheit/paesse-aktiv-anfordern",
       "permanent": true
     },
     {
       "source": "/passen-aktiv-anfordern/",
-      "destination": "/uebungen",
+      "destination": "/einheit/paesse-aktiv-anfordern",
       "permanent": true
     },
     {
@@ -470,42 +600,42 @@
     },
     {
       "source": "/passen-schiesen-und-einwechseln-mit-tempo",
-      "destination": "/uebungen",
+      "destination": "/einheit/passen-schiessen-und-einwechseln-mit-tempo",
       "permanent": true
     },
     {
       "source": "/passen-schiesen-und-einwechseln-mit-tempo/",
-      "destination": "/uebungen",
+      "destination": "/einheit/passen-schiessen-und-einwechseln-mit-tempo",
       "permanent": true
     },
     {
       "source": "/passen-tricksen-treffen-jubel-ausdenken",
-      "destination": "/uebungen",
+      "destination": "/einheit/passen-tricksen-treffen-jubel-ausdenken",
       "permanent": true
     },
     {
       "source": "/passen-tricksen-treffen-jubel-ausdenken/",
-      "destination": "/uebungen",
+      "destination": "/einheit/passen-tricksen-treffen-jubel-ausdenken",
       "permanent": true
     },
     {
       "source": "/positionen-halten-auf-dem-feld-mit-dem-bahnenspiel",
-      "destination": "/uebungen",
+      "destination": "/einheit/positionen-halten-auf-dem-feld-mit-dem-bahnenspiel",
       "permanent": true
     },
     {
       "source": "/positionen-halten-auf-dem-feld-mit-dem-bahnenspiel/",
-      "destination": "/uebungen",
+      "destination": "/einheit/positionen-halten-auf-dem-feld-mit-dem-bahnenspiel",
       "permanent": true
     },
     {
       "source": "/reifen-warmup-und-angriffssituationen",
-      "destination": "/uebungen",
+      "destination": "/einheit/reifen-warmup-und-angriffssituationen",
       "permanent": true
     },
     {
       "source": "/reifen-warmup-und-angriffssituationen/",
-      "destination": "/uebungen",
+      "destination": "/einheit/reifen-warmup-und-angriffssituationen",
       "permanent": true
     },
     {
@@ -520,42 +650,42 @@
     },
     {
       "source": "/schnell-reagieren-dann-durchsetzen-und-schiesen",
-      "destination": "/uebungen",
+      "destination": "/einheit/schnell-reagieren-dann-durchsetzen-und-schiessen",
       "permanent": true
     },
     {
       "source": "/schnell-reagieren-dann-durchsetzen-und-schiesen/",
-      "destination": "/uebungen",
+      "destination": "/einheit/schnell-reagieren-dann-durchsetzen-und-schiessen",
       "permanent": true
     },
     {
       "source": "/slalom-1-gegen-1-und-dribbelduelle",
-      "destination": "/uebungen",
+      "destination": "/einheit/slalom-1-gegen-1-und-dribbelduelle",
       "permanent": true
     },
     {
       "source": "/slalom-1-gegen-1-und-dribbelduelle/",
-      "destination": "/uebungen",
+      "destination": "/einheit/slalom-1-gegen-1-und-dribbelduelle",
       "permanent": true
     },
     {
       "source": "/spas-mit-fusballkegeln-dreiecken-und-fernschuss-spiel",
-      "destination": "/uebungen",
+      "destination": "/einheit/spass-mit-fussballkegeln-dreiecken-und-fernschuss-spiel",
       "permanent": true
     },
     {
       "source": "/spas-mit-fusballkegeln-dreiecken-und-fernschuss-spiel/",
-      "destination": "/uebungen",
+      "destination": "/einheit/spass-mit-fussballkegeln-dreiecken-und-fernschuss-spiel",
       "permanent": true
     },
     {
       "source": "/stationen-warmup-und-viele-toraktionen",
-      "destination": "/uebungen",
+      "destination": "/einheit/stationen-warmup-und-viele-toraktionen",
       "permanent": true
     },
     {
       "source": "/stationen-warmup-und-viele-toraktionen/",
-      "destination": "/uebungen",
+      "destination": "/einheit/stationen-warmup-und-viele-toraktionen",
       "permanent": true
     },
     {
@@ -570,22 +700,22 @@
     },
     {
       "source": "/technik-im-fokus-sauber-dribbeln",
-      "destination": "/uebungen",
+      "destination": "/einheit/technik-im-fokus-sauber-dribbeln",
       "permanent": true
     },
     {
       "source": "/technik-im-fokus-sauber-dribbeln/",
-      "destination": "/uebungen",
+      "destination": "/einheit/technik-im-fokus-sauber-dribbeln",
       "permanent": true
     },
     {
       "source": "/torgefahr-uber-die-ausenbahn-uben",
-      "destination": "/uebungen",
+      "destination": "/einheit/torgefahr-ueber-die-aussenbahn-ueben",
       "permanent": true
     },
     {
       "source": "/torgefahr-uber-die-ausenbahn-uben/",
-      "destination": "/uebungen",
+      "destination": "/einheit/torgefahr-ueber-die-aussenbahn-ueben",
       "permanent": true
     },
     {
@@ -610,22 +740,22 @@
     },
     {
       "source": "/tricks-fernschusse-und-ab-in-die-jubelzone",
-      "destination": "/uebungen",
+      "destination": "/einheit/tricks-fernschuesse-und-ab-in-die-jubelzone",
       "permanent": true
     },
     {
       "source": "/tricks-fernschusse-und-ab-in-die-jubelzone/",
-      "destination": "/uebungen",
+      "destination": "/einheit/tricks-fernschuesse-und-ab-in-die-jubelzone",
       "permanent": true
     },
     {
       "source": "/uberzahl-gemeinsam-ausspielen",
-      "destination": "/uebungen",
+      "destination": "/einheit/ueberzahl-gemeinsam-ausspielen",
       "permanent": true
     },
     {
       "source": "/uberzahl-gemeinsam-ausspielen/",
-      "destination": "/uebungen",
+      "destination": "/einheit/ueberzahl-gemeinsam-ausspielen",
       "permanent": true
     },
     {
@@ -640,32 +770,32 @@
     },
     {
       "source": "/vom-sauberen-zweikampf-in-den-torschuss",
-      "destination": "/uebungen",
+      "destination": "/einheit/vom-sauberen-zweikampf-in-den-torschuss",
       "permanent": true
     },
     {
       "source": "/vom-sauberen-zweikampf-in-den-torschuss/",
-      "destination": "/uebungen",
+      "destination": "/einheit/vom-sauberen-zweikampf-in-den-torschuss",
       "permanent": true
     },
     {
       "source": "/vom-sprint-in-die-torgefahr",
-      "destination": "/uebungen",
+      "destination": "/einheit/vom-sprint-in-die-torgefahr",
       "permanent": true
     },
     {
       "source": "/vom-sprint-in-die-torgefahr/",
-      "destination": "/uebungen",
+      "destination": "/einheit/vom-sprint-in-die-torgefahr",
       "permanent": true
     },
     {
       "source": "/zweikampf-gewinnen-und-direkt-abschliesen",
-      "destination": "/uebungen",
+      "destination": "/einheit/zweikampf-gewinnen-und-direkt-abschliessen",
       "permanent": true
     },
     {
       "source": "/zweikampf-gewinnen-und-direkt-abschliesen/",
-      "destination": "/uebungen",
+      "destination": "/einheit/zweikampf-gewinnen-und-direkt-abschliessen",
       "permanent": true
     }
   ],
