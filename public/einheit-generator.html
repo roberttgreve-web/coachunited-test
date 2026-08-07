@@ -769,11 +769,27 @@
       });
     }
 
+    // Herkunft samt Generator-Zustand merken, damit der Zurueck-Button auf der
+    // Uebungsseite hierher zurueckfuehrt – ohne Query-Parameter in der Ziel-URL.
+    document.addEventListener('click', (ev) => {
+      const link = ev.target.closest && ev.target.closest('.ex-detail-link[data-back-target]');
+      if (!link) return;
+      try {
+        sessionStorage.setItem('cu_back', JSON.stringify({
+          target: link.getAttribute('data-back-target'),
+          url: window.location.href,
+          label: 'Zur Einheit'
+        }));
+      } catch (e) {}
+    });
+
     function renderAccordionItem(ex, index, phaseColors) {
       const phaseKey = PHASES.find(p => p.match === ex.trainingsphase)?.key || 'hauptteil';
       const phaseLabel = PHASES.find(p => p.match === ex.trainingsphase)?.label || ex.trainingsphase;
-      const backUrl = encodeURIComponent(window.location.href);
-      const href = ex.url_slug ? `/uebung/${ex.url_slug}?back=${backUrl}` : null;
+      // Kein ?back=-Parameter: der erzeugte pro Uebung eine zusaetzliche crawlbare
+      // URL mit identischem Inhalt. Die Herkunft merkt sich der delegierte
+      // Click-Handler weiter unten ueber data-back-target.
+      const href = ex.url_slug ? `/uebung/${ex.url_slug}` : null;
 
       const _colors = phaseColors || { aufwaermen: '#C2611F', hauptteil: '#0E6A45', spielformat: '#0F3FA8' };
       const phaseColor = _colors[phaseKey] || '#0E1430';
@@ -811,7 +827,7 @@
         </div>`).join('');
 
       const detailLink = href
-        ? `<a href="${href}" class="ex-detail-link">
+        ? `<a href="${href}" class="ex-detail-link" data-back-target="${href}">
              Übung im Detail
              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
            </a>` : '';

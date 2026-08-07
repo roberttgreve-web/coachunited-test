@@ -30,7 +30,7 @@ function toSlug(text) {
     .replace(/[^a-z0-9\s\-]/g, '').replace(/[\s\-]+/g, '-').replace(/^-+|-+$/g, '');
 }
 
-function renderCard(u, grafikMap, slugMap, einheitSlug) {
+function renderCard(u, grafikMap, slugMap) {
   const resolvedSlug = slugMap[u.slug] || null;
   const grafik = resolvedSlug ? (grafikMap[resolvedSlug] || '') : '';
   const inner = `
@@ -49,7 +49,10 @@ function renderCard(u, grafikMap, slugMap, einheitSlug) {
     // Übung existiert nicht mehr im aktuellen Bestand – als nicht-klickbare Karte anzeigen statt auf 404 zu verlinken.
     return `\n        <div class="uebung-card" style="cursor:default;">${inner}</div>`;
   }
-  return `\n        <a href="/uebung/${esc(resolvedSlug)}?from=${esc(einheitSlug)}" class="uebung-card">${inner}</a>`;
+  // Kein ?from=-Parameter: der erzeugte pro Uebung eine zusaetzliche crawlbare
+  // URL mit identischem Inhalt. Die Herkunft merkt sich der delegierte
+  // Click-Handler in einheit-detail.html ueber data-back-target.
+  return `\n        <a href="/uebung/${esc(resolvedSlug)}" class="uebung-card" data-back-target="/uebung/${esc(resolvedSlug)}">${inner}</a>`;
 }
 
 function main() {
@@ -99,7 +102,7 @@ function main() {
                 <div class="phase-header-bar"></div>
                 <span class="phase-header-label">${phase}</span>
               </div>
-              ${grouped[phase].map(u => renderCard(u, grafikMap, slugMap, slug)).join('')}
+              ${grouped[phase].map(u => renderCard(u, grafikMap, slugMap)).join('')}
             </div>`).join('');
 
     const count_ = uebungen.length;
