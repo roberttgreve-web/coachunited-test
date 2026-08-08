@@ -602,28 +602,33 @@
   }
 
   /* Grid: Nav oben (volle Breite), Panels mitte, Footer unten */
+  /* Container scrollt normal: Nav, Hero, Sektionen, Footer untereinander.
+     Frueher war er ein starres 100vh-Raster mit overflow:hidden – damit waren
+     Inhalte unterhalb des Heros nicht erreichbar. */
   body:has(.crest-panel) .container {
-    display: grid !important;
-    grid-template-columns: 1fr 1fr !important;
-    grid-template-rows: auto 1fr auto !important;
-    grid-template-areas:
-      "topnav topnav"
-      "photo  form"
-      "footer footer" !important;
+    display: flex !important;
+    flex-direction: column !important;
     min-height: 100vh !important;
-    height: 100vh !important;
     width: 100% !important;
     max-width: none !important;
     border-radius: 0 !important;
     box-shadow: none !important;
     background: #0E1430 !important;
+    overflow: visible !important;
+  }
+
+  /* Hero: Foto links, Formular rechts – fuellt die erste Bildschirmseite
+     unterhalb der 64px hohen Topnav. */
+  body:has(.crest-panel) .home-hero {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    grid-template-areas: "photo form" !important;
+    min-height: calc(100vh - 64px) !important;
     overflow: hidden !important;
-    flex-direction: unset !important;
   }
 
   /* Nav: weiß, volle Breite */
   body:has(.crest-panel) .desktop-topnav {
-    grid-area: topnav !important;
     background: #ffffff !important;
     border-bottom: 1px solid #e8edf2 !important;
   }
@@ -635,7 +640,6 @@
 
   /* Footer: dunkel, volle Breite */
   body:has(.crest-panel) .desktop-footer {
-    grid-area: footer !important;
     background: #0E1430 !important;
     border-top: 1px solid rgba(255,255,255,0.08) !important;
     margin-top: 0 !important;

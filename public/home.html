@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="UTF-8">
@@ -81,6 +81,17 @@
       position: relative;
     }
 
+    /* ── Hero: erste Bildschirmseite ──
+       Frueher war das die ganze Seite. Jetzt ein eigener Block, damit
+       darunter weitere Sektionen folgen koennen. */
+    .home-hero {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      min-height: 100dvh;
+      flex-shrink: 0;
+    }
+
     /* ── Wappen-Panel ── */
     .crest-panel {
       position: relative;
@@ -117,7 +128,6 @@
       display: flex;
       flex-direction: column;
       padding: 30px 22px 28px;
-      overflow-y: auto;
       position: relative;
       z-index: 1;
     }
@@ -168,6 +178,15 @@
       color: rgba(255,255,255,0.5);
       letter-spacing: 0.12em;
       text-transform: uppercase;
+    }
+
+    /* Erklaertext ueber der Jugend-Auswahl */
+    .generator-intro {
+      font-size: 14px;
+      font-weight: 500;
+      color: rgba(255,255,255,0.62);
+      line-height: 1.55;
+      margin-bottom: 2px;
     }
 
     .sel-btn {
@@ -344,6 +363,184 @@
     }
 
     .home-hero-headline, .home-hero-sub { display: none; }
+
+    /* ── Scroll-Hinweis ── */
+    .scroll-hint {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 22px;
+      padding: 4px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-family: 'JetBrains Mono', ui-monospace, monospace;
+      font-size: 9px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.45);
+      transition: color 0.15s;
+      position: relative;
+      z-index: 2;
+    }
+    .scroll-hint:hover { color: rgba(255,255,255,0.8); }
+    .scroll-hint svg { animation: nudge 2.4s ease-in-out infinite; }
+    @keyframes nudge {
+      0%, 100% { transform: translateY(0); }
+      50%      { transform: translateY(3px); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .scroll-hint svg { animation: none; }
+    }
+
+    /* ══════════════════════════════════════════════
+       Sektionen unterhalb des Heros
+       ══════════════════════════════════════════════ */
+    .home-sections {
+      position: relative;
+      z-index: 2;
+      background: #0E1430;
+    }
+
+    .hs {
+      border-top: 1px solid rgba(255,255,255,0.09);
+      padding: 44px 22px;
+    }
+    .hs-inner { max-width: 960px; margin: 0 auto; }
+
+    .hs-label {
+      display: block;
+      font-family: 'JetBrains Mono', ui-monospace, monospace;
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #1E6BFF;
+      margin-bottom: 12px;
+    }
+    .hs-title {
+      font-size: 25px;
+      font-weight: 800;
+      color: #fff;
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+      margin-bottom: 12px;
+    }
+    .hs-text {
+      font-size: 15px;
+      font-weight: 400;
+      color: rgba(255,255,255,0.66);
+      line-height: 1.6;
+      max-width: 62ch;
+    }
+    .hs-text + .hs-text { margin-top: 12px; }
+
+    .hs-count {
+      font-family: 'JetBrains Mono', ui-monospace, monospace;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    /* CTA-Zeile */
+    .hs-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 12px;
+      margin-top: 22px;
+    }
+    .hs-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      padding: 13px 20px;
+      background: #1E6BFF;
+      color: #fff;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 700;
+      transition: background 0.15s;
+    }
+    .hs-cta:hover { background: #1558d6; }
+    .hs-cta svg { flex-shrink: 0; }
+
+    /* Alters-Chips */
+    .hs-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 20px;
+    }
+    .hs-chip {
+      padding: 9px 15px;
+      border-radius: 999px;
+      border: 1.5px solid rgba(255,255,255,0.18);
+      background: rgba(255,255,255,0.04);
+      color: rgba(255,255,255,0.85);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      transition: background 0.14s, border-color 0.14s, color 0.14s;
+    }
+    .hs-chip:hover {
+      background: #1E6BFF;
+      border-color: #1E6BFF;
+      color: #fff;
+    }
+
+    /* Artikel-Kacheln */
+    .hs-tiles {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+      margin-top: 22px;
+    }
+    .hs-tile {
+      display: block;
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      text-decoration: none;
+      transition: transform 0.15s, box-shadow 0.15s;
+    }
+    .hs-tile:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 26px rgba(0,0,0,0.32);
+    }
+    .hs-tile img {
+      width: 100%;
+      aspect-ratio: 3 / 2;
+      object-fit: cover;
+      display: block;
+      background: #E6E8EF;
+    }
+    .hs-tile-body { padding: 14px 16px 16px; }
+    .hs-tile-date {
+      font-family: 'JetBrains Mono', ui-monospace, monospace;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      color: #6B7390;
+      display: block;
+      margin-bottom: 6px;
+    }
+    .hs-tile-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: #0E1430;
+      line-height: 1.3;
+      letter-spacing: -0.01em;
+    }
+
+    @media (min-width: 768px) {
+      .hs { padding: 64px 40px; }
+      .hs-title { font-size: 34px; margin-bottom: 14px; }
+      .hs-text { font-size: 16px; }
+      .hs-tiles { grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    }
   </style>
   <link rel="stylesheet" href="/desktop.css">
   <script src="/desktop-nav.js" defer></script>
@@ -353,92 +550,241 @@
 </head>
 <body>
   <div class="container">
-    <div class="crest-panel">
-      <svg class="crest-shape" viewBox="0 0 375 290" preserveAspectRatio="none">
-        <path d="M 0 0 L 375 0 L 375 210 C 375 224 355 231 327 237 C 299 243 261 250 224 263 C 206 269 196 276 187.5 286 C 179 276 169 269 151 263 C 114 250 76 243 48 237 C 20 231 0 224 0 210 Z" fill="#FFFFFF"/>
-      </svg>
-      <div class="crest-inner">
-        <img src="/logo-home.png" alt="Coach United Logo">
-        <h2 class="home-hero-headline">Deine kostenlose Übungs-Bibliothek für den Kinderfußball.</h2>
-        <p class="home-hero-sub">Aus dem Ehrenamt. Für das Ehrenamt.</p>
-      </div>
-    </div>
-
-    <div class="content">
-      <div class="home-intro">
-        <h1 class="home-intro-headline">Deine kostenlose Übungs-Bibliothek für den Kinderfußball.</h1>
-        <p class="home-intro-sub">Aus dem Ehrenamt. Für das Ehrenamt.</p>
-      </div>
-      <div class="selects">
-
-        <!-- Jugend -->
-        <div class="field" id="field-jugend">
-          <label class="field-label">Welche Jugend trainierst du?</label>
-          <button class="sel-btn" id="jugend-btn" onclick="toggleJugend(event)">
-            <span id="jugend-label">Auswählen…</span>
-            <svg class="sel-arrow" width="18" height="18" viewBox="0 0 18 18" fill="none">
-              <path d="M5 7L9 11L13 7" stroke="#0E1430" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </button>
-          <div class="dropdown" id="jugend-dropdown">
-            <button class="drop-option" onclick="selectJugend(event,'G-Jugend','Bambini (G-Jugend)','U7')">
-              <span class="drop-label">Bambini (G-Jugend)</span><span class="drop-age">U7</span>
-            </button>
-            <button class="drop-option" onclick="selectJugend(event,'F-Jugend','F-Jugend','U8 / U9')">
-              <span class="drop-label">F-Jugend</span><span class="drop-age">U8 / U9</span>
-            </button>
-            <button class="drop-option" onclick="selectJugend(event,'E-Jugend','E-Jugend','U10 / U11')">
-              <span class="drop-label">E-Jugend</span><span class="drop-age">U10 / U11</span>
-            </button>
-            <button class="drop-option" onclick="selectJugend(event,'D-Jugend','D-Jugend','U12 / U13')">
-              <span class="drop-label">D-Jugend</span><span class="drop-age">U12 / U13</span>
-            </button>
-          </div>
+    <div class="home-hero">
+      <div class="crest-panel">
+        <svg class="crest-shape" viewBox="0 0 375 290" preserveAspectRatio="none">
+          <path d="M 0 0 L 375 0 L 375 210 C 375 224 355 231 327 237 C 299 243 261 250 224 263 C 206 269 196 276 187.5 286 C 179 276 169 269 151 263 C 114 250 76 243 48 237 C 20 231 0 224 0 210 Z" fill="#FFFFFF"/>
+        </svg>
+        <div class="crest-inner">
+          <img src="/logo-home.png" alt="Coach United Logo">
+          <h2 class="home-hero-headline">Deine kostenlose Übungs-Bibliothek für den Kinderfußball.</h2>
+          <p class="home-hero-sub">Aus dem Ehrenamt. Für das Ehrenamt.</p>
         </div>
+      </div>
 
-        <!-- Skills (erscheint nach Jugend-Auswahl) -->
-        <div class="field" id="field-skills" style="display:none;">
-          <div class="field-label-row">
-            <label class="field-label">Was willst du trainieren?</label>
-            <span class="field-optional">Optional</span>
-          </div>
-          <button class="sel-btn has-value" id="skill-btn" onclick="toggleSkills(event)">
-            <span id="skill-label">Überrasch mich</span>
-            <svg class="sel-arrow" width="18" height="18" viewBox="0 0 18 18" fill="none">
-              <path d="M5 7L9 11L13 7" stroke="#0E1430" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </button>
-          <div class="skill-picker" id="skill-picker">
-            <button class="surprise-btn active" id="surprise-btn" onclick="pickSurprise()">
-              <svg width="15" height="15" viewBox="0 0 16 16" fill="none">
-                <path d="M8 2l1.7 3.5 3.8.6-2.8 2.7.7 3.8L8 10.8l-3.4 1.8.7-3.8L2.5 6.1l3.8-.6L8 2z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+      <div class="content">
+        <div class="home-intro">
+          <h1 class="home-intro-headline">Deine kostenlose Übungs-Bibliothek für den Kinderfußball.</h1>
+          <p class="home-intro-sub">Aus dem Ehrenamt. Für das Ehrenamt.</p>
+        </div>
+        <div class="selects">
+
+          <p class="generator-intro">Sag uns, welche Jugend du trainierst und woran ihr arbeiten wollt — wir stellen dir eine komplette Trainingseinheit mit 5 Übungen zusammen.</p>
+
+          <!-- Jugend -->
+          <div class="field" id="field-jugend">
+            <label class="field-label">Welche Jugend trainierst du?</label>
+            <button class="sel-btn" id="jugend-btn" onclick="toggleJugend(event)">
+              <span id="jugend-label">Auswählen…</span>
+              <svg class="sel-arrow" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                <path d="M5 7L9 11L13 7" stroke="#0E1430" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
-              Überrasch mich
             </button>
-            <div class="skill-section-label">Oder gezielt wählen <em>(max. 2)</em></div>
-            <div class="skill-pills" id="skill-pills"></div>
-            <div class="skill-done-row">
-              <span class="skill-done-status" id="skill-status">Überrasch mich</span>
-              <button class="skill-done-btn" onclick="closeSkills()">Fertig</button>
+            <div class="dropdown" id="jugend-dropdown">
+              <button class="drop-option" onclick="selectJugend(event,'G-Jugend','Bambini (G-Jugend)','U7')">
+                <span class="drop-label">Bambini (G-Jugend)</span><span class="drop-age">U7</span>
+              </button>
+              <button class="drop-option" onclick="selectJugend(event,'F-Jugend','F-Jugend','U8 / U9')">
+                <span class="drop-label">F-Jugend</span><span class="drop-age">U8 / U9</span>
+              </button>
+              <button class="drop-option" onclick="selectJugend(event,'E-Jugend','E-Jugend','U10 / U11')">
+                <span class="drop-label">E-Jugend</span><span class="drop-age">U10 / U11</span>
+              </button>
+              <button class="drop-option" onclick="selectJugend(event,'D-Jugend','D-Jugend','U12 / U13')">
+                <span class="drop-label">D-Jugend</span><span class="drop-age">U12 / U13</span>
+              </button>
             </div>
           </div>
-        </div>
 
-        <!-- CTA -->
-        <button class="cta-btn" id="cta-btn" onclick="goToGenerator()">
-          Einheit erhalten
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </button>
+          <!-- Skills (erscheint nach Jugend-Auswahl) -->
+          <div class="field" id="field-skills" style="display:none;">
+            <div class="field-label-row">
+              <label class="field-label">Was willst du trainieren?</label>
+              <span class="field-optional">Optional</span>
+            </div>
+            <button class="sel-btn has-value" id="skill-btn" onclick="toggleSkills(event)">
+              <span id="skill-label">Überrasch mich</span>
+              <svg class="sel-arrow" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                <path d="M5 7L9 11L13 7" stroke="#0E1430" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="skill-picker" id="skill-picker">
+              <button class="surprise-btn active" id="surprise-btn" onclick="pickSurprise()">
+                <svg width="15" height="15" viewBox="0 0 16 16" fill="none">
+                  <path d="M8 2l1.7 3.5 3.8.6-2.8 2.7.7 3.8L8 10.8l-3.4 1.8.7-3.8L2.5 6.1l3.8-.6L8 2z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                </svg>
+                Überrasch mich
+              </button>
+              <div class="skill-section-label">Oder gezielt wählen <em>(max. 2)</em></div>
+              <div class="skill-pills" id="skill-pills"></div>
+              <div class="skill-done-row">
+                <span class="skill-done-status" id="skill-status">Überrasch mich</span>
+                <button class="skill-done-btn" onclick="closeSkills()">Fertig</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- CTA -->
+          <button class="cta-btn" id="cta-btn" onclick="goToGenerator()">
+            Einheit erhalten
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+
+          <button class="scroll-hint" onclick="document.getElementById('uebungen').scrollIntoView({behavior:'smooth'})">
+            Mehr entdecken
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+              <path d="M6 2v8M2.5 6.5L6 10l3.5-3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+
+        </div>
 
       </div>
 
+      <div class="hero-photo-panel" aria-hidden="true">
+        <img src="/hero-photo.jpg" alt="">
+      </div>
     </div>
 
-    <div class="hero-photo-panel" aria-hidden="true">
-      <img src="/hero-photo.jpg" alt="">
-    </div>
+    <main class="home-sections">
+
+      <!-- ── Übungen ── -->
+      <section class="hs" id="uebungen">
+        <div class="hs-inner">
+          <span class="hs-label">Übungen</span>
+          <h2 class="hs-title"><span class="hs-count"><!--cu:count-->177<!--/cu:count--></span> Einzelübungen. Alle kostenlos.</h2>
+          <p class="hs-text">Von der G- bis zur D-Jugend findest du hier Übungen für jede Trainingsphase. Zu jeder gehören Aufbau, Ablauf und ein Coaching-Fokus, der dir sagt, worauf du bei den Kindern achten solltest. Jede Woche kommen neue dazu.</p>
+          <div class="hs-chips">
+            <a class="hs-chip" href="/uebungen/alter/g-jugend">G-Jugend</a>
+            <a class="hs-chip" href="/uebungen/alter/f-jugend">F-Jugend</a>
+            <a class="hs-chip" href="/uebungen/alter/e-jugend">E-Jugend</a>
+            <a class="hs-chip" href="/uebungen/alter/d-jugend">D-Jugend</a>
+          </div>
+          <div class="hs-actions">
+            <a class="hs-cta" href="/uebungen">
+              Alle Übungen ansehen
+              <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Merkliste ── -->
+      <section class="hs" id="merkliste">
+        <div class="hs-inner">
+          <span class="hs-label">Merkliste</span>
+          <h2 class="hs-title">Deine Auswahl für den Trainingstag.</h2>
+          <p class="hs-text">Übungen und ganze Einheiten legst du mit einem Tipp auf „Speichern“ in deiner Merkliste ab. Am Trainingstag öffnest du sie und hast alles beisammen, ohne noch einmal suchen zu müssen. Das funktioniert ohne Anmeldung — die Liste bleibt auf deinem Gerät.</p>
+          <div class="hs-actions">
+            <a class="hs-cta" href="/merkliste">
+              Zur Merkliste
+              <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Wissen ── -->
+      <section class="hs" id="wissen">
+        <div class="hs-inner">
+          <span class="hs-label">Wissen</span>
+          <h2 class="hs-title">Das A-Z des Kinderfußballs.</h2>
+          <p class="hs-text">Alles, was wir gerne gewusst hätten, bevor wir als ehrenamtliche Trainer*innen angefangen haben. Von Elternarbeit über Umbaupausen bis zur Frage, ab wann Kopfbälle überhaupt Sinn ergeben.</p>
+          <div class="hs-tiles">
+<!--cu:artikel-->
+            <a class="hs-tile" href="/artikel/der-fussball-ferienkalender">
+              <img src="/images/artikel/thumbs/fussball-ferienkalender-kind-dribbling-garten.webp" alt="" width="480" height="320" loading="lazy" decoding="async">
+              <div class="hs-tile-body">
+                <span class="hs-tile-date">06.07.2026</span>
+                <p class="hs-tile-title">Der Fußball-Ferienkalender</p>
+              </div>
+            </a>
+            <a class="hs-tile" href="/artikel/einwurf-im-kinderfussball-ab-wann-macht-spezielles-training-sinn">
+              <img src="/images/artikel/thumbs/chatgpt-image-jun-29--2026--09_14_25-am.webp" alt="" width="480" height="320" loading="lazy" decoding="async">
+              <div class="hs-tile-body">
+                <span class="hs-tile-date">29.06.2026</span>
+                <p class="hs-tile-title">Einwurf im Kinderfußball: Ab wann macht spezielles Training Sinn?</p>
+              </div>
+            </a>
+            <a class="hs-tile" href="/artikel/ideen-fur-ein-tolles-sommerturnier">
+              <img src="/images/artikel/thumbs/chatgpt-image-jun-14--2026--01_52_25-pm.webp" alt="" width="480" height="320" loading="lazy" decoding="async">
+              <div class="hs-tile-body">
+                <span class="hs-tile-date">14.06.2026</span>
+                <p class="hs-tile-title">Ideen für ein tolles Sommerturnier</p>
+              </div>
+            </a>
+<!--/cu:artikel-->
+          </div>
+          <div class="hs-actions">
+            <a class="hs-cta" href="/wissen">
+              Alle Artikel lesen
+              <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── WhatsApp-Kanal ── -->
+      <section class="hs" id="whatsapp">
+        <div class="hs-inner">
+          <span class="hs-label">WhatsApp-Kanal</span>
+          <h2 class="hs-title">Jede neue Übung direkt aufs Handy.</h2>
+          <p class="hs-text">Abonnier den kostenlosen WhatsApp-Kanal und bekomm jede neue Übung, sobald sie online ist. Kein Account nötig, keine Gruppe — nur Übungen.</p>
+          <div class="hs-actions">
+            <a class="hs-cta" href="https://www.whatsapp.com/channel/0029VbAqTP68kyyEFg3oyX2t" target="_blank" rel="noopener">
+              Kanal abonnieren
+              <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Übung einreichen ── -->
+      <section class="hs" id="einreichen">
+        <div class="hs-inner">
+          <span class="hs-label">Übung einreichen</span>
+          <h2 class="hs-title">Du hast eine Übung, die immer funktioniert?</h2>
+          <p class="hs-text">Dann hilft sie auch anderen Trainer*innen weiter. Du kannst sie aufschreiben oder einfach als Sprachnachricht aufnehmen — den Rest bereiten wir auf, mit Grafik und Coaching-Fokus. Auf Wunsch erscheinst du als Autor*in dazu.</p>
+          <div class="hs-actions">
+            <a class="hs-cta" href="/uebung-einreichen">
+              Übung einreichen
+              <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Über uns ── -->
+      <section class="hs" id="ueber-uns">
+        <div class="hs-inner">
+          <span class="hs-label">Über uns</span>
+          <h2 class="hs-title">Aus dem Ehrenamt. Für das Ehrenamt.</h2>
+          <p class="hs-text">Coach United e.V. ist ein gemeinnütziger Verein, gegründet von ehrenamtlichen Trainer*innen aus dem Kinderfußball. Wir wollten eine Übungsbibliothek, die kostenlos, übersichtlich und klar ist — und weil es die nicht gab, haben wir sie gebaut.</p>
+          <p class="hs-text">Alles hier ist frei zugänglich. Keine Anmeldung, keine Paywall, keine Werbung.</p>
+          <div class="hs-actions">
+            <a class="hs-cta" href="/ueber-uns">
+              Mehr über uns
+              <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </main>
   </div>
 
   <!-- SVG-ClipPath für die Crest-Naht auf Desktop (rechtes Formular-Panel) -->
