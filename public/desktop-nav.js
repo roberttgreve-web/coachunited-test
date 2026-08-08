@@ -106,7 +106,10 @@ function injectFerienPromo() {
   var url = '/artikel/' + slug;
   var tabText = '30 Übungen für die Ferien';
   var cardTitle = '30 Übungen für die Sommerferien – zum Selbermachen';
-  var img = '/images/artikel/fussball-ferienkalender-kind-dribbling-garten.png';
+  // Eigenes 128px-Thumbnail statt des Artikelbilds: Die Karte zeigt das Bild mit
+  // 64x64 an, das Original ist 1536x1024 und 2,9 MB gross - und wurde bisher auf
+  // jeder Seite geladen, auf Mobilgeraeten sogar fuer die per CSS versteckte Karte.
+  var img = '/images/artikel/fussball-ferienkalender-thumb.webp';
   var calendarIcon = '<svg width="15" height="15" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="16" height="14" rx="2"/><path d="M3 9h16M7 3v4M15 3v4"/></svg>';
 
   var style = document.createElement('style');
@@ -165,7 +168,7 @@ function injectFerienPromo() {
   card.className = 'cu-promo cu-promo-card';
   card.innerHTML = '<button class="cu-promo-close" aria-label="Hinweis schließen">✕</button>'
     + '<a href="' + url + '" class="cu-promo-link">'
-    + '<img src="' + img + '" alt="">'
+    + '<img src="' + img + '" alt="" width="64" height="64" loading="lazy" decoding="async">'
     + '<div><div class="cu-promo-card-label">Kostenloser Download</div>'
     + '<div class="cu-promo-card-title">' + cardTitle + '</div></div></a>';
   card.querySelector('.cu-promo-close').addEventListener('click', function () { dismiss(card); });
