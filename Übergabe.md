@@ -126,6 +126,13 @@ Maßgeblich sind die [Ad Grants-Website-Richtlinien](https://support.google.com/
 
 - **Spendenseite entfernt.** Ein nicht funktionierender Spendenweg ist ein ausdrücklicher Ablehnungsgrund. Auf `/spenden` stand nur die PayPal-Adresse `spende@coachunited.de` als reiner Text, ohne Link oder Button – und Spenden sind mangels Vereinskonto ohnehin noch nicht möglich. `public/spenden.html` wurde gelöscht, `/spenden` leitet per 301 auf `/ueber-uns`, der Eintrag ist aus `STATIC_PAGES` in `build-sitemap.js` raus. **Sobald ein Vereinskonto existiert**, kann die Seite aus der Git-Historie zurückgeholt werden – dann aber mit funktionierendem Spenden-Button (z. B. `paypal.me`-Link) statt einer abzutippenden Adresse.
 - Sämtliche 404-Fehler aus der Search Console wurden behoben (siehe Abschnitt 10).
+- **Punkte 1–3 der Maßnahmenliste umgesetzt (2026-08-07).** Die Startseite überträgt jetzt **1,88 MB statt 6,77 MB** (–72 %):
+  - `Cache-Control` gestaffelt statt `no-store` für alles: HTML `max-age=0, must-revalidate`, CSS/JS 1 Tag, JSON 1 Stunde, Bilder/Fonts 7 Tage, jeweils mit `stale-while-revalidate`. **Wichtig:** Bei gleichem Header-Schlüssel gewinnt bei Vercel die *zuletzt* passende Regel – die Auffangregel `/(.*)` muss deshalb als erste stehen, die spezifischen danach.
+  - `hero-photo.jpg` 3712×5568 → 1400×2100 (1.589 KB → 219 KB)
+  - `logo-home.png` 2646×1300 → 660×324 (459 KB → 11 KB)
+  - `logo.png` 3284×800 → 800×195 (201 KB → 7 KB)
+  - Störer-Bild: eigenes 128px-Thumbnail `images/artikel/fussball-ferienkalender-thumb.webp` (4 KB) statt des 2,9-MB-Artikelbilds. Die Promo-Karte zeigt es mit 64×64 an; das Original wurde auf jeder Seite geladen, auf Mobilgeräten sogar für die per CSS versteckte Karte.
+  - Die Logos liegen jetzt als 256-Farben-Palette-PNG vor. Das ist bei flachen Vektorgrafiken unauffällig – bei künftigen Logos mit Verläufen wäre es das nicht.
 
 ### 9.2 Messwerte, die zur Ablehnung geführt haben
 
@@ -159,18 +166,18 @@ Google nennt „sehr wenig Textinhalt (Inhalte ohne Mehrwert)" als Ablehnungsgru
 
 ### 9.3 Priorisierte Maßnahmenliste
 
-| # | Maßnahme | Aufwand | Wirkung |
-|---|---|---|---|
-| 1 | `Cache-Control` in `vercel.json` differenzieren: HTML kurz, Bilder/JSON lang cachen | 5 Min | sehr hoch |
-| 2 | Störerbild 2,9 MB → WebP unter 150 KB, oder Störer nur auf der Startseite ausspielen | 30 Min | sehr hoch |
-| 3 | `hero-photo.jpg` (1,6 MB) und `logo-home.png` (459 KB) komprimieren, WebP | 30 Min | hoch |
-| 4 | Startseite um Inhaltssektionen und Calls-to-Action erweitern (Struktur s. u.) | mehrere Std. | sehr hoch |
-| 5 | „Über uns" ausbauen: Verein, Gemeinnützigkeit, VR 42714 B, Wirkung/Zahlen | 1–2 Std. | hoch |
-| 6 | „Über uns" in die Hauptnavigation aufnehmen | 30 Min | mittel |
-| 7 | `exercises.json` auf der Startseite nicht mehr laden (das Dropdown braucht es nicht) | 1 Std. | mittel |
-| 8 | `/wissen` und `/uebungen` mit statischem Einleitungstext versehen | 1 Std. | mittel |
+| # | Maßnahme | Aufwand | Wirkung | Status |
+|---|---|---|---|---|
+| 1 | `Cache-Control` in `vercel.json` differenzieren: HTML kurz, Bilder/JSON lang cachen | 5 Min | sehr hoch | **erledigt** |
+| 2 | Störerbild 2,9 MB → eigenes Thumbnail | 30 Min | sehr hoch | **erledigt** |
+| 3 | `hero-photo.jpg` (1,6 MB), `logo-home.png` (459 KB), `logo.png` (201 KB) verkleinern | 30 Min | hoch | **erledigt** |
+| 4 | Startseite um Inhaltssektionen und Calls-to-Action erweitern (Struktur s. u.) | mehrere Std. | sehr hoch | offen |
+| 5 | „Über uns" ausbauen: Verein, Gemeinnützigkeit, VR 42714 B, Wirkung/Zahlen | 1–2 Std. | hoch | offen |
+| 6 | „Über uns" in die Hauptnavigation aufnehmen | 30 Min | mittel | offen |
+| 7 | `exercises.json` auf der Startseite nicht mehr laden (das Dropdown braucht es nicht) | 1 Std. | mittel | offen |
+| 8 | `/wissen` und `/uebungen` mit statischem Einleitungstext versehen | 1 Std. | mittel | offen |
 
-Die Punkte 1–3 senken die übertragene Datenmenge voraussichtlich von 6,77 MB auf unter 500 KB und adressieren damit Googles ersten Kritikpunkt vollständig.
+Nach Umsetzung von 1–3 liegt die Startseite bei 1,88 MB. Der mit Abstand größte verbliebene Posten ist `exercises.json` mit 1.622 KB – das sind 86 % des restlichen Gewichts und damit Punkt 7. Die Startseite lädt die komplette Übungsdatenbank, obwohl sie davon nur das Jugend-Dropdown befüllt. Ein kleiner Index (Jugend-Stufen plus Anzahl) würde dafür genügen.
 
 Vorgeschlagene Sektionsstruktur für die Startseite (Punkt 4):
 
