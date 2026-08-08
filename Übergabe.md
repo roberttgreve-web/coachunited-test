@@ -13,7 +13,7 @@ Zielgruppe der Seite: Trainer:innen im Kinderfußball (G-/F-/E-/D-Jugend), die k
 ```
 coachunited-next/
 ├── public/                  ← alles, was ausgeliefert wird (= Vercel outputDirectory)
-│   ├── home.html             Startseite (/home)
+│   ├── home.html             Startseite (/home) – enthält Marker für build-home.js, s. Abschnitt 11
 │   ├── uebungen.html         Übungsübersicht mit Filtern (/uebungen)
 │   ├── uebung-detail.html    Template für Übungs-Detailseiten
 │   ├── uebung/               generiert: eine .html pro Übung (Build-Zeit)
@@ -42,6 +42,7 @@ coachunited-next/
 │   ├── build-exercise-pages.js   generiert public/uebung/*.html aus exercises.json + Template
 │   ├── build-einheit-pages.js    generiert public/einheit/*.html aus einheiten.json + Template
 │   ├── build-artikel-pages.js    generiert public/artikel/*.html aus articles.json + Template
+│   ├── build-home.js             setzt Übungs-Anzahl und die 3 neuesten Artikel in home.html ein
 │   ├── build-sitemap.js          generiert public/sitemap.xml aus allen drei JSON-Quellen
 │   ├── upload-grafik-images.js   Hilfsscript zum Hochladen von Übungsgrafiken
 │   └── gen-landing-pages.ps1     PowerShell-Helfer zum Erzeugen der Alter/Phase/Skill-Landingpages
@@ -114,11 +115,12 @@ Wichtig: `uebung-detail.html`, `einheit-detail.html` und `artikel-detail.html` s
 - **Deploy-Trigger**: Vercel ist (vermutlich über die GitHub-Integration im Vercel-Dashboard, es liegt lokal kein `.vercel/`-Ordner vor) mit dem Repo verbunden und deployed automatisch bei jedem Push nach `main`.
 - **Build-Command** (`vercel.json`):
   ```
-  node scripts/build-exercise-pages.js && node scripts/build-einheit-pages.js && node scripts/build-artikel-pages.js && node scripts/build-sitemap.js
+  node scripts/build-exercise-pages.js && node scripts/build-einheit-pages.js && node scripts/build-artikel-pages.js && node scripts/build-home.js && node scripts/build-sitemap.js
   ```
   Es gibt kein `npm install`-Schritt/`package.json` – die Scripts nutzen nur Node-Bordmittel (`fs`, `path`, `https`), daher reicht die von Vercel bereitgestellte Node-Runtime.
 - **Output-Directory**: `public/` (in `vercel.json` als `outputDirectory` gesetzt).
 - **Lokale Vorschau**: Da es sich um reines Static-HTML handelt, reicht ein einfacher statischer Server, z. B. `python -m http.server 3000 --directory public` oder `npx serve public`. Danach die Build-Scripts einmal manuell mit `node scripts/build-...js` laufen lassen, wenn generierte Seiten (Übung/Einheit/Artikel) getestet werden sollen.
+- **Ohne Node lokal**: `home.html`, `uebungen.html`, `wissen.html` und alle statischen Seiten funktionieren im lokalen Server auch ohne Build-Lauf. Nur die generierten Detailseiten unter `/uebung/`, `/einheit/` und `/artikel/` fehlen dann. Achtung: Der einfache Python-Server kennt die Rewrites aus `vercel.json` nicht – Links wie `/uebungen` laufen ins Leere, man muss `/uebungen.html` aufrufen. Zum Durchklicken eignet sich das Vorschau-Deployment des Branches besser.
 
 ⚠️ **Sicherheitshinweise** (beide am 2026-08-07 erneut geprüft und weiterhin offen):
 
@@ -234,3 +236,75 @@ Am 2026-08-07 wurden folgende Punkte behoben und live verifiziert:
 
 - 15 alte Slugs zeigen weiter pauschal auf `/uebungen`, weil es dazu keine migrierte Einheit gibt (u. a. `/vom-dribbelstern-zum-spiel-auf-ein-tor`, `/passen-passen-passen`).
 - Auf dem Archiv steht `author-sitemap.xml` noch im Sitemap-Index, obwohl Autoren-Archive deaktiviert sind. Vermutlich Object-Cache (GoDaddy Managed WordPress) – Flush über das Menü „Managed WordPress" in der Adminleiste.
+
+## 11. Startseite (Umbau 08/2026)
+
+### 11.1 Die Seite scrollt jetzt
+
+Bis 08/2026 war die Startseite eine **starre, bildschirmfüllende Ansicht**: `.container` war auf Desktop ein Raster mit `height: 100vh` und `overflow: hidden`. Inhalte unterhalb des Heros waren damit technisch nicht erreichbar.
+
+Jetzt gilt:
+
+- `.container` ist eine normale Flex-Spalte. Reihenfolge: Topnav → `.home-hero` → `.home-sections` → Footer. Genau die Reihenfolge, in der `desktop-nav.js` Nav und Footer einhängt.
+- Das Zwei-Spalten-Raster (Foto links, Formular rechts) sitzt auf dem neuen Wrapper **`.home-hero`**, nicht mehr auf dem Container. Die zugehörigen Regeln stehen in `desktop.css` unter `body:has(.crest-panel)`.
+- Der Hero füllt **92 %** der Bildschirmhöhe, nicht 100 %: mobil `min-height: 92dvh`, auf Desktop `calc(92vh - 64px)` für die Topnav. Dadurch schaut die Oberkante der nächsten Sektion ins Bild und zeigt ohne Text oder Pfeil, dass es weitergeht. Ein früherer „Mehr entdecken"-Hinweis wurde zugunsten dieser Lösung wieder entfernt.
+
+**Wer den Hero verändert**, muss beide Stellen anfassen: das Inline-CSS in `home.html` (mobil) und `desktop.css` (ab 768px).
+
+### 11.2 Sektionen und Flächen-Rhythmus
+
+Unter dem Hero folgen fünf Sektionen. Die Flächen wechseln bewusst ab – dadurch braucht es keine Trennlinien, und die Seite liest sich nicht wie eine Tabelle:
+
+| Sektion | Klasse | Fläche | Form |
+|---|---|---|---|
+| Übungen (inkl. Merkliste) | `.hs.hs--hell` | weiß | Text, Chips, zwei CTAs, Foto |
+| Wissen | `.hs.hs--dunkel` | Marine | von drei Artikel-Kacheln dominiert |
+| WhatsApp | `.hs--band` | Blau | schmales Band, einzeilig |
+| Übung einreichen | `.hs.hs--hell` | weiß | kurz, ein CTA |
+| Über uns | `.hs.hs--dunkel` | Marine | ruhiger Abschluss |
+
+Grundregel bei Änderungen: **nie zwei gleiche Flächen nebeneinander.** Das WhatsApp-Band ist absichtlich viel kürzer als die übrigen Sektionen – es bricht neben der Farbe auch den Längen-Rhythmus.
+
+Der zweite CTA („Zur Merkliste") ist bewusst nur ein Umriss (`.hs-cta--umriss`), damit nicht jede Sektion unten gleich aussieht.
+
+### 11.3 `build-home.js`
+
+Setzt beim Deploy zwei Dinge in `home.html` ein: die **Anzahl veröffentlichter Übungen** und die **drei neuesten Artikel**.
+
+Beides steht zwischen HTML-Kommentar-Markern, die stehen bleiben:
+
+```html
+<!--cu:count-->177<!--/cu:count-->
+<!--cu:artikel--> … drei Kacheln … <!--/cu:artikel-->
+```
+
+Das hat zwei Gründe: Das Script ist **beliebig oft wiederholbar**, und `home.html` enthält auch ohne Build-Lauf gültiges Markup – wichtig für die lokale Vorschau, weil auf dem Entwicklungsrechner kein Node installiert sein muss.
+
+Fehlt ein Marker, bricht das Script mit einer klaren Meldung ab, statt stillschweigend nichts zu tun.
+
+**Ein neuer Artikel erscheint automatisch** auf der Startseite, sobald er in `articles.json` steht (Sortierung nach `erstellt_am`, absteigend). Zusätzlich sollte ein Thumbnail erzeugt werden – siehe 11.4.
+
+### 11.4 Bilder der Startseite
+
+| Datei | Zweck | Größe |
+|---|---|---|
+| `public/images/uebungen-baelle.webp` | Foto in der Übungen-Sektion | 43 KB (Original 734 KB) |
+| `public/images/artikel/thumbs/*.webp` | Artikel-Kacheln, 480×320 | je 13–41 KB |
+
+Die Thumbnails **können nicht Teil des Vercel-Builds sein**: Das Projekt kommt bewusst ohne `npm install` aus, damit steht dort keine Bildbibliothek zur Verfügung. Sie werden deshalb einmalig lokal erzeugt mit:
+
+```
+python scripts/artikel-thumbnails.py
+```
+
+Das Script braucht Pillow (`pip install Pillow`), liest `articles.json`, nimmt die drei neuesten Artikel und legt aus dem lokal vorhandenen Originalbild ein 480×320-WebP unter `public/images/artikel/thumbs/` ab.
+
+**Fehlt ein Thumbnail, bricht nichts** – `build-home.js` fällt dann auf `foto_url` zurück. Das Originalbild ist aber teils mehrere MB groß, deshalb sollte das Script nach jedem neuen Artikel laufen.
+
+⚠️ Zwei der Artikelbilder liegen in `articles.json` mit einer `foto_url` auf **raw.githubusercontent.com** statt auf der eigenen Domain. Beim Fallback würde also von GitHub geladen. Bei Gelegenheit auf `/images/artikel/…` umstellen.
+
+### 11.5 Fallstricke
+
+- **`aspect-ratio` verliert gegen das `height`-Attribut.** Bilder im Markup tragen `width`/`height` gegen Layout-Sprünge. Ohne zusätzliches `height: auto` im CSS gewinnt das Attribut, und `aspect-ratio` bleibt wirkungslos – das Bild wird verzerrt. Betrifft `.hs-foto` und `.hs-tile img`.
+- **Die Bottom-Nav gibt es in zwei Markup-Varianten.** Die meisten Seiten nutzen `<span>Label</span>`, drei (`artikel-detail.html`, `detail.html`, `einheit-detail.html`) nutzen `<span class="nav-label">Label</span>`. Wer per Skript ersetzt, muss beide abdecken – sonst bleiben genau diese drei Seiten zurück.
+- **Der Menüpunkt zum WhatsApp-Kanal heißt „Nichts verpassen"** (mit Glocken-Icon) und steht in **43 Dateien**: einmal in der Desktop-Topnav in `desktop-nav.js`, sonst in der mobilen Bottom-Nav jeder Seite. Das Wort „WhatsApp" wurde bewusst aus der Navigation entfernt, bleibt aber in Fließtexten stehen – dort ist es ein Argument (kein neuer Account, keine E-Mail-Adresse), in der Navigation nur ein Etikett.
