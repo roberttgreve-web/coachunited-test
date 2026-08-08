@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <meta name="description" content="Kostenlose Fußballübungen für den Kinderfußball – für G-, F-, E- und D-Jugend. Mit Grafiken, Aufbau und Coaching-Tipps. Täglich mehr Übungen für Fußballtrainer.">
+  <meta name="description" content="Kostenlose Fußballübungen für den Kinderfußball – für G-, F-, E- und D-Jugend. Mit Grafiken, Aufbau und Coaching-Tipps. Jede Woche kommen neue dazu.">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Fußballübungen für den Kinderfußball | COACH UNITED">
-  <meta property="og:description" content="Kostenlose Fußballübungen für den Kinderfußball – für G-, F-, E- und D-Jugend. Mit Grafiken, Aufbau und Coaching-Tipps. Täglich mehr Übungen für Fußballtrainer.">
+  <meta property="og:description" content="Kostenlose Fußballübungen für den Kinderfußball – für G-, F-, E- und D-Jugend. Mit Grafiken, Aufbau und Coaching-Tipps. Jede Woche kommen neue dazu.">
   <meta property="og:image" content="https://coachunited.de/og-image.png">
   <meta property="og:url" content="https://coachunited.de/">
   <meta property="og:site_name" content="COACH UNITED">
@@ -53,7 +53,7 @@
       {
         "@type": "WebPage",
         "url": "https://coachunited.de/whatsapp-info",
-        "name": "WhatsApp-Kanal",
+        "name": "Nichts verpassen",
         "isPartOf": { "@id": "https://coachunited.de/#website" }
       }
     ]
@@ -88,7 +88,9 @@
       position: relative;
       display: flex;
       flex-direction: column;
-      min-height: 100dvh;
+      /* 92 statt 100: Die Oberkante der naechsten Sektion schaut ins Bild und
+         zeigt ohne Text oder Pfeil, dass es weitergeht. */
+      min-height: 92dvh;
       flex-shrink: 0;
     }
 
@@ -178,15 +180,6 @@
       color: rgba(255,255,255,0.5);
       letter-spacing: 0.12em;
       text-transform: uppercase;
-    }
-
-    /* Erklaertext ueber der Jugend-Auswahl */
-    .generator-intro {
-      font-size: 14px;
-      font-weight: 500;
-      color: rgba(255,255,255,0.62);
-      line-height: 1.55;
-      margin-bottom: 2px;
     }
 
     .sel-btn {
@@ -364,51 +357,20 @@
 
     .home-hero-headline, .home-hero-sub { display: none; }
 
-    /* ── Scroll-Hinweis ── */
-    .scroll-hint {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      margin-top: 22px;
-      padding: 4px;
-      background: none;
-      border: none;
-      cursor: pointer;
-      font-family: 'JetBrains Mono', ui-monospace, monospace;
-      font-size: 9px;
-      font-weight: 600;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: rgba(255,255,255,0.45);
-      transition: color 0.15s;
-      position: relative;
-      z-index: 2;
-    }
-    .scroll-hint:hover { color: rgba(255,255,255,0.8); }
-    .scroll-hint svg { animation: nudge 2.4s ease-in-out infinite; }
-    @keyframes nudge {
-      0%, 100% { transform: translateY(0); }
-      50%      { transform: translateY(3px); }
-    }
-    @media (prefers-reduced-motion: reduce) {
-      .scroll-hint svg { animation: none; }
-    }
-
     /* ══════════════════════════════════════════════
        Sektionen unterhalb des Heros
-       ══════════════════════════════════════════════ */
-    .home-sections {
-      position: relative;
-      z-index: 2;
-      background: #0E1430;
-    }
 
-    .hs {
-      border-top: 1px solid rgba(255,255,255,0.09);
-      padding: 44px 22px;
-    }
+       Rhythmus: hell / dunkel / Band / hell / dunkel.
+       Nie zwei gleiche Flaechen nebeneinander – dadurch braucht es
+       keine Trennlinien, der Farbwechsel ist die Trennung.
+       ══════════════════════════════════════════════ */
+    .home-sections { position: relative; z-index: 2; }
+
+    .hs { padding: 46px 22px; }
     .hs-inner { max-width: 960px; margin: 0 auto; }
+
+    .hs--hell   { background: #fff; }
+    .hs--dunkel { background: #0E1430; }
 
     .hs-label {
       display: block;
@@ -417,39 +379,42 @@
       font-weight: 700;
       letter-spacing: 0.14em;
       text-transform: uppercase;
-      color: #1E6BFF;
       margin-bottom: 12px;
     }
     .hs-title {
       font-size: 25px;
       font-weight: 800;
-      color: #fff;
       line-height: 1.15;
       letter-spacing: -0.03em;
-      margin-bottom: 12px;
+      margin-bottom: 14px;
     }
     .hs-text {
       font-size: 15px;
-      font-weight: 400;
-      color: rgba(255,255,255,0.66);
       line-height: 1.6;
       max-width: 62ch;
     }
     .hs-text + .hs-text { margin-top: 12px; }
 
+    .hs--hell   .hs-label { color: #1E6BFF; }
+    .hs--hell   .hs-title { color: #0E1430; }
+    .hs--hell   .hs-text  { color: #5A6180; }
+
+    .hs--dunkel .hs-label { color: #6E9BFF; }
+    .hs--dunkel .hs-title { color: #fff; }
+    .hs--dunkel .hs-text  { color: rgba(255,255,255,0.66); }
+
     .hs-count {
       font-family: 'JetBrains Mono', ui-monospace, monospace;
       font-weight: 700;
-      color: #fff;
     }
 
-    /* CTA-Zeile */
+    /* ── CTAs ── */
     .hs-actions {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
       gap: 12px;
-      margin-top: 22px;
+      margin-top: 24px;
     }
     .hs-cta {
       display: inline-flex;
@@ -458,45 +423,97 @@
       padding: 13px 20px;
       background: #1E6BFF;
       color: #fff;
+      border: 1.5px solid #1E6BFF;
       border-radius: 10px;
       text-decoration: none;
       font-size: 15px;
       font-weight: 700;
-      transition: background 0.15s;
+      transition: background 0.15s, border-color 0.15s, color 0.15s;
     }
-    .hs-cta:hover { background: #1558d6; }
+    .hs-cta:hover { background: #1558d6; border-color: #1558d6; }
     .hs-cta svg { flex-shrink: 0; }
 
-    /* Alters-Chips */
-    .hs-chips {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 20px;
-    }
+    /* Zweitrangiger CTA: nur Umriss, damit die Sektion unten nicht
+       genauso aussieht wie jede andere. */
+    .hs-cta--umriss { background: transparent; }
+    .hs--hell .hs-cta--umriss { border-color: #C9D2E4; color: #0E1430; }
+    .hs--hell .hs-cta--umriss:hover { background: #F2F6FF; border-color: #1E6BFF; color: #1E6BFF; }
+
+    /* ── Alters-Chips ── */
+    .hs-chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
     .hs-chip {
       padding: 9px 15px;
       border-radius: 999px;
-      border: 1.5px solid rgba(255,255,255,0.18);
-      background: rgba(255,255,255,0.04);
-      color: rgba(255,255,255,0.85);
+      border: 1.5px solid #D8DEEC;
+      background: #fff;
+      color: #2A3350;
       text-decoration: none;
       font-size: 14px;
       font-weight: 600;
       transition: background 0.14s, border-color 0.14s, color 0.14s;
     }
-    .hs-chip:hover {
-      background: #1E6BFF;
-      border-color: #1E6BFF;
-      color: #fff;
+    .hs-chip:hover { background: #1E6BFF; border-color: #1E6BFF; color: #fff; }
+
+    /* ── Zweispalter mit Foto ── */
+    .hs-split { display: grid; gap: 26px; }
+    .hs-foto {
+      width: 100%;
+      /* height:auto ist noetig, sonst gewinnt das height-Attribut aus dem
+         Markup und aspect-ratio bleibt wirkungslos. */
+      height: auto;
+      aspect-ratio: 3 / 2;
+      object-fit: cover;
+      border-radius: 14px;
+      display: block;
+      background: #E6E8EF;
     }
 
-    /* Artikel-Kacheln */
+    /* ── Blaues Band (WhatsApp) ── */
+    .hs--band { background: #1E6BFF; padding: 28px 22px; }
+    .hs-band-inner {
+      max-width: 960px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 18px;
+    }
+    .hs-band-text { flex: 1 1 260px; }
+    .hs-band-title {
+      font-size: 20px;
+      font-weight: 800;
+      color: #fff;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+    }
+    .hs-band-sub {
+      font-size: 14.5px;
+      color: rgba(255,255,255,0.82);
+      line-height: 1.5;
+      margin-top: 5px;
+    }
+    .hs-band-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      padding: 13px 22px;
+      background: #fff;
+      color: #1E6BFF;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 700;
+      flex-shrink: 0;
+      transition: background 0.15s;
+    }
+    .hs-band-cta:hover { background: #EAF1FF; }
+
+    /* ── Artikel-Kacheln ── */
     .hs-tiles {
       display: grid;
       grid-template-columns: 1fr;
       gap: 14px;
-      margin-top: 22px;
+      margin-top: 24px;
     }
     .hs-tile {
       display: block;
@@ -512,6 +529,7 @@
     }
     .hs-tile img {
       width: 100%;
+      height: auto;
       aspect-ratio: 3 / 2;
       object-fit: cover;
       display: block;
@@ -536,10 +554,13 @@
     }
 
     @media (min-width: 768px) {
-      .hs { padding: 64px 40px; }
-      .hs-title { font-size: 34px; margin-bottom: 14px; }
+      .hs { padding: 68px 40px; }
+      .hs--band { padding: 30px 40px; }
+      .hs-title { font-size: 34px; margin-bottom: 16px; }
       .hs-text { font-size: 16px; }
       .hs-tiles { grid-template-columns: repeat(3, 1fr); gap: 18px; }
+      .hs-split { grid-template-columns: 1.05fr 0.95fr; align-items: center; gap: 44px; }
+      .hs-band-title { font-size: 22px; }
     }
   </style>
   <link rel="stylesheet" href="/desktop.css">
@@ -568,8 +589,6 @@
           <p class="home-intro-sub">Aus dem Ehrenamt. Für das Ehrenamt.</p>
         </div>
         <div class="selects">
-
-          <p class="generator-intro">Sag uns, welche Jugend du trainierst und woran ihr arbeiten wollt — wir stellen dir eine komplette Trainingseinheit mit 5 Übungen zusammen.</p>
 
           <!-- Jugend -->
           <div class="field" id="field-jugend">
@@ -632,13 +651,6 @@
             </svg>
           </button>
 
-          <button class="scroll-hint" onclick="document.getElementById('uebungen').scrollIntoView({behavior:'smooth'})">
-            Mehr entdecken
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
-              <path d="M6 2v8M2.5 6.5L6 10l3.5-3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </button>
-
         </div>
 
       </div>
@@ -650,48 +662,38 @@
 
     <main class="home-sections">
 
-      <!-- ── Übungen ── -->
-      <section class="hs" id="uebungen">
+      <!-- ── Übungen (mit Merkliste) ── -->
+      <section class="hs hs--hell" id="uebungen">
         <div class="hs-inner">
           <span class="hs-label">Übungen</span>
-          <h2 class="hs-title"><span class="hs-count"><!--cu:count-->177<!--/cu:count--></span> Einzelübungen. Alle kostenlos.</h2>
-          <p class="hs-text">Von der G- bis zur D-Jugend findest du hier Übungen für jede Trainingsphase. Zu jeder gehören Aufbau, Ablauf und ein Coaching-Fokus, der dir sagt, worauf du bei den Kindern achten solltest. Jede Woche kommen neue dazu.</p>
-          <div class="hs-chips">
-            <a class="hs-chip" href="/uebungen/alter/g-jugend">G-Jugend</a>
-            <a class="hs-chip" href="/uebungen/alter/f-jugend">F-Jugend</a>
-            <a class="hs-chip" href="/uebungen/alter/e-jugend">E-Jugend</a>
-            <a class="hs-chip" href="/uebungen/alter/d-jugend">D-Jugend</a>
-          </div>
-          <div class="hs-actions">
-            <a class="hs-cta" href="/uebungen">
-              Alle Übungen ansehen
-              <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <!-- ── Merkliste ── -->
-      <section class="hs" id="merkliste">
-        <div class="hs-inner">
-          <span class="hs-label">Merkliste</span>
-          <h2 class="hs-title">Deine Auswahl für den Trainingstag.</h2>
-          <p class="hs-text">Übungen und ganze Einheiten legst du mit einem Tipp auf „Speichern“ in deiner Merkliste ab. Am Trainingstag öffnest du sie und hast alles beisammen, ohne noch einmal suchen zu müssen. Das funktioniert ohne Anmeldung — die Liste bleibt auf deinem Gerät.</p>
-          <div class="hs-actions">
-            <a class="hs-cta" href="/merkliste">
-              Zur Merkliste
-              <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </a>
+          <h2 class="hs-title"><span class="hs-count"><!--cu:count-->177<!--/cu:count--></span> Übungen. Auswählen, merken, einsetzen.</h2>
+          <div class="hs-split">
+            <div>
+              <p class="hs-text">Von der G- bis zur D-Jugend findest du hier Übungen für jede Trainingsphase. Zu jeder gehören Aufbau, Ablauf und ein Coaching-Fokus, der dir sagt, worauf du bei den Kindern achten solltest. Sie stammen aus dem Trainingsalltag ehrenamtlicher Trainer*innen und sind auf dem Platz erprobt. Jede Woche kommen neue dazu.</p>
+              <p class="hs-text">Was dir gefällt, speicherst du in deiner Merkliste. Am Trainingstag hast du dann alles beisammen, ohne noch einmal suchen zu müssen — ohne Anmeldung, die Liste bleibt auf deinem Gerät.</p>
+              <div class="hs-chips">
+                <a class="hs-chip" href="/uebungen/alter/g-jugend">G-Jugend</a>
+                <a class="hs-chip" href="/uebungen/alter/f-jugend">F-Jugend</a>
+                <a class="hs-chip" href="/uebungen/alter/e-jugend">E-Jugend</a>
+                <a class="hs-chip" href="/uebungen/alter/d-jugend">D-Jugend</a>
+              </div>
+              <div class="hs-actions">
+                <a class="hs-cta" href="/uebungen">
+                  Alle Übungen ansehen
+                  <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+                <a class="hs-cta hs-cta--umriss" href="/merkliste">Zur Merkliste</a>
+              </div>
+            </div>
+            <img class="hs-foto" src="/images/uebungen-baelle.webp" alt="Fußbälle auf einem Rasenplatz" width="960" height="640" loading="lazy" decoding="async">
           </div>
         </div>
       </section>
 
       <!-- ── Wissen ── -->
-      <section class="hs" id="wissen">
+      <section class="hs hs--dunkel" id="wissen">
         <div class="hs-inner">
           <span class="hs-label">Wissen</span>
           <h2 class="hs-title">Das A-Z des Kinderfußballs.</h2>
@@ -732,25 +734,24 @@
         </div>
       </section>
 
-      <!-- ── WhatsApp-Kanal ── -->
-      <section class="hs" id="whatsapp">
-        <div class="hs-inner">
-          <span class="hs-label">WhatsApp-Kanal</span>
-          <h2 class="hs-title">Jede neue Übung direkt aufs Handy.</h2>
-          <p class="hs-text">Abonnier den kostenlosen WhatsApp-Kanal und bekomm jede neue Übung, sobald sie online ist. Kein Account nötig, keine Gruppe — nur Übungen.</p>
-          <div class="hs-actions">
-            <a class="hs-cta" href="https://www.whatsapp.com/channel/0029VbAqTP68kyyEFg3oyX2t" target="_blank" rel="noopener">
-              Kanal abonnieren
-              <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </a>
+      <!-- ── WhatsApp-Kanal: schmales Band statt voller Sektion ── -->
+      <section class="hs--band" id="whatsapp">
+        <div class="hs-band-inner">
+          <div class="hs-band-text">
+            <p class="hs-band-title">Jede neue Übung direkt aufs Handy.</p>
+            <p class="hs-band-sub">Kostenloser WhatsApp-Kanal — kein Account nötig, keine Gruppe, nur Übungen.</p>
           </div>
+          <a class="hs-band-cta" href="https://www.whatsapp.com/channel/0029VbAqTP68kyyEFg3oyX2t" target="_blank" rel="noopener">
+            Kanal ansehen
+            <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
         </div>
       </section>
 
       <!-- ── Übung einreichen ── -->
-      <section class="hs" id="einreichen">
+      <section class="hs hs--hell" id="einreichen">
         <div class="hs-inner">
           <span class="hs-label">Übung einreichen</span>
           <h2 class="hs-title">Du hast eine Übung, die immer funktioniert?</h2>
@@ -767,7 +768,7 @@
       </section>
 
       <!-- ── Über uns ── -->
-      <section class="hs" id="ueber-uns">
+      <section class="hs hs--dunkel" id="ueber-uns">
         <div class="hs-inner">
           <span class="hs-label">Über uns</span>
           <h2 class="hs-title">Aus dem Ehrenamt. Für das Ehrenamt.</h2>

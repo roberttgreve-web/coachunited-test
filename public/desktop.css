@@ -617,13 +617,14 @@
     overflow: visible !important;
   }
 
-  /* Hero: Foto links, Formular rechts – fuellt die erste Bildschirmseite
-     unterhalb der 64px hohen Topnav. */
+  /* Hero: Foto links, Formular rechts. 92vh statt 100vh abzueglich der 64px
+     hohen Topnav – die Oberkante der naechsten Sektion schaut ins Bild und
+     zeigt, dass es weitergeht. */
   body:has(.crest-panel) .home-hero {
     display: grid !important;
     grid-template-columns: 1fr 1fr !important;
     grid-template-areas: "photo form" !important;
-    min-height: calc(100vh - 64px) !important;
+    min-height: calc(92vh - 64px) !important;
     overflow: hidden !important;
   }
 

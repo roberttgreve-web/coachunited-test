@@ -77,11 +77,28 @@ Wichtig: `uebung-detail.html`, `einheit-detail.html` und `artikel-detail.html` s
 
 ## 5. Sitewide-Bausteine (auf praktisch jeder Seite aktiv)
 
-- **`desktop-nav.js`**: das einzige Script, das wirklich auf **allen** Seiten eingebunden ist (auch auf den generierten Detailseiten). Baut ab 768px Breite die Desktop-Navigation und den Footer per JavaScript in `.container` ein (auf Mobile bleibt das Markup unverändert). Seit 07/2026 injiziert dieselbe Datei zusätzlich den **Störer/Hinweis auf den Ferienkalender-Artikel** (Funktion `injectFerienPromo()`), unabhängig von der Bildschirmbreite:
-  - Mobile: schmaler, vertikaler Tab am rechten Bildschirmrand.
-  - Desktop: Karte unten rechts, fliegt nach ~0,9 s sanft ein.
-  - Beide verlinken auf `/artikel/der-fussball-ferienkalender`, haben ein „✕“ zum Schließen (Dismiss wird 14 Tage in `localStorage` gemerkt) und werden auf der Artikelseite selbst nicht angezeigt.
-  - Titel/Bild/Link sind aktuell hart codiert in der Funktion – für eine neue Kampagne dort die Variablen `slug`, `tabText`, `cardTitle`, `img` anpassen.
+- **`desktop-nav.js`**: das einzige Script, das wirklich auf **allen** Seiten eingebunden ist (auch auf den generierten Detailseiten). Baut ab 768px Breite die Desktop-Navigation und den Footer per JavaScript in `.container` ein (auf Mobile bleibt das Markup unverändert). Dieselbe Datei injiziert zusätzlich den **Störer für den WhatsApp-Kanal** (Funktion `injectWhatsAppPromo()`, seit 08/2026). Der frühere Ferienkalender-Störer wurde dabei ersatzlos entfernt — es gibt bewusst nur **einen** Störer-Slot, zwei gleichzeitige Einblendungen wirken wie Werbung.
+
+  **Scharfschalten:** Ganz oben in der Funktion steht
+  ```js
+  var WA_PROMO_LIVE = false;   // auf true, sobald Google Ad Grants freigegeben ist
+  ```
+  Solange das `false` ist, erscheint der Störer **nur auf Vorschau-Deployments und lokal** (`hostname !== 'coachunited.de'`), nicht auf der Live-Seite. So lässt er sich testen, ohne live zu gehen, und niemand kann vergessen, ihn vor einem Merge auszuschalten.
+
+  **Testhilfen:** `?wa=1` erzwingt die Anzeige (auch auf der Live-Domain), `?wa=reset` löscht den gemerkten Zustand.
+
+  **Auslöser:** ab der zweiten Seite einer Sitzung sofort; auf der ersten Seite erst nach 20 Sekunden *und* mehr als halb gescrollt. Wer gerade erst gelandet ist, hat den Nutzen des Kanals noch nicht erlebt.
+
+  **Drei Aktionen mit unterschiedlich langem Gedächtnis** (alles `localStorage`):
+
+  | Aktion | Schlüssel | Wirkung |
+  |---|---|---|
+  | Kanal ansehen | `cu_wa_status = subscribed` | nie wieder |
+  | Hab ich schon | `cu_wa_status = has` | nie wieder |
+  | ✕ | `cu_wa_snooze` | 30 Tage Ruhe |
+  | dreimal ignoriert | `cu_wa_shown >= 3` | dauerhaft Ruhe |
+
+  Auf `/whatsapp-info` erscheint er nie. Mobil sitzt er **über** der Bottom-Nav — deren Höhe wird zur Laufzeit gemessen, weil sie von der Zeilenzahl der Beschriftungen abhängt. GA4-Ereignisse `wa_promo_shown`, `wa_promo_click`, `wa_promo_has`, `wa_promo_dismiss` werden nur gefeuert, wenn `gtag` existiert, also nach erteilter Cookie-Einwilligung.
 - **`feedback-widget.js`**: aktuell nur ein Kommentar ("Beta-Phase beendet"), ist NICHT auf allen Seiten eingebunden (fehlt z. B. auf `merkliste.html`, `detail.html`, `einheit-detail.html`, `artikel-detail.html`). Für neue sitewide Funktionen `desktop-nav.js` verwenden, nicht dieses.
 - **`desktop.css`**: Layout-Overrides für ≥768px, wird zusätzlich zum mobilen Inline-CSS jeder Seite geladen.
 
@@ -171,7 +188,7 @@ Google nennt „sehr wenig Textinhalt (Inhalte ohne Mehrwert)" als Ablehnungsgru
 | 1 | `Cache-Control` in `vercel.json` differenzieren: HTML kurz, Bilder/JSON lang cachen | 5 Min | sehr hoch | **erledigt** |
 | 2 | Störerbild 2,9 MB → eigenes Thumbnail | 30 Min | sehr hoch | **erledigt** |
 | 3 | `hero-photo.jpg` (1,6 MB), `logo-home.png` (459 KB), `logo.png` (201 KB) verkleinern | 30 Min | hoch | **erledigt** |
-| 4 | Startseite um Inhaltssektionen und Calls-to-Action erweitern (Struktur s. u.) | mehrere Std. | sehr hoch | offen |
+| 4 | Startseite um Inhaltssektionen und Calls-to-Action erweitern (Struktur s. u.) | mehrere Std. | sehr hoch | **erledigt** |
 | 5 | „Über uns" ausbauen: Verein, Gemeinnützigkeit, VR 42714 B, Wirkung/Zahlen | 1–2 Std. | hoch | offen |
 | 6 | „Über uns" in die Hauptnavigation aufnehmen | 30 Min | mittel | offen |
 | 7 | `exercises.json` auf der Startseite nicht mehr laden (das Dropdown braucht es nicht) | 1 Std. | mittel | offen |
