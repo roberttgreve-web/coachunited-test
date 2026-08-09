@@ -193,10 +193,20 @@ Google nennt „sehr wenig Textinhalt (Inhalte ohne Mehrwert)" als Ablehnungsgru
 | 4 | Startseite um Inhaltssektionen und Calls-to-Action erweitern (Struktur s. u.) | mehrere Std. | sehr hoch | **erledigt** |
 | 5 | „Über uns" ausbauen: Verein, Gemeinnützigkeit, VR 42714 B, Wirkung/Zahlen | 1–2 Std. | hoch | offen |
 | 6 | „Über uns" in die Hauptnavigation aufnehmen | 30 Min | mittel | offen |
-| 7 | `exercises.json` auf der Startseite nicht mehr laden (das Dropdown braucht es nicht) | 1 Std. | mittel | offen |
+| 7 | `exercises.json` auf der Startseite nicht mehr laden (das Dropdown braucht es nicht) | 1 Std. | mittel | **erledigt** |
 | 8 | `/wissen` und `/uebungen` mit statischem Einleitungstext versehen | 1 Std. | mittel | offen |
 
-Nach Umsetzung von 1–3 liegt die Startseite bei 1,88 MB. Der mit Abstand größte verbliebene Posten ist `exercises.json` mit 1.622 KB – das sind 86 % des restlichen Gewichts und damit Punkt 7. Die Startseite lädt die komplette Übungsdatenbank, obwohl sie davon nur das Jugend-Dropdown befüllt. Ein kleiner Index (Jugend-Stufen plus Anzahl) würde dafür genügen.
+### 9.5 Entwicklung des Seitengewichts
+
+| Zeitpunkt | Beim Seitenaufruf |
+|---|---|
+| Bei der Ad-Grants-Ablehnung | 6.770 KB |
+| Nach Punkt 1–3 (Caching, Bilder) | 1.880 KB |
+| Nach Punkt 4 und 7 (Startseite, Skill-Index) | **~260 KB mobil / ~350 KB Desktop** |
+
+Rund **96 % weniger** als zum Zeitpunkt der Prüfung. Die letzten beiden Werte sind aus echten Dateigrößen gerechnet (Textdateien mit gzip wie auf Vercel), nicht im Browser gemessen – die Vorschau-Deployments sind durch Deployment Protection gesperrt.
+
+Größter verbliebener Posten ist `hero-photo.jpg` mit 219 KB, also gut 80 % des mobilen Aufrufgewichts. Wer weiter runter will, setzt dort an.
 
 Vorgeschlagene Sektionsstruktur für die Startseite (Punkt 4):
 
@@ -257,19 +267,36 @@ Unter dem Hero folgen fünf Sektionen. Die Flächen wechseln bewusst ab – dadu
 
 | Sektion | Klasse | Fläche | Form |
 |---|---|---|---|
-| Übungen (inkl. Merkliste) | `.hs.hs--hell` | weiß | Text, Chips, zwei CTAs, Foto |
-| Wissen | `.hs.hs--dunkel` | Marine | von drei Artikel-Kacheln dominiert |
-| WhatsApp | `.hs--band` | Blau | schmales Band, einzeilig |
+| Übungen (inkl. Merkliste) | `.hs.hs--hell` | weiß | Vorspann, zwei kurze Absätze, ein CTA, Foto |
+| Wissen | `.hs.hs--dunkel` | Marine | Artikel-Band mit Pfeil |
 | Übung einreichen | `.hs.hs--hell` | weiß | kurz, ein CTA |
 | Über uns | `.hs.hs--dunkel` | Marine | ruhiger Abschluss |
 
-Grundregel bei Änderungen: **nie zwei gleiche Flächen nebeneinander.** Das WhatsApp-Band ist absichtlich viel kürzer als die übrigen Sektionen – es bricht neben der Farbe auch den Längen-Rhythmus.
+Grundregel bei Änderungen: **nie zwei gleiche Flächen nebeneinander.** Der Farbwechsel ersetzt Trennlinien.
 
-Der zweite CTA („Zur Merkliste") ist bewusst nur ein Umriss (`.hs-cta--umriss`), damit nicht jede Sektion unten gleich aussieht.
+Die Merkliste hat bewusst keinen eigenen Button – sie ist im Fließtext verlinkt (`.hs-textlink`). Die CSS-Klasse `.hs-cta--umriss` für einen zweitrangigen Button ist noch vorhanden, wird aktuell aber nirgends verwendet.
+
+Ein WhatsApp-Band als eigene Sektion gab es zwischenzeitlich, es wurde wieder entfernt. Der Kanal wird jetzt ausschließlich über den Menüpunkt „Nichts verpassen" und den Störer beworben.
+
+### 11.2a Der Hero-Textträger (Desktop)
+
+Das Foto lag früher unter einem Verlauf von 72 % auf 28 % Marineblau, was es sehr dunkel machte. Die Abdunkelung ist entfernt (`​.crest-panel::before { content: none }`). Den Kontrast liefert stattdessen eine **massive Farbfläche unter `.crest-inner`** – ein Block unten links, bündig zur linken Kante, rechts abgerundet.
+
+Der Vorteil gegenüber einem Verlauf: Die Lesbarkeit hängt nicht mehr vom Foto ab. Wer das Hero-Bild austauscht, muss nichts nachjustieren.
+
+Auf **mobil** gilt das nicht – dort liegt das Foto weiterhin mit `opacity: 0.38` und eigenem Verlauf hinter dem Formular (`.hero-photo-panel`). Das ist eine getrennte Stelle in `home.html`.
+
+### 11.2b Das Artikel-Band
+
+Auf Desktop laufen **alle veröffentlichten Artikel** in einem waagerecht scrollbaren Band (`.hs-tiles` mit `overflow-x: auto` und `scroll-snap`), drei davon sichtbar. Der runde Pfeil rechts (`#artikel-pfeil`) scrollt um genau eine Kachelbreite weiter und verschwindet am Ende des Bandes.
+
+Mobil bleiben die Kacheln gestapelt, der Pfeil ist per CSS ausgeblendet.
+
+Da alle Kacheln `loading="lazy"` tragen, laden nur die sichtbaren beim Seitenaufruf – die übrigen acht erst beim Blättern.
 
 ### 11.3 `build-home.js`
 
-Setzt beim Deploy zwei Dinge in `home.html` ein: die **Anzahl veröffentlichter Übungen** und die **drei neuesten Artikel**.
+Setzt beim Deploy die **Anzahl veröffentlichter Übungen** und **alle veröffentlichten Artikel** in `home.html` ein – und schreibt zusätzlich `public/skills-index.json` (siehe 11.3a).
 
 Beides steht zwischen HTML-Kommentar-Markern, die stehen bleiben:
 
@@ -284,6 +311,18 @@ Fehlt ein Marker, bricht das Script mit einer klaren Meldung ab, statt stillschw
 
 **Ein neuer Artikel erscheint automatisch** auf der Startseite, sobald er in `articles.json` steht (Sortierung nach `erstellt_am`, absteigend). Zusätzlich sollte ein Thumbnail erzeugt werden – siehe 11.4.
 
+### 11.3a `skills-index.json` – warum es die Datei gibt
+
+Wählt jemand im Hero eine Altersstufe, erscheinen darunter die Skill-Knöpfe. Für die F-Jugend sind das elf Stück.
+
+Bis 08/2026 lud die Startseite dafür **`exercises.json` mit 1.622 KB** – die komplette Übungsdatenbank – und rechnete im Browser jedes einzelnen Besuchers aus, welche Skills in allen drei Trainingsphasen vorkommen. Das war der mit Abstand größte Posten der Seite: 86 % ihres Gewichts, um vier mal gut zehn Wörter zu gewinnen.
+
+`build-home.js` macht diese Rechnung jetzt einmal pro Deploy (`baueSkillIndex()`) und legt das Ergebnis in `public/skills-index.json` ab – **0,56 KB**. Die Startseite lädt nur noch diese Datei.
+
+⚠️ **Die Logik steht an zwei Stellen** und muss zusammenpassen: `baueSkillIndex()` in `scripts/build-home.js` bestimmt, *welche* Skills es gibt; `buildSkillPills()` in `home.html` zeigt sie nur noch an. Ändert sich die Regel (etwa: Skill muss nicht mehr in allen drei Phasen vorkommen), gehört die Änderung ins Build-Script.
+
+Auf `/uebungen` und im Einheiten-Generator wird `exercises.json` weiterhin vollständig geladen – dort werden ja Übungen angezeigt.
+
 ### 11.4 Bilder der Startseite
 
 | Datei | Zweck | Größe |
@@ -291,17 +330,20 @@ Fehlt ein Marker, bricht das Script mit einer klaren Meldung ab, statt stillschw
 | `public/images/uebungen-baelle.webp` | Foto in der Übungen-Sektion | 43 KB (Original 734 KB) |
 | `public/images/artikel/thumbs/*.webp` | Artikel-Kacheln, 480×320 | je 13–41 KB |
 
-Die Thumbnails **können nicht Teil des Vercel-Builds sein**: Das Projekt kommt bewusst ohne `npm install` aus, damit steht dort keine Bildbibliothek zur Verfügung. Sie werden deshalb einmalig lokal erzeugt mit:
+Die Thumbnails **können nicht Teil des Vercel-Builds sein**: Das Projekt kommt bewusst ohne `npm install` aus, damit steht dort keine Bildbibliothek zur Verfügung. Sie werden deshalb lokal erzeugt und mitcommittet:
 
 ```
+pip install Pillow
 python scripts/artikel-thumbnails.py
 ```
 
-Das Script braucht Pillow (`pip install Pillow`), liest `articles.json`, nimmt die drei neuesten Artikel und legt aus dem lokal vorhandenen Originalbild ein 480×320-WebP unter `public/images/artikel/thumbs/` ab.
+Das Script liest `articles.json` und legt für **jeden veröffentlichten Artikel** ein 480×320-WebP unter `public/images/artikel/thumbs/` ab. Bereits vorhandene Thumbnails überspringt es, es ist also gefahrlos wiederholbar.
 
-**Fehlt ein Thumbnail, bricht nichts** – `build-home.js` fällt dann auf `foto_url` zurück. Das Originalbild ist aber teils mehrere MB groß, deshalb sollte das Script nach jedem neuen Artikel laufen.
+Liegt das Originalbild nicht lokal, **lädt das Script es von der `foto_url`** und wirft es danach weg. Das ist Absicht: Die Originale sind je 1,6 bis 2,7 MB groß und gehören nicht ins Repo – gebraucht werden sie nur auf den Artikel-Detailseiten.
 
-⚠️ Zwei der Artikelbilder liegen in `articles.json` mit einer `foto_url` auf **raw.githubusercontent.com** statt auf der eigenen Domain. Beim Fallback würde also von GitHub geladen. Bei Gelegenheit auf `/images/artikel/…` umstellen.
+**Fehlt ein Thumbnail, bricht nichts** – `build-home.js` fällt dann auf `foto_url` zurück, lädt damit aber das mehrere MB große Original.
+
+⚠️ Acht der elf `foto_url`-Einträge zeigen noch auf **`coachunited.de/wp-content/…`** und werden per 301 aufs Archiv umgeleitet, zwei weitere auf **raw.githubusercontent.com**. Für die Startseite ist das dank der Thumbnails egal, für die Artikel-Detailseiten nicht: Dort wird das mehrere MB große Original vom alten WordPress geladen. Das wäre der nächste sinnvolle Aufräumschritt.
 
 ### 11.5 Fallstricke
 
