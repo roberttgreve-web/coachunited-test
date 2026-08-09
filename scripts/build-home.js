@@ -42,11 +42,6 @@ function ersetzeBlock(html, name, inhalt) {
   return html.slice(0, i + start.length) + inhalt + html.slice(j);
 }
 
-function datumDeutsch(iso) {
-  const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(iso || '');
-  return m ? `${m[3]}.${m[2]}.${m[1]}` : '';
-}
-
 /** Lokales WebP-Thumbnail, sonst das Originalbild aus foto_url. */
 function bildQuelle(fotoUrl) {
   const dateiname = String(fotoUrl || '').split('?')[0].split('/').pop();
@@ -120,7 +115,6 @@ function main() {
             <a class="hs-tile" href="/artikel/${esc(a.url_slug)}">
               <img src="${esc(bildQuelle(a.foto_url))}" alt="" width="480" height="320" loading="lazy" decoding="async">
               <div class="hs-tile-body">
-                <span class="hs-tile-date">${esc(datumDeutsch(a.erstellt_am))}</span>
                 <p class="hs-tile-title">${esc(a.titel)}</p>
               </div>
             </a>`).join('');

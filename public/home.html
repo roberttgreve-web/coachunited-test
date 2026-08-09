@@ -339,23 +339,14 @@
     }
     .cta-btn.active { background: #1E6BFF; color: #fff; cursor: pointer; }
 
-    .home-intro { margin-bottom: 28px; }
+    .home-intro { margin-bottom: 26px; }
     .home-intro-headline {
       font-size: 26px;
       font-weight: 800;
       color: #fff;
       line-height: 1.15;
       letter-spacing: -0.03em;
-      margin-bottom: 8px;
     }
-    .home-intro-sub {
-      font-size: 14px;
-      font-weight: 500;
-      color: rgba(255,255,255,0.60);
-      line-height: 1.5;
-    }
-
-    .home-hero-headline, .home-hero-sub { display: none; }
 
     /* ══════════════════════════════════════════════
        Sektionen unterhalb des Heros
@@ -388,18 +379,6 @@
       letter-spacing: -0.03em;
       margin-bottom: 14px;
     }
-    /* Vorspann zwischen Überschrift und Fließtext */
-    .hs-lead {
-      font-size: 17px;
-      font-weight: 600;
-      line-height: 1.4;
-      letter-spacing: -0.015em;
-      margin-bottom: 18px;
-      max-width: 40ch;
-    }
-    .hs--hell   .hs-lead { color: #2A3350; }
-    .hs--dunkel .hs-lead { color: rgba(255,255,255,0.88); }
-
     .hs-text {
       font-size: 15px;
       line-height: 1.6;
@@ -453,27 +432,6 @@
     .hs-cta:hover { background: #1558d6; border-color: #1558d6; }
     .hs-cta svg { flex-shrink: 0; }
 
-    /* Zweitrangiger CTA: nur Umriss, damit die Sektion unten nicht
-       genauso aussieht wie jede andere. */
-    .hs-cta--umriss { background: transparent; }
-    .hs--hell .hs-cta--umriss { border-color: #C9D2E4; color: #0E1430; }
-    .hs--hell .hs-cta--umriss:hover { background: #F2F6FF; border-color: #1E6BFF; color: #1E6BFF; }
-
-    /* ── Alters-Chips ── */
-    .hs-chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
-    .hs-chip {
-      padding: 9px 15px;
-      border-radius: 999px;
-      border: 1.5px solid #D8DEEC;
-      background: #fff;
-      color: #2A3350;
-      text-decoration: none;
-      font-size: 14px;
-      font-weight: 600;
-      transition: background 0.14s, border-color 0.14s, color 0.14s;
-    }
-    .hs-chip:hover { background: #1E6BFF; border-color: #1E6BFF; color: #fff; }
-
     /* ── Zweispalter mit Foto ── */
     .hs-split { display: grid; gap: 26px; }
     .hs-foto {
@@ -488,45 +446,25 @@
       background: #E6E8EF;
     }
 
-    /* ── Blaues Band (WhatsApp) ── */
-    .hs--band { background: #1E6BFF; padding: 28px 22px; }
-    .hs-band-inner {
-      max-width: 960px;
-      margin: 0 auto;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 18px;
+    /* ── Portrait in "Über uns" ── */
+    .hs-portrait { margin: 0; }
+    .hs-portrait img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      aspect-ratio: 3 / 4;
+      object-fit: cover;
+      border-radius: 14px;
+      display: block;
+      background: rgba(255,255,255,0.08);
     }
-    .hs-band-text { flex: 1 1 260px; }
-    .hs-band-title {
-      font-size: 20px;
-      font-weight: 800;
-      color: #fff;
-      line-height: 1.2;
-      letter-spacing: -0.02em;
-    }
-    .hs-band-sub {
+    .hs-portrait figcaption {
+      margin-top: 12px;
+      max-width: 300px;
       font-size: 14.5px;
-      color: rgba(255,255,255,0.82);
-      line-height: 1.5;
-      margin-top: 5px;
+      line-height: 1.45;
+      color: rgba(255,255,255,0.7);
     }
-    .hs-band-cta {
-      display: inline-flex;
-      align-items: center;
-      gap: 9px;
-      padding: 13px 22px;
-      background: #fff;
-      color: #1E6BFF;
-      border-radius: 10px;
-      text-decoration: none;
-      font-size: 15px;
-      font-weight: 700;
-      flex-shrink: 0;
-      transition: background 0.15s;
-    }
-    .hs-band-cta:hover { background: #EAF1FF; }
 
     /* ── Artikel-Kacheln ──
        Mobil gestapelt. Auf Desktop ein waagerecht scrollbares Band mit Pfeil
@@ -560,15 +498,6 @@
       background: #E6E8EF;
     }
     .hs-tile-body { padding: 14px 16px 16px; }
-    .hs-tile-date {
-      font-family: 'JetBrains Mono', ui-monospace, monospace;
-      font-size: 10px;
-      font-weight: 600;
-      letter-spacing: 0.08em;
-      color: #6B7390;
-      display: block;
-      margin-bottom: 6px;
-    }
     .hs-tile-title {
       font-size: 16px;
       font-weight: 700;
@@ -579,12 +508,10 @@
 
     @media (min-width: 768px) {
       .hs { padding: 68px 40px; }
-      .hs--band { padding: 30px 40px; }
-      .hs-title { font-size: 34px; margin-bottom: 14px; }
-      .hs-lead { font-size: 20px; margin-bottom: 22px; }
+      .hs-title { font-size: 34px; margin-bottom: 20px; }
       .hs-text { font-size: 16px; }
       .hs-split { grid-template-columns: 1.05fr 0.95fr; align-items: center; gap: 44px; }
-      .hs-band-title { font-size: 22px; }
+      .hs-split--portrait { grid-template-columns: 1fr auto; align-items: start; }
 
       /* Waagerechtes Band: drei Kacheln sichtbar, der Rest per Pfeil erreichbar */
       .hs-tiles {
@@ -607,7 +534,6 @@
         align-items: center;
         justify-content: center;
         position: absolute;
-        right: -18px;
         top: 92px;
         width: 44px;
         height: 44px;
@@ -621,6 +547,8 @@
       }
       .hs-arrow:hover { background: #1E6BFF; color: #fff; transform: scale(1.06); }
       .hs-arrow[hidden] { display: none; }
+      .hs-arrow--vor { right: -18px; }
+      .hs-arrow--zurueck { left: -18px; }
     }
 
     @media (min-width: 768px) and (prefers-reduced-motion: reduce) {
@@ -642,15 +570,12 @@
         </svg>
         <div class="crest-inner">
           <img src="/logo-home.png" alt="Coach United Logo">
-          <h2 class="home-hero-headline">Deine kostenlose Übungs-Bibliothek für den Kinderfußball.</h2>
-          <p class="home-hero-sub">Aus dem Ehrenamt. Für das Ehrenamt.</p>
         </div>
       </div>
 
       <div class="content">
         <div class="home-intro">
           <h1 class="home-intro-headline">Deine kostenlose Übungs-Bibliothek für den Kinderfußball.</h1>
-          <p class="home-intro-sub">Aus dem Ehrenamt. Für das Ehrenamt.</p>
         </div>
         <div class="selects">
 
@@ -720,7 +645,7 @@
       </div>
 
       <div class="hero-photo-panel" aria-hidden="true">
-        <img src="/hero-photo.jpg" alt="">
+        <img src="/hero-photo.webp" alt="">
       </div>
     </div>
 
@@ -730,8 +655,7 @@
       <section class="hs hs--hell" id="uebungen">
         <div class="hs-inner">
           <span class="hs-label">Übungen</span>
-          <h2 class="hs-title"><span class="hs-count"><!--cu:count-->177<!--/cu:count--></span> Übungen.</h2>
-          <p class="hs-lead">In Ruhe auswählen, einfach merken, auf dem Platz einsetzen.</p>
+          <h2 class="hs-title"><span class="hs-count"><!--cu:count-->177<!--/cu:count--></span> Übungen für dein Training.</h2>
           <div class="hs-split">
             <div>
               <p class="hs-text">Von der G- bis zur D-Jugend findest du hier Übungen für jede Trainingsphase. Sie stammen aus dem Trainingsalltag ehrenamtlicher Trainer*innen und sind auf dem Platz erprobt. Jede Woche kommen neue dazu.</p>
@@ -762,83 +686,77 @@
             <a class="hs-tile" href="/artikel/der-fussball-ferienkalender">
               <img src="/images/artikel/thumbs/fussball-ferienkalender-kind-dribbling-garten.webp" alt="" width="480" height="320" loading="lazy" decoding="async">
               <div class="hs-tile-body">
-                <span class="hs-tile-date">06.07.2026</span>
                 <p class="hs-tile-title">Der Fußball-Ferienkalender</p>
               </div>
             </a>
             <a class="hs-tile" href="/artikel/einwurf-im-kinderfussball-ab-wann-macht-spezielles-training-sinn">
               <img src="/images/artikel/thumbs/chatgpt-image-jun-29--2026--09_14_25-am.webp" alt="" width="480" height="320" loading="lazy" decoding="async">
               <div class="hs-tile-body">
-                <span class="hs-tile-date">29.06.2026</span>
                 <p class="hs-tile-title">Einwurf im Kinderfußball: Ab wann macht spezielles Training Sinn?</p>
               </div>
             </a>
             <a class="hs-tile" href="/artikel/ideen-fur-ein-tolles-sommerturnier">
               <img src="/images/artikel/thumbs/chatgpt-image-jun-14--2026--01_52_25-pm.webp" alt="" width="480" height="320" loading="lazy" decoding="async">
               <div class="hs-tile-body">
-                <span class="hs-tile-date">14.06.2026</span>
                 <p class="hs-tile-title">Ideen für ein tolles Sommerturnier</p>
               </div>
             </a>
             <a class="hs-tile" href="/artikel/dehnen-im-kinderfusball-ab-wann-macht-es-sinn">
               <img src="/images/artikel/thumbs/ChatGPT-Image-Jan-26-2026-09_53_36-AM.webp" alt="" width="480" height="320" loading="lazy" decoding="async">
               <div class="hs-tile-body">
-                <span class="hs-tile-date">26.01.2026</span>
                 <p class="hs-tile-title">Dehnen im Kinderfußball: Ab wann macht es Sinn?</p>
               </div>
             </a>
             <a class="hs-tile" href="/artikel/ideen-fur-ein-tolles-hallenturnier">
               <img src="/images/artikel/thumbs/ChatGPT-Image-Nov-7-2025-03_57_56-PM.webp" alt="" width="480" height="320" loading="lazy" decoding="async">
               <div class="hs-tile-body">
-                <span class="hs-tile-date">07.11.2025</span>
                 <p class="hs-tile-title">Ideen für ein tolles Hallenturnier</p>
               </div>
             </a>
             <a class="hs-tile" href="/artikel/rituale-im-kinderfusball-sicherheit-struktur-und-teamgeist-schaffen">
               <img src="/images/artikel/thumbs/ChatGPT-Image-Nov-5-2025-05_34_39-PM1.webp" alt="" width="480" height="320" loading="lazy" decoding="async">
               <div class="hs-tile-body">
-                <span class="hs-tile-date">05.11.2025</span>
                 <p class="hs-tile-title">Rituale im Kinderfußball – Sicherheit, Struktur und Teamgeist schaffen</p>
               </div>
             </a>
             <a class="hs-tile" href="/artikel/kopfballe-im-kinderfusball-was-du-wissen-solltest">
               <img src="/images/artikel/thumbs/ChatGPT-Image-Sep-23-2025-10_30_21-AM.webp" alt="" width="480" height="320" loading="lazy" decoding="async">
               <div class="hs-tile-body">
-                <span class="hs-tile-date">23.09.2025</span>
                 <p class="hs-tile-title">Kopfbälle im Kinderfußball – was du wissen solltest</p>
               </div>
             </a>
             <a class="hs-tile" href="/artikel/kreatives-training-ausrustung-jenseits-der-standardausstattung">
               <img src="/images/artikel/thumbs/ChatGPT-Image-Sep-15-2025-04_28_39-PM.webp" alt="" width="480" height="320" loading="lazy" decoding="async">
               <div class="hs-tile-body">
-                <span class="hs-tile-date">15.09.2025</span>
                 <p class="hs-tile-title">Kreatives Training: Ausrüstung jenseits des Basis-Sets</p>
               </div>
             </a>
             <a class="hs-tile" href="/artikel/kinderfussball-tipps-umbaupausen-nutzen">
               <img src="/images/artikel/thumbs/alliance-football-club-xSAQJEgdQ3E-unsplash-scaled.webp" alt="" width="480" height="320" loading="lazy" decoding="async">
               <div class="hs-tile-body">
-                <span class="hs-tile-date">15.05.2025</span>
                 <p class="hs-tile-title">Umbaupausen gut nutzen: So vermeidest du Leerlauf im Kinderfußball</p>
               </div>
             </a>
             <a class="hs-tile" href="/artikel/elternarbeit-kinderfussball-tipps">
               <img src="/images/artikel/thumbs/hannah-busing-Zyx1bK9mqmA-unsplash-scaled.webp" alt="" width="480" height="320" loading="lazy" decoding="async">
               <div class="hs-tile-body">
-                <span class="hs-tile-date">10.05.2025</span>
                 <p class="hs-tile-title">Elternarbeit im Kinderfußball: Tipps für eine gute Zusammenarbeit</p>
               </div>
             </a>
             <a class="hs-tile" href="/artikel/training-im-kinderfussball-wichtige-grundlagen-fur-trainerinnen">
               <img src="/images/artikel/thumbs/debra-brewster-AvGIpReokFM-unsplash-scaled.webp" alt="" width="480" height="320" loading="lazy" decoding="async">
               <div class="hs-tile-body">
-                <span class="hs-tile-date">05.05.2025</span>
                 <p class="hs-tile-title">Training im Kinderfußball: Wichtige Grundlagen für Trainer*innen</p>
               </div>
             </a>
 <!--/cu:artikel-->
             </div>
-            <button class="hs-arrow" id="artikel-pfeil" type="button" aria-label="Weitere Artikel anzeigen">
+            <button class="hs-arrow hs-arrow--zurueck" id="artikel-pfeil-zurueck" type="button" aria-label="Vorherige Artikel anzeigen" hidden>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                <path d="M13 4l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <button class="hs-arrow hs-arrow--vor" id="artikel-pfeil" type="button" aria-label="Weitere Artikel anzeigen">
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
                 <path d="M7 4l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
@@ -877,15 +795,23 @@
         <div class="hs-inner">
           <span class="hs-label">Über uns</span>
           <h2 class="hs-title">Aus dem Ehrenamt. Für das Ehrenamt.</h2>
-          <p class="hs-text">Coach United e.V. ist ein gemeinnütziger Verein, gegründet von ehrenamtlichen Trainer*innen aus dem Kinderfußball. Wir wollten eine Übungsbibliothek, die kostenlos, übersichtlich und klar ist — und weil es die nicht gab, haben wir sie gebaut.</p>
-          <p class="hs-text">Alles hier ist frei zugänglich. Keine Anmeldung, keine Paywall, keine Werbung.</p>
-          <div class="hs-actions">
-            <a class="hs-cta" href="/ueber-uns">
-              Mehr über uns
-              <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </a>
+          <div class="hs-split hs-split--portrait">
+            <div>
+              <p class="hs-text">Coach United e.V. ist ein gemeinnütziger Verein, gegründet von ehrenamtlichen Trainer*innen aus dem Kinderfußball. Wir wollten eine Übungsbibliothek, die kostenlos, übersichtlich und klar ist — und weil es die nicht gab, haben wir sie gebaut.</p>
+              <p class="hs-text">Alles hier ist frei zugänglich. Keine Anmeldung, keine Paywall, keine Werbung.</p>
+              <div class="hs-actions">
+                <a class="hs-cta" href="/ueber-uns">
+                  Mehr über uns
+                  <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <figure class="hs-portrait">
+              <img src="/images/robert-greve.webp" alt="Robert Greve, Vorsitzender von Coach United e.V." width="600" height="800" loading="lazy" decoding="async">
+              <figcaption>Hi, ich bin Robert, der Vorsitzende von Coach United e.V.</figcaption>
+            </figure>
           </div>
         </div>
       </section>
@@ -1021,9 +947,10 @@
     // Artikel-Band: Pfeil zum Weiterblättern. Der Pfeil selbst wird per CSS nur
     // ab 768px eingeblendet, mobil bleiben die Kacheln gestapelt.
     (function () {
-      const band  = document.getElementById('artikel-band');
-      const pfeil = document.getElementById('artikel-pfeil');
-      if (!band || !pfeil) return;
+      const band    = document.getElementById('artikel-band');
+      const vor     = document.getElementById('artikel-pfeil');
+      const zurueck = document.getElementById('artikel-pfeil-zurueck');
+      if (!band || !vor || !zurueck) return;
 
       function schrittweite() {
         const kachel = band.querySelector('.hs-tile');
@@ -1034,12 +961,17 @@
       }
 
       function aktualisiere() {
+        const scrollbar = band.scrollWidth > band.clientWidth + 4;
         const rest = band.scrollWidth - band.clientWidth - band.scrollLeft;
-        pfeil.hidden = band.scrollWidth <= band.clientWidth + 4 || rest < 4;
+        vor.hidden     = !scrollbar || rest < 4;
+        zurueck.hidden = !scrollbar || band.scrollLeft < 4;
       }
 
-      pfeil.addEventListener('click', function () {
+      vor.addEventListener('click', function () {
         band.scrollBy({ left: schrittweite(), behavior: 'smooth' });
+      });
+      zurueck.addEventListener('click', function () {
+        band.scrollBy({ left: -schrittweite(), behavior: 'smooth' });
       });
 
       band.addEventListener('scroll', aktualisiere, { passive: true });
