@@ -147,7 +147,7 @@ Maßgeblich sind die [Ad Grants-Website-Richtlinien](https://support.google.com/
 - Sämtliche 404-Fehler aus der Search Console wurden behoben (siehe Abschnitt 10).
 - **Punkte 1–3 der Maßnahmenliste umgesetzt (2026-08-07).** Die Startseite überträgt jetzt **1,88 MB statt 6,77 MB** (–72 %):
   - `Cache-Control` gestaffelt statt `no-store` für alles: HTML `max-age=0, must-revalidate`, CSS/JS 1 Tag, JSON 1 Stunde, Bilder/Fonts 7 Tage, jeweils mit `stale-while-revalidate`. **Wichtig:** Bei gleichem Header-Schlüssel gewinnt bei Vercel die *zuletzt* passende Regel – die Auffangregel `/(.*)` muss deshalb als erste stehen, die spezifischen danach.
-  - `hero-photo.jpg` 3712×5568 → 1400×2100 (1.589 KB → 219 KB)
+  - `hero-photo.jpg` 3712×5568 → 1400×2100 (1.589 KB → 219 KB) — die Datei wurde später ersetzt, siehe 11.4
   - `logo-home.png` 2646×1300 → 660×324 (459 KB → 11 KB)
   - `logo.png` 3284×800 → 800×195 (201 KB → 7 KB)
   - Störer-Bild: eigenes 128px-Thumbnail `images/artikel/fussball-ferienkalender-thumb.webp` (4 KB) statt des 2,9-MB-Artikelbilds. Die Promo-Karte zeigt es mit 64×64 an; das Original wurde auf jeder Seite geladen, auf Mobilgeräten sogar für die per CSS versteckte Karte.
