@@ -662,29 +662,31 @@
   }
 
   /* Gradient overlay */
+  /* Keine Abdunkelung mehr ueber dem Foto – der Kontrast fuer die Headline
+     kommt stattdessen aus der Farbflaeche unter .crest-inner. */
   body:has(.crest-panel) .crest-panel::before {
-    content: '' !important;
-    position: absolute !important;
-    inset: 0 !important;
-    background: linear-gradient(150deg, rgba(14,20,48,0.72) 0%, rgba(14,20,48,0.28) 100%) !important;
-    z-index: 1 !important;
+    content: none !important;
   }
 
   body:has(.crest-panel) .crest-shape { display: none !important; }
 
+  /* Texttraeger: massiver Block unten links, buendig zur linken Kante.
+     Garantiert Kontrast unabhaengig davon, welches Foto dahinter liegt. */
   body:has(.crest-panel) .crest-inner {
     position: absolute !important;
-    inset: 0 !important;
+    inset: auto auto 56px 0 !important;
     z-index: 2 !important;
     display: flex !important;
     flex-direction: column !important;
     align-items: flex-start !important;
     justify-content: flex-end !important;
-    padding: 64px !important;
-    gap: 14px !important;
-    width: 100% !important;
-    height: 100% !important;
-    padding-bottom: 64px !important;
+    gap: 12px !important;
+    width: auto !important;
+    height: auto !important;
+    max-width: min(90%, 580px) !important;
+    padding: 30px 40px 32px 64px !important;
+    background: #0E1430 !important;
+    border-radius: 0 16px 16px 0 !important;
   }
 
   /* Logo in TopNav — im Foto-Panel ausblenden */

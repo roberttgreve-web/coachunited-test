@@ -5,8 +5,14 @@ const homePath      = path.join(__dirname, '..', 'public', 'home.html');
 const exercisesPath = path.join(__dirname, '..', 'public', 'exercises.json');
 const articlesPath  = path.join(__dirname, '..', 'public', 'articles.json');
 const thumbDir      = path.join(__dirname, '..', 'public', 'images', 'artikel', 'thumbs');
+const skillIndexPath = path.join(__dirname, '..', 'public', 'skills-index.json');
 
-const ARTIKEL_ANZAHL = 3;
+// Alle veroeffentlichten Artikel als Kacheln; auf Desktop laufen sie in einem
+// waagerecht scrollbaren Band, die nicht sichtbaren laden per loading="lazy".
+const ARTIKEL_ANZAHL = 99;
+
+const JUGENDEN = ['G-Jugend', 'F-Jugend', 'E-Jugend', 'D-Jugend'];
+const PHASEN   = ['Aufwärmen', 'Hauptteil', 'Spielformat'];
 
 function esc(str) {
   return String(str || '')
@@ -52,6 +58,45 @@ function bildQuelle(fotoUrl) {
   return fotoUrl || '';
 }
 
+/**
+ * Skills, die je Altersstufe in ALLEN drei Trainingsphasen vorkommen –
+ * nur solche kann der Generator zu einer vollständigen Einheit verbauen.
+ *
+ * Diese Rechnung lief bisher im Browser jedes Besuchers und zwang die
+ * Startseite dazu, exercises.json (1,6 MB) zu laden – nur um daraus vier mal
+ * gut zehn Wörter zu gewinnen. Jetzt läuft sie einmal pro Deploy, das
+ * Ergebnis ist unter 1 KB gross.
+ */
+function baueSkillIndex(exercises) {
+  function clustern(liste) {
+    const gesehen = new Set();
+    const cluster = [];
+    for (const ex of liste) {
+      if (gesehen.has(ex.id)) continue;
+      gesehen.add(ex.id);
+      const schwestern = liste.filter(o =>
+        !gesehen.has(o.id) && (ex.schwester_ids || []).includes(o.id)
+      );
+      schwestern.forEach(s => gesehen.add(s.id));
+      cluster.push([ex, ...schwestern]);
+    }
+    return cluster;
+  }
+
+  const index = {};
+  for (const jugend of JUGENDEN) {
+    const passend = exercises.filter(e => (e.jugend || []).includes(jugend));
+    const proPhase = PHASEN.map(p => clustern(passend.filter(e => e.trainingsphase === p)));
+    const alle = [...new Set(passend.flatMap(e => e.skills || []))].sort();
+    index[jugend] = alle.filter(skill =>
+      proPhase.every(cluster =>
+        cluster.some(c => c.some(e => (e.skills || []).includes(skill)))
+      )
+    );
+  }
+  return index;
+}
+
 function main() {
   if (!fs.existsSync(homePath)) {
     console.log('home.html nicht gefunden – Build übersprungen.');
@@ -84,8 +129,13 @@ function main() {
 
   fs.writeFileSync(homePath, html, 'utf-8');
 
+  // ── Skill-Index für den Hero-Generator ──
+  const skillIndex = baueSkillIndex(uebungen);
+  fs.writeFileSync(skillIndexPath, JSON.stringify(skillIndex), 'utf-8');
+
   const ohneThumb = artikel.filter(a => !bildQuelle(a.foto_url).startsWith('/images/artikel/thumbs/'));
   console.log(`✓ home.html aktualisiert: ${uebungen.length} Übungen, ${artikel.length} Artikel.`);
+  console.log(`✓ skills-index.json: ${Object.entries(skillIndex).map(([j, s]) => `${j} ${s.length}`).join(', ')} – ${Math.round(fs.statSync(skillIndexPath).size / 1024 * 10) / 10} KB.`);
   if (ohneThumb.length) {
     console.warn(`  ⚠ Ohne lokales Thumbnail (nutzt das Originalbild): ${ohneThumb.map(a => a.url_slug).join(', ')}`);
   }

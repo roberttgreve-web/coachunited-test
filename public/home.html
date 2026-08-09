@@ -388,12 +388,32 @@
       letter-spacing: -0.03em;
       margin-bottom: 14px;
     }
+    /* Vorspann zwischen Überschrift und Fließtext */
+    .hs-lead {
+      font-size: 17px;
+      font-weight: 600;
+      line-height: 1.4;
+      letter-spacing: -0.015em;
+      margin-bottom: 18px;
+      max-width: 40ch;
+    }
+    .hs--hell   .hs-lead { color: #2A3350; }
+    .hs--dunkel .hs-lead { color: rgba(255,255,255,0.88); }
+
     .hs-text {
       font-size: 15px;
       line-height: 1.6;
       max-width: 62ch;
     }
     .hs-text + .hs-text { margin-top: 12px; }
+
+    .hs-textlink {
+      color: #1E6BFF;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+      font-weight: 600;
+    }
+    .hs-textlink:hover { text-decoration-thickness: 2px; }
 
     .hs--hell   .hs-label { color: #1E6BFF; }
     .hs--hell   .hs-title { color: #0E1430; }
@@ -508,13 +528,17 @@
     }
     .hs-band-cta:hover { background: #EAF1FF; }
 
-    /* ── Artikel-Kacheln ── */
+    /* ── Artikel-Kacheln ──
+       Mobil gestapelt. Auf Desktop ein waagerecht scrollbares Band mit Pfeil
+       rechts; die nicht sichtbaren Kacheln laden per loading="lazy" erst beim
+       Scrollen, kosten also beim Seitenaufruf nichts. */
+    .hs-carousel { position: relative; margin-top: 24px; }
     .hs-tiles {
       display: grid;
       grid-template-columns: 1fr;
       gap: 14px;
-      margin-top: 24px;
     }
+    .hs-arrow { display: none; }
     .hs-tile {
       display: block;
       background: #fff;
@@ -556,11 +580,51 @@
     @media (min-width: 768px) {
       .hs { padding: 68px 40px; }
       .hs--band { padding: 30px 40px; }
-      .hs-title { font-size: 34px; margin-bottom: 16px; }
+      .hs-title { font-size: 34px; margin-bottom: 14px; }
+      .hs-lead { font-size: 20px; margin-bottom: 22px; }
       .hs-text { font-size: 16px; }
-      .hs-tiles { grid-template-columns: repeat(3, 1fr); gap: 18px; }
       .hs-split { grid-template-columns: 1.05fr 0.95fr; align-items: center; gap: 44px; }
       .hs-band-title { font-size: 22px; }
+
+      /* Waagerechtes Band: drei Kacheln sichtbar, der Rest per Pfeil erreichbar */
+      .hs-tiles {
+        display: flex;
+        gap: 18px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        scrollbar-width: none;
+        padding-bottom: 4px;
+      }
+      .hs-tiles::-webkit-scrollbar { display: none; }
+      .hs-tile {
+        flex: 0 0 calc((100% - 36px) / 3);
+        scroll-snap-align: start;
+      }
+
+      .hs-arrow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        right: -18px;
+        top: 92px;
+        width: 44px;
+        height: 44px;
+        border-radius: 999px;
+        border: none;
+        background: #fff;
+        color: #0E1430;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.28);
+        cursor: pointer;
+        transition: opacity 0.2s, transform 0.15s, background 0.15s;
+      }
+      .hs-arrow:hover { background: #1E6BFF; color: #fff; transform: scale(1.06); }
+      .hs-arrow[hidden] { display: none; }
+    }
+
+    @media (min-width: 768px) and (prefers-reduced-motion: reduce) {
+      .hs-tiles { scroll-behavior: auto; }
     }
   </style>
   <link rel="stylesheet" href="/desktop.css">
@@ -666,17 +730,12 @@
       <section class="hs hs--hell" id="uebungen">
         <div class="hs-inner">
           <span class="hs-label">Übungen</span>
-          <h2 class="hs-title"><span class="hs-count"><!--cu:count-->177<!--/cu:count--></span> Übungen. Auswählen, merken, einsetzen.</h2>
+          <h2 class="hs-title"><span class="hs-count"><!--cu:count-->177<!--/cu:count--></span> Übungen.</h2>
+          <p class="hs-lead">In Ruhe auswählen, einfach merken, auf dem Platz einsetzen.</p>
           <div class="hs-split">
             <div>
-              <p class="hs-text">Von der G- bis zur D-Jugend findest du hier Übungen für jede Trainingsphase. Zu jeder gehören Aufbau, Ablauf und ein Coaching-Fokus, der dir sagt, worauf du bei den Kindern achten solltest. Sie stammen aus dem Trainingsalltag ehrenamtlicher Trainer*innen und sind auf dem Platz erprobt. Jede Woche kommen neue dazu.</p>
-              <p class="hs-text">Was dir gefällt, speicherst du in deiner Merkliste. Am Trainingstag hast du dann alles beisammen, ohne noch einmal suchen zu müssen — ohne Anmeldung, die Liste bleibt auf deinem Gerät.</p>
-              <div class="hs-chips">
-                <a class="hs-chip" href="/uebungen/alter/g-jugend">G-Jugend</a>
-                <a class="hs-chip" href="/uebungen/alter/f-jugend">F-Jugend</a>
-                <a class="hs-chip" href="/uebungen/alter/e-jugend">E-Jugend</a>
-                <a class="hs-chip" href="/uebungen/alter/d-jugend">D-Jugend</a>
-              </div>
+              <p class="hs-text">Von der G- bis zur D-Jugend findest du hier Übungen für jede Trainingsphase. Sie stammen aus dem Trainingsalltag ehrenamtlicher Trainer*innen und sind auf dem Platz erprobt. Jede Woche kommen neue dazu.</p>
+              <p class="hs-text">Was dir gefällt, speicherst du in deiner <a class="hs-textlink" href="/merkliste">Merkliste</a>.</p>
               <div class="hs-actions">
                 <a class="hs-cta" href="/uebungen">
                   Alle Übungen ansehen
@@ -684,7 +743,6 @@
                     <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
                   </svg>
                 </a>
-                <a class="hs-cta hs-cta--umriss" href="/merkliste">Zur Merkliste</a>
               </div>
             </div>
             <img class="hs-foto" src="/images/uebungen-baelle.webp" alt="Fußbälle auf einem Rasenplatz" width="960" height="640" loading="lazy" decoding="async">
@@ -698,7 +756,8 @@
           <span class="hs-label">Wissen</span>
           <h2 class="hs-title">Das A-Z des Kinderfußballs.</h2>
           <p class="hs-text">Alles, was wir gerne gewusst hätten, bevor wir als ehrenamtliche Trainer*innen angefangen haben. Von Elternarbeit über Umbaupausen bis zur Frage, ab wann Kopfbälle überhaupt Sinn ergeben.</p>
-          <div class="hs-tiles">
+          <div class="hs-carousel">
+            <div class="hs-tiles" id="artikel-band">
 <!--cu:artikel-->
             <a class="hs-tile" href="/artikel/der-fussball-ferienkalender">
               <img src="/images/artikel/thumbs/fussball-ferienkalender-kind-dribbling-garten.webp" alt="" width="480" height="320" loading="lazy" decoding="async">
@@ -721,7 +780,69 @@
                 <p class="hs-tile-title">Ideen für ein tolles Sommerturnier</p>
               </div>
             </a>
+            <a class="hs-tile" href="/artikel/dehnen-im-kinderfusball-ab-wann-macht-es-sinn">
+              <img src="/images/artikel/thumbs/ChatGPT-Image-Jan-26-2026-09_53_36-AM.webp" alt="" width="480" height="320" loading="lazy" decoding="async">
+              <div class="hs-tile-body">
+                <span class="hs-tile-date">26.01.2026</span>
+                <p class="hs-tile-title">Dehnen im Kinderfußball: Ab wann macht es Sinn?</p>
+              </div>
+            </a>
+            <a class="hs-tile" href="/artikel/ideen-fur-ein-tolles-hallenturnier">
+              <img src="/images/artikel/thumbs/ChatGPT-Image-Nov-7-2025-03_57_56-PM.webp" alt="" width="480" height="320" loading="lazy" decoding="async">
+              <div class="hs-tile-body">
+                <span class="hs-tile-date">07.11.2025</span>
+                <p class="hs-tile-title">Ideen für ein tolles Hallenturnier</p>
+              </div>
+            </a>
+            <a class="hs-tile" href="/artikel/rituale-im-kinderfusball-sicherheit-struktur-und-teamgeist-schaffen">
+              <img src="/images/artikel/thumbs/ChatGPT-Image-Nov-5-2025-05_34_39-PM1.webp" alt="" width="480" height="320" loading="lazy" decoding="async">
+              <div class="hs-tile-body">
+                <span class="hs-tile-date">05.11.2025</span>
+                <p class="hs-tile-title">Rituale im Kinderfußball – Sicherheit, Struktur und Teamgeist schaffen</p>
+              </div>
+            </a>
+            <a class="hs-tile" href="/artikel/kopfballe-im-kinderfusball-was-du-wissen-solltest">
+              <img src="/images/artikel/thumbs/ChatGPT-Image-Sep-23-2025-10_30_21-AM.webp" alt="" width="480" height="320" loading="lazy" decoding="async">
+              <div class="hs-tile-body">
+                <span class="hs-tile-date">23.09.2025</span>
+                <p class="hs-tile-title">Kopfbälle im Kinderfußball – was du wissen solltest</p>
+              </div>
+            </a>
+            <a class="hs-tile" href="/artikel/kreatives-training-ausrustung-jenseits-der-standardausstattung">
+              <img src="/images/artikel/thumbs/ChatGPT-Image-Sep-15-2025-04_28_39-PM.webp" alt="" width="480" height="320" loading="lazy" decoding="async">
+              <div class="hs-tile-body">
+                <span class="hs-tile-date">15.09.2025</span>
+                <p class="hs-tile-title">Kreatives Training: Ausrüstung jenseits des Basis-Sets</p>
+              </div>
+            </a>
+            <a class="hs-tile" href="/artikel/kinderfussball-tipps-umbaupausen-nutzen">
+              <img src="/images/artikel/thumbs/alliance-football-club-xSAQJEgdQ3E-unsplash-scaled.webp" alt="" width="480" height="320" loading="lazy" decoding="async">
+              <div class="hs-tile-body">
+                <span class="hs-tile-date">15.05.2025</span>
+                <p class="hs-tile-title">Umbaupausen gut nutzen: So vermeidest du Leerlauf im Kinderfußball</p>
+              </div>
+            </a>
+            <a class="hs-tile" href="/artikel/elternarbeit-kinderfussball-tipps">
+              <img src="/images/artikel/thumbs/hannah-busing-Zyx1bK9mqmA-unsplash-scaled.webp" alt="" width="480" height="320" loading="lazy" decoding="async">
+              <div class="hs-tile-body">
+                <span class="hs-tile-date">10.05.2025</span>
+                <p class="hs-tile-title">Elternarbeit im Kinderfußball: Tipps für eine gute Zusammenarbeit</p>
+              </div>
+            </a>
+            <a class="hs-tile" href="/artikel/training-im-kinderfussball-wichtige-grundlagen-fur-trainerinnen">
+              <img src="/images/artikel/thumbs/debra-brewster-AvGIpReokFM-unsplash-scaled.webp" alt="" width="480" height="320" loading="lazy" decoding="async">
+              <div class="hs-tile-body">
+                <span class="hs-tile-date">05.05.2025</span>
+                <p class="hs-tile-title">Training im Kinderfußball: Wichtige Grundlagen für Trainer*innen</p>
+              </div>
+            </a>
 <!--/cu:artikel-->
+            </div>
+            <button class="hs-arrow" id="artikel-pfeil" type="button" aria-label="Weitere Artikel anzeigen">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                <path d="M7 4l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
           </div>
           <div class="hs-actions">
             <a class="hs-cta" href="/wissen">
@@ -734,31 +855,15 @@
         </div>
       </section>
 
-      <!-- ── WhatsApp-Kanal: schmales Band statt voller Sektion ── -->
-      <section class="hs--band" id="whatsapp">
-        <div class="hs-band-inner">
-          <div class="hs-band-text">
-            <p class="hs-band-title">Jede neue Übung direkt aufs Handy.</p>
-            <p class="hs-band-sub">Kostenloser WhatsApp-Kanal — kein Account nötig, keine Gruppe, nur Übungen.</p>
-          </div>
-          <a class="hs-band-cta" href="https://www.whatsapp.com/channel/0029VbAqTP68kyyEFg3oyX2t" target="_blank" rel="noopener">
-            Kanal ansehen
-            <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-              <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </a>
-        </div>
-      </section>
-
       <!-- ── Übung einreichen ── -->
       <section class="hs hs--hell" id="einreichen">
         <div class="hs-inner">
           <span class="hs-label">Übung einreichen</span>
-          <h2 class="hs-title">Du hast eine Übung, die immer funktioniert?</h2>
-          <p class="hs-text">Dann hilft sie auch anderen Trainer*innen weiter. Du kannst sie aufschreiben oder einfach als Sprachnachricht aufnehmen — den Rest bereiten wir auf, mit Grafik und Coaching-Fokus. Auf Wunsch erscheinst du als Autor*in dazu.</p>
+          <h2 class="hs-title">Reiche deine Lieblingsübung ein</h2>
+          <p class="hs-text">Dann hilft sie auch anderen Trainer*innen weiter. Du kannst sie aufschreiben oder einfach als Sprachnachricht aufnehmen — den Rest bereiten wir auf, mit Grafik und Coaching-Fokus.</p>
           <div class="hs-actions">
             <a class="hs-cta" href="/uebung-einreichen">
-              Übung einreichen
+              Jetzt einreichen
               <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                 <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
@@ -798,48 +903,20 @@
   </svg>
 
   <script>
-    let allExercises = [];
+    // Nur der Skill-Index, nicht die ganze Übungsdatenbank: welche Skills es je
+    // Altersstufe gibt, rechnet build-home.js einmal pro Deploy aus. Vorher lud
+    // die Startseite dafür exercises.json mit 1,6 MB.
+    let skillIndex = null;
     let selectedJugend = '';
     let selectedSkills = new Set();
     let isSurprise = true;
 
-    fetch('/exercises.json')
+    fetch('/skills-index.json')
       .then(r => r.json())
-      .then(data => { allExercises = data; });
-
-    function makeClusters(exercises) {
-      const visited = new Set();
-      const clusters = [];
-      for (const ex of exercises) {
-        if (visited.has(ex.id)) continue;
-        visited.add(ex.id);
-        const sisters = exercises.filter(o =>
-          !visited.has(o.id) && (ex.schwester_ids || []).includes(o.id)
-        );
-        sisters.forEach(s => visited.add(s.id));
-        clusters.push([ex, ...sisters]);
-      }
-      return clusters;
-    }
+      .then(data => { skillIndex = data; });
 
     function buildSkillPills(jugend) {
-      const valid = allExercises.filter(e =>
-        e.status === 'veroeffentlicht' && (e.jugend || []).includes(jugend)
-      );
-      const byPhase = {};
-      valid.forEach(e => {
-        if (!byPhase[e.trainingsphase]) byPhase[e.trainingsphase] = [];
-        byPhase[e.trainingsphase].push(e);
-      });
-      const aufClusters = makeClusters(byPhase['Aufwärmen'] || []);
-      const hptClusters = makeClusters(byPhase['Hauptteil'] || []);
-      const spfClusters = makeClusters(byPhase['Spielformat'] || []);
-      const allSkills = [...new Set(valid.flatMap(e => e.skills || []))].sort();
-      const validSkills = allSkills.filter(s =>
-        aufClusters.some(c => c.some(e => (e.skills || []).includes(s))) &&
-        hptClusters.some(c => c.some(e => (e.skills || []).includes(s))) &&
-        spfClusters.some(c => c.some(e => (e.skills || []).includes(s)))
-      );
+      const validSkills = (skillIndex && skillIndex[jugend]) || [];
       const container = document.getElementById('skill-pills');
       container.innerHTML = validSkills.map(s =>
         `<button class="skill-pill" onclick="toggleSkill(event,'${s.replace(/'/g,"\\'")}',this)" data-skill="${s}">${s}</button>`
@@ -873,8 +950,8 @@
       document.getElementById('skill-btn').classList.add('has-value');
       document.getElementById('surprise-btn').classList.add('active');
       document.getElementById('skill-status').textContent = 'Überrasch mich';
-      if (allExercises.length) buildSkillPills(value);
-      else fetch('/exercises.json').then(r=>r.json()).then(data=>{allExercises=data;buildSkillPills(value);});
+      if (skillIndex) buildSkillPills(value);
+      else fetch('/skills-index.json').then(r=>r.json()).then(data=>{skillIndex=data;buildSkillPills(value);});
     }
 
     function toggleSkills(e) {
@@ -940,6 +1017,35 @@
         document.getElementById('jugend-dropdown').classList.remove('open');
       }
     });
+
+    // Artikel-Band: Pfeil zum Weiterblättern. Der Pfeil selbst wird per CSS nur
+    // ab 768px eingeblendet, mobil bleiben die Kacheln gestapelt.
+    (function () {
+      const band  = document.getElementById('artikel-band');
+      const pfeil = document.getElementById('artikel-pfeil');
+      if (!band || !pfeil) return;
+
+      function schrittweite() {
+        const kachel = band.querySelector('.hs-tile');
+        if (!kachel) return band.clientWidth;
+        const stil = getComputedStyle(band);
+        const abstand = parseFloat(stil.columnGap || stil.gap) || 18;
+        return kachel.getBoundingClientRect().width + abstand;
+      }
+
+      function aktualisiere() {
+        const rest = band.scrollWidth - band.clientWidth - band.scrollLeft;
+        pfeil.hidden = band.scrollWidth <= band.clientWidth + 4 || rest < 4;
+      }
+
+      pfeil.addEventListener('click', function () {
+        band.scrollBy({ left: schrittweite(), behavior: 'smooth' });
+      });
+
+      band.addEventListener('scroll', aktualisiere, { passive: true });
+      window.addEventListener('resize', aktualisiere);
+      aktualisiere();
+    })();
 
     function goToGenerator() {
       if (!selectedJugend) return;
