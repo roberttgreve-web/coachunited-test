@@ -202,11 +202,12 @@ Google nennt „sehr wenig Textinhalt (Inhalte ohne Mehrwert)" als Ablehnungsgru
 |---|---|
 | Bei der Ad-Grants-Ablehnung | 6.770 KB |
 | Nach Punkt 1–3 (Caching, Bilder) | 1.880 KB |
-| Nach Punkt 4 und 7 (Startseite, Skill-Index) | **~260 KB mobil / ~350 KB Desktop** |
+| Nach Punkt 4 und 7 (Startseite, Skill-Index) | ~260 KB |
+| Nach dem Fotowechsel im Hero | **221 KB mobil / 284 KB Desktop** |
 
-Rund **96 % weniger** als zum Zeitpunkt der Prüfung. Die letzten beiden Werte sind aus echten Dateigrößen gerechnet (Textdateien mit gzip wie auf Vercel), nicht im Browser gemessen – die Vorschau-Deployments sind durch Deployment Protection gesperrt.
+Rund **97 % weniger** als zum Zeitpunkt der Prüfung. Die Werte ab 1.880 KB sind aus echten Dateigrößen gerechnet (Textdateien mit gzip wie auf Vercel), nicht im Browser gemessen – die Vorschau-Deployments sind durch **Deployment Protection** gesperrt und liefern eine Vercel-Login-Seite aus. Das betrifft auch den Test am Handy: ohne Vercel-Anmeldung kommt man dort nicht auf die Vorschau.
 
-Größter verbliebener Posten ist `hero-photo.jpg` mit 219 KB, also gut 80 % des mobilen Aufrufgewichts. Wer weiter runter will, setzt dort an.
+Größter verbliebener Posten ist `hero-photo.webp` mit 180 KB, also gut 80 % des mobilen Aufrufgewichts. Wer weiter runter will, setzt dort an – etwa mit einem kleineren Zuschnitt für Mobil per `<picture>`.
 
 Vorgeschlagene Sektionsstruktur für die Startseite (Punkt 4):
 
@@ -267,30 +268,46 @@ Unter dem Hero folgen fünf Sektionen. Die Flächen wechseln bewusst ab – dadu
 
 | Sektion | Klasse | Fläche | Form |
 |---|---|---|---|
-| Übungen (inkl. Merkliste) | `.hs.hs--hell` | weiß | Vorspann, zwei kurze Absätze, ein CTA, Foto |
-| Wissen | `.hs.hs--dunkel` | Marine | Artikel-Band mit Pfeil |
+| Übungen (inkl. Merkliste) | `.hs.hs--hell` | weiß | zwei kurze Absätze, ein CTA, Foto rechts |
+| Wissen | `.hs.hs--dunkel` | Marine | Artikel-Band mit zwei Pfeilen |
 | Übung einreichen | `.hs.hs--hell` | weiß | kurz, ein CTA |
-| Über uns | `.hs.hs--dunkel` | Marine | ruhiger Abschluss |
+| Über uns | `.hs.hs--dunkel` | Marine | Text links, Portrait rechts |
 
 Grundregel bei Änderungen: **nie zwei gleiche Flächen nebeneinander.** Der Farbwechsel ersetzt Trennlinien.
 
-Die Merkliste hat bewusst keinen eigenen Button – sie ist im Fließtext verlinkt (`.hs-textlink`). Die CSS-Klasse `.hs-cta--umriss` für einen zweitrangigen Button ist noch vorhanden, wird aktuell aber nirgends verwendet.
+Jede Sektion hat **genau einen** Call-to-Action. Die Merkliste ist bewusst im Fließtext verlinkt (`.hs-textlink`) statt als zweiter Button – ebenso sind die Alters-Chips wieder entfallen. Beides war einmal da und wirkte überladen.
+
+Zwei Sektionen mit Zweispalter nutzen `.hs-split`: Übungen mit Querformat-Foto, „Über uns" zusätzlich mit `.hs-split--portrait` für das Hochformat-Portrait.
 
 Ein WhatsApp-Band als eigene Sektion gab es zwischenzeitlich, es wurde wieder entfernt. Der Kanal wird jetzt ausschließlich über den Menüpunkt „Nichts verpassen" und den Störer beworben.
 
-### 11.2a Der Hero-Textträger (Desktop)
+### 11.2a Hero: Foto frei, Überschrift rechts
 
-Das Foto lag früher unter einem Verlauf von 72 % auf 28 % Marineblau, was es sehr dunkel machte. Die Abdunkelung ist entfernt (`​.crest-panel::before { content: none }`). Den Kontrast liefert stattdessen eine **massive Farbfläche unter `.crest-inner`** – ein Block unten links, bündig zur linken Kante, rechts abgerundet.
+Die Überschrift stand früher **auf** dem Foto, das dafür unter einem Verlauf von 72 % auf 28 % Marineblau lag und entsprechend dunkel wirkte. Zwischenzeitlich gab es statt des Verlaufs eine Farbfläche als Textträger; beides ist entfernt.
 
-Der Vorteil gegenüber einem Verlauf: Die Lesbarkeit hängt nicht mehr vom Foto ab. Wer das Hero-Bild austauscht, muss nichts nachjustieren.
+Heute gilt auf Desktop:
 
-Auf **mobil** gilt das nicht – dort liegt das Foto weiterhin mit `opacity: 0.38` und eigenem Verlauf hinter dem Formular (`.hero-photo-panel`). Das ist eine getrennte Stelle in `home.html`.
+- Das Foto ist **völlig frei** – keine Abdunkelung (`.crest-panel::before { content: none }`), keine Farbfläche, kein Text. `.crest-inner` ist ausgeblendet, das Logo steht ohnehin in der Topnav.
+- Die Überschrift steht **rechts über der Jugend-Auswahl**, im selben Panel wie das Formular.
+
+Der Vorteil: Die Lesbarkeit hängt nicht mehr vom Bild ab. Wer das Hero-Foto austauscht, muss nichts nachjustieren – das ist bei einem Foto, das gelegentlich wechselt, den kleinen Kontrastverlust wert.
+
+Die Überschrift lag früher **doppelt** im Markup (`.home-intro` für mobil, `.home-hero-headline` fürs Foto auf Desktop). Jetzt steht sie einmal in `.home-intro` und wird auf beiden Breiten angezeigt – die Seite hat damit eindeutig eine einzige `h1`.
+
+Auf **mobil** ist die Behandlung eine andere: Dort liegt das Foto mit `opacity: 0.38` und eigenem Verlauf hinter dem Formular (`.hero-photo-panel`) – eine getrennte Stelle in `home.html`.
 
 ### 11.2b Das Artikel-Band
 
-Auf Desktop laufen **alle veröffentlichten Artikel** in einem waagerecht scrollbaren Band (`.hs-tiles` mit `overflow-x: auto` und `scroll-snap`), drei davon sichtbar. Der runde Pfeil rechts (`#artikel-pfeil`) scrollt um genau eine Kachelbreite weiter und verschwindet am Ende des Bandes.
+Auf Desktop laufen **alle veröffentlichten Artikel** in einem waagerecht scrollbaren Band (`.hs-tiles` mit `overflow-x: auto` und `scroll-snap`), drei davon sichtbar. Zwei runde Pfeile scrollen um genau eine Kachelbreite:
 
-Mobil bleiben die Kacheln gestapelt, der Pfeil ist per CSS ausgeblendet.
+- `#artikel-pfeil` rechts, verschwindet am Ende des Bandes
+- `#artikel-pfeil-zurueck` links, erscheint erst, sobald gescrollt wurde
+
+Beide sind nötig: Mit nur einem Pfeil ist das Band eine Sackgasse – wer sich durchgeklickt hat, kommt nicht zurück.
+
+Mobil bleiben die Kacheln gestapelt, beide Pfeile sind per CSS ausgeblendet.
+
+Die Kacheln zeigen **Bild und Titel, kein Datum**. Wer das Datum zurück will, braucht es an zwei Stellen: die Ausgabe in `build-home.js` und eine CSS-Regel für `.hs-tile-date`.
 
 Da alle Kacheln `loading="lazy"` tragen, laden nur die sichtbaren beim Seitenaufruf – die übrigen acht erst beim Blättern.
 
@@ -327,8 +344,14 @@ Auf `/uebungen` und im Einheiten-Generator wird `exercises.json` weiterhin volls
 
 | Datei | Zweck | Größe |
 |---|---|---|
+| `public/hero-photo.webp` | Hero, 1600×1067 | 180 KB (Original 4.720 KB) |
 | `public/images/uebungen-baelle.webp` | Foto in der Übungen-Sektion | 43 KB (Original 734 KB) |
-| `public/images/artikel/thumbs/*.webp` | Artikel-Kacheln, 480×320 | je 13–41 KB |
+| `public/images/robert-greve.webp` | Portrait in „Über uns", 600×800 | 34 KB (Original 2.733 KB) |
+| `public/images/artikel/thumbs/*.webp` | Artikel-Kacheln, 480×320 | je 8–41 KB |
+
+Die Originale der drei Einzelfotos liegen unaufbereitet im Projektstammverzeichnis (`vikram-tkv-…jpg`, `pedram-raz-…jpg`, `IMG_4685.jpeg`) und sind nicht versioniert. Bei einem Fotowechsel: neue Datei ablegen, mit Pillow auf die Zielgröße bringen, als WebP unter demselben Namen speichern.
+
+⚠️ **Bei Handyfotos `ImageOps.exif_transpose()` nicht vergessen** – sonst liegt das Bild quer. Das Portrait aus dem iPhone war so ein Fall.
 
 Die Thumbnails **können nicht Teil des Vercel-Builds sein**: Das Projekt kommt bewusst ohne `npm install` aus, damit steht dort keine Bildbibliothek zur Verfügung. Sie werden deshalb lokal erzeugt und mitcommittet:
 
