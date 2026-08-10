@@ -452,7 +452,7 @@
       width: 100%;
       max-width: 300px;
       height: auto;
-      aspect-ratio: 3 / 4;
+      aspect-ratio: 10 / 9;
       object-fit: cover;
       border-radius: 14px;
       display: block;
@@ -510,8 +510,38 @@
       .hs { padding: 68px 40px; }
       .hs-title { font-size: 34px; margin-bottom: 20px; }
       .hs-text { font-size: 16px; }
-      .hs-split { grid-template-columns: 1.05fr 0.95fr; align-items: center; gap: 44px; }
-      .hs-split--portrait { grid-template-columns: 1fr auto; align-items: start; }
+      /* Text oben ausrichten, damit er direkt an die Überschrift anschliesst.
+         Zentriert schwebte er sonst mittig neben dem hoeheren Foto. */
+      .hs-split { grid-template-columns: 1.05fr 0.95fr; align-items: start; gap: 44px; }
+      .hs-foto { align-self: center; }
+
+      /* "Über uns": Das Foto beginnt oben mit dem Label und endet unten mit der
+         Buttonkante. Dafuer streckt sich die Figure auf die Hoehe der Textspalte
+         und das Bild fuellt sie; die Bildunterschrift haengt darunter, ohne die
+         Hoehe zu beeinflussen. Die Breite bleibt fest, der Zuschnitt passt sich an. */
+      .hs-split--portrait { grid-template-columns: 1fr 300px; align-items: stretch; }
+      .hs-split--portrait .hs-portrait {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+      }
+      .hs-split--portrait .hs-portrait img {
+        flex: 1;
+        min-height: 0;
+        height: auto;
+        max-width: none;
+        aspect-ratio: auto;
+      }
+      .hs-split--portrait .hs-portrait figcaption {
+        position: absolute;
+        top: calc(100% + 12px);
+        left: 0;
+        right: 0;
+        max-width: none;
+        margin-top: 0;
+      }
+      /* Platz fuer die herausgeloeste Bildunterschrift */
+      #ueber-uns { padding-bottom: 104px; }
 
       /* Waagerechtes Band: drei Kacheln sichtbar, der Rest per Pfeil erreichbar */
       .hs-tiles {
@@ -669,7 +699,7 @@
                 </a>
               </div>
             </div>
-            <img class="hs-foto" src="/images/uebungen-baelle.webp" alt="Fußbälle auf einem Rasenplatz" width="960" height="640" loading="lazy" decoding="async">
+            <img class="hs-foto" src="/images/uebungen-huetchen.webp" alt="Markierungshütchen auf einem Rasenplatz" width="960" height="640" loading="lazy" decoding="async">
           </div>
         </div>
       </section>
@@ -793,10 +823,10 @@
       <!-- ── Über uns ── -->
       <section class="hs hs--dunkel" id="ueber-uns">
         <div class="hs-inner">
-          <span class="hs-label">Über uns</span>
-          <h2 class="hs-title">Aus dem Ehrenamt. Für das Ehrenamt.</h2>
           <div class="hs-split hs-split--portrait">
             <div>
+              <span class="hs-label">Über uns</span>
+              <h2 class="hs-title">Aus dem Ehrenamt. Für das Ehrenamt.</h2>
               <p class="hs-text">Coach United e.V. ist ein gemeinnütziger Verein, gegründet von ehrenamtlichen Trainer*innen aus dem Kinderfußball. Wir wollten eine Übungsbibliothek, die kostenlos, übersichtlich und klar ist — und weil es die nicht gab, haben wir sie gebaut.</p>
               <p class="hs-text">Alles hier ist frei zugänglich. Keine Anmeldung, keine Paywall, keine Werbung.</p>
               <div class="hs-actions">
@@ -809,7 +839,7 @@
               </div>
             </div>
             <figure class="hs-portrait">
-              <img src="/images/robert-greve.webp" alt="Robert Greve, Vorsitzender von Coach United e.V." width="600" height="800" loading="lazy" decoding="async">
+              <img src="/images/robert-greve.webp" alt="Robert Greve, Vorsitzender von Coach United e.V." width="640" height="576" loading="lazy" decoding="async">
               <figcaption>Hi, ich bin Robert, der Vorsitzende von Coach United e.V.</figcaption>
             </figure>
           </div>
