@@ -407,6 +407,8 @@ Das Sektions-System (`.hs`, `.hs-title`, `.hs-cta`, `.hs-split`, `.hs-schritte` 
 
 Wer eine weitere Seite mit Sektionen ausstattet, bindet `sektionen.css` **vor** `desktop.css` ein.
 
+⚠️ **Die letzte Sektion braucht auf Mobil Platz für die Bottom-Nav.** Die Nav ist fixiert und 81px hoch; ohne Polster endet die Seite genau hinter ihr und der letzte CTA liegt zu einem Drittel darunter – antippen unmöglich, weil man zum Hochziehen den Finger braucht und die Seite danach zurückfedert. `.home-sections .hs:last-child` bekommt deshalb `padding-bottom: 127px` (46px normales Sektionspolster + 81px Nav). Wer eine neue Sektion **hinten anhängt**, muss nichts tun – die Regel wandert mit `:last-child` mit.
+
 **`.hs-foto` ist auf Mobil generell ausgeblendet.** Unterhalb von 768px rutscht das Bild unter den Text, trägt dort nichts mehr bei und schiebt nur den nächsten Abschnitt nach unten. Die Startseite hält es in ihrer Übungen-Sektion genauso. Wer auf einer künftigen Seite ein Foto auch mobil zeigen will, muss die Regel dort gezielt zurücknehmen.
 
 Das Foto der Schritte-Sektion: `public/images/einheiten-taktiktafel.webp`, 960×640, **26 KB** (Original `nguyen-thu-hoai-v0H-vn0BixI-unsplash.jpg` im Projektstamm, 2.531 KB). Aufbereitung wie in Abschnitt 11.4.

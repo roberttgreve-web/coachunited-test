@@ -155,6 +155,13 @@
      bei und schiebt nur den naechsten Abschnitt nach unten. Die Startseite
      haelt es in ihrer Uebungen-Sektion genauso. */
   .hs-foto { display: none; }
+
+  /* Die Bottom-Nav ist fixiert und 81px hoch. Ohne diesen Platz endet die
+     Seite genau hinter ihr: Der letzte CTA liegt dann zu einem Drittel
+     unter der Nav und laesst sich nicht antippen, weil man zum Hochziehen
+     den Finger braucht und danach zurueckfedert.
+     46px (das normale Sektionspolster) + 81px Nav. */
+  .home-sections .hs:last-child { padding-bottom: 127px; }
 }
 
 @media (min-width: 768px) {
