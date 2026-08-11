@@ -762,8 +762,8 @@
           </div>`;
       }
 
-      const first = document.querySelector('.ex-card');
-      if (first && !isDesktop) first.classList.add('open');
+      // Auf Mobil starten alle Karten zugeklappt. Vorher war die erste offen,
+      // dadurch musste man an ihr vorbeiscrollen, bevor die Uebersicht anfing.
       requestAnimationFrame(() => {
         const c = document.querySelector('.content');
         if (c) c.scrollTop = 0;

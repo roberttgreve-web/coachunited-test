@@ -1107,6 +1107,32 @@
   }
   .dr-sidebar-action-btn:hover { background: #F5F6F9; }
 
+  /* Aktionen vor die Inhaltsliste: Sie sind der Grund, warum jemand die
+     Seitenleiste ueberhaupt ansieht. Die Seitenleiste ist eine Flex-Spalte,
+     dafuer genuegt die Reihenfolge – kein Eingriff ins Markup. */
+  body:has(.page-hero):has(.dr-main) .dr-sidebar-section:has(.dr-sidebar-action-btn) {
+    order: -1;
+  }
+
+  /* Erste Aktion ("Auf Merkliste") als gefuellter Button wie auf der
+     Startseite, die uebrigen bleiben zurueckhaltend. */
+  .dr-sidebar-action-btn {
+    padding: 10px 13px;
+    border-radius: 9px;
+    font-size: 13.5px;
+    font-weight: 600;
+  }
+  .dr-sidebar-action-btn:first-of-type {
+    background: #1E6BFF;
+    border-color: #1E6BFF;
+    color: #fff;
+    font-weight: 700;
+  }
+  .dr-sidebar-action-btn:first-of-type:hover {
+    background: #1558d6;
+    border-color: #1558d6;
+  }
+
   /* ── Phase-Header ── */
   body:has(.page-hero):has(.dr-main) .gen-phase-header {
     flex-direction: row !important;
@@ -1134,13 +1160,40 @@
   }
 
   /* ── Exercise Cards ── */
+  /* Uebungen als Kacheln: ganze Flaeche klickbar, hebt beim Hovern an –
+     dieselbe Mechanik wie die Artikel-Kacheln der Startseite. */
   body:has(.page-hero):has(.dr-main) .ex-card {
-    border-radius: 8px !important;
+    border-radius: 12px !important;
     border: 1px solid #E6E8EF !important;
     border-top-width: 1px !important;
-    box-shadow: none !important;
+    box-shadow: 0 1px 3px rgba(14,20,48,0.05) !important;
     overflow: visible !important;
-    margin-bottom: 10px !important;
+    margin-bottom: 12px !important;
+    position: relative !important;
+    transition: transform 0.16s ease, box-shadow 0.16s ease, border-color 0.16s ease;
+  }
+  body:has(.page-hero):has(.dr-main) .ex-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 26px rgba(14,20,48,0.13) !important;
+    border-color: #1E6BFF !important;
+  }
+
+  /* Der vorhandene Detail-Link deckt die gesamte Karte ab. Bewusst so und
+     nicht als <a> um den ganzen Inhalt: Es bleibt genau ein Link, was fuer
+     Screenreader und Tastaturbedienung sauberer ist. */
+  body:has(.page-hero):has(.dr-main) .ex-detail-link::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 12px;
+  }
+  body:has(.page-hero):has(.dr-main) .ex-detail-link {
+    transition: background 0.15s, border-color 0.15s;
+  }
+  body:has(.page-hero):has(.dr-main) .ex-card:hover .ex-detail-link {
+    background: #1E6BFF;
+    border-color: #1E6BFF;
+    color: #fff;
   }
 
   /* Phasen-Farben der Badges auf Desktop */
