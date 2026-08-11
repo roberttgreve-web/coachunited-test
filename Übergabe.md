@@ -380,3 +380,46 @@ Liegt das Originalbild nicht lokal, **lädt das Script es von der `foto_url`** u
 - **`aspect-ratio` verliert gegen das `height`-Attribut.** Bilder im Markup tragen `width`/`height` gegen Layout-Sprünge. Ohne zusätzliches `height: auto` im CSS gewinnt das Attribut, und `aspect-ratio` bleibt wirkungslos – das Bild wird verzerrt. Betrifft `.hs-foto` und `.hs-tile img`.
 - **Die Bottom-Nav gibt es in zwei Markup-Varianten.** Die meisten Seiten nutzen `<span>Label</span>`, drei (`artikel-detail.html`, `detail.html`, `einheit-detail.html`) nutzen `<span class="nav-label">Label</span>`. Wer per Skript ersetzt, muss beide abdecken – sonst bleiben genau diese drei Seiten zurück.
 - **Der Menüpunkt zum WhatsApp-Kanal heißt „Nichts verpassen"** (mit Glocken-Icon) und steht in **43 Dateien**: einmal in der Desktop-Topnav in `desktop-nav.js`, sonst in der mobilen Bottom-Nav jeder Seite. Das Wort „WhatsApp" wurde bewusst aus der Navigation entfernt, bleibt aber in Fließtexten stehen – dort ist es ein Argument (kein neuer Account, keine E-Mail-Adresse), in der Navigation nur ein Etikett.
+
+---
+
+## 12. Einheiten-Seite (Umbau 08/2026)
+
+`/einheiten` bestand aus Überschrift, einem Satz und der Jugend-Auswahl. Wer nicht schon wusste, was der Generator macht, bekam keine Antwort und hatte nach der Auswahl auch keinen Grund weiterzuscrollen. Die Seite hat jetzt denselben Aufbau wie die Startseite: Auswahlbereich oben, darunter Inhaltssektionen im Wechsel hell/dunkel.
+
+### 12.1 Aufbau
+
+| Bereich | Fläche | Inhalt |
+|---|---|---|
+| `.selection-section` | dunkel `#0E1430` | H1, Untertitel, Jugend- und Skill-Auswahl, blauer CTA |
+| `#so-gehts` (`.hs--hell`) | weiß | „In 10 Sekunden zur fertigen Einheit." – drei nummerierte Schritte plus Foto |
+| `#direkt-zu-den-uebungen` (`.hs--dunkel`) | dunkel | Für alle, die selbst suchen: CTA in die Bibliothek, Verweis auf die Merkliste |
+| Footer | weiß | – |
+
+Die Schritt-Texte beschreiben bewusst genau das, was der Generator kann. Insbesondere: **„Neu würfeln" stellt die ganze Einheit neu zusammen**, nicht einzelne Übungen (`reroll()` in `einheit-generator.html`). Wer das im Text anders verspricht, erzeugt eine Erwartung, die die Seite nicht einlöst.
+
+### 12.2 `public/sektionen.css`
+
+Das Sektions-System (`.hs`, `.hs-title`, `.hs-cta`, `.hs-split`, `.hs-schritte` …) lag ursprünglich nur im `<style>`-Block von `home.html`. Für diese Seite ist es in eine eigene Datei herausgelöst und um die nummerierten Schritte ergänzt.
+
+⚠️ **`home.html` trägt seine eigene Kopie weiterhin.** Es gibt also zwei Quellen – Änderungen in `sektionen.css` wirken sich **nicht** auf die Startseite aus. Das Zusammenführen steht als Aufräumschritt aus und ist im Kopf der Datei vermerkt. Bewusst nicht gleich mitgemacht: `home.html` ist live und abgenommen.
+
+Wer eine weitere Seite mit Sektionen ausstattet, bindet `sektionen.css` **vor** `desktop.css` ein.
+
+### 12.3 Der Auswahlbereich auf Desktop
+
+Mobil war der Bereich schon immer dunkel. Auf Desktop lag darüber ein eigener Entwurf (heller Grund `#F7F6F2`, weiße Formularkarte mit Rahmen und Schatten, dunkelblauer CTA in der Kartenunterkante). Mit den neuen hellen Sektionen darunter wären zwei helle Flächen aneinandergestoßen; außerdem sah die Seite dadurch nach einem anderen Produkt aus als die Startseite.
+
+Der Desktop-Block in `desktop.css` (`body:has(.selection-section)`, ab dem Kommentar „EINHEITEN — Desktop") spiegelt jetzt den Startseiten-Hero:
+
+| | vorher | jetzt |
+|---|---|---|
+| Fläche | `#F7F6F2` | `#0E1430` |
+| H1 | 44px / 700 / dunkel, mit Strich-Eyebrow | 40px / 800 / weiß |
+| Felder | Karte, 6px Radius, Rahmen `#E6E8EF` | frei stehend, 12px Radius (Mobilwert) |
+| CTA | `#0E1430`, eckig oben, Kartenbreite | `#1E6BFF`, 10px Radius |
+| Spaltenbreite | 720px | 560px |
+
+Weil die Mobilwerte für Felder und CTA schon stimmen, überschreibt der Desktop-Block sie nicht mehr – er entfernt nur die alten Overrides. Der Footer bleibt **weiß**: Die letzte Sektion ist dunkel, ein dunkler Footer würde damit verschmelzen.
+
+⚠️ Der ganze Block hängt an `body:has(.selection-section)`. Dieselbe Klasse gibt es **nur** auf `/einheiten` – wer sie auf einer anderen Seite verwendet, erbt das komplette Layout.
