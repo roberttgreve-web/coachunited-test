@@ -132,6 +132,7 @@ Wichtig: `uebung-detail.html`, `einheit-detail.html` und `artikel-detail.html` s
 - `Archiv/` enthält alte, nicht mehr verwendete Entwürfe (u. a. ein angefangener echter Next.js-Versuch unter `Archiv/app/`) – rein zur Referenz, nicht Teil des Live-Betriebs.
 - Es gibt keine automatisierten Tests. Änderungen an Templates sollten nach dem Edit immer stichprobenartig über einen lokalen Static-Server in Mobile- und Desktop-Ansicht geprüft werden (siehe Abschnitt 7, „Lokale Vorschau").
 - `feedback-widget.js` ist nicht überall eingebunden (s. o.) – falls es reaktiviert werden soll, vorher prüfen, ob es auf allen relevanten Seiten verlinkt ist.
+- **Vorgemerkt: Foto für die Merkliste.** Im Projektstammverzeichnis liegt `younes-karami-ne-ft_5zDTY-unsplash.jpg` – gedacht für einen künftigen Umbau von `/merkliste` im Stil der Startseite. Aufbereitung wie in Abschnitt 11.4 beschrieben (Pillow, WebP, `ImageOps.exif_transpose()`).
 
 ## 9. Google Ad Grants – offene Maßnahmen (Stand 2026-08-07)
 
