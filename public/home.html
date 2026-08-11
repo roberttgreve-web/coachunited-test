@@ -506,6 +506,26 @@
       letter-spacing: -0.01em;
     }
 
+    /* ══════════════════════════════════════════════
+       Nur Mobil (< 768px)
+       Auf dem Handy soll die Seite kürzer sein: weniger Text, weniger
+       Bilder, weniger Kacheln. Desktop bleibt davon unberührt.
+       ══════════════════════════════════════════════ */
+    @media (max-width: 767px) {
+      /* Merklisten-Satz bleibt im Markup (für Suchmaschinen), nur ausgeblendet */
+      .hs-nur-desktop { display: none; }
+
+      /* Foto unter dem CTA weg – lädt dank loading="lazy" dann gar nicht erst */
+      #uebungen .hs-foto { display: none; }
+
+      /* Statt elf gestapelter Kacheln nur die neueste */
+      #wissen .hs-tile:not(:first-child) { display: none; }
+
+      /* Portrait kleiner, Button darunter */
+      .hs-portrait img,
+      .hs-portrait figcaption { max-width: 200px; }
+    }
+
     @media (min-width: 768px) {
       .hs { padding: 68px 40px; }
       .hs-title { font-size: 34px; margin-bottom: 20px; }
@@ -519,7 +539,17 @@
          Buttonkante. Dafuer streckt sich die Figure auf die Hoehe der Textspalte
          und das Bild fuellt sie; die Bildunterschrift haengt darunter, ohne die
          Hoehe zu beeinflussen. Die Breite bleibt fest, der Zuschnitt passt sich an. */
-      .hs-split--portrait { grid-template-columns: 1fr 300px; align-items: stretch; }
+      /* Drei gleichrangige Elemente: Text, Foto, Aktionen. Das Foto spannt
+         beide Zeilen, dadurch bleiben seine Ober- und Unterkante bündig mit
+         Label und Buttonkante – wie vor der Umstellung. */
+      .hs-split--portrait {
+        grid-template-columns: 1fr 300px;
+        align-items: stretch;
+        row-gap: 0;
+      }
+      .hs-split--portrait > div:first-child { grid-column: 1; grid-row: 1; }
+      .hs-split--portrait > .hs-portrait     { grid-column: 2; grid-row: 1 / 3; }
+      .hs-split--portrait > .hs-actions      { grid-column: 1; grid-row: 2; }
       .hs-split--portrait .hs-portrait {
         position: relative;
         display: flex;
@@ -689,7 +719,7 @@
           <div class="hs-split">
             <div>
               <p class="hs-text">Von der G- bis zur D-Jugend findest du hier Übungen für jede Trainingsphase. Sie stammen aus dem Trainingsalltag ehrenamtlicher Trainer*innen und sind auf dem Platz erprobt. Jede Woche kommen neue dazu.</p>
-              <p class="hs-text">Was dir gefällt, speicherst du in deiner <a class="hs-textlink" href="/merkliste">Merkliste</a>.</p>
+              <p class="hs-text hs-nur-desktop">Was dir gefällt, speicherst du in deiner <a class="hs-textlink" href="/merkliste">Merkliste</a>.</p>
               <div class="hs-actions">
                 <a class="hs-cta" href="/uebungen">
                   Alle Übungen ansehen
@@ -829,19 +859,21 @@
               <h2 class="hs-title">Aus dem Ehrenamt. Für das Ehrenamt.</h2>
               <p class="hs-text">Coach United e.V. ist ein gemeinnütziger Verein, gegründet von ehrenamtlichen Trainer*innen aus dem Kinderfußball. Wir wollten eine Übungsbibliothek, die kostenlos, übersichtlich und klar ist — und weil es die nicht gab, haben wir sie gebaut.</p>
               <p class="hs-text">Alles hier ist frei zugänglich. Keine Anmeldung, keine Paywall, keine Werbung.</p>
-              <div class="hs-actions">
-                <a class="hs-cta" href="/ueber-uns">
-                  Mehr über uns
-                  <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                    <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                </a>
-              </div>
             </div>
             <figure class="hs-portrait">
               <img src="/images/robert-greve.webp" alt="Robert Greve, Vorsitzender von Coach United e.V." width="640" height="576" loading="lazy" decoding="async">
               <figcaption>Hi, ich bin Robert, der Vorsitzende von Coach United e.V.</figcaption>
             </figure>
+            <!-- Eigenes Element statt in der Textspalte: So steht der Button auf
+                 Mobil hinter dem Foto, auf Desktop weiterhin links darunter. -->
+            <div class="hs-actions">
+              <a class="hs-cta" href="/ueber-uns">
+                Mehr über uns
+                <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
       </section>
