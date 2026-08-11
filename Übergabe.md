@@ -377,6 +377,19 @@ Liegt das Originalbild nicht lokal, **lädt das Script es von der `foto_url`** u
 
 ⚠️ Acht der elf `foto_url`-Einträge zeigen noch auf **`coachunited.de/wp-content/…`** und werden per 301 aufs Archiv umgeleitet, zwei weitere auf **raw.githubusercontent.com**. Für die Startseite ist das dank der Thumbnails egal, für die Artikel-Detailseiten nicht: Dort wird das mehrere MB große Original vom alten WordPress geladen. Das wäre der nächste sinnvolle Aufräumschritt.
 
+### 11.4a Mobile Navigation auf der Startseite
+
+Solange die Startseite eine einzige Bildschirmseite mit genau einem Weg nach vorn war, hatte sie bewusst **keine** Navigation – weder Bottom-Nav noch Burger. Seit sie scrollt, ist sie eine normale Seite und trägt beides, wie alle anderen Seiten auch.
+
+Zwei Abweichungen von den Unterseiten:
+
+- **Der Burger sitzt nicht in einer Kopfzeile**, sondern als runder weißer Knopf fixiert oben rechts (`.burger-btn`, `position: fixed`). Eine weiße Leiste würde den Hero zerschneiden, und der Knopf muss über hellen wie dunklen Sektionen lesbar bleiben.
+- **Die Bottom-Nav läuft über die volle Breite** (`left: 0; right: 0`). Die Unterseiten begrenzen ihren Container auf 375px und zentrieren die Nav darin; die Startseite ist voll breit, eine zentrierte 375px-Nav würde auf breiteren Handys links und rechts Lücken lassen.
+
+`desktop.css` blendet `.burger-btn` und `.bottom-nav` ab 768px global aus – auf Desktop ändert sich dadurch nichts.
+
+⚠️ `#ueber-uns` trägt **zwei verschiedene** `padding-bottom`-Werte: 104px im Desktop-Block (Platz für die herausgelöste Bildunterschrift) und 127px im Mobil-Block (dieselbe Bildunterschrift plus 81px Bottom-Nav). Wer einen davon anfasst, prüft den anderen mit.
+
 ### 11.5 Fallstricke
 
 - **`aspect-ratio` verliert gegen das `height`-Attribut.** Bilder im Markup tragen `width`/`height` gegen Layout-Sprünge. Ohne zusätzliches `height: auto` im CSS gewinnt das Attribut, und `aspect-ratio` bleibt wirkungslos – das Bild wird verzerrt. Betrifft `.hs-foto` und `.hs-tile img`.
