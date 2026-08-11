@@ -13,7 +13,7 @@ Zielgruppe der Seite: Trainer:innen im Kinderfußball (G-/F-/E-/D-Jugend), die k
 ```
 coachunited-next/
 ├── public/                  ← alles, was ausgeliefert wird (= Vercel outputDirectory)
-│   ├── home.html             Startseite (/home)
+│   ├── home.html             Startseite (/home) – enthält Marker für build-home.js, s. Abschnitt 11
 │   ├── uebungen.html         Übungsübersicht mit Filtern (/uebungen)
 │   ├── uebung-detail.html    Template für Übungs-Detailseiten
 │   ├── uebung/               generiert: eine .html pro Übung (Build-Zeit)
@@ -42,6 +42,7 @@ coachunited-next/
 │   ├── build-exercise-pages.js   generiert public/uebung/*.html aus exercises.json + Template
 │   ├── build-einheit-pages.js    generiert public/einheit/*.html aus einheiten.json + Template
 │   ├── build-artikel-pages.js    generiert public/artikel/*.html aus articles.json + Template
+│   ├── build-home.js             setzt Übungs-Anzahl und die 3 neuesten Artikel in home.html ein
 │   ├── build-sitemap.js          generiert public/sitemap.xml aus allen drei JSON-Quellen
 │   ├── upload-grafik-images.js   Hilfsscript zum Hochladen von Übungsgrafiken
 │   └── gen-landing-pages.ps1     PowerShell-Helfer zum Erzeugen der Alter/Phase/Skill-Landingpages
@@ -77,11 +78,28 @@ Wichtig: `uebung-detail.html`, `einheit-detail.html` und `artikel-detail.html` s
 
 ## 5. Sitewide-Bausteine (auf praktisch jeder Seite aktiv)
 
-- **`desktop-nav.js`**: das einzige Script, das wirklich auf **allen** Seiten eingebunden ist (auch auf den generierten Detailseiten). Baut ab 768px Breite die Desktop-Navigation und den Footer per JavaScript in `.container` ein (auf Mobile bleibt das Markup unverändert). Seit 07/2026 injiziert dieselbe Datei zusätzlich den **Störer/Hinweis auf den Ferienkalender-Artikel** (Funktion `injectFerienPromo()`), unabhängig von der Bildschirmbreite:
-  - Mobile: schmaler, vertikaler Tab am rechten Bildschirmrand.
-  - Desktop: Karte unten rechts, fliegt nach ~0,9 s sanft ein.
-  - Beide verlinken auf `/artikel/der-fussball-ferienkalender`, haben ein „✕“ zum Schließen (Dismiss wird 14 Tage in `localStorage` gemerkt) und werden auf der Artikelseite selbst nicht angezeigt.
-  - Titel/Bild/Link sind aktuell hart codiert in der Funktion – für eine neue Kampagne dort die Variablen `slug`, `tabText`, `cardTitle`, `img` anpassen.
+- **`desktop-nav.js`**: das einzige Script, das wirklich auf **allen** Seiten eingebunden ist (auch auf den generierten Detailseiten). Baut ab 768px Breite die Desktop-Navigation und den Footer per JavaScript in `.container` ein (auf Mobile bleibt das Markup unverändert). Dieselbe Datei injiziert zusätzlich den **Störer für den WhatsApp-Kanal** (Funktion `injectWhatsAppPromo()`, seit 08/2026). Der frühere Ferienkalender-Störer wurde dabei ersatzlos entfernt — es gibt bewusst nur **einen** Störer-Slot, zwei gleichzeitige Einblendungen wirken wie Werbung.
+
+  **Scharfschalten:** Ganz oben in der Funktion steht
+  ```js
+  var WA_PROMO_LIVE = false;   // auf true, sobald Google Ad Grants freigegeben ist
+  ```
+  Solange das `false` ist, erscheint der Störer **nur auf Vorschau-Deployments und lokal** (`hostname !== 'coachunited.de'`), nicht auf der Live-Seite. So lässt er sich testen, ohne live zu gehen, und niemand kann vergessen, ihn vor einem Merge auszuschalten.
+
+  **Testhilfen:** `?wa=1` erzwingt die Anzeige (auch auf der Live-Domain), `?wa=reset` löscht den gemerkten Zustand.
+
+  **Auslöser:** ab der zweiten Seite einer Sitzung sofort; auf der ersten Seite erst nach 20 Sekunden *und* mehr als halb gescrollt. Wer gerade erst gelandet ist, hat den Nutzen des Kanals noch nicht erlebt.
+
+  **Drei Aktionen mit unterschiedlich langem Gedächtnis** (alles `localStorage`):
+
+  | Aktion | Schlüssel | Wirkung |
+  |---|---|---|
+  | Kanal ansehen | `cu_wa_status = subscribed` | nie wieder |
+  | Hab ich schon | `cu_wa_status = has` | nie wieder |
+  | ✕ | `cu_wa_snooze` | 30 Tage Ruhe |
+  | dreimal ignoriert | `cu_wa_shown >= 3` | dauerhaft Ruhe |
+
+  Auf `/whatsapp-info` erscheint er nie. Mobil sitzt er **über** der Bottom-Nav — deren Höhe wird zur Laufzeit gemessen, weil sie von der Zeilenzahl der Beschriftungen abhängt. GA4-Ereignisse `wa_promo_shown`, `wa_promo_click`, `wa_promo_has`, `wa_promo_dismiss` werden nur gefeuert, wenn `gtag` existiert, also nach erteilter Cookie-Einwilligung.
 - **`feedback-widget.js`**: aktuell nur ein Kommentar ("Beta-Phase beendet"), ist NICHT auf allen Seiten eingebunden (fehlt z. B. auf `merkliste.html`, `detail.html`, `einheit-detail.html`, `artikel-detail.html`). Für neue sitewide Funktionen `desktop-nav.js` verwenden, nicht dieses.
 - **`desktop.css`**: Layout-Overrides für ≥768px, wird zusätzlich zum mobilen Inline-CSS jeder Seite geladen.
 
@@ -97,11 +115,12 @@ Wichtig: `uebung-detail.html`, `einheit-detail.html` und `artikel-detail.html` s
 - **Deploy-Trigger**: Vercel ist (vermutlich über die GitHub-Integration im Vercel-Dashboard, es liegt lokal kein `.vercel/`-Ordner vor) mit dem Repo verbunden und deployed automatisch bei jedem Push nach `main`.
 - **Build-Command** (`vercel.json`):
   ```
-  node scripts/build-exercise-pages.js && node scripts/build-einheit-pages.js && node scripts/build-artikel-pages.js && node scripts/build-sitemap.js
+  node scripts/build-exercise-pages.js && node scripts/build-einheit-pages.js && node scripts/build-artikel-pages.js && node scripts/build-home.js && node scripts/build-sitemap.js
   ```
   Es gibt kein `npm install`-Schritt/`package.json` – die Scripts nutzen nur Node-Bordmittel (`fs`, `path`, `https`), daher reicht die von Vercel bereitgestellte Node-Runtime.
 - **Output-Directory**: `public/` (in `vercel.json` als `outputDirectory` gesetzt).
 - **Lokale Vorschau**: Da es sich um reines Static-HTML handelt, reicht ein einfacher statischer Server, z. B. `python -m http.server 3000 --directory public` oder `npx serve public`. Danach die Build-Scripts einmal manuell mit `node scripts/build-...js` laufen lassen, wenn generierte Seiten (Übung/Einheit/Artikel) getestet werden sollen.
+- **Ohne Node lokal**: `home.html`, `uebungen.html`, `wissen.html` und alle statischen Seiten funktionieren im lokalen Server auch ohne Build-Lauf. Nur die generierten Detailseiten unter `/uebung/`, `/einheit/` und `/artikel/` fehlen dann. Achtung: Der einfache Python-Server kennt die Rewrites aus `vercel.json` nicht – Links wie `/uebungen` laufen ins Leere, man muss `/uebungen.html` aufrufen. Zum Durchklicken eignet sich das Vorschau-Deployment des Branches besser.
 
 ⚠️ **Sicherheitshinweise** (beide am 2026-08-07 erneut geprüft und weiterhin offen):
 
@@ -128,7 +147,7 @@ Maßgeblich sind die [Ad Grants-Website-Richtlinien](https://support.google.com/
 - Sämtliche 404-Fehler aus der Search Console wurden behoben (siehe Abschnitt 10).
 - **Punkte 1–3 der Maßnahmenliste umgesetzt (2026-08-07).** Die Startseite überträgt jetzt **1,88 MB statt 6,77 MB** (–72 %):
   - `Cache-Control` gestaffelt statt `no-store` für alles: HTML `max-age=0, must-revalidate`, CSS/JS 1 Tag, JSON 1 Stunde, Bilder/Fonts 7 Tage, jeweils mit `stale-while-revalidate`. **Wichtig:** Bei gleichem Header-Schlüssel gewinnt bei Vercel die *zuletzt* passende Regel – die Auffangregel `/(.*)` muss deshalb als erste stehen, die spezifischen danach.
-  - `hero-photo.jpg` 3712×5568 → 1400×2100 (1.589 KB → 219 KB)
+  - `hero-photo.jpg` 3712×5568 → 1400×2100 (1.589 KB → 219 KB) — die Datei wurde später ersetzt, siehe 11.4
   - `logo-home.png` 2646×1300 → 660×324 (459 KB → 11 KB)
   - `logo.png` 3284×800 → 800×195 (201 KB → 7 KB)
   - Störer-Bild: eigenes 128px-Thumbnail `images/artikel/fussball-ferienkalender-thumb.webp` (4 KB) statt des 2,9-MB-Artikelbilds. Die Promo-Karte zeigt es mit 64×64 an; das Original wurde auf jeder Seite geladen, auf Mobilgeräten sogar für die per CSS versteckte Karte.
@@ -171,13 +190,24 @@ Google nennt „sehr wenig Textinhalt (Inhalte ohne Mehrwert)" als Ablehnungsgru
 | 1 | `Cache-Control` in `vercel.json` differenzieren: HTML kurz, Bilder/JSON lang cachen | 5 Min | sehr hoch | **erledigt** |
 | 2 | Störerbild 2,9 MB → eigenes Thumbnail | 30 Min | sehr hoch | **erledigt** |
 | 3 | `hero-photo.jpg` (1,6 MB), `logo-home.png` (459 KB), `logo.png` (201 KB) verkleinern | 30 Min | hoch | **erledigt** |
-| 4 | Startseite um Inhaltssektionen und Calls-to-Action erweitern (Struktur s. u.) | mehrere Std. | sehr hoch | offen |
+| 4 | Startseite um Inhaltssektionen und Calls-to-Action erweitern (Struktur s. u.) | mehrere Std. | sehr hoch | **erledigt** |
 | 5 | „Über uns" ausbauen: Verein, Gemeinnützigkeit, VR 42714 B, Wirkung/Zahlen | 1–2 Std. | hoch | offen |
 | 6 | „Über uns" in die Hauptnavigation aufnehmen | 30 Min | mittel | offen |
-| 7 | `exercises.json` auf der Startseite nicht mehr laden (das Dropdown braucht es nicht) | 1 Std. | mittel | offen |
+| 7 | `exercises.json` auf der Startseite nicht mehr laden (das Dropdown braucht es nicht) | 1 Std. | mittel | **erledigt** |
 | 8 | `/wissen` und `/uebungen` mit statischem Einleitungstext versehen | 1 Std. | mittel | offen |
 
-Nach Umsetzung von 1–3 liegt die Startseite bei 1,88 MB. Der mit Abstand größte verbliebene Posten ist `exercises.json` mit 1.622 KB – das sind 86 % des restlichen Gewichts und damit Punkt 7. Die Startseite lädt die komplette Übungsdatenbank, obwohl sie davon nur das Jugend-Dropdown befüllt. Ein kleiner Index (Jugend-Stufen plus Anzahl) würde dafür genügen.
+### 9.5 Entwicklung des Seitengewichts
+
+| Zeitpunkt | Beim Seitenaufruf |
+|---|---|
+| Bei der Ad-Grants-Ablehnung | 6.770 KB |
+| Nach Punkt 1–3 (Caching, Bilder) | 1.880 KB |
+| Nach Punkt 4 und 7 (Startseite, Skill-Index) | ~260 KB |
+| Nach dem Fotowechsel im Hero | **221 KB mobil / 284 KB Desktop** |
+
+Rund **97 % weniger** als zum Zeitpunkt der Prüfung. Die Werte ab 1.880 KB sind aus echten Dateigrößen gerechnet (Textdateien mit gzip wie auf Vercel), nicht im Browser gemessen – die Vorschau-Deployments sind durch **Deployment Protection** gesperrt und liefern eine Vercel-Login-Seite aus. Das betrifft auch den Test am Handy: ohne Vercel-Anmeldung kommt man dort nicht auf die Vorschau.
+
+Größter verbliebener Posten ist `hero-photo.webp` mit 180 KB, also gut 80 % des mobilen Aufrufgewichts. Wer weiter runter will, setzt dort an – etwa mit einem kleineren Zuschnitt für Mobil per `<picture>`.
 
 Vorgeschlagene Sektionsstruktur für die Startseite (Punkt 4):
 
@@ -217,3 +247,129 @@ Am 2026-08-07 wurden folgende Punkte behoben und live verifiziert:
 
 - 15 alte Slugs zeigen weiter pauschal auf `/uebungen`, weil es dazu keine migrierte Einheit gibt (u. a. `/vom-dribbelstern-zum-spiel-auf-ein-tor`, `/passen-passen-passen`).
 - Auf dem Archiv steht `author-sitemap.xml` noch im Sitemap-Index, obwohl Autoren-Archive deaktiviert sind. Vermutlich Object-Cache (GoDaddy Managed WordPress) – Flush über das Menü „Managed WordPress" in der Adminleiste.
+
+## 11. Startseite (Umbau 08/2026)
+
+### 11.1 Die Seite scrollt jetzt
+
+Bis 08/2026 war die Startseite eine **starre, bildschirmfüllende Ansicht**: `.container` war auf Desktop ein Raster mit `height: 100vh` und `overflow: hidden`. Inhalte unterhalb des Heros waren damit technisch nicht erreichbar.
+
+Jetzt gilt:
+
+- `.container` ist eine normale Flex-Spalte. Reihenfolge: Topnav → `.home-hero` → `.home-sections` → Footer. Genau die Reihenfolge, in der `desktop-nav.js` Nav und Footer einhängt.
+- Das Zwei-Spalten-Raster (Foto links, Formular rechts) sitzt auf dem neuen Wrapper **`.home-hero`**, nicht mehr auf dem Container. Die zugehörigen Regeln stehen in `desktop.css` unter `body:has(.crest-panel)`.
+- Der Hero füllt **92 %** der Bildschirmhöhe, nicht 100 %: mobil `min-height: 92dvh`, auf Desktop `calc(92vh - 64px)` für die Topnav. Dadurch schaut die Oberkante der nächsten Sektion ins Bild und zeigt ohne Text oder Pfeil, dass es weitergeht. Ein früherer „Mehr entdecken"-Hinweis wurde zugunsten dieser Lösung wieder entfernt.
+
+**Wer den Hero verändert**, muss beide Stellen anfassen: das Inline-CSS in `home.html` (mobil) und `desktop.css` (ab 768px).
+
+### 11.2 Sektionen und Flächen-Rhythmus
+
+Unter dem Hero folgen fünf Sektionen. Die Flächen wechseln bewusst ab – dadurch braucht es keine Trennlinien, und die Seite liest sich nicht wie eine Tabelle:
+
+| Sektion | Klasse | Fläche | Form |
+|---|---|---|---|
+| Übungen (inkl. Merkliste) | `.hs.hs--hell` | weiß | zwei kurze Absätze, ein CTA, Foto rechts |
+| Wissen | `.hs.hs--dunkel` | Marine | Artikel-Band mit zwei Pfeilen |
+| Übung einreichen | `.hs.hs--hell` | weiß | kurz, ein CTA |
+| Über uns | `.hs.hs--dunkel` | Marine | Text links, Portrait rechts |
+
+Grundregel bei Änderungen: **nie zwei gleiche Flächen nebeneinander.** Der Farbwechsel ersetzt Trennlinien.
+
+Jede Sektion hat **genau einen** Call-to-Action. Die Merkliste ist bewusst im Fließtext verlinkt (`.hs-textlink`) statt als zweiter Button – ebenso sind die Alters-Chips wieder entfallen. Beides war einmal da und wirkte überladen.
+
+Zwei Sektionen mit Zweispalter nutzen `.hs-split`: Übungen mit Querformat-Foto, „Über uns" zusätzlich mit `.hs-split--portrait` für das Hochformat-Portrait.
+
+Ein WhatsApp-Band als eigene Sektion gab es zwischenzeitlich, es wurde wieder entfernt. Der Kanal wird jetzt ausschließlich über den Menüpunkt „Nichts verpassen" und den Störer beworben.
+
+### 11.2a Hero: Foto frei, Überschrift rechts
+
+Die Überschrift stand früher **auf** dem Foto, das dafür unter einem Verlauf von 72 % auf 28 % Marineblau lag und entsprechend dunkel wirkte. Zwischenzeitlich gab es statt des Verlaufs eine Farbfläche als Textträger; beides ist entfernt.
+
+Heute gilt auf Desktop:
+
+- Das Foto ist **völlig frei** – keine Abdunkelung (`.crest-panel::before { content: none }`), keine Farbfläche, kein Text. `.crest-inner` ist ausgeblendet, das Logo steht ohnehin in der Topnav.
+- Die Überschrift steht **rechts über der Jugend-Auswahl**, im selben Panel wie das Formular.
+
+Der Vorteil: Die Lesbarkeit hängt nicht mehr vom Bild ab. Wer das Hero-Foto austauscht, muss nichts nachjustieren – das ist bei einem Foto, das gelegentlich wechselt, den kleinen Kontrastverlust wert.
+
+Die Überschrift lag früher **doppelt** im Markup (`.home-intro` für mobil, `.home-hero-headline` fürs Foto auf Desktop). Jetzt steht sie einmal in `.home-intro` und wird auf beiden Breiten angezeigt – die Seite hat damit eindeutig eine einzige `h1`.
+
+Auf **mobil** ist die Behandlung eine andere: Dort liegt das Foto mit `opacity: 0.38` und eigenem Verlauf hinter dem Formular (`.hero-photo-panel`) – eine getrennte Stelle in `home.html`.
+
+### 11.2b Das Artikel-Band
+
+Auf Desktop laufen **alle veröffentlichten Artikel** in einem waagerecht scrollbaren Band (`.hs-tiles` mit `overflow-x: auto` und `scroll-snap`), drei davon sichtbar. Zwei runde Pfeile scrollen um genau eine Kachelbreite:
+
+- `#artikel-pfeil` rechts, verschwindet am Ende des Bandes
+- `#artikel-pfeil-zurueck` links, erscheint erst, sobald gescrollt wurde
+
+Beide sind nötig: Mit nur einem Pfeil ist das Band eine Sackgasse – wer sich durchgeklickt hat, kommt nicht zurück.
+
+Mobil bleiben die Kacheln gestapelt, beide Pfeile sind per CSS ausgeblendet.
+
+Die Kacheln zeigen **Bild und Titel, kein Datum**. Wer das Datum zurück will, braucht es an zwei Stellen: die Ausgabe in `build-home.js` und eine CSS-Regel für `.hs-tile-date`.
+
+Da alle Kacheln `loading="lazy"` tragen, laden nur die sichtbaren beim Seitenaufruf – die übrigen acht erst beim Blättern.
+
+### 11.3 `build-home.js`
+
+Setzt beim Deploy die **Anzahl veröffentlichter Übungen** und **alle veröffentlichten Artikel** in `home.html` ein – und schreibt zusätzlich `public/skills-index.json` (siehe 11.3a).
+
+Beides steht zwischen HTML-Kommentar-Markern, die stehen bleiben:
+
+```html
+<!--cu:count-->177<!--/cu:count-->
+<!--cu:artikel--> … drei Kacheln … <!--/cu:artikel-->
+```
+
+Das hat zwei Gründe: Das Script ist **beliebig oft wiederholbar**, und `home.html` enthält auch ohne Build-Lauf gültiges Markup – wichtig für die lokale Vorschau, weil auf dem Entwicklungsrechner kein Node installiert sein muss.
+
+Fehlt ein Marker, bricht das Script mit einer klaren Meldung ab, statt stillschweigend nichts zu tun.
+
+**Ein neuer Artikel erscheint automatisch** auf der Startseite, sobald er in `articles.json` steht (Sortierung nach `erstellt_am`, absteigend). Zusätzlich sollte ein Thumbnail erzeugt werden – siehe 11.4.
+
+### 11.3a `skills-index.json` – warum es die Datei gibt
+
+Wählt jemand im Hero eine Altersstufe, erscheinen darunter die Skill-Knöpfe. Für die F-Jugend sind das elf Stück.
+
+Bis 08/2026 lud die Startseite dafür **`exercises.json` mit 1.622 KB** – die komplette Übungsdatenbank – und rechnete im Browser jedes einzelnen Besuchers aus, welche Skills in allen drei Trainingsphasen vorkommen. Das war der mit Abstand größte Posten der Seite: 86 % ihres Gewichts, um vier mal gut zehn Wörter zu gewinnen.
+
+`build-home.js` macht diese Rechnung jetzt einmal pro Deploy (`baueSkillIndex()`) und legt das Ergebnis in `public/skills-index.json` ab – **0,56 KB**. Die Startseite lädt nur noch diese Datei.
+
+⚠️ **Die Logik steht an zwei Stellen** und muss zusammenpassen: `baueSkillIndex()` in `scripts/build-home.js` bestimmt, *welche* Skills es gibt; `buildSkillPills()` in `home.html` zeigt sie nur noch an. Ändert sich die Regel (etwa: Skill muss nicht mehr in allen drei Phasen vorkommen), gehört die Änderung ins Build-Script.
+
+Auf `/uebungen` und im Einheiten-Generator wird `exercises.json` weiterhin vollständig geladen – dort werden ja Übungen angezeigt.
+
+### 11.4 Bilder der Startseite
+
+| Datei | Zweck | Größe |
+|---|---|---|
+| `public/hero-photo.webp` | Hero, 1600×1067 | 180 KB (Original 4.720 KB) |
+| `public/images/uebungen-baelle.webp` | Foto in der Übungen-Sektion | 43 KB (Original 734 KB) |
+| `public/images/robert-greve.webp` | Portrait in „Über uns", 600×800 | 34 KB (Original 2.733 KB) |
+| `public/images/artikel/thumbs/*.webp` | Artikel-Kacheln, 480×320 | je 8–41 KB |
+
+Die Originale der drei Einzelfotos liegen unaufbereitet im Projektstammverzeichnis (`vikram-tkv-…jpg`, `pedram-raz-…jpg`, `IMG_4685.jpeg`) und sind nicht versioniert. Bei einem Fotowechsel: neue Datei ablegen, mit Pillow auf die Zielgröße bringen, als WebP unter demselben Namen speichern.
+
+⚠️ **Bei Handyfotos `ImageOps.exif_transpose()` nicht vergessen** – sonst liegt das Bild quer. Das Portrait aus dem iPhone war so ein Fall.
+
+Die Thumbnails **können nicht Teil des Vercel-Builds sein**: Das Projekt kommt bewusst ohne `npm install` aus, damit steht dort keine Bildbibliothek zur Verfügung. Sie werden deshalb lokal erzeugt und mitcommittet:
+
+```
+pip install Pillow
+python scripts/artikel-thumbnails.py
+```
+
+Das Script liest `articles.json` und legt für **jeden veröffentlichten Artikel** ein 480×320-WebP unter `public/images/artikel/thumbs/` ab. Bereits vorhandene Thumbnails überspringt es, es ist also gefahrlos wiederholbar.
+
+Liegt das Originalbild nicht lokal, **lädt das Script es von der `foto_url`** und wirft es danach weg. Das ist Absicht: Die Originale sind je 1,6 bis 2,7 MB groß und gehören nicht ins Repo – gebraucht werden sie nur auf den Artikel-Detailseiten.
+
+**Fehlt ein Thumbnail, bricht nichts** – `build-home.js` fällt dann auf `foto_url` zurück, lädt damit aber das mehrere MB große Original.
+
+⚠️ Acht der elf `foto_url`-Einträge zeigen noch auf **`coachunited.de/wp-content/…`** und werden per 301 aufs Archiv umgeleitet, zwei weitere auf **raw.githubusercontent.com**. Für die Startseite ist das dank der Thumbnails egal, für die Artikel-Detailseiten nicht: Dort wird das mehrere MB große Original vom alten WordPress geladen. Das wäre der nächste sinnvolle Aufräumschritt.
+
+### 11.5 Fallstricke
+
+- **`aspect-ratio` verliert gegen das `height`-Attribut.** Bilder im Markup tragen `width`/`height` gegen Layout-Sprünge. Ohne zusätzliches `height: auto` im CSS gewinnt das Attribut, und `aspect-ratio` bleibt wirkungslos – das Bild wird verzerrt. Betrifft `.hs-foto` und `.hs-tile img`.
+- **Die Bottom-Nav gibt es in zwei Markup-Varianten.** Die meisten Seiten nutzen `<span>Label</span>`, drei (`artikel-detail.html`, `detail.html`, `einheit-detail.html`) nutzen `<span class="nav-label">Label</span>`. Wer per Skript ersetzt, muss beide abdecken – sonst bleiben genau diese drei Seiten zurück.
+- **Der Menüpunkt zum WhatsApp-Kanal heißt „Nichts verpassen"** (mit Glocken-Icon) und steht in **43 Dateien**: einmal in der Desktop-Topnav in `desktop-nav.js`, sonst in der mobilen Bottom-Nav jeder Seite. Das Wort „WhatsApp" wurde bewusst aus der Navigation entfernt, bleibt aber in Fließtexten stehen – dort ist es ein Argument (kein neuer Account, keine E-Mail-Adresse), in der Navigation nur ein Etikett.

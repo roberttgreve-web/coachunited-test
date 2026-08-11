@@ -1,5 +1,5 @@
 (function () {
-  injectFerienPromo();
+  injectWhatsAppPromo();
 
   if (window.innerWidth < 768) return;
 
@@ -69,7 +69,7 @@
       <a href="/einheiten"     class="desktop-topnav-link ${isActive('/einheiten')}">Einheit erhalten</a>
       <a href="/merkliste"     class="desktop-topnav-link ${isActive('/merkliste')}">Merkliste</a>
       <a href="/wissen"        class="desktop-topnav-link ${isActive('/wissen')}">Wissen</a>
-      <a href="/whatsapp-info" class="desktop-topnav-link ${isActive('/whatsapp-info')}">WhatsApp-Kanal</a>
+      <a href="/whatsapp-info" class="desktop-topnav-link ${isActive('/whatsapp-info')}">Nichts verpassen</a>
     </div>
   `;
 
@@ -93,86 +93,197 @@
   }
 })();
 
-// ── Sitewide Hinweis auf den Fußball-Ferienkalender ──
-function injectFerienPromo() {
-  var slug = 'der-fussball-ferienkalender';
-  if (window.location.pathname.replace(/\/$/, '').split('/').pop() === slug) return;
+// ── Sitewide Hinweis auf den WhatsApp-Kanal ──
+//
+// Scharfschalten: WA_PROMO_LIVE auf true setzen, sobald Google Ad Grants
+// freigegeben ist. Auf Vorschau-Deployments und lokal ist der Störer ohnehin
+// aktiv, damit er getestet werden kann, ohne live zu gehen.
+//
+// Testhilfen:  ?wa=1      erzwingt die Anzeige (auch auf coachunited.de)
+//              ?wa=reset  löscht den gemerkten Zustand
+function injectWhatsAppPromo() {
+  var WA_PROMO_LIVE = false;
 
-  var DISMISS_KEY = 'cu_promo_ferienkalender_dismissed_at';
-  var DISMISS_DAYS = 14;
-  var dismissedAt = Number(localStorage.getItem(DISMISS_KEY) || 0);
-  if (dismissedAt && Date.now() - dismissedAt < DISMISS_DAYS * 24 * 60 * 60 * 1000) return;
+  var KANAL_URL   = 'https://www.whatsapp.com/channel/0029VbAqTP68kyyEFg3oyX2t';
+  var STATUS_KEY  = 'cu_wa_status';    // 'subscribed' | 'has'
+  var SNOOZE_KEY  = 'cu_wa_snooze';    // Zeitstempel des ✕
+  var SHOWN_KEY   = 'cu_wa_shown';     // Anzahl bisheriger Einblendungen
+  var PV_KEY      = 'cu_wa_pageviews'; // Seitenaufrufe dieser Sitzung
+  var SNOOZE_TAGE = 30;
+  var MAX_ANZEIGEN = 3;
 
-  var url = '/artikel/' + slug;
-  var tabText = '30 Übungen für die Ferien';
-  var cardTitle = '30 Übungen für die Sommerferien – zum Selbermachen';
-  // Eigenes 128px-Thumbnail statt des Artikelbilds: Die Karte zeigt das Bild mit
-  // 64x64 an, das Original ist 1536x1024 und 2,9 MB gross - und wurde bisher auf
-  // jeder Seite geladen, auf Mobilgeraeten sogar fuer die per CSS versteckte Karte.
-  var img = '/images/artikel/fussball-ferienkalender-thumb.webp';
-  var calendarIcon = '<svg width="15" height="15" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="16" height="14" rx="2"/><path d="M3 9h16M7 3v4M15 3v4"/></svg>';
+  var such = window.location.search;
+
+  if (/[?&]wa=reset/.test(such)) {
+    try {
+      localStorage.removeItem(STATUS_KEY);
+      localStorage.removeItem(SNOOZE_KEY);
+      localStorage.removeItem(SHOWN_KEY);
+      sessionStorage.removeItem(PV_KEY);
+    } catch (e) {}
+  }
+
+  var istVorschau = window.location.hostname !== 'coachunited.de';
+  var erzwungen   = /[?&]wa=1/.test(such);
+  if (!(WA_PROMO_LIVE || istVorschau || erzwungen)) return;
+
+  // Auf der Infoseite zum Kanal wäre der Hinweis überflüssig.
+  if (window.location.pathname.replace(/\/$/, '') === '/whatsapp-info') return;
+
+  function lies(key) { try { return localStorage.getItem(key); } catch (e) { return null; } }
+  function schreib(key, wert) { try { localStorage.setItem(key, wert); } catch (e) {} }
+
+  if (!erzwungen) {
+    // Wer abonniert hat oder "Hab ich schon" gewählt hat, sieht ihn nie wieder.
+    if (lies(STATUS_KEY)) return;
+
+    // Nach dem ✕ dreißig Tage Ruhe.
+    var snooze = Number(lies(SNOOZE_KEY) || 0);
+    if (snooze && Date.now() - snooze < SNOOZE_TAGE * 24 * 60 * 60 * 1000) return;
+
+    // Dreimal ignoriert heißt: kein Interesse.
+    if (Number(lies(SHOWN_KEY) || 0) >= MAX_ANZEIGEN) return;
+  }
+
+  function ereignis(name) {
+    // gtag existiert nur nach erteilter Cookie-Einwilligung.
+    if (typeof window.gtag === 'function') window.gtag('event', name);
+  }
 
   var style = document.createElement('style');
   style.textContent = `
-    .cu-promo { position: fixed; z-index: 30; font-family: 'Inter Tight', system-ui, sans-serif; }
-    .cu-promo-link { display: flex; text-decoration: none; color: inherit; }
-    .cu-promo-close { position: absolute; background: none; border: none; cursor: pointer; opacity: 0.7; line-height: 1; padding: 4px; z-index: 1; }
-    .cu-promo-close:hover { opacity: 1; }
-
-    .cu-promo-tab {
-      right: 0; top: 50%; transform: translateY(-50%);
-      background: #1E6BFF;
-      padding: 12px 6px 14px; border-radius: 10px 0 0 10px;
-      box-shadow: -2px 2px 10px rgba(14, 20, 48, 0.22);
+    .cu-wa {
+      position: fixed; z-index: 40;
+      font-family: 'Inter Tight', system-ui, sans-serif;
+      background: #fff; border-radius: 14px;
+      box-shadow: 0 12px 34px rgba(14, 20, 48, 0.26);
+      padding: 15px 16px 14px;
+      opacity: 0; transform: translateY(14px);
+      transition: opacity 0.35s ease, transform 0.35s ease;
     }
-    .cu-promo-tab .cu-promo-link { flex-direction: column; align-items: center; gap: 6px; color: #fff; }
-    .cu-promo-tab-text { writing-mode: vertical-rl; font-size: 11.5px; font-weight: 700; letter-spacing: 0.02em; }
-    .cu-promo-tab .cu-promo-close { top: 2px; right: 2px; font-size: 11px; color: #fff; }
-
-    .cu-promo-card {
-      right: 24px; bottom: 24px; width: 300px;
-      background: #fff; border-radius: 16px;
-      box-shadow: 0 16px 40px rgba(14, 20, 48, 0.22);
-      padding: 16px;
-      opacity: 0; transform: translateY(24px);
-      transition: opacity 0.5s ease, transform 0.5s ease;
+    .cu-wa.cu-wa-in { opacity: 1; transform: translateY(0); }
+    .cu-wa-close {
+      position: absolute; top: 7px; right: 8px;
+      background: none; border: none; cursor: pointer;
+      font-size: 15px; line-height: 1; padding: 4px;
+      color: #8890A8; opacity: 0.8;
     }
-    .cu-promo-card.cu-promo-in { opacity: 1; transform: translateY(0); }
-    .cu-promo-card .cu-promo-link { gap: 12px; }
-    .cu-promo-card img { width: 64px; height: 64px; object-fit: cover; border-radius: 10px; flex-shrink: 0; }
-    .cu-promo-card-label { font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #1E6BFF; margin-bottom: 4px; }
-    .cu-promo-card-title { font-size: 13.5px; font-weight: 700; color: #0E1430; line-height: 1.35; }
-    .cu-promo-card .cu-promo-close { top: 6px; right: 6px; font-size: 14px; color: #8890A8; }
+    .cu-wa-close:hover { opacity: 1; }
+    .cu-wa-title {
+      font-size: 15px; font-weight: 800; color: #0E1430;
+      line-height: 1.3; letter-spacing: -0.01em; padding-right: 20px;
+    }
+    .cu-wa-sub {
+      font-size: 13px; color: #6B7390; line-height: 1.45; margin-top: 4px;
+    }
+    .cu-wa-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+    .cu-wa-primary, .cu-wa-secondary {
+      font-family: 'Inter Tight', system-ui, sans-serif;
+      font-size: 13.5px; font-weight: 700;
+      padding: 10px 15px; border-radius: 9px;
+      cursor: pointer; text-decoration: none; border: 1.5px solid transparent;
+      transition: background 0.15s, color 0.15s, border-color 0.15s;
+    }
+    .cu-wa-primary { background: #1E6BFF; border-color: #1E6BFF; color: #fff; }
+    .cu-wa-primary:hover { background: #1558d6; border-color: #1558d6; }
+    .cu-wa-secondary { background: transparent; border-color: #D8DEEC; color: #46506E; }
+    .cu-wa-secondary:hover { border-color: #1E6BFF; color: #1E6BFF; background: #F2F6FF; }
 
-    @media (min-width: 768px) { .cu-promo-tab { display: none; } }
-    @media (max-width: 767px) { .cu-promo-card { display: none; } }
-    @media print { .cu-promo { display: none !important; } }
+    /* Mobil: Leiste über der Bottom-Nav, nie darauf */
+    @media (max-width: 767px) {
+      .cu-wa { left: 12px; right: 12px; bottom: 16px; }
+      .cu-wa.cu-wa-ueber-nav { bottom: var(--cu-wa-abstand, 92px); }
+    }
+    @media (min-width: 768px) {
+      .cu-wa { right: 24px; bottom: 24px; width: 340px; }
+    }
+    @media print { .cu-wa { display: none !important; } }
   `;
   document.head.appendChild(style);
 
-  function dismiss(el) {
-    localStorage.setItem(DISMISS_KEY, String(Date.now()));
-    el.remove();
+  var box = document.createElement('div');
+  box.className = 'cu-wa';
+  box.setAttribute('role', 'complementary');
+  box.innerHTML =
+      '<button class="cu-wa-close" aria-label="Hinweis schließen">✕</button>'
+    + '<p class="cu-wa-title">Neue Übungen direkt aufs Handy?</p>'
+    + '<p class="cu-wa-sub">Jede neue Übung im kostenlosen WhatsApp-Kanal.</p>'
+    + '<div class="cu-wa-actions">'
+    +   '<a class="cu-wa-primary" href="' + KANAL_URL + '" target="_blank" rel="noopener">Kanal ansehen</a>'
+    +   '<button class="cu-wa-secondary" type="button">Hab ich schon</button>'
+    + '</div>';
+
+  function schliessen() {
+    box.classList.remove('cu-wa-in');
+    setTimeout(function () { box.remove(); }, 320);
   }
 
-  var tab = document.createElement('div');
-  tab.className = 'cu-promo cu-promo-tab';
-  tab.innerHTML = '<button class="cu-promo-close" aria-label="Hinweis schließen">✕</button>'
-    + '<a href="' + url + '" class="cu-promo-link" aria-label="' + cardTitle + '">'
-    + calendarIcon
-    + '<span class="cu-promo-tab-text">' + tabText + '</span></a>';
-  tab.querySelector('.cu-promo-close').addEventListener('click', function () { dismiss(tab); });
-  document.body.appendChild(tab);
+  box.querySelector('.cu-wa-close').addEventListener('click', function () {
+    schreib(SNOOZE_KEY, String(Date.now()));
+    ereignis('wa_promo_dismiss');
+    schliessen();
+  });
 
-  var card = document.createElement('div');
-  card.className = 'cu-promo cu-promo-card';
-  card.innerHTML = '<button class="cu-promo-close" aria-label="Hinweis schließen">✕</button>'
-    + '<a href="' + url + '" class="cu-promo-link">'
-    + '<img src="' + img + '" alt="" width="64" height="64" loading="lazy" decoding="async">'
-    + '<div><div class="cu-promo-card-label">Kostenloser Download</div>'
-    + '<div class="cu-promo-card-title">' + cardTitle + '</div></div></a>';
-  card.querySelector('.cu-promo-close').addEventListener('click', function () { dismiss(card); });
-  document.body.appendChild(card);
+  box.querySelector('.cu-wa-secondary').addEventListener('click', function () {
+    schreib(STATUS_KEY, 'has');
+    ereignis('wa_promo_has');
+    schliessen();
+  });
 
-  setTimeout(function () { card.classList.add('cu-promo-in'); }, 900);
+  box.querySelector('.cu-wa-primary').addEventListener('click', function () {
+    schreib(STATUS_KEY, 'subscribed');
+    ereignis('wa_promo_click');
+  });
+
+  var gezeigt = false;
+
+  function zeigen() {
+    if (gezeigt) return;
+    gezeigt = true;
+
+    // Abstand zur mobilen Bottom-Nav zur Laufzeit messen – ihre Höhe hängt
+    // davon ab, wie viele Zeilen die Beschriftungen brauchen.
+    var nav = document.querySelector('.bottom-nav');
+    if (nav && window.innerWidth < 768) {
+      var hoehe = Math.round(nav.getBoundingClientRect().height);
+      if (hoehe > 0) {
+        box.style.setProperty('--cu-wa-abstand', (hoehe + 12) + 'px');
+        box.classList.add('cu-wa-ueber-nav');
+      }
+    }
+
+    document.body.appendChild(box);
+    schreib(SHOWN_KEY, String(Number(lies(SHOWN_KEY) || 0) + 1));
+    ereignis('wa_promo_shown');
+    setTimeout(function () { box.classList.add('cu-wa-in'); }, 60);
+  }
+
+  if (erzwungen) { setTimeout(zeigen, 600); return; }
+
+  // Ab der zweiten Seite einer Sitzung sofort – wer weiterklickt, hat den
+  // Nutzen schon erlebt. Auf der ersten Seite erst nach echtem Interesse.
+  var aufrufe = 0;
+  try {
+    aufrufe = Number(sessionStorage.getItem(PV_KEY) || 0) + 1;
+    sessionStorage.setItem(PV_KEY, String(aufrufe));
+  } catch (e) { aufrufe = 1; }
+
+  if (aufrufe >= 2) {
+    setTimeout(zeigen, 1200);
+    return;
+  }
+
+  var zeitReif = false;
+  var weitGenug = false;
+  var pruefen = function () { if (zeitReif && weitGenug) zeigen(); };
+
+  setTimeout(function () { zeitReif = true; pruefen(); }, 20000);
+
+  window.addEventListener('scroll', function () {
+    var maximum = document.documentElement.scrollHeight - window.innerHeight;
+    if (maximum > 0 && window.scrollY / maximum > 0.5) {
+      weitGenug = true;
+      pruefen();
+    }
+  }, { passive: true });
 }
