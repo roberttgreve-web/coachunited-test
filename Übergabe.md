@@ -393,7 +393,7 @@ Liegt das Originalbild nicht lokal, **lädt das Script es von der `foto_url`** u
 | Bereich | Fläche | Inhalt |
 |---|---|---|
 | `.selection-section` | dunkel `#0E1430` | H1, Untertitel, Jugend- und Skill-Auswahl, blauer CTA |
-| `#so-gehts` (`.hs--hell`) | weiß | „In 10 Sekunden zur fertigen Einheit." – drei nummerierte Schritte plus Foto |
+| `#so-gehts` (`.hs--hell`) | weiß | „In 10 Sekunden zur fertigen Einheit." – drei nummerierte Schritte plus Foto (auf Mobil ausgeblendet) |
 | `#direkt-zu-den-uebungen` (`.hs--dunkel`) | dunkel | Für alle, die selbst suchen: CTA in die Bibliothek, Verweis auf die Merkliste |
 | Footer | weiß | – |
 
@@ -406,6 +406,10 @@ Das Sektions-System (`.hs`, `.hs-title`, `.hs-cta`, `.hs-split`, `.hs-schritte` 
 ⚠️ **`home.html` trägt seine eigene Kopie weiterhin.** Es gibt also zwei Quellen – Änderungen in `sektionen.css` wirken sich **nicht** auf die Startseite aus. Das Zusammenführen steht als Aufräumschritt aus und ist im Kopf der Datei vermerkt. Bewusst nicht gleich mitgemacht: `home.html` ist live und abgenommen.
 
 Wer eine weitere Seite mit Sektionen ausstattet, bindet `sektionen.css` **vor** `desktop.css` ein.
+
+**`.hs-foto` ist auf Mobil generell ausgeblendet.** Unterhalb von 768px rutscht das Bild unter den Text, trägt dort nichts mehr bei und schiebt nur den nächsten Abschnitt nach unten. Die Startseite hält es in ihrer Übungen-Sektion genauso. Wer auf einer künftigen Seite ein Foto auch mobil zeigen will, muss die Regel dort gezielt zurücknehmen.
+
+Das Foto der Schritte-Sektion: `public/images/einheiten-taktiktafel.webp`, 960×640, **26 KB** (Original `nguyen-thu-hoai-v0H-vn0BixI-unsplash.jpg` im Projektstamm, 2.531 KB). Aufbereitung wie in Abschnitt 11.4.
 
 ### 12.3 Der Auswahlbereich auf Desktop
 
