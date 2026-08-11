@@ -518,8 +518,27 @@
       /* Foto unter dem CTA weg – lädt dank loading="lazy" dann gar nicht erst */
       #uebungen .hs-foto { display: none; }
 
-      /* Statt elf gestapelter Kacheln nur die neueste */
-      #wissen .hs-tile:not(:first-child) { display: none; }
+      /* Kacheln nicht stapeln, sondern als wischbare Galerie nebeneinander.
+         Die erste Kachel steht ganz im Bild, die zweite wird angeschnitten –
+         das zeigt ohne Pfeil, dass es weitergeht. Die Pfeile bleiben eine
+         Desktop-Sache, hier wischt man. */
+      #wissen .hs-tiles {
+        display: flex;
+        gap: 12px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none;
+        -webkit-overflow-scrolling: touch;
+        /* Bis an den Bildschirmrand laufen lassen, Kacheln bleiben eingerückt */
+        margin-inline: -22px;
+        padding-inline: 22px;
+        scroll-padding-inline: 22px;
+      }
+      #wissen .hs-tiles::-webkit-scrollbar { display: none; }
+      #wissen .hs-tile {
+        flex: 0 0 82%;
+        scroll-snap-align: start;
+      }
 
       /* Portrait kleiner, Button darunter */
       .hs-portrait img,
