@@ -150,6 +150,13 @@
 .hs--dunkel .hs-schritt-titel { color: #fff; }
 .hs-schritt .hs-text { margin: 0; }
 
+@media (max-width: 767px) {
+  /* Auf Mobil rutscht das Foto unter den Text. Dort traegt es nichts mehr
+     bei und schiebt nur den naechsten Abschnitt nach unten. Die Startseite
+     haelt es in ihrer Uebungen-Sektion genauso. */
+  .hs-foto { display: none; }
+}
+
 @media (min-width: 768px) {
   .hs { padding: 68px 40px; }
   .hs-title { font-size: 34px; margin-bottom: 20px; }
