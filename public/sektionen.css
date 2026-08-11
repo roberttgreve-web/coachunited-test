@@ -1,0 +1,159 @@
+/* ══════════════════════════════════════════════════════════
+   Inhaltssektionen
+
+   Das Bausteinsystem der Startseite, herausgeloest zur Wiederverwendung
+   auf weiteren Seiten. Aufbau einer Sektion:
+
+     <section class="hs hs--hell">
+       <div class="hs-inner">
+         <span class="hs-label">Label</span>
+         <h2 class="hs-title">Ueberschrift</h2>
+         <p class="hs-text">Fliesstext</p>
+         <div class="hs-actions"><a class="hs-cta" href="…">CTA</a></div>
+       </div>
+     </section>
+
+   Grundregel: nie zwei gleiche Flaechen nebeneinander. Der Farbwechsel
+   zwischen hell und dunkel ersetzt Trennlinien.
+
+   HINWEIS: home.html traegt diese Regeln aktuell noch im eigenen
+   <style>-Block. Solange das so ist, gibt es zwei Quellen – Aenderungen
+   hier wirken sich nicht auf die Startseite aus. Das Zusammenfuehren
+   steht als Aufraeumschritt aus.
+   ══════════════════════════════════════════════════════════ */
+
+.hs { padding: 46px 22px; }
+.hs-inner { max-width: 960px; margin: 0 auto; }
+
+.hs--hell   { background: #fff; }
+.hs--dunkel { background: #0E1430; }
+
+.hs-label {
+  display: block;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.hs-title {
+  font-size: 25px;
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  margin-bottom: 14px;
+}
+.hs-text {
+  font-size: 15px;
+  line-height: 1.6;
+  max-width: 62ch;
+}
+.hs-text + .hs-text { margin-top: 12px; }
+
+.hs--hell   .hs-label { color: #1E6BFF; }
+.hs--hell   .hs-title { color: #0E1430; }
+.hs--hell   .hs-text  { color: #5A6180; }
+
+.hs--dunkel .hs-label { color: #6E9BFF; }
+.hs--dunkel .hs-title { color: #fff; }
+.hs--dunkel .hs-text  { color: rgba(255,255,255,0.66); }
+
+.hs-textlink {
+  color: #1E6BFF;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  font-weight: 600;
+}
+.hs-textlink:hover { text-decoration-thickness: 2px; }
+
+/* ── CTAs ── */
+.hs-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-top: 24px;
+}
+.hs-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 13px 20px;
+  background: #1E6BFF;
+  color: #fff;
+  border: 1.5px solid #1E6BFF;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 700;
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+.hs-cta:hover { background: #1558d6; border-color: #1558d6; }
+.hs-cta svg { flex-shrink: 0; }
+
+/* Zweitrangiger CTA nur als Umriss */
+.hs-cta--umriss { background: transparent; }
+.hs--hell   .hs-cta--umriss { border-color: #C9D2E4; color: #0E1430; }
+.hs--hell   .hs-cta--umriss:hover { background: #F2F6FF; border-color: #1E6BFF; color: #1E6BFF; }
+.hs--dunkel .hs-cta--umriss { border-color: rgba(255,255,255,0.28); color: #fff; }
+.hs--dunkel .hs-cta--umriss:hover { background: rgba(255,255,255,0.08); border-color: #fff; }
+
+/* ── Zweispalter mit Foto ── */
+.hs-split { display: grid; gap: 26px; }
+.hs-foto {
+  width: 100%;
+  /* height:auto ist noetig, sonst gewinnt das height-Attribut aus dem
+     Markup und aspect-ratio bleibt wirkungslos. */
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border-radius: 14px;
+  display: block;
+  background: #E6E8EF;
+}
+
+/* ── Nummerierte Schritte ── */
+.hs-schritte {
+  display: grid;
+  gap: 18px;
+  margin-top: 24px;
+  counter-reset: schritt;
+}
+.hs-schritt {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  gap: 14px;
+  align-items: start;
+}
+.hs-schritt::before {
+  counter-increment: schritt;
+  content: counter(schritt);
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 999px;
+  background: #1E6BFF;
+  color: #fff;
+}
+.hs-schritt-titel {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-bottom: 3px;
+}
+.hs--hell   .hs-schritt-titel { color: #0E1430; }
+.hs--dunkel .hs-schritt-titel { color: #fff; }
+.hs-schritt .hs-text { margin: 0; }
+
+@media (min-width: 768px) {
+  .hs { padding: 68px 40px; }
+  .hs-title { font-size: 34px; margin-bottom: 20px; }
+  .hs-text { font-size: 16px; }
+  .hs-split { grid-template-columns: 1.05fr 0.95fr; align-items: start; gap: 44px; }
+  .hs-foto { align-self: center; }
+}
