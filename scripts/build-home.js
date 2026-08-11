@@ -105,10 +105,18 @@ function main() {
     .filter(e => e.status === 'veroeffentlicht' && e.url_slug);
   html = ersetzeBlock(html, 'count', String(uebungen.length));
 
-  // ── Die drei neuesten Artikel ──
+  // ── Artikel-Kacheln ──
+  // Sortierung: hervorgehobene zuerst, danach nach Datum absteigend.
+  // `hervorheben: true` in articles.json zieht einen Artikel nach vorn – auf
+  // Mobil ist nur die erste Kachel sichtbar, dort entscheidet das Feld also,
+  // welcher Artikel beworben wird. Ohne das Feld bleibt es beim Datum.
   const artikel = readJson(articlesPath)
     .filter(a => a.status === 'veroeffentlicht' && a.url_slug)
-    .sort((a, b) => String(b.erstellt_am || '').localeCompare(String(a.erstellt_am || '')))
+    .sort((a, b) => {
+      const prio = (b.hervorheben ? 1 : 0) - (a.hervorheben ? 1 : 0);
+      if (prio !== 0) return prio;
+      return String(b.erstellt_am || '').localeCompare(String(a.erstellt_am || ''));
+    })
     .slice(0, ARTIKEL_ANZAHL);
 
   const kacheln = artikel.map(a => `
