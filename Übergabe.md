@@ -203,7 +203,8 @@ Google nennt „sehr wenig Textinhalt (Inhalte ohne Mehrwert)" als Ablehnungsgru
 | Bei der Ad-Grants-Ablehnung | 6.770 KB |
 | Nach Punkt 1–3 (Caching, Bilder) | 1.880 KB |
 | Nach Punkt 4 und 7 (Startseite, Skill-Index) | ~260 KB |
-| Nach dem Fotowechsel im Hero | **221 KB mobil / 284 KB Desktop** |
+| Nach dem Fotowechsel im Hero | 221 KB mobil / 284 KB Desktop |
+| **Live gemessen nach dem Merge** | **207 KB** (unkomprimiert, mit gzip weniger) |
 
 Rund **97 % weniger** als zum Zeitpunkt der Prüfung. Die Werte ab 1.880 KB sind aus echten Dateigrößen gerechnet (Textdateien mit gzip wie auf Vercel), nicht im Browser gemessen – die Vorschau-Deployments sind durch **Deployment Protection** gesperrt und liefern eine Vercel-Login-Seite aus. Das betrifft auch den Test am Handy: ohne Vercel-Anmeldung kommt man dort nicht auf die Vorschau.
 
@@ -305,7 +306,9 @@ Auf Desktop laufen **alle veröffentlichten Artikel** in einem waagerecht scroll
 
 Beide sind nötig: Mit nur einem Pfeil ist das Band eine Sackgasse – wer sich durchgeklickt hat, kommt nicht zurück.
 
-Mobil bleiben die Kacheln gestapelt, beide Pfeile sind per CSS ausgeblendet.
+**Auf Mobil ist es dieselbe Galerie, nur zum Wischen** statt mit Pfeilen. Die Kacheln sind 82 % breit, dadurch steht die erste ganz im Bild und von der zweiten schauen rund 70 px herein – das ersetzt den Pfeil als Hinweis. `scroll-snap` lässt jede Kachel dort einrasten, wo vorher die vorherige stand.
+
+Damit die angeschnittene Kachel nicht mitten im Sektionsrand abbricht, läuft das Band bis an den Bildschirmrand: negative `margin-inline` in Höhe des Sektionsabstands, dazu ein gleich großes `padding-inline` und `scroll-padding-inline`. Ohne diesen Kniff sieht der Anschnitt nach Fehler aus statt nach Galerie.
 
 Die Kacheln zeigen **Bild und Titel, kein Datum**. Wer das Datum zurück will, braucht es an zwei Stellen: die Ausgabe in `build-home.js` und eine CSS-Regel für `.hs-tile-date`.
 
@@ -326,7 +329,11 @@ Das hat zwei Gründe: Das Script ist **beliebig oft wiederholbar**, und `home.ht
 
 Fehlt ein Marker, bricht das Script mit einer klaren Meldung ab, statt stillschweigend nichts zu tun.
 
-**Ein neuer Artikel erscheint automatisch** auf der Startseite, sobald er in `articles.json` steht (Sortierung nach `erstellt_am`, absteigend). Zusätzlich sollte ein Thumbnail erzeugt werden – siehe 11.4.
+**Ein neuer Artikel erscheint automatisch** auf der Startseite, sobald er in `articles.json` steht. Zusätzlich sollte ein Thumbnail erzeugt werden – siehe 11.4.
+
+**Reihenfolge der Kacheln:** zuerst alle mit `"hervorheben": true`, danach nach `erstellt_am` absteigend. Das Feld ist optional und existiert, weil auf Mobil die erste Kachel die prominenteste ist – so lässt sich ohne Code-Änderung steuern, welcher Artikel dort steht. Aktuell trägt es der Einwurf-Artikel.
+
+Bewusst *nicht* gelöst über ein zurückdatiertes `erstellt_am`: Das Feld speist auch die `lastmod`-Angabe der Sitemap, dort wäre ein erfundenes Datum ein falsches Signal an Google.
 
 ### 11.3a `skills-index.json` – warum es die Datei gibt
 
@@ -344,9 +351,9 @@ Auf `/uebungen` und im Einheiten-Generator wird `exercises.json` weiterhin volls
 
 | Datei | Zweck | Größe |
 |---|---|---|
-| `public/hero-photo.webp` | Hero, 1600×1067 | 180 KB (Original 4.720 KB) |
-| `public/images/uebungen-baelle.webp` | Foto in der Übungen-Sektion | 43 KB (Original 734 KB) |
-| `public/images/robert-greve.webp` | Portrait in „Über uns", 600×800 | 34 KB (Original 2.733 KB) |
+| `public/hero-photo.webp` | Hero (Bälle), 1600×1067 | 84 KB (Original 734 KB) |
+| `public/images/uebungen-huetchen.webp` | Übungen-Sektion (Hütchen), 960×640 | 94 KB (Original 1.175 KB) |
+| `public/images/robert-greve.webp` | Portrait in „Über uns", 640×576 | 26 KB (Original 2.733 KB) |
 | `public/images/artikel/thumbs/*.webp` | Artikel-Kacheln, 480×320 | je 8–41 KB |
 
 Die Originale der drei Einzelfotos liegen unaufbereitet im Projektstammverzeichnis (`vikram-tkv-…jpg`, `pedram-raz-…jpg`, `IMG_4685.jpeg`) und sind nicht versioniert. Bei einem Fotowechsel: neue Datei ablegen, mit Pillow auf die Zielgröße bringen, als WebP unter demselben Namen speichern.
