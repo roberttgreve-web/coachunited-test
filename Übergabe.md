@@ -390,6 +390,8 @@ Zwei Abweichungen von den Unterseiten:
 
 ⚠️ `#ueber-uns` trägt **zwei verschiedene** `padding-bottom`-Werte: 104px im Desktop-Block (Platz für die herausgelöste Bildunterschrift) und 127px im Mobil-Block (dieselbe Bildunterschrift plus 81px Bottom-Nav). Wer einen davon anfasst, prüft den anderen mit.
 
+**Nebenwirkung auf den WhatsApp-Störer:** `injectWhatsAppPromo()` misst zur Laufzeit, ob eine `.bottom-nav` da ist, und setzt sich darüber (Abschnitt 5). Auf der Startseite gab es vorher keine – der Störer saß am unteren Rand. Jetzt rutscht er automatisch über die Nav. Kein Eingriff nötig, aber beim Scharfschalten von `WA_PROMO_LIVE` mit anschauen.
+
 ### 11.5 Fallstricke
 
 - **`aspect-ratio` verliert gegen das `height`-Attribut.** Bilder im Markup tragen `width`/`height` gegen Layout-Sprünge. Ohne zusätzliches `height: auto` im CSS gewinnt das Attribut, und `aspect-ratio` bleibt wirkungslos – das Bild wird verzerrt. Betrifft `.hs-foto` und `.hs-tile img`.
