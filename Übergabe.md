@@ -1,6 +1,6 @@
 # Übergabe – coachunited.de
 
-Stand: 2026-08-07. Dieses Dokument ist der Einstiegspunkt für alle, die künftig an coachunited.de weiterarbeiten (Entwickler, Freelancer, Nachfolger).
+Stand: 2026-08-12. Dieses Dokument ist der Einstiegspunkt für alle, die künftig an coachunited.de weiterarbeiten (Entwickler, Freelancer, Nachfolger).
 
 ## 1. Was ist das für ein Projekt?
 
@@ -135,9 +135,11 @@ Wichtig: `uebung-detail.html`, `einheit-detail.html` und `artikel-detail.html` s
 - ⚠️ **CSS und JS tragen keine Versionsnummer im Dateinamen.** `/desktop.css`, `/sektionen.css`, `/desktop-nav.js` heißen nach jedem Deploy gleich. Deshalb steht ihr `Cache-Control` in `vercel.json` auf `max-age=0, must-revalidate` – der Browser fragt bei jedem Aufruf nach und bekommt meist ein 304. Vorher stand dort `max-age=86400`: Eine CSS-Änderung erreichte wiederkehrende Besucher bis zu 24 Stunden lang nicht, und beim Testen sah man auf dem Handy hartnäckig die alte Version. Wer die Regel wieder verschärfen will, muss vorher die Dateinamen versionieren (`sektionen.abc123.css`) – sonst kommt das Problem zurück.
 - **Vorgemerkt: Foto für die Merkliste.** Im Projektstammverzeichnis liegt `younes-karami-ne-ft_5zDTY-unsplash.jpg` – gedacht für einen künftigen Umbau von `/merkliste` im Stil der Startseite. Aufbereitung wie in Abschnitt 11.4 beschrieben (Pillow, WebP, `ImageOps.exif_transpose()`).
 
-## 9. Google Ad Grants – offene Maßnahmen (Stand 2026-08-07)
+## 9. Google Ad Grants (Stand 2026-08-12)
 
-Die Bewerbung um Google Ad Grants wurde abgelehnt. Begründung von Google:
+**Am 2026-08-12 wurde der Antrag erneut eingereicht.** Alle acht Maßnahmen aus 9.3 sind umgesetzt; was dabei gemessen und geändert wurde, steht in Abschnitt 14. Kommt erneut eine Ablehnung, sind die naheliegenden Stellschrauben: die Registernummer auf „Über uns" (13.2) und die 20 Base64-Bilder in `exercises.json`, die den Generator und die 227 Detailseiten weiterhin ausbremsen (14.7).
+
+Der **erste** Antrag wurde abgelehnt. Begründung von Google:
 
 > Die Website sollte schnell laden und die Navigation eindeutig sein. Achten Sie auf relevante Inhalte und Calls-to-Action.
 
