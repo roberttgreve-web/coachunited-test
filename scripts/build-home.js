@@ -7,6 +7,7 @@ const exercisesPath = path.join(__dirname, '..', 'public', 'exercises.json');
 const articlesPath  = path.join(__dirname, '..', 'public', 'articles.json');
 const thumbDir      = path.join(__dirname, '..', 'public', 'images', 'artikel', 'thumbs');
 const skillIndexPath = path.join(__dirname, '..', 'public', 'skills-index.json');
+const uebungsIndexPath = path.join(__dirname, '..', 'public', 'uebungen-index.json');
 
 // Alle veroeffentlichten Artikel als Kacheln; auf Desktop laufen sie in einem
 // waagerecht scrollbaren Band, die nicht sichtbaren laden per loading="lazy".
@@ -93,6 +94,33 @@ function baueSkillIndex(exercises) {
   return index;
 }
 
+/**
+ * Schlanker Index fuer die Uebungsuebersicht.
+ *
+ * Die Kartenansicht auf /uebungen zeigt genau sechs Felder und kein Bild.
+ * Trotzdem lud die Seite exercises.json mit 2,6 MB – darin stecken Aufbau,
+ * Durchfuehrung, Varianten, FAQ und die Grafiken, von denen dort nichts
+ * sichtbar wird. Dieser Index enthaelt nur, was die Karten wirklich
+ * brauchen.
+ *
+ * ⚠️ Aendert sich die Kartenansicht in uebungen.html und braucht ein
+ * weiteres Feld, muss es hier ergaenzt werden – sonst ist es einfach leer.
+ */
+// `id` zeigt die Karte nicht an, die Seite sortiert aber danach (neueste
+// zuerst). Ohne das Feld waere die Reihenfolge stillschweigend die der
+// Datei – ein Fehler, den man nicht sieht.
+const KARTEN_FELDER = ['id', 'titel', 'url_slug', 'kurzbeschreibung', 'jugend', 'skills', 'trainingsphase'];
+
+function baueUebungsIndex(exercises) {
+  return exercises.map(e => {
+    const schlank = {};
+    for (const feld of KARTEN_FELDER) {
+      if (e[feld] !== undefined && e[feld] !== null && e[feld] !== '') schlank[feld] = e[feld];
+    }
+    return schlank;
+  });
+}
+
 function main() {
   if (!fs.existsSync(homePath)) {
     console.log('home.html nicht gefunden – Build übersprungen.');
@@ -146,9 +174,14 @@ function main() {
   const skillIndex = baueSkillIndex(uebungen);
   fs.writeFileSync(skillIndexPath, JSON.stringify(skillIndex), 'utf-8');
 
+  // ── Schlanker Index für die Übungsübersicht ──
+  const uebungsIndex = baueUebungsIndex(uebungen);
+  fs.writeFileSync(uebungsIndexPath, JSON.stringify(uebungsIndex), 'utf-8');
+
   const ohneThumb = artikel.filter(a => !bildQuelle(a.foto_url).startsWith('/images/artikel/thumbs/'));
   console.log(`✓ home.html + ueber-uns.html aktualisiert: ${uebungen.length} Übungen, ${artikel.length} Artikel.`);
   console.log(`✓ skills-index.json: ${Object.entries(skillIndex).map(([j, s]) => `${j} ${s.length}`).join(', ')} – ${Math.round(fs.statSync(skillIndexPath).size / 1024 * 10) / 10} KB.`);
+  console.log(`✓ uebungen-index.json: ${uebungsIndex.length} Übungen – ${Math.round(fs.statSync(uebungsIndexPath).size / 1024)} KB (exercises.json: ${Math.round(fs.statSync(exercisesPath).size / 1024)} KB).`);
   if (ohneThumb.length) {
     console.warn(`  ⚠ Ohne lokales Thumbnail (nutzt das Originalbild): ${ohneThumb.map(a => a.url_slug).join(', ')}`);
   }

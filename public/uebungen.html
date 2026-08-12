@@ -767,7 +767,9 @@
       }).join('');
     }
 
-    fetch('/exercises.json')
+    // Nur die sechs Felder, die die Karten anzeigen – nicht die ganze
+    // Datenbank. build-home.js schreibt den Index bei jedem Deploy.
+    fetch('/uebungen-index.json')
       .then(r => r.json())
       .then(data => {
         allExercises = data.slice().sort((a, b) => b.id - a.id);

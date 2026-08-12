@@ -523,3 +523,37 @@ Die Seite brauchte aus `exercises.json` nur die Liste der Skills je Altersstufe 
 ### 14.5 Startseite: Wappen-Schwingung entfernt
 
 Der mobile Kopfbereich war eine weiße Wappenform mit geschwungener Unterkante (`.crest-shape`, ein SVG-Pfad), die 280px Höhe für reine Dekoration brauchte. Jetzt ein gerader weißer Streifen mit dem Logo, `height: 25dvh` bei `min-height: 178px` – also rund ein Viertel der ersten Bildschirmseite, damit das Logo oben und unten Luft hat. Bewusst als `dvh` statt fester Höhe: Sonst stimmt das Verhältnis nur auf einem Gerätemodell. Das SVG ist aus dem Markup entfernt, die zugehörige Regel aus `desktop.css` ebenfalls – auf Desktop war die Form ohnehin ausgeblendet, dort wird `.crest-panel` zum Foto-Panel.
+
+### 14.6 `uebungen-index.json` – die Übersicht lädt nicht mehr die Datenbank
+
+Die Kartenansicht auf `/uebungen` zeigt **kein Bild** und genau sechs Textfelder. Geladen wurde trotzdem `exercises.json` mit 2,65 MB – darin stecken Aufbau, Durchführung, Varianten, FAQ und die Grafiken, von denen auf der Übersicht nichts sichtbar wird.
+
+`build-home.js` schreibt jetzt zusätzlich `public/uebungen-index.json` mit nur diesen Feldern:
+
+```js
+const KARTEN_FELDER = ['id', 'titel', 'url_slug', 'kurzbeschreibung', 'jugend', 'skills', 'trainingsphase'];
+```
+
+**64 KB statt 2.653 KB.** Die Seite lädt insgesamt 28 KB.
+
+⚠️ **`id` zeigt die Karte nicht an**, die Seite sortiert aber danach (neueste zuerst). Ohne das Feld wäre die Reihenfolge stillschweigend die der Datei – ein Fehler, den man nicht sieht. Wer die Kartenansicht in `uebungen.html` um ein Feld erweitert, muss es in `KARTEN_FELDER` ergänzen, sonst bleibt es leer.
+
+Geprüft: 177 Karten, Reihenfolge identisch zur vollen Datei, Filterkombination E-Jugend → Passen → Hauptteil liefert 149 / 109 / 50 – dieselben Zahlen wie eine unabhängige Auswertung von `exercises.json`.
+
+### 14.7 Offen: 20 Übungen tragen ihr Bild als Base64 im JSON
+
+Beim Messen aufgefallen: `grafik_url` macht **2.015 der 2.653 KB** von `exercises.json` aus. Ursache sind **20 Einträge**, deren Grafik als `data:image/png;base64,…` direkt in der Datei steht – zusammen 2.005 KB für 11 % der Einträge. Die übrigen 157 tragen eine URL.
+
+Laut Abschnitt 3 soll `build-exercise-pages.js` solche Base64-Bilder in die WordPress-Mediathek hochladen und durch die permanente URL ersetzen. Bei diesen 20 ist das offenbar nie passiert.
+
+Das trifft alle Seiten, die weiterhin die volle Datei laden:
+
+| Seite | lädt |
+|---|---|
+| `/einheit-generator` | `exercises.json` |
+| `/uebung/<slug>` (177 Seiten) | `exercises.json` |
+| `/einheit/<slug>` (50 Seiten) | `exercises.json` + `einheiten.json` |
+
+Sinnvollster nächster Schritt: die 20 Bilder aus dem JSON in echte WebP-Dateien unter `public/images/uebungen/` auslagern und `grafik_url` auf den lokalen Pfad umschreiben. Dann fällt die Datei auf rund 640 KB – ohne dass eine einzige Seite ihre Logik ändern muss.
+
+⚠️ Nebenbefund: Die 157 URLs zeigen auf `coachunited.de/wp-content/uploads/…` und werden per **308 auf `archiv.coachunited.de`** umgeleitet. Jede Übungsgrafik kostet also einen zusätzlichen Umleitungs-Sprung auf das alte WordPress. Beim Auslagern der 20 könnte man die 157 gleich mitnehmen.
