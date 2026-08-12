@@ -353,10 +353,14 @@ Auf `/uebungen` und im Einheiten-Generator wird `exercises.json` weiterhin volls
 
 | Datei | Zweck | Größe |
 |---|---|---|
-| `public/hero-photo.webp` | Hero (Bälle), 1600×1067 | 84 KB (Original 734 KB) |
+| `public/images/hero-reihe-baelle.webp` | Hero (Ballreihe), 1600×1067 | 130 KB (Original 2.938 KB) |
 | `public/images/uebungen-huetchen.webp` | Übungen-Sektion (Hütchen), 960×640 | 94 KB (Original 1.175 KB) |
 | `public/images/robert-greve.webp` | Portrait in „Über uns", 640×576 | 26 KB (Original 2.733 KB) |
+| `public/images/kanal-handy.webp` | „Nichts verpassen", 800×800 | 67 KB (Original 1.092 KB) |
+| `public/images/einheiten-taktiktafel.webp` | „Und so funktioniert's" auf `/einheiten`, 960×640 | 26 KB (Original 2.531 KB) |
 | `public/images/artikel/thumbs/*.webp` | Artikel-Kacheln, 480×320 | je 8–41 KB |
+
+⚠️ **Beim Austausch eines Fotos den Dateinamen ändern**, nicht die bestehende Datei überschreiben. Bilder tragen `max-age=604800` – wiederkehrende Besucher würden sonst eine Woche lang das alte Bild sehen. Das Hero-Foto hieß bis 08/2026 `public/hero-photo.webp` und liegt jetzt unter neuem Namen im `images/`-Ordner.
 
 Die Originale der drei Einzelfotos liegen unaufbereitet im Projektstammverzeichnis (`vikram-tkv-…jpg`, `pedram-raz-…jpg`, `IMG_4685.jpeg`) und sind nicht versioniert. Bei einem Fotowechsel: neue Datei ablegen, mit Pillow auf die Zielgröße bringen, als WebP unter demselben Namen speichern.
 
@@ -446,3 +450,30 @@ Der Desktop-Block in `desktop.css` (`body:has(.selection-section)`, ab dem Komme
 Weil die Mobilwerte für Felder und CTA schon stimmen, überschreibt der Desktop-Block sie nicht mehr – er entfernt nur die alten Overrides. Der Footer bleibt **weiß**: Die letzte Sektion ist dunkel, ein dunkler Footer würde damit verschmelzen.
 
 ⚠️ Der ganze Block hängt an `body:has(.selection-section)`. Dieselbe Klasse gibt es **nur** auf `/einheiten` – wer sie auf einer anderen Seite verwendet, erbt das komplette Layout.
+
+---
+
+## 13. Textausbau der Unterseiten (08/2026)
+
+Vier Seiten trugen nur eine Überschrift und ein bis drei Sätze. Für Google Ad Grants ist das zu dünn („relevante Inhalte"), und für Besucher beantwortete keine davon die Frage, was sie hier eigentlich haben.
+
+| Seite | Was dazugekommen ist |
+|---|---|
+| `/merkliste` | Zwei Sätze unter dem Titel, statt „Deine gespeicherten Einheiten und Übungen." Der zweite nennt den Haken: gespeichert wird im `localStorage`, also **nur in diesem Browser auf diesem Gerät**. Wer zu Hause speichert, findet auf dem Handy am Platz nichts – das stand vorher nirgends. **Bewusst kein Foto**: Die Merkliste ist ein Arbeitswerkzeug, die gespeicherten Einträge sollen sofort sichtbar sein. |
+| `/wissen` | Einführungstext im dunklen Kopfbereich (`.page-intro`), aufgehängt an den tatsächlichen Artikelthemen – Elternarbeit, Umbaupause, Kopfbälle. |
+| `/whatsapp-info` | Vier Absätze statt einem, zweispaltig mit Foto (`.wa-split`). Kernargument ist jetzt, dass in einem WhatsApp-Kanal **nur der Betreiber schreiben kann** – kein Gruppenchat, kein brummendes Handy. Auf Mobil steht das Foto oben (`order: -1`), auf Desktop rechts. |
+| `/ueber-uns` | Von drei Sätzen auf vier Abschnitte mit Zwischenüberschriften, Portrait und CTA „Übung einreichen". Nennt Verein, Gemeinnützigkeit, Gründungsjahr 2025 und dass niemand daran verdient. |
+
+### 13.1 Die Übungszahl in „Über uns"
+
+Der Abschnitt „Was wir machen" nennt den Umfang der Bibliothek. Damit die Zahl nicht nach der nächsten Übung falsch ist, schreibt `build-home.js` sie bei jedem Deploy auch dorthin – derselbe Marker wie auf der Startseite:
+
+```html
+Inzwischen stehen hier <!--cu:count-->177<!--/cu:count--> Übungen …
+```
+
+⚠️ `ersetzeBlock()` **wirft**, wenn der Marker fehlt. Wer ihn beim Umformulieren aus `ueber-uns.html` entfernt, bringt den Vercel-Build zum Scheitern – nicht nur diese Seite, den ganzen Deploy.
+
+### 13.2 Bewusst nicht drin
+
+Die Registernummer (Amtsgericht Charlottenburg, VR 42714 B) steht **nicht** auf „Über uns", auf ausdrücklichen Wunsch. Sie steht damit nur im Impressum, und das trägt `noindex` – für Google ist sie unsichtbar. Falls die Ad-Grants-Bewerbung erneut an der Gemeinnützigkeit hängt, wäre das die erste Stellschraube.

@@ -656,7 +656,7 @@
     position: relative !important;
     width: 100% !important;
     height: 100% !important;
-    background: #0E1430 url('/hero-photo.webp') center/cover no-repeat !important;
+    background: #0E1430 url('/images/hero-reihe-baelle.webp') center/cover no-repeat !important;
     overflow: hidden !important;
     flex-shrink: unset !important;
   }

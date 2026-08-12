@@ -2,6 +2,7 @@ const fs   = require('fs');
 const path = require('path');
 
 const homePath      = path.join(__dirname, '..', 'public', 'home.html');
+const ueberUnsPath  = path.join(__dirname, '..', 'public', 'ueber-uns.html');
 const exercisesPath = path.join(__dirname, '..', 'public', 'exercises.json');
 const articlesPath  = path.join(__dirname, '..', 'public', 'articles.json');
 const thumbDir      = path.join(__dirname, '..', 'public', 'images', 'artikel', 'thumbs');
@@ -31,13 +32,13 @@ function readJson(p) {
  * Dadurch ist das Script beliebig oft wiederholbar und home.html enthaelt
  * auch ohne Build-Lauf immer gueltiges Markup (wichtig fuer die lokale Vorschau).
  */
-function ersetzeBlock(html, name, inhalt) {
+function ersetzeBlock(html, name, inhalt, datei = 'home.html') {
   const start = `<!--cu:${name}-->`;
   const ende  = `<!--/cu:${name}-->`;
   const i = html.indexOf(start);
   const j = html.indexOf(ende);
   if (i === -1 || j === -1 || j < i) {
-    throw new Error(`Marker cu:${name} fehlt oder ist vertauscht in home.html`);
+    throw new Error(`Marker cu:${name} fehlt oder ist vertauscht in ${datei}`);
   }
   return html.slice(0, i + start.length) + inhalt + html.slice(j);
 }
@@ -131,12 +132,22 @@ function main() {
 
   fs.writeFileSync(homePath, html, 'utf-8');
 
+  // ── Dieselbe Zahl in "Über uns" ──
+  // Die Seite nennt den Umfang der Bibliothek im Fließtext. Ohne diesen
+  // Schritt müsste die Zahl von Hand nachgezogen werden und wäre nach der
+  // nächsten Übung falsch.
+  if (fs.existsSync(ueberUnsPath)) {
+    let uu = fs.readFileSync(ueberUnsPath, 'utf-8');
+    uu = ersetzeBlock(uu, 'count', String(uebungen.length), 'ueber-uns.html');
+    fs.writeFileSync(ueberUnsPath, uu, 'utf-8');
+  }
+
   // ── Skill-Index für den Hero-Generator ──
   const skillIndex = baueSkillIndex(uebungen);
   fs.writeFileSync(skillIndexPath, JSON.stringify(skillIndex), 'utf-8');
 
   const ohneThumb = artikel.filter(a => !bildQuelle(a.foto_url).startsWith('/images/artikel/thumbs/'));
-  console.log(`✓ home.html aktualisiert: ${uebungen.length} Übungen, ${artikel.length} Artikel.`);
+  console.log(`✓ home.html + ueber-uns.html aktualisiert: ${uebungen.length} Übungen, ${artikel.length} Artikel.`);
   console.log(`✓ skills-index.json: ${Object.entries(skillIndex).map(([j, s]) => `${j} ${s.length}`).join(', ')} – ${Math.round(fs.statSync(skillIndexPath).size / 1024 * 10) / 10} KB.`);
   if (ohneThumb.length) {
     console.warn(`  ⚠ Ohne lokales Thumbnail (nutzt das Originalbild): ${ohneThumb.map(a => a.url_slug).join(', ')}`);
