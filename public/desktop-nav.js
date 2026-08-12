@@ -70,6 +70,10 @@
       <a href="/merkliste"     class="desktop-topnav-link ${isActive('/merkliste')}">Merkliste</a>
       <a href="/wissen"        class="desktop-topnav-link ${isActive('/wissen')}">Wissen</a>
       <a href="/whatsapp-info" class="desktop-topnav-link ${isActive('/whatsapp-info')}">Nichts verpassen</a>
+      <!-- Nur in der Desktop-Topnav. Die mobile Bottom-Nav hat vier Plaetze
+           und die sind mit den Arbeitsseiten belegt; dort bleibt "Über uns"
+           im Burger-Menue. -->
+      <a href="/ueber-uns"     class="desktop-topnav-link ${isActive('/ueber-uns')}">Über uns</a>
     </div>
   `;
 

@@ -193,10 +193,10 @@ Google nennt „sehr wenig Textinhalt (Inhalte ohne Mehrwert)" als Ablehnungsgru
 | 2 | Störerbild 2,9 MB → eigenes Thumbnail | 30 Min | sehr hoch | **erledigt** |
 | 3 | `hero-photo.jpg` (1,6 MB), `logo-home.png` (459 KB), `logo.png` (201 KB) verkleinern | 30 Min | hoch | **erledigt** |
 | 4 | Startseite um Inhaltssektionen und Calls-to-Action erweitern (Struktur s. u.) | mehrere Std. | sehr hoch | **erledigt** |
-| 5 | „Über uns" ausbauen: Verein, Gemeinnützigkeit, VR 42714 B, Wirkung/Zahlen | 1–2 Std. | hoch | offen |
-| 6 | „Über uns" in die Hauptnavigation aufnehmen | 30 Min | mittel | offen |
+| 5 | „Über uns" ausbauen: Verein, Gemeinnützigkeit, VR 42714 B, Wirkung/Zahlen | 1–2 Std. | hoch | **erledigt** (ohne VR-Nummer, s. 13.2) |
+| 6 | „Über uns" in die Hauptnavigation aufnehmen | 30 Min | mittel | **erledigt** (nur Desktop, s. 14.4) |
 | 7 | `exercises.json` auf der Startseite nicht mehr laden (das Dropdown braucht es nicht) | 1 Std. | mittel | **erledigt** |
-| 8 | `/wissen` und `/uebungen` mit statischem Einleitungstext versehen | 1 Std. | mittel | offen |
+| 8 | `/wissen` und `/uebungen` mit statischem Einleitungstext versehen | 1 Std. | mittel | **erledigt** |
 
 ### 9.5 Entwicklung des Seitengewichts
 
@@ -354,9 +354,9 @@ Auf `/uebungen` und im Einheiten-Generator wird `exercises.json` weiterhin volls
 | Datei | Zweck | Größe |
 |---|---|---|
 | `public/images/hero-reihe-baelle.webp` | Hero (Ballreihe), 1600×1067 | 130 KB (Original 2.938 KB) |
-| `public/images/uebungen-huetchen.webp` | Übungen-Sektion (Hütchen), 960×640 | 94 KB (Original 1.175 KB) |
 | `public/images/robert-greve.webp` | Portrait in „Über uns", 640×576 | 26 KB (Original 2.733 KB) |
 | `public/images/kanal-handy.webp` | „Nichts verpassen", 800×800 | 67 KB (Original 1.092 KB) |
+| `public/images/uebungen-spiel.webp` | Übungen-Sektion der Startseite, 960×640 | 46 KB (Original 1.830 KB) |
 | `public/images/einheiten-taktiktafel.webp` | „Und so funktioniert's" auf `/einheiten`, 960×640 | 26 KB (Original 2.531 KB) |
 | `public/images/artikel/thumbs/*.webp` | Artikel-Kacheln, 480×320 | je 8–41 KB |
 
@@ -477,3 +477,49 @@ Inzwischen stehen hier <!--cu:count-->177<!--/cu:count--> Übungen …
 ### 13.2 Bewusst nicht drin
 
 Die Registernummer (Amtsgericht Charlottenburg, VR 42714 B) steht **nicht** auf „Über uns", auf ausdrücklichen Wunsch. Sie steht damit nur im Impressum, und das trägt `noindex` – für Google ist sie unsichtbar. Falls die Ad-Grants-Bewerbung erneut an der Gemeinnützigkeit hängt, wäre das die erste Stellschraube.
+
+---
+
+## 14. Ad-Grants-Prüfung und Tempo-Korrekturen (08/2026)
+
+Vor dem zweiten Anlauf auf Google Ad Grants durchgemessen. Die Startseite war in Ordnung, zwei Seiten nicht – und die Ursache lag woanders als vermutet.
+
+### 14.1 Gemessene Werte (live, vor der Korrektur)
+
+| Seite | Anfragen | Gewicht | Ladezeit |
+|---|---|---|---|
+| `/home` | 12 | 156 KB | 342 ms |
+| `/ueber-uns` | wenige | ~30 KB | 108 ms |
+| `/uebungen` | 7 sichtbar | **~1,6 MB** | — |
+| `/einheiten` | — | **~1,6 MB** | — |
+
+`exercises.json` ist auf **2,64 MB** gewachsen (gzip 1,66 MB). Diese eine Datei war das gesamte Problem.
+
+⚠️ **Die 1,6 MB tauchen in der Performance-API der Seite gar nicht auf.** `raw.githubusercontent.com` sendet kein `Timing-Allow-Origin`, deshalb meldet `transferSize` dort **0**. Wer nur `performance.getEntriesByType('resource')` summiert, misst 31 KB und hält die Seite für schlank. Beim nächsten Tempo-Check also immer gegenprüfen, welche Hosts beteiligt sind.
+
+### 14.2 Datendateien kamen von GitHub statt von der eigenen Domain
+
+**Fünf** Dateien luden ihre Daten von `raw.githubusercontent.com/roberttgreve-web/coachunited-test/main/public/…`:
+
+| Datei | Wirkung |
+|---|---|
+| `uebungen.html` | die Übungsübersicht |
+| `wissen.html` | die Artikelübersicht |
+| `uebung-detail.html` | **Template** → alle 177 Übungsseiten |
+| `einheit-detail.html` | **Template** → alle 50 Einheitenseiten |
+| `artikel-detail.html` | **Template** → alle 11 Artikelseiten |
+
+Über die Templates betraf das also fast die ganze Seite. Nachteile: fremder Host ohne unsere `Cache-Control`-Regeln, im Test 831 ms statt 412 ms von Vercel, und eine Verfügbarkeit, über die wir nicht bestimmen. Die Dateien liegen ohnehin identisch unter `/exercises.json`, `/einheiten.json`, `/articles.json` – jetzt zeigen alle fünf dorthin.
+
+### 14.3 `/einheiten` lud 2,64 MB für 0,6 KB Ergebnis
+
+Die Seite brauchte aus `exercises.json` nur die Liste der Skills je Altersstufe und filterte sie im Browser heraus – dieselbe Rechnung, die `build-home.js` seit dem Startseiten-Umbau einmal pro Deploy erledigt und als `skills-index.json` (0,6 KB) ablegt. Die Startseite nutzte den Index, `/einheiten` nicht. Jetzt beide. Die Seite lädt nun **6 KB** statt 1,6 MB.
+
+### 14.4 Navigation und Einstiegstexte
+
+- **`/uebungen` hatte keine `<h1>`** – nur das Label „Bibliothek" über der Filterleiste. Jetzt Kopfbereich mit H1 und zwei Sätzen, wie auf `/wissen`.
+- **„Über uns" steht jetzt in der Desktop-Topnav** (`desktop-nav.js`). ⚠️ **Nicht** in der mobilen Bottom-Nav: Die hat vier Plätze, die mit den Arbeitsseiten belegt sind. Auf Mobil bleibt „Über uns" im Burger-Menü.
+
+### 14.5 Startseite: Wappen-Schwingung entfernt
+
+Der mobile Kopfbereich war eine weiße Wappenform mit geschwungener Unterkante (`.crest-shape`, ein SVG-Pfad), die 280px Höhe für reine Dekoration brauchte. Jetzt ein gerader weißer Streifen von 132px mit dem Logo. Das SVG ist aus dem Markup entfernt, die zugehörige Regel aus `desktop.css` ebenfalls – auf Desktop war die Form ohnehin ausgeblendet, dort wird `.crest-panel` zum Foto-Panel.

@@ -58,11 +58,17 @@
       margin: 34px 0 12px;
     }
 
-    /* Portrait: auf Mobil ueber dem Text, auf Desktop rechts daneben */
-    .uu-split { display: grid; gap: 22px; }
+    /* Portrait beim ersten Absatz.
+       Auf Mobil laeuft der Text drumherum (float), auf Desktop steht es in
+       einer eigenen Spalte rechts. Deshalb kein Grid auf Mobil: In einem
+       Grid-Item greift float nicht, das Bild wuerde ueber dem Text stehen. */
+    .uu-figure {
+      float: right;
+      width: 132px;
+      margin: 4px 0 14px 18px;
+    }
     .uu-portrait {
       width: 100%;
-      max-width: 200px;
       /* height:auto ist noetig, sonst gewinnt das height-Attribut aus dem
          Markup und aspect-ratio bleibt wirkungslos. */
       height: auto;
@@ -71,9 +77,16 @@
       border-radius: 14px;
       display: block;
       background: #E6E8EF;
-      order: -1;
     }
-    .uu-portrait-text { font-size: 15px; color: #6B7390; margin: 0; }
+    .uu-portrait-text {
+      font-size: 13px;
+      font-style: italic;
+      line-height: 1.45;
+      color: #6B7390;
+      margin: 8px 0 0;
+    }
+    /* Der Float darf nicht in die naechste Ueberschrift hineinragen */
+    .uu-split::after { content: ''; display: block; clear: both; }
 
     .uu-cta {
       display: inline-flex; align-items: center; gap: 9px;
@@ -90,11 +103,20 @@
 
     @media (min-width: 768px) {
       .uu-split {
+        display: grid;
         grid-template-columns: 1fr 200px;
         align-items: start;
         gap: 36px;
       }
-      .uu-portrait { order: 0; }
+      .uu-figure {
+        float: none;
+        width: auto;
+        margin: 0;
+        grid-column: 2;
+        grid-row: 1;
+      }
+      .uu-split > p { grid-column: 1; grid-row: 1; margin-bottom: 0; }
+      .uu-split::after { content: none; }
     }
 
     /* Bottom Nav */
@@ -151,9 +173,15 @@
     </div>
 
     <div class="content">
-      <p>
-        Coach United e.V. ist ein gemeinnütziger Verein, gegründet von ehrenamtlichen Trainer*innen aus dem Kinderfußball in Berlin. Gestartet sind wir 2025, aus einer ganz praktischen Herausforderung: Wir haben eine übersichtliche und kostenlose Sammlung an Übungen gesucht, mit der das Training hochwertig und trotzdem einfach zu planen ist. Weil es die nicht gab, haben wir sie selbst gebaut.
-      </p>
+      <div class="uu-split">
+        <figure class="uu-figure">
+          <img class="uu-portrait" src="/images/robert-greve.webp" alt="Robert Greve, Vorsitzender von Coach United e.V." width="640" height="576" decoding="async">
+          <figcaption class="uu-portrait-text">Hi, ich bin Robert, der Vorsitzende von Coach United e.V.</figcaption>
+        </figure>
+        <p>
+          Coach United e.V. ist ein gemeinnütziger Verein, gegründet von ehrenamtlichen Trainer*innen aus dem Kinderfußball in Berlin. Gestartet sind wir 2025, aus einer ganz praktischen Herausforderung: Wir haben eine übersichtliche und kostenlose Sammlung an Übungen gesucht, mit der das Training hochwertig und trotzdem einfach zu planen ist. Weil es die nicht gab, haben wir sie selbst gebaut.
+        </p>
+      </div>
 
       <h2>Was wir machen</h2>
       <p>
@@ -166,23 +194,17 @@
       </p>
 
       <h2>Mach mit</h2>
-      <div class="uu-split">
-        <div>
-          <p>
-            Du hast eine Übung, die bei deiner Mannschaft immer funktioniert? Schick sie uns — wir bereiten sie auf und stellen sie allen zur Verfügung.
-          </p>
-          <p style="margin-bottom:24px;">
-            <a href="/uebung-einreichen" class="uu-cta">
-              Übung einreichen
-              <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </a>
-          </p>
-          <p class="uu-portrait-text">Hi, ich bin Robert, der Vorsitzende von Coach United e.V.</p>
-        </div>
-        <img class="uu-portrait" src="/images/robert-greve.webp" alt="Robert Greve, Vorsitzender von Coach United e.V." width="640" height="576" loading="lazy" decoding="async">
-      </div>
+      <p>
+        Du hast eine Übung, die bei deiner Mannschaft immer funktioniert? Schick sie uns — wir bereiten sie auf und stellen sie allen zur Verfügung.
+      </p>
+      <p>
+        <a href="/uebung-einreichen" class="uu-cta">
+          Übung einreichen
+          <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </p>
 
       <p style="color:#9aa3b0; font-size:14px; margin-top:28px;">
         Kontakt: <a href="mailto:mail.coachunited@gmail.com" class="contact-link">mail.coachunited@gmail.com</a>

@@ -177,7 +177,7 @@
   </div>
 
   <script>
-    fetch('https://raw.githubusercontent.com/roberttgreve-web/coachunited-test/main/public/articles.json')
+    fetch('/articles.json')
       .then(r => r.json())
       .then(articles => {
         const list = document.getElementById('articles-list');

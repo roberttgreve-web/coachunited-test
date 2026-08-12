@@ -668,8 +668,6 @@
     content: none !important;
   }
 
-  body:has(.crest-panel) .crest-shape { display: none !important; }
-
   /* Enthaelt auf Desktop nur noch das Logo, und das steht in der Topnav. */
   body:has(.crest-panel) .crest-inner {
     display: none !important;

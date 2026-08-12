@@ -855,7 +855,7 @@
         .replace(/[^a-z0-9\s\-]/g,'').replace(/[\s\-]+/g,'-').replace(/^-+|-+$/g,'');
     }
 
-    fetch('https://raw.githubusercontent.com/roberttgreve-web/coachunited-test/main/public/exercises.json')
+    fetch('/exercises.json')
       .then(r => r.json())
       .then(exercises => {
         // Slug-Lookup: aktuell (mit Skill-Prefix) ODER alt (nur alt_titel/titel)

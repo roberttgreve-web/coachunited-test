@@ -94,20 +94,18 @@
       flex-shrink: 0;
     }
 
-    /* ── Wappen-Panel ── */
+    /* ── Kopfbereich mit Logo ──
+       Bis 08/2026 lief hier eine weisse Wappenform mit geschwungener
+       Unterkante ins dunkle Formular. Die Schwingung brauchte 280px Hoehe
+       fuer eine reine Dekoration; jetzt ein gerader weisser Streifen.
+       Auf Desktop wird dieselbe Flaeche zum Foto-Panel (desktop.css). */
     .crest-panel {
       position: relative;
       width: 100%;
-      height: 280px;
+      height: 132px;
       flex-shrink: 0;
       z-index: 1;
-    }
-    .crest-shape {
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      display: block;
+      background: #fff;
     }
     .crest-inner {
       position: absolute;
@@ -116,7 +114,6 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      padding-bottom: 36px;
     }
     .crest-inner img {
       width: 220px;
@@ -754,9 +751,6 @@
   <div class="container">
     <div class="home-hero">
       <div class="crest-panel">
-        <svg class="crest-shape" viewBox="0 0 375 290" preserveAspectRatio="none">
-          <path d="M 0 0 L 375 0 L 375 210 C 375 224 355 231 327 237 C 299 243 261 250 224 263 C 206 269 196 276 187.5 286 C 179 276 169 269 151 263 C 114 250 76 243 48 237 C 20 231 0 224 0 210 Z" fill="#FFFFFF"/>
-        </svg>
         <div class="crest-inner">
           <img src="/logo-home.png" alt="Coach United Logo">
         </div>
@@ -858,7 +852,7 @@
                 </a>
               </div>
             </div>
-            <img class="hs-foto" src="/images/uebungen-huetchen.webp" alt="Markierungshütchen auf einem Rasenplatz" width="960" height="640" loading="lazy" decoding="async">
+            <img class="hs-foto" src="/images/uebungen-spiel.webp" alt="Kinder im Fußballspiel auf dem Kunstrasenplatz" width="960" height="640" loading="lazy" decoding="async">
           </div>
         </div>
       </section>

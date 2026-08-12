@@ -403,48 +403,21 @@
   </div>
 
   <script>
-    let allExercises = [];
+    // Nur der Skill-Index, nicht die ganze Uebungsdatenbank: welche Skills es
+    // je Altersstufe gibt, rechnet build-home.js einmal pro Deploy aus. Vorher
+    // lud diese Seite dafuer exercises.json mit 2,6 MB und filterte im Browser
+    // dieselbe Liste heraus – fuer 0,6 KB Ergebnis.
+    let skillIndex = null;
     let selectedJugend = '';
     let selectedSkills = new Set();
     let isSurprise = true;
 
-    fetch('/exercises.json')
+    fetch('/skills-index.json')
       .then(r => r.json())
-      .then(data => { allExercises = data; });
-
-    function makeClusters(exercises) {
-      const visited = new Set();
-      const clusters = [];
-      for (const ex of exercises) {
-        if (visited.has(ex.id)) continue;
-        visited.add(ex.id);
-        const sisters = exercises.filter(o =>
-          !visited.has(o.id) && (ex.schwester_ids || []).includes(o.id)
-        );
-        sisters.forEach(s => visited.add(s.id));
-        clusters.push([ex, ...sisters]);
-      }
-      return clusters;
-    }
+      .then(data => { skillIndex = data; });
 
     function buildSkillPills(jugend) {
-      const valid = allExercises.filter(e =>
-        e.status === 'veroeffentlicht' && (e.jugend || []).includes(jugend)
-      );
-      const byPhase = {};
-      valid.forEach(e => {
-        if (!byPhase[e.trainingsphase]) byPhase[e.trainingsphase] = [];
-        byPhase[e.trainingsphase].push(e);
-      });
-      const aufClusters = makeClusters(byPhase['Aufwärmen'] || []).filter(c => c.length === 2);
-      const hptClusters = makeClusters(byPhase['Hauptteil'] || []).filter(c => c.length === 2);
-      const spfClusters = makeClusters(byPhase['Spielformat'] || []).filter(c => c.length === 1);
-      const allSkills = [...new Set(valid.flatMap(e => e.skills || []))].sort();
-      const validSkills = allSkills.filter(s =>
-        aufClusters.some(c => c.some(e => (e.skills || []).includes(s))) &&
-        hptClusters.some(c => c.some(e => (e.skills || []).includes(s))) &&
-        spfClusters.some(c => c.some(e => (e.skills || []).includes(s)))
-      );
+      const validSkills = (skillIndex && skillIndex[jugend]) || [];
       const container = document.getElementById('skill-pills');
       container.innerHTML = validSkills.map(s =>
         `<button class="skill-pill" onclick="toggleSkill(event,'${s.replace(/'/g,"\\'")}',this)" data-skill="${s}">${s}</button>`
@@ -478,8 +451,8 @@
       document.getElementById('skill-btn').classList.add('has-value');
       document.getElementById('surprise-btn').classList.add('active');
       document.getElementById('skill-status').textContent = 'Überrasch mich';
-      if (allExercises.length) buildSkillPills(value);
-      else fetch('/exercises.json').then(r=>r.json()).then(data=>{allExercises=data;buildSkillPills(value);});
+      if (skillIndex) buildSkillPills(value);
+      else fetch('/skills-index.json').then(r=>r.json()).then(data=>{skillIndex=data;buildSkillPills(value);});
     }
 
     function toggleSkills(e) {

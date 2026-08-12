@@ -64,6 +64,24 @@
       background: #0E1430; border-radius: 2px;
     }
 
+    /* ── Kopfbereich ──
+       Die Seite hatte bis 08/2026 gar keine H1, nur das Label "Bibliothek"
+       ueber der Filterleiste. Fuer Suchmaschinen und fuer Besucher, die aus
+       einer Anzeige kommen, stand damit nirgends, was das hier ist. */
+    .page-hero {
+      background: #0E1430;
+      padding: 22px 18px 4px;
+    }
+    .page-hero h1 {
+      font-size: 24px; font-weight: 800; color: #fff;
+      letter-spacing: -0.02em; line-height: 1.2; margin: 0 0 10px;
+    }
+    .page-intro {
+      font-size: 14px; color: rgba(255,255,255,0.55); line-height: 1.55;
+      max-width: 62ch;
+    }
+    .page-intro + .page-intro { margin-top: 8px; }
+
     /* ── Dark Filter Section ── */
     .filter-section {
       background: #0E1430;
@@ -480,6 +498,12 @@
 
     <div id="uebungen-body">
 
+      <div class="page-hero">
+        <h1>Alle Übungen</h1>
+        <p class="page-intro">Die komplette Bibliothek für die G- bis D-Jugend. Jede Übung mit Aufbau, Ablauf und einem Coaching-Fokus, der dir sagt, worauf du bei den Kindern achten solltest.</p>
+        <p class="page-intro">Filtere nach Altersstufe, Skill und Trainingsphase — oder stöbere einfach.</p>
+      </div>
+
       <!-- Filter Section -->
       <div class="filter-section">
         <div class="filter-header">
@@ -743,7 +767,7 @@
       }).join('');
     }
 
-    fetch('https://raw.githubusercontent.com/roberttgreve-web/coachunited-test/main/public/exercises.json')
+    fetch('/exercises.json')
       .then(r => r.json())
       .then(data => {
         allExercises = data.slice().sort((a, b) => b.id - a.id);
