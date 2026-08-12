@@ -522,4 +522,4 @@ Die Seite brauchte aus `exercises.json` nur die Liste der Skills je Altersstufe 
 
 ### 14.5 Startseite: Wappen-Schwingung entfernt
 
-Der mobile Kopfbereich war eine weiße Wappenform mit geschwungener Unterkante (`.crest-shape`, ein SVG-Pfad), die 280px Höhe für reine Dekoration brauchte. Jetzt ein gerader weißer Streifen von 132px mit dem Logo. Das SVG ist aus dem Markup entfernt, die zugehörige Regel aus `desktop.css` ebenfalls – auf Desktop war die Form ohnehin ausgeblendet, dort wird `.crest-panel` zum Foto-Panel.
+Der mobile Kopfbereich war eine weiße Wappenform mit geschwungener Unterkante (`.crest-shape`, ein SVG-Pfad), die 280px Höhe für reine Dekoration brauchte. Jetzt ein gerader weißer Streifen mit dem Logo, `height: 25dvh` bei `min-height: 178px` – also rund ein Viertel der ersten Bildschirmseite, damit das Logo oben und unten Luft hat. Bewusst als `dvh` statt fester Höhe: Sonst stimmt das Verhältnis nur auf einem Gerätemodell. Das SVG ist aus dem Markup entfernt, die zugehörige Regel aus `desktop.css` ebenfalls – auf Desktop war die Form ohnehin ausgeblendet, dort wird `.crest-panel` zum Foto-Panel.
