@@ -1,6 +1,6 @@
 # Übergabe – coachunited.de
 
-Stand: 2026-08-12. Dieses Dokument ist der Einstiegspunkt für alle, die künftig an coachunited.de weiterarbeiten (Entwickler, Freelancer, Nachfolger).
+Stand: 2026-08-15. Dieses Dokument ist der Einstiegspunkt für alle, die künftig an coachunited.de weiterarbeiten (Entwickler, Freelancer, Nachfolger).
 
 ## 1. Was ist das für ein Projekt?
 
@@ -135,9 +135,21 @@ Wichtig: `uebung-detail.html`, `einheit-detail.html` und `artikel-detail.html` s
 - ⚠️ **CSS und JS tragen keine Versionsnummer im Dateinamen.** `/desktop.css`, `/sektionen.css`, `/desktop-nav.js` heißen nach jedem Deploy gleich. Deshalb steht ihr `Cache-Control` in `vercel.json` auf `max-age=0, must-revalidate` – der Browser fragt bei jedem Aufruf nach und bekommt meist ein 304. Vorher stand dort `max-age=86400`: Eine CSS-Änderung erreichte wiederkehrende Besucher bis zu 24 Stunden lang nicht, und beim Testen sah man auf dem Handy hartnäckig die alte Version. Wer die Regel wieder verschärfen will, muss vorher die Dateinamen versionieren (`sektionen.abc123.css`) – sonst kommt das Problem zurück.
 - **Vorgemerkt: Foto für die Merkliste.** Im Projektstammverzeichnis liegt `younes-karami-ne-ft_5zDTY-unsplash.jpg` – gedacht für einen künftigen Umbau von `/merkliste` im Stil der Startseite. Aufbereitung wie in Abschnitt 11.4 beschrieben (Pillow, WebP, `ImageOps.exif_transpose()`).
 
-## 9. Google Ad Grants (Stand 2026-08-12)
+## 9. Google Ad Grants (Stand 2026-08-15)
 
-**Am 2026-08-12 wurde der Antrag erneut eingereicht.** Alle acht Maßnahmen aus 9.3 sind umgesetzt; was dabei gemessen und geändert wurde, steht in Abschnitt 14. Kommt erneut eine Ablehnung, sind die naheliegenden Stellschrauben: die Registernummer auf „Über uns" (13.2) und die 20 Base64-Bilder in `exercises.json`, die den Generator und die 227 Detailseiten weiterhin ausbremsen (14.7).
+**Verlauf:**
+
+| Datum | Ereignis |
+|---|---|
+| vor 2026-08-07 | 1. Antrag – **abgelehnt** |
+| 2026-08-07 | Messwerte zur Ablehnung erhoben (9.2), Maßnahmenliste (9.3) erstellt |
+| 2026-08-12 | Alle 8 Maßnahmen aus 9.3 umgesetzt, 2. Antrag eingereicht – **abgelehnt** (identischer Wortlaut) |
+| 2026-08-12–15 | Ursache der 2. Ablehnung gefunden: 227 Detailseiten luden weiterhin die volle Datenbank (Abschnitt 15); Richtlinien direkt gegengeprüft (Abschnitt 16) |
+| 2026-08-15 | 3. Antrag eingereicht |
+
+Die zweite Ablehnung kam trotz stark gesunkenem Seitengewicht der drei Übersichtsseiten (`/home`, `/uebungen`, `/einheiten`) – der eigentliche Rest lag in den 227 Übungs- und Einheitenseiten dahinter, die weiterhin 2,7 MB pro Aufruf luden (Abschnitt 15). Zusätzlich wurden die Richtlinien wörtlich gegen die Seite geprüft statt nur nach Bauchgefühl (Abschnitt 16) – dabei fiel die fehlende Registernummer auf „Über uns" und die rein clientseitige Artikelliste auf `/wissen` auf, beide behoben.
+
+**Kommt eine dritte Ablehnung**, sind die verbliebenen, bekannten Stellschrauben: die 20 Base64-Bilder in `exercises.json`, die weiterhin den Generator ausbremsen (14.7), und der weiche Befund aus 16 – die Vereins-Erwähnung sitzt auf der Startseite erst nach zwei Dritteln des Texts, nicht im Hero.
 
 Der **erste** Antrag wurde abgelehnt. Begründung von Google:
 
@@ -195,7 +207,7 @@ Google nennt „sehr wenig Textinhalt (Inhalte ohne Mehrwert)" als Ablehnungsgru
 | 2 | Störerbild 2,9 MB → eigenes Thumbnail | 30 Min | sehr hoch | **erledigt** |
 | 3 | `hero-photo.jpg` (1,6 MB), `logo-home.png` (459 KB), `logo.png` (201 KB) verkleinern | 30 Min | hoch | **erledigt** |
 | 4 | Startseite um Inhaltssektionen und Calls-to-Action erweitern (Struktur s. u.) | mehrere Std. | sehr hoch | **erledigt** |
-| 5 | „Über uns" ausbauen: Verein, Gemeinnützigkeit, VR 42714 B, Wirkung/Zahlen | 1–2 Std. | hoch | **erledigt** (ohne VR-Nummer, s. 13.2) |
+| 5 | „Über uns" ausbauen: Verein, Gemeinnützigkeit, VR 42714 B, Wirkung/Zahlen | 1–2 Std. | hoch | **erledigt** (VR-Nummer nachgetragen 08-15, s. 13.2) |
 | 6 | „Über uns" in die Hauptnavigation aufnehmen | 30 Min | mittel | **erledigt** (nur Desktop, s. 14.4) |
 | 7 | `exercises.json` auf der Startseite nicht mehr laden (das Dropdown braucht es nicht) | 1 Std. | mittel | **erledigt** |
 | 8 | `/wissen` und `/uebungen` mit statischem Einleitungstext versehen | 1 Std. | mittel | **erledigt** |
