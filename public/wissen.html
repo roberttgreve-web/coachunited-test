@@ -125,9 +125,7 @@
 
     <div class="content">
       <p class="section-title">Artikel &amp; Tipps</p>
-      <div id="articles-list">
-        <div style="padding:40px 0; text-align:center; color:#9aa3b0; font-size:14px;">Artikel werden geladen…</div>
-      </div>
+      <div id="articles-list"><!--cu:artikel-liste--><!--/cu:artikel-liste--></div>
     </div>
 
     <nav class="bottom-nav">
@@ -177,33 +175,11 @@
   </div>
 
   <script>
-    fetch('/articles.json')
-      .then(r => r.json())
-      .then(articles => {
-        const list = document.getElementById('articles-list');
-        if (!articles.length) {
-          list.innerHTML = '<div style="padding:40px 0; text-align:center; color:#9aa3b0; font-size:14px;">Noch keine Artikel veröffentlicht.</div>';
-          return;
-        }
-        articles.sort((a, b) => (b.erstellt_am || '').localeCompare(a.erstellt_am || ''));
-        list.innerHTML = articles.map(a => {
-          const thumb = a.foto_url
-            ? `<img class="card-thumb" src="${a.foto_url}" alt="${a.titel}" loading="lazy" onerror="this.outerHTML='<div class=card-thumb-placeholder>📖</div>'">`
-            : `<div class="card-thumb-placeholder">📖</div>`;
-          return `
-            <a href="/artikel/${a.url_slug}" class="article-card">
-              ${thumb}
-              <div class="card-body">
-                <p class="card-title">${a.titel}</p>
-              </div>
-            </a>`;
-        }).join('');
-      })
-      .catch(() => {
-        document.getElementById('articles-list').innerHTML =
-          '<div style="padding:40px 0; text-align:center; color:#9aa3b0; font-size:14px;">Artikel konnten nicht geladen werden.</div>';
-      });
-
+    // Die Artikelliste steht bereits vollstaendig im HTML (build-home.js
+    // schreibt sie bei jedem Deploy zwischen die cu:artikel-liste-Marker).
+    // Bis 08/2026 lud diese Seite dafuer articles.json zur Laufzeit nach und
+    // zeigte bis dahin nur "Artikel werden geladen..." - unsichtbar fuer
+    // jede Pruefung, die kein JavaScript ausfuehrt.
     function openDrawer() {
       document.getElementById('drawer').classList.add('open');
       document.getElementById('drawer-overlay').classList.add('open');

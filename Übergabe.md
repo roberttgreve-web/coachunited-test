@@ -476,9 +476,9 @@ Inzwischen stehen hier <!--cu:count-->177<!--/cu:count--> Übungen …
 
 ⚠️ `ersetzeBlock()` **wirft**, wenn der Marker fehlt. Wer ihn beim Umformulieren aus `ueber-uns.html` entfernt, bringt den Vercel-Build zum Scheitern – nicht nur diese Seite, den ganzen Deploy.
 
-### 13.2 Bewusst nicht drin
+### 13.2 Registernummer
 
-Die Registernummer (Amtsgericht Charlottenburg, VR 42714 B) steht **nicht** auf „Über uns", auf ausdrücklichen Wunsch. Sie steht damit nur im Impressum, und das trägt `noindex` – für Google ist sie unsichtbar. Falls die Ad-Grants-Bewerbung erneut an der Gemeinnützigkeit hängt, wäre das die erste Stellschraube.
+**Update 08/2026:** Steht jetzt doch auf „Über uns", direkt unter dem ersten Absatz. Bis zur zweiten Ad-Grants-Ablehnung stand sie dort bewusst nicht (Begründung s. Git-Historie), auf ausdrücklichen Wunsch. Ausschlaggebend für die Rücknahme: Die Ad-Grants-Richtlinien fordern **wörtlich** „nonprofit registration number (EIN, tax ID) or annual report" – keine Vermutung mehr, sondern benannter Prüfpunkt. Vorher stand die Nummer nur im Impressum, und das trägt `noindex` – für jede Prüfung unsichtbar.
 
 ---
 
@@ -598,3 +598,18 @@ Die alte clientseitige Logik überschrieb das bereits serverseitig gesetzte `<im
 Da auf diesem Rechner kein Node installiert ist (Abschnitt 7), wurde die neue Build-Logik vorab **in Python nachgebaut** und gegen die echte `exercises.json` laufen lassen – vier Stichproben (mit FAQ + Schwestern, ohne Schwestern, mit Base64-Grafik) wurden vollständig gerendert und strukturell geprüft (keine leeren Pflichtfelder, Sichtbarkeit von Sisters-/Kategorie-Block stimmt mit gefülltem Inhalt überein, gültiges UTF-8, ausgeglichene Tags). Anschließend wurde eine Stichprobe **Zeichen für Zeichen** gegen das, was die *aktuelle* Live-Seite per JavaScript tatsächlich rendert, verglichen (Kategorie-Links, Schwesterübungen, Phase-Badges, Anzahl JSON-LD-Blöcke) – exakte Übereinstimmung.
 
 ⚠️ **`build-exercise-pages.js` wirft jetzt bei sehr viel mehr Ankerpunkten.** Jede der neuen `.replace()`-Ziele muss exakt einmal im Template vorkommen. Wer `uebung-detail.html` umbaut, prüft nach der Änderung, ob alle Anker aus dem Build-Script noch vorhanden sind – sonst schlägt der komplette Vercel-Build fehl (nicht nur diese eine Seite, der gesamte Deploy).
+
+---
+
+## 16. Ad-Grants-Richtlinien direkt geprüft (08/2026)
+
+Nach der zweiten Ablehnung die [offiziellen Richtlinien](https://support.google.com/grants/answer/1657899) Punkt für Punkt gegen die Live-Seite geprüft, statt weiter aus dem Gedächtnis zu vermuten.
+
+**Unauffällig:** HTTPS erzwungen (301/308 von http→https), gültiges Zertifikat, keine gemischten Inhalte, keine AdSense-/Affiliate-Skripte, keine kaputten Buttons, kein „Under Construction".
+
+**Zwei Funde, umgesetzt:**
+
+1. **Registernummer** – siehe 13.2. Die Richtlinie nennt „nonprofit registration number … or annual report" wörtlich als Anforderung. Steht jetzt auf „Über uns".
+2. **`/wissen` zeigte im rohen HTML nur „Artikel werden geladen…"** – die Artikelliste war die letzte Stelle der Seite, die noch clientseitig nachlud (`fetch('/articles.json')`), obwohl die Startseite ihr Artikel-Band längst serverseitig bekommt (Abschnitt 11.3). `build-home.js` schreibt sie jetzt zusätzlich zwischen `<!--cu:artikel-liste-->`-Marker in `wissen.html`. Sortierung bewusst **nur nach Datum**, ohne den `hervorheben`-Vorrang des Startseiten-Bands – diese Seite ist die vollständige Liste, keine beworbene Auswahl. Nutzt wie die Startseite `bildQuelle()` für die lokalen WebP-Thumbnails statt der Originalbilder.
+
+**Weicher Befund, nicht umgesetzt:** „e.V." / „gemeinnützig" taucht im sichtbaren Text der Startseite erst nach 1.764 von 2.365 Zeichen auf, im „Über uns"-Abschnitt gegen Seitenende – die Richtlinie will die Vereinsangabe „prominent". Auslegungssache, kein hartes Kriterium wie die beiden Punkte oben.

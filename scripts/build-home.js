@@ -3,6 +3,7 @@ const path = require('path');
 
 const homePath      = path.join(__dirname, '..', 'public', 'home.html');
 const ueberUnsPath  = path.join(__dirname, '..', 'public', 'ueber-uns.html');
+const wissenPath    = path.join(__dirname, '..', 'public', 'wissen.html');
 const exercisesPath = path.join(__dirname, '..', 'public', 'exercises.json');
 const articlesPath  = path.join(__dirname, '..', 'public', 'articles.json');
 const thumbDir      = path.join(__dirname, '..', 'public', 'images', 'artikel', 'thumbs');
@@ -168,6 +169,39 @@ function main() {
     let uu = fs.readFileSync(ueberUnsPath, 'utf-8');
     uu = ersetzeBlock(uu, 'count', String(uebungen.length), 'ueber-uns.html');
     fs.writeFileSync(ueberUnsPath, uu, 'utf-8');
+  }
+
+  // ── Artikelliste auf /wissen ──
+  // Bis 08/2026 lud diese Seite articles.json zur Laufzeit und zeigte bis
+  // dahin nur "Artikel werden geladen..." – unsichtbar fuer jede Pruefung,
+  // die kein JavaScript ausfuehrt. Sortierung bewusst nur nach Datum (kein
+  // hervorheben-Vorrang wie im Artikel-Band der Startseite): Diese Seite
+  // ist die vollstaendige Liste, nicht eine beworbene Auswahl.
+  if (fs.existsSync(wissenPath)) {
+    const alleArtikel = readJson(articlesPath)
+      .filter(a => a.status === 'veroeffentlicht' && a.url_slug)
+      .sort((a, b) => String(b.erstellt_am || '').localeCompare(String(a.erstellt_am || '')));
+
+    const artikelListeHtml = alleArtikel.length
+      ? alleArtikel.map(a => {
+          const quelle = bildQuelle(a.foto_url);
+          const thumb = quelle
+            ? `<img class="card-thumb" src="${esc(quelle)}" alt="${esc(a.titel)}" loading="lazy" onerror="this.outerHTML='<div class=card-thumb-placeholder>📖</div>'">`
+            : `<div class="card-thumb-placeholder">📖</div>`;
+          return `
+            <a href="/artikel/${esc(a.url_slug)}" class="article-card">
+              ${thumb}
+              <div class="card-body">
+                <p class="card-title">${esc(a.titel)}</p>
+              </div>
+            </a>`;
+        }).join('')
+      : '<div style="padding:40px 0; text-align:center; color:#9aa3b0; font-size:14px;">Noch keine Artikel veröffentlicht.</div>';
+
+    let wissen = fs.readFileSync(wissenPath, 'utf-8');
+    wissen = ersetzeBlock(wissen, 'artikel-liste', artikelListeHtml, 'wissen.html');
+    fs.writeFileSync(wissenPath, wissen, 'utf-8');
+    console.log(`✓ wissen.html aktualisiert: ${alleArtikel.length} Artikel.`);
   }
 
   // ── Skill-Index für den Hero-Generator ──
