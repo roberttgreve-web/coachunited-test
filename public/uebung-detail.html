@@ -518,10 +518,6 @@
     .drawer-link:last-child { border-bottom: none; }
     .drawer-link:hover { color: #1E6BFF; }
 
-    #loading { display: none; padding: 60px 24px; text-align: center; color: #6B7390; font-size: 15px; }
-    #not-found { display: none; padding: 60px 24px; text-align: center; color: #6B7390; font-size: 15px; }
-    #not-found a { color: #1E6BFF; text-decoration: none; }
-
     /* ── Action Bar ── */
     .action-bar {
       display: flex;
@@ -631,12 +627,6 @@
     </div>
     <div class="action-bar-feedback" id="action-bar-feedback">Hat geklappt. Du findest die &#220;bung in deiner Merkliste wieder.</div>
 
-    <div id="loading">Übung wird geladen…</div>
-    <div id="not-found">
-      <p>Übung nicht gefunden.</p><br>
-      <a href="/uebungen">← Zurück zur Übersicht</a>
-    </div>
-
     <div id="exercise-content" style="display:flex; flex:1; flex-direction:column;">
 
       <!-- Grafik -->
@@ -681,10 +671,54 @@
           </div>
         </div>
 
-        <!-- Sekundär-Kacheln -->
+        <!-- Sekundär-Kacheln
+             Immer dieselben vier Buttons, unabhaengig von der Uebung -
+             nur ihr Inhalt beim Antippen (SHEET_DATA) ist pro Seite anders.
+             Deshalb fest im Markup statt per JS aus TILE_CONFIG gebaut. -->
         <div class="tiles-section" id="tiles-section">
           <p class="tiles-label">Mehr zur Übung</p>
-          <div class="tiles-grid" id="tiles-grid"></div>
+          <div class="tiles-grid" id="tiles-grid">
+            <button class="tile-btn" onclick="openSheet('coaching_fokus')">
+              <span class="tile-icon" style="background:#E898441A;">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <circle cx="10" cy="10" r="6" stroke="#E89844" stroke-width="1.6"/>
+                  <circle cx="10" cy="10" r="2.5" stroke="#E89844" stroke-width="1.6"/>
+                </svg>
+              </span>
+              <span class="tile-name">Coaching</span>
+              <span class="tile-hint">Antippen →</span>
+            </button>
+            <button class="tile-btn" onclick="openSheet('leichter_machen')">
+              <span class="tile-icon" style="background:#16A5711A;">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <circle cx="10" cy="10" r="6" stroke="#16A571" stroke-width="1.6"/>
+                  <circle cx="10" cy="10" r="2.5" stroke="#16A571" stroke-width="1.6"/>
+                </svg>
+              </span>
+              <span class="tile-name">Leichter</span>
+              <span class="tile-hint">Antippen →</span>
+            </button>
+            <button class="tile-btn" onclick="openSheet('schwerer_machen')">
+              <span class="tile-icon" style="background:#F23D3D1A;">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <circle cx="10" cy="10" r="6" stroke="#F23D3D" stroke-width="1.6"/>
+                  <circle cx="10" cy="10" r="2.5" stroke="#F23D3D" stroke-width="1.6"/>
+                </svg>
+              </span>
+              <span class="tile-name">Schwieriger</span>
+              <span class="tile-hint">Antippen →</span>
+            </button>
+            <button class="tile-btn" onclick="openSheet('faq')">
+              <span class="tile-icon" style="background:#7B61FF1A;">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <circle cx="10" cy="10" r="6" stroke="#7B61FF" stroke-width="1.6"/>
+                  <circle cx="10" cy="10" r="2.5" stroke="#7B61FF" stroke-width="1.6"/>
+                </svg>
+              </span>
+              <span class="tile-name">FAQ</span>
+              <span class="tile-hint">Antippen →</span>
+            </button>
+          </div>
         </div>
 
         <!-- Print-only: Coaching / Leichter / Schwieriger inline -->
@@ -775,50 +809,49 @@
   </div>
 
   <script>
-    const PHASE_COLORS = {
-      'Aufwärmen': '#C2611F',
-      'Hauptteil': '#0E6A45',
-      'Spielformat': '#0F3FA8',
+    // Inhalt der vier Sekundaer-Kacheln (Coaching, Leichter, Schwieriger, FAQ).
+    // build-exercise-pages.js schreibt das JSON dieser Uebung hier hinein -
+    // ersetzt die Zeile unten woertlich, kein Platzhalter-Objekt zur Laufzeit.
+    const SHEET_DATA = {};
+
+    const TILE_CONFIG = {
+      coaching_fokus:  { label: 'Coaching-Fokus',           color: '#E89844' },
+      leichter_machen: { label: 'Übung leichter machen',    color: '#16A571' },
+      schwerer_machen: { label: 'Übung schwieriger machen', color: '#F23D3D' },
+      faq:             { label: 'FAQ – Häufige Fragen',     color: '#7B61FF' },
     };
-
-    const TILE_CONFIG = [
-      { key: 'coaching_fokus',  label: 'Coaching-Fokus',        short: 'Coaching',    color: '#E89844' },
-      { key: 'leichter_machen', label: 'Übung leichter machen', short: 'Leichter',    color: '#16A571' },
-      { key: 'schwerer_machen', label: 'Übung schwieriger machen', short: 'Schwieriger', color: '#F23D3D' },
-      { key: 'faq',             label: 'FAQ – Häufige Fragen',   short: 'FAQ',         color: '#7B61FF' },
-    ];
-
-    function toBulletList(text) {
-      if (!text) return '';
-      const items = text.split(/[;•]/).map(s => s.trim()).filter(Boolean);
-      return items.length ? '<ul>' + items.map(i => `<li>${i}</li>`).join('') + '</ul>' : '';
-    }
-
-    function faqToHtml(faqArr) {
-      if (!faqArr || !faqArr.length) return '';
-      const items = faqArr.filter(f => f.frage && f.frage.trim());
-      return items.length
-        ? '<ul>' + items.map(f => `<li><strong>${f.frage}</strong><br>${f.antwort}</li>`).join('') + '</ul>'
-        : '';
-    }
 
     function toggleAcc(id) {
       document.getElementById('acc-' + id).classList.toggle('open');
     }
 
     // Bottom Sheet
-    let sheetData = {};
     function openSheet(key) {
-      const cfg = TILE_CONFIG.find(t => t.key === key);
+      const cfg = TILE_CONFIG[key];
       if (!cfg) return;
       document.getElementById('sheet-dot').style.background = cfg.color;
       document.getElementById('sheet-title').textContent = cfg.label;
-      document.getElementById('sheet-body').innerHTML = sheetData[key];
+      document.getElementById('sheet-body').innerHTML = SHEET_DATA[key] || '';
       document.getElementById('sheet-overlay').classList.add('open');
     }
     function closeSheet() {
       document.getElementById('sheet-overlay').classList.remove('open');
     }
+
+    // Sisters: Herkunft merken, damit der Zurueck-Button auf dieser Seite
+    // landet statt auf der Uebersicht. Delegiert, weil die Links bereits im
+    // Markup stehen (server-seitig gebaut) statt per JS erzeugt zu werden.
+    document.addEventListener('click', (ev) => {
+      const a = ev.target.closest && ev.target.closest('.sister-link[data-back-target]');
+      if (!a) return;
+      try {
+        sessionStorage.setItem('cu_back', JSON.stringify({
+          target: a.getAttribute('data-back-target'),
+          url: '/uebung/' + slug,
+          label: 'Zurück'
+        }));
+      } catch (e) {}
+    });
 
     // Slug + back button
     const slug = window.location.pathname.replace(/^\/uebung\//, '').replace(/\/$/, '');
@@ -846,211 +879,6 @@
         }
       } catch (e) {}
     }
-
-    // Slug-Normalisierung für Backwards-Compat (alte Slugs ohne Skill-Prefix)
-    function toSlug(text) {
-      if (!text) return '';
-      return text.toLowerCase()
-        .replace(/ä/g,'ae').replace(/ö/g,'oe').replace(/ü/g,'ue').replace(/ß/g,'ss')
-        .replace(/[^a-z0-9\s\-]/g,'').replace(/[\s\-]+/g,'-').replace(/^-+|-+$/g,'');
-    }
-
-    fetch('/exercises.json')
-      .then(r => r.json())
-      .then(exercises => {
-        // Slug-Lookup: aktuell (mit Skill-Prefix) ODER alt (nur alt_titel/titel)
-        const ex = exercises.find(e =>
-          e.url_slug === slug ||
-          toSlug(e.alt_titel || e.titel) === slug ||
-          toSlug(e.titel) === slug
-        );
-        if (!ex) {
-          document.getElementById('loading').style.display = 'none';
-          document.getElementById('not-found').style.display = 'block';
-          return;
-        }
-
-        // Seitentitel + Meta-Tags
-        const displayTitle = ex.titel || ex.alt_titel;
-        const pageTitle = displayTitle + ' | COACH UNITED';
-        document.title = pageTitle;
-
-        const canonicalUrl = 'https://coachunited.de/uebung/' + ex.url_slug;
-        const metaDesc = document.querySelector('meta[name="description"]');
-        const ogTitle  = document.querySelector('meta[property="og:title"]');
-        const ogDesc   = document.querySelector('meta[property="og:description"]');
-        const ogUrl    = document.querySelector('meta[property="og:url"]');
-        const ogImage  = document.querySelector('meta[property="og:image"]');
-        const canonical = document.querySelector('link[rel="canonical"]');
-
-        if (ex.seo_meta_description) {
-          if (metaDesc)  metaDesc.setAttribute('content', ex.seo_meta_description);
-          if (ogDesc)    ogDesc.setAttribute('content', ex.seo_meta_description);
-        }
-        if (ogTitle)    ogTitle.setAttribute('content', pageTitle);
-        if (ogUrl)      ogUrl.setAttribute('content', canonicalUrl);
-        if (canonical)  canonical.setAttribute('href', canonicalUrl);
-        if (ogImage && ex.grafik_url) ogImage.setAttribute('content', ex.grafik_url);
-
-        // JSON-LD
-        const phaseUrlMap = {
-          'Aufwärmen': '/uebungen/phase/aufwaermen',
-          'Hauptteil':      '/uebungen/phase/hauptteil',
-          'Spielformat':    '/uebungen/phase/spielformat'
-        };
-        const phaseUrl = phaseUrlMap[ex.trainingsphase];
-        const breadcrumbItems = [
-          {'@type':'ListItem','position':1,'name':'Übungen','item':'https://coachunited.de/uebungen'}
-        ];
-        if (phaseUrl) breadcrumbItems.push({'@type':'ListItem','position':2,'name':ex.trainingsphase,'item':'https://coachunited.de'+phaseUrl});
-        breadcrumbItems.push({'@type':'ListItem','position':breadcrumbItems.length+1,'name':displayTitle,'item':canonicalUrl});
-        const ldGraph = [
-          {'@type':'Article','name':displayTitle,'headline':displayTitle,
-           'description':ex.seo_meta_description||'',
-           'url':canonicalUrl,
-           'image':ex.grafik_url||'https://coachunited.de/og-image.png',
-           'publisher':{'@id':'https://coachunited.de/#organization'}},
-          {'@type':'BreadcrumbList','itemListElement':breadcrumbItems}
-        ];
-        const ldScript = document.createElement('script');
-        ldScript.type = 'application/ld+json';
-        ldScript.text = JSON.stringify({'@context':'https://schema.org','@graph':ldGraph});
-        document.head.appendChild(ldScript);
-
-        // Category back-links
-        const jugendUrlMap = {
-          'G-Jugend':'/uebungen/alter/g-jugend','F-Jugend':'/uebungen/alter/f-jugend',
-          'E-Jugend':'/uebungen/alter/e-jugend','D-Jugend':'/uebungen/alter/d-jugend'
-        };
-        const catLinks = [];
-        (ex.jugend || []).forEach(j => {
-          if (jugendUrlMap[j]) catLinks.push({label:'Weitere '+j+'-Übungen', url:jugendUrlMap[j]});
-        });
-        if (phaseUrl) catLinks.push({label:'Alle '+ex.trainingsphase+'-Übungen', url:phaseUrl});
-        (ex.skills || []).slice(0,2).forEach(s => {
-          catLinks.push({label:'Alle '+s+'-Übungen', url:'/uebungen/skill/'+toSlug(s)});
-        });
-        if (catLinks.length) {
-          const chevron = '<svg width="14" height="14" viewBox="0 0 14 14" fill="none" class="sister-chevron"><path d="M5 2L10 7L5 12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>';
-          document.getElementById('category-links-list').innerHTML = catLinks
-            .map(c => '<a href="'+c.url+'" class="related-link" style="margin-bottom:8px;"><span class="related-name">'+c.label+'</span>'+chevron+'</a>')
-            .join('');
-          document.getElementById('category-links-block').style.display = 'block';
-        }
-
-        // Grafik
-        if (ex.grafik_url) {
-          document.getElementById('grafik-img').src = ex.grafik_url;
-          document.getElementById('grafik-img').alt = ex.grafik_alt_text || ex.titel;
-          document.getElementById('grafik-panel').style.display = 'block';
-        }
-
-        // Phase + Jahrgang
-        const phaseRow = document.getElementById('phase-row');
-        if (ex.trainingsphase) {
-          const phaseColor = PHASE_COLORS[ex.trainingsphase] || '#0E1430';
-          const pb = document.createElement('span');
-          pb.className = 'phase-badge';
-          pb.style.background = phaseColor;
-          pb.textContent = ex.trainingsphase;
-          phaseRow.appendChild(pb);
-        }
-        const jahrgangStr = (ex.jugend || []).map(j => j.replace('-Jugend','')).join('·');
-        if (jahrgangStr) {
-          const jb = document.createElement('span');
-          jb.className = 'jahrgang-badge';
-          jb.textContent = jahrgangStr;
-          phaseRow.appendChild(jb);
-        }
-
-        // Titel + Beschreibung
-        document.getElementById('titel').textContent = ex.titel || ex.alt_titel;
-        document.getElementById('beschreibung').textContent = ex.kurzbeschreibung || '';
-
-        // Skill-Tags
-        const skillContainer = document.getElementById('skill-tags');
-        (ex.skills || []).forEach(s => {
-          const span = document.createElement('span');
-          span.className = 'skill-tag';
-          span.textContent = s;
-          skillContainer.appendChild(span);
-        });
-
-        // Akkordeons
-        document.getElementById('aufbau').textContent = ex.aufbau || '';
-        document.getElementById('durchfuehrung').textContent = ex.durchfuehrung || '';
-
-        // Sekundär-Kacheln
-        const EMPTY = '<p style="color:#9aa3b0;font-style:italic;margin:0;">Keine Hinweise zu dieser Übung.</p>';
-        sheetData['coaching_fokus'] = toBulletList(ex.coaching_fokus) || EMPTY;
-        sheetData['leichter_machen'] = toBulletList(ex.leichter_machen) || EMPTY;
-        sheetData['schwerer_machen'] = toBulletList(ex.schwerer_machen) || EMPTY;
-        sheetData['faq'] = faqToHtml(ex.faq) || EMPTY;
-
-        // Print-only: Coaching / Leichter / Schwieriger inline rendern
-        const printTiles = document.getElementById('print-tiles');
-        if (printTiles) {
-          const printCfg = [
-            { key: 'coaching_fokus',  label: 'Coaching-Fokus',          color: '#E89844' },
-            { key: 'leichter_machen', label: 'Übung leichter machen',   color: '#16A571' },
-            { key: 'schwerer_machen', label: 'Übung schwieriger machen', color: '#F23D3D' },
-          ];
-          printTiles.innerHTML = printCfg.map(t => `
-            <div class="print-tile-item">
-              <div class="print-tile-label" style="color:${t.color}">${t.label}</div>
-              <div class="print-tile-body">${sheetData[t.key]}</div>
-            </div>`).join('');
-        }
-
-        document.getElementById('tiles-grid').innerHTML = TILE_CONFIG.map(t => `
-          <button class="tile-btn" onclick="openSheet('${t.key}')">
-            <span class="tile-icon" style="background:${t.color}1A;">
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                <circle cx="10" cy="10" r="6" stroke="${t.color}" stroke-width="1.6"/>
-                <circle cx="10" cy="10" r="2.5" stroke="${t.color}" stroke-width="1.6"/>
-              </svg>
-            </span>
-            <span class="tile-name">${t.short}</span>
-            <span class="tile-hint">Antippen →</span>
-          </button>`).join('');
-
-        // Sisters
-        const sisterIds = ex.schwester_ids && ex.schwester_ids.length ? ex.schwester_ids
-          : (ex.schwester_id ? [ex.schwester_id] : []);
-        if (sisterIds.length) {
-          const sisters = exercises.filter(e => sisterIds.includes(e.id) && e.url_slug);
-          if (sisters.length) {
-            document.getElementById('sisters-list').innerHTML = sisters.map(s => `
-              <a href="/uebung/${s.url_slug}" class="sister-link" data-back-target="/uebung/${s.url_slug}">
-                <span class="sister-accent"></span>
-                <span class="sister-name">${s.titel}</span>
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" class="sister-chevron">
-                  <path d="M5 2L10 7L5 12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </a>`).join('');
-            document.querySelectorAll('#sisters-list .sister-link').forEach(a => {
-              a.addEventListener('click', () => {
-                try {
-                  sessionStorage.setItem('cu_back', JSON.stringify({
-                    target: a.getAttribute('data-back-target'),
-                    url: '/uebung/' + slug,
-                    label: 'Zurück'
-                  }));
-                } catch (e) {}
-              });
-            });
-            document.getElementById('sisters-block').style.display = 'block';
-          }
-        }
-
-
-        document.getElementById('loading').style.display = 'none';
-        document.getElementById('exercise-content').style.display = 'flex';
-      })
-      .catch(() => {
-        document.getElementById('loading').style.display = 'none';
-        document.getElementById('not-found').style.display = 'block';
-      });
 
     async function submitFeedback() {
       const text = document.getElementById('feedbackText').value.trim();

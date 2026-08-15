@@ -185,10 +185,6 @@
     }
     .card-arrow svg { width: 16px; height: 16px; }
 
-    #loading { display: none; padding: 60px 24px; text-align: center; color: #9aa3b0; font-size: 15px; }
-    #not-found { padding: 60px 24px; text-align: center; color: #9aa3b0; font-size: 15px; }
-    #not-found a { color: #1B6BF4; text-decoration: none; }
-
     /* Bottom Nav */
     .bottom-nav {
       position: fixed; bottom: 0; left: 50%;
@@ -239,12 +235,6 @@
         <span></span><span></span><span></span>
       </button>
     </header>
-
-    <div id="loading">Einheit wird geladen…</div>
-    <div id="not-found" style="display:none;">
-      <p>Einheit nicht gefunden.</p><br>
-      <a href="/einheiten">← Zurück zur Übersicht</a>
-    </div>
 
     <div id="einheit-content" style="display:flex; flex:1; flex-direction:column;">
       <div class="einheit-hero">
@@ -303,39 +293,12 @@
   </div>
 
   <script>
+    // Titel, Meta-Tags und die Uebungskarten stehen bereits vollstaendig im
+    // HTML (build-einheit-pages.js baut sie beim Deploy). Bis 08/2026 lud
+    // diese Seite trotzdem zusaetzlich exercises.json + einheiten.json (rund
+    // 2,7 MB) und rendere denselben Inhalt ein zweites Mal - vollstaendig
+    // wirkungslos, weil das Ergebnis identisch war.
     const slug = window.location.pathname.replace(/^\/einheit\//, '').replace(/\/$/, '');
-    const EINHEITEN_URL = '/einheiten.json';
-    const EXERCISES_URL = '/exercises.json';
-
-    const PHASE_ORDER = ['Aufwärmen', 'Hauptteil', 'Spielformat'];
-
-    // Slug-Normalisierung für Backwards-Compat (alte Slugs ohne Skill-Prefix)
-    function toSlug(text) {
-      if (!text) return '';
-      return text.toLowerCase()
-        .replace(/ä/g,'ae').replace(/ö/g,'oe').replace(/ü/g,'ue').replace(/ß/g,'ss')
-        .replace(/[^a-z0-9\s\-]/g,'').replace(/[\s\-]+/g,'-').replace(/^-+|-+$/g,'');
-    }
-
-    function renderCard(u, grafikMap, slugMap) {
-      const resolvedSlug = slugMap[u.slug] || null;
-      const grafik = resolvedSlug ? (grafikMap[resolvedSlug] || '') : '';
-      const inner = `
-          <div class="card-position">${u.position}</div>
-          <div class="card-body">
-            <p class="card-title">${u.titel}</p>
-          </div>
-          ${grafik ? `<div class="card-image"><img src="${grafik}" alt="" loading="lazy"></div>` : ''}
-          <div class="card-arrow">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="9 18 15 12 9 6"/>
-            </svg>
-          </div>`;
-      if (!resolvedSlug) {
-        return `<div class="uebung-card" style="cursor:default;">${inner}</div>`;
-      }
-      return `<a href="/uebung/${resolvedSlug}" class="uebung-card" data-back-target="/uebung/${resolvedSlug}">${inner}</a>`;
-    }
 
     // Herkunft ohne Query-Parameter merken (die erzeugten sonst crawlbare Duplikat-URLs).
     document.addEventListener('click', (ev) => {
@@ -349,74 +312,6 @@
         }));
       } catch (e) {}
     });
-
-    Promise.all([fetch(EINHEITEN_URL).then(r => r.json()), fetch(EXERCISES_URL).then(r => r.json())])
-      .then(([einheiten, exercises]) => {
-        const grafikMap = {};
-        exercises.forEach(e => { if (e.url_slug && e.grafik_url) grafikMap[e.url_slug] = e.grafik_url; });
-
-        const slugMap = {};
-        exercises.forEach(e => {
-          if (!e.url_slug) return;
-          [toSlug(e.titel), toSlug(e.alt_titel)].forEach(key => { if (key) slugMap[key] = e.url_slug; });
-        });
-
-        const einheit = einheiten.find(e => e.url_slug === slug);
-        if (!einheit) {
-          document.getElementById('loading').style.display = 'none';
-          document.getElementById('not-found').style.display = 'block';
-          return;
-        }
-
-        const pageTitle = einheit.titel + ' | COACH UNITED';
-        document.title = pageTitle;
-        document.getElementById('titel').textContent = einheit.titel;
-
-        // Meta-Tags
-        const canonicalUrl = 'https://coachunited.de/einheit/' + einheit.url_slug;
-        const metaDesc  = document.querySelector('meta[name="description"]');
-        const ogTitle   = document.querySelector('meta[property="og:title"]');
-        const ogDesc    = document.querySelector('meta[property="og:description"]');
-        const ogUrl     = document.querySelector('meta[property="og:url"]');
-        const canonical = document.querySelector('link[rel="canonical"]');
-        const descText  = einheit.beschreibung ? einheit.beschreibung.slice(0, 155) : (einheit.titel + ' – komplette Fußball-Trainingseinheit für den Kinderfußball bei COACH UNITED.');
-        if (metaDesc)  metaDesc.setAttribute('content', descText);
-        if (ogTitle)   ogTitle.setAttribute('content', pageTitle);
-        if (ogDesc)    ogDesc.setAttribute('content', descText);
-        if (ogUrl)     ogUrl.setAttribute('content', canonicalUrl);
-        if (canonical) canonical.setAttribute('href', canonicalUrl);
-
-        const count = einheit.uebungen.length;
-        document.getElementById('einheit-count').textContent = count + ' Übung' + (count !== 1 ? 'en' : '');
-
-        // Gruppiere nach Phase
-        const grouped = {};
-        PHASE_ORDER.forEach(p => { grouped[p] = []; });
-        einheit.uebungen.forEach(u => {
-          const phase = u.phase || 'Hauptteil';
-          if (!grouped[phase]) grouped[phase] = [];
-          grouped[phase].push(u);
-        });
-
-        const list = document.getElementById('uebungen-list');
-        list.innerHTML = PHASE_ORDER
-          .filter(p => grouped[p] && grouped[p].length)
-          .map(phase => `
-            <div class="phase-section">
-              <div class="phase-section-header" data-phase="${phase}">
-                <div class="phase-header-bar"></div>
-                <span class="phase-header-label">${phase}</span>
-              </div>
-              ${grouped[phase].map(u => renderCard(u, grafikMap, slugMap)).join('')}
-            </div>`).join('');
-
-        document.getElementById('loading').style.display = 'none';
-        document.getElementById('einheit-content').style.display = 'flex';
-      })
-      .catch(() => {
-        document.getElementById('loading').style.display = 'none';
-        document.getElementById('not-found').style.display = 'block';
-      });
 
     function openDrawer() {
       document.getElementById('drawer').classList.add('open');

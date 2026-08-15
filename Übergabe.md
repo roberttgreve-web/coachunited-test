@@ -548,14 +548,53 @@ Beim Messen aufgefallen: `grafik_url` macht **2.015 der 2.653 KB** von `exercise
 
 Laut Abschnitt 3 soll `build-exercise-pages.js` solche Base64-Bilder in die WordPress-Mediathek hochladen und durch die permanente URL ersetzen. Bei diesen 20 ist das offenbar nie passiert.
 
-Das trifft alle Seiten, die weiterhin die volle Datei laden:
+**Update 08/2026 (Abschnitt 15):** Die 227 Detailseiten laden `exercises.json` nicht mehr – der Punkt betrifft jetzt nur noch **eine** Seite:
 
 | Seite | lädt |
 |---|---|
-| `/einheit-generator` | `exercises.json` |
-| `/uebung/<slug>` (177 Seiten) | `exercises.json` |
-| `/einheit/<slug>` (50 Seiten) | `exercises.json` + `einheiten.json` |
+| `/einheit-generator` | `exercises.json` – bewusst, generiert aus beliebigen Übungen kombinatorisch, kann nicht vorgebaut werden |
 
-Sinnvollster nächster Schritt: die 20 Bilder aus dem JSON in echte WebP-Dateien unter `public/images/uebungen/` auslagern und `grafik_url` auf den lokalen Pfad umschreiben. Dann fällt die Datei auf rund 640 KB – ohne dass eine einzige Seite ihre Logik ändern muss.
+Trotzdem sinnvoll: die 20 Bilder aus dem JSON in echte WebP-Dateien unter `public/images/uebungen/` auslagern und `grafik_url` auf den lokalen Pfad umschreiben. Dann fällt die Datei auf rund 640 KB – zugute käme das vor allem dem Generator, außerdem läuft `build-exercise-pages.js` dann nicht mehr bei jedem Deploy gegen die WordPress-Mediathek.
 
 ⚠️ Nebenbefund: Die 157 URLs zeigen auf `coachunited.de/wp-content/uploads/…` und werden per **308 auf `archiv.coachunited.de`** umgeleitet. Jede Übungsgrafik kostet also einen zusätzlichen Umleitungs-Sprung auf das alte WordPress. Beim Auslagern der 20 könnte man die 157 gleich mitnehmen.
+
+---
+
+## 15. Detailseiten vollständig serverseitig gerendert (08/2026)
+
+Nach der zweiten Ad-Grants-Ablehnung nachgemessen, wo die eigentliche Ursache lag: **227 der rund 260 Seiten der Website** – jede einzelne Übungs- und Einheitenseite – luden zur Laufzeit die komplette `exercises.json` (2,65 MB) nach, obwohl Titel, Aufbau und Durchführung längst serverseitig im HTML standen.
+
+### 15.1 Wie es entstanden ist
+
+Keine Fehlentscheidung, ein liegen gebliebener Rest: `uebung-detail.html` war ursprünglich (Juni 2026) komplett clientseitig gerendert. Der Commit „SEO: Statische Übungsseiten per Build-Script generieren" hat das für `<head>` behoben – Titel, Description, Canonical, FAQ-Schema stehen seither im Build-Script. Aufbau und Durchführung kamen später dazu. Der **Rest des Bodys** – Skill-Tags, Coaching-Fokus, „leichter/schwerer machen", Kategorie-Links, Breadcrumbs, Schwesterübungen – wurde nie migriert und blieb clientseitig, mit vollem `fetch('/exercises.json')`.
+
+`einheit-detail.html` war davon nicht betroffen: `build-einheit-pages.js` baute die komplette Übungsliste bereits serverseitig (der in Abschnitt 10.1 dokumentierte Doppel-Render). Die Seite lud `exercises.json` + `einheiten.json` trotzdem zusätzlich zur Laufzeit – **wirkungslos**, weil das Ergebnis identisch war. Diese Seiten brauchten nur, den toten Client-Code zu entfernen.
+
+### 15.2 Was jetzt anders ist
+
+**`scripts/build-exercise-pages.js`** baut zusätzlich zu Titel/Aufbau/Durchführung jetzt auch:
+
+- Phase- und Jahrgangs-Badges (`#phase-row`)
+- Skill-Tags (`#skill-tags`)
+- Kategorie-Links „Weitere Übungen" (`#category-links-list` + Sichtbarkeit von `#category-links-block`)
+- Schwesterübungen (`#sisters-list` + Sichtbarkeit von `#sisters-block`) – Lookup über **alle** Übungen, nicht nur veröffentlichte, genau wie es das frühere Client-JS tat
+- Inhalt der vier Sekundär-Kacheln (Coaching-Fokus, leichter/schwerer machen, FAQ) als `const SHEET_DATA = {…};` inline im Script – kein Fetch mehr, nur ein kleines, seiteneigenes JSON
+- Print-Ansicht (`#print-tiles`)
+- Article- und Breadcrumb-JSON-LD (zusätzlich zum bestehenden FAQ-Schema)
+- Sichtbarkeit von `#grafik-panel`, abhängig vom rohen `ex.grafik_url` vor der WordPress-Auflösung
+
+Die Kacheln selbst (`.tiles-grid`, vier Buttons) sind jetzt **fest im Template** (`uebung-detail.html`) statt clientseitig gebaut – sie unterscheiden sich nie zwischen Übungen, nur ihr Inhalt beim Antippen ändert sich.
+
+`public/uebung-detail.html` verliert dadurch den kompletten `fetch('/exercises.json')`-Block (rund 200 Zeilen) sowie die nie erreichten `#loading`/`#not-found`-Zustände. `public/einheit-detail.html` verliert `Promise.all([fetch(EINHEITEN_URL), fetch(EXERCISES_URL)])` und den zugehörigen Render-Code komplett.
+
+**Effekt:** 2,7 MB → wenige KB pro Seite, auf 227 Seiten. Zusätzlicher Nebeneffekt: FAQ, Coaching-Tipps, Skill-Tags und die strukturierten Daten stehen jetzt auch **ohne JavaScript** im Markup – das war vorher nicht der Fall.
+
+### 15.3 Ein Nebenbefund beim Vergleich mit der Live-Seite
+
+Die alte clientseitige Logik überschrieb das bereits serverseitig gesetzte `<img id="grafik-img">` mit dem **rohen** `ex.grafik_url` – bei den 20 Base64-Übungen (Abschnitt 14.7) landete dadurch der komplette Base64-String im `src`-Attribut, obwohl dort schon die kleine, saubere WordPress-URL stand. Das war kein Feature, sondern ein Bug im inzwischen entfernten Code. Die neue Version behält durchgehend die aufgelöste WordPress-URL.
+
+### 15.4 Geprüft vor dem Deploy
+
+Da auf diesem Rechner kein Node installiert ist (Abschnitt 7), wurde die neue Build-Logik vorab **in Python nachgebaut** und gegen die echte `exercises.json` laufen lassen – vier Stichproben (mit FAQ + Schwestern, ohne Schwestern, mit Base64-Grafik) wurden vollständig gerendert und strukturell geprüft (keine leeren Pflichtfelder, Sichtbarkeit von Sisters-/Kategorie-Block stimmt mit gefülltem Inhalt überein, gültiges UTF-8, ausgeglichene Tags). Anschließend wurde eine Stichprobe **Zeichen für Zeichen** gegen das, was die *aktuelle* Live-Seite per JavaScript tatsächlich rendert, verglichen (Kategorie-Links, Schwesterübungen, Phase-Badges, Anzahl JSON-LD-Blöcke) – exakte Übereinstimmung.
+
+⚠️ **`build-exercise-pages.js` wirft jetzt bei sehr viel mehr Ankerpunkten.** Jede der neuen `.replace()`-Ziele muss exakt einmal im Template vorkommen. Wer `uebung-detail.html` umbaut, prüft nach der Änderung, ob alle Anker aus dem Build-Script noch vorhanden sind – sonst schlägt der komplette Vercel-Build fehl (nicht nur diese eine Seite, der gesamte Deploy).
