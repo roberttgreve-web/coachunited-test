@@ -144,12 +144,15 @@ Wichtig: `uebung-detail.html`, `einheit-detail.html` und `artikel-detail.html` s
 | vor 2026-08-07 | 1. Antrag – **abgelehnt** |
 | 2026-08-07 | Messwerte zur Ablehnung erhoben (9.2), Maßnahmenliste (9.3) erstellt |
 | 2026-08-12 | Alle 8 Maßnahmen aus 9.3 umgesetzt, 2. Antrag eingereicht – **abgelehnt** (identischer Wortlaut) |
-| 2026-08-12–15 | Ursache der 2. Ablehnung gefunden: 227 Detailseiten luden weiterhin die volle Datenbank (Abschnitt 15); Richtlinien direkt gegengeprüft (Abschnitt 16) |
-| 2026-08-15 | 3. Antrag eingereicht |
+| 2026-08-12–15 | Ursache der 2. Ablehnung vermutet und behoben: 227 Detailseiten luden weiterhin die volle Datenbank (Abschnitt 15); Richtlinien direkt gegengeprüft (Abschnitt 16) |
+| 2026-08-15 | 3. Antrag eingereicht – **abgelehnt** (wieder identischer Wortlaut) |
+| 2026-08-15 | Eigentlicher Treffer gefunden: `/uebungen` und alle 22 Alter/Skill/Phase-Landingpages zeigten im rohen HTML „0 Übungen" – die Karten kamen ausschließlich per JavaScript, 22 davon zusätzlich per GitHub-Fetch der vollen Datenbank. Behoben (Abschnitt 17). |
 
 Die zweite Ablehnung kam trotz stark gesunkenem Seitengewicht der drei Übersichtsseiten (`/home`, `/uebungen`, `/einheiten`) – der eigentliche Rest lag in den 227 Übungs- und Einheitenseiten dahinter, die weiterhin 2,7 MB pro Aufruf luden (Abschnitt 15). Zusätzlich wurden die Richtlinien wörtlich gegen die Seite geprüft statt nur nach Bauchgefühl (Abschnitt 16) – dabei fiel die fehlende Registernummer auf „Über uns" und die rein clientseitige Artikelliste auf `/wissen` auf, beide behoben.
 
-**Kommt eine dritte Ablehnung**, sind die verbliebenen, bekannten Stellschrauben: die 20 Base64-Bilder in `exercises.json`, die weiterhin den Generator ausbremsen (14.7), und der weiche Befund aus 16 – die Vereins-Erwähnung sitzt auf der Startseite erst nach zwei Dritteln des Texts, nicht im Hero.
+Die **dritte** Ablehnung kam trotzdem – mit identischem Wortlaut. Auf Nachfrage „könnte es Thin Content sein?" wurde die eigentliche Kernseite der Website geprüft: `/uebungen` und alle 22 Landingpages zeigten ohne JavaScript **keine einzige Übung**, obwohl sie mit hoher Priorität in der Sitemap stehen. Das trifft „thin content / pages primarily linking elsewhere" aus den Richtlinien wörtlich – und ist vermutlich der eigentliche, seit der ersten Ablehnung unveränderte Kern des Problems, der von den bisherigen Fixes (Gewicht, Detailseiten, Über-uns-Text) nie berührt wurde. Details, Fund und Fix in Abschnitt 17.
+
+**Kommt eine vierte Ablehnung**, sind die verbliebenen, bekannten Stellschrauben: die 20 Base64-Bilder in `exercises.json`, die weiterhin den Generator ausbremsen (14.7), und der weiche Befund aus 16 – die Vereins-Erwähnung sitzt auf der Startseite erst nach zwei Dritteln des Texts, nicht im Hero.
 
 Der **erste** Antrag wurde abgelehnt. Begründung von Google:
 
@@ -625,3 +628,47 @@ Nach der zweiten Ablehnung die [offiziellen Richtlinien](https://support.google.
 2. **`/wissen` zeigte im rohen HTML nur „Artikel werden geladen…"** – die Artikelliste war die letzte Stelle der Seite, die noch clientseitig nachlud (`fetch('/articles.json')`), obwohl die Startseite ihr Artikel-Band längst serverseitig bekommt (Abschnitt 11.3). `build-home.js` schreibt sie jetzt zusätzlich zwischen `<!--cu:artikel-liste-->`-Marker in `wissen.html`. Sortierung bewusst **nur nach Datum**, ohne den `hervorheben`-Vorrang des Startseiten-Bands – diese Seite ist die vollständige Liste, keine beworbene Auswahl. Nutzt wie die Startseite `bildQuelle()` für die lokalen WebP-Thumbnails statt der Originalbilder.
 
 **Weicher Befund, nicht umgesetzt:** „e.V." / „gemeinnützig" taucht im sichtbaren Text der Startseite erst nach 1.764 von 2.365 Zeichen auf, im „Über uns"-Abschnitt gegen Seitenende – die Richtlinie will die Vereinsangabe „prominent". Auslegungssache, kein hartes Kriterium wie die beiden Punkte oben.
+
+---
+
+## 17. Der eigentliche Treffer: Übungskarten fehlten auf 23 Seiten komplett (08/2026)
+
+Nach der **dritten** Ablehnung (wortidentisch zu den ersten beiden) auf die Frage „könnte es Thin Content sein?" nachgeprüft – und fündig geworden: `/uebungen` zeigte im rohen HTML buchstäblich
+
+> „**0 Übungen**" … „**Übungen werden geladen…**"
+
+Keine der 177 Übungen stand im Markup, alles kam erst per JavaScript. Dieselbe Lücke bestand in **allen 22 Alter/Skill/Phase-Landingpages** (`/uebungen/alter/g-jugend`, `/uebungen/skill/passen`, `/uebungen/phase/aufwaermen` …). Die Einleitungstexte dieser Seiten standen serverseitig da (150+ Wörter), die eigentlichen Übungs-Kacheln darunter nicht.
+
+Das trifft die Richtlinien wörtlich: „thin content … pages primarily linking elsewhere" – ausgerechnet auf der Seite, die die 177 echten Übungen beweisen sollte. Alle 23 Seiten stehen mit hoher Priorität (0,7–0,9) in der Sitemap – Google wurde also aktiv angewiesen, genau diese leeren Seiten zu crawlen.
+
+### 17.1 Zweiter Fund dabei: 22 Seiten hingen noch an GitHub
+
+Der GitHub-Fix aus Abschnitt 14.2 hatte diese 22 Dateien übersehen: Sie luden `exercises.json` (2,6 MB) weiterhin direkt von `raw.githubusercontent.com`, weil ihr Fetch-Aufruf `fetch('https://raw...')` lautete statt `fetch('/…')` – das Suchmuster des damaligen Fixes hat sie deshalb nicht erfasst.
+
+### 17.2 Warum das beim letzten Umbau nicht auffiel
+
+Abschnitt 15 hatte Gewicht optimiert (KB), nicht geprüft, ob Inhalt *ohne* JavaScript sichtbar ist. `/uebungen` selbst wurde damals nur auf eine schlanke Datenquelle umgestellt (`uebungen-index.json`, Abschnitt 14.6) – die Karten blieben aber weiterhin rein clientseitig gerendert. Die 22 Landingpages standen gar nicht auf dem Radar, weil `gen-landing-pages.ps1` sie einmalig erzeugt hatte und sie seither nicht mehr angefasst wurden.
+
+### 17.3 Die Lösung: `scripts/build-landing-pages.js`
+
+Neues Script, läuft jetzt bei jedem Deploy (in `vercel.json` nach `build-home.js` eingehängt):
+
+- **`/uebungen`**: bekommt alle 177 Karten ungefiltert ins HTML gebacken (`<!--cu:karten-->`, `<!--cu:anzahl-->`). Das bestehende Client-JS (Filter-UI, `uebungen-index.json`) bleibt unverändert – es rendert beim Laden einmal harmlos neu, was schon im HTML steht.
+- **22 Landingpages**: bekommen ihre **primär gefilterte** Kartenliste gebacken (z. B. nur G-Jugend-Übungen), dazu Anzahl-Text und Skill-Dropdown. `FILTER_KEY`/`FILTER_VALUE` liest das Script direkt aus jeder Datei aus (per Regex), keine separate Konfigurationsliste, die auseinanderlaufen könnte.
+- Der GitHub-Fetch ist komplett entfernt. Die zur Sekundärfilterung nötigen Daten (7 schlanke Felder je Übung, nicht die ganze Datenbank) stehen jetzt **eingebettet** im Script der jeweiligen Seite – kein Netzwerk-Aufruf mehr nötig, auch nicht auf die lokale Indexdatei.
+
+⚠️ **Kritischer Stolperstein, der fast live gegangen wäre:** Für die eingebetteten Daten war der erste Entwurf, dieselben `<!--cu:…-->`-HTML-Kommentar-Marker wie überall sonst zu verwenden – **innerhalb eines `<script>`-Blocks**. Das ist falsch: `<!--` ist gültige, alte JavaScript-Syntax (Annex B) für einen Zeilenkommentar und frisst den Rest der Zeile. Die Zuweisung `let allExercises = <!--cu:page-daten-->[]<!--/cu:page-daten-->;` wurde dadurch zu `let allExercises = ` ohne Wert – und weil danach kein Semikolon mehr im nicht-auskommentierten Bereich stand, versuchte der Parser, den Ausdruck über mehrere folgende Zeilen hinweg fortzusetzen, bis er zufällig auf `document.getElementById(...).style.display` traf. Ergebnis: `allExercises` wurde zur **Zeichenkette `"none"`** statt zu einem Array – ein Fehler, der nicht als Syntaxfehler auffällt, sondern eine plausibel aussehende, aber falsche Laufzeit-Zuweisung erzeugt.
+
+Der Fix: Für Daten **innerhalb** eines `<script>`-Blocks nie HTML-Kommentar-Marker verwenden, sondern reinen Text-Ersatz einer eindeutigen Codezeile – genau das Muster, das `SHEET_DATA` in `build-exercise-pages.js` (Abschnitt 15) bereits richtig macht. `build-landing-pages.js` sucht die Zeile `let allExercises = [];` wörtlich und ersetzt sie komplett.
+
+**Gefunden vor dem Deploy**, weil die neue Logik erst in Python simuliert und das Ergebnis testweise in echtem Chrome geladen wurde (nicht nur strukturell gegen die Marker geprüft) – `allExercises` als String statt Array wäre in einer reinen Text-Simulation nicht aufgefallen, erst die Ausführung im Browser zeigte es.
+
+### 17.4 Geprüft vor dem Deploy
+
+- Python-Simulation gegen die echte `exercises.json` für alle 23 Seiten: Kartenzahlen plausibel (Summe Phase-Filter 66+76+35 = 177, exakt die Gesamtzahl – jede Übung hat genau eine Trainingsphase), keine Duplikate, gültiges JSON, kein `fetch(` und kein `raw.githubusercontent` mehr im Ergebnis.
+- Simulierte `g-jugend.html` und `uebungen.html` real in Chrome geladen: `allExercises` ist ein echtes Array (72 bzw. 177 Einträge), Kartenzahl im DOM stimmt, Anzahl-Text stimmt, ein Sekundärfilter-Klick („Passen" antippen) filtert korrekt von 72 auf 41 Übungen, keine Konsolenfehler.
+- Die noch **nicht** gebackene Originaldatei (vor dem echten Vercel-Build) bleibt robust: `allExercises = []` läuft ohne Absturz, zeigt nur leere Ergebnisse – das Seitengerüst funktioniert auch ohne Node-Build, wie an anderer Stelle im Projekt üblich.
+
+### 17.5 Warum die Zahlen pro Seite unterschiedlich hoch sind
+
+G-Jugend 72, F-Jugend 163, E-Jugend 149, D-Jugend 92 Übungen – die Summe übersteigt 177, weil eine Übung mehreren Altersstufen zugeordnet sein kann. `/uebungen/alter/g-jugend` zeigt bewusst nur die Teilmenge, `/uebungen` selbst weiterhin alle 177.

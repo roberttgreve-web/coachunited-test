@@ -1,5 +1,5 @@
 {
-  "buildCommand": "node scripts/build-exercise-pages.js && node scripts/build-einheit-pages.js && node scripts/build-artikel-pages.js && node scripts/build-home.js && node scripts/build-sitemap.js",
+  "buildCommand": "node scripts/build-exercise-pages.js && node scripts/build-einheit-pages.js && node scripts/build-artikel-pages.js && node scripts/build-home.js && node scripts/build-landing-pages.js && node scripts/build-sitemap.js",
   "outputDirectory": "public",
   "trailingSlash": false,
   "redirects": [
