@@ -1,6 +1,6 @@
 # Übergabe – coachunited.de
 
-Stand: 2026-08-18. Dieses Dokument ist der Einstiegspunkt für alle, die künftig an coachunited.de weiterarbeiten (Entwickler, Freelancer, Nachfolger).
+Stand: 2026-08-21. Dieses Dokument ist der Einstiegspunkt für alle, die künftig an coachunited.de weiterarbeiten (Entwickler, Freelancer, Nachfolger).
 
 ## 1. Was ist das für ein Projekt?
 
@@ -108,6 +108,15 @@ Wichtig: `uebung-detail.html`, `einheit-detail.html` und `artikel-detail.html` s
 - **WordPress als Bild-Backend**: `archiv.coachunited.de` ist die alte WordPress-Installation. Sie dient nur noch als Mediathek – die Build-Scripts laden Base64-Grafiken per REST-API (`/wp-json/wp/v2/media`) dorthin hoch und verwenden die zurückgegebene URL. Zugangsdaten liegen in `.env` (`WP_USER`, `WP_APP_PASSWORD`), diese Datei ist über `.gitignore` vom Git-Repo ausgeschlossen und muss auch in Vercel als Environment-Variable hinterlegt sein, damit der Build-Schritt dort funktioniert.
 - **Google Fonts**: Inter Tight (Fließtext) und JetBrains Mono (Zahlen/Labels), per `<link>` geladen.
 - **Google Analytics 4**.
+- **formsubmit.co** – Zielpostfach der beiden Formulare auf `/uebung-einreichen` (Sprachnachricht und Text). Die Adresse steht direkt im `action`-Attribut des jeweiligen `<form>` in `uebung-einreichen.html` und lässt sich dort im Code ändern. ⚠️ Bei einer **neuen** Zieladresse verlangt formsubmit.co einmalig eine Bestätigung: Erst nach Anklicken eines Aktivierungslinks (den formsubmit.co beim ersten echten Absenden an die neue Adresse schickt) kommen weitere Einsendungen dort an.
+- **Web3Forms** – Zielpostfach des Feedback-Buttons unter jeder Übungsseite (`submitFeedback()` in `uebung-detail.html`). Anders als bei formsubmit.co steht die Zieladresse **nicht im Code**, sondern nur ein Access Key (`178bfb57-6bf5-45c0-9788-064568110b35`) – wohin die Mail geht, ist auf **web3forms.com** selbst hinterlegt, verknüpft mit diesem Key. Stand 08/2026 zeigt er noch auf die alte `mail.coachunited@gmail.com`. **Umstellen auf `hallo@coachunited.de`:** entweder Zugang zu dem web3forms.com-Konto finden, das den Key erzeugt hat, und dort die Benachrichtigungsadresse ändern – oder einen neuen, kostenlosen Account direkt mit `hallo@coachunited.de` anlegen, neuen Access Key erzeugen und die Konstante in `uebung-detail.html` austauschen (nur dort verwendet, sonst nirgends im Repo).
+
+### 6.1 Domain, DNS und E-Mail (Stand 08/2026)
+
+- **Registrar/Kundenkonto:** `coachunited.de` wird über **domainfactory** verwaltet (Kundennummer K349914, Auftrag A726027, Tarif „Managed WordPress Basic"). Login dafür existiert und ist bekannt.
+- **Nameserver zeigen trotzdem auf GoDaddy** (`ns37`/`ns38.domaincontrol.com`) – domainfactory bietet dieses Hosting-Paket als Reseller-Produkt auf GoDaddy-Infrastruktur an. Es gibt **kein separates, eigenständiges GoDaddy-Kundenkonto** dafür (mehrfach erfolglos versucht, u. a. über GoDaddys eigene Konto-Wiederherstellung) – die komplette Verwaltung, inklusive einzelner DNS-Records, läuft über **domainfactory → Auftrag A726027 → „Nameserver-Einstellungen"**, nicht über godaddy.com direkt.
+- **`hallo@coachunited.de`** ist seit 08/2026 ein echtes Postfach – **Microsoft 365 E-Mail Essentials**, bestellt/verwaltet über domainfactory („E-Mail und Office" im selben Auftrag). MX-Eintrag, die beiden DKIM-CNAMEs (`selector1`/`selector2._domainkey`) und der Domain-Verifizierungs-TXT-Eintrag wurden bei der Einrichtung automatisch gesetzt. Der SPF-Eintrag musste **manuell nachgetragen** werden: Ein älterer Eintrag existierte zwar mit korrektem Inhalt (`v=spf1 include:secureserver.net -all`), stand aber unter dem veralteten, eigenen **Record-Typ „SPF"** statt als **TXT** – moderne Prüfungen (auch Microsofts eigene) lesen SPF-Policies ausschließlich aus TXT-Records und übersahen ihn deshalb. Alter „SPF"-Typ-Eintrag gelöscht, gleichlautender **TXT**-Eintrag neu angelegt, seitdem korrekt erkannt.
+- Kontaktadresse im Impressum, in der Datenschutzerklärung, auf „Über uns" und bei den `uebung-einreichen`-Formularen wurde von `mail.coachunited@gmail.com` auf `hallo@coachunited.de` umgestellt (08/2026). Der Web3Forms-Feedback-Button (s. o.) läuft als einziger bekannter Kontaktweg **noch** auf die alte Adresse.
 
 ## 7. Deployment (GitHub → Vercel)
 
