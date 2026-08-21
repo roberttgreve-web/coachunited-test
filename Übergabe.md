@@ -144,7 +144,7 @@ Wichtig: `uebung-detail.html`, `einheit-detail.html` und `artikel-detail.html` s
 - ⚠️ **CSS und JS tragen keine Versionsnummer im Dateinamen.** `/desktop.css`, `/sektionen.css`, `/desktop-nav.js` heißen nach jedem Deploy gleich. Deshalb steht ihr `Cache-Control` in `vercel.json` auf `max-age=0, must-revalidate` – der Browser fragt bei jedem Aufruf nach und bekommt meist ein 304. Vorher stand dort `max-age=86400`: Eine CSS-Änderung erreichte wiederkehrende Besucher bis zu 24 Stunden lang nicht, und beim Testen sah man auf dem Handy hartnäckig die alte Version. Wer die Regel wieder verschärfen will, muss vorher die Dateinamen versionieren (`sektionen.abc123.css`) – sonst kommt das Problem zurück.
 - **Vorgemerkt: Foto für die Merkliste.** Im Projektstammverzeichnis liegt `younes-karami-ne-ft_5zDTY-unsplash.jpg` – gedacht für einen künftigen Umbau von `/merkliste` im Stil der Startseite. Aufbereitung wie in Abschnitt 11.4 beschrieben (Pillow, WebP, `ImageOps.exif_transpose()`).
 
-## 9. Google Ad Grants (Stand 2026-08-18)
+## 9. Google Ad Grants (Stand 2026-08-21)
 
 **Verlauf:**
 
@@ -156,7 +156,8 @@ Wichtig: `uebung-detail.html`, `einheit-detail.html` und `artikel-detail.html` s
 | 2026-08-12–15 | Ursache der 2. Ablehnung vermutet und behoben: 227 Detailseiten luden weiterhin die volle Datenbank (Abschnitt 15); Richtlinien direkt gegengeprüft (Abschnitt 16) |
 | 2026-08-15 | 3. Antrag eingereicht – **abgelehnt** (wieder identischer Wortlaut) |
 | 2026-08-15 | Eigentlicher Treffer gefunden: `/uebungen` und alle 22 Alter/Skill/Phase-Landingpages zeigten im rohen HTML „0 Übungen" – die Karten kamen ausschließlich per JavaScript, 22 davon zusätzlich per GitHub-Fetch der vollen Datenbank. Behoben (Abschnitt 17). |
-| 2026-08-18 | 4. Antrag eingereicht. Ergebnis noch offen. |
+| 2026-08-18 | 4. Antrag eingereicht – **abgelehnt** (wieder identischer Wortlaut) |
+| 2026-08-21 | Erneuter Thin-Content-Scan auf ausdrücklichen Wunsch: `/einheit-generator` ohne `?jugend=`-Parameter leitet per Client-JS auf `/home` weiter und stand trotzdem in der Sitemap – entfernt (Abschnitt 18). `/merkliste`, `/danke` zusätzlich auf `noindex` gesetzt. 5. Antrag noch nicht erneut eingereicht. |
 
 Die zweite Ablehnung kam trotz stark gesunkenem Seitengewicht der drei Übersichtsseiten (`/home`, `/uebungen`, `/einheiten`) – der eigentliche Rest lag in den 227 Übungs- und Einheitenseiten dahinter, die weiterhin 2,7 MB pro Aufruf luden (Abschnitt 15). Zusätzlich wurden die Richtlinien wörtlich gegen die Seite geprüft statt nur nach Bauchgefühl (Abschnitt 16) – dabei fiel die fehlende Registernummer auf „Über uns" und die rein clientseitige Artikelliste auf `/wissen` auf, beide behoben.
 
@@ -164,7 +165,9 @@ Die **dritte** Ablehnung kam trotzdem – mit identischem Wortlaut. Auf Nachfrag
 
 Am 2026-08-18 wurde parallel zum vierten Antrag auch der Support von Google Ad Grants bzw. Goodstack (dem externen Dienstleister für Google for Nonprofits) kontaktiert, mit der Bitte um konkreteres Feedback statt der wiederkehrenden Standardformulierung – Antwort steht noch aus.
 
-**Kommt eine fünfte Ablehnung**, sind die verbliebenen, bekannten Stellschrauben: die 20 Base64-Bilder in `exercises.json`, die weiterhin den Generator ausbremsen (14.7), und der weiche Befund aus 16 – die Vereins-Erwähnung sitzt auf der Startseite erst nach zwei Dritteln des Texts, nicht im Hero.
+Die **vierte** Ablehnung kam ebenfalls mit identischem Wortlaut. Erneuter Scan (2026-08-21) fand einen neuen, bis dahin unbemerkten Fund: `/einheit-generator` steht in der Sitemap, leitet aber ohne `?jugend=`-Parameter per `window.location.href` auf `/home` weiter – genau die in der Sitemap gelistete URL bounct also sofort weg. Details, Fund und Fix in Abschnitt 18.
+
+**Kommt eine weitere Ablehnung**, sind die verbliebenen, bekannten Stellschrauben: die 20 Base64-Bilder in `exercises.json`, die weiterhin den Generator ausbremsen (14.7), und der weiche Befund aus 16 – die Vereins-Erwähnung sitzt auf der Startseite erst nach zwei Dritteln des Texts, nicht im Hero.
 
 Der **erste** Antrag wurde abgelehnt. Begründung von Google:
 
@@ -302,16 +305,17 @@ Unter dem Hero folgen fünf Sektionen. Die Flächen wechseln bewusst ab – dadu
 |---|---|---|---|
 | Übungen (inkl. Merkliste) | `.hs.hs--hell` | weiß | zwei kurze Absätze, ein CTA, Foto rechts |
 | Wissen | `.hs.hs--dunkel` | Marine | Artikel-Band mit zwei Pfeilen |
-| Übung einreichen | `.hs.hs--hell` | weiß | kurz, ein CTA |
-| Über uns | `.hs.hs--dunkel` | Marine | Text links, Portrait rechts |
+| WhatsApp-Kanal | `.hs.hs--hell` | weiß | ein CTA, Foto rechts (Desktop) |
+| Übung einreichen | `.hs.hs--dunkel` | Marine | kurz, ein CTA |
+| Über uns | `.hs.hs--hell` | weiß | Text links, Portrait rechts |
 
-Grundregel bei Änderungen: **nie zwei gleiche Flächen nebeneinander.** Der Farbwechsel ersetzt Trennlinien.
+Grundregel bei Änderungen: **nie zwei gleiche Flächen nebeneinander.** Der Farbwechsel ersetzt Trennlinien. ⚠️ Die WhatsApp-Sektion ist mittendrin eingeschoben (08/2026, Abschnitt 20.3) – Übung-einreichen und Über-uns haben dadurch beide die Fläche gewechselt, damit die Kette hell/dunkel/hell/dunkel/hell durchgehend bleibt. Wer eine weitere Sektion einschiebt, muss diese Kaskade neu durchrechnen, nicht nur die neue Sektion selbst einfärben.
 
 Jede Sektion hat **genau einen** Call-to-Action. Die Merkliste ist bewusst im Fließtext verlinkt (`.hs-textlink`) statt als zweiter Button – ebenso sind die Alters-Chips wieder entfallen. Beides war einmal da und wirkte überladen.
 
-Zwei Sektionen mit Zweispalter nutzen `.hs-split`: Übungen mit Querformat-Foto, „Über uns" zusätzlich mit `.hs-split--portrait` für das Hochformat-Portrait.
+Drei Sektionen mit Zweispalter nutzen `.hs-split`: Übungen und WhatsApp-Kanal mit Querformat-Foto, „Über uns" zusätzlich mit `.hs-split--portrait` für das Hochformat-Portrait.
 
-Ein WhatsApp-Band als eigene Sektion gab es zwischenzeitlich, es wurde wieder entfernt. Der Kanal wird jetzt ausschließlich über den Menüpunkt „Nichts verpassen" und den Störer beworben.
+Ein WhatsApp-Band als eigene Sektion gab es zwischenzeitlich, wurde wieder entfernt – und im 08/2026-Umbau (Abschnitt 20) dauerhaft wieder eingeführt, seitdem der Kanal zum wichtigsten CTA der Seite erklärt wurde. Siehe Abschnitt 20 für die komplette Historie.
 
 ### 11.2a Hero: Foto frei, Überschrift rechts
 
@@ -429,7 +433,7 @@ Zwei Abweichungen von den Unterseiten:
 
 - **`aspect-ratio` verliert gegen das `height`-Attribut.** Bilder im Markup tragen `width`/`height` gegen Layout-Sprünge. Ohne zusätzliches `height: auto` im CSS gewinnt das Attribut, und `aspect-ratio` bleibt wirkungslos – das Bild wird verzerrt. Betrifft `.hs-foto` und `.hs-tile img`.
 - **Die Bottom-Nav gibt es in zwei Markup-Varianten.** Die meisten Seiten nutzen `<span>Label</span>`, drei (`artikel-detail.html`, `detail.html`, `einheit-detail.html`) nutzen `<span class="nav-label">Label</span>`. Wer per Skript ersetzt, muss beide abdecken – sonst bleiben genau diese drei Seiten zurück.
-- **Der Menüpunkt zum WhatsApp-Kanal heißt „Nichts verpassen"** (mit Glocken-Icon) und steht in **43 Dateien**: einmal in der Desktop-Topnav in `desktop-nav.js`, sonst in der mobilen Bottom-Nav jeder Seite. Das Wort „WhatsApp" wurde bewusst aus der Navigation entfernt, bleibt aber in Fließtexten stehen – dort ist es ein Argument (kein neuer Account, keine E-Mail-Adresse), in der Navigation nur ein Etikett.
+- **Der Menüpunkt hieß „Nichts verpassen"** (mit Glocken-Icon), bewusst ohne das Wort „WhatsApp" in der Navigation. Diese Entscheidung wurde 08/2026 revidiert – der Kanal ist jetzt der wichtigste CTA der Seite und heißt entsprechend „WhatsApp-Kanal", grün hervorgehoben, mit direktem Link zum Kanal. Siehe Abschnitt 20.
 
 ---
 
@@ -684,3 +688,84 @@ Der Fix: Für Daten **innerhalb** eines `<script>`-Blocks nie HTML-Kommentar-Mar
 ### 17.5 Warum die Zahlen pro Seite unterschiedlich hoch sind
 
 G-Jugend 72, F-Jugend 163, E-Jugend 149, D-Jugend 92 Übungen – die Summe übersteigt 177, weil eine Übung mehreren Altersstufen zugeordnet sein kann. `/uebungen/alter/g-jugend` zeigt bewusst nur die Teilmenge, `/uebungen` selbst weiterhin alle 177.
+
+---
+
+## 18. Einheit-Generator aus der Sitemap, Merkliste/Danke auf noindex (08/2026)
+
+Nach der vierten Ablehnung (identischer Wortlaut) erneut gezielt nach Thin Content gesucht.
+
+### 18.1 Erster Anlauf war ein Fehlschluss
+
+Ein `curl`-Check auf `/einheit-generator` zählte den sichtbaren Text der Rohseite und kam auf sehr wenig – naheliegender erster Schluss: die Seite komplett auf `noindex` setzen. Auf Nachfrage „ist der Einheiten-Generator nicht SEO-relevant?" wurde das verworfen und die Seite stattdessen **live im echten Browser** mit `?jugend=E-Jugend` geladen: Dort stehen fünf vollständige Übungen mit Aufbau und Durchführung – echter, wertvoller Content. Der `curl`-Check hatte sich täuschen lassen, weil er zwar `<script>`/`<style>`-Blöcke herausrechnet, aber keine inline `display:none`-Elemente – eine per CSS versteckte Fallback-Meldung („Für diese Auswahl gibt es keine weitere Kombination…") zählte dadurch als sichtbarer Text mit.
+
+⚠️ **Lehre für künftige Thin-Content-Checks:** `curl` + Wortzählung ist kein Ersatz für einen echten Browser-Check. Was im HTML steht, ist nicht automatisch das, was ein Nutzer (oder Googles Renderer) sieht.
+
+### 18.2 Der eigentliche Fund
+
+`einheit-generator.html` enthält `if (!jugend) window.location.href = '/home';` – ohne `?jugend=`-Parameter leitet die Seite sofort weiter. Genau die **parameterlose** URL `/einheit-generator` stand aber in `STATIC_PAGES` (`scripts/build-sitemap.js`) mit Priorität 0.6 – das ist ein klassischer Soft-Redirect: Google wird angewiesen, eine URL zu crawlen, die augenblicklich wegleitet.
+
+**Fix:** Nur der Sitemap-Eintrag wurde entfernt (Kommentar an der Stelle erklärt, warum). Die Seite selbst, ihre Funktion und ihre Erreichbarkeit über `/einheiten` bleiben unangetastet – das Feature ist gut, nur die nackte Basis-URL gehörte nicht in die Sitemap.
+
+### 18.3 Zwei kleinere Punkte im selben Aufwasch
+
+- **`/merkliste` und `/danke`** bekamen `<meta name="robots" content="noindex, follow">`. Beides sind reine Zustands-/Bestätigungsseiten ohne Inhalt für anonyme Crawler, standen aber (obwohl nicht in der Sitemap) weiterhin indexierbar.
+- **Hero-CTA-Text** auf der Startseite von „Einheit erhalten" auf „Trainingseinheit erhalten" geändert – konkreter, kein Fachjargon-Rätsel für Erstbesucher.
+
+### 18.4 Noch offen, falls eine weitere Ablehnung kommt
+
+- Die 20 Base64-Bilder in `exercises.json` (Abschnitt 14.7), die weiterhin genau `/einheit-generator` belasten.
+- Die „gemeinnützig"-Erwähnung sitzt auf der Startseite erst nach zwei Dritteln des Texts (Abschnitt 16, weicher Befund).
+
+---
+
+## 19. Zwei Bugfixes am Feedback-Baustein (08/2026)
+
+Rückmeldung: „Der Feedback-Button unter jeder Übung ist nicht klickbar." Zwei **unabhängige** Ursachen, beide über `elementFromPoint()`-Tests im echten Browser gefunden statt vermutet.
+
+### 19.1 Cookie-Banner blockierte Buttons am Seitenende (sitewide)
+
+`cookie-consent.js` rendert den Banner `position: fixed` am unteren Bildschirmrand, ohne dass er Platz im normalen Layout-Fluss reserviert. Jeder Button, der zufällig unter dem Banner lag, war optisch da, aber nicht antippbar – nicht nur der Feedback-Button, potenziell jeder Button am unteren Rand jeder Seite.
+
+**Fix:** `renderBanner()` misst jetzt die eigene Höhe und ruft `reservePageBottomSpace(px)` auf (setzt `document.body.style.paddingBottom`), `removeBanner()` ruft `releasePageBottomSpace()` (setzt es zurück auf `''`). Derselbe Denkfehler tauchte später beim sitewide Abbinder wieder auf (Abschnitt 20.2) – Muster also im Kopf behalten: **jedes `position: fixed`-Element am Seitenrand braucht ein Platzhalter-Polster im Fluss, sonst verdeckt es das, was eigentlich als letztes Element gilt.**
+
+### 19.2 Desktop: Feedback-Textfeld unsichtbar
+
+In `desktop.css` stand `body:has(#exercise-content) .feedback-card textarea { display: none !important; }` – der Button blieb klickbar, aber die Eingabe für den Freitext war unsichtbar. Auf Mobil war das Feld nie betroffen (Regel gilt nur ab 768px).
+
+**Fix:** `display: block !important; flex: 1 !important; min-height: 0 !important; height: 44px !important; margin: 0 !important;`, dazu `.feedback-card` von `justify-content: space-between; gap: 28px` auf `gap: 20px` umgestellt und `.feedback-title` mit `max-width: 220px` begrenzt, damit Titel und Feld nebeneinander Platz haben.
+
+---
+
+## 20. WhatsApp-Kanal wird zum wichtigsten CTA (08/2026)
+
+Ausgangspunkt: Der Kanal ist der wichtigste Wachstumshebel der Seite (kein neuer Account nötig, keine E-Mail-Adresse), stand aber nur unauffällig im Menü als „Nichts verpassen" (Abschnitt 11.5, jetzt überholt).
+
+### 20.1 Navigation umbenannt und hervorgehoben
+
+- **Mobil**: Bottom-Nav-Eintrag `/whatsapp-info` umbenannt zu „WhatsApp-Kanal", echtes WhatsApp-Glyph statt Glocken-Icon, grüner Hintergrund (`#25D366`) wie ein Button. Umgesetzt per **DOM-Ersetzung** in `hervorhebeWhatsAppNav()` (`desktop-nav.js`), nicht per Textaustausch in allen Dateien – die Bottom-Nav hat zwei Markup-Varianten (`<span>` vs. `<span class="nav-label">`, Abschnitt 11.5), über das DOM ist das egal.
+- **Desktop**: eigener Pillen-Link `desktop-topnav-link--whatsapp` in der Topnav, gleiche Grünfläche, gleiches Icon (`cuWaIcon(groesse)` – eine Funktion, wiederverwendet in Mobile-Nav, Desktop-Pille und Abbinder-CTA, kein dreifach kopiertes SVG).
+
+### 20.2 Sitewide Abbinder
+
+Statt eines Popup-Störers: ein fester Abschnitt „Komm in unseren WhatsApp-Kanal" am Ende **jeder** Seite, direkt vor der Bottom-Nav (mobil) bzw. dem Footer (Desktop) – `injectWhatsAppAbbinder()` in `desktop-nav.js`. Ausgeschlossen (Liste `AUSGESCHLOSSEN`): `/impressum`, `/datenschutz`, `/whatsapp-info`, `/uebung-einreichen`, außerdem `/` und `/home` (Grund: Abschnitt 20.3, eigene Startseiten-Sektion statt Abbinder). Der ältere Popup-Störer (`injectWhatsAppPromo()`) bleibt im Code, aber deaktiviert (`WA_PROMO_LIVE = false`) – zwei gleichzeitige Werbeflächen für dieselbe Sache wirken wie Spam.
+
+Derselbe Fallstrick wie in 19.1 tauchte hier erneut auf: Der Abbinder ist jetzt das letzte Element im normalen Fluss, die fixierte Bottom-Nav (≈81px) lag ohne Polster darüber und machte den CTA-Button unantippbar. Fix: `padding-bottom: 127px` im mobilen Media-Query (46px normales Sektionspolster + 81px Nav), exakt das gleiche Muster wie bei `#ueber-uns` (Abschnitt 11.4a) und dem Cookie-Banner.
+
+### 20.3 Feintuning nach Live-Test (selber Tag)
+
+Fünf Nachbesserungen in einer Runde:
+
+1. **Direkter Link statt Zwischenseite.** Mobile und Desktop verlinken jetzt direkt auf `https://www.whatsapp.com/channel/0029VbAqTP68kyyEFg3oyX2t` (`target="_blank"`), nicht mehr auf `/whatsapp-info`. ⚠️ **Nebenwirkung:** `/whatsapp-info` hat dadurch **keinen Link mehr aus der Navigation** – die Seite bleibt aber auf ausdrücklichen Wunsch bestehen (Datei + Sitemap-Eintrag unverändert), ist nur nicht mehr verlinkt. Kein technisches Problem, nur bewusst in Kauf genommen.
+   - **Gefundener Bug dabei:** Die Kanal-URL-Konstante (`CU_WA_KANAL_URL`) stand ursprünglich *nach* der IIFE, die sie beim Seitenaufruf sofort braucht. `var`-Zuweisungen werden anders als Funktionsdeklarationen **nicht** gehoistet (nur die Deklaration, nicht der Wert) – die IIFE las deshalb `undefined` und baute Links wie `.../undefined`. Fix: Konstante an den Dateianfang verschoben, vor die IIFE.
+2. **Startseiten-Sektion statt Abbinder.** Auf `/home` steht der Kanal-Hinweis jetzt als feste `.hs`-Sektion zwischen „Wissen" und „Übung einreichen" (Markup direkt in `home.html`, nicht per JS injiziert) – deshalb der Ausschluss in 20.2. Rechts daneben auf Desktop das bestehende Foto `kanal-handy.webp` (schon auf `/whatsapp-info` im Einsatz), im selben `.hs-split`-Muster wie die Übungen-Sektion, auf Mobil ausgeblendet (`#whatsapp-home .hs-foto { display: none; }`, gleiche Regel wie bei `#uebungen`).
+   - **Farbkaskade:** Die neue Sektion zwischen Wissen (dunkel) und Übung einreichen (hell) hätte entweder zwei gleiche Flächen nebeneinander erzeugt oder eine Kaskade gebraucht. Entschieden für die Kaskade: WhatsApp-Kanal hell, Übung einreichen dunkel, Über uns hell – Reihenfolge bleibt durchgehend alternierend (Tabelle in Abschnitt 11.2 aktualisiert).
+3. **`/einheiten`: Abbinder hell statt dunkel.** Die Sektion davor (`#direkt-zu-den-uebungen`) ist bereits dunkel – zwei dunkle Flächen hintereinander wirken flach. Pfadabhängige Zusatzklasse `cu-wa-abbinder--hell` (weißer Grund, dunkle Schrift, CTA-Button bleibt grün) nur für `pfad === '/einheiten'`.
+4. **Abstand zum vorherigen Content verringert.** Der Abbinder hatte oben dasselbe Polster wie unten (46px/56px) – das summierte sich mit dem jeweiligen Template-eigenen Bottom-Padding zu einer auffällig großen Lücke. Oberes Padding auf 26px (mobil) / 32px (Desktop) reduziert, unteres unverändert (wegen der Bottom-Nav-Reserve aus 20.2).
+5. **Desktop-Reihenfolge getauscht.** „Über uns" und „WhatsApp-Kanal" tauschen Platz – der Kanal ist jetzt der letzte, auffälligste Punkt der Topnav. Mobile Bottom-Nav bewusst unverändert (kein Platz für „Über uns" dort, Abschnitt 14.4).
+
+### 20.4 Pill-Textfarbe: CSS-Spezifität schlug die WhatsApp-Grünfläche
+
+Auf mehreren Seitentypen (Startseite, Übungsdetail, Auswahlseiten wie `/uebungen`) blieb die Desktop-Pille dunkel statt weiß beschriftet. Ursache: `desktop.css` hat für diese Seitentypen eigene `body:has(#id)`/`body:has(.klasse)`-Regeln für `.desktop-topnav-link` mit `!important` – und durch die ID bzw. doppelte Klasse im Selektor **höhere Spezifität** als die einfache `.desktop-topnav-link--whatsapp`-Regel, obwohl auch die `!important` trägt. Bei gleichem `!important`-Level entscheidet zuerst die Spezifität, erst bei Gleichstand die Position im Dokument.
+
+**Fix:** Eigene Overrides mit **derselben Selektor-Struktur** (`body:has(#exercise-content) .desktop-topnav-link--whatsapp` usw.) ergänzt – dadurch exakt gleiche Spezifität, und weil sie später im `<head>` stehen (Laufzeit-Injektion via `document.head.appendChild`), gewinnt bei Gleichstand die eigene Regel. ⚠️ Betrifft nur die drei Kontexte, die `!important` verwenden (`#exercise-content`, `.crest-panel`, `.selection-section`); die zwei ohne `!important` (`#einheit-content`, `.page-hero.dr-main`) waren nie betroffen, weil `!important` grundsätzlich vor Spezifität gewinnt.
