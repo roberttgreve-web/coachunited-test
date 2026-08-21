@@ -92,6 +92,19 @@
     logConsent(consent);
   }
 
+  // Das Banner ist fixiert (position: fixed) und reserviert dadurch keinen
+  // Platz im normalen Seitenfluss - es legt sich einfach über das, was
+  // gerade dort steht. Auf Seiten, deren letztes Element (z. B. der
+  // Feedback-Button unter jeder Uebung) nah am unteren Rand sitzt, macht das
+  // diesen Button unklickbar, bis das Banner verschwindet. Deshalb wird die
+  // tatsaechliche Bannerhoehe gemessen und als Body-Polster reserviert.
+  function reservePageBottomSpace(px) {
+    document.body.style.paddingBottom = px + 'px';
+  }
+  function releasePageBottomSpace() {
+    document.body.style.paddingBottom = '';
+  }
+
   function renderBanner() {
     if (document.getElementById('cu-cookie-banner')) return;
     var banner = document.createElement('div');
@@ -105,6 +118,7 @@
       '</div>' +
       '<button type="button" class="cu-cookie-settings-link" id="cu-cookie-settings-open">Einstellungen</button>';
     document.body.appendChild(banner);
+    reservePageBottomSpace(banner.getBoundingClientRect().height);
 
     document.getElementById('cu-cookie-reject').addEventListener('click', function () { decide(false); });
     document.getElementById('cu-cookie-accept').addEventListener('click', function () { decide(true); });
@@ -117,6 +131,7 @@
   function removeBanner() {
     var el = document.getElementById('cu-cookie-banner');
     if (el) el.remove();
+    releasePageBottomSpace();
   }
 
   function renderModal() {
