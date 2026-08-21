@@ -16,7 +16,11 @@ const STATIC_PAGES = [
   { loc: '/uebungen',                      changefreq: 'weekly',  priority: '0.9' },
   { loc: '/einheiten',                     changefreq: 'weekly',  priority: '0.8' },
   { loc: '/wissen',                        changefreq: 'weekly',  priority: '0.7' },
-  { loc: '/einheit-generator',             changefreq: 'monthly', priority: '0.7' },
+  // /einheit-generator ist bewusst NICHT gelistet: Ohne ?jugend=-Parameter
+  // leitet die Seite per window.location.href auf /home weiter (siehe
+  // einheit-generator.html) - genau die parameterlose URL waere das, was
+  // hier in der Sitemap stuende. Das Feature selbst bleibt unangetastet,
+  // erreichbar ueber /einheiten.
   { loc: '/ueber-uns',                     changefreq: 'monthly', priority: '0.4' },
   { loc: '/umgang-mit-ki',                 changefreq: 'monthly', priority: '0.4' },
   { loc: '/uebung-einreichen',             changefreq: 'monthly', priority: '0.4' },
