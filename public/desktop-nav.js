@@ -1,3 +1,10 @@
+// Zentrale Kanal-URL: Nav-Links (mobil + Desktop) fuehren seit 08/2026 direkt
+// hierher, ohne Zwischenseite /whatsapp-info. Die Infoseite existiert weiter
+// (Sitemap, evtl. externe Links), ist aber aus der Hauptnavigation entfernt.
+// Muss vor der IIFE stehen: var-Zuweisungen werden anders als
+// Funktionsdeklarationen nicht gehoistet, die IIFE liest die Konstante sofort.
+var CU_WA_KANAL_URL = 'https://www.whatsapp.com/channel/0029VbAqTP68kyyEFg3oyX2t';
+
 (function () {
   injectWhatsAppPromo();
   hervorhebeWhatsAppNav();
@@ -71,11 +78,11 @@
       <a href="/einheiten"     class="desktop-topnav-link ${isActive('/einheiten')}">Einheit erhalten</a>
       <a href="/merkliste"     class="desktop-topnav-link ${isActive('/merkliste')}">Merkliste</a>
       <a href="/wissen"        class="desktop-topnav-link ${isActive('/wissen')}">Wissen</a>
-      <a href="/whatsapp-info" class="desktop-topnav-link desktop-topnav-link--whatsapp ${isActive('/whatsapp-info')}">${cuWaIcon(15)}WhatsApp-Kanal</a>
       <!-- Nur in der Desktop-Topnav. Die mobile Bottom-Nav hat vier Plaetze
            und die sind mit den Arbeitsseiten belegt; dort bleibt "Über uns"
            im Burger-Menue. -->
       <a href="/ueber-uns"     class="desktop-topnav-link ${isActive('/ueber-uns')}">Über uns</a>
+      <a href="${CU_WA_KANAL_URL}" target="_blank" rel="noopener" class="desktop-topnav-link desktop-topnav-link--whatsapp">${cuWaIcon(15)}WhatsApp-Kanal</a>
     </div>
   `;
 
@@ -122,6 +129,9 @@ function hervorhebeWhatsAppNav() {
 
   links.forEach(function (a) {
     a.classList.add('cu-wa-nav-highlight');
+    a.href = CU_WA_KANAL_URL;
+    a.target = '_blank';
+    a.rel = 'noopener';
     var svg = a.querySelector('svg');
     if (svg) svg.outerHTML = cuWaIcon(20).replace('<svg ', '<svg class="nav-icon" ');
     var span = a.querySelector('span');
@@ -163,7 +173,12 @@ function hervorhebeWhatsAppNav() {
 // (WA_PROMO_LIVE = false) - zwei gleichzeitige Werbeflaechen fuer dieselbe
 // Sache wirken wie Spam.
 function injectWhatsAppAbbinder() {
-  var AUSGESCHLOSSEN = ['/impressum', '/datenschutz', '/whatsapp-info', '/uebung-einreichen'];
+  // "/" und "/home" bewusst mit ausgeschlossen: die Startseite hat den
+  // Kanal-Hinweis fest zwischen "Wissen" und "Übung einreichen" eingebaut
+  // (siehe home.html), damit die Farbreihenfolge der Startseiten-Sektionen
+  // stimmt - ein zusaetzlicher Abbinder am Seitenende waere dort die dritte
+  // Einblendung derselben Sache auf einer Seite.
+  var AUSGESCHLOSSEN = ['/', '/home', '/impressum', '/datenschutz', '/whatsapp-info', '/uebung-einreichen'];
   var pfad = window.location.pathname.replace(/\/$/, '') || '/';
   if (AUSGESCHLOSSEN.indexOf(pfad) !== -1) return;
   if (document.getElementById('cu-wa-abbinder')) return;
@@ -173,7 +188,7 @@ function injectWhatsAppAbbinder() {
 
   var style = document.createElement('style');
   style.textContent = `
-    .cu-wa-abbinder { background: #0E1430; padding: 46px 22px; }
+    .cu-wa-abbinder { background: #0E1430; padding: 26px 22px 46px; }
     .cu-wa-abbinder-inner { max-width: 960px; margin: 0 auto; }
     .cu-wa-abbinder-label {
       display: block; font-family: 'JetBrains Mono', ui-monospace, monospace;
@@ -198,6 +213,13 @@ function injectWhatsAppAbbinder() {
       transition: background 0.15s;
     }
     .cu-wa-abbinder-cta:hover { background: #1ebd5b; }
+    /* /einheiten hat als letzte Sektion davor schon einen dunklen Hintergrund
+       (#direkt-zu-den-uebungen, hs--dunkel) - hier also hell, damit nicht
+       zwei dunkle Flaechen aufeinandertreffen. */
+    .cu-wa-abbinder--hell { background: #fff; }
+    .cu-wa-abbinder--hell .cu-wa-abbinder-label { color: #1E6BFF; }
+    .cu-wa-abbinder--hell .cu-wa-abbinder-title { color: #0E1430; }
+    .cu-wa-abbinder--hell .cu-wa-abbinder-text  { color: #5A6180; }
     /* Die Bottom-Nav ist fixiert und ~81px hoch. Ohne dieses Polster ist der
        Abbinder - jetzt das letzte Element im normalen Fluss jeder Seite -
        darunter verdeckt und der CTA-Button nicht antippbar (dasselbe Muster
@@ -206,7 +228,7 @@ function injectWhatsAppAbbinder() {
       .cu-wa-abbinder { padding-bottom: 127px; }
     }
     @media (min-width: 768px) {
-      .cu-wa-abbinder { padding: 56px 40px; }
+      .cu-wa-abbinder { padding: 32px 40px 56px; }
       .cu-wa-abbinder-title { font-size: 27px; }
       .cu-wa-abbinder-text { font-size: 15px; }
     }
@@ -216,13 +238,13 @@ function injectWhatsAppAbbinder() {
 
   var section = document.createElement('section');
   section.id = 'cu-wa-abbinder';
-  section.className = 'cu-wa-abbinder';
+  section.className = 'cu-wa-abbinder' + (pfad === '/einheiten' ? ' cu-wa-abbinder--hell' : '');
   section.innerHTML =
       '<div class="cu-wa-abbinder-inner">'
     +   '<span class="cu-wa-abbinder-label">Kanal</span>'
     +   '<h2 class="cu-wa-abbinder-title">Komm in unseren WhatsApp-Kanal</h2>'
     +   '<p class="cu-wa-abbinder-text">Jede Woche posten wir dort neue Übungen. Keine Diskussionen, keine Chats – nur neue Ideen für dein Training.</p>'
-    +   '<a class="cu-wa-abbinder-cta" href="https://www.whatsapp.com/channel/0029VbAqTP68kyyEFg3oyX2t" target="_blank" rel="noopener">'
+    +   '<a class="cu-wa-abbinder-cta" href="' + CU_WA_KANAL_URL + '" target="_blank" rel="noopener">'
     +     cuWaIcon(18)
     +     'Zum Kanal'
     +   '</a>'
