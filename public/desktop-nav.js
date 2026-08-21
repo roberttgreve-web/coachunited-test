@@ -1,5 +1,7 @@
 (function () {
   injectWhatsAppPromo();
+  hervorhebeWhatsAppNav();
+  injectWhatsAppAbbinder();
 
   if (window.innerWidth < 768) return;
 
@@ -69,7 +71,7 @@
       <a href="/einheiten"     class="desktop-topnav-link ${isActive('/einheiten')}">Einheit erhalten</a>
       <a href="/merkliste"     class="desktop-topnav-link ${isActive('/merkliste')}">Merkliste</a>
       <a href="/wissen"        class="desktop-topnav-link ${isActive('/wissen')}">Wissen</a>
-      <a href="/whatsapp-info" class="desktop-topnav-link ${isActive('/whatsapp-info')}">Nichts verpassen</a>
+      <a href="/whatsapp-info" class="desktop-topnav-link desktop-topnav-link--whatsapp ${isActive('/whatsapp-info')}">${cuWaIcon(15)}WhatsApp-Kanal</a>
       <!-- Nur in der Desktop-Topnav. Die mobile Bottom-Nav hat vier Plaetze
            und die sind mit den Arbeitsseiten belegt; dort bleibt "Über uns"
            im Burger-Menue. -->
@@ -96,6 +98,133 @@
     container.appendChild(footer);
   }
 })();
+
+// Echtes WhatsApp-Glyph (gefuellt), wiederverwendet in Mobile-Nav,
+// Desktop-Topnav und dem sitewide Abbinder - immer dieselbe Bilddatei-freie
+// Quelle statt an drei Stellen kopiert.
+function cuWaIcon(groesse) {
+  return '<svg width="' + groesse + '" height="' + groesse + '" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>';
+}
+
+// ── Mobile Bottom-Nav: "Nichts verpassen" -> WhatsApp-Kanal, hervorgehoben ──
+//
+// Das Wort "WhatsApp" war bewusst aus der Navigation entfernt worden (siehe
+// Uebergabe.md); diese Entscheidung wurde am 08/2026 revidiert - der Kanal
+// ist der wichtigste CTA der Seite und soll das auch in der Navigation zeigen.
+//
+// Per DOM-Ersetzung statt Textaustausch in 42 Dateien: Die Bottom-Nav hat
+// zwei Markup-Varianten (<span> vs. <span class="nav-label">), eine
+// Ersetzung per Skript ueber Dateiinhalte muesste beide treffen. Ueber das
+// DOM ist das egal, "ein span-Kind" matcht beide Varianten gleichermassen.
+function hervorhebeWhatsAppNav() {
+  var links = document.querySelectorAll('a.nav-item[href="/whatsapp-info"]');
+  if (!links.length) return;
+
+  links.forEach(function (a) {
+    a.classList.add('cu-wa-nav-highlight');
+    var svg = a.querySelector('svg');
+    if (svg) svg.outerHTML = cuWaIcon(20).replace('<svg ', '<svg class="nav-icon" ');
+    var span = a.querySelector('span');
+    if (span) span.textContent = 'WhatsApp-Kanal';
+  });
+
+  var style = document.createElement('style');
+  style.textContent = `
+    .nav-item.cu-wa-nav-highlight {
+      background: #25D366;
+      border-radius: 12px;
+      padding: 6px 4px 5px !important;
+      margin: -6px -1px 0;
+      color: #fff !important;
+    }
+    .nav-item.cu-wa-nav-highlight span { color: #fff !important; }
+    .desktop-topnav-link--whatsapp {
+      display: inline-flex !important;
+      align-items: center;
+      gap: 7px;
+      background: #25D366 !important;
+      color: #fff !important;
+      border-radius: 999px !important;
+      padding: 8px 16px !important;
+    }
+    .desktop-topnav-link--whatsapp:hover { background: #1ebd5b !important; }
+    .desktop-topnav-link--whatsapp.active { background: #128C42 !important; color: #fff !important; }
+    @media print { .cu-wa-nav-highlight { background: transparent !important; } }
+  `;
+  document.head.appendChild(style);
+}
+
+// ── Sitewide Abbinder: CTA zum WhatsApp-Kanal am Seitenende ──
+//
+// Wichtigster CTA der Seite (08/2026) - steht am Ende jeder Seite, direkt
+// vor der Bottom-Nav (mobil) bzw. dem Footer (Desktop). Bewusst als fester
+// Abschnitt statt Popup: kein Timing, kein Wegklicken noetig. Der aeltere
+// Poup-Stoerer (injectWhatsAppPromo) bleibt im Code, aber deaktiviert
+// (WA_PROMO_LIVE = false) - zwei gleichzeitige Werbeflaechen fuer dieselbe
+// Sache wirken wie Spam.
+function injectWhatsAppAbbinder() {
+  var AUSGESCHLOSSEN = ['/impressum', '/datenschutz', '/whatsapp-info', '/uebung-einreichen'];
+  var pfad = window.location.pathname.replace(/\/$/, '') || '/';
+  if (AUSGESCHLOSSEN.indexOf(pfad) !== -1) return;
+  if (document.getElementById('cu-wa-abbinder')) return;
+
+  var container = document.querySelector('.container');
+  if (!container) return;
+
+  var style = document.createElement('style');
+  style.textContent = `
+    .cu-wa-abbinder { background: #0E1430; padding: 46px 22px; }
+    .cu-wa-abbinder-inner { max-width: 960px; margin: 0 auto; }
+    .cu-wa-abbinder-label {
+      display: block; font-family: 'JetBrains Mono', ui-monospace, monospace;
+      font-size: 9px; font-weight: 700; letter-spacing: 0.14em;
+      text-transform: uppercase; color: #6E9BFF; margin-bottom: 12px;
+    }
+    .cu-wa-abbinder-title {
+      font-family: 'Inter Tight', system-ui, sans-serif;
+      font-size: 22px; font-weight: 800; color: #fff;
+      line-height: 1.15; letter-spacing: -0.02em; margin-bottom: 12px;
+    }
+    .cu-wa-abbinder-text {
+      font-family: 'Inter Tight', system-ui, sans-serif;
+      font-size: 14px; line-height: 1.6; color: rgba(255,255,255,0.66); max-width: 52ch;
+    }
+    .cu-wa-abbinder-cta {
+      display: inline-flex; align-items: center; gap: 9px;
+      margin-top: 22px; padding: 13px 20px;
+      background: #25D366; color: #fff !important; border-radius: 10px;
+      font-family: 'Inter Tight', system-ui, sans-serif;
+      font-size: 15px; font-weight: 700; text-decoration: none;
+      transition: background 0.15s;
+    }
+    .cu-wa-abbinder-cta:hover { background: #1ebd5b; }
+    @media (min-width: 768px) {
+      .cu-wa-abbinder { padding: 56px 40px; }
+      .cu-wa-abbinder-title { font-size: 27px; }
+      .cu-wa-abbinder-text { font-size: 15px; }
+    }
+    @media print { .cu-wa-abbinder { display: none !important; } }
+  `;
+  document.head.appendChild(style);
+
+  var section = document.createElement('section');
+  section.id = 'cu-wa-abbinder';
+  section.className = 'cu-wa-abbinder';
+  section.innerHTML =
+      '<div class="cu-wa-abbinder-inner">'
+    +   '<span class="cu-wa-abbinder-label">Kanal</span>'
+    +   '<h2 class="cu-wa-abbinder-title">Komm in unseren WhatsApp-Kanal</h2>'
+    +   '<p class="cu-wa-abbinder-text">Jede Woche posten wir dort neue Übungen. Keine Diskussionen, keine Chats – nur neue Ideen für dein Training.</p>'
+    +   '<a class="cu-wa-abbinder-cta" href="https://www.whatsapp.com/channel/0029VbAqTP68kyyEFg3oyX2t" target="_blank" rel="noopener">'
+    +     cuWaIcon(18)
+    +     'Zum Kanal'
+    +   '</a>'
+    + '</div>';
+
+  var nav = container.querySelector('.bottom-nav');
+  if (nav) container.insertBefore(section, nav);
+  else container.appendChild(section);
+}
 
 // ── Sitewide Hinweis auf den WhatsApp-Kanal ──
 //
