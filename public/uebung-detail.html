@@ -881,8 +881,16 @@
     }
 
     async function submitFeedback() {
-      const text = document.getElementById('feedbackText').value.trim();
-      if (!text) return;
+      const textarea = document.getElementById('feedbackText');
+      const text = textarea.value.trim();
+      if (!text) {
+        // Vorher: stiller Abbruch, der Klick wirkte wie ein kaputter Button.
+        // Jetzt zumindest eine sichtbare Reaktion, statt gar nichts zu tun.
+        textarea.focus();
+        textarea.style.borderColor = '#F23D3D';
+        setTimeout(() => { textarea.style.borderColor = ''; }, 1500);
+        return;
+      }
       const btn = document.querySelector('.feedback-submit');
       const exTitle = document.getElementById('titel')?.textContent || window.location.pathname;
       btn.disabled = true;
