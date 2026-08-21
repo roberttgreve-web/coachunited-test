@@ -160,6 +160,23 @@ function hervorhebeWhatsAppNav() {
     .desktop-topnav-link--whatsapp:hover { background: #1ebd5b !important; }
     .desktop-topnav-link--whatsapp.active { background: #128C42 !important; color: #fff !important; }
     @media print { .cu-wa-nav-highlight { background: transparent !important; } }
+    /* Einige Seitentypen (Uebungsdetail, Startseite mit Wappen, Auswahlseiten)
+       setzen .desktop-topnav-link ueber body:has(#id)/body:has(.klasse) mit
+       !important und hoeherer Spezifitaet auf dunkle Schrift - das traf sonst
+       auch die gruene WhatsApp-Pille. Hier mit derselben Selektor-Struktur
+       gegengehalten (gleiche Spezifitaet, aber spaeter im Dokument). */
+    body:has(#exercise-content) .desktop-topnav-link--whatsapp,
+    body:has(.crest-panel) .desktop-topnav-link--whatsapp,
+    body:has(.selection-section) .desktop-topnav-link--whatsapp {
+      background: #25D366 !important;
+      color: #fff !important;
+    }
+    body:has(#exercise-content) .desktop-topnav-link--whatsapp:hover,
+    body:has(.crest-panel) .desktop-topnav-link--whatsapp:hover,
+    body:has(.selection-section) .desktop-topnav-link--whatsapp:hover {
+      background: #1ebd5b !important;
+      color: #fff !important;
+    }
   `;
   document.head.appendChild(style);
 }
