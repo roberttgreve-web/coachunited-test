@@ -198,6 +198,13 @@ function injectWhatsAppAbbinder() {
       transition: background 0.15s;
     }
     .cu-wa-abbinder-cta:hover { background: #1ebd5b; }
+    /* Die Bottom-Nav ist fixiert und ~81px hoch. Ohne dieses Polster ist der
+       Abbinder - jetzt das letzte Element im normalen Fluss jeder Seite -
+       darunter verdeckt und der CTA-Button nicht antippbar (dasselbe Muster
+       wie beim Cookie-Banner, siehe cu-cookie-banner weiter oben). */
+    @media (max-width: 767px) {
+      .cu-wa-abbinder { padding-bottom: 127px; }
+    }
     @media (min-width: 768px) {
       .cu-wa-abbinder { padding: 56px 40px; }
       .cu-wa-abbinder-title { font-size: 27px; }
