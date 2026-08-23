@@ -32,6 +32,21 @@
     padding-right: 32px !important;
   }
 
+  /* ── Artikel-Titelbild: nicht mehr auf 220px zusammenquetschen ──
+     .hero-img (artikel-detail.html) sitzt außerhalb von .content und blieb
+     dadurch auf Desktop volle Containerbreite (>1200px), waehrend die
+     max-height von 220px (fuer die 375px-Mobilbreite gedacht) unveraendert
+     blieb. Bei einem Hochformat-Foto zeigte das dann nur noch einen
+     hauchduennen Streifen nahe des oberen Bildrands - meist leerer
+     Himmel/Hintergrund statt des eigentlichen Motivs. Jetzt dieselbe Breite
+     wie der Text darunter, Hoehe ueber ein Seitenverhaeltnis statt fixem px. */
+  .hero-img {
+    max-width: 960px;
+    max-height: none;
+    aspect-ratio: 2.4 / 1;
+    margin: 0 auto;
+  }
+
   /* ── Header: volle Breite, Inhalt begrenzt ── */
   .header {
     padding-left: 32px !important;
