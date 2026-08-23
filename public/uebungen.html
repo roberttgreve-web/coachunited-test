@@ -464,20 +464,62 @@
   <link rel="stylesheet" href="/desktop.css">
   <style>
     @media (min-width: 768px) {
-      .container { height: 100vh; overflow: hidden; }
-      #uebungen-body { flex-direction: row; overflow: hidden; }
+      /* Kopfbereich oben quer über die volle Breite - wie auf den anderen
+         Seiten (Wissen, Einheiten) -, darunter Filter (1) und Liste (4) als
+         zwei Spalten. Vorher lagen Kopfbereich, Filter und Liste als drei
+         Flex-Spalten nebeneinander in einer Reihe - dadurch wirkte der
+         Kopfbereich wie ein vierter, viel zu breiter Filter-Block.
+
+         Bewusst normal fließende Seite (kein height:100vh/overflow:hidden
+         mit eigenständig scrollenden Spalten): Seit dem WhatsApp-Abbinder
+         (Abschnitt 20) haengen am Ende von .container zwei weitere,
+         unterschiedlich hohe Bloecke (Abbinder, Footer) - ein fixierter
+         Seitenrahmen muesste deren Hoehe kennen und wuerde bei jeder
+         Aenderung dort neu brechen. Der Filter bleibt stattdessen wie auf
+         Mobil per position:sticky sichtbar, während die Liste normal
+         mitscrollt - robust gegen alles, was unten an der Seite haengt. */
+      #uebungen-body {
+        display: grid;
+        grid-template-columns: minmax(220px, 1fr) minmax(0, 4fr);
+        grid-template-rows: auto 1fr;
+      }
+
+      .page-hero {
+        grid-column: 1 / -1;
+        padding: 32px 32px 22px;
+      }
+      .page-hero h1 { font-size: 30px; }
+      .page-intro { font-size: 15px; max-width: 70ch; }
+
       .filter-section {
-        position: static;
-        top: unset;
-        width: 260px;
-        flex-shrink: 0;
-        border-right: 1px solid rgba(255,255,255,0.08);
-        padding: 28px 20px;
+        grid-column: 1;
+        grid-row: 2;
+        /* align-self:start haelt die Box selbst auf natuerlicher (kurzer)
+           Hoehe - "position: sticky" bezieht sich trotzdem auf die volle
+           Grid-Zellenhoehe (= Hoehe der Liste daneben), das reicht als
+           Scroll-Strecke zum Haften. Mit align-self:stretch wuerde die Box
+           selbst auf Listenlaenge gezogen und haette dadurch gar nichts mehr
+           zum "Haften" - ihr Kopf waere dann fix am Seitenanfang.
+           Dadurch ist sie jetzt eine kurze, schwebende Karte statt einer
+           Spalte, die bis zum Seitenende durchlaeuft - deshalb Rand statt
+           Trennlinie und abgerundete Ecken, damit sie bewusst wie eine Karte
+           wirkt und nicht wie eine abgeschnittene Spalte. */
+        position: sticky;
+        top: 84px;
+        align-self: start;
+        border-radius: 16px;
+        margin: 28px 20px 28px 32px;
+        padding: 20px;
         overflow: visible;
       }
       .filter-pills { flex-direction: column; }
       .filter-pill { padding: 14px 12px; }
-      .content { flex: 1; overflow-y: auto; height: 100%; padding: 28px 32px 40px; }
+
+      .content {
+        grid-column: 2;
+        grid-row: 2;
+        padding: 28px 32px 40px;
+      }
     }
   </style>
   <script src="/desktop-nav.js" defer></script>

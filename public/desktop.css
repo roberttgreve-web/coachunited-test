@@ -748,6 +748,18 @@
    ══════════════════════════════════════════════════════════ */
 
 @media (min-width: 768px) {
+  /* .container erbt sonst overflow:hidden von der mobilen "Handy-Rahmen"-
+     Regel (noetig fuer die abgerundeten Ecken dort) - auf Desktop gibt es
+     die Ecken nicht mehr, aber overflow:hidden bliebe bestehen und wuerde
+     jedes position:sticky-Kind (Topnav, Filter-Karte) lahmlegen, weil der
+     Browser dann faelschlich .container statt des Dokuments als deren
+     Scroll-Bezug ansieht. Andere Seitentypen setzen das schon jeweils
+     selbst zurueck (siehe body:has(#exercise-content) .container etc.),
+     /uebungen hatte dafuer noch keinen eigenen Block. */
+  body:has(.filter-section) .container {
+    overflow: visible !important;
+  }
+
   body:has(.filter-section) #exercises-list {
     display: flex !important;
     flex-direction: column !important;
