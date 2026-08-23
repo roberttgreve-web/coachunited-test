@@ -160,6 +160,27 @@
     border-radius: 0 !important;
   }
 
+  /* Wissen-Kacheln: einheitliche Höhe statt "wie hoch das Titelfoto zufällig
+     ist". Mit nur max-height (s. o.) bestimmt bei den meisten Fotos deren
+     eigenes Seitenverhältnis die Bildhöhe - object-fit:cover greift dann nie,
+     weil die Box gar nicht erst kleiner als das Bild wird. Ergebnis: Kacheln
+     in unterschiedlicher Höhe und pro Foto ein anderer, zufälliger
+     Bildausschnitt. Feste Höhe erzwingt einen einheitlichen Zuschnitt.
+     Titel auf drei Zeilen reserviert (auch wenn kürzer) statt "so hoch wie
+     der eigene Titel gerade ist" - erst das macht alle Kacheln gleich hoch. */
+  .article-card .card-thumb {
+    height: 200px !important;
+  }
+  .article-card .card-title {
+    display: -webkit-box !important;
+    -webkit-line-clamp: 3 !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+    line-height: 1.4 !important;
+    min-height: calc(1.4em * 3) !important;
+    margin-bottom: 0 !important;
+  }
+
   .card-thumb-placeholder {
     width: 100% !important;
     height: 160px !important;
