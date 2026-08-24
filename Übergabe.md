@@ -167,7 +167,7 @@ Am 2026-08-18 wurde parallel zum vierten Antrag auch der Support von Google Ad G
 
 Die **vierte** Ablehnung kam ebenfalls mit identischem Wortlaut. Erneuter Scan (2026-08-21) fand einen neuen, bis dahin unbemerkten Fund: `/einheit-generator` steht in der Sitemap, leitet aber ohne `?jugend=`-Parameter per `window.location.href` auf `/home` weiter – genau die in der Sitemap gelistete URL bounct also sofort weg. Details, Fund und Fix in Abschnitt 18.
 
-**Kommt eine weitere Ablehnung**, sind die verbliebenen, bekannten Stellschrauben: die 20 Base64-Bilder in `exercises.json`, die weiterhin den Generator ausbremsen (14.7), und der weiche Befund aus 16 – die Vereins-Erwähnung sitzt auf der Startseite erst nach zwei Dritteln des Texts, nicht im Hero.
+**Kommt eine weitere Ablehnung**, ist die verbliebene, bekannte Stellschraube: der weiche Befund aus 16 – die Vereins-Erwähnung sitzt auf der Startseite erst nach zwei Dritteln des Texts, nicht im Hero. Die Base64-Bilder in `exercises.json` sind erledigt (14.7), können aber durch den Publisher-Bot jederzeit neu auftauchen – lohnt einen kurzen Check vor dem nächsten Antrag.
 
 Der **erste** Antrag wurde abgelehnt. Begründung von Google:
 
@@ -573,7 +573,7 @@ const KARTEN_FELDER = ['id', 'titel', 'url_slug', 'kurzbeschreibung', 'jugend', 
 
 Geprüft: 177 Karten, Reihenfolge identisch zur vollen Datei, Filterkombination E-Jugend → Passen → Hauptteil liefert 149 / 109 / 50 – dieselben Zahlen wie eine unabhängige Auswertung von `exercises.json`.
 
-### 14.7 Offen: 20 Übungen tragen ihr Bild als Base64 im JSON
+### 14.7 Erledigt (08/2026): Base64-Bilder aus dem JSON ausgelagert
 
 Beim Messen aufgefallen: `grafik_url` macht **2.015 der 2.653 KB** von `exercises.json` aus. Ursache sind **20 Einträge**, deren Grafik als `data:image/png;base64,…` direkt in der Datei steht – zusammen 2.005 KB für 11 % der Einträge. Die übrigen 157 tragen eine URL.
 
@@ -585,9 +585,11 @@ Laut Abschnitt 3 soll `build-exercise-pages.js` solche Base64-Bilder in die Word
 |---|---|
 | `/einheit-generator` | `exercises.json` – bewusst, generiert aus beliebigen Übungen kombinatorisch, kann nicht vorgebaut werden |
 
-Trotzdem sinnvoll: die 20 Bilder aus dem JSON in echte WebP-Dateien unter `public/images/uebungen/` auslagern und `grafik_url` auf den lokalen Pfad umschreiben. Dann fällt die Datei auf rund 640 KB – zugute käme das vor allem dem Generator, außerdem läuft `build-exercise-pages.js` dann nicht mehr bei jedem Deploy gegen die WordPress-Mediathek.
+**Umgesetzt:** Alle zum Zeitpunkt vorhandenen Base64-Einträge (zuletzt 24 plus ein weiterer, der während der Arbeit durch den Publisher-Bot dazukam) wurden per Python-Script (Pillow) dekodiert, als WebP (Qualität 85) unter `public/images/uebungen/uebung-<id>-<slug>.webp` gespeichert und `grafik_url` auf die permanente `https://coachunited.de/images/uebungen/…`-URL umgeschrieben – **absolut**, nicht relativ, weil `og:image` sonst eine ungültige relative URL bekommen hätte (dieselbe Konvention wie bei den WordPress-Mediathek-URLs der übrigen Einträge). `exercises.json`: **~3,1 MB → ~670 KB**. Kein Code in `build-exercise-pages.js` musste angepasst werden – `resolveGrafikUrl()` nutzt jede Nicht-`data:`-URL ohnehin direkt.
 
-⚠️ Nebenbefund: Die 157 URLs zeigen auf `coachunited.de/wp-content/uploads/…` und werden per **308 auf `archiv.coachunited.de`** umgeleitet. Jede Übungsgrafik kostet also einen zusätzlichen Umleitungs-Sprung auf das alte WordPress. Beim Auslagern der 20 könnte man die 157 gleich mitnehmen.
+⚠️ **Neue Base64-Einträge können jederzeit wieder auftauchen**: Der Publisher-Bot lädt beim Veröffentlichen neuer Übungen offenbar nicht immer eine permanente URL hoch, sondern manchmal Base64 direkt. Kein einmalig erledigter Zustand, sondern ein Muster, das sich wiederholen kann – bei künftigen Performance-Checks von `exercises.json` erneut auf `data:image` prüfen (`grep -c '"grafik_url": "data:image'` reicht).
+
+⚠️ Nebenbefund, weiterhin offen: Die übrigen URLs zeigen auf `coachunited.de/wp-content/uploads/…` und werden per **308 auf `archiv.coachunited.de`** umgeleitet. Jede Übungsgrafik kostet also einen zusätzlichen Umleitungs-Sprung auf das alte WordPress.
 
 ---
 
@@ -714,8 +716,9 @@ Ein `curl`-Check auf `/einheit-generator` zählte den sichtbaren Text der Rohsei
 
 ### 18.4 Noch offen, falls eine weitere Ablehnung kommt
 
-- Die 20 Base64-Bilder in `exercises.json` (Abschnitt 14.7), die weiterhin genau `/einheit-generator` belasten.
 - Die „gemeinnützig"-Erwähnung sitzt auf der Startseite erst nach zwei Dritteln des Texts (Abschnitt 16, weicher Befund).
+
+Die Base64-Bilder in `exercises.json` (Abschnitt 14.7) sind erledigt.
 
 ---
 
