@@ -11997,10 +11997,16 @@
     "original_durchfuehrung": "Je 2 Spieler eines Teams nehmen sich an die Hand.\nfreies Spiel",
     "original_varianten": "Dribbeltore aufbauen.\nJe 2 Minitore stehen auf den Grundlinien.",
     "original_coaching_fokus": "",
-    "schwester_gruppen": [],
-    "schwester_ids": [],
-    "schwester_id": null,
-    "schwester_titel": null
+    "schwester_gruppen": [
+      [
+        181
+      ]
+    ],
+    "schwester_ids": [
+      181
+    ],
+    "schwester_id": 181,
+    "schwester_titel": "7 GEGEN 5 - MIT ZIELPÄSSEN ZUM SIEG"
   },
   {
     "id": 181,
@@ -12059,9 +12065,15 @@
     "original_durchfuehrung": "Team Blau versucht, im Zusammenspiel mit dem Neutralen einen Spieler in einem Quadrat anzuspielen, der aus dem Feld heraus an- und mitnimmt (= 1 Punkt).\nsofortiger Aufgabenwechsel nach Balleroberung von Rot\nWelches Team sammelt zuerst 10 Punkte?",
     "original_varianten": "10 Pässe in Folge ergeben ebenfalls 1 Punkt.\nIn Gleichzahl spielen.\nDie Quadrate durch Dreiecke, Kreise oder Sechsecke ersetzen.",
     "original_coaching_fokus": "",
-    "schwester_gruppen": [],
-    "schwester_ids": [],
-    "schwester_id": null,
-    "schwester_titel": null
+    "schwester_gruppen": [
+      [
+        182
+      ]
+    ],
+    "schwester_ids": [
+      182
+    ],
+    "schwester_id": 182,
+    "schwester_titel": "BALL ABSCHIRMEN IM VIERECK"
   }
 ]
