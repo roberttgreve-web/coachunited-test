@@ -100,6 +100,27 @@
     .wa-button:hover { background: #1ebd5b; transform: translateY(-1px); }
     .wa-button svg { width: 22px; height: 22px; fill: white; flex-shrink: 0; }
 
+    /* QR-Code: nur auf Desktop statt des Buttons. Use-Case: am Rechner auf
+       der Seite, dann mit dem Handy scannen, um dem Kanal beizutreten - ein
+       direkter Link waere dort ohne WhatsApp Desktop nutzlos. */
+    .wa-qr { display: none; }
+    @media (min-width: 768px) {
+      .wa-button { display: none; }
+      .wa-qr {
+        display: flex; flex-direction: column; align-items: center; gap: 14px;
+        margin-top: 32px;
+      }
+      .wa-qr-box {
+        background: #fff; padding: 16px; border-radius: 16px;
+        border: 1px solid #E6E8EF; box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+      }
+      .wa-qr-box svg { display: block; width: 168px; height: 168px; }
+      .wa-qr-label {
+        font-family: 'Inter Tight', system-ui, sans-serif;
+        font-size: 14px; font-weight: 600; color: #5a6475; text-align: center;
+      }
+    }
+
     /* Bottom Nav */
     .bottom-nav {
       position: fixed; bottom: 0; left: 50%; transform: translateX(-50%);
@@ -177,6 +198,16 @@
         </svg>
         Zum WhatsApp-Kanal
       </a>
+
+      <div class="wa-qr">
+        <div class="wa-qr-box">
+          <svg viewBox="0 0 33 33" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="QR-Code zum WhatsApp-Kanal von COACH UNITED">
+            <rect width="33" height="33" fill="#fff"/>
+            <path fill="#0E1430" d="M0 0h7v1h-7zM8 0h3v1h-3zM12 0h7v1h-7zM21 0h1v1h-1zM23 0h1v1h-1zM26 0h7v1h-7zM0 1h1v1h-1zM6 1h1v1h-1zM10 1h2v1h-2zM13 1h2v1h-2zM17 1h1v1h-1zM19 1h2v1h-2zM26 1h1v1h-1zM32 1h1v1h-1zM0 2h1v1h-1zM2 2h3v1h-3zM6 2h1v1h-1zM9 2h1v1h-1zM12 2h1v1h-1zM14 2h1v1h-1zM17 2h6v1h-6zM24 2h1v1h-1zM26 2h1v1h-1zM28 2h3v1h-3zM32 2h1v1h-1zM0 3h1v1h-1zM2 3h3v1h-3zM6 3h1v1h-1zM8 3h1v1h-1zM10 3h2v1h-2zM16 3h1v1h-1zM18 3h2v1h-2zM23 3h2v1h-2zM26 3h1v1h-1zM28 3h3v1h-3zM32 3h1v1h-1zM0 4h1v1h-1zM2 4h3v1h-3zM6 4h1v1h-1zM8 4h2v1h-2zM11 4h2v1h-2zM16 4h1v1h-1zM21 4h1v1h-1zM23 4h2v1h-2zM26 4h1v1h-1zM28 4h3v1h-3zM32 4h1v1h-1zM0 5h1v1h-1zM6 5h1v1h-1zM8 5h2v1h-2zM12 5h1v1h-1zM15 5h1v1h-1zM17 5h3v1h-3zM24 5h1v1h-1zM26 5h1v1h-1zM32 5h1v1h-1zM0 6h7v1h-7zM8 6h1v1h-1zM10 6h1v1h-1zM12 6h1v1h-1zM14 6h1v1h-1zM16 6h1v1h-1zM18 6h1v1h-1zM20 6h1v1h-1zM22 6h1v1h-1zM24 6h1v1h-1zM26 6h7v1h-7zM8 7h1v1h-1zM10 7h2v1h-2zM17 7h3v1h-3zM21 7h2v1h-2zM24 7h1v1h-1zM0 8h1v1h-1zM4 8h1v1h-1zM6 8h4v1h-4zM12 8h1v1h-1zM15 8h1v1h-1zM17 8h1v1h-1zM19 8h4v1h-4zM25 8h5v1h-5zM32 8h1v1h-1zM0 9h2v1h-2zM3 9h1v1h-1zM5 9h1v1h-1zM7 9h2v1h-2zM11 9h1v1h-1zM14 9h5v1h-5zM20 9h2v1h-2zM23 9h1v1h-1zM25 9h1v1h-1zM29 9h2v1h-2zM0 10h1v1h-1zM2 10h5v1h-5zM9 10h1v1h-1zM11 10h5v1h-5zM17 10h1v1h-1zM22 10h2v1h-2zM29 10h1v1h-1zM0 11h1v1h-1zM3 11h1v1h-1zM7 11h1v1h-1zM9 11h3v1h-3zM13 11h1v1h-1zM15 11h4v1h-4zM21 11h1v1h-1zM24 11h1v1h-1zM26 11h1v1h-1zM31 11h2v1h-2zM0 12h1v1h-1zM2 12h1v1h-1zM6 12h3v1h-3zM13 12h1v1h-1zM16 12h1v1h-1zM19 12h1v1h-1zM21 12h3v1h-3zM26 12h1v1h-1zM28 12h2v1h-2zM1 13h5v1h-5zM11 13h1v1h-1zM14 13h1v1h-1zM17 13h1v1h-1zM20 13h1v1h-1zM22 13h6v1h-6zM30 13h1v1h-1zM1 14h1v1h-1zM3 14h1v1h-1zM5 14h2v1h-2zM8 14h2v1h-2zM12 14h4v1h-4zM18 14h1v1h-1zM20 14h4v1h-4zM25 14h3v1h-3zM29 14h1v1h-1zM31 14h1v1h-1zM2 15h2v1h-2zM8 15h4v1h-4zM15 15h7v1h-7zM23 15h1v1h-1zM25 15h2v1h-2zM28 15h2v1h-2zM4 16h1v1h-1zM6 16h4v1h-4zM11 16h1v1h-1zM17 16h1v1h-1zM19 16h1v1h-1zM21 16h2v1h-2zM24 16h1v1h-1zM26 16h1v1h-1zM28 16h2v1h-2zM31 16h1v1h-1zM0 17h1v1h-1zM2 17h1v1h-1zM8 17h3v1h-3zM14 17h5v1h-5zM21 17h4v1h-4zM29 17h3v1h-3zM0 18h1v1h-1zM4 18h1v1h-1zM6 18h2v1h-2zM11 18h1v1h-1zM13 18h5v1h-5zM21 18h4v1h-4zM27 18h1v1h-1zM29 18h1v1h-1zM2 19h2v1h-2zM5 19h1v1h-1zM9 19h2v1h-2zM15 19h3v1h-3zM21 19h1v1h-1zM24 19h2v1h-2zM27 19h1v1h-1zM0 20h1v1h-1zM3 20h1v1h-1zM6 20h4v1h-4zM12 20h4v1h-4zM17 20h6v1h-6zM26 20h2v1h-2zM29 20h1v1h-1zM0 21h2v1h-2zM3 21h1v1h-1zM5 21h1v1h-1zM7 21h1v1h-1zM9 21h2v1h-2zM12 21h1v1h-1zM14 21h1v1h-1zM16 21h2v1h-2zM22 21h1v1h-1zM27 21h1v1h-1zM30 21h2v1h-2zM3 22h2v1h-2zM6 22h1v1h-1zM8 22h2v1h-2zM11 22h3v1h-3zM16 22h3v1h-3zM21 22h1v1h-1zM23 22h1v1h-1zM25 22h1v1h-1zM28 22h2v1h-2zM31 22h1v1h-1zM2 23h1v1h-1zM4 23h1v1h-1zM7 23h1v1h-1zM10 23h1v1h-1zM14 23h1v1h-1zM17 23h11v1h-11zM29 23h1v1h-1zM31 23h1v1h-1zM0 24h3v1h-3zM4 24h3v1h-3zM9 24h1v1h-1zM14 24h2v1h-2zM17 24h3v1h-3zM21 24h2v1h-2zM24 24h6v1h-6zM31 24h1v1h-1zM8 25h2v1h-2zM13 25h1v1h-1zM15 25h2v1h-2zM18 25h1v1h-1zM21 25h4v1h-4zM28 25h1v1h-1zM30 25h2v1h-2zM0 26h7v1h-7zM8 26h4v1h-4zM15 26h1v1h-1zM20 26h3v1h-3zM24 26h1v1h-1zM26 26h1v1h-1zM28 26h2v1h-2zM31 26h1v1h-1zM0 27h1v1h-1zM6 27h1v1h-1zM9 27h4v1h-4zM14 27h1v1h-1zM16 27h2v1h-2zM21 27h1v1h-1zM24 27h1v1h-1zM28 27h1v1h-1zM31 27h1v1h-1zM0 28h1v1h-1zM2 28h3v1h-3zM6 28h1v1h-1zM8 28h1v1h-1zM10 28h4v1h-4zM17 28h1v1h-1zM19 28h2v1h-2zM22 28h1v1h-1zM24 28h6v1h-6zM32 28h1v1h-1zM0 29h1v1h-1zM2 29h3v1h-3zM6 29h1v1h-1zM9 29h3v1h-3zM17 29h1v1h-1zM19 29h1v1h-1zM23 29h1v1h-1zM26 29h3v1h-3zM30 29h1v1h-1zM0 30h1v1h-1zM2 30h3v1h-3zM6 30h1v1h-1zM14 30h3v1h-3zM18 30h1v1h-1zM20 30h1v1h-1zM22 30h1v1h-1zM25 30h6v1h-6zM0 31h1v1h-1zM6 31h1v1h-1zM9 31h1v1h-1zM11 31h2v1h-2zM15 31h1v1h-1zM17 31h2v1h-2zM20 31h2v1h-2zM29 31h1v1h-1zM0 32h7v1h-7zM8 32h1v1h-1zM10 32h1v1h-1zM12 32h1v1h-1zM17 32h1v1h-1zM19 32h6v1h-6zM26 32h1v1h-1zM29 32h1v1h-1zM32 32h1v1h-1z"/>
+          </svg>
+        </div>
+        <p class="wa-qr-label">Mit dem Handy scannen, um dem Kanal beizutreten</p>
+      </div>
     </div>
 
     <nav class="bottom-nav">

@@ -1,9 +1,16 @@
-// Zentrale Kanal-URL: Nav-Links (mobil + Desktop) fuehren seit 08/2026 direkt
-// hierher, ohne Zwischenseite /whatsapp-info. Die Infoseite existiert weiter
-// (Sitemap, evtl. externe Links), ist aber aus der Hauptnavigation entfernt.
+// Zentrale Kanal-URL: Auf Mobil fuehren alle Kanal-Links seit 08/2026 direkt
+// hierher (dort oeffnet das direkt die WhatsApp-App). Auf Desktop dagegen
+// bewusst NICHT direkt: ohne WhatsApp Desktop landet man dort im Leeren.
+// Stattdessen fuehrt Desktop auf /whatsapp-info, wo statt des Buttons ein
+// QR-Code steht - Use-Case ist "am Rechner sehen, mit dem Handy scannen".
+// Siehe istDesktopBreite() weiter unten, das genau diese Weiche zieht.
 // Muss vor der IIFE stehen: var-Zuweisungen werden anders als
 // Funktionsdeklarationen nicht gehoistet, die IIFE liest die Konstante sofort.
 var CU_WA_KANAL_URL = 'https://www.whatsapp.com/channel/0029VbAqTP68kyyEFg3oyX2t';
+
+function istDesktopBreite() {
+  return window.innerWidth >= 768;
+}
 
 (function () {
   injectWhatsAppPromo();
@@ -82,7 +89,7 @@ var CU_WA_KANAL_URL = 'https://www.whatsapp.com/channel/0029VbAqTP68kyyEFg3oyX2t
            und die sind mit den Arbeitsseiten belegt; dort bleibt "Über uns"
            im Burger-Menue. -->
       <a href="/ueber-uns"     class="desktop-topnav-link ${isActive('/ueber-uns')}">Über uns</a>
-      <a href="${CU_WA_KANAL_URL}" target="_blank" rel="noopener" class="desktop-topnav-link desktop-topnav-link--whatsapp">${cuWaIcon(15)}WhatsApp-Kanal</a>
+      <a href="/whatsapp-info" class="desktop-topnav-link desktop-topnav-link--whatsapp ${isActive('/whatsapp-info')}">${cuWaIcon(15)}WhatsApp-Kanal</a>
     </div>
   `;
 
@@ -103,6 +110,17 @@ var CU_WA_KANAL_URL = 'https://www.whatsapp.com/channel/0029VbAqTP68kyyEFg3oyX2t
       <a href="/impressum" class="desktop-footer-link ${isActive('/impressum')}">Impressum</a>
     `;
     container.appendChild(footer);
+  }
+
+  // Startseite: Der Kanal-Button in der fest eingebauten Sektion (home.html,
+  // Abschnitt 20.3) ist dort statisches Markup mit direktem Kanal-Link fuer
+  // Mobil - auf Desktop wird auch dieser eine Link auf die Zwischenseite
+  // umgebogen, aus demselben Grund wie beim Abbinder und der Topnav-Pille.
+  var homeWaCta = document.querySelector('#whatsapp-home .hs-cta--whatsapp');
+  if (homeWaCta) {
+    homeWaCta.href = '/whatsapp-info';
+    homeWaCta.removeAttribute('target');
+    homeWaCta.removeAttribute('rel');
   }
 })();
 
@@ -253,6 +271,11 @@ function injectWhatsAppAbbinder() {
   `;
   document.head.appendChild(style);
 
+  // Auf Desktop ohne WhatsApp Desktop laeuft ein direkter Kanal-Link ins
+  // Leere - dort auf die Zwischenseite mit QR-Code verlinken statt direkt.
+  var ctaHref = istDesktopBreite() ? '/whatsapp-info' : CU_WA_KANAL_URL;
+  var ctaExtra = istDesktopBreite() ? '' : ' target="_blank" rel="noopener"';
+
   var section = document.createElement('section');
   section.id = 'cu-wa-abbinder';
   section.className = 'cu-wa-abbinder' + (pfad === '/einheiten' ? ' cu-wa-abbinder--hell' : '');
@@ -261,7 +284,7 @@ function injectWhatsAppAbbinder() {
     +   '<span class="cu-wa-abbinder-label">Kanal</span>'
     +   '<h2 class="cu-wa-abbinder-title">Komm in unseren WhatsApp-Kanal</h2>'
     +   '<p class="cu-wa-abbinder-text">Jede Woche posten wir dort neue Übungen. Keine Diskussionen, keine Chats – nur neue Ideen für dein Training.</p>'
-    +   '<a class="cu-wa-abbinder-cta" href="' + CU_WA_KANAL_URL + '" target="_blank" rel="noopener">'
+    +   '<a class="cu-wa-abbinder-cta" href="' + ctaHref + '"' + ctaExtra + '>'
     +     cuWaIcon(18)
     +     'Zum Kanal'
     +   '</a>'
