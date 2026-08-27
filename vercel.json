@@ -4,21 +4,6 @@
   "trailingSlash": false,
   "redirects": [
     {
-      "source": "/spenden",
-      "destination": "/ueber-uns",
-      "permanent": true
-    },
-    {
-      "source": "/spenden.html",
-      "destination": "/ueber-uns",
-      "permanent": true
-    },
-    {
-      "source": "/spenden/",
-      "destination": "/ueber-uns",
-      "permanent": true
-    },
-    {
       "source": "/erst-diagonal-passen-und-schiesen-dann-uberzahl-uben",
       "destination": "/einheiten",
       "permanent": true
@@ -922,6 +907,10 @@
     {
       "source": "/ueber-uns",
       "destination": "/ueber-uns.html"
+    },
+    {
+      "source": "/spenden",
+      "destination": "/spenden.html"
     },
     {
       "source": "/impressum",

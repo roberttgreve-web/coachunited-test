@@ -16,6 +16,7 @@ function istDesktopBreite() {
   injectWhatsAppPromo();
   hervorhebeWhatsAppNav();
   injectWhatsAppAbbinder();
+  injectSpendenLink();
 
   if (window.innerWidth < 768) return;
 
@@ -104,6 +105,8 @@ function istDesktopBreite() {
       <a href="/uebung-einreichen" class="desktop-footer-link ${isActive('/uebung-einreichen')}">Übung einreichen</a>
       <span class="desktop-footer-sep">·</span>
       <a href="/ueber-uns" class="desktop-footer-link ${isActive('/ueber-uns')}">Über uns</a>
+      <span class="desktop-footer-sep">·</span>
+      <a href="/spenden" class="desktop-footer-link ${isActive('/spenden')}">Spenden</a>
       <span class="desktop-footer-sep">·</span>
       <a href="/umgang-mit-ki" class="desktop-footer-link ${isActive('/umgang-mit-ki')}">Umgang mit KI</a>
       <span class="desktop-footer-sep">·</span>
@@ -197,6 +200,27 @@ function hervorhebeWhatsAppNav() {
     }
   `;
   document.head.appendChild(style);
+}
+
+// ── "Spenden" ins mobile Burger-Menue einfuegen ──
+//
+// Der Drawer (Burger-Menue) ist auf jeder Seite als eigenes, identisches
+// Markup fest im HTML verdrahtet (~40 Dateien) - genau wie bei der
+// WhatsApp-Bottom-Nav oben wird der Link deshalb per DOM statt per
+// Text-Ersetzung in jeder einzelnen Datei ergaenzt. Der Desktop-Footer-Link
+// steht bereits im footer.innerHTML weiter oben in dieser Datei.
+function injectSpendenLink() {
+  var drawer = document.getElementById('drawer');
+  if (!drawer || drawer.querySelector('a[href="/spenden"]')) return;
+
+  var ueberUns = drawer.querySelector('a.drawer-link[href="/ueber-uns"]');
+  var link = document.createElement('a');
+  link.href = '/spenden';
+  link.className = 'drawer-link';
+  link.textContent = 'Spenden';
+
+  if (ueberUns) ueberUns.insertAdjacentElement('afterend', link);
+  else drawer.appendChild(link);
 }
 
 // ── Sitewide Abbinder: CTA zum WhatsApp-Kanal am Seitenende ──
