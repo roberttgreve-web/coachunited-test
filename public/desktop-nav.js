@@ -19,6 +19,7 @@ function istDesktopBreite() {
   injectSpendenLink();
   injectSupporterAbmeldenLink();
   restructureDrawerNav();
+  trackWhatsAppClicks();
 
   if (window.innerWidth < 768) return;
 
@@ -325,6 +326,25 @@ function restructureDrawerNav() {
     legalRow.appendChild(a);
   });
   drawer.appendChild(legalRow);
+}
+
+// ── GA4-Event fuer jeden Klick auf den echten WhatsApp-Kanal-Link ──
+//
+// Statt jeden einzelnen WhatsApp-Button auf jeder Seite einzeln zu
+// verkabeln (Bottom-Nav, Abbinder, Homepage-Sektion, /whatsapp-info-CTA
+// - alle nutzen dieselbe CU_WA_KANAL_URL): ein einziger delegierter
+// Klick-Listener auf document, der jeden Link mit dieser Ziel-URL
+// abfaengt, egal wo er im Markup steht oder wann er erzeugt wurde.
+// gtag existiert nur nach erteilter Cookie-Einwilligung (Statistik).
+function trackWhatsAppClicks() {
+  document.addEventListener('click', function (e) {
+    var link = e.target.closest('a[href^="' + CU_WA_KANAL_URL + '"]');
+    if (!link || typeof window.gtag !== 'function') return;
+    window.gtag('event', 'whatsapp_click', {
+      link_url: link.href,
+      page_path: window.location.pathname
+    });
+  });
 }
 
 // ── Sitewide Abbinder: CTA zum WhatsApp-Kanal am Seitenende ──
