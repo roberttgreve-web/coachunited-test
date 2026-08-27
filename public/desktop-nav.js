@@ -18,6 +18,7 @@ function istDesktopBreite() {
   injectWhatsAppAbbinder();
   injectSpendenLink();
   injectSupporterAbmeldenLink();
+  restructureDrawerNav();
 
   if (window.innerWidth < 768) return;
 
@@ -240,6 +241,90 @@ function injectSupporterAbmeldenLink() {
 
   if (spenden) spenden.insertAdjacentElement('afterend', link);
   else drawer.appendChild(link);
+}
+
+// ── Mobiles Burger-Menue gruppieren ──
+//
+// Der Drawer war auf 12 flache Eintraege angewachsen (durch Spenden +
+// Supporter abmelden zuletzt noch unuebersichtlicher). Muss NACH
+// injectSpendenLink()/injectSupporterAbmeldenLink() laufen, damit beide
+// Links schon existieren. appendChild auf ein bereits im DOM vorhandenes
+// Element VERSCHIEBT es nur an die neue Position - deshalb reicht die
+// richtige Aufruf-Reihenfolge unten, keine fragile Insert-Kette noetig.
+// Rechtlich-Links (Impressum/Datenschutz) wandern in eine kompakte Zeile;
+// "Cookie-Einstellungen" haengt sich in cookie-consent.js selbst dort an,
+// falls .drawer-legal-row existiert (siehe injectDrawerLink() dort).
+function restructureDrawerNav() {
+  var drawer = document.getElementById('drawer');
+  if (!drawer || drawer.dataset.cuGrouped) return;
+
+  var wissen = drawer.querySelector('a[href="/wissen"]');
+  var einreichen = drawer.querySelector('a[href="/uebung-einreichen"]');
+  var ueberUns = drawer.querySelector('a[href="/ueber-uns"]');
+  var umgangMitKi = drawer.querySelector('a[href="/umgang-mit-ki"]');
+  var spenden = drawer.querySelector('a[href="/spenden"]');
+  var supporterAbmelden = drawer.querySelector('a[href="/supporter-abmelden"]');
+  var impressum = drawer.querySelector('a[href="/impressum"]');
+  var datenschutz = drawer.querySelector('a[href="/datenschutz"]');
+
+  // Bei abweichendem Markup lieber unveraendert lassen als kaputtgehen.
+  if (!(wissen && einreichen && ueberUns && umgangMitKi && spenden && supporterAbmelden && impressum && datenschutz)) return;
+  drawer.dataset.cuGrouped = '1';
+
+  var style = document.createElement('style');
+  style.textContent = `
+    .drawer-section-label {
+      display: block; padding: 8px 0 6px;
+      font-family: 'JetBrains Mono', ui-monospace, monospace;
+      font-size: 9.5px; font-weight: 600; letter-spacing: 0.12em;
+      text-transform: uppercase; color: #9BA3B8;
+    }
+    .drawer-legal-row {
+      margin-top: 18px; padding-top: 14px;
+      border-top: 1px solid #f0f2f5;
+      display: flex; flex-wrap: wrap; align-items: center; gap: 0 6px;
+    }
+    .drawer-legal-link, .drawer-legal-sep {
+      font-family: 'Inter Tight', system-ui, sans-serif;
+      font-size: 12px; font-weight: 600; color: #9BA3B8;
+      text-decoration: none;
+    }
+    .drawer-legal-link:hover { color: #1E6BFF; }
+  `;
+  document.head.appendChild(style);
+
+  function label(text) {
+    var s = document.createElement('span');
+    s.className = 'drawer-section-label';
+    s.textContent = text;
+    return s;
+  }
+
+  drawer.appendChild(label('Wissen & Mitmachen'));
+  drawer.appendChild(wissen);
+  drawer.appendChild(einreichen);
+
+  drawer.appendChild(label('Verein'));
+  drawer.appendChild(ueberUns);
+  drawer.appendChild(umgangMitKi);
+
+  drawer.appendChild(label('Unterstützen'));
+  drawer.appendChild(spenden);
+  drawer.appendChild(supporterAbmelden);
+
+  var legalRow = document.createElement('div');
+  legalRow.className = 'drawer-legal-row';
+  [impressum, datenschutz].forEach(function (a, i) {
+    if (i > 0) {
+      var sep = document.createElement('span');
+      sep.className = 'drawer-legal-sep';
+      sep.textContent = '·';
+      legalRow.appendChild(sep);
+    }
+    a.className = 'drawer-legal-link';
+    legalRow.appendChild(a);
+  });
+  drawer.appendChild(legalRow);
 }
 
 // ── Sitewide Abbinder: CTA zum WhatsApp-Kanal am Seitenende ──

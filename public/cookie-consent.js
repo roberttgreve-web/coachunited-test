@@ -180,7 +180,6 @@
     if (!drawer || drawer.querySelector('#cu-cookie-drawer-link')) return;
     var link = document.createElement('a');
     link.href = '#';
-    link.className = 'drawer-link';
     link.id = 'cu-cookie-drawer-link';
     link.textContent = 'Cookie-Einstellungen';
     link.addEventListener('click', function (e) {
@@ -188,7 +187,24 @@
       if (typeof closeDrawer === 'function') closeDrawer();
       window.cuOpenCookieSettings();
     });
-    drawer.appendChild(link);
+
+    // desktop-nav.js gruppiert den Drawer und legt dafuer eine kompakte
+    // Rechtlich-Zeile an (Impressum/Datenschutz) - existiert die schon
+    // (laeuft vor diesem Skript, siehe Script-Tag-Reihenfolge im <head>),
+    // reiht sich Cookie-Einstellungen dort mit ein statt als eigene volle
+    // Drawer-Zeile.
+    var legalRow = drawer.querySelector('.drawer-legal-row');
+    if (legalRow) {
+      link.className = 'drawer-legal-link';
+      var sep = document.createElement('span');
+      sep.className = 'drawer-legal-sep';
+      sep.textContent = '·';
+      legalRow.appendChild(sep);
+      legalRow.appendChild(link);
+    } else {
+      link.className = 'drawer-link';
+      drawer.appendChild(link);
+    }
   }
 
   function init() {
