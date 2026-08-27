@@ -913,6 +913,10 @@
       "destination": "/spenden.html"
     },
     {
+      "source": "/supporter-abmelden",
+      "destination": "/supporter-abmelden.html"
+    },
+    {
       "source": "/impressum",
       "destination": "/impressum.html"
     },

@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <meta name="description" content="Unterstütze Coach United e.V. mit einer Spende. Wir sind eine gemeinnützige, ehrenamtliche Initiative für kostenlose Fußballübungen im Kinderfußball.">
+  <meta name="description" content="Als Coach-United-Supporter abmelden und die Dauerspende kündigen.">
   <meta property="og:image" content="https://coachunited.de/og-image.png">
-  <meta property="og:title" content="Spenden | COACH UNITED">
-  <meta property="og:description" content="Unterstütze Coach United e.V. mit einer Spende. Wir sind eine gemeinnützige, ehrenamtliche Initiative für kostenlose Fußballübungen im Kinderfußball.">
-  <link rel="canonical" href="https://coachunited.de/spenden">
-  <title>Spenden | COACH UNITED</title>
+  <meta property="og:title" content="Als Supporter abmelden | COACH UNITED">
+  <meta property="og:description" content="Als Coach-United-Supporter abmelden und die Dauerspende kündigen.">
+  <link rel="canonical" href="https://coachunited.de/supporter-abmelden">
+  <title>Als Supporter abmelden | COACH UNITED</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -34,37 +34,45 @@
     .burger-btn span { display: block; width: 22px; height: 2px; background: #0E1430; border-radius: 2px; }
 
     .page-hero { background: #0E1430; padding: 22px 22px 26px; }
-    .page-hero h1 {
-      font-size: 24px; font-weight: 800; color: #fff;
-      letter-spacing: -0.02em; line-height: 1.2; margin: 0 0 8px;
-    }
-    .page-hero .claim {
-      font-size: 15px; font-weight: 600; color: #6E9BFF;
-      letter-spacing: -0.01em; margin: 0;
-    }
+    .page-hero h1 { font-size: 24px; font-weight: 800; color: #fff; letter-spacing: -0.02em; line-height: 1.2; margin: 0 0 6px; }
+    .page-hero p { font-size: 13px; color: rgba(255,255,255,0.55); line-height: 1.5; }
 
-    .content { flex: 1; overflow-y: auto; padding: 24px 22px 100px; }
+    .content { flex: 1; overflow-y: auto; padding: 24px 22px 120px; }
 
-    p {
+    p.intro {
       font-size: 16px; line-height: 1.75;
       color: #4a5568;
-      margin-bottom: 18px;
+      margin-bottom: 24px;
       max-width: 62ch;
     }
 
-    h2 {
-      font-size: 18px; font-weight: 800; color: #0E1430;
-      letter-spacing: -0.02em; line-height: 1.25;
-      margin: 34px 0 12px;
+    .field { display: flex; flex-direction: column; gap: 6px; margin-bottom: 16px; }
+    .field-label {
+      font-size: 13px; font-weight: 600; color: #0E1430; letter-spacing: -0.005em;
     }
-    h2:first-child { margin-top: 0; }
+    .field input[type="text"],
+    .field input[type="email"] {
+      width: 100%; padding: 12px 14px;
+      background: #F5F6F9; border: 1.5px solid #E6E8EF; border-radius: 10px;
+      font-family: 'Inter Tight', system-ui, sans-serif;
+      font-size: 15px; font-weight: 500; color: #0E1430;
+      outline: none; transition: border-color 0.15s;
+      -webkit-appearance: none; appearance: none;
+    }
+    .field input:focus { border-color: #1E6BFF; background: #fff; }
 
-    .spenden-formular-wrap {
-      margin-top: 8px;
-      border-radius: 14px;
-      overflow: hidden;
-      min-height: 480px;
+    .submit-btn {
+      width: 100%; padding: 16px 18px; margin-top: 8px;
+      background: rgba(30,107,255,0.15); color: #1E6BFF;
+      border: none; border-radius: 10px;
+      font-family: 'Inter Tight', system-ui, sans-serif;
+      font-size: 15px; font-weight: 700; cursor: not-allowed;
+      display: flex; align-items: center; justify-content: center; gap: 8px;
+      transition: background 0.16s, color 0.16s, opacity 0.16s;
+      opacity: 0.5; text-align: center; line-height: 1.3;
     }
+    .submit-btn.ready { background: #1E6BFF; color: #fff; cursor: pointer; opacity: 1; }
+    .submit-btn.loading { opacity: 0.7; cursor: wait; }
 
     .contact-link { color: #1E6BFF; text-decoration: none; }
     .contact-link:hover { text-decoration: underline; }
@@ -118,31 +126,40 @@
     </header>
 
     <div class="page-hero">
-      <h1>Supporter werden</h1>
-      <p class="claim">Mit 1€ pro Monat den Kinderfußball unterstützen.</p>
+      <h1>Als Supporter abmelden</h1>
+      <p>Schade, dass du gehst — aber kein Problem. Trag dich hier aus, wir kümmern uns um den Rest.</p>
     </div>
 
     <div class="content">
-      <p>
-        Coach United e.V. ist ein gemeinnütziger Verein, komplett ehrenamtlich betrieben. Alles hier ist kostenlos - keine Paywall, keine Werbung.
-      </p>
-      <p>
-        Falls es dir finanziell möglich ist, kannst du als Supporter unsere Arbeit für den Kinderfußball mit einer regelmäßigen monatlichen oder jährlichen Spende unterstützen.
-      </p>
-      <p>
-        Wenn du nicht mehr Supporter sein möchtest, kannst du das <a href="/supporter-abmelden" class="contact-link">hier</a> ganz schnell und leicht erledigen.
+      <p class="intro">
+        Mit diesem Formular meldest du dich als Supporter ab und wir kündigen deine Dauerspende. Wir melden uns per E-Mail, sobald das erledigt ist.
       </p>
 
-      <div class="spenden-formular-wrap" id="spenden-formular">
-        <script type="text/javascript" src="https://secure.fundraisingbox.com/app/paymentJS?hash=k3b8yrhlevgu2yey"></script>
-        <noscript>Bitte Javascript aktivieren</noscript>
-        <a target="_blank" href="https://www.fundraisingbox.com/?utm_source=donation_form">
-          <img border="0" style="border: 0 !important" src="https://secure.fundraisingbox.com/images/FundraisingBox-Logo-Widget.png" alt="FundraisingBox Logo">
-        </a>
-      </div>
+      <form action="https://formsubmit.co/hallo@coachunited.de" method="POST" novalidate onsubmit="return handleSubmit(event)">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" id="fs-subject" name="_subject" value="">
+        <input type="hidden" name="_next" value="https://coachunited.de/danke">
 
-      <p style="color:#9aa3b0; font-size:14px; margin-top:20px;">
-        Coach United e.V. ist als gemeinnützig anerkannt (Amtsgericht Charlottenburg, VR 42714 B). Fragen zu deiner Spende? <a href="mailto:hallo@coachunited.de" class="contact-link">hallo@coachunited.de</a>
+        <div class="field">
+          <label class="field-label" for="vorname">Vorname</label>
+          <input type="text" id="vorname" name="vorname" placeholder="Dein Vorname" required oninput="checkReady()">
+        </div>
+        <div class="field">
+          <label class="field-label" for="nachname">Nachname</label>
+          <input type="text" id="nachname" name="nachname" placeholder="Dein Nachname" required oninput="checkReady()">
+        </div>
+        <div class="field">
+          <label class="field-label" for="email">E-Mail-Adresse</label>
+          <input type="email" id="email" name="email" placeholder="deine@email.de" required oninput="checkReady()">
+        </div>
+
+        <button type="submit" class="submit-btn" id="submit-btn" disabled>
+          Als Supporter abmelden und Dauerauftrag kündigen
+        </button>
+      </form>
+
+      <p style="color:#9aa3b0; font-size:14px; margin-top:24px;">
+        Fragen dazu? <a href="mailto:hallo@coachunited.de" class="contact-link">hallo@coachunited.de</a>
       </p>
     </div>
 
@@ -200,6 +217,28 @@
     function closeDrawer() {
       document.getElementById('drawer').classList.remove('open');
       document.getElementById('drawer-overlay').classList.remove('open');
+    }
+
+    function checkReady() {
+      const vorname = document.getElementById('vorname').value.trim();
+      const nachname = document.getElementById('nachname').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const btn = document.getElementById('submit-btn');
+      const ready = !!(vorname && nachname && email);
+      btn.disabled = !ready;
+      btn.classList.toggle('ready', ready);
+    }
+
+    function handleSubmit(event) {
+      const btn = document.getElementById('submit-btn');
+      if (btn.disabled) { event.preventDefault(); return false; }
+      const vorname = document.getElementById('vorname').value.trim();
+      const nachname = document.getElementById('nachname').value.trim();
+      document.getElementById('fs-subject').value = 'Supporter-Abmeldung von ' + vorname + ' ' + nachname;
+      btn.classList.remove('ready');
+      btn.classList.add('loading');
+      btn.textContent = 'Wird gesendet…';
+      return true;
     }
   </script>
 </body>

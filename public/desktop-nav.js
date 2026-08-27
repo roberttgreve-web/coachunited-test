@@ -17,6 +17,7 @@ function istDesktopBreite() {
   hervorhebeWhatsAppNav();
   injectWhatsAppAbbinder();
   injectSpendenLink();
+  injectSupporterAbmeldenLink();
 
   if (window.innerWidth < 768) return;
 
@@ -107,6 +108,8 @@ function istDesktopBreite() {
       <a href="/ueber-uns" class="desktop-footer-link ${isActive('/ueber-uns')}">Über uns</a>
       <span class="desktop-footer-sep">·</span>
       <a href="/spenden" class="desktop-footer-link ${isActive('/spenden')}">Spenden</a>
+      <span class="desktop-footer-sep">·</span>
+      <a href="/supporter-abmelden" class="desktop-footer-link ${isActive('/supporter-abmelden')}">Supporter abmelden</a>
       <span class="desktop-footer-sep">·</span>
       <a href="/umgang-mit-ki" class="desktop-footer-link ${isActive('/umgang-mit-ki')}">Umgang mit KI</a>
       <span class="desktop-footer-sep">·</span>
@@ -220,6 +223,22 @@ function injectSpendenLink() {
   link.textContent = 'Spenden';
 
   if (ueberUns) ueberUns.insertAdjacentElement('afterend', link);
+  else drawer.appendChild(link);
+}
+
+// Muss NACH injectSpendenLink laufen (haengt sich an den frisch eingefuegten
+// "Spenden"-Link an) - Reihenfolge im IIFE-Aufruf weiter unten beachten.
+function injectSupporterAbmeldenLink() {
+  var drawer = document.getElementById('drawer');
+  if (!drawer || drawer.querySelector('a[href="/supporter-abmelden"]')) return;
+
+  var spenden = drawer.querySelector('a.drawer-link[href="/spenden"]');
+  var link = document.createElement('a');
+  link.href = '/supporter-abmelden';
+  link.className = 'drawer-link';
+  link.textContent = 'Supporter abmelden';
+
+  if (spenden) spenden.insertAdjacentElement('afterend', link);
   else drawer.appendChild(link);
 }
 
