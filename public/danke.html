@@ -68,12 +68,12 @@
         </svg>
       </div>
       <h1>Danke!</h1>
-      <p>Dein Vorschlag wurde abgesendet und wird von uns bearbeitet.</p>
-      <a href="/uebung-einreichen" class="back-btn">
+      <p id="danke-text">Dein Vorschlag wurde abgesendet und wird von uns bearbeitet.</p>
+      <a href="/uebung-einreichen" class="back-btn" id="danke-btn">
         <svg width="16" height="16" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M19 12H3M3 12l7-7M3 12l7 7"/>
         </svg>
-        Weitere Übung einreichen
+        <span id="danke-btn-label">Weitere Übung einreichen</span>
       </a>
     </div>
 
@@ -105,5 +105,25 @@
       </a>
     </nav>
   </div>
+
+  <script>
+    // Wird von mehreren Formularen als _next-Ziel genutzt (formsubmit.co).
+    // Ohne ?ziel=... bzw. bei unbekanntem Wert bleibt der Standardtext
+    // (Übung einreichen) stehen - rueckwaertskompatibel.
+    var VARIANTEN = {
+      'supporter-abmelden': {
+        text: 'Deine Kündigung ist eingegangen. Wir bedanken uns für deine Unterstützung.',
+        href: '/home',
+        label: 'Zurück zur Seite'
+      }
+    };
+    var ziel = new URLSearchParams(window.location.search).get('ziel');
+    var v = VARIANTEN[ziel];
+    if (v) {
+      document.getElementById('danke-text').textContent = v.text;
+      document.getElementById('danke-btn').href = v.href;
+      document.getElementById('danke-btn-label').textContent = v.label;
+    }
+  </script>
 </body>
 </html>
