@@ -110,7 +110,7 @@ function istDesktopBreite() {
       <span class="desktop-footer-sep">·</span>
       <a href="/spenden" class="desktop-footer-link ${isActive('/spenden')}">Spenden</a>
       <span class="desktop-footer-sep">·</span>
-      <a href="/supporter-abmelden" class="desktop-footer-link ${isActive('/supporter-abmelden')}">Supporter abmelden</a>
+      <a href="/supporter-abmelden" class="desktop-footer-link ${isActive('/supporter-abmelden')}">Als Supporter abmelden</a>
       <span class="desktop-footer-sep">·</span>
       <a href="/umgang-mit-ki" class="desktop-footer-link ${isActive('/umgang-mit-ki')}">Umgang mit KI</a>
       <span class="desktop-footer-sep">·</span>
@@ -237,7 +237,7 @@ function injectSupporterAbmeldenLink() {
   var link = document.createElement('a');
   link.href = '/supporter-abmelden';
   link.className = 'drawer-link';
-  link.textContent = 'Supporter abmelden';
+  link.textContent = 'Als Supporter abmelden';
 
   if (spenden) spenden.insertAdjacentElement('afterend', link);
   else drawer.appendChild(link);
