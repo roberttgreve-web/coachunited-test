@@ -1,10 +1,10 @@
 const fs    = require('fs');
 const path  = require('path');
-const https = require('https');
 
 const exercisesPath = path.join(__dirname, '..', 'public', 'exercises.json');
 const templatePath  = path.join(__dirname, '..', 'public', 'uebung-detail.html');
 const outputDir     = path.join(__dirname, '..', 'public', 'uebung');
+const grafikDir     = path.join(__dirname, '..', 'public', 'images', 'uebungen');
 const DEFAULT_OG    = 'https://coachunited.de/og-image.png';
 
 if (!fs.existsSync(exercisesPath)) {
@@ -57,60 +57,9 @@ const PHASE_URL_MAP = {
   'Spielformat': '/uebungen/phase/spielformat'
 };
 
-// ── WordPress helpers ────────────────────────────────────────────────────────
+// ── Grafik-Auflösung ─────────────────────────────────────────────────────────
 
-const WP_HOST = 'archiv.coachunited.de';
-const WP_USER = process.env.WP_USER;
-const WP_PASS = process.env.WP_APP_PASSWORD;
-const wpEnabled = WP_USER && WP_PASS;
-
-function wpRequest(options, body) {
-  const auth = Buffer.from(`${WP_USER}:${WP_PASS}`).toString('base64');
-  return new Promise((resolve, reject) => {
-    const req = https.request(
-      { hostname: WP_HOST, ...options, headers: { Authorization: `Basic ${auth}`, ...options.headers } },
-      (res) => {
-        let raw = '';
-        res.on('data', (c) => (raw += c));
-        res.on('end', () => {
-          try { resolve({ status: res.statusCode, body: JSON.parse(raw) }); }
-          catch { resolve({ status: res.statusCode, body: raw }); }
-        });
-      }
-    );
-    req.on('error', reject);
-    if (body) req.write(body);
-    req.end();
-  });
-}
-
-async function findExistingMedia(filename) {
-  const slug = filename.replace(/\.[^.]+$/, ''); // remove extension
-  const res = await wpRequest({ path: `/wp-json/wp/v2/media?slug=${encodeURIComponent(slug)}&per_page=1`, method: 'GET' });
-  if (res.status === 200 && Array.isArray(res.body) && res.body.length > 0) {
-    return res.body[0].source_url;
-  }
-  return null;
-}
-
-async function uploadMedia(buffer, mimeType, filename) {
-  const res = await wpRequest(
-    {
-      path: '/wp-json/wp/v2/media',
-      method: 'POST',
-      headers: {
-        'Content-Type': mimeType,
-        'Content-Disposition': `attachment; filename="${filename}"`,
-        'Content-Length': buffer.length,
-      },
-    },
-    buffer
-  );
-  if (res.status === 201) return res.body.source_url;
-  throw new Error(`Upload fehlgeschlagen (${res.status}): ${typeof res.body === 'object' ? res.body.message : res.body}`);
-}
-
-async function resolveGrafikUrl(ex) {
+function resolveGrafikUrl(ex) {
   const raw = ex.grafik_url;
 
   // Echte URL → direkt verwenden
@@ -118,31 +67,25 @@ async function resolveGrafikUrl(ex) {
     return raw || DEFAULT_OG;
   }
 
-  // base64 → WordPress-Upload nötig
-  if (!wpEnabled) {
-    console.warn(`  ⚠ ID ${ex.id} (${ex.url_slug}): base64-Grafik, aber keine WP-Credentials → Fallback auf Logo.`);
-    return DEFAULT_OG;
-  }
-
+  // base64 → lokal ablegen (normalerweise sollte upload-grafik-images.js das
+  // vorher schon erledigt haben; das hier ist nur der Sicherheitsnetz-Fall)
   const match = raw.match(/^data:([^;]+);base64,(.+)$/s);
   if (!match) return DEFAULT_OG;
 
   const mimeType = match[1];
   const ext      = mimeType.split('/')[1] || 'png';
   const filename = `uebung-${String(ex.id).padStart(3, '0')}-${ex.url_slug || 'grafik'}.${ext}`;
+  const filePath = path.join(grafikDir, filename);
+  const url      = `https://coachunited.de/images/uebungen/${filename}`;
 
-  // Bereits hochgeladen?
-  const existing = await findExistingMedia(filename);
-  if (existing) {
-    console.log(`  ↩ ID ${ex.id}: bereits auf WP vorhanden → ${existing}`);
-    return existing;
+  if (fs.existsSync(filePath)) {
+    console.log(`  ↩ ID ${ex.id}: liegt schon lokal vor → ${url}`);
+    return url;
   }
 
-  // Hochladen
-  const buffer = Buffer.from(match[2], 'base64');
-  process.stdout.write(`  ↑ ID ${ex.id}: lade hoch ... `);
-  const url = await uploadMedia(buffer, mimeType, filename);
-  console.log(`✓ ${url}`);
+  if (!fs.existsSync(grafikDir)) fs.mkdirSync(grafikDir, { recursive: true });
+  fs.writeFileSync(filePath, Buffer.from(match[2], 'base64'));
+  console.log(`  ✓ ID ${ex.id}: lokal gespeichert → ${url}`);
   return url;
 }
 
@@ -164,7 +107,7 @@ async function main() {
 
   const base64Count = published.filter(e => e.grafik_url && e.grafik_url.startsWith('data:')).length;
   if (base64Count > 0) {
-    console.log(`${base64Count} Übung(en) mit base64-Grafik – WordPress-Upload läuft...`);
+    console.log(`${base64Count} Übung(en) mit base64-Grafik – wird lokal gespeichert...`);
   }
 
   let count = 0;
@@ -179,7 +122,7 @@ async function main() {
     const durchfuehrung = ex.durchfuehrung || '';
     const canonical    = `https://coachunited.de/uebung/${slug}`;
     const hasOwnGrafik = !!ex.grafik_url; // vor Aufloesung auf DEFAULT_OG pruefen
-    const ogImage      = await resolveGrafikUrl(ex);
+    const ogImage      = resolveGrafikUrl(ex);
     const grafikAlt    = ex.grafik_alt_text || displayTitle;
     const grafikTitle  = ex.grafik_title || displayTitle;
     const phaseUrl     = PHASE_URL_MAP[ex.trainingsphase];

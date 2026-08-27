@@ -1,19 +1,17 @@
 const https = require('https');
 
-const WP_HOST = 'archiv.coachunited.de';
-
-function wpCreatePrivatePost(title, content) {
-  const auth = Buffer.from(`${process.env.WP_USER}:${process.env.WP_APP_PASSWORD}`).toString('base64');
-  const body = JSON.stringify({ title, content, status: 'private' });
+function redisCommand(command) {
+  const restUrl = new URL(process.env.UPSTASH_REDIS_REST_URL);
+  const body = JSON.stringify(command);
 
   return new Promise((resolve, reject) => {
     const req = https.request(
       {
-        hostname: WP_HOST,
-        path: '/wp-json/wp/v2/posts',
+        hostname: restUrl.hostname,
+        path: restUrl.pathname || '/',
         method: 'POST',
         headers: {
-          Authorization: `Basic ${auth}`,
+          Authorization: `Bearer ${process.env.UPSTASH_REDIS_REST_TOKEN}`,
           'Content-Type': 'application/json',
           'Content-Length': Buffer.byteLength(body),
         },
@@ -22,8 +20,8 @@ function wpCreatePrivatePost(title, content) {
         let raw = '';
         res.on('data', (c) => (raw += c));
         res.on('end', () => {
-          if (res.statusCode === 201) resolve();
-          else reject(new Error(`WP HTTP ${res.statusCode}: ${raw.slice(0, 300)}`));
+          if (res.statusCode === 200) resolve();
+          else reject(new Error(`Redis HTTP ${res.statusCode}: ${raw.slice(0, 300)}`));
         });
       }
     );
@@ -58,16 +56,15 @@ module.exports = async (req, res) => {
     ip,
   };
 
-  const title = `Cookie-Consent ${record.date} ${consentId}`;
-  const content = JSON.stringify(record, null, 2);
+  const content = JSON.stringify(record);
 
   try {
-    if (process.env.WP_USER && process.env.WP_APP_PASSWORD) {
-      await wpCreatePrivatePost(title, content);
+    if (process.env.UPSTASH_REDIS_REST_URL && process.env.UPSTASH_REDIS_REST_TOKEN) {
+      await redisCommand(['RPUSH', 'consent_log', content]);
     }
     res.status(200).json({ ok: true });
   } catch (err) {
-    console.error('consent-log: WP write failed', err.message);
+    console.error('consent-log: Redis write failed', err.message);
     res.status(200).json({ ok: true, logged: false });
   }
 };

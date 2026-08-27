@@ -354,16 +354,6 @@
       "permanent": false
     },
     {
-      "source": "/wp-content/:path*",
-      "destination": "https://archiv.coachunited.de/wp-content/:path*",
-      "permanent": true
-    },
-    {
-      "source": "/wp-includes/:path*",
-      "destination": "https://archiv.coachunited.de/wp-includes/:path*",
-      "permanent": true
-    },
-    {
       "source": "/trainingseinheiten",
       "destination": "/einheiten",
       "permanent": true
