@@ -816,6 +816,17 @@ Beim Versuch, die 157 `wp-content`-Bilder direkt von `coachunited.de` neu herunt
 
 ⚠️ Wie in 21.3 beschrieben: Das kann der nächste Publisher-Lauf teilweise wieder zurücksetzen. Diese Konsolidierung müsste bei Bedarf wiederholt werden (gleiches Python-Vorgehen), bis die Publisher-Quelle selbst korrigiert ist.
 
+### 21.6 Offen: WhatsApp-Linkvorschau zeigt seit der Migration nur noch das kleine Seiten-Icon statt der Übungsgrafik
+
+Nach 21.5 gemeldet (Screenshot-Vergleich): Vor der gesamten Bild-Migration (21.1–21.5) zeigte WhatsApp beim Teilen eines Übungs-Links das **große** Vorschauformat – Übungsgrafik oben, Titel/Beschreibung/Domain unten. Aktuell (Beispiel: Übung 199, „Laufweg wählen, Ball anfordern, drehen – Tor!") zeigt WhatsApp nur noch das **kleine** Format: rundes Seiten-Icon statt Bild, Titel/Domain daneben. Das ist WhatsApps bekanntes Fallback-Verhalten, wenn der Abruf von `og:image` fehlschlägt – nicht ein falsches Bild, sondern gar keines.
+
+**Noch nicht untersucht/bestätigt, zwei Hypothesen:**
+
+1. **Nicht-ASCII-Zeichen in der Bild-URL.** Übung 199 ist die einzige mit einem `ä` im `url_slug` (`Torschuss-Laufweg-w%C3%A4hlen-…`, siehe 21.5-Migration) – im `og:image`-Meta-Tag steht das Zeichen unkodiert. Direkter Abruf mit korrekt prozentkodierter URL liefert `200` (geprüft per curl), aber WhatsApps Crawler kodiert beim Parsen des HTML-Attributs möglicherweise nicht korrekt nach und scheitert deshalb am Abruf.
+2. **WebP-Format grundsätzlich.** Seit 21.5 sind **alle** 183 Übungsgrafiken WebP statt JPG/PNG (vorher, laut Vergleichsscreenshot, funktionierte die große Vorschau). WhatsApps/Metas Vorschau-Crawler hatte historisch keine durchgängig zuverlässige WebP-Unterstützung – falls das zutrifft, wären **potenziell alle 183 frisch migrierten Bilder** betroffen, nicht nur Übung 199.
+
+**Nächster Schritt zur Eingrenzung** (noch nicht gemacht): eine Übung **ohne** Sonderzeichen im Slug in WhatsApp teilen und prüfen, ob dort ebenfalls nur das kleine Icon erscheint (→ Hypothese 2, WebP-Problem, betrifft alle) oder das große Vorschaubild korrekt lädt (→ Hypothese 1, Sonderzeichen-Fall, nur Übung 199 und eventuell weitere mit Umlauten im Slug betroffen). Auf ausdrücklichen Wunsch noch **nicht** behoben – nur Diagnose, keine Code-Änderung.
+
 ---
 
 ## 22. Externe Analyse (ChatGPT) zu den wiederholten Ad-Grants-Ablehnungen (08/2026)
