@@ -772,3 +772,73 @@ Fünf Nachbesserungen in einer Runde:
 Auf mehreren Seitentypen (Startseite, Übungsdetail, Auswahlseiten wie `/uebungen`) blieb die Desktop-Pille dunkel statt weiß beschriftet. Ursache: `desktop.css` hat für diese Seitentypen eigene `body:has(#id)`/`body:has(.klasse)`-Regeln für `.desktop-topnav-link` mit `!important` – und durch die ID bzw. doppelte Klasse im Selektor **höhere Spezifität** als die einfache `.desktop-topnav-link--whatsapp`-Regel, obwohl auch die `!important` trägt. Bei gleichem `!important`-Level entscheidet zuerst die Spezifität, erst bei Gleichstand die Position im Dokument.
 
 **Fix:** Eigene Overrides mit **derselben Selektor-Struktur** (`body:has(#exercise-content) .desktop-topnav-link--whatsapp` usw.) ergänzt – dadurch exakt gleiche Spezifität, und weil sie später im `<head>` stehen (Laufzeit-Injektion via `document.head.appendChild`), gewinnt bei Gleichstand die eigene Regel. ⚠️ Betrifft nur die drei Kontexte, die `!important` verwenden (`#exercise-content`, `.crest-panel`, `.selection-section`); die zwei ohne `!important` (`#einheit-content`, `.page-hero.dr-main`) waren nie betroffen, weil `!important` grundsätzlich vor Spezifität gewinnt.
+
+### 20.5 Desktop wieder über Zwischenseite, dafür QR-Code statt Button (08/2026, zweite Kehrtwende)
+
+Nach 20.3 (direkter Link ohne Zwischenseite) kam die Rückmeldung: Auf **Desktop** soll wieder `/whatsapp-info` als Zwischenschritt stehen, weil ein direkter `wa.me`/Kanal-Link dort ohne WhatsApp Desktop ins Leere läuft – Use-Case ist „am Rechner sehen, dann mit dem Handy scannen, um dem Kanal beizutreten".
+
+- Neue Hilfsfunktion `istDesktopBreite()` in `desktop-nav.js` (`window.innerWidth >= 768`) steuert jetzt an drei Stellen, ob der Kanal-Link direkt oder über `/whatsapp-info` geht: Topnav-Pille (hart auf `/whatsapp-info` im Template), sitewide Abbinder (`injectWhatsAppAbbinder()`, CTA-Href abhängig von `istDesktopBreite()`), und die feste Startseiten-Sektion (Href-Rewrite auf `#whatsapp-home .hs-cta--whatsapp` im Desktop-Zweig der IIFE). **Mobil bleibt bei allen dreien direkt.**
+- Auf `/whatsapp-info` selbst ersetzt auf Desktop ein **inline-SVG-QR-Code** (kein externer Dienst, keine Laufzeit-Anfrage) sowohl den Button als auch das Foto im `.wa-split`-Zweispalter – beide Elemente liegen im selben Grid-Slot, `display:none` steuert je nach Breite, welches davon den Platz einnimmt. QR-Code erzeugt mit dem Python-Paket `qrcode`, Pfad mit `cv2.QRCodeDetector` gegen die Original-URL zurückgeprüft, bevor er eingebettet wurde.
+
+---
+
+## 21. Übungsgrafiken: Publisher-Bot-Konflikt und ein Vercel-Firewall-Bug (08/2026)
+
+Rückmeldung: Beim Teilen eines Übungs-Links zeigte die WhatsApp-Vorschau das COACH-UNITED-Logo statt der Übungsskizze. Die Ursache war am Ende dreiteilig – zwei eigene Funde plus ein bereits laufender, unabhängiger Migrationsversuch.
+
+### 21.1 Ausgangslage: 24 Übungen trugen ihr Bild als Base64 im JSON
+
+Wie in 14.7 beschrieben – Base64-Bilder direkt in `exercises.json` statt als Datei. Erste Runde: alle vorhandenen Base64-Einträge per Python (Pillow) dekodiert, als WebP unter `public/images/uebungen/` gespeichert, `grafik_url` auf die permanente URL umgeschrieben. Kein Code musste angepasst werden, `resolveGrafikUrl()` in `build-exercise-pages.js` nutzt jede Nicht-`data:`-URL ohnehin direkt.
+
+### 21.2 Ein paralleler, unabhängiger Migrationsversuch tauchte beim nächsten Pull auf
+
+Ein Commit vom 27.08. („Bilder und Consent-Log von archiv.coachunited.de lösen") – **nicht von dieser Session**, vermutlich eine andere, parallel arbeitende Session oder direkt von Robert – hatte bereits vorher versucht, **alle** Bild-URLs (Übungen, Artikel, Einheiten) von `archiv.coachunited.de` zu lösen, als Vorbereitung für dessen komplette Abschaltung. Dabei wurde auch `build-exercise-pages.js` um ein Sicherheitsnetz erweitert: Findet es beim Build noch eine Base64-`grafik_url`, dekodiert es sie selbst lokal (`resolveGrafikUrl()`, kein WordPress-Upload mehr, kein `WP_HOST`/`archiv`-Bezug im Code mehr).
+
+### 21.3 Der eigentliche Wiederholungstäter: Der Publisher-Bot überschreibt `exercises.json` bei jedem Lauf
+
+Der externe „Publisher"-Bot (Commits `publisher: N Übung(en) veröffentlicht`, kein Teil dieses Repos – nicht unter `scripts/` zu finden, läuft offenbar als externer Prozess mit eigenem Zugriff auf das Repo) erzeugt `exercises.json` bei jeder neuen Veröffentlichung offenbar **komplett neu aus einer Ursprungsquelle** (vermutlich Sheet/CMS), die selbst noch alte `wp-content`-URLs und Base64-Daten enthält. Dadurch wurden **sowohl** die eigene Base64-Auslagerung **als auch** der archiv-Migrationsversuch bei jedem weiteren Publisher-Lauf teilweise wieder zurückgesetzt – unabhängig davon, wer zuletzt committet hat. Nach mehreren Publisher-Läufen: 26 Einträge wieder auf Base64, 157 wieder auf `coachunited.de/wp-content/…`.
+
+⚠️ **Das ist kein einmalig behobener Zustand.** Ohne eine Änderung an der Publisher-Quelle selbst (außerhalb dieses Repos, nicht einsehbar) kann dasselbe Muster jederzeit wieder auftreten. Vor jeder künftigen Bild-Prüfung: `grep -c '"grafik_url": "data:image\|wp-content' public/exercises.json`.
+
+### 21.4 Unabhängiger Fund: Vercel blockiert `coachunited.de/wp-content/*` mit 403
+
+Beim Versuch, die 157 `wp-content`-Bilder direkt von `coachunited.de` neu herunterzuladen, kam durchgehend `403 Forbidden` zurück – mit Response-Header `X-Vercel-Mitigated: deny`. Das ist eine **Firewall-Regel des Vercel-Projekts selbst**, vermutlich als Schutz gegen die ständigen automatisierten WordPress-Vulnerability-Scans, die jede Domain unabhängig vom tatsächlichen Stack abbekommt (`/wp-content/`, `/wp-admin/` etc. sind ein Standard-Scanziel). Geprüft: Andere Pfade (`/uebung/…`, `/images/uebungen/…`, `/exercises.json`, `/`) sind **nicht** betroffen – nur `/wp-content/*` auf der `coachunited.de`-Domain selbst.
+
+**Das war live ein eigenständiger, vorher nicht dokumentierter Bug**: Alle 157 Übungen mit `wp-content`-URL luden weder ihr Bild auf der eigenen Detailseite noch eine funktionierende Social-Share-Vorschau – nicht nur ein Cache-Problem, ein echter 403. `archiv.coachunited.de` selbst ist von der Vercel-Firewall-Regel nicht betroffen (andere Domain, anderes Hosting) und lieferte die Bilder korrekt aus.
+
+### 21.5 Umsetzung: alle 183 Übungsgrafiken einmalig konsolidiert
+
+- 26 Base64-Einträge: dekodiert, als WebP gespeichert (Qualität 85).
+- 157 `wp-content`-Einträge: von `archiv.coachunited.de` (nicht `coachunited.de`, wegen 21.4) heruntergeladen, auf max. 1600px begrenzt, als WebP gespeichert (Qualität 82) – gleiche Konvention wie beim archiv-Migrationsversuch aus 21.2.
+- `grafik_url` überall auf `https://coachunited.de/images/uebungen/uebung-<id>-<slug>.webp` umgeschrieben – **absolut**, nicht relativ, wegen `og:image`.
+- 157 verwaiste Original-PNG/JPG-Dateien aus dem archiv-Migrationsversuch (unkomprimiert, andere Dateinamen-Endung) gelöscht, da durch die neuen WebP-Dateien ersetzt. `public/images/uebungen/`: 7,1 MB → 2,8 MB.
+- Keine `data:`- oder `wp-content`-URLs mehr in `exercises.json` (Stand: nach diesem Commit).
+
+⚠️ Wie in 21.3 beschrieben: Das kann der nächste Publisher-Lauf teilweise wieder zurücksetzen. Diese Konsolidierung müsste bei Bedarf wiederholt werden (gleiches Python-Vorgehen), bis die Publisher-Quelle selbst korrigiert ist.
+
+---
+
+## 22. Externe Analyse (ChatGPT) zu den wiederholten Ad-Grants-Ablehnungen (08/2026)
+
+Robert hat die wiederholten, wortidentischen Ablehnungen (Abschnitt 9) zusätzlich von ChatGPT einschätzen lassen. Kernthese dort, abweichend von den bisher in diesem Dokument verfolgten Spuren (Ladezeit, Thin Content im technischen Sinn, fehlende Registernummer): **Das eigentliche Problem ist nicht mehr technisch, sondern inhaltlich** – die Seite liest sich wie die Beschreibung eines Produkts („177 Übungen, kostenlos, gemeinnützig"), aber liefert kaum **Belege für tatsächliche, laufende Vereinsarbeit**. Nicht als bestätigte Diagnose zu verstehen, sondern als zusätzliche, plausible Hypothese für einen weiteren Anlauf – hier dokumentiert, damit sie nicht verloren geht.
+
+### 22.1 Priorisierte Maßnahmenliste (aus der Analyse)
+
+| Priorität | Maßnahme | Kerngedanke |
+|---|---|---|
+| 🔴 1 | „Unsere Arbeit / Wirkung"-Seite mit konkreten Belegen | Zahlen, Geschichten, konkrete Aktivitäten statt allgemeiner Aussagen |
+| 🔴 2 | Gemeinnützigen Zweck konkret ausformulieren | Google soll den Zweck nicht selbst rekonstruieren müssen |
+| 🔴 3 | Startseite inhaltlich erweitern | Mehr erklärender Text: was, für wen, warum kostenlos, gesellschaftlicher Nutzen |
+| 🔴 4 | Konkrete Vereinsaktivität 2025/2026 dokumentieren | Jahresrückblick, Entstehungsgeschichte, „was haben wir 2026 vor" |
+| 🟠 5 | Eigene Landingpages pro Suchintention statt Startseite als Ad-Ziel | z. B. `/fussballuebungen-g-jugend`, passend zu Anzeige/Suchbegriff |
+| 🟠 6 | Autor/Datum/Aktualisierungsdatum bei Artikeln | Signal für Aktualität und Pflege |
+| 🟠 7 | Weniger „generische" Texte, mehr konkrete Praxisbeispiele | z. B. "In der G-Jugend geht es vor allem um Ballgewöhnung…" statt Marketing-Sprache |
+| 🟡 8 | Technische Crawl-/Performance-Prüfung | laut Analyse vermutlich **nicht** der Haupttreiber, aber separat sinnvoll |
+| 🟡 9 | Conversion-Tracking im Ads-Konto prüfen | mind. eine echte Conversion/Monat, keine reinen Seitenaufrufe |
+| 🟢 10 | Weitere Speed-Optimierungen | laut Analyse aktuell keine Priorität |
+
+### 22.2 Einordnung
+
+- Die Analyse unterscheidet explizit zwischen **Website-/Aktivierungsprüfung** (das, was hier laufend abgelehnt wird) und dem **5-%-CTR-Problem eines bereits aktiven Kontos** – letzteres ist eine andere Baustelle und hier nicht relevant.
+- Deckt sich mit dem bereits dokumentierten weichen Befund aus Abschnitt 16 (Vereins-Erwähnung sitzt zu spät auf der Startseite), geht aber deutlich weiter: nicht nur *wo* die Gemeinnützigkeit steht, sondern *ob überhaupt genug konkrete Belege für aktive Vereinsarbeit* auf der Seite zu finden sind.
+- Noch nicht umgesetzt, nicht mit Google/Goodstack-Feedback abgeglichen (Antwort dort stand zuletzt weiterhin aus, Abschnitt 9). Bevor hier viel Aufwand reingeht, lohnt sich das Nachfassen bei Goodstack – falls die tatsächliche Ablehnungsursache eine andere ist, wäre der Umbau hier umsonst.
