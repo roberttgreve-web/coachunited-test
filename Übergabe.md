@@ -143,6 +143,8 @@ Wichtig: `uebung-detail.html`, `einheit-detail.html` und `artikel-detail.html` s
 - `feedback-widget.js` ist nicht überall eingebunden (s. o.) – falls es reaktiviert werden soll, vorher prüfen, ob es auf allen relevanten Seiten verlinkt ist.
 - ⚠️ **CSS und JS tragen keine Versionsnummer im Dateinamen.** `/desktop.css`, `/sektionen.css`, `/desktop-nav.js` heißen nach jedem Deploy gleich. Deshalb steht ihr `Cache-Control` in `vercel.json` auf `max-age=0, must-revalidate` – der Browser fragt bei jedem Aufruf nach und bekommt meist ein 304. Vorher stand dort `max-age=86400`: Eine CSS-Änderung erreichte wiederkehrende Besucher bis zu 24 Stunden lang nicht, und beim Testen sah man auf dem Handy hartnäckig die alte Version. Wer die Regel wieder verschärfen will, muss vorher die Dateinamen versionieren (`sektionen.abc123.css`) – sonst kommt das Problem zurück.
 - **Vorgemerkt: Foto für die Merkliste.** Im Projektstammverzeichnis liegt `younes-karami-ne-ft_5zDTY-unsplash.jpg` – gedacht für einen künftigen Umbau von `/merkliste` im Stil der Startseite. Aufbereitung wie in Abschnitt 11.4 beschrieben (Pillow, WebP, `ImageOps.exif_transpose()`).
+- **To-do: Sticky Header auf Übungsseiten (Mobil).** Auf `/uebung/<slug>` sind Header und blauer Streifen aktuell durchgehend sticky. Soll geändert werden: nicht sticky bis zum CTA, erst ab dort (bzw. ab Erreichen des CTA) sticky werden.
+- **To-do: CTA-Tracking in Analytics.** Alle CTAs (Merkliste-Button und vergleichbare Aktionen) sollen als Events in Google Analytics erfasst werden – aktuell nicht instrumentiert.
 
 ## 9. Google Ad Grants (Stand 2026-08-21)
 
