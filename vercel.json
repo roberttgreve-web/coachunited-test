@@ -881,10 +881,6 @@
       "destination": "/uebungen.html"
     },
     {
-      "source": "/detail",
-      "destination": "/detail.html"
-    },
-    {
       "source": "/uebung/:slug",
       "destination": "/uebung/:slug.html"
     },

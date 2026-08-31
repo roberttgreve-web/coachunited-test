@@ -1245,6 +1245,13 @@
       if (!isSurprise && selectedSkills.size > 0) {
         url += '&skill=' + encodeURIComponent(Array.from(selectedSkills)[0]);
       }
+      if (typeof gtag === 'function') {
+        gtag('event', 'generator_start', {
+          jugend: selectedJugend,
+          skill: !isSurprise && selectedSkills.size > 0 ? Array.from(selectedSkills)[0] : null,
+          page_path: window.location.pathname
+        });
+      }
       window.location.href = url;
     }
 

@@ -899,8 +899,7 @@
       const titlesText = titles.length ? '\n\n' + titles.join('\n') : '';
       if (navigator.share) {
         navigator.share({
-          text: 'Schau mal, hier ist eine Trainingseinheit von COACH UNITED, die gut passen könnte.' + titlesText,
-          url
+          text: 'Schau mal, hier ist eine Trainingseinheit von COACH UNITED, die gut passen könnte.' + titlesText + '\n\n' + url
         });
       } else {
         copyLink();

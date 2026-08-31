@@ -551,6 +551,10 @@
         document.getElementById('final-attachment-text').files = dt.files;
       }
 
+      if (typeof gtag === 'function') {
+        gtag('event', 'uebung_einreichen_submit', { mode, page_path: window.location.pathname });
+      }
+
       btn.classList.remove('ready');
       btn.classList.add('loading');
       btn.textContent = 'Wird gesendet…';
