@@ -12149,7 +12149,7 @@
     "trainingsphase": "Spielformat",
     "kurzbeschreibung": "In einem Spiel können auf zwei Tore Treffer erzielt werden. Allerdings muss vorher ein Zielspieler der eigenen Mannschaft in der Endzone des Spielfeldes per Pass eingebunden worden sein. ",
     "aufbau": "Markiere ein Spielfeld von 30 x 20 Metern und teile es durch zwei jeweils 2 Meter tiefe Zonen an den beiden Stirnseiten auf. Stelle zwei Jugendtore mit Torhütern Rücken an Rücken in der Feldmitte auf, sodass sie in beide Richtungen bespielbar sind. Bilde zwei Mannschaften, jede davon besetzt mit jeweils einem Spieler auf beiden Seiten ihre Endzonen.",
-    "durchfuehrung": "Beide Teams können auf beide Tore Treffer erzielen. Damit das Tor auch zählt, muss vorher der Spieler des eigenen Teams in der Endzone per Pass in den Angriff eingebunden worden sein. Der Spieler, der den Pass aus dem Feld in die Endzone gespielt hat, wechselt direkt nach dem Pass (nicht erst nach einem Tor) in die Endzone, der Spieler in der Endzone darf dafür direkt ins Feld laufen. ",
+    "durchfuehrung": "Beide Teams können auf beide Tore Treffer erzielen. Damit das Tor auch zählt, muss vorher der Spieler des eigenen Teams in der Endzone per Pass in den Angriff eingebunden worden sein. Der Spieler, der den Pass aus dem Feld in die Endzone gespielt hat, wechselt direkt nach dem Pass (nicht erst nach einem Tor) in die Endzone, der Spieler in der Endzone darf dafür direkt ins Feld laufen. Die Zielspieler in der Endzone müssen also in der Zone bleiben, bis sie einmal erfolgreich angespielt wurden und einen sauberen Pass zurück ins Feld gespielt haben. ",
     "varianten": "Auf Minitore spielen.\nMit dem zweiten Kontakt erzielte Treffer zählen doppelt.",
     "quell_url": "https://training-service.fussball.de/trainer/d-juniorin/artikel/der-erste-kontakt-in-den-ferien-an-den-details-feilen-3521/",
     "quell_spiel_nr": 4,
@@ -12167,13 +12167,13 @@
     "leichter_machen": "• Endzonen vergrößern",
     "schwerer_machen": "• Zwei Pässe in die Endzone, bevor ein Treffer zählt",
     "alt_titel": "",
-    "seo_keyword": "Fußballtraining Passen",
+    "seo_keyword": "Fußballtraining: Kombinationsspiel mit zwei Toren und Kopfzonen-Spielern. Taktisches Umschaltspiel für E- und D-Jugend trainieren.",
     "url_slug": "passen-kopfzone-kombinationen",
-    "seo_meta_description": "Fußballtraining: Kombinationsspiel mit zwei Toren und Kopfzonen-Spielern. Taktisches Umschaltspiel für E- und D-Jugend trainieren.",
-    "grafik_alt_text": "Fußball-Trainingsübung: 30x20m Feld mit zwei Jugendtoren in der Mitte, je Team 2 Spieler in Endzonen.",
-    "grafik_description": "Übungsaufbau zeigt ein rechteckiges Spielfeld mit zwei Jugendtoren in der Feldmitte und markierten Endzonen. Je zwei Spieler pro Team sind in den Kopfzonen positioniert, drei Feldspieler im mittleren Bereich.",
-    "grafik_title": "Fußball Kopfzone-Kombinationen Trainingsaufbau",
-    "grafik_caption": "Aufbau der Kombinationsübung mit zwei Toren und Passeur-Positionen in den Endzonen.",
+    "seo_meta_description": "Fußball-Trainingsübung: 30x20m Feld mit zwei Jugendtoren in der Mitte, je Team 2 Spieler in Endzonen.",
+    "grafik_alt_text": "Fußball Kopfzone-Kombinationen Trainingsaufbau",
+    "grafik_description": "*E- und D-Jugend*\n\nHier eine schöne Übung zur Raumnutzung mit klarer Zielstellung:\n\nIn einem Spiel können auf zwei Tore Treffer erzielt werden. Allerdings muss vorher ein Zielspieler der eigenen Mannschaft in der Endzone des Spielfeldes per Pass eingebunden worden sein.\n\nhttps://coachunited.de/uebung/passen-kopfzone-kombinationen\n\nViele Grüße und viel Erfolg beim Training\n\nRob",
+    "grafik_title": "Aufbau der Kombinationsübung mit zwei Toren und Passeur-Positionen in den Endzonen.",
+    "grafik_caption": "Übungsaufbau zeigt ein rechteckiges Spielfeld mit zwei Jugendtoren in der Feldmitte und markierten Endzonen. Je zwei Spieler pro Team sind in den Kopfzonen positioniert, drei Feldspieler im mittleren Bereich.",
     "faq": [
       {
         "frage": "Wie lange sollte diese Übung dauern?",
@@ -12185,7 +12185,7 @@
       },
       {
         "frage": "Ab welchem Alter ist diese Übung sinnvoll?",
-        "antwort": "Ab der E-Jugend, wenn ein erstes taktisches Verständnis für Positionswechsel und Rollen vorhanden ist. "
+        "antwort": "Fußballtraining Passen"
       }
     ],
     "status": "veroeffentlicht",
