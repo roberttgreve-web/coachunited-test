@@ -1,6 +1,6 @@
 # Übergabe – coachunited.de
 
-Stand: 2026-08-21. Dieses Dokument ist der Einstiegspunkt für alle, die künftig an coachunited.de weiterarbeiten (Entwickler, Freelancer, Nachfolger).
+Stand: 2026-09-01. Dieses Dokument ist der Einstiegspunkt für alle, die künftig an coachunited.de weiterarbeiten (Entwickler, Freelancer, Nachfolger).
 
 ## 1. Was ist das für ein Projekt?
 
@@ -145,6 +145,7 @@ Wichtig: `uebung-detail.html`, `einheit-detail.html` und `artikel-detail.html` s
 - **Vorgemerkt: Foto für die Merkliste.** Im Projektstammverzeichnis liegt `younes-karami-ne-ft_5zDTY-unsplash.jpg` – gedacht für einen künftigen Umbau von `/merkliste` im Stil der Startseite. Aufbereitung wie in Abschnitt 11.4 beschrieben (Pillow, WebP, `ImageOps.exif_transpose()`).
 - ✅ **Erledigt (01.09.2026): Sticky Header auf Übungsseiten (Mobil).** In `uebung-detail.html`: `.header` (Logo) und `.back-bar` (dunkler Streifen mit Zurück-Button) verlieren `position: sticky` und scrollen normal weg. `.action-bar` (CTA: Merkliste/Teilen/Drucken) und `.grafik-panel` (Bild) bleiben als zusammenhängender Block sticky, jetzt aber mit `top: 0` bzw. `top: 62px` statt `top: 125px`/`187px` – sie werden erst sticky, sobald sie selbst den oberen Bildrand erreichen, statt durchgehend festzukleben.
 - **To-do: CTA-Tracking in Analytics.** Alle CTAs (Merkliste-Button und vergleichbare Aktionen) sollen als Events in Google Analytics erfasst werden – aktuell nicht instrumentiert.
+- **To-do: Vercel Security Checkpoint blockiert echte Besucher.** Am 01.09.2026 bekam Robert beim Test auf dem Handy statt der Seite den Zwischenschritt „We're verifying your browser" / „Vercel Security Checkpoint" zu sehen. Sehr wahrscheinliche Ursache: Beim Verifizieren der heutigen Deploys wurde die Live-Seite wiederholt automatisiert per `curl` abgefragt (Polling-Loop alle 5s über mehrere Minuten), das hat Vercels Bot-/Attack-Schutz ausgelöst. Ein Einzel-Check kurz danach lieferte wieder normal `200`, scheint also temporär gewesen zu sein. Nicht weiter untersucht, nur beobachtet – falls es wiederkehrt: Vercel-Dashboard → Security/Firewall-Einstellungen prüfen, ob eine „Attack Challenge Mode"-Schwelle zu empfindlich eingestellt ist. Für künftige Deploy-Checks: keine engen Polling-Loops mehr gegen die Live-Domain, stattdessen größere Abstände oder Vercels eigenes Deployment-Status-API nutzen.
 
 ## 9. Google Ad Grants (Stand 2026-08-21)
 
@@ -855,3 +856,29 @@ Robert hat die wiederholten, wortidentischen Ablehnungen (Abschnitt 9) zusätzli
 - Die Analyse unterscheidet explizit zwischen **Website-/Aktivierungsprüfung** (das, was hier laufend abgelehnt wird) und dem **5-%-CTR-Problem eines bereits aktiven Kontos** – letzteres ist eine andere Baustelle und hier nicht relevant.
 - Deckt sich mit dem bereits dokumentierten weichen Befund aus Abschnitt 16 (Vereins-Erwähnung sitzt zu spät auf der Startseite), geht aber deutlich weiter: nicht nur *wo* die Gemeinnützigkeit steht, sondern *ob überhaupt genug konkrete Belege für aktive Vereinsarbeit* auf der Seite zu finden sind.
 - Noch nicht umgesetzt, nicht mit Google/Goodstack-Feedback abgeglichen (Antwort dort stand zuletzt weiterhin aus, Abschnitt 9). Bevor hier viel Aufwand reingeht, lohnt sich das Nachfassen bei Goodstack – falls die tatsächliche Ablehnungsursache eine andere ist, wäre der Umbau hier umsonst.
+
+---
+
+## 23. Übungsseite (Mobil): Sticky-Header, Schriftgrößen, volle Bildschirmbreite (09/2026)
+
+Drei zusammenhängende Feinschliff-Änderungen an `uebung-detail.html`, alle auf Roberts Meldung hin per Screenshot vom eigenen Handy.
+
+### 23.1 Sticky-Header fraß zu viel Platz
+
+Vorher waren Logo-Leiste (`.header`), dunkle Zurück-Leiste (`.back-bar`), CTA-Leiste (`.action-bar`: Merkliste/Teilen/Drucken) und Bild (`.grafik-panel`) alle vier gleichzeitig `position: sticky`, mit aufeinander aufbauenden `top`-Offsets (0/69/125/187px) – sie blieben beim Scrollen durchgehend oben kleben und ließen wenig Platz für den eigentlichen Übungstext darunter.
+
+Fix: `.header` und `.back-bar` verlieren `position: sticky` komplett, scrollen normal weg. `.action-bar` und `.grafik-panel` bleiben als zusammenhängender Block sticky (das ist gewollt – Robert bestätigt), aber mit `top: 0` bzw. `top: 62px` statt `125px`/`187px`: Sie werden jetzt erst sticky, sobald sie selbst den oberen Bildrand erreichen, statt permanent zu kleben.
+
+### 23.2 Uneinheitliche Schriftgröße Kurzbeschreibung vs. Aufbau-Text
+
+`.ex-desc` (Kurzbeschreibung direkt unter dem Titel) hatte `font-size: 16px`, `.accordion-body` (Text unter „Aufbau"/„Durchführung") hatte `15.5px` – kaum wahrnehmbarer, aber realer Unterschied. Beide vereinheitlicht auf `16.5px`.
+
+### 23.3 Feste 375px-Breite mit abgerundeten Ecken auf echten Handys
+
+Die Seite ist als „Handy-Mockup" gebaut: `body` hat einen beigen Hintergrund (`#f0eee9`) und zentriert eine `.container`-Karte mit fester `width: 375px`, `border-radius: 28px` und Schatten – sieht auf breiten Desktop-Bildschirmen aus wie ein schwebendes Handy, verschenkt aber auf einem echten Handy Platz (abgerundete Ecken, Rand drumherum, statt Vollbild). `.bottom-nav` hatte dasselbe Problem (`width: 375px`, zentriert per `left: 50%; transform: translateX(-50%)`).
+
+Fix: Neue Media Query `@media (max-width: 480px)` schaltet auf echten Handy-Breiten Rundung, Schatten und feste Breite ab – `.container` und `.bottom-nav` füllen dann 100% Breite, `body` bekommt weißen statt beigen Hintergrund.
+
+### 23.4 Alle drei Deploys verifiziert
+
+Jede der drei Änderungen wurde einzeln committet, gepusht (inkl. eines Rebase über zwischenzeitliche automatische Publisher-Commits, s. Abschnitt „publisher: … Übung(en) veröffentlicht"), per Vercel-Deploy-Hook (`VERCEL_DEPLOY_HOOK` aus der Publisher-`.env.local`) ausgerollt und live per Abfrage der generierten Seite bestätigt. Zum vermutlich dadurch ausgelösten Vercel-Security-Checkpoint-Zwischenfall siehe den neuen To-do-Eintrag in Abschnitt 8.
