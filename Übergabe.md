@@ -819,7 +819,9 @@ Beim Versuch, die 157 `wp-content`-Bilder direkt von `coachunited.de` neu herunt
 
 ⚠️ Wie in 21.3 beschrieben: Das kann der nächste Publisher-Lauf teilweise wieder zurücksetzen. Diese Konsolidierung müsste bei Bedarf wiederholt werden (gleiches Python-Vorgehen), bis die Publisher-Quelle selbst korrigiert ist.
 
-### 21.6 Offen: WhatsApp-Linkvorschau zeigt seit der Migration nur noch das kleine Seiten-Icon statt der Übungsgrafik
+### 21.6 ✅ Erledigt (01.09.2026, hat sich von selbst gelöst): WhatsApp-Linkvorschau zeigte seit der Migration nur noch das kleine Seiten-Icon statt der Übungsgrafik
+
+Robert bestätigt am 01.09.2026: Funktioniert wieder normal, große Vorschau mit Übungsgrafik erscheint. Keine Code-Änderung dafür vorgenommen – vermutlich WhatsApps eigener Crawler-Cache/Fallback, der sich zwischenzeitlich von selbst korrigiert hat. Diagnose-Historie unten zur Referenz stehen gelassen, falls das Muster wiederkehrt.
 
 Nach 21.5 gemeldet (Screenshot-Vergleich): Vor der gesamten Bild-Migration (21.1–21.5) zeigte WhatsApp beim Teilen eines Übungs-Links das **große** Vorschauformat – Übungsgrafik oben, Titel/Beschreibung/Domain unten. Aktuell (Beispiel: Übung 199, „Laufweg wählen, Ball anfordern, drehen – Tor!") zeigt WhatsApp nur noch das **kleine** Format: rundes Seiten-Icon statt Bild, Titel/Domain daneben. Das ist WhatsApps bekanntes Fallback-Verhalten, wenn der Abruf von `og:image` fehlschlägt – nicht ein falsches Bild, sondern gar keines.
 
