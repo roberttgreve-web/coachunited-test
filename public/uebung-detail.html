@@ -986,6 +986,9 @@
     function shareExerciseBar() {
       const url = window.location.href;
       const text = 'Schau mal, diese Übung von COACH UNITED könnte gut passen.\n' + url;
+      if (typeof gtag === 'function') {
+        gtag('event', 'share_click', { source: 'action_bar', page_path: window.location.pathname });
+      }
       if (navigator.share) {
         navigator.share({ text }).catch(() => {});
       } else {
@@ -997,6 +1000,9 @@
       const url = window.location.href;
       const title = document.getElementById('titel').textContent;
       const text = title + '\n' + url;
+      if (typeof gtag === 'function') {
+        gtag('event', 'share_click', { source: 'weiterempfehlen', page_path: window.location.pathname });
+      }
       if (navigator.share) {
         navigator.share({ title, text }).catch(() => {});
       } else {
