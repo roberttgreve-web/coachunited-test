@@ -562,6 +562,24 @@
     .print-tile-body ul { padding-left: 18px; }
     .print-tile-body li { margin-bottom: 4px; }
 
+    /* ── Echte Handy-Breiten: Handy-Mockup-Optik (Rundung/Schatten/feste Breite) abschalten ── */
+    @media (max-width: 480px) {
+      body {
+        background: #fff;
+        display: block;
+      }
+      .container {
+        width: 100%;
+        border-radius: 0;
+        box-shadow: none;
+      }
+      .bottom-nav {
+        left: 0;
+        transform: none;
+        width: 100%;
+      }
+    }
+
     /* ── Print styles ── */
     @media print {
       .header, .back-bar, .action-bar, .action-bar-feedback,
