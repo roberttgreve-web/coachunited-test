@@ -857,7 +857,17 @@ Robert hat die wiederholten, wortidentischen Ablehnungen (Abschnitt 9) zusätzli
 
 - Die Analyse unterscheidet explizit zwischen **Website-/Aktivierungsprüfung** (das, was hier laufend abgelehnt wird) und dem **5-%-CTR-Problem eines bereits aktiven Kontos** – letzteres ist eine andere Baustelle und hier nicht relevant.
 - Deckt sich mit dem bereits dokumentierten weichen Befund aus Abschnitt 16 (Vereins-Erwähnung sitzt zu spät auf der Startseite), geht aber deutlich weiter: nicht nur *wo* die Gemeinnützigkeit steht, sondern *ob überhaupt genug konkrete Belege für aktive Vereinsarbeit* auf der Seite zu finden sind.
-- Noch nicht umgesetzt, nicht mit Google/Goodstack-Feedback abgeglichen (Antwort dort stand zuletzt weiterhin aus, Abschnitt 9). Bevor hier viel Aufwand reingeht, lohnt sich das Nachfassen bei Goodstack – falls die tatsächliche Ablehnungsursache eine andere ist, wäre der Umbau hier umsonst.
+- Priorität 1, 2 und 4 sind mittlerweile umgesetzt (s. 22.3), Rest weiterhin offen. Nicht mit Google/Goodstack-Feedback abgeglichen (Antwort dort stand zuletzt weiterhin aus, Abschnitt 9). Bevor hier viel weiterer Aufwand reingeht, lohnt sich das Nachfassen bei Goodstack – falls die tatsächliche Ablehnungsursache eine andere ist, wäre der Umbau hier umsonst.
+
+### 22.3 Umgesetzt (01.09.2026): Priorität 1, 2 und 4 – "Über uns" komplett neu, Vereinszweck im Impressum
+
+Schritt für Schritt mit Robert durchgesprochen, priorisiert nach der Liste aus 22.1.
+
+**Priorität 1+4 (konkrete Belege für Vereinsarbeit, Entstehungsgeschichte)**: `ueber-uns.html` von 4 knappen, generischen Absätzen auf 9 Abschnitte mit echter Gründungsgeschichte ausgebaut – Roberts eigene Schilderung, in mehreren Runden mit ihm verfeinert (er lieferte den vollständigen Text selbst, inkl. O-Ton-Zitat „Wir trainieren jede Woche damit.", konkreten Rückmeldungen von Trainer:innen bei Turnieren/Spielen). Neue Struktur: Wie alles angefangen hat → Zwischen Arbeit und Trainingsplatz → Aus ein paar Übungen wird ein WhatsApp-Kanal (mit hervorgehobenem Zahlen-Kasten „~2.000 Trainerinnen und Trainer aus Berlin, Brandenburg und darüber hinaus") → Feedback-Abschnitt → Aus der Idee wird ein Verein (Gründung Sommer 2026, Registernummer) → Warum kostenlos? → Unsere Vision → Was wir machen → Mach mit. Meta-Description ebenfalls aktualisiert (nennt jetzt Verein + WhatsApp-Zahl statt nur „Übungsdatenbank").
+
+**Priorität 2 (Gemeinnützigen Zweck konkret ausformulieren)**: Vollständiger § 2 der Vereinssatzung ("Zweck, Gemeinnützigkeit des Vereins", Original-PDF unter `Vereinsgründung/Satzung Coach United.pdf` im COACH-UNITED-Ordner, außerhalb dieses Repos) als neuer Abschnitt „Vereinszweck (§ 2 der Satzung)" ins Impressum aufgenommen – Wortlaut plus die sechs Unterpunkte, wie der Zweck verwirklicht wird. ⚠️ **Wichtiger Vorbehalt:** `impressum.html` trägt `<meta name="robots" content="noindex, nofollow">` – Google indexiert diese Seite nicht. Ob das für die Ad-Grants-Prüfung reicht (die vermutlich nicht nur den Suchindex, sondern die Seite direkt crawlt) oder ob der Zweck zusätzlich auf einer indexierten Seite stehen müsste, ist ungeklärt. Auf Nachfrage bewusst **nicht** zusätzlich auf „Über uns" aufgenommen (Vorschlag für einen kurzen Satz dort wurde abgelehnt) – falls die nächste Ad-Grants-Antwort wieder ablehnt, wäre das ein Kandidat zum Nachbessern.
+
+**Noch offen aus der Prioritätenliste:** 3 (Startseite inhaltlich erweitern), 5–10 (Landingpages pro Suchintention, Autor/Datum bei Artikeln, weniger generische Texte, technische Crawl-Prüfung, Conversion-Tracking, Speed).
 
 ---
 
