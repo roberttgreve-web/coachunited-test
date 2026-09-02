@@ -64,7 +64,8 @@
       [
         2
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 2,
@@ -130,7 +131,8 @@
       [
         1
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 3,
@@ -198,7 +200,8 @@
         5,
         4
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 4,
@@ -267,7 +270,8 @@
         5,
         3
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 5,
@@ -336,7 +340,8 @@
         4,
         3
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 6,
@@ -403,7 +408,8 @@
       [
         7
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 7,
@@ -470,7 +476,8 @@
       [
         6
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 8,
@@ -536,7 +543,8 @@
       [
         9
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 9,
@@ -602,7 +610,8 @@
       [
         8
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 10,
@@ -664,7 +673,8 @@
     "schwester_ids": [],
     "schwester_id": null,
     "schwester_titel": null,
-    "schwester_gruppen": []
+    "schwester_gruppen": [],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 11,
@@ -724,7 +734,8 @@
     "schwester_ids": [],
     "schwester_id": null,
     "schwester_titel": "REIFEN SUCHEN",
-    "schwester_gruppen": []
+    "schwester_gruppen": [],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 12,
@@ -784,7 +795,8 @@
     "original_coaching_fokus": "",
     "ist_gecrawlt": false,
     "quell_kategorie": "",
-    "schwester_gruppen": []
+    "schwester_gruppen": [],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 13,
@@ -854,7 +866,8 @@
       [
         87
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 14,
@@ -913,7 +926,8 @@
     "schwester_ids": [],
     "schwester_id": null,
     "schwester_titel": null,
-    "schwester_gruppen": []
+    "schwester_gruppen": [],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 15,
@@ -976,7 +990,8 @@
     "schwester_ids": [],
     "schwester_id": null,
     "schwester_titel": null,
-    "schwester_gruppen": []
+    "schwester_gruppen": [],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 16,
@@ -1044,7 +1059,8 @@
       [
         17
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 17,
@@ -1112,7 +1128,8 @@
       [
         16
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 18,
@@ -1172,7 +1189,8 @@
     "schwester_ids": [],
     "schwester_id": null,
     "schwester_titel": null,
-    "schwester_gruppen": []
+    "schwester_gruppen": [],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 19,
@@ -1232,7 +1250,8 @@
     "schwester_ids": [],
     "schwester_id": null,
     "schwester_titel": null,
-    "schwester_gruppen": []
+    "schwester_gruppen": [],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 20,
@@ -1294,7 +1313,8 @@
     "schwester_ids": [],
     "schwester_id": null,
     "schwester_titel": null,
-    "schwester_gruppen": []
+    "schwester_gruppen": [],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 21,
@@ -1356,7 +1376,8 @@
     "schwester_ids": [],
     "schwester_id": null,
     "schwester_titel": "SLALOM, FLANKENLAUF UND PASS INS 1 GEGEN 1",
-    "schwester_gruppen": []
+    "schwester_gruppen": [],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 22,
@@ -1418,7 +1439,8 @@
     "original_coaching_fokus": "",
     "ist_gecrawlt": false,
     "quell_kategorie": "",
-    "schwester_gruppen": []
+    "schwester_gruppen": [],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 23,
@@ -1481,7 +1503,8 @@
     "schwester_ids": [],
     "schwester_id": null,
     "schwester_titel": null,
-    "schwester_gruppen": []
+    "schwester_gruppen": [],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 24,
@@ -1547,7 +1570,8 @@
       [
         25
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 25,
@@ -1614,7 +1638,8 @@
       [
         24
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 26,
@@ -1680,7 +1705,8 @@
       [
         27
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 27,
@@ -1748,7 +1774,8 @@
       [
         26
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 28,
@@ -1807,7 +1834,8 @@
     "schwester_ids": [],
     "schwester_id": null,
     "schwester_titel": null,
-    "schwester_gruppen": []
+    "schwester_gruppen": [],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 29,
@@ -1875,7 +1903,8 @@
       [
         30
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 30,
@@ -1942,7 +1971,8 @@
       [
         29
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 31,
@@ -2010,7 +2040,8 @@
         32,
         33
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 32,
@@ -2079,7 +2110,8 @@
         31,
         33
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 33,
@@ -2148,7 +2180,8 @@
         31,
         32
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 34,
@@ -2214,7 +2247,8 @@
       [
         35
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 35,
@@ -2282,7 +2316,8 @@
       [
         34
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 36,
@@ -2349,7 +2384,8 @@
       [
         37
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 37,
@@ -2417,7 +2453,8 @@
       [
         36
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 38,
@@ -2485,7 +2522,8 @@
       [
         39
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 39,
@@ -2553,7 +2591,8 @@
       [
         38
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 40,
@@ -2615,7 +2654,8 @@
     "schwester_ids": [],
     "schwester_id": null,
     "schwester_titel": null,
-    "schwester_gruppen": []
+    "schwester_gruppen": [],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 41,
@@ -2682,7 +2722,8 @@
       [
         42
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 42,
@@ -2750,7 +2791,8 @@
       [
         41
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 43,
@@ -2820,7 +2862,8 @@
         44,
         45
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 44,
@@ -2890,7 +2933,8 @@
         43,
         45
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 45,
@@ -2959,7 +3003,8 @@
         43,
         44
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 46,
@@ -3023,7 +3068,8 @@
       [
         47
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 47,
@@ -3090,7 +3136,8 @@
       [
         46
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 48,
@@ -3159,7 +3206,8 @@
       [
         49
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 49,
@@ -3226,7 +3274,8 @@
       [
         48
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 50,
@@ -3287,7 +3336,8 @@
     "schwester_ids": [],
     "schwester_id": null,
     "schwester_titel": null,
-    "schwester_gruppen": []
+    "schwester_gruppen": [],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 51,
@@ -3354,7 +3404,8 @@
       [
         52
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 52,
@@ -3422,7 +3473,8 @@
       [
         51
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 53,
@@ -3489,7 +3541,8 @@
       [
         54
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 54,
@@ -3556,7 +3609,8 @@
       [
         53
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 55,
@@ -3617,7 +3671,8 @@
     "schwester_ids": [],
     "schwester_id": null,
     "schwester_titel": null,
-    "schwester_gruppen": []
+    "schwester_gruppen": [],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 56,
@@ -3685,7 +3740,8 @@
       [
         57
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 57,
@@ -3753,7 +3809,8 @@
       [
         56
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 58,
@@ -3815,7 +3872,8 @@
     "schwester_ids": [],
     "schwester_id": null,
     "schwester_titel": null,
-    "schwester_gruppen": []
+    "schwester_gruppen": [],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 59,
@@ -3884,7 +3942,8 @@
       [
         60
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 60,
@@ -3952,7 +4011,8 @@
       [
         59
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 61,
@@ -4018,7 +4078,8 @@
       [
         62
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 62,
@@ -4084,7 +4145,8 @@
       [
         61
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 63,
@@ -4148,7 +4210,8 @@
       [
         64
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 64,
@@ -4213,7 +4276,8 @@
       [
         63
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 65,
@@ -4282,7 +4346,8 @@
       [
         66
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 66,
@@ -4350,7 +4415,8 @@
       [
         65
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 67,
@@ -4411,7 +4477,8 @@
     "schwester_ids": [],
     "schwester_id": null,
     "schwester_titel": null,
-    "schwester_gruppen": []
+    "schwester_gruppen": [],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 68,
@@ -4477,7 +4544,8 @@
       [
         69
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 69,
@@ -4547,7 +4615,8 @@
       [
         68
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 70,
@@ -4616,7 +4685,8 @@
       [
         71
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 71,
@@ -4684,7 +4754,8 @@
       [
         70
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 72,
@@ -4747,7 +4818,8 @@
     "schwester_ids": [],
     "schwester_id": null,
     "schwester_titel": null,
-    "schwester_gruppen": []
+    "schwester_gruppen": [],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 73,
@@ -4812,7 +4884,8 @@
       [
         74
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 74,
@@ -4879,7 +4952,8 @@
       [
         73
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 75,
@@ -4947,7 +5021,8 @@
       [
         76
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 76,
@@ -5016,7 +5091,8 @@
       [
         75
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 77,
@@ -5083,7 +5159,8 @@
       [
         78
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 78,
@@ -5152,7 +5229,8 @@
       [
         77
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 79,
@@ -5219,7 +5297,8 @@
       [
         80
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 80,
@@ -5286,7 +5365,8 @@
       [
         79
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 81,
@@ -5358,7 +5438,8 @@
         160,
         161
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 82,
@@ -5424,7 +5505,8 @@
       [
         83
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 83,
@@ -5490,7 +5572,8 @@
       [
         82
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 84,
@@ -5550,7 +5633,8 @@
     "schwester_ids": [],
     "schwester_id": null,
     "schwester_titel": null,
-    "schwester_gruppen": []
+    "schwester_gruppen": [],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 85,
@@ -5616,7 +5700,8 @@
       [
         86
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 86,
@@ -5682,7 +5767,8 @@
       [
         85
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 87,
@@ -5752,7 +5838,8 @@
       [
         13
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 88,
@@ -5814,7 +5901,8 @@
     "schwester_ids": [],
     "schwester_id": null,
     "schwester_titel": null,
-    "schwester_gruppen": []
+    "schwester_gruppen": [],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 89,
@@ -5881,7 +5969,8 @@
       [
         90
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 90,
@@ -5950,7 +6039,8 @@
       [
         89
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 91,
@@ -6011,7 +6101,8 @@
     "schwester_ids": [],
     "schwester_id": null,
     "schwester_titel": null,
-    "schwester_gruppen": []
+    "schwester_gruppen": [],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 92,
@@ -6077,7 +6168,8 @@
       [
         93
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 93,
@@ -6141,7 +6233,8 @@
       [
         92
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 94,
@@ -6202,7 +6295,8 @@
     "schwester_ids": [],
     "schwester_id": null,
     "schwester_titel": null,
-    "schwester_gruppen": []
+    "schwester_gruppen": [],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 95,
@@ -6262,7 +6356,8 @@
     "schwester_ids": [],
     "schwester_id": null,
     "schwester_titel": null,
-    "schwester_gruppen": []
+    "schwester_gruppen": [],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 96,
@@ -6331,7 +6426,8 @@
         108,
         97
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 97,
@@ -6401,7 +6497,8 @@
         108,
         96
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 98,
@@ -6464,7 +6561,8 @@
     "schwester_ids": [],
     "schwester_id": null,
     "schwester_titel": null,
-    "schwester_gruppen": []
+    "schwester_gruppen": [],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 99,
@@ -6530,7 +6628,8 @@
       [
         100
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 100,
@@ -6598,7 +6697,8 @@
       [
         99
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 101,
@@ -6667,7 +6767,8 @@
       [
         102
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 102,
@@ -6736,7 +6837,8 @@
       [
         101
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 103,
@@ -6806,7 +6908,8 @@
         105,
         106
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 104,
@@ -6875,7 +6978,8 @@
         105,
         106
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 105,
@@ -6945,7 +7049,8 @@
         104,
         106
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 106,
@@ -7015,7 +7120,8 @@
         104,
         105
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 107,
@@ -7076,7 +7182,8 @@
     "schwester_ids": [],
     "schwester_id": null,
     "schwester_titel": null,
-    "schwester_gruppen": []
+    "schwester_gruppen": [],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 108,
@@ -7142,7 +7249,8 @@
         96,
         97
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 109,
@@ -7207,7 +7315,8 @@
       [
         110
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 110,
@@ -7273,7 +7382,8 @@
       [
         109
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 111,
@@ -7341,7 +7451,8 @@
       [
         112
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 112,
@@ -7409,7 +7520,8 @@
       [
         111
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 113,
@@ -7471,7 +7583,8 @@
     "schwester_ids": [],
     "schwester_id": null,
     "schwester_titel": null,
-    "schwester_gruppen": []
+    "schwester_gruppen": [],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 114,
@@ -7538,7 +7651,8 @@
       [
         115
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 115,
@@ -7605,7 +7719,8 @@
       [
         114
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 116,
@@ -7673,7 +7788,8 @@
       [
         117
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 117,
@@ -7740,7 +7856,8 @@
       [
         116
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 118,
@@ -7801,7 +7918,8 @@
     "schwester_ids": [],
     "schwester_id": null,
     "schwester_titel": null,
-    "schwester_gruppen": []
+    "schwester_gruppen": [],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 119,
@@ -7862,7 +7980,8 @@
     "schwester_ids": [],
     "schwester_id": null,
     "schwester_titel": null,
-    "schwester_gruppen": []
+    "schwester_gruppen": [],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 120,
@@ -7921,7 +8040,8 @@
     "schwester_ids": [],
     "schwester_id": null,
     "schwester_titel": null,
-    "schwester_gruppen": []
+    "schwester_gruppen": [],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 121,
@@ -7987,7 +8107,8 @@
       [
         122
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 122,
@@ -8054,7 +8175,8 @@
       [
         121
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 123,
@@ -8115,7 +8237,8 @@
     "schwester_ids": [],
     "schwester_id": null,
     "schwester_titel": null,
-    "schwester_gruppen": []
+    "schwester_gruppen": [],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 124,
@@ -8182,7 +8305,8 @@
       [
         125
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 125,
@@ -8251,7 +8375,8 @@
       [
         124
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 126,
@@ -8321,7 +8446,8 @@
       [
         127
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 127,
@@ -8389,7 +8515,8 @@
       [
         126
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 128,
@@ -8449,7 +8576,8 @@
     "schwester_ids": [],
     "schwester_id": null,
     "schwester_titel": null,
-    "schwester_gruppen": []
+    "schwester_gruppen": [],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 129,
@@ -8516,7 +8644,8 @@
       [
         130
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 130,
@@ -8583,7 +8712,8 @@
       [
         129
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 131,
@@ -8651,7 +8781,8 @@
       [
         132
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 132,
@@ -8718,7 +8849,8 @@
       [
         131
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 133,
@@ -8781,7 +8913,8 @@
       [
         134
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 134,
@@ -8845,7 +8978,8 @@
       [
         133
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 135,
@@ -8912,7 +9046,8 @@
       [
         136
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 136,
@@ -8979,7 +9114,8 @@
       [
         135
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 137,
@@ -9040,7 +9176,8 @@
     "schwester_ids": [],
     "schwester_id": null,
     "schwester_titel": null,
-    "schwester_gruppen": []
+    "schwester_gruppen": [],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 138,
@@ -9107,7 +9244,8 @@
       [
         139
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 139,
@@ -9175,7 +9313,8 @@
       [
         138
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 140,
@@ -9243,7 +9382,8 @@
         142,
         141
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 141,
@@ -9310,7 +9450,8 @@
         142,
         140
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 142,
@@ -9374,7 +9515,8 @@
         141,
         140
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 143,
@@ -9440,7 +9582,8 @@
       [
         144
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 144,
@@ -9507,7 +9650,8 @@
       [
         143
       ]
-    ]
+    ],
+    "erstellt_am": "2026-05-16"
   },
   {
     "id": 145,
@@ -9577,7 +9721,8 @@
       [
         146
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 146,
@@ -9644,7 +9789,8 @@
       [
         145
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 147,
@@ -9706,7 +9852,8 @@
     "schwester_ids": [],
     "schwester_id": null,
     "schwester_titel": null,
-    "schwester_gruppen": []
+    "schwester_gruppen": [],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 148,
@@ -9769,7 +9916,8 @@
     "original_coaching_fokus": "",
     "ist_gecrawlt": false,
     "quell_kategorie": "",
-    "schwester_gruppen": []
+    "schwester_gruppen": [],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 149,
@@ -9834,7 +9982,8 @@
         150,
         152
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 150,
@@ -9902,7 +10051,8 @@
         149,
         152
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 151,
@@ -9970,7 +10120,8 @@
         157,
         153
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 152,
@@ -10039,7 +10190,8 @@
         149,
         150
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 153,
@@ -10107,7 +10259,8 @@
         151,
         157
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 154,
@@ -10175,7 +10328,8 @@
       [
         155
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 155,
@@ -10244,7 +10398,8 @@
       [
         154
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 156,
@@ -10303,7 +10458,8 @@
     "original_coaching_fokus": "",
     "ist_gecrawlt": false,
     "quell_kategorie": "",
-    "schwester_gruppen": []
+    "schwester_gruppen": [],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 157,
@@ -10372,7 +10528,8 @@
         151,
         153
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 158,
@@ -10444,7 +10601,8 @@
         160,
         161
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 159,
@@ -10518,7 +10676,8 @@
         160,
         161
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 160,
@@ -10591,7 +10750,8 @@
         159,
         161
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 161,
@@ -10665,7 +10825,8 @@
         159,
         160
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 162,
@@ -10734,7 +10895,8 @@
         163,
         164
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 163,
@@ -10803,7 +10965,8 @@
         162,
         164
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 164,
@@ -10874,7 +11037,8 @@
         162,
         163
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 165,
@@ -10941,7 +11105,8 @@
       [
         166
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 166,
@@ -11007,7 +11172,8 @@
       [
         165
       ]
-    ]
+    ],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 167,
@@ -11070,7 +11236,8 @@
     "schwester_ids": [],
     "schwester_id": null,
     "schwester_titel": null,
-    "schwester_gruppen": []
+    "schwester_gruppen": [],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 168,
@@ -11136,7 +11303,8 @@
     "schwester_ids": [],
     "schwester_id": null,
     "schwester_titel": null,
-    "schwester_gruppen": []
+    "schwester_gruppen": [],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 169,
@@ -11202,7 +11370,8 @@
     "schwester_ids": [],
     "schwester_id": null,
     "schwester_titel": null,
-    "schwester_gruppen": []
+    "schwester_gruppen": [],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 170,
@@ -11269,7 +11438,8 @@
       171
     ],
     "schwester_id": 171,
-    "schwester_titel": "Sprinten, dribbeln, Tor erzielen, gewinnen. \n"
+    "schwester_titel": "Sprinten, dribbeln, Tor erzielen, gewinnen. \n",
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 171,
@@ -11336,7 +11506,8 @@
       170
     ],
     "schwester_id": 170,
-    "schwester_titel": "SPRINTEN, DRIBBELN, BALL ABLEGEN, GEWINNEN.\n"
+    "schwester_titel": "SPRINTEN, DRIBBELN, BALL ABLEGEN, GEWINNEN.\n",
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 172,
@@ -11404,7 +11575,8 @@
       173
     ],
     "schwester_id": 173,
-    "schwester_titel": "GESTAFFELTER TORSCHUSS: TREFFEN UND AUFRÜCKEN"
+    "schwester_titel": "GESTAFFELTER TORSCHUSS: TREFFEN UND AUFRÜCKEN",
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 173,
@@ -11470,7 +11642,8 @@
       172
     ],
     "schwester_id": 172,
-    "schwester_titel": "RUNDLAUF: DRIBBELN, ZIELEN, SCHIESSEN, SPRINTEN. "
+    "schwester_titel": "RUNDLAUF: DRIBBELN, ZIELEN, SCHIESSEN, SPRINTEN. ",
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 174,
@@ -11531,7 +11704,8 @@
     "schwester_gruppen": [],
     "schwester_ids": [],
     "schwester_id": null,
-    "schwester_titel": null
+    "schwester_titel": null,
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 175,
@@ -11597,7 +11771,8 @@
     "schwester_ids": [],
     "schwester_id": null,
     "schwester_titel": null,
-    "schwester_gruppen": []
+    "schwester_gruppen": [],
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 176,
@@ -11668,7 +11843,8 @@
       177
     ],
     "schwester_id": 177,
-    "schwester_titel": "ORGANISATION"
+    "schwester_titel": "ORGANISATION",
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 177,
@@ -11736,7 +11912,8 @@
       176
     ],
     "schwester_id": 176,
-    "schwester_titel": "SCHWEINCHEN IN DER MITTE MIT GEGENPRESSING"
+    "schwester_titel": "SCHWEINCHEN IN DER MITTE MIT GEGENPRESSING",
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 178,
@@ -11799,7 +11976,8 @@
     "schwester_gruppen": [],
     "schwester_ids": [],
     "schwester_id": null,
-    "schwester_titel": null
+    "schwester_titel": null,
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 179,
@@ -11867,7 +12045,8 @@
       180
     ],
     "schwester_id": 180,
-    "schwester_titel": "Drei gewinnt mit Ball"
+    "schwester_titel": "Drei gewinnt mit Ball",
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 180,
@@ -11937,7 +12116,8 @@
       179
     ],
     "schwester_id": 179,
-    "schwester_titel": "Drei gewinnt"
+    "schwester_titel": "Drei gewinnt",
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 182,
@@ -12006,7 +12186,8 @@
       181
     ],
     "schwester_id": 181,
-    "schwester_titel": "7 GEGEN 5 - MIT ZIELPÄSSEN ZUM SIEG"
+    "schwester_titel": "7 GEGEN 5 - MIT ZIELPÄSSEN ZUM SIEG",
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 183,
@@ -12070,7 +12251,8 @@
     "schwester_gruppen": [],
     "schwester_ids": [],
     "schwester_id": null,
-    "schwester_titel": null
+    "schwester_titel": null,
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 181,
@@ -12138,7 +12320,8 @@
       182
     ],
     "schwester_id": 182,
-    "schwester_titel": "BALL ABSCHIRMEN IM VIERECK"
+    "schwester_titel": "BALL ABSCHIRMEN IM VIERECK",
+    "erstellt_am": "2026-03-26"
   },
   {
     "id": 207,
@@ -12199,6 +12382,7 @@
     "schwester_gruppen": [],
     "schwester_ids": [],
     "schwester_id": null,
-    "schwester_titel": null
+    "schwester_titel": null,
+    "erstellt_am": "2026-08-31"
   }
 ]

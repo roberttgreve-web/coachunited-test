@@ -46,12 +46,6 @@
       },
       {
         "@type": "WebPage",
-        "url": "https://coachunited.de/wissen",
-        "name": "Wissen",
-        "isPartOf": { "@id": "https://coachunited.de/#website" }
-      },
-      {
-        "@type": "WebPage",
         "url": "https://coachunited.de/whatsapp-info",
         "name": "Nichts verpassen",
         "isPartOf": { "@id": "https://coachunited.de/#website" }
@@ -510,6 +504,31 @@
       line-height: 1.3;
       letter-spacing: -0.01em;
     }
+    .hs-tile-desc {
+      font-size: 13.5px;
+      line-height: 1.5;
+      color: #6B7390;
+      margin-top: 6px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .hs-tile-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin-top: 10px;
+    }
+    .hs-tag {
+      font-size: 10px;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 999px;
+      letter-spacing: 0.02em;
+    }
+    .hs-tag--jugend { background: #EAF1FF; color: #1E6BFF; }
+    .hs-tag--skill  { background: #FFEDE6; color: #C23A0E; }
 
     /* ══════════════════════════════════════════════
        Nur Mobil (< 768px)
@@ -528,7 +547,7 @@
          Die erste Kachel steht ganz im Bild, die zweite wird angeschnitten –
          das zeigt ohne Pfeil, dass es weitergeht. Die Pfeile bleiben eine
          Desktop-Sache, hier wischt man. */
-      #wissen .hs-tiles {
+      #neue-uebungen .hs-tiles {
         display: flex;
         gap: 12px;
         overflow-x: auto;
@@ -540,8 +559,8 @@
         padding-inline: 22px;
         scroll-padding-inline: 22px;
       }
-      #wissen .hs-tiles::-webkit-scrollbar { display: none; }
-      #wissen .hs-tile {
+      #neue-uebungen .hs-tiles::-webkit-scrollbar { display: none; }
+      #neue-uebungen .hs-tile {
         flex: 0 0 82%;
         scroll-snap-align: start;
       }
@@ -843,14 +862,47 @@
 
     <main class="home-sections">
 
-      <!-- ── Übungen (mit Merkliste) ── -->
-      <section class="hs hs--hell" id="uebungen">
+      <!-- ── Neueste Übungen ── -->
+      <section class="hs hs--hell" id="neue-uebungen">
         <div class="hs-inner">
           <span class="hs-label">Übungen</span>
-          <h2 class="hs-title"><span class="hs-count"><!--cu:count-->177<!--/cu:count--></span> Übungen für dein Training.</h2>
+          <h2 class="hs-title">Jede Woche neue Trainingsübungen</h2>
+          <p class="hs-text">Unsere Bibliothek wächst. Du findest hier regelmäßig aktuelle neue Übungen — jede Woche kommen mehr dazu, direkt aus dem Trainingsalltag ehrenamtlicher Trainer*innen.</p>
+          <div class="hs-carousel">
+            <div class="hs-tiles" id="neueste-uebungen-band">
+<!--cu:neueste-uebungen-->
+<!--/cu:neueste-uebungen-->
+            </div>
+            <button class="hs-arrow hs-arrow--zurueck" id="neueste-uebungen-pfeil-zurueck" type="button" aria-label="Vorherige Übungen anzeigen" hidden>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                <path d="M13 4l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <button class="hs-arrow hs-arrow--vor" id="neueste-uebungen-pfeil" type="button" aria-label="Weitere Übungen anzeigen">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                <path d="M7 4l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </div>
+          <div class="hs-actions">
+            <a class="hs-cta" href="/uebungen">
+              Alle Übungen ansehen
+              <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Übungen filtern (mit Merkliste) ── -->
+      <section class="hs hs--dunkel" id="uebungen">
+        <div class="hs-inner">
+          <span class="hs-label">Übungen</span>
+          <h2 class="hs-title"><span class="hs-count"><!--cu:count-->177<!--/cu:count--></span> Übungen einfach filtern</h2>
           <div class="hs-split">
             <div>
-              <p class="hs-text">Von der G- bis zur D-Jugend findest du hier Übungen für jede Trainingsphase. Sie stammen aus dem Trainingsalltag ehrenamtlicher Trainer*innen und sind auf dem Platz erprobt. Jede Woche kommen neue dazu.</p>
+              <p class="hs-text">Von der G- bis zur D-Jugend, nach Trainingsphase oder Skill: Finde in Sekunden genau das Richtige für dein nächstes Training — erprobt auf dem Platz von ehrenamtlichen Trainer*innen.</p>
               <p class="hs-text hs-nur-desktop">Was dir gefällt, speicherst du in deiner <a class="hs-textlink" href="/merkliste">Merkliste</a>.</p>
               <div class="hs-actions">
                 <a class="hs-cta" href="/uebungen">
@@ -862,105 +914,6 @@
               </div>
             </div>
             <img class="hs-foto" src="/images/uebungen-spiel.webp" alt="Kinder im Fußballspiel auf dem Kunstrasenplatz" width="960" height="640" loading="lazy" decoding="async">
-          </div>
-        </div>
-      </section>
-
-      <!-- ── Wissen ── -->
-      <section class="hs hs--dunkel" id="wissen">
-        <div class="hs-inner">
-          <span class="hs-label">Wissen</span>
-          <h2 class="hs-title">Das A-Z des Kinderfußballs.</h2>
-          <p class="hs-text">Alles, was wir gerne gewusst hätten, bevor wir als ehrenamtliche Trainer*innen angefangen haben. Von Elternarbeit über Umbaupausen bis zur Frage, ab wann Kopfbälle überhaupt Sinn ergeben.</p>
-          <div class="hs-carousel">
-            <div class="hs-tiles" id="artikel-band">
-<!--cu:artikel-->
-            <a class="hs-tile" href="/artikel/einwurf-im-kinderfussball-ab-wann-macht-spezielles-training-sinn">
-              <img src="/images/artikel/thumbs/chatgpt-image-jun-29--2026--09_14_25-am.webp" alt="" width="480" height="320" loading="lazy" decoding="async">
-              <div class="hs-tile-body">
-                <p class="hs-tile-title">Einwurf im Kinderfußball: Ab wann macht spezielles Training Sinn?</p>
-              </div>
-            </a>
-            <a class="hs-tile" href="/artikel/der-fussball-ferienkalender">
-              <img src="/images/artikel/thumbs/fussball-ferienkalender-kind-dribbling-garten.webp" alt="" width="480" height="320" loading="lazy" decoding="async">
-              <div class="hs-tile-body">
-                <p class="hs-tile-title">Der Fußball-Ferienkalender</p>
-              </div>
-            </a>
-            <a class="hs-tile" href="/artikel/ideen-fur-ein-tolles-sommerturnier">
-              <img src="/images/artikel/thumbs/chatgpt-image-jun-14--2026--01_52_25-pm.webp" alt="" width="480" height="320" loading="lazy" decoding="async">
-              <div class="hs-tile-body">
-                <p class="hs-tile-title">Ideen für ein tolles Sommerturnier</p>
-              </div>
-            </a>
-            <a class="hs-tile" href="/artikel/dehnen-im-kinderfusball-ab-wann-macht-es-sinn">
-              <img src="/images/artikel/thumbs/ChatGPT-Image-Jan-26-2026-09_53_36-AM.webp" alt="" width="480" height="320" loading="lazy" decoding="async">
-              <div class="hs-tile-body">
-                <p class="hs-tile-title">Dehnen im Kinderfußball: Ab wann macht es Sinn?</p>
-              </div>
-            </a>
-            <a class="hs-tile" href="/artikel/ideen-fur-ein-tolles-hallenturnier">
-              <img src="/images/artikel/thumbs/ChatGPT-Image-Nov-7-2025-03_57_56-PM.webp" alt="" width="480" height="320" loading="lazy" decoding="async">
-              <div class="hs-tile-body">
-                <p class="hs-tile-title">Ideen für ein tolles Hallenturnier</p>
-              </div>
-            </a>
-            <a class="hs-tile" href="/artikel/rituale-im-kinderfusball-sicherheit-struktur-und-teamgeist-schaffen">
-              <img src="/images/artikel/thumbs/ChatGPT-Image-Nov-5-2025-05_34_39-PM1.webp" alt="" width="480" height="320" loading="lazy" decoding="async">
-              <div class="hs-tile-body">
-                <p class="hs-tile-title">Rituale im Kinderfußball – Sicherheit, Struktur und Teamgeist schaffen</p>
-              </div>
-            </a>
-            <a class="hs-tile" href="/artikel/kopfballe-im-kinderfusball-was-du-wissen-solltest">
-              <img src="/images/artikel/thumbs/ChatGPT-Image-Sep-23-2025-10_30_21-AM.webp" alt="" width="480" height="320" loading="lazy" decoding="async">
-              <div class="hs-tile-body">
-                <p class="hs-tile-title">Kopfbälle im Kinderfußball – was du wissen solltest</p>
-              </div>
-            </a>
-            <a class="hs-tile" href="/artikel/kreatives-training-ausrustung-jenseits-der-standardausstattung">
-              <img src="/images/artikel/thumbs/ChatGPT-Image-Sep-15-2025-04_28_39-PM.webp" alt="" width="480" height="320" loading="lazy" decoding="async">
-              <div class="hs-tile-body">
-                <p class="hs-tile-title">Kreatives Training: Ausrüstung jenseits des Basis-Sets</p>
-              </div>
-            </a>
-            <a class="hs-tile" href="/artikel/kinderfussball-tipps-umbaupausen-nutzen">
-              <img src="/images/artikel/thumbs/alliance-football-club-xSAQJEgdQ3E-unsplash-scaled.webp" alt="" width="480" height="320" loading="lazy" decoding="async">
-              <div class="hs-tile-body">
-                <p class="hs-tile-title">Umbaupausen gut nutzen: So vermeidest du Leerlauf im Kinderfußball</p>
-              </div>
-            </a>
-            <a class="hs-tile" href="/artikel/elternarbeit-kinderfussball-tipps">
-              <img src="/images/artikel/thumbs/hannah-busing-Zyx1bK9mqmA-unsplash-scaled.webp" alt="" width="480" height="320" loading="lazy" decoding="async">
-              <div class="hs-tile-body">
-                <p class="hs-tile-title">Elternarbeit im Kinderfußball: Tipps für eine gute Zusammenarbeit</p>
-              </div>
-            </a>
-            <a class="hs-tile" href="/artikel/training-im-kinderfussball-wichtige-grundlagen-fur-trainerinnen">
-              <img src="/images/artikel/thumbs/debra-brewster-AvGIpReokFM-unsplash-scaled.webp" alt="" width="480" height="320" loading="lazy" decoding="async">
-              <div class="hs-tile-body">
-                <p class="hs-tile-title">Training im Kinderfußball: Wichtige Grundlagen für Trainer*innen</p>
-              </div>
-            </a>
-<!--/cu:artikel-->
-            </div>
-            <button class="hs-arrow hs-arrow--zurueck" id="artikel-pfeil-zurueck" type="button" aria-label="Vorherige Artikel anzeigen" hidden>
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
-                <path d="M13 4l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </button>
-            <button class="hs-arrow hs-arrow--vor" id="artikel-pfeil" type="button" aria-label="Weitere Artikel anzeigen">
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
-                <path d="M7 4l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </button>
-          </div>
-          <div class="hs-actions">
-            <a class="hs-cta" href="/wissen">
-              Alle Artikel lesen
-              <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </a>
           </div>
         </div>
       </section>
@@ -1069,7 +1022,6 @@
       <a href="/uebungen/skill" class="drawer-link">&#220;bungen nach Skill</a>
       <a href="/uebungen/phase" class="drawer-link">&#220;bungen nach Phase</a>
       <div class="drawer-divider"></div>
-      <a href="/wissen" class="drawer-link">Wissen</a>
       <a href="/uebung-einreichen" class="drawer-link">&#220;bung einreichen</a>
       <a href="/ueber-uns" class="drawer-link">&#220;ber uns</a>
       <a href="/umgang-mit-ki" class="drawer-link">Umgang mit KI</a>
@@ -1204,12 +1156,12 @@
       }
     });
 
-    // Artikel-Band: Pfeil zum Weiterblättern. Der Pfeil selbst wird per CSS nur
-    // ab 768px eingeblendet, mobil bleiben die Kacheln gestapelt.
+    // Neueste-Übungen-Band: Pfeil zum Weiterblättern. Der Pfeil selbst wird per
+    // CSS nur ab 768px eingeblendet, mobil bleiben die Kacheln gestapelt.
     (function () {
-      const band    = document.getElementById('artikel-band');
-      const vor     = document.getElementById('artikel-pfeil');
-      const zurueck = document.getElementById('artikel-pfeil-zurueck');
+      const band    = document.getElementById('neueste-uebungen-band');
+      const vor     = document.getElementById('neueste-uebungen-pfeil');
+      const zurueck = document.getElementById('neueste-uebungen-pfeil-zurueck');
       if (!band || !vor || !zurueck) return;
 
       function schrittweite() {

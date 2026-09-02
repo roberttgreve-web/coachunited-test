@@ -15,7 +15,9 @@ const STATIC_PAGES = [
   { loc: '/',                              changefreq: 'daily',   priority: '1.0' },
   { loc: '/uebungen',                      changefreq: 'weekly',  priority: '0.9' },
   { loc: '/einheiten',                     changefreq: 'weekly',  priority: '0.8' },
-  { loc: '/wissen',                        changefreq: 'weekly',  priority: '0.7' },
+  // /wissen ist entfernt (01.09.2026): Der Bereich wurde aus Navigation,
+  // Startseite und Sitemap genommen, bleibt aber im Backend/als Daten
+  // erhalten - falls er zurueckkommt, hier wieder ergaenzen.
   // /einheit-generator ist bewusst NICHT gelistet: Ohne ?jugend=-Parameter
   // leitet die Seite per window.location.href auf /home weiter (siehe
   // einheit-generator.html) - genau die parameterlose URL waere das, was
@@ -63,18 +65,18 @@ function readJson(p) {
 function main() {
   const exercises = readJson(exercisesPath).filter(e => e.status === 'veroeffentlicht' && e.url_slug);
   const einheiten = readJson(einheitenPath).filter(e => e.url_slug);
-  const articles  = readJson(articlesPath).filter(a => a.status === 'veroeffentlicht' && a.url_slug);
+  // Artikel/Wissen sind seit 01.09.2026 bewusst nicht mehr in der Sitemap
+  // (s. o.) - Daten bleiben in articles.json, nur nicht mehr hier gelistet.
 
   const entries = [
     ...STATIC_PAGES,
-    ...exercises.map(e => ({ loc: `/uebung/${e.url_slug}`, changefreq: 'monthly', priority: '0.6' })),
-    ...einheiten.map(e => ({ loc: `/einheit/${e.url_slug}`, changefreq: 'monthly', priority: '0.6' })),
-    ...articles.map(a => ({
-      loc: `/artikel/${a.url_slug}`,
+    ...exercises.map(e => ({
+      loc: `/uebung/${e.url_slug}`,
       changefreq: 'monthly',
-      priority: '0.5',
-      lastmod: ISO_DATE.test(a.erstellt_am || '') ? a.erstellt_am : null,
+      priority: '0.6',
+      lastmod: ISO_DATE.test(e.erstellt_am || '') ? e.erstellt_am : null,
     })),
+    ...einheiten.map(e => ({ loc: `/einheit/${e.url_slug}`, changefreq: 'monthly', priority: '0.6' })),
   ];
 
   const body = entries.map(e => `  <url>
@@ -87,7 +89,7 @@ function main() {
   const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${body}\n</urlset>\n`;
 
   fs.writeFileSync(outputPath, xml, 'utf-8');
-  console.log(`✓ sitemap.xml generiert: ${entries.length} URLs (${exercises.length} Übungen, ${einheiten.length} Einheiten, ${articles.length} Artikel).`);
+  console.log(`✓ sitemap.xml generiert: ${entries.length} URLs (${exercises.length} Übungen, ${einheiten.length} Einheiten).`);
 }
 
 main();

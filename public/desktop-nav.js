@@ -88,7 +88,6 @@ function istDesktopBreite() {
       </div>
       <a href="/einheiten"     class="desktop-topnav-link ${isActive('/einheiten')}">Einheit erhalten</a>
       <a href="/merkliste"     class="desktop-topnav-link ${isActive('/merkliste')}">Merkliste</a>
-      <a href="/wissen"        class="desktop-topnav-link ${isActive('/wissen')}">Wissen</a>
       <!-- Nur in der Desktop-Topnav. Die mobile Bottom-Nav hat vier Plaetze
            und die sind mit den Arbeitsseiten belegt; dort bleibt "Über uns"
            im Burger-Menue. -->
@@ -259,7 +258,6 @@ function restructureDrawerNav() {
   var drawer = document.getElementById('drawer');
   if (!drawer || drawer.dataset.cuGrouped) return;
 
-  var wissen = drawer.querySelector('a[href="/wissen"]');
   var einreichen = drawer.querySelector('a[href="/uebung-einreichen"]');
   var ueberUns = drawer.querySelector('a[href="/ueber-uns"]');
   var umgangMitKi = drawer.querySelector('a[href="/umgang-mit-ki"]');
@@ -269,7 +267,7 @@ function restructureDrawerNav() {
   var datenschutz = drawer.querySelector('a[href="/datenschutz"]');
 
   // Bei abweichendem Markup lieber unveraendert lassen als kaputtgehen.
-  if (!(wissen && einreichen && ueberUns && umgangMitKi && spenden && supporterAbmelden && impressum && datenschutz)) return;
+  if (!(einreichen && ueberUns && umgangMitKi && spenden && supporterAbmelden && impressum && datenschutz)) return;
   drawer.dataset.cuGrouped = '1';
 
   var style = document.createElement('style');
@@ -301,8 +299,7 @@ function restructureDrawerNav() {
     return s;
   }
 
-  drawer.appendChild(label('Wissen & Mitmachen'));
-  drawer.appendChild(wissen);
+  drawer.appendChild(label('Mitmachen'));
   drawer.appendChild(einreichen);
 
   drawer.appendChild(label('Verein'));
@@ -357,10 +354,10 @@ function trackWhatsAppClicks() {
 // Sache wirken wie Spam.
 function injectWhatsAppAbbinder() {
   // "/" und "/home" bewusst mit ausgeschlossen: die Startseite hat den
-  // Kanal-Hinweis fest zwischen "Wissen" und "Übung einreichen" eingebaut
-  // (siehe home.html), damit die Farbreihenfolge der Startseiten-Sektionen
-  // stimmt - ein zusaetzlicher Abbinder am Seitenende waere dort die dritte
-  // Einblendung derselben Sache auf einer Seite.
+  // Kanal-Hinweis fest zwischen den Übungs-Sektionen und "Übung einreichen"
+  // eingebaut (siehe home.html), damit die Farbreihenfolge der Startseiten-
+  // Sektionen stimmt - ein zusaetzlicher Abbinder am Seitenende waere dort
+  // die dritte Einblendung derselben Sache auf einer Seite.
   var AUSGESCHLOSSEN = ['/', '/home', '/impressum', '/datenschutz', '/whatsapp-info', '/uebung-einreichen'];
   var pfad = window.location.pathname.replace(/\/$/, '') || '/';
   if (AUSGESCHLOSSEN.indexOf(pfad) !== -1) return;

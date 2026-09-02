@@ -126,6 +126,9 @@ async function main() {
     const grafikAlt    = ex.grafik_alt_text || displayTitle;
     const grafikTitle  = ex.grafik_title || displayTitle;
     const phaseUrl     = PHASE_URL_MAP[ex.trainingsphase];
+    const erstelltAmHtml = ex.erstellt_am
+      ? `Erstellt am ${new Date(ex.erstellt_am + 'T00:00:00').toLocaleDateString('de-DE', { day: 'numeric', month: 'long', year: 'numeric' })}`
+      : '';
 
     // ── FAQ-Schema (bereits vorher serverseitig) ──
     let faqSchema = '';
@@ -236,6 +239,7 @@ async function main() {
       .replace('<p id="aufbau"></p>', `<p id="aufbau">${esc(aufbau)}</p>`)
       .replace('<p id="durchfuehrung"></p>', `<p id="durchfuehrung">${esc(durchfuehrung)}</p>`)
       .replace('<div id="print-tiles"></div>', `<div id="print-tiles">${printTilesHtml}</div>`)
+      .replace('<p class="ex-created" id="ex-created"></p>', `<p class="ex-created" id="ex-created">${esc(erstelltAmHtml)}</p>`)
       .replace('<div class="section-block" id="sisters-block" style="display:none;">', sistersHtml ? '<div class="section-block" id="sisters-block">' : '<div class="section-block" id="sisters-block" style="display:none;">')
       .replace('<div id="sisters-list"></div>', `<div id="sisters-list">${sistersHtml}</div>`)
       .replace('<div class="section-block" id="category-links-block" style="display:none;">', categoryLinksHtml ? '<div class="section-block" id="category-links-block">' : '<div class="section-block" id="category-links-block" style="display:none;">')

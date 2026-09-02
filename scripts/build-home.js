@@ -14,6 +14,10 @@ const uebungsIndexPath = path.join(__dirname, '..', 'public', 'uebungen-index.js
 // waagerecht scrollbaren Band, die nicht sichtbaren laden per loading="lazy".
 const ARTIKEL_ANZAHL = 99;
 
+// Neueste-Uebungen-Band auf der Startseite: wie viele der zuletzt
+// veroeffentlichten Uebungen als Kachel gezeigt werden (Rest per Pfeil/Wischen).
+const NEUESTE_UEBUNGEN_ANZAHL = 12;
+
 const JUGENDEN = ['G-Jugend', 'F-Jugend', 'E-Jugend', 'D-Jugend'];
 const PHASEN   = ['Aufwärmen', 'Hauptteil', 'Spielformat'];
 
@@ -43,6 +47,18 @@ function ersetzeBlock(html, name, inhalt, datei = 'home.html') {
     throw new Error(`Marker cu:${name} fehlt oder ist vertauscht in ${datei}`);
   }
   return html.slice(0, i + start.length) + inhalt + html.slice(j);
+}
+
+/**
+ * Bild-URL einer Übung fürs Kachel-Grid. grafik_url sollte seit dem
+ * CoachPublisher-Fix (01.09.2026, resolve_and_upload_grafik) nie mehr
+ * Base64 sein – dieser Fallback ist nur ein Sicherheitsnetz, falls doch,
+ * damit kein riesiger Base64-String im img-src landet.
+ */
+function resolveUebungGrafik(ex) {
+  const raw = ex.grafik_url;
+  if (raw && !raw.startsWith('data:')) return raw;
+  return '/og-image.png';
 }
 
 /** Lokales WebP-Thumbnail, sonst das Originalbild aus foto_url. */
@@ -149,15 +165,29 @@ function main() {
     })
     .slice(0, ARTIKEL_ANZAHL);
 
-  const kacheln = artikel.map(a => `
-            <a class="hs-tile" href="/artikel/${esc(a.url_slug)}">
-              <img src="${esc(bildQuelle(a.foto_url))}" alt="" width="480" height="320" loading="lazy" decoding="async">
-              <div class="hs-tile-body">
-                <p class="hs-tile-title">${esc(a.titel)}</p>
-              </div>
-            </a>`).join('');
+  // ── Neueste-Übungen-Kacheln ──
+  // Sortierung: erstellt_am absteigend (neueste zuerst). Übungen ohne
+  // erstellt_am (sollte nach der Rückwirkend-Rekonstruktion nicht mehr
+  // vorkommen) fallen ans Ende, statt den Bau abzubrechen.
+  const neuesteUebungen = [...uebungen]
+    .sort((a, b) => String(b.erstellt_am || '').localeCompare(String(a.erstellt_am || '')))
+    .slice(0, NEUESTE_UEBUNGEN_ANZAHL);
 
-  html = ersetzeBlock(html, 'artikel', kacheln + '\n');
+  const uebungenKacheln = neuesteUebungen.map(e => {
+    const jugendTags = (e.jugend || []).map(j => `<span class="hs-tag hs-tag--jugend">${esc(j)}</span>`).join('');
+    const skillTags  = (e.skills || []).slice(0, 3).map(s => `<span class="hs-tag hs-tag--skill">${esc(s)}</span>`).join('');
+    return `
+            <a class="hs-tile" href="/uebung/${esc(e.url_slug)}">
+              <img src="${esc(resolveUebungGrafik(e))}" alt="" width="480" height="320" loading="lazy" decoding="async">
+              <div class="hs-tile-body">
+                <p class="hs-tile-title">${esc(e.titel)}</p>
+                <p class="hs-tile-desc">${esc(e.kurzbeschreibung || '')}</p>
+                <div class="hs-tile-tags">${jugendTags}${skillTags}</div>
+              </div>
+            </a>`;
+  }).join('');
+
+  html = ersetzeBlock(html, 'neueste-uebungen', uebungenKacheln + '\n');
 
   fs.writeFileSync(homePath, html, 'utf-8');
 
