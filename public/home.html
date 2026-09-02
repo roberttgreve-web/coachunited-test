@@ -490,15 +490,21 @@
       transform: translateY(-2px);
       box-shadow: 0 10px 26px rgba(0,0,0,0.18);
     }
+    .hs-tile-media { padding: 14px 14px 0; }
     .hs-tile img {
       width: 100%;
       height: auto;
       aspect-ratio: 3 / 2;
-      object-fit: cover;
+      object-fit: contain;
       display: block;
-      background: #E6E8EF;
+      background: #F5F7FB;
+      border-radius: 8px;
     }
-    .hs-tile-body { padding: 14px 16px 16px; }
+    .hs-tile-body {
+      padding: 14px 16px 16px;
+      margin-top: 14px;
+      border-top: 1px solid #E6E8EF;
+    }
     .hs-tile-title {
       font-size: 16px;
       font-weight: 700;

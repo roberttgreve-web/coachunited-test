@@ -183,7 +183,9 @@ function main() {
       : '';
     return `
             <a class="hs-tile" href="/uebung/${esc(e.url_slug)}">
-              <img src="${esc(resolveUebungGrafik(e))}" alt="" width="480" height="320" loading="lazy" decoding="async">
+              <div class="hs-tile-media">
+                <img src="${esc(resolveUebungGrafik(e))}" alt="" width="480" height="320" loading="lazy" decoding="async">
+              </div>
               <div class="hs-tile-body">
                 <p class="hs-tile-title">${esc(e.titel)}</p>
                 <p class="hs-tile-desc">${esc(e.kurzbeschreibung || '')}</p>
