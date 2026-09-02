@@ -168,16 +168,14 @@ function main() {
     .slice(0, ARTIKEL_ANZAHL);
 
   // ── Neueste-Übungen-Kacheln ──
-  // Sortierung: erstellt_am absteigend (neueste zuerst), bei Gleichstand
-  // (z. B. der urspruengliche Massenimport - 182 der 184 Uebungen teilen
-  // sich ein einziges Datum) zusaetzlich nach id absteigend, sonst bleibt
-  // Array.sort's Stabilitaet bei der Original-Dateireihenfolge (aufsteigend)
-  // und zeigt bei Gleichstand die AELTESTEN zuerst statt zuletzt.
+  // Sortierung: id absteigend - dieselbe "neueste zuerst"-Regel wie in
+  // uebungen.html (`allExercises = data.slice().sort((a, b) => b.id - a.id)`).
+  // erstellt_am ist nur Tagesgranularitaet und bei den meisten Uebungen
+  // ohnehin identisch (Massenimport), waere als Sortierschluessel also
+  // ungenau; id steigt dagegen bei jeder neuen Uebung garantiert und
+  // spiegelt die tatsaechliche Reihenfolge exakt wider.
   const neuesteUebungen = [...uebungen]
-    .sort((a, b) => {
-      const datumVergleich = String(b.erstellt_am || '').localeCompare(String(a.erstellt_am || ''));
-      return datumVergleich !== 0 ? datumVergleich : b.id - a.id;
-    })
+    .sort((a, b) => b.id - a.id)
     .slice(0, NEUESTE_UEBUNGEN_ANZAHL);
 
   const uebungenKacheln = neuesteUebungen.map(e => {
