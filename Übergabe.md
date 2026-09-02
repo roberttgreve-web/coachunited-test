@@ -1,6 +1,6 @@
 # Übergabe – coachunited.de
 
-Stand: 2026-09-01. Dieses Dokument ist der Einstiegspunkt für alle, die künftig an coachunited.de weiterarbeiten (Entwickler, Freelancer, Nachfolger).
+Stand: 2026-09-02. Dieses Dokument ist der Einstiegspunkt für alle, die künftig an coachunited.de weiterarbeiten (Entwickler, Freelancer, Nachfolger).
 
 ## 1. Was ist das für ein Projekt?
 
@@ -908,3 +908,81 @@ Fix: Neue Media Query `@media (max-width: 480px)` schaltet auf echten Handy-Brei
 ### 23.4 Alle drei Deploys verifiziert
 
 Jede der drei Änderungen wurde einzeln committet, gepusht (inkl. eines Rebase über zwischenzeitliche automatische Publisher-Commits, s. Abschnitt „publisher: … Übung(en) veröffentlicht"), per Vercel-Deploy-Hook (`VERCEL_DEPLOY_HOOK` aus der Publisher-`.env.local`) ausgerollt und live per Abfrage der generierten Seite bestätigt. Zum vermutlich dadurch ausgelösten Vercel-Security-Checkpoint-Zwischenfall siehe den neuen To-do-Eintrag in Abschnitt 8.
+
+---
+
+## 24. „Wissen" aus der Navigation entfernt, Erstelldatum je Übung, neue Startseiten-Struktur (09/2026)
+
+Größerer zusammenhängender Umbau, Schritt für Schritt mit Robert gesammelt und am Ende in einem Rutsch umgesetzt. Direkter Nachfolger von Abschnitt 22 (Ad-Grants-Prioritätenliste) – deckt Priorität 3 ab und bereitet 5/7 mit vor.
+
+### 24.1 „Wissen"-Bereich aus allen Sichtbarkeits-Oberflächen entfernt, Daten bleiben erhalten
+
+Ausdrücklicher Auftrag: „Nicht löschen, er soll im Backend noch gespeichert werden. Aber nicht mehr sichtbar im Menü, raus aus der Startseite, alle Verlinkungen raus, aus der Sitemap raus." Umgesetzt:
+
+- **Navigation:** In `desktop-nav.js` den Wissen-Desktop-Topnav-Link entfernt sowie `wissen` aus `restructureDrawerNav()` (Variable, Guard-Bedingung, Append) – die Drawer-Gruppe „Wissen & Mitmachen" heißt jetzt nur noch „Mitmachen". Ohne die Anpassung der Guard-Bedingung wäre die Drawer-Restrukturierung beim Fehlen des Links stillschweigend kaputtgegangen.
+- **Alle 44 `public/*.html`-Dateien** verloren die Zeile `<a href="/wissen" class="drawer-link">Wissen</a>` aus dem mobilen Drawer-Menü, inkl. `wissen.html` selbst (damit das Drawer-Menü überall identisch aussieht). Der separate `<a href="/wissen" class="back-btn">` in `artikel-detail.html` (interne Navigation innerhalb des weiterhin bestehenden Wissen-Subsystems) blieb bewusst unangetastet.
+- **Sitemap** (`scripts/build-sitemap.js`): `/wissen` aus `STATIC_PAGES` entfernt, die komplette `articles.map()`-Sitemap-Erzeugung entfernt (mit Kommentar begründet).
+- **Startseite:** Der Wissen-Eintrag im JSON-LD-Graph entfernt; die Wissen-Kachel-Sektion auf der Startseite wurde umgewidmet (s. 24.3) statt einfach gelöscht.
+- **Datenbestand unverändert:** `articles.json`/die Wissen-Artikel-Seiten selbst existieren weiter und sind direkt per URL erreichbar, nur nirgends mehr verlinkt oder gelistet.
+
+### 24.2 Erstelldatum (`erstellt_am`) für alle 184 Übungen rekonstruiert
+
+Historisches Erstelldatum gab es bisher nicht. Rekonstruiert durch Auswertung der vollständigen Git-Historie von `public/exercises.json` (308 Commits): Für jede Übungs-ID wurde der erste Commit ermittelt, in dem sie auftaucht – das Datum dieses Commits wurde als `erstellt_am` (ISO-Format `YYYY-MM-DD`) übernommen. Kein fiktives Datum, sondern aus echter Historie belegt. Betrifft **nur** das Feld `erstellt_am` (per Diff verifiziert) in `public/exercises.json` und im Publisher-seitigen `data/exercises.json`.
+
+Für alle künftigen Übungen setzt `api_status()` im Publisher das Feld automatisch beim ersten „Veröffentlichen" (`if status == 'veroeffentlicht' and not e.get('erstellt_am')`) – danach nie wieder überschrieben.
+
+Anzeige: Auf `uebung-detail.html` klein unterhalb der Feedback-Box („Erstellt am [Datum]"), erzeugt in `build-exercise-pages.js`. Auf der Startseiten-Kachel (s. 24.3) als „Veröffentlicht am [Datum]".
+
+**Wichtige Einschränkung für Sortierungen:** 182 der 184 Übungen teilen sich ein einziges rekonstruiertes Bulk-Import-Datum – `erstellt_am` hat nur Tages-Granularität und eignet sich **nicht** als Sortierkriterium („neueste zuerst"), nur zur reinen Anzeige. Sortiert wird stattdessen konsequent nach `id` absteigend, exakt die Konvention, die `uebungen.html` („Alle Übungen") bereits verwendet (`data.slice().sort((a, b) => b.id - a.id)`).
+
+### 24.3 Neue Startseiten-Struktur: „Was wir tun" + „Neueste Übungen"-Karussell
+
+Zwei neue/umgebaute Abschnitte direkt unter dem Hero, als Reaktion auf Ad-Grants-Priorität 3 („Startseite inhaltlich erweitern") sowie den wiederkehrenden Kritikpunkt, dass der Vereins-Charakter zu spät auf der Startseite auftaucht.
+
+**„Gutes Training. Schnell geplant."** (`#was-wir-tun`, hell): Kurzer Erklärabschnitt direkt unter dem Hero, Text von Robert selbst mehrfach verfeinert („Bei uns findest du eine kostenlose, öffentliche Bibliothek mit Übungen für den Kinder- und Jugendfußball. Jede Übung ist entwickelt und getestet von Trainer*innen, die selbst jede Woche auf dem Platz stehen."), CTA „Erfahre mehr über Coach United" → `/ueber-uns`.
+
+**„Jede Woche neue Trainingsübungen"** (`#neue-uebungen`, dunkel): Neues horizontal scrollbares Kachel-Karussell mit den 12 neuesten Übungen (`id` absteigend, s. 24.2), das strukturell den bisherigen Wissen-Slider ersetzt (gleiches CSS-Muster, IDs auf `neueste-uebungen-*` umbenannt). Jede Kachel zeigt Grafik, Titel, Kurzbeschreibung, Alters-/Skill-Tags und „Veröffentlicht am [Datum]". Erzeugung in `build-home.js` (`neueste-uebungen`-Marker), Tile-CSS (`.hs-tile` mit Rahmen/Schatten, `.hs-tile-media`, `.hs-tag--jugend`/`.hs-tag--skill` etc.) neu in `home.html`.
+
+Die bisherige „Übungen"-Sektion rutschte dadurch eine Ebene tiefer (an die frei gewordene Wissen-Position) und wurde umbenannt: Titel „184 Übungen einfach filtern", CTA „Jetzt filtern" (um Wortwiederholung mit der neuen CTA „Alle Übungen ansehen" darüber zu vermeiden).
+
+Finale Sektionsreihenfolge/-farben auf der Startseite (streng alternierend hell/dunkel):
+```
+hs--hell   #was-wir-tun
+hs--dunkel #neue-uebungen
+hs--hell   #uebungen
+hs--dunkel #whatsapp-home
+hs--hell   #einreichen
+hs--dunkel #ueber-uns
+```
+
+### 24.4 Kein lokales Node.js – Verifikation nur über den Live-Build
+
+Wie bereits in Abschnitt 21 dokumentiert: Ohne lokal installiertes Node.js konnten `build-home.js`, `build-exercise-pages.js` und `build-sitemap.js` nicht direkt getestet werden. Verifikation erfolgte ausschließlich durch sorgfältiges erneutes Code-Lesen plus Live-Kontrolle nach jedem Deploy (Vercel-Deploy-Hook + Abfrage der ausgelieferten Seite, mit 20–25s-Pollingabständen wegen des in Abschnitt 8 dokumentierten Security-Checkpoint-Vorfalls).
+
+---
+
+## 25. Ad-Grants-Prioritätenliste: Punkte 5, 7, 8 geprüft (09/2026)
+
+Auf Wunsch die noch offenen Punkte aus Abschnitt 22.1 der Reihe nach durchgegangen. Ergebnis: **kein Handlungsbedarf**, alle drei Punkte sind entweder bereits erfüllt oder unauffällig.
+
+**Priorität 5 (eigene Landingpages pro Suchintention) – bereits erfüllt.** Die 22 Alter-/Skill-/Phase-Seiten (`public/alter/*.html`, `skill/*.html`, `phase/*.html`) haben je einen eigenständigen, nicht nur per Wortaustausch generierten Erklärtext, korrekte Meta-Description/og:title/Canonical/Breadcrumbs, und funktionierende Sekundärfilter (live getestet: G-Jugend-Seite reduziert bei Skill-Filter „Passen" korrekt von 75 auf 42 Übungen, Karten aktualisieren sich richtig). Ein zunächst vermuteter Bug (`let allExercises = []` scheinbar nie befüllt, hätte Skill-Dropdown/Filterklick leerlaufen lassen können) wurde live widerlegt – die Vermutung beruhte auf einer beim Code-Lesen übersehenen Datenquelle.
+
+**Priorität 7 (weniger generische Texte, mehr Praxisbeispiele) – größtenteils erfüllt.** Deckt sich stark mit Priorität 5: Die Alter-/Skill-/Phase-Intros sind bereits im geforderten Praxisbezug-Stil geschrieben. Zwei verbleibende generische Stellen auf der Startseite identifiziert („kostenlose, öffentliche Bibliothek…" in `#was-wir-tun`, „…Übungsbibliothek, die kostenlos, übersichtlich und klar ist" in `#ueber-uns`) – Robert wollte das (Stand jetzt) nicht weiterverfolgen, bei Bedarf Kandidat für einen späteren Anlauf.
+
+**Priorität 8 (technische Crawl-/Performance-Prüfung) – unauffällig.** robots.txt/sitemap.xml korrekt, alle 36 Sitemap-URLs liefern HTTP 200, `http→https` und `www→apex` je ein sauberer 308-Hop, Impressum/Datenschutz korrekt `noindex, nofollow`, echte 404s (kein Soft-404), Seiten schlank (Start 63 KB / Übung 43 KB HTML), Bilder als WebP mit `loading="lazy"`, Scripts per `defer`, Google Fonts mit Preconnect + `display=swap`. Keine Lighthouse-/PageSpeed-Messung möglich (Google PageSpeed-Insights-API antwortete ohne API-Key mit 429).
+
+**Weiterhin offen:** 6 (Autor/Datum bei Artikeln – von Robert als hinfällig eingestuft, da Wissen/Artikel-Bereich aus der Discoverability raus ist), 9 (Conversion-Tracking im Ads-Konto – noch nicht begonnen), 10 (weitere Speed-Optimierungen – laut Analyse aktuell keine Priorität).
+
+---
+
+## 26. Vor-Pfeil des "Neueste Übungen"-Karussells saß auf Desktop über dem Kachelbild (09/2026)
+
+Robert meldete per Screenshot: Auf Desktop sitzt der Vor-Pfeil des Karussells in `#neue-uebungen` sichtbar über der Kachel, nicht daneben.
+
+**Ursache:** `.hs-arrow--vor { right: -18px; }` (`public/home.html`, Desktop-Media-Query ab 768px) verschiebt den 44px breiten Kreis-Button nur 18px nach außen – 26px des Buttons blieben dadurch über der letzten sichtbaren Kachel liegen, inklusive Bild. Betrifft rechnerisch auch den (nur nach dem ersten Scroll sichtbaren) Zurück-Pfeil `.hs-arrow--zurueck` mit `left: -18px` spiegelbildlich.
+
+**Warum nicht einfach ein größerer negativer Wert:** `.hs-inner { max-width: 960px; margin: 0 auto; }` sitzt innerhalb von `.hs { padding: 68px 40px; }` (Desktop). Bei Viewport-Breiten zwischen der 768px-Untergrenze der Media Query und ca. 1040px (dort erreicht `.hs-inner` erst seine 960px-Obergrenze) beträgt der Rand zwischen `.hs-inner` und dem Viewport-Rand konstant nur 40px – unabhängig von der genauen Fensterbreite in diesem Bereich. Ein Wert wie `-62px` (rechnerisch nötig, um den Button komplett überlappungsfrei zu bekommen) hätte in genau diesem Breitenbereich zu einem horizontalen Überlauf über den Viewport-Rand hinaus geführt.
+
+**Fix:** `right`/`left` auf `-40px` gesetzt – der größtmögliche Wert, der beim garantierten Mindestrand von 40px (Breiten 768–1040px) gerade noch nicht überläuft. Verbleibende Überlappung mit der Kachel dadurch nur noch ca. 4px (praktisch nicht wahrnehmbar) statt vorher 26px, bei größeren Fensterbreiten (>1040px, wo mehr Rand zur Verfügung steht) liegt der Button dort vollständig frei.
+
+⚠️ Nur rechnerisch verifiziert (Bounding-Box-Messung per JS auf der Live-Seite vor dem Fix, siehe unten) und über den Live-Build bestätigt – eine lokale Vorschau war nicht möglich, weil `<!--cu:neueste-uebungen-->` im eingecheckten `public/home.html` nur die leeren Marker enthält (die Kachel-Befüllung passiert ausschließlich zur Deploy-Zeit durch `build-home.js` auf Vercel, wird nie zurück ins Repo committet – s. auch Abschnitt 24.4 zum fehlenden lokalen Node.js).

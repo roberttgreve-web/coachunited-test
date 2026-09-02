@@ -770,8 +770,13 @@
       }
       .hs-arrow:hover { background: #1E6BFF; color: #fff; transform: scale(1.06); }
       .hs-arrow[hidden] { display: none; }
-      .hs-arrow--vor { right: -18px; }
-      .hs-arrow--zurueck { left: -18px; }
+      /* -40px statt vorher -18px: Bei 44px Pfeilbreite lag sonst ein Großteil des
+         Kreises noch über der letzten Kachel (inkl. Bild). -40px ist der groesste
+         Wert, der auch bei der schmalsten Breite dieser Media Query (768px, dort
+         garantiert nur 40px Rand neben .hs-inner) nicht ueber den Viewport-Rand
+         hinausragt. */
+      .hs-arrow--vor { right: -40px; }
+      .hs-arrow--zurueck { left: -40px; }
     }
 
     @media (min-width: 768px) and (prefers-reduced-motion: reduce) {
