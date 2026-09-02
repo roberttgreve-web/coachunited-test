@@ -551,7 +551,7 @@
     "titel": "ERST SLALOM, DANN 1 GEGEN 1",
     "quell_trainingseinheit": "Technik im Fokus: Sauber dribbeln",
     "grafik_url": "https://coachunited.de/images/uebungen/uebung-009-dribbeln-slalomdrehen-und-eins-gegen-eins.webp",
-    "grafik_dateiname": "uebung-009-erst-slalom-dann-1-gegen-1.png",
+    "grafik_dateiname": "AUS DEM FITNESSPARCOURS INS DUELL.png",
     "trainingsphase": "Hauptteil",
     "kurzbeschreibung": "Ein Spieler dribbelt gerade aufs Tor, schließt ab und wird zum Verteidiger. Der zweite Spieler dribbelt im Slalom und geht ins 1 gegen 1.",
     "aufbau": "Etwa 15m vor dem Jugendtor Hütchen im Abstand von 5m aufstellen. Spieler am Starthütchen mit Bällen platzieren. Torhüter im Tor.",
@@ -12384,5 +12384,66 @@
     "schwester_id": null,
     "schwester_titel": null,
     "erstellt_am": "2026-08-31"
+  },
+  {
+    "id": 216,
+    "titel": "HOHEN PASS VERARBEITEN UND AUFS MINITOR TREFFEN",
+    "quell_trainingseinheit": "",
+    "grafik_url": "https://coachunited.de/images/uebungen/uebung-216-hohen-pass-verarbeiten-und-aufs-minitor-treffen.webp",
+    "grafik_dateiname": "HohenPass verarboten und aufs Minitor treffen.png",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "Ein Spieler spielt einen hohen Pass über ein Minitor. Sein Mitspieler nimmt den Ball an, kontrolliert ihn und schließt dann aufs Minitor ab. ",
+    "aufbau": "Zentral zwei Minitore aufstellen. Etwa 4-5 Meter davon entfernt auf jeder Seite jeweils zwei Teams verteilen, so dass es insgesamt vier Gruppen sind. Die Kinder, die zur Rückseite der Minitore stehen, haben Bälle. Die anderen zwei Teams haben keine Bälle. ",
+    "durchfuehrung": "Je ein Spieler mit Ball dribbelt ein paar Schritt nach vorne, stoppt den Ball und passt dann konzentriert mit einem hohen Ball über das Minitor auf seinen Mitspieler, der sich in Position gebracht hat. Der Mitspieler versucht den Ball zu stoppen, zu kontrollieren und dann so schnell wie möglich aufs Minitor abzuschließen. \n\nDanach wechseln die beiden Spieler die Gruppen. ",
+    "varianten": "",
+    "quell_url": "",
+    "jugend": [
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Torschuss",
+      "Flanken"
+    ],
+    "coaching_fokus": "• Ball ruht vor der Passausführung, um Konzentration und sauber Pässe zu gewährleisten.; • Auch wenn der Ball beim Annehmen verspringt: Ruhe bewahren und so schnell wie möglich Kontrolle über den Ball bekommen.",
+    "leichter_machen": "• Flache Pässe seitlich vom Minitor erlauben.",
+    "schwerer_machen": "• Nur eine Maximalanzahl an Ballberührungen bei der Annahme bis Abschluss erlauben (zum Beispiel 3 bis 4)",
+    "alt_titel": "",
+    "seo_keyword": "",
+    "url_slug": "hohen-pass-verarbeiten-und-aufs-minitor-treffen",
+    "seo_meta_description": "",
+    "grafik_alt_text": "",
+    "grafik_description": "",
+    "grafik_title": "",
+    "grafik_caption": "",
+    "faq": [
+      {
+        "frage": "Geht das auchmit jüngeren Kindern?",
+        "antwort": "Nein, eher nicht. Diese Übung ist recht anspruchsvoll. "
+      },
+      {
+        "frage": "Was mache ich bei größeren Gruppen?",
+        "antwort": "Gerne ein drittes Minitor aufbauen. "
+      },
+      {
+        "frage": "Wie lange dauert diese Übung?",
+        "antwort": "Etwa 10-15 Minuten."
+      }
+    ],
+    "status": "veroeffentlicht",
+    "referenz_grafik_url": "",
+    "quell_kategorie": "",
+    "ist_gecrawlt": false,
+    "schwester_gruppen": [],
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "schwester_ids": [],
+    "schwester_id": null,
+    "schwester_titel": null,
+    "erstellt_am": "2026-09-02"
   }
 ]
