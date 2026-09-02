@@ -168,11 +168,16 @@ function main() {
     .slice(0, ARTIKEL_ANZAHL);
 
   // ── Neueste-Übungen-Kacheln ──
-  // Sortierung: erstellt_am absteigend (neueste zuerst). Übungen ohne
-  // erstellt_am (sollte nach der Rückwirkend-Rekonstruktion nicht mehr
-  // vorkommen) fallen ans Ende, statt den Bau abzubrechen.
+  // Sortierung: erstellt_am absteigend (neueste zuerst), bei Gleichstand
+  // (z. B. der urspruengliche Massenimport - 182 der 184 Uebungen teilen
+  // sich ein einziges Datum) zusaetzlich nach id absteigend, sonst bleibt
+  // Array.sort's Stabilitaet bei der Original-Dateireihenfolge (aufsteigend)
+  // und zeigt bei Gleichstand die AELTESTEN zuerst statt zuletzt.
   const neuesteUebungen = [...uebungen]
-    .sort((a, b) => String(b.erstellt_am || '').localeCompare(String(a.erstellt_am || '')))
+    .sort((a, b) => {
+      const datumVergleich = String(b.erstellt_am || '').localeCompare(String(a.erstellt_am || ''));
+      return datumVergleich !== 0 ? datumVergleich : b.id - a.id;
+    })
     .slice(0, NEUESTE_UEBUNGEN_ANZAHL);
 
   const uebungenKacheln = neuesteUebungen.map(e => {
