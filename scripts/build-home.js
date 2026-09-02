@@ -18,6 +18,8 @@ const ARTIKEL_ANZAHL = 99;
 // veroeffentlichten Uebungen als Kachel gezeigt werden (Rest per Pfeil/Wischen).
 const NEUESTE_UEBUNGEN_ANZAHL = 12;
 
+const ISO_DATE = /^\d{4}-\d{2}-\d{2}$/;
+
 const JUGENDEN = ['G-Jugend', 'F-Jugend', 'E-Jugend', 'D-Jugend'];
 const PHASEN   = ['Aufwärmen', 'Hauptteil', 'Spielformat'];
 
@@ -176,6 +178,9 @@ function main() {
   const uebungenKacheln = neuesteUebungen.map(e => {
     const jugendTags = (e.jugend || []).map(j => `<span class="hs-tag hs-tag--jugend">${esc(j)}</span>`).join('');
     const skillTags  = (e.skills || []).slice(0, 3).map(s => `<span class="hs-tag hs-tag--skill">${esc(s)}</span>`).join('');
+    const datumText = ISO_DATE.test(e.erstellt_am || '')
+      ? `Veröffentlicht am ${new Date(e.erstellt_am + 'T00:00:00').toLocaleDateString('de-DE', { day: 'numeric', month: 'long', year: 'numeric' })}`
+      : '';
     return `
             <a class="hs-tile" href="/uebung/${esc(e.url_slug)}">
               <img src="${esc(resolveUebungGrafik(e))}" alt="" width="480" height="320" loading="lazy" decoding="async">
@@ -183,6 +188,7 @@ function main() {
                 <p class="hs-tile-title">${esc(e.titel)}</p>
                 <p class="hs-tile-desc">${esc(e.kurzbeschreibung || '')}</p>
                 <div class="hs-tile-tags">${jugendTags}${skillTags}</div>
+                ${datumText ? `<p class="hs-tile-date">${esc(datumText)}</p>` : ''}
               </div>
             </a>`;
   }).join('');
