@@ -12498,14 +12498,87 @@
     "referenz_grafik_url": "https://training-service.fussball.de/assets/img/csm_260636-2022-05-17_schuss2_fe0d6dc511.jpg",
     "quell_kategorie": "D-Jugend",
     "ist_gecrawlt": true,
-    "schwester_id": null,
-    "schwester_titel": null,
+    "schwester_id": 219,
+    "schwester_titel": "",
     "original_aufbau": "12 Meter vor einem Tor mit Torwart seitlich versetzt zweimal ein Hütchendreieck aufbauen.\nWeitere 12 Meter dahinter 4 Startpositionen gemäß Abbildung errichten und die Spieler gleichmäßig verteilen.\nDie Positionen A und B gemäß Abbildung verändern.\nAlle Spieler an Position A haben einen Ball.",
     "original_durchfuehrung": "dribbelt an und passt zu B.\nB löst sich von seinem Hütchen und lässt direkt zu A klatschen.\nA nimmt mit dem 1. Kontakt zum Tor mit und schließt mit dem 2. Kontakt ab.",
     "original_varianten": "tbewerb I: Welcher Spieler trifft bei 10 Abschlüssen häufiger?\nWettbewerb II: Zwei Teams spielen gegeneinander. Welche Mannschaft trifft in 5 Minuten häufiger?",
     "original_coaching_fokus": "",
-    "schwester_gruppen": [],
-    "schwester_ids": [],
+    "schwester_gruppen": [
+      [
+        219
+      ]
+    ],
+    "schwester_ids": [
+      219
+    ],
+    "erstellt_am": "2026-09-04"
+  },
+  {
+    "id": 219,
+    "titel": "TORSCHUSS MIT PASSFOLGE VORBEREITEN",
+    "quell_trainingseinheit": "",
+    "grafik_url": "https://coachunited.de/images/uebungen/uebung-219-torschuss-mit-passfolge-vorbereiten.webp",
+    "grafik_dateiname": "Torschuss mit Passfolge vorbereiten.png",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "Ein Spieler passt den Ball und läuft sich frei. Der andere Spieler erhält den Ball, läuft die Linie runter und passt zurück zu dem freien Mitspieler.  ",
+    "aufbau": "Jugendotr mit Torhüter, etwa 10-15m davor ein Dreieck markieren. Weitere 2-3m davor zwei Starthütchen aufstellen. Zwei Teams einteilen. Das Team am linken Starthütchen erhält die Bälle. Wenn die Gruppe groß ist, kann dieser Aufbau einfach zwei Mal nebeneinander aufgebaut werden.",
+    "durchfuehrung": "Der Spieler mit Ball spielt den kurzen Pass zum Mitspieler am anderen Starthütchen - und sprintet danach sofort in gerader Linie in Richtung Tor. Der zweite Spieler nimmt den Pass an, dribbelt mit ihm in hohem Tempo die Linie herunter - und passt hinter dem markierten Dreieck zurück zum freien Mitspieler. Dieser schließt aufs Tor ab. Der Ball darf nicht durch das markierte Dreieck gespielt werden, sondern außen herum. Die Spieler tauschen danach die Gruppen. ",
+    "varianten": "",
+    "quell_url": "",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Torschuss",
+      "Raumverhalten"
+    ],
+    "coaching_fokus": "• Möglichst hohes Tempo. Ball annehmen, kontrollieren und direkt loslaufen.; • Möglichst direkt mit einem Ballkontakt aufs Tor abschließen.",
+    "leichter_machen": "• Übung langsamer durchführen.; • Mehrere Ballkontakte vor Torabschluss erlauben.; • Genau Laufwege durch Hütchen markieren.",
+    "schwerer_machen": "• Distanz zwischen den beiden Gruppen erhöhen und statt flachen Pässen alternativ Flanken spielen lassen.",
+    "alt_titel": "",
+    "seo_keyword": "",
+    "url_slug": "torschuss-mit-passfolge-vorbereiten",
+    "seo_meta_description": "",
+    "grafik_alt_text": "",
+    "grafik_description": "",
+    "grafik_title": "",
+    "grafik_caption": "",
+    "faq": [
+      {
+        "frage": "Ist das für eine G-Jugend geeignet?",
+        "antwort": "Nein, eher nicht. "
+      },
+      {
+        "frage": "Kann ich das auf zwei Tore parallel spielen lassen. ",
+        "antwort": "Ja, kein Problem. "
+      },
+      {
+        "frage": "Wie lange dauert die Übung?",
+        "antwort": "Etwa 10-15 Minuten."
+      }
+    ],
+    "status": "veroeffentlicht",
+    "referenz_grafik_url": "",
+    "quell_kategorie": "",
+    "ist_gecrawlt": false,
+    "schwester_gruppen": [
+      [
+        217
+      ]
+    ],
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "schwester_ids": [
+      217
+    ],
+    "schwester_id": 217,
+    "schwester_titel": "TORSCHUSS NACH DOPPELPASS",
     "erstellt_am": "2026-09-04"
   }
 ]
