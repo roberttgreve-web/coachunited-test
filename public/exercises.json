@@ -12411,13 +12411,13 @@
     "leichter_machen": "• Flache Pässe seitlich vom Minitor erlauben.",
     "schwerer_machen": "• Nur eine Maximalanzahl an Ballberührungen bei der Annahme bis Abschluss erlauben (zum Beispiel 3 bis 4)",
     "alt_titel": "",
-    "seo_keyword": "Fußballübung Ballannahme",
+    "seo_keyword": "",
     "url_slug": "hohen-pass-verarbeiten-und-aufs-minitor-treffen",
-    "seo_meta_description": "Fußballübung für E- und D-Jugend: Kinder verarbeiten hohe Pässe übers Minitor und schließen direkt ab. Trainiert Ballannahme, Passspiel und Torschuss.",
-    "grafik_alt_text": "Kinder spielen einen hohen Pass über ein Minitor und nehmen den Ball zur Torschussvorbereitung an",
-    "grafik_description": "Die Grafik zeigt vier Gruppen an zwei zentralen Minitoren. Ein Spieler passt den Ball hoch über das Minitor zu seinem Mitspieler, der ihn annimmt, kontrolliert und aufs Minitor abschließt.",
-    "grafik_title": "Fußballübung: Hohen Pass verarbeiten und abschließen",
-    "grafik_caption": "Hohe Pässe übers Minitor verarbeiten und direkt aufs Tor abschließen.",
+    "seo_meta_description": "",
+    "grafik_alt_text": "",
+    "grafik_description": "*E- und D-Jugend*\n\nGuten Morgen! Hier eine schöne Übung zur Verarbeitung von hohen Bällen:\n\nEin Spieler spielt einen hohen Pass über ein Minitor. Sein Mitspieler nimmt den Ball an, kontrolliert ihn und schließt dann aufs Minitor ab.\n\nhttps://coachunited.de/uebung/hohen-pass-verarbeiten-und-aufs-minitor-treffen\n\nViele Grüße und viel Erfolg beim Training\n\nRob",
+    "grafik_title": "",
+    "grafik_caption": "",
     "faq": [
       {
         "frage": "Geht das auchmit jüngeren Kindern?",
@@ -12445,5 +12445,67 @@
     "schwester_id": null,
     "schwester_titel": null,
     "erstellt_am": "2026-09-02"
+  },
+  {
+    "id": 217,
+    "titel": "TORSCHUSS NACH DOPPELPASS",
+    "quell_trainingseinheit": "Spaß im Saisonendspurt: Motivierende Schusswettbewerbe für Kinder",
+    "grafik_url": "https://coachunited.de/images/uebungen/uebung-217-torschuss-nach-doppelpass.webp",
+    "grafik_dateiname": "Torschuss nach Doppelpass.png",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "Ein Spieler passt den Ball, läuft die Linie herunter, erhält den Doppelpass zurück und schließt dann aus spitzem Winkel ab. ",
+    "aufbau": "Jugendotr mit Torhüter, etwa 10-15m davor ein Dreieck markieren. Weitere 2-3m davor zwei Starthütchen aufstellen. Zwei Teams einteilen. Das Team am rechten Starthütchen erhält die Bälle. Wenn die Gruppe groß ist, kann dieser Aufbau einfach zwei Mal nebeneinander aufgebaut werden.",
+    "durchfuehrung": "Der Spieler mit Ball spielt den kurzen Pass zum Mitspieler am anderen Starthütchen - und sprintet danach sofort die Linie herunter. Der Mitspieler spielt einen (möglichst direkten) Doppelpasse zurück in den Lauf. Daraufhin folgt der Torschuss aus spitzem Winkel. Der Ball darf nicht durch das markierte Dreieck gespielt werden, sondern außen herum. Die Spieler tauschen danach die Gruppen. ",
+    "varianten": "tbewerb I: Welcher Spieler trifft bei 10 Abschlüssen häufiger?\nWettbewerb II: Zwei Teams spielen gegeneinander. Welche Mannschaft trifft in 5 Minuten häufiger?",
+    "quell_url": "https://training-service.fussball.de/trainer/d-juniorin/artikel/spass-im-saisonendspurt-motivierende-schusswettbewerbe-fuer-kinder-3532/",
+    "quell_spiel_nr": 2,
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Torschuss",
+      "Raumverhalten"
+    ],
+    "coaching_fokus": "• Nach dem ersten Pass sofort losprinten in den freien Raum. Nicht träumen oder warten.; • Doppelpass möglichst mit einer Ballberührung. Wenn das zu schwer ist: zwei Ballberührungen erlauben.; • Der Doppelpass sollte in den Lauf gespielt werden.",
+    "leichter_machen": "• Mit einem Hütchen markieren, wo der in den Lauf gespielte Pass in etwa hinkommen sollte.; • Mehrere Ballkontakte erlauben beim Doppelpass.",
+    "schwerer_machen": "",
+    "alt_titel": "",
+    "seo_keyword": "Fußballtraining Passen",
+    "url_slug": "torschuss-nach-doppelpass",
+    "seo_meta_description": "Torschuss-Training für Kinder: Dynamische Schießübung mit Pass, Dribbel und Abschluss. Fördert Finishen und Wettbewerbsfähigkeit im Fußball.",
+    "grafik_alt_text": "Fußballübung mit vier Startfeldern, zwei Hütchendreiecken vor dem Tor, Pass- und Dribbelwege zwischen Positionen A und B",
+    "grafik_description": "Die Grafik zeigt den Aufbau der Torjäger-Challenge: Vier Startfelder im Abstand von 12 Metern, zwei versetzte Hütchendreiecke 12 Meter vor dem Tor, sowie die Bewegungsabläufe von Spieler A (Dribbeln und Abschluss) und Spieler B (Pass empfangen und Tor ansteuern).",
+    "grafik_title": "Torjäger-Challenge Fußballübung Aufbau",
+    "grafik_caption": "Aufbau der Torjäger-Challenge: Vier Startfelder, zwei Hütchendreiecke, Pass- und Dribbelwege zum Torabschluss.",
+    "faq": [
+      {
+        "frage": "Wie lange sollte diese Übung dauern?",
+        "antwort": "Pro Runde 10-15 Minuten je nach Spielerzahl."
+      },
+      {
+        "frage": "Welche Spielerzahl ist optimal?",
+        "antwort": "8-12 Spieler-. Bei größeren Gruppen einfach den gleichen Aufbau zwei Mal hinstellen. "
+      },
+      {
+        "frage": "Ab welchem Alter ist diese Übung geeignet?",
+        "antwort": "Stärkere F-Jugenden können es schon probieren. "
+      }
+    ],
+    "status": "veroeffentlicht",
+    "referenz_grafik_url": "https://training-service.fussball.de/assets/img/csm_260636-2022-05-17_schuss2_fe0d6dc511.jpg",
+    "quell_kategorie": "D-Jugend",
+    "ist_gecrawlt": true,
+    "schwester_id": null,
+    "schwester_titel": null,
+    "original_aufbau": "12 Meter vor einem Tor mit Torwart seitlich versetzt zweimal ein Hütchendreieck aufbauen.\nWeitere 12 Meter dahinter 4 Startpositionen gemäß Abbildung errichten und die Spieler gleichmäßig verteilen.\nDie Positionen A und B gemäß Abbildung verändern.\nAlle Spieler an Position A haben einen Ball.",
+    "original_durchfuehrung": "dribbelt an und passt zu B.\nB löst sich von seinem Hütchen und lässt direkt zu A klatschen.\nA nimmt mit dem 1. Kontakt zum Tor mit und schließt mit dem 2. Kontakt ab.",
+    "original_varianten": "tbewerb I: Welcher Spieler trifft bei 10 Abschlüssen häufiger?\nWettbewerb II: Zwei Teams spielen gegeneinander. Welche Mannschaft trifft in 5 Minuten häufiger?",
+    "original_coaching_fokus": "",
+    "schwester_gruppen": [],
+    "schwester_ids": [],
+    "erstellt_am": "2026-09-04"
   }
 ]
