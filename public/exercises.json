@@ -12536,31 +12536,18 @@
       "Torschuss",
       "Raumverhalten"
     ],
-    "coaching_fokus": "• Möglichst hohes Tempo. Ball annehmen, kontrollieren und direkt loslaufen.; • Möglichst direkt mit einem Ballkontakt aufs Tor abschließen.",
-    "leichter_machen": "• Übung langsamer durchführen.; • Mehrere Ballkontakte vor Torabschluss erlauben.; • Genau Laufwege durch Hütchen markieren.",
-    "schwerer_machen": "• Distanz zwischen den beiden Gruppen erhöhen und statt flachen Pässen alternativ Flanken spielen lassen.",
+    "coaching_fokus": "",
+    "leichter_machen": "",
+    "schwerer_machen": "",
     "alt_titel": "",
-    "seo_keyword": "",
+    "seo_keyword": "Fußballübung Passen und Torschuss",
     "url_slug": "torschuss-mit-passfolge-vorbereiten",
-    "seo_meta_description": "",
-    "grafik_alt_text": "",
-    "grafik_description": "",
-    "grafik_title": "",
-    "grafik_caption": "",
-    "faq": [
-      {
-        "frage": "Ist das für eine G-Jugend geeignet?",
-        "antwort": "Nein, eher nicht. "
-      },
-      {
-        "frage": "Kann ich das auf zwei Tore parallel spielen lassen. ",
-        "antwort": "Ja, kein Problem. "
-      },
-      {
-        "frage": "Wie lange dauert die Übung?",
-        "antwort": "Etwa 10-15 Minuten."
-      }
-    ],
+    "seo_meta_description": "Fußballübung für F- bis D-Jugend: Doppelpass mit Sprint vorbereiten und im Tempo abschließen. Trainiert Passspiel, Raumverhalten und Torschuss.",
+    "grafik_alt_text": "Kinder spielen einen Doppelpass und schließen nach schnellem Dribbling aufs Jugendtor ab",
+    "grafik_description": "Die Grafik zeigt ein Dreieck vor dem Jugendtor mit zwei Starthütchen davor. Ein Spieler passt zum Mitspieler und sprintet Richtung Tor, während der Mitspieler den Ball außen um das Dreieck herum zurückspielt und der erste Spieler abschließt.",
+    "grafik_title": "Fußballübung: Passfolge und Torschuss vorbereiten",
+    "grafik_caption": "Doppelpass mit Sprint vorbereiten und im Tempo aufs Tor abschließen.",
+    "faq": [],
     "status": "veroeffentlicht",
     "referenz_grafik_url": "",
     "quell_kategorie": "",
