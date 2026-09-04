@@ -12567,5 +12567,59 @@
     "schwester_id": 217,
     "schwester_titel": "TORSCHUSS NACH DOPPELPASS",
     "erstellt_am": "2026-09-04"
+  },
+  {
+    "id": 220,
+    "titel": "TORWARTTRAINING: BLITZDREHUNG NACH DEM TUNNEL",
+    "quell_trainingseinheit": "",
+    "grafik_url": "https://coachunited.de/images/uebungen/uebung-220-torwarttraining-blitzdrehung-nach-dem-tunnel.webp",
+    "grafik_dateiname": "Torwarttraining_Blitzdrehung nach dem Tunnel.png",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "Dem Torhüter wird der Ball durch die Beine gespielt. Er dreht sich blitzschnell um und wirft sich auf den Ball, bevor dieser die Torlinie überschreiten kann. ",
+    "aufbau": "Ein Tor (Jugendtor, Minitor oder Hütchentor), zwei Spieler, ein Ball. ",
+    "durchfuehrung": "Dem Torhüter wird der Ball von einem Spieler (oder einem Co-Trainer/Elternteil) durch die Beine gespielt. Er dreht sich blitzschnell um und wirft sich auf den Ball, bevor dieser die Torlinie überschreiten kann. 10 Wiederholungen, dann kurze Pause. ",
+    "varianten": "",
+    "quell_url": "",
+    "jugend": [
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Torhüter"
+    ],
+    "coaching_fokus": "• Nicht zu schnell passen.; • Auf Pausen achten. Die Übung ist anstrengend für den Torhüter.",
+    "leichter_machen": "• Langsam passen.",
+    "schwerer_machen": "• Schärfer passen.",
+    "alt_titel": "",
+    "seo_keyword": "",
+    "url_slug": "torwarttraining-blitzdrehung-nach-dem-tunnel",
+    "seo_meta_description": "",
+    "grafik_alt_text": "",
+    "grafik_description": "",
+    "grafik_title": "",
+    "grafik_caption": "",
+    "faq": [
+      {
+        "frage": "Wer kann das Torwarttraining übernehmen?",
+        "antwort": "Das kann ein Mitspieler, ein Co-Trainer oder ein Elternteil machen, während der Trainer den Rest der Gruppe anleitet. "
+      },
+      {
+        "frage": "Wie viele Wiederholungen sind sinnvoll?",
+        "antwort": "Es wird schnell anstrengend. Je nach Kraft des Torhüters entscheiden. "
+      }
+    ],
+    "status": "veroeffentlicht",
+    "referenz_grafik_url": "",
+    "quell_kategorie": "",
+    "ist_gecrawlt": false,
+    "schwester_gruppen": [],
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "schwester_ids": [],
+    "schwester_id": null,
+    "schwester_titel": null,
+    "erstellt_am": "2026-09-04"
   }
 ]
