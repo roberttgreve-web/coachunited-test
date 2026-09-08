@@ -986,3 +986,13 @@ Robert meldete per Screenshot: Auf Desktop sitzt der Vor-Pfeil des Karussells in
 **Fix:** `right`/`left` auf `-40px` gesetzt – der größtmögliche Wert, der beim garantierten Mindestrand von 40px (Breiten 768–1040px) gerade noch nicht überläuft. Verbleibende Überlappung mit der Kachel dadurch nur noch ca. 4px (praktisch nicht wahrnehmbar) statt vorher 26px, bei größeren Fensterbreiten (>1040px, wo mehr Rand zur Verfügung steht) liegt der Button dort vollständig frei.
 
 ⚠️ Nur rechnerisch verifiziert (Bounding-Box-Messung per JS auf der Live-Seite vor dem Fix, siehe unten) und über den Live-Build bestätigt – eine lokale Vorschau war nicht möglich, weil `<!--cu:neueste-uebungen-->` im eingecheckten `public/home.html` nur die leeren Marker enthält (die Kachel-Befüllung passiert ausschließlich zur Deploy-Zeit durch `build-home.js` auf Vercel, wird nie zurück ins Repo committet – s. auch Abschnitt 24.4 zum fehlenden lokalen Node.js).
+
+---
+
+## 27. WhatsApp-Linkvorschau zeigte unerwünschten Beschreibungstext (09/2026)
+
+Robert meldete per Screenshot: Beim Teilen eines Übungs-Links in WhatsApp erscheint unter dem Titel ein zusätzlicher, KI-klingender Beschreibungstext ("Torschuss-Training für Kinder: Dynamische Schießübung mit Pass, Dribbel und Abschluss. Fördert Finishen und Wettbewerbsfähigkeit im Fußball."). Gewünscht: In der Linkvorschau soll nur die Übungs-Skizze (funktioniert bereits) und der Titel erscheinen, kein Beschreibungstext.
+
+**Ursache:** `build-exercise-pages.js` befüllte `<meta property="og:description">` mit `ex.seo_meta_description || ex.kurzbeschreibung`. WhatsApp/Facebook & Co. lesen für Link-Vorschaukarten bevorzugt die Open-Graph-Tags (`og:title`, `og:description`, `og:image`) – genau das SEO-Feld, das im CoachPublisher für jede Übung händisch oder per KI gepflegt wird (s. Abschnitte 2.5.1 etc.), landete dadurch 1:1 in jeder WhatsApp-Vorschau.
+
+**Fix:** `og:description` wird jetzt beim Seitenbau komplett aus dem Markup entfernt, statt mit Inhalt befüllt zu werden. Bewusst **nicht** angetastet: `<meta name="description">` (das normale SEO-Meta-Tag für Google-Suchergebnisse) – das nutzt weiterhin `seo_meta_description`, nur die Social-Media-Vorschau ist betroffen. WhatsApp/Facebook zeigen bei fehlendem `og:description` nur noch Titel + Bild, exakt wie gewünscht.

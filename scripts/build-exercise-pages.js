@@ -224,7 +224,11 @@ async function main() {
     const html = template
       .replace('<meta name="description" content="">', `<meta name="description" content="${esc(description)}">`)
       .replace('content="Fußballübung | COACH UNITED"', `content="${esc(title)}"`)
-      .replace('<meta property="og:description" content="">', `<meta property="og:description" content="${esc(description)}">`)
+      // og:description bewusst ENTFERNT statt befuellt: WhatsApp/Facebook & Co. lesen fuers
+      // Link-Vorschaubild bevorzugt og:description (nicht das SEO-<meta name="description">
+      // von oben, das bleibt fuer Google-Suchergebnisse erhalten) - Rob wollte in der
+      // Linkvorschau nur Titel + Skizze sehen, keinen zusaetzlichen Beschreibungstext.
+      .replace('<meta property="og:description" content="">\n  ', '')
       .replace('<meta property="og:image" content="https://coachunited.de/og-image.png">', `<meta property="og:image" content="${esc(ogImage)}">`)
       .replace('<meta property="og:image:alt" content="">', `<meta property="og:image:alt" content="${esc(grafikAlt)}">`)
       .replace('<meta property="og:url" content="">', `<meta property="og:url" content="${canonical}">`)
