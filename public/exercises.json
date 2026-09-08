@@ -12591,13 +12591,13 @@
     "leichter_machen": "• Langsam passen.",
     "schwerer_machen": "• Schärfer passen.",
     "alt_titel": "",
-    "seo_keyword": "Fußballübung Torhüter",
+    "seo_keyword": "",
     "url_slug": "torwarttraining-blitzdrehung-nach-dem-tunnel",
-    "seo_meta_description": "Torwarttraining für E- und D-Jugend: Nach dem Tunnel blitzschnell drehen und den Ball vor der Linie sichern. Trainiert Reaktionsschnelligkeit und Wurftechnik.",
-    "grafik_alt_text": "Torwart dreht sich nach einem Tunnel-Pass blitzschnell um und wirft sich auf den Ball vor der Torlinie",
-    "grafik_description": "Die Grafik zeigt ein kleines Tor, auf das ein Spieler den Ball durch die Beine des Torwarts spielt. Der Torwart dreht sich sofort um und wirft sich auf den Ball, um ihn vor der Torlinie zu sichern.",
-    "grafik_title": "Torwarttraining: Blitzdrehung nach dem Tunnel",
-    "grafik_caption": "Torwart sichert den Ball nach schneller Drehung, bevor er die Linie überquert.",
+    "seo_meta_description": "",
+    "grafik_alt_text": "",
+    "grafik_description": "",
+    "grafik_title": "",
+    "grafik_caption": "",
     "faq": [
       {
         "frage": "Wer kann das Torwarttraining übernehmen?",
@@ -12621,5 +12621,67 @@
     "schwester_id": null,
     "schwester_titel": null,
     "erstellt_am": "2026-09-04"
+  },
+  {
+    "id": 221,
+    "titel": "NEUE RÄUME ERLAUFEN UND AUF STANGENTORE TREFFEN",
+    "quell_trainingseinheit": "Kindern interessante Dribbelaufgaben stellen",
+    "grafik_url": "https://coachunited.de/images/uebungen/uebung-221-neue-raeume-erlaufen-und-auf-stangentore-treffen.webp",
+    "grafik_dateiname": "Neue Räume erlaufen und auf Fahnentore treffen.png",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "Im vier gegen vier versuchen zwei Teams Tore auf Stangentore in den Ecken zu erzielen. Dabei darf weder ein Spieler noch der Ball mit Mittelzone durchqueren.",
+    "aufbau": "Errichte ein etwa 15mx15m großes Quadrat. Errichte in der Mitte ein weiteres kleines Quadrat (etwa 3mx3m). An jeder Ecke jeweils Stangentore (oder Hütchentore) aufstellen. Zwei Teams mit je vier Spielern einteilen. Einen Ball. Bei größeren Gruppen ein zweites Feld aufbauen. ",
+    "durchfuehrung": "Zwei Teams spielen mit jeweils vier Feldspielern gegeneinander. Jedes Team darf auf alle Stangentore treffen. Wenn ein Spieler oder Ball die Mittelzone berührt oder durchquert, wechselt der Ballbesitz. Wer zuerst 7 Tore erzielt, hat gewonnen. Dann neu starten oder Teams wechseln. ",
+    "varianten": "3 gegen 3 mit Rotationsspielern.\nMit 2 Bällen spielen.\nEin rundes Feld markieren.",
+    "quell_url": "https://training-service.fussball.de/trainer/bambinie/training-online/trainingseinheiten-detail/kindern-interessante-dribbelaufgaben-stellen-2565/",
+    "quell_spiel_nr": 5,
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Dribbeln",
+      "Raumverhalten",
+      "Kommunikation"
+    ],
+    "coaching_fokus": "• Freie Räume ohne Ball erlaufen; • Im Feld verteilen, nicht alle auf den Ball!",
+    "leichter_machen": "• Ball darf durch die Mittelzone durchgepasst werden.; • Mannschaft ohne Ball darf die Mittelzone betreten.",
+    "schwerer_machen": "• Mittelzone darf überquert werden, aber nur mit hohem Pass.; • Schüsse auf Stangentore nicht erlaubt - nur reindribbeln zählt.",
+    "alt_titel": "",
+    "seo_keyword": "Fußballtraining Freilaufen",
+    "url_slug": "neue-raeume-erlaufen-und-auf-stangentore-treffen",
+    "seo_meta_description": "4v4 Fußballtraining mit zwei Toren pro Team: Orientierung, Umschalten und Taktik spielerisch trainieren. Perfekt für G-, F- und E-Jugend.",
+    "grafik_alt_text": "Fußballfeld mit vier Stangentoren an Stirn- und Langseiten, mittlere Sperrzone, zwei Teams im 4v4 Spiel",
+    "grafik_description": "Das Spielfeld zeigt vier Stangentore (zwei an den Kurz- und zwei an den Langseiten), eine gekennzeichnete Sperrzone in der Mitte und die Positionen von zwei Teams mit je vier Feldspielern bei einem taktischen Trainingsspiel.",
+    "grafik_title": "4v4 Vier-Tore-Spiel Fußballtraining",
+    "grafik_caption": "Im Vier-Tore-Abenteuer trainieren Kinder Orientierung und schnelle Umschaltungen im 4v4-Format.",
+    "faq": [
+      {
+        "frage": "Wie lange sollte eine Trainingseinheit mit dieser Übung dauern?",
+        "antwort": "2–3 Durchgänge à 5–10 Minuten mit Pausen dazwischen. So bleibt die Intensität hoch und die Konzentration erhalten."
+      },
+      {
+        "frage": "Was machen wir, wenn zu viele oder zu wenige Spieler da sind?",
+        "antwort": "Zweites Feld aufbauen. Bei weniger Spielern: Kleinere Teams bilden. "
+      },
+      {
+        "frage": "Ab welchem Alter ist diese Übung sinnvoll?",
+        "antwort": "Ab etwas fortgeschrittener G-Jugend, vor allem aber für die F-Jugend. "
+      }
+    ],
+    "status": "veroeffentlicht",
+    "referenz_grafik_url": "https://training-service.fussball.de/assets/img/csm_268102-523-bam-sp5-01_65e4efda7e.png",
+    "quell_kategorie": "G-Jugend",
+    "ist_gecrawlt": true,
+    "schwester_id": null,
+    "schwester_titel": null,
+    "original_aufbau": "Den Aufbau beibehalten, die Bälle entfernen.",
+    "original_durchfuehrung": "Die Fotografen entwickeln ihre Fotos und drucken ein Fotobuch über ihre Reise.\nSpiel 4 gegen 4.\nDie Teams greifen auf 2 Stangentore an und verteidigen die anderen beiden Stangentore.\nDas Feld in der Mitte darf nicht bespielt werden.",
+    "original_varianten": "3 gegen 3 mit Rotationsspielern.\nMit 2 Bällen spielen.\nEin rundes Feld markieren.",
+    "original_coaching_fokus": "Für freie Fußballspiele viel Spielzeit einplanen.\nKleine Fußballspiele sorgen für viele Erfolgserlebnisse.\nAlle Kinder sind am Spiel beteiligt.",
+    "schwester_gruppen": [],
+    "schwester_ids": [],
+    "erstellt_am": "2026-09-08"
   }
 ]
