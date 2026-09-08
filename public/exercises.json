@@ -12649,13 +12649,13 @@
     "leichter_machen": "• Ball darf durch die Mittelzone durchgepasst werden.; • Mannschaft ohne Ball darf die Mittelzone betreten.",
     "schwerer_machen": "• Mittelzone darf überquert werden, aber nur mit hohem Pass.; • Schüsse auf Stangentore nicht erlaubt - nur reindribbeln zählt.",
     "alt_titel": "",
-    "seo_keyword": "Fußballtraining Freilaufen",
+    "seo_keyword": "4v4 Fußballtraining mit zwei Toren pro Team: Orientierung, Umschalten und Taktik spielerisch trainieren. Perfekt für G-, F- und E-Jugend.",
     "url_slug": "neue-raeume-erlaufen-und-auf-stangentore-treffen",
-    "seo_meta_description": "4v4 Fußballtraining mit zwei Toren pro Team: Orientierung, Umschalten und Taktik spielerisch trainieren. Perfekt für G-, F- und E-Jugend.",
-    "grafik_alt_text": "Fußballfeld mit vier Stangentoren an Stirn- und Langseiten, mittlere Sperrzone, zwei Teams im 4v4 Spiel",
-    "grafik_description": "Das Spielfeld zeigt vier Stangentore (zwei an den Kurz- und zwei an den Langseiten), eine gekennzeichnete Sperrzone in der Mitte und die Positionen von zwei Teams mit je vier Feldspielern bei einem taktischen Trainingsspiel.",
-    "grafik_title": "4v4 Vier-Tore-Spiel Fußballtraining",
-    "grafik_caption": "Im Vier-Tore-Abenteuer trainieren Kinder Orientierung und schnelle Umschaltungen im 4v4-Format.",
+    "seo_meta_description": "Fußballfeld mit vier Stangentoren an Stirn- und Langseiten, mittlere Sperrzone, zwei Teams im 4v4 Spiel",
+    "grafik_alt_text": "4v4 Vier-Tore-Spiel Fußballtraining",
+    "grafik_description": "*G- und F-Jugend*\n\nGuten Morgen! Hier eine schöne Positionsspielübung für euch:\n\nIm vier gegen vier versuchen zwei Teams Tore auf Stangentore in den Ecken zu erzielen. Dabei darf weder ein Spieler noch der Ball mit Mittelzone durchqueren.\n\nhttps://coachunited.de/uebung/neue-raeume-erlaufen-und-auf-stangentore-treffen\n\nViele Grüße und viel Erfolg\n\nRob",
+    "grafik_title": "Im Vier-Tore-Abenteuer trainieren Kinder Orientierung und schnelle Umschaltungen im 4v4-Format.",
+    "grafik_caption": "Das Spielfeld zeigt vier Stangentore (zwei an den Kurz- und zwei an den Langseiten), eine gekennzeichnete Sperrzone in der Mitte und die Positionen von zwei Teams mit je vier Feldspielern bei einem taktischen Trainingsspiel.",
     "faq": [
       {
         "frage": "Wie lange sollte eine Trainingseinheit mit dieser Übung dauern?",
@@ -12667,21 +12667,95 @@
       },
       {
         "frage": "Ab welchem Alter ist diese Übung sinnvoll?",
-        "antwort": "Ab etwas fortgeschrittener G-Jugend, vor allem aber für die F-Jugend. "
+        "antwort": "Fußballtraining Freilaufen"
       }
     ],
     "status": "veroeffentlicht",
     "referenz_grafik_url": "https://training-service.fussball.de/assets/img/csm_268102-523-bam-sp5-01_65e4efda7e.png",
     "quell_kategorie": "G-Jugend",
     "ist_gecrawlt": true,
-    "schwester_id": null,
-    "schwester_titel": null,
+    "schwester_id": 224,
+    "schwester_titel": "",
     "original_aufbau": "Den Aufbau beibehalten, die Bälle entfernen.",
     "original_durchfuehrung": "Die Fotografen entwickeln ihre Fotos und drucken ein Fotobuch über ihre Reise.\nSpiel 4 gegen 4.\nDie Teams greifen auf 2 Stangentore an und verteidigen die anderen beiden Stangentore.\nDas Feld in der Mitte darf nicht bespielt werden.",
     "original_varianten": "3 gegen 3 mit Rotationsspielern.\nMit 2 Bällen spielen.\nEin rundes Feld markieren.",
     "original_coaching_fokus": "Für freie Fußballspiele viel Spielzeit einplanen.\nKleine Fußballspiele sorgen für viele Erfolgserlebnisse.\nAlle Kinder sind am Spiel beteiligt.",
-    "schwester_gruppen": [],
-    "schwester_ids": [],
+    "schwester_gruppen": [
+      [
+        224
+      ]
+    ],
+    "schwester_ids": [
+      224
+    ],
+    "erstellt_am": "2026-09-08"
+  },
+  {
+    "id": 224,
+    "titel": "",
+    "quell_trainingseinheit": "",
+    "grafik_url": "https://coachunited.de/images/uebungen/uebung-224-grafik.webp",
+    "grafik_dateiname": "Wächter überwinden und auf Stangentore treffen.png",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "Im vier gegen vier versuchen zwei Teams Tore auf Stangentore in den Ecken zu erzielen. Je ein Spieler pro Team verteidigt dabei als Wächter in der Verteidungszone. ",
+    "aufbau": "Errichte ein etwa 15mx15m großes Quadrat. An jeder Ecke jeweils Stangentore (oder Hütchentore) aufstellen. Markiere an zwei Seiten in etwa 3m Distanz zu den Stangen eine Verteidigungszone. Zwei Teams mit je vier Spielern einteilen. Je ein Spieler in die eigene Verteidigungszone. Einen Ball. Bei größeren Gruppen ein zweites Feld aufbauen. ",
+    "durchfuehrung": "Jedem Team zwei Stangentoren zuweisen. Zwei Teams spielen mit jeweils drei Feldspielern gegeneinander. Je ein Spieler wird in die Verteidungszone eingeteilt. Er ist der einzige seiner Mannschaft, der die Verteidigungszone betreten darf. Er verteidigt seine zwei Tore. Die angreifende Mannschaft darf die Verteidigungszone des Gegners betreten. Wer zuerst 7 Tore erzielt, hat gewonnen. Dann neu starten oder Teams wechseln. ",
+    "varianten": "",
+    "quell_url": "",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Zweikampf",
+      "Raumverhalten",
+      "Verteidigen"
+    ],
+    "coaching_fokus": "• Nicht alle auf den Ball. Räume suchen zum Freilaufen.",
+    "leichter_machen": "• Überzahl in der gegnerischen Verteidungszone durch Pässe ausspielen.",
+    "schwerer_machen": "",
+    "alt_titel": "",
+    "seo_keyword": "",
+    "url_slug": "",
+    "seo_meta_description": "",
+    "grafik_alt_text": "",
+    "grafik_description": "",
+    "grafik_title": "",
+    "grafik_caption": "",
+    "faq": [
+      {
+        "frage": "Geht die Übung auch mit mehr Spielern?",
+        "antwort": "Ja, bitte das Feld entsprechend vergrößern. "
+      },
+      {
+        "frage": "Wie lange dauert sie?",
+        "antwort": "15-20 Minuten bitte einplanen. "
+      },
+      {
+        "frage": "Ab wann passt das vom Alter her?",
+        "antwort": "Fortgeschrittene G-Jugenden könnten es versuchen. Sonst vor allem F-Jugend. "
+      }
+    ],
+    "status": "veroeffentlicht",
+    "referenz_grafik_url": "",
+    "quell_kategorie": "",
+    "ist_gecrawlt": false,
+    "schwester_gruppen": [
+      [
+        221
+      ]
+    ],
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "schwester_ids": [
+      221
+    ],
+    "schwester_id": 221,
+    "schwester_titel": "NEUE RÄUME ERLAUFEN UND AUF STANGENTORE TREFFEN",
     "erstellt_am": "2026-09-08"
   }
 ]
