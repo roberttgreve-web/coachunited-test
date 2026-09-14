@@ -575,8 +575,8 @@ function injectWhatsAppPromo() {
       cursor: pointer; text-decoration: none; border: 1.5px solid transparent;
       transition: background 0.15s, color 0.15s, border-color 0.15s;
     }
-    .cu-wa-primary { background: #1E6BFF; border-color: #1E6BFF; color: #fff; }
-    .cu-wa-primary:hover { background: #1558d6; border-color: #1558d6; }
+    .cu-wa-primary { background: #25D366; border-color: #25D366; color: #fff; }
+    .cu-wa-primary:hover { background: #1ebd5b; border-color: #1ebd5b; }
     .cu-wa-secondary { background: transparent; border-color: #D8DEEC; color: #46506E; }
     .cu-wa-secondary:hover { border-color: #1E6BFF; color: #1E6BFF; background: #F2F6FF; }
 
