@@ -117,6 +117,7 @@ Wichtig: `uebung-detail.html`, `einheit-detail.html` und `artikel-detail.html` s
 - **Nameserver zeigen trotzdem auf GoDaddy** (`ns37`/`ns38.domaincontrol.com`) – domainfactory bietet dieses Hosting-Paket als Reseller-Produkt auf GoDaddy-Infrastruktur an. Es gibt **kein separates, eigenständiges GoDaddy-Kundenkonto** dafür (mehrfach erfolglos versucht, u. a. über GoDaddys eigene Konto-Wiederherstellung) – die komplette Verwaltung, inklusive einzelner DNS-Records, läuft über **domainfactory → Auftrag A726027 → „Nameserver-Einstellungen"**, nicht über godaddy.com direkt.
 - **`hallo@coachunited.de`** ist seit 08/2026 ein echtes Postfach – **Microsoft 365 E-Mail Essentials**, bestellt/verwaltet über domainfactory („E-Mail und Office" im selben Auftrag). MX-Eintrag, die beiden DKIM-CNAMEs (`selector1`/`selector2._domainkey`) und der Domain-Verifizierungs-TXT-Eintrag wurden bei der Einrichtung automatisch gesetzt. Der SPF-Eintrag musste **manuell nachgetragen** werden: Ein älterer Eintrag existierte zwar mit korrektem Inhalt (`v=spf1 include:secureserver.net -all`), stand aber unter dem veralteten, eigenen **Record-Typ „SPF"** statt als **TXT** – moderne Prüfungen (auch Microsofts eigene) lesen SPF-Policies ausschließlich aus TXT-Records und übersahen ihn deshalb. Alter „SPF"-Typ-Eintrag gelöscht, gleichlautender **TXT**-Eintrag neu angelegt, seitdem korrekt erkannt.
 - Kontaktadresse im Impressum, in der Datenschutzerklärung, auf „Über uns" und bei den `uebung-einreichen`-Formularen wurde von `mail.coachunited@gmail.com` auf `hallo@coachunited.de` umgestellt (08/2026). Der Web3Forms-Feedback-Button (s. o.) läuft als einziger bekannter Kontaktweg **noch** auf die alte Adresse.
+- **Google Search Console – Domain-Property (`sc-domain:coachunited.de`):** Bestätigt über einen **TXT-Eintrag** `google-site-verification=GtlJrIrzcUlyGWHXA-2YwEhMGtIfQy0ZwkvD4ZRPMRo` auf der Root-Domain (Hostname-Feld bei domainfactory **leer** lassen, sonst entsteht `coachunited.de.coachunited.de`). ⚠️ **Diesen TXT-Eintrag nie löschen** – Google prüft ihn bei Domain-Properties regelmäßig neu, anders als bei der HTML-Tag-Methode. Ist im September 2026 bereits einmal kommentarlos verschwunden (vermutlich beim Aufräumen anderer DNS-Einträge, am ehesten im Umfeld der Microsoft-365-Einrichtung oben) und musste neu gesetzt werden (Details in Abschnitt 28). Zusätzlich existiert seit 09/2026 eine **zweite, unabhängige Property** `https://coachunited.de` (URL-Präfix), bestätigt per HTML-Meta-Tag im `<head>` von `home.html` (`google-site-verification`-Tag, nicht in DNS) – die bleibt von DNS-Aufräumaktionen unberührt und dient als Fallback-Zugang zu den Search-Console-Daten, falls die Domain-Property nochmal ausfällt. Beide Properties können dauerhaft nebeneinander bestehen.
 
 ## 7. Deployment (GitHub → Vercel)
 
@@ -147,7 +148,9 @@ Wichtig: `uebung-detail.html`, `einheit-detail.html` und `artikel-detail.html` s
 - ✅ **Erledigt (01.09.2026): CTA-Tracking in Analytics.** Größtenteils schon am 31.08.2026 umgesetzt (`merkliste_add`, `print_click`, `feedback_submit`, `uebung_einreichen_submit`, `generator_start`) – dieser Eintrag war nur nicht aktualisiert worden. Lücke war der Teilen-Button: `shareExerciseBar()` (Action-Leiste) und `shareExercise()` ("Übung weiterempfehlen") lösen jetzt beide `share_click` aus, mit `source: 'action_bar'` bzw. `'weiterempfehlen'` zur Unterscheidung. WhatsApp-Kanal-Link ist bereits abgedeckt: `trackWhatsAppClicks()` in `desktop-nav.js` fängt per einem einzigen delegierten `document`-Click-Listener **jeden** Link auf die Kanal-URL ab (Bottom-Nav, Abbinder, Homepage-Sektion, `/whatsapp-info`), egal wo im Markup – Event `whatsapp_click`. Deutlich robuster als Einzelverdrahtung pro Button, keine Lücke.
 - **To-do: Vercel Security Checkpoint blockiert echte Besucher.** Am 01.09.2026 bekam Robert beim Test auf dem Handy statt der Seite den Zwischenschritt „We're verifying your browser" / „Vercel Security Checkpoint" zu sehen. Sehr wahrscheinliche Ursache: Beim Verifizieren der heutigen Deploys wurde die Live-Seite wiederholt automatisiert per `curl` abgefragt (Polling-Loop alle 5s über mehrere Minuten), das hat Vercels Bot-/Attack-Schutz ausgelöst. Ein Einzel-Check kurz danach lieferte wieder normal `200`, scheint also temporär gewesen zu sein. Nicht weiter untersucht, nur beobachtet – falls es wiederkehrt: Vercel-Dashboard → Security/Firewall-Einstellungen prüfen, ob eine „Attack Challenge Mode"-Schwelle zu empfindlich eingestellt ist. Für künftige Deploy-Checks: keine engen Polling-Loops mehr gegen die Live-Domain, stattdessen größere Abstände oder Vercels eigenes Deployment-Status-API nutzen. **Bewusst zurückgestellt (01.09.2026):** Kein Vercel-API-Token vorhanden (nur der Deploy-Hook in `.env.local`, der keinen Zugriff auf Firewall-Einstellungen gibt), Dashboard-Login liegt nicht vor. Ist seit dem einen Vorfall nicht wieder aufgetreten – nicht dringend. Bei Wiederauftreten: entweder Robert schaut selbst im Vercel-Dashboard unter Project → Firewall/Security nach, oder ein API-Token mit passenden Rechten wird in `.env.local` ergänzt.
 
-## 9. Google Ad Grants (Stand 2026-08-21)
+## 9. Google Ad Grants (Stand 2026-09-10 – ✅ GENEHMIGT)
+
+**Nach vier Ablehnungen am 2026-09-10 genehmigt.** Damit sind die Übungen aus diesem Abschnitt und aus Abschnitt 22 abgeschlossen – die weiter unten dokumentierte Fehlersuche bleibt als Referenz stehen, falls die Seite bei einer künftigen Grant-Prüfung (z. B. Reaktivierung nach Policy-Verstoß) erneut durchleuchtet wird.
 
 **Verlauf:**
 
@@ -160,7 +163,9 @@ Wichtig: `uebung-detail.html`, `einheit-detail.html` und `artikel-detail.html` s
 | 2026-08-15 | 3. Antrag eingereicht – **abgelehnt** (wieder identischer Wortlaut) |
 | 2026-08-15 | Eigentlicher Treffer gefunden: `/uebungen` und alle 22 Alter/Skill/Phase-Landingpages zeigten im rohen HTML „0 Übungen" – die Karten kamen ausschließlich per JavaScript, 22 davon zusätzlich per GitHub-Fetch der vollen Datenbank. Behoben (Abschnitt 17). |
 | 2026-08-18 | 4. Antrag eingereicht – **abgelehnt** (wieder identischer Wortlaut) |
-| 2026-08-21 | Erneuter Thin-Content-Scan auf ausdrücklichen Wunsch: `/einheit-generator` ohne `?jugend=`-Parameter leitet per Client-JS auf `/home` weiter und stand trotzdem in der Sitemap – entfernt (Abschnitt 18). `/merkliste`, `/danke` zusätzlich auf `noindex` gesetzt. 5. Antrag noch nicht erneut eingereicht. |
+| 2026-08-21 | Erneuter Thin-Content-Scan auf ausdrücklichen Wunsch: `/einheit-generator` ohne `?jugend=`-Parameter leitet per Client-JS auf `/home` weiter und stand trotzdem in der Sitemap – entfernt (Abschnitt 18). `/merkliste`, `/danke` zusätzlich auf `noindex` gesetzt. |
+| 08/2026–09/2026 | Weitere inhaltliche Überarbeitung nach externer Analyse (Abschnitt 22): „Über uns" komplett neu, Vereinszweck im Impressum, Startseiten-Umbau mit „Was wir tun"-Sektion und Neueste-Übungen-Karussell (Abschnitt 24), technische Crawl-Prüfung (Abschnitt 25) |
+| **2026-09-10** | **5. Antrag – GENEHMIGT** ✅ |
 
 Die zweite Ablehnung kam trotz stark gesunkenem Seitengewicht der drei Übersichtsseiten (`/home`, `/uebungen`, `/einheiten`) – der eigentliche Rest lag in den 227 Übungs- und Einheitenseiten dahinter, die weiterhin 2,7 MB pro Aufruf luden (Abschnitt 15). Zusätzlich wurden die Richtlinien wörtlich gegen die Seite geprüft statt nur nach Bauchgefühl (Abschnitt 16) – dabei fiel die fehlende Registernummer auf „Über uns" und die rein clientseitige Artikelliste auf `/wissen` auf, beide behoben.
 
@@ -850,6 +855,8 @@ Robert meldete: „Von fast allen Übungen fehlen die Fotos." Bestätigt per Dif
 
 ## 22. Externe Analyse (ChatGPT) zu den wiederholten Ad-Grants-Ablehnungen (08/2026)
 
+✅ **Ergebnis: Am 2026-09-10 genehmigt** (s. Abschnitt 9) – die Hypothese dieser Analyse (zu wenig Belege für echte Vereinsarbeit statt eines technischen Problems) hat sich damit im Kern bestätigt.
+
 Robert hat die wiederholten, wortidentischen Ablehnungen (Abschnitt 9) zusätzlich von ChatGPT einschätzen lassen. Kernthese dort, abweichend von den bisher in diesem Dokument verfolgten Spuren (Ladezeit, Thin Content im technischen Sinn, fehlende Registernummer): **Das eigentliche Problem ist nicht mehr technisch, sondern inhaltlich** – die Seite liest sich wie die Beschreibung eines Produkts („177 Übungen, kostenlos, gemeinnützig"), aber liefert kaum **Belege für tatsächliche, laufende Vereinsarbeit**. Nicht als bestätigte Diagnose zu verstehen, sondern als zusätzliche, plausible Hypothese für einen weiteren Anlauf – hier dokumentiert, damit sie nicht verloren geht.
 
 ### 22.1 Priorisierte Maßnahmenliste (aus der Analyse)
@@ -996,3 +1003,116 @@ Robert meldete per Screenshot: Beim Teilen eines Übungs-Links in WhatsApp ersch
 **Ursache:** `build-exercise-pages.js` befüllte `<meta property="og:description">` mit `ex.seo_meta_description || ex.kurzbeschreibung`. WhatsApp/Facebook & Co. lesen für Link-Vorschaukarten bevorzugt die Open-Graph-Tags (`og:title`, `og:description`, `og:image`) – genau das SEO-Feld, das im CoachPublisher für jede Übung händisch oder per KI gepflegt wird (s. Abschnitte 2.5.1 etc.), landete dadurch 1:1 in jeder WhatsApp-Vorschau.
 
 **Fix:** `og:description` wird jetzt beim Seitenbau komplett aus dem Markup entfernt, statt mit Inhalt befüllt zu werden. Bewusst **nicht** angetastet: `<meta name="description">` (das normale SEO-Meta-Tag für Google-Suchergebnisse) – das nutzt weiterhin `seo_meta_description`, nur die Social-Media-Vorschau ist betroffen. WhatsApp/Facebook zeigen bei fehlendem `og:description` nur noch Titel + Bild, exakt wie gewünscht.
+
+---
+
+## 28. Google Search Console: Domain-Property verlor Bestätigung, "GoDaddy" entpuppte sich als domainfactory (09/2026)
+
+Robert wollte in die Search Console (Property `coachunited.de`, die Domain-Property), bekam aber „Du hast leider keinen Zugriff auf diese Property" mit der Aufforderung, die Inhaberschaft per DNS-Eintrag neu zu bestätigen. Robert: „Es hat mehrere Monate problemlos funktioniert, gestern schon einmal, heute wieder nicht."
+
+**Ursache:** Der DNS-TXT-Eintrag `google-site-verification=...`, der die Domain-Property all die Monate bestätigt hatte, war aus den DNS-Einträgen verschwunden (per direkter DNS-Abfrage bestätigt: nur noch SPF- und Microsoft-365-TXT-Eintrag vorhanden). Google prüft bei Domain-Properties diesen Eintrag **regelmäßig neu** – anders als bei der einmalig geprüften HTML-Tag-Methode – und zieht die Bestätigung automatisch zurück, sobald der Eintrag fehlt. **Wer/wann genau gelöscht hat, ließ sich nicht feststellen** (kein Zugriff auf ein Änderungsprotokoll) – am plausibelsten im Zuge der in Abschnitt 6.1 dokumentierten Microsoft-365-Einrichtung, bei der ohnehin DNS-Einträge angefasst wurden.
+
+**Verwechslung unterwegs aufgeklärt:** Google zeigte in der Bestätigungs-Anleitung "GoDaddy.com" als DNS-Anbieter an (weil die Nameserver auf `domaincontrol.com` zeigen, s. 6.1) – Robert hat aber gar keinen eigenständigen GoDaddy-Zugang, sondern verwaltet die Domain komplett über **domainfactory** (Kundennummer K349914, Auftrag A726027 → „Nameserver-Einstellungen"). Das ist keine Verwechslung seinerseits, sondern strukturell: domainfactory bietet dieses Hosting-Paket als Reseller auf GoDaddy-Infrastruktur an, ein separates godaddy.com-Konto existiert dafür nicht (s. 6.1) – Googles automatische Anbieter-Erkennung kann das aus den Nameserver-Einträgen nicht unterscheiden.
+
+**Fix:** Im Bestätigungsdialog das Anbieter-Dropdown von „GoDaddy.com" auf „Andere" umgestellt (umgeht den GoDaddy-OAuth-Login-Versuch, der ohnehin nicht funktioniert hätte), den TXT-Wert manuell bei domainfactory als neuen Eintrag angelegt (Hostname-Feld **leer** lassen – sonst entsteht durch das im Formular fest angehängte „.coachunited.de"-Suffix versehentlich `coachunited.de.coachunited.de`), Live-Sichtbarkeit per DNS-Abfrage gegen `8.8.8.8` bestätigt, danach in der Search Console erfolgreich verifiziert.
+
+**Nebenbei geklärt:** Die Search-Console-Verifizierung hat keinerlei Zusammenhang mit den wiederholten Google-Ad-Grants-Ablehnungen (Abschnitt 9/22) – Search Console ist reines Reporting-Tool für den Seitenbetreiber, unabhängig vom Crawling/Indexierung durch Google oder der Ad-Grants-Prüfung selbst.
+
+Details zum TXT-Eintrag und der zusätzlichen URL-Präfix-Property als Fallback stehen jetzt in Abschnitt 6.1.
+
+---
+
+## 29. Google Ad Grants genehmigt: Plan für die erste Kampagne (09/2026)
+
+Nach der Genehmigung (Abschnitt 9) steht ein Google-Ads-Konto mit **10.000 $ Budget/Monat** bereit. Robert hat dafür eine Keyword-Analyse liefern lassen (`COACH UNITED/Seo/Keyword-Analyse.txt` – UTF-16-codierter Google-Keyword-Planner-Export, 1.132 Keywords, mit Python/`csv`-Modul und `encoding='utf-16'` auswertbar), auf deren Basis der folgende Plan entstand. **Noch nicht umgesetzt** – nur der Plan, Ausführung folgt in einer der nächsten Sessions.
+
+### 29.1 Auswertung der Keyword-Analyse
+
+- 1.132 Keywords, davon 940 mit < 100 Suchen/Monat (Long Tail), nur 37 mit ≥ 1.000 Suchen/Monat.
+- Wettbewerb überwiegend **niedrig** (824 von 1.132) – günstige Ausgangslage für niedrige CPCs innerhalb der Ad-Grants-Vorgaben.
+- Stärkste Themen (Suchvolumen/Monat, jeweils mehrere Wortstellungs-Varianten zusammengefasst): Schießen/Torschuss (~12.100 + 1.600 + 1.600 + 1.300), Passen (~8.100 + 2.900×3), Fußballtraining allgemein (4.400), Kinderfußball (2.400, aber **hoher** Wettbewerb), Altersgruppen E-/D-/F-/G-Jugend (je 300–1.600, viele Varianten), Dribbeln (1.300 + 880×2), DFB-Trainingsübungen (1.300).
+- **Themenfremd, für Negative Keywords vorgesehen:** Tennis-Trainingsübungen, Basketball dribbeln, „neurozentriertes Training", „functional training", Fußball-Trainingsanzüge (Kleidung) – tauchten in der Analyse auf, haben aber nichts mit den eigentlichen Übungsinhalten zu tun.
+
+### 29.2 Phase 0 (zuerst, blockiert alles andere): Conversion-Tracking ✅ ERLEDIGT (09/2026)
+
+Ad-Grants-Konten müssen die Gebotsstrategie **„Conversions maximieren"** nutzen (kein manuelles CPC-Gebot mehr erlaubt) – die funktioniert nur mit mindestens einer definierten Conversion-Aktion. Ohne das droht nach einigen Monaten ohne Aktivität sogar der Entzug des Grants.
+
+Bereits vorhandene GA4-Events, die sich dafür eignen (kein neues Tracking nötig): `whatsapp_click` (bester Kandidat – zentraler CTA der ganzen Seite, in `desktop-nav.js`), `merkliste_add`, `uebung_einreichen_submit`, `feedback_submit`, `share_click`, `print_click`, `generator_start` (alle in `uebung-detail.html`/`desktop-nav.js`).
+
+**Umgesetzt:** Robert Schritt für Schritt durch die Google-Ads- und GA4-Oberfläche geführt (Screenshot-basiert, da kein direkter Zugriff auf die eingeloggten Konten). Ablauf, der tatsächlich funktioniert hat (weicht leicht vom ursprünglich vermuteten Weg über „Tools → Verknüpfte Konten" ab – der direktere Weg lief über „Zielvorhaben"):
+
+1. Google Ads → linkes Icon **„Zielvorhaben"** (Pokal-Symbol) → „Conversions" → „Neue Conversion-Aktion" → Kategorie **„Conversions auf einer Website"**.
+2. GA4-Property „Coach United" (538601347) dort direkt verknüpft (Button „Verknüpfen" bei der Datenquellen-Auswahl) – beide Datenfreigabe-Schalter („App- und Webmesswerte importieren", „Google Analytics-Zielgruppen importieren") blieben auf „Aktiviert".
+3. Conversion-Kategorie **„Klick auf externen Link"** gewählt (passt technisch am besten: `whatsapp_click` feuert beim Klick auf einen Link, der auf eine externe Domain – WhatsApp – führt).
+4. ⚠️ **Wichtige Falle:** Die Event-Auswahl in Ads zeigte zunächst **„Noch keine Ereignisse vorhanden"** – GA4 listet dort nur als **„Schlüsselereignis"** markierte Events (GA4s Begriff für „Conversion" innerhalb von Analytics selbst, nicht automatisch alle getrackten Events). Fix: in GA4 → Verwalten → Datenanzeige → Ereignisse → Reiter „Letzte Ereignisse" → bei `whatsapp_click` auf den Stern geklickt, um es als Schlüsselereignis zu markieren. Erst danach tauchte es in der Ads-Event-Liste auf.
+5. Conversion-Aktion „Klick auf externen Link – Coach United (web) whatsapp_click" erstellt. Der danach angezeigte Zusatzschritt „Google-Tag und Ereignis-Tags einrichten" (eigenes Ads-Tag direkt auf der Seite) war **nicht nötig** – die Conversion läuft komplett über die bereits bestehende GA4-Verknüpfung, kein zusätzlicher Code auf der Website nötig.
+
+**Ergebnis, verifiziert:** In der Zielvorhaben-Übersicht steht „Klick auf externen Link" mit Status **„Aktiv"**, 1 primäre Conversion-Aktion. Damit ist die Grundvoraussetzung für „Conversions maximieren" erfüllt – **noch offen:** die eigentliche Search-Kampagne selbst ist noch nicht angelegt (s. 29.3 ff.).
+
+### 29.3 Kampagnen-Grundgerüst
+
+- Eine Search-Kampagne (Ad Grants: nur Suchnetzwerk, kein Display/Video/Shopping)
+- Standort: Deutschland gesamt (Verein ist laut „Über uns" inzwischen bundesweit aktiv, nicht mehr nur Berlin/Brandenburg)
+- Sprache Deutsch, Gebotsstrategie „Conversions maximieren"
+- Mindestens ein paar Sitelink-Erweiterungen account-weit (z. B. „Alle Übungen", „Nach Alter filtern", „WhatsApp-Kanal", „Übung einreichen") – von Ad Grants als Mindeststandard verlangt
+
+### 29.4 Ad Groups (an bestehende Seitenstruktur angelehnt)
+
+Vorteil: Die Seite ist schon exakt nach Alter/Skill/Phase strukturiert – jede Ad Group bekommt dadurch eine thematisch passende Ziel-Landingpage statt nur der Startseite.
+
+| Ad Group | Beispiel-Keywords (Suchvolumen/Monat) | Ziel-Landingpage | Status |
+|---|---|---|---|
+| Torschuss | „fussball torschuss übungen" (1.600), „torschuss übungen fussball" (1.600), „torschuss übungen" (1.300) | `/uebungen/skill/torschuss` | ✅ live (09/2026) |
+| Passen | „fussball passübungen" (2.900), „passübungen im fussball" (2.900) | `/uebungen/skill/passen` | ✅ live (09/2026) |
+| Dribbeln | „fussball dribbeln" (880), „dribbeln fussball" (880) | `/uebungen/skill/dribbeln` | ✅ live (09/2026) |
+| E-Jugend | „e jugend fußball" (1.600), „fußball e jugend" (1.600), „e jugend fussballtraining" (480) | `/uebungen/alter/e-jugend` | ✅ live (09/2026) |
+| D-Jugend | „d jugend fussballtraining" (480), „d jugend training fussball" (480) | `/uebungen/alter/d-jugend` | ✅ live (09/2026) |
+| F-Jugend | „f jugend fussballtraining" (480), diverse Wortstellungs-Varianten | `/uebungen/alter/f-jugend` | ✅ live (09/2026) |
+| G-Jugend / Bambini | „kinderfussball" (2.400), „fußballübungen für bambinis" (480) | `/uebungen/alter/g-jugend` | ✅ live (09/2026) |
+| Fußballtraining allgemein | „fußballtraining" (4.400), „dfb trainingsübungen" (1.300), „fußball übungen" (1.300) | `/uebungen` | ✅ live (09/2026) |
+
+### 29.5 Formatpunkt: Einzelwort-Keywords müssen erweitert werden
+
+Die volumenstärksten Einzel-Keywords („schießen" 12.100, „passen" 8.100, „dribbeln" 1.300) sind einzelne Wörter – Ad Grants lässt Einzelwort-Keywords grundsätzlich nicht zu (zu generisch). Müssen zu Wortgruppen erweitert werden, z. B. „fußball schießen üben", „passen im fußball lernen" – Bedeutungskern bleibt, nur als Phrase statt Einzelwort.
+
+### 29.6 Anzeigentexte
+
+Je Ad Group mindestens 2 Responsive-Search-Ads, Titel/Beschreibung an die jeweilige Landingpage angepasst (Quality Score!), CTA Richtung „Kostenlos ansehen"/„Jetzt entdecken".
+
+### 29.7 Nach dem Launch (erste 2–4 Wochen)
+
+- Suchbegriffbericht prüfen, weitere Negative Keywords ergänzen
+- Quality Score im Blick behalten (dauerhaft niedriger QS führt zur automatischen Pausierung einzelner Keywords)
+- Sicherstellen, dass mindestens 1 Conversion/Monat reinkommt (sonst Grant-Risiko, s. 29.2)
+
+### 29.8 Kampagne „COACH UNITED – Übungen" live (09/2026, gestartet 10.09.2026) – ✅ alle 8 Ad Groups aus 29.4 umgesetzt
+
+Erste Ad Group **Torschuss** eingerichtet und veröffentlicht, Robert Schritt für Schritt per Screenshots durch die Google-Ads-Oberfläche geführt (kein direkter Zugriff aufs Konto). Einstellungen: Suchnetzwerk, Ziel „Website-Traffic", Zielvorhaben „Klicks auf externe Links" (die in 29.2 eingerichtete `whatsapp_click`-Conversion), Gebote „Conversions maximieren", Standort Deutschland, Sprache Deutsch, **330 $/Tag Budget** (≈ 10.000 $/Monat, bewusst hoch angesetzt trotz nur einer Ad Group – ist eine Obergrenze, kein Ziel, tatsächliche Ausgaben bleiben durch das begrenzte Suchvolumen der Nische ohnehin weit darunter; erspart ein späteres Nachjustieren, sobald weitere Ad Groups dazukommen).
+
+Ad Group „Torschuss": 6 Keywords (alle als Phrase Match in Anführungszeichen, Einzelwort-Keywords zu Wortgruppen erweitert wie in 29.5 beschrieben), Ziel-URL `https://coachunited.de/uebungen/skill/torschuss`, 1 Responsive-Search-Ad mit 5 Anzeigentiteln, 2 Textzeilen, 4 Sitelinks (Alle Übungen, Nach Alter filtern, WhatsApp-Kanal, Übung einreichen).
+
+⚠️ **Offen, nicht abschließend verifiziert:** „AI Max für Suchkampagnen" (automatische Textanpassung + Umleitung von Klicks auf andere URLs als die festgelegte Ziel-URL) wurde im Einrichtungsassistenten bewusst ausgeschaltet – auf der finalen Übersichtsseite vor der Veröffentlichung stand aber weiterhin „Textanpassung und Erweiterung der finalen URL aktiviert" (widersprüchlich zum zuvor explizit deaktivierten Schalter, vermutlich nur eine nicht aktualisierte Zusammenfassung). Kampagne wurde trotzdem veröffentlicht (Einstellung ist jederzeit nachträglich änderbar, kein Ad-Grants-Risiko). **Nächster Schritt:** In der laufenden Kampagne unter „Kampagnen" → „Einstellungen" → Abschnitt „AI Max" den tatsächlichen Status prüfen und ggf. den Schalter „Kampagne mit AI Max optimieren" wirklich ausschalten – sonst könnte Google Klicks statt auf `/uebungen/skill/torschuss` auf andere Seiten umleiten, was der ganzen Ad-Group-zu-Landingpage-Logik aus 29.4 widerspräche.
+
+**Update selber Tag:** Zweite Ad Group **Passen** nach demselben Muster ergänzt (6 Keywords als Phrase Match, Ziel-URL `https://coachunited.de/uebungen/skill/passen`, 5 Anzeigentitel, 2 Textzeilen). Die erste Ad Group trug noch den Google-Standardnamen „Anzeigengruppe 1" – auf „Torschuss" umbenannt (Anzeigengruppe öffnen → Stift-Symbol neben dem Namen oben). Kampagne hat die Google-Richtlinienprüfung inzwischen bestanden, Status **„Aktiv (lernt)"** statt „Ausstehend".
+
+⚠️ **UI-Stolperstein beim Anlegen neuer Ad Groups (bei „Passen" und „Fußballtraining allgemein" jeweils erneut aufgetreten, also ein zuverlässig reproduzierbares Muster, kein Einzelfall):**
+1. Der Assistent übernimmt teils Daten/KI-Vorschläge der vorherigen Ad Group in die neue (Anzeigentitel/-text bezogen sich zunächst fälschlich auf das falsche Thema) – Fix: Button „Vorschläge löschen" im Hinweiskasten, danach Texte manuell eintragen.
+2. Das **Keywords-Feld** geht beim Zurück-/Vorwärtsnavigieren innerhalb des Assistenten regelmäßig komplett leer verloren, obwohl die Anzeige selbst (Titel/Textzeilen) erhalten bleibt. Bei „Fußballtraining allgemein" einmal nicht rechtzeitig bemerkt – die Ad Group wurde ohne Keywords gespeichert (0 aktive Keywords, keine Anzeigenauslieferung möglich). Nachträglich behoben: Ad Group öffnen → „Keywords" → „+ Keywords" → dort die Keywords ergänzen (funktioniert genauso gut nachträglich).
+3. **Handlungsempfehlung für künftige Ad Groups:** Nach dem Speichern einer neuen Ad Group immer direkt in der Anzeigengruppen-Übersicht nachsehen (`Kampagnen → Anzeigengruppen → Keywords`-Tab öffnen), ob die Keywords wirklich aktiv sind – nicht nur auf die Anzeige-Vorschau verlassen.
+4. Zweiter, kleinerer UI-Bug: Das „Angezeigter Pfad"-Feld (zweites von zwei, je max. 15 Zeichen) hat bei „fussballtraining" (16 Zeichen) einen Validierungsfehler geworfen – bei künftigen Ad Groups auf die 15-Zeichen-Grenze achten, notfalls kürzen oder leer lassen.
+
+**✅ Alle 8 Ad Groups aus der Tabelle in 29.4 sind angelegt und live** (Torschuss, Passen, Fußballtraining allgemein, Dribbeln, E-Jugend, D-Jugend, F-Jugend, G-Jugend/Bambini) – je 6 Phrase-Match-Keywords, eigene Ziel-URL, 1 Anzeige mit 5 Anzeigentiteln/2 Textzeilen. Trotz des in diesem Abschnitt dokumentierten Keywords-Verlust-Bugs bei jeder neuen Ad Group kontrolliert und bestätigt: alle Keywords korrekt aktiv gespeichert. Kampagnen-Setup aus dem Plan (29.1-29.7) damit vollständig umgesetzt.
+
+**Noch zu tun:**
+- ⚠️ AI-Max-Status in den Kampagneneinstellungen weiterhin nicht verifiziert (Seite lud beim ersten Versuch nicht – s. Absatz oben). Bei nächster Gelegenheit: „Kampagnen" → „Einstellungen" → Abschnitt „AI Max" öffnen und Schalter „Kampagne mit AI Max optimieren" kontrollieren/ausschalten.
+- Nach ein paar Tagen/Wochen Laufzeit: Suchbegriffbericht prüfen, Negative Keywords ergänzen, Quality Score und Conversion-Zahlen im Blick behalten (s. 29.7).
+
+### 29.9 WhatsApp-Popup auf den Ad-Grants-Landingpages reaktiviert (09/2026)
+
+Der ältere Popup-Störer (`injectWhatsAppPromo()` in `desktop-nav.js`) war seit Einführung des sitewide-Abbinders (`injectWhatsAppAbbinder()`) bewusst über `WA_PROMO_LIVE = false` deaktiviert, mit dem Code-Kommentar „Scharfschalten, sobald Google Ad Grants freigegeben ist". Nach Genehmigung (s. Abschnitt 9) wurde er auf Wunsch wieder aktiviert – aber **nicht sitewide**, sondern nur auf den 8 Landingpages, auf die die Ad-Grants-Anzeigengruppen verlinken (s. Tabelle 29.4): `/uebungen`, `/uebungen/skill/torschuss`, `/uebungen/skill/passen`, `/uebungen/skill/dribbeln`, `/uebungen/alter/e-jugend`, `/uebungen/alter/d-jugend`, `/uebungen/alter/f-jugend`, `/uebungen/alter/g-jugend`.
+
+Grund für die Einschränkung: Der bestehende Code-Kommentar bei `injectWhatsAppAbbinder()` warnt ausdrücklich, dass zwei gleichzeitige WhatsApp-Werbeflächen auf derselben Seite „wie Spam wirken". Sitewide wäre das also ein Rückschritt gegenüber der 08/2026-Entscheidung für den Abbinder. Auf den bezahlten Ad-Grants-Landingpages selbst wird das bewusst in Kauf genommen, weil dort die Conversion-Rate (Klicks auf den WhatsApp-Kanal) unmittelbar zählt.
+
+**Umsetzung:** `WA_PROMO_LIVE = true` gesetzt, neue Konstante `WA_PROMO_PFADE` (Array der 8 Pfade) ergänzt, Anzeige-Bedingung erweitert um `(WA_PROMO_LIVE && aufZielseite)`. Auf Vorschau-Deployments/lokal (`istVorschau`) und mit `?wa=1` erscheint der Popup weiterhin überall (Testbarkeit unverändert).
+
+**Conversion-Tracking automatisch mit dabei:** Kein zusätzlicher Code nötig – der Popup-Button „Kanal ansehen" verlinkt (wie alle WhatsApp-CTAs der Seite) auf `CU_WA_KANAL_URL`, und `trackWhatsAppClicks()` (delegierter Klick-Listener auf `document`, s. Kommentar dort) feuert das GA4-Event `whatsapp_click` für jeden Link mit dieser Ziel-URL, egal wo im Markup. Das ist exakt die in 29.2 eingerichtete Conversion-Aktion.

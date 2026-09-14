@@ -349,9 +349,9 @@ function trackWhatsAppClicks() {
 // Wichtigster CTA der Seite (08/2026) - steht am Ende jeder Seite, direkt
 // vor der Bottom-Nav (mobil) bzw. dem Footer (Desktop). Bewusst als fester
 // Abschnitt statt Popup: kein Timing, kein Wegklicken noetig. Der aeltere
-// Poup-Stoerer (injectWhatsAppPromo) bleibt im Code, aber deaktiviert
-// (WA_PROMO_LIVE = false) - zwei gleichzeitige Werbeflaechen fuer dieselbe
-// Sache wirken wie Spam.
+// Popup-Stoerer (injectWhatsAppPromo) laeuft seit 09/2026 zusaetzlich, aber
+// NUR auf den Google-Ad-Grants-Landingpages (WA_PROMO_PFADE dort) - sitewide
+// waeren zwei gleichzeitige Werbeflaechen fuer dieselbe Sache Spam.
 function injectWhatsAppAbbinder() {
   // "/" und "/home" bewusst mit ausgeschlossen: die Startseite hat den
   // Kanal-Hinweis fest zwischen den Übungs-Sektionen und "Übung einreichen"
@@ -440,16 +440,37 @@ function injectWhatsAppAbbinder() {
   else container.appendChild(section);
 }
 
-// ── Sitewide Hinweis auf den WhatsApp-Kanal ──
+// ── Hinweis auf den WhatsApp-Kanal, nur auf den Ad-Grants-Landingpages ──
 //
-// Scharfschalten: WA_PROMO_LIVE auf true setzen, sobald Google Ad Grants
-// freigegeben ist. Auf Vorschau-Deployments und lokal ist der Störer ohnehin
-// aktiv, damit er getestet werden kann, ohne live zu gehen.
+// Seit 09/2026 live: Google Ad Grants ist genehmigt, die Kampagne lenkt
+// bezahlten (Grant-)Traffic gezielt auf die Skill-/Alters-Übersichten. Dort
+// zusätzlich zum sitewide-Abbinder (injectWhatsAppAbbinder) diesen Popup zu
+// zeigen ist bewusst NICHT sitewide, sondern auf WA_PROMO_PFADE beschränkt -
+// sonst hätte man auf jeder Seite zwei WhatsApp-CTAs gleichzeitig, was laut
+// Kommentar unten bei injectWhatsAppAbbinder "wie Spam wirkt". Auf den
+// Landingpages selbst nehmen wir das bewusst in Kauf, weil genau dort die
+// Conversion (whatsapp_click, siehe trackWhatsAppClicks) zählt.
+//
+// Scharfschalten sitewide: WA_PROMO_LIVE auf true UND WA_PROMO_PFADE leeren.
+// Auf Vorschau-Deployments und lokal ist der Störer ohnehin aktiv, damit er
+// getestet werden kann, ohne live zu gehen.
 //
 // Testhilfen:  ?wa=1      erzwingt die Anzeige (auch auf coachunited.de)
 //              ?wa=reset  löscht den gemerkten Zustand
 function injectWhatsAppPromo() {
-  var WA_PROMO_LIVE = false;
+  var WA_PROMO_LIVE = true;
+
+  // Genau die Seiten, auf die die Google-Ad-Grants-Anzeigengruppen verlinken.
+  var WA_PROMO_PFADE = [
+    '/uebungen',
+    '/uebungen/skill/torschuss',
+    '/uebungen/skill/passen',
+    '/uebungen/skill/dribbeln',
+    '/uebungen/alter/e-jugend',
+    '/uebungen/alter/d-jugend',
+    '/uebungen/alter/f-jugend',
+    '/uebungen/alter/g-jugend'
+  ];
 
   var KANAL_URL   = 'https://www.whatsapp.com/channel/0029VbAqTP68kyyEFg3oyX2t';
   var STATUS_KEY  = 'cu_wa_status';    // 'subscribed' | 'has'
@@ -470,9 +491,12 @@ function injectWhatsAppPromo() {
     } catch (e) {}
   }
 
-  var istVorschau = window.location.hostname !== 'coachunited.de';
-  var erzwungen   = /[?&]wa=1/.test(such);
-  if (!(WA_PROMO_LIVE || istVorschau || erzwungen)) return;
+  var istVorschau   = window.location.hostname !== 'coachunited.de';
+  var erzwungen     = /[?&]wa=1/.test(such);
+  var pfad          = window.location.pathname.replace(/\/$/, '') || '/';
+  var aufZielseite  = WA_PROMO_PFADE.indexOf(pfad) !== -1;
+
+  if (!(erzwungen || istVorschau || (WA_PROMO_LIVE && aufZielseite))) return;
 
   // Auf der Infoseite zum Kanal wäre der Hinweis überflüssig.
   if (window.location.pathname.replace(/\/$/, '') === '/whatsapp-info') return;
