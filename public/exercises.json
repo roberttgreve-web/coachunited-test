@@ -12757,5 +12757,70 @@
     "schwester_id": 221,
     "schwester_titel": "NEUE RÄUME ERLAUFEN UND AUF STANGENTORE TREFFEN",
     "erstellt_am": "2026-09-08"
+  },
+  {
+    "id": 225,
+    "titel": "3 GEGEN 2-ÜBERZAHLTURNIER",
+    "quell_trainingseinheit": "Das letzte Training mit Kindern zelebrieren",
+    "grafik_url": "https://coachunited.de/images/uebungen/uebung-225-3-gegen-2-ueberzahlturnier.webp",
+    "grafik_dateiname": "Das 3 gegen 2 Überzahlturnier.png",
+    "trainingsphase": "Spielformat",
+    "kurzbeschreibung": "Auf zwei Feldern wird parallel ein 3 gegen 2 auf en Jugentor mit Torhüter gespielt. Das Unterzahl-Team kann durch Dribblings in ein Stangentor auch Tore erzielen. ",
+    "aufbau": "Teile eine Kleinfeldhälfte (etwa 52 × 35 Meter) in zwei gleichgroße Spielfelder. An beiden Stirnseiten positionierst du jeweils ein Jugendtor und ein Stangentor gemäß der Skizze. Ordne die Spieler in vier Gruppen zu je drei Personen an. ",
+    "durchfuehrung": "Vier Teams spielen im Turniermodus. Bei jedem Spiel besetzen zwei Teams mit je drei Feldspielern das Feld, während von der verteidigenden Mannschaft einer als Torhüter fungiert. Ein Spiel dauert 5 Minuten. Nach jedem Spiel wechseln die Gegner, bis alle Mannschaften gegeneinander angetreten sind. Überzahl- und Unterzahl wechseln nach jedem Durchgang. ",
+    "varianten": "",
+    "quell_url": "https://training-service.fussball.de/trainer/d-juniorin/artikel/das-letzte-training-mit-kindern-zelebrieren-3544/",
+    "quell_spiel_nr": 3,
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Ballkontrolle",
+      "Torschuss",
+      "Zweikampf",
+      "Raumverhalten",
+      "Taktik",
+      "Umschalten"
+    ],
+    "coaching_fokus": "• Überzahl klug ausspielen, in dem die ganze Breite des Feldes besetzt wird.; • Tore auf Stangentore nur durch durchdribbeln, nicht durch Schüsse",
+    "leichter_machen": "• Schüsse auf Stangentore erlauben; • Für Jüngere können auch Minitore genommen werden ohne Torhüter",
+    "schwerer_machen": "• Schusszone vor dem Jugendtor einziehen, so dass Überzahl-Tore nur durch Fernschüsse erzielt werden dürfen; • Mindestzahl an Pässen für Überzahl-Mannschaft vor Torerzielung festlegen",
+    "alt_titel": "",
+    "seo_keyword": "Fußballübung Torschuss",
+    "url_slug": "3-gegen-2-ueberzahlturnier",
+    "seo_meta_description": "3vs3 Turnier mit Torwart im Kleinfeld-Training: Spannendes Fußballtraining für Kinder mit Turniermodus und maximaler Spielzeit.",
+    "grafik_alt_text": "Kleinfeld-Turnier 3gegen3 mit Torwarten: zwei Spielfelder nebeneinander mit Toren und Strafraum",
+    "grafik_description": "Das Bild zeigt die Anordnung zweier 3vs3-Spielfelder nebeneinander mit Jugenttoren, Stangentor und markierten Strafräumen von je 7 Metern Tiefe. Die Feldgröße beträgt etwa 52 × 35 Meter.",
+    "grafik_title": "3vs3 Turnier Kleinfeld Aufbau Torwart",
+    "grafik_caption": "Aufbau des 3vs3-Turniers mit zwei parallel laufenden Spielfeldern und Torwart pro Team.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler brauche ich insgesamt für diese Übung?",
+        "antwort": "Mindestens 12 Spieler (4 Teams à 3 Feldplayer). Bei größeren Gruppen mit Auswechselspielern arbeiten. "
+      },
+      {
+        "frage": "Kann ich das auch mit weniger Teams spielen?",
+        "antwort": "Ja, auch mit 3 Teams (9 Spieler) möglich – dann nur auf ein Feld spielen und nach jedem Durchgang rotieren. "
+      },
+      {
+        "frage": "Ab welchem Alter ist diese Übung sinnvoll?",
+        "antwort": "Ab F-Jugend (U10), optimal für E-Jugend und D-Jugend (U12). "
+      }
+    ],
+    "status": "veroeffentlicht",
+    "referenz_grafik_url": "https://training-service.fussball.de/assets/img/csm_262831-2022-06-14_spiel3_d2c09a8397.jpg",
+    "quell_kategorie": "D-Jugend",
+    "ist_gecrawlt": true,
+    "schwester_id": null,
+    "schwester_titel": null,
+    "original_aufbau": "Eine Kleinfeldhälfte (ca. 52 x 35 Meter) in 2 gleich große Felder unterteilen und Jugend- sowie Stangentore gemäß Abbildung an den Stirnseiten aufstellen.\nVor jedem Tor auf Spielfeldbreite einen ca. 7 Meter tiefen Strafraum markieren.\n4 Dreier-Teams bilden.",
+    "original_durchfuehrung": "eweils 3 gegen 3 im Feld\nJe ein Spieler der verteidigenden Mannschaft besetzt das Tor und darf sich nur im Strafraum aufhalten.\nDie Spielzeit beträgt jeweils 3 Minuten.\nDie Spiele im Turniermodus jeder gegen jeden durchführen.",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "schwester_gruppen": [],
+    "schwester_ids": [],
+    "erstellt_am": "2026-09-13"
   }
 ]
