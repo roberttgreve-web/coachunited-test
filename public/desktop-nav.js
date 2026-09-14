@@ -451,6 +451,11 @@ function injectWhatsAppAbbinder() {
 // Landingpages selbst nehmen wir das bewusst in Kauf, weil genau dort die
 // Conversion (whatsapp_click, siehe trackWhatsAppClicks) zählt.
 //
+// Bleibt "dran", bis aktiv weggeklickt: Einmal gezeigt, verfolgt der Hinweis
+// den Besucher für den Rest der Sitzung auch auf Seiten außerhalb von
+// WA_PROMO_PFADE (z. B. eine geöffnete Übung) – erst ✕, "Hab ich schon" oder
+// "Kanal ansehen" beenden ihn. Siehe SESSION_KEY weiter unten.
+//
 // Scharfschalten sitewide: WA_PROMO_LIVE auf true UND WA_PROMO_PFADE leeren.
 // Auf Vorschau-Deployments und lokal ist der Störer ohnehin aktiv, damit er
 // getestet werden kann, ohne live zu gehen.
@@ -472,13 +477,18 @@ function injectWhatsAppPromo() {
     '/uebungen/alter/g-jugend'
   ];
 
-  var KANAL_URL   = 'https://www.whatsapp.com/channel/0029VbAqTP68kyyEFg3oyX2t';
-  var STATUS_KEY  = 'cu_wa_status';    // 'subscribed' | 'has'
-  var SNOOZE_KEY  = 'cu_wa_snooze';    // Zeitstempel des ✕
-  var SHOWN_KEY   = 'cu_wa_shown';     // Anzahl bisheriger Einblendungen
-  var PV_KEY      = 'cu_wa_pageviews'; // Seitenaufrufe dieser Sitzung
+  var KANAL_URL    = 'https://www.whatsapp.com/channel/0029VbAqTP68kyyEFg3oyX2t';
+  var STATUS_KEY   = 'cu_wa_status';       // 'subscribed' | 'has' (localStorage, dauerhaft)
+  var SNOOZE_KEY   = 'cu_wa_snooze';       // Zeitstempel des ✕ (localStorage, 30 Tage)
+  var SHOWN_KEY    = 'cu_wa_shown';        // Anzahl bisheriger Sitzungen mit Anzeige (localStorage)
+  var PV_KEY       = 'cu_wa_pageviews';    // Seitenaufrufe dieser Sitzung (sessionStorage)
+  var SESSION_KEY  = 'cu_wa_promo_session'; // "in dieser Sitzung bereits gezeigt, noch nicht weggeklickt" (sessionStorage)
   var SNOOZE_TAGE = 30;
   var MAX_ANZEIGEN = 3;
+
+  function liesSession(key) { try { return sessionStorage.getItem(key); } catch (e) { return null; } }
+  function schreibSession(key, wert) { try { sessionStorage.setItem(key, wert); } catch (e) {} }
+  function entferneSession(key) { try { sessionStorage.removeItem(key); } catch (e) {} }
 
   var such = window.location.search;
 
@@ -488,6 +498,7 @@ function injectWhatsAppPromo() {
       localStorage.removeItem(SNOOZE_KEY);
       localStorage.removeItem(SHOWN_KEY);
       sessionStorage.removeItem(PV_KEY);
+      sessionStorage.removeItem(SESSION_KEY);
     } catch (e) {}
   }
 
@@ -495,8 +506,13 @@ function injectWhatsAppPromo() {
   var erzwungen     = /[?&]wa=1/.test(such);
   var pfad          = window.location.pathname.replace(/\/$/, '') || '/';
   var aufZielseite  = WA_PROMO_PFADE.indexOf(pfad) !== -1;
+  // Einmal auf einer Zielseite gezeigt, bleibt der Hinweis für den Rest der
+  // Sitzung "dran" – auch auf Seiten außerhalb von WA_PROMO_PFADE (z. B. wenn
+  // von der Landingpage aus eine Übung geöffnet wird) – bis er aktiv
+  // weggeklickt wird (Klick auf ✕, "Hab ich schon" oder "Kanal ansehen").
+  var sessionAktiv  = liesSession(SESSION_KEY) === '1';
 
-  if (!(erzwungen || istVorschau || (WA_PROMO_LIVE && aufZielseite))) return;
+  if (!(erzwungen || istVorschau || (WA_PROMO_LIVE && (aufZielseite || sessionAktiv)))) return;
 
   // Auf der Infoseite zum Kanal wäre der Hinweis überflüssig.
   if (window.location.pathname.replace(/\/$/, '') === '/whatsapp-info') return;
@@ -504,7 +520,11 @@ function injectWhatsAppPromo() {
   function lies(key) { try { return localStorage.getItem(key); } catch (e) { return null; } }
   function schreib(key, wert) { try { localStorage.setItem(key, wert); } catch (e) {} }
 
-  if (!erzwungen) {
+  // Diese Sperren gelten nur für den ERSTEN Kontakt einer Sitzung (frisches
+  // Landen auf einer Zielseite) - läuft der Hinweis bereits (sessionAktiv),
+  // ist er schon "freigeschaltet" und bleibt einfach stehen, egal wie viele
+  // Seiten der Besucher danach noch öffnet.
+  if (!erzwungen && !sessionAktiv) {
     // Wer abonniert hat oder "Hab ich schon" gewählt hat, sieht ihn nie wieder.
     if (lies(STATUS_KEY)) return;
 
@@ -591,18 +611,21 @@ function injectWhatsAppPromo() {
 
   box.querySelector('.cu-wa-close').addEventListener('click', function () {
     schreib(SNOOZE_KEY, String(Date.now()));
+    entferneSession(SESSION_KEY);
     ereignis('wa_promo_dismiss');
     schliessen();
   });
 
   box.querySelector('.cu-wa-secondary').addEventListener('click', function () {
     schreib(STATUS_KEY, 'has');
+    entferneSession(SESSION_KEY);
     ereignis('wa_promo_has');
     schliessen();
   });
 
   box.querySelector('.cu-wa-primary').addEventListener('click', function () {
     schreib(STATUS_KEY, 'subscribed');
+    entferneSession(SESSION_KEY);
     ereignis('wa_promo_click');
   });
 
@@ -624,7 +647,10 @@ function injectWhatsAppPromo() {
     }
 
     document.body.appendChild(box);
-    schreib(SHOWN_KEY, String(Number(lies(SHOWN_KEY) || 0) + 1));
+    // Nur bei der ersten Anzeige einer Sitzung zählen - Folgeseiten derselben
+    // "dran bleibenden" Sitzung sollen den 3x-Langzeit-Deckel nicht auffressen.
+    if (!sessionAktiv) schreib(SHOWN_KEY, String(Number(lies(SHOWN_KEY) || 0) + 1));
+    schreibSession(SESSION_KEY, '1');
     ereignis('wa_promo_shown');
     setTimeout(function () { box.classList.add('cu-wa-in'); }, 60);
   }

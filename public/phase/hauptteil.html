@@ -93,6 +93,17 @@
     .checkmark{width:16px;height:16px;border:1.5px solid #D1D5DC;border-radius:4px;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all 0.12s;}
     .filter-option.selected .checkmark{background:#1E6BFF;border-color:#1E6BFF;}
     .filter-option.selected .checkmark::after{content:'';width:8px;height:5px;border-left:2px solid #fff;border-bottom:2px solid #fff;transform:rotate(-45deg) translateY(-1px);display:block;}
+    .pg-carousel{position:relative;margin-bottom:26px;}
+    .pg-carousel-label{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:10.5px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:#6B7390;margin-bottom:10px;display:block;}
+    .pg-tiles{display:flex;gap:12px;overflow-x:auto;scroll-behavior:smooth;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding-bottom:2px;}
+    .pg-tiles::-webkit-scrollbar{display:none;}
+    .pg-tile{flex:0 0 auto;width:168px;text-decoration:none;color:inherit;background:#fff;border:1px solid #E6E8EF;border-radius:14px;overflow:hidden;transition:box-shadow .18s,transform .18s;}
+    .pg-tile:hover{box-shadow:0 4px 16px rgba(0,0,0,0.08);transform:translateY(-1px);}
+    .pg-tile-media{aspect-ratio:4/3;background:#EEF1F6;overflow:hidden;}
+    .pg-tile-media img{width:100%;height:100%;object-fit:cover;display:block;}
+    .pg-tile-body{padding:9px 11px 11px;}
+    .pg-tile-title{font-size:12.5px;font-weight:700;color:#0E1430;line-height:1.3;letter-spacing:-0.01em;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
+    .pg-arrow{display:none;}
     @media(min-width:768px){
       body{background:#0E1430;}
       .container{width:100%;max-width:860px;border-radius:0;min-height:100vh;}
@@ -101,6 +112,12 @@
       .hero-h1{font-size:36px;}
       .filter-section{position:static;top:unset;padding:16px 48px 20px;}
       .filter-pills{max-width:560px;}
+      .pg-tile{width:190px;}
+      .pg-arrow{display:flex;position:absolute;top:38%;width:34px;height:34px;border-radius:50%;background:#fff;border:1px solid #E6E8EF;box-shadow:0 4px 14px rgba(14,20,48,0.16);align-items:center;justify-content:center;cursor:pointer;color:#0E1430;transition:background .15s,color .15s;z-index:5;}
+      .pg-arrow:hover{background:#1E6BFF;color:#fff;}
+      .pg-arrow[hidden]{display:none;}
+      .pg-arrow--vor{right:-14px;}
+      .pg-arrow--zurueck{left:-14px;}
     }
   </style>
   <link rel="stylesheet" href="/desktop.css">
@@ -171,6 +188,16 @@
   </div>
 
   <div class="page-content">
+    <section class="pg-carousel" id="pg-carousel">
+      <span class="pg-carousel-label">Direkt reinschauen</span>
+      <div class="pg-tiles" id="pg-slider-band"><!--cu:slider--><!--/cu:slider--></div>
+      <button class="pg-arrow pg-arrow--zurueck" id="pg-slider-pfeil-zurueck" type="button" aria-label="Vorherige Übungen anzeigen" hidden>
+        <svg width="16" height="16" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M13 4l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <button class="pg-arrow pg-arrow--vor" id="pg-slider-pfeil" type="button" aria-label="Weitere Übungen anzeigen">
+        <svg width="16" height="16" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M7 4l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </section>
     <section class="text-section">
       <h2 class="section-h2">Was geh&#246;rt in den Hauptteil?</h2>
       <p class="body-text">Im Hauptteil stehen die Lerninhalte des Trainings im Mittelpunkt: Technik&#252;bungen, Spielprinzipien oder taktische Aufgaben. Die Intensit&#228;t ist hoch, die Anforderungen klar, und die Wiederholungen zahlreich. Gute Hauptteil-&#220;bungen fordern heraus, ohne zu &#252;berfordern.</p>
@@ -305,6 +332,35 @@
     }).join('');
   }
   buildSkillDropdown(primaryFilter(allExercises));
+
+  (function () {
+    const carousel = document.getElementById('pg-carousel');
+    const band      = document.getElementById('pg-slider-band');
+    const vor       = document.getElementById('pg-slider-pfeil');
+    const zurueck   = document.getElementById('pg-slider-pfeil-zurueck');
+    if (!carousel || !band || !vor || !zurueck) return;
+    if (!band.children.length) { carousel.style.display = 'none'; return; }
+
+    function schrittweite() {
+      const kachel = band.querySelector('.pg-tile');
+      if (!kachel) return band.clientWidth;
+      const stil = getComputedStyle(band);
+      const abstand = parseFloat(stil.columnGap || stil.gap) || 12;
+      return kachel.getBoundingClientRect().width + abstand;
+    }
+    function aktualisiere() {
+      const scrollbar = band.scrollWidth > band.clientWidth + 4;
+      const rest = band.scrollWidth - band.clientWidth - band.scrollLeft;
+      vor.hidden     = !scrollbar || rest < 4;
+      zurueck.hidden = !scrollbar || band.scrollLeft < 4;
+    }
+    vor.addEventListener('click', function () { band.scrollBy({ left: schrittweite(), behavior: 'smooth' }); });
+    zurueck.addEventListener('click', function () { band.scrollBy({ left: -schrittweite(), behavior: 'smooth' }); });
+    band.addEventListener('scroll', aktualisiere, { passive: true });
+    window.addEventListener('resize', aktualisiere);
+    aktualisiere();
+  })();
+
   function openDrawer(){document.getElementById('drawer').classList.add('open');document.getElementById('drawer-overlay').classList.add('open');}
   function closeDrawer(){document.getElementById('drawer').classList.remove('open');document.getElementById('drawer-overlay').classList.remove('open');}
 </script>

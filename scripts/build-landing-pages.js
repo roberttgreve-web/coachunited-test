@@ -96,6 +96,29 @@ function entschluesseln(str) {
   return str.replace(/\\u([0-9a-fA-F]{4})/g, (_, hex) => String.fromCharCode(parseInt(hex, 16)));
 }
 
+// ── Bild-Karussell direkt unter dem blauen Bereich (09/2026) ──
+// Zeigt die ersten SLIDER_ANZAHL Übungen der Seite mit Bild, statt dass der
+// Besucher erst am Fließtext vorbeiscrollen muss, um überhaupt eine Übung zu
+// sehen. Nutzt dieselbe Bild-Auflösung wie das "Neueste Übungen"-Band auf der
+// Startseite (build-home.js) – hier bewusst dupliziert statt importiert,
+// damit dieses Skript weiterhin ohne Abhängigkeit zu build-home.js läuft.
+const SLIDER_ANZAHL = 10;
+
+function resolveGrafik(ex) {
+  const raw = ex.grafik_url;
+  if (raw && !String(raw).startsWith('data:')) return raw;
+  return '/og-image.png';
+}
+
+function renderSliderKachel(ex) {
+  const href = ex.url_slug ? `/uebung/${ex.url_slug}` : '#';
+  return `
+          <a href="${href}" class="pg-tile">
+            <div class="pg-tile-media"><img src="${esc(resolveGrafik(ex))}" alt="" width="200" height="150" loading="lazy" decoding="async"></div>
+            <div class="pg-tile-body"><p class="pg-tile-title">${esc(ex.titel)}</p></div>
+          </a>`;
+}
+
 function main() {
   if (!fs.existsSync(exercisesPath)) {
     console.log('exercises.json nicht gefunden – Build übersprungen.');
@@ -139,6 +162,7 @@ function main() {
     else throw new Error(`Unbekannter FILTER_KEY '${filterKey}' in ${rel}`);
 
     const karten = gefiltert.map(ex => renderKarte(ex, false)).join('');
+    const sliderKarten = gefiltert.slice(0, SLIDER_ANZAHL).map(renderSliderKachel).join('');
     const anzahlText = `${gefiltert.length} Übung${gefiltert.length !== 1 ? 'en' : ''}`;
     const skills = [...new Set(gefiltert.flatMap(e => e.skills || []))].sort();
     const skillDropdown = skills.map(s =>
@@ -149,6 +173,7 @@ function main() {
     const pageDaten = JSON.stringify(gefiltert.map(schlank)).replace(/</g, '\\u003c');
 
     html = ersetzeBlock(html, 'karten', karten, rel);
+    html = ersetzeBlock(html, 'slider', sliderKarten, rel);
     html = ersetzeBlock(html, 'anzahl', anzahlText, rel);
     html = ersetzeBlock(html, 'skill-dropdown', skillDropdown, rel);
 
