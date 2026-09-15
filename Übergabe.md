@@ -1120,3 +1120,32 @@ Grund für die Einschränkung: Der bestehende Code-Kommentar bei `injectWhatsApp
 **Nachtrag (09/2026): Popup bleibt jetzt sitzungsweit "dran", bis er aktiv weggeklickt wird.** Vorher verschwand der Popup beim Klick auf eine Übung wieder, weil `/uebung/<slug>` nicht in `WA_PROMO_PFADE` steht – eine neue Seite ohne Landingpage-Treffer zeigte ihn also nicht mehr. Fix in `injectWhatsAppPromo()`: neuer `SESSION_KEY` (`cu_wa_promo_session`, `sessionStorage`) wird gesetzt, sobald der Popup einmal angezeigt wurde, und hält die Einblende-Bedingung danach auch auf Seiten außerhalb von `WA_PROMO_PFADE` offen (`aufZielseite || sessionAktiv`). Die Langzeit-Sperren (`STATUS_KEY`/`SNOOZE_KEY`/`MAX_ANZEIGEN`) greifen nur noch beim ersten Kontakt einer Sitzung, nicht bei jeder Folgeseite – sonst hätte der 3×-Deckel (`MAX_ANZEIGEN`) den Popup mitten in einer Sitzung wieder verschwinden lassen, obwohl der Besucher ihn nie weggeklickt hat. `SESSION_KEY` wird bei ✕, „Hab ich schon" und „Kanal ansehen" gelöscht – erst dann verschwindet der Popup wirklich dauerhaft.
 
 **Nachtrag (09/2026): Bild-Karussell auf den 22 Alter/Skill/Phase-Landingpages.** Direkt unter dem blauen Bereich (Hero + Filterleiste) und noch vor dem Fließtext zeigt ein waagerecht scrollbares Band die ersten 10 Übungen der jeweiligen Seite mit Bild – Besucher sehen so sofort echten Content, statt erst am Text vorbeiscrollen zu müssen. Baut auf demselben Muster wie das „Neueste Übungen"-Band auf der Startseite (`build-home.js`) auf, mit eigenem Klassenpräfix `.pg-*` (statt `.hs-*`) und eigenen IDs `pg-slider-band`/`pg-slider-pfeil(-zurueck)`, da es eine eigene Seite mit eigenem Layout ist (375px-App-Container statt Marketing-Seite). Neuer Marker `<!--cu:slider-->` in allen 22 Dateien (`public/alter|skill|phase/*.html`), befüllt von `build-landing-pages.js` (`renderSliderKachel()`, `SLIDER_ANZAHL = 10`, nutzt `ex.grafik_url` wie `build-home.js`). Die 22 Dateien selbst wurden mechanisch per Python-Skript verändert (CSS/HTML/JS an drei identischen Ankerstellen eingefügt, da alle 22 Seiten strukturell identisch sind) – in dieser Umgebung stand kein Node zur Verfügung, daher lokal keine Karten vorberechnet; die tatsächliche Befüllung des `cu:slider`-Markers passiert wie bei `cu:karten` automatisch beim nächsten Vercel-Build (`buildCommand` in `vercel.json`).
+
+### 29.10 GA4: Verhalten der Paid-Search-Besucher (09/2026)
+
+**Frage:** Springen Ad-Grants-Besucher direkt wieder ab, schauen sie sich eine Übung an, wie lange bleiben sie?
+
+**Ergebnis (letzte 28 Tage, 18. Aug.–14. Sept. 2026), Explorationen → Freies Format, Dimension „Sitzung – primäre Channelgruppe" mit Messwerten Sitzungen/Sitzungen mit Interaktionen/Durchschnittliche Interaktionsdauer pro Sitzung:**
+
+| Kanal | Sitzungen | Interaktionsrate (berechnet) | Ø Verweildauer |
+|---|---|---|---|
+| Paid Search | 74 | 68,9 % | 4 m 58 s |
+| Organic Search | 195 | 64,1 % | 2 m 53 s |
+| Referral | 41 | 80,5 % | 1 m 12 s |
+| Direct | 2.434 | 47,4 % | 1 m 20 s |
+| Unassigned | 58 | 37,9 % | 1 m 34 s |
+| Gesamt | 2.752 | 50,3 % | 1 m 34 s |
+
+**Befund:** Paid-Search-Besucher springen nicht überdurchschnittlich ab (Interaktionsrate über dem Gesamtschnitt) und bleiben mit fast 5 Minuten mit Abstand am längsten von allen Kanälen. Bei nur 74 Sitzungen in 28 Tagen ist die Stichprobe noch klein, aber das Bild ist klar positiv. Ob sie dabei tatsächlich eine Übungsseite (`/uebung/...`) öffnen, war zum Zeitpunkt dieses Eintrags noch nicht geprüft – nächster Schritt dafür s. u.
+
+**GA4-UI-Stolpersteine bei diesem Konto (nicht offensichtlich, daher hier festgehalten):**
+- Die Dimension heißt hier **„Sitzung – primäre Channelgruppe (Standard-Channelgruppe)"** – die Namenssuche nach „Kanal"/„Kanalgruppe" findet nichts, weil das Feld „Channelgruppe" geschrieben wird (mit Ch statt K). Über die Kategorie-Liste (nicht Suche) browsen, falls die Suche leer bleibt.
+- Der Messwert **„Interaktionsrate"** ist im Explorationen-Tool nicht als eigener Messwert wählbar (auch nicht über Suche). Ersatz: „Sitzungen mit Interaktionen" UND „Sitzungen" auswählen, Rate danach selbst ausrechnen (mit Interaktionen ÷ Sitzungen).
+- Der Messwert heißt **„Durchschnittliche Interaktionsdauer pro Sitzung"**, nicht „…-zeit…".
+
+**Noch offen – „Schauen sie sich eine Übung an?" (nächster Schritt, für später):** Dieselbe Exploration umbauen:
+1. Unter „Filter" einen Filter setzen: „Sitzung – primäre Channelgruppe (Standard-Channelgruppe)" ist genau „Paid Search".
+2. Neue Dimension **„Seitenpfad und Bildschirmklasse"** hinzufügen, in „Zeilen" anstelle der Kanalgruppe verwenden (die Filterung übernimmt jetzt die Eingrenzung auf Paid Search).
+3. Messwert **„Aufrufe"** ergänzen und in „Werte" ziehen, Tabelle danach absteigend sortieren.
+4. Prüfen, ob und wie oft `/uebung/...`-Pfade unter den meistaufgerufenen Seiten der gefilterten Sitzungen auftauchen.
+5. Falls das nicht eindeutig genug zeigt, dass Landingpage → Übung in **derselben** Sitzung passiert: zusätzlich eine **Pfadexploration** (eigene Explorationsvorlage, Startpunkt = jeweilige Landingpage, Segment auf Paid Search) aufsetzen.
