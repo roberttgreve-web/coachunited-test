@@ -12914,9 +12914,9 @@
       "Raumverhalten",
       "Kommunikation"
     ],
-    "coaching_fokus": "",
-    "leichter_machen": "",
-    "schwerer_machen": "",
+    "coaching_fokus": "• Flache Pässe, die nicht zu hart gespielt werden; • Kopf hoch halten, um den Überblick zu behalten und nicht einem Spieler zwei Bälle auf einmal zuzuspielen; • Laut kommunizieren",
+    "leichter_machen": "• Mit nur einem Ball pro Feld starten und erst nach 2–3 Minuten fehlerfreien Spiels einen zweiten hinzufügen; • Zwei oder drei Ballberührungen pro Spieler erlauben",
+    "schwerer_machen": "• Direkt mit zwei Bällen starten; • Nach jedem Abspiel eine koordinative Aufgabe absolvieren (zB Rolle vorwärts, Strecksprung, Hampelmann); • Trennlinie entfernen und beide Teams in einem großen Feld konkurrieren lassen – wer behält alle Bälle in Bewegung?",
     "alt_titel": "",
     "seo_keyword": "Fußballübung Passen",
     "url_slug": "in-stresssituationen-enge-raeume-bespielen",
@@ -12925,7 +12925,20 @@
     "grafik_description": "Die Grafik zeigt zwei markierte Spielfelder à 15x15 Meter mit zentralen No-Go-Zonen. Zwei Teams trainieren gleichzeitig das Passspiel unter Druck, während der Trainer zusätzliche Bälle ins Spiel bringt.",
     "grafik_title": "Fußballtraining enge Räume One-Touch Passspiel",
     "grafik_caption": "Stressabbau-Übung: Zwei Teams meistern One-Touch Passspiele in engen Räumen mit Flutlicht-Effekt.",
-    "faq": [],
+    "faq": [
+      {
+        "frage": "Wie lange sollte diese Übung dauern?",
+        "antwort": "10-15 Minuten"
+      },
+      {
+        "frage": "Was mache ich, wenn meine Gruppe nur 8–10 Spieler hat?",
+        "antwort": "Reduziere auf 4–5 Spieler pro Feld und verkleinere die Felder auf 12 × 12 Meter."
+      },
+      {
+        "frage": "Ab welchem Alter ist diese Übung geeignet?",
+        "antwort": "Fußballübung Ballkontrolle"
+      }
+    ],
     "status": "veroeffentlicht",
     "referenz_grafik_url": "",
     "quell_kategorie": "",
