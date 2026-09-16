@@ -72,7 +72,10 @@
       /* height:auto ist noetig, sonst gewinnt das height-Attribut aus dem
          Markup und aspect-ratio bleibt wirkungslos. */
       height: auto;
-      aspect-ratio: 10 / 9;
+      /* Das Video ist hochkant (9:16) aufgenommen, anders als das vorherige
+         Portraitfoto (10:9) - object-fit:cover schneidet bei passendem
+         Seitenverhaeltnis kaum noch etwas weg. */
+      aspect-ratio: 9 / 16;
       object-fit: cover;
       border-radius: 14px;
       display: block;
@@ -87,27 +90,6 @@
     }
     /* Der Float darf nicht in die naechste Ueberschrift hineinragen */
     .uu-split::after { content: ''; display: block; clear: both; }
-
-    .uu-stat {
-      background: #F5F7FB;
-      border-left: 3px solid #1E6BFF;
-      border-radius: 8px;
-      padding: 16px 18px;
-      margin: 4px 0 28px;
-      max-width: 62ch;
-    }
-    .uu-stat-num { font-size: 28px; font-weight: 800; color: #0E1430; letter-spacing: -0.02em; line-height: 1; margin-bottom: 4px; }
-    .uu-stat-label { font-size: 13.5px; color: #6B7390; line-height: 1.5; }
-
-    .uu-cta {
-      display: inline-flex; align-items: center; gap: 9px;
-      padding: 13px 20px;
-      background: #1E6BFF; color: #fff;
-      border: 1.5px solid #1E6BFF; border-radius: 10px;
-      text-decoration: none; font-size: 15px; font-weight: 700;
-      transition: background 0.15s, border-color 0.15s;
-    }
-    .uu-cta:hover { background: #1558d6; border-color: #1558d6; }
 
     .contact-link { color: #1E6BFF; text-decoration: none; }
     .contact-link:hover { text-decoration: underline; }
@@ -187,104 +169,36 @@
       <h2>Wie alles angefangen hat</h2>
       <div class="uu-split">
         <figure class="uu-figure">
-          <img class="uu-portrait" src="/images/robert-greve.webp" alt="Robert Greve, Vorsitzender von Coach United e.V." width="640" height="576" decoding="async">
+          <video class="uu-portrait" src="/videos/robert-greve.mp4" poster="/images/robert-greve-video-poster.jpg" width="720" height="1280" controls playsinline preload="metadata"></video>
           <figcaption class="uu-portrait-text">Hi, ich bin Robert, der Vorsitzende von Coach United e.V.</figcaption>
         </figure>
         <p>
-          Ich bin eigentlich ziemlich klassisch ins Ehrenamt gerutscht: als Vater. Mein Sohn hat Fußball gespielt, irgendwann habe ich angefangen, ihn und seine Mannschaft zu trainieren – und plötzlich war ich Fußballtrainer. Nebenbei lief aber natürlich mein ganz normaler Job weiter. Vollzeit arbeiten, Familie, Training vorbereiten, zum Platz hetzen und dann trotzdem versuchen, den Kindern ein richtig gutes Training zu bieten.
+          Mein Weg ins Ehrenamt war sehr klassisch: Mein Sohn wollte Fußball spielen, sein Team brauchte einen Trainer – und plötzlich war ich das, neben Vollzeitjob und Familie. Weil mir die Zeit fehlte, mir jede Woche neue Übungen auszudenken, habe ich angefangen, meine eigenen zu digitalisieren, und sie an ein paar Trainerkollegen weitergeschickt. Die fanden das richtig gut.
         </p>
       </div>
 
-      <h2>Zwischen Arbeit und Trainingsplatz</h2>
-      <p>
-        Aber ich hatte nicht jede Woche die Zeit, um mir die perfekte Trainingseinheit auszudenken. Und natürlich wollte ich auch nicht jeden Dienstag dieselben drei Übungen machen.
-      </p>
-      <p>
-        Also habe ich irgendwann angefangen, meine eigenen Übungen und Trainingseinheiten zu digitalisieren. Erst einmal nur für mich selbst. Damit ich gute Übungen nicht vergesse und beim nächsten Training nicht wieder bei null anfangen muss.
-      </p>
-      <p>
-        Dann habe ich die Übungen irgendwann an ein paar Trainerkollegen in Berlin weitergeschickt.
-      </p>
-      <p>
-        Und die fanden das echt gut.
-      </p>
-
       <h2>Aus ein paar Übungen wird ein WhatsApp-Kanal</h2>
       <p>
-        Irgendwann kam deshalb die Idee auf: Warum nicht einfach einen WhatsApp-Kanal daraus machen?
-      </p>
-      <p>
-        Gesagt, getan. Im Frühsommer 2025 ging es los.
-      </p>
-      <p>
-        Am Anfang war das wirklich klein gedacht. Ein paar Trainer aus meinem Umfeld bekommen regelmäßig eine Übung. Vielleicht hilft es dem einen oder anderen bei der nächsten Trainingseinheit.
-      </p>
-      <p>
-        Aber dann wurden es immer mehr. Aus ein paar bekannten Trainern wurden erst ein paar Hundert.
+        Im Frühsommer 2025 haben wir daraus einen WhatsApp-Kanal gemacht. Aus ein paar bekannten Trainern wurden schnell immer mehr.
       </p>
 
-      <div class="uu-stat">
-        <div class="uu-stat-num">~2.000</div>
-        <div class="uu-stat-label">Trainerinnen und Trainer aus Berlin, Brandenburg und darüber hinaus sind ein Jahr später dabei.</div>
-      </div>
-
       <p>
-        Und plötzlich war da etwas entstanden, das viel größer war als meine ursprüngliche Idee.
-      </p>
-
-      <h2>„Wir trainieren jede Woche damit.“</h2>
-      <p>
-        Was mich dann wirklich motiviert hat, noch größer zu denken, war das Feedback der Trainer.
-      </p>
-      <p>
-        Ich habe Sprachnachrichten bekommen. Andere Trainer sind bei Spielen oder Turnieren auf mich zugekommen und haben erzählt, dass sie jede Woche mit den Übungen trainieren. Dass sie dadurch neue Ideen bekommen. Und vor allem: dass es ihnen unglaublich viel Arbeit abnimmt.
-      </p>
-      <p>
-        Und wenn unsere Übungen schon für ein paar Tausend Trainer eine echte Erleichterung sind – warum sollten wir daraus nicht etwas machen, das grundsätzlich allen Trainerinnen und Trainern zur Verfügung steht?
+        Das Feedback hat mich motiviert, größer zu denken: Wenn unsere Übungen schon für ein paar Tausend Trainer eine echte Erleichterung sind – warum nicht für alle?
       </p>
 
       <h2>Aus der Idee wird ein Verein</h2>
       <p>
-        Genau daraus ist die Idee für Coach United e.V. entstanden.
-      </p>
-      <p>
-        Im Sommer 2026 haben wir den gemeinnützigen Verein gegründet.
-      </p>
-
-      <p style="color:#9aa3b0; font-size:14px;">
-        Eingetragen im Vereinsregister beim Amtsgericht Charlottenburg unter VR 42714 B.
-      </p>
-
-      <p>
-        Und gleichzeitig haben wir die Sache geöffnet: Trainerinnen und Trainer können nicht nur unsere Übungen nutzen, sondern auch ihre eigenen Übungen einreichen.
-      </p>
-      <p>
-        Denn wir glauben, dass da draußen unglaublich viel Wissen steckt. Bei Trainern, die seit 10, 20 oder 30 Jahren Mannschaften trainieren. Bei jungen Trainern, die gerade ihre ersten Erfahrungen machen. Bei Eltern, die plötzlich eine Jugendmannschaft übernehmen.
-      </p>
-      <p>
-        Wir wollen dieses Wissen sammeln und für alle zugänglich machen.
+        Im Sommer 2026 haben wir den gemeinnützigen Verein Coach United e.V. gegründet – und die Sache geöffnet: Trainerinnen und Trainer können seitdem nicht nur unsere Übungen nutzen, sondern auch eigene einreichen. Denn wir glauben, dass da draußen unglaublich viel Erfahrung steckt, die es sich zu teilen lohnt.
       </p>
 
       <h2>Warum kostenlos?</h2>
       <p>
-        Kinder- und Jugendfußball lebt vom Ehrenamt.
-      </p>
-      <p>
-        Da stehen Woche für Woche Menschen nach der Arbeit auf dem Fußballplatz, investieren ihre Zeit und kümmern sich darum, dass Kinder Fußball spielen können, Spaß haben und als Mannschaft zusammenwachsen.
-      </p>
-      <p>
-        Wir finden, dass dieses Ehrenamt Unterstützung verdient. Und zwar ohne Werbung, ohne Investoren und ohne Paywall.
-      </p>
-      <p>
-        Deshalb soll Coach United komplett spendenfinanziert sein. Mit den Spenden wollen wir die laufenden Kosten des Vereins decken und vor allem dafür sorgen, dass wir immer mehr gute Übungen erstellen und kostenlos zur Verfügung stellen können.
+        Kinder- und Jugendfußball lebt vom Ehrenamt. Wir finden, dass das Unterstützung verdient – ohne Werbung, ohne Investoren, ohne Paywall. Deshalb ist Coach United komplett spendenfinanziert.
       </p>
 
       <h2>Unsere Vision</h2>
       <p>
-        Mittlerweile ist aus der ursprünglichen Idee eine ziemlich große Vision geworden: Wir wollen die größte öffentliche und kostenlose Übungsbibliothek für den Kinder- und Jugendfußball in Deutschland aufbauen.
-      </p>
-      <p>
-        Unser Ziel ist, dass irgendwann jede Trainerin und jeder Trainer weiß: Ich brauche eine gute Übung für meinen Jahrgang? Ich brauche Inspiration für die nächste Trainingseinheit? Ich suche Ideen für ein ganzes Trainingsjahr? Dann schaue ich bei Coach United.
+        Wir wollen die größte öffentliche und kostenlose Übungsbibliothek für den Kinder- und Jugendfußball in Deutschland aufbauen.
       </p>
       <p style="font-weight:700; color:#0E1430;">
         Kostenlos. Öffentlich. Für alle.
@@ -293,19 +207,6 @@
       <h2>Was wir machen</h2>
       <p>
         Inzwischen stehen hier <!--cu:count-->177<!--/cu:count--> Übungen für die G- bis D-Jugend, jede mit Aufbau, Ablauf und einem Coaching-Fokus. Dazu ein <a href="/einheiten" class="contact-link">Generator</a>, der daraus in Sekunden eine vollständige Einheit zusammenstellt. Jede Woche kommt Neues dazu.
-      </p>
-
-      <h2>Mach mit</h2>
-      <p>
-        Du hast eine Übung, die bei deiner Mannschaft immer funktioniert? Schick sie uns — wir bereiten sie auf und stellen sie allen zur Verfügung.
-      </p>
-      <p>
-        <a href="/uebung-einreichen" class="uu-cta">
-          Übung einreichen
-          <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </a>
       </p>
 
       <p style="color:#9aa3b0; font-size:14px; margin-top:28px;">
