@@ -58,10 +58,13 @@
       margin: 34px 0 12px;
     }
 
-    /* Portrait beim ersten Absatz.
-       Auf Mobil laeuft der Text drumherum (float), auf Desktop steht es in
-       einer eigenen Spalte rechts. Deshalb kein Grid auf Mobil: In einem
-       Grid-Item greift float nicht, das Bild wuerde ueber dem Text stehen. */
+    /* Portrait/Video beim ersten Absatz, per Float - auf allen Breiten
+       gleich. Frueher gab es ab 768px stattdessen eine eigene Grid-Spalte
+       rechts, aber das Video ist hochkant (9:16) und damit deutlich hoeher
+       als der kurze Absatz - die Grid-Zeile richtete sich nach der
+       hoeheren Spalte aus, darunter blieb eine grosse Luecke vor der
+       naechsten Ueberschrift. Float vermeidet das: Es raeumt nur so viel
+       Platz frei, wie der Text tatsaechlich braucht. */
     .uu-figure {
       float: right;
       width: 132px;
@@ -95,21 +98,7 @@
     .contact-link:hover { text-decoration: underline; }
 
     @media (min-width: 768px) {
-      .uu-split {
-        display: grid;
-        grid-template-columns: 1fr 200px;
-        align-items: start;
-        gap: 36px;
-      }
-      .uu-figure {
-        float: none;
-        width: auto;
-        margin: 0;
-        grid-column: 2;
-        grid-row: 1;
-      }
-      .uu-split > p { grid-column: 1; grid-row: 1; margin-bottom: 0; }
-      .uu-split::after { content: none; }
+      .uu-figure { width: 180px; }
     }
 
     /* Bottom Nav */
