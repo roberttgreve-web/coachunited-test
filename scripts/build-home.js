@@ -13,10 +13,6 @@ const uebungsIndexPath = path.join(__dirname, '..', 'public', 'uebungen-index.js
 // waagerecht scrollbaren Band, die nicht sichtbaren laden per loading="lazy".
 const ARTIKEL_ANZAHL = 99;
 
-// Neueste-Uebungen-Band auf der Startseite: wie viele der zuletzt
-// veroeffentlichten Uebungen als Kachel gezeigt werden (Rest per Pfeil/Wischen).
-const NEUESTE_UEBUNGEN_ANZAHL = 12;
-
 const ISO_DATE = /^\d{4}-\d{2}-\d{2}$/;
 
 const JUGENDEN = ['G-Jugend', 'F-Jugend', 'E-Jugend', 'D-Jugend'];
@@ -173,9 +169,13 @@ function main() {
   // ohnehin identisch (Massenimport), waere als Sortierschluessel also
   // ungenau; id steigt dagegen bei jeder neuen Uebung garantiert und
   // spiegelt die tatsaechliche Reihenfolge exakt wider.
+  //
+  // Bewusst OHNE Obergrenze (frueher .slice(0, 12)): Das Band soll per
+  // Pfeil/Wischen erst enden, wenn wirklich alle Uebungen durchgesehen
+  // wurden - mit einer Obergrenze war nach 12 Kacheln Schluss, obwohl der
+  // Pfeil noch anklickbar aussah.
   const neuesteUebungen = [...uebungen]
-    .sort((a, b) => b.id - a.id)
-    .slice(0, NEUESTE_UEBUNGEN_ANZAHL);
+    .sort((a, b) => b.id - a.id);
 
   const uebungenKacheln = neuesteUebungen.map(e => {
     const jugendTags = (e.jugend || []).map(j => `<span class="hs-tag hs-tag--jugend">${esc(j)}</span>`).join('');
