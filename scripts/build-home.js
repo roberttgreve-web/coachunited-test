@@ -2,7 +2,6 @@ const fs   = require('fs');
 const path = require('path');
 
 const homePath      = path.join(__dirname, '..', 'public', 'home.html');
-const ueberUnsPath  = path.join(__dirname, '..', 'public', 'ueber-uns.html');
 const wissenPath    = path.join(__dirname, '..', 'public', 'wissen.html');
 const exercisesPath = path.join(__dirname, '..', 'public', 'exercises.json');
 const articlesPath  = path.join(__dirname, '..', 'public', 'articles.json');
@@ -201,16 +200,6 @@ function main() {
   html = ersetzeBlock(html, 'neueste-uebungen', uebungenKacheln + '\n');
 
   fs.writeFileSync(homePath, html, 'utf-8');
-
-  // ── Dieselbe Zahl in "Über uns" ──
-  // Die Seite nennt den Umfang der Bibliothek im Fließtext. Ohne diesen
-  // Schritt müsste die Zahl von Hand nachgezogen werden und wäre nach der
-  // nächsten Übung falsch.
-  if (fs.existsSync(ueberUnsPath)) {
-    let uu = fs.readFileSync(ueberUnsPath, 'utf-8');
-    uu = ersetzeBlock(uu, 'count', String(uebungen.length), 'ueber-uns.html');
-    fs.writeFileSync(ueberUnsPath, uu, 'utf-8');
-  }
 
   // ── Artikelliste auf /wissen ──
   // Bis 08/2026 lud diese Seite articles.json zur Laufzeit und zeigte bis

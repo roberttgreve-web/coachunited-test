@@ -75,10 +75,12 @@
       /* height:auto ist noetig, sonst gewinnt das height-Attribut aus dem
          Markup und aspect-ratio bleibt wirkungslos. */
       height: auto;
-      /* Das Video ist hochkant (9:16) aufgenommen, anders als das vorherige
-         Portraitfoto (10:9) - object-fit:cover schneidet bei passendem
-         Seitenverhaeltnis kaum noch etwas weg. */
-      aspect-ratio: 9 / 16;
+      /* Das Video ist eigentlich hochkant (9:16) aufgenommen - bei voller
+         Laenge aber deutlich hoeher als der kurze Absatz daneben, was eine
+         grosse Luecke vor der naechsten Ueberschrift hinterlaesst. Bewusst
+         staerker zugeschnitten (naeher an den bisherigen 10:9 des Fotos),
+         damit die Boxen-Hoehen zueinander passen. */
+      aspect-ratio: 3 / 4;
       object-fit: cover;
       border-radius: 14px;
       display: block;
@@ -187,11 +189,6 @@
       </p>
       <p style="font-weight:700; color:#0E1430;">
         Kostenlos. Öffentlich. Für alle.
-      </p>
-
-      <h2>Was wir machen</h2>
-      <p>
-        Inzwischen stehen hier <!--cu:count-->177<!--/cu:count--> Übungen für die G- bis D-Jugend, jede mit Aufbau, Ablauf und einem Coaching-Fokus. Dazu ein <a href="/einheiten" class="contact-link">Generator</a>, der daraus in Sekunden eine vollständige Einheit zusammenstellt. Jede Woche kommt Neues dazu.
       </p>
 
       <p style="color:#9aa3b0; font-size:14px; margin-top:28px;">
