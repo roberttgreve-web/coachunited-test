@@ -77,10 +77,12 @@
       height: auto;
       /* Das Video ist eigentlich hochkant (9:16) aufgenommen - bei voller
          Laenge aber deutlich hoeher als der kurze Absatz daneben, was eine
-         grosse Luecke vor der naechsten Ueberschrift hinterlaesst. Bewusst
-         staerker zugeschnitten (naeher an den bisherigen 10:9 des Fotos),
-         damit die Boxen-Hoehen zueinander passen. */
-      aspect-ratio: 3 / 4;
+         grosse Luecke vor der naechsten Ueberschrift hinterlaesst. Ratio
+         per getBoundingClientRect() gegen den tatsaechlichen Absatz (inkl.
+         Caption-Text darunter) austariert, damit beide Spalten gleich hoch
+         enden und die naechste Ueberschrift ueberall im ueblichen Abstand
+         folgt, nicht erst nach einer sichtbaren Luecke. */
+      aspect-ratio: 1 / 1;
       object-fit: cover;
       border-radius: 14px;
       display: block;
