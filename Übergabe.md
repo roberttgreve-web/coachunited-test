@@ -1149,3 +1149,22 @@ Grund für die Einschränkung: Der bestehende Code-Kommentar bei `injectWhatsApp
 3. Messwert **„Aufrufe"** ergänzen und in „Werte" ziehen, Tabelle danach absteigend sortieren.
 4. Prüfen, ob und wie oft `/uebung/...`-Pfade unter den meistaufgerufenen Seiten der gefilterten Sitzungen auftauchen.
 5. Falls das nicht eindeutig genug zeigt, dass Landingpage → Übung in **derselben** Sitzung passiert: zusätzlich eine **Pfadexploration** (eigene Explorationsvorlage, Startpunkt = jeweilige Landingpage, Segment auf Paid Search) aufsetzen.
+
+## 30. „Über uns" überarbeitet (09/2026)
+
+Auf Wunsch grundlegend überarbeitet: Video statt Foto, Text stark gekürzt, zwei Abschnitte gestrichen.
+
+**Video statt Portraitfoto:** Robert hatte eine kurze Vorstellung als Handyvideo aufgenommen (`IMG_4972.mov`, 184 MB, Hochkant/9:16, im Projektordner abgelegt, nicht im Git-Repo). Für den Einbau:
+- Mit `ffmpeg` komprimiert auf `public/videos/robert-greve.mp4` (720×1280 H.264, CRF 28, Mono-AAC 64 kbps, `+faststart`) – 13,4 MB statt 184 MB, ohne sichtbaren Qualitätsverlust bei dieser Anzeigegröße.
+- Poster-Bild (`public/images/robert-greve-video-poster.jpg`) ist ein Frame aus dem Video selbst (t≈0,3s, geschlossener Mund/neutraler Blick statt eines Frames mitten im Sprechen) – das alte Foto `robert-greve.webp` passt vom Seitenverhältnis nicht mehr (Foto 10:9 landscape-ish, Video eigentlich 9:16 hochkant) und bleibt nur noch auf der Startseite in Verwendung.
+- `<video controls playsinline preload="metadata">`, kein Autoplay (98 Sekunden Sprechvideo, Autoplay mit Ton wird von Browsern ohnehin blockiert).
+
+**Layout-Falle, die mehrere Anläufe brauchte:** Die Box mit Foto/Video steht per CSS `float` neben dem ersten Absatz (Text läuft drumherum). Das ehemalige Foto war kurz genug, dass ein anschließender Clearfix (`.uu-split::after{clear:both}`) keine sichtbare Lücke erzeugte. Das Video ist aber deutlich höher (ursprünglich 9:16), wodurch bei breiten Bildschirmen (kurzer Absatz, viel verfügbare Breite → wenige, breite Zeilen) eine auffällige Lücke vor der nächsten Überschrift entstand – auf Mobil unsichtbar, weil der Absatz dort automatisch mehr Zeilen braucht. Ein erster Versuch mit einer eigenen Desktop-Grid-Spalte (später auf Float umgebaut) reduzierte das Problem, löste es aber nicht vollständig. **Endgültig gelöst** durch reines Ausmessen statt Schätzen: per `getBoundingClientRect()` im Browser Absatz- und Video+Caption-Höhe exakt verglichen, danach das Video-Seitenverhältnis auf **1:1 (quadratisch)** gesetzt (`aspect-ratio: 1/1` in `.uu-portrait`) – seitdem enden beide Spalten auf wenige Pixel genau gleich hoch, die nächste Überschrift folgt überall im selben Abstand wie bei jedem anderen Absatz-Überschrift-Übergang der Seite. **Lektion:** Bei Float-Layouts mit Medien unterschiedlicher Seitenverhältnisse lohnt es sich, die Höhen im Browser nachzumessen statt die passende Ratio zu schätzen – zwei Zwischenversuche (3:4, dann feinjustiert) waren jeweils noch sichtbar daneben.
+
+**Gestrichen:**
+- Die Zeile „Eingetragen im Vereinsregister beim Amtsgericht Charlottenburg unter VR 42714 B." – bleibt selbstverständlich im Impressum stehen (dort rechtlich Pflicht), war auf „Über uns" nur Beiwerk.
+- Der Abschnitt „Mach mit" (Aufruf zum Übung-Einreichen + Button) – dazugehörige, dadurch verwaiste `.uu-cta`-CSS-Regel mitentfernt.
+- Die „~2.000 Trainer"-Statistikbox – dazugehörige `.uu-stat*`-CSS-Regeln mitentfernt.
+- Der Abschnitt „Was wir machen" (Übungszahl + Generator-Hinweis). Dieser Absatz nutzte denselben `<!--cu:count-->`-Marker wie die Startseite, befüllt von `build-home.js`. Mit dem Absatz auch den zugehörigen Code-Block in `build-home.js` entfernt (`ersetzeBlock` wirft sonst einen Fehler, wenn der Marker fehlt, und hätte beim nächsten Vercel-Build die gesamte Build-Pipeline zum Absturz gebracht – die Scripts laufen per `&&`-Kette in `vercel.json`).
+
+**Text insgesamt deutlich gekürzt:** von 9 auf 6 Zwischenüberschriften, viele kurze Alleinsteher-Sätze („Und die fanden das echt gut." / „Gesagt, getan." etc.) zu dichteren Absätzen zusammengezogen. Kerninhalte blieben erhalten (Vater→Trainer, WhatsApp-Kanal-Gründung, Vereinsgründung 2026, kostenlos/spendenfinanziert, Vision). Der einleitende Satz wurde nach Roberts eigener Formulierung übernommen („Mein Weg ins Ehrenamt war sehr klassisch: …").
