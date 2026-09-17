@@ -40,18 +40,22 @@
     .section-h2{font-size:18px;font-weight:700;color:#0E1430;letter-spacing:-0.02em;line-height:1.25;margin-bottom:12px;}
     .body-text{font-size:14px;line-height:1.65;color:#3B4565;margin-bottom:10px;}
     .body-text:last-child{margin-bottom:0;}
-    .exercises-header{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:16px;}
-    .exercise-count{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11px;font-weight:600;color:#6B7390;letter-spacing:0.06em;}
-    .exercise-card{display:flex;flex-direction:column;gap:10px;text-decoration:none;color:inherit;background:#fff;border:1px solid #E6E8EF;border-radius:16px;padding:16px 14px;margin-bottom:10px;transition:box-shadow .18s,transform .18s;}
-    .exercise-card:hover{box-shadow:0 4px 16px rgba(0,0,0,0.08);transform:translateY(-1px);}
-    .card-grid{display:flex;flex-direction:column;gap:10px;}
-    .card-title{font-size:17px;font-weight:700;color:#0E1430;line-height:1.18;letter-spacing:-0.02em;}
-    .card-desc{font-size:13px;line-height:1.5;color:#3B4565;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;}
-    .card-tags{display:flex;align-items:center;gap:5px;flex-wrap:nowrap;overflow:hidden;}
-    .tag-phase{display:inline-flex;align-items:center;padding:4px 9px;color:#fff;border-radius:4px;font-size:9.5px;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;white-space:nowrap;flex-shrink:0;}
-    .tag-jahrgang{display:inline-flex;align-items:center;padding:4px 9px;background:#EEF1F6;color:#0E1430;border-radius:4px;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:10px;font-weight:700;white-space:nowrap;flex-shrink:0;}
-    .tag-skill{display:inline-flex;align-items:center;padding:4px 9px;background:#0E1430;color:#fff;border-radius:4px;font-size:10px;font-weight:600;white-space:nowrap;flex-shrink:0;}
-    .tag-more{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:9.5px;font-weight:600;color:#6B7390;flex-shrink:0;}
+    /* Kachel-Grid/Slider wie auf /uebungen (09/2026), hier vorgefiltert nach
+       FILTER_KEY/FILTER_VALUE dieser Seite. Mobil: waagerechtes Wisch-Band.
+       Desktop: echtes 3er-Grid (siehe Media Query unten). */
+    .uc-tiles{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch;padding-bottom:2px;}
+    .uc-tiles::-webkit-scrollbar{display:none;}
+    .uc-tile{display:block;flex:0 0 82%;scroll-snap-align:start;background:#fff;border:1px solid #E6E8EF;border-radius:12px;overflow:hidden;text-decoration:none;color:inherit;box-shadow:0 2px 10px rgba(14,20,48,0.07);transition:transform .15s,box-shadow .15s;}
+    .uc-tile:hover{transform:translateY(-2px);box-shadow:0 10px 26px rgba(0,0,0,0.18);}
+    .uc-tile-media{padding:14px 14px 0;}
+    .uc-tile-media img{width:100%;height:auto;aspect-ratio:3/2;object-fit:contain;display:block;background:#F5F7FB;border-radius:8px;}
+    .uc-tile-body{padding:14px 16px 16px;margin-top:14px;border-top:1px solid #E6E8EF;}
+    .uc-tile-title{font-size:16px;font-weight:700;color:#0E1430;line-height:1.3;letter-spacing:-0.01em;}
+    .uc-tile-desc{font-size:13.5px;line-height:1.5;color:#6B7390;margin-top:6px;}
+    .uc-tile-tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:10px;}
+    .uc-tag{font-size:10px;font-weight:700;padding:3px 8px;border-radius:999px;letter-spacing:0.02em;}
+    .uc-tag--jugend{background:#EAF1FF;color:#1E6BFF;}
+    .uc-tag--skill{background:#FFEDE6;color:#C23A0E;}
     .empty-state{text-align:center;padding:48px 24px;color:#6B7390;font-size:14px;line-height:1.6;}
     .bottom-nav{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:375px;background:#fff;border-top:1px solid #E6E8EF;display:flex;padding:10px 0 24px;z-index:20;box-shadow:0 -2px 12px rgba(0,0,0,0.05);}
     .nav-item{flex:1;display:flex;flex-direction:column;align-items:center;gap:3px;border:none;background:none;cursor:pointer;padding:4px;text-decoration:none;color:#6B7390;transition:color .15s;font-family:'Inter Tight',system-ui,sans-serif;font-size:10.5px;font-weight:600;}
@@ -93,17 +97,6 @@
     .checkmark{width:16px;height:16px;border:1.5px solid #D1D5DC;border-radius:4px;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all 0.12s;}
     .filter-option.selected .checkmark{background:#1E6BFF;border-color:#1E6BFF;}
     .filter-option.selected .checkmark::after{content:'';width:8px;height:5px;border-left:2px solid #fff;border-bottom:2px solid #fff;transform:rotate(-45deg) translateY(-1px);display:block;}
-    .pg-carousel{position:relative;margin-bottom:26px;}
-    .pg-carousel-label{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:10.5px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:#6B7390;margin-bottom:10px;display:block;}
-    .pg-tiles{display:flex;gap:12px;overflow-x:auto;scroll-behavior:smooth;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding-bottom:2px;}
-    .pg-tiles::-webkit-scrollbar{display:none;}
-    .pg-tile{flex:0 0 auto;width:168px;text-decoration:none;color:inherit;background:#fff;border:1px solid #E6E8EF;border-radius:14px;overflow:hidden;transition:box-shadow .18s,transform .18s;}
-    .pg-tile:hover{box-shadow:0 4px 16px rgba(0,0,0,0.08);transform:translateY(-1px);}
-    .pg-tile-media{aspect-ratio:4/3;background:#EEF1F6;overflow:hidden;}
-    .pg-tile-media img{width:100%;height:100%;object-fit:cover;display:block;}
-    .pg-tile-body{padding:9px 11px 11px;}
-    .pg-tile-title{font-size:12.5px;font-weight:700;color:#0E1430;line-height:1.3;letter-spacing:-0.01em;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
-    .pg-arrow{display:none;}
     @media(min-width:768px){
       body{background:#0E1430;}
       .container{width:100%;max-width:860px;border-radius:0;min-height:100vh;}
@@ -112,13 +105,18 @@
       .hero-h1{font-size:36px;}
       .filter-section{position:static;top:unset;padding:16px 48px 20px;}
       .filter-pills{max-width:560px;}
-      .pg-carousel{margin-left:-48px;margin-right:-48px;padding-left:48px;padding-right:48px;max-width:none;}
-      .pg-tile{flex:0 0 calc((100% - 60px) / 6);width:auto;}
-      .pg-arrow{display:flex;position:absolute;top:38%;width:34px;height:34px;border-radius:50%;background:#fff;border:1px solid #E6E8EF;box-shadow:0 4px 14px rgba(14,20,48,0.16);align-items:center;justify-content:center;cursor:pointer;color:#0E1430;transition:background .15s,color .15s;z-index:5;}
-      .pg-arrow:hover{background:#1E6BFF;color:#fff;}
-      .pg-arrow[hidden]{display:none;}
-      .pg-arrow--vor{right:-14px;}
-      .pg-arrow--zurueck{left:-14px;}
+      /* Erhoehte Spezifitaet + !important noetig: desktop.css setzt fuer
+         #exercises-list (geteilt mit /uebungen) bereits ein !important
+         display:flex. .hero-lead gibt es nur auf den 22 Landingpages, nicht
+         auf /uebungen, daher darueber gezielt nur hier ueberschrieben. */
+      body:has(.hero-lead) #exercises-list.uc-tiles{
+        display:grid !important;
+        grid-template-columns:repeat(3,1fr) !important;
+        gap:20px !important;
+        overflow-x:visible;
+        scroll-snap-type:none;
+      }
+      .uc-tile{flex:none;}
     }
   </style>
   <link rel="stylesheet" href="/desktop.css">
@@ -189,26 +187,11 @@
   </div>
 
   <div class="page-content">
-    <section class="pg-carousel" id="pg-carousel">
-      <span class="pg-carousel-label">Direkt reinschauen</span>
-      <div class="pg-tiles" id="pg-slider-band"><!--cu:slider--><!--/cu:slider--></div>
-      <button class="pg-arrow pg-arrow--zurueck" id="pg-slider-pfeil-zurueck" type="button" aria-label="Vorherige Übungen anzeigen" hidden>
-        <svg width="16" height="16" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M13 4l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </button>
-      <button class="pg-arrow pg-arrow--vor" id="pg-slider-pfeil" type="button" aria-label="Weitere Übungen anzeigen">
-        <svg width="16" height="16" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M7 4l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </button>
-    </section>
+    <div id="exercises-list" class="uc-tiles"><!--cu:karten--><!--/cu:karten--></div>
     <section class="text-section">
       <h2 class="section-h2">Warum ist das Aufw&#228;rmen so wichtig?</h2>
       <p class="body-text">Aufw&#228;rmen ist mehr als ein pflichtgem&#228;&#223;es Rumgetrabe. Die richtige Aufw&#228;rmphase erh&#246;ht die Muskeltemperatur, sch&#228;rft die Konzentration und stimmt Kinder mental auf das Training ein. Besonders im Kinderfu&#223;ball sollte das Aufw&#228;rmen spielerisch gestaltet sein &#8211; mit Ball, mit Wettbewerb und mit Erfolgserlebnis.</p>
       <p class="body-text">Die Aufw&#228;rm&#252;bungen auf dieser Seite dauern typischerweise 8&#8211;15 Minuten und eignen sich f&#252;r alle Altersgruppen. Sie lassen sich ohne gro&#223;en Aufwand direkt am Trainingsanfang einsetzen.</p>
-    </section>
-    <section>
-      <div class="exercises-header">
-        <h2 class="section-h2">Alle Aufw&#228;rm&#252;bungen</h2>
-      </div>
-      <div id="exercises-list"><!--cu:karten--><!--/cu:karten--></div>
     </section>
   </div>
 
@@ -255,7 +238,6 @@
 <script>
   const FILTER_KEY = 'phase';
   const FILTER_VALUE = 'Aufw\u00e4rmen';
-  const PHASE_COLORS = {'Aufwaermen':'#C2611F','Aufw\u00e4rmen':'#C2611F','Hauptteil':'#0E6A45','Spielformat':'#0F3FA8'};
   const selected = {jugend: new Set(), skill: new Set(), phase: new Set()};
   let allExercises = [];
 
@@ -322,45 +304,13 @@
     if (!n) { el.innerHTML = '<div class="empty-state">Keine \u00dcbungen gefunden.</div>'; return; }
     el.innerHTML = list.map(ex => {
       const href = ex.url_slug ? `/uebung/${ex.url_slug}` : '#';
-      const pc = PHASE_COLORS[ex.trainingsphase] || '#0E1430';
-      const pt = ex.trainingsphase ? `<span class="tag-phase" style="background:${pc}">${ex.trainingsphase}</span>` : '';
-      const js = (ex.jugend||[]).map(j => j.replace('-Jugend','')).join('\u00b7');
-      const jt = js ? `<span class="tag-jahrgang">${js}</span>` : '';
-      const sk = ex.skills || [];
-      const sv = sk.slice(0,2).map(s => `<span class="tag-skill">${s}</span>`).join('');
-      const sm = sk.length > 2 ? `<span class="tag-more">+${sk.length-2}</span>` : '';
-      return `<a href="${href}" class="exercise-card"><div class="card-grid"><div class="card-left"><h3 class="card-title">${ex.titel}</h3></div><div class="card-right">${ex.kurzbeschreibung?`<p class="card-desc">${ex.kurzbeschreibung}</p>`:''}<div class="card-tags">${pt}${jt}${sv}${sm}</div></div></div></a>`;
+      const jt = (ex.jugend||[]).map(j => `<span class="uc-tag uc-tag--jugend">${j}</span>`).join('');
+      const st = (ex.skills||[]).slice(0,3).map(s => `<span class="uc-tag uc-tag--skill">${s}</span>`).join('');
+      return `<a href="${href}" class="uc-tile"><div class="uc-tile-media"><img src="${ex.grafik_url || '/og-image.png'}" alt="" width="480" height="320" loading="lazy" decoding="async"></div><div class="uc-tile-body"><p class="uc-tile-title">${ex.titel}</p>${ex.kurzbeschreibung?`<p class="uc-tile-desc">${ex.kurzbeschreibung}</p>`:''}<div class="uc-tile-tags">${jt}${st}</div></div></a>`;
     }).join('');
   }
   buildSkillDropdown(primaryFilter(allExercises));
 
-  (function () {
-    const carousel = document.getElementById('pg-carousel');
-    const band      = document.getElementById('pg-slider-band');
-    const vor       = document.getElementById('pg-slider-pfeil');
-    const zurueck   = document.getElementById('pg-slider-pfeil-zurueck');
-    if (!carousel || !band || !vor || !zurueck) return;
-    if (!band.children.length) { carousel.style.display = 'none'; return; }
-
-    function schrittweite() {
-      const kachel = band.querySelector('.pg-tile');
-      if (!kachel) return band.clientWidth;
-      const stil = getComputedStyle(band);
-      const abstand = parseFloat(stil.columnGap || stil.gap) || 12;
-      return kachel.getBoundingClientRect().width + abstand;
-    }
-    function aktualisiere() {
-      const scrollbar = band.scrollWidth > band.clientWidth + 4;
-      const rest = band.scrollWidth - band.clientWidth - band.scrollLeft;
-      vor.hidden     = !scrollbar || rest < 4;
-      zurueck.hidden = !scrollbar || band.scrollLeft < 4;
-    }
-    vor.addEventListener('click', function () { band.scrollBy({ left: schrittweite(), behavior: 'smooth' }); });
-    zurueck.addEventListener('click', function () { band.scrollBy({ left: -schrittweite(), behavior: 'smooth' }); });
-    band.addEventListener('scroll', aktualisiere, { passive: true });
-    window.addEventListener('resize', aktualisiere);
-    aktualisiere();
-  })();
 
   function openDrawer(){document.getElementById('drawer').classList.add('open');document.getElementById('drawer-overlay').classList.add('open');}
   function closeDrawer(){document.getElementById('drawer').classList.remove('open');document.getElementById('drawer-overlay').classList.remove('open');}

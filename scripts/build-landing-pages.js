@@ -52,7 +52,6 @@ function ersetzeBlock(html, name, inhalt, datei) {
   return html.slice(0, i + start.length) + inhalt + html.slice(j);
 }
 
-const PHASE_COLORS = { 'Aufwärmen': '#C2611F', 'Hauptteil': '#0E6A45', 'Spielformat': '#0F3FA8' };
 const KARTEN_FELDER = ['id', 'titel', 'url_slug', 'kurzbeschreibung', 'jugend', 'skills', 'trainingsphase'];
 
 function schlank(ex) {
@@ -60,43 +59,17 @@ function schlank(ex) {
   for (const feld of KARTEN_FELDER) {
     if (ex[feld] !== undefined && ex[feld] !== null && ex[feld] !== '') out[feld] = ex[feld];
   }
+  // Separat statt in KARTEN_FELDER: rohes grafik_url koennte (in seltenen
+  // Altfaellen) noch Base64 sein - resolveGrafik() faengt das ab.
+  out.grafik_url = resolveGrafik(ex);
   return out;
 }
 
-/** Kartenmarkup – exakt wie es das jeweilige Client-JS selbst erzeugt, damit
- *  ein späteres Neu-Rendern (Sekundärfilter auf den Landingpages, oder
- *  jede Filteränderung auf /uebungen) keinen sichtbaren Unterschied macht. */
-function renderKarte(ex, mitDataPhase) {
-  const href = ex.url_slug ? `/uebung/${ex.url_slug}` : '#';
-  const phaseColor = PHASE_COLORS[ex.trainingsphase] || '#0E1430';
-  const phaseTag = ex.trainingsphase ? `<span class="tag-phase" style="background:${phaseColor}">${esc(ex.trainingsphase)}</span>` : '';
-  const jahrgangStr = (ex.jugend || []).map(j => j.replace('-Jugend', '')).join('·');
-  const jahrgangTag = jahrgangStr ? `<span class="tag-jahrgang">${esc(jahrgangStr)}</span>` : '';
-  const skills = ex.skills || [];
-  const visSkills = skills.slice(0, 2).map(s => `<span class="tag-skill">${esc(s)}</span>`).join('');
-  const more = skills.length > 2 ? `<span class="tag-more">+${skills.length - 2}</span>` : '';
-  const dataPhase = mitDataPhase ? ` data-phase="${esc(ex.trainingsphase || '')}"` : '';
-  return `
-          <a href="${href}" class="exercise-card"${dataPhase}>
-            <div class="card-grid">
-              <div class="card-left">
-                <h3 class="card-title">${esc(ex.titel)}</h3>
-              </div>
-              <div class="card-right">
-                ${ex.kurzbeschreibung ? `<p class="card-desc">${esc(ex.kurzbeschreibung)}</p>` : ''}
-                <div class="card-tags">${phaseTag}${jahrgangTag}${visSkills}${more}</div>
-              </div>
-            </div>
-          </a>`;
-}
-
-/** Bildkachel fuer /uebungen (09/2026) – dieselbe Optik wie das
- *  "Neueste Uebungen"-Band auf der Startseite (build-home.js), nur als
- *  Grid statt Karussell. Bewusst eine eigene Funktion statt renderKarte()
- *  zu erweitern: renderKarte() wird auch von den 22 Alter/Skill/Phase-
- *  Landingpages genutzt, die ihr bisheriges (textlastiges) Kartendesign
- *  unveraendert behalten sollen. Kein data-phase/Mehr-Tag/Datum wie beim
- *  Vorbild auf der Startseite - Kurzbeschreibung bewusst ungekuerzt. */
+/** Bildkachel – dieselbe Optik wie das "Neueste Uebungen"-Band auf der
+ *  Startseite (build-home.js), nur als Grid statt Karussell. Bedient sowohl
+ *  /uebungen (ungefiltert) als auch die 22 Alter/Skill/Phase-Landingpages
+ *  (vorgefiltert nach FILTER_KEY/FILTER_VALUE) - seit 09/2026 identisches
+ *  Kartendesign auf allen 23 Seiten. */
 function renderUebungenTile(ex) {
   const href = ex.url_slug ? `/uebung/${ex.url_slug}` : '#';
   const jugendTags = (ex.jugend || []).map(j => `<span class="uc-tag uc-tag--jugend">${esc(j)}</span>`).join('');
@@ -120,27 +93,13 @@ function entschluesseln(str) {
   return str.replace(/\\u([0-9a-fA-F]{4})/g, (_, hex) => String.fromCharCode(parseInt(hex, 16)));
 }
 
-// ── Bild-Karussell direkt unter dem blauen Bereich (09/2026) ──
-// Zeigt die ersten SLIDER_ANZAHL Übungen der Seite mit Bild, statt dass der
-// Besucher erst am Fließtext vorbeiscrollen muss, um überhaupt eine Übung zu
-// sehen. Nutzt dieselbe Bild-Auflösung wie das "Neueste Übungen"-Band auf der
+// Nutzt dieselbe Bild-Auflösung wie das "Neueste Übungen"-Band auf der
 // Startseite (build-home.js) – hier bewusst dupliziert statt importiert,
 // damit dieses Skript weiterhin ohne Abhängigkeit zu build-home.js läuft.
-const SLIDER_ANZAHL = 10;
-
 function resolveGrafik(ex) {
   const raw = ex.grafik_url;
   if (raw && !String(raw).startsWith('data:')) return raw;
   return '/og-image.png';
-}
-
-function renderSliderKachel(ex) {
-  const href = ex.url_slug ? `/uebung/${ex.url_slug}` : '#';
-  return `
-          <a href="${href}" class="pg-tile">
-            <div class="pg-tile-media"><img src="${esc(resolveGrafik(ex))}" alt="" width="200" height="150" loading="lazy" decoding="async"></div>
-            <div class="pg-tile-body"><p class="pg-tile-title">${esc(ex.titel)}</p></div>
-          </a>`;
 }
 
 function main() {
@@ -185,8 +144,7 @@ function main() {
     else if (filterKey === 'skill') gefiltert = sortiert.filter(e => (e.skills || []).includes(filterValue));
     else throw new Error(`Unbekannter FILTER_KEY '${filterKey}' in ${rel}`);
 
-    const karten = gefiltert.map(ex => renderKarte(ex, false)).join('');
-    const sliderKarten = gefiltert.slice(0, SLIDER_ANZAHL).map(renderSliderKachel).join('');
+    const karten = gefiltert.map(ex => renderUebungenTile(ex)).join('');
     const anzahlText = `${gefiltert.length} Übung${gefiltert.length !== 1 ? 'en' : ''}`;
     const skills = [...new Set(gefiltert.flatMap(e => e.skills || []))].sort();
     const skillDropdown = skills.map(s =>
@@ -197,7 +155,6 @@ function main() {
     const pageDaten = JSON.stringify(gefiltert.map(schlank)).replace(/</g, '\\u003c');
 
     html = ersetzeBlock(html, 'karten', karten, rel);
-    html = ersetzeBlock(html, 'slider', sliderKarten, rel);
     html = ersetzeBlock(html, 'anzahl', anzahlText, rel);
     html = ersetzeBlock(html, 'skill-dropdown', skillDropdown, rel);
 
