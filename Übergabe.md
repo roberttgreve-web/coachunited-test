@@ -1245,7 +1245,7 @@ Live verifiziert auf `/uebungen/alter/g-jugend`: `filterPosition:"sticky"`, `lpB
 - [x] Koordination — in Google Ads angelegt (2026-09-17)
 - [x] Taktik — in Google Ads angelegt (2026-09-17)
 - [x] Umschalten — in Google Ads angelegt (2026-09-17)
-- [ ] Verteidigen
+- [x] Verteidigen — in Google Ads angelegt (2026-09-17)
 - [ ] Kommunikation
 - [ ] Einwürfe
 - [ ] Flanken
