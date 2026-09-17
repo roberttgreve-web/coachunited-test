@@ -90,6 +90,30 @@ function renderKarte(ex, mitDataPhase) {
           </a>`;
 }
 
+/** Bildkachel fuer /uebungen (09/2026) – dieselbe Optik wie das
+ *  "Neueste Uebungen"-Band auf der Startseite (build-home.js), nur als
+ *  Grid statt Karussell. Bewusst eine eigene Funktion statt renderKarte()
+ *  zu erweitern: renderKarte() wird auch von den 22 Alter/Skill/Phase-
+ *  Landingpages genutzt, die ihr bisheriges (textlastiges) Kartendesign
+ *  unveraendert behalten sollen. Kein data-phase/Mehr-Tag/Datum wie beim
+ *  Vorbild auf der Startseite - Kurzbeschreibung bewusst ungekuerzt. */
+function renderUebungenTile(ex) {
+  const href = ex.url_slug ? `/uebung/${ex.url_slug}` : '#';
+  const jugendTags = (ex.jugend || []).map(j => `<span class="uc-tag uc-tag--jugend">${esc(j)}</span>`).join('');
+  const skillTags  = (ex.skills || []).slice(0, 3).map(s => `<span class="uc-tag uc-tag--skill">${esc(s)}</span>`).join('');
+  return `
+          <a href="${href}" class="uc-tile">
+            <div class="uc-tile-media">
+              <img src="${esc(resolveGrafik(ex))}" alt="" width="480" height="320" loading="lazy" decoding="async">
+            </div>
+            <div class="uc-tile-body">
+              <p class="uc-tile-title">${esc(ex.titel)}</p>
+              ${ex.kurzbeschreibung ? `<p class="uc-tile-desc">${esc(ex.kurzbeschreibung)}</p>` : ''}
+              <div class="uc-tile-tags">${jugendTags}${skillTags}</div>
+            </div>
+          </a>`;
+}
+
 /** JS-Unicode-Escapes (\\u00fc) im rohen Dateitext auflösen – FILTER_VALUE
  *  steht z. B. als 'Torh\\u00fcter' im Quelltext, nicht als echtes "ü". */
 function entschluesseln(str) {
@@ -132,7 +156,7 @@ function main() {
   // ── /uebungen: vollständige, ungefilterte Liste ──
   if (fs.existsSync(uebungenPath)) {
     let html = fs.readFileSync(uebungenPath, 'utf-8');
-    const karten = sortiert.map(ex => renderKarte(ex, true)).join('');
+    const karten = sortiert.map(ex => renderUebungenTile(ex)).join('');
     html = ersetzeBlock(html, 'karten', karten, 'uebungen.html');
     html = ersetzeBlock(html, 'anzahl', `${sortiert.length} Übungen`, 'uebungen.html');
     fs.writeFileSync(uebungenPath, html, 'utf-8');

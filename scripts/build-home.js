@@ -111,11 +111,10 @@ function baueSkillIndex(exercises) {
 /**
  * Schlanker Index fuer die Uebungsuebersicht.
  *
- * Die Kartenansicht auf /uebungen zeigt genau sechs Felder und kein Bild.
- * Trotzdem lud die Seite exercises.json mit 2,6 MB – darin stecken Aufbau,
- * Durchfuehrung, Varianten, FAQ und die Grafiken, von denen dort nichts
- * sichtbar wird. Dieser Index enthaelt nur, was die Karten wirklich
- * brauchen.
+ * Die Kartenansicht auf /uebungen zeigt diese Felder inkl. Bild. Trotzdem
+ * lud die Seite frueher exercises.json mit 2,6 MB – darin stecken Aufbau,
+ * Durchfuehrung, Varianten, FAQ und mehr, von denen dort nichts sichtbar
+ * wird. Dieser Index enthaelt nur, was die Karten wirklich brauchen.
  *
  * ⚠️ Aendert sich die Kartenansicht in uebungen.html und braucht ein
  * weiteres Feld, muss es hier ergaenzt werden – sonst ist es einfach leer.
@@ -131,6 +130,10 @@ function baueUebungsIndex(exercises) {
     for (const feld of KARTEN_FELDER) {
       if (e[feld] !== undefined && e[feld] !== null && e[feld] !== '') schlank[feld] = e[feld];
     }
+    // Separat statt in KARTEN_FELDER: rohes grafik_url koennte (in seltenen
+    // Altfaellen) noch Base64 sein - resolveUebungGrafik() faengt das ab,
+    // damit kein riesiger Base64-String im schlanken Index landet.
+    schlank.grafik_url = resolveUebungGrafik(e);
     return schlank;
   });
 }
