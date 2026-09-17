@@ -1253,5 +1253,7 @@ Live verifiziert auf `/uebungen/alter/g-jugend`: `filterPosition:"sticky"`, `lpB
 - [x] Schnelligkeit — in Google Ads angelegt (2026-09-17)
 - [x] Aufwärmen (Trainingsphase) — in Google Ads angelegt (2026-09-17)
 - [x] Hauptteil (Trainingsphase) — bewusst NICHT angelegt (2026-09-17): zu wenig eigenständiges Suchvolumen für „Hauptteil" als Begriff
-- [ ] Spielformat (Trainingsphase)
+- [x] Spielformat (Trainingsphase) — in Google Ads angelegt (2026-09-17), Keywords erweitert um Gruppen „Spiele…" und „Turniere…" (36 Keywords gesamt)
 - [x] Allgemeine Kinderfußball-Kampagne — in Google Ads angelegt (2026-09-17), Ziel-URL `https://coachunited.de` (Startseite statt einzelner Landingpage, da nicht an ein Alter/Skill/Phase gebunden)
+
+**✅ Liste vollständig abgearbeitet (2026-09-17):** Alle 12 fehlenden Skills, die Trainingsphase Aufwärmen, Spielformat (mit erweiterten Keywords) und die allgemeine Kinderfußball-Kampagne sind live. Hauptteil wurde bewusst ausgelassen (kein eigenständiges Suchvolumen). Aus den ursprünglich 8 Anzeigengruppen (Abschnitt 29.8) sind damit 21 geworden. Nächster sinnvoller Schritt: nach ein paar Tagen Laufzeit die Anzeigengruppen-Übersicht erneut prüfen, ob sich die Budgetausschöpfung (Ausgangslage: ~39 %, s. Diagnose oben) spürbar Richtung 10.000 $/Monat bewegt.
