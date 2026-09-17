@@ -1229,3 +1229,29 @@ Breadcrumb, `.hero-badge` und `.hero-lead` (die Landingpage-typische Einleitung 
 **Umsetzung:** Mechanisches Python-Skript mit Anker-Zählung (wie bei allen bisherigen 22-Dateien-Änderungen) – ersetzt den alten `.page-content`-Block (Grid + Text-Section als Kinder) durch `#lp-body`-Wrapper + separate `.text-section` danach; CSS-Ersetzung der alten `.filter-section{position:static;...}`/`.filter-pills{max-width:560px;}`-Regeln durch die Grid-Variante. Kein `build-landing-pages.js`-Änderung nötig – reine HTML/CSS-Struktur, die Kartenbefüllung läuft unverändert über dieselben `<!--cu:karten-->`-Marker.
 
 Live verifiziert auf `/uebungen/alter/g-jugend`: `filterPosition:"sticky"`, `lpBodyDisplay:"grid"`, Breadcrumb-Text weiterhin vorhanden ("Übungen › Nach Alter › G-Jugend"), gleich hohe Kacheln pro Zeile (`[451,451,451,433,433,433]`).
+
+## 37. Google Ad Grants: Ausbau Anzeigengruppen Skills/Phasen/Allgemein (09/2026)
+
+**Diagnose (2026-09-17):** Anzeigengruppen-Report zeigte, dass vom Tagesbudget 330 $ (≈9.900 $/Monat, passend zum 10.000-$-Grant) nur ~129 $/Tag (≈39 %) tatsächlich ausgegeben werden (905,42 $ über 7 Tage). Das Budget ist nicht der Flaschenhals, sondern zu wenig Klickvolumen: Von den 15 Skill-Landingpages haben nur 3 (Passen, Torschuss, Dribbeln) eine eigene Anzeigengruppe, keine der 3 Phasen-Landingpages (Aufwärmen, Hauptteil, Spielformat) hat eine – die bestehenden 8 Ad Groups aus Abschnitt 29.8 sind fast ausschließlich alters-fokussiert (F-/D-/G-/E-Jugend + „Fußballtraining allgemein" ziehen ~90 % der Kosten).
+
+**Plan:** Für jede fehlende Skill-/Phasen-Landingpage eine eigene Anzeigengruppe im selben Muster wie die 8 bestehenden: Keywords als Phrase Match (mehrwortig, Ad-Grants-konform – keine Einzelwort-Keywords, s. Abschnitt 29.7), eigene Ziel-URL auf die jeweilige Landingpage, ~15 Anzeigentitel (≤30 Zeichen), 2 Textzeilen (≤90 Zeichen). Zusätzlich soll es allgemeine, nicht an eine einzelne Landingpage gebundene Kampagnen/Ad Groups zu Kinderfußball-Themen geben (z. B. Trainingsplanung, Elternkommunikation, allgemeine Coaching-Tipps) – Ziel-URL dafür noch offen (Startseite, `/uebungen` oder ggf. künftige Artikel-Seiten).
+
+⚠️ **Stolperstein beim Anlegen (Ballkontrolle, 2026-09-17):** Beim Kopieren des Anzeigen-Setups einer vorherigen Ad Group als Vorlage blieben zwei Felder unbemerkt auf der alten Landingpage stehen – die Finale URL zeigte noch auf `/uebungen/alter/f-jugend` statt `/uebungen/skill/ballkontrolle`, und die zweite Textzeile enthielt noch „F-Jugend-Übungen…" statt „Ballkontrolle-Übungen…". Der „Angezeigte Pfad" (kosmetisch, unabhängig von der Finalen URL) war dagegen schon korrekt und hat den Fehler verdeckt. **Lehre für alle folgenden Ad Groups:** nach dem Kopieren einer Vorlage gezielt Finale URL UND beide Textzeilen nochmal gegenlesen, nicht nur Keywords/Anzeigentitel.
+
+**ToDo – ausstehende Anzeigengruppen:**
+- [x] Ballkontrolle — in Google Ads angelegt (2026-09-17), Ziel-URL-/Textzeilen-Fehler korrigiert
+- [ ] Zweikampf — Keywords/Anzeigentitel/Textzeilen fertig erstellt, noch nicht in Google Ads angelegt
+- [ ] Torhüter — Keywords/Anzeigentitel/Textzeilen fertig erstellt, noch nicht in Google Ads angelegt
+- [ ] Koordination
+- [ ] Taktik
+- [ ] Umschalten
+- [ ] Verteidigen
+- [ ] Kommunikation
+- [ ] Einwürfe
+- [ ] Flanken
+- [ ] Raumverhalten
+- [ ] Schnelligkeit
+- [ ] Aufwärmen (Trainingsphase)
+- [ ] Hauptteil (Trainingsphase)
+- [ ] Spielformat (Trainingsphase)
+- [ ] Allgemeine Kinderfußball-Kampagne(n) — noch zu konzipieren: Themen/Keywords, die nicht an eine einzelne Alter-/Skill-/Phasen-Landingpage gebunden sind (z. B. „Trainingsplan erstellen", „Kinderfußball Coaching-Tipps allgemein", „Elterngespräche im Kinderfußball"); Ziel-URL noch offen
