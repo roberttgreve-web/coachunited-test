@@ -1172,3 +1172,21 @@ Auf Wunsch grundlegend überarbeitet: Video statt Foto, Text stark gekürzt, zwe
 ## 31. Neueste-Übungen-Band auf der Startseite: Obergrenze entfernt (09/2026)
 
 Robert wollte, dass das Band per Pfeil (Desktop) bzw. Wischen (Mobil) erst am tatsächlichen Ende der Bibliothek stoppt, nicht vorher. Ursache: `build-home.js` deckelte das Band über `NEUESTE_UEBUNGEN_ANZAHL = 12` auf die 12 jüngsten Übungen (`.slice(0, 12)`), obwohl der eigene Code-Kommentar noch von „Rest per Pfeil/Wischen" sprach – dieser „Rest" wurde serverseitig aber nie mitgerendert, es gab schlicht nichts weiter zu erreichen. Fix: Obergrenze entfernt, das Band zeigt jetzt alle veröffentlichten Übungen (191 im September 2026), exakt wie `/uebungen` schon immer alle zeigt – keine Änderung an der Pfeil-/Scroll-Logik selbst nötig, die berechnet Sichtbarkeit ohnehin dynamisch aus `scrollWidth`/`clientWidth`. Mobil brauchte ohnehin keine Anpassung: nativer Touch-Scroll stoppt von selbst am Seitenende, unabhängig von der Kachelanzahl.
+
+## 32. „Alle Übungen": Bild-Kacheln wie auf der Startseite (09/2026)
+
+`/uebungen` zeigte bisher nur textlastige Karten ohne Bild (`.exercise-card`). Auf Wunsch jetzt exakt die „Neueste Übungen"-Kachel-Optik der Startseite (Bild, Titel, Tags) – mit zwei bewussten Abweichungen: Kurzbeschreibung ungekürzt (kein `line-clamp`) und kein Veröffentlichungsdatum.
+
+**Umsetzung:**
+- `build-home.js`: `grafik_url` in den schlanken `uebungen-index.json`-Index aufgenommen, über `resolveUebungGrafik()` (nicht roh), damit kein Base64 aus Altfällen im Index landet.
+- `build-landing-pages.js`: neue Funktion `renderUebungenTile()`, bewusst getrennt von `renderKarte()` – letztere bedient weiterhin unverändert die 22 Alter/Skill/Phase-Landingpages mit ihrem bisherigen Kartendesign. Nur `/uebungen` bekam das neue Design.
+- `uebungen.html`: neue `.uc-tile`-Kacheloptik (CSS + Client-JS-Renderer `renderExercises()`; serverseitig vorgerenderte Karten über `renderUebungenTile()` sind identisch dazu, damit ein Filterwechsel im Browser keinen sichtbaren Unterschied macht). **Desktop (≥768px):** echtes 3er-Grid statt Wisch-Karussell, bricht mit der gefilterten Trefferzahl mehrzeilig um – anders als auf der Startseite gibt es hier keine feste Kachelzahl. **Mobil:** waagerechtes Wisch-Band wie auf der Startseite statt der bisherigen Listenansicht.
+- **Stolperstein:** `desktop.css` erzwingt für `#exercises-list` bereits `display:flex !important` (Regel `body:has(.filter-section) #exercises-list`), geteilt mit den 22 Landingpages, die ihr altes Listendesign behalten. Das neue Grid brauchte deshalb höhere Spezifität + `!important`, gezielt nur für diese Seite über `body:has(#uebungen-body)` (diese ID gibt es nur auf `/uebungen`, nicht auf den Landingpages).
+
+## 33. Übungsdetail: CTAs in die blaue Leiste verschoben (09/2026)
+
+Die weiße Action-Bar unter der dunklen Back-Bar (mit „Auf Merkliste"/„Teilen"/„Drucken") entfällt komplett, auf Mobil wie auf Desktop. Alle drei CTAs stehen jetzt rechts in der Back-Bar: auf Mobil als reine Icon-Buttons (wie zuvor nur der einzelne Teilen-Button dort), auf Desktop zusätzlich mit Textlabel.
+
+**Aufgeräumt dabei:** Der alte einzelne `share-btn` (Funktion `shareExercise()`) ist obsolet – `shareExerciseBar()` deckt als einziger Teilen-Button jetzt beide Stellen ab. Zwei CSS-Tricks in `desktop.css` fielen dadurch weg: Der Share-Button wurde per `::after` auf „Teilen" umbenannt und dann gleich wieder komplett versteckt (zwei sich widersprechende Regeln an verschiedenen Stellen der Datei); der Action-Bar-Teilen-Button wurde separat per `::after` auf „Link kopieren" umbenannt. Ersetzt durch ein einheitliches `.cta-btn`/`.cta-label`-Paar: ein echtes Text-Element statt `content:`-Hack, auf Mobil per CSS versteckt, auf Desktop eingeblendet.
+
+⚠️ **Analytics-Nebenwirkung:** `shareExercise()` feuerte `share_click` mit `source: 'weiterempfehlen'` (dokumentiert in Abschnitt „CTA-Tracking in Analytics" weiter oben). Diese Quelle gibt es nicht mehr – alle Teilen-Klicks auf dieser Seite laufen jetzt unter `source: 'action_bar'`. Kein Datenverlust an sich (der Button, der „weiterempfehlen" auslöste, existiert schlicht nicht mehr als eigenes Element), aber falls in GA4 nach dieser Aufschlüsselung gefiltert wird, taucht „weiterempfehlen" ab jetzt nicht mehr auf.
