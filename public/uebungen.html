@@ -520,12 +520,17 @@
         display: grid !important;
         grid-template-columns: repeat(3, 1fr) !important;
         gap: 20px !important;
+        /* desktop.css setzt fuer #exercises-list sitewide align-items:start
+           (fuer 2-Spalten-Listen wie /einheiten gedacht) - dadurch blieben
+           Kacheln mit kuerzerer Kurzbeschreibung sichtbar niedriger als ihre
+           Nachbarn in derselben Zeile. stretch gleicht die Hoehe pro Zeile an. */
+        align-items: stretch !important;
         overflow-x: visible;
         margin-inline: 0;
         padding-inline: 0;
         scroll-snap-type: none;
       }
-      .uc-tile { flex: none; }
+      .uc-tile { flex: none; height: 100%; }
     }
   </style>
   <script src="/desktop-nav.js" defer></script>
