@@ -1250,7 +1250,7 @@ Live verifiziert auf `/uebungen/alter/g-jugend`: `filterPosition:"sticky"`, `lpB
 - [x] Einwürfe — in Google Ads angelegt (2026-09-17)
 - [x] Flanken — in Google Ads angelegt (2026-09-17)
 - [x] Raumverhalten — in Google Ads angelegt (2026-09-17)
-- [ ] Schnelligkeit
+- [x] Schnelligkeit — in Google Ads angelegt (2026-09-17)
 - [ ] Aufwärmen (Trainingsphase)
 - [ ] Hauptteil (Trainingsphase)
 - [ ] Spielformat (Trainingsphase)
