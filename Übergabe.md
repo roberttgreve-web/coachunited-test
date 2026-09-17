@@ -1254,4 +1254,4 @@ Live verifiziert auf `/uebungen/alter/g-jugend`: `filterPosition:"sticky"`, `lpB
 - [ ] Aufwärmen (Trainingsphase)
 - [ ] Hauptteil (Trainingsphase)
 - [ ] Spielformat (Trainingsphase)
-- [ ] Allgemeine Kinderfußball-Kampagne(n) — noch zu konzipieren: Themen/Keywords, die nicht an eine einzelne Alter-/Skill-/Phasen-Landingpage gebunden sind (z. B. „Trainingsplan erstellen", „Kinderfußball Coaching-Tipps allgemein", „Elterngespräche im Kinderfußball"); Ziel-URL noch offen
+- [x] Allgemeine Kinderfußball-Kampagne — in Google Ads angelegt (2026-09-17), Ziel-URL `https://coachunited.de` (Startseite statt einzelner Landingpage, da nicht an ein Alter/Skill/Phase gebunden)
