@@ -88,11 +88,17 @@
       padding: 0;
       text-decoration: none;
     }
-    .share-btn {
-      margin-left: auto;
+    /* ── CTA-Gruppe rechts in der dunklen Back-Bar (09/2026) ──
+       Auf Mobil reine Icon-Buttons (wie zuvor nur der Teilen-Button allein),
+       auf Desktop bekommen sie zusaetzlich ihr Textlabel (siehe desktop.css,
+       body:has(#exercise-content) .cta-label). Ersetzt die vorherige weiße
+       Action-Bar unterhalb - deren drei Buttons stehen jetzt hier. */
+    .back-bar-actions { margin-left: auto; display: flex; gap: 6px; }
+    .cta-btn {
       display: inline-flex;
       align-items: center;
       justify-content: center;
+      gap: 6px;
       width: 32px;
       height: 32px;
       background: rgba(255,255,255,0.08);
@@ -101,7 +107,12 @@
       color: #fff;
       cursor: pointer;
       padding: 0;
+      font-family: 'Inter Tight', system-ui, sans-serif;
+      font-size: 12.5px;
+      font-weight: 500;
+      white-space: nowrap;
     }
+    .cta-label { display: none; }
 
     /* ── Grafik ── */
     .grafik-panel {
@@ -518,34 +529,7 @@
     .drawer-link:last-child { border-bottom: none; }
     .drawer-link:hover { color: #1E6BFF; }
 
-    /* ── Action Bar ── */
-    .action-bar {
-      display: flex;
-      gap: 8px;
-      padding: 12px 18px 13px;
-      border-bottom: 1px solid #E6E8EF;
-      background: #fff;
-      position: sticky;
-      top: 0;
-      z-index: 16;
-    }
-    .action-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      padding: 9px 14px;
-      background: #fff;
-      border: 1.5px solid #E6E8EF;
-      border-radius: 999px;
-      font-family: 'Inter Tight', system-ui, sans-serif;
-      font-size: 13px;
-      font-weight: 700;
-      color: #0E1430;
-      cursor: pointer;
-      transition: background 0.15s, border-color 0.15s;
-      white-space: nowrap;
-    }
-    .action-btn:hover { background: #f5f7fb; border-color: #c8cdd8; }
+    /* ── Feedback nach "Auf Merkliste" ── */
     .action-bar-feedback {
       padding: 8px 18px 0;
       font-size: 13px;
@@ -583,7 +567,7 @@
 
     /* ── Print styles ── */
     @media print {
-      .header, .back-bar, .action-bar, .action-bar-feedback,
+      .header, .back-bar, .action-bar-feedback,
       .bottom-nav, .drawer, .drawer-overlay, .sheet-overlay,
       .feedback-block, .tiles-section { display: none !important; }
       #print-tiles { display: block !important; }
@@ -618,33 +602,26 @@
         </svg>
         <span id="back-label">Übersicht</span>
       </a>
-      <button class="share-btn" onclick="shareExercise()" aria-label="Übung weiterempfehlen">
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-          <path d="M8 2v8M5 5l3-3 3 3M3 10v3a1 1 0 001 1h8a1 1 0 001-1v-3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </button>
-    </div>
-
-    <!-- Action Bar -->
-    <div class="action-bar">
-      <button class="action-btn" onclick="saveUebung()">
-        <svg width="15" height="15" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M5 3h12a1 1 0 011 1v15l-6-3-6 3V4a1 1 0 011-1z"/>
-        </svg>
-        Auf Merkliste
-      </button>
-      <button class="action-btn" onclick="shareExerciseBar()">
-        <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M8 2v8M5 5l3-3 3 3M3 10v3a1 1 0 001 1h8a1 1 0 001-1v-3"/>
-        </svg>
-        Teilen
-      </button>
-      <button class="action-btn" onclick="printExercise()">
-        <svg width="15" height="15" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M6 9V3h10v6"/><rect x="4" y="9" width="14" height="9" rx="1"/><path d="M6 18v-5h10v5"/>
-        </svg>
-        Drucken
-      </button>
+      <div class="back-bar-actions">
+        <button class="cta-btn" onclick="saveUebung()" aria-label="Auf Merkliste">
+          <svg width="15" height="15" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 3h12a1 1 0 011 1v15l-6-3-6 3V4a1 1 0 011-1z"/>
+          </svg>
+          <span class="cta-label">Auf Merkliste</span>
+        </button>
+        <button class="cta-btn" onclick="shareExerciseBar()" aria-label="Teilen">
+          <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M8 2v8M5 5l3-3 3 3M3 10v3a1 1 0 001 1h8a1 1 0 001-1v-3"/>
+          </svg>
+          <span class="cta-label">Teilen</span>
+        </button>
+        <button class="cta-btn" onclick="printExercise()" aria-label="Drucken">
+          <svg width="15" height="15" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 9V3h10v6"/><rect x="4" y="9" width="14" height="9" rx="1"/><path d="M6 18v-5h10v5"/>
+          </svg>
+          <span class="cta-label">Drucken</span>
+        </button>
+      </div>
     </div>
     <div class="action-bar-feedback" id="action-bar-feedback">Hat geklappt. Du findest die &#220;bung in deiner Merkliste wieder.</div>
 
@@ -992,20 +969,6 @@
       }
       if (navigator.share) {
         navigator.share({ text }).catch(() => {});
-      } else {
-        navigator.clipboard.writeText(text).then(() => alert('Link wurde kopiert!'));
-      }
-    }
-
-    function shareExercise() {
-      const url = window.location.href;
-      const title = document.getElementById('titel').textContent;
-      const text = title + '\n' + url;
-      if (typeof gtag === 'function') {
-        gtag('event', 'share_click', { source: 'weiterempfehlen', page_path: window.location.pathname });
-      }
-      if (navigator.share) {
-        navigator.share({ title, text }).catch(() => {});
       } else {
         navigator.clipboard.writeText(text).then(() => alert('Link wurde kopiert!'));
       }
