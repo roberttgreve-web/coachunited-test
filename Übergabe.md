@@ -1252,6 +1252,6 @@ Live verifiziert auf `/uebungen/alter/g-jugend`: `filterPosition:"sticky"`, `lpB
 - [x] Raumverhalten — in Google Ads angelegt (2026-09-17)
 - [x] Schnelligkeit — in Google Ads angelegt (2026-09-17)
 - [x] Aufwärmen (Trainingsphase) — in Google Ads angelegt (2026-09-17)
-- [ ] Hauptteil (Trainingsphase)
+- [x] Hauptteil (Trainingsphase) — bewusst NICHT angelegt (2026-09-17): zu wenig eigenständiges Suchvolumen für „Hauptteil" als Begriff
 - [ ] Spielformat (Trainingsphase)
 - [x] Allgemeine Kinderfußball-Kampagne — in Google Ads angelegt (2026-09-17), Ziel-URL `https://coachunited.de` (Startseite statt einzelner Landingpage, da nicht an ein Alter/Skill/Phase gebunden)
