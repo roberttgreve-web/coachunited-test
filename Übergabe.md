@@ -1247,7 +1247,7 @@ Live verifiziert auf `/uebungen/alter/g-jugend`: `filterPosition:"sticky"`, `lpB
 - [x] Umschalten — in Google Ads angelegt (2026-09-17)
 - [x] Verteidigen — in Google Ads angelegt (2026-09-17)
 - [x] Kommunikation — in Google Ads angelegt (2026-09-17)
-- [ ] Einwürfe
+- [x] Einwürfe — in Google Ads angelegt (2026-09-17)
 - [ ] Flanken
 - [ ] Raumverhalten
 - [ ] Schnelligkeit
