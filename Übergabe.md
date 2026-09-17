@@ -1242,7 +1242,7 @@ Live verifiziert auf `/uebungen/alter/g-jugend`: `filterPosition:"sticky"`, `lpB
 - [x] Ballkontrolle — in Google Ads angelegt (2026-09-17), Ziel-URL-/Textzeilen-Fehler korrigiert
 - [ ] Zweikampf — Keywords/Anzeigentitel/Textzeilen fertig erstellt, noch nicht in Google Ads angelegt
 - [ ] Torhüter — Keywords/Anzeigentitel/Textzeilen fertig erstellt, noch nicht in Google Ads angelegt
-- [ ] Koordination
+- [x] Koordination — in Google Ads angelegt (2026-09-17)
 - [ ] Taktik
 - [ ] Umschalten
 - [ ] Verteidigen
