@@ -500,6 +500,11 @@
         grid-column: 2;
         grid-row: 2;
         padding: 28px 32px 40px;
+        /* desktop.css setzt fuer .content sitewide max-width:960px (fuer
+           textlastige Seiten gedacht) - hier bewusst aufgehoben, damit das
+           Kachel-Grid die volle 4fr-Spaltenbreite von #uebungen-body nutzt
+           und nicht unnoetig viel Leerraum rechts stehen bleibt. */
+        max-width: none;
       }
 
       /* Ab Desktop kein Wisch-Karussell mehr, sondern ein normales Grid in
