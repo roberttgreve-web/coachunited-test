@@ -1249,7 +1249,7 @@ Live verifiziert auf `/uebungen/alter/g-jugend`: `filterPosition:"sticky"`, `lpB
 - [x] Kommunikation — in Google Ads angelegt (2026-09-17)
 - [x] Einwürfe — in Google Ads angelegt (2026-09-17)
 - [x] Flanken — in Google Ads angelegt (2026-09-17)
-- [ ] Raumverhalten
+- [x] Raumverhalten — in Google Ads angelegt (2026-09-17)
 - [ ] Schnelligkeit
 - [ ] Aufwärmen (Trainingsphase)
 - [ ] Hauptteil (Trainingsphase)
