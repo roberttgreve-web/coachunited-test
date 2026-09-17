@@ -1207,3 +1207,25 @@ Die 22 Alter/Skill/Phase-Landingpages hatten bisher ein eigenes, textlastiges Ka
 - **Derselbe Spezifitäts-Stolperstein wie bei `/uebungen` (Abschnitt 32):** `body:has(.filter-section) #exercises-list{display:flex !important}` in `desktop.css` gilt auch hier. Diesmal über `body:has(.hero-lead)` überschrieben – dieses Element gibt es nur auf den 22 Landingpages, nicht auf `/uebungen` (das nutzt `.page-intro` statt `.hero-lead`), also die passende eindeutige Gegenstelle zur vorherigen `#uebungen-body`-Lösung.
 - Totes `PHASE_COLORS` (früher für den Phase-Tag auf den alten Karten) aus allen 22 Seiten entfernt.
 - Diesmal von Anfang an mit separater Vorschau-Datei getestet (nicht die Original-Datei mit Testdaten überschrieben) – die Lektion aus dem `/uebungen`-Nachtrag oben direkt angewendet.
+
+## 35. Gleich hohe Kacheln pro Zeile (09/2026)
+
+Auf `/uebungen` waren die Kacheln unterschiedlich hoch, wenn Titel/Beschreibung unterschiedlich lang waren – die Karten in einer Grid-Zeile standen dadurch nicht bündig, sondern jede in ihrer eigenen "natürlichen" Höhe.
+
+**Ursache:** `desktop.css` enthält eine ältere, geteilte Regel `#exercises-list,#einheiten-list,#articles-list{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;align-items:start;}` – gedacht für die zweispaltigen Listen auf `/einheiten` & Co. Das `align-items:start` hat sich auch auf `#exercises-list` in den neuen `.uc-tiles`-Grid vererbt (gefunden über `getComputedStyle`-Check live: `alignItems:"start"` statt des CSS-Standardwerts `stretch`).
+
+**Fix:** `align-items:stretch !important` in der Desktop-Grid-Override-Regel (`body:has(#uebungen-body) #exercises-list.uc-tiles{...}` bzw. `body:has(.hero-lead) #exercises-list.uc-tiles{...}` auf den Landingpages) ergänzt, plus `height:100%` auf `.uc-tile` selbst, damit die Kachel den vollen Zellenraum ausfüllt statt nur ihren Inhalt.
+
+Betraf `/uebungen` UND alle 22 Alter/Skill/Phase-Landingpages – Letztere waren mit einem Skript aus Abschnitt 34 gebaut worden, das VOR diesem Fix lief, brauchten also einen separaten Nachtrag-Durchlauf (gleiche Änderung, mechanisch per Skript auf alle 22 Dateien angewendet). Live verifiziert über direkte `getBoundingClientRect()`-Höhenmessung pro Kachel (z. B. `[484,484,484,443,443,443]` – gleiche Höhe je Zeile, neue Zeile darf anders hoch sein).
+
+## 36. Landingpages: zweispaltiges Layout wie /uebungen (09/2026)
+
+Die 22 Landingpages hatten bis hierhin zwar schon die `.uc-tile`-Kacheloptik (Abschnitt 34) und eine horizontale Filterleiste oberhalb des Grids. Auf Wunsch jetzt auf dasselbe zweispaltige Desktop-Layout wie `/uebungen` umgestellt: Filter links als sticky Karte, Kachel-Grid rechts daneben – statt Filter oben quer über die volle Breite.
+
+**Neue Struktur:** Neuer Wrapper `<div id="lp-body">` umschließt `.filter-section` (jetzt `grid-column:1`, `position:sticky;top:84px`) und einen neuen `.content`-Wrapper (`grid-column:2`) mit dem Kachel-Grid darin. `#lp-body{display:grid;grid-template-columns:minmax(220px,1fr) minmax(0,4fr);}` auf Desktop. Der Einleitungstext (`.text-section`, „Was macht gutes X aus?") wandert aus `.page-content` heraus und steht jetzt als eigener, volle-Breite-Block UNTER `#lp-body` (vorher: Teil davon, dahinter). Mobile bleibt einspaltig (`#lp-body` nur mit Padding, kein Grid) – dort ändert sich optisch nichts.
+
+Breadcrumb, `.hero-badge` und `.hero-lead` (die Landingpage-typische Einleitung direkt unter der Überschrift) bleiben unverändert erhalten – das war eine bewusste Entscheidung (Rückfrage gestellt, da Umkehrung bei falscher Annahme alle 22 Dateien erneut betroffen hätte): `/uebungen` hat kein Pendant dazu (nutzt `.page-intro` statt `.hero-lead`), die Landingpages behalten ihre Identität, nur der Filter+Grid-Mechanismus wird 1:1 von `/uebungen` übernommen.
+
+**Umsetzung:** Mechanisches Python-Skript mit Anker-Zählung (wie bei allen bisherigen 22-Dateien-Änderungen) – ersetzt den alten `.page-content`-Block (Grid + Text-Section als Kinder) durch `#lp-body`-Wrapper + separate `.text-section` danach; CSS-Ersetzung der alten `.filter-section{position:static;...}`/`.filter-pills{max-width:560px;}`-Regeln durch die Grid-Variante. Kein `build-landing-pages.js`-Änderung nötig – reine HTML/CSS-Struktur, die Kartenbefüllung läuft unverändert über dieselben `<!--cu:karten-->`-Marker.
+
+Live verifiziert auf `/uebungen/alter/g-jugend`: `filterPosition:"sticky"`, `lpBodyDisplay:"grid"`, Breadcrumb-Text weiterhin vorhanden ("Übungen › Nach Alter › G-Jugend"), gleich hohe Kacheln pro Zeile (`[451,451,451,433,433,433]`).
