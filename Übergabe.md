@@ -1243,7 +1243,7 @@ Live verifiziert auf `/uebungen/alter/g-jugend`: `filterPosition:"sticky"`, `lpB
 - [ ] Zweikampf — Keywords/Anzeigentitel/Textzeilen fertig erstellt, noch nicht in Google Ads angelegt
 - [x] Torhüter — in Google Ads angelegt (2026-09-17)
 - [x] Koordination — in Google Ads angelegt (2026-09-17)
-- [ ] Taktik
+- [x] Taktik — in Google Ads angelegt (2026-09-17)
 - [ ] Umschalten
 - [ ] Verteidigen
 - [ ] Kommunikation
