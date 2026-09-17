@@ -1244,7 +1244,7 @@ Live verifiziert auf `/uebungen/alter/g-jugend`: `filterPosition:"sticky"`, `lpB
 - [x] Torhüter — in Google Ads angelegt (2026-09-17)
 - [x] Koordination — in Google Ads angelegt (2026-09-17)
 - [x] Taktik — in Google Ads angelegt (2026-09-17)
-- [ ] Umschalten
+- [x] Umschalten — in Google Ads angelegt (2026-09-17)
 - [ ] Verteidigen
 - [ ] Kommunikation
 - [ ] Einwürfe
