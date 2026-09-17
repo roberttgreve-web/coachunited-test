@@ -505,11 +505,16 @@
       /* Ab Desktop kein Wisch-Karussell mehr, sondern ein normales Grid in
          Dreier-Reihen, das mit der gefilterten Trefferzahl mehrzeilig
          umbricht - anders als auf der Startseite gibt es hier keine feste
-         Kachelzahl, die "restlichen" waeren sonst nur per Pfeil erreichbar. */
-      .uc-tiles {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
+         Kachelzahl, die "restlichen" waeren sonst nur per Pfeil erreichbar.
+         Erhoehte Spezifitaet + !important noetig: desktop.css setzt fuer
+         #exercises-list (geteilt mit den 22 Alter/Skill/Phase-Landingpages,
+         die ihr altes Listendesign behalten) bereits ein !important
+         display:flex. #uebungen-body gibt es nur auf dieser Seite, daher
+         darueber gezielt nur hier ueberschrieben. */
+      body:has(#uebungen-body) #exercises-list.uc-tiles {
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 20px !important;
         overflow-x: visible;
         margin-inline: 0;
         padding-inline: 0;
