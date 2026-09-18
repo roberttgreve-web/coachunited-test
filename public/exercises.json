@@ -12958,5 +12958,69 @@
     "schwester_id": 231,
     "schwester_titel": "BALLKONTROLLE AUCH IN STRESSSITUATIONEN",
     "erstellt_am": "2026-09-16"
+  },
+  {
+    "id": 235,
+    "titel": "SICH MIT DEM GEGNER IM RÜCKEN DURCHSETZEN",
+    "quell_trainingseinheit": "Die Ferienzeit sinnvoll nutzen",
+    "grafik_url": "https://coachunited.de/images/uebungen/uebung-235-sich-mit-dem-gegner-im-ruecken-durchsetzen.webp",
+    "grafik_dateiname": "Mit dem Rücken zum Gegner den Mitspieler einsetzen.png",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "Spieler treten in direkten Zweikampfsituationen an, müssen sich gegen Gegendruck behaupten und gezielt auf rückwärts gelegene Tore abschließen. Ein intensives Dribbeltraining mit Torabschluss und Umschaltmomente.",
+    "aufbau": "Markiere ein Spielfeld von 20 x 10 Metern und stelle 4 Minitore auf. (für E- Jugend und D-Jugend können es auch Jugendtore mit Torhütern sein). Teile die Spieler in zwei Teams auf. Positioniere je ein Starthütchen und platziere dort die beiden Teams (siehe Abbildung). Das Team an der Grundlinie erhält die Bälle. Zum Start stehen je ein Kind aus jedem Team bereits in der Mitte des Feldes. Hinweis: Die Leibchenfarben sind hier nur in der Darstellung zur Veranschaulichung gewählt. Die Spieler sollten in der Übung keien Leibchen tragen. Die Farben vermischen sich schnell und das stiftet Verwirrung.  ",
+    "durchfuehrung": "Der Spieler mit Ball passt den Ball zu seinem Mitspieler im Feld. Dieser nimmt den Ball an, direkt dahinter versucht das Kind hinter ihm den Ball zu erobern. Der Spieler, der den Pass erhalten hat, versucht durch eine möglichst scnelle und direkte Drehung den Abwehrspieler zu umkurven und abzuschließen. Erobert der Abwehrspieler den Ball, darf er wiederum auf die gegenüberliegenden Tore treffen. Die Runde ist nach maximal 10 Sekunden bendet - oder wenn der Ball im Toraus oder im Tor ist. Die Kinder rücken eine Station weiter (der Passgeber rückt also ins Feld und wird zum Passempägner usw.).",
+    "varianten": "",
+    "quell_url": "https://training-service.fussball.de/trainer/d-juniorin/artikel/die-ferienzeit-sinnvoll-nutzen-3518/",
+    "quell_spiel_nr": 1,
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Dribbeln",
+      "Zweikampf",
+      "Koordination",
+      "Verteidigen",
+      "Umschalten"
+    ],
+    "coaching_fokus": "• Flache, präzis Pässe spielen; • Den Pass möglichst schnell kontrollieren und direkt die Körperdrehung einleiten; • Verteidiger: Gegenspieler \"stellen\". Also so viel Platz lassen, dass auf die Körperbewegung des Angreifers noch reagiert werden kann.",
+    "leichter_machen": "• 2m Abstand zwischen Passempfänger und Gegenspieler festlegen",
+    "schwerer_machen": "• Ballannahme und Drehung muss eine fließende Bewegung sein; • Hohe oder halbhohe Pässe spielen lassen",
+    "alt_titel": "",
+    "seo_keyword": "Fußballtraining Zweikampf",
+    "url_slug": "sich-mit-dem-gegner-im-ruecken-durchsetzen",
+    "seo_meta_description": "Eins-gegen-Eins Fußballübung für Kinder: Dribbling, Zweikampf und Rückwärts-Torschuss im Minitor-Parcours trainieren.",
+    "grafik_alt_text": "20x10m Spielfeld mit 4 Minitoren, zwei Teams im Eins-gegen-Eins Duell, ein Spieler dribbelt rückwärts.",
+    "grafik_description": "Das Bild zeigt ein 20 x 10 Meter großes Trainingsfeld mit vier Minitoren an den Ecken. Zwei Spieler-Teams (Blau und Rot) treten in einem intensiven Eins-gegen-Eins an, wobei der Angreifer mit Rückwärts-Abschluss auf die Tore zielt. Ein Starthütchen pro Team markiert die Ausgangsposition.",
+    "grafik_title": "Eins-gegen-Eins Minitor-Parcours Fußballtraining",
+    "grafik_caption": "Im Eins-gegen-Eins müssen Spieler rückwärts dribbeln und auf die Minitore abschließen.",
+    "faq": [
+      {
+        "frage": "Wie lange sollte eine Spieler-Runde dauern?",
+        "antwort": "Je Runde etwa 10 Sekunden – dann wechseln die Spieler durch. "
+      },
+      {
+        "frage": "Kann ich diese Übung mit 8-10 Spielern machen?",
+        "antwort": "Ja, einfach die Teams entsprechend aufteilen."
+      },
+      {
+        "frage": "Ab welchem Alter ist diese Übung geeignet?",
+        "antwort": "Stärkere F-Jugenden können das auch trainieren. Sonst für Ältere. "
+      }
+    ],
+    "status": "veroeffentlicht",
+    "referenz_grafik_url": "https://training-service.fussball.de/assets/img/csm_258632-2022-04-08_1gg1_b5e63c1839.jpg",
+    "quell_kategorie": "D-Jugend",
+    "ist_gecrawlt": true,
+    "schwester_id": null,
+    "schwester_titel": null,
+    "original_aufbau": "Für 6 Spieler ein 20 x 10 Meter großes Feld mit 4 Minitoren errichten.\n2 Gruppen Blau und Rot bilden und an den beiden Starthütchen postieren.\nVon jeder Gruppe befindet sich 1 Spieler im Feld.\nDie Spieler Blau zwischen den Minitoren haben je 1 Ball.",
+    "original_durchfuehrung": "Der erste Spieler Blau passt zu seinem Mitspieler ins Feld.\nDieser versucht, sich im 1 gegen 1 mit Gegner im Rücken zu behaupten und auf eines der Minitore in seinem Rücken abzuschließen.\nErobert der Verteidiger den Ball, kontert er auf die Minitore gegenüber. Anschließend erfolgt ein Aufgaben- und Positionswechsel.\nEinen Team-Wettbewerb durchführen: Welcher Mannschaft gelingen mehr Treffer?\nCOACHINGPUNKTE ANGREIFER\nDen Ball abschirmen: Körper zwischen Verteidiger und Ball.\nRhythmuswechsel weg vom Gegner\nBei engem Kontakt mit dem Verteidiger um ihn \"herumwickeln\".\nCOACHINGPUNKTE VERTEIDIGER\nEine Armlänge Abstand halten. Dabei einen niedrigen Körperschwerpunkt wählen.\nSobald der Gegner versucht, über eine Seite aufzudrehen, zupacken.",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "schwester_gruppen": [],
+    "schwester_ids": [],
+    "erstellt_am": "2026-09-18"
   }
 ]
