@@ -12997,7 +12997,7 @@
     "grafik_caption": "Das Bild zeigt ein 20 x 10 Meter großes Trainingsfeld mit vier Minitoren an den Ecken. Zwei Spieler-Teams (Blau und Rot) treten in einem intensiven Eins-gegen-Eins an, wobei der Angreifer mit Rückwärts-Abschluss auf die Tore zielt. Ein Starthütchen pro Team markiert die Ausgangsposition.",
     "faq": [
       {
-        "frage": "Wie lange sollte eine Spieler-Runde dauern?",
+        "frage": "Wie lange sollte eine Spielrunde dauern?",
         "antwort": "Je Runde etwa 10 Sekunden – dann wechseln die Spieler durch. "
       },
       {
@@ -13013,14 +13013,20 @@
     "referenz_grafik_url": "https://training-service.fussball.de/assets/img/csm_258632-2022-04-08_1gg1_b5e63c1839.jpg",
     "quell_kategorie": "D-Jugend",
     "ist_gecrawlt": true,
-    "schwester_id": null,
-    "schwester_titel": null,
+    "schwester_id": 237,
+    "schwester_titel": "MIT DEM GEGENER IM RÜCKEN DEN MITSPIELER EINSETZEN",
     "original_aufbau": "Für 6 Spieler ein 20 x 10 Meter großes Feld mit 4 Minitoren errichten.\n2 Gruppen Blau und Rot bilden und an den beiden Starthütchen postieren.\nVon jeder Gruppe befindet sich 1 Spieler im Feld.\nDie Spieler Blau zwischen den Minitoren haben je 1 Ball.",
     "original_durchfuehrung": "Der erste Spieler Blau passt zu seinem Mitspieler ins Feld.\nDieser versucht, sich im 1 gegen 1 mit Gegner im Rücken zu behaupten und auf eines der Minitore in seinem Rücken abzuschließen.\nErobert der Verteidiger den Ball, kontert er auf die Minitore gegenüber. Anschließend erfolgt ein Aufgaben- und Positionswechsel.\nEinen Team-Wettbewerb durchführen: Welcher Mannschaft gelingen mehr Treffer?\nCOACHINGPUNKTE ANGREIFER\nDen Ball abschirmen: Körper zwischen Verteidiger und Ball.\nRhythmuswechsel weg vom Gegner\nBei engem Kontakt mit dem Verteidiger um ihn \"herumwickeln\".\nCOACHINGPUNKTE VERTEIDIGER\nEine Armlänge Abstand halten. Dabei einen niedrigen Körperschwerpunkt wählen.\nSobald der Gegner versucht, über eine Seite aufzudrehen, zupacken.",
     "original_varianten": "",
     "original_coaching_fokus": "",
-    "schwester_gruppen": [],
-    "schwester_ids": [],
+    "schwester_gruppen": [
+      [
+        237
+      ]
+    ],
+    "schwester_ids": [
+      237
+    ],
     "erstellt_am": "2026-09-18"
   }
 ]
