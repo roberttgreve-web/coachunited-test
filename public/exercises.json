@@ -12966,7 +12966,7 @@
     "grafik_url": "https://coachunited.de/images/uebungen/uebung-235-sich-mit-dem-gegner-im-ruecken-durchsetzen.webp",
     "grafik_dateiname": "Mit dem Rücken zum Gegner den Mitspieler einsetzen.png",
     "trainingsphase": "Hauptteil",
-    "kurzbeschreibung": "Spieler treten in direkten Zweikampfsituationen an, müssen sich gegen Gegendruck behaupten und gezielt auf rückwärts gelegene Tore abschließen. Ein intensives Dribbeltraining mit Torabschluss und Umschaltmomente.",
+    "kurzbeschreibung": "Ein Spieler erhält einen Pass und muss sich durch eine direkte Drehung gegen den Abwehrspieler durchsetzen, der direkt in seinem Rücken lauert. ",
     "aufbau": "Markiere ein Spielfeld von 20 x 10 Metern und stelle 4 Minitore auf. (für E- Jugend und D-Jugend können es auch Jugendtore mit Torhütern sein). Teile die Spieler in zwei Teams auf. Positioniere je ein Starthütchen und platziere dort die beiden Teams (siehe Abbildung). Das Team an der Grundlinie erhält die Bälle. Zum Start stehen je ein Kind aus jedem Team bereits in der Mitte des Feldes. Hinweis: Die Leibchenfarben sind hier nur in der Darstellung zur Veranschaulichung gewählt. Die Spieler sollten in der Übung keien Leibchen tragen. Die Farben vermischen sich schnell und das stiftet Verwirrung.  ",
     "durchfuehrung": "Der Spieler mit Ball passt den Ball zu seinem Mitspieler im Feld. Dieser nimmt den Ball an, direkt dahinter versucht das Kind hinter ihm den Ball zu erobern. Der Spieler, der den Pass erhalten hat, versucht durch eine möglichst scnelle und direkte Drehung den Abwehrspieler zu umkurven und abzuschließen. Erobert der Abwehrspieler den Ball, darf er wiederum auf die gegenüberliegenden Tore treffen. Die Runde ist nach maximal 10 Sekunden bendet - oder wenn der Ball im Toraus oder im Tor ist. Die Kinder rücken eine Station weiter (der Passgeber rückt also ins Feld und wird zum Passempägner usw.).",
     "varianten": "",
@@ -12988,13 +12988,13 @@
     "leichter_machen": "• 2m Abstand zwischen Passempfänger und Gegenspieler festlegen",
     "schwerer_machen": "• Ballannahme und Drehung muss eine fließende Bewegung sein; • Hohe oder halbhohe Pässe spielen lassen",
     "alt_titel": "",
-    "seo_keyword": "Fußballtraining Zweikampf",
+    "seo_keyword": "Eins-gegen-Eins Fußballübung für Kinder: Dribbling, Zweikampf und Rückwärts-Torschuss im Minitor-Parcours trainieren.",
     "url_slug": "sich-mit-dem-gegner-im-ruecken-durchsetzen",
-    "seo_meta_description": "Eins-gegen-Eins Fußballübung für Kinder: Dribbling, Zweikampf und Rückwärts-Torschuss im Minitor-Parcours trainieren.",
-    "grafik_alt_text": "20x10m Spielfeld mit 4 Minitoren, zwei Teams im Eins-gegen-Eins Duell, ein Spieler dribbelt rückwärts.",
-    "grafik_description": "Das Bild zeigt ein 20 x 10 Meter großes Trainingsfeld mit vier Minitoren an den Ecken. Zwei Spieler-Teams (Blau und Rot) treten in einem intensiven Eins-gegen-Eins an, wobei der Angreifer mit Rückwärts-Abschluss auf die Tore zielt. Ein Starthütchen pro Team markiert die Ausgangsposition.",
-    "grafik_title": "Eins-gegen-Eins Minitor-Parcours Fußballtraining",
-    "grafik_caption": "Im Eins-gegen-Eins müssen Spieler rückwärts dribbeln und auf die Minitore abschließen.",
+    "seo_meta_description": "20x10m Spielfeld mit 4 Minitoren, zwei Teams im Eins-gegen-Eins Duell, ein Spieler dribbelt rückwärts.",
+    "grafik_alt_text": "Eins-gegen-Eins Minitor-Parcours Fußballtraining",
+    "grafik_description": "*F- bis D-Jugend*\n\nHier kommt eine intensive Zweikampfübung für euch, die ich gerade diese Woche mit meiner D-Jugend getestet habe:\n\nSpieler treten in direkten Zweikampfsituationen an, müssen sich gegen Gegendruck behaupten und gezielt auf rückwärts gelegene Tore abschließen. Ein intensives Dribbeltraining mit Torabschluss und Umschaltmomente.\n\nhttps://coachunited.de/uebung/sich-mit-dem-gegner-im-ruecken-durchsetzen\n\nViele Grüße und viel Erfolg beim Training\n\nRob",
+    "grafik_title": "Im Eins-gegen-Eins müssen Spieler rückwärts dribbeln und auf die Minitore abschließen.",
+    "grafik_caption": "Das Bild zeigt ein 20 x 10 Meter großes Trainingsfeld mit vier Minitoren an den Ecken. Zwei Spieler-Teams (Blau und Rot) treten in einem intensiven Eins-gegen-Eins an, wobei der Angreifer mit Rückwärts-Abschluss auf die Tore zielt. Ein Starthütchen pro Team markiert die Ausgangsposition.",
     "faq": [
       {
         "frage": "Wie lange sollte eine Spieler-Runde dauern?",
@@ -13006,7 +13006,7 @@
       },
       {
         "frage": "Ab welchem Alter ist diese Übung geeignet?",
-        "antwort": "Stärkere F-Jugenden können das auch trainieren. Sonst für Ältere. "
+        "antwort": "Fußballtraining Zweikampf"
       }
     ],
     "status": "veroeffentlicht",
