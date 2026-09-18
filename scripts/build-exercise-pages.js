@@ -224,11 +224,16 @@ async function main() {
     const html = template
       .replace('<meta name="description" content="">', `<meta name="description" content="${esc(description)}">`)
       .replace('content="Fußballübung | COACH UNITED"', `content="${esc(title)}"`)
-      // og:description bewusst ENTFERNT statt befuellt: WhatsApp/Facebook & Co. lesen fuers
-      // Link-Vorschaubild bevorzugt og:description (nicht das SEO-<meta name="description">
-      // von oben, das bleibt fuer Google-Suchergebnisse erhalten) - Rob wollte in der
-      // Linkvorschau nur Titel + Skizze sehen, keinen zusaetzlichen Beschreibungstext.
-      .replace('<meta property="og:description" content="">\n  ', '')
+      // og:description bewusst LEER gelassen statt befuellt oder entfernt: WhatsApp/
+      // Facebook & Co. lesen fuers Link-Vorschaubild og:description (nicht das SEO-
+      // <meta name="description"> von oben, das bleibt fuer Google-Suchergebnisse
+      // erhalten) - Rob wollte in der Linkvorschau nur Titel + Skizze sehen, keinen
+      // zusaetzlichen Beschreibungstext. Erster Versuch war, das Tag komplett aus dem
+      // Markup zu entfernen - dadurch fehlt es aber ganz, und WhatsApp faellt dann auf
+      // <meta name="description"> zurueck und zeigt den SEO-Text doch wieder an. Ein
+      // vorhandenes, aber LEERES og:description-Tag signalisiert "bewusst keine
+      // Beschreibung" und verhindert genau diesen Fallback.
+      // (kein .replace() noetig - das Tag im Template ist bereits leer)
       .replace('<meta property="og:image" content="https://coachunited.de/og-image.png">', `<meta property="og:image" content="${esc(ogImage)}">`)
       .replace('<meta property="og:image:alt" content="">', `<meta property="og:image:alt" content="${esc(grafikAlt)}">`)
       .replace('<meta property="og:url" content="">', `<meta property="og:url" content="${canonical}">`)
