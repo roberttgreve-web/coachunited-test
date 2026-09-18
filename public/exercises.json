@@ -13028,5 +13028,67 @@
       237
     ],
     "erstellt_am": "2026-09-18"
+  },
+  {
+    "id": 237,
+    "titel": "MIT DEM GEGNER IM RÜCKEN DEN MITSPIELER EINSETZEN",
+    "quell_trainingseinheit": "",
+    "grafik_url": "https://coachunited.de/images/uebungen/uebung-237-mit-dem-gegner-im-ruecken-den-mitspieler-einsetzen.webp",
+    "grafik_dateiname": "Mit dem Rücken zum Gegner den Mitspieler einsetzen.png",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "Ein Spieler erhält einen Pass und hat einen Abwehrspieler direkt im Rücken. Er schirmt den Ball ab und setzt seinen eingelaufenen Mitspieler ein. ",
+    "aufbau": "Markiere ein Spielfeld von 20 x 10 Metern und stelle 4 Minitore auf. (für E- Jugend und D-Jugend können es auch Jugendtore mit Torhütern sein). Teile die Spieler in zwei Teams auf. Positioniere je ein Starthütchen und platziere dort die beiden Teams (siehe Abbildung). Das Team an der Grundlinie erhält die Bälle. Zum Start stehen je ein Kind aus jedem Team bereits in der Mitte des Feldes. Hinweis: Die Leibchenfarben sind hier nur in der Darstellung zur Veranschaulichung gewählt. Die Spieler sollten in der Übung keine Leibchen tragen. Die Farben vermischen sich schnell und das stiftet Verwirrung.  ",
+    "durchfuehrung": "Der Spieler mit Ball passt den Ball zu seinem Mitspieler im Feld und läuft dann  ins Feld ein. Der Passempfägner nimmt den Ball an, direkt dahinter versucht das Kind hinter ihm den Ball als Verteidiger zu erobern. Der Spieler, der den Pass erhalten hat, versucht den Ball abzuschirmen und dann den seitlich eingelaufenen Mitspieler zu bedienen. Dieser sucht den Torabschluss.  Erobert der Abwehrspieler den Ball, darf er wiederum auf die gegenüberliegenden Tore treffen. Die Runde ist nach maximal 15 Sekunden bendet - oder wenn der Ball im Toraus oder im Tor ist. Die Kinder rücken eine Station weiter (der Passgeber rückt also ins Feld und wird zum Passempägner usw.).",
+    "varianten": "",
+    "quell_url": "",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Zweikampf",
+      "Raumverhalten",
+      "Verteidigen",
+      "Umschalten"
+    ],
+    "coaching_fokus": "• Flache, präzis Pässe spielen; • Den Pass möglichst schnell kontrollieren und wider abspielen.; • Beim Abschirmen des Balles den Körper reinlegen.; • Verteidiger: Gegenspieler \"stellen\". Also so viel Platz lassen, dass auf die Körperbewegung des Angreifers noch reagiert werden kann.",
+    "leichter_machen": "• 2m Abstand zwischen Passempfänger und Gegenspieler festlegen",
+    "schwerer_machen": "• Ballannahme und Drehung muss eine fließende Bewegung sein; • Hohe oder halbhohe Pässe spielen lassen",
+    "alt_titel": "",
+    "seo_keyword": "Fußballtraining Passen",
+    "url_slug": "mit-dem-gegner-im-ruecken-den-mitspieler-einsetzen",
+    "seo_meta_description": "Fußballübung für Kinder 6-12 Jahren: Ball abschirmen und Mitspieler einsetzen. Trainiere Ballkontrolle, Positionsspiel und Torabschluss mit dieser effektiven Übung.",
+    "grafik_alt_text": "Fußballübung mit zwei Teams, 20x10 Meter Spielfeld, 4 Minitore, Spieler schirmt Ball ab und bedient Mitspieler",
+    "grafik_description": "Die Grafik zeigt ein markiertes 20x10 Meter Spielfeld mit vier Minitoren und zwei Teams an Starthütchen. Sie visualisiert die Abläufe: Ballpass in die Mitte, Abwehrpositionen und die Einlauftaktik des Mitspielers zum Torabschluss.",
+    "grafik_title": "Ball abschirmen und Mitspieler einsetzen Fußball",
+    "grafik_caption": "Trainingsaufbau: Mit Gegner im Rücken den Ball abschirmen und den seitlich einlaufenden Mitspieler zum Torabschluss bedienen.",
+    "faq": [
+      {
+        "frage": "Wie lange sollte eine Spielrunde dauern?",
+        "antwort": "Je Runde etwa 15 Sekunden – dann wechseln die Spieler durch. "
+      }
+    ],
+    "status": "veroeffentlicht",
+    "referenz_grafik_url": "",
+    "quell_kategorie": "",
+    "ist_gecrawlt": false,
+    "schwester_gruppen": [
+      [
+        235
+      ]
+    ],
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "schwester_ids": [
+      235
+    ],
+    "schwester_id": 235,
+    "schwester_titel": "SICH MIT DEM GEGNER IM RÜCKEN DURCHSETZEN",
+    "erstellt_am": "2026-09-18"
   }
 ]
