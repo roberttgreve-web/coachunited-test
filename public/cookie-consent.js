@@ -23,6 +23,43 @@
     return consent;
   }
 
+  // ── Google Consent Mode v2 ──
+  //
+  // Vorher: gtag existierte ueberhaupt erst NACH "Akzeptieren" (loadGA() nur
+  // im Statistik-Zweig aufgerufen). Klickte jemand vorher auf einen Link
+  // (z. B. den WhatsApp-Kanal-CTA direkt beim Landen von einer Google-Ad-
+  // Grants-Anzeige aus), lief trackWhatsAppClicks() in desktop-nav.js ins
+  // Leere (typeof window.gtag !== 'function') - das Event ging spurlos
+  // verloren, obwohl der Klick/Abo real passiert ist. Ergebnis: reale
+  // WhatsApp-Abos taeglich, aber kaum gemessene Conversions in Ads.
+  //
+  // Fix: gtag existiert jetzt IMMER ab dem ersten Seitenaufruf, aber mit
+  // Consent-Status "denied" als Startwert (keine Cookies, kein Tracking -
+  // weiterhin rechtlich korrekt ohne Einwilligung). Erst nach der
+  // Banner-Entscheidung wird per "consent update" auf "granted" (oder
+  // weiterhin "denied") umgeschaltet. Google kann mit "denied" ueber
+  // anonyme, cookielose Pings einen Teil der sonst komplett unsichtbaren
+  // Conversions statistisch modellieren - das ist der von Google fuer
+  // EU-Werbetreibende vorausgesetzte Standardweg fuer zuverlaessige
+  // Ads-Conversion-Messung.
+  //
+  // Diese Seite hat nur eine einzige Opt-in-Kategorie ("Statistik" fuer
+  // Google Analytics), keine separate Marketing-Kategorie - deshalb haengen
+  // hier alle vier Consent-Signale (auch die beiden ad_*, die eigentlich
+  // Werbe-/Remarketing-Consent meinen) am selben Statistik-Schalter. Es gibt
+  // auf coachunited.de kein Remarketing/keine personalisierte Werbung, nur
+  // den GA4->Ads-Conversion-Import - fuer den braucht Google auch das
+  // ad_storage/ad_user_data-Signal, sonst bleibt die Modellierung schwaecher.
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  window.gtag = gtag;
+  gtag('consent', 'default', {
+    ad_storage: 'denied',
+    ad_user_data: 'denied',
+    ad_personalization: 'denied',
+    analytics_storage: 'denied'
+  });
+
   function loadGA() {
     if (window.__cuGaLoaded) return;
     window.__cuGaLoaded = true;
@@ -30,11 +67,18 @@
     s.async = true;
     s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
     document.head.appendChild(s);
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    window.gtag = gtag;
     gtag('js', new Date());
     gtag('config', GA_ID);
+  }
+
+  function updateConsent(statistics) {
+    var status = statistics ? 'granted' : 'denied';
+    gtag('consent', 'update', {
+      ad_storage: status,
+      ad_user_data: status,
+      ad_personalization: status,
+      analytics_storage: status
+    });
   }
 
   function logConsent(consent) {
@@ -54,7 +98,7 @@
   }
 
   function applyConsent(consent) {
-    if (consent.statistics) loadGA();
+    updateConsent(consent.statistics);
   }
 
   var style = document.createElement('style');
@@ -208,6 +252,10 @@
   }
 
   function init() {
+    // gtag.js selbst laedt jetzt immer, unabhaengig vom Consent-Status -
+    // der Consent-Mode-Status ("denied" per Default, s. oben) entscheidet,
+    // was Google damit tun darf, nicht ob das Skript ueberhaupt da ist.
+    loadGA();
     injectDrawerLink();
     var consent = getConsent();
     if (consent) {

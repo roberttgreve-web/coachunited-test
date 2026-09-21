@@ -332,7 +332,10 @@ function restructureDrawerNav() {
 // - alle nutzen dieselbe CU_WA_KANAL_URL): ein einziger delegierter
 // Klick-Listener auf document, der jeden Link mit dieser Ziel-URL
 // abfaengt, egal wo er im Markup steht oder wann er erzeugt wurde.
-// gtag existiert nur nach erteilter Cookie-Einwilligung (Statistik).
+// gtag existiert dank Google Consent Mode v2 (s. cookie-consent.js) ab dem
+// ersten Seitenaufruf, unabhaengig vom Consent-Status - der `typeof`-Check
+// unten ist nur noch ein Sicherheitsnetz fuer den Fall, dass dieses Skript
+// vor cookie-consent.js laeuft.
 function trackWhatsAppClicks() {
   document.addEventListener('click', function (e) {
     var link = e.target.closest('a[href^="' + CU_WA_KANAL_URL + '"]');
@@ -537,7 +540,7 @@ function injectWhatsAppPromo() {
   }
 
   function ereignis(name) {
-    // gtag existiert nur nach erteilter Cookie-Einwilligung.
+    // gtag existiert dank Consent Mode v2 immer, s. Kommentar bei trackWhatsAppClicks().
     if (typeof window.gtag === 'function') window.gtag('event', name);
   }
 
