@@ -569,7 +569,11 @@
     @media print {
       .header, .back-bar, .action-bar-feedback,
       .bottom-nav, .drawer, .drawer-overlay, .sheet-overlay,
-      .feedback-block, .tiles-section { display: none !important; }
+      .feedback-block, .tiles-section,
+      /* Schwester-Übungen, "Weitere Übungen" und das Erstelldatum sind
+         Navigations-Hilfen fürs Web - auf einem ausgedruckten Übungsblatt
+         für den Platz nur Platzverschwendung (vorher: komplette 3. Seite). */
+      #sisters-block, #category-links-block, .ex-created { display: none !important; }
       #print-tiles { display: block !important; }
       .accordion-body { display: block !important; }
       .accordion.open .accordion-body, .accordion-body { display: block !important; }

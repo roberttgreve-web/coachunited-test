@@ -1451,3 +1451,34 @@
    ÜBUNG EINREICHEN — Desktop: direkt in Sprachnachricht
    ══════════════════════════════════════════════════════════ */
 
+/* ══════════════════════════════════════════════════════════
+   DRUCKANSICHT (alle Seiten mit Desktop-Topnav/-Footer) — 09/2026
+   ══════════════════════════════════════════════════════════
+   .desktop-topnav/.desktop-footer werden von desktop-nav.js auf JEDER
+   Seite eingefuegt (nicht nur Uebungsseiten) - die min-width:768px-Regeln
+   oben greifen beim Drucken genauso wie am Bildschirm, weil Druckseiten
+   (Letter/A4) in CSS-Pixeln breiter als 768px sind. Ohne diese Regeln
+   drucken Logo (48px, fuer eine 64px-Topnav gedacht) und das komplette
+   Mega-Menu (Alle Übungen/Nach Alter/Skill/Phase, ausgeklappt statt nur
+   bei :hover - Chrome druckt den Hover-Zustand mit, falls die Maus beim
+   Drucken zufaellig darüber stand) auf jeder gedruckten Seite oben mit. */
+@media print {
+  .desktop-topnav-links, .desktop-footer { display: none !important; }
+  .desktop-topnav {
+    height: auto !important;
+    padding: 8px 20px !important;
+    position: static !important;
+  }
+  .desktop-topnav-logo img { height: 24px !important; }
+
+  /* Uebungsseite: Skizze nimmt ohne Deckel die volle natuerliche Hoehe ein
+     (body:has(#exercise-content) .grafik-panel img weiter oben setzt bewusst
+     max-height:none fuer den Bildschirm) - fuers Drucken eine Obergrenze,
+     damit die Skizze nicht allein schon eine halbe Seite fuellt. */
+  body:has(#exercise-content) .grafik-panel img {
+    max-height: 260px !important;
+    width: auto !important;
+    max-width: 100% !important;
+  }
+}
+
