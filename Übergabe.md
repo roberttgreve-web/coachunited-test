@@ -1298,3 +1298,22 @@ Zwei Fehler, die in früheren Sessions schon einmal behoben worden waren, waren 
 - `body:has(#exercise-content) .grafik-panel img` hat am Bildschirm bewusst `max-height:none` (volle natürliche Höhe, s. frühere Zwei-Spalten-Layout-Arbeit) – fürs Drucken jetzt mit `max-height:260px` gedeckelt, damit die Skizze nicht allein schon eine halbe Seite braucht.
 
 **Live verifiziert:** `desktop.css` und die Übungsseite enthalten die neuen Selektoren/Regeln nach dem Deploy (direkt per `curl` gegengeprüft). Ein echter Soll-Ist-Vergleich im Druckdialog selbst (Seitenzahl, Logo-Größe) steht noch aus – Rückmeldung von Robert nach dem nächsten Testdruck abwarten.
+
+## 41. Druckansicht: Übungsseite als 6-Felder-Grid (10/2026)
+
+**Wunsch:** Statt der einspaltigen Abfolge (Titel → Skizze → Aufbau → Durchführung → Coaching-Tipps → Leichter/Schwerer, über mehrere Seiten) ein festes Raster: 3 Zeilen × 2 Spalten, sechs gleich große Felder auf möglichst einer Seite.
+- Oben links: Titel + Kurzbeschreibung
+- Oben rechts: Skizze
+- Mitte links: Aufbau
+- Mitte rechts: Durchführung
+- Unten links: Coaching-Fokus
+- Unten rechts: Übung leichter machen + Übung schwieriger machen (übereinander)
+
+(Rückfrage per AskUserQuestion nötig, da „Aufbau" in der ursprünglichen Beschreibung versehentlich zweimal auftauchte und die Skizze gar nicht erwähnt war – Robert hat obige Zuordnung bestätigt.)
+
+**Umsetzung:**
+- `desktop.css`: `body:has(#exercise-content) #exercise-content` von der bisherigen 2-Spalten-Anordnung (Abschnitt „exercise-content: Grid 2-Spalten via display:contents-Trick") auf `grid-template-columns:1fr 1fr` + `grid-template-rows:repeat(3, auto)` umgestellt – **nur innerhalb von `@media print`**, die Bildschirmdarstellung bleibt unverändert bei 400px-Skizzenspalte + 1fr-Textspalte. `.title-block` und `.grafik-panel` tauschen fürs Drucken Platz (Bildschirm: Skizze links; Druck: Titel links, Skizze rechts, wie gewünscht). `#acc-aufbau`/`#acc-durchfuehrung` brauchten keine Neuzuweisung – ihre bestehende Grid-Position (Spalte 1/Spalte 2, Zeile 2) passt zufällig schon exakt in die neue Zeile 2. `.phase-row` und `.skill-tags` fürs Drucken ausgeblendet (waren in der gewünschten Zuordnung für „oben links" nicht vorgesehen). Schriftgrößen deutlich verkleinert (Titel 17px, Kurzbeschreibung 10px, Aufbau/Durchführung-Überschrift 11px, -Text 9,5px), Skizze auf `max-height:150px` gedeckelt (kleiner als die 260px aus Abschnitt 40, weil die Skizze jetzt nur noch eine von sechs Zellen statt eine halbe Spalte füllen muss).
+- `uebung-detail.html`: `#print-tiles` (enthält serverseitig 3 `.print-tile-item`-Divs in fester Reihenfolge Coaching-Fokus/Leichter/Schwerer, s. `build-exercise-pages.js`) wird fürs Drucken selbst zum 2-spaltigen Grid und belegt die komplette Zeile 3 des äußeren Grids: Coaching-Fokus (`:nth-child(1)`) spannt per `grid-row:1/3` die volle Zellenhöhe links, Leichter (`:nth-child(2)`) und Schwerer (`:nth-child(3)`) stapeln sich rechts übereinander. Zusätzlich `@page { margin: 10mm; }` – der Browser-Standardrand (oft ~25mm) hätte für sechs Felder kaum Platz gelassen.
+- **Bewusste Entscheidung gegen eine erzwungene Einzelseite:** Die drei Grid-Zeilen nutzen `auto`-Höhe statt eines festen Seitenmaßes (z. B. `1fr` + `height:100vh`), das hätte bei langen Übungstexten entweder abgeschnittenen oder überlappenden Text bedeutet. Eine ungewöhnlich lange Übung darf dadurch auf eine 2. Seite rutschen – das war explizit die vorsichtigere Wahl gegenüber Informationsverlust. Passt der Großteil der 199 Übungen nicht komfortabel auf eine Seite, ist das ein Signal für noch kleinere Schrift, nicht für erzwungenes Clipping.
+
+**Noch offen:** Echter Testdruck mit Soll-Ist-Vergleich (Seitenzahl, Lesbarkeit bei 9,5px Fließtext, Zellen-Ausrichtung) steht aus – voraussichtlich mehrere Nachjustierungsrunden nötig, da Schriftgrößen/Zeilenhöhen nur anhand des Codes gewählt wurden, nicht anhand eines echten Ausdrucks.
