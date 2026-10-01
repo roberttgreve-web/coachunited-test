@@ -1513,14 +1513,30 @@
   body:has(#exercise-content) .ex-title { font-size: 17px !important; line-height: 1.15 !important; margin-bottom: 6px !important; }
   body:has(#exercise-content) .ex-desc { font-size: 10px !important; line-height: 1.35 !important; margin-bottom: 0 !important; }
 
-  /* Mitte: Aufbau links, Durchführung rechts - Position stimmt bereits mit
-     der Bildschirm-Anordnung überein (s. Grid-Zuweisung weiter oben in
-     dieser Datei), hier nur die Schriftgröße fürs Drucken verkleinert. */
+  /* Mitte: Aufbau links, Durchführung rechts.
+     NICHT wie erwartet einfach per grid-column auf #acc-aufbau/
+     #acc-durchfuehrung (die Spaltenwerte von weiter oben in dieser Datei
+     erben) - im echten Testdruck landeten beide trotzdem übereinander in
+     einer Spalte. Ursache: .accordion-group ist selbst display:contents,
+     UND sein Elternelement .content ist es ebenfalls - dieses doppelt
+     verschachtelte display:contents "flacht" beim Drucken in Chrome
+     offenbar nicht zuverlässig ab (display:contents ist seit jeher für
+     Druck-Edge-Cases bekannt), .accordion-group blieb also eine normale
+     Box und seine Kinder standen dadurch im Blockfluss untereinander statt
+     als eigene Grid-Items nebeneinander. Fix: .accordion-group bekommt
+     fürs Drucken ein EIGENES, in sich geschlossenes 2-Spalten-Grid (exakt
+     dasselbe, bereits bewährte Muster wie #print-tiles weiter unten in
+     uebung-detail.html) - kein display:contents mehr involviert. */
+  body:has(#exercise-content) .accordion-group {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    column-gap: 16px !important;
+    grid-column: 1 / -1 !important;
+    grid-row: 2 !important;
+  }
   body:has(#exercise-content) .acc-title { font-size: 11px !important; margin-bottom: 3px !important; }
   body:has(#exercise-content) .accordion-body { font-size: 9.5px !important; line-height: 1.3 !important; }
-  /* #acc-aufbau hat am Bildschirm margin-top:24px (Abstand zur Skizze
-     darüber in Spalte 1) - fürs Drucken 0, sonst steht Aufbau tiefer als
-     Durchführung daneben, obwohl beide in derselben Grid-Zeile liegen. */
-  body:has(#exercise-content) #acc-aufbau { margin-top: 0 !important; }
+  body:has(#exercise-content) #acc-aufbau { grid-column: 1 !important; grid-row: 1 !important; margin-top: 0 !important; }
+  body:has(#exercise-content) #acc-durchfuehrung { grid-column: 2 !important; grid-row: 1 !important; }
 }
 
