@@ -1285,3 +1285,16 @@ Zwei Fehler, die in früheren Sessions schon einmal behoben worden waren, waren 
 **Live verifiziert:** Nach Löschen des gespeicherten Consent-Werts (frischer Besucher, Banner noch unbeantwortet) direkt per JS geprüft – `typeof window.gtag === 'function'` ist sofort `true`, `dataLayer` enthält in dieser Reihenfolge `consent/default` → `js` → `config`. Ein simulierter Klick auf den WhatsApp-Kanal-Link **vor** jeder Cookie-Entscheidung erzeugt zuverlässig den `whatsapp_click`-Eintrag im `dataLayer` – vorher wäre das ins Leere gelaufen.
 
 **Nächster sinnvoller Schritt** (kein Code, nur Beobachtung): nach ein paar Tagen prüfen, ob die Conversion-Zahlen in Google Ads jetzt tatsächlich über 0 liegen.
+
+## 40. Druckansicht aufgeräumt: Desktop-Topnav/-Footer raus, Logo verkleinert, Sister-/Kategorie-Links weg (10/2026)
+
+**Auslöser:** Robert druckte eine Übung von Desktop aus (Chrome-Druckdialog) und bekam 3 Seiten statt einer: Seite 1 zeigte oben ein abgeschnittenes, viel zu großes Logo plus das komplett ausgeklappte Hauptmenü (Alle Übungen/Nach Alter/Nach Skill/Nach Phase mit allen 15 Skills), Seite 3 bestand fast nur aus „Andere Übungen mit gleichem Aufbau", „Weitere Übungen" und den Footer-Links (Übung einreichen/Über uns/Spenden/…).
+
+**Ursache:** `.desktop-topnav` und `.desktop-footer` (von `desktop-nav.js` auf **jeder** Seite eingefügt, nicht nur Übungsseiten) leben in `desktop.css` unter `@media (min-width: 768px)`. Eine gedruckte Letter/A4-Seite ist in CSS-Pixeln breiter als 768px – die Desktop-Regeln greifen beim Drucken also genauso wie am Bildschirm. Das Logo dort ist mit 48px für die 64px hohe Topnav-Leiste gedacht, nicht fürs Drucken. Das ausgeklappte Mega-Menü kam dazu, weil Chrome beim Drucken den aktuellen `:hover`-Zustand der Seite mit übernimmt – stand die Maus beim Drucken zufällig über „Alle Übungen", druckt die Browser-Engine das Dropdown mit aus, obwohl es sonst nur bei echtem Hover sichtbar ist.
+
+**Fix:**
+- `desktop.css`, neuer `@media print`-Block (gilt seitenübergreifend, da `.desktop-topnav`/`.desktop-footer` überall vorkommen): `.desktop-topnav-links` und `.desktop-footer` komplett weg, `.desktop-topnav-logo img` von 48px auf 24px, Topnav-Leiste selbst ohne feste Höhe/Sticky-Position für den Druck.
+- `uebung-detail.html`, bestehender `@media print`-Block ergänzt: `#sisters-block`, `#category-links-block` (die beiden Navigations-Boxen, die vorher Seite 3 füllten) und `.ex-created` („Erstellt am…") jetzt auch `display:none`.
+- `body:has(#exercise-content) .grafik-panel img` hat am Bildschirm bewusst `max-height:none` (volle natürliche Höhe, s. frühere Zwei-Spalten-Layout-Arbeit) – fürs Drucken jetzt mit `max-height:260px` gedeckelt, damit die Skizze nicht allein schon eine halbe Seite braucht.
+
+**Live verifiziert:** `desktop.css` und die Übungsseite enthalten die neuen Selektoren/Regeln nach dem Deploy (direkt per `curl` gegengeprüft). Ein echter Soll-Ist-Vergleich im Druckdialog selbst (Seitenzahl, Logo-Größe) steht noch aus – Rückmeldung von Robert nach dem nächsten Testdruck abwarten.
