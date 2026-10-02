@@ -1360,3 +1360,11 @@ Robert druckte mit manuell umgestelltem Querformat statt des Standard-Hochformat
 **Fix:** `@page { margin: 10mm; size: landscape; }` – `size: landscape` setzt die Standard-Orientierung im Druckdialog direkt, ohne dass der Nutzer manuell umschalten muss. Deployt (Commit `211b872`), nach dem jetzt schon zwei Mal aufgetretenen Deploy-Race (s. 41.2) diesmal wieder per `curl`-Polling auf einen eindeutig neuen Textschnipsel geprüft und auf Stabilität über 30s nachkontrolliert, bevor als erledigt gemeldet.
 
 **Status: 6-Felder-Druck-Layout fertig.** Querformat, 1 Seite, 6 durch Linien getrennte Felder, volle Breite genutzt.
+
+## 42. Druck: Trainingseinheit - eine Übung pro Seite (10/2026)
+
+Analog zu Abschnitt 41 (einzelne Übung), aber für den Einheit-Generator (`einheit-generator.html`, Route `/einheit-generator` – die Seite hinter „Einheit erhalten"): Beim Ausdrucken einer ganzen Trainingseinheit soll jede Übung auf einer eigenen Seite stehen, statt alle durchlaufend auf wenigen Seiten.
+
+**Umsetzung:** `.ex-card` (eine Karte pro Übung, alle als direkte Geschwister in der einzigen flachen Liste `#session-list.ex-card-list`, Phasen-Header stehen als eigene Geschwister-Elemente dazwischen) bekommt `break-before: page; page-break-before: always;`. `.ex-card:first-of-type` nimmt das für die jeweils erste Karte wieder raus, sonst stünde vor der ersten Übung eine leere Seite. Weil `#session-list` eine einzige flache Liste ist (keine eigene Unterliste je Phase), trifft `:first-of-type` zuverlässig nur die eine, wirklich erste Karte im gesamten Dokument. Bestehendes `.gen-phase-header { break-after: avoid }` sorgt dafür, dass ein Phasen-Header vor der ersten Übung einer neuen Phase mit auf die neue Seite wandert, statt allein am Ende der vorherigen stehen zu bleiben.
+
+Live deployt (Commit `0541bb2`) und wie in Abschnitt 41.2/41.4 etabliert per `curl`-Polling auf einen eindeutig neuen Textschnipsel sowie Stabilität über 30s geprüft, bevor als erledigt gemeldet.
