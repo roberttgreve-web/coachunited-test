@@ -284,15 +284,24 @@
       .content { padding: 0; overflow: visible; }
       .ex-card-list { display: block; }
       .ex-card-body { max-height: none !important; overflow: visible !important; }
+      /* Eine Übung pro Seite: #session-list ist eine einzige flache Liste
+         (Phasen-Header und Übungs-Karten als Geschwister, keine eigene
+         Liste je Phase) - :first-of-type trifft dadurch zuverlässig nur
+         die allererste Karte im ganzen Dokument und verhindert eine leere
+         Seite 1. Steht ein Phasen-Header direkt vor einer neuen Übung,
+         zieht ihn break-after:avoid auf dieselbe (neue) Seite mit. */
       .ex-card {
         display: block;
         overflow: visible !important;
         break-inside: avoid;
         page-break-inside: avoid;
+        break-before: page;
+        page-break-before: always;
         box-shadow: none;
         border: 1px solid #E6E8EF;
         margin-bottom: 16px;
       }
+      .ex-card:first-of-type { break-before: avoid; page-break-before: avoid; }
       .ex-card-header { cursor: default; }
       .gen-phase-header { break-after: avoid; page-break-after: avoid; }
       .print-extra-item { display: block !important; }
