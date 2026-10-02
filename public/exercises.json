@@ -13148,5 +13148,60 @@
     "schwester_id": null,
     "schwester_titel": null,
     "erstellt_am": "2026-10-02"
+  },
+  {
+    "id": 240,
+    "titel": "BLITZSCHNELL DREHEN UND SCHUSS PARIEREN",
+    "quell_trainingseinheit": "",
+    "grafik_url": "https://coachunited.de/images/uebungen/uebung-240-blitzschnell-drehen-und-schuss-parieren.webp",
+    "grafik_dateiname": "Drehen und Schuss parieren.png",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "Der Torhüter steht seitlich zum Schützen und dreht sich auf Kommando blitzschnell nach vorne um, um den Schuss zu halten. ",
+    "aufbau": "Ein Jugendtor mit Torhüter. Etwa 10m davor steht ein Schütze mit mehreren Bällen. ",
+    "durchfuehrung": "Ein Torhüter steht mit dem Körer seitlich zum Schützen im 90-Grad-Winkel. Der Schütze ruft das Kommando \"Los\" und schießt. Der Torhüter dreht sich mit dem Körper nach vorne und hält den Ball. ",
+    "varianten": "",
+    "quell_url": "",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Torhüter"
+    ],
+    "coaching_fokus": "• Unmittelbar mit em Kommando schießen.; • Haltbare Bälle aufs Tor schießen.",
+    "leichter_machen": "• Bälle werfen statt schießen.; • Kuze Pause zwischen Kommando und Schuss.",
+    "schwerer_machen": "• Schnelle Abfolge hintereinander. Drehung, Schuss, Drehung, Schuss usw.",
+    "alt_titel": "",
+    "seo_keyword": "Fußballübung Torhüter",
+    "url_slug": "blitzschnell-drehen-und-schuss-parieren",
+    "seo_meta_description": "Torhüter-Trainingsübung: Blitzschnell drehen und Schuss parieren. Verbessern Sie Reaktionsfähigkeit und Wendigkeit von Torwarten im Kinder-Fußballtraining (6-12 Jahre).",
+    "grafik_alt_text": "Torhüter dreht sich seitlich stehend nach vorne um, um den Schuss des Schützen zu parieren",
+    "grafik_description": "Die Grafik zeigt einen Torhüter, der seitlich zum Schützen positioniert ist und sich auf Kommando blitzschnell nach vorne dreht. Der Schütze steht etwa 10 Meter entfernt mit mehreren Bällen bereit.",
+    "grafik_title": "Torhüter Reaktionstraining: Drehen und Schuss parieren",
+    "grafik_caption": "Der Torhüter dreht sich schnell nach vorne, um den Schuss zu halten.",
+    "faq": [
+      {
+        "frage": "Wie viele Wiederholungen sind sinnvoll. ",
+        "antwort": "10-15 Wiederholungen - dann eine Pause für den Torhüter machen. "
+      },
+      {
+        "frage": "Wer führt die Übung durch?",
+        "antwort": "Zum Beispiel ein Co-Trainer, ein Mitspieler oder ein Elternteil. "
+      }
+    ],
+    "status": "veroeffentlicht",
+    "referenz_grafik_url": "",
+    "quell_kategorie": "",
+    "ist_gecrawlt": false,
+    "schwester_gruppen": [],
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "schwester_ids": [],
+    "schwester_id": null,
+    "schwester_titel": null,
+    "erstellt_am": "2026-10-02"
   }
 ]
