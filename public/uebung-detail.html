@@ -607,8 +607,11 @@
       .print-tile-body { font-size: 9px !important; line-height: 1.3 !important; }
     }
     /* Knapper Seitenrand fürs 6-Felder-Layout - der Browser-Standard (oft
-       ~25mm) ließe sonst kaum Platz für sechs Felder auf einer Seite. */
-    @page { margin: 10mm; }
+       ~25mm) ließe sonst kaum Platz für sechs Felder auf einer Seite.
+       size:landscape setzt die Voreinstellung im Druckdialog direkt auf
+       Querformat (statt dass der Nutzer das jedes Mal manuell umschalten
+       muss) - passt zum breiten 2-Spalten-Grid deutlich besser als Hochformat. */
+    @page { margin: 10mm; size: landscape; }
   </style>
   <link rel="stylesheet" href="/desktop.css">
   <script src="/desktop-nav.js" defer></script>
