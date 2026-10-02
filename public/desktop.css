@@ -1493,10 +1493,27 @@
     align-items: start !important;
   }
 
-  /* Oben: Titel+Kurzbeschreibung links, Skizze rechts - auf dem Bildschirm
-     ist die Reihenfolge umgekehrt (Skizze links), fürs Drucken getauscht. */
-  body:has(#exercise-content) .title-block { grid-column: 1 !important; grid-row: 1 !important; }
-  body:has(#exercise-content) .grafik-panel { grid-column: 2 !important; grid-row: 1 !important; padding: 8px !important; }
+  /* Trennlinien zwischen den 6 Feldern: je eine Seite pro Feld (nie beide
+     Nachbarn gleichzeitig), sonst zwei knapp versetzte Linien im Gap statt
+     einer sauberen. Vertikal: title-block/#acc-aufbau/#print-tiles-1.Kind
+     (linke Spalte) je mit border-right. Horizontal: Zeile 1 (title-block +
+     grafik-panel) mit border-bottom, .accordion-group (ganze Zeile 2) mit
+     border-bottom - macht zusammen das volle 3x2-Liniengitter. */
+  body:has(#exercise-content) .title-block {
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+    border-right: 1px solid #999 !important;
+    border-bottom: 1px solid #999 !important;
+    padding: 0 10px 8px 0 !important;
+  }
+  body:has(#exercise-content) .grafik-panel {
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+    padding: 8px !important;
+    border: none !important;
+    border-bottom: 1px solid #999 !important;
+    border-radius: 0 !important;
+  }
   body:has(#exercise-content) .grafik-panel img {
     max-height: 150px !important;
     width: auto !important;
@@ -1533,10 +1550,18 @@
     column-gap: 16px !important;
     grid-column: 1 / -1 !important;
     grid-row: 2 !important;
+    padding-bottom: 8px !important;
+    border-bottom: 1px solid #999 !important;
   }
   body:has(#exercise-content) .acc-title { font-size: 11px !important; margin-bottom: 3px !important; }
   body:has(#exercise-content) .accordion-body { font-size: 9.5px !important; line-height: 1.3 !important; }
-  body:has(#exercise-content) #acc-aufbau { grid-column: 1 !important; grid-row: 1 !important; margin-top: 0 !important; }
+  body:has(#exercise-content) #acc-aufbau {
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+    margin-top: 0 !important;
+    padding-right: 10px !important;
+    border-right: 1px solid #999 !important;
+  }
   body:has(#exercise-content) #acc-durchfuehrung { grid-column: 2 !important; grid-row: 1 !important; }
 }
 
