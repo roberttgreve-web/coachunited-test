@@ -13093,5 +13093,60 @@
     "schwester_id": 235,
     "schwester_titel": "SICH MIT DEM GEGNER IM RÜCKEN DURCHSETZEN",
     "erstellt_am": "2026-09-18"
+  },
+  {
+    "id": 239,
+    "titel": "ZUM FARBHÜTCHEN SPRINTEN UND BALL PARIEREN",
+    "quell_trainingseinheit": "",
+    "grafik_url": "https://coachunited.de/images/uebungen/uebung-239-zum-farbhuetchen-sprinten-und-ball-parieren.webp",
+    "grafik_dateiname": "Zum Farbhütchen sprinten und Schuss parieren.png",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "Der Torhüter sprintet auf Kommando zu einem Farbhütchen und dann zurück ins Tor, um den folgenden Schuss zu parieren. ",
+    "aufbau": "Ein Jugendtor mit Torhüter. Etwa 5m davor drei verschiedenfarbige (möglichst flache) Hütchen. Weitere 5m weiter steht ein Schütze mit mehreren Bällen. ",
+    "durchfuehrung": "Der Schütze ruft eine Farbe eines Hütchens. Der Torwart sprintet zum Hütchen, berührt es und läuft rückwärts zurück in Richtung Tor. Kurz bevor er dort angekommen ist, schießt der Schütze aufs Tor. Nach der Parade wirft der Torhüter den Ball zurück zum Schützen. Mehrmals wiederholen und die Position des Schützen variieren. ",
+    "varianten": "",
+    "quell_url": "",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Torhüter"
+    ],
+    "coaching_fokus": "• Hohes Tempo beim Torhüter.; • Schüsse haltbar aus Tor bringen, um dem Torhüter Erfolgserebnisse zu verschaffen.",
+    "leichter_machen": "• Nur ein Hütchen aufstellen. Also ohne Farbkommando.; • Ball werfen statt schießen.",
+    "schwerer_machen": "• Noch in der aktiven Rückwärtsbewegung platziert schießen.",
+    "alt_titel": "",
+    "seo_keyword": "Fußballübung Torhüter",
+    "url_slug": "zum-farbhuetchen-sprinten-und-ball-parieren",
+    "seo_meta_description": "Torhüter-Reaktionstraining: Sprinten zu Farbhütchen und Ball parieren. Perfekte Fußballübung für 6-12 Jahre zur Verbesserung von Schnelligkeit und Reflexen.",
+    "grafik_alt_text": "Torwart sprintet zu Farbhütchen, Schütze mit Ball im Hintergrund bereit zum Schuss",
+    "grafik_description": "Diese Trainingsübung zeigt einen Torhüter, der auf Kommando zu einem von drei Farbhütchen sprintet, es berührt und dann rückwärts ins Tor zurückkehrt. Ein Schütze mit mehreren Bällen steht etwa 10m vom Tor entfernt und schießt, wenn der Torwart zurückkommt.",
+    "grafik_title": "Torhüter-Reaktionstraining Farbhütchen Sprinten",
+    "grafik_caption": "Der Torwart sprintet zum genannten Farbhütchen und pariert anschließend den Schuss.",
+    "faq": [
+      {
+        "frage": "Wie viele Wiederholungen sind sinnvoll?",
+        "antwort": "Nach etwa 10-15 Wiederholungen eine Pause einlegen. "
+      },
+      {
+        "frage": "Wer führt das durch mit dem Torhüter?",
+        "antwort": "Zum Beispiel ein Co-Trainer, ein Mitspieler oder ein Elternteil. "
+      }
+    ],
+    "status": "veroeffentlicht",
+    "referenz_grafik_url": "",
+    "quell_kategorie": "",
+    "ist_gecrawlt": false,
+    "schwester_gruppen": [],
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "schwester_ids": [],
+    "schwester_id": null,
+    "schwester_titel": null,
+    "erstellt_am": "2026-10-02"
   }
 ]
