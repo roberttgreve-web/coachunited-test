@@ -13149,14 +13149,20 @@
     "referenz_grafik_url": "https://training-service.fussball.de/assets/img/csm_258635-2022-04-08_1gg3_4dc2e36028.jpg",
     "quell_kategorie": "D-Jugend",
     "ist_gecrawlt": true,
-    "schwester_id": null,
-    "schwester_titel": null,
+    "schwester_id": 243,
+    "schwester_titel": "ZWEI ANGREIFER GEGEN DREI DEFENSIV-JÄGER",
     "original_aufbau": "Ein 25 x 20 Meter großes Spielfeld mit 4 Minitoren und 6 Meter tiefen Torschusszonen markieren.\nMittig 3 Bälle ablegen.\nDie Verteidiger postieren sich gemäß Abbildung auf den Feldlinien.\nDie Angreifer stellen sich hinter einer Seitenlinie auf.",
     "original_durchfuehrung": "uf ein Kommando läuft ein Angreifer in das Feld, nimmt einen der Bälle mit, versucht im 1 gegen 3 in eine der Torschusszonen zu dribbeln und dort einen Treffer an einem beliebigen Tor zu erzielen.\nDie Verteidiger dürfen erst starten, wenn der Angreifer am Ball ist.\nSobald der Ball im Aus ist oder ein Treffer erzielt wurde, stellen sich die Verteidiger wieder auf und der nächste Angreifer startet.\nAufgabenwechsel nach 6 Angriffen: Welches Team trifft häufiger?\nCOACHINGPUNKT\nMit dem ersten Ballkontakt das Tempo erhöhen und zielstrebig auf ein Tor abschließen.",
     "original_varianten": "",
     "original_coaching_fokus": "",
-    "schwester_gruppen": [],
-    "schwester_ids": [],
+    "schwester_gruppen": [
+      [
+        243
+      ]
+    ],
+    "schwester_ids": [
+      243
+    ],
     "erstellt_am": "2026-10-04"
   },
   {
@@ -13268,5 +13274,62 @@
     "schwester_id": null,
     "schwester_titel": null,
     "erstellt_am": "2026-10-02"
+  },
+  {
+    "id": 243,
+    "titel": "ZWEI ANGREIFER GEGEN DREI DEFENSIV-JÄGER",
+    "quell_trainingseinheit": "",
+    "grafik_url": "https://coachunited.de/images/uebungen/uebung-243-zwei-angreifer-gegen-drei-defensiv-jaeger.webp",
+    "grafik_dateiname": "2 Angreifer gegen drei Defensiv-Jäger.png",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "Zwei Angreifer versuchen, sich gegen drei Verteidiger durchzudribbeln. Können die Verteidiger sie stoppen und selbst in Überzahl ein Tor erzielen?",
+    "aufbau": "Baue ein Spielfeld von 25 x 20 Metern auf. Positioniere 4 Minitore an den Grundlinien und markiere 6 Meter tiefe Torschusszonen. Lege mehrere Bälle in der Feldmitte ab. Drei Teams stellen sich als Verteidigungsteams gemäß der Abbildung auf den Feldlinien auf. Die angreifenden Spieler formieren sich in zwei Teams an der hinteren Grundlinie. ",
+    "durchfuehrung": "Nach dem Startsignal des Trainers starte die beiden Angreifer parallel ins Feld zu den Bällen in der Mitte. Einer schnappt sich einen Ball, der andere läuft sich frei. Sobald er einen Ball berührt hat, dürfen gleichzeitig drei Verteidiger ins Feld sprinten. Die Angreifer versuchen im 2 gegen 3 in die Schusszone zu gelangen und zu treffen. Erobern die Verteidiger den Ball, dürfen sie wiederum auf die gegenüberliegenden Tore in Überzahl treffen. Sobald der Ball im Tor oder im Aus ist, wechseln die gerade aktiven Spieler in die nächste Gruppe und stellen sich dort hinten an. ",
+    "varianten": "",
+    "quell_url": "",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Dribbeln",
+      "Zweikampf",
+      "Schnelligkeit",
+      "Raumverhalten",
+      "Verteidigen",
+      "Umschalten"
+    ],
+    "coaching_fokus": "",
+    "leichter_machen": "",
+    "schwerer_machen": "",
+    "alt_titel": "",
+    "seo_keyword": "Fußballtraining Dribbeln",
+    "url_slug": "zwei-angreifer-gegen-drei-defensiv-jaeger",
+    "seo_meta_description": "Fußballübung: 2 gegen 3 Angreifer vs. Verteidiger. Trainiere Dribbling, Defensivtaktik und Torschuss mit dieser dynamischen Übung für Kinder.",
+    "grafik_alt_text": "Zwei Angreifer dribbeln gegen drei Verteidiger in einer Fußballübung auf einem 25x20m Spielfeld mit Minitoren.",
+    "grafik_description": "Spielfeldaufbau für die Trainingsübung mit zwei angreifenden Teams an der Grundlinie, drei Verteidigungsteams an den Feldlinien und vier Minitoren in den Torschusszonen.",
+    "grafik_title": "2 gegen 3 Fußball-Trainingsübung Spielfeld",
+    "grafik_caption": "Spielfeldaufbau: Zwei Angreifer gegen drei Verteidiger im dynamischen Dribbeltraining.",
+    "faq": [],
+    "status": "veroeffentlicht",
+    "referenz_grafik_url": "",
+    "quell_kategorie": "",
+    "ist_gecrawlt": false,
+    "schwester_gruppen": [
+      [
+        238
+      ]
+    ],
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "schwester_ids": [
+      238
+    ],
+    "schwester_id": 238,
+    "schwester_titel": "3 JÄGER GEGEN DEN DRIBBELKÖNIG",
+    "erstellt_am": "2026-10-04"
   }
 ]
