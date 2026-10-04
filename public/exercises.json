@@ -13300,9 +13300,9 @@
       "Verteidigen",
       "Umschalten"
     ],
-    "coaching_fokus": "",
-    "leichter_machen": "",
-    "schwerer_machen": "",
+    "coaching_fokus": "• Der zweite Angreifer (ohne Ball) muss Laufwege in die Tiefe suchen, um anspielbereit zu sein.; • Nicht alle drei Verteidiger auf den Ballführenden stürmen. Auch den zweiten Angreifer im Blick haben.",
+    "leichter_machen": "• Zwei gegen zwei spielen lassen.; • Torschusszone vergrößern.",
+    "schwerer_machen": "• Wenn Verteidiger den Ball erobert haben, muss jeder einmal den Ball berührt haben, bevor sie selber zum Abschluss kommen können.; • Zwei Angreifer gegen vier Verteidiger.",
     "alt_titel": "",
     "seo_keyword": "Fußballtraining Dribbeln",
     "url_slug": "zwei-angreifer-gegen-drei-defensiv-jaeger",
@@ -13311,7 +13311,16 @@
     "grafik_description": "Spielfeldaufbau für die Trainingsübung mit zwei angreifenden Teams an der Grundlinie, drei Verteidigungsteams an den Feldlinien und vier Minitoren in den Torschusszonen.",
     "grafik_title": "2 gegen 3 Fußball-Trainingsübung Spielfeld",
     "grafik_caption": "Spielfeldaufbau: Zwei Angreifer gegen drei Verteidiger im dynamischen Dribbeltraining.",
-    "faq": [],
+    "faq": [
+      {
+        "frage": "Wie lange sollte ein Durchgang höchstens dauern?",
+        "antwort": "30-45 Sekunden. "
+      },
+      {
+        "frage": "Ab welchem Jahrgang ist die Übung geeignet?",
+        "antwort": "Stärkere F-Jugenden können es schon ausprobieren."
+      }
+    ],
     "status": "veroeffentlicht",
     "referenz_grafik_url": "",
     "quell_kategorie": "",
