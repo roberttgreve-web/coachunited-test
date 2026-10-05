@@ -896,18 +896,22 @@
       if (!tab) { window.print(); return; }
       tab.document.write('<!doctype html><title>Trainingseinheit – COACH UNITED</title>' +
         '<body style="font-family:system-ui,sans-serif;padding:32px;color:#3B4565">Trainingseinheit wird als PDF zusammengestellt …</body>');
+      tab.document.close();
       try {
         await loadPdfLib();
         const out = await PDFLib.PDFDocument.create();
         for (const ex of list) {
           const res = await fetch('/pdf/uebungen/' + encodeURIComponent(ex.url_slug) + '.pdf');
           if (!res.ok) throw new Error('PDF fehlt: ' + ex.url_slug);
-          const src = await PDFLib.PDFDocument.load(await res.arrayBuffer());
+          const src = await PDFLib.PDFDocument.load(await res.arrayBuffer(), { parseSpeed: PDFLib.ParseSpeeds.Fastest, updateMetadata: false });
           const pages = await out.copyPages(src, src.getPageIndices());
           pages.forEach(pg => out.addPage(pg));
         }
         out.setTitle('Trainingseinheit – COACH UNITED');
-        const blob = new Blob([await out.save()], { type: 'application/pdf' });
+        // objectsPerTick: Infinity - pdf-lib gibt sonst nach je 50 Objekten per setTimeout die Kontrolle ab; die
+        // Hauptseite liegt hier im Hintergrund (neuer Tab ist vorne), Browser bremsen Timer dort auf ~1 s
+        // -> Speichern dauerte ~30 s statt 0,1 s (Tab blieb auf "wird zusammengestellt").
+        const blob = new Blob([await out.save({ objectsPerTick: Infinity })], { type: 'application/pdf' });
         tab.location.href = URL.createObjectURL(blob);
       } catch (err) {
         console.warn('PDF-Druck nicht moeglich, Fallback auf Druckansicht:', err);

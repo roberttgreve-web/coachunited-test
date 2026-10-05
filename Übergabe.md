@@ -1448,3 +1448,11 @@ Live deployt (Commit `0541bb2`) und wie in Abschnitt 41.2/41.4 etabliert per `cu
 **Bekannte Lücken / Risiken:**
 - **PDFs veralten**, wenn eine Übung im Publisher geändert wird, und neue Übungen haben keine PDF (Fallback Druckansicht). **Gelöst am 05.10.2026:** Der Publisher erzeugt und lädt die PDF beim Speichern/Veröffentlichen selbst hoch (`exercise_pdf.py`, `sync_exercise_pdfs()`, s. Publisher-Übergabe.md 2.7). Live-Stand nach dem Push von Abschnitt 46 geprüft: Seite setzt `PDF_URL`, PDF/pdf-lib/Generator erreichbar.
 - **#169 und #175** heißen beide „Turnier: Funinho-Em" und haben denselben `url_slug` (`turnier-funinho-em`): auf der Website überschreibt eine Seite die andere, ebenso das Web-PDF. Vermutlich ist eine ein Duplikat.
+
+### 46.1 Fix: Einheit-Druck „blieb auf ‚wird zusammengestellt …'“ (05.10.2026)
+
+**Symptom (Robert, live):** Im Einheit-Generator öffnete sich der neue Tab, blieb aber auf dem Platzhaltertext hängen; bei Einzel-Übungen funktionierte es.
+
+**Ursache:** `PDFDocument.save()` von pdf-lib gibt nach je 50 Objekten per `setTimeout` die Kontrolle ab. Sobald der neue Tab vorne ist, liegt die Hauptseite (die das Zusammenfügen ausführt) im Hintergrund, und Browser bremsen Timer dort auf ~1 s → Speichern dauerte ~30 s (nachgemessen auf coachunited.de: alles andere <1 s, `save` 30.018 ms; mit `document.hidden === true`).
+
+**Fix:** `out.save({ objectsPerTick: Infinity })` (73 ms bei verstecktem Tab statt 30 s), `load(..., { parseSpeed: ParseSpeeds.Fastest, updateMetadata: false })`, zusätzlich `tab.document.close()` nach dem Platzhalter. **Merke:** Code, der nach `window.open` im Hintergrund weiterlaufen muss, darf sich nicht auf Timer verlassen (`setTimeout`/`requestAnimationFrame` sind dort gedrosselt) – lokale Tests im Vordergrund-Tab zeigen das nicht.
