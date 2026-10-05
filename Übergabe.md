@@ -1447,7 +1447,7 @@ Live deployt (Commit `0541bb2`) und wie in Abschnitt 41.2/41.4 etabliert per `cu
 
 **Bekannte Lücken / Risiken:**
 - **PDFs veralten**, wenn eine Übung im Publisher geändert wird, und neue Übungen haben keine PDF (Fallback Druckansicht). **Gelöst am 05.10.2026:** Der Publisher erzeugt und lädt die PDF beim Speichern/Veröffentlichen selbst hoch (`exercise_pdf.py`, `sync_exercise_pdfs()`, s. Publisher-Übergabe.md 2.7). Live-Stand nach dem Push von Abschnitt 46 geprüft: Seite setzt `PDF_URL`, PDF/pdf-lib/Generator erreichbar.
-- **#169 und #175** heißen beide „Turnier: Funinho-Em" und haben denselben `url_slug` (`turnier-funinho-em`): auf der Website überschreibt eine Seite die andere, ebenso das Web-PDF. Vermutlich ist eine ein Duplikat.
+- **#169/#175** (gleicher Titel/`url_slug`) waren Duplikate → **#175 am 05.10.2026 gelöscht**, #169 bleibt (Details: Publisher-Übergabe.md 2.7). Online jetzt 198 Übungen; Sammel-PDF 201 Seiten (Aufwärmen 70, Hauptteil 91, Spielformat 37), 198 Einzel-PDFs.
 
 ### 46.1 Fix: Einheit-Druck „blieb auf ‚wird zusammengestellt …'“ (05.10.2026)
 
