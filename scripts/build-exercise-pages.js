@@ -208,6 +208,10 @@ async function main() {
     };
     // Sicher fuer die Einbettung in ein <script>-Tag: kein "</script>" im JSON.
     const sheetDataScript = `const SHEET_DATA = ${JSON.stringify(sheetData).replace(/</g, '\\u003c')};`;
+    // Drucken-Button oeffnet die vorgefertigte Karteikarte (public/pdf/uebungen/<slug>.pdf),
+    // sofern es sie gibt - sonst bleibt PDF_URL leer und die Seite faellt auf window.print() zurueck.
+    const pdfFile = path.join(__dirname, '..', 'public', 'pdf', 'uebungen', `${slug}.pdf`);
+    const pdfUrlScript = `const PDF_URL = ${fs.existsSync(pdfFile) ? JSON.stringify(`/pdf/uebungen/${slug}.pdf`) : "''"};`;
 
     // ── Print-Ansicht: Coaching/Leichter/Schwieriger inline, ohne FAQ ──
     const printCfg = [
@@ -253,6 +257,7 @@ async function main() {
       .replace('<div id="sisters-list"></div>', `<div id="sisters-list">${sistersHtml}</div>`)
       .replace('<div class="section-block" id="category-links-block" style="display:none;">', categoryLinksHtml ? '<div class="section-block" id="category-links-block">' : '<div class="section-block" id="category-links-block" style="display:none;">')
       .replace('<div id="category-links-list"></div>', `<div id="category-links-list">${categoryLinksHtml}</div>`)
+      .replace("const PDF_URL = '';", pdfUrlScript)
       .replace('const SHEET_DATA = {};', sheetDataScript);
 
     fs.writeFileSync(path.join(outputDir, `${slug}.html`), html, 'utf-8');

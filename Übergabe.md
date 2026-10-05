@@ -1428,3 +1428,23 @@ Live deployt (Commit `0541bb2`) und wie in Abschnitt 41.2/41.4 etabliert per `cu
 - Skripte, Befundlisten und Entscheidungsprotokoll: `coachunited-publisher/data/spellcheck_20261005/` (`Rechtschreibung-Liste.md`, `all_findings.json`, `decisions_C.txt`, `decisions_E.txt`, `apply.py`, `apply_log.json`).
 - Nicht veröffentlichte Übungen (4 Stück) wurden ebenfalls lokal korrigiert, gehen aber erst mit ihrer Veröffentlichung live.
 - Beobachtet, nicht geändert: viele Übungen haben „z.B." statt „z. B." (reine Stilfrage), „so dass" statt „sodass" (beides zulässig).
+
+## 46. Übungs-PDFs: Format DIN A4 hochkant, Sammel-PDF, Drucken-Buttons (10/2026, in Arbeit)
+
+**Format-Entscheidung:** Aus den Entwürfen in Abschnitt 44 (A4 / A5-Karteikarte) wurde **DIN A4 hochkant** (Robert: „Übungsblatt Kinderfußball" im Kopf entfernen, alles darauf umstellen). Aufbau: Logo + Linie, Phase/Jugend-Badges, Titel, Kurzbeschreibung, Skill-Tags, Skizze (62 mm), Aufbau/Durchführung zweispaltig, drei Boxen (Coaching-Fokus, leichter, schwieriger), blaue Fußzeile nur mit Text „Alle Übungen digital unter www.coachunited.de" (kein QR). Zu lange Texte werden pro Karte automatisch verkleinert (erst Schrift bis 68 %, dann Skizze bis 34 mm; aktuell nur #231, #233, #237, #243 minimal, kein Überlauf).
+
+**Erzeugt (lokal, Quelle `exercises.json` des Publishers, nur Status `veroeffentlicht`, 199 Stück):**
+- `C:\Users\robert.greve\Desktop\privat\COACH UNITED\Trainingsinhalte\ÜbungsPDF\<Übungstitel>.pdf` (Einzeldateien, Titel = Dateiname; `:` → ` - `, `?`/Endpunkt entfernt, Doppelte mit ` (ID)`).
+- `…\ÜbungsPDF\Coach United - Alle Übungen.pdf`: 202 Seiten, drei Abschnitte mit Trennseite (Aufwärmen 70, Hauptteil 92, Spielformat 37), Lesezeichen. **Regeln:** Abschnitt = `trainingsphase` (strikt); Schwesterübungen stehen direkt hintereinander, aber **nur innerhalb desselben Abschnitts** (Schwestern über Phasengrenzen hinweg landen zwangsläufig in verschiedenen Abschnitten – Abschnitt hat Vorrang; die erste Version mit Mehrheits-Zuordnung mischte Spielformate in den Hauptteil). Reihenfolge der Gruppen: alphabetisch nach Titel.
+- Web-Versionen (Skizze auf max. 1100 px als JPEG, Schriften reduziert, ~200 KB statt ~600 KB): `coachunited-next/public/pdf/uebungen/<url_slug>.pdf` (199 Dateien, 39,7 MB; 198 Dateien, weil #169/#175 denselben `url_slug` haben, s. u.).
+- Skripte: `coachunited-publisher/scripts/pdf-entwurf/build_all_a4.py` (HTML → ein Chrome-Druck → mit PyMuPDF zerlegt) und `make_web_pdfs.py`. Chrome-Dump-DOM hing einmal an einer offenen Pipe → im Skript jetzt in Datei umgeleitet, mit Timeout. Eine geöffnete PDF im Viewer sperrt das Überschreiben (`Permission denied`); `REWRITE=1` erzwingt Neuschreiben der Einzeldateien, `SKIP_PRINT=1` nutzt das vorhandene Sammel-PDF.
+
+**Website (lokal umgesetzt, NOCH NICHT committet/gepusht):**
+- `uebung-detail.html`: Neues `const PDF_URL = ''`; `printExercise()` öffnet die PDF in neuem Tab, ohne PDF Fallback auf `window.print()`. `scripts/build-exercise-pages.js` setzt `PDF_URL` auf `/pdf/uebungen/<slug>.pdf`, wenn die Datei in `public/pdf/uebungen/` existiert.
+- `einheit-generator.html`: beide „Drucken"-Buttons rufen `printSession()`. Merkt sich die Übungen in angezeigter Reihenfolge (`sessionOrder`), lädt deren PDFs, fügt sie mit **pdf-lib** (`/vendor/pdf-lib.min.js`, selbst gehostet) zu EINEM PDF zusammen und öffnet es in neuem Tab (Tab synchron im Klick geöffnet wegen Popup-Blocker); bei Fehler/fehlender PDF Fallback auf `window.print()`.
+- **pdf-lib 1.17.1** (MIT, 525 KB, von cdn.jsdelivr.net mit Roberts Freigabe geladen) liegt jetzt selbst gehostet in `public/vendor/pdf-lib.min.js` (+ `pdf-lib.LICENSE.txt`). Lokal getestet (Python-Webserver auf `public/`): 5 Übungen → ein PDF mit 5 Seiten A4, Titel gesetzt; fehlt eine PDF → Tab wird geschlossen und `window.print()` greift (ebenfalls getestet). Die Übungsseite selbst lässt sich lokal nicht testen (Node fehlt, Seiten entstehen erst im Vercel-Build) → nach dem Deploy live prüfen.
+- **Offen:** Push von `coachunited-next` (ca. 40 MB PDFs + Code; git-Historie wächst bei jeder Neuerzeugung, daher künftig nur geänderte PDFs neu committen) – wartet auf Roberts Freigabe.
+
+**Bekannte Lücken / Risiken:**
+- **PDFs veralten**, wenn eine Übung im Publisher geändert wird, und neue Übungen haben keine PDF (Fallback Druckansicht). Lösung (noch nicht gebaut): beim Veröffentlichen im Publisher die PDF erzeugen und mit hochladen (Chrome-Headless-Lauf analog `build_all_a4.py` pro Übung).
+- **#169 und #175** heißen beide „Turnier: Funinho-Em" und haben denselben `url_slug` (`turnier-funinho-em`): auf der Website überschreibt eine Seite die andere, ebenso das Web-PDF. Vermutlich ist eine ein Duplikat.

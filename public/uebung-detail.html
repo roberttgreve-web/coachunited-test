@@ -848,6 +848,9 @@
     // ersetzt die Zeile unten woertlich, kein Platzhalter-Objekt zur Laufzeit.
     const SHEET_DATA = {};
 
+    // Vorgefertigte Karteikarte dieser Uebung (build-exercise-pages.js setzt die URL, wenn die PDF existiert)
+    const PDF_URL = '';
+
     const TILE_CONFIG = {
       coaching_fokus:  { label: 'Coaching-Fokus',           color: '#E89844' },
       leichter_machen: { label: 'Übung leichter machen',    color: '#16A571' },
@@ -993,6 +996,11 @@
     function printExercise() {
       if (typeof gtag === 'function') {
         gtag('event', 'print_click', { page_path: window.location.pathname });
+      }
+      // Karteikarten-PDF in neuem Tab oeffnen (dort drucken); ohne PDF: Browser-Druckansicht
+      if (PDF_URL) {
+        const tab = window.open(PDF_URL, '_blank');
+        if (tab) return;
       }
       window.print();
     }
