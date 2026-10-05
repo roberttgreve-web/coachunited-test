@@ -1368,3 +1368,63 @@ Analog zu Abschnitt 41 (einzelne Übung), aber für den Einheit-Generator (`einh
 **Umsetzung:** `.ex-card` (eine Karte pro Übung, alle als direkte Geschwister in der einzigen flachen Liste `#session-list.ex-card-list`, Phasen-Header stehen als eigene Geschwister-Elemente dazwischen) bekommt `break-before: page; page-break-before: always;`. `.ex-card:first-of-type` nimmt das für die jeweils erste Karte wieder raus, sonst stünde vor der ersten Übung eine leere Seite. Weil `#session-list` eine einzige flache Liste ist (keine eigene Unterliste je Phase), trifft `:first-of-type` zuverlässig nur die eine, wirklich erste Karte im gesamten Dokument. Bestehendes `.gen-phase-header { break-after: avoid }` sorgt dafür, dass ein Phasen-Header vor der ersten Übung einer neuen Phase mit auf die neue Seite wandert, statt allein am Ende der vorherigen stehen zu bleiben.
 
 Live deployt (Commit `0541bb2`) und wie in Abschnitt 41.2/41.4 etabliert per `curl`-Polling auf einen eindeutig neuen Textschnipsel sowie Stabilität über 30s geprüft, bevor als erledigt gemeldet.
+
+## 43. Übung #240 nicht live: überlappende Deploys, Lösung per leerem Commit (10/2026)
+
+**Symptom:** #239 war live, #240 nicht („Warum ist die Übung nicht live?"). Die Live-`exercises.json` hatte 196 statt 197 Übungen, #240 fehlte, obwohl lokal `veroeffentlicht` und im Repo (`public/exercises.json`, Bild `uebung-240-…webp`) vorhanden.
+
+**Ursache:** Dasselbe Muster wie in 41.2. Der Publisher erzeugt pro Speichern/Bild-Upload mehrere Commits direkt hintereinander (Bild, `exercises.json`, `sitemap.xml`); Vercel deployt jeden einzelnen. Überlappen die Deploys, kann Production auf einem **älteren** Build stehen bleiben, obwohl `main` längst aktuell ist.
+
+**Fix:** Leerer Commit `09181ad` („Redeploy auslösen: Live-Site zeigte 196 statt 197 Übungen (#240 fehlte)"): `git commit --allow-empty`, `git pull --rebase origin main`, `git push`. Danach per `curl` mit Zufalls-Query geprüft (Anzahl Übungen, Existenz von #240, Bild erreichbar) und nach 30 s ein zweites Mal, um Stabilität zu bestätigen. Der Redeploy wurde von Robert ausdrücklich freigegeben („Ja, bitte Redeploy anstoßen"), weil er den Live-Stand beeinflusst.
+
+**Merke (ergänzt 41.2):**
+- Bei „Übung/Änderung ist nicht live": zuerst `https://coachunited.de/exercises.json?x=<random>` gegen die lokale Anzahl veröffentlichter Übungen vergleichen, **nicht** den Browser-Cache vermuten.
+- Prüfen mit etwas, das es erst seit der Änderung gibt (ID, neuer Textschnipsel), nicht mit Selektoren/Strings, die schon vorher existierten (falsch-positiv).
+- Hilft nur Warten nicht: leerer Commit. Laptop kann aus sein, sobald der Push durch ist; Vercel baut serverseitig.
+
+## 44. Entwurf: einseitiges Übungsblatt und Karteikarte als PDF (10/2026)
+
+**Anlass:** Robert wollte sehen, wie eine Übung als CI-konformes, einseitiges PDF aussähe, danach „eher im Format einer Karteikarte". **Nur Entwürfe, nichts im Produkt eingebaut, nichts deployt.**
+
+**Ergebnisse (Beispiel #235):**
+- `Coach-United-Uebungsblatt-235.pdf` (DIN A4): Logo, Titel, Kurzbeschreibung, Skizze, Aufbau/Durchführung, Coaching-Fokus, Leichter/Schwerer, blaue Fußzeile.
+- `Coach-United-Karteikarte-235.pdf` (DIN A5 quer): dieselben Inhalte kompakter, Fußzeile in Blau **ohne QR-Code**, nur der Text „Alle Übungen digital unter www.coachunited.de" (Wunsch von Robert).
+- Skripte liegen jetzt dauerhaft in `coachunited-publisher/scripts/pdf-entwurf/` (`build_pdf.py`, `build_card.py`).
+
+**Technik:** HTML wird erzeugt und mit Chrome headless in PDF gedruckt (`"C:\Program Files\Google\Chrome\Application\chrome.exe" --headless --print-to-pdf=…`), Vorschauen per PyMuPDF (fitz) zu PNG. Node ist lokal **nicht** installiert; Python mit PIL, qrcode, PyMuPDF ist da.
+
+**Stolpersteine, die gelöst wurden:**
+- Logo (transparentes PNG) wurde nach RGB-Konvertierung schwarz → vorher auf weißen Hintergrund komponieren.
+- Boxen wurden von der Fußzeile abgeschnitten → Skizzenhöhe 72 → 52 mm, Fußzeile 26 → 23 mm, Spaltenverhältnis 1,4fr/1fr/1fr.
+
+**Offen:** Entscheidung, ob daraus ein echter Download („Übung als PDF/Karteikarte") werden soll. Dafür bräuchte es Serverseitiges Rendern (Vercel ohne Chrome: z. B. vorab beim Build erzeugen oder Print-CSS nutzen, s. 41).
+
+## 45. Rechtschreib-Check aller Übungen und Umsetzung (05.10.2026)
+
+**Auftrag (Robert, wörtlich):** Bei allen Übungen Spell-Check; **keinerlei inhaltliche Anpassungen**, nur Typos, Rechtschreib- und grammatikalische Unklarheiten; zuerst alles auflisten, dann umsetzen.
+
+**Vorgehen:**
+1. Alle 203 Übungen (alle Status) auf allen Textfeldern geprüft: Titel, Alt-Titel, Kurzbeschreibung, Aufbau, Durchführung, Varianten, Coaching-Fokus, Leichter/Schwerer, SEO-/Grafik-Metadaten, FAQ.
+2. Vier Pässe: Wörterbuch (`pyspellchecker`, `de`) mit Kompositum-Splitter (locker + streng), Muster-Regexe (doppelte Wörter, „in dem"/„indem", fehlende Leerzeichen, Großschreibung, ß/ss), vollständiges Durchlesen jedes Textes, Quellenabgleich.
+3. Jedes Zitat programmatisch gegen die Daten geprüft (exakter Treffer im richtigen Feld der richtigen Übung).
+4. Liste in fünf Gruppen, Robert hat jede einzeln freigegeben bzw. entschieden: **A** klare Fehler öffentlich (278), **B** klare Fehler SEO/Grafik/intern (25), **C** unklare Stellen (nur die öffentlich sichtbaren, einzeln entschieden), **D** optionale Stilfragen (alle übernommen), **E** Hinweise auf mögliche Inhaltsfehler (einzeln entschieden).
+
+**Backup vor der Änderung:** `coachunited-publisher/data/exercises_backup_vor_spellcheck_20261005_114242.json` (identisch mit `exercises.json` vor dem Lauf, 203 Übungen). Rückweg: Datei über `exercises.json` kopieren und `push_exercises_to_github()` ausführen (s. unten).
+
+**Umgesetzt (Commit `402a1f2` „publisher: 199 Übung(en) veröffentlicht" + Sitemap-Commit `9132bac`):** 187 Übungen geändert: 304 Listenkorrekturen, 18 Einzel-Entscheidungen, 7 FAQ-Einträge entfernt, 1 Feld geleert, 297 Leerzeichenbereinigungen. `status`, `url_slug`, `grafik_url`, `seo_keyword`, Jugend, Skills, Phase unverändert (programmatisch geprüft). Live gegen die lokale Version aller 199 veröffentlichten Übungen verglichen: 0 Abweichungen, auch beim zweiten Check.
+
+**Inhaltlich entschiedene Fälle (alle von Robert freigegeben):**
+- Gestrichen: #69 Punkt „Kommunikation in der sichpassenden Mannschaft"; #85 Punkt „Lautweckseln …"; #135 Vermerk „ianten (KI-umgeschrieben)" samt „a)".
+- Umformuliert: #89 „Fangnehmen" → „Annehmen"; #140 „Danach tauschen die Teams die Rollen."; #143 „nächststehende" und „gleichzeitig. Wer …"; #145 Titel „BESCHÜTZE DEIN TOR!"; #167 „den Pass in den Lauf"; #238 „… und aufwärts geeignet."; #11 „in einen Reifen"; #46 FAQ „Anpassen der Schwierigkeit"; #54 „dribbelt in die gegnerische Torzone und schließt dort aufs Tor ab"; #72 „Mit 10 Treffern auf das Minitor erarbeitet es sich die Einwechslung."; #94 hängendes „Torschuss" gestrichen; #227 FAQ von „Sie" auf „du".
+- Entfernt: leere FAQ in #5, doppelte FAQ in #67 und in #207, #221, #231, #233, #235 je die FAQ „Ab welchem Alter…?", deren Antwort nur das SEO-Keyword war; #66 Leichter-Machen („• uss") geleert.
+
+**Bewusst NICHT geändert:**
+- **#61** SEO-Beschreibung „umMussbälle": Wortlaut unbekannt, nicht öffentlich sichtbar → offen.
+- **#43** (Durchführung = Kopie von #42), **#108** (Durchführung = Kopie von #96): Robert korrigiert inhaltliche Kopierfehler selbst im Publisher.
+- Titel werden beim Speichern automatisch großgeschrieben („ß" → „SS" in Versalien ist korrekt). `url_slug` bleibt bei Titelkorrekturen **immer** unverändert (sonst brechen Links/SEO).
+
+**Technik / Merke:**
+- Die Änderung lief **nicht** über 200× `/api/save` (jeder Aufruf pusht `exercises.json` + Sitemap und löst einen Deploy aus = Deploy-Race, s. 41.2/43), sondern: Server aus → `data/exercises.json` per Skript direkt ändern (Format-Roundtrip vorher geprüft: `json.dumps(…, ensure_ascii=False, indent=2)` ist byte-identisch) → **ein** Push über `import app; app.export_exercises_to_excel(); app.push_exercises_to_github()` aus dem Publisher-Ordner (liest `.env.local`, importiert ohne Seiteneffekte). Das ist der Weg für künftige Massenänderungen.
+- Skripte, Befundlisten und Entscheidungsprotokoll: `coachunited-publisher/data/spellcheck_20261005/` (`Rechtschreibung-Liste.md`, `all_findings.json`, `decisions_C.txt`, `decisions_E.txt`, `apply.py`, `apply_log.json`).
+- Nicht veröffentlichte Übungen (4 Stück) wurden ebenfalls lokal korrigiert, gehen aber erst mit ihrer Veröffentlichung live.
+- Beobachtet, nicht geändert: viele Übungen haben „z.B." statt „z. B." (reine Stilfrage), „so dass" statt „sodass" (beides zulässig).
