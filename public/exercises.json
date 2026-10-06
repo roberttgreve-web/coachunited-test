@@ -11700,7 +11700,7 @@
     "erstellt_am": "2026-03-26"
   },
   {
-    "id": 176,
+    "id": 175,
     "titel": "SCHWEINCHEN IN DER MITTE MIT GEGENPRESSING",
     "quell_trainingseinheit": "Ferientraining mit Junior*innen",
     "grafik_url": "https://coachunited.de/images/uebungen/uebung-176-schweinchen-in-der-mitte-mit-gegenpressing.webp",
@@ -11761,18 +11761,18 @@
     "original_coaching_fokus": "",
     "schwester_gruppen": [
       [
-        177
+        176
       ]
     ],
     "schwester_ids": [
-      177
+      176
     ],
-    "schwester_id": 177,
+    "schwester_id": 176,
     "schwester_titel": "ORGANISATION",
     "erstellt_am": "2026-03-26"
   },
   {
-    "id": 177,
+    "id": 176,
     "titel": "GEGENPRESSING: ÜBERZAHL NACH BALLVERLUST",
     "quell_trainingseinheit": "Ferientraining mit Junior*innen",
     "grafik_url": "https://coachunited.de/images/uebungen/uebung-177-gegenpressing-ueberzahl-nach-ballverlust.webp",
@@ -11830,18 +11830,18 @@
     "original_coaching_fokus": "",
     "schwester_gruppen": [
       [
-        176
+        175
       ]
     ],
     "schwester_ids": [
-      176
+      175
     ],
-    "schwester_id": 176,
+    "schwester_id": 175,
     "schwester_titel": "SCHWEINCHEN IN DER MITTE MIT GEGENPRESSING",
     "erstellt_am": "2026-03-26"
   },
   {
-    "id": 178,
+    "id": 177,
     "titel": "VOM EINWURF INS 1 GEGEN 2",
     "quell_trainingseinheit": "Ferientraining mit Junior*innen",
     "grafik_url": "https://coachunited.de/images/uebungen/uebung-178-vom-einwurf-ins-1-gegen-2.webp",
@@ -11905,7 +11905,7 @@
     "erstellt_am": "2026-03-26"
   },
   {
-    "id": 179,
+    "id": 178,
     "titel": "DREI GEWINNT",
     "quell_trainingseinheit": "Die Handlungsschnelligkeit mit Kindern trainieren",
     "grafik_url": "https://coachunited.de/images/uebungen/uebung-179-schnelligkeit-drei-gewinnt.webp",
@@ -11963,18 +11963,18 @@
     "original_coaching_fokus": "",
     "schwester_gruppen": [
       [
-        180
+        179
       ]
     ],
     "schwester_ids": [
-      180
+      179
     ],
-    "schwester_id": 180,
+    "schwester_id": 179,
     "schwester_titel": "Drei gewinnt mit Ball",
     "erstellt_am": "2026-03-26"
   },
   {
-    "id": 180,
+    "id": 179,
     "titel": "DREI GEWINNT - MIT BALL",
     "quell_trainingseinheit": "Kindern interessante Dribbelaufgaben stellen",
     "grafik_url": "https://coachunited.de/images/uebungen/uebung-180-schnelligkeit-drei-gewinnt-mit-ball.webp",
@@ -12034,18 +12034,87 @@
     "original_coaching_fokus": "angspiele verbessern die Schnelligkeit.\nViele Spiele mit Bällen anbieten.\nFängern spannende Zusatzaufgaben stellen.",
     "schwester_gruppen": [
       [
-        179
+        178
       ]
     ],
     "schwester_ids": [
-      179
+      178
     ],
-    "schwester_id": 179,
+    "schwester_id": 178,
     "schwester_titel": "Drei gewinnt",
     "erstellt_am": "2026-03-26"
   },
   {
-    "id": 182,
+    "id": 180,
+    "titel": "7 GEGEN 5 - MIT ZIELPÄSSEN ZUM SIEG",
+    "quell_trainingseinheit": "Der erste Kontakt: In den Ferien an den Details feilen!",
+    "grafik_url": "https://coachunited.de/images/uebungen/uebung-181-passen-zielpass-punkte-7-gegen-5-im-quadrat.webp",
+    "grafik_dateiname": "Mit Zielpässen zum Sieg.png",
+    "trainingsphase": "Hauptteil",
+    "kurzbeschreibung": "Ein Team sammelt im 7 gegen 5 Punkte, indem gezielte Pässe zum Mitspieler in markierte Flächen gespielt werden.",
+    "aufbau": "In einem großen Feld (etwa 35m x 35m) fünf kleine Felder (3x3m) mit Hütchen (falls vorhanden: flache Scheiben) markieren. Zwei Teams einteilen mit je 5 Spielern. Dazu gibt es zwei \"Joker\" mit eigener Leibchenfarbe. Ein Ball.",
+    "durchfuehrung": "Die beiden Joker spielen immer beim Team mit Ballbesitz, um Überzahl zu schaffen. Im 7 gegen 5 ist es die Aufgabe des ballführenden Teams, einen Pass in eines der kleinen Quadrate auf einen Mitspieler zu spielen. Wird der Pass sauber im Quadrat gestoppt, gibt es einen Punkt. Die verteidigende Mannschaft darf die Quadrate nicht betreten. Erobert die verteidigende Mannschaft den Ball, wechseln die Aufgaben. Nun kann dieses Team durch Pässe Punkte erzielen - bis der Ballbesitz wieder wechselt. Welches Team schafft zuerst 8 Punkte?",
+    "varianten": "10 Pässe in Folge ergeben ebenfalls 1 Punkt.\nIn Gleichzahl spielen.\nDie Quadrate durch Dreiecke, Kreise oder Sechsecke ersetzen.",
+    "quell_url": "https://training-service.fussball.de/trainer/d-juniorin/artikel/der-erste-kontakt-in-den-ferien-an-den-details-feilen-3521/",
+    "quell_spiel_nr": 3,
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Raumverhalten",
+      "Kommunikation"
+    ],
+    "coaching_fokus": "• Bewegung ohne Ball ist entscheidend, um Anspielmöglichkeiten im Quadrat zu ermöglichen; • \"Katzenwache\" an den Quadraten ist verboten; • Schnelles gedankliches Wechseln bei den Jokern notwendig",
+    "leichter_machen": "• Teamgröße verkleinern; • Quadrat-Größe auf 4x4m vergrößern",
+    "schwerer_machen": "• Joker herausnehmen. 5 gegen 5 ohne Überzahl.; • Spieler im Quadrat müssen den Ball mit nur einer Ballberührung stoppen.",
+    "alt_titel": "Zielpass-Punkte: 7 gegen 5 im Quadrat",
+    "seo_keyword": "Fußballübung Passen",
+    "url_slug": "passen-zielpass-punkte-7-gegen-5-im-quadrat",
+    "seo_meta_description": "Fußballübung Zielpass für Kinder: 7 gegen 5 Punkte sammeln durch präzise Pässe in markierte Felder. Passen trainieren mit Spaß!",
+    "grafik_alt_text": "Fußballfeld 35x35m mit 5 markierten 3x3m Quadraten, zwei 5er-Teams und zwei Joker im 7 gegen 5 Spielfeld",
+    "grafik_description": "Trainingsfeld zeigt ein 35x35 Meter großes Spielfeld mit fünf markierten 3x3 Meter Quadraten. Zwei Teams mit je 5 Spielern plus zwei Joker sind positioniert. Der Ball befindet sich beim angreifenden Team. Die Grafik verdeutlicht die Überzahlsituation und die Zielzonen für Pässe.",
+    "grafik_title": "Zielpass-Übung 7 gegen 5 Kinder-Fußballtraining",
+    "grafik_caption": "Im 7 gegen 5 sammelt das ballführende Team Punkte durch präzise Pässe in die markierten Quadrate.",
+    "faq": [
+      {
+        "frage": "Wie lange sollte die Übung dauern?",
+        "antwort": "Etwa 10-15 Minuten."
+      },
+      {
+        "frage": "Was ist richtig: Der Pass ins Quadrat oder der Stop des Mitspielers zählt?",
+        "antwort": "Der Pass muss präzise im Quadrat ankommen UND der Mitspieler muss ihn dort sauber stoppen – beides muss stimmen für den Punkt."
+      },
+      {
+        "frage": "Kann ich die Übung für weniger Spieler anpassen?",
+        "antwort": "Ja, reduziere auf 4 gegen 3 (mit 2 Jokern = 6 gegen 3) und verkleinere das Feld auf 25x25m mit 3-4 Quadraten statt 5."
+      }
+    ],
+    "status": "veroeffentlicht",
+    "referenz_grafik_url": "https://training-service.fussball.de/assets/img/csm_259271-2022-04-19_3_921761b54e.jpg",
+    "quell_kategorie": "D-Jugend",
+    "ist_gecrawlt": true,
+    "original_aufbau": "Auf einer Spielfläche von etwa 30 x 30 Metern 5 Quadrate von 3 Metern gemäß Abbildung errichten.\n2 Mannschaften zu je 5 Spielern und 2 Neutralen einteilen.",
+    "original_durchfuehrung": "Team Blau versucht, im Zusammenspiel mit dem Neutralen einen Spieler in einem Quadrat anzuspielen, der aus dem Feld heraus an- und mitnimmt (= 1 Punkt).\nsofortiger Aufgabenwechsel nach Balleroberung von Rot\nWelches Team sammelt zuerst 10 Punkte?",
+    "original_varianten": "10 Pässe in Folge ergeben ebenfalls 1 Punkt.\nIn Gleichzahl spielen.\nDie Quadrate durch Dreiecke, Kreise oder Sechsecke ersetzen.",
+    "original_coaching_fokus": "",
+    "schwester_gruppen": [
+      [
+        181
+      ]
+    ],
+    "schwester_ids": [
+      181
+    ],
+    "schwester_id": 181,
+    "schwester_titel": "BALL ABSCHIRMEN IM VIERECK",
+    "erstellt_am": "2026-03-26"
+  },
+  {
+    "id": 181,
     "titel": "BALL ABSCHIRMEN IM VIERECK",
     "quell_trainingseinheit": "Das letzte Training mit Kindern zelebrieren",
     "grafik_url": "https://coachunited.de/images/uebungen/uebung-182-zweikampf-duell-ums-abschirmen-5er-felder.webp",
@@ -12104,18 +12173,18 @@
     "original_coaching_fokus": "",
     "schwester_gruppen": [
       [
-        181
+        180
       ]
     ],
     "schwester_ids": [
-      181
+      180
     ],
-    "schwester_id": 181,
+    "schwester_id": 180,
     "schwester_titel": "7 GEGEN 5 - MIT ZIELPÄSSEN ZUM SIEG",
     "erstellt_am": "2026-03-26"
   },
   {
-    "id": 183,
+    "id": 182,
     "titel": "LAUFWEG WÄHLEN, BALL ANFORDERN, DREHEN - TOR!",
     "quell_trainingseinheit": "Vom Bolzplatz ins Training: Organisation, Umsetzung und Praxis",
     "grafik_url": "https://coachunited.de/images/uebungen/uebung-183-torschuss-laufweg-waehlen-ball-anfordern-drehen-tor.webp",
@@ -12180,76 +12249,7 @@
     "erstellt_am": "2026-03-26"
   },
   {
-    "id": 181,
-    "titel": "7 GEGEN 5 - MIT ZIELPÄSSEN ZUM SIEG",
-    "quell_trainingseinheit": "Der erste Kontakt: In den Ferien an den Details feilen!",
-    "grafik_url": "https://coachunited.de/images/uebungen/uebung-181-passen-zielpass-punkte-7-gegen-5-im-quadrat.webp",
-    "grafik_dateiname": "Mit Zielpässen zum Sieg.png",
-    "trainingsphase": "Hauptteil",
-    "kurzbeschreibung": "Ein Team sammelt im 7 gegen 5 Punkte, indem gezielte Pässe zum Mitspieler in markierte Flächen gespielt werden.",
-    "aufbau": "In einem großen Feld (etwa 35m x 35m) fünf kleine Felder (3x3m) mit Hütchen (falls vorhanden: flache Scheiben) markieren. Zwei Teams einteilen mit je 5 Spielern. Dazu gibt es zwei \"Joker\" mit eigener Leibchenfarbe. Ein Ball.",
-    "durchfuehrung": "Die beiden Joker spielen immer beim Team mit Ballbesitz, um Überzahl zu schaffen. Im 7 gegen 5 ist es die Aufgabe des ballführenden Teams, einen Pass in eines der kleinen Quadrate auf einen Mitspieler zu spielen. Wird der Pass sauber im Quadrat gestoppt, gibt es einen Punkt. Die verteidigende Mannschaft darf die Quadrate nicht betreten. Erobert die verteidigende Mannschaft den Ball, wechseln die Aufgaben. Nun kann dieses Team durch Pässe Punkte erzielen - bis der Ballbesitz wieder wechselt. Welches Team schafft zuerst 8 Punkte?",
-    "varianten": "10 Pässe in Folge ergeben ebenfalls 1 Punkt.\nIn Gleichzahl spielen.\nDie Quadrate durch Dreiecke, Kreise oder Sechsecke ersetzen.",
-    "quell_url": "https://training-service.fussball.de/trainer/d-juniorin/artikel/der-erste-kontakt-in-den-ferien-an-den-details-feilen-3521/",
-    "quell_spiel_nr": 3,
-    "jugend": [
-      "F-Jugend",
-      "E-Jugend",
-      "D-Jugend"
-    ],
-    "skills": [
-      "Passen",
-      "Ballkontrolle",
-      "Raumverhalten",
-      "Kommunikation"
-    ],
-    "coaching_fokus": "• Bewegung ohne Ball ist entscheidend, um Anspielmöglichkeiten im Quadrat zu ermöglichen; • \"Katzenwache\" an den Quadraten ist verboten; • Schnelles gedankliches Wechseln bei den Jokern notwendig",
-    "leichter_machen": "• Teamgröße verkleinern; • Quadrat-Größe auf 4x4m vergrößern",
-    "schwerer_machen": "• Joker herausnehmen. 5 gegen 5 ohne Überzahl.; • Spieler im Quadrat müssen den Ball mit nur einer Ballberührung stoppen.",
-    "alt_titel": "Zielpass-Punkte: 7 gegen 5 im Quadrat",
-    "seo_keyword": "Fußballübung Passen",
-    "url_slug": "passen-zielpass-punkte-7-gegen-5-im-quadrat",
-    "seo_meta_description": "Fußballübung Zielpass für Kinder: 7 gegen 5 Punkte sammeln durch präzise Pässe in markierte Felder. Passen trainieren mit Spaß!",
-    "grafik_alt_text": "Fußballfeld 35x35m mit 5 markierten 3x3m Quadraten, zwei 5er-Teams und zwei Joker im 7 gegen 5 Spielfeld",
-    "grafik_description": "Trainingsfeld zeigt ein 35x35 Meter großes Spielfeld mit fünf markierten 3x3 Meter Quadraten. Zwei Teams mit je 5 Spielern plus zwei Joker sind positioniert. Der Ball befindet sich beim angreifenden Team. Die Grafik verdeutlicht die Überzahlsituation und die Zielzonen für Pässe.",
-    "grafik_title": "Zielpass-Übung 7 gegen 5 Kinder-Fußballtraining",
-    "grafik_caption": "Im 7 gegen 5 sammelt das ballführende Team Punkte durch präzise Pässe in die markierten Quadrate.",
-    "faq": [
-      {
-        "frage": "Wie lange sollte die Übung dauern?",
-        "antwort": "Etwa 10-15 Minuten."
-      },
-      {
-        "frage": "Was ist richtig: Der Pass ins Quadrat oder der Stop des Mitspielers zählt?",
-        "antwort": "Der Pass muss präzise im Quadrat ankommen UND der Mitspieler muss ihn dort sauber stoppen – beides muss stimmen für den Punkt."
-      },
-      {
-        "frage": "Kann ich die Übung für weniger Spieler anpassen?",
-        "antwort": "Ja, reduziere auf 4 gegen 3 (mit 2 Jokern = 6 gegen 3) und verkleinere das Feld auf 25x25m mit 3-4 Quadraten statt 5."
-      }
-    ],
-    "status": "veroeffentlicht",
-    "referenz_grafik_url": "https://training-service.fussball.de/assets/img/csm_259271-2022-04-19_3_921761b54e.jpg",
-    "quell_kategorie": "D-Jugend",
-    "ist_gecrawlt": true,
-    "original_aufbau": "Auf einer Spielfläche von etwa 30 x 30 Metern 5 Quadrate von 3 Metern gemäß Abbildung errichten.\n2 Mannschaften zu je 5 Spielern und 2 Neutralen einteilen.",
-    "original_durchfuehrung": "Team Blau versucht, im Zusammenspiel mit dem Neutralen einen Spieler in einem Quadrat anzuspielen, der aus dem Feld heraus an- und mitnimmt (= 1 Punkt).\nsofortiger Aufgabenwechsel nach Balleroberung von Rot\nWelches Team sammelt zuerst 10 Punkte?",
-    "original_varianten": "10 Pässe in Folge ergeben ebenfalls 1 Punkt.\nIn Gleichzahl spielen.\nDie Quadrate durch Dreiecke, Kreise oder Sechsecke ersetzen.",
-    "original_coaching_fokus": "",
-    "schwester_gruppen": [
-      [
-        182
-      ]
-    ],
-    "schwester_ids": [
-      182
-    ],
-    "schwester_id": 182,
-    "schwester_titel": "BALL ABSCHIRMEN IM VIERECK",
-    "erstellt_am": "2026-03-26"
-  },
-  {
-    "id": 207,
+    "id": 183,
     "titel": "RAUMBREITE DURCH ZIELSPIELER SCHAFFEN",
     "quell_trainingseinheit": "Der erste Kontakt: In den Ferien an den Details feilen!",
     "grafik_url": "https://coachunited.de/images/uebungen/uebung-207-passen-kopfzone-kombinationen.webp",
@@ -12307,7 +12307,7 @@
     "erstellt_am": "2026-08-31"
   },
   {
-    "id": 216,
+    "id": 184,
     "titel": "HOHEN PASS VERARBEITEN UND AUFS MINITOR TREFFEN",
     "quell_trainingseinheit": "",
     "grafik_url": "https://coachunited.de/images/uebungen/uebung-216-hohen-pass-verarbeiten-und-aufs-minitor-treffen.webp",
@@ -12368,7 +12368,7 @@
     "erstellt_am": "2026-09-02"
   },
   {
-    "id": 217,
+    "id": 185,
     "titel": "TORSCHUSS NACH DOPPELPASS",
     "quell_trainingseinheit": "Spaß im Saisonendspurt: Motivierende Schusswettbewerbe für Kinder",
     "grafik_url": "https://coachunited.de/images/uebungen/uebung-217-torschuss-nach-doppelpass.webp",
@@ -12419,7 +12419,7 @@
     "referenz_grafik_url": "https://training-service.fussball.de/assets/img/csm_260636-2022-05-17_schuss2_fe0d6dc511.jpg",
     "quell_kategorie": "D-Jugend",
     "ist_gecrawlt": true,
-    "schwester_id": 219,
+    "schwester_id": 186,
     "schwester_titel": "",
     "original_aufbau": "12 Meter vor einem Tor mit Torwart seitlich versetzt zweimal ein Hütchendreieck aufbauen.\nWeitere 12 Meter dahinter 4 Startpositionen gemäß Abbildung errichten und die Spieler gleichmäßig verteilen.\nDie Positionen A und B gemäß Abbildung verändern.\nAlle Spieler an Position A haben einen Ball.",
     "original_durchfuehrung": "dribbelt an und passt zu B.\nB löst sich von seinem Hütchen und lässt direkt zu A klatschen.\nA nimmt mit dem 1. Kontakt zum Tor mit und schließt mit dem 2. Kontakt ab.",
@@ -12427,16 +12427,16 @@
     "original_coaching_fokus": "",
     "schwester_gruppen": [
       [
-        219
+        186
       ]
     ],
     "schwester_ids": [
-      219
+      186
     ],
     "erstellt_am": "2026-09-04"
   },
   {
-    "id": 219,
+    "id": 186,
     "titel": "TORSCHUSS MIT PASSFOLGE VORBEREITEN",
     "quell_trainingseinheit": "",
     "grafik_url": "https://coachunited.de/images/uebungen/uebung-219-torschuss-mit-passfolge-vorbereiten.webp",
@@ -12475,7 +12475,7 @@
     "ist_gecrawlt": false,
     "schwester_gruppen": [
       [
-        217
+        185
       ]
     ],
     "original_aufbau": "",
@@ -12483,14 +12483,14 @@
     "original_varianten": "",
     "original_coaching_fokus": "",
     "schwester_ids": [
-      217
+      185
     ],
-    "schwester_id": 217,
+    "schwester_id": 185,
     "schwester_titel": "TORSCHUSS NACH DOPPELPASS",
     "erstellt_am": "2026-09-04"
   },
   {
-    "id": 220,
+    "id": 187,
     "titel": "TORWARTTRAINING: BLITZDREHUNG NACH DEM TUNNEL",
     "quell_trainingseinheit": "",
     "grafik_url": "https://coachunited.de/images/uebungen/uebung-220-torwarttraining-blitzdrehung-nach-dem-tunnel.webp",
@@ -12544,7 +12544,7 @@
     "erstellt_am": "2026-09-04"
   },
   {
-    "id": 221,
+    "id": 188,
     "titel": "NEUE RÄUME ERLAUFEN UND AUF STANGENTORE TREFFEN",
     "quell_trainingseinheit": "Kindern interessante Dribbelaufgaben stellen",
     "grafik_url": "https://coachunited.de/images/uebungen/uebung-221-neue-raeume-erlaufen-und-auf-stangentore-treffen.webp",
@@ -12591,7 +12591,7 @@
     "referenz_grafik_url": "https://training-service.fussball.de/assets/img/csm_268102-523-bam-sp5-01_65e4efda7e.png",
     "quell_kategorie": "G-Jugend",
     "ist_gecrawlt": true,
-    "schwester_id": 224,
+    "schwester_id": 189,
     "schwester_titel": "",
     "original_aufbau": "Den Aufbau beibehalten, die Bälle entfernen.",
     "original_durchfuehrung": "Die Fotografen entwickeln ihre Fotos und drucken ein Fotobuch über ihre Reise.\nSpiel 4 gegen 4.\nDie Teams greifen auf 2 Stangentore an und verteidigen die anderen beiden Stangentore.\nDas Feld in der Mitte darf nicht bespielt werden.",
@@ -12599,16 +12599,16 @@
     "original_coaching_fokus": "Für freie Fußballspiele viel Spielzeit einplanen.\nKleine Fußballspiele sorgen für viele Erfolgserlebnisse.\nAlle Kinder sind am Spiel beteiligt.",
     "schwester_gruppen": [
       [
-        224
+        189
       ]
     ],
     "schwester_ids": [
-      224
+      189
     ],
     "erstellt_am": "2026-09-08"
   },
   {
-    "id": 224,
+    "id": 189,
     "titel": "DEN WÄCHTER ÜBERWINDEN UND AUF STANGENTORE TREFFEN",
     "quell_trainingseinheit": "",
     "grafik_url": "https://coachunited.de/images/uebungen/uebung-224-grafik.webp",
@@ -12661,7 +12661,7 @@
     "ist_gecrawlt": false,
     "schwester_gruppen": [
       [
-        221
+        188
       ]
     ],
     "original_aufbau": "",
@@ -12669,14 +12669,14 @@
     "original_varianten": "",
     "original_coaching_fokus": "",
     "schwester_ids": [
-      221
+      188
     ],
-    "schwester_id": 221,
+    "schwester_id": 188,
     "schwester_titel": "NEUE RÄUME ERLAUFEN UND AUF STANGENTORE TREFFEN",
     "erstellt_am": "2026-09-08"
   },
   {
-    "id": 225,
+    "id": 190,
     "titel": "3 GEGEN 2-ÜBERZAHLTURNIER",
     "quell_trainingseinheit": "Das letzte Training mit Kindern zelebrieren",
     "grafik_url": "https://coachunited.de/images/uebungen/uebung-225-3-gegen-2-ueberzahlturnier.webp",
@@ -12741,7 +12741,7 @@
     "erstellt_am": "2026-09-13"
   },
   {
-    "id": 231,
+    "id": 191,
     "titel": "BALLKONTROLLE AUCH IN STRESSSITUATIONEN",
     "quell_trainingseinheit": "Der erste Kontakt: In den Ferien an den Details feilen!",
     "grafik_url": "https://coachunited.de/images/uebungen/uebung-231-ballkontrolle-auch-in-stresssituationren.webp",
@@ -12790,7 +12790,7 @@
     "referenz_grafik_url": "https://training-service.fussball.de/assets/img/csm_259269-2022-04-19_1_16229c23d9.jpg",
     "quell_kategorie": "D-Jugend",
     "ist_gecrawlt": true,
-    "schwester_id": 233,
+    "schwester_id": 192,
     "schwester_titel": "IN STRESSSITUATIONEN ENGE RÄUME BESPIELEN",
     "original_aufbau": "Zwei 15 x 15 Meter große Felder nebeneinander errichten.\n2 Gruppen à 6 Spieler einteilen.\nJede Gruppe besetzt ein Feld.\nDer Trainer steht mit ausreichend Bällen mittig zwischen den Feldern.",
     "original_durchfuehrung": "Der Trainer spielt zunächst jeweils einen Ball in beide Felder ein.\nDie Gruppen haben die Aufgabe, ihn mit 2 Kontakten immer in Bewegung zu halten.\nEr darf zu keiner Zeit stoppen.\nNach und nach spielt der Trainer immer mehr Bälle ein.\nWelche Gruppe schafft es, dass keiner das Feld verlässt bzw. darin liegen bleibt?",
@@ -12798,16 +12798,16 @@
     "original_coaching_fokus": "",
     "schwester_gruppen": [
       [
-        233
+        192
       ]
     ],
     "schwester_ids": [
-      233
+      192
     ],
     "erstellt_am": "2026-09-16"
   },
   {
-    "id": 233,
+    "id": 192,
     "titel": "IN STRESSSITUATIONEN ENGE RÄUME BESPIELEN",
     "quell_trainingseinheit": "",
     "grafik_url": "https://coachunited.de/images/uebungen/uebung-233-in-stresssituationen-enge-raeume-bespielen.webp",
@@ -12857,7 +12857,7 @@
     "ist_gecrawlt": false,
     "schwester_gruppen": [
       [
-        231
+        191
       ]
     ],
     "original_aufbau": "",
@@ -12865,14 +12865,14 @@
     "original_varianten": "",
     "original_coaching_fokus": "",
     "schwester_ids": [
-      231
+      191
     ],
-    "schwester_id": 231,
+    "schwester_id": 191,
     "schwester_titel": "BALLKONTROLLE AUCH IN STRESSSITUATIONEN",
     "erstellt_am": "2026-09-16"
   },
   {
-    "id": 235,
+    "id": 193,
     "titel": "SICH MIT DEM GEGNER IM RÜCKEN DURCHSETZEN",
     "quell_trainingseinheit": "Die Ferienzeit sinnvoll nutzen",
     "grafik_url": "https://coachunited.de/images/uebungen/uebung-235-sich-mit-dem-gegner-im-ruecken-durchsetzen.webp",
@@ -12921,7 +12921,7 @@
     "referenz_grafik_url": "https://training-service.fussball.de/assets/img/csm_258632-2022-04-08_1gg1_b5e63c1839.jpg",
     "quell_kategorie": "D-Jugend",
     "ist_gecrawlt": true,
-    "schwester_id": 237,
+    "schwester_id": 194,
     "schwester_titel": "MIT DEM GEGENER IM RÜCKEN DEN MITSPIELER EINSETZEN",
     "original_aufbau": "Für 6 Spieler ein 20 x 10 Meter großes Feld mit 4 Minitoren errichten.\n2 Gruppen Blau und Rot bilden und an den beiden Starthütchen postieren.\nVon jeder Gruppe befindet sich 1 Spieler im Feld.\nDie Spieler Blau zwischen den Minitoren haben je 1 Ball.",
     "original_durchfuehrung": "Der erste Spieler Blau passt zu seinem Mitspieler ins Feld.\nDieser versucht, sich im 1 gegen 1 mit Gegner im Rücken zu behaupten und auf eines der Minitore in seinem Rücken abzuschließen.\nErobert der Verteidiger den Ball, kontert er auf die Minitore gegenüber. Anschließend erfolgt ein Aufgaben- und Positionswechsel.\nEinen Team-Wettbewerb durchführen: Welcher Mannschaft gelingen mehr Treffer?\nCOACHINGPUNKTE ANGREIFER\nDen Ball abschirmen: Körper zwischen Verteidiger und Ball.\nRhythmuswechsel weg vom Gegner\nBei engem Kontakt mit dem Verteidiger um ihn \"herumwickeln\".\nCOACHINGPUNKTE VERTEIDIGER\nEine Armlänge Abstand halten. Dabei einen niedrigen Körperschwerpunkt wählen.\nSobald der Gegner versucht, über eine Seite aufzudrehen, zupacken.",
@@ -12929,16 +12929,16 @@
     "original_coaching_fokus": "",
     "schwester_gruppen": [
       [
-        237
+        194
       ]
     ],
     "schwester_ids": [
-      237
+      194
     ],
     "erstellt_am": "2026-09-18"
   },
   {
-    "id": 237,
+    "id": 194,
     "titel": "MIT DEM GEGNER IM RÜCKEN DEN MITSPIELER EINSETZEN",
     "quell_trainingseinheit": "",
     "grafik_url": "https://coachunited.de/images/uebungen/uebung-237-mit-dem-gegner-im-ruecken-den-mitspieler-einsetzen.webp",
@@ -12985,7 +12985,7 @@
     "ist_gecrawlt": false,
     "schwester_gruppen": [
       [
-        235
+        193
       ]
     ],
     "original_aufbau": "",
@@ -12993,14 +12993,14 @@
     "original_varianten": "",
     "original_coaching_fokus": "",
     "schwester_ids": [
-      235
+      193
     ],
-    "schwester_id": 235,
+    "schwester_id": 193,
     "schwester_titel": "SICH MIT DEM GEGNER IM RÜCKEN DURCHSETZEN",
     "erstellt_am": "2026-09-18"
   },
   {
-    "id": 238,
+    "id": 195,
     "titel": "3 JÄGER GEGEN DEN DRIBBELKÖNIG",
     "quell_trainingseinheit": "Die Ferienzeit sinnvoll nutzen",
     "grafik_url": "https://coachunited.de/images/uebungen/uebung-238-3-jaeger-gegen-den-dribbelkoenig.webp",
@@ -13054,7 +13054,7 @@
     "referenz_grafik_url": "https://training-service.fussball.de/assets/img/csm_258635-2022-04-08_1gg3_4dc2e36028.jpg",
     "quell_kategorie": "D-Jugend",
     "ist_gecrawlt": true,
-    "schwester_id": 243,
+    "schwester_id": 199,
     "schwester_titel": "ZWEI ANGREIFER GEGEN DREI DEFENSIV-JÄGER",
     "original_aufbau": "Ein 25 x 20 Meter großes Spielfeld mit 4 Minitoren und 6 Meter tiefen Torschusszonen markieren.\nMittig 3 Bälle ablegen.\nDie Verteidiger postieren sich gemäß Abbildung auf den Feldlinien.\nDie Angreifer stellen sich hinter einer Seitenlinie auf.",
     "original_durchfuehrung": "uf ein Kommando läuft ein Angreifer in das Feld, nimmt einen der Bälle mit, versucht im 1 gegen 3 in eine der Torschusszonen zu dribbeln und dort einen Treffer an einem beliebigen Tor zu erzielen.\nDie Verteidiger dürfen erst starten, wenn der Angreifer am Ball ist.\nSobald der Ball im Aus ist oder ein Treffer erzielt wurde, stellen sich die Verteidiger wieder auf und der nächste Angreifer startet.\nAufgabenwechsel nach 6 Angriffen: Welches Team trifft häufiger?\nCOACHINGPUNKT\nMit dem ersten Ballkontakt das Tempo erhöhen und zielstrebig auf ein Tor abschließen.",
@@ -13062,16 +13062,16 @@
     "original_coaching_fokus": "",
     "schwester_gruppen": [
       [
-        243
+        199
       ]
     ],
     "schwester_ids": [
-      243
+      199
     ],
     "erstellt_am": "2026-10-04"
   },
   {
-    "id": 239,
+    "id": 196,
     "titel": "ZUM FARBHÜTCHEN SPRINTEN UND BALL PARIEREN",
     "quell_trainingseinheit": "",
     "grafik_url": "https://coachunited.de/images/uebungen/uebung-239-zum-farbhuetchen-sprinten-und-ball-parieren.webp",
@@ -13126,7 +13126,7 @@
     "erstellt_am": "2026-10-02"
   },
   {
-    "id": 240,
+    "id": 197,
     "titel": "BLITZSCHNELL DREHEN UND SCHUSS PARIEREN",
     "quell_trainingseinheit": "",
     "grafik_url": "https://coachunited.de/images/uebungen/uebung-240-blitzschnell-drehen-und-schuss-parieren.webp",
@@ -13181,7 +13181,7 @@
     "erstellt_am": "2026-10-02"
   },
   {
-    "id": 242,
+    "id": 198,
     "titel": "VIER SCHNELLE PÄSSE: ANNEHMEN, REAGIEREN, ABSCHLIESSEN",
     "quell_trainingseinheit": "Die Ferienzeit sinnvoll nutzen",
     "grafik_url": "https://coachunited.de/images/uebungen/uebung-242-vier-schnelle-paesse-annehmen-reagieren-abschliessen.webp",
@@ -13233,7 +13233,7 @@
     "referenz_grafik_url": "https://training-service.fussball.de/assets/img/csm_258636-2022-04-08_kreis_7fa56804b2.jpg",
     "quell_kategorie": "D-Jugend",
     "ist_gecrawlt": true,
-    "schwester_id": 245,
+    "schwester_id": 200,
     "schwester_titel": "VIER PÄSSE - DRIBBELN ODER SCHIESSEN?",
     "original_aufbau": "Auf jeder \"Seite\" des Mittelkreises ein Minitor aufstellen.\nDie Tore mit verschiedenfarbigen Hütchen markieren.\nA im Zentrum des Feldes, B, C, D und E mit mehreren Bällen jeweils rechts neben den Minitoren postieren.",
     "original_durchfuehrung": "Der Trainer ruft ein Kind auf (hier: B).\nSofort spielt B zu A und ruft ihm während des Passes eine Farbe (hier: „Rot!“) zu.\nA nimmt an und mit und schließt in das aufgerufene Minitor ab.\nNach jeder Aktion postiert sich A wieder schnellstmöglich in der Feldmitte und der nächste Durchgang startet usw.\nDen Spieler in der Mitte regelmäßig tauschen.",
@@ -13241,16 +13241,16 @@
     "original_coaching_fokus": "",
     "schwester_gruppen": [
       [
-        245
+        200
       ]
     ],
     "schwester_ids": [
-      245
+      200
     ],
     "erstellt_am": "2026-10-06"
   },
   {
-    "id": 243,
+    "id": 199,
     "titel": "ZWEI ANGREIFER GEGEN DREI DEFENSIV-JÄGER",
     "quell_trainingseinheit": "",
     "grafik_url": "https://coachunited.de/images/uebungen/uebung-243-zwei-angreifer-gegen-drei-defensiv-jaeger.webp",
@@ -13301,7 +13301,7 @@
     "ist_gecrawlt": false,
     "schwester_gruppen": [
       [
-        238
+        195
       ]
     ],
     "original_aufbau": "",
@@ -13309,14 +13309,14 @@
     "original_varianten": "",
     "original_coaching_fokus": "",
     "schwester_ids": [
-      238
+      195
     ],
-    "schwester_id": 238,
+    "schwester_id": 195,
     "schwester_titel": "3 JÄGER GEGEN DEN DRIBBELKÖNIG",
     "erstellt_am": "2026-10-04"
   },
   {
-    "id": 245,
+    "id": 200,
     "titel": "VIER PÄSSE - DRIBBELN ODER SCHIESSEN?",
     "quell_trainingseinheit": "",
     "grafik_url": "https://coachunited.de/images/uebungen/uebung-245-vier-paesse-dribbeln-oder-schiessen.webp",
@@ -13365,7 +13365,7 @@
     "ist_gecrawlt": false,
     "schwester_gruppen": [
       [
-        242
+        198
       ]
     ],
     "original_aufbau": "",
@@ -13373,9 +13373,9 @@
     "original_varianten": "",
     "original_coaching_fokus": "",
     "schwester_ids": [
-      242
+      198
     ],
-    "schwester_id": 242,
+    "schwester_id": 198,
     "schwester_titel": "VIER SCHNELLE PÄSSE: ANNEHMEN, REAGIEREN, ABSCHLIESSEN",
     "erstellt_am": "2026-10-06"
   }
