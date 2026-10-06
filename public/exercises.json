@@ -13181,6 +13181,69 @@
     "erstellt_am": "2026-10-02"
   },
   {
+    "id": 242,
+    "titel": "VIER SCHNELLE PÄSSE: ANNEHMEN, REAGIEREN, ABSCHLIESSEN",
+    "quell_trainingseinheit": "Die Ferienzeit sinnvoll nutzen",
+    "grafik_url": "https://coachunited.de/images/uebungen/uebung-242-vier-schnelle-paesse-annehmen-reagieren-abschliessen.webp",
+    "grafik_dateiname": "Vier schnelle Pässe_annehmen, reagieren, schießen.png",
+    "trainingsphase": "Aufwärmen",
+    "kurzbeschreibung": "Ein Passempfänger in der Mitte des Feldes bekommt den Pass sowie ein Farbkommando eines Mitspielers. Er nimmt den Pass an und schießt ihn in das entsprechend farblich markierte Tor. ",
+    "aufbau": "Baue mehrere Felder mit etwa 8x14m auf. An jeder Grundlinie ein Minitor, das mit einem farblichen Hütchen (oder einem Leibchen) farblich markiert ist. An jeder Ecke eines Feldes steht ein Kind mit Ball. Ein fünftes Kind steht ohne Ball in der Mitte des Feldes. ",
+    "durchfuehrung": "Der erste Außenspieler passt dem Passempfänger in der Mitte den Ball zu und ruft dabei eine der zwei Farben. Der passempfänger nimmt den Ball an und schießt den Ball auf das entsprechende Tor. Sobald er geschossen hat, folgt der zweite Pass (im Uhrzeigersinn). Sobald alle vier Bälle gespielt sind, wechselt das nächste Kind in die Mitte. So lange, bis alle mindestens zwei bis drei Mal in der Mitte waren.",
+    "varianten": "en Hütchenfarben andere Bedeutungen geben (z. B. Grün ist Rot).\nDen Fuß für die Ballannahme und den Torabschluss vorgeben.",
+    "quell_url": "https://training-service.fussball.de/trainer/d-juniorin/artikel/die-ferienzeit-sinnvoll-nutzen-3518/",
+    "quell_spiel_nr": 3,
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Torschuss",
+      "Koordination",
+      "Kommunikation"
+    ],
+    "coaching_fokus": "• Hohes Tempo bei den Pässen. Kind in der Mitte darf nicht rumstehen.; • Flache, präzise Pässe.; • Möglichst schnelle Ballverarbeitung in der Mitte.",
+    "leichter_machen": "• Nur ein Tor. Ohne Farbkommando.; • Feld verkleinern.",
+    "schwerer_machen": "• Nur zwei Ballberührungen erlaubt in der Mitte",
+    "alt_titel": "",
+    "seo_keyword": "Fußballtraining Torschuss",
+    "url_slug": "vier-schnelle-paesse-annehmen-reagieren-abschliessen",
+    "seo_meta_description": "Fußballübung Farbsignale Torschuss: Verbessere Reaktion, Ballkontrolle und Abschlussgenauigkeit. Perfekt für G- bis D-Jugend.",
+    "grafik_alt_text": "Trainingsaufbau mit Spieler A in Feldmitte, vier Passgebern B-E neben farbigen Minitor-Hütchen rechts",
+    "grafik_description": "Die Grafik zeigt den Aufbau der Farbsignal-Torschuss-Übung: Ein Spieler (A) steht zentral im Feld, vier weitere Spieler (B, C, D, E) positionieren sich neben farbig gekennzeichneten Minitor-Hütchen. Der Trainer leitet die Aktion durch Spielernamen und Farbkommandos.",
+    "grafik_title": "Farbsignale Torschuss Trainingsaufbau",
+    "grafik_caption": "Aufbau der Farbsignal-Übung: Spieler A reagiert auf Farbkommandos der vier Passgeber.",
+    "faq": [
+      {
+        "frage": "Wie lange sollte eine Spieler A in der Mitte bleiben?",
+        "antwort": "Bis alle vier Bälle gespielt sind. "
+      },
+      {
+        "frage": "Welche Mindestspielerzahl brauchte ich?",
+        "antwort": "5 Spieler pro Feld. Entsprechend der Gruppengröße viele Felder aufbauen. Statt Minitore können auch Hütchentore genutzt werden."
+      },
+      {
+        "frage": "Passt die Übung auch für G-Jugend?",
+        "antwort": "Ja, sie ist besonders für Jüngere konzipiert. "
+      }
+    ],
+    "status": "veroeffentlicht",
+    "referenz_grafik_url": "https://training-service.fussball.de/assets/img/csm_258636-2022-04-08_kreis_7fa56804b2.jpg",
+    "quell_kategorie": "D-Jugend",
+    "ist_gecrawlt": true,
+    "schwester_id": null,
+    "schwester_titel": null,
+    "original_aufbau": "Auf jeder \"Seite\" des Mittelkreises ein Minitor aufstellen.\nDie Tore mit verschiedenfarbigen Hütchen markieren.\nA im Zentrum des Feldes, B, C, D und E mit mehreren Bällen jeweils rechts neben den Minitoren postieren.",
+    "original_durchfuehrung": "Der Trainer ruft ein Kind auf (hier: B).\nSofort spielt B zu A und ruft ihm während des Passes eine Farbe (hier: „Rot!“) zu.\nA nimmt an und mit und schließt in das aufgerufene Minitor ab.\nNach jeder Aktion postiert sich A wieder schnellstmöglich in der Feldmitte und der nächste Durchgang startet usw.\nDen Spieler in der Mitte regelmäßig tauschen.",
+    "original_varianten": "en Hütchenfarben andere Bedeutungen geben (z. B. Grün ist Rot).\nDen Fuß für die Ballannahme und den Torabschluss vorgeben.",
+    "original_coaching_fokus": "",
+    "schwester_gruppen": [],
+    "schwester_ids": [],
+    "erstellt_am": "2026-10-06"
+  },
+  {
     "id": 243,
     "titel": "ZWEI ANGREIFER GEGEN DREI DEFENSIV-JÄGER",
     "quell_trainingseinheit": "",
