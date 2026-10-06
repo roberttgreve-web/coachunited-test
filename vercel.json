@@ -4,6 +4,21 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/uebung/Torschuss-Laufweg-wählen-Ball-anfordern-drehen-Tor",
+      "destination": "/uebung/torschuss-laufweg-waehlen-ball-anfordern-drehen-tor",
+      "permanent": true
+    },
+    {
+      "source": "/uebung/Torschuss-Laufweg-w%C3%A4hlen-Ball-anfordern-drehen-Tor",
+      "destination": "/uebung/torschuss-laufweg-waehlen-ball-anfordern-drehen-tor",
+      "permanent": true
+    },
+    {
+      "source": "/uebung/rundlauf_dribbeln_zielen_schiessen_sprinten",
+      "destination": "/uebung/rundlauf-dribbeln-zielen-schiessen-sprinten",
+      "permanent": true
+    },
+    {
       "source": "/erst-diagonal-passen-und-schiesen-dann-uberzahl-uben",
       "destination": "/einheiten",
       "permanent": true
