@@ -1466,3 +1466,13 @@ Robert hat die Durchführung von #43 („Paralleler Torschuss“, die bisher ein
 **Lokale PDFs neu gebaut:** Die Publisher-Automatik aktualisiert nur die Web-PDFs auf der Seite. Die lokalen Einzel-PDFs und die Sammel-PDF in `…\Trainingsinhalte\ÜbungsPDF` muss man nach inhaltlichen Änderungen neu bauen (`scratchpad`-Skript → jetzt `coachunited-publisher/scripts/pdf-entwurf/build_all_a4.py`, mit `REWRITE=1`, danach ggf. `make_web_pdfs.py` nur wenn die Web-PDFs ersetzt werden sollen – im Normalfall nicht nötig). Nach dem Bearbeiten von #43 waren sie veraltet (Sammel-PDF Seite 134 und `PARALLELER TORSCHUSS.pdf` hatten noch den alten Text), jetzt neu erzeugt (201 Seiten).
 
 **Hinweis:** Ein Slug enthält Umlaute/Großbuchstaben (`Torschuss-Laufweg-wählen-Ball-anfordern-drehen-Tor`, Altbestand). PDF-Abruf funktioniert (Browser kodieren, im Einheit-Generator `encodeURIComponent`), in eigenen Skripten die URL mit `urllib.parse.quote` bauen.
+
+### 46.3 Slugs bereinigt (06.10.2026)
+
+Zwei Altbestands-Slugs entsprachen nicht dem Muster `[a-z0-9-]` (alle anderen sind sauber ASCII mit Bindestrichen, Umlaute als ae/oe/ue, ß als ss):
+- **#183:** `Torschuss-Laufweg-wählen-Ball-anfordern-drehen-Tor` → `torschuss-laufweg-waehlen-ball-anfordern-drehen-tor`
+- **#172:** `rundlauf_dribbeln_zielen_schiessen_sprinten` → `rundlauf-dribbeln-zielen-schiessen-sprinten` (Unterstriche trennen Wörter für Google nicht)
+
+**Umsetzung:** Publisher stoppen, Backup `data/exercises_backup_vor_slugfix_*.json`, `url_slug` in `exercises.json` ändern, `data/pdf_hashes.json`: die beiden IDs raus (der Slug ist **nicht** Teil von `pdf_hash`, ohne das würde die PDF unter dem neuen Namen nicht erzeugt), `push_exercises_to_github()` (erzeugt/lädt die PDFs unter den neuen Slugs, Sitemap folgt). Danach in `coachunited-next`: **permanente Weiterleitungen** in `vercel.json` (alt → neu; für #183 sowohl mit Umlaut als auch prozent-kodiert `w%C3%A4hlen`) und die zwei alten PDFs per `git rm` entfernt (Commit `a21eb3a`). Die Bilddateien blieben unverändert (`grafik_url` zeigt auf `uebung-183-torschuss-laufweg-waehlen-…webp` bzw. `uebung-172-rundlauf_dribbeln_…webp`; Dateinamen sind für Besucher unsichtbar, ein Umbenennen brächte nur Risiko).
+
+**Live geprüft:** neue Seiten und PDFs 200; alte URLs antworten mit `308` (Vercel nennt `permanent: true` 308 statt 301, für Google gleichwertig) auf die neuen; Seite setzt die richtige `PDF_URL` und den neuen Canonical; Sitemap enthält nur die neuen Slugs. **Merke:** Wird ein Slug später geändert, immer (1) Redirect alt → neu in `vercel.json`, (2) `pdf_hashes.json`-Eintrag der Übung löschen, (3) die alte PDF entfernen. Die Redirects müssen dauerhaft bleiben (Google/Links).
