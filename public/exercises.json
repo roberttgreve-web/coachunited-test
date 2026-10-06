@@ -13322,8 +13322,8 @@
     "grafik_url": "https://coachunited.de/images/uebungen/uebung-245-vier-paesse-dribbeln-oder-schiessen.webp",
     "grafik_dateiname": "Vier schnelle Pässe_dribbeln oder schießen.png",
     "trainingsphase": "Aufwärmen",
-    "kurzbeschreibung": "Ein Passempfänger in der Mitte des Feldes bekommt den Pass sowie ein Farbkommando eines Mitspielers. Er nimmt den Pass an und schießt ihn in das entsprechend farblich markierte Tor oder dribbelt durch ein Hütchentor. ",
-    "aufbau": "Baue mehrere Felder mit etwa 8x14m auf. An jeder Grundlinie ein Minitor, das mit einem farblichen Hütchen (oder einem Leibchen) farblich markiert ist. An jeder Seitenlinie bitte Hütchentore aufbauen und wie in der Abbildung farblich markieren. An jeder Ecke eines Feldes steht ein Kind mit Ball. Ein fünftes Kind steht ohne Ball in der Mitte des Feldes. ",
+    "kurzbeschreibung": "Ein Passempfänger in der Mitte des Feldes bekommt den Pass sowie ein Farbkommando eines Mitspielers. Er nimmt den Pass an und schießt ihn in das entsprechend farblich markierte Tor oder dribbelt durch ein Hütchentor.",
+    "aufbau": "Baue mehrere Felder mit etwa 8x14m auf. An jeder Grundlinie ein Minitor, das mit einem farblichen Hütchen (oder einem Leibchen) farblich markiert ist. An jeder Seitenlinie bitte Hütchentore aufbauen und wie in der Abbildung farblich markieren. An jeder Ecke eines Feldes steht ein Kind mit Ball. Ein fünftes Kind steht ohne Ball in der Mitte des Feldes.",
     "durchfuehrung": "Der erste Außenspieler passt dem Passempfänger in der Mitte den Ball zu und ruft dabei eine der vier Farben. Der Passempfänger nimmt den Ball an und schießt - je nach Farbe - den Ball auf das entsprechende Tor oder dribbelt durch ein Hütchentor. Sobald er geschossen bzw. gedribbelt hat, folgt der zweite Pass (im Uhrzeigersinn). Sobald alle vier Bälle gespielt sind, wechselt das nächste Kind in die Mitte. So lange, bis alle mindestens zwei bis drei Mal in der Mitte waren.",
     "varianten": "",
     "quell_url": "",
@@ -13338,9 +13338,9 @@
       "Koordination",
       "Schnelligkeit"
     ],
-    "coaching_fokus": "",
-    "leichter_machen": "",
-    "schwerer_machen": "",
+    "coaching_fokus": "• Hohes Tempo bei den Pässen. Kind in der Mitte darf nicht rumstehen; • Flache, präzise Pässe; • Möglichst schnelle Ballverarbeitung in der Mitte.",
+    "leichter_machen": "• Nur ein Tor. Ohne Farbkommando; • Feld verkleinern.",
+    "schwerer_machen": "• Nur zwei Ballberührungen erlaubt in der Mitte",
     "alt_titel": "",
     "seo_keyword": "Fußballübung Passen",
     "url_slug": "vier-paesse-dribbeln-oder-schiessen",
@@ -13349,7 +13349,16 @@
     "grafik_description": "Die Grafik zeigt den Aufbau der Fußballübung mit markierten Feldern, farblich gekennzeichneten Minitoren und Hütchentoren an den Positionen. Vier Außenspieler passen dem zentralen Spieler den Ball zu.",
     "grafik_title": "Vier Pässe Dribbeln Schießen Fußballtraining",
     "grafik_caption": "Aufbau der Fußballübung: Vier Pässe mit Farbbefehlen zum Dribbeln oder Schießen.",
-    "faq": [],
+    "faq": [
+      {
+        "frage": "Wie lange sollte ein Kind in der Mitte bleiben?",
+        "antwort": "Bis alle vier Bälle gespielt sind."
+      },
+      {
+        "frage": "Welche Mindestspielerzahl brauche ich?",
+        "antwort": "5 Spieler pro Feld. Entsprechend der Gruppengröße viele Felder aufbauen. Statt Minitore können auch Hütchentore genutzt werden."
+      }
+    ],
     "status": "veroeffentlicht",
     "referenz_grafik_url": "",
     "quell_kategorie": "",
