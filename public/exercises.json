@@ -13233,14 +13233,20 @@
     "referenz_grafik_url": "https://training-service.fussball.de/assets/img/csm_258636-2022-04-08_kreis_7fa56804b2.jpg",
     "quell_kategorie": "D-Jugend",
     "ist_gecrawlt": true,
-    "schwester_id": null,
-    "schwester_titel": null,
+    "schwester_id": 245,
+    "schwester_titel": "VIER PÄSSE - DRIBBELN ODER SCHIESSEN?",
     "original_aufbau": "Auf jeder \"Seite\" des Mittelkreises ein Minitor aufstellen.\nDie Tore mit verschiedenfarbigen Hütchen markieren.\nA im Zentrum des Feldes, B, C, D und E mit mehreren Bällen jeweils rechts neben den Minitoren postieren.",
     "original_durchfuehrung": "Der Trainer ruft ein Kind auf (hier: B).\nSofort spielt B zu A und ruft ihm während des Passes eine Farbe (hier: „Rot!“) zu.\nA nimmt an und mit und schließt in das aufgerufene Minitor ab.\nNach jeder Aktion postiert sich A wieder schnellstmöglich in der Feldmitte und der nächste Durchgang startet usw.\nDen Spieler in der Mitte regelmäßig tauschen.",
     "original_varianten": "en Hütchenfarben andere Bedeutungen geben (z. B. Grün ist Rot).\nDen Fuß für die Ballannahme und den Torabschluss vorgeben.",
     "original_coaching_fokus": "",
-    "schwester_gruppen": [],
-    "schwester_ids": [],
+    "schwester_gruppen": [
+      [
+        245
+      ]
+    ],
+    "schwester_ids": [
+      245
+    ],
     "erstellt_am": "2026-10-06"
   },
   {
@@ -13308,5 +13314,60 @@
     "schwester_id": 238,
     "schwester_titel": "3 JÄGER GEGEN DEN DRIBBELKÖNIG",
     "erstellt_am": "2026-10-04"
+  },
+  {
+    "id": 245,
+    "titel": "VIER PÄSSE - DRIBBELN ODER SCHIESSEN?",
+    "quell_trainingseinheit": "",
+    "grafik_url": "https://coachunited.de/images/uebungen/uebung-245-vier-paesse-dribbeln-oder-schiessen.webp",
+    "grafik_dateiname": "Vier schnelle Pässe_dribbeln oder schießen.png",
+    "trainingsphase": "Aufwärmen",
+    "kurzbeschreibung": "Ein Passempfänger in der Mitte des Feldes bekommt den Pass sowie ein Farbkommando eines Mitspielers. Er nimmt den Pass an und schießt ihn in das entsprechend farblich markierte Tor oder dribbelt durch ein Hütchentor. ",
+    "aufbau": "Baue mehrere Felder mit etwa 8x14m auf. An jeder Grundlinie ein Minitor, das mit einem farblichen Hütchen (oder einem Leibchen) farblich markiert ist. An jeder Seitenlinie bitte Hütchentore aufbauen und wie in der Abbildung farblich markieren. An jeder Ecke eines Feldes steht ein Kind mit Ball. Ein fünftes Kind steht ohne Ball in der Mitte des Feldes. ",
+    "durchfuehrung": "Der erste Außenspieler passt dem Passempfänger in der Mitte den Ball zu und ruft dabei eine der vier Farben. Der Passempfänger nimmt den Ball an und schießt - je nach Farbe - den Ball auf das entsprechende Tor oder dribbelt durch ein Hütchentor. Sobald er geschossen bzw. gedribbelt hat, folgt der zweite Pass (im Uhrzeigersinn). Sobald alle vier Bälle gespielt sind, wechselt das nächste Kind in die Mitte. So lange, bis alle mindestens zwei bis drei Mal in der Mitte waren.",
+    "varianten": "",
+    "quell_url": "",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Dribbeln",
+      "Torschuss",
+      "Koordination",
+      "Schnelligkeit"
+    ],
+    "coaching_fokus": "",
+    "leichter_machen": "",
+    "schwerer_machen": "",
+    "alt_titel": "",
+    "seo_keyword": "Fußballübung Passen",
+    "url_slug": "vier-paesse-dribbeln-oder-schiessen",
+    "seo_meta_description": "Fußballübung für Kinder: Vier Pässe mit Dribbeln oder Schießen trainiert. Reaktion, Ballkontrolle und Torschuss perfekt für 6-12 Jahre.",
+    "grafik_alt_text": "Fußballfeld mit vier Kindern in den Ecken, einem Kind in der Mitte, Minitoren an den Grundlinien und Hütchentoren an den Seitenlinien.",
+    "grafik_description": "Die Grafik zeigt den Aufbau der Fußballübung mit markierten Feldern, farblich gekennzeichneten Minitoren und Hütchentoren an den Positionen. Vier Außenspieler passen dem zentralen Spieler den Ball zu.",
+    "grafik_title": "Vier Pässe Dribbeln Schießen Fußballtraining",
+    "grafik_caption": "Aufbau der Fußballübung: Vier Pässe mit Farbbefehlen zum Dribbeln oder Schießen.",
+    "faq": [],
+    "status": "veroeffentlicht",
+    "referenz_grafik_url": "",
+    "quell_kategorie": "",
+    "ist_gecrawlt": false,
+    "schwester_gruppen": [
+      [
+        242
+      ]
+    ],
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "schwester_ids": [
+      242
+    ],
+    "schwester_id": 242,
+    "schwester_titel": "VIER SCHNELLE PÄSSE: ANNEHMEN, REAGIEREN, ABSCHLIESSEN",
+    "erstellt_am": "2026-10-06"
   }
 ]
