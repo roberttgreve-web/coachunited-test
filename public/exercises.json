@@ -13420,7 +13420,7 @@
       },
       {
         "frage": "Wie lange lässt man die Übung laufen?",
-        "antwort": "Bis drei Spieler übrig sind mit Ball. "
+        "antwort": "Bis drei Spieler übrig sind mit Ball."
       }
     ],
     "status": "veroeffentlicht",
@@ -13476,7 +13476,16 @@
     "grafik_description": "Diese Fußballübung zeigt Kinder beim Dribbeltraining in einem großen Kreis mit vier Minitoren an den Seiten. Ein Jäger in der Mitte versucht, den Kindern ihre Bälle abzunehmen, während diese dribbeln und die gegenüberliegenden Tore treffen.",
     "grafik_title": "Fußballübung Dribbeltraining mit Jägern Kindertraining",
     "grafik_caption": "Kinder dribbeln in einem Kreis und versuchen, ihre Bälle in die gegenüberliegenden Tore zu bringen, während ein Jäger sie störtfort.",
-    "faq": [],
+    "faq": [
+      {
+        "frage": "Ist es nur für die ganz jungen Jahrgänge?",
+        "antwort": "Die Übung macht eigentlich allen Spaß. Probiert's aus!"
+      },
+      {
+        "frage": "Wie lange lässt man die Übung laufen?",
+        "antwort": "Bis drei Spieler übrig sind mit Ball."
+      }
+    ],
     "status": "veroeffentlicht",
     "referenz_grafik_url": "",
     "quell_kategorie": "",
