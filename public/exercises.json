@@ -12335,7 +12335,7 @@
     "seo_keyword": "",
     "url_slug": "hohen-pass-verarbeiten-und-aufs-minitor-treffen",
     "seo_meta_description": "",
-    "grafik_alt_text": "Zwei Minitore in der Mitte, links und rechts je zwei Gruppen von Kindern hinter Hütchen, Pfeile zeigen hohen Pass und Abschluss.",
+    "grafik_alt_text": "Zwei Minitore in der Mitte, links und rechts je zwei Gruppen von Kindern hinter Hütchen, Pfeile zeigen Pass und Abschluss.",
     "grafik_description": "Die Grafik zeigt zwei Minitore in der Mitte, auf beiden Seiten stehen zwei Gruppen von Kindern hinter Hütchen. Ein Spieler spielt den Ball im hohen Bogen über das Minitor, sein Mitspieler auf der Gegenseite nimmt ihn an und schießt aufs Minitor. Pfeile markieren Pass und Abschluss.",
     "grafik_title": "Hohen Pass verarbeiten und aufs Minitor treffen",
     "grafik_caption": "Ein hoher Pass über das Minitor, Ballannahme auf der Gegenseite und Abschluss aufs Minitor.",
@@ -13380,7 +13380,7 @@
     "erstellt_am": "2026-10-06"
   },
   {
-    "id": 205,
+    "id": 201,
     "titel": "BRING DEN BALL IN SICHERHEIT",
     "quell_trainingseinheit": "",
     "grafik_url": "https://coachunited.de/images/uebungen/uebung-205-bring-den-ball-in-sicherheit.webp",
@@ -13420,7 +13420,7 @@
     "ist_gecrawlt": false,
     "schwester_gruppen": [
       [
-        206
+        202
       ]
     ],
     "original_aufbau": "",
@@ -13428,14 +13428,14 @@
     "original_varianten": "",
     "original_coaching_fokus": "",
     "schwester_ids": [
-      206
+      202
     ],
-    "schwester_id": 206,
+    "schwester_id": 202,
     "schwester_titel": "WEICHE DEN JÄGERN AUS, BRING DEN BALL IN SICHERHEIT",
     "erstellt_am": "2026-10-10"
   },
   {
-    "id": 206,
+    "id": 202,
     "titel": "WEICHE DEN JÄGERN AUS, BRING DEN BALL IN SICHERHEIT",
     "quell_trainingseinheit": "",
     "grafik_url": "https://coachunited.de/images/uebungen/uebung-206-weiche-den-jaegern-aus-bring-den-ball-in-sicherheit.webp",
@@ -13483,7 +13483,7 @@
     "ist_gecrawlt": false,
     "schwester_gruppen": [
       [
-        205
+        201
       ]
     ],
     "original_aufbau": "",
@@ -13491,9 +13491,9 @@
     "original_varianten": "",
     "original_coaching_fokus": "",
     "schwester_ids": [
-      205
+      201
     ],
-    "schwester_id": 205,
+    "schwester_id": 201,
     "schwester_titel": "BRING DEN BALL IN SICHERHEIT",
     "erstellt_am": "2026-10-10"
   }
