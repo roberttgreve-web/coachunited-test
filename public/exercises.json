@@ -13751,15 +13751,85 @@
     "referenz_grafik_url": "https://training-service.fussball.de/assets/img/csm_278953-535-f-au1-01_9b566fddab.png",
     "quell_kategorie": "F-Jugend",
     "ist_gecrawlt": true,
-    "schwester_id": null,
-    "schwester_titel": null,
+    "schwester_id": 207,
+    "schwester_titel": "BÄLLE KLAUEN UND INS ZIEL LUPFEN",
     "original_aufbau": "4 umgedrehte Kleinkästen in der Halle verteilen.\nIn jeden Kleinkasten 3 Bälle legen.\n4 Mannschaften einteilen.\nJedes Team an einem Kleinkasten aufstellen.",
     "original_durchfuehrung": "Auf ein Trainerkommando versuchen die Spieler, möglichst viele Bälle aus anderen Kleinkästen zu holen und im eigenen Kleinkasten zu sammeln.\nJeder Spieler darf immer nur 1 Ball transportieren.\nWelche Mannschaft hat nach einer Minute die meisten Bälle gesammelt?",
     "original_varianten": "Die Bälle mit den Händen prellen/rollen.\nMit rechts/links dribbeln.\nDie Bälle mit der Fußsohle führen.\nDie Spieler können sich in den eigenen Reihen zupassen.\nDie Spieler versuchen, den eigenen Kleinkasten zu leeren und möglichst viele Bälle in andere Kleinkästen zu legen. Welche Mannschaft hat nach einer Minute die wenigsten Bälle im Kasten?",
     "original_coaching_fokus": "Das Spiel schult die Orientierung der Spieler, da diese immer alle Kleinkästen und die anderen Mannschaften beobachten müssen.\nEs zählen nur die Bälle, die nach einer Minute im Kleinkasten gesammelt sind. Neben dem Kasten liegende Bälle werden nicht gewertet.\nDie Kleinkästen dürfen nicht bewacht werden. Spieler mit Ball dürfen nicht behindert oder aufgehalten werden.",
-    "schwester_gruppen": [],
-    "schwester_ids": [],
+    "schwester_gruppen": [
+      [
+        207
+      ]
+    ],
+    "schwester_ids": [
+      207
+    ],
     "ort": "Halle",
+    "erstellt_am": "2026-10-15"
+  },
+  {
+    "id": 207,
+    "titel": "BÄLLE KLAUEN UND INS ZIEL LUPFEN",
+    "quell_trainingseinheit": "",
+    "grafik_url": "https://coachunited.de/images/uebungen/uebung-207-baelle-klauen-und-ins-ziel-lupfen.webp",
+    "grafik_dateiname": "Top-Down Handball Drill Diagram.png",
+    "trainingsphase": "Aufwärmen",
+    "ort": "Halle",
+    "kurzbeschreibung": "Vier Teams kämpfen darum, per Lupfer ihren eigenen Kasten mit Bällen zu füllen und fremde Kästen zu leeren. ",
+    "aufbau": "Verteile vier umgedrehte Kleinkästen gleichmäßig in der Halle. Platziere je drei bis fünf Bälle (je nach Größe der Kästen) in jedem Kasten. Bilde vier Mannschaften und positioniere jedes Team an seinem Kleinkasten.",
+    "durchfuehrung": "Nach dem Startsignal rennen die Spieler zu den gegnerischen Kleinkästen. Sie nehmen die Bälle mit der Hand heraus und legen sie auf den Boden. Von dort dribbeln sie zu ihrem eigenen Kasten. Um den Ball im eigenen Kasten unterzubringen, müssen sie ihn eroflgreich in den Kasten lupfen. Sie versuchen es so lange, bis es klappt. Danach klauen sie den nächsten Ball. Nach sechzig Sekunden stoppt das Spiel – die Mannschaft mit den meisten Bällen im eigenen Kasten gewinnt.",
+    "varianten": "",
+    "quell_url": "",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend",
+      "E-Jugend"
+    ],
+    "skills": [
+      "Koordination",
+      "Schnelligkeit",
+      "Kommunikation"
+    ],
+    "coaching_fokus": "• Augen oben halten beim Laufen und Dribbeln.; • Gute Distanz zum Lupfen finden (ausprobieren!)",
+    "leichter_machen": "• Ball darf aus einer gewissen Distanz geworfen werden statt gelupft",
+    "schwerer_machen": "• Verschiedene Dribbeltechniken (mit der Sohle ziehen, rückwärts etc.)",
+    "alt_titel": "",
+    "seo_keyword": "",
+    "url_slug": "baelle-klauen-und-ins-ziel-lupfen",
+    "seo_meta_description": "",
+    "grafik_alt_text": "*G- bis E-Jugend*\n\nGuten Morgen!\n\nHier eine lustige Übung, bei der eure Jungs und Mädels richtig um jeden Ball kämpfen werden:\n\nVier Teams kämpfen darum, per Lupfer ihren eigenen Kasten mit Bällen zu füllen und fremde Kästen zu leeren.\n\nhttps://coachunited.de/uebung/baelle-klauen-und-ins-ziel-lupfen\n\nViel Spaß beim Ausprobieren und viele Grüße\n\nRob",
+    "grafik_description": "",
+    "grafik_title": "",
+    "grafik_caption": "",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler pro Team sind ideal?",
+        "antwort": "3-4 Spieler pro Team funktionieren am besten."
+      },
+      {
+        "frage": "Für welche Altersstufe ist diese Übung am besten geeignet?",
+        "antwort": "Daran haben eigentlich alle Spaß. "
+      }
+    ],
+    "status": "veroeffentlicht",
+    "referenz_grafik_url": "",
+    "quell_kategorie": "",
+    "ist_gecrawlt": false,
+    "schwester_gruppen": [
+      [
+        204
+      ]
+    ],
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "schwester_ids": [
+      204
+    ],
+    "schwester_id": 204,
+    "schwester_titel": "BÄLLE KLAUEN",
     "erstellt_am": "2026-10-15"
   }
 ]
