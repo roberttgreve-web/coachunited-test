@@ -1009,6 +1009,8 @@
     fetch('/exercises.json')
       .then(r => r.json())
       .then(data => {
+        // Hallenübungen vorerst nicht im Generator (erst ab 15-20 Hallenübungen getrennt anbieten)
+        data = data.filter(e => e.ort !== 'Halle');
         allExercises = data;
 
         // Kriterien-Bar mit Skills befüllen
