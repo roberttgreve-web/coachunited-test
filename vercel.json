@@ -1056,6 +1056,18 @@
       "destination": "/phase/spielformat.html"
     },
     {
+      "source": "/uebungen/ort",
+      "destination": "/uebungen-nach-ort.html"
+    },
+    {
+      "source": "/uebungen/ort/feld",
+      "destination": "/ort/feld.html"
+    },
+    {
+      "source": "/uebungen/ort/halle",
+      "destination": "/ort/halle.html"
+    },
+    {
       "source": "/merkliste",
       "destination": "/merkliste.html"
     }

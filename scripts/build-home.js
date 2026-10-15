@@ -122,7 +122,7 @@ function baueSkillIndex(exercises) {
 // `id` zeigt die Karte nicht an, die Seite sortiert aber danach (neueste
 // zuerst). Ohne das Feld waere die Reihenfolge stillschweigend die der
 // Datei – ein Fehler, den man nicht sieht.
-const KARTEN_FELDER = ['id', 'titel', 'url_slug', 'kurzbeschreibung', 'jugend', 'skills', 'trainingsphase'];
+const KARTEN_FELDER = ['id', 'titel', 'url_slug', 'kurzbeschreibung', 'jugend', 'skills', 'trainingsphase', 'ort'];
 
 function baueUebungsIndex(exercises) {
   return exercises.map(e => {
@@ -183,12 +183,15 @@ function main() {
   const uebungenKacheln = neuesteUebungen.map(e => {
     const jugendTags = (e.jugend || []).map(j => `<span class="hs-tag hs-tag--jugend">${esc(j)}</span>`).join('');
     const skillTags  = (e.skills || []).slice(0, 3).map(s => `<span class="hs-tag hs-tag--skill">${esc(s)}</span>`).join('');
+    // Ort-Tag oben auf der Karte (Publisher-Feld `ort`; fehlt es, gilt Feld)
+    const ort = e.ort === 'Halle' ? 'Halle' : 'Feld';
     const datumText = ISO_DATE.test(e.erstellt_am || '')
       ? `Veröffentlicht am ${new Date(e.erstellt_am + 'T00:00:00').toLocaleDateString('de-DE', { day: 'numeric', month: 'long', year: 'numeric' })}`
       : '';
     return `
             <a class="hs-tile" href="/uebung/${esc(e.url_slug)}">
               <div class="hs-tile-media">
+                <span class="hs-tile-ort hs-tile-ort--${ort === 'Halle' ? 'halle' : 'feld'}">${ort === 'Halle' ? 'Halle (im Aufbau)' : 'Feld'}</span>
                 <img src="${esc(resolveUebungGrafik(e))}" alt="" width="480" height="320" loading="lazy" decoding="async">
               </div>
               <div class="hs-tile-body">

@@ -491,7 +491,22 @@
       transform: translateY(-2px);
       box-shadow: 0 10px 26px rgba(0,0,0,0.18);
     }
-    .hs-tile-media { padding: 14px 14px 0; }
+    .hs-tile-media { padding: 14px 14px 0; position: relative; }
+    .hs-tile-ort {
+      position: absolute;
+      top: 22px;
+      left: 22px;
+      z-index: 1;
+      font-size: 10.5px;
+      font-weight: 800;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: 999px;
+      box-shadow: 0 1px 4px rgba(14,20,48,0.12);
+    }
+    .hs-tile-ort--feld  { background: #E6F4EC; color: #0E6A45; }
+    .hs-tile-ort--halle { background: #0E1430; color: #fff; }
     .hs-tile img {
       width: 100%;
       height: auto;
@@ -1058,6 +1073,7 @@
       <a href="/uebungen/alter" class="drawer-link">&#220;bungen nach Alter</a>
       <a href="/uebungen/skill" class="drawer-link">&#220;bungen nach Skill</a>
       <a href="/uebungen/phase" class="drawer-link">&#220;bungen nach Phase</a>
+      <a href="/uebungen/ort" class="drawer-link">&#220;bungen nach Ort</a>
       <div class="drawer-divider"></div>
       <a href="/uebung-einreichen" class="drawer-link">&#220;bung einreichen</a>
       <a href="/ueber-uns" class="drawer-link">&#220;ber uns</a>

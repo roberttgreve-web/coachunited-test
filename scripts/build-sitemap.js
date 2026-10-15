@@ -40,6 +40,10 @@ const STATIC_PAGES = [
   { loc: '/uebungen/phase/aufwaermen',     changefreq: 'weekly',  priority: '0.7' },
   { loc: '/uebungen/phase/hauptteil',      changefreq: 'weekly',  priority: '0.7' },
   { loc: '/uebungen/phase/spielformat',    changefreq: 'weekly',  priority: '0.7' },
+  { loc: '/uebungen/ort',                  changefreq: 'weekly',  priority: '0.8' },
+  { loc: '/uebungen/ort/feld',             changefreq: 'weekly',  priority: '0.7' },
+  // /uebungen/ort/halle wird unten nur aufgenommen, wenn es mindestens eine veroeffentlichte Hallenuebung gibt
+  // (die Seite ist bis dahin noindex, s. build-landing-pages.js)
   { loc: '/uebungen/skill',                changefreq: 'weekly',  priority: '0.8' },
   { loc: '/uebungen/skill/ballkontrolle',  changefreq: 'weekly',  priority: '0.7' },
   { loc: '/uebungen/skill/dribbeln',       changefreq: 'weekly',  priority: '0.7' },
@@ -68,8 +72,10 @@ function main() {
   // Artikel/Wissen sind seit 01.09.2026 bewusst nicht mehr in der Sitemap
   // (s. o.) - Daten bleiben in articles.json, nur nicht mehr hier gelistet.
 
+  const hatHalle = exercises.some(e => e.ort === 'Halle');
   const entries = [
     ...STATIC_PAGES,
+    ...(hatHalle ? [{ loc: '/uebungen/ort/halle', changefreq: 'weekly', priority: '0.7' }] : []),
     ...exercises.map(e => ({
       loc: `/uebung/${e.url_slug}`,
       changefreq: 'monthly',

@@ -220,6 +220,7 @@ $SUB_TEMPLATE = @'
     <a href="/uebungen/alter" class="drawer-link">&#220;bungen nach Alter</a>
     <a href="/uebungen/skill" class="drawer-link">&#220;bungen nach Skill</a>
     <a href="/uebungen/phase" class="drawer-link">&#220;bungen nach Phase</a>
+    <a href="/uebungen/ort" class="drawer-link">&#220;bungen nach Ort</a>
     <div class="drawer-divider"></div>
     <a href="/wissen" class="drawer-link">Wissen</a>
     <a href="/ueber-uns" class="drawer-link">&#220;ber uns</a>
@@ -445,6 +446,7 @@ __HUB_CARDS__
     <a href="/uebungen/alter" class="drawer-link">&#220;bungen nach Alter</a>
     <a href="/uebungen/skill" class="drawer-link">&#220;bungen nach Skill</a>
     <a href="/uebungen/phase" class="drawer-link">&#220;bungen nach Phase</a>
+    <a href="/uebungen/ort" class="drawer-link">&#220;bungen nach Ort</a>
     <div class="drawer-divider"></div>
     <a href="/wissen" class="drawer-link">Wissen</a>
     <a href="/ueber-uns" class="drawer-link">&#220;ber uns</a>

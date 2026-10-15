@@ -84,6 +84,11 @@ function istDesktopBreite() {
             <a href="/uebungen/phase/hauptteil" class="desktop-topnav-sublink">Hauptteil</a>
             <a href="/uebungen/phase/spielformat" class="desktop-topnav-sublink">Spielformat</a>
           </div>
+          <div class="desktop-topnav-megacol">
+            <a href="/uebungen/ort" class="desktop-topnav-subheading">Nach Ort</a>
+            <a href="/uebungen/ort/feld" class="desktop-topnav-sublink">Feld</a>
+            <a href="/uebungen/ort/halle" class="desktop-topnav-sublink">Halle (im Aufbau)</a>
+          </div>
         </div>
       </div>
       <a href="/einheiten"     class="desktop-topnav-link ${isActive('/einheiten')}">Einheit erhalten</a>

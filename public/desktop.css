@@ -294,7 +294,7 @@
     border-radius: 10px;
     padding: 12px;
     box-shadow: 0 8px 24px rgba(0,0,0,0.10);
-    min-width: 560px;
+    min-width: 700px;
     z-index: 200;
     flex-direction: row;
     gap: 8px;

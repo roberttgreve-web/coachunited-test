@@ -26,6 +26,7 @@ const publicDir      = path.join(__dirname, '..', 'public');
 const LANDING_PAGES = [
   ...['g-jugend', 'f-jugend', 'e-jugend', 'd-jugend'].map(s => `alter/${s}.html`),
   ...['aufwaermen', 'hauptteil', 'spielformat'].map(s => `phase/${s}.html`),
+  ...['feld', 'halle'].map(s => `ort/${s}.html`),
   ...[
     'ballkontrolle', 'dribbeln', 'einwuerfe', 'flanken', 'kommunikation',
     'koordination', 'passen', 'raumverhalten', 'schnelligkeit', 'taktik',
@@ -52,7 +53,7 @@ function ersetzeBlock(html, name, inhalt, datei) {
   return html.slice(0, i + start.length) + inhalt + html.slice(j);
 }
 
-const KARTEN_FELDER = ['id', 'titel', 'url_slug', 'kurzbeschreibung', 'jugend', 'skills', 'trainingsphase'];
+const KARTEN_FELDER = ['id', 'titel', 'url_slug', 'kurzbeschreibung', 'jugend', 'skills', 'trainingsphase', 'ort'];
 
 function schlank(ex) {
   const out = {};
@@ -142,9 +143,13 @@ function main() {
     if (filterKey === 'jugend') gefiltert = sortiert.filter(e => (e.jugend || []).includes(filterValue));
     else if (filterKey === 'phase') gefiltert = sortiert.filter(e => e.trainingsphase === filterValue);
     else if (filterKey === 'skill') gefiltert = sortiert.filter(e => (e.skills || []).includes(filterValue));
+    else if (filterKey === 'ort') gefiltert = sortiert.filter(e => (e.ort || 'Feld') === filterValue);
     else throw new Error(`Unbekannter FILTER_KEY '${filterKey}' in ${rel}`);
 
-    const karten = gefiltert.map(ex => renderUebungenTile(ex)).join('');
+    // Leere Seite (z. B. Halle, solange es noch keine Hallenuebungen gibt): freundlicher Hinweis statt leerer Flaeche
+    const karten = gefiltert.length
+      ? gefiltert.map(ex => renderUebungenTile(ex)).join('')
+      : '<div class="empty-state">Hier entstehen gerade neue \u00dcbungen \u2013 schau bald wieder vorbei.</div>';
     const anzahlText = `${gefiltert.length} Übung${gefiltert.length !== 1 ? 'en' : ''}`;
     const skills = [...new Set(gefiltert.flatMap(e => e.skills || []))].sort();
     const skillDropdown = skills.map(s =>
@@ -157,6 +162,10 @@ function main() {
     html = ersetzeBlock(html, 'karten', karten, rel);
     html = ersetzeBlock(html, 'anzahl', anzahlText, rel);
     html = ersetzeBlock(html, 'skill-dropdown', skillDropdown, rel);
+    // Seiten mit Marker <!--cu:robots--> (ort/halle.html) sind solange noindex, wie sie leer sind
+    if (html.includes('<!--cu:robots-->')) {
+      html = ersetzeBlock(html, 'robots', gefiltert.length ? '' : '<meta name="robots" content="noindex">', rel);
+    }
 
     // ⚠️ HTML-Kommentar-Marker (<!--cu:…-->) funktionieren NICHT innerhalb
     // eines <script>-Blocks: "<!--" ist gültige, legacy JS-Syntax für einen
