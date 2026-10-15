@@ -191,7 +191,7 @@ function main() {
     return `
             <a class="hs-tile" href="/uebung/${esc(e.url_slug)}">
               <div class="hs-tile-media">
-                <span class="hs-tile-ort hs-tile-ort--${ort === 'Halle' ? 'halle' : 'feld'}">${ort === 'Halle' ? 'Halle (im Aufbau)' : 'Feld'}</span>
+                <span class="hs-tile-ort hs-tile-ort--${ort === 'Halle' ? 'halle' : 'feld'}">${ort}</span>
                 <img src="${esc(resolveUebungGrafik(e))}" alt="" width="480" height="320" loading="lazy" decoding="async">
               </div>
               <div class="hs-tile-body">
