@@ -65,7 +65,8 @@
         2
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 2,
@@ -132,7 +133,8 @@
         1
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 3,
@@ -201,7 +203,8 @@
         4
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 4,
@@ -271,7 +274,8 @@
         3
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 5,
@@ -337,7 +341,8 @@
         3
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 6,
@@ -405,7 +410,8 @@
         7
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 7,
@@ -473,7 +479,8 @@
         6
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 8,
@@ -540,7 +547,8 @@
         9
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 9,
@@ -607,7 +615,8 @@
         8
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 10,
@@ -670,7 +679,8 @@
     "schwester_id": null,
     "schwester_titel": null,
     "schwester_gruppen": [],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 11,
@@ -731,7 +741,8 @@
     "schwester_id": null,
     "schwester_titel": "REIFEN SUCHEN",
     "schwester_gruppen": [],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 12,
@@ -792,7 +803,8 @@
     "ist_gecrawlt": false,
     "quell_kategorie": "",
     "schwester_gruppen": [],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 13,
@@ -863,7 +875,8 @@
         87
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 14,
@@ -923,7 +936,8 @@
     "schwester_id": null,
     "schwester_titel": null,
     "schwester_gruppen": [],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 15,
@@ -987,7 +1001,8 @@
     "schwester_id": null,
     "schwester_titel": null,
     "schwester_gruppen": [],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 16,
@@ -1056,7 +1071,8 @@
         17
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 17,
@@ -1125,7 +1141,8 @@
         16
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 18,
@@ -1186,7 +1203,8 @@
     "schwester_id": null,
     "schwester_titel": null,
     "schwester_gruppen": [],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 19,
@@ -1247,7 +1265,8 @@
     "schwester_id": null,
     "schwester_titel": null,
     "schwester_gruppen": [],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 20,
@@ -1310,7 +1329,8 @@
     "schwester_id": null,
     "schwester_titel": null,
     "schwester_gruppen": [],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 21,
@@ -1373,7 +1393,8 @@
     "schwester_id": null,
     "schwester_titel": "SLALOM, FLANKENLAUF UND PASS INS 1 GEGEN 1",
     "schwester_gruppen": [],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 22,
@@ -1436,7 +1457,8 @@
     "ist_gecrawlt": false,
     "quell_kategorie": "",
     "schwester_gruppen": [],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 23,
@@ -1500,7 +1522,8 @@
     "schwester_id": null,
     "schwester_titel": null,
     "schwester_gruppen": [],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 24,
@@ -1567,7 +1590,8 @@
         25
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 25,
@@ -1635,7 +1659,8 @@
         24
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 26,
@@ -1702,7 +1727,8 @@
         27
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 27,
@@ -1771,7 +1797,8 @@
         26
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 28,
@@ -1831,7 +1858,8 @@
     "schwester_id": null,
     "schwester_titel": null,
     "schwester_gruppen": [],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 29,
@@ -1900,7 +1928,8 @@
         30
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 30,
@@ -1968,7 +1997,8 @@
         29
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 31,
@@ -2037,7 +2067,8 @@
         33
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 32,
@@ -2107,7 +2138,8 @@
         33
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 33,
@@ -2177,7 +2209,8 @@
         32
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 34,
@@ -2244,7 +2277,8 @@
         35
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 35,
@@ -2313,7 +2347,8 @@
         34
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 36,
@@ -2381,7 +2416,8 @@
         37
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 37,
@@ -2450,7 +2486,8 @@
         36
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 38,
@@ -2519,7 +2556,8 @@
         39
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 39,
@@ -2588,7 +2626,8 @@
         38
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 40,
@@ -2651,7 +2690,8 @@
     "schwester_id": null,
     "schwester_titel": null,
     "schwester_gruppen": [],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 41,
@@ -2719,7 +2759,8 @@
         42
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 42,
@@ -2788,7 +2829,8 @@
         41
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 43,
@@ -2859,7 +2901,8 @@
         45
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 44,
@@ -2930,7 +2973,8 @@
         45
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 45,
@@ -3000,7 +3044,8 @@
         44
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 46,
@@ -3065,7 +3110,8 @@
         47
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 47,
@@ -3133,7 +3179,8 @@
         46
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 48,
@@ -3203,7 +3250,8 @@
         49
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 49,
@@ -3271,7 +3319,8 @@
         48
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 50,
@@ -3333,7 +3382,8 @@
     "schwester_id": null,
     "schwester_titel": null,
     "schwester_gruppen": [],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 51,
@@ -3401,7 +3451,8 @@
         52
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 52,
@@ -3470,7 +3521,8 @@
         51
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 53,
@@ -3538,7 +3590,8 @@
         54
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 54,
@@ -3606,7 +3659,8 @@
         53
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 55,
@@ -3668,7 +3722,8 @@
     "schwester_id": null,
     "schwester_titel": null,
     "schwester_gruppen": [],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 56,
@@ -3737,7 +3792,8 @@
         57
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 57,
@@ -3806,7 +3862,8 @@
         56
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 58,
@@ -3869,7 +3926,8 @@
     "schwester_id": null,
     "schwester_titel": null,
     "schwester_gruppen": [],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 59,
@@ -3939,7 +3997,8 @@
         60
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 60,
@@ -4008,7 +4067,8 @@
         59
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 61,
@@ -4075,7 +4135,8 @@
         62
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 62,
@@ -4142,7 +4203,8 @@
         61
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 63,
@@ -4207,7 +4269,8 @@
         64
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 64,
@@ -4273,7 +4336,8 @@
         63
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 65,
@@ -4343,7 +4407,8 @@
         66
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 66,
@@ -4412,7 +4477,8 @@
         65
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 67,
@@ -4470,7 +4536,8 @@
     "schwester_id": null,
     "schwester_titel": null,
     "schwester_gruppen": [],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 68,
@@ -4537,7 +4604,8 @@
         69
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 69,
@@ -4608,7 +4676,8 @@
         68
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 70,
@@ -4678,7 +4747,8 @@
         71
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 71,
@@ -4747,7 +4817,8 @@
         70
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 72,
@@ -4811,7 +4882,8 @@
     "schwester_id": null,
     "schwester_titel": null,
     "schwester_gruppen": [],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 73,
@@ -4877,7 +4949,8 @@
         74
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 74,
@@ -4945,7 +5018,8 @@
         73
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 75,
@@ -5014,7 +5088,8 @@
         76
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 76,
@@ -5084,7 +5159,8 @@
         75
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 77,
@@ -5152,7 +5228,8 @@
         78
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 78,
@@ -5222,7 +5299,8 @@
         77
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 79,
@@ -5290,7 +5368,8 @@
         80
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 80,
@@ -5358,7 +5437,8 @@
         79
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 81,
@@ -5431,7 +5511,8 @@
         161
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 82,
@@ -5498,7 +5579,8 @@
         83
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 83,
@@ -5565,7 +5647,8 @@
         82
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 84,
@@ -5626,7 +5709,8 @@
     "schwester_id": null,
     "schwester_titel": null,
     "schwester_gruppen": [],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 85,
@@ -5693,7 +5777,8 @@
         86
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 86,
@@ -5760,7 +5845,8 @@
         85
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 87,
@@ -5831,7 +5917,8 @@
         13
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 88,
@@ -5894,7 +5981,8 @@
     "schwester_id": null,
     "schwester_titel": null,
     "schwester_gruppen": [],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 89,
@@ -5962,7 +6050,8 @@
         90
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 90,
@@ -6032,7 +6121,8 @@
         89
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 91,
@@ -6094,7 +6184,8 @@
     "schwester_id": null,
     "schwester_titel": null,
     "schwester_gruppen": [],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 92,
@@ -6161,7 +6252,8 @@
         93
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 93,
@@ -6226,7 +6318,8 @@
         92
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 94,
@@ -6288,7 +6381,8 @@
     "schwester_id": null,
     "schwester_titel": null,
     "schwester_gruppen": [],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 95,
@@ -6349,7 +6443,8 @@
     "schwester_id": null,
     "schwester_titel": null,
     "schwester_gruppen": [],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 96,
@@ -6419,7 +6514,8 @@
         97
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 97,
@@ -6490,7 +6586,8 @@
         96
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 98,
@@ -6554,7 +6651,8 @@
     "schwester_id": null,
     "schwester_titel": null,
     "schwester_gruppen": [],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 99,
@@ -6621,7 +6719,8 @@
         100
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 100,
@@ -6690,7 +6789,8 @@
         99
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 101,
@@ -6760,7 +6860,8 @@
         102
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 102,
@@ -6830,7 +6931,8 @@
         101
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 103,
@@ -6901,7 +7003,8 @@
         106
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 104,
@@ -6971,7 +7074,8 @@
         106
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 105,
@@ -7042,7 +7146,8 @@
         106
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 106,
@@ -7113,7 +7218,8 @@
         105
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 107,
@@ -7175,7 +7281,8 @@
     "schwester_id": null,
     "schwester_titel": null,
     "schwester_gruppen": [],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 108,
@@ -7242,7 +7349,8 @@
         97
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 109,
@@ -7308,7 +7416,8 @@
         110
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 110,
@@ -7375,7 +7484,8 @@
         109
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 111,
@@ -7444,7 +7554,8 @@
         112
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 112,
@@ -7513,7 +7624,8 @@
         111
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 113,
@@ -7576,7 +7688,8 @@
     "schwester_id": null,
     "schwester_titel": null,
     "schwester_gruppen": [],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 114,
@@ -7644,7 +7757,8 @@
         115
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 115,
@@ -7712,7 +7826,8 @@
         114
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 116,
@@ -7781,7 +7896,8 @@
         117
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 117,
@@ -7849,7 +7965,8 @@
         116
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 118,
@@ -7911,7 +8028,8 @@
     "schwester_id": null,
     "schwester_titel": null,
     "schwester_gruppen": [],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 119,
@@ -7973,7 +8091,8 @@
     "schwester_id": null,
     "schwester_titel": null,
     "schwester_gruppen": [],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 120,
@@ -8033,7 +8152,8 @@
     "schwester_id": null,
     "schwester_titel": null,
     "schwester_gruppen": [],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 121,
@@ -8100,7 +8220,8 @@
         122
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 122,
@@ -8168,7 +8289,8 @@
         121
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 123,
@@ -8230,7 +8352,8 @@
     "schwester_id": null,
     "schwester_titel": null,
     "schwester_gruppen": [],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 124,
@@ -8298,7 +8421,8 @@
         125
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 125,
@@ -8368,7 +8492,8 @@
         124
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 126,
@@ -8439,7 +8564,8 @@
         127
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 127,
@@ -8508,7 +8634,8 @@
         126
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 128,
@@ -8569,7 +8696,8 @@
     "schwester_id": null,
     "schwester_titel": null,
     "schwester_gruppen": [],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 129,
@@ -8637,7 +8765,8 @@
         130
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 130,
@@ -8705,7 +8834,8 @@
         129
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 131,
@@ -8774,7 +8904,8 @@
         132
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 132,
@@ -8842,7 +8973,8 @@
         131
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 133,
@@ -8906,7 +9038,8 @@
         134
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 134,
@@ -8971,7 +9104,8 @@
         133
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 135,
@@ -9039,7 +9173,8 @@
         136
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 136,
@@ -9107,7 +9242,8 @@
         135
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 137,
@@ -9169,7 +9305,8 @@
     "schwester_id": null,
     "schwester_titel": null,
     "schwester_gruppen": [],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 138,
@@ -9237,7 +9374,8 @@
         139
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 139,
@@ -9306,7 +9444,8 @@
         138
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 140,
@@ -9375,7 +9514,8 @@
         141
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 141,
@@ -9443,7 +9583,8 @@
         140
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 142,
@@ -9508,7 +9649,8 @@
         140
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 143,
@@ -9575,7 +9717,8 @@
         144
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 144,
@@ -9643,7 +9786,8 @@
         143
       ]
     ],
-    "erstellt_am": "2026-05-16"
+    "erstellt_am": "2026-05-16",
+    "ort": "Feld"
   },
   {
     "id": 145,
@@ -9714,7 +9858,8 @@
         146
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 146,
@@ -9782,7 +9927,8 @@
         145
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 147,
@@ -9845,7 +9991,8 @@
     "schwester_id": null,
     "schwester_titel": null,
     "schwester_gruppen": [],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 148,
@@ -9909,7 +10056,8 @@
     "ist_gecrawlt": false,
     "quell_kategorie": "",
     "schwester_gruppen": [],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 149,
@@ -9975,7 +10123,8 @@
         152
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 150,
@@ -10044,7 +10193,8 @@
         152
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 151,
@@ -10113,7 +10263,8 @@
         153
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 152,
@@ -10183,7 +10334,8 @@
         150
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 153,
@@ -10252,7 +10404,8 @@
         157
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 154,
@@ -10321,7 +10474,8 @@
         155
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 155,
@@ -10391,7 +10545,8 @@
         154
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 156,
@@ -10451,7 +10606,8 @@
     "ist_gecrawlt": false,
     "quell_kategorie": "",
     "schwester_gruppen": [],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 157,
@@ -10521,7 +10677,8 @@
         153
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 158,
@@ -10594,7 +10751,8 @@
         161
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 159,
@@ -10669,7 +10827,8 @@
         161
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 160,
@@ -10743,7 +10902,8 @@
         161
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 161,
@@ -10818,7 +10978,8 @@
         160
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 162,
@@ -10888,7 +11049,8 @@
         164
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 163,
@@ -10958,7 +11120,8 @@
         164
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 164,
@@ -11030,7 +11193,8 @@
         163
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 165,
@@ -11098,7 +11262,8 @@
         166
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 166,
@@ -11165,7 +11330,8 @@
         165
       ]
     ],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 167,
@@ -11229,7 +11395,8 @@
     "schwester_id": null,
     "schwester_titel": null,
     "schwester_gruppen": [],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 168,
@@ -11296,7 +11463,8 @@
     "schwester_id": null,
     "schwester_titel": null,
     "schwester_gruppen": [],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 169,
@@ -11363,7 +11531,8 @@
     "schwester_id": null,
     "schwester_titel": null,
     "schwester_gruppen": [],
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 170,
@@ -11431,7 +11600,8 @@
     ],
     "schwester_id": 171,
     "schwester_titel": "Sprinten, dribbeln, Tor erzielen, gewinnen. \n",
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 171,
@@ -11499,7 +11669,8 @@
     ],
     "schwester_id": 170,
     "schwester_titel": "SPRINTEN, DRIBBELN, BALL ABLEGEN, GEWINNEN.\n",
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 172,
@@ -11568,7 +11739,8 @@
     ],
     "schwester_id": 173,
     "schwester_titel": "GESTAFFELTER TORSCHUSS: TREFFEN UND AUFRÜCKEN",
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 173,
@@ -11635,7 +11807,8 @@
     ],
     "schwester_id": 172,
     "schwester_titel": "RUNDLAUF: DRIBBELN, ZIELEN, SCHIESSEN, SPRINTEN. ",
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 174,
@@ -11697,7 +11870,8 @@
     "schwester_ids": [],
     "schwester_id": null,
     "schwester_titel": null,
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 175,
@@ -11769,7 +11943,8 @@
     ],
     "schwester_id": 176,
     "schwester_titel": "ORGANISATION",
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 176,
@@ -11838,7 +12013,8 @@
     ],
     "schwester_id": 175,
     "schwester_titel": "SCHWEINCHEN IN DER MITTE MIT GEGENPRESSING",
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 177,
@@ -11902,7 +12078,8 @@
     "schwester_ids": [],
     "schwester_id": null,
     "schwester_titel": null,
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 178,
@@ -11971,7 +12148,8 @@
     ],
     "schwester_id": 179,
     "schwester_titel": "Drei gewinnt mit Ball",
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 179,
@@ -12042,7 +12220,8 @@
     ],
     "schwester_id": 178,
     "schwester_titel": "Drei gewinnt",
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 180,
@@ -12111,7 +12290,8 @@
     ],
     "schwester_id": 181,
     "schwester_titel": "BALL ABSCHIRMEN IM VIERECK",
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 181,
@@ -12181,7 +12361,8 @@
     ],
     "schwester_id": 180,
     "schwester_titel": "7 GEGEN 5 - MIT ZIELPÄSSEN ZUM SIEG",
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 182,
@@ -12246,7 +12427,8 @@
     "schwester_ids": [],
     "schwester_id": null,
     "schwester_titel": null,
-    "erstellt_am": "2026-03-26"
+    "erstellt_am": "2026-03-26",
+    "ort": "Feld"
   },
   {
     "id": 183,
@@ -12304,7 +12486,8 @@
     "schwester_ids": [],
     "schwester_id": null,
     "schwester_titel": null,
-    "erstellt_am": "2026-08-31"
+    "erstellt_am": "2026-08-31",
+    "ort": "Feld"
   },
   {
     "id": 184,
@@ -12365,7 +12548,8 @@
     "schwester_ids": [],
     "schwester_id": null,
     "schwester_titel": null,
-    "erstellt_am": "2026-09-02"
+    "erstellt_am": "2026-09-02",
+    "ort": "Feld"
   },
   {
     "id": 185,
@@ -12433,7 +12617,8 @@
     "schwester_ids": [
       186
     ],
-    "erstellt_am": "2026-09-04"
+    "erstellt_am": "2026-09-04",
+    "ort": "Feld"
   },
   {
     "id": 186,
@@ -12487,7 +12672,8 @@
     ],
     "schwester_id": 185,
     "schwester_titel": "TORSCHUSS NACH DOPPELPASS",
-    "erstellt_am": "2026-09-04"
+    "erstellt_am": "2026-09-04",
+    "ort": "Feld"
   },
   {
     "id": 187,
@@ -12541,7 +12727,8 @@
     "schwester_ids": [],
     "schwester_id": null,
     "schwester_titel": null,
-    "erstellt_am": "2026-09-04"
+    "erstellt_am": "2026-09-04",
+    "ort": "Feld"
   },
   {
     "id": 188,
@@ -12605,7 +12792,8 @@
     "schwester_ids": [
       189
     ],
-    "erstellt_am": "2026-09-08"
+    "erstellt_am": "2026-09-08",
+    "ort": "Feld"
   },
   {
     "id": 189,
@@ -12673,7 +12861,8 @@
     ],
     "schwester_id": 188,
     "schwester_titel": "NEUE RÄUME ERLAUFEN UND AUF STANGENTORE TREFFEN",
-    "erstellt_am": "2026-09-08"
+    "erstellt_am": "2026-09-08",
+    "ort": "Feld"
   },
   {
     "id": 190,
@@ -12738,7 +12927,8 @@
     "original_coaching_fokus": "",
     "schwester_gruppen": [],
     "schwester_ids": [],
-    "erstellt_am": "2026-09-13"
+    "erstellt_am": "2026-09-13",
+    "ort": "Feld"
   },
   {
     "id": 191,
@@ -12804,7 +12994,8 @@
     "schwester_ids": [
       192
     ],
-    "erstellt_am": "2026-09-16"
+    "erstellt_am": "2026-09-16",
+    "ort": "Feld"
   },
   {
     "id": 192,
@@ -12869,7 +13060,8 @@
     ],
     "schwester_id": 191,
     "schwester_titel": "BALLKONTROLLE AUCH IN STRESSSITUATIONEN",
-    "erstellt_am": "2026-09-16"
+    "erstellt_am": "2026-09-16",
+    "ort": "Feld"
   },
   {
     "id": 193,
@@ -12935,7 +13127,8 @@
     "schwester_ids": [
       194
     ],
-    "erstellt_am": "2026-09-18"
+    "erstellt_am": "2026-09-18",
+    "ort": "Feld"
   },
   {
     "id": 194,
@@ -12997,7 +13190,8 @@
     ],
     "schwester_id": 193,
     "schwester_titel": "SICH MIT DEM GEGNER IM RÜCKEN DURCHSETZEN",
-    "erstellt_am": "2026-09-18"
+    "erstellt_am": "2026-09-18",
+    "ort": "Feld"
   },
   {
     "id": 195,
@@ -13068,7 +13262,8 @@
     "schwester_ids": [
       199
     ],
-    "erstellt_am": "2026-10-04"
+    "erstellt_am": "2026-10-04",
+    "ort": "Feld"
   },
   {
     "id": 196,
@@ -13123,7 +13318,8 @@
     "schwester_ids": [],
     "schwester_id": null,
     "schwester_titel": null,
-    "erstellt_am": "2026-10-02"
+    "erstellt_am": "2026-10-02",
+    "ort": "Feld"
   },
   {
     "id": 197,
@@ -13178,7 +13374,8 @@
     "schwester_ids": [],
     "schwester_id": null,
     "schwester_titel": null,
-    "erstellt_am": "2026-10-02"
+    "erstellt_am": "2026-10-02",
+    "ort": "Feld"
   },
   {
     "id": 198,
@@ -13247,7 +13444,8 @@
     "schwester_ids": [
       200
     ],
-    "erstellt_am": "2026-10-06"
+    "erstellt_am": "2026-10-06",
+    "ort": "Feld"
   },
   {
     "id": 199,
@@ -13313,7 +13511,8 @@
     ],
     "schwester_id": 195,
     "schwester_titel": "3 JÄGER GEGEN DEN DRIBBELKÖNIG",
-    "erstellt_am": "2026-10-04"
+    "erstellt_am": "2026-10-04",
+    "ort": "Feld"
   },
   {
     "id": 200,
@@ -13377,7 +13576,8 @@
     ],
     "schwester_id": 198,
     "schwester_titel": "VIER SCHNELLE PÄSSE: ANNEHMEN, REAGIEREN, ABSCHLIESSEN",
-    "erstellt_am": "2026-10-06"
+    "erstellt_am": "2026-10-06",
+    "ort": "Feld"
   },
   {
     "id": 201,
@@ -13432,7 +13632,8 @@
     ],
     "schwester_id": 202,
     "schwester_titel": "WEICHE DEN JÄGERN AUS, BRING DEN BALL IN SICHERHEIT",
-    "erstellt_am": "2026-10-10"
+    "erstellt_am": "2026-10-10",
+    "ort": "Feld"
   },
   {
     "id": 202,
@@ -13495,6 +13696,70 @@
     ],
     "schwester_id": 201,
     "schwester_titel": "BRING DEN BALL IN SICHERHEIT",
-    "erstellt_am": "2026-10-10"
+    "erstellt_am": "2026-10-10",
+    "ort": "Feld"
+  },
+  {
+    "id": 204,
+    "titel": "BÄLLE KLAUEN",
+    "quell_trainingseinheit": "MOTIVIERENDE SPIELFORMEN FÜR DIE HALLE",
+    "grafik_url": "https://coachunited.de/images/uebungen/uebung-204-baelle-klauen.webp",
+    "grafik_dateiname": "Top-Down Handball Drill Diagram.png",
+    "trainingsphase": "Aufwärmen",
+    "kurzbeschreibung": "Vier Teams kämpfen darum, mit der Hand ihren eigenen Kasten mit Bällen zu füllen und fremde Kästen zu leeren. ",
+    "aufbau": "Verteile vier umgedrehte Kleinkästen gleichmäßig in der Halle. Platziere je drei bis fünf Bälle (je nach Größe der Kästen) in jedem Kasten. Bilde vier Mannschaften und positioniere jedes Team an seinem Kleinkasten.",
+    "durchfuehrung": "Nach dem Startsignal rennen die Spieler zu den gegnerischen Kleinkästen. Sie transportieren die Bälle einzeln mit der Hand zu ihrem eigenen Kasten, um dort ein möglichst großen Vorrat aufzubauen. Nach sechzig Sekunden stoppt das Spiel – die Mannschaft mit den meisten Bällen im Kasten gewinnt.",
+    "varianten": "Die Bälle mit den Händen prellen/rollen.\nMit rechts/links dribbeln.\nDie Bälle mit der Fußsohle führen.\nDie Spieler können sich in den eigenen Reihen zupassen.\nDie Spieler versuchen, den eigenen Kleinkasten zu leeren und möglichst viele Bälle in andere Kleinkästen zu legen. Welche Mannschaft hat nach einer Minute die wenigsten Bälle im Kasten?",
+    "quell_url": "https://training-service.fussball.de/trainer/f-juniorin/training-online/trainingseinheiten-detail/motivierende-spielformen-fuer-die-halle-628/",
+    "quell_spiel_nr": 1,
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend",
+      "E-Jugend"
+    ],
+    "skills": [
+      "Koordination",
+      "Schnelligkeit",
+      "Kommunikation"
+    ],
+    "coaching_fokus": "• Augen oben halten beim Laufen – Blick auf die gegnerischen Kästen und freien Bälle!; • Schnell entscheiden: Welcher Ball ist am nächsten und am leichtesten zu holen?",
+    "leichter_machen": "",
+    "schwerer_machen": "• Die Bälle mit den Händen prellen oder rollen (statt tragen); • Zielvariation: eigenen Kasten leeren statt füllen – wer hat nach einer Minute die wenigsten Bälle?",
+    "alt_titel": "",
+    "seo_keyword": "Fußballtraining Ballkontrolle",
+    "url_slug": "baelle-klauen",
+    "seo_meta_description": "Ballraub im Kastenduell: Hallentraining für Kinder (6-12 Jahre) mit Ballkontrolle, Dribbeln und schnellen Entscheidungen.",
+    "grafik_alt_text": "Vier Kleinkästen in der Halle, vier Spielerteams kämpfen um Bälle, dynamisches Hallenspiels für Kindertraining.",
+    "grafik_description": "Die Grafik zeigt vier umgedrehte Kleinkästen verteilt in der Halle mit je einem Team positioniert. Spieler dribbeln und transportieren Bälle zwischen den Kästen, während sie in beengtem Raum orientieren und schnelle Entscheidungen treffen müssen.",
+    "grafik_title": "Ballraub Kastenduell Fußballtraining Kinder",
+    "grafik_caption": "Vier Teams raiden gegnerische Kästen und bauen ihr eigenes Ballager auf.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler pro Team sind ideal?",
+        "antwort": "3-4 Spieler pro Team funktionieren am besten."
+      },
+      {
+        "frage": "Was mache ich, wenn die Halle zu groß ist und Bälle zu weit weg sind?",
+        "antwort": "Reduziere die Hallenfläche mit Markierungshütchen auf ein Quadrat von etwa 15×15 Metern – so bleibt das Spiel intensiv und kompakt."
+      },
+      {
+        "frage": "Für welche Altersstufe ist diese Übung am besten geeignet?",
+        "antwort": "Macht eigentlich allen Altersstufen als Warmup Spaß. "
+      }
+    ],
+    "status": "veroeffentlicht",
+    "referenz_grafik_url": "https://training-service.fussball.de/assets/img/csm_278953-535-f-au1-01_9b566fddab.png",
+    "quell_kategorie": "F-Jugend",
+    "ist_gecrawlt": true,
+    "schwester_id": null,
+    "schwester_titel": null,
+    "original_aufbau": "4 umgedrehte Kleinkästen in der Halle verteilen.\nIn jeden Kleinkasten 3 Bälle legen.\n4 Mannschaften einteilen.\nJedes Team an einem Kleinkasten aufstellen.",
+    "original_durchfuehrung": "Auf ein Trainerkommando versuchen die Spieler, möglichst viele Bälle aus anderen Kleinkästen zu holen und im eigenen Kleinkasten zu sammeln.\nJeder Spieler darf immer nur 1 Ball transportieren.\nWelche Mannschaft hat nach einer Minute die meisten Bälle gesammelt?",
+    "original_varianten": "Die Bälle mit den Händen prellen/rollen.\nMit rechts/links dribbeln.\nDie Bälle mit der Fußsohle führen.\nDie Spieler können sich in den eigenen Reihen zupassen.\nDie Spieler versuchen, den eigenen Kleinkasten zu leeren und möglichst viele Bälle in andere Kleinkästen zu legen. Welche Mannschaft hat nach einer Minute die wenigsten Bälle im Kasten?",
+    "original_coaching_fokus": "Das Spiel schult die Orientierung der Spieler, da diese immer alle Kleinkästen und die anderen Mannschaften beobachten müssen.\nEs zählen nur die Bälle, die nach einer Minute im Kleinkasten gesammelt sind. Neben dem Kasten liegende Bälle werden nicht gewertet.\nDie Kleinkästen dürfen nicht bewacht werden. Spieler mit Ball dürfen nicht behindert oder aufgehalten werden.",
+    "schwester_gruppen": [],
+    "schwester_ids": [],
+    "ort": "Halle",
+    "erstellt_am": "2026-10-15"
   }
 ]
