@@ -13706,9 +13706,9 @@
     "grafik_url": "https://coachunited.de/images/uebungen/uebung-204-baelle-klauen.webp",
     "grafik_dateiname": "Top-Down Handball Drill Diagram.png",
     "trainingsphase": "Aufwärmen",
-    "kurzbeschreibung": "Vier Teams kämpfen darum, mit der Hand ihren eigenen Kasten mit Bällen zu füllen und fremde Kästen zu leeren. ",
+    "kurzbeschreibung": "Vier Teams kämpfen darum, mit der Hand ihren eigenen Kasten mit Bällen zu füllen und fremde Kästen zu leeren.",
     "aufbau": "Verteile vier umgedrehte Kleinkästen gleichmäßig in der Halle. Platziere je drei bis fünf Bälle (je nach Größe der Kästen) in jedem Kasten. Bilde vier Mannschaften und positioniere jedes Team an seinem Kleinkasten.",
-    "durchfuehrung": "Nach dem Startsignal rennen die Spieler zu den gegnerischen Kleinkästen. Sie transportieren die Bälle einzeln mit der Hand zu ihrem eigenen Kasten, um dort ein möglichst großen Vorrat aufzubauen. Nach sechzig Sekunden stoppt das Spiel – die Mannschaft mit den meisten Bällen im Kasten gewinnt.",
+    "durchfuehrung": "Nach dem Startsignal rennen die Spieler zu den gegnerischen Kleinkästen. Sie transportieren die Bälle einzeln mit der Hand zu ihrem eigenen Kasten, um dort einen möglichst großen Vorrat aufzubauen. Nach sechzig Sekunden stoppt das Spiel – die Mannschaft mit den meisten Bällen im Kasten gewinnt.",
     "varianten": "Die Bälle mit den Händen prellen/rollen.\nMit rechts/links dribbeln.\nDie Bälle mit der Fußsohle führen.\nDie Spieler können sich in den eigenen Reihen zupassen.\nDie Spieler versuchen, den eigenen Kleinkasten zu leeren und möglichst viele Bälle in andere Kleinkästen zu legen. Welche Mannschaft hat nach einer Minute die wenigsten Bälle im Kasten?",
     "quell_url": "https://training-service.fussball.de/trainer/f-juniorin/training-online/trainingseinheiten-detail/motivierende-spielformen-fuer-die-halle-628/",
     "quell_spiel_nr": 1,
@@ -13726,25 +13726,21 @@
     "leichter_machen": "",
     "schwerer_machen": "• Die Bälle mit den Händen prellen oder rollen (statt tragen); • Zielvariation: eigenen Kasten leeren statt füllen – wer hat nach einer Minute die wenigsten Bälle?",
     "alt_titel": "",
-    "seo_keyword": "Ballraub Kastenduell Fußballtraining Kinder",
+    "seo_keyword": "Fußball Hallenspiel Bälle klauen",
     "url_slug": "baelle-klauen",
-    "seo_meta_description": "Vier Teams raiden gegnerische Kästen und bauen ihr eigenes Ballager auf.",
-    "grafik_alt_text": "Die Grafik zeigt vier umgedrehte Kleinkästen verteilt in der Halle mit je einem Team positioniert. Spieler dribbeln und transportieren Bälle zwischen den Kästen, während sie in beengtem Raum orientieren und schnelle Entscheidungen treffen müssen.",
-    "grafik_description": "Die Grafik zeigt vier umgedrehte Kleinkästen verteilt in der Halle mit je einem Team positioniert. Spieler dribbeln und transportieren Bälle zwischen den Kästen, während sie in beengtem Raum orientieren und schnelle Entscheidungen treffen müssen.",
-    "grafik_title": "*G- bis E-Jugend*\n\nHier kommt eine lustige Ballspiel-Übung für eure Mannschaft:\n\nVier Teams kämpfen darum, ihren eigenen Kasten mit Bällen zu füllen und fremde Kästen zu leeren.\n\nhttps://coachunited.de/uebung/baelle-klauen\n\nViel Spaß beim Ausprobieren\n\nRob",
-    "grafik_caption": "Vier Teams raiden gegnerische Kästen und bauen ihr eigenes Ballager auf.",
+    "seo_meta_description": "Hallenspiel für G- bis E-Jugend: Vier Teams holen Bälle aus fremden Kästen in den eigenen. Trainiert Koordination, Schnelligkeit und Absprachen.",
+    "grafik_alt_text": "Hallenfeld mit vier Kästen voller Bälle an den Rändern, Spieler zweier Teams laufen durch die Halle, Trainer gibt 60 s vor.",
+    "grafik_description": "Die Grafik zeigt ein Hallenfeld mit Parkettboden, an dessen vier Seiten je ein Kasten mit Bällen steht. Die Spieler in schwarzen und weißen Trikots laufen durch die Halle und tragen Bälle in der Hand. Der Trainer steht links unten und gibt die Spielzeit von 60 Sekunden vor.",
+    "grafik_title": "Bälle klauen: Vier Teams füllen ihren Kasten in der Halle",
+    "grafik_caption": "Vier Teams holen Bälle aus den gegnerischen Kästen in ihren eigenen Kasten, nach 60 Sekunden wird gezählt.",
     "faq": [
       {
         "frage": "Wie viele Spieler pro Team sind ideal?",
         "antwort": "3-4 Spieler pro Team funktionieren am besten."
       },
       {
-        "frage": "Was mache ich, wenn die Halle zu groß ist und Bälle zu weit weg sind?",
-        "antwort": "Fußballtraining Ballkontrolle"
-      },
-      {
         "frage": "Für welche Altersstufe ist diese Übung am besten geeignet?",
-        "antwort": "Vier Kleinkästen in der Halle, vier Spielerteams kämpfen um Bälle, dynamisches Hallenspiels für Kindertraining."
+        "antwort": "Die Übung eignet sich für die G-, F- und E-Jugend."
       }
     ],
     "status": "veroeffentlicht",
@@ -13776,9 +13772,9 @@
     "grafik_dateiname": "Top-Down Handball Drill Diagram.png",
     "trainingsphase": "Aufwärmen",
     "ort": "Halle",
-    "kurzbeschreibung": "Vier Teams kämpfen darum, per Lupfer ihren eigenen Kasten mit Bällen zu füllen und fremde Kästen zu leeren. ",
+    "kurzbeschreibung": "Vier Teams kämpfen darum, per Lupfer ihren eigenen Kasten mit Bällen zu füllen und fremde Kästen zu leeren.",
     "aufbau": "Verteile vier umgedrehte Kleinkästen gleichmäßig in der Halle. Platziere je drei bis fünf Bälle (je nach Größe der Kästen) in jedem Kasten. Bilde vier Mannschaften und positioniere jedes Team an seinem Kleinkasten.",
-    "durchfuehrung": "Nach dem Startsignal rennen die Spieler zu den gegnerischen Kleinkästen. Sie nehmen die Bälle mit der Hand heraus und legen sie auf den Boden. Von dort dribbeln sie zu ihrem eigenen Kasten. Um den Ball im eigenen Kasten unterzubringen, müssen sie ihn eroflgreich in den Kasten lupfen. Sie versuchen es so lange, bis es klappt. Danach klauen sie den nächsten Ball. Nach sechzig Sekunden stoppt das Spiel – die Mannschaft mit den meisten Bällen im eigenen Kasten gewinnt.",
+    "durchfuehrung": "Nach dem Startsignal rennen die Spieler zu den gegnerischen Kleinkästen. Sie nehmen die Bälle mit der Hand heraus und legen sie auf den Boden. Von dort dribbeln sie zu ihrem eigenen Kasten. Um den Ball im eigenen Kasten unterzubringen, müssen sie ihn erfolgreich in den Kasten lupfen. Sie versuchen es so lange, bis es klappt. Danach klauen sie den nächsten Ball. Nach sechzig Sekunden stoppt das Spiel – die Mannschaft mit den meisten Bällen im eigenen Kasten gewinnt.",
     "varianten": "",
     "quell_url": "",
     "jugend": [
@@ -13791,17 +13787,17 @@
       "Schnelligkeit",
       "Kommunikation"
     ],
-    "coaching_fokus": "• Augen oben halten beim Laufen und Dribbeln.; • Gute Distanz zum Lupfen finden (ausprobieren!)",
+    "coaching_fokus": "• Augen oben halten beim Laufen und Dribbeln; • Gute Distanz zum Lupfen finden (ausprobieren!)",
     "leichter_machen": "• Ball darf aus einer gewissen Distanz geworfen werden statt gelupft",
     "schwerer_machen": "• Verschiedene Dribbeltechniken (mit der Sohle ziehen, rückwärts etc.)",
     "alt_titel": "",
-    "seo_keyword": "",
+    "seo_keyword": "Fußball Hallenspiel Lupfen Kinder",
     "url_slug": "baelle-klauen-und-ins-ziel-lupfen",
-    "seo_meta_description": "",
-    "grafik_alt_text": "*G- bis E-Jugend*\n\nGuten Morgen!\n\nHier eine lustige Übung, bei der eure Jungs und Mädels richtig um jeden Ball kämpfen werden:\n\nVier Teams kämpfen darum, per Lupfer ihren eigenen Kasten mit Bällen zu füllen und fremde Kästen zu leeren.\n\nhttps://coachunited.de/uebung/baelle-klauen-und-ins-ziel-lupfen\n\nViel Spaß beim Ausprobieren und viele Grüße\n\nRob",
-    "grafik_description": "",
-    "grafik_title": "",
-    "grafik_caption": "",
+    "seo_meta_description": "Hallenspiel für G- bis E-Jugend: Die Teams holen Bälle aus fremden Kästen und lupfen sie in den eigenen. Trainiert Lupfen, Dribbling und Koordination.",
+    "grafik_alt_text": "Hallenfeld mit vier Kästen voller Bälle an den Rändern, Spieler zweier Teams laufen durch die Halle, Trainer gibt 60 s vor.",
+    "grafik_description": "Die Grafik zeigt ein Hallenfeld mit Parkettboden, an dessen vier Seiten je ein Kasten mit Bällen steht. Die Spieler in schwarzen und weißen Trikots laufen und dribbeln durch die Halle. Der Trainer steht links unten und gibt die Spielzeit von 60 Sekunden vor.",
+    "grafik_title": "Bälle klauen und lupfen: Kastenspiel in der Halle",
+    "grafik_caption": "Die Spieler dribbeln Bälle aus fremden Kästen zum eigenen Kasten und lupfen sie dort hinein.",
     "faq": [
       {
         "frage": "Wie viele Spieler pro Team sind ideal?",
