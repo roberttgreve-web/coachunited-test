@@ -80,7 +80,110 @@ function cuHerkunft() {
   return herkunft;
 }
 
+// ── Menuepunkt "WhatsApp-Kanal" je nach Besucher: 'whatsapp' | 'spenden' | 'einreichen' ──
+//
+// whatsapp   = Google/direkt/unbekannt: gruener WhatsApp-Kanal-Button (wie bisher)
+// spenden    = Follower, noch nicht gespendet: blauer "Spenden"-Button
+// einreichen = Follower mit "Hab schon gespendet": neutraler "Übung einreichen"-Punkt
+// Den Kanal-Link finden Follower weiter im Footer (Desktop) und im Seitenmenue (Mobil).
+function cuMenueModus() {
+  if (cuHerkunft() !== 'follower') return 'whatsapp';
+  try { if (localStorage.getItem('cu_sp_supporter')) return 'einreichen'; } catch (e) {}
+  return 'spenden';
+}
+
+function cuHerzIcon(groesse) {
+  return '<svg width="' + groesse + '" height="' + groesse + '" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0"><path d="M12 21s-7.2-4.6-9.6-9.2C.7 8.4 2.7 5 6.3 5c2 0 3.6 1 5.7 3.1C14.1 6 15.7 5 17.7 5c3.6 0 5.6 3.4 3.9 6.8C19.2 16.4 12 21 12 21z"/></svg>';
+}
+
+function cuPlusIcon(groesse) {
+  return '<svg width="' + groesse + '" height="' + groesse + '" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" style="flex-shrink:0"><path d="M12 5v14M5 12h14"/></svg>';
+}
+
+function injectMenueStyles() {
+  if (cuMenueModus() !== 'spenden') return;
+  var style = document.createElement('style');
+  style.textContent = `
+    .nav-item.cu-sp-nav-highlight {
+      background: #1E6BFF;
+      border-radius: 12px;
+      padding: 6px 4px 5px !important;
+      margin: -6px -1px 0;
+      color: #fff !important;
+    }
+    .nav-item.cu-sp-nav-highlight span { color: #fff !important; }
+    .desktop-topnav-link--spende {
+      display: inline-flex !important;
+      align-items: center;
+      gap: 7px;
+      background: #1E6BFF !important;
+      color: #fff !important;
+      border-radius: 999px !important;
+      padding: 8px 16px !important;
+    }
+    .desktop-topnav-link--spende:hover { background: #1558d6 !important; }
+    .desktop-topnav-link--spende.active { background: #0F4BC2 !important; color: #fff !important; }
+    @media print { .cu-sp-nav-highlight { background: transparent !important; } }
+    body:has(#exercise-content) .desktop-topnav-link--spende,
+    body:has(.crest-panel) .desktop-topnav-link--spende,
+    body:has(.selection-section) .desktop-topnav-link--spende {
+      background: #1E6BFF !important;
+      color: #fff !important;
+    }
+    body:has(#exercise-content) .desktop-topnav-link--spende:hover,
+    body:has(.crest-panel) .desktop-topnav-link--spende:hover,
+    body:has(.selection-section) .desktop-topnav-link--spende:hover {
+      background: #1558d6 !important;
+      color: #fff !important;
+    }
+  `;
+  document.head.appendChild(style);
+}
+
+// Mobile Bottom-Nav: der Platz des Kanal-Buttons wird fuer Follower zu "Spenden" bzw. "Einreichen".
+function cuNavFuerFollower(links, modus) {
+  links.forEach(function (a) {
+    a.removeAttribute('target');
+    a.removeAttribute('rel');
+    var svg = a.querySelector('svg');
+    var span = a.querySelector('span');
+    if (modus === 'spenden') {
+      a.href = '/spenden';
+      a.classList.add('cu-sp-nav-highlight');
+      a.setAttribute('data-cu-spende', 'menue');
+      if (svg) svg.outerHTML = cuHerzIcon(20).replace('<svg ', '<svg class="nav-icon" ');
+      if (span) span.textContent = 'Spenden';
+    } else {
+      a.href = '/uebung-einreichen';
+      if (svg) svg.outerHTML = cuPlusIcon(20).replace('<svg ', '<svg class="nav-icon" ');
+      if (span) span.textContent = 'Einreichen';
+    }
+  });
+}
+
+// Seitenmenue (Burger): Follower finden den Kanal-Link dort weiter.
+function injectKanalLinkFuerFollower() {
+  if (cuMenueModus() === 'whatsapp') return;
+  var drawer = document.getElementById('drawer');
+  if (!drawer || drawer.querySelector('a[data-cu-kanal]')) return;
+  var link = document.createElement('a');
+  link.className = 'drawer-link';
+  link.setAttribute('data-cu-kanal', '1');
+  link.textContent = 'WhatsApp-Kanal';
+  if (istDesktopBreite()) {
+    link.href = '/whatsapp-info';
+  } else {
+    link.href = CU_WA_KANAL_URL;
+    link.target = '_blank';
+    link.rel = 'noopener';
+  }
+  var legal = drawer.querySelector('.drawer-legal-row');
+  if (legal) drawer.insertBefore(link, legal);
+  else drawer.appendChild(link);
+}
+
 (function () {
+  injectMenueStyles();
   injectWhatsAppPromo();
   hervorhebeWhatsAppNav();
   injectWhatsAppAbbinder();
@@ -89,6 +192,7 @@ function cuHerkunft() {
   injectSpendenLink();
   injectSupporterAbmeldenLink();
   restructureDrawerNav();
+  injectKanalLinkFuerFollower();
   trackWhatsAppClicks();
 
   if (window.innerWidth < 768) return;
@@ -109,6 +213,19 @@ function cuHerkunft() {
   function isActive(href) {
     return path === href || path.startsWith(href + '/') ? 'active' : '';
   }
+
+  // Letzter Punkt der Topnav je nach Besucher (s. cuMenueModus)
+  var menueModus = cuMenueModus();
+  var menuePille;
+  if (menueModus === 'spenden') {
+    menuePille = '<a href="/spenden" class="desktop-topnav-link desktop-topnav-link--spende ' + isActive('/spenden') + '" data-cu-spende="menue">' + cuHerzIcon(15) + 'Spenden</a>';
+  } else if (menueModus === 'einreichen') {
+    menuePille = '<a href="/uebung-einreichen" class="desktop-topnav-link ' + isActive('/uebung-einreichen') + '">Übung einreichen</a>';
+  } else {
+    menuePille = '<a href="/whatsapp-info" class="desktop-topnav-link desktop-topnav-link--whatsapp ' + isActive('/whatsapp-info') + '">' + cuWaIcon(15) + 'WhatsApp-Kanal</a>';
+  }
+  var footerKanal = menueModus === 'whatsapp' ? '' :
+    '<a href="/whatsapp-info" class="desktop-footer-link ' + isActive('/whatsapp-info') + '">WhatsApp-Kanal</a><span class="desktop-footer-sep">·</span>';
 
   var nav = document.createElement('nav');
   nav.className = 'desktop-topnav';
@@ -167,7 +284,7 @@ function cuHerkunft() {
            und die sind mit den Arbeitsseiten belegt; dort bleibt "Über uns"
            im Burger-Menue. -->
       <a href="/ueber-uns"     class="desktop-topnav-link ${isActive('/ueber-uns')}">Über uns</a>
-      <a href="/whatsapp-info" class="desktop-topnav-link desktop-topnav-link--whatsapp ${isActive('/whatsapp-info')}">${cuWaIcon(15)}WhatsApp-Kanal</a>
+      ${menuePille}
     </div>
   `;
 
@@ -185,6 +302,7 @@ function cuHerkunft() {
       <span class="desktop-footer-sep">·</span>
       <a href="/spenden" class="desktop-footer-link ${isActive('/spenden')}">Spenden</a>
       <span class="desktop-footer-sep">·</span>
+      ${footerKanal}
       <a href="/supporter-abmelden" class="desktop-footer-link ${isActive('/supporter-abmelden')}">Als Supporter abmelden</a>
       <span class="desktop-footer-sep">·</span>
       <a href="/umgang-mit-ki" class="desktop-footer-link ${isActive('/umgang-mit-ki')}">Umgang mit KI</a>
@@ -226,6 +344,12 @@ function cuWaIcon(groesse) {
 function hervorhebeWhatsAppNav() {
   var links = document.querySelectorAll('a.nav-item[href="/whatsapp-info"]');
   if (!links.length) return;
+
+  var menueModus = cuMenueModus();
+  if (menueModus !== 'whatsapp') {
+    cuNavFuerFollower(links, menueModus);
+    return;
+  }
 
   links.forEach(function (a) {
     a.classList.add('cu-wa-nav-highlight');

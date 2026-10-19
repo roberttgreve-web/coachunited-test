@@ -1546,3 +1546,12 @@ Robert wollte bei #245 „VIER PÄSSE - DRIBBELN ODER SCHIESSEN?“ (Schwester v
 - **Testhilfen:** `?src=whatsapp` (Follower-Ansicht, merkt sich), `?src=google` (Google-Ansicht für die Sitzung, übersteuert Follower), `?src=reset` (löscht alle gemerkten Zustände), `?sp=1` erzwingt den Spenden-Störer, `?wa=1` das Kanal-Popup.
 - **Getestet lokal (python http.server + Browser):** Follower-Ansicht (Störer, Seitenende, Startseite), Google-Ansicht (Popup + Kanal-Abschnitt, kein Störer), 2.-Seite-Logik, ✕ -> Snooze. Auf dem echten Live-Verhalten (Referrer von Google) noch nicht geprüft.
 - **Hinweis:** Das Cookie-Banner liegt beim allerersten Besuch über dem Störer (gleiche Ecke); für Follower ab der 2. Seite meist schon beantwortet. Datenschutz-Text nicht angepasst (localStorage, funktional, kein Personenbezug) – bei Gelegenheit prüfen.
+
+### 48.1 Menüpunkt „WhatsApp-Kanal“ je nach Besucher (19.10.2026)
+
+`cuMenueModus()` (`desktop-nav.js`) liefert den Modus des letzten Menüpunkts (Desktop-Topnav-Pille, mobile Bottom-Nav):
+- **`whatsapp`** (Google, direkt, unbekannt): grüner Button „WhatsApp-Kanal“ wie bisher.
+- **`spenden`** (Follower, noch nicht gespendet): blaue Pille/blauer Bottom-Nav-Platz „Spenden“ mit Herz -> `/spenden` (`data-cu-spende="menue"`, GA-Event `spenden_click`, `ort=menue`).
+- **`einreichen`** (Follower mit „Hab schon gespendet“, `cu_sp_supporter`): neutraler Punkt „Übung einreichen“ (mobil „Einreichen“, Plus-Icon) -> `/uebung-einreichen`.
+- Follower finden den Kanal-Link weiter im **Footer** (Desktop, `footerKanal`) und im **Seitenmenü** (`injectKanalLinkFuerFollower`, `data-cu-kanal`). Der Modus wird beim Laden bestimmt; nach einem Klick auf „Hab schon gespendet“ ändert sich das Menü erst beim nächsten Seitenaufruf.
+- Getestet lokal mit `?src=whatsapp` (spenden), zusätzlich `cu_sp_supporter=1` (einreichen), `?src=google` (whatsapp); Desktop-Pille per Screenshot geprüft, mobile Bottom-Nav nur per DOM-Abfrage.
