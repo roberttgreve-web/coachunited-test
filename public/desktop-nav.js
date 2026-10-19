@@ -635,7 +635,15 @@ function injectSpendenStoerer() {
       .cu-sp.cu-sp-ueber-nav { bottom: var(--cu-sp-abstand, 92px); }
     }
     @media (min-width: 768px) {
-      .cu-sp { right: 24px; bottom: 24px; width: 360px; }
+      /* Desktop: blauer Hintergrund + breiter, damit der Hinweis nicht untergeht (Mobil bleibt vorerst weiss) */
+      .cu-sp { right: 24px; bottom: 24px; width: 460px; padding: 22px 24px 20px; background: #1E6BFF; }
+      .cu-sp-close { color: #fff; opacity: 0.75; font-size: 17px; top: 10px; right: 12px; }
+      .cu-sp-title { color: #fff; font-size: 19px; }
+      .cu-sp-sub { color: rgba(255,255,255,0.88); font-size: 14.5px; line-height: 1.5; margin-top: 6px; }
+      .cu-sp-primary { background: #fff; border-color: #fff; color: #1E6BFF; }
+      .cu-sp-primary:hover { background: #EAF1FF; border-color: #EAF1FF; }
+      .cu-sp-secondary { border-color: rgba(255,255,255,0.55); color: #fff; }
+      .cu-sp-secondary:hover { border-color: #fff; color: #fff; background: rgba(255,255,255,0.14); }
     }
     @media print { .cu-sp { display: none !important; } }
   `;
