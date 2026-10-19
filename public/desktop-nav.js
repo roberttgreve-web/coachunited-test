@@ -107,8 +107,8 @@ function injectMenueStyles() {
     .nav-item.cu-sp-nav-highlight {
       background: #1E6BFF;
       border-radius: 12px;
-      padding: 6px 4px 5px !important;
-      margin: -6px -1px 0;
+      padding: 6px 2px 5px !important;
+      margin: -6px 10px 0 2px; /* rechts Luft zum Rand (Handy), Kasten insgesamt kleiner */
       color: #fff !important;
     }
     .nav-item.cu-sp-nav-highlight span { color: #fff !important; }
