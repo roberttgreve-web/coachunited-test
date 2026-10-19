@@ -12,10 +12,80 @@ function istDesktopBreite() {
   return window.innerWidth >= 768;
 }
 
+// ── Herkunft des Besuchers: 'follower' | 'google' | 'direkt' ──
+//
+// Warum: Wer ueber Google kommt, kennt Coach United noch nicht -> bekommt die
+// WhatsApp-Werbung, aber keine Spenden-Bitte. Wer aus dem WhatsApp-Kanal kommt,
+// ist Follower, nutzt die Seite immer wieder und ist schon im Kanal -> bekommt
+// stattdessen die Spenden-Bitte (Stoerer + Abschnitt am Seitenende), keine
+// Kanal-Werbung mehr.
+//
+// Erkennung: Der Referrer reicht bei WhatsApp nicht (kommt meist leer an). Die
+// Links in den Kanal-Posts tragen deshalb ?utm_source=whatsapp (der Publisher
+// haengt das beim Erzeugen des Posting-Textes an). Wer einmal so kam, wird
+// dauerhaft in localStorage als Follower gemerkt; wer im Kanal-Popup "Hab ich
+// schon"/"Kanal ansehen" gewaehlt hat (cu_wa_status), zaehlt ebenfalls dazu.
+// Google: Referrer google.*, ?gclid oder ?utm_source=google (Ad Grants).
+// Alles andere (Direktaufruf, Social, unbekannt) = 'direkt' und verhaelt sich
+// wie Google (WhatsApp-Werbung, keine Spenden-Bitte).
+//
+// Testhilfen:  ?src=whatsapp  Follower-Ansicht (merkt sich als Follower)
+//              ?src=google    Google-Ansicht fuer diese Sitzung (uebersteuert Follower)
+//              ?src=reset     loescht alle gemerkten Zustaende (Herkunft, Spenden-Stoerer)
+var CU_FOLLOWER_KEY = 'cu_follower';      // localStorage: '1' = kam aus dem WhatsApp-Kanal
+var CU_HERKUNFT_KEY = 'cu_herkunft';      // sessionStorage: Quelle der Sitzung
+var CU_TEST_GOOGLE_KEY = 'cu_herkunft_test'; // sessionStorage: ?src=google
+var CU_SPENDEN_TITEL = 'Unterstütze unsere gemeinnützige Arbeit mit 1\u00a0€ im Monat';
+var CU_SPENDEN_TEXT = 'Mit Coach United bauen wir die größte freie Übungsplattform für den Kinderfußball auf – ohne Werbung, ohne Paywall, ohne Investoren. Du kannst uns schon mit 1\u00a0€ pro Monat unterstützen. Das geht ganz schnell per PayPal und Co.';
+var _cuHerkunftWert = null;
+
+function cuHerkunft() {
+  if (_cuHerkunftWert) return _cuHerkunftWert;
+
+  function ls(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
+  function lsSet(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
+  function ss(k) { try { return sessionStorage.getItem(k); } catch (e) { return null; } }
+  function ssSet(k, v) { try { sessionStorage.setItem(k, v); } catch (e) {} }
+  function param(name) {
+    var m = window.location.search.match(new RegExp('[?&]' + name + '=([^&#]*)'));
+    if (!m) return '';
+    try { return decodeURIComponent(m[1]).toLowerCase(); } catch (e) { return m[1].toLowerCase(); }
+  }
+
+  var src = param('src');
+  if (src === 'reset') {
+    try {
+      ['cu_follower', 'cu_wa_status', 'cu_wa_snooze', 'cu_wa_shown', 'cu_sp_snooze', 'cu_sp_supporter'].forEach(function (k) { localStorage.removeItem(k); });
+      ['cu_herkunft', 'cu_herkunft_test', 'cu_sp_pv', 'cu_sp_shown', 'cu_wa_pageviews', 'cu_wa_promo_session'].forEach(function (k) { sessionStorage.removeItem(k); });
+    } catch (e) {}
+  }
+  if (src === 'google') ssSet(CU_TEST_GOOGLE_KEY, '1');
+
+  var quelle = param('utm_source') || src;
+  var herkunft;
+  if (ss(CU_TEST_GOOGLE_KEY) === '1') {
+    herkunft = 'google';
+  } else if (quelle === 'whatsapp') {
+    lsSet(CU_FOLLOWER_KEY, '1');
+    herkunft = 'follower';
+  } else if (ls(CU_FOLLOWER_KEY) === '1' || ls('cu_wa_status')) {
+    herkunft = 'follower';
+  } else if (quelle === 'google' || param('gclid') || /^https?:\/\/([^\/]*\.)?google\.[a-z.]+\//i.test(document.referrer)) {
+    herkunft = 'google';
+  } else {
+    herkunft = ss(CU_HERKUNFT_KEY) || 'direkt';
+  }
+  ssSet(CU_HERKUNFT_KEY, herkunft);
+  _cuHerkunftWert = herkunft;
+  return herkunft;
+}
+
 (function () {
   injectWhatsAppPromo();
   hervorhebeWhatsAppNav();
   injectWhatsAppAbbinder();
+  injectSpendenStoerer();
+  tauscheStartseiteKanalZuSpenden();
   injectSpendenLink();
   injectSupporterAbmeldenLink();
   restructureDrawerNav();
@@ -343,6 +413,13 @@ function restructureDrawerNav() {
 // vor cookie-consent.js laeuft.
 function trackWhatsAppClicks() {
   document.addEventListener('click', function (e) {
+    var spende = e.target.closest('a[data-cu-spende]');
+    if (spende && typeof window.gtag === 'function') {
+      window.gtag('event', 'spenden_click', { ort: spende.getAttribute('data-cu-spende'), page_path: window.location.pathname });
+    }
+  });
+
+  document.addEventListener('click', function (e) {
     var link = e.target.closest('a[href^="' + CU_WA_KANAL_URL + '"]');
     if (!link || typeof window.gtag !== 'function') return;
     window.gtag('event', 'whatsapp_click', {
@@ -369,6 +446,10 @@ function injectWhatsAppAbbinder() {
   var AUSGESCHLOSSEN = ['/', '/home', '/impressum', '/datenschutz', '/whatsapp-info', '/uebung-einreichen'];
   var pfad = window.location.pathname.replace(/\/$/, '') || '/';
   if (AUSGESCHLOSSEN.indexOf(pfad) !== -1) return;
+  // Follower sind schon im Kanal: statt der Kanal-Werbung steht dort die
+  // Spenden-Bitte (auf den Spenden-Seiten selbst gar nichts).
+  var istFollower = cuHerkunft() === 'follower';
+  if (istFollower && ['/spenden', '/danke', '/supporter-abmelden'].indexOf(pfad) !== -1) return;
   if (document.getElementById('cu-wa-abbinder')) return;
 
   var container = document.querySelector('.container');
@@ -401,6 +482,8 @@ function injectWhatsAppAbbinder() {
       transition: background 0.15s;
     }
     .cu-wa-abbinder-cta:hover { background: #1ebd5b; }
+    .cu-wa-abbinder-cta--spende { background: #1E6BFF; }
+    .cu-wa-abbinder-cta--spende:hover { background: #1558d6; }
     /* /einheiten hat als letzte Sektion davor schon einen dunklen Hintergrund
        (#direkt-zu-den-uebungen, hs--dunkel) - hier also hell, damit nicht
        zwei dunkle Flaechen aufeinandertreffen. */
@@ -434,18 +517,177 @@ function injectWhatsAppAbbinder() {
   section.className = 'cu-wa-abbinder' + (pfad === '/einheiten' ? ' cu-wa-abbinder--hell' : '');
   section.innerHTML =
       '<div class="cu-wa-abbinder-inner">'
-    +   '<span class="cu-wa-abbinder-label">Kanal</span>'
-    +   '<h2 class="cu-wa-abbinder-title">Komm in unseren WhatsApp-Kanal</h2>'
-    +   '<p class="cu-wa-abbinder-text">Jede Woche posten wir dort neue Übungen. Keine Diskussionen, keine Chats – nur neue Ideen für dein Training.</p>'
-    +   '<a class="cu-wa-abbinder-cta" href="' + ctaHref + '"' + ctaExtra + '>'
-    +     cuWaIcon(18)
-    +     'Zum Kanal'
-    +   '</a>'
+    +   (istFollower
+          ? '<span class="cu-wa-abbinder-label">Supporter</span>'
+          + '<h2 class="cu-wa-abbinder-title">' + CU_SPENDEN_TITEL + '</h2>'
+          + '<p class="cu-wa-abbinder-text">' + CU_SPENDEN_TEXT + '</p>'
+          + '<a class="cu-wa-abbinder-cta cu-wa-abbinder-cta--spende" href="/spenden" data-cu-spende="abbinder">Supporter werden</a>'
+          : '<span class="cu-wa-abbinder-label">Kanal</span>'
+          + '<h2 class="cu-wa-abbinder-title">Komm in unseren WhatsApp-Kanal</h2>'
+          + '<p class="cu-wa-abbinder-text">Jede Woche posten wir dort neue Übungen. Keine Diskussionen, keine Chats – nur neue Ideen für dein Training.</p>'
+          + '<a class="cu-wa-abbinder-cta" href="' + ctaHref + '"' + ctaExtra + '>'
+          +   cuWaIcon(18)
+          +   'Zum Kanal'
+          + '</a>')
     + '</div>';
 
   var nav = container.querySelector('.bottom-nav');
   if (nav) container.insertBefore(section, nav);
   else container.appendChild(section);
+}
+
+// ── Startseite: Kanal-Sektion fuer Follower durch die Spenden-Bitte ersetzen ──
+function tauscheStartseiteKanalZuSpenden() {
+  var sektion = document.getElementById('whatsapp-home');
+  if (!sektion || cuHerkunft() !== 'follower') return;
+  var label = sektion.querySelector('.hs-label');
+  var titel = sektion.querySelector('.hs-title');
+  var text = sektion.querySelector('.hs-text');
+  var cta = sektion.querySelector('.hs-cta');
+  if (label) label.textContent = 'Supporter';
+  if (titel) titel.textContent = CU_SPENDEN_TITEL;
+  if (text) text.textContent = CU_SPENDEN_TEXT;
+  if (cta) {
+    cta.classList.remove('hs-cta--whatsapp');
+    cta.href = '/spenden';
+    cta.removeAttribute('target');
+    cta.removeAttribute('rel');
+    cta.setAttribute('data-cu-spende', 'startseite');
+    cta.textContent = 'Supporter werden';
+  }
+}
+
+// ── Spenden-Stoerer fuer Follower (kommen aus dem WhatsApp-Kanal) ──
+//
+// Ab dem zweiten Seitenaufruf der Sitzung, hoechstens einmal pro Sitzung.
+// ✕ / "Spaeter" = 30 Tage Ruhe, "Bin schon Supporter" = nie wieder, Klick auf
+// "Supporter werden" = ebenfalls 30 Tage Ruhe. Nie auf Spenden-/Rechtsseiten.
+// Test: ?src=whatsapp&sp=1 erzwingt die Anzeige, ?src=reset setzt alles zurueck.
+function injectSpendenStoerer() {
+  if (cuHerkunft() !== 'follower') return;
+
+  var SNOOZE_KEY = 'cu_sp_snooze';       // localStorage: Zeitstempel (30 Tage)
+  var SUPPORTER_KEY = 'cu_sp_supporter'; // localStorage: '1' = ist schon Supporter
+  var PV_KEY = 'cu_sp_pv';               // sessionStorage: Seitenaufrufe der Sitzung
+  var SHOWN_KEY = 'cu_sp_shown';         // sessionStorage: in dieser Sitzung schon gezeigt
+  var SNOOZE_TAGE = 30;
+
+  function lies(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
+  function schreib(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
+  function liesS(k) { try { return sessionStorage.getItem(k); } catch (e) { return null; } }
+  function schreibS(k, v) { try { sessionStorage.setItem(k, v); } catch (e) {} }
+  function ereignis(name) { if (typeof window.gtag === 'function') window.gtag('event', name); }
+
+  var pfad = window.location.pathname.replace(/\/$/, '') || '/';
+  if (['/spenden', '/danke', '/supporter-abmelden', '/whatsapp-info', '/impressum', '/datenschutz'].indexOf(pfad) !== -1) return;
+
+  var erzwungen = /[?&]sp=1/.test(window.location.search);
+  if (!erzwungen) {
+    if (lies(SUPPORTER_KEY)) return;
+    var snooze = Number(lies(SNOOZE_KEY) || 0);
+    if (snooze && Date.now() - snooze < SNOOZE_TAGE * 24 * 60 * 60 * 1000) return;
+    if (liesS(SHOWN_KEY) === '1') return;
+  }
+
+  var aufrufe = Number(liesS(PV_KEY) || 0) + 1;
+  schreibS(PV_KEY, String(aufrufe));
+  if (!erzwungen && aufrufe < 2) return;
+
+  var style = document.createElement('style');
+  style.textContent = `
+    .cu-sp {
+      position: fixed; z-index: 40;
+      font-family: 'Inter Tight', system-ui, sans-serif;
+      background: #fff; border-radius: 14px;
+      box-shadow: 0 12px 34px rgba(14, 20, 48, 0.26);
+      padding: 15px 16px 14px;
+      opacity: 0; transform: translateY(14px);
+      transition: opacity 0.35s ease, transform 0.35s ease;
+    }
+    .cu-sp.cu-sp-in { opacity: 1; transform: translateY(0); }
+    .cu-sp-close {
+      position: absolute; top: 7px; right: 8px;
+      background: none; border: none; cursor: pointer;
+      font-size: 15px; line-height: 1; padding: 4px;
+      color: #8890A8; opacity: 0.8;
+    }
+    .cu-sp-close:hover { opacity: 1; }
+    .cu-sp-title {
+      font-size: 15px; font-weight: 800; color: #0E1430;
+      line-height: 1.3; letter-spacing: -0.01em; padding-right: 20px; margin: 0;
+    }
+    .cu-sp-sub { font-size: 13px; color: #6B7390; line-height: 1.45; margin: 4px 0 0; }
+    .cu-sp-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+    .cu-sp-primary, .cu-sp-secondary {
+      font-family: 'Inter Tight', system-ui, sans-serif;
+      font-size: 13.5px; font-weight: 700;
+      padding: 10px 15px; border-radius: 9px;
+      cursor: pointer; text-decoration: none; border: 1.5px solid transparent;
+      transition: background 0.15s, color 0.15s, border-color 0.15s;
+    }
+    .cu-sp-primary { background: #1E6BFF; border-color: #1E6BFF; color: #fff; }
+    .cu-sp-primary:hover { background: #1558d6; border-color: #1558d6; }
+    .cu-sp-secondary { background: transparent; border-color: #D8DEEC; color: #46506E; }
+    .cu-sp-secondary:hover { border-color: #1E6BFF; color: #1E6BFF; background: #F2F6FF; }
+    @media (max-width: 767px) {
+      .cu-sp { left: 12px; right: 12px; bottom: 16px; }
+      .cu-sp.cu-sp-ueber-nav { bottom: var(--cu-sp-abstand, 92px); }
+    }
+    @media (min-width: 768px) {
+      .cu-sp { right: 24px; bottom: 24px; width: 360px; }
+    }
+    @media print { .cu-sp { display: none !important; } }
+  `;
+  document.head.appendChild(style);
+
+  var box = document.createElement('div');
+  box.className = 'cu-sp';
+  box.setAttribute('role', 'complementary');
+  box.innerHTML =
+      '<button class="cu-sp-close" aria-label="Hinweis schließen">✕</button>'
+    + '<p class="cu-sp-title">Hilf mit 1\u00a0€ im Monat</p>'
+    + '<p class="cu-sp-sub">Wir bauen die größte freie Übungsplattform für den Kinderfußball auf – ohne Werbung, ohne Paywall, ohne Investoren. Mit 1\u00a0€ pro Monat unterstützt du unsere gemeinnützige Arbeit, ganz schnell per PayPal und Co.</p>'
+    + '<div class="cu-sp-actions">'
+    +   '<a class="cu-sp-primary" href="/spenden">Supporter werden</a>'
+    +   '<button class="cu-sp-secondary cu-sp-spaeter" type="button">Später</button>'
+    +   '<button class="cu-sp-secondary cu-sp-schon" type="button">Bin schon Supporter</button>'
+    + '</div>';
+
+  function schliessen() {
+    box.classList.remove('cu-sp-in');
+    setTimeout(function () { box.remove(); }, 320);
+  }
+  function spaeter(name) {
+    schreib(SNOOZE_KEY, String(Date.now()));
+    ereignis(name);
+    schliessen();
+  }
+  box.querySelector('.cu-sp-close').addEventListener('click', function () { spaeter('sp_promo_dismiss'); });
+  box.querySelector('.cu-sp-spaeter').addEventListener('click', function () { spaeter('sp_promo_dismiss'); });
+  box.querySelector('.cu-sp-schon').addEventListener('click', function () {
+    schreib(SUPPORTER_KEY, '1');
+    ereignis('sp_promo_has');
+    schliessen();
+  });
+  box.querySelector('.cu-sp-primary').addEventListener('click', function () {
+    schreib(SNOOZE_KEY, String(Date.now()));
+    ereignis('sp_promo_click');
+  });
+
+  setTimeout(function () {
+    var nav = document.querySelector('.bottom-nav');
+    if (nav && window.innerWidth < 768) {
+      var hoehe = Math.round(nav.getBoundingClientRect().height);
+      if (hoehe > 0) {
+        box.style.setProperty('--cu-sp-abstand', (hoehe + 12) + 'px');
+        box.classList.add('cu-sp-ueber-nav');
+      }
+    }
+    document.body.appendChild(box);
+    schreibS(SHOWN_KEY, '1');
+    ereignis('sp_promo_shown');
+    setTimeout(function () { box.classList.add('cu-sp-in'); }, 60);
+  }, 1200);
 }
 
 // ── Hinweis auf den WhatsApp-Kanal, nur auf den Ad-Grants-Landingpages ──
@@ -521,6 +763,9 @@ function injectWhatsAppPromo() {
   var sessionAktiv  = liesSession(SESSION_KEY) === '1';
 
   if (!(erzwungen || istVorschau || (WA_PROMO_LIVE && (aufZielseite || sessionAktiv)))) return;
+
+  // Follower sind schon im Kanal (s. cuHerkunft) - sie sehen stattdessen die Spenden-Bitte.
+  if (cuHerkunft() === 'follower') return;
 
   // Auf der Infoseite zum Kanal wäre der Hinweis überflüssig.
   if (window.location.pathname.replace(/\/$/, '') === '/whatsapp-info') return;
