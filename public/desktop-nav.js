@@ -518,7 +518,7 @@ function injectWhatsAppAbbinder() {
   section.innerHTML =
       '<div class="cu-wa-abbinder-inner">'
     +   (istFollower
-          ? '<span class="cu-wa-abbinder-label">Supporter</span>'
+          ? '<span class="cu-wa-abbinder-label">Spenden</span>'
           + '<h2 class="cu-wa-abbinder-title">' + CU_SPENDEN_TITEL + '</h2>'
           + '<p class="cu-wa-abbinder-text">' + CU_SPENDEN_TEXT + '</p>'
           + '<a class="cu-wa-abbinder-cta cu-wa-abbinder-cta--spende" href="/spenden" data-cu-spende="abbinder">Spenden</a>'
@@ -544,7 +544,7 @@ function tauscheStartseiteKanalZuSpenden() {
   var titel = sektion.querySelector('.hs-title');
   var text = sektion.querySelector('.hs-text');
   var cta = sektion.querySelector('.hs-cta');
-  if (label) label.textContent = 'Supporter';
+  if (label) label.textContent = 'Spenden';
   if (titel) titel.textContent = CU_SPENDEN_TITEL;
   if (text) text.textContent = CU_SPENDEN_TEXT;
   if (cta) {
