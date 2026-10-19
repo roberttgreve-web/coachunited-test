@@ -560,17 +560,17 @@ function tauscheStartseiteKanalZuSpenden() {
 // ── Spenden-Stoerer fuer Follower (kommen aus dem WhatsApp-Kanal) ──
 //
 // Ab dem zweiten Seitenaufruf der Sitzung, hoechstens einmal pro Sitzung.
-// ✕ / "Spaeter" = 30 Tage Ruhe, "Hab schon gespendet" = nie wieder, Klick auf
-// "Spenden" = ebenfalls 30 Tage Ruhe. Nie auf Spenden-/Rechtsseiten.
+// ✕ / "Spaeter" = 14 Tage Ruhe, "Hab schon gespendet" = nie wieder, Klick auf
+// "Spenden" = ebenfalls 30 Tage Ruhe (laenger, da gespendet wird). Nie auf Spenden-/Rechtsseiten.
 // Test: ?src=whatsapp&sp=1 erzwingt die Anzeige, ?src=reset setzt alles zurueck.
 function injectSpendenStoerer() {
   if (cuHerkunft() !== 'follower') return;
 
-  var SNOOZE_KEY = 'cu_sp_snooze';       // localStorage: Zeitstempel (30 Tage)
+  var SNOOZE_KEY = 'cu_sp_snooze';       // localStorage: Ablaufzeitpunkt der Ruhe (ms)
   var SUPPORTER_KEY = 'cu_sp_supporter'; // localStorage: '1' = ist schon Supporter
   var PV_KEY = 'cu_sp_pv';               // sessionStorage: Seitenaufrufe der Sitzung
   var SHOWN_KEY = 'cu_sp_shown';         // sessionStorage: in dieser Sitzung schon gezeigt
-  var SNOOZE_TAGE = 30;
+  var TAG = 24 * 60 * 60 * 1000;
 
   function lies(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
   function schreib(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
@@ -586,7 +586,7 @@ function injectSpendenStoerer() {
   if (!erzwungen) {
     if (lies(SUPPORTER_KEY)) return;
     var snooze = Number(lies(SNOOZE_KEY) || 0);
-    if (snooze && Date.now() - snooze < SNOOZE_TAGE * 24 * 60 * 60 * 1000) return;
+    if (snooze && Date.now() < snooze) return;
     if (liesS(SHOWN_KEY) === '1') return;
   }
 
@@ -667,7 +667,7 @@ function injectSpendenStoerer() {
     setTimeout(function () { box.remove(); }, 320);
   }
   function spaeter(name) {
-    schreib(SNOOZE_KEY, String(Date.now()));
+    schreib(SNOOZE_KEY, String(Date.now() + 14 * TAG));
     ereignis(name);
     schliessen();
   }
@@ -679,7 +679,7 @@ function injectSpendenStoerer() {
     schliessen();
   });
   box.querySelector('.cu-sp-primary').addEventListener('click', function () {
-    schreib(SNOOZE_KEY, String(Date.now()));
+    schreib(SNOOZE_KEY, String(Date.now() + 30 * TAG));
     ereignis('sp_promo_click');
   });
 
