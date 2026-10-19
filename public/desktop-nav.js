@@ -415,7 +415,7 @@ function trackWhatsAppClicks() {
   document.addEventListener('click', function (e) {
     var spende = e.target.closest('a[data-cu-spende]');
     if (spende && typeof window.gtag === 'function') {
-      window.gtag('event', 'spenden_click', { ort: spende.getAttribute('data-cu-spende'), page_path: window.location.pathname });
+      window.gtag('event', 'spenden_click', { ort: spende.getAttribute('data-cu-spende'), page_path: window.location.pathname, transport_type: 'beacon' });
     }
   });
 
@@ -576,7 +576,8 @@ function injectSpendenStoerer() {
   function schreib(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
   function liesS(k) { try { return sessionStorage.getItem(k); } catch (e) { return null; } }
   function schreibS(k, v) { try { sessionStorage.setItem(k, v); } catch (e) {} }
-  function ereignis(name) { if (typeof window.gtag === 'function') window.gtag('event', name); }
+  // beacon: der Klick auf "Supporter werden" verlaesst die Seite sofort - so geht das Event trotzdem raus
+  function ereignis(name) { if (typeof window.gtag === 'function') window.gtag('event', name, { transport_type: 'beacon' }); }
 
   var pfad = window.location.pathname.replace(/\/$/, '') || '/';
   if (['/spenden', '/danke', '/supporter-abmelden', '/whatsapp-info', '/impressum', '/datenschutz'].indexOf(pfad) !== -1) return;
