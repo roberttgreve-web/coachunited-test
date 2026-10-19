@@ -193,6 +193,7 @@ function injectKanalLinkFuerFollower() {
   injectSupporterAbmeldenLink();
   restructureDrawerNav();
   injectKanalLinkFuerFollower();
+  injectKanalKopierButton();
   trackWhatsAppClicks();
 
   if (window.innerWidth < 768) return;
@@ -660,6 +661,100 @@ function injectWhatsAppAbbinder() {
   else container.appendChild(section);
 }
 
+// ── Robert-Modus: Kopier-Button fuer den Kanal-Link (mit utm_source) ──
+//
+// Robert postet vom Handy in den WhatsApp-Kanal, ohne Publisher. Damit der Link
+// trotzdem den Parameter ?utm_source=whatsapp&utm_medium=kanal traegt (daran
+// erkennt die Seite Follower, s. cuHerkunft), gibt es auf Uebungsseiten einen
+// kleinen Button "Kanal-Link kopieren" - aber nur, wenn der Modus im Browser
+// eingeschaltet ist. Normale Besucher sehen ihn nie.
+// Einschalten (einmal pro Geraet/Browser): beliebige Seite mit ?robert=1 oeffnen,
+// z. B. https://coachunited.de/uebungen?robert=1 (als Lesezeichen ablegen).
+// Ausschalten: ?robert=0. Im Modus erscheinen keine Stoerer/Popups.
+
+function cuRobert() {
+  try {
+    var m = window.location.search.match(/[?&]robert=([01])/);
+    if (m) {
+      if (m[1] === '1') localStorage.setItem('cu_robert', '1');
+      else localStorage.removeItem('cu_robert');
+    }
+    return localStorage.getItem('cu_robert') === '1';
+  } catch (e) { return false; }
+}
+
+function injectKanalKopierButton() {
+  if (!cuRobert()) return;
+  var pfad = window.location.pathname.replace(/\/$/, '');
+  if (pfad.indexOf('/uebung/') !== 0) return;
+  if (document.getElementById('cu-kopier')) return;
+
+  var canonical = document.querySelector('link[rel="canonical"]');
+  var basis = (canonical && canonical.href) ? canonical.href : 'https://coachunited.de' + pfad;
+  var link = basis.split('?')[0] + '?utm_source=whatsapp&utm_medium=kanal';
+
+  var style = document.createElement('style');
+  style.textContent = `
+    .cu-kopier {
+      position: fixed; z-index: 45; right: 14px; bottom: 14px;
+      font-family: 'Inter Tight', system-ui, sans-serif;
+      font-size: 14px; font-weight: 700; color: #fff;
+      background: #0E1430; border: none; border-radius: 999px;
+      padding: 12px 18px; cursor: pointer;
+      box-shadow: 0 8px 24px rgba(14, 20, 48, 0.3);
+    }
+    .cu-kopier.cu-kopier-ok { background: #1D9E55; }
+    @media (max-width: 767px) {
+      .cu-kopier { bottom: var(--cu-kopier-abstand, 96px); }
+    }
+    @media print { .cu-kopier { display: none !important; } }
+  `;
+  document.head.appendChild(style);
+
+  var btn = document.createElement('button');
+  btn.id = 'cu-kopier';
+  btn.type = 'button';
+  btn.className = 'cu-kopier';
+  btn.textContent = 'Kanal-Link kopieren';
+
+  var nav = document.querySelector('.bottom-nav');
+  if (nav && window.innerWidth < 768) {
+    var hoehe = Math.round(nav.getBoundingClientRect().height);
+    if (hoehe > 0) btn.style.setProperty('--cu-kopier-abstand', (hoehe + 12) + 'px');
+  }
+
+  function fertig(ok) {
+    btn.textContent = ok ? 'Kopiert ✓' : 'Kopieren fehlgeschlagen';
+    if (ok) btn.classList.add('cu-kopier-ok');
+    setTimeout(function () {
+      btn.textContent = 'Kanal-Link kopieren';
+      btn.classList.remove('cu-kopier-ok');
+    }, 2000);
+  }
+  function altKopieren() {
+    var ta = document.createElement('textarea');
+    ta.value = link;
+    ta.setAttribute('readonly', '');
+    ta.style.position = 'fixed';
+    ta.style.opacity = '0';
+    document.body.appendChild(ta);
+    ta.select();
+    var ok = false;
+    try { ok = document.execCommand('copy'); } catch (e) {}
+    ta.remove();
+    fertig(ok);
+  }
+  btn.addEventListener('click', function () {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(link).then(function () { fertig(true); }, altKopieren);
+    } else {
+      altKopieren();
+    }
+  });
+
+  document.body.appendChild(btn);
+}
+
 // ── Startseite: Kanal-Sektion fuer Follower durch die Spenden-Bitte ersetzen ──
 function tauscheStartseiteKanalZuSpenden() {
   var sektion = document.getElementById('whatsapp-home');
@@ -688,7 +783,7 @@ function tauscheStartseiteKanalZuSpenden() {
 // "Spenden" = ebenfalls 30 Tage Ruhe (laenger, da gespendet wird). Nie auf Spenden-/Rechtsseiten.
 // Test: ?src=whatsapp&sp=1 erzwingt die Anzeige, ?src=reset setzt alles zurueck.
 function injectSpendenStoerer() {
-  if (cuHerkunft() !== 'follower') return;
+  if (cuHerkunft() !== 'follower' || cuRobert()) return;
 
   var SNOOZE_KEY = 'cu_sp_snooze';       // localStorage: Ablaufzeitpunkt der Ruhe (ms)
   var SUPPORTER_KEY = 'cu_sp_supporter'; // localStorage: '1' = ist schon Supporter
@@ -899,6 +994,8 @@ function injectWhatsAppPromo() {
 
   // Follower sind schon im Kanal (s. cuHerkunft) - sie sehen stattdessen die Spenden-Bitte.
   if (cuHerkunft() === 'follower') return;
+  // Robert-Modus (s. cuRobert): keine Popups fuer den Betreiber selbst.
+  if (cuRobert()) return;
 
   // Auf der Infoseite zum Kanal wäre der Hinweis überflüssig.
   if (window.location.pathname.replace(/\/$/, '') === '/whatsapp-info') return;

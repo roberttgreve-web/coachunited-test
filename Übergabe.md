@@ -1556,3 +1556,13 @@ Robert wollte bei #245 „VIER PÄSSE - DRIBBELN ODER SCHIESSEN?“ (Schwester v
 - **`einreichen`** (Follower mit „Hab schon gespendet“, `cu_sp_supporter`): neutraler Punkt „Übung einreichen“ (mobil „Einreichen“, Plus-Icon) -> `/uebung-einreichen`.
 - Follower finden den Kanal-Link weiter im **Footer** (Desktop, `footerKanal`) und im **Seitenmenü** (`injectKanalLinkFuerFollower`, `data-cu-kanal`). Der Modus wird beim Laden bestimmt; nach einem Klick auf „Hab schon gespendet“ ändert sich das Menü erst beim nächsten Seitenaufruf.
 - Getestet lokal mit `?src=whatsapp` (spenden), zusätzlich `cu_sp_supporter=1` (einreichen), `?src=google` (whatsapp); Desktop-Pille per Screenshot geprüft, mobile Bottom-Nav nur per DOM-Abfrage.
+
+### 48.2 Robert-Modus: Kopier-Button „Kanal-Link kopieren“ fürs Posten vom Handy (19.10.2026)
+
+**Problem:** Robert postet vom Handy in den Kanal, ohne Publisher (der läuft nur lokal). Der Link braucht aber `?utm_source=whatsapp&utm_medium=kanal` (Follower-Erkennung, 48).
+**Lösung (`desktop-nav.js`, `cuRobert()` / `injectKanalKopierButton()`):** Auf Übungsseiten (`/uebung/<slug>`) erscheint unten rechts ein dunkler Button **„Kanal-Link kopieren“** (mobil über der Bottom-Nav); Tipp kopiert `<canonical-URL>?utm_source=whatsapp&utm_medium=kanal` in die Zwischenablage („Kopiert ✓“). Der Button ist nur sichtbar, wenn der Modus im Browser eingeschaltet ist (`localStorage.cu_robert = '1'`).
+- **Einschalten (einmal pro Gerät/Browser):** `https://coachunited.de/uebungen?robert=1` öffnen (am besten als Lesezeichen/Startbildschirm-Symbol ablegen). **Ausschalten:** `?robert=0`.
+- Im Robert-Modus werden **keine Popups/Störer** gezeigt (WhatsApp-Popup und Spenden-Störer unterdrückt).
+- Normale Besucher sehen den Button nie (kein Geheimnis im Sicherheitssinn: wer `?robert=1` kennt, sieht nur den Kopier-Button).
+- **Falle (beim Bau gefunden):** `var`-Konstanten, die UNTER der sofort ausgeführten Funktion (IIFE) stehen, sind beim Start noch `undefined` (Hinweis steht auch am Dateianfang). `CU_ROBERT_KEY` wurde deshalb durch den Literalschlüssel `'cu_robert'` ersetzt; neue Konstanten, die die IIFE braucht, gehören an den Dateianfang.
+- Getestet lokal (Seite `uebung-detail.html` mit simuliertem Pfad `/uebung/…`, Zwischenablage abgefangen): Link korrekt, Button-Rückmeldung „Kopiert ✓“. Echtes Kopieren auf dem Handy noch nicht geprüft.
