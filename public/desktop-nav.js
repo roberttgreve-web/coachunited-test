@@ -35,7 +35,7 @@ function istDesktopBreite() {
 var CU_FOLLOWER_KEY = 'cu_follower';      // localStorage: '1' = kam aus dem WhatsApp-Kanal
 var CU_HERKUNFT_KEY = 'cu_herkunft';      // sessionStorage: Quelle der Sitzung
 var CU_TEST_GOOGLE_KEY = 'cu_herkunft_test'; // sessionStorage: ?src=google
-var CU_SPENDEN_TITEL = 'Unterstütze unsere gemeinnützige Arbeit mit einer Spende von 100a0€ im Monat';
+var CU_SPENDEN_TITEL = 'Unterstütze unsere gemeinnützige Arbeit mit einer Spende von 1\u00a0€ im Monat';
 var CU_SPENDEN_TEXT = 'Mit Coach United bauen wir die größte freie Übungsplattform für den Kinderfußball auf – ohne Werbung, ohne Paywall, ohne Investoren. Du kannst uns schon mit 1\u00a0€ pro Monat unterstützen. Das geht ganz schnell per PayPal und Co.';
 var _cuHerkunftWert = null;
 
@@ -654,7 +654,7 @@ function injectSpendenStoerer() {
   box.setAttribute('role', 'complementary');
   box.innerHTML =
       '<button class="cu-sp-close" aria-label="Hinweis schließen">✕</button>'
-    + '<p class="cu-sp-title">Spende 100a0€ im Monat</p>'
+    + '<p class="cu-sp-title">Spende 1\u00a0€ im Monat</p>'
     + '<p class="cu-sp-sub">Wir bauen die größte freie Übungsplattform für den Kinderfußball auf – ohne Werbung, ohne Paywall, ohne Investoren. Mit 1\u00a0€ pro Monat unterstützt du unsere gemeinnützige Arbeit, ganz schnell per PayPal und Co.</p>'
     + '<div class="cu-sp-actions">'
     +   '<a class="cu-sp-primary" href="/spenden">Supporter werden</a>'
