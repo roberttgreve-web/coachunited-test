@@ -560,7 +560,7 @@ function tauscheStartseiteKanalZuSpenden() {
 // ── Spenden-Stoerer fuer Follower (kommen aus dem WhatsApp-Kanal) ──
 //
 // Ab dem zweiten Seitenaufruf der Sitzung, hoechstens einmal pro Sitzung.
-// ✕ / "Spaeter" = 30 Tage Ruhe, "Bin schon Supporter" = nie wieder, Klick auf
+// ✕ / "Spaeter" = 30 Tage Ruhe, "Hab schon gespendet" = nie wieder, Klick auf
 // "Spenden" = ebenfalls 30 Tage Ruhe. Nie auf Spenden-/Rechtsseiten.
 // Test: ?src=whatsapp&sp=1 erzwingt die Anzeige, ?src=reset setzt alles zurueck.
 function injectSpendenStoerer() {
@@ -659,7 +659,7 @@ function injectSpendenStoerer() {
     + '<div class="cu-sp-actions">'
     +   '<a class="cu-sp-primary" href="/spenden">Spenden</a>'
     +   '<button class="cu-sp-secondary cu-sp-spaeter" type="button">Später</button>'
-    +   '<button class="cu-sp-secondary cu-sp-schon" type="button">Bin schon Supporter</button>'
+    +   '<button class="cu-sp-secondary cu-sp-schon" type="button">Hab schon gespendet</button>'
     + '</div>';
 
   function schliessen() {
