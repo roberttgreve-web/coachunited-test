@@ -521,7 +521,7 @@ function injectWhatsAppAbbinder() {
           ? '<span class="cu-wa-abbinder-label">Supporter</span>'
           + '<h2 class="cu-wa-abbinder-title">' + CU_SPENDEN_TITEL + '</h2>'
           + '<p class="cu-wa-abbinder-text">' + CU_SPENDEN_TEXT + '</p>'
-          + '<a class="cu-wa-abbinder-cta cu-wa-abbinder-cta--spende" href="/spenden" data-cu-spende="abbinder">Supporter werden</a>'
+          + '<a class="cu-wa-abbinder-cta cu-wa-abbinder-cta--spende" href="/spenden" data-cu-spende="abbinder">Spenden</a>'
           : '<span class="cu-wa-abbinder-label">Kanal</span>'
           + '<h2 class="cu-wa-abbinder-title">Komm in unseren WhatsApp-Kanal</h2>'
           + '<p class="cu-wa-abbinder-text">Jede Woche posten wir dort neue Übungen. Keine Diskussionen, keine Chats – nur neue Ideen für dein Training.</p>'
@@ -553,7 +553,7 @@ function tauscheStartseiteKanalZuSpenden() {
     cta.removeAttribute('target');
     cta.removeAttribute('rel');
     cta.setAttribute('data-cu-spende', 'startseite');
-    cta.textContent = 'Supporter werden';
+    cta.textContent = 'Spenden';
   }
 }
 
@@ -561,7 +561,7 @@ function tauscheStartseiteKanalZuSpenden() {
 //
 // Ab dem zweiten Seitenaufruf der Sitzung, hoechstens einmal pro Sitzung.
 // ✕ / "Spaeter" = 30 Tage Ruhe, "Bin schon Supporter" = nie wieder, Klick auf
-// "Supporter werden" = ebenfalls 30 Tage Ruhe. Nie auf Spenden-/Rechtsseiten.
+// "Spenden" = ebenfalls 30 Tage Ruhe. Nie auf Spenden-/Rechtsseiten.
 // Test: ?src=whatsapp&sp=1 erzwingt die Anzeige, ?src=reset setzt alles zurueck.
 function injectSpendenStoerer() {
   if (cuHerkunft() !== 'follower') return;
@@ -576,7 +576,7 @@ function injectSpendenStoerer() {
   function schreib(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
   function liesS(k) { try { return sessionStorage.getItem(k); } catch (e) { return null; } }
   function schreibS(k, v) { try { sessionStorage.setItem(k, v); } catch (e) {} }
-  // beacon: der Klick auf "Supporter werden" verlaesst die Seite sofort - so geht das Event trotzdem raus
+  // beacon: der Klick auf "Spenden" verlaesst die Seite sofort - so geht das Event trotzdem raus
   function ereignis(name) { if (typeof window.gtag === 'function') window.gtag('event', name, { transport_type: 'beacon' }); }
 
   var pfad = window.location.pathname.replace(/\/$/, '') || '/';
@@ -657,7 +657,7 @@ function injectSpendenStoerer() {
     + '<p class="cu-sp-title">Spende 1\u00a0€ im Monat</p>'
     + '<p class="cu-sp-sub">Wir bauen die größte freie Übungsplattform für den Kinderfußball auf – ohne Werbung, ohne Paywall, ohne Investoren. Mit 1\u00a0€ pro Monat unterstützt du unsere gemeinnützige Arbeit, ganz schnell per PayPal und Co.</p>'
     + '<div class="cu-sp-actions">'
-    +   '<a class="cu-sp-primary" href="/spenden">Supporter werden</a>'
+    +   '<a class="cu-sp-primary" href="/spenden">Spenden</a>'
     +   '<button class="cu-sp-secondary cu-sp-spaeter" type="button">Später</button>'
     +   '<button class="cu-sp-secondary cu-sp-schon" type="button">Bin schon Supporter</button>'
     + '</div>';
