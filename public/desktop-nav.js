@@ -696,7 +696,7 @@ function injectSpendenStoerer() {
     schreibS(SHOWN_KEY, '1');
     ereignis('sp_promo_shown');
     setTimeout(function () { box.classList.add('cu-sp-in'); }, 60);
-  }, 1200);
+  }, 5000);
 }
 
 // ── Hinweis auf den WhatsApp-Kanal, nur auf den Ad-Grants-Landingpages ──
