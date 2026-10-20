@@ -13817,14 +13817,20 @@
     "quell_kategorie": "D-Jugend",
     "ist_gecrawlt": true,
     "ort": "Halle",
-    "schwester_id": null,
-    "schwester_titel": null,
+    "schwester_id": 210,
+    "schwester_titel": "BALL SCHNELL UND SAUBER ÜBERGEBEN - UND GEWINNEN",
     "original_aufbau": "Beide Hallenhälften jeweils als ein Spielfeld markieren\nJe 2 Starthütchen auf einer Grundlinie und je 2 Wendehütchen an der gegenüberliegenden markieren\nDie Grundlinie mit den Starthütchen ist jeweils die Ziellinie\n4 Teams bilden und jeweils den Starthütchen zuweisen\n1 Gruppe pro Feld hat Bälle",
     "original_durchfuehrung": "Die jeweils ersten Spieler umdribbeln bzw. umlaufen die Wendehütchen.\nSobald sich die Spieler treffen, spielen sie Schnick-Schnack-Schnuck (Schere-Stein-Papier).\nDer Gewinner dribbelt weiter, und der Verlierer läuft zum Starthütchen zurück.\nGleichzeitig startet der jeweils nächste Mitspieler des Verlierers usw.\nVerliert ein Dribbler im Schnick-Schnack-Schnuck, übergibt er den Ball an den Gegner.\nJedes Überdribbeln der Ziellinie ergibt einen Punkt für das jeweilige Team: Welches Team gewinnt zuerst 5 Punkte?",
     "original_varianten": "Als Wettbewerb organisieren.\nDen Ablauf ohne Ball durchführen.",
     "original_coaching_fokus": "Darauf achten, dass das Duell im Schnick-Schnack-Schnuck gemeinsam gestartet wird.\nDer Mitspieler des Verlierers startet sofort ins Feld, um möglichst viel Raum vor der Ziellinie zu gewinnen.",
-    "schwester_gruppen": [],
-    "schwester_ids": [],
+    "schwester_gruppen": [
+      [
+        210
+      ]
+    ],
+    "schwester_ids": [
+      210
+    ],
     "erstellt_am": "2026-10-20"
   },
   {
@@ -13890,5 +13896,73 @@
     "schwester_id": 204,
     "schwester_titel": "BÄLLE KLAUEN",
     "erstellt_am": "2026-10-15"
+  },
+  {
+    "id": 210,
+    "titel": "BALL SCHNELL UND SAUBER ÜBERGEBEN - UND GEWINNEN",
+    "quell_trainingseinheit": "",
+    "grafik_url": "https://coachunited.de/images/uebungen/uebung-210-ball-schnell-und-sauber-uebergeben-und-gewinnen.webp",
+    "grafik_dateiname": "Symmetrical Futsal Training Drill.png",
+    "trainingsphase": "Aufwärmen",
+    "ort": "Halle",
+    "kurzbeschreibung": "Zwei Teams treten in einem  Dribbelwettbewerb an, bei dem sich Spieler in der Hallenmitte treffen und den Ball sauber dem Mitspieler übergeben. Wer zuerst fünf Punkte sammelt, gewinnt.",
+    "aufbau": "Teile die Sporthalle in zwei Hälften auf und markiere in jeder Hälfte ein Spielfeld. Platziere je zwei Hütchen an einer Grundlinie als Startzonen und zwei weitere Hütchen an der gegenüberliegenden Grundlinie als Wendemarken. Die Startzone fungiert gleichzeitig als Ziellinie. Bilde vier Mannschaften und weise jeder ein Starthütchen zu. Eine Gruppe pro Feld hat die Bälle. ",
+    "durchfuehrung": "Der erste Spieler jeder Gruppe startet von seinem Hütchen, dribbelt oder läuft um die Wendemarken herum und bewegt sich zurück. Sobald sich die beiden Spieler in der Hallenmitte treffen, übergibt der eine Spieler dem anderen sauber den Ball mit einm kurzen Pass. Beide laufen geradeaus weiter zum Hütchen. Das Team, dessen Spieler mit Ball zuerst wieder die Ziellinie überquert, erhält einen Punkt. Das erste Team mit fünf Punkten hat gewonnen.",
+    "varianten": "",
+    "quell_url": "",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend"
+    ],
+    "skills": [
+      "Ballkontrolle",
+      "Dribbeln",
+      "Koordination",
+      "Schnelligkeit"
+    ],
+    "coaching_fokus": "• Kopf oben halten beim Dribbeln – schau nach vorn.; • Schnell weitermachen nach dem Schere-Stein-Papier-Duell.; • Sauberes Dribbeln, eng am Fuß. Saubere Ballübergabe.",
+    "leichter_machen": "• Kleineres Feld: Wendemarken näher zur Startzone, kürzere Dribbeldistanz; • Nicht als Wettbewerb ausführen, sondern langsamer.",
+    "schwerer_machen": "• Ball nur mit schwächerem Fuß dribbeln, per Innenseite ziehen oder Ball mit Außenseite führen",
+    "alt_titel": "",
+    "seo_keyword": "Fußballübung Dribbeln",
+    "url_slug": "ball-schnell-und-sauber-uebergeben-und-gewinnen",
+    "seo_meta_description": "Ballübergabe-Übung für Kinder: Spannender Dribbelwettbewerb mit Passübung. Trainiert Ballkontrolle, Passes und Teamfähigkeit für 6-12 Jahre.",
+    "grafik_alt_text": "Hallenlayout mit zwei Feldern, Startzone, Wendemarken und vier Mannschaften beim Dribbelwettbewerb mit Ballübergabe in der Hallenmitte.",
+    "grafik_description": "Die Grafik zeigt den Aufbau einer Ballübergabe-Übung in der Sporthalle mit zwei Spielfeldern. Markiert sind Startzonen, Wendemarken und der Mittelpunkt, wo die Ballübergabe stattfindet. Vier Mannschaften sind positioniert.",
+    "grafik_title": "Ballübergabe-Dribbelwettbewerb Hallenlayout",
+    "grafik_caption": "Aufbau: Zwei Felder mit Startzonen, Wendemarken und Übergabezone in der Hallenmitte.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler pro Team sollten es sein?",
+        "antwort": "Bei vier Teams im Wechsel 3–4 Spieler pro Gruppe, damit jeder ausreichend Pausen hat. "
+      },
+      {
+        "frage": "Wie lange sollte das Spiel auf fünf Punkte dauern?",
+        "antwort": "Je nach Altersstufe 8–15 Minuten. "
+      },
+      {
+        "frage": "Kann ich die Übung für jüngere Kinder (G-Jugend) anpassen?",
+        "antwort": "Die Übung ist auch für die G-Jugend so geeignet. "
+      }
+    ],
+    "status": "veroeffentlicht",
+    "referenz_grafik_url": "",
+    "quell_kategorie": "",
+    "ist_gecrawlt": false,
+    "schwester_gruppen": [
+      [
+        206
+      ]
+    ],
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "schwester_ids": [
+      206
+    ],
+    "schwester_id": 206,
+    "schwester_titel": "STEIN-PAPIER-SCHERE-DRIBBELDUELL",
+    "erstellt_am": "2026-10-20"
   }
 ]
