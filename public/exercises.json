@@ -13700,7 +13700,7 @@
     "ort": "Feld"
   },
   {
-    "id": 204,
+    "id": 203,
     "titel": "BÄLLE KLAUEN",
     "quell_trainingseinheit": "MOTIVIERENDE SPIELFORMEN FÜR DIE HALLE",
     "grafik_url": "https://coachunited.de/images/uebungen/uebung-204-baelle-klauen.webp",
@@ -13747,7 +13747,7 @@
     "referenz_grafik_url": "https://training-service.fussball.de/assets/img/csm_278953-535-f-au1-01_9b566fddab.png",
     "quell_kategorie": "F-Jugend",
     "ist_gecrawlt": true,
-    "schwester_id": 207,
+    "schwester_id": 204,
     "schwester_titel": "BÄLLE KLAUEN UND INS ZIEL LUPFEN",
     "original_aufbau": "4 umgedrehte Kleinkästen in der Halle verteilen.\nIn jeden Kleinkasten 3 Bälle legen.\n4 Mannschaften einteilen.\nJedes Team an einem Kleinkasten aufstellen.",
     "original_durchfuehrung": "Auf ein Trainerkommando versuchen die Spieler, möglichst viele Bälle aus anderen Kleinkästen zu holen und im eigenen Kleinkasten zu sammeln.\nJeder Spieler darf immer nur 1 Ball transportieren.\nWelche Mannschaft hat nach einer Minute die meisten Bälle gesammelt?",
@@ -13755,86 +13755,17 @@
     "original_coaching_fokus": "Das Spiel schult die Orientierung der Spieler, da diese immer alle Kleinkästen und die anderen Mannschaften beobachten müssen.\nEs zählen nur die Bälle, die nach einer Minute im Kleinkasten gesammelt sind. Neben dem Kasten liegende Bälle werden nicht gewertet.\nDie Kleinkästen dürfen nicht bewacht werden. Spieler mit Ball dürfen nicht behindert oder aufgehalten werden.",
     "schwester_gruppen": [
       [
-        207
+        204
       ]
     ],
     "schwester_ids": [
-      207
+      204
     ],
     "ort": "Halle",
     "erstellt_am": "2026-10-15"
   },
   {
-    "id": 206,
-    "titel": "STEIN-PAPIER-SCHERE-DRIBBELDUELL",
-    "quell_trainingseinheit": "DEN UMZUG IN DIE HALLE SPIELEND MEISTERN",
-    "grafik_url": "https://coachunited.de/images/uebungen/uebung-206-dribbeln-stein-papier-schere-dribbelduell.webp",
-    "grafik_dateiname": "Futsal Four-Lane Dribbling Drill.png",
-    "trainingsphase": "Aufwärmen",
-    "kurzbeschreibung": "Vier Teams treten in einem  Dribbelwettbewerb an, bei dem sich Spieler in der Hallenmitte treffen und per Stein-Papier-Schere um den Ballbesitz kämpfen. Wer zuerst fünf Punkte sammelt, gewinnt.",
-    "aufbau": "Teile die Sporthalle in zwei Hälften auf und markiere in jeder Hälfte ein Spielfeld. Platziere je zwei Hütchen an einer Grundlinie als Startzonen und zwei weitere Hütchen an der gegenüberliegenden Grundlinie als Wendemarken. Die Startzone fungiert gleichzeitig als Ziellinie. Bilde vier Mannschaften und weise jeder ein Starthütchen zu. Eine Gruppe pro Feld hat die Bälle. ",
-    "durchfuehrung": "Der erste Spieler jeder Gruppe startet von seinem Hütchen, dribbelt oder läuft um die Wendemarken herum und bewegt sich zurück. Sobald sich die beiden Spieler in der Hallenmitte treffen, spielen sie sofort Stein-Papier-Schere. Der Sieger setzt sein Dribbling mit Ball fort, der Verlierer kehrt zu seinem Starthütchen zurück. Der nächste Spieler der unterlegenen Mannschaft startet daraufhin sofort nach. Ein Punkt wird vergeben, sobald jemand mit Ball die Ziellinie überquert. Das erste Team mit fünf Punkten triumphiert.",
-    "varianten": "Als Wettbewerb organisieren.\nDen Ablauf ohne Ball durchführen.",
-    "quell_url": "https://training-service.fussball.de/trainer/d-juniorin/training-online/trainingseinheiten-detail/den-umzug-in-die-halle-spielend-meistern-2094/",
-    "quell_spiel_nr": 1,
-    "jugend": [
-      "G-Jugend",
-      "F-Jugend"
-    ],
-    "skills": [
-      "Ballkontrolle",
-      "Dribbeln",
-      "Koordination",
-      "Schnelligkeit"
-    ],
-    "coaching_fokus": "• Kopf oben halten beim Dribbeln – schau nach vorn.; • Schnell weitermachen nach dem Schere-Stein-Papier-Duell.; • Sauberes Dribbeln, eng am Fuß",
-    "leichter_machen": "• Den Ablauf ohne Ball durchführen – nur rennen und Stein-Papier-Schere spielen, um Anspruch zu senken; • Kleineres Feld: Wendemarken näher zur Startzone, kürzere Dribbeldistanz",
-    "schwerer_machen": "• Ball nur mit schwächerem Fuß dribbeln, per Innenseite ziehen oder Ball mit Außenseite führen",
-    "alt_titel": "",
-    "seo_keyword": "Fußballtraining Dribbeln",
-    "url_slug": "dribbeln-stein-papier-schere-dribbelduell",
-    "seo_meta_description": "Stein-Papier-Schere Dribbelduell: Rasante Dribbelübung für Kindertraining mit Ballkontrolle, Schnelligkeit und Spielspaß für G- bis D-Jugend.",
-    "grafik_alt_text": "Vier Teams dribbeln in zwei Hallenhälften, treffen sich in der Mitte und spielen Stein-Papier-Schere um Ballbesitz",
-    "grafik_description": "Die Grafik zeigt zwei Spielfelder nebeneinander in einer Sporthalle. Jedes Feld hat Startzonen mit Hütchen an einer Grundlinie und Wendemarken an der gegenüberliegenden Seite. Vier Teams starten gleichzeitig und dribbeln aufeinander zu, um in der Hallenmitte Stein-Papier-Schere zu spielen.",
-    "grafik_title": "Dribbelduell Stein-Papier-Schere Aufbau",
-    "grafik_caption": "Beide Spielfelder laufen parallel: Teams dribbeln vom Start um die Wendemarke und treffen sich in der Mitte.",
-    "faq": [
-      {
-        "frage": "Wie viele Spieler pro Team sollten es sein?",
-        "antwort": "Bei vier Teams im Wechsel 3–4 Spieler pro Gruppe, damit jeder ausreichend Pausen hat. "
-      },
-      {
-        "frage": "Wie lange sollte das Spiel auf fünf Punkte dauern?",
-        "antwort": "Je nach Altersstufe 8–15 Minuten. "
-      },
-      {
-        "frage": "Kann ich die Übung für jüngere Kinder (G-Jugend) anpassen?",
-        "antwort": "Die Übung ist auch für die G-Jugend so geeignet. "
-      }
-    ],
-    "status": "veroeffentlicht",
-    "referenz_grafik_url": "https://training-service.fussball.de/assets/img/csm_189331-456-d-au1-01_861772acc4.png",
-    "quell_kategorie": "D-Jugend",
-    "ist_gecrawlt": true,
-    "ort": "Halle",
-    "schwester_id": 210,
-    "schwester_titel": "BALL SCHNELL UND SAUBER ÜBERGEBEN - UND GEWINNEN",
-    "original_aufbau": "Beide Hallenhälften jeweils als ein Spielfeld markieren\nJe 2 Starthütchen auf einer Grundlinie und je 2 Wendehütchen an der gegenüberliegenden markieren\nDie Grundlinie mit den Starthütchen ist jeweils die Ziellinie\n4 Teams bilden und jeweils den Starthütchen zuweisen\n1 Gruppe pro Feld hat Bälle",
-    "original_durchfuehrung": "Die jeweils ersten Spieler umdribbeln bzw. umlaufen die Wendehütchen.\nSobald sich die Spieler treffen, spielen sie Schnick-Schnack-Schnuck (Schere-Stein-Papier).\nDer Gewinner dribbelt weiter, und der Verlierer läuft zum Starthütchen zurück.\nGleichzeitig startet der jeweils nächste Mitspieler des Verlierers usw.\nVerliert ein Dribbler im Schnick-Schnack-Schnuck, übergibt er den Ball an den Gegner.\nJedes Überdribbeln der Ziellinie ergibt einen Punkt für das jeweilige Team: Welches Team gewinnt zuerst 5 Punkte?",
-    "original_varianten": "Als Wettbewerb organisieren.\nDen Ablauf ohne Ball durchführen.",
-    "original_coaching_fokus": "Darauf achten, dass das Duell im Schnick-Schnack-Schnuck gemeinsam gestartet wird.\nDer Mitspieler des Verlierers startet sofort ins Feld, um möglichst viel Raum vor der Ziellinie zu gewinnen.",
-    "schwester_gruppen": [
-      [
-        210
-      ]
-    ],
-    "schwester_ids": [
-      210
-    ],
-    "erstellt_am": "2026-10-20"
-  },
-  {
-    "id": 207,
+    "id": 204,
     "titel": "BÄLLE KLAUEN UND INS ZIEL LUPFEN",
     "quell_trainingseinheit": "",
     "grafik_url": "https://coachunited.de/images/uebungen/uebung-207-baelle-klauen-und-ins-ziel-lupfen.webp",
@@ -13883,7 +13814,7 @@
     "ist_gecrawlt": false,
     "schwester_gruppen": [
       [
-        204
+        203
       ]
     ],
     "original_aufbau": "",
@@ -13891,23 +13822,92 @@
     "original_varianten": "",
     "original_coaching_fokus": "",
     "schwester_ids": [
-      204
+      203
     ],
-    "schwester_id": 204,
+    "schwester_id": 203,
     "schwester_titel": "BÄLLE KLAUEN",
     "erstellt_am": "2026-10-15"
   },
   {
-    "id": 210,
+    "id": 205,
+    "titel": "STEIN-PAPIER-SCHERE-DRIBBELDUELL",
+    "quell_trainingseinheit": "DEN UMZUG IN DIE HALLE SPIELEND MEISTERN",
+    "grafik_url": "https://coachunited.de/images/uebungen/uebung-206-dribbeln-stein-papier-schere-dribbelduell.webp",
+    "grafik_dateiname": "Futsal Four-Lane Dribbling Drill.png",
+    "trainingsphase": "Aufwärmen",
+    "kurzbeschreibung": "Vier Teams treten in einem Dribbelwettbewerb an, bei dem sich Spieler in der Hallenmitte treffen und per Stein-Papier-Schere um den Ballbesitz kämpfen. Wer zuerst fünf Punkte sammelt, gewinnt.",
+    "aufbau": "Teile die Sporthalle in zwei Hälften auf und markiere in jeder Hälfte ein Spielfeld. Platziere je zwei Hütchen an einer Grundlinie als Startzonen und zwei weitere Hütchen an der gegenüberliegenden Grundlinie als Wendemarken. Die Startzone fungiert gleichzeitig als Ziellinie. Bilde vier Mannschaften und weise jeder ein Starthütchen zu. Eine Gruppe pro Feld hat die Bälle.",
+    "durchfuehrung": "Der erste Spieler jeder Gruppe startet von seinem Hütchen, dribbelt oder läuft um die Wendemarken herum und bewegt sich zurück. Sobald sich die beiden Spieler in der Hallenmitte treffen, spielen sie sofort Stein-Papier-Schere. Der Sieger setzt sein Dribbling mit Ball fort, der Verlierer kehrt zu seinem Starthütchen zurück. Der nächste Spieler der unterlegenen Mannschaft startet daraufhin sofort nach. Ein Punkt wird vergeben, sobald jemand mit Ball die Ziellinie überquert. Das erste Team mit fünf Punkten triumphiert.",
+    "varianten": "Als Wettbewerb organisieren.\nDen Ablauf ohne Ball durchführen.",
+    "quell_url": "https://training-service.fussball.de/trainer/d-juniorin/training-online/trainingseinheiten-detail/den-umzug-in-die-halle-spielend-meistern-2094/",
+    "quell_spiel_nr": 1,
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend"
+    ],
+    "skills": [
+      "Ballkontrolle",
+      "Dribbeln",
+      "Koordination",
+      "Schnelligkeit"
+    ],
+    "coaching_fokus": "• Kopf oben halten beim Dribbeln – schau nach vorn; • Schnell weitermachen nach dem Schere-Stein-Papier-Duell; • Sauberes Dribbeln, eng am Fuß",
+    "leichter_machen": "• Den Ablauf ohne Ball durchführen – nur rennen und Stein-Papier-Schere spielen, um den Anspruch zu senken; • Kleineres Feld: Wendemarken näher zur Startzone, kürzere Dribbeldistanz",
+    "schwerer_machen": "• Ball nur mit schwächerem Fuß dribbeln, per Innenseite ziehen oder Ball mit Außenseite führen",
+    "alt_titel": "",
+    "seo_keyword": "Fußballtraining Dribbeln",
+    "url_slug": "dribbeln-stein-papier-schere-dribbelduell",
+    "seo_meta_description": "Stein-Papier-Schere Dribbelduell: Rasante Dribbelübung für Kindertraining mit Ballkontrolle, Schnelligkeit und Spielspaß für G- bis D-Jugend.",
+    "grafik_alt_text": "Vier Teams dribbeln in zwei Hallenhälften, treffen sich in der Mitte und spielen Stein-Papier-Schere um Ballbesitz",
+    "grafik_description": "Die Grafik zeigt zwei Spielfelder nebeneinander in einer Sporthalle. Jedes Feld hat Startzonen mit Hütchen an einer Grundlinie und Wendemarken an der gegenüberliegenden Seite. Vier Teams starten gleichzeitig und dribbeln aufeinander zu, um in der Hallenmitte Stein-Papier-Schere zu spielen.",
+    "grafik_title": "Dribbelduell Stein-Papier-Schere Aufbau",
+    "grafik_caption": "Beide Spielfelder laufen parallel: Teams dribbeln vom Start um die Wendemarke und treffen sich in der Mitte.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler pro Team sollten es sein?",
+        "antwort": "Bei vier Teams im Wechsel 3–4 Spieler pro Gruppe, damit jeder ausreichend Pausen hat."
+      },
+      {
+        "frage": "Wie lange sollte das Spiel auf fünf Punkte dauern?",
+        "antwort": "Je nach Altersstufe 8–15 Minuten."
+      },
+      {
+        "frage": "Kann ich die Übung für jüngere Kinder (G-Jugend) anpassen?",
+        "antwort": "Die Übung ist auch für die G-Jugend so geeignet."
+      }
+    ],
+    "status": "veroeffentlicht",
+    "referenz_grafik_url": "https://training-service.fussball.de/assets/img/csm_189331-456-d-au1-01_861772acc4.png",
+    "quell_kategorie": "D-Jugend",
+    "ist_gecrawlt": true,
+    "ort": "Halle",
+    "schwester_id": 206,
+    "schwester_titel": "BALL SCHNELL UND SAUBER ÜBERGEBEN - UND GEWINNEN",
+    "original_aufbau": "Beide Hallenhälften jeweils als ein Spielfeld markieren\nJe 2 Starthütchen auf einer Grundlinie und je 2 Wendehütchen an der gegenüberliegenden markieren\nDie Grundlinie mit den Starthütchen ist jeweils die Ziellinie\n4 Teams bilden und jeweils den Starthütchen zuweisen\n1 Gruppe pro Feld hat Bälle",
+    "original_durchfuehrung": "Die jeweils ersten Spieler umdribbeln bzw. umlaufen die Wendehütchen.\nSobald sich die Spieler treffen, spielen sie Schnick-Schnack-Schnuck (Schere-Stein-Papier).\nDer Gewinner dribbelt weiter, und der Verlierer läuft zum Starthütchen zurück.\nGleichzeitig startet der jeweils nächste Mitspieler des Verlierers usw.\nVerliert ein Dribbler im Schnick-Schnack-Schnuck, übergibt er den Ball an den Gegner.\nJedes Überdribbeln der Ziellinie ergibt einen Punkt für das jeweilige Team: Welches Team gewinnt zuerst 5 Punkte?",
+    "original_varianten": "Als Wettbewerb organisieren.\nDen Ablauf ohne Ball durchführen.",
+    "original_coaching_fokus": "Darauf achten, dass das Duell im Schnick-Schnack-Schnuck gemeinsam gestartet wird.\nDer Mitspieler des Verlierers startet sofort ins Feld, um möglichst viel Raum vor der Ziellinie zu gewinnen.",
+    "schwester_gruppen": [
+      [
+        206
+      ]
+    ],
+    "schwester_ids": [
+      206
+    ],
+    "erstellt_am": "2026-10-20"
+  },
+  {
+    "id": 206,
     "titel": "BALL SCHNELL UND SAUBER ÜBERGEBEN - UND GEWINNEN",
     "quell_trainingseinheit": "",
     "grafik_url": "https://coachunited.de/images/uebungen/uebung-210-ball-schnell-und-sauber-uebergeben-und-gewinnen.webp",
     "grafik_dateiname": "Symmetrical Futsal Training Drill.png",
     "trainingsphase": "Aufwärmen",
     "ort": "Halle",
-    "kurzbeschreibung": "Zwei Teams treten in einem  Dribbelwettbewerb an, bei dem sich Spieler in der Hallenmitte treffen und den Ball sauber dem Mitspieler übergeben. Wer zuerst fünf Punkte sammelt, gewinnt.",
-    "aufbau": "Teile die Sporthalle in zwei Hälften auf und markiere in jeder Hälfte ein Spielfeld. Platziere je zwei Hütchen an einer Grundlinie als Startzonen und zwei weitere Hütchen an der gegenüberliegenden Grundlinie als Wendemarken. Die Startzone fungiert gleichzeitig als Ziellinie. Bilde vier Mannschaften und weise jeder ein Starthütchen zu. Eine Gruppe pro Feld hat die Bälle. ",
-    "durchfuehrung": "Der erste Spieler jeder Gruppe startet von seinem Hütchen, dribbelt oder läuft um die Wendemarken herum und bewegt sich zurück. Sobald sich die beiden Spieler in der Hallenmitte treffen, übergibt der eine Spieler dem anderen sauber den Ball mit einm kurzen Pass. Beide laufen geradeaus weiter zum Hütchen. Das Team, dessen Spieler mit Ball zuerst wieder die Ziellinie überquert, erhält einen Punkt. Das erste Team mit fünf Punkten hat gewonnen.",
+    "kurzbeschreibung": "Zwei Teams treten in einem Dribbelwettbewerb an, bei dem sich Spieler in der Hallenmitte treffen und den Ball sauber dem Mitspieler übergeben. Wer zuerst fünf Punkte sammelt, gewinnt.",
+    "aufbau": "Teile die Sporthalle in zwei Hälften auf und markiere in jeder Hälfte ein Spielfeld. Platziere je zwei Hütchen an einer Grundlinie als Startzonen und zwei weitere Hütchen an der gegenüberliegenden Grundlinie als Wendemarken. Die Startzone fungiert gleichzeitig als Ziellinie. Bilde vier Mannschaften und weise jeder ein Starthütchen zu. Eine Gruppe pro Feld hat die Bälle.",
+    "durchfuehrung": "Der erste Spieler jeder Gruppe startet von seinem Hütchen, dribbelt oder läuft um die Wendemarken herum und bewegt sich zurück. Sobald sich die beiden Spieler in der Hallenmitte treffen, übergibt der eine Spieler dem anderen sauber den Ball mit einem kurzen Pass. Beide laufen geradeaus weiter zum Hütchen. Das Team, dessen Spieler mit Ball zuerst wieder die Ziellinie überquert, erhält einen Punkt. Das erste Team mit fünf Punkten hat gewonnen.",
     "varianten": "",
     "quell_url": "",
     "jugend": [
@@ -13920,13 +13920,13 @@
       "Koordination",
       "Schnelligkeit"
     ],
-    "coaching_fokus": "• Kopf oben halten beim Dribbeln – schau nach vorn.; • Schnell weitermachen nach dem Schere-Stein-Papier-Duell.; • Sauberes Dribbeln, eng am Fuß. Saubere Ballübergabe.",
+    "coaching_fokus": "• Kopf oben halten beim Dribbeln – schau nach vorn; • Schnell weitermachen nach der Ballübergabe; • Sauberes Dribbeln, eng am Fuß. Saubere Ballübergabe.",
     "leichter_machen": "• Kleineres Feld: Wendemarken näher zur Startzone, kürzere Dribbeldistanz; • Nicht als Wettbewerb ausführen, sondern langsamer.",
     "schwerer_machen": "• Ball nur mit schwächerem Fuß dribbeln, per Innenseite ziehen oder Ball mit Außenseite führen",
     "alt_titel": "",
     "seo_keyword": "Fußballübung Dribbeln",
     "url_slug": "ball-schnell-und-sauber-uebergeben-und-gewinnen",
-    "seo_meta_description": "Ballübergabe-Übung für Kinder: Spannender Dribbelwettbewerb mit Passübung. Trainiert Ballkontrolle, Passes und Teamfähigkeit für 6-12 Jahre.",
+    "seo_meta_description": "Ballübergabe-Übung für Kinder: Spannender Dribbelwettbewerb mit Passübung. Trainiert Ballkontrolle, Pässe und Teamfähigkeit in der G- und F-Jugend.",
     "grafik_alt_text": "Hallenlayout mit zwei Feldern, Startzone, Wendemarken und vier Mannschaften beim Dribbelwettbewerb mit Ballübergabe in der Hallenmitte.",
     "grafik_description": "Die Grafik zeigt den Aufbau einer Ballübergabe-Übung in der Sporthalle mit zwei Spielfeldern. Markiert sind Startzonen, Wendemarken und der Mittelpunkt, wo die Ballübergabe stattfindet. Vier Mannschaften sind positioniert.",
     "grafik_title": "Ballübergabe-Dribbelwettbewerb Hallenlayout",
@@ -13934,15 +13934,15 @@
     "faq": [
       {
         "frage": "Wie viele Spieler pro Team sollten es sein?",
-        "antwort": "Bei vier Teams im Wechsel 3–4 Spieler pro Gruppe, damit jeder ausreichend Pausen hat. "
+        "antwort": "Bei vier Teams im Wechsel 3–4 Spieler pro Gruppe, damit jeder ausreichend Pausen hat."
       },
       {
         "frage": "Wie lange sollte das Spiel auf fünf Punkte dauern?",
-        "antwort": "Je nach Altersstufe 8–15 Minuten. "
+        "antwort": "Je nach Altersstufe 8–15 Minuten."
       },
       {
         "frage": "Kann ich die Übung für jüngere Kinder (G-Jugend) anpassen?",
-        "antwort": "Die Übung ist auch für die G-Jugend so geeignet. "
+        "antwort": "Die Übung ist auch für die G-Jugend so geeignet."
       }
     ],
     "status": "veroeffentlicht",
@@ -13951,7 +13951,7 @@
     "ist_gecrawlt": false,
     "schwester_gruppen": [
       [
-        206
+        205
       ]
     ],
     "original_aufbau": "",
@@ -13959,9 +13959,9 @@
     "original_varianten": "",
     "original_coaching_fokus": "",
     "schwester_ids": [
-      206
+      205
     ],
-    "schwester_id": 206,
+    "schwester_id": 205,
     "schwester_titel": "STEIN-PAPIER-SCHERE-DRIBBELDUELL",
     "erstellt_am": "2026-10-20"
   }
