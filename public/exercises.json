@@ -13964,5 +13964,63 @@
     "schwester_id": 205,
     "schwester_titel": "STEIN-PAPIER-SCHERE-DRIBBELDUELL",
     "erstellt_am": "2026-10-20"
+  },
+  {
+    "id": 212,
+    "titel": "DEN KÄSTEN PASSEN, DIE KÄSTEN ÜBERWINDEN",
+    "quell_trainingseinheit": "",
+    "grafik_url": "https://coachunited.de/images/uebungen/uebung-212-den-kaesten-passen-die-kaesten-ueberwinden.webp",
+    "grafik_dateiname": "Futsal Training Shot Diagram.png",
+    "trainingsphase": "Hauptteil",
+    "ort": "Halle",
+    "kurzbeschreibung": "Ein Spieler spielt einen scharfen flachen Ball auf die Kästen. Den abprallenden Ball kontrolliert er und schießt ihn dann über die Kästen aufs Tor. ",
+    "aufbau": "Spieler stehen jeweils (je nach Hallengröße) in geeigneter Distanz vor dem Tor. Zwei Kästen nebeneinander kurz vor dem Strafraum platzieren. Ein Torhüter im Tor. ",
+    "durchfuehrung": "Ein Spieler spielt einen scharfen flachen Ball auf die Kästen. Den abprallenden Ball kontrolliert er und schießt ihn dann über die Kästen aufs Tor. Danach holt er seinen Ball und stellt sich wieder an. (Alternativ kann auch jedes Kind nach dem eigenen Schuss zum Torwart werden).",
+    "varianten": "",
+    "quell_url": "",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend",
+      "E-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Torschuss"
+    ],
+    "coaching_fokus": "• Der flache Pass auf den Kasten wird scharf gespielt; • Ball schnell kontrollieren",
+    "leichter_machen": "• Einen dritten Kasten aufstellen",
+    "schwerer_machen": "• Einen hohen Kasten aufstellen; • Nur einen kleinen  Kasten aufstellen, nicht zwei",
+    "alt_titel": "",
+    "seo_keyword": "Fußballübung Passen",
+    "url_slug": "den-kaesten-passen-die-kaesten-ueberwinden",
+    "seo_meta_description": "Fußballübung für Kinder: Ball auf Kästen passen, kontrollieren und über die Kästen aufs Tor schießen. Perfekt für 6-12 Jahre Fußballtraining.",
+    "grafik_alt_text": "Kinder-Fußballtraining: Spieler passt Ball auf Kästen, kontrolliert Abprall und schießt über Kästen aufs Tor",
+    "grafik_description": "Die Übung zeigt einen Spieler, der einen flachen Ball auf zwei nebeneinander platzierte Kästen vor dem Strafraum spielt. Nach der Ballkontrolle des Abpralls schießt er den Ball über die Kästen aufs Tor, wo ein Torwart bereitsteht.",
+    "grafik_title": "Fußballübung Kästen Passen Überwinden Kinder",
+    "grafik_caption": "Spieler passt scharf auf die Kästen und schießt den abprallenden Ball über die Hindernisse aufs Tor.",
+    "faq": [
+      {
+        "frage": "Wie vermeide ich lange Wartezeiten?",
+        "antwort": "Auf hohes Tempo achten. Spieler können nach dem Schuss auch zum Torhüter werden. So haben die Kinder immer eine doppelte Aktion, wenn sie dran sind. "
+      },
+      {
+        "frage": "Wie lange dauert die Übung?",
+        "antwort": "So lange sie Spaß macht. Erfahrungsgemäß 10-15 Minuten. "
+      }
+    ],
+    "status": "veroeffentlicht",
+    "referenz_grafik_url": "",
+    "quell_kategorie": "",
+    "ist_gecrawlt": false,
+    "schwester_gruppen": [],
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "schwester_ids": [],
+    "schwester_id": null,
+    "schwester_titel": null,
+    "erstellt_am": "2026-10-27"
   }
 ]
