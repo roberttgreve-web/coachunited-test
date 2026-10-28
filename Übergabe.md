@@ -1518,7 +1518,7 @@ Robert wollte bei #245 „VIER PÄSSE - DRIBBELN ODER SCHIESSEN?“ (Schwester v
 
 **Bildbeschreibungen (`grafik_description`)** bei #183, #184, #191, #193, #196, #198 waren WhatsApp-Posting-Texte; jetzt nach Ansicht der Skizzen als Bildbeschreibung (3 Sätze) geschrieben (Vorgabe aus den KI-Prompts: Mediathek-Beschreibung). Bei #184 fehlten außerdem Alt-Text, Titel und Bildunterschrift (ergänzt; Alt-Text 122 Zeichen ≤125). **Nachgezogen (10.10.2026):** #184 SEO-Keyword + Meta-Beschreibung (146 Zeichen) ergänzt; #183 SEO-Keyword, Meta-Beschreibung (147 Zeichen), Alt-Text, Titel und Bildunterschrift neu (alte Begriffe „Kopfzone“/„Passeur“ aus einer älteren Fassung der Übung entfernt). Backup `data/exercises_backup_vor_seo183_184_*.json`. Backup `data/exercises_backup_vor_grafikdesc_*.json`.
 
-## 47. Ort (Feld / Halle) auf der Website: Startseiten-Tag, Filter „Ort“, „Nach Ort“ (15.10.2026, noch nicht deployt)
+## 47. Ort (Feld / Halle) auf der Website: Startseiten-Tag, Filter „Ort“, „Nach Ort“ (15.10.2026, live seit 16.10.2026)
 
 **Hintergrund:** Der Publisher hat seit 15.10.2026 das Feld `ort` (Feld/Halle, unabhängig von der Trainingsphase; Publisher-Übergabe.md 2.10). Robert will es auf der Website sehen und filtern können. Fehlt `ort` an einer Übung (alle bisherigen), gilt überall **Feld**. Bei „Halle“ steht für Besucher **immer „(im Aufbau)“ dahinter** (Roberts Vorgabe, solange es kaum Hallenübungen gibt) – zum späteren Entfernen: `grep -rn "im Aufbau" public scripts`.
 
@@ -1534,7 +1534,7 @@ Robert wollte bei #245 „VIER PÄSSE - DRIBBELN ODER SCHIESSEN?“ (Schwester v
 
 **Wie getestet (ohne Node):** Syntaxprüfung der vier geänderten JS-Dateien per `new Function` im Browser; Testkopie der Seiten mit eingesetzten Daten (wie der Vercel-Build, drei Übungen testweise als Halle) – Ort-Pille bedient: Halle → „Halle (im Aufbau)“ im Pillenwert und passende Anzahl, Feld, beide; Menü hat vier Spalten; Übersichtsseite/Breadcrumbs/Canonical/JSON-LD geprüft.
 
-## 48. Herkunft Google vs. WhatsApp-Kanal: Kanal-Werbung nur für Neue, Spenden-Bitte für Follower (19.10.2026, noch nicht deployt)
+## 48. Herkunft Google vs. WhatsApp-Kanal: Kanal-Werbung nur für Neue, Spenden-Bitte für Follower (19.10.2026, live)
 
 **Idee (Robert):** Wer über Google kommt, sieht Coach United zum ersten Mal und spendet nicht sofort -> bekommt die WhatsApp-Werbung. Wer aus dem WhatsApp-Kanal kommt, ist Follower und schon im Kanal -> bekommt keine Kanal-Werbung mehr, sondern eine Spenden-Bitte.
 
@@ -1566,3 +1566,10 @@ Robert wollte bei #245 „VIER PÄSSE - DRIBBELN ODER SCHIESSEN?“ (Schwester v
 - Normale Besucher sehen den Button nie (kein Geheimnis im Sicherheitssinn: wer `?robert=1` kennt, sieht nur den Kopier-Button).
 - **Falle (beim Bau gefunden):** `var`-Konstanten, die UNTER der sofort ausgeführten Funktion (IIFE) stehen, sind beim Start noch `undefined` (Hinweis steht auch am Dateianfang). `CU_ROBERT_KEY` wurde deshalb durch den Literalschlüssel `'cu_robert'` ersetzt; neue Konstanten, die die IIFE braucht, gehören an den Dateianfang.
 - Getestet lokal (Seite `uebung-detail.html` mit simuliertem Pfad `/uebung/…`, Zwischenablage abgefangen): Link korrekt, Button-Rückmeldung „Kopiert ✓“. Echtes Kopieren auf dem Handy noch nicht geprüft.
+
+## 49. Sicherung für den Laptop-Wechsel: `design-assets/` und Anleitung (28.10.2026)
+
+- **Neu in Git:** Ordner `design-assets/` (44 MB, wird **nicht** ausgeliefert, Vercel baut nur `public/`): `logos/` (Wortmarke, Wappen/Shield, Badge, Lockups, App-Icon als PNG), `entwuerfe/` (Relaunch-/Desktop-Entwürfe als eigenständige HTML-Dateien + `Coach United Design.zip`), `fotos/` (Hero-Foto, Unsplash-Fotos, `IMG_4685.jpeg`), `indexierung/` (Notizen und Coverage-Export zur Google-Indexierung), plus `README.md`. Die Dateien lagen vorher unversioniert im Wurzelordner von `coachunited-next`.
+- **Bewusst nicht in Git:** `IMG_4972.mov` (180 MB) und `exercises_export.xlsx` (reproduzierbarer Export), `.env`-Dateien (Geheimnisse, nie committen).
+- **Einrichtung auf einem neuen Laptop:** siehe Publisher-`Übergabe.md`, Abschnitt 5 (Programme, Zugänge, `git clone`, `.env.local`, Start, was vorher zu sichern ist). Der Ordner `Desktop\privat\COACH UNITED` liegt nicht in OneDrive; nur die zwei Git-Repos sind online.
+- ⚠️ Der Git-Remote dieses Repos enthält weiterhin ein GitHub-Token im Klartext (`git remote -v`); nach dem Umzug neues Token erzeugen, altes widerrufen.
