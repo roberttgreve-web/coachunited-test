@@ -1010,7 +1010,7 @@
       const url = window.location.href;
       const text = 'Schau mal, diese Übung von COACH UNITED könnte gut passen.\n' + url;
       if (typeof gtag === 'function') {
-        gtag('event', 'share_click', { source: 'action_bar', page_path: window.location.pathname });
+        gtag('event', 'share_click', { quelle: 'action_bar', page_path: window.location.pathname });
       }
       if (navigator.share) {
         navigator.share({ text }).catch(() => {});

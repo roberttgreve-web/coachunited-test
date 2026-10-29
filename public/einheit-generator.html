@@ -888,7 +888,7 @@
 
     async function printSession() {
       if (typeof gtag === 'function') {
-        gtag('event', 'print_click', { page_path: window.location.pathname, source: 'einheit_pdf' });
+        gtag('event', 'print_click', { page_path: window.location.pathname, quelle: 'einheit_pdf' });
       }
       const list = sessionOrder.filter(ex => ex.url_slug);
       if (!list.length) { window.print(); return; }
