@@ -14149,15 +14149,86 @@
     "referenz_grafik_url": "",
     "quell_kategorie": "",
     "ist_gecrawlt": false,
-    "schwester_gruppen": [],
+    "schwester_gruppen": [
+      [
+        215
+      ]
+    ],
     "grafik_hash": "2374360b134e477527bd40bbe20382bb86b1cb84",
     "original_aufbau": "",
     "original_durchfuehrung": "",
     "original_varianten": "",
     "original_coaching_fokus": "",
-    "schwester_ids": [],
-    "schwester_id": null,
-    "schwester_titel": null,
+    "schwester_ids": [
+      215
+    ],
+    "schwester_id": 215,
+    "schwester_titel": "DOPPELPASS UND SCHUSS - WER IST SCHNELLER?",
+    "erstellt_am": "2026-10-29"
+  },
+  {
+    "id": 215,
+    "titel": "NUR DER ERSTE TORSCHUSS ZÄHLT!",
+    "quell_trainingseinheit": "",
+    "grafik_url": "https://coachunited.de/images/uebungen/uebung-215-doppelpass-und-schuss-wer-ist.webp",
+    "grafik_dateiname": "Symmetrical Futsal Passing Drill Diagram.png",
+    "trainingsphase": "Hauptteil",
+    "ort": "Halle",
+    "kurzbeschreibung": "Zwei Spieler unterschiedlicher Teams spielen gleichzeitig einen Doppelpass mit einem Kasten und schießen danach aufs Tor. Man muss schnell sein: Das Tor zählt nur, wenn man als erstes geschossen hat. ",
+    "aufbau": "Zwei Teams. Je nach Hallengröße etwa an der Mittellinie. Beide Teams haben Bälle und je zwei Kästen in guter Passdistanz vor sich.  Im Tor steht ein Torhüter. ",
+    "durchfuehrung": "Die ersten Spieler beider Teams passen gleichzeitig auf die Kästen vor ihnen. Sie kontrollieren den zurückprallenden Ball und dürfen noch ein paar Schritte dribbeln vor dem Schuss. Aber Achtung, Schnelligkeit ist wichtig: Das Tor zählt nur bei demjenigen, der als erstes geschossen hat. Welches Team gewinnt?",
+    "varianten": "",
+    "quell_url": "",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend",
+      "E-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Torschuss"
+    ],
+    "coaching_fokus": "• Hohes Tempo in allen Aktionen; • Scharfe, flache Pässe gegen den Kasten",
+    "leichter_machen": "• Tempo herausnehmen. Beide Schüsse zählen.",
+    "schwerer_machen": "• Mit dem schwachen Fuß schießen.",
+    "alt_titel": "",
+    "seo_keyword": "Fußballtraining Torschuss",
+    "url_slug": "nur-der-erste-torschuss-zaehlt",
+    "seo_meta_description": "Spannende Fußballübung für Kinder: Doppelpass-Torschuss-Wettbewerb! Zwei Teams spielen gleichzeitig und schießen aufs Tor – nur der erste Treffer zählt!",
+    "grafik_alt_text": "Zwei Kinder-Fußballteams beim Doppelpass-Torschuss-Wettbewerb mit Kästen und Torhüter",
+    "grafik_description": "Die Grafik zeigt zwei Teams an der Mittellinie, die gleichzeitig Doppelpässe über Kästen spielen und anschließend aufs Tor schießen. Wer zuerst trifft, gewinnt die Runde.",
+    "grafik_title": "Fußballübung: Doppelpass-Torschuss-Wettbewerb",
+    "grafik_caption": "Nur der erste Torschuss zählt – Schnelligkeit ist gefragt!",
+    "faq": [
+      {
+        "frage": "Wie viele können mit machen?",
+        "antwort": "Die Übung eignet sich für 6-8 Kinder pro Gruppe. Schnelle Durchführung ist bei großen Gruppen wichtig. "
+      },
+      {
+        "frage": "Was passiert, wenn jemand am Kasten vorbeipasst?",
+        "antwort": "Hinten anstellen. Nur das andere Team kann punkten. "
+      }
+    ],
+    "status": "veroeffentlicht",
+    "referenz_grafik_url": "",
+    "quell_kategorie": "",
+    "ist_gecrawlt": false,
+    "schwester_gruppen": [
+      [
+        214
+      ]
+    ],
+    "grafik_hash": "70ab13e9b338fbcac2d3719589e21f13f524efd2",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "schwester_ids": [
+      214
+    ],
+    "schwester_id": 214,
+    "schwester_titel": "ERST AUFGABE ERLEDIGEN, DANN INS DUELL",
     "erstellt_am": "2026-10-29"
   }
 ]
