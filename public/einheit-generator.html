@@ -983,6 +983,9 @@
       };
       saved.unshift(entry);
       localStorage.setItem('cu_saved_einheiten', JSON.stringify(saved.slice(0, 20)));
+      if (typeof gtag === 'function') {
+        gtag('event', 'einheit_merken', { jugend, skill: skill || '', anzahl: ids.length, page_path: window.location.pathname });
+      }
       const btn = document.getElementById('btn-save');
       if (btn) { btn.classList.add('success'); setTimeout(() => btn.classList.remove('success'), 3500); }
       const fb = document.getElementById('save-feedback');

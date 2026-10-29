@@ -1573,3 +1573,11 @@ Robert wollte bei #245 „VIER PÄSSE - DRIBBELN ODER SCHIESSEN?“ (Schwester v
 - **Bewusst nicht in Git:** `IMG_4972.mov` (180 MB) und `exercises_export.xlsx` (reproduzierbarer Export), `.env`-Dateien (Geheimnisse, nie committen).
 - **Einrichtung auf einem neuen Laptop:** siehe Publisher-`Übergabe.md`, Abschnitt 5 (Programme, Zugänge, `git clone`, `.env.local`, Start, was vorher zu sichern ist). Der Ordner `Desktop\privat\COACH UNITED` liegt nicht in OneDrive; nur die zwei Git-Repos sind online.
 - ⚠️ Der Git-Remote dieses Repos enthält weiterhin ein GitHub-Token im Klartext (`git remote -v`); nach dem Umzug neues Token erzeugen, altes widerrufen.
+
+## 50. GA4-Ereignis `einheit_merken`: gespeicherte Einheiten zählen (29.10.2026)
+
+- **Warum:** `merkliste_add` wird nur auf Übungsseiten ausgelöst (`uebung-detail.html`). Das Speichern einer Einheit im Generator (`saveSession()` in `einheit-generator.html`, schreibt nach `cu_saved_einheiten`) sendete bisher **kein** Ereignis – in GA war nicht sichtbar, wie oft Einheiten gemerkt werden.
+- **Neu:** `saveSession()` sendet `einheit_merken` mit `jugend`, `skill` (leer, wenn keiner gewählt), `anzahl` (Zahl der Übungen) und `page_path`. Wie alle Ereignisse nur, wenn `gtag` existiert, also nach Cookie-Einwilligung.
+- Die statischen Einheiten-Seiten (`/einheit/<slug>`, Template `einheit-detail.html`) haben keinen Merken-Button und daher auch kein Ereignis.
+- Zahlen zum Vergleich (GA, 31.08.–29.10.2026): `merkliste_add` 447× von 84 Nutzern, `print_click` 733× von 165 Nutzern.
+- ⚠️ Lokale Kopie auf dem neuen Laptop (OneDrive-Ordner): `.git` ist unvollständig (`fatal: bad object HEAD`, Objekte fehlen). Dateien stimmten am 29.10. mit `origin/main` (`04d9e65`) überein; zum Pushen frisch klonen (Publisher-Übergabe 5.3), am besten außerhalb von OneDrive.
