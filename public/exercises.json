@@ -14098,5 +14098,66 @@
     "schwester_titel": "DEN KÄSTEN PASSEN, DIE KÄSTEN ÜBERWINDEN",
     "grafik_hash": "",
     "erstellt_am": "2026-10-27"
+  },
+  {
+    "id": 214,
+    "titel": "ERST AUFGABE ERLEDIGEN, DANN INS DUELL",
+    "quell_trainingseinheit": "",
+    "grafik_url": "https://coachunited.de/images/uebungen/uebung-214-erst-aufgabe-erledigen-dann-ins-duell.webp",
+    "grafik_dateiname": "Indoor Futsal Training Drill.png",
+    "trainingsphase": "Hauptteil",
+    "ort": "Halle",
+    "kurzbeschreibung": "Zwei Spieler starten gleichzeitig. Einer spielt einen Doppelpass mit einem Kasten und geht als Angreifer ins 1 gegen 1. Der andere hüpft durch Ringe - schnell genug, um rechtzeitig Abwehrspieler im Duell zu sein. ",
+    "aufbau": "Zwei Teams. Je nach Hallengröße etwa an der Mittellinie. Das linke Team hat die Bälle und zwei Kästen in guter Passdistanz vor sich. Vor dem rechten Team sind hintereinander vier Ringe platziert. Dieses Team hat keine Bälle. Im Tor steht ein Torhüter. ",
+    "durchfuehrung": "Die ersten Spieler beider Teams starten. Der Spieler mit Ball dribbelt ein paar Schritte und passt den Ball gegen den Kasten. Er kontrolliert den zurückprallenden Ball und geht dann ins 1 gegen 1-Duell um ein Tor zu erzielen. Der Spieler ohne Ball hüpft mit beiden Beinen durch die vier Ringe. Er muss schnell sein, um rechtzeitig als Verteidiger ins 1 gegen 1 gehen zu können. ",
+    "varianten": "",
+    "quell_url": "",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend",
+      "E-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Dribbeln",
+      "Torschuss",
+      "Zweikampf",
+      "Raumverhalten"
+    ],
+    "coaching_fokus": "• Hohes Tempo in allen Aktionen; • Scharfe, flache Pässe gegen den Kasten; • Mit beiden Beinen gleichzeitig hüpfen",
+    "leichter_machen": "• Weniger Reifen hinlegen",
+    "schwerer_machen": "• Mit dem schwachen Fuß gegen den Kasten passen.",
+    "alt_titel": "",
+    "seo_keyword": "Fußballtraining Zweikampf",
+    "url_slug": "erst-aufgabe-erledigen-dann-ins-duell",
+    "seo_meta_description": "Fußballübung für Kinder: Aufgabe vor dem 1 gegen 1! Doppelpass und Ringspringen trainieren Technik und Reaktion gleichzeitig.",
+    "grafik_alt_text": "Fußballtraining: Kinder beim Doppelpass gegen Kasten und Ringspringen vor 1 gegen 1 Duell.",
+    "grafik_description": "Die Grafik zeigt zwei Teams beim Trainingsaufbau: Das linke Team mit Ball und Kästen für den Doppelpass, das rechte Team mit Ringen zum Durchhüpfen. Ein Torhüter steht im Tor bereit.",
+    "grafik_title": "Fußballübung 1 gegen 1 Duell mit Vorbereitung",
+    "grafik_caption": "Beide Teams starten gleichzeitig: Doppelpass versus Ringspringen – wer schafft die Vorbereitung schneller?",
+    "faq": [
+      {
+        "frage": "Wie viele können mit machen?",
+        "antwort": "Die Übung eignet sich für 6-8 Kinder pro Gruppe. Schnelle Durchführung ist bei großen Gruppen wichtig. "
+      },
+      {
+        "frage": "Was passiert, wenn jemand am Kasten vorbeipasst?",
+        "antwort": "Hinten anstellen. Neue Runde. "
+      }
+    ],
+    "status": "veroeffentlicht",
+    "referenz_grafik_url": "",
+    "quell_kategorie": "",
+    "ist_gecrawlt": false,
+    "schwester_gruppen": [],
+    "grafik_hash": "2374360b134e477527bd40bbe20382bb86b1cb84",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "schwester_ids": [],
+    "schwester_id": null,
+    "schwester_titel": null,
+    "erstellt_am": "2026-10-29"
   }
 ]
