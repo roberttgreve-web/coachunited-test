@@ -115,6 +115,7 @@ $SUB_TEMPLATE = @'
   </style>
   <link rel="stylesheet" href="/desktop.css">
   <script src="/desktop-nav.js" defer></script>
+  <script src="/liste-ux.js" defer></script>
   <script src="/feedback-widget.js" defer></script>
   __JSON_LD__
 </head>

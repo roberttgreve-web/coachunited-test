@@ -912,8 +912,19 @@
       try {
         const stored = JSON.parse(sessionStorage.getItem('cu_back') || 'null');
         if (stored && stored.target === window.location.pathname) {
-          document.getElementById('back-btn').href = stored.url;
+          const btn = document.getElementById('back-btn');
+          btn.href = stored.url;
           document.getElementById('back-label').textContent = stored.label;
+          // Aus einer Uebungsliste gekommen: dorthin zurueck MIT Filtern und Slider-Position
+          // (liste-ux.js). Ist die Liste die vorige Seite, per history.back() - dann
+          // stellt der Browser sie meist komplett wieder her; sonst Liste neu laden und
+          // den gemerkten Stand anwenden lassen.
+          btn.addEventListener('click', e => {
+            sessionStorage.setItem('cu_liste_restore', stored.url);
+            let vorher = '';
+            try { const r = new URL(document.referrer); if (r.origin === location.origin) vorher = r.pathname + r.search; } catch (err) {}
+            if (vorher === stored.url && history.length > 1) { e.preventDefault(); history.back(); }
+          });
         }
       } catch (e) {}
     }
