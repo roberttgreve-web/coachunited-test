@@ -14230,5 +14230,70 @@
     "schwester_id": 214,
     "schwester_titel": "ERST AUFGABE ERLEDIGEN, DANN INS DUELL",
     "erstellt_am": "2026-10-29"
+  },
+  {
+    "id": 216,
+    "titel": "AUS DER DRIBBELZONE DEN WANDPASS SPIELEN",
+    "quell_trainingseinheit": "14.01.2014 (D-Jugend)",
+    "grafik_url": "https://coachunited.de/images/uebungen/uebung-216-aus-der-dribbelzone-den-wandpass-spielen.webp",
+    "grafik_dateiname": "Futsal Passing Drill_ “Vier!”.png",
+    "trainingsphase": "Aufwärmen",
+    "kurzbeschreibung": "Alle Paare passen sich zu zweit den Ball. Der aufgerufene Spieler dribbelt zur Zielzone an der Wand und passt gezielt an die Wand, so dass der Ball bei seinem Mitspieler ankommt. ",
+    "aufbau": "An einer Hallenwand positionierst du zentral eine Zielzone. Teile die Spieler in Paare ein und gib jedem Paar einen Ball. Gib jedem Paar eine Nummer. ",
+    "durchfuehrung": "Die Paare bewegen sich dribbelnd  im gesamten Bereich umher. Sobald du die Nummer eines Spielerpaars aufrufst, dribbelt der Spieler mit dieser Nummer zum Rand des Feldes und spielt den Ball so an die Wand, dass dieser zu seinem Teampartner zurückkommt. Danach laufen beide wieder ins Feld ein.",
+    "varianten": "Die Paare passen sich im Feld zu.\n Vor dem Pass gegen die Wand eine Finte ins Dribbling einbauen. \n2 Spielerpaare gleichzeitig aufrufen.",
+    "quell_url": "https://training-service.fussball.de/trainer/d-juniorin/training-online/trainingseinheiten-detail/14012014-13/",
+    "quell_spiel_nr": 1,
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend",
+      "E-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Dribbeln",
+      "Raumverhalten"
+    ],
+    "coaching_fokus": "• Augen hoch halten beim Dribbling – schau wo dein Partner steht!; • Pass zur Wand so spielen, dass die Annahme einfach wird – flach und präzise!; • Sofort nach dem Pass bereit sein – der Ball kommt schnell zurück!",
+    "leichter_machen": "• Große Zielzone errichten",
+    "schwerer_machen": "• Vor dem Pass gegen die Wand eine Finte ins Dribbling einbauen; • 2 Spielerpaare gleichzeitig aufrufen",
+    "alt_titel": "",
+    "seo_keyword": "Fußballtraining Ballkontrolle",
+    "url_slug": "aus-der-dribbelzone-den-wandpass-spielen",
+    "seo_meta_description": "Dynamische Ballkontroll-Übung für Kinder: Rufnummern-Wandpass trainiert Dribbeln, Passen und Ballkontrolle mit System.",
+    "grafik_alt_text": "Trainingsfeld mit Paaren, die im 15x15m Bereich dribbeln, einer ruft die Nummer und passt gezielt an die Wand.",
+    "grafik_description": "Das Bild zeigt einen 15 x 15 Meter großen Trainingsbereich mit einer Hallenwand. Spielerpaare bewegen sich dribbeld im Feld, ein Spieler dribbelt zur Wand und passt gezielt, sein Partner empfängt den Rückpass.",
+    "grafik_title": "Rufnummern-Wandpass Fußball Kindertraining",
+    "grafik_caption": "Rufnummern-Wandpass: Spieler dribbeln zum Rand und passen gezielt gegen die Wand.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler brauche ich für diese Übung?",
+        "antwort": "Ist je nach Hallengröße flexibel."
+      },
+      {
+        "frage": "Wie lange sollte die Übung dauern?",
+        "antwort": "5 bis 10 Minuten. Länger eher nicht, dann wird es langweilig. "
+      },
+      {
+        "frage": "Ab welchem Alter ist diese Übung geeignet?",
+        "antwort": "Ab G-Jugend (U8)."
+      }
+    ],
+    "status": "veroeffentlicht",
+    "referenz_grafik_url": "https://training-service.fussball.de/assets/img/csm_327-dc-au1-01_2a5cdfea1d.png",
+    "quell_kategorie": "D-Jugend",
+    "ist_gecrawlt": true,
+    "ort": "Halle",
+    "schwester_id": null,
+    "schwester_titel": null,
+    "original_aufbau": "Ein 15 x 15 Meter großes Feld errichten\n Mittig an einer Hallenwand 1 Zielzone markieren \nSpielerpaare einteilen\nJedes Paar erhält 1 Ball und 1 Nummer",
+    "original_durchfuehrung": "Die Spieler dribbeln bzw. laufen frei durch das Feld.\n Der Trainer ruft eine Zahl auf und startet so die Aktion.\n Der aufgerufene Ballbesitzer dribbelt aus dem Feld und passt so gegen die Wand, dass er zu seinem Mitspieler zurückprallt.\n Anschließend kehren beide wieder ins Feld zurück.",
+    "original_varianten": "Die Paare passen sich im Feld zu.\n Vor dem Pass gegen die Wand eine Finte ins Dribbling einbauen. \n2 Spielerpaare gleichzeitig aufrufen.",
+    "original_coaching_fokus": "Die Hallenwand gezielt ins Hallentraining einbinziehen. \nDarauf achten, dass alle Spieler ungefähr gleich häufig aufgerufen werden.",
+    "schwester_gruppen": [],
+    "grafik_hash": "c6da09efd29af0036510ab6ce925019cc33e4f04",
+    "schwester_ids": [],
+    "erstellt_am": "2026-11-12"
   }
 ]
