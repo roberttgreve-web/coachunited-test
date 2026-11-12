@@ -1606,3 +1606,43 @@ Robert wollte bei #245 „VIER PÄSSE - DRIBBELN ODER SCHIESSEN?“ (Schwester v
   - Beim Tippen auf eine Kachel: Filter, Slider-`scrollLeft`, Seiten-/`.content`-Scroll und Slug in `sessionStorage.cu_liste`; dazu `cu_back` (bestehender Mechanismus, s. `uebung-detail.html`) mit Label „Übersicht“ und der Listen-URL.
   - `uebung-detail.html`: „Übersicht“ geht per `history.back()` zurück, wenn die Liste die vorige Seite war, sonst auf die Listen-URL mit Flag `cu_liste_restore`. Wiederhergestellt wird nur bei diesem Flag oder bei Browser-Zurück (`navigation.type === 'back_forward'`), max. 6 h alt, nur für dieselbe Listen-URL – ein normaler neuer Aufruf startet leer. Der Slider springt auf die zuletzt angetippte Kachel.
 - **Getestet lokal** (Build mit Node 26 in einer Testkopie, Mini-Server mit den Vercel-Rewrites, Handy-Viewport 375 px): `/uebungen` mit F-Jugend → Kachel 13 → Übersicht → F-Jugend + Kachel 13 vorne; `/uebungen/alter/e-jugend` mit Skill Dribbeln → Kachel 5 → Liste neu geladen → Dribbeln + Kachel 5 vorne; Wischen/Esc schließen; neuer Aufruf leer. ⚠️ Falle beim Testen: Ist die Browser-Vorschau ausgeblendet, feuern weder `requestAnimationFrame` noch Scroll-Ereignisse – deshalb setzt `liste-ux.js` die Position direkt (plus nach `load`) statt per rAF.
+
+## 54. Google Ad Grants: Auswertung 9.9.–12.11.2026 und ToDo-Liste (12.11.2026)
+
+**Quelle:** Anzeigengruppenbericht aus Google Ads (CSV, Kampagne „COACH UNITED – Übungen“, 23 Anzeigengruppen, 65 Tage).
+
+| Kennzahl | Wert | Einordnung |
+|---|---|---|
+| Kosten | 14.448 $ (≈ 222 $/Tag) | 67 % des Budgets von 330 $/Tag (zum Start ≈ 39 %) |
+| Klicks / Impressionen | 8.722 / 65.832 | |
+| CTR | 13,3 % | Ad-Grants-Pflicht ≥ 5 % (Kontoebene) klar erfüllt |
+| Ø CPC | 1,66 $ | |
+| Conversions (`whatsapp_click`) | 67 (0,77 %) | ≈ 216 $/Conversion |
+
+- **Altersgruppen sind der Motor:** G-/F-/E-/D-Jugend = 61 % der Kosten, 85 % der Conversions (57), 155 $/Conv. Spitzenreiter F-Jugend (1.836 Klicks, 23 Conv., CTR 16,4 %), dann G- und D-Jugend. Alle anderen Gruppen: 39 % der Kosten, 10 Conversions, 562 $/Conv.
+- **Skill-Gruppen bringen kaum etwas:** „Fußballtraining allgemein“, „Passen“, „Aufwärmen“ zusammen 3.940 $ für 9 Conv.; die 13 kleinen Skill-Gruppen ≈ 1.300 $, 0 Conv., meist kaum Impressionen (Raumverhalten 25, Kommunikation 51). **Torschuss** nur 1.051 Impressionen bei 5,6 % CTR, obwohl laut Keyword-Analyse (29.1) das größte Suchvolumen.
+- **Conversion misst zu eng:** Nur der WhatsApp-Klick zählt; Drucken/PDF-Download (laut GA die häufigste Nutzeraktion) nicht, ohne Cookie-Einwilligung gar nichts. Google optimiert deshalb einseitig.
+- **Google-Empfehlungen (Screenshot 12.11.):** Optimierungsfaktor 89,8 % – ohne Bedeutung, keine Ad-Grants-Vorgabe. „AI Max aktivieren“ (+6,3 %) **ablehnen** (schreibt Anzeigentexte um und leitet auf andere Zielseiten – war beim Start bewusst aus, s. 29.8; zu wenig Conversion-Daten für die Automatik). „Weitgehend passende Keywords hinzufügen“ (210 Vorschläge, z. B. „ball annehmen“, „balltechnik üben“, „ballgewöhnung“, „ballannahme training“) **nicht pauschal übernehmen**. Kampagnenstatus zeigt **„Aktiv (eingeschränkt)“** – Grund noch nicht geprüft.
+
+### 54.1 ToDos Ad Grants (nach Wirkung)
+
+- [ ] **Grund für „Aktiv (eingeschränkt)“ prüfen** (Maus über den Status). Kandidaten: geringes Suchvolumen (harmlos), Markenbegriff „DFB“ in „Fußballtraining allgemein“, Keywords mit niedrigem Qualitätsfaktor.
+- [ ] **AI-Max-Empfehlung ablehnen** (drei Punkte → Ablehnen).
+- [ ] **Weitgehend passende Keywords:** Liste („+ 207 weitere“) durchsehen, passende Begriffe (Ballannahme, Balltechnik, Ballgewöhnung …) selbst als Wortgruppe in „Ballkontrolle“ eintragen, Empfehlung danach ablehnen. Broad Match höchstens als Test in einer Altersgruppe und nur mit Negativliste (Handball, Basketball, Tennis, Volleyball, Trikot, Schuhe …).
+- [ ] **Download/Druck als zusätzliche Conversions:** `file_download` und `print_click` in GA4 als Schlüsselereignis markieren (Stern) und in Google Ads als Conversion-Aktion importieren (Weg wie in 29.2).
+- [ ] **Neue Anzeigengruppe „Hallentraining“** → `/uebungen/ort/halle` (Wintersaison, 10 Hallenübungen), z. B. „hallentraining kinderfußball“, „fußball halle übungen f-jugend“.
+- [ ] **Altersgruppen ausbauen:** weitere Keyword-Varianten („u9 training“, „bambini fußballtraining“, „f-jugend trainingsplan“ …).
+- [ ] **Torschuss reparieren:** Keywords und Qualitätsfaktor prüfen; Keywords mit Qualitätsfaktor 1–2 pausieren (Ad-Grants-Regel).
+- [ ] Kleine Skill-Gruppen laufen lassen (kosten kaum etwas), aber keine Zeit mehr investieren.
+- [ ] November-Zahlen erneut auswerten (Oktober durch Herbstferien gedrückt).
+
+### 54.2 Weitere offene ToDos (Stand 12.11.2026)
+
+- [ ] **Git-Ordner im OneDrive sind beschädigt** (`coachunited-next` und `coachunited-publisher`: `fatal: bad object HEAD`). Beide Repos frisch **außerhalb von OneDrive** klonen (Publisher-Übergabe 5.3). Bis dahin: Website-Änderungen laufen über einen Klon unter `%LOCALAPPDATA%\Temp\cu-deploy`; die Publisher-Änderungen seit 30.10. (`exercise_pdf.py`, `templates/postings.html`, `app.py`, `data/pdf_hashes.json`, Übergabe 2.14/2.15) sind **nicht** im GitHub-Backup.
+- [ ] **GitHub-Token im Klartext** in der Remote-URL des alten Website-Ordners widerrufen (Abschnitte 7, 49).
+- [ ] **Commit-Mailadresse:** Im Website-Repo `Robert.Greve@studio2b.de` (oder `roberttgreve@gmail.com`) verwenden, nicht die deinerstertag-Adresse (Abschnitt 50).
+- [ ] **Zweites Vercel-Projekt `coachunited-test-6ha5`:** unter Settings → Git prüfen, ob es denselben „Project Link not found“-Fehler hat (Abschnitt 52).
+- [ ] **Web3Forms-Feedback-Button** schickt noch an `mail.coachunited@gmail.com` statt `hallo@coachunited.de` (Abschnitt 6).
+- [ ] **Outlook:** `hallo@coachunited.de` im neuen Outlook hinzufügen (Registry-Wert `WebView2Integration` ist gesetzt; Konto hinzufügen, „nur bei dieser App anmelden“).
+- [ ] **Ablageort:** Laut Laptop-Checkliste gehören Vereins-/Kontaktdaten und Geheimnisse nicht ins Firmen-OneDrive – der Ordner liegt aktuell unter „OneDrive – SWiM Bildung UG“.
+- [ ] **Posting #219:** nur mit dem vom Publisher erzeugten Text bzw. „Kanal-Link kopieren“ posten – der alte Text enthielt den toten Link `…/uebung/wandpaesse-mit-vier-zielzonen`.
