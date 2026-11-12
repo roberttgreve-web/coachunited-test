@@ -14295,5 +14295,70 @@
     "grafik_hash": "c6da09efd29af0036510ab6ce925019cc33e4f04",
     "schwester_ids": [],
     "erstellt_am": "2026-11-12"
+  },
+  {
+    "id": 219,
+    "titel": "WANDPÄSSE MIT VIER FARBIGEN ZIELZONEN",
+    "quell_trainingseinheit": "",
+    "grafik_url": "https://coachunited.de/images/uebungen/uebung-219-wandpaesse-mit-vier-farbigen-zielzonen.webp",
+    "grafik_dateiname": "Symmetrical Indoor Soccer Drill.png",
+    "trainingsphase": "Aufwärmen",
+    "ort": "Halle",
+    "kurzbeschreibung": "Alle Paare passen sich zu zweit den Ball. Das aufgerufene Paar dribbelt zur richtigen Zielzone an der Wand und passt gezielt an die Wand, so dass der Ball bei seinem Mitspieler ankommt. ",
+    "aufbau": "An einer Hallenwand positionierst du zentral vier Zielzonen. In jeder Zielzone liegt ein Leibchen einer anderen Farbe als farbige Markierung. Teile die Spieler in Paare ein und gib jedem Paar einen Ball. Gib jedem Paar eine Nummer. ",
+    "durchfuehrung": "Die Paare bewegen sich dribbelnd  im gesamten Bereich umher. Sobald du die Nummer des Paares und die Zielfarbe  aufrufst, dribbelt der Spieler mit dieser Nummer zu der richtigen Zielzone und spielt den Ball so an die Wand, dass dieser zu seinem Teampartner zurückkommt. Danach laufen beide wieder ins Feld ein.",
+    "varianten": "",
+    "quell_url": "",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend",
+      "E-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Dribbeln",
+      "Raumverhalten",
+      "Umschalten"
+    ],
+    "coaching_fokus": "• Augen hoch halten beim Dribbling – schau wo dein Partner steht!; • Pass zur Wand so spielen, dass die Annahme einfach wird – flach und präzise!; • Sofort nach dem Pass bereit sein – der Ball kommt schnell zurück!",
+    "leichter_machen": "• Große Zielzone errichten",
+    "schwerer_machen": "• Vor dem Pass gegen die Wand eine Finte ins Dribbling einbauen; • 2 Spielerpaare mit je einer anderen Zone gleichzeitig aufrufen",
+    "alt_titel": "",
+    "seo_keyword": "Fußballübung Passen",
+    "url_slug": "wandpaesse-mit-vier-farbigen-zielzonen",
+    "seo_meta_description": "Wandpässe mit farbigen Zielzonen: Effektives Fußballtraining für Kinder 6-12 Jahre. Verbessert Passen, Dribbeln und Ballkontrolle spielerisch.",
+    "grafik_alt_text": "Kinder-Fußballtraining: Zwei Spieler passen Ball an Hallenwand mit vier farbigen Zielzonen-Markierungen",
+    "grafik_description": "Die Grafik zeigt eine Hallenwand mit vier farbig markierten Zielzonen für die Wandpass-Übung. Zwei Kinder dribbeln mit dem Ball und spielen gezielt an die Wand, während ihr Teampartner den Ball wieder auffängt. Dies trainiert präzises Passen und Ballkontrolle.",
+    "grafik_title": "Wandpässe mit farbigen Zielzonen Fußball-Trainingsübung",
+    "grafik_caption": "Wandpässe mit farbigen Zielzonen: Spieler dribbeln zur Zielzone und passen präzise an die Wand.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler brauche ich für diese Übung?",
+        "antwort": "Ist je nach Hallengröße flexibel."
+      },
+      {
+        "frage": "Wie lange sollte die Übung dauern?",
+        "antwort": "5 bis 10 Minuten. Länger eher nicht, dann wird es langweilig. "
+      },
+      {
+        "frage": "Ab welchem Alter ist diese Übung geeignet?",
+        "antwort": "Ab G-Jugend (U8)."
+      }
+    ],
+    "status": "veroeffentlicht",
+    "referenz_grafik_url": "",
+    "quell_kategorie": "",
+    "ist_gecrawlt": false,
+    "schwester_gruppen": [],
+    "grafik_hash": "75570f8bfee97f56f467ed0e8bfee8c1e1f43446",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "schwester_ids": [],
+    "schwester_id": null,
+    "schwester_titel": null,
+    "erstellt_am": "2026-11-12"
   }
 ]
