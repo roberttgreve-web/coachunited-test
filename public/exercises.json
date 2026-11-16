@@ -14437,6 +14437,74 @@
     "erstellt_am": "2026-11-12"
   },
   {
+    "id": 221,
+    "titel": "ANSPIELER EINBINDEN: 2 GEGEN 2 IM SECHSECK",
+    "quell_trainingseinheit": "",
+    "grafik_url": "https://coachunited.de/images/uebungen/uebung-221-anspieler-einbinden-2-gegen-2-im-sechseck.webp",
+    "grafik_dateiname": "anspieler-einbinden-2-gegen-2-im-sechseck.png",
+    "trainingsphase": "Spielformat",
+    "ort": "Feld",
+    "kurzbeschreibung": "Im Sechseck spielen zwei gegen zwei auf vier Minitore. Jedes Team hat einen Anspieler an der Grundlinie, der mit höchstens zwei Ballkontakten mitspielt – wer von ihm angespielt wird, schließt selbst ab.",
+    "aufbau": "Stecke mit Hütchen ein Sechseck von etwa 15 × 20 Metern ab. Auf die beiden geraden Grundlinien stellst du jeweils zwei Minitore mit etwas Abstand zueinander. Bilde zwei Teams mit je drei Spielern. Aus jedem Team stellt sich ein Spieler als Anspieler knapp außerhalb des Feldes auf, mittig zwischen den beiden Minitoren einer Grundlinie. Lege an zwei Ecken des Feldes einige Ersatzbälle bereit.",
+    "durchfuehrung": "Im Sechseck spielen die beiden Teams zwei gegen zwei auf die Minitore, die Anspieler unterstützen ihr Team von außen. Ein Anspieler darf den Ball höchstens zweimal berühren: einmal annehmen und einmal weiterspielen. Dabei darf er den Ball mit der Annahme auch ins Feld mitnehmen, muss ihn aber mit dem zweiten Kontakt abspielen. Wer einen Pass vom Anspieler bekommt, muss den Angriff selbst abschließen. Nach 4 Minuten tauscht in jedem Team ein Feldspieler mit dem Anspieler die Rolle.",
+    "varianten": "",
+    "quell_url": "",
+    "jugend": [
+      "D-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Torschuss",
+      "Raumverhalten",
+      "Kommunikation"
+    ],
+    "coaching_fokus": "• Vor dem Zuspiel Blickkontakt zum Anspieler suchen; • Nach dem eigenen Pass sofort freilaufen und anbieten; • Flach und genau passen – in den Fuß oder in den Lauf",
+    "leichter_machen": "• Anspieler darf den Ball dreimal berühren; • Nach dem Zuspiel vom Anspieler ist noch ein Pass erlaubt; • Sechseck etwas größer abstecken",
+    "schwerer_machen": "• Anspieler spielt nur direkt; • Tore zählen nur nach einem Zuspiel vom Anspieler; • Sechseck kleiner abstecken, damit weniger Zeit am Ball bleibt",
+    "alt_titel": "",
+    "seo_keyword": "Spielform mit Anspieler",
+    "url_slug": "anspieler-einbinden-2-gegen-2-im-sechseck",
+    "seo_meta_description": "2 gegen 2 im Sechseck auf vier Minitore, dazu ein Anspieler pro Team: Spielform für die D-Jugend, die Passspiel, Freilaufen und Abschluss verbindet.",
+    "grafik_alt_text": "Sechseckiges Spielfeld mit vier Minitoren, zwei gegen zwei im Feld und je einem Anspieler mit gelbem Leibchen.",
+    "grafik_description": "Die Grafik zeigt ein mit Hütchen abgestecktes Sechseck mit je zwei Minitoren auf der oberen und unteren Grundlinie. Im Feld spielen zwei blaue gegen zwei rote Spieler, die Anspieler mit gelbem Leibchen stehen knapp außerhalb zwischen den Minitoren. Pfeile zeigen den Pass zum blauen Anspieler und dessen Weiterleitung in den Lauf eines Mitspielers.",
+    "grafik_title": "2 gegen 2 im Sechseck mit Anspielern",
+    "grafik_caption": "Der Anspieler an der Grundlinie leitet den Pass weiter in den Lauf seines Mitspielers.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler brauche ich für diese Übung?",
+        "antwort": "Sechs Spieler pro Feld (zwei Teams mit je drei). Bei mehr Kindern baust du mehrere Sechsecke nebeneinander auf."
+      },
+      {
+        "frage": "Wie lange sollte die Übung dauern?",
+        "antwort": "Etwa 12 Minuten: drei Durchgänge à 4 Minuten, damit jeder einmal Anspieler war."
+      },
+      {
+        "frage": "Ab welchem Alter ist diese Übung geeignet?",
+        "antwort": "Für die D-Jugend. Mit den leichteren Varianten klappt sie auch schon in der E-Jugend."
+      }
+    ],
+    "status": "veroeffentlicht",
+    "referenz_grafik_url": "",
+    "quell_kategorie": "",
+    "ist_gecrawlt": false,
+    "schwester_gruppen": [
+      [
+        222
+      ]
+    ],
+    "grafik_hash": "fcd4d7660f19ec2b479cd617eb0ac3a28d0201e5",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "schwester_ids": [
+      222
+    ],
+    "schwester_id": 222,
+    "schwester_titel": "TIEF SPIELEN UND NACHRÜCKEN: 3 GEGEN 3 MIT ANSPIELERN",
+    "erstellt_am": "2026-11-16"
+  },
+  {
     "id": 222,
     "titel": "TIEF SPIELEN UND NACHRÜCKEN: 3 GEGEN 3 MIT ANSPIELERN",
     "quell_trainingseinheit": "",
