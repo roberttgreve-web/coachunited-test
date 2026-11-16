@@ -14309,9 +14309,9 @@
     "grafik_url": "https://coachunited.de/images/uebungen/uebung-217-technikparcours-mit-torabschluss.webp",
     "grafik_dateiname": "Symmetrical Futsal Training Course.png",
     "trainingsphase": "Hauptteil",
-    "kurzbeschreibung": "Die Kinder führen im Parcours verschiedene Übungen aus bis sie schließlich zum Torabschluss kommen. ",
-    "aufbau": "Zwei Teams aufteilen und mit Ball an Starthütchen auf der dem Tor gegenüberliegenden Grundlinie verteilen. Vor den Teams jeweils hintereinander einen Kasten, vier Hütchen und dann nochmal einen Kasten aufstellen. Ein Torhüter im Tor. ",
-    "durchfuehrung": "Die beiden ersten Spieler jedes Teams starten. Erst gegen den ersten Kassten passen. Den zurückprallenen ball kontrollieren und dann um den Kasten herumdribbeln. Bei den Hütchen ins Slalom gehen. Dann das letzte Hütchen im Lauf überlupfen und den Ball per Dropkick aufs Tor schießen. \n\n",
+    "kurzbeschreibung": "Die Kinder führen im Parcours verschiedene Übungen aus, bis sie schließlich zum Torabschluss kommen.",
+    "aufbau": "Zwei Teams aufteilen und mit Ball an Starthütchen auf der dem Tor gegenüberliegenden Grundlinie verteilen. Vor den Teams jeweils hintereinander einen Kasten, vier Hütchen und dann nochmal einen Kasten aufstellen. Ein Torhüter im Tor.",
+    "durchfuehrung": "Der jeweils erste Spieler beider Teams startet. Erst gegen den ersten Kasten passen. Den zurückprallenden Ball kontrollieren und dann um den Kasten herumdribbeln. Bei den Hütchen in den Slalom gehen. Dann den letzten Kasten im Lauf überlupfen und den Ball per Dropkick aufs Tor schießen.",
     "varianten": "",
     "quell_url": "https://training-service.fussball.de/trainer/f-juniorin/training-online/trainingseinheiten-detail/techniktraining-dribbeln-und-passen-in-der-halle-1526/",
     "quell_spiel_nr": 1,
@@ -14326,27 +14326,27 @@
     ],
     "coaching_fokus": "• Erstmal nicht so hohes Tempo, dafür saubere Ausführung; • Möglichst Kopf oben halten; • Nächster Spieler startet erst, wenn der Vordermann geschossen hat",
     "leichter_machen": "• Zweiten Kasten an der ersten Station danebenstellen, um die Fläche zu vergrößern; • Letzten Kasten umdribbeln lassen.",
-    "schwerer_machen": "• Ball vor dem letzten Kasten in die Hand nehmen, sehr hoch werfen, um den Kasten laufen und dann direkt Volley nehmen; • Mit schwächerem Fuß dribbeln; • Die Teams auf Tempo gegeinander antreten lassen",
+    "schwerer_machen": "• Ball vor dem letzten Kasten in die Hand nehmen, sehr hoch werfen, um den Kasten laufen und dann direkt volley nehmen; • Mit schwächerem Fuß dribbeln; • Die Teams auf Tempo gegeneinander antreten lassen",
     "alt_titel": "",
-    "seo_keyword": "Fußballtraining Dribbeln",
+    "seo_keyword": "Technikparcours Fußball Kinder",
     "url_slug": "technikparcours-mit-torabschluss",
-    "seo_meta_description": "Kastenumspiel mit Ballkontrolle: Fußballübung für Dribbeln, Raumverhalten und schnelle Richtungswechsel bei Kindern ab 6 Jahren.",
-    "grafik_alt_text": "Vier Spielergruppen an Hütchen dribbeln auf Kleinkasten zu, bremsen mit Fußsohle ab und dribbeln zurück.",
-    "grafik_description": "Die Übung zeigt vier Startpunkte (Hütchen) mit je zwei Kasten in der Mittellinie. Kinder dribbeln nacheinander auf den Kasten zu, bremsen mit der Fußsohle ab und dribbeln kontrolliert zurück.",
-    "grafik_title": "Kastenumspiel Ballkontrolle Dribbeln",
-    "grafik_caption": "Kastenumspiel: Spieler dribbeln auf den Kasten, bremsen mit der Fußsohle ab und kehren kontrolliert zurück.",
+    "seo_meta_description": "Technikparcours mit Torabschluss für G- und F-Jugend: Pass gegen den Kasten, Slalom, Lupfer und Dropkick – Ballkontrolle und Torschuss in der Halle.",
+    "grafik_alt_text": "Hallen-Technikparcours: Kinder passen gegen einen Kasten, dribbeln durch Hütchen, lupfen über einen Kasten und schießen.",
+    "grafik_description": "Die Grafik zeigt eine Sporthalle mit zwei parallelen Parcours vor einem Tor mit Torhüter. Jeder Parcours besteht aus einem Kasten, vier Hütchen für den Slalom und einem zweiten Kasten. Die Kinder passen gegen den ersten Kasten, dribbeln durch die Hütchen, lupfen den Ball über den zweiten Kasten und schießen per Dropkick aufs Tor.",
+    "grafik_title": "Technikparcours mit Torabschluss – Hallenübung",
+    "grafik_caption": "Technikparcours: Pass gegen den Kasten, Slalom durch die Hütchen, Lupfer über den Kasten und Dropkick aufs Tor.",
     "faq": [
       {
         "frage": "Wie viele Spieler pro Gruppe?",
-        "antwort": "Idealerweise 5-7 Spieler pro Starthütchen"
+        "antwort": "Idealerweise 5–7 Spieler pro Team."
       },
       {
         "frage": "Wie lange sollte die Übung dauern?",
-        "antwort": "Etwa 8-12 Minuten."
+        "antwort": "Etwa 8–12 Minuten."
       },
       {
         "frage": "Ab welchem Alter ist diese Übung geeignet?",
-        "antwort": "Ab G-Jugend (U7)."
+        "antwort": "Ab der G-Jugend."
       }
     ],
     "status": "veroeffentlicht",
