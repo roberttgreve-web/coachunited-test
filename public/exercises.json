@@ -14572,5 +14572,68 @@
     "schwester_id": 221,
     "schwester_titel": "ANSPIELER EINBINDEN: 2 GEGEN 2 IM SECHSECK",
     "erstellt_am": "2026-11-16"
+  },
+  {
+    "id": 224,
+    "titel": "ERST IN DIE WECHSELZONE, DANN AUFS TOR",
+    "quell_trainingseinheit": "",
+    "grafik_url": "https://coachunited.de/images/uebungen/uebung-224-erst-in-die-wechselzone-dann-aufs-tor.webp",
+    "grafik_dateiname": "erst-in-die-wechselzone-dann-aufs-tor.png",
+    "trainingsphase": "Spielformat",
+    "ort": "Feld",
+    "kurzbeschreibung": "Drei gegen drei auf zwei Minitore: Wer den Ball erobert, muss ihn zuerst zu einem Mitspieler in die Wechselzone bringen. Erst dann darf sein Team selbst auf die Tore angreifen.",
+    "aufbau": "Stecke ein Feld von etwa 20 × 15 Metern ab. Auf eine Grundlinie stellst du zwei Minitore mit etwas Abstand zueinander. Am gegenüberliegenden Ende teilst du mit einer zweiten Linie und zwei Hütchen eine 5 Meter tiefe Wechselzone ab. Bilde zwei Teams mit je drei Spielern. Lege links und rechts neben dem Feld jeweils einige Ersatzbälle bereit.",
+    "durchfuehrung": "Beide Teams spielen drei gegen drei auf die zwei Minitore. Das Team am Ball greift an, das andere verteidigt. Gewinnen die Verteidiger den Ball, dürfen sie nicht sofort aufs Tor spielen: Zuerst muss der Ball per Pass zu einem Mitspieler in die Wechselzone. Hat er ihn dort angenommen, wechselt das Angriffsrecht und sein Team spielt auf die Minitore. Nach einem Tor oder Ausball startet das Team, das gerade verteidigt hat, mit einem neuen Ball aus der Wechselzone.",
+    "varianten": "",
+    "quell_url": "",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Dribbeln",
+      "Zweikampf",
+      "Umschalten"
+    ],
+    "coaching_fokus": "• Mutig ins 1 gegen 1 gehen; • Nach dem Ballgewinn sofort umschalten und einen Mitspieler in der Zone suchen; • In der Wechselzone freilaufen und anbieten",
+    "leichter_machen": "• Der Ball darf auch in die Wechselzone gedribbelt werden; • Wechselzone tiefer abstecken",
+    "schwerer_machen": "• Wechselzone schmaler abstecken; • Nach dem Ballgewinn bleiben nur 5 Sekunden, um in die Zone zu spielen; • Mit 4 gegen 4 spielen",
+    "alt_titel": "",
+    "seo_keyword": "Spielform Umschalten Kinder",
+    "url_slug": "erst-in-die-wechselzone-dann-aufs-tor",
+    "seo_meta_description": "3 gegen 3 mit Wechselzone auf zwei Minitore: Spielform für F- und E-Jugend, die Umschalten, Dribbeln und mutige 1-gegen-1-Situationen trainiert.",
+    "grafik_alt_text": "Spielfeld mit Wechselzone links und zwei Minitoren rechts, drei gegen drei im Feld.",
+    "grafik_description": "Die Grafik zeigt ein rechteckiges Spielfeld mit zwei Minitoren auf der rechten Grundlinie und einer mit Hütchen abgeteilten Wechselzone am linken Ende. Im Feld spielen drei blaue gegen drei rote Spieler. Pfeile zeigen den Pass eines blauen Spielers in die Wechselzone, den Laufweg seines Mitspielers dorthin und dessen Dribbling zurück ins Feld.",
+    "grafik_title": "3 gegen 3 mit Wechselzone",
+    "grafik_caption": "Nach dem Ballgewinn spielt Blau in die Wechselzone, erst danach darf Blau angreifen.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler brauche ich für diese Übung?",
+        "antwort": "Sechs Spieler pro Feld (zwei Teams mit je drei). Bei mehr Kindern baust du ein zweites Feld daneben auf."
+      },
+      {
+        "frage": "Wie lange sollte die Übung dauern?",
+        "antwort": "Etwa 12 bis 15 Minuten, zum Beispiel drei Durchgänge à 4 Minuten mit kurzen Pausen."
+      },
+      {
+        "frage": "Ab welchem Alter ist diese Übung geeignet?",
+        "antwort": "Für die F- und E-Jugend. Mit der leichteren Variante klappt sie auch schon bei jüngeren Kindern."
+      }
+    ],
+    "status": "veroeffentlicht",
+    "referenz_grafik_url": "",
+    "quell_kategorie": "",
+    "ist_gecrawlt": false,
+    "schwester_gruppen": [],
+    "grafik_hash": "ce51bfaab775107adfa5f8ecff1c0927ad90216c",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "schwester_ids": [],
+    "schwester_id": null,
+    "schwester_titel": null,
+    "erstellt_am": "2026-11-17"
   }
 ]
