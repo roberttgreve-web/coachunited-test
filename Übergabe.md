@@ -1646,3 +1646,16 @@ Robert wollte bei #245 „VIER PÄSSE - DRIBBELN ODER SCHIESSEN?“ (Schwester v
 - [ ] **Outlook:** `hallo@coachunited.de` im neuen Outlook hinzufügen (Registry-Wert `WebView2Integration` ist gesetzt; Konto hinzufügen, „nur bei dieser App anmelden“).
 - [ ] **Ablageort:** Laut Laptop-Checkliste gehören Vereins-/Kontaktdaten und Geheimnisse nicht ins Firmen-OneDrive – der Ordner liegt aktuell unter „OneDrive – SWiM Bildung UG“.
 - [ ] **Posting #219:** nur mit dem vom Publisher erzeugten Text bzw. „Kanal-Link kopieren“ posten – der alte Text enthielt den toten Link `…/uebung/wandpaesse-mit-vier-zielzonen`.
+
+## 55. Neue Übungen aus dem DFB-Trainingsplaner, Grafikstil, Spellchecks (12.–17.11.2026)
+
+- **Neu und veröffentlicht:** #221 „Anspieler einbinden: 2 gegen 2 im Sechseck“ (D) und #222 „Tief spielen und nachrücken: 3 gegen 3 mit Anspielern“ (D) als Schwestern; #224 „Erst in die Wechselzone, dann aufs Tor“ (F/E). Vorlagen aus dem DFB-Trainingsplaner (`meinfussball.training.app`), Texte selbst formuliert. Ablauf, Bildtausch-Verfahren (PDF-Hash löschen) und Autosave-Falle: Publisher-Übergabe 2.16.
+- **Korrigiert:** #216/#219 (Tippfehler, Schwestern verbunden, Paar/Spieler angeglichen, „Zielzone vergrößern“), #217 Technikparcours (Tippfehler, „letzten Kasten überlupfen“). Bei #219 und #217 waren SEO-/Bildfelder um ein Feld verrutscht bzw. vom alten Entwurf – Ursache offen (Publisher-Übergabe 2.16).
+- **Grafikstil festgelegt:** `Dev\Prompts\Grafikstil Coach United.md` – schlichter Stil wie die Hallengrafiken, draußen auf Rasen, weit herausgezoomt. Die Bilder von #221/#222/#224 sind so erstellt.
+- **DFB-Planer analysiert:** 491 Trainingsformen (Bambini 5, F/E 92, D–A 201, Erwachsene 193), aber nur ~12 Spielideen; Liste der lohnenswerten Übungen mit Links: `Trainingsinhalte\DFB-Planer - lohnenswerte Übungen.md`.
+
+### 55.1 Offene ToDos
+
+- [ ] Weitere Übungen aus der DFB-Liste anlegen (Nr. 2 wechselndes Angriffsrecht, Nr. 3 fliegender Torhüter, Nr. 4 vom 1 gegen 1 zum 3 gegen 3, Nr. 5 Endzonen …).
+- [ ] Ursache der verrutschten SEO-/Bildfelder bei neuen Entwürfen finden; bis dahin alle SEO-/Bildfelder vor dem Veröffentlichen prüfen.
+- [ ] Ältere Übungen auf dasselbe Fehlerbild prüfen (WhatsApp-Text in `grafik_description`, Keyword in der FAQ-Antwort).
