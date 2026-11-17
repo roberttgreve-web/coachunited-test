@@ -14444,9 +14444,9 @@
     "grafik_dateiname": "anspieler-einbinden-2-gegen-2-im-sechseck.png",
     "trainingsphase": "Spielformat",
     "ort": "Feld",
-    "kurzbeschreibung": "Im Sechseck spielen zwei gegen zwei auf vier Minitore. Jedes Team hat einen Anspieler an der gegnerischen Grundlinie, der mit höchstens zwei Ballkontakten mitspielt – wer von ihm angespielt wird, schließt selbst ab.",
-    "aufbau": "Stecke mit Hütchen ein Sechseck von etwa 15 × 20 Metern ab. Auf die beiden geraden Grundlinien stellst du jeweils zwei Minitore mit etwas Abstand zueinander. Bilde zwei Teams mit je drei Spielern. Aus jedem Team stellt sich ein Spieler als Anspieler knapp außerhalb des Feldes auf, mittig zwischen den beiden Minitoren der Grundlinie, auf die sein Team spielt. Lege an zwei Ecken des Feldes einige Ersatzbälle bereit.",
-    "durchfuehrung": "Im Sechseck spielen die beiden Teams zwei gegen zwei. Jedes Team greift die beiden Minitore an, neben denen sein eigener Anspieler steht, und verteidigt die beiden gegenüberliegenden. Ein Anspieler darf den Ball höchstens zweimal berühren: einmal annehmen und einmal weiterspielen. Dabei darf er den Ball mit der Annahme auch ins Feld mitnehmen, muss ihn aber mit dem zweiten Kontakt abspielen. Wer einen Pass vom Anspieler bekommt, muss den Angriff selbst abschließen. Nach 4 Minuten tauscht in jedem Team ein Feldspieler mit dem Anspieler die Rolle.",
+    "kurzbeschreibung": "Im Sechseck spielen zwei gegen zwei auf vier Minitore. Jedes Team hat einen Anspieler an der Grundlinie, der mit höchstens zwei Ballkontakten mitspielt – wer von ihm angespielt wird, schließt selbst ab.",
+    "aufbau": "Stecke mit Hütchen ein Sechseck von etwa 15 × 20 Metern ab. Auf die beiden geraden Grundlinien stellst du jeweils zwei Minitore mit etwas Abstand zueinander. Bilde zwei Teams mit je drei Spielern. Aus jedem Team stellt sich ein Spieler als Anspieler knapp außerhalb des Feldes auf, mittig zwischen den beiden Minitoren einer Grundlinie. Lege an zwei Ecken des Feldes einige Ersatzbälle bereit.",
+    "durchfuehrung": "Im Sechseck spielen die beiden Teams zwei gegen zwei auf die Minitore, die Anspieler unterstützen ihr Team von außen. Ein Anspieler darf den Ball höchstens zweimal berühren: einmal annehmen und einmal weiterspielen. Dabei darf er den Ball mit der Annahme auch ins Feld mitnehmen, muss ihn aber mit dem zweiten Kontakt abspielen. Wer einen Pass vom Anspieler bekommt, muss den Angriff selbst abschließen. Nach 4 Minuten tauscht in jedem Team ein Feldspieler mit dem Anspieler die Rolle.",
     "varianten": "",
     "quell_url": "",
     "jugend": [
@@ -14466,7 +14466,7 @@
     "url_slug": "anspieler-einbinden-2-gegen-2-im-sechseck",
     "seo_meta_description": "2 gegen 2 im Sechseck auf vier Minitore, dazu ein Anspieler pro Team: Spielform für die D-Jugend, die Passspiel, Freilaufen und Abschluss verbindet.",
     "grafik_alt_text": "Sechseckiges Spielfeld mit vier Minitoren, zwei gegen zwei im Feld und je einem Anspieler mit gelbem Leibchen.",
-    "grafik_description": "Die Grafik zeigt ein mit Hütchen abgestecktes Sechseck mit je zwei Minitoren auf der linken und rechten Grundlinie. Im Feld spielen zwei blaue gegen zwei rote Spieler, die Anspieler mit gelbem Leibchen stehen knapp außerhalb zwischen den Minitoren. Pfeile zeigen den Pass zum blauen Anspieler, sein Zurücklegen in den Lauf eines Mitspielers und dessen Abschluss auf ein Minitor.",
+    "grafik_description": "Die Grafik zeigt ein mit Hütchen abgestecktes Sechseck mit je zwei Minitoren auf der oberen und unteren Grundlinie. Im Feld spielen zwei blaue gegen zwei rote Spieler, die Anspieler mit gelbem Leibchen stehen knapp außerhalb zwischen den Minitoren. Pfeile zeigen den Pass zum blauen Anspieler und dessen Weiterleitung in den Lauf eines Mitspielers.",
     "grafik_title": "2 gegen 2 im Sechseck mit Anspielern",
     "grafik_caption": "Der Anspieler an der Grundlinie leitet den Pass weiter in den Lauf seines Mitspielers.",
     "faq": [
@@ -14561,7 +14561,7 @@
         221
       ]
     ],
-    "grafik_hash": "4c3370417c76354504ebf323e46f97f424141de5",
+    "grafik_hash": "7e440b9ad1ad5dffb0edf6e85a7710019efe9117",
     "original_aufbau": "",
     "original_durchfuehrung": "",
     "original_varianten": "",
