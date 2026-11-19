@@ -565,6 +565,34 @@
       }
     }
 
+    /* ── Handy im Querformat: Mockup-Rahmen aus, Skizze nicht mehr festkleben ──
+       Vorher (Robert, 19.11.2026): Bei z. B. 740 × 360 belegten die klebende
+       Skizze (261 px) und die feste Bottom-Nav (80 px) zusammen 341 von 360 px –
+       für den Text blieben 19 px, und die Seite stand als schmaler 375-px-Kasten
+       mitten auf grauem Grund. Ab 768 px greift ohnehin das Desktop-Layout. */
+    @media (max-width: 767px) and (orientation: landscape) {
+      body {
+        background: #fff;
+        display: block;
+      }
+      .container {
+        width: 100%;
+        border-radius: 0;
+        box-shadow: none;
+      }
+      .bottom-nav {
+        left: 0;
+        transform: none;
+        width: 100%;
+      }
+      .grafik-panel {
+        position: static;
+      }
+      .grafik-panel img {
+        max-height: 70vh;
+      }
+    }
+
     /* ── Print styles ── */
     @media print {
       .header, .back-bar, .action-bar-feedback,

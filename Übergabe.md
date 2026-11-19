@@ -1659,3 +1659,10 @@ Robert wollte bei #245 „VIER PÄSSE - DRIBBELN ODER SCHIESSEN?“ (Schwester v
 - [ ] Weitere Übungen aus der DFB-Liste anlegen (Nr. 2 wechselndes Angriffsrecht, Nr. 3 fliegender Torhüter, Nr. 4 vom 1 gegen 1 zum 3 gegen 3, Nr. 5 Endzonen …).
 - [ ] Ursache der verrutschten SEO-/Bildfelder bei neuen Entwürfen finden; bis dahin alle SEO-/Bildfelder vor dem Veröffentlichen prüfen.
 - [ ] Ältere Übungen auf dasselbe Fehlerbild prüfen (WhatsApp-Text in `grafik_description`, Keyword in der FAQ-Antwort).
+
+## 56. Übungsseite im Handy-Querformat (19.11.2026)
+
+- **Problem (Robert):** Handy quer (z. B. 740 × 360): Die klebende Skizze (`.grafik-panel`, sticky, 261 px) und die feste Bottom-Nav (80 px) belegten 341 von 360 px – für den Text blieben 19 px. Außerdem stand die Seite als schmaler 375-px-Handy-Mockup-Kasten auf grauem Grund, weil die Mockup-Optik nur bis 480 px Breite abgeschaltet wird.
+- **Fix in `uebung-detail.html` (gilt für alle generierten Übungsseiten):** neue Media-Query `(max-width: 767px) and (orientation: landscape)`: Mockup-Rahmen aus (volle Breite, weißer Grund, Bottom-Nav volle Breite), `.grafik-panel` `position: static` statt sticky, Bild max. 70vh hoch. Hochformat und Desktop (ab 768 px) unverändert.
+- Getestet lokal mit Testbuild: 740 × 360 (Text lesbar, Bild scrollt mit), 375 × 812 (Skizze klebt weiter oben).
+- Offen/optional: Das WhatsApp-Popup belegt im Querformat fast die halbe Höhe (wegklickbar). Andere Seiten (Listen, Einheiten) haben dieselbe Mockup-Optik im Querformat – bei Bedarf dieselbe Media-Query ergänzen.
