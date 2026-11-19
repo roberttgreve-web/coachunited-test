@@ -13832,12 +13832,12 @@
     "id": 205,
     "titel": "STEIN-PAPIER-SCHERE-DRIBBELDUELL",
     "quell_trainingseinheit": "DEN UMZUG IN DIE HALLE SPIELEND MEISTERN",
-    "grafik_url": "https://coachunited.de/images/uebungen/uebung-206-dribbeln-stein-papier-schere-dribbelduell.webp",
+    "grafik_url": "https://coachunited.de/images/uebungen/uebung-205-dribbeln-stein-papier-schere-dribbelduell.webp",
     "grafik_dateiname": "Futsal Four-Lane Dribbling Drill.png",
     "trainingsphase": "Aufwärmen",
     "kurzbeschreibung": "Vier Teams treten in einem Dribbelwettbewerb an, bei dem sich Spieler in der Hallenmitte treffen und per Stein-Papier-Schere um den Ballbesitz kämpfen. Wer zuerst fünf Punkte sammelt, gewinnt.",
     "aufbau": "Teile die Sporthalle in zwei Hälften auf und markiere in jeder Hälfte ein Spielfeld. Platziere je zwei Hütchen an einer Grundlinie als Startzonen und zwei weitere Hütchen an der gegenüberliegenden Grundlinie als Wendemarken. Die Startzone fungiert gleichzeitig als Ziellinie. Bilde vier Mannschaften und weise jeder ein Starthütchen zu. Eine Gruppe pro Feld hat die Bälle.",
-    "durchfuehrung": "Der erste Spieler jeder Gruppe startet von seinem Hütchen, dribbelt oder läuft um die Wendemarken herum und bewegt sich zurück. Sobald sich die beiden Spieler in der Hallenmitte treffen, spielen sie sofort Stein-Papier-Schere. Der Sieger setzt sein Dribbling mit Ball fort, der Verlierer kehrt zu seinem Starthütchen zurück. Der nächste Spieler der unterlegenen Mannschaft startet daraufhin sofort nach. Ein Punkt wird vergeben, sobald jemand mit Ball die Ziellinie überquert. Das erste Team mit fünf Punkten triumphiert.",
+    "durchfuehrung": "Der erste Spieler jeder Gruppe startet von seinem Hütchen, dribbelt oder läuft um die Wendemarken herum und bewegt sich zurück. Sobald sich die beiden Spieler in der Hallenmitte treffen, spielen sie sofort Stein-Papier-Schere. Der Sieger setzt sein Dribbling mit Ball fort, der Verlierer läuft auf dem kürzesten Weg außen am Parcours vorbei zu seinem Starthütchen zurück. Der nächste Spieler der unterlegenen Mannschaft startet daraufhin sofort nach. Ein Punkt wird vergeben, sobald jemand mit Ball die Ziellinie überquert. Das erste Team mit fünf Punkten triumphiert.",
     "varianten": "Als Wettbewerb organisieren.\nDen Ablauf ohne Ball durchführen.",
     "quell_url": "https://training-service.fussball.de/trainer/d-juniorin/training-online/trainingseinheiten-detail/den-umzug-in-die-halle-spielend-meistern-2094/",
     "quell_spiel_nr": 1,
@@ -13895,7 +13895,8 @@
     "schwester_ids": [
       206
     ],
-    "erstellt_am": "2026-10-20"
+    "erstellt_am": "2026-10-20",
+    "grafik_hash": "b9a022b9c0183c78b814810c2fc04a98be72edd1"
   },
   {
     "id": 206,
