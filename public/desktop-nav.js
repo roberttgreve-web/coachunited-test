@@ -1167,3 +1167,27 @@ function injectWhatsAppPromo() {
     }
   }, { passive: true });
 }
+
+// ── Handy im Querformat (alle Seiten) ──
+// Die mobilen Seiten sind als 375-px-"Handy-Mockup" gebaut (Rundung, Schatten,
+// grauer Grund); abgeschaltet wurde das bisher nur bis 480 px Breite. Quer
+// gehaltene Handys (ca. 640–767 px breit, ~360 px hoch) sahen deshalb einen
+// schmalen Kasten, und die Slider-Kacheln (82 % Breite) waren höher als der
+// ganze Bildschirm (Startseite 571 × 564 px). Ab 768 px greift das Desktop-
+// Layout, darum nur bis 767 px. Die Übungsseite hat zusätzlich eine eigene
+// Regel in uebung-detail.html (Skizze dort nicht sticky).
+(function () {
+  var style = document.createElement('style');
+  style.textContent =
+    '@media (max-width: 767px) and (orientation: landscape) {' +
+      'body { background: #fff !important; }' +
+      '.container { width: 100% !important; border-radius: 0 !important; box-shadow: none !important; }' +
+      '.bottom-nav { left: 0 !important; transform: none !important; width: 100% !important; }' +
+      '.uc-tile, #neue-uebungen .hs-tile { flex: 0 0 40% !important; }' +
+      // Kachel flacher, damit sie in die ~360 px Hoehe passt: Skizze 2:1 statt 3:2, Beschreibung 2 Zeilen
+      '.uc-tile-media img, #neue-uebungen .hs-tile img { aspect-ratio: 2 / 1 !important; }' +
+      '.uc-tile-body, #neue-uebungen .hs-tile-body { margin-top: 8px !important; padding: 10px 12px 12px !important; }' +
+      '.uc-tile-desc { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }' +
+    '}';
+  document.head.appendChild(style);
+})();
