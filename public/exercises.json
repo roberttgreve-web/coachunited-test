@@ -14770,5 +14770,75 @@
     "schwester_id": 227,
     "schwester_titel": "8 SEKUNDEN 2 GEGEN 2, DANN 3 GEGEN 3",
     "erstellt_am": "2026-11-23"
+  },
+  {
+    "id": 227,
+    "titel": "8 SEKUNDEN 2 GEGEN 2, DANN 3 GEGEN 3",
+    "quell_trainingseinheit": "",
+    "grafik_url": "https://coachunited.de/images/uebungen/uebung-227-8-sekunden-2-gegen-2-dann-3-gegen-3.webp",
+    "grafik_dateiname": "8-sekunden-2-gegen-2-dann-3-gegen-3.png",
+    "trainingsphase": "Spielformat",
+    "ort": "Feld",
+    "kurzbeschreibung": "Ein kurzes 2 gegen 2 mit nur acht Sekunden Zeit, danach kommen beide Teams dazu und es geht 30 Sekunden im 3 gegen 3 weiter. Auf vier Minitore.",
+    "aufbau": "Stecke ein Feld von etwa 20 × 15 Metern ab und stelle auf beide Grundlinien jeweils zwei Minitore. Bilde zwei Teams mit je drei Spielern, die sich außerhalb des Feldes zwischen ihren Minitoren aufstellen. Du stehst mit einem Vorrat an Bällen an der Seitenlinie.",
+    "durchfuehrung": "Du spielst einem blauen Angreifer den Ball zu, je zwei Spieler pro Team laufen ins Feld. Jetzt bleiben acht Sekunden für das 2 gegen 2. Zähle laut mit. Ist die Zeit um, kommt aus jedem Team der dritte Spieler dazu, und es wird 30 Sekunden lang frei drei gegen drei gespielt. Danach startet das nächste 2 gegen 2. Nach 7 Minuten folgt eine Minute Pause, anschließend spielst du zum roten Team ein.",
+    "varianten": "",
+    "quell_url": "",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Dribbeln",
+      "Torschuss",
+      "Zweikampf",
+      "Schnelligkeit"
+    ],
+    "coaching_fokus": "• In den acht Sekunden schnell und direkt zum Tor; • Mutig ins Dribbling gehen; • Als dritter Spieler sofort nachstarten",
+    "leichter_machen": "• 20 statt 8 Sekunden für das 2 gegen 2; • Feld etwas breiter abstecken",
+    "schwerer_machen": "• Nur 6 Sekunden für das 2 gegen 2; • Tore im 3 gegen 3 nur nach mindestens einem Pass",
+    "alt_titel": "",
+    "seo_keyword": "2 gegen 2 Übung Kinderfußball",
+    "url_slug": "8-sekunden-2-gegen-2-dann-3-gegen-3",
+    "seo_meta_description": "8 Sekunden 2 gegen 2, dann 30 Sekunden 3 gegen 3 auf vier Minitore: Spielform für F- und E-Jugend für schnelle Durchbrüche im Dribbling.",
+    "grafik_alt_text": "Spielfeld mit vier Minitoren, der Trainer spielt den Ball ein, je zwei Kinder pro Team laufen los.",
+    "grafik_description": "Die Grafik zeigt ein rechteckiges Spielfeld mit je zwei Minitoren auf der linken und rechten Grundlinie. Der Trainer spielt von der Seitenlinie einen Ball ins Feld, ein blauer Spieler nimmt ihn mit einem Dribbling an. Je zwei blaue und rote Kinder laufen ins Feld, je eines wartet noch hinter der Grundlinie.",
+    "grafik_title": "Vom 2 gegen 2 zum 3 gegen 3",
+    "grafik_caption": "Der Trainer spielt Blau an, je zwei Spieler laufen zum 2 gegen 2 ins Feld.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler brauche ich für diese Übung?",
+        "antwort": "Sechs Spieler pro Feld (zwei Teams mit je drei). Bei mehr Kindern baust du ein zweites Feld auf."
+      },
+      {
+        "frage": "Wie lange sollte die Übung dauern?",
+        "antwort": "Etwa 15 Minuten: zweimal 7 Minuten mit einer Minute Pause."
+      },
+      {
+        "frage": "Ab welchem Alter ist diese Übung geeignet?",
+        "antwort": "Für die F- und E-Jugend. Mit mehr Zeit für das 2 gegen 2 klappt sie auch schon bei jüngeren Kindern."
+      }
+    ],
+    "status": "veroeffentlicht",
+    "referenz_grafik_url": "",
+    "quell_kategorie": "",
+    "ist_gecrawlt": false,
+    "schwester_gruppen": [
+      [
+        226
+      ]
+    ],
+    "grafik_hash": "8c9286d81deeb7ecb7d291bde08eb0d552565fa7",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "schwester_ids": [
+      226
+    ],
+    "schwester_id": 226,
+    "schwester_titel": "VOM 1 GEGEN 1 ZUM 3 GEGEN 3: ALLE 20 SEKUNDEN EINER MEHR",
+    "erstellt_am": "2026-11-23"
   }
 ]
