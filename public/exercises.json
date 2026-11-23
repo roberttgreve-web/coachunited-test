@@ -14910,5 +14910,76 @@
     "schwester_id": 233,
     "schwester_titel": "MIT KASTEN KLATSCHEN LASSEN UND LUPFEN",
     "erstellt_am": "2026-11-23"
+  },
+  {
+    "id": 233,
+    "titel": "MIT KASTEN KLATSCHEN LASSEN UND LUPFEN",
+    "quell_trainingseinheit": "",
+    "grafik_url": "https://coachunited.de/images/uebungen/uebung-233-mit-kasten-klatschen-lassen-und-lupfen.webp",
+    "grafik_dateiname": "mit-kasten-klatschen-lassen-und-lupfen.png",
+    "trainingsphase": "Aufwärmen",
+    "ort": "Halle",
+    "kurzbeschreibung": "Doppelpass mit dem eigenen Kleinkasten, um den Kasten herumlaufen und den Ball über den zweiten Kasten zur gegenüberliegenden Gruppe lupfen.",
+    "aufbau": "Stelle in zwei Gassen nebeneinander je zwei quer gestellte Kleinkästen in der Hallenmitte auf, mit etwas Abstand zueinander. An beiden Enden jeder Gasse steht ein Hütchen. Bilde vier Gruppen mit je vier bis fünf Kindern, die sich hinter den Hütchen aufstellen, zwei Gruppen an der einen Hallenseite und zwei gegenüber. Die beiden Gruppen an der einen Seite haben je einen Ball.",
+    "durchfuehrung": "Das erste Kind spielt einen Doppelpass mit dem Kasten vor sich: Pass gegen die lange Seite, den Abpraller selbst annehmen. Dann läuft es mit dem Ball um den Kasten herum und lupft den Ball über den zweiten Kasten zur gegenüberliegenden Gruppe. Dort nimmt das erste Kind den Ball an und spielt in die andere Richtung genauso. Wer gelupft hat, stellt sich bei der gegenüberliegenden Gruppe hinten an.",
+    "varianten": "",
+    "quell_url": "",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend",
+      "E-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Koordination"
+    ],
+    "coaching_fokus": "• Den Abpraller nach vorne mitnehmen; • Eng um den Kasten herumlaufen; • Beim Lupfen unter den Ball kommen und ihn weich anheben",
+    "leichter_machen": "• Den Ball am zweiten Kasten vorbeispielen statt ihn zu lupfen; • Den Ball vor dem Lupfer kurz stoppen dürfen",
+    "schwerer_machen": "• Den Lupfer direkt aus der Bewegung spielen; • Mit dem schwächeren Fuß lupfen; • Höheren Kasten verwenden",
+    "alt_titel": "",
+    "seo_keyword": "Lupfer Übung Kinder Halle",
+    "url_slug": "mit-kasten-klatschen-lassen-und-lupfen",
+    "seo_meta_description": "Doppelpass mit dem Kleinkasten und Lupfer über den zweiten Kasten: Hallenübung für die G- bis E-Jugend für Passen, Ballkontrolle und Gefühl am Ball.",
+    "grafik_alt_text": "Sporthalle mit zwei Gassen: Doppelpass mit dem Kasten und Lupfer über den zweiten Kasten.",
+    "grafik_description": "Die Grafik zeigt eine Sporthalle mit zwei Gassen und je zwei Kleinkästen. Unten stehen eine blaue und eine gelbe Gruppe, oben gegenüber eine rote und eine grüne. Pfeile zeigen den Doppelpass mit dem unteren Kasten und den Lupfer über den oberen Kasten.",
+    "grafik_title": "Mit Kasten klatschen lassen und lupfen",
+    "grafik_caption": "Doppelpass mit dem eigenen Kasten, dann Lupfer über den zweiten Kasten.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler brauche ich für diese Übung?",
+        "antwort": "12 bis 16 Kinder in vier Gruppen. Mit weniger Kindern nur zwei oder drei Teams machen."
+      },
+      {
+        "frage": "Wie lange sollte die Übung dauern?",
+        "antwort": "Etwa 10 Minuten."
+      },
+      {
+        "frage": "Ab welchem Alter ist diese Übung geeignet?",
+        "antwort": "Für die G- bis E-Jugend. Bei den Jüngsten mehrere Versuche für Lupfer erlauben."
+      }
+    ],
+    "status": "veroeffentlicht",
+    "referenz_grafik_url": "",
+    "quell_kategorie": "",
+    "ist_gecrawlt": false,
+    "schwester_gruppen": [
+      [
+        232,
+        234
+      ]
+    ],
+    "grafik_hash": "ed209923d6e10d9e49702c22f8f5ea4031f92301",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "schwester_ids": [
+      232,
+      234
+    ],
+    "schwester_id": 232,
+    "schwester_titel": "VOM KASTEN KLATSCHEN LASSEN",
+    "erstellt_am": "2026-11-23"
   }
 ]
