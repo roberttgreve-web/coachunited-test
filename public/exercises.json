@@ -14840,5 +14840,75 @@
     "schwester_id": 226,
     "schwester_titel": "VOM 1 GEGEN 1 ZUM 3 GEGEN 3: ALLE 20 SEKUNDEN EINER MEHR",
     "erstellt_am": "2026-11-23"
+  },
+  {
+    "id": 232,
+    "titel": "VOM KASTEN KLATSCHEN LASSEN",
+    "quell_trainingseinheit": "",
+    "grafik_url": "https://coachunited.de/images/uebungen/uebung-232-vom-kasten-klatschen-lassen.webp",
+    "grafik_dateiname": "vom-kasten-klatschen-lassen.png",
+    "trainingsphase": "Aufwärmen",
+    "ort": "Halle",
+    "kurzbeschreibung": "Vier Gruppen spielen den Ball gegen einen Kleinkasten. Der Abpraller landet beim Nächsten in der Reihe, der ihn in der Bewegung annimmt und weitermacht.",
+    "aufbau": "Stelle in zwei Gassen nebeneinander je zwei quer gestellte Kleinkästen in der Hallenmitte auf, mit etwas Abstand zueinander. Vor jedem Kasten steht in etwa 6 bis 8 Metern Entfernung ein Hütchen. Bilde vier Gruppen mit je vier bis fünf Kindern, die sich hinter ihren Hütchen aufstellen, immer mit Blick zum eigenen Kasten. Zwei Gruppen stehen also an der einen Hallenseite, zwei gegenüber. Jede Gruppe hat einen Ball.",
+    "durchfuehrung": "Das erste Kind jeder Gruppe passt den Ball flach gegen die lange Seite seines Kastens. Der Ball prallt zurück zum nächsten Kind der Reihe. Das passende Kind läuft seitlich an der Reihe vorbei und stellt sich hinten wieder an. Das nächste Kind nimmt den Abpraller in der Bewegung an und spielt sofort selbst gegen den Kasten.",
+    "varianten": "",
+    "quell_url": "",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend",
+      "E-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle"
+    ],
+    "coaching_fokus": "• Flach und mit der Innenseite passen; • Den Abpraller in der Bewegung annehmen, nicht stehen bleiben; • Nach dem Pass zügig hinten anstellen",
+    "leichter_machen": "• Abstand zum Kasten verlängern (dadurch Tempo herausnehmen); • Den Ball vor dem Pass einmal stoppen dürfen",
+    "schwerer_machen": "• Nur direkt passen; • Abwechselnd mit rechts und links spielen; • Abstand zum Kasten verkleinern (höheres Tempo)",
+    "alt_titel": "",
+    "seo_keyword": "Passübung Halle Kinder",
+    "url_slug": "vom-kasten-klatschen-lassen",
+    "seo_meta_description": "Passübung für die Halle: Kinder spielen den Ball gegen einen Kleinkasten, der Abpraller geht zum Nächsten. Aufwärmen für die G- bis E-Jugend.",
+    "grafik_alt_text": "Sporthalle mit vier Gruppen, die den Ball jeweils gegen ihren Kleinkasten spielen.",
+    "grafik_description": "Die Grafik zeigt eine Sporthalle mit zwei Gassen und vier Kleinkästen. Vier Gruppen stehen sich paarweise gegenüber, jede mit Blick auf ihren eigenen Kasten. Pfeile zeigen den Pass gegen den Kasten und den Abpraller zurück in die Reihe.",
+    "grafik_title": "Vom Kasten klatschen lassen",
+    "grafik_caption": "Pass gegen den Kasten, der Abpraller geht zum Nächsten in der Reihe.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler brauche ich für diese Übung?",
+        "antwort": "12 bis 16 Kinder in vier Gruppen. Mit weniger Kindern einfach nur zwei oder drei Gruppen bilden."
+      },
+      {
+        "frage": "Wie lange sollte die Übung dauern?",
+        "antwort": "Etwa 8 bis 10 Minuten zum Aufwärmen."
+      },
+      {
+        "frage": "Ab welchem Alter ist diese Übung geeignet?",
+        "antwort": "Für die G- bis E-Jugend. "
+      }
+    ],
+    "status": "veroeffentlicht",
+    "referenz_grafik_url": "",
+    "quell_kategorie": "",
+    "ist_gecrawlt": false,
+    "schwester_gruppen": [
+      [
+        233,
+        234
+      ]
+    ],
+    "grafik_hash": "08115374cf03881713442bd57fbe2765e8b07701",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "schwester_ids": [
+      233,
+      234
+    ],
+    "schwester_id": 233,
+    "schwester_titel": "MIT KASTEN KLATSCHEN LASSEN UND LUPFEN",
+    "erstellt_am": "2026-11-23"
   }
 ]
