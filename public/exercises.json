@@ -14700,5 +14700,75 @@
     "schwester_id": null,
     "schwester_titel": null,
     "erstellt_am": "2026-11-23"
+  },
+  {
+    "id": 226,
+    "titel": "VOM 1 GEGEN 1 ZUM 3 GEGEN 3: ALLE 20 SEKUNDEN EINER MEHR",
+    "quell_trainingseinheit": "",
+    "grafik_url": "https://coachunited.de/images/uebungen/uebung-226-vom-1-gegen-1-zum-3-gegen-3-alle-20-sekunden-einer-mehr.webp",
+    "grafik_dateiname": "vom-1-gegen-1-zum-3-gegen-3-alle-20-sekunden-einer-mehr.png",
+    "trainingsphase": "Spielformat",
+    "ort": "Feld",
+    "kurzbeschreibung": "Es beginnt mit einem 1 gegen 1 auf vier Minitore. Alle 20 Sekunden kommt pro Team ein Spieler dazu, bis drei gegen drei gespielt wird.",
+    "aufbau": "Stecke ein Feld von etwa 20 × 15 Metern ab und stelle auf beide Grundlinien jeweils zwei Minitore. Bilde zwei Teams mit vier und drei Spielern. Jedes Team stellt sich außerhalb des Feldes zwischen seinen beiden Minitoren auf. Das blaue Team hat die Bälle.",
+    "durchfuehrung": "Der erste blaue Spieler dribbelt ins Feld, der erste rote Spieler läuft ihm entgegen. Das 1 gegen 1 auf die Minitore beginnt. Nach 20 Sekunden kommt aus jedem Team ein weiterer Spieler dazu, nach weiteren 20 Sekunden noch einer, sodass drei gegen drei gespielt wird. Fällt zwischendurch ein Tor oder geht der Ball ins Aus, spielt der Trainer sofort einen neuen Ball ein. Nach jeder Aktion wechseln die Teams zügig die Seiten, und der nächste Durchgang startet mit anderen Spielern.",
+    "varianten": "",
+    "quell_url": "",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Dribbeln",
+      "Torschuss",
+      "Zweikampf",
+      "Raumverhalten"
+    ],
+    "coaching_fokus": "• Mutig ins 1 gegen 1 gehen; • Finten einsetzen, um am Gegner vorbeizukommen; • Wer neu ins Feld kommt, sucht sofort den freien Raum",
+    "leichter_machen": "• Der Trainer spielt den ersten Ball zu einem Angreifer, statt dass dieser selbst losdribbelt; • Feld etwas breiter abstecken",
+    "schwerer_machen": "• Der erste Spieler schlägt einen hohen Ball zum gegenüberstehenden Startspieler und läuft dann als Verteidiger ins Feld; • Der Trainer passt zu einem beliebigen Startspieler und bestimmt so, wer angreift",
+    "alt_titel": "",
+    "seo_keyword": "1 gegen 1 Übung Kinderfußball",
+    "url_slug": "vom-1-gegen-1-zum-3-gegen-3-alle-20-sekunden-einer-mehr",
+    "seo_meta_description": "Vom 1 gegen 1 zum 3 gegen 3 auf Minitore: Alle 20 Sekunden kommt ein Spieler dazu. Spielform für F- und E-Jugend für Dribbling und Zweikampf.",
+    "grafik_alt_text": "Spielfeld mit vier Minitoren, ein blaues Kind dribbelt ins Feld, ein rotes läuft ihm entgegen.",
+    "grafik_description": "Die Grafik zeigt ein rechteckiges Spielfeld mit je zwei Minitoren auf der linken und rechten Grundlinie. Links warten vier blaue Kinder mit Ball, rechts drei rote Kinder. Je ein Kind startet von der Grundlinie: Blau dribbelt ins Feld, Rot läuft ihm entgegen.",
+    "grafik_title": "Vom 1 gegen 1 zum 3 gegen 3",
+    "grafik_caption": "Start ins 1 gegen 1: Blau dribbelt los, Rot läuft ins Feld, die anderen warten.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler brauche ich für diese Übung?",
+        "antwort": "Sieben Spieler pro Feld (ein Team mit vier, eins mit drei). Bei mehr Kindern baust du ein zweites Feld auf."
+      },
+      {
+        "frage": "Wie lange sollte die Übung dauern?",
+        "antwort": "Etwa 15 Minuten. Ein Durchgang dauert gut eine Minute, danach starten andere Spieler."
+      },
+      {
+        "frage": "Ab welchem Alter ist diese Übung geeignet?",
+        "antwort": "Ab der F-Jugend."
+      }
+    ],
+    "status": "veroeffentlicht",
+    "referenz_grafik_url": "",
+    "quell_kategorie": "",
+    "ist_gecrawlt": false,
+    "schwester_gruppen": [
+      [
+        227
+      ]
+    ],
+    "grafik_hash": "b7e384fd8fce4e8787dd94a5ab7adbd5764f08e3",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "schwester_ids": [
+      227
+    ],
+    "schwester_id": 227,
+    "schwester_titel": "8 SEKUNDEN 2 GEGEN 2, DANN 3 GEGEN 3",
+    "erstellt_am": "2026-11-23"
   }
 ]
