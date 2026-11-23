@@ -14981,5 +14981,76 @@
     "schwester_id": 232,
     "schwester_titel": "VOM KASTEN KLATSCHEN LASSEN",
     "erstellt_am": "2026-11-23"
+  },
+  {
+    "id": 234,
+    "titel": "MIT KASTEN KLATSCHEN LASSEN, LUPFEN, SCHIESSEN",
+    "quell_trainingseinheit": "",
+    "grafik_url": "https://coachunited.de/images/uebungen/uebung-234-mit-kasten-klatschen-lassen-lupfen-schiessen.webp",
+    "grafik_dateiname": "mit-kasten-klatschen-lassen-lupfen-schiessen.png",
+    "trainingsphase": "Aufwärmen",
+    "ort": "Halle",
+    "kurzbeschreibung": "Doppelpass mit dem Kleinkasten, um den Kasten herumlaufen, den Ball über den zweiten Kasten lupfen und aufs Tor mit Torhüter schießen.",
+    "aufbau": "Stelle in zwei Gassen nebeneinander je zwei quer gestellte Kleinkästen hintereinander auf. An der Grundlinie dahinter steht mittig ein Tor mit Torhüter. Am anderen Ende jeder Gasse steht ein Hütchen, dahinter stellt sich jeweils eine Gruppe mit vier bis fünf Kindern auf. Lege neben die Hütchen genug Bälle bereit.",
+    "durchfuehrung": "Das erste Kind spielt einen Doppelpass mit dem vorderen Kasten, den Abpraller selbst annehmen. Dann läuft es mit dem Ball um den Kasten herum, lupft den Ball über den zweiten Kasten, läuft hinterher und schießt aufs Tor. Danach holt es seinen Ball und stellt sich hinten bei seiner Gruppe an. Die beiden Gruppen starten abwechselnd, damit sich die Schüsse nicht überschneiden.",
+    "varianten": "",
+    "quell_url": "",
+    "jugend": [
+      "G-Jugend",
+      "F-Jugend",
+      "E-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Ballkontrolle",
+      "Torschuss"
+    ],
+    "coaching_fokus": "• Den Abpraller nach vorne mitnehmen; • Den Lupfer so dosieren, dass der Ball gut zum Schuss liegt; • Vor dem Schuss kurz zum Torhüter schauen",
+    "leichter_machen": "• Den Ball am zweiten Kasten vorbeispielen statt ihn zu lupfen; • Ohne Torhüter auf das leere Tor schießen",
+    "schwerer_machen": "• Nach dem Lupfer direkt schießen; • Wettkampf: Welche Gruppe erzielt mehr Tore?; • Mit dem schwächeren Fuß abschließen",
+    "alt_titel": "",
+    "seo_keyword": "Torschuss Übung Halle Kinder",
+    "url_slug": "mit-kasten-klatschen-lassen-lupfen-schiessen",
+    "seo_meta_description": "Doppelpass mit dem Kleinkasten, Lupfer über den zweiten Kasten und Torschuss: Hallenübung für die G- bis E-Jugend mit Abschluss auf das Tor.",
+    "grafik_alt_text": "Sporthalle mit zwei Gassen aus je zwei Kleinkästen und einem Tor mit Torhüter dahinter.",
+    "grafik_description": "Die Grafik zeigt eine Sporthalle mit zwei Gassen und je zwei Kleinkästen. Unten stehen eine blaue und eine gelbe Gruppe, hinten an der Wand ein Tor mit Torhüter. Pfeile zeigen den Doppelpass mit dem vorderen Kasten und den Lupfer über den hinteren Kasten.",
+    "grafik_title": "Klatschen lassen, lupfen, schießen",
+    "grafik_caption": "Doppelpass mit dem Kasten, Lupfer über den zweiten Kasten, dann Abschluss aufs Tor.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler brauche ich für diese Übung?",
+        "antwort": "8 bis 12 Kinder in zwei Gruppen plus Torhüter."
+      },
+      {
+        "frage": "Wie lange sollte die Übung dauern?",
+        "antwort": "Etwa 10 bis 15 Minuten. Den Torhüter regelmäßig wechseln."
+      },
+      {
+        "frage": "Ab welchem Alter ist diese Übung geeignet?",
+        "antwort": "Für die G- bis E-Jugend. "
+      }
+    ],
+    "status": "veroeffentlicht",
+    "referenz_grafik_url": "",
+    "quell_kategorie": "",
+    "ist_gecrawlt": false,
+    "schwester_gruppen": [
+      [
+        232,
+        233
+      ]
+    ],
+    "grafik_hash": "a38f8eee1936dbb68a5eb2979f4467a8de54f48c",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "schwester_ids": [
+      232,
+      233
+    ],
+    "schwester_id": 232,
+    "schwester_titel": "VOM KASTEN KLATSCHEN LASSEN",
+    "erstellt_am": "2026-11-23"
   }
 ]
