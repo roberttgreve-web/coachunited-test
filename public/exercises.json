@@ -14636,5 +14636,69 @@
     "schwester_id": null,
     "schwester_titel": null,
     "erstellt_am": "2026-11-17"
+  },
+  {
+    "id": 225,
+    "titel": "FLIEGENDER TORHÜTER: ACHT SEKUNDEN BIS ZUM TOR",
+    "quell_trainingseinheit": "",
+    "grafik_url": "https://coachunited.de/images/uebungen/uebung-225-fliegender-torhueter-acht-sekunden-bis-zum-tor.webp",
+    "grafik_dateiname": "fliegender-torhueter-acht-sekunden-bis-zum-tor.png",
+    "trainingsphase": "Spielformat",
+    "ort": "Feld",
+    "kurzbeschreibung": "Drei gegen drei auf zwei Tore. Ohne festen Torwart: Das Team ohne Ball schickt sofort einen Spieler ins eigene Tor. Wer den Ball hat, muss innerhalb von acht Sekunden abschließen.",
+    "aufbau": "Stecke ein Feld von etwa 20 × 15 Metern ab und stelle auf beide Grundlinien jeweils ein Tor. Bilde zwei Teams mit je drei Spielern. Feste Torhüter gibt es nicht. Lege einige Ersatzbälle neben die Tore.",
+    "durchfuehrung": "Die Teams spielen drei gegen drei auf die beiden Tore. Das Team ohne Ball muss sofort einen seiner Spieler als Torhüter ins eigene Tor schicken, das Team am Ball greift mit allen drei Spielern an. Wer den Ball hat, muss innerhalb von acht Sekunden abschließen, sonst bekommen die Gegner den Ball. Bei jedem Ballbesitzwechsel drehen sich die Rollen: Der Torhüter des ballerobernden Teams wird wieder Feldspieler, auf der anderen Seite muss schnell jemand ins Tor. Gespielt werden vier Durchgänge à 3 Minuten mit je einer Minute Pause.",
+    "varianten": "",
+    "quell_url": "",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend",
+      "D-Jugend"
+    ],
+    "skills": [
+      "Torschuss",
+      "Zweikampf",
+      "Umschalten",
+      "Torhüter"
+    ],
+    "coaching_fokus": "• Nach dem Ballgewinn sofort den Weg zum Tor suchen; • Mutig abschließen, bevor die acht Sekunden um sind; • Bei Ballverlust blitzschnell umschalten und das eigene Tor besetzen",
+    "leichter_machen": "• Zeit für den Abschluss auf 20 Sekunden verlängern; • Feld etwas kürzer abstecken, damit die Wege zum Tor kürzer sind",
+    "schwerer_machen": "• Nur 6 Sekunden bis zum Abschluss; • Mit 4 gegen 4 spielen",
+    "alt_titel": "",
+    "seo_keyword": "Fliegender Torhüter Fußball",
+    "url_slug": "fliegender-torhueter-acht-sekunden-bis-zum-tor",
+    "seo_meta_description": "3 gegen 3 mit fliegendem Torhüter: Spielform für F- und E-Jugend mit Acht-Sekunden-Regel, die schnelles Umschalten und mutige Abschlüsse trainiert.",
+    "grafik_alt_text": "Spielfeld mit zwei Toren, drei Blaue gegen drei Rote, ein roter Spieler steht als Torhüter im Tor.",
+    "grafik_description": "Die Grafik zeigt ein rechteckiges Spielfeld mit je einem Tor auf der linken und rechten Grundlinie. Drei blaue Spieler greifen an, das blaue Tor bleibt dabei leer. Rot verteidigt mit zwei Feldspielern und einem Spieler als fliegendem Torhüter im rechten Tor. Eine Wellenlinie zeigt das Dribbling des blauen Spielers am Ball.",
+    "grafik_title": "3 gegen 3 mit fliegendem Torhüter",
+    "grafik_caption": "Blau greift mit allen drei Spielern an, Rot hat sofort einen Spieler ins Tor geschickt.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler brauche ich für diese Übung?",
+        "antwort": "Sechs Spieler pro Feld (zwei Teams mit je drei). Bei mehr Kindern baust du ein zweites Feld daneben auf."
+      },
+      {
+        "frage": "Wie lange sollte die Übung dauern?",
+        "antwort": "Etwa 15 Minuten: vier Durchgänge à 3 Minuten mit je einer Minute Pause."
+      },
+      {
+        "frage": "Ab welchem Alter ist diese Übung geeignet?",
+        "antwort": "Ab der F-Jugend. "
+      }
+    ],
+    "status": "veroeffentlicht",
+    "referenz_grafik_url": "",
+    "quell_kategorie": "",
+    "ist_gecrawlt": false,
+    "schwester_gruppen": [],
+    "grafik_hash": "df25c46bf002ab3c6e4e1e20fbd63e47e9935fb7",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "schwester_ids": [],
+    "schwester_id": null,
+    "schwester_titel": null,
+    "erstellt_am": "2026-11-23"
   }
 ]
