@@ -15052,5 +15052,68 @@
     "schwester_id": 232,
     "schwester_titel": "VOM KASTEN KLATSCHEN LASSEN",
     "erstellt_am": "2026-11-23"
+  },
+  {
+    "id": 235,
+    "titel": "ERST ZUM ANSPIELER, DANN ANGREIFEN",
+    "quell_trainingseinheit": "",
+    "grafik_url": "https://coachunited.de/images/uebungen/uebung-235-erst-zum-anspieler-dann-angreifen.webp",
+    "grafik_dateiname": "erst-zum-anspieler-dann-angreifen.png",
+    "trainingsphase": "Spielformat",
+    "ort": "Feld",
+    "kurzbeschreibung": "Drei gegen drei auf zwei Minitore. Wer den Ball erobert, muss ihn erst zum Anspieler auf der anderen Seite spielen. Erst dann wechselt das Angriffsrecht.",
+    "aufbau": "Stecke ein Feld von etwa 20 × 20 Metern ab. Auf eine Grundlinie stellst du zwei Minitore mit etwas Abstand zueinander. Ein Kind ist Anspieler und stellt sich hinter die gegenüberliegende Grundlinie ohne Tore. Bilde aus den übrigen Kindern zwei Teams mit je drei Spielern. Lege links und rechts neben dem Feld einige Ersatzbälle bereit.",
+    "durchfuehrung": "Der Anspieler eröffnet mit einem Pass zu einem Team, das sofort auf die beiden Minitore angreift. Das andere Team verteidigt. Erobern die Verteidiger den Ball, müssen sie ihn zuerst zum Anspieler spielen. Der Anspieler spielt den Ball zurück ins Feld, und jetzt greift dieses Team die Minitore an. So wechselt das Angriffsrecht immer wieder. Nach 2 Minuten wird ein anderes Kind Anspieler.",
+    "varianten": "",
+    "quell_url": "",
+    "jugend": [
+      "F-Jugend",
+      "E-Jugend"
+    ],
+    "skills": [
+      "Passen",
+      "Zweikampf",
+      "Raumverhalten",
+      "Umschalten"
+    ],
+    "coaching_fokus": "• Nach dem Ballgewinn sofort umschalten und den Anspieler suchen; • Nach dem Pass zum Anspieler freilaufen und anbieten; • Mutig aufs Tor zugehen",
+    "leichter_machen": "• Der Anspieler darf auch hereindribbeln; • Feld etwas größer abstecken",
+    "schwerer_machen": "• Der Anspieler spielt nur direkt; • Nach dem Ballgewinn bleiben nur 5 Sekunden für den Pass zum Anspieler; • Mit 4 gegen 4 spielen",
+    "alt_titel": "",
+    "seo_keyword": "Umschaltspiel Kinderfußball",
+    "url_slug": "erst-zum-anspieler-dann-angreifen",
+    "seo_meta_description": "3 gegen 3 mit wechselndem Angriffsrecht: Nach Ballgewinn erst zum Anspieler, dann angreifen. Spielform für F- und E-Jugend zum Umschalten.",
+    "grafik_alt_text": "Quadratisches Spielfeld mit zwei Minitoren rechts und einem gelben Anspieler an der linken Grundlinie.",
+    "grafik_description": "Die Grafik zeigt ein quadratisches Spielfeld mit zwei Minitoren auf der rechten Grundlinie. Links steht ein Anspieler im gelben Leibchen und passt zu einem blauen Spieler. Blaue und rote Kinder verteilen sich im Feld, ein blauer Spieler läuft sich frei.",
+    "grafik_title": "3 gegen 3 mit wechselndem Angriffsrecht",
+    "grafik_caption": "Der Anspieler eröffnet mit einem Pass zu Blau, das jetzt auf die Minitore angreift.",
+    "faq": [
+      {
+        "frage": "Wie viele Spieler brauche ich für diese Übung?",
+        "antwort": "Sieben Kinder pro Feld: zwei Teams mit je drei und ein Anspieler. Bei mehr Kindern baust du ein zweites Feld auf."
+      },
+      {
+        "frage": "Wie lange sollte die Übung dauern?",
+        "antwort": "Etwa 12 bis 15 Minuten. Nach jeweils 2 Minuten wird ein anderes Kind Anspieler."
+      },
+      {
+        "frage": "Ab welchem Alter ist diese Übung geeignet?",
+        "antwort": "Für die F- und E-Jugend. Mit größerem Feld klappt sie auch schon bei jüngeren Kindern."
+      }
+    ],
+    "status": "veroeffentlicht",
+    "referenz_grafik_url": "",
+    "quell_kategorie": "",
+    "ist_gecrawlt": false,
+    "schwester_gruppen": [],
+    "grafik_hash": "757584d1333b1af6a48572fdccb5595bfc247424",
+    "original_aufbau": "",
+    "original_durchfuehrung": "",
+    "original_varianten": "",
+    "original_coaching_fokus": "",
+    "schwester_ids": [],
+    "schwester_id": null,
+    "schwester_titel": null,
+    "erstellt_am": "2026-11-24"
   }
 ]
